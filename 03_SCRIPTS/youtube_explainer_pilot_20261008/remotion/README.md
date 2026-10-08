@@ -1,6 +1,6 @@
 # VOICEVOX解説 検証版
 
-1280×720、30fps、75.3秒。坂本アヒル式ずんだもん2.3・四国めたん2.1。波形連動の口パク、まばたき、原作漫画と図解、話者別字幕。導入から本編へのBGM切り替えを確認する。
+1280×720、30fps、75.3秒。坂本アヒル式ずんだもん2.3・四国めたん2.1。波形連動の口パク、まばたき、大きな原作漫画、話者別の縁取り字幕。導入から本編へのBGM切り替えを確認する。
 
 ## 再現
 
@@ -12,6 +12,6 @@
 - `npx remotion render src/index.ts Explainer out/visuals.mp4 --codec=h264 --concurrency=2 --muted --props='{"omitMainMusic":true}' --overwrite`
 - `python mix_audio.py --main /path/to/ほのぼのワルツ.wav`。本編クレジットを含むRemotion映像を再レンダーしてミックスする。
 - 今回のローカル環境では `npm run render` で `../input/` の唯一のWAVを自動選択して再現可能。
-- 納品先: `../final_remotion_explainer_pilot.mp4`。Remotion映像に確定フレーム位置で音声合成。音源の代理曲への自動置換はしない。
+- 納品先: `../final_remotion_explainer_pilot_simple.mp4`。Remotion映像に確定フレーム位置で音声合成。音源の代理曲への自動置換はしない。
 
 各音源の利用条件・URLは `../asset_sources.json` と `../youtube_description.txt`。第三者素材の再配布を避け、public・原本・試作音声・レンダーはGit管理しない。

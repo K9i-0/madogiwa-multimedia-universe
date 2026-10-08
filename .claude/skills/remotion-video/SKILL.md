@@ -26,6 +26,10 @@ description: Remotionで生成済み動画を編集し、正確な日本語字�
 - Remotionと`@remotion/*`は全て同一の正確なバージョンへ固定する。新規プロジェクト前に公式情報または`npm view remotion version`で安定版を確認し、`^`や`latest`をlockfile外の正本にしない。
 - Remotionには利用形態によるライセンス条件がある。個人・小規模制作を超える利用や自動化サービス化では、実行前に公式ライセンスを確認する。
 
+## VOICEVOX解説動画からの委譲
+
+ずんだもん・めたん等の解説テンプレは [voicevox-explainer](../voicevox-explainer/SKILL.md) が台本・配役・中央素材・音楽方針を担当する。本スキルはその仕様を受けて実装・書き出し・監査を行う。解説の依頼だけでニュースプリセットを適用しない。
+
 ## 編集へ回す判断
 
 生成と編集の分担を決めるときは[references/editing-strategy.md](references/editing-strategy.md)を読む。

@@ -14,3 +14,5 @@
 原音素材と試作TTS、public/out/node_modulesはGit除外。版の検討はチャットで行い、編集HTML・scenario.jsonは最終調整まで更新しない。素材クレジットは `../youtube_description.txt`。
 
 中央素材の改訂：`center_assets.json` に正典写真・採用小道具・公式商品画像・動画からの切り出し位置を記録。各発話のviewで対応するレイアウトを指定し、未定義viewはエラーにする。よーたんは写真をCSSで上半身表示。原作第1話は文字入れとビールをそれぞれ拡大し、語りの対象が見えるようにする。
+
+エンディングはTheFatRat - Unity。公式配布MP3を `unity_source.json` から復元。manifestのendingStartFrameから先頭を流し、声がある間は控えめ、クレジットで音量を上げてフェードアウトする。使用条件と公式動画へのリンクをYouTube説明に記載済み。

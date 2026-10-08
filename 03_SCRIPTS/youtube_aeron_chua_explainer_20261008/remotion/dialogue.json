@@ -409,7 +409,8 @@
     "text": "座り心地については、そば屋さんの評価をご参照ください。",
     "scene": "summary",
     "view": "review",
-    "pause": 9
+    "pause": 9,
+    "endingStart": true
   },
   {
     "who": "zunda",
@@ -417,5 +418,33 @@
     "scene": "summary",
     "view": "review",
     "pause": 9
+  },
+  {
+    "who": "metan",
+    "text": "というわけで、今回はアーロンチュアの解説でした。気になった人は、原作やほかの動画も見てみてね。",
+    "scene": "ending",
+    "view": "ending",
+    "pause": 15
+  },
+  {
+    "who": "zunda",
+    "text": "椅子を見に来たのに、この会社がますます心配になったのだ。",
+    "scene": "ending",
+    "view": "ending",
+    "pause": 15
+  },
+  {
+    "who": "metan",
+    "text": "それでは、また次の解説で。",
+    "scene": "ending",
+    "view": "ending",
+    "pause": 15
+  },
+  {
+    "who": "zunda",
+    "text": "次回までには、まともな備品を買っておいてほしいのだ。",
+    "scene": "ending",
+    "view": "ending",
+    "pause": 15
   }
 ]

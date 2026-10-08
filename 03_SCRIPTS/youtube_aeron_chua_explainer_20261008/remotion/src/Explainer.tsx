@@ -6,6 +6,7 @@ const Center:React.FC<{view:string}>=({view})=>{
  const note=(t:string)=><div style={{fontSize:24,lineHeight:1.6,marginTop:16}}>{t}</div>;
  const img=(name:string,w=650,h=390)=><Img src={staticFile(name)} style={{width:w,height:h,objectFit:'contain'}}/>;
  const pair=(a:string,b:string,la:string,lb:string)=><div style={{display:'flex',gap:24,alignItems:'center'}}>{[[a,la],[b,lb]].map(([name,label])=><div key={name}>{img(name,310,310)}{note(label)}</div>)}</div>;
+ if(view==='ending')return <>{heading('ご視聴ありがとうございました')}{img('chair.png',350,340)}{note('窓際族物語 ／ また次の解説で')}</>;
  if(view==='intro')return <>{heading('アーロンチュアとは何か')}{img('chair.png',420,375)}{note('高級そうな、段ボール椅子の歴史')}</>;
  if(view==='aeron')return <>{heading('アーロンチェア')}{img('aeron.jpg',400,375)}{note('Herman Miller ／ 人間工学に基づく設計')}<div style={{fontSize:14,color:'#687367',marginTop:7}}>商品画像：Herman Miller 公式サイト</div></>;
  if(view==='chair')return <>{heading('アーロンチュア')}{img('chair.png',490,410)}</>;
@@ -42,6 +43,6 @@ export const Explainer:React.FC=()=>{
  {(['zunda','metan'] as const).map((who,i)=>{const speaking=active?.who===who;const j=active?f-active.startFrame:0;const open=speaking&&(active?.envelope[j]??0)>.023;const blink=(f+(i?49:0))%127<4;const surprise=speaking&&who==='zunda'&&/偉い|どういう|暇なの|資源ごみ|頭おかしい/.test(active?.text??'');const mood=blink?'blink':surprise?'surprise':'normal';return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?990:0,bottom:0,width:290,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;})}
  {active&&<div style={{position:'absolute',left:60,right:60,bottom:27,minHeight:106,display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{fontSize:30,fontWeight:700,lineHeight:1.6,textAlign:'center',whiteSpace:'pre-line',color:active.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'6px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0003'}}>{active.caption}</div></div>}
  </>}
- {credits&&<AbsoluteFill style={{alignItems:'center',justifyContent:'center',fontSize:23,lineHeight:2,textAlign:'center'}}><div>音声：VOICEVOX:ずんだもん ／ VOICEVOX:四国めたん<br/>立ち絵：坂本アヒル 様<br/>導入BGM：昼下がり気分 ／ KK<br/>本編BGM：ほのぼのワルツ【リコーダー】／ エクシエ<br/>原作・資料映像：窓際族物語</div></AbsoluteFill>}
+ {credits&&<AbsoluteFill style={{alignItems:'center',justifyContent:'center',fontSize:23,lineHeight:2,textAlign:'center'}}><div>音声：VOICEVOX:ずんだもん ／ VOICEVOX:四国めたん<br/>立ち絵：坂本アヒル 様<br/>導入BGM：昼下がり気分 ／ KK<br/>本編BGM：ほのぼのワルツ【リコーダー】／ エクシエ<br/>エンディングBGM：TheFatRat - Unity<br/>原作・資料映像：窓際族物語</div></AbsoluteFill>}
  </AbsoluteFill>;
 };

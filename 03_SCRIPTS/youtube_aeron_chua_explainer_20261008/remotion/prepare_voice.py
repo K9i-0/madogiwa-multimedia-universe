@@ -26,5 +26,6 @@ for i,r in enumerate(rows):
   clips.append(dict(r['clipAfter'],startFrame=cursor));cursor+=r['clipAfter']['durationInFrames']+15
  print(i,round(frames/30,2),q['kana'],flush=True)
 main=next(d['startFrame'] for d in out if d['scene']=='origin')-6
-manifest={'composition':{'width':1280,'height':720,'fps':30,'durationInFrames':cursor+150},'mainStartFrame':main,'creditsStartFrame':cursor+15,'voicevoxVersion':requests.get('http://127.0.0.1:50021/version').json(),'dialogue':out,'clips':clips}
+ending=next(d['startFrame'] for d in out if d.get('endingStart'))
+manifest={'endingStartFrame':ending,'composition':{'width':1280,'height':720,'fps':30,'durationInFrames':cursor+150},'mainStartFrame':main,'creditsStartFrame':cursor+15,'voicevoxVersion':requests.get('http://127.0.0.1:50021/version').json(),'dialogue':out,'clips':clips}
 (P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2));print('DURATION',manifest['composition']['durationInFrames']/30)

@@ -23,3 +23,8 @@ for dest,url in record['remote'].items():
   response=requests.get(url,timeout=30);response.raise_for_status();target.write_bytes(response.content)
 for name,(src,time) in record['frames'].items():
  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(time),'-i',str(p/'public'/src),'-frames:v','1',str(p/'public'/(name+'.png'))],check=True)
+
+# Official free-download source; credit required in the YouTube description.
+unity=json.loads((p.parent/'unity_source.json').read_text())
+if not (p/'public/unity.mp3').exists():
+ response=requests.get(unity['download'],timeout=60);response.raise_for_status();(p/'public/unity.mp3').write_bytes(response.content)

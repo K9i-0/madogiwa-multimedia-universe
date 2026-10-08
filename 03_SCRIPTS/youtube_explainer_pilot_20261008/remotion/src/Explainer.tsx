@@ -1,21 +1,47 @@
 import React from 'react';
 import {AbsoluteFill,Audio,Img,Sequence,staticFile,useCurrentFrame,interpolate,getInputProps} from 'remotion';
 import m from './edit-manifest.json';
-const images:Record<string,string>={intro:'episode_02.png',chair:'episode_01.png',movement:'episode_02.png',balcony:'episode_03.png',bar:'episode_04.png',conclusion:'episode_04.png'};
+// Central content is selected by the explanation, not by a fixed image template.
+const SceneContent:React.FC<{scene:string;frame:number}>=({scene,frame})=>{
+ const picture=(name:string,size=460)=><Img src={staticFile(name)} style={{width:size,height:size,objectFit:'contain'}}/>;
+ const stage:React.CSSProperties={position:'absolute',left:345,top:35,width:590,height:515,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center'};
+ if(scene==='intro')return <div style={stage}>
+  <div style={{fontSize:23,color:'#687367',marginBottom:28}}>窓際族物語</div>
+  <div style={{fontSize:45,fontWeight:700,lineHeight:1.65}}>窓際社員は、なぜ<br/>屋外へ移動するのか</div>
+  {frame>=m.dialogue[2].startFrame&&<div style={{fontSize:26,marginTop:35,color:'#8d397c'}}>※ 移動先には、建物の外側を含む</div>}
+ </div>;
+ if(scene==='movement'){
+  const outside=frame>=m.dialogue[7].startFrame+90;
+  return <div style={stage}>
+   <div style={{fontSize:31,fontWeight:600,marginBottom:30}}>社員の座席の移動</div>
+   <div style={{display:'flex',alignItems:'center',gap:14,fontSize:26}}>
+    <span>オフィス</span><span style={{color:'#899187'}}>→</span><span>窓際</span><span style={{color:'#899187'}}>→</span><span style={{color:outside?'#8d397c':'#9ba198',fontWeight:outside?700:400}}>ベランダ</span>
+   </div>
+   <div style={{marginTop:24}}>{picture(outside?'episode_03.png':'episode_02.png',300)}</div>
+  </div>;
+ }
+ if(scene==='conclusion')return <div style={stage}>
+  <div style={{fontSize:24,color:'#687367',marginBottom:28}}>今回の観察結果</div>
+  <div style={{fontSize:37,fontWeight:700,lineHeight:1.7}}>座席を屋外へ移すと、<br/>飲食店ができる。</div>
+  <div style={{display:'flex',alignItems:'center',gap:28,marginTop:28}}>{picture('episode_03.png',155)}<span style={{fontSize:30,color:'#899187'}}>→</span>{picture('episode_04.png',155)}</div>
+ </div>;
+ const name=scene==='chair'?'episode_01.png':scene==='balcony'?'episode_03.png':'episode_04.png';
+ return <div style={stage}>{picture(name,scene==='chair'?450:510)}
+  {scene==='chair'&&frame>=m.dialogue[5].startFrame&&<div style={{fontSize:29,fontWeight:600,marginTop:16}}>アーロンチュア <span style={{color:'#687367',fontSize:25}}>／ 段ボール製</span></div>}
+ </div>;
+};
 export const Explainer:React.FC=()=>{
  const f=useCurrentFrame();
  const active=m.dialogue.find(d=>f>=d.startFrame&&f<d.startFrame+d.durationInFrames);
  const previous=[...m.dialogue].reverse().find(d=>f>=d.startFrame);
  const scene=previous?.scene??'intro';
  const credits=f>=m.creditsStartFrame;
- // Switch the source panel when the narration reaches the balcony.
- const sceneImage=scene==='movement'&&f>=m.dialogue[7].startFrame+90?'episode_03.png':images[scene];
  return <AbsoluteFill style={{background:'#f3f0e6',fontFamily:'"Hiragino Sans", "Noto Sans JP", sans-serif',color:'#28353c'}}>
   {m.dialogue.map((d,i)=><Sequence key={i} from={d.startFrame} durationInFrames={d.durationInFrames}><Audio src={staticFile(d.audio)}/></Sequence>)}
   <Sequence durationInFrames={m.mainStartFrame}><Audio src={staticFile('intro.mp3')} volume={frame=>.12*interpolate(frame,[0,15,m.mainStartFrame-24,m.mainStartFrame],[0,1,1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}/></Sequence>
   {!getInputProps().omitMainMusic&&<Sequence from={m.mainStartFrame}><Audio src={staticFile('main.wav')} volume={frame=>.105*interpolate(frame,[0,18,m.composition.durationInFrames-m.mainStartFrame-30,m.composition.durationInFrames-m.mainStartFrame],[0,1,1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}/></Sequence>}
   {!credits&&<>
-   <Img src={staticFile(sceneImage)} style={{position:'absolute',left:380,top:30,width:520,height:520,objectFit:'contain'}}/>
+   <SceneContent scene={scene} frame={f}/>
    {(['zunda','metan'] as const).map((who,i)=>{
     const speaking=active?.who===who;
     const j=active?f-active.startFrame:0;

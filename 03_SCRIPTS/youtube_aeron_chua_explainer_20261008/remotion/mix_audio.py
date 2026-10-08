@@ -31,16 +31,14 @@ for c in m['clips']:
  fadeN=sr//5
  bgm[max(0,start-fadeN):start]*=np.linspace(1,.08,min(fadeN,start))[:,None]
  bgm[start+length:start+length+fadeN]*=np.linspace(.08,1,min(fadeN,n-start-length))[:,None]
-# End on Unity: crossfade from the main BGM, then lift after dialogue.
-end=m['endingStartFrame']*1600;cross=sr
+# Unity is a quiet ending cue; keep its level low even after dialogue.
+end=m['endingStartFrame']*1600;cross=2*sr
 bgm[end:end+cross]*=np.linspace(1,0,cross)[:,None];bgm[end+cross:]=0
-unity=decode(P/'public/unity.mp3','loudnorm=I=-30:TP=-3:LRA=11')[:n-end]
-unity=fade(unity,sr,int(1.5*sr));lift=m['creditsStartFrame']*1600-end
-if lift<len(unity):
- ramp=min(sr,len(unity)-lift);unity[lift:lift+ramp]*=np.linspace(1,2.5,ramp)[:,None];unity[lift+ramp:]*=2.5
+unity=decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-end]
+unity=fade(unity,2*sr,4*sr)
 bgm[end:]+=unity
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'frames':m['composition']['durationInFrames'],'voiceTargetLUFS':-18,'bgmTargetLUFS':-34,'clipTargetLUFS':-19,'premasterPeak':peak,'clips':m['clips'],'endingStartFrame':m['endingStartFrame'],'endingTrack':'TheFatRat - Unity','endingTargetLUFS':-30},ensure_ascii=False,indent=2))
+(P.parent/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'frames':m['composition']['durationInFrames'],'voiceTargetLUFS':-18,'bgmTargetLUFS':-34,'clipTargetLUFS':-19,'premasterPeak':peak,'clips':m['clips'],'endingStartFrame':m['endingStartFrame'],'endingTrack':'TheFatRat - Unity','endingTargetLUFS':-38,'endingLiftAfterDialogue':False,'endingCrossfadeSeconds':2,'endingFadeOutSeconds':4},ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

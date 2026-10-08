@@ -7,3 +7,15 @@ r['captionTextMatches']=all(d['caption'].replace('\n','')==d.get('captionText',d
 (p.parent/'qa_video.json').write_text(json.dumps(r,ensure_ascii=False,indent=2))
 subprocess.run(['ffmpeg','-v','error','-y','-i',str(f),'-vf','fps=1/23,scale=426:240,tile=3x4','-frames:v','1',str(p/'out/contact.jpg')],check=True)
 print('PASS',v['nb_read_frames'],'frames,',r['format']['duration'],'seconds')
+
+# Inspect every distinct central layout, including within-turn transitions.
+seen=set();frames=[]
+for d in m['dialogue']:
+ if d['view'] not in seen:
+  frames.append(d['startFrame']+min(20,d['durationInFrames']-1));seen.add(d['view'])
+ if d.get('nextView') and d['nextView'] not in seen:
+  frames.append(d['startFrame']+round(d['durationInFrames']*.8));seen.add(d['nextView'])
+frames+= [c['startFrame']+15 for c in m['clips']]
+expr='+'.join('eq(n,%d)'%n for n in sorted(frames))
+subprocess.run(['ffmpeg','-v','error','-y','-i',str(f),'-vf',"select='"+expr+"',scale=384:216,tile=4x8",'-frames:v','1',str(p/'out/all_center_views.jpg')],check=True)
+print('All central views captured:',len(frames))

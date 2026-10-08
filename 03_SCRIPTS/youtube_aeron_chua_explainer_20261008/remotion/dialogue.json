@@ -17,77 +17,77 @@
     "who": "metan",
     "text": "少なくとも、そば屋さんの体は支えているわ。",
     "scene": "intro",
-    "view": "intro",
+    "view": "seated",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "文字どおりの意味だったのだ。",
     "scene": "intro",
-    "view": "intro",
+    "view": "seated",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "有名な高級チェアを思わせる名前。",
     "scene": "intro",
-    "view": "intro",
+    "view": "aeron",
     "pause": 3
   },
   {
     "who": "metan",
     "text": "でも、その実態は段ボール。",
     "scene": "intro",
-    "view": "intro",
+    "view": "chair",
     "pause": 3
   },
   {
     "who": "metan",
     "text": "そして後には、社員による製造や、家庭向けのキットまで登場するの。",
     "scene": "intro",
-    "view": "intro",
+    "view": "roadmap",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "段ボールの椅子に、そんな展開があるのだ？",
     "scene": "intro",
-    "view": "intro",
+    "view": "roadmap",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "名前の元ネタは、ハーマンミラーのアーロンチェア。人間工学に基づいて設計された、有名なオフィスチェアね。",
     "scene": "origin",
-    "view": "origin",
+    "view": "aeron",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "長く座る仕事なら、椅子にこだわるのはわかるのだ。",
     "scene": "origin",
-    "view": "origin",
+    "view": "aeron",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "一方、窓際族物語に登場するのは、アーロン、チュア。「チュア」は、作中の会社名、アクシデンチュアから来ているわ。",
     "scene": "origin",
-    "view": "origin",
+    "view": "compare",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "名前を会社に寄せたら、素材まで段ボールになったのだ。",
     "scene": "origin",
-    "view": "origin",
+    "view": "compare",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "名前の響きは高級。見た目は手作り。この落差が、まず一つ目の見どころね。",
     "scene": "origin",
-    "view": "origin",
+    "view": "compare",
     "pause": 9
   },
   {
@@ -96,6 +96,27 @@
     "scene": "manga",
     "view": "manga1",
     "pause": 9
+  },
+  {
+    "who": "zunda",
+    "text": "入社初日からビール飲んでるとか、頭おかしいのだ。",
+    "scene": "manga",
+    "view": "beer",
+    "pause": 12
+  },
+  {
+    "who": "metan",
+    "text": "でも、椅子にはちゃんと座っているわ。",
+    "scene": "manga",
+    "view": "beer_seated",
+    "pause": 12
+  },
+  {
+    "who": "zunda",
+    "text": "社会人の合格ラインが低すぎるのだ。",
+    "scene": "manga",
+    "view": "beer_seated",
+    "pause": 20
   },
   {
     "who": "zunda",
@@ -108,14 +129,14 @@
     "who": "metan",
     "text": "前面には、手書きで「AERON CHUA」。そして本人の感想は、「快適です！」。",
     "scene": "manga",
-    "view": "manga1",
+    "view": "label",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "本人が満足してると、こっちが言いにくいのだ。",
     "scene": "manga",
-    "view": "manga1",
+    "view": "review",
     "pause": 9
   },
   {
@@ -129,35 +150,35 @@
     "who": "zunda",
     "text": "席の場所が変わっても、椅子は続投なのだ。",
     "scene": "manga",
-    "view": "manga2",
+    "view": "manga_compare",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "普通なら背景で済む備品だけれど、この作品では、椅子そのものに名前と存在感があるの。",
     "scene": "manga",
-    "view": "manga2",
+    "view": "chair",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "そして動画「アーロンチュアを作る男たち」では、社員たちが自分で椅子を作る様子が描かれるわ。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "team",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "買ったものですらなかったのだ。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "team",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "制作するのは、福ギュン、よーたん、そば屋さんの三人。段ボールを採寸して、切って、ガムテープで組み立てていくの。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "team",
     "pause": 9,
     "clipAfter": {
       "src": "diy.mp4",
@@ -170,28 +191,28 @@
     "who": "zunda",
     "text": "ところで、業務中にこんなことしてて、この人たちは暇なのだ？",
     "scene": "diy",
-    "view": "workshop",
+    "view": "assembly",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "少なくとも、この動画では三人がかりで段ボールの椅子を作っているわね。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "team",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "椅子を買うより人件費がかかってそうなのだ。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "team",
     "pause": 20
   },
   {
     "who": "metan",
     "text": "よーたんが採寸や組み立てを担当して、最後に名前を書き入れるの。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "lettering",
     "pause": 9
   },
   {
@@ -234,21 +255,21 @@
     "who": "metan",
     "text": "技術の責任者が、自ら製造工程に参加しているとも言えるわね。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "assembly",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "技術力を発揮する場所、そこしかなかったのだ？",
     "scene": "diy",
-    "view": "workshop",
+    "view": "assembly",
     "pause": 20
   },
   {
     "who": "metan",
     "text": "完成した椅子には、そば屋さんが座って仕上がりを確認するわ。",
     "scene": "diy",
-    "view": "workshop",
+    "view": "seated",
     "pause": 9,
     "clipAfter": {
       "src": "diy.mp4",
@@ -261,70 +282,71 @@
     "who": "zunda",
     "text": "第一話から感想が変わらないのだ。この人に座らせたら、何でも検査を通りそうなのだ。",
     "scene": "diy",
-    "view": "seated",
+    "view": "review_video",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "さらに、チュアゴスティーニの「週刊窓際を作る」では、アーロンチュアが組み立てキットとして扱われるの。",
     "scene": "kit",
-    "view": "kit",
+    "view": "bundle",
     "pause": 9
   },
   {
     "who": "zunda",
-    "text": "社内工作が、家庭向けに展開してるのだ。",
+    "text": "資源ごみかと思ったのだ。",
     "scene": "kit",
-    "view": "kit",
-    "pause": 9
+    "view": "bundle",
+    "pause": 22
   },
   {
     "who": "metan",
     "text": "創刊号は、材料一式が付いて三百九十九円。しかも、創刊号だけで実物大の椅子を作れるわ。",
     "scene": "kit",
-    "view": "kit",
+    "view": "price",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "背もたれが届くまで何か月も待つわけじゃないのだ。そこは親切なのだ。",
     "scene": "kit",
-    "view": "kit",
+    "view": "price",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "届くのは、大きな段ボールの束に括り付けられた冊子と、ガムテープ。椅子の名前は、板にあらかじめ書いてあるの。",
     "scene": "kit",
-    "view": "kit",
+    "view": "contents",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "さっきの手書き工程まで、商品化で改善されてるのだ。",
     "scene": "kit",
-    "view": "kit",
+    "view": "lettered_bundle",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "CMでは、やめ太郎が組み立てるわ。さらに後の号では、そば屋さんの仮面も登場するの。",
     "scene": "kit",
-    "view": "kitroom",
-    "pause": 9
+    "view": "kitbuild",
+    "pause": 9,
+    "nextView": "mask"
   },
   {
     "who": "zunda",
     "text": "椅子に座りたいのか、そば屋になりたいのか、目的が変わってきたのだ。",
     "scene": "kit",
-    "view": "kitroom",
+    "view": "mask",
     "pause": 9
   },
   {
     "who": "metan",
     "text": "目指しているのは、家に窓際の一角を再現すること。椅子だけでなく、窓際族の日常までセットなのね。",
     "scene": "kit",
-    "view": "kitroom",
+    "view": "home",
     "pause": 9,
     "clipAfter": {
       "src": "cm.mp4",
@@ -337,7 +359,7 @@
     "who": "zunda",
     "text": "自宅にまで、会社の窓際を持ち込まなくてもいいのだ。",
     "scene": "kit",
-    "view": "kitroom",
+    "view": "home",
     "pause": 9
   },
   {
@@ -358,21 +380,21 @@
     "who": "metan",
     "text": "高級チェアを思わせる名前に、身近な材料。",
     "scene": "summary",
-    "view": "summary",
+    "view": "compare",
     "pause": 3
   },
   {
     "who": "metan",
     "text": "そして、何があっても「快適です！」と言うそば屋さん。",
     "scene": "summary",
-    "view": "summary",
+    "view": "review",
     "pause": 3
   },
   {
     "who": "metan",
     "text": "アーロンチュアには、この作品らしさが詰まっているわ。",
     "scene": "summary",
-    "view": "summary",
+    "view": "chair",
     "pause": 9
   },
   {
@@ -386,14 +408,14 @@
     "who": "metan",
     "text": "座り心地については、そば屋さんの評価をご参照ください。",
     "scene": "summary",
-    "view": "summary",
+    "view": "review",
     "pause": 9
   },
   {
     "who": "zunda",
     "text": "最後までレビューが一人分なのだ。",
     "scene": "summary",
-    "view": "summary",
+    "view": "review",
     "pause": 9
   }
 ]

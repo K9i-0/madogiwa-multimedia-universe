@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>窓際族物語 台本編集</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f4ee;color:#29332e;font:16px system-ui,sans-serif}main{max-width:920px;margin:30px auto;padding:0 20px 100px}h1{font-size:25px;margin-bottom:8px}p{line-height:1.7;color:#657066}button,input,textarea,select{font:inherit}button{cursor:pointer;background:white;border:1px solid #c9cfc6;border-radius:7px;padding:9px 13px;color:inherit}button:disabled{opacity:.35;cursor:default}button:hover:not(:disabled){background:#eef1e9}.primary{background:#365f46;color:white}.primary:hover:not(:disabled){background:#254633}input,textarea,select{border:1px solid #c9cfc6;border-radius:6px;padding:10px;background:#fff;width:100%;color:inherit}textarea{resize:vertical;line-height:1.7}label{display:block;font-size:13px;color:#667064;margin:10px 0 5px}.toolbar{position:sticky;top:0;background:#f5f4eef5;padding:12px 0;z-index:2;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid #ddd}article{background:white;padding:18px;margin:16px 0;border:1px solid #dde1d8;border-left:4px solid #947297;border-radius:9px}article[data-who=zunda]{border-left-color:#6b984b}.row{display:flex;gap:10px;align-items:center}.row select{width:145px}.row input{flex:1;min-width:70px}.number{font-size:13px;color:#768072;min-width:35px}.actions{display:flex;gap:6px;margin-top:10px;justify-content:flex-end}.actions button{font-size:13px;padding:5px 10px}#status{font-size:13px;align-self:center;color:#4c684f}.hint{font-size:13px}details{margin-top:10px}summary{cursor:pointer;color:#657066;font-size:14px}dialog{width:min(850px,95vw);border:1px solid #ccc;border-radius:10px}dialog textarea{height:55vh}.file{display:none}@media(max-width:600px){.row{flex-wrap:wrap}.row input{flex-basis:100%}}
+</style>
+<main><h1>窓際族物語 台本編集</h1><p>セリフを直して、台本を丸ごとチャットへ。画面の内容や「ここをもっと面白く」などの相談も一緒に渡せます。</p>
+<div class="toolbar"><button class="primary" id="copy">台本を全部コピー</button><button id="save">編集データを保存</button><button id="load">編集データを開く</button><button id="new">新しい台本</button><span id="status" role="status" aria-live="polite"></span></div>
+<label for="title">タイトル</label><input id="title"><label for="brief">全体の方針・修正依頼</label><textarea id="brief" rows="2" placeholder="例：導入を短く。めたんは真面目に解説、ずんだもんは視聴者目線でツッコミ。"></textarea>
+<p class="hint">上から順に進みます。秒数は音声生成時に決め直します。編集内容はこのブラウザーに自動保存します。別の環境に移すときは「編集データを保存」。</p>
+<div id="lines"></div><button id="append">＋ 最後にセリフを追加</button>
+<input class="file" type="file" id="file" accept="application/json,.json">
+<dialog id="export"><h2>チャットに貼る台本</h2><p id="copyhint">全選択してコピーできます。</p><textarea id="output" aria-label="コピー用台本"></textarea><button id="close">閉じる</button></dialog></main>
+<script id="seed" type="application/json">{"version": 1, "title": "窓際社員は、なぜ屋外へ移動するのか", "brief": "普通の学術解説のような進行と、漫画内の馬鹿らしい事実のギャップを狙う。装飾は控えめ。中央はスライド・画像・必要に応じて短い過去動画を使い分ける。", "lines": [{"who": "metan", "scene": "導入", "text": "こんにちは。今回は、窓際族物語における、社員の座席移動について解説するわ。", "visual": "テーマの文字スライド", "note": ""}, {"who": "zunda", "scene": "導入", "text": "席替えの話なのだ？　ずいぶん平和なテーマなのだ。", "visual": "", "note": ""}, {"who": "metan", "scene": "導入", "text": "ええ。ただし、移動先に建物の外側が含まれます。", "visual": "", "note": ""}, {"who": "zunda", "scene": "導入", "text": "もう平和じゃないのだ。", "visual": "", "note": "驚きの表情"}, {"who": "metan", "scene": "椅子の紹介", "text": "まず、入社直後のそば屋さんに与えられた椅子を見てみましょう。", "visual": "原作第1話の画像。「段ボール製」を注釈で表示", "note": ""}, {"who": "metan", "scene": "椅子の紹介", "text": "その名も、アーロンチュア。段ボール製です。", "visual": "", "note": ""}, {"who": "zunda", "scene": "椅子の紹介", "text": "高級そうな名前で、素材をごまかしているのだ。", "visual": "", "note": ""}, {"who": "metan", "scene": "席の移動", "text": "その後、本来の席が窓際だったと判明。さらに翌朝には、ベランダへ移動します。", "visual": "オフィス → 窓際 → ベランダの図解と原作画像", "note": ""}, {"who": "zunda", "scene": "席の移動", "text": "窓際って、窓の内側のことじゃないのだ？", "visual": "", "note": "驚きの表情"}, {"who": "metan", "scene": "環境の評価", "text": "ここで注目したいのが、本人による環境の評価です。", "visual": "原作第3話の画像", "note": ""}, {"who": "metan", "scene": "環境の評価", "text": "冬の屋外は寒い。しかし、ビールが冷えたままになるというメリットがあります。", "visual": "", "note": ""}, {"who": "zunda", "scene": "環境の評価", "text": "労働環境を、ビールの保存状態で評価しないでほしいのだ。", "visual": "", "note": ""}, {"who": "metan", "scene": "立ち飲み屋の開店", "text": "そして、そば屋さんはベランダに立ち飲み屋を開店します。", "visual": "原作第4話の画像", "note": ""}, {"who": "zunda", "scene": "立ち飲み屋の開店", "text": "席を戻してもらうより先に、店を出したのだ。", "visual": "", "note": ""}, {"who": "metan", "scene": "まとめ", "text": "つまり、座席の屋外移動が、飲食店の形成につながった事例と言えるわね。", "visual": "観察結果の一文と、ベランダ・立ち飲み屋の比較画像", "note": ""}, {"who": "zunda", "scene": "まとめ", "text": "学術的にまとめても、やっていることはめちゃくちゃなのだ。", "visual": "", "note": ""}]}</script>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),key='mmu-scenario-editor-v1';
+const initial=JSON.parse($('seed').textContent);let data=structuredClone(initial);
+const blank=()=>({who:'metan',scene:'',text:'',visual:'',note:''});
+function valid(d){return d&&d.version===1&&typeof d.title==='string'&&typeof d.brief==='string'&&Array.isArray(d.lines)&&d.lines.length<=1000&&d.lines.every(l=>l&&['metan','zunda'].includes(l.who)&&['scene','text','visual','note'].every(k=>typeof l[k]==='string'));}
+try{const raw=localStorage.getItem(key);if(raw){const d=JSON.parse(raw);if(valid(d))data=d;}}catch{}
+function persist(){try{localStorage.setItem(key,JSON.stringify(data));$('status').textContent='自動保存済み';}catch{$('status').textContent='自動保存できません。「編集データを保存」を使ってください。';}}
+function element(tag,props={}){const e=document.createElement(tag);Object.assign(e,props);return e;}
+function render(){
+ $('title').value=data.title;$('brief').value=data.brief;$('lines').replaceChildren();
+ data.lines.forEach((l,i)=>{
+ const card=element('article');card.dataset.who=l.who;
+ const row=element('div',{className:'row'});row.append(element('span',{className:'number',textContent:String(i+1).padStart(2,'0')}));
+ const who=element('select');who.setAttribute('aria-label',`${i+1} 話者`);
+ [['metan','四国めたん'],['zunda','ずんだもん']].forEach(([value,text])=>who.append(element('option',{value,textContent:text})));who.value=l.who;
+ who.onchange=()=>{l.who=who.value;card.dataset.who=l.who;persist();};row.append(who);
+ const scene=element('input',{value:l.scene,placeholder:'シーン名（例：導入）'});scene.setAttribute('aria-label',`${i+1} シーン名`);scene.oninput=()=>{l.scene=scene.value;persist();};row.append(scene);card.append(row);
+ function field(k,label,rows,parent){const id=`${k}-${i}`;parent.append(element('label',{htmlFor:id,textContent:label}));const t=element('textarea',{id,value:l[k],rows});t.oninput=()=>{l[k]=t.value;persist();};parent.append(t);}
+ field('text','セリフ',3,card);
+ const detail=element('details');detail.open=!!(l.visual||l.note);detail.append(element('summary',{textContent:'画面の内容・修正メモ'}));field('visual','画面（スライド・画像・動画・リアクションなど）',2,detail);field('note','修正メモ（読み上げません）',2,detail);card.append(detail);
+ const actions=element('div',{className:'actions'});
+ function action(text,fn,disabled=false){const b=element('button',{textContent:text,disabled});b.onclick=()=>{fn();persist();render();};actions.append(b);}
+ action('↑',()=>{[data.lines[i-1],data.lines[i]]=[data.lines[i],data.lines[i-1]];},i===0);
+ action('↓',()=>{[data.lines[i+1],data.lines[i]]=[data.lines[i],data.lines[i+1]];},i===data.lines.length-1);
+ action('＋ この下に追加',()=>data.lines.splice(i+1,0,{...blank(),scene:l.scene,who:l.who==='metan'?'zunda':'metan'}));
+ action('削除',()=>{if(confirm('このセリフを削除しますか？'))data.lines.splice(i,1);});card.append(actions);$('lines').append(card);
+ });
+}
+$('title').oninput=()=>{data.title=$('title').value;persist();};$('brief').oninput=()=>{data.brief=$('brief').value;persist();};
+$('append').onclick=()=>{data.lines.push(blank());persist();render();$('lines').lastElementChild?.scrollIntoView({behavior:'smooth'});};
+function exportText(){return ['# '+(data.title||'無題の台本'),'','以下が編集後の台本です。修正メモを踏まえて練り直してください。明示したセリフや構成は尊重し、変更した点も教えてください。','','## 全体の方針・修正依頼',data.brief||'（指定なし）','','## セリフのプロット',...data.lines.flatMap((l,i)=>['',`### ${String(i+1).padStart(2,'0')}｜${l.scene||'シーン未指定'}｜${l.who==='metan'?'四国めたん':'ずんだもん'}`,l.text||'（セリフ未記入）',...(l.visual?['画面：'+l.visual]:[]),...(l.note?['修正メモ：'+l.note]:[])])].join('\n');}
+$('copy').onclick=async()=>{const text=exportText();try{await navigator.clipboard.writeText(text);$('status').textContent='台本全体をコピーしました。チャットに貼り付けてください。';}catch{$('output').value=text;$('export').showModal();$('output').focus();$('output').select();$('copyhint').textContent='自動コピーできないため、⌘C / Ctrl+C でコピーしてください。';}};
+$('close').onclick=()=>$('export').close();
+$('save').onclick=()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=element('a',{href:url,download:(data.title||'scenario').replace(/[\\/:*?"<>|]/g,'_')+'.json'});a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('status').textContent='編集データを保存しました';};
+$('load').onclick=()=>$('file').click();$('file').onchange=async()=>{const file=$('file').files[0];if(!file)return;try{const next=JSON.parse(await file.text());if(!valid(next))throw Error('形式が違います');if(!confirm('現在の台本を、選んだ編集データに置き換えますか？'))return;data=next;persist();render();}catch{$('status').textContent='読み込めません。このエディターで保存したJSONを選んでください。';}finally{$('file').value='';}};
+$('new').onclick=()=>{if(!confirm('新しい台本に切り替えますか？ 残す台本は先に「編集データを保存」してください。'))return;data={version:1,title:'',brief:'',lines:[blank()]};persist();render();};
+render();
+</script></html>

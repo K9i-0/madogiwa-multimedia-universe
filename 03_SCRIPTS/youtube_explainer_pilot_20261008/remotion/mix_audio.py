@@ -37,6 +37,6 @@ save(P/'public/mixed.wav',voice)
 if args.main:
  save(P/'public/main.wav',decode(args.main))
  subprocess.run(['npx','remotion','render','src/index.ts','Explainer','out/visuals.mp4','--codec=h264','--concurrency=2','--muted','--overwrite','--log=error'],cwd=P,check=True)
-subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/visuals.mp4'),'-i',str(P/'public/mixed.wav'),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-movflags','+faststart',str(P.parent/('preview_explainer_pending_bgm.mp4' if args.preview_without_main else 'final_remotion_explainer_pilot_flexible.mp4'))],check=True)
+subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/visuals.mp4'),'-i',str(P/'public/mixed.wav'),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-movflags','+faststart',str(P.parent/('preview_explainer_pending_bgm.mp4' if args.preview_without_main else 'final_remotion_explainer_pilot_facing.mp4'))],check=True)
 record={'mainInput':str(args.main) if args.main else None,'mainSha256':hashlib.sha256(args.main.read_bytes()).hexdigest() if args.main else None,'mainStartFrame':m['mainStartFrame'],'sampleRate':sr,'voiceTargetLUFS':-18,'bgmTargetLUFS':-34,'premasterPeak':peak,'samples':n}
 (P.parent/'mix_record.json').write_text(json.dumps(record,ensure_ascii=False,indent=2));print(record)

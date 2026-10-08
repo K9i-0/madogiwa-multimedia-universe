@@ -58,3 +58,7 @@
 出力：`final_remotion_explainer_pilot_flexible.mp4`。音声は前版からストリームコピー。旧版2本も比較用に保持。
 
 検証：TypeScript、代表シーン画像、全編デコード成功。1280×720・30fps・2259フレーム・75.3秒。前版と音声PCMが一致。聴感の通し監査は未実施。詳細は `qa_flexible.json`。
+
+## 向き合わせ調整
+
+左側のずんだもんだけをCSS scaleX(-1)で左右反転。口パク・まばたき・驚き差分すべてに適用。完成版は `final_remotion_explainer_pilot_facing.mp4`。音声はflexible版からコピー。

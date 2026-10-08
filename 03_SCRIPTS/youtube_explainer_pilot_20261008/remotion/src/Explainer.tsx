@@ -48,7 +48,7 @@ export const Explainer:React.FC=()=>{
     const open=speaking&&(active?.envelope[j]??0)>.023;
     const blink=(f+(i?49:0))%127<4;
     const mood=blink?'blink':speaking&&'mood' in active&&active.mood==='surprise'?'surprise':'normal';
-    return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?940:20,bottom:0,width:320}}/>;
+    return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?940:20,bottom:0,width:320,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;
    })}
    {active&&<div style={{position:'absolute',left:80,right:80,bottom:27,minHeight:106,display:'flex',alignItems:'center',justifyContent:'center'}}>
     <div style={{fontSize:33,fontWeight:800,lineHeight:1.5,textAlign:'center',whiteSpace:'pre-line',color:active.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'7px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0003'}}>{active.caption}</div>

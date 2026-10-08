@@ -1,0 +1,31 @@
+{
+  "sampleRate": 48000,
+  "frames": 8423,
+  "voiceTargetLUFS": -18,
+  "bgmTargetLUFS": -34,
+  "clipTargetLUFS": -19,
+  "premasterPeak": 0.8105483055114746,
+  "clips": [
+    {
+      "src": "diy.mp4",
+      "sourceStartFrame": 240,
+      "durationInFrames": 150,
+      "label": "アーロンチュアを作る男たち",
+      "startFrame": 3537
+    },
+    {
+      "src": "diy.mp4",
+      "sourceStartFrame": 750,
+      "durationInFrames": 105,
+      "label": "完成した椅子に着座",
+      "startFrame": 5032
+    },
+    {
+      "src": "cm.mp4",
+      "sourceStartFrame": 480,
+      "durationInFrames": 120,
+      "label": "週刊 窓際を作る",
+      "startFrame": 6989
+    }
+  ]
+}

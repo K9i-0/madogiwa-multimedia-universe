@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const archive=path.join(root,'release.zip');
+fs.rmSync(archive,{force:true});
+execFileSync('zip',['-qr',archive,'README.md','set.json','all-members-preview.gif','all-members-still.png','stickers','reports','-x','*/.DS_Store'],{cwd:root});
+execFileSync('unzip',['-t',archive],{stdio:'inherit'});
+console.log(archive);

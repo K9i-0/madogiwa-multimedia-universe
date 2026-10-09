@@ -6,7 +6,7 @@
 顔の左側に伸びているのは鼻で、バクのように自由に動かせる。
 言葉は話さない（鳴き声・効果音のみ）。
 木槌を持ち、居眠りしている社員を「BONK!」と叩いて起こす。
-2026-10-09 スタンプ制作の依頼者確認：手・腕はない。小道具は顔の左下にある短い鼻先で柄の端を持つ。鼻を長く伸ばして巻き付ける持ち方ではない。持ち方の参照：`27_LINE_STICKERS/animated_members_v2/inputs/yumemin-holding-reference.png`。
+2026-10-09 スタンプ制作の依頼者確認：手・腕はない。小道具は顔の左下にある短い鼻先で柄の端を持つ。鼻を長く伸ばして巻き付ける持ち方ではない。持ち方の参照：`27_LINE_STICKERS/sets/01/source/yumemin/holding-reference.png`。
 人物同一性（唯一のハード条件）: `Yumemin.jpg`と同じキャラクター。青い丸い体、白い後部、黒い点目、顔の左側から伸びるバク状の鼻からなる固有シルエットを識別基準にする。持ち物、表情、発声、性格、能力、役割は固定しない。
 画像ファイル：Yumemin.jpg
 ボクセルモデル：`04_GAME_ASSETS/voxel/models/yumemin.glb`（木槌アーム＋鼻のLocomotionリグ、脚なし。再生成は`04_GAME_ASSETS/voxel/tools/build_yumemin_voxel_model.py`）

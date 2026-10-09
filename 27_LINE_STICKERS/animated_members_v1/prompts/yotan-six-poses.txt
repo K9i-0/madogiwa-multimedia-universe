@@ -1,0 +1,10 @@
+Create a SIX-FRAME animation sprite sheet, 3 columns by 2 rows, every cell square, overall 3:2 landscape. Reference1 is the approved start pose. Reference2 shows the desired extended pointing pose and identity. Same character and style in every cell, exactly same scale and head position and guitar position, transparent background, no text, no numbers, no gutters or grid lines. Generous safety margin around the character within each cell.
+Yotan blonde man with purple sunglasses, smiling, black leather jacket, sunburst electric guitar strapped across torso and small island on viewer right. Freeze head, torso, guitar and his RIGHT arm on viewer LEFT, which always supports the guitar body with hand on pickguard.
+Animate ONLY his LEFT arm on viewer RIGHT, smooth succession, each following pose advances gradually:
+cell1 top-left: left hand still holds guitar neck, reference1 pose.
+cell2 top-middle: left hand lifted only a little off guitar neck, elbow still low, palm relaxed, hand just above neck.
+cell3 top-right: left elbow lifted to chest height, hand halfway between neck and final position, index finger beginning to extend, arm still clearly bent.
+cell4 bottom-left: left upper arm points up-right 20 degrees above horizontal; elbow still bent, pointing hand at eye height, index finger now straight. This is an intermediate pose, NOT fully extended.
+cell5 bottom-middle: elbow almost straight, index finger points up-right, hand just above head height, arm about 80% extended.
+cell6 bottom-right: final left arm fully straight and extended diagonally upper-right, index pointing, other fingers curled. Match reference2's final pointing location.
+Every cell EXACTLY TWO arms and TWO hands. In cells2-6 NO hand is left on the guitar neck. ONE continuous LEFT sleeve from left shoulder through left elbow to left wrist. No duplicated limb. Do not change head angle, face, expression, shoulder position, guitar or right supporting hand. Flat cel colors, bold clean black outlines, no photoreal texture. This is a usable animation keyframe sequence, not six independent poses.

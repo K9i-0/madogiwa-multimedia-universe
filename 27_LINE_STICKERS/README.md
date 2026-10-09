@@ -4,11 +4,11 @@
 
 | セット | 内容・状態 | 確認用 |
 |---|---|---|
-| [第1弾](sets/01/README.md) | 全8名・動くスタンプ8点。絵柄・動作採用済み、LINE未申請 | [全員GIF](sets/01/all-members-preview.gif) / [静止画](sets/01/all-members-still.png) |
+| [第1弾](sets/01/README.md) | 全8名・動く版＋[静止版](sets/01/static/README.md)。LINE未申請 | [全員GIF](sets/01/all-members-preview.gif) / [静止画](sets/01/all-members-still.png) |
 
 ## ファイルの見方
 
-各セットの `stickers/<メンバーID>/` に完成版を置く。
+各セットの `stickers/<メンバーID>/` に動く版と確認用静止画、`static/images/` に静止スタンプの申請用PNGを置く。
 
 - `preview.gif`：Slackなどで動きを確認するループGIF。
 - `sticker.png`：透過APNG。拡張子はPNGだがアニメーションを含む。

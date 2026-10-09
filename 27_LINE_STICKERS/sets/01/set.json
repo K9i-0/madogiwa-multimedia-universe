@@ -3,8 +3,6 @@
   "title": "第1弾",
   "status": "approved",
   "lineSubmission": "not_submitted",
-  "mainImage": "not_created",
-  "tabImage": "not_created",
   "members": [
     {
       "id": "sobaya",
@@ -54,5 +52,20 @@
       "caption": "起きろ！",
       "motion": "手なし。短い鼻先で木槌の柄の端を持ち、本体ごと振りかぶって叩く"
     }
-  ]
+  ],
+  "variants": {
+    "animated": {
+      "directory": "stickers",
+      "mainImage": "not_created",
+      "tabImage": "not_created",
+      "lineSubmission": "not_submitted"
+    },
+    "static": {
+      "directory": "static",
+      "mainImage": "static/images/main.png",
+      "tabImage": "static/images/tab.png",
+      "imageStatus": "ready",
+      "lineSubmission": "not_submitted"
+    }
+  }
 }

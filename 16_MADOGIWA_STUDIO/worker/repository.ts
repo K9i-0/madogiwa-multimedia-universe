@@ -44,9 +44,6 @@ export type CreateInputAssetInput = {
   uploadedBy: string;
 };
 
-type EpisodeSummaryBase = Omit<EpisodeSummary, "members" | "primary_video_poster_url"> & {
-  primary_video_poster_r2_key: string | null;
-};
 type EpisodeMemberJoin = MemberRow & { episode_id: string };
 
 function createStudioId(): string {
@@ -65,30 +62,17 @@ export async function listEpisodes(db: D1Database, options?: { featuredOnly?: bo
     db
       .prepare(
         `SELECT e.*,
-          (SELECT COUNT(*) FROM generations g WHERE g.episode_id = e.id) AS generation_count,
-          (SELECT COUNT(*) FROM videos v JOIN generations g ON g.id = v.generation_id
-            WHERE g.episode_id = e.id AND v.status != 'archived') AS video_count,
-          (SELECT COUNT(*) FROM input_assets a JOIN generations g ON g.id = a.generation_id
-            WHERE g.episode_id = e.id AND a.status != 'archived') AS input_count,
-          COALESCE((SELECT r.id FROM videos r WHERE r.id = e.representative_video_id AND r.episode_id = e.id AND r.status NOT IN ('archived', 'upload_pending')), (SELECT v.id FROM videos v JOIN generations g ON g.id = v.generation_id
-            WHERE g.episode_id = e.id AND v.status NOT IN ('archived', 'upload_pending')
-            ORDER BY v.display_order, v.created_at DESC, v.id LIMIT 1)) AS primary_video_id,
-          CASE WHEN EXISTS(SELECT 1 FROM videos r WHERE r.id = e.representative_video_id AND r.episode_id = e.id AND r.status NOT IN ('archived', 'upload_pending')) THEN (SELECT r.poster_r2_key FROM videos r WHERE r.id = e.representative_video_id) ELSE (SELECT v.poster_r2_key FROM videos v JOIN generations g ON g.id = v.generation_id
-            WHERE g.episode_id = e.id AND v.status NOT IN ('archived', 'upload_pending')
-            ORDER BY v.display_order, v.created_at DESC, v.id LIMIT 1) END AS primary_video_poster_r2_key,
-          EXISTS(SELECT 1 FROM videos v JOIN generations g ON g.id = v.generation_id
-            WHERE g.episode_id = e.id AND v.is_featured = 1
-              AND v.status NOT IN ('archived', 'upload_pending')) AS has_featured_video,
-          (SELECT MAX(v.created_at) FROM videos v JOIN generations g ON g.id = v.generation_id
-            WHERE g.episode_id = e.id AND v.is_featured = 1
-              AND v.status NOT IN ('archived', 'upload_pending')) AS featured_video_created_at,
-          (SELECT p.label FROM prompt_versions p JOIN generations g ON g.id = p.generation_id
-            WHERE g.episode_id = e.id AND p.is_current = 1
-            ORDER BY g.version DESC LIMIT 1) AS prompt_label
-         FROM episodes e
-         ORDER BY e.display_order, e.created_at DESC, e.id`,
+          (SELECT COUNT(*) FROM generations g WHERE g.episode_id=e.id) AS generation_count,
+          (SELECT COUNT(*) FROM youtube_publications p WHERE p.episode_id=e.id) AS video_count,
+          (SELECT COUNT(*) FROM input_assets a WHERE a.episode_id=e.id AND a.status!='archived') AS input_count,
+          v.id AS primary_video_id,v.youtube_id AS primary_youtube_id,v.poster_url AS primary_video_poster_url,
+          COALESCE(v.is_featured,0) AS has_featured_video,
+          CASE WHEN v.is_featured=1 THEN v.created_at ELSE NULL END AS featured_video_created_at,
+          (SELECT p.label FROM prompt_versions p JOIN generations g ON g.id=p.generation_id WHERE g.episode_id=e.id AND p.is_current=1 ORDER BY g.version DESC LIMIT 1) AS prompt_label
+        FROM episodes e LEFT JOIN published_youtube_videos v ON v.episode_id=e.id
+        ORDER BY e.display_order,e.created_at DESC,e.id`,
       )
-      .all<EpisodeSummaryBase>(),
+      .all<Omit<EpisodeSummary,"members">>(),
     db
       .prepare(
         `SELECT em.episode_id, m.* FROM episode_members em
@@ -96,15 +80,9 @@ export async function listEpisodes(db: D1Database, options?: { featuredOnly?: bo
       )
       .all<EpisodeMemberJoin>(),
   ]);
-  const episodes = episodeResult.results.map((row) => {
-    const { primary_video_poster_r2_key, ...episode } = row;
-    return {
-      ...episode,
-      primary_video_poster_url:
-        episode.primary_video_id && primary_video_poster_r2_key ? `/posters/${episode.primary_video_id}` : null,
-      members: memberResult.results.filter((member) => member.episode_id === episode.id),
-    };
-  });
+  const episodes = episodeResult.results.map(episode => ({
+    ...episode, members: memberResult.results.filter(member => member.episode_id === episode.id),
+  }));
   return options?.featuredOnly ? episodes.filter((episode) => episode.has_featured_video === 1) : episodes;
 }
 

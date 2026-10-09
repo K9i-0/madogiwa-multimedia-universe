@@ -3,11 +3,11 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["**/.local/**", ".output", "dist", "design-preview/dist", "dist-ar-preview", "src/routeTree.gen.ts", "worker-configuration.d.ts"] },
+  { ignores: ["**/.local/**", ".output", "dist", "design-preview/dist", "dist-ar-preview", "youtube-preview/dist", "youtube-preview/root-route.ts", "youtube-preview/vite.config.ts", "src/routeTree.gen.ts", "**/worker-configuration.d.ts"] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ["tools/**/*.mjs", "ar-preview/*.mjs"],
+    files: ["tools/**/*.mjs", "ar-preview/*.mjs", "youtube-auth/*.mjs"],
     languageOptions: { globals: globals.node },
   },
   {

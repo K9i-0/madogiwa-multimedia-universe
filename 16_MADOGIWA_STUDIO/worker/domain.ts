@@ -10,6 +10,8 @@ export const inputAssetStatuses = ["upload_pending", "ready", "archived"] as con
 export type InputAssetStatus = (typeof inputAssetStatuses)[number];
 
 export type EpisodeRow = {
+  content_kind?: "story" | "explainer" | "music" | "other";
+  production_notes_enabled?: number;
   id: string;
   studio_id: string;
   slug: string;
@@ -97,6 +99,7 @@ export type GenerationDetail = GenerationRow & {
 };
 
 export type EpisodeSummary = EpisodeRow & {
+  primary_youtube_id?: string | null;
   generation_count: number;
   video_count: number;
   input_count: number;

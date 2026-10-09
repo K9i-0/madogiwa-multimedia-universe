@@ -3,16 +3,25 @@ import startHandler from "@tanstack/react-start/server-entry";
 import { requireAdmin } from "./auth";
 import { handleApi } from "./api";
 import { errorResponse, HttpError } from "./http";
-import { serveVideo, serveVideoPoster } from "./media";
+import { serveVideoPoster } from "./media";
 import { handleMcp } from "./mcp";
 import { serveInputAsset } from "./input-assets";
 import { serveGalleryImage } from "./gallery-images";
 
+import { syncYouTube } from "./youtube";
+
 export default {
+  async scheduled(_event, env) {
+    const result = await syncYouTube(env);
+    console.info({ event: "youtube_sync", ...result });
+  },
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
     try {
-      if (url.pathname.startsWith("/clip-media/")) return await serveClipAsset(request, env.MEDIA);
+      if (url.pathname.startsWith("/clip-media/")) {
+        if (/\.(mp4|webm|mov)$/i.test(url.pathname)) throw new HttpError(410, "動画配信はYouTubeへ移行しました");
+        return await serveClipAsset(request, env.MEDIA);
+      }
 
       if (url.pathname === "/mcp" || url.pathname.startsWith("/mcp/")) {
         const admin = await requireAdmin(request, env, ctx);
@@ -26,7 +35,7 @@ export default {
       if (url.pathname.startsWith("/media/")) {
         const videoId = url.pathname.slice("/media/".length);
         if (!videoId) throw new HttpError(404, "動画が見つかりません");
-        return await serveVideo(request, env, ctx, videoId);
+        throw new HttpError(410, "動画配信はYouTubeへ移行しました");
       }
 
       if (url.pathname.startsWith("/posters/")) {

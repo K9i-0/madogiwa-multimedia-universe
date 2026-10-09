@@ -1,3 +1,4 @@
+if (process.argv.includes('--upload')) { console.error('R2への動画アップロードは廃止しました。YouTube IDとクリップの開始/終了時刻を登録してください。'); process.exit(1); }
 import { readFile, writeFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';

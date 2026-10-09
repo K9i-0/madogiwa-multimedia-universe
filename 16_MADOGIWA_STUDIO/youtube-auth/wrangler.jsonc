@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "madogiwa-youtube-auth",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "routes": [{"pattern": "youtube-auth.madogiwa.work", "custom_domain": true}],
+  "d1_databases": [{"binding": "DB", "database_name": "madogiwa-youtube-auth", "database_id": "026a6382-56ef-4ac7-b799-465dd3964e21", "migrations_dir": "migrations"}],
+  "vars": {"PUBLIC_ORIGIN": "https://youtube-auth.madogiwa.work", "EXPECTED_CHANNEL_ID": "UCyQtPu94OaiGxFdd2A6bXdw"},
+  "observability": {"enabled": false}
+}

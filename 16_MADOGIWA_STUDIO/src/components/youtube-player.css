@@ -1,0 +1,9 @@
+.youtube-video { width: 100%; min-width: 200px; background: #080808; color: white; }
+.youtube-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; min-height: 200px; border: 0; }
+.youtube-video > a { display: block; padding: 10px 14px; color: white; font-size: 13px; }
+.youtube-video .deferred-video { position: relative; width: 100%; display: block; padding: 0; border: 0; cursor: pointer; }
+.youtube-video .deferred-video img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.youtube-video .play-circle { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); }
+.j-player > .youtube-video { align-self: center; max-height: 100%; }
+.j-player > .youtube-video iframe { max-height: calc(var(--media-vh, 100dvh) - 190px); }
+.j-viewer .j-player:has(> .youtube-video) { display: flex; align-items: center; justify-content: center; }

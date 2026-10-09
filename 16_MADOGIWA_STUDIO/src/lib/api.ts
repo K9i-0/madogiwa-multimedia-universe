@@ -7,6 +7,8 @@ export type EditorialContentStatus = "draft" | "published" | "archived";
 export type Member = { id: string; slug: string; name: string; sort_order: number };
 
 export type Episode = {
+  content_kind?: "story" | "explainer" | "music" | "other";
+  production_notes_enabled?: number;
   id: string;
   studio_id: string;
   slug: string;
@@ -26,6 +28,7 @@ export type EpisodeSummary = Episode & {
   video_count: number;
   input_count: number;
   primary_video_id: string | null;
+  primary_youtube_id?: string | null;
   primary_video_poster_url: string | null;
   has_featured_video: number;
   featured_video_created_at: string | null;
@@ -46,6 +49,7 @@ export type PromptVersion = {
 };
 
 export type Video = {
+  youtube_id?: string | null;
   id: string;
   episode_id: string;
   generation_id: string;

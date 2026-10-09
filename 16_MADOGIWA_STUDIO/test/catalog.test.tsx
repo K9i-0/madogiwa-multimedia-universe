@@ -1,3 +1,4 @@
+import {publish} from './youtube-fixture';
 import { env } from 'cloudflare:workers';
 import { SELF } from 'cloudflare:test';
 import { describe, expect, it } from 'vitest';
@@ -13,6 +14,7 @@ async function seed(count: number) {
     const generation = await env.DB.prepare('SELECT id FROM generations WHERE episode_id = ?').bind(episode.id).first<{ id: string }>();
     const video = await createVideo(env.DB, { generationId: generation!.id, filename: 'catalog.mp4', label: 'catalog', contentType: 'video/mp4', uploadedBy: 'test', featured: i % 2 === 0 });
     await setVideoStatus(env.DB, video.id, 'ready');
+    await publish(episode.id,generation!.id,i%2===0);
     await env.DB.prepare("UPDATE episodes SET display_order = ?, created_at = '2026-09-15T00:00:00Z' WHERE id = ?").bind(i, episode.id).run();
     ids.push(episode.id);
   }

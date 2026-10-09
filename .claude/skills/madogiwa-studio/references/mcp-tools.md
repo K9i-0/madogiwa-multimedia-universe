@@ -42,10 +42,12 @@ The skill's `agents/openai.yaml` also declares this Remote MCP dependency for cl
 - `create_generation({ episodeId, label?, modelName?, notes? })`: append the next version. Never pass a version number.
 - `update_generation({ generationId, label?, modelName?, notes? })`: update generation metadata.
 - `upsert_prompt({ generationId, label?, body })`: add a new current prompt revision and retain history.
-- `create_video_upload({ generationId, filename, label?, contentType?, featured? })`: create a video row and return `{ videoId, uploadUrl, posterUploadUrl, expiresAt }`. Put the video into `uploadUrl` and a JPEG/PNG/WebP poster (5MB or less) into `posterUploadUrl`. Use `featured: true` for an official-site pick-up video.
+- `register_youtube_video({ episodeId, youtubeId, generationId?, featured?, contentKind?, productionNotes? })`: register the official-channel video ID. Defaults: featured=false, contentKind=story, productionNotes=false. Notes require generationId. Idempotent for the same ID/episode; another episode cannot claim the same YouTube ID. Does not publish the YouTube video.
+- `list_youtube_videos({ episodeId? })`: publication rows, state, is_active, checked_at, privacy/processing metadata. States: pending, processing, waiting_public, ready, unavailable, failed.
+- `sync_youtube_videos({})`: check registered videos immediately. Cron also runs every five minutes. Public, processed, embeddable official-channel videos become active automatically. Pending replacements preserve the current active version.
 - `create_input_upload({ generationId, filename, label, kind, referenceLabel?, groupLabel?, notes?, contentType?, displayOrder? })`: create an input row and return `{ assetId, uploadUrl, expiresAt }`. Kind is `image`, `audio`, `document`, or `other`.
-- `set_video_status({ videoId, status })`: set `upload_pending`, `ready`, `published`, or `archived`.
-- `set_video_featured({ videoId, featured })`: enable or disable official-site pick-up priority for an existing video.
+- `set_video_status({ videoId, status })`: legacy R2 record maintenance only; does not affect YouTube publishing.
+- `set_video_featured({ videoId, featured })`: legacy R2 record maintenance only. For YouTube use register_youtube_video with all current settings.
 - `list_gallery_items({ includeArchived? })`: return gallery items in display order. Drafts are included; archived items are optional.
 - `create_gallery_item({ slug, title, kind, displayOrder?, status? })`: create a gallery item. New items must receive an image before they can be published.
 - `update_gallery_item({ galleryItemId, slug?, title?, kind?, displayOrder?, status? })`: update gallery metadata or set `draft`, `published`, or `archived`.
@@ -58,54 +60,34 @@ The skill's `agents/openai.yaml` also declares this Remote MCP dependency for cl
 
 IDs accepted by mutation tools are UUIDs returned by earlier tools. `studio_id` is user-facing and is not a mutation ID.
 
-## Binary PUT
+## Direct YouTube upload
 
-Prepare and validate a lossy delivery MP4 before requesting upload tickets. Keep the original master. For a master with AAC audio (the optional audio mapping also supports silent video):
+Use `16_MADOGIWA_STUDIO/tools/upload-youtube.py` with the final master, metadata JSON and a result record path. Example metadata:
 
-```sh
-ffmpeg -hide_banner -loglevel error -n \
-  -i path/to/master.mp4 -map 0:v:0 -map '0:a:0?' \
-  -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p \
-  -c:a copy -movflags +faststart path/to/studio_delivery.mp4
+```json
+{
+  "snippet": {
+    "title": "作品タイトル｜窓際族物語",
+    "description": "作品紹介\n\n公式サイト https://madogiwa.work",
+    "categoryId": "24",
+    "defaultLanguage": "ja",
+    "defaultAudioLanguage": "ja"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "embeddable": true,
+    "containsSyntheticMedia": true
+  }
+}
 ```
 
-Preserve dimensions, frame rate, duration and frame count. If audio is not suitable for MP4/web playback, replace `-c:a copy` with `-c:a aac -b:a 192k`. Reuse a verified delivery file made from the same master/settings; never repeatedly encode the delivery copy. Check size before issuing tickets: CRF does not enforce a size limit. Upload this delivery file and generate its poster below. Record encoding settings and validation results locally without upload URLs.
+Set audience and synthetic-content disclosures according to the actual work. Preserve required VOICEVOX/asset credits. Only add a production-page link if productionNotes=true and that page is intended to be published. The uploader defaults to private; use public only with the user's publication authorization. IDs, URLs and SHA256 may be recorded in the repository. Access/refresh tokens and resumable session URLs must remain private.
 
-Send the file body to the returned one-time URL with its actual MIME type. Keep the URL out of command output.
+The CLI reuses a private resumable session keyed by the video SHA256. Repeat the same command after interruption. A lost final response is recovered by querying the session. Expired sessions require checking the channel before starting another upload. Once an ID exists, register it immediately so Cloudflare can continue checking readiness independently.
 
-```sh
-curl --fail-with-body --silent --show-error \
-  --request PUT \
-  --header 'Content-Type: video/mp4' \
-  --data-binary @path/to/video.mp4 \
-  '<one-time-upload-url>'
-```
+## Input / gallery binary PUT
 
-Generate and upload a poster before uploading the video:
+Only images, reference audio and documents are uploaded to Studio. Issue a ticket with create_input_upload or create_gallery_image_upload, then immediately PUT the selected file with its actual Content-Type. Keep the returned URL out of output and saved records. Verify ready with get_episode, or the gallery image_url.
 
-```sh
-ffmpeg -hide_banner -loglevel error -y \
-  -ss 0.5 -i path/to/video.mp4 -frames:v 1 \
-  -vf scale=1280:1280:force_original_aspect_ratio=decrease \
-  -q:v 3 path/to/poster.jpg
-
-curl --fail-with-body --silent --show-error \
-  --request PUT \
-  --header 'Content-Type: image/jpeg' \
-  --data-binary @path/to/poster.jpg \
-  '<one-time-poster-upload-url>'
-```
-
-Typical MIME types:
-
-- MP4: `video/mp4`
-- PNG: `image/png`
-- JPEG: `image/jpeg`
-- WAV: `audio/wav`
-- MP3: `audio/mpeg`
-- Plain prompt or notes: `text/plain; charset=utf-8`
-- PDF: `application/pdf`
-
-After both PUTs, verify with `get_episode`: status must be `ready`, and `size_bytes` and `poster_r2_key` must be nonnull. Public media URLs are `/media/<videoId>`, `/posters/<videoId>`, and `/inputs/<assetId>`. For a published episode, the current prompt and ready inputs belonging to a generation with a public video appear on the public episode page; prompt history and generations without public videos remain private.
-
-Uploaded gallery images are served from `/gallery-images/<galleryItemId>`; use the `image_url` returned by list and mutation tools.
+Public notes show only the selected public YouTube version's notes, current prompt (when present), and ready inputs. Prompt history and unpublished versions remain private. Notes can be disabled entirely for videos such as explainers. Inputs use `/inputs/<assetId>` and gallery images `/gallery-images/<galleryItemId>`. Video `/media/<id>` and old clip MP4 URLs return 410; no new R2 video upload endpoint is available.

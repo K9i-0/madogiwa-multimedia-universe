@@ -72,8 +72,14 @@ export const categories = [
   "会社の日常",
   "CM・番組",
   "アクション・不思議",
+  "解説",
+  "音楽",
+  "その他",
 ] as const;
 export function category(e: Episode): string {
+  if (e.content_kind === "explainer") return "解説";
+  if (e.content_kind === "music") return "音楽";
+  if (e.content_kind === "other") return "その他";
   return /CM|ニュース|通販|番組|プロフェッショナル/.test(e.summary)
     ? categories[2]
     : /バトル|巨大|宇宙|ホラー|召喚|サメ|ビーム|アクション/.test(e.summary)

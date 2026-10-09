@@ -6,11 +6,10 @@ import { cachedPublicData } from "./public-cache";
 export const PUBLIC_EPISODE_QUERIES = {
   episodes: `SELECT e.*, COUNT(g.id) AS generation_count
     FROM episodes e LEFT JOIN generations g ON g.episode_id = e.id
-    WHERE e.status = 'published' GROUP BY e.id
+    WHERE e.status = 'published' AND EXISTS (SELECT 1 FROM published_youtube_videos p WHERE p.episode_id=e.id) GROUP BY e.id
     ORDER BY e.display_order, e.created_at DESC, e.id`,
-  videos: `SELECT v.id, v.episode_id, v.status, v.poster_r2_key, v.is_featured, v.created_at
-    FROM videos v JOIN generations g ON g.id = v.generation_id
-    JOIN episodes e ON e.id = g.episode_id
+  videos: `SELECT v.id, v.episode_id, v.status, v.poster_url, v.youtube_id, v.is_featured, v.created_at
+    FROM published_youtube_videos v JOIN episodes e ON e.id = v.episode_id
     WHERE e.status = 'published' AND v.status != 'archived'
     ORDER BY v.display_order, v.created_at DESC, v.id`,
   members: `SELECT em.episode_id, m.* FROM episode_members em
@@ -21,7 +20,7 @@ export const PUBLIC_EPISODE_QUERIES = {
 export async function queryPublicEpisodes(db: D1Database): Promise<EpisodeSummary[]> {
   const [episodes, videos, members] = await Promise.all([
     db.prepare(PUBLIC_EPISODE_QUERIES.episodes).all<EpisodeRow & { generation_count: number }>(),
-    db.prepare(PUBLIC_EPISODE_QUERIES.videos).all<Pick<VideoRow, "id" | "episode_id" | "status" | "poster_r2_key" | "is_featured" | "created_at">>(),
+    db.prepare(PUBLIC_EPISODE_QUERIES.videos).all<Pick<VideoRow, "id" | "episode_id" | "status" | "is_featured" | "created_at"> & {poster_url:string|null;youtube_id:string}>(),
     db.prepare(PUBLIC_EPISODE_QUERIES.members).all<MemberRow & { episode_id: string }>(),
   ]);
   const byId = new Map<string, EpisodeSummary>(episodes.results.map((episode) => [episode.id, {
@@ -36,7 +35,8 @@ export async function queryPublicEpisodes(db: D1Database): Promise<EpisodeSummar
     if (video.status === "upload_pending") continue;
     if (!episode.primary_video_id || video.id === episode.representative_video_id) {
       episode.primary_video_id = video.id;
-      episode.primary_video_poster_url = video.poster_r2_key ? `/posters/${video.id}` : null;
+      episode.primary_video_poster_url = video.poster_url;
+      episode.primary_youtube_id = video.youtube_id;
     }
     if (video.is_featured && (!episode.featured_video_created_at || video.created_at > episode.featured_video_created_at)) {
       episode.has_featured_video = 1;
@@ -53,7 +53,7 @@ export function listPublicEpisodes(db: D1Database): Promise<EpisodeSummary[]> {
 
 export function listPublicSitemapEntries(db: D1Database) {
   return cachedPublicData(db, "sitemap", async () => {
-    const result = await db.prepare(`SELECT '/episodes/' || slug AS path, updated_at FROM episodes WHERE status = 'published'
+    const result = await db.prepare(`SELECT '/episodes/' || slug AS path, updated_at FROM episodes WHERE status = 'published' AND EXISTS (SELECT 1 FROM published_youtube_videos p WHERE p.episode_id=episodes.id)
       UNION ALL SELECT '/gallery/' || slug AS path, updated_at FROM gallery_items WHERE status = 'published'`).all<{ path: string; updated_at: string }>();
     return result.results;
   });

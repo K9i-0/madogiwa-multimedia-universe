@@ -1,9 +1,10 @@
+import {publish} from './youtube-fixture';
 import { env } from "cloudflare:workers";
 import { SELF } from "cloudflare:test";
 import { describe, expect, it, vi } from "vitest";
 import { cachedPublicData } from "../worker/public-cache";
 import { listPublicEpisodes, listPublicSitemapEntries, queryPublicEpisodes } from "../worker/public-repository";
-import { createEpisode, createGeneration, createVideo, listEpisodes, setVideoFeatured, setVideoStatus, updateEpisode } from "../worker/repository";
+import { createEpisode, createGeneration, createVideo, setVideoStatus, updateEpisode } from "../worker/repository";
 import { loadPublicEpisode } from "../src/server/public-data.server";
 
 describe("public data cost and freshness", () => {
@@ -15,13 +16,15 @@ describe("public data cost and freshness", () => {
       const video = await createVideo(env.DB, { generationId: generation.id, filename, label: filename, contentType: "video/mp4", uploadedBy: "test" });
       await setVideoStatus(env.DB, video.id, "ready");
     }
+    await publish(episode.id,generation.id);
     const response = await SELF.fetch(`http://localhost/episodes/${episode.slug}`);
     expect(response.status).toBe(200);
     const html = await response.text();
     expect(html).toContain('"@type":"VideoObject"');
-    expect(html).toContain('"contentUrl":"https://madogiwa.work/media/');
-    expect(html.match(/class="deferred-video"/g)).toHaveLength(1);
-    expect(html).toContain("制作バージョン");
+    expect(html).toContain('"embedUrl":"https://www.youtube-nocookie.com/embed/');
+    expect(html).not.toContain('"contentUrl"');
+    expect(html).toContain("youtube-video");
+    expect(html).not.toContain("制作バージョン");
     expect(html).not.toMatch(/<video\b/);
     expect(html).not.toMatch(/<source\b/);
   }, 15_000);
@@ -33,15 +36,13 @@ describe("public data cost and freshness", () => {
     await createVideo(env.DB, { generationId: generation.id, filename: "b.mp4", label: "pending", contentType: "video/mp4", uploadedBy: "test", featured: true });
     const archived = await createVideo(env.DB, { generationId: generation.id, filename: "c.mp4", label: "archived", contentType: "video/mp4", uploadedBy: "test" });
     await setVideoStatus(env.DB, archived.id, "archived");
-    const legacy = (await listEpisodes(env.DB)).filter((row) => row.status === "published").map((row) => ({
-      ...row, input_count: 0, prompt_label: null,
-      members: row.members.map(({ id, slug, name, sort_order }) => ({ id, slug, name, sort_order })),
-    }));
-    expect(await queryPublicEpisodes(env.DB)).toEqual(legacy);
-    const first = (await listPublicEpisodes(env.DB)).find((row) => row.id === episode.id)!;
-    expect(first.primary_video_id).toBe(featured.id);
-    await setVideoFeatured(env.DB, featured.id, false);
-    expect((await listPublicEpisodes(env.DB)).find((row) => row.id === episode.id)?.has_featured_video).toBe(0);
+    const publication = await publish(episode.id,generation.id,true);
+    const first = (await queryPublicEpisodes(env.DB)).find(row=>row.id===episode.id)!;
+    expect(first.primary_youtube_id).toBe(publication.youtube_id);
+    expect(first.video_count).toBe(1);
+    await env.DB.prepare('UPDATE youtube_publications SET is_featured=0 WHERE id=?').bind(publication.id).run();
+    expect((await listPublicEpisodes(env.DB)).find(row=>row.id===episode.id)?.has_featured_video).toBe(0);
+
   });
 
   it("reuses JSON and invalidates even direct D1 writes without purging a local cache", async () => {
@@ -59,6 +60,7 @@ describe("public data cost and freshness", () => {
 
   it("removes archived episodes from warm lists, details, related cards and sitemap immediately", async () => {
     const episode = await createEpisode(env.DB, { slug: crypto.randomUUID(), title: "Fresh", memberIds: ["sobaya"] }, "test");
+    await publish(episode.id);
     expect((await listPublicEpisodes(env.DB)).some((row) => row.id === episode.id)).toBe(true);
     expect((await loadPublicEpisode(episode.slug))?.episode.title).toBe("Fresh");
     expect((await listPublicSitemapEntries(env.DB)).some((row) => row.path.endsWith(episode.slug))).toBe(true);

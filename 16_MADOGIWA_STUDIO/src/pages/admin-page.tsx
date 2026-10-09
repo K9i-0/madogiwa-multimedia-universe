@@ -1,6 +1,7 @@
+import { YouTubeRegistration } from "./youtube-registration";
 import { useEffect, useRef, useState } from "react";
 import { useBlocker, useNavigate, useSearch } from "@tanstack/react-router";
-import { ArrowDown, ArrowUp, GripVertical, Search, Star, X } from "lucide-react";
+import { ArrowDown, ArrowUp, GripVertical, Search } from "lucide-react";
 import { toast } from "sonner";
 import { api, type EpisodeDetail, type EpisodeEditorInput, type EpisodeSummary, type Member } from "@/lib/api";
 import { CreateEpisode, ProductionEditor } from "./admin-production";
@@ -90,14 +91,14 @@ export function AdminPage() {
           {order && <div className="desk-reorder"><button draggable={!savingOrder} disabled={savingOrder} aria-label={`${episode.title}をドラッグして移動`} onDragStart={() => {dragId.current = episode.id;}} onDragEnd={() => {dragId.current = null;}}><GripVertical size={16}/></button><button aria-label={`${episode.title}を上へ`} disabled={index === 0 || savingOrder} onClick={() => setOrder(moved(order, index, index - 1))}><ArrowUp size={14}/></button><button aria-label={`${episode.title}を下へ`} disabled={index === visible.length - 1 || savingOrder} onClick={() => setOrder(moved(order, index, index + 1))}><ArrowDown size={14}/></button></div>}
           <button className="desk-select" onClick={() => void select(episode.slug)} aria-pressed={search.episode === episode.slug}>
             <div className="desk-thumb">{episode.primary_video_poster_url ? <img src={episode.primary_video_poster_url} alt="" loading="lazy"/> : <span>サムネなし</span>}</div>
-            <div className="desk-row-copy"><strong>{episode.title}</strong><span>{episode.members.map((person) => person.name).join("・") || "登場人物未設定"}</span><small>{episode.video_count}動画 · {episode.generation_count}バージョン · {episode.status === "published" ? "公開" : "非公開"}{episode.has_featured_video ? " · ★ イチオシ" : ""}</small></div>
+            <div className="desk-row-copy"><strong>{episode.title}</strong><span>{episode.members.map((person) => person.name).join("・") || "登場人物未設定"}</span><small>{episode.video_count}YouTube動画 · {episode.generation_count}バージョン · {episode.status === "archived" ? "非公開" : episode.primary_youtube_id ? "掲載中" : "未掲載"}{episode.has_featured_video ? " · ★ イチオシ" : ""}</small></div>
           </button>
         </div>)}{!visible.length && <div className="desk-empty">条件に一致する作品はありません。</div>}</div>
         <details className="desk-add"><summary>追加操作</summary><p>新規登録はMCPから行えます。手動登録も利用できます。</p><button onClick={() => {if (!dirty || window.confirm("未保存の変更を破棄しますか？")) {setDirty(false); setCreating(true);}}}>新規作品を登録</button></details>
       </div>
       <section className="desk-panel" aria-label="作品の編集">
         {editing && <button className="desk-back" onClick={() => {if (creating) {setCreating(false);} else void select();}}>← 一覧へ戻る</button>}
-        {creating ? <CreateEpisode members={members} onCreated={async (slug) => {await reloadList(); setCreating(false); await select(slug);}}/> : search.episode ? detailError ? <div role="alert" className="desk-empty">{detailError}<button onClick={() => void refreshDetail().then(() => setDetailError("")).catch((reason) => toast.error(message(reason)))}>再読み込み</button></div> : detail?.episode.slug === search.episode ? <WorkEditor key={detail.episode.id} detail={detail} members={members} onDirty={setDirty} onSaved={async (next) => {setDetail(next); await reloadList();}} onRefresh={refreshDetail}/> : <div role="status" className="desk-empty">作品を読み込んでいます…</div> : <div className="desk-empty"><h2>作品を選んで編集</h2><p>タイトル・登場人物・イチオシ設定・動画の順序をまとめて変更できます。</p></div>}
+        {creating ? <CreateEpisode members={members} onCreated={async (slug) => {await reloadList(); setCreating(false); await select(slug);}}/> : search.episode ? detailError ? <div role="alert" className="desk-empty">{detailError}<button onClick={() => void refreshDetail().then(() => setDetailError("")).catch((reason) => toast.error(message(reason)))}>再読み込み</button></div> : detail && detail.episode.slug === search.episode ? <WorkEditor key={detail.episode.id} detail={detail} members={members} onDirty={setDirty} onSaved={async (next) => {setDetail(next); await reloadList();}} onRefresh={refreshDetail}/> : <div role="status" className="desk-empty">作品を読み込んでいます…</div> : <div className="desk-empty"><h2>作品を選んで編集</h2><p>タイトル・登場人物・YouTube動画・制作ノートを編集できます。</p></div>}
       </section>
     </div>}
   </div>;
@@ -110,14 +111,12 @@ function initialDraft(detail: EpisodeDetail): EpisodeEditorInput {
     videos: detail.generations.flatMap((generation) => generation.videos).sort((a, b) => a.display_order - b.display_order || b.created_at.localeCompare(a.created_at) || a.id.localeCompare(b.id)).map((video) => ({id: video.id, label: video.label, featured: !!video.is_featured, status: video.status, expectedUpdatedAt: video.updated_at})),
   };
 }
-function WorkEditor({detail, members, onDirty, onSaved, onRefresh}: {detail: EpisodeDetail; members: Member[]; onDirty: (value: boolean) => void; onSaved: (next: EpisodeDetail) => Promise<void>; onRefresh: () => Promise<EpisodeDetail>}) {
+export function WorkEditor({detail, members, onDirty, onSaved, onRefresh}: {detail: EpisodeDetail; members: Member[]; onDirty: (value: boolean) => void; onSaved: (next: EpisodeDetail) => Promise<void>; onRefresh: () => Promise<EpisodeDetail>}) {
   const [draft, setDraft] = useState(() => initialDraft(detail));
   const [baseline, setBaseline] = useState(() => initialDraft(detail));
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
-  const [preview, setPreview] = useState<string | null>(null);
   const [production, setProduction] = useState(false);
-  const drag = useRef<number>(-1);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {heading.current?.focus();}, []);
   const dirty = JSON.stringify(draft) !== JSON.stringify(baseline);
@@ -131,7 +130,7 @@ function WorkEditor({detail, members, onDirty, onSaved, onRefresh}: {detail: Epi
     if (dirty && !window.confirm("未保存の変更を破棄して再読み込みしますか？")) return;
     try {const next = await onRefresh(); const saved = initialDraft(next); setDraft(saved); setBaseline(saved); onDirty(false); setError("");} catch (reason) {setError(message(reason));}
   }
-  function updateVideo(index: number, patch: Partial<EpisodeEditorInput["videos"][number]>) {change({...draft, videos: draft.videos.map((video, i) => i === index ? {...video, ...patch} : video)});}
+
   return <div className="desk-editor">
     <div className="desk-editor-heading"><div><small>{detail.episode.studio_id}</small><h2 tabIndex={-1} ref={heading}>{detail.episode.title}</h2></div><a href={`https://madogiwa.work/episodes/${detail.episode.slug}`} target="_blank" rel="noopener noreferrer">公開ページ ↗</a></div>
     <div className="desk-savebar"><span role="status">{dirty ? "未保存の変更あり" : "保存済み"}</span><button disabled={saving} onClick={() => void refresh()}>再読み込み</button><button disabled={!dirty || saving} onClick={() => {setDraft(baseline); onDirty(false); setError("");}}>キャンセル</button><button className="desk-primary" disabled={!dirty || saving} onClick={() => void save()}>{saving ? "保存中…" : "変更を保存"}</button></div>
@@ -141,19 +140,9 @@ function WorkEditor({detail, members, onDirty, onSaved, onRefresh}: {detail: Epi
       <label>概要<textarea maxLength={1000} rows={3} value={draft.summary} onChange={(event) => change({...draft, summary: event.target.value})}/></label>
       <label>公開状態<select value={draft.status} onChange={(event) => change({...draft, status: event.target.value as EpisodeEditorInput["status"]})}><option value="published">公開</option><option value="archived">非公開（アーカイブ）</option></select></label>
       <div><h3>登場人物</h3><div className="desk-members">{members.map((member) => <label key={member.id}><input type="checkbox" checked={draft.memberIds.includes(member.id)} onChange={(event) => change({...draft, memberIds: event.target.checked ? [...draft.memberIds, member.id] : draft.memberIds.filter((id) => id !== member.id)})}/>{member.name}</label>)}</div></div>
-      <section className="desk-videos"><h3>動画 <small>{draft.videos.length}本</small></h3><p>全バージョンの動画です。上下ボタン・ドラッグで掲載順を変更できます。</p><label>代表動画<select value={draft.representativeVideoId ?? ""} onChange={(event) => change({...draft, representativeVideoId: event.target.value || null})}><option value="">自動（掲載順で先頭の再生可能な動画）</option>{draft.videos.filter((video) => video.status === "ready" || video.status === "published").map((video) => <option key={video.id} value={video.id}>{video.label}</option>)}</select></label><p>代表動画は一覧のサムネと再生に使用。★はイチオシの指定です。</p>
-        {draft.videos.map((video, index) => {
-          const generation = detail.generations.find((item) => item.videos.some((v) => v.id === video.id))!;
-          const source = generation.videos.find((item) => item.id === video.id)!;
-          return <div className="desk-video-row" key={video.id} onDragOver={(event) => event.preventDefault()} onDrop={(event) => {event.preventDefault(); if (!saving) change({...draft, videos: moved(draft.videos, drag.current, index)}); drag.current = -1;}}>
-            <div className="desk-reorder"><button type="button" draggable={!saving} aria-label={`${video.label}をドラッグして移動`} onDragStart={() => {drag.current = index;}} onDragEnd={() => {drag.current = -1;}}><GripVertical size={16}/></button><button type="button" aria-label={`${video.label}を上へ`} disabled={index === 0} onClick={() => change({...draft, videos: moved(draft.videos, index, index - 1)})}><ArrowUp size={14}/></button><button type="button" aria-label={`${video.label}を下へ`} disabled={index === draft.videos.length - 1} onClick={() => change({...draft, videos: moved(draft.videos, index, index + 1)})}><ArrowDown size={14}/></button></div>
-            <button type="button" className="desk-video-thumb" disabled={video.status === "upload_pending"} aria-label={`${video.label}をプレビュー`} onClick={() => setPreview(preview === video.id ? null : video.id)}>{source.poster_r2_key ? <img src={`/admin-api/videos/${video.id}/poster`} alt="" loading="lazy"/> : <span>サムネなし</span>}<span>▶ 確認</span></button>
-            <div className="desk-video-copy"><small>v{generation.version} · {generation.label || "生成動画"}</small><label>動画の表示名<input value={video.label} maxLength={120} onChange={(event) => updateVideo(index, {label: event.target.value})}/></label><div className="desk-video-options"><button type="button" aria-pressed={video.featured} className={video.featured ? "is-featured" : ""} onClick={() => updateVideo(index, {featured: !video.featured})}><Star size={15} fill={video.featured ? "currentColor" : "none"}/>イチオシ</button><select aria-label={`${video.label}の状態`} value={video.status} disabled={video.status === "upload_pending"} onChange={(event) => {const status = event.target.value as typeof video.status; change({...draft, representativeVideoId: status === "archived" && draft.representativeVideoId === video.id ? null : draft.representativeVideoId, videos: draft.videos.map((v, i) => i === index ? {...v, status} : v)});}}>{video.status === "upload_pending" && <option value="upload_pending">アップロード中</option>}<option value="ready">再生可能</option><option value="published">公開採用</option><option value="archived">非公開</option></select></div></div>
-            {preview === video.id && <div className="desk-preview"><button type="button" aria-label="プレビューを閉じる" onClick={() => setPreview(null)}><X size={16}/></button><video key={video.id} controls preload="metadata" poster={source.poster_r2_key ? `/admin-api/videos/${video.id}/poster` : undefined} src={`/admin-api/videos/${video.id}/preview`}/></div>}
-          </div>;
-        })}{!draft.videos.length && <p>動画は未登録です。MCPまたは追加操作から登録できます。</p>}
-      </section>
+
     </fieldset>
+    <fieldset disabled={dirty || saving}><YouTubeRegistration detail={detail} onChanged={refresh} /></fieldset>
     <div className="desk-production"><button disabled={dirty || saving} aria-expanded={production} onClick={() => setProduction(!production)}>{production ? "−" : "＋"} 制作情報・追加操作</button>{dirty && <small>変更を保存すると開けます</small>}{production && !dirty && <ProductionEditor detail={detail} onSaved={async () => {const next = await onRefresh(); const saved = initialDraft(next); setDraft(saved); setBaseline(saved); return next;}}/>}</div>
   </div>;
 }

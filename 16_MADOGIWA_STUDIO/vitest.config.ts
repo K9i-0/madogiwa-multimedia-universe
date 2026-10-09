@@ -9,6 +9,7 @@ export default defineConfig({
     cloudflareTest(async () => ({
       wrangler: { configPath: "./wrangler.jsonc" },
       miniflare: {
+        serviceBindings: { YOUTUBE_AUTH: async () => new Response("Test auth unavailable", {status:503}) },
         bindings: {
           TEST_MIGRATIONS: await readD1Migrations(path.join(import.meta.dirname, "migrations")),
         },
@@ -16,6 +17,7 @@ export default defineConfig({
     })),
   ],
   test: {
+    include: ["test/**/*.test.{ts,tsx}"],
     setupFiles: ["./test/apply-migrations.ts"],
   },
   resolve: {

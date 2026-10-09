@@ -32,27 +32,18 @@ async function queryPublicEpisode(slug: string): Promise<PublicEpisodeDetail | n
   const [detail, allEpisodes] = await Promise.all([getEpisodeBySlug(env.DB, slug), listPublicEpisodes(env.DB)]);
   if (!detail || detail.episode.status !== "published") return null;
 
-  const videos: PublicVideo[] = detail.generations
-    .flatMap((generation) => generation.videos)
-    .filter((video) => video.status !== "archived" && video.status !== "upload_pending")
-    .sort((left, right) => left.display_order - right.display_order || right.created_at.localeCompare(left.created_at) || left.id.localeCompare(right.id))
-    .map((video) => ({
-      id: video.id,
-      generation_id: video.generation_id,
-      label: video.label,
-      created_at: video.created_at,
-      is_featured: video.is_featured,
-      poster_url: video.poster_r2_key ? `/posters/${video.id}` : null,
-    }));
+  const videos = (await env.DB.prepare('SELECT id,generation_id,label,created_at,is_featured,poster_url,youtube_id FROM published_youtube_videos WHERE episode_id=?').bind(detail.episode.id).all<PublicVideo>()).results;
+  if (!videos.length) return null;
 
   const publicGenerationIds = new Set(videos.map((video) => video.generation_id));
   const productions: PublicProduction[] = detail.generations
-    .filter((generation) => publicGenerationIds.has(generation.id))
+    .filter((generation) => detail.episode.production_notes_enabled !== 0 && publicGenerationIds.has(generation.id))
     .map((generation) => ({
       generation_id: generation.id,
       version: generation.version,
       label: generation.label,
       model_name: generation.model_name,
+      notes: generation.notes,
       prompt: generation.prompt
         ? { label: generation.prompt.label, body: generation.prompt.body, version: generation.prompt.version }
         : null,

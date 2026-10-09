@@ -38,11 +38,10 @@ import {
   updateArticleSchema,
   updateGalleryItemSchema,
   updateGenerationSchema,
-  uploadSchema,
   videoStatusSchema,
   videoFeaturedSchema,
 } from "./schemas";
-import { createUpload } from "./uploads";
+import { listYouTubePublications, registerYouTube, syncYouTube, youtubeRegistrationSchema } from "./youtube";
 
 function toolResult(value: unknown) {
   return { content: [{ type: "text" as const, text: JSON.stringify(value, null, 2) }] };
@@ -176,15 +175,15 @@ function createServer(env: Env, actor: string, origin: string): McpServer {
     },
     async ({ generationId, label, body }) => toolResult(await upsertPrompt(env.DB, generationId, label, body, actor)),
   );
-  server.registerTool(
-    "create_video_upload",
-    {
-      description: "指定した生成バージョンへ動画を登録する、動画本体とサムネイル画像それぞれの一回限りアップロードURLを発行する",
-      inputSchema: { generationId: z.string().uuid(), ...uploadSchema.shape },
-    },
-    async ({ generationId, filename, label, contentType, featured }) =>
-      toolResult(await createUpload(env, origin, { generationId, filename, label, contentType, featured, uploadedBy: actor })),
-  );
+  server.registerTool("register_youtube_video", {
+    description: "公式YouTubeの動画IDを作品に登録。公開・処理完了・埋め込み可を5分ごとに確認し自動掲載。公開操作は行わない。制作ノートは任意。",
+    inputSchema: youtubeRegistrationSchema.shape,
+  }, async (input) => toolResult(await registerYouTube(env.DB, youtubeRegistrationSchema.parse(input), actor)));
+  server.registerTool("list_youtube_videos", {
+    description: "登録したYouTube動画の掲載状態と最終確認日時を取得",
+    inputSchema: { episodeId: z.string().uuid().optional() },
+  }, async ({episodeId}) => toolResult(await listYouTubePublications(env.DB, episodeId)));
+  server.registerTool("sync_youtube_videos", { description: "YouTube公開状態を今すぐ同期", inputSchema: {} }, async () => toolResult(await syncYouTube(env)));
   server.registerTool(
     "set_video_featured",
     {

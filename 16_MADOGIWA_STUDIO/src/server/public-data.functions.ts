@@ -62,7 +62,7 @@ export const getOfficialShell = createServerFn({ method: "GET" }).validator((val
   const path = url.pathname.replace(/\/$/, "");
   const page = url.searchParams.get("page") ?? (path === "/episodes" ? "movies" : path.startsWith("/characters") ? "characters" : path === "/gallery" ? "gallery" : path === "/story" ? "story" : url.searchParams.has("character") ? "characters" : "home");
   const movies = page === "movies";
-  const needsEpisodes = movies || page === "home" || page === "characters";
+  const needsEpisodes = movies || page === "home" || page === "characters" || page === "world";
   const [catalog, galleryItems] = await Promise.all([
     needsEpisodes ? listCatalog(env.DB, movies ? {
       all: url.searchParams.get("scope") === "all",
@@ -75,4 +75,16 @@ export const getOfficialShell = createServerFn({ method: "GET" }).validator((val
   const value = getCookie("madogiwa-site-theme");
   const theme = value === "excel" || value === "underground" ? value : "sakaba";
   return { data: { episodes: catalog.episodes, galleryItems, catalog: movies ? catalog : undefined }, theme };
+});
+
+export const getPublicClips = createServerFn({method: "GET"}).handler(async () => {
+  const { loadPublicEpisodes } = await import("./public-data.server");
+  const {default: catalog} = await import("../features/clips/catalog.json");
+  const episodes = await loadPublicEpisodes();
+  return catalog.flatMap(clip => {
+    const episode = episodes.find(e => e.slug === clip.episodeSlug);
+    if (!episode?.primary_youtube_id) return [];
+    return [{...clip, video: "", source: "", youtube_id: episode.primary_youtube_id, source_youtube_id: episode.primary_youtube_id,
+      youtube_start: Math.floor(clip.startSeconds), youtube_end: Math.ceil(clip.startSeconds + clip.seconds)}];
+  });
 });

@@ -100,9 +100,8 @@ export async function consumeInputUpload(request: Request, env: Env, ticketId: s
 async function requireInputAccess(request: Request, env: Env, ctx: ExecutionContext, assetId: string): Promise<void> {
   const episode = await env.DB.prepare(
     `SELECT episodes.status,
-      EXISTS(SELECT 1 FROM videos
-        WHERE videos.generation_id = input_assets.generation_id
-          AND videos.status NOT IN ('archived', 'upload_pending')) AS has_public_video
+      EXISTS(SELECT 1 FROM published_youtube_videos v
+        WHERE v.generation_id = input_assets.generation_id AND episodes.production_notes_enabled=1) AS has_public_video
      FROM input_assets JOIN episodes ON episodes.id = input_assets.episode_id
      WHERE input_assets.id = ?`,
   ).bind(assetId).first<{ status: string; has_public_video: number }>();

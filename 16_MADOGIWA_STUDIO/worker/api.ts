@@ -1,3 +1,4 @@
+import { listYouTubePublications, registerYouTube, syncYouTube, youtubeRegistrationSchema } from "./youtube";
 import { serveR2Object } from "./r2-response";
 import { editorSchema, orderSchema, reorderEpisodes, saveEpisodeEditor } from "./editor-repository";
 import { listPublicEpisodes } from "./public-repository";
@@ -61,7 +62,14 @@ export async function handleApi(request: Request, env: Env, ctx: ExecutionContex
   const segments = pathSegments(routePath);
   const admin = isAdminApi ? await requireAdmin(request, env, ctx) : null;
 
+  if (routePath.startsWith('/api/uploads/') || routePath.startsWith('/api/poster-uploads/') || (request.method === 'POST' && segments[1] === 'generations' && segments[3] === 'uploads')) throw new HttpError(410, '動画はYouTubeへアップロードし、register_youtube_videoでIDを登録してください');
+  if (isAdminApi && routePath === '/api/youtube-publications') {
+    if (request.method === 'GET') return json({ publications: await listYouTubePublications(env.DB, url.searchParams.get('episodeId') || undefined) });
+    if (request.method === 'POST') return json(await registerYouTube(env.DB, youtubeRegistrationSchema.parse(await readJson(request)), admin!.email));
+  }
+  if (isAdminApi && request.method === 'POST' && routePath === '/api/youtube-sync') return json(await syncYouTube(env));
   if (isAdminApi && request.method === "GET" && segments.length === 4 && segments[1] === "videos" && ["preview", "poster"].includes(segments[3])) {
+    if (segments[3] === "preview") throw new HttpError(410, "YouTubeのプレビューを使用してください");
     const video = await getVideo(env.DB, segments[2]);
     if (!video || video.status === "upload_pending") throw new HttpError(404, "動画はまだ利用できません");
     const key = segments[3] === "poster" ? video.poster_r2_key : video.r2_key;

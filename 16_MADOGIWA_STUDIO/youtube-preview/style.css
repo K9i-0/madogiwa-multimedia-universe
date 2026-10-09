@@ -1,0 +1,4 @@
+body { margin: 0; }
+* { box-sizing: border-box; }
+.preview-nav { position: relative; z-index: 10; display:flex; flex-wrap:wrap; gap: 12px; align-items:center; padding: 10px 16px; background:#102536; color:white; font:12px/1.5 sans-serif; }
+.preview-nav a { color: white; text-decoration: underline; }

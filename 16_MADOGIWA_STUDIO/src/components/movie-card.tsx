@@ -1,3 +1,5 @@
+import { fallbackYouTubeThumbnail } from "@/lib/youtube-thumbnail";
+import { YouTubePlayer } from "./youtube-player";
 import { Play, Star } from "lucide-react";
 import { useState } from "react";
 import { useVideoPreferences } from "./use-video-preferences";
@@ -37,12 +39,12 @@ export function MovieCard({ episode, index, featuredLayout = false, inlinePlayba
       playsInline
       onPlay={inlinePlayback ? () => setStarted(true) : undefined}
       onEnded={inlinePlayback ? () => setStarted(false) : undefined}
-    /> : <img src={episode.primary_video_poster_url ?? "/site/hero-shibuya-wide.webp"} alt="" loading="lazy" decoding="async" />}
+    /> : <img onError={fallbackYouTubeThumbnail} onLoad={fallbackYouTubeThumbnail} src={episode.primary_video_poster_url ?? "/site/hero-shibuya-wide.webp"} alt="" loading="lazy" decoding="async" />}
     <div className="movie-number">{String(index + 1).padStart(2, "0")}</div>
   </>;
 
   return <article className={className}>
-    {inlinePlayback && episode.primary_video_id ? <div className="movie-visual movie-visual-inline">
+    {inlinePlayback && episode.primary_youtube_id ? <YouTubePlayer id={episode.primary_youtube_id} title={episode.title} /> : inlinePlayback && episode.primary_video_id ? <div className="movie-visual movie-visual-inline">
       {visual}
       {!started ? <button type="button" className="movie-play-button" onClick={startPlayback} aria-label={`${episode.title}を再生`}>
         <span className="play-circle"><Play fill="currentColor" /></span>

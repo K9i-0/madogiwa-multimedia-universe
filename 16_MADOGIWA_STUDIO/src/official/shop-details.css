@@ -141,3 +141,8 @@
   .u-paid-stamp { animation: none; }
   [data-theme="sakaba"] .j-cover::before, [data-theme="sakaba"] .j-movie { transition: none; }
 }
+
+/* Keep each theme's fixed episode uncropped, including mobile layouts. */
+.journal .j-cover-photo { align-self: center; }
+.journal .j-cover-photo > img { aspect-ratio: auto; object-fit: contain; }
+.journal .j-cover-photo:hover > img { transform: none; }

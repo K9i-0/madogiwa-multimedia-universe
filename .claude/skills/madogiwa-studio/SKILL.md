@@ -1,11 +1,11 @@
 ---
 name: madogiwa-studio
-description: Madogiwa StudioのRemote Web MCPを使い、窓際族物語のギャラリー、記事、エピソード、生成バージョン、使用モデル、登場メンバー、Seedanceプロンプト、入力画像・参照音声・資料、生成動画を登録・確認する。ユーザーがMadogiwa Studioへの登録、公式サイトコンテンツ編集、動画アップロード、プロンプト同期、入力素材管理、Studio ID確認、MCP接続や同僚環境への導入を頼んだときに使用する。
+description: Madogiwa StudioのRemote Web MCPを使い、窓際族物語のギャラリー、記事、エピソード、生成バージョン、使用モデル、登場メンバー、Seedanceプロンプト、入力画像・参照音声・資料、YouTube動画IDと公開状態を登録・確認する。ユーザーがMadogiwa Studioへの登録、公式サイトコンテンツ編集、動画アップロード、プロンプト同期、入力素材管理、Studio ID確認、MCP接続や同僚環境への導入を頼んだときに使用する。
 ---
 
 # Madogiwa Studio
 
-Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPでメタデータを操作し、一回限りURLへバイナリを直接アップロードする。
+Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作記録とYouTube動画IDを管理する。動画本体は公式YouTubeへ直接アップロードし、Cloudflareには新規登録しない。画像・参照音声・資料はこれまで通り一回限りURLへPUTする。
 
 ## URLの使い分け
 
@@ -24,7 +24,7 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPでメタ�
 
 ユーザーの「Studioへ登録して」「Madogiwa Studioへアップロードして」「プロンプトと素材を同期して」という依頼は、登録完了に必要な採用済みファイルを設定済みのMadogiwa Studioへ外部送信することまで含む明示承認として扱う。この依頼を受けた後は、動画や素材ごとに追加確認を求めず、同じ作業内で次を送信する。
 
-- 採用動画と、その動画から作るサムネイル
+- 採用済みの最新完成動画（公式YouTubeへ直接送信。既存IDがあれば再投稿しない）
 - 現行の生成プロンプト
 - 実際の生成へ使用した入力画像と参照音声
 - 完成編集へ使用した採用済み資料、設定、編集マニフェスト
@@ -43,18 +43,36 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPでメタ�
 - `create_episode`はv1を自動作成する。直後に`get_episode`でv1の`generationId`を取得し、最初の生成を登録するためだけに`create_generation`を呼ばない。
 - 登場メンバーは`list_members`が返したIDだけを使う。
 
-## 登録ワークフロー
+## 登録ワークフロー（2026-10-09 YouTube移行）
 
-エピソードは作成時から公開 (`published`) とし、公開側から隠す場合だけ `archived` にする。エピソードには `draft` を使わない。公開動画と同じ生成バージョンに紐づく現行プロンプトと`ready`の入力素材は公開詳細ページにも掲載される。プロンプト履歴、未完成素材、動画のない生成バージョン、登録者情報は管理画面・MCP内だけで扱う。
+エピソードは通常 `published` とするが、登録したYouTube動画が **公式チャンネル・公開・処理完了・埋め込み可** の全条件を満たすまで公式サイトに掲載されない。取り下げはエピソードを `archived` にする。Studioの制作記録と公式サイトの掲載を区別する。
 
-1. 対象ファイルの存在、種類、サイズを確認する。生成に採用したプロンプト・入力・動画だけを選ぶ。動画は下記の「Studio配信用動画」に従って非可逆圧縮・検証を済ませてから登録を始める。
-2. 新規なら`create_episode`、既存の別生成なら`create_generation`を呼ぶ。
-3. 使用モデル、ラベル、メモは`update_generation`で補う。モデル名は固定候補に限定しない。
-4. 実際に生成へ渡した本文を`upsert_prompt`で登録する。プロンプト変更は履歴として新しいrevisionを作る。
-5. 入力画像・参照音声・資料はそれぞれ`create_input_upload`でチケットを発行し、返されたURLへファイルをPUTする。
-6. 生成動画から0.5秒付近のJPEGサムネイルを作る。`create_video_upload`でチケットを発行し、`posterUploadUrl`へJPEG、`uploadUrl`へ動画をPUTする。公式サイトで優先したい採用動画は`featured: true`を指定する。
-7. `get_episode`を再実行し、各ファイルが`ready`、動画の`poster_r2_key`とサイズが非null、プロンプトとモデルが意図どおりか確認する。
-8. 必要なら公開詳細ページ`https://madogiwa.work/episodes/<slug>`で表示・再生を確認する。
+1. `list_episodes` / `get_episode` と `list_youtube_videos` で既存登録を確認する。動画ID・ローカルの `youtube_upload.json` がある場合は再アップロードしない。
+2. 新規なら `create_episode`（v1は自動作成）、新しい制作版なら `create_generation`。`update_generation` の `notes` に台本・出典・クレジット・編集内容を記録できる。
+3. 実際に使用した生成プロンプトがある場合だけ `upsert_prompt`。ずんだもん解説、Remotion/Three.js編集などに架空のプロンプトを作らない。採用した画像・音声・資料は `create_input_upload` → PUT → `get_episode` でreadyを確認する。
+4. 最新の完成動画をYouTubeへ直接アップロードする。標準720pの完成原本を使い、Studio向けの再圧縮MP4やCloudflare動画サムネイルを新規作成しない。公式チャンネルは `UCyQtPu94OaiGxFdd2A6bXdw`。
+5. アップロードがIDを返したら、YouTubeの処理完了を待たず `register_youtube_video` を呼ぶ。`episodeId`, `youtubeId`, 任意の `generationId`, `featured`, `contentKind`, `productionNotes` を渡す。
+   - 種類は視聴者向けに `story`（物語）、`explainer`（解説）、`music`（音楽）、`other`（その他）。生成技術で分類しない。
+   - 制作ノートは任意。公開する場合 `productionNotes:true` と対象 `generationId` が必要。プロンプト・モデル・入力素材は存在するセクションだけ表示。ノートなしの動画は `productionNotes:false`。
+   - 再登録時も種類・ノート・イチオシを明示して、意図せず既存設定を既定値へ戻さない。
+6. ユーザーが公開を依頼・採用している場合はYouTubeをpublicにする。通常アップロードはprivate。YouTubeの公開操作とStudioのID登録を混同しない。登録だけを理由に未承認動画を公開しない。
+7. `sync_youtube_videos` を一度実行し、`list_youtube_videos` で状態確認。処理中・公開待ちならその状態とIDを報告する。Cloudflare Cronが約5分ごとに継続確認するので、会話を開いたまま待つ必要はない。
+8. `ready` かつ `is_active:1` なら公開ページを確認する。差し替えは新IDを同作品に登録し、条件成立まで旧版を維持。チャンネルにある未登録動画は勝手に掲載されない。旧YouTube動画は自動削除しない。
+
+## YouTubeアップロードと再開
+
+MMUリポジトリでは以下を使用する（詳細・JSON形式はリファレンス）。秘密情報は `~/.config/mmu-youtube/`、結果の動画ID・URL・ハッシュは制作物の登録記録へ保存する。
+
+```sh
+python3 16_MADOGIWA_STUDIO/tools/upload-youtube.py /absolute/path/final.mp4 \
+  --metadata /absolute/path/youtube_metadata.json \
+  --record /absolute/path/youtube_upload.json
+```
+
+- アップロードは8MiBチャンクで再開可能。ネットワーク失敗・中断は同じコマンドを再実行する。セッションURLやOAuth tokenをログ・Git・チャットへ出さない。
+- ID取得前のローカル転送中断はCronでは再開できない。CLIを再実行する。ID取得後のYouTube処理・公開待ちはCronが担当する。
+- セッション期限切れはチャンネルを確認して重複投稿を防いでから再発行する。単なる失敗で新しいエピソードを作らない。
+- MMU本体がない同僚環境では既存のYouTubeアップロード手段を利用し、返ったIDだけMCP登録する。所有者のOAuthキャッシュを共有しない。
 
 ## ギャラリー・記事ワークフロー
 
@@ -66,28 +84,14 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPでメタ�
 - 物理削除は行わず、取り下げは`draft`または`archived`へ変更する。
 - 更新後は一覧を再取得し、公開サイトの表示順、画像URL、公開状態を確認する。
 
-## アップロード規則
+## 入力素材のPUTと既存R2動画
 
-### Studio配信用動画
-
-- 2026-10-05ユーザー指定: Studio登録時は常に配信用の非可逆圧縮MP4を用意してアップロードする。元の完成動画は上書きせず保持する。ユーザーが個別に原本の登録を指定した場合はその指定を優先する。
-- 標準はH.264 (`libx264`)、`-preset slow -crf 16 -pix_fmt yuv420p -movflags +faststart`。完成動画の解像度・縦横比・fps・尺・フレーム数を維持し、再拡大やAI超解像は行わない。AAC音声は`-c:a copy`で保持し、MP4/Web再生に適さない音声のみAAC 192kbpsへ変換する。音声なしの動画に音声を追加しない。
-- 常に元の完成動画から一度だけ圧縮する。同じ原本と設定から作成・検証済みの配信用ファイルがある場合は再利用し、配信用ファイルを繰り返し再圧縮しない。
-- チケット発行前に出力サイズを確認する。CRFは容量上限を保証しないため、上限に収まらない場合は原本から設定を調整して作り直す。HTTP 413だけで正確な上限値を断定しない。
-- 全編デコード、尺・解像度・fps・フレーム数、代表フレームの画質を確認する。音声コピー時は音声ストリームのハッシュ一致も確認する。原本と配信用ファイルのパス、圧縮設定、サイズ、検証結果を登録記録へ残す。配信用MP4はGit管理外とする。コマンド例は`references/mcp-tools.md`を参照する。
-
-### PUTと登録状態
-
-- Studio登録は採用素材のバイナリPUTまで成功して初めて完了とする。メタデータ、チケット、プロンプトだけを作成した状態を登録完了として報告しない。
-- 動画とサムネイルの各アップロードURLは1時間・一回限りのBearer相当情報として扱い、応答やログへ出さない。
-- URL発行とPUTを同じ作業内で連続して行う。PUTでは実ファイルに合う`Content-Type`を指定する。
-- MCPはメタデータとチケットを作り、バイナリPUTはWorkerの専用URLへ直接送る。これは正常な設計である。
-- サムネイルはJPEG、PNG、WebPのいずれか、5MB以下にする。通常は`ffmpeg -ss 0.5 -i <video> -frames:v 1 -vf scale=1280:1280:force_original_aspect_ratio=decrease -q:v 3 <poster.jpg>`で生成する。
-- PUT失敗時は作成済み`videoId`を`archived`にしてから新しいチケットを発行する。使用済みURLを再試行しない。
-- 失敗した動画行を`archived`にしても同じ生成バージョンへ再発行できない場合だけ、同じエピソードに次の生成バージョンを作り、モデル・プロンプト・採用入力を引き継いで再送する。新しいエピソードは作らない。
-- 動画を`published`へ変更するのはユーザーが公開採用を明示した場合だけにする。通常の登録完了は`ready`のままにする。
-- イチオシは公開状態とは別の優先表示フラグである。登録後の変更は`set_video_featured`を使い、依頼がなければ既存のイチオシを勝手に解除しない。
+- 入力素材の登録はPUT成功とready確認まで完了させる。チケット発行だけでは完了としない。
+- 一回限りURLはBearer相当の秘密情報。返却値のまま使い、表示・保存しない。実ファイルのContent-Typeで送る。
+- 公開する制作ノートに紐付いた入力素材のみ公開される。未採用・非公開の制作記録は管理画面に残る。
+- `create_video_upload`、`/media/` 動画配信、MP4保存・ファイル共有は廃止。`set_video_status` / `set_video_featured` は旧動画行の保守用で、YouTube掲載設定には使わない。
+- 既存R2動画は移行時のバックアップとして残す。新規動画をR2へPUTしない。削除は参照先・ローカル原本・切り戻し期間を確認した別作業とし、入力画像・参照音声・資料をまとめて削除しない。
 
 ## 完了報告
 
-エピソード名、Studio ID、slug、対象バージョン、モデル、登録した入力・動画、検証状態、公開詳細ページURLを簡潔に報告する。失敗したチケットをarchiveした場合も明記する。
+作品名、Studio ID、slug、YouTube ID/URL、種類、制作ノート有無、制作記録の対象版と素材、YouTube処理・掲載状態、公開ページURLを簡潔に報告する。「アップロード済み」「公開待ち」「サイト掲載済み」を区別する。

@@ -1,3 +1,5 @@
+import { fallbackYouTubeThumbnail } from "@/lib/youtube-thumbnail";
+import { YouTubePlayer } from "../components/youtube-player";
 import { ClipsEntry } from "../features/clips/clips-entry";
 import { useEffect, useRef, useState } from "react";
 import { Character3D, CharacterCameraLink } from "./character-3d";
@@ -104,7 +106,7 @@ function IconPlay() {
 }
 export default function Journal({ episodes: publicEpisodes, galleryItems, initialTheme, initialHref, catalog }: { catalog?: CatalogPage; episodes: Episode[]; galleryItems: GalleryItem[]; initialTheme?: AvailableTheme; initialHref?: string }) {
   const arts = galleryItems.map((item) => ({ src: item.image_url, title: item.title, kind: item.kind }));
-  const episodes = publicEpisodes.filter((e) => e.primary_video_id && !e.title.includes("検証"));
+  const episodes = publicEpisodes.filter((e) => (e.primary_video_id || e.primary_youtube_id) && !e.title.includes("検証"));
   const starters = starterSlugs.map((slug) => episodes.find((e) => e.slug === slug)).filter((e): e is Episode => !!e);
   if (!starters.length && episodes.length) starters.push(episodes[0]);
   const { theme, changeTheme } = useSiteTheme(initialTheme);
@@ -259,7 +261,7 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
           onClick={() => setPlaying(e)}
           aria-label={`${episodeTitle(e)}を再生`}
         >
-          <img src={poster(e)} alt="" loading="lazy" />
+          <img onError={fallbackYouTubeThumbnail} onLoad={fallbackYouTubeThumbnail} src={poster(e)} alt="" loading="lazy" />
           <span className="j-play-mini">
             <IconPlay />
           </span>
@@ -438,10 +440,12 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
               <div className="j-cover-grid">
                 <button
                   className="j-cover-photo"
+                  style={{ aspectRatio: hero.slug === feature.slug ? feature.coverAspectRatio : 16 / 9 }}
                   onClick={() => setPlaying(hero)}
                   aria-label={`${episodeTitle(hero)}を再生`}
                 >
                   <img
+                    onError={fallbackYouTubeThumbnail} onLoad={fallbackYouTubeThumbnail}
                     src={poster(hero)}
                     alt={episodeTitle(hero)}
                     fetchPriority="high"
@@ -1098,11 +1102,11 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
                 if (nextEpisode) setPlaying(nextEpisode);
               }} hasNext={!!nextEpisode}>
                 <p className="j-video-description">{episodeCopy(playing)}</p>
-                <a className="j-making-link" href={`/episodes/${playing.slug}#making-${playing.primary_video_id}`} onClick={() => {
+                {playing.production_notes_enabled !== 0 && <a className="j-making-link" href={`/episodes/${playing.slug}#making-${playing.primary_video_id}`} onClick={() => {
                   try { sessionStorage.setItem("madogiwa-production-return", JSON.stringify({ slug: playing.slug, href: location.pathname + location.search, route, scroll: window.scrollY, episodeId: playing.id, restore: true })); } catch { /* Navigation still works without storage. */ }
                 }}>
-                  <span><b>この動画の作り方</b><small>使用モデル・プロンプト・入力素材</small></span><ArrowUpRight size={20} />
-                </a>
+                  <span><b>制作ノート</b><small>台本・素材・制作の記録</small></span><ArrowUpRight size={20} />
+                </a>}
                 <div className="j-video-cast">
                   <span>出演</span>
                   {playing.members.map((m) => {
@@ -1128,7 +1132,7 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
                     .slice(0, 2)
                     .map((e) => (
                       <button key={e.id} onClick={() => setPlaying(e)}>
-                        <img src={poster(e)} alt="" />
+                        <img onError={fallbackYouTubeThumbnail} onLoad={fallbackYouTubeThumbnail} src={poster(e)} alt="" />
                         <div>
                           <small>{runtime(e)}</small>
                           <b>{episodeTitle(e)}</b>
@@ -1242,7 +1246,7 @@ function VideoViewer({ episode, children, onNext, hasNext }: {
       </header>
       <div className={`j-viewer-body${infoOpen ? " j-info-open" : ""}`}>
         <div className="j-player">
-          <video
+          {episode.primary_youtube_id ? <YouTubePlayer id={episode.primary_youtube_id} title={episodeTitle(episode)} autoPlay /> : <video
             ref={preferenceRef}
             src={videoSource(episode)}
             poster={poster(episode)}
@@ -1257,9 +1261,9 @@ function VideoViewer({ episode, children, onNext, hasNext }: {
             onDurationChange={(event) => setDuration(event.currentTarget.duration)}
             onVolumeChange={(event) => setMuted(event.currentTarget.muted || event.currentTarget.volume === 0)}
             onRateChange={(event) => setRate(event.currentTarget.playbackRate)}
-          />
-          {mobile && !infoOpen && <button className="j-media-tap" aria-label={chrome ? "操作表示を隠す" : "操作表示を表示"} onClick={() => { setChrome(!chrome); setInteraction((value) => value + 1); }} />}
-          {mobile && <div className="j-mobile-playback" onPointerDown={() => setInteraction((value) => value + 1)} onKeyDown={() => setInteraction((value) => value + 1)}>
+          />}
+          {!episode.primary_youtube_id && mobile && !infoOpen && <button className="j-media-tap" aria-label={chrome ? "操作表示を隠す" : "操作表示を表示"} onClick={() => { setChrome(!chrome); setInteraction((value) => value + 1); }} />}
+          {!episode.primary_youtube_id && mobile && <div className="j-mobile-playback" onPointerDown={() => setInteraction((value) => value + 1)} onKeyDown={() => setInteraction((value) => value + 1)}>
             <input type="range" aria-label="再生位置" min={0} max={Number.isFinite(duration) && duration > 0 ? duration : 1} step={0.1} value={Math.min(time, duration || 1)} disabled={!Number.isFinite(duration) || duration <= 0}
               onChange={(event) => { if (ref.current) { ref.current.currentTime = Number(event.target.value); setTime(Number(event.target.value)); } }} />
             <div>

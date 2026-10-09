@@ -1,3 +1,4 @@
+import {publish} from './youtube-fixture';
 import { env } from "cloudflare:workers";
 import { createExecutionContext } from "cloudflare:test";
 import { describe, expect, it } from "vitest";
@@ -14,7 +15,8 @@ async function fixture() {
   const generation = await createGeneration(env.DB, episode.id, "改訂", null, "", "test");
   const second = await createVideo(env.DB, {generationId: generation.id, filename: "b.mp4", label: "改訂版", contentType: "video/mp4", uploadedBy: "test"});
   await setVideoStatus(env.DB, first.id, "ready"); await setVideoStatus(env.DB, second.id, "ready");
-  return {episode, first, second};
+  const publication = await publish(episode.id,generation.id,true);
+  return {episode, first, second, publication};
 }
 async function draft(id: string) {
   const detail = (await getEpisodeById(env.DB, id))!;
@@ -23,7 +25,7 @@ async function draft(id: string) {
 }
 describe("editing existing content", () => {
   it("saves titles, members, video order and representative independently of featured, invalidating warm public data", async () => {
-    const {episode, first, second} = await fixture();
+    const {episode, first, second, publication} = await fixture();
     await listPublicEpisodes(env.DB); await loadPublicEpisode(episode.slug);
     const input = await draft(episode.id);
     input.title = "変更後"; input.memberIds = ["fukuchan"];
@@ -32,13 +34,11 @@ describe("editing existing content", () => {
     await saveEpisodeEditor(env.DB, episode.id, input);
     const card = (await listPublicEpisodes(env.DB)).find((item) => item.id === episode.id)!;
     expect(card.title).toBe("変更後"); expect(card.members.map((item) => item.id)).toEqual(["fukuchan"]);
-    expect(card.primary_video_id).toBe(second.id); expect(card.has_featured_video).toBe(1);
+    expect(card.primary_video_id).toBe(publication.id); expect(card.has_featured_video).toBe(1);
     const publicDetail = (await loadPublicEpisode(episode.slug))!;
-    expect(publicDetail.videos.map((item) => item.id)).toEqual([first.id, second.id]);
-    expect(publicDetail.videos[1].label).toBe("別バージョン");
-    const adminCard = (await listEpisodes(env.DB)).find((item) => item.id === episode.id)!;
-    expect(adminCard.primary_video_id).toBe(card.primary_video_id);
-    expect(adminCard.primary_video_poster_url).toBe(card.primary_video_poster_url);
+    expect(publicDetail.videos.map((item) => item.youtube_id)).toEqual([publication.youtube_id]);
+    expect(publicDetail.videos[0].label).toBe('YouTube release');
+
   });
   it("persists episode order through metadata edits and inserts new MCP registrations first", async () => {
     const {episode} = await fixture();
@@ -48,7 +48,8 @@ describe("editing existing content", () => {
     await updateEpisode(env.DB, episode.id, {title: "改題"});
     expect((await listEpisodes(env.DB)).map((item) => item.id)).toEqual(ordered);
     const fresh = await createEpisode(env.DB, {slug: crypto.randomUUID(), title: "MCPから登録"}, "test");
-    expect((await listPublicEpisodes(env.DB))[0].id).toBe(fresh.id);
+    expect((await listEpisodes(env.DB))[0].id).toBe(fresh.id);
+    expect((await listPublicEpisodes(env.DB)).some(e=>e.id===fresh.id)).toBe(false);
     await expect(reorderEpisodes(env.DB, {itemIds: ordered, previousIds: ordered})).rejects.toMatchObject({status: 409});
   });
   it("rejects foreign videos, invalid members, duplicate ordering and stale MCP edits without partial saves", async () => {

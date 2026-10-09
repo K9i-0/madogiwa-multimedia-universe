@@ -6,6 +6,19 @@
 
 ドメイン接続設定と `k9i.app` 移管の残作業は [DOMAIN_OPERATIONS.md](./DOMAIN_OPERATIONS.md) を参照。
 
+## YouTube移行（2026-10-09）
+
+完成動画はYouTube、制作記録・入力素材はCloudflare。公開一覧・ホーム・人物/世界観・詳細・迷言集・管理プレビューはYouTubeを使用する。87作品を紐付け、解説1作品を追加。紐付けのない3作品は制作記録を残して掲載対象外。
+
+- `youtube_publications` が候補・現行動画を管理。登録した公式チャンネル動画だけを約5分ごとのCronで確認し、public / processed / embeddableで自動掲載。旧版は差し替え待ち中に維持。APIエラー時は掲載状態を変更しない。
+- `register_youtube_video`, `list_youtube_videos`, `sync_youtube_videos` がMCPの正規運用。管理画面でもID・種類・ノート・イチオシを登録できる。
+- `content_kind`: story / explainer / music / other。`production_notes_enabled` は任意。プロンプトなしの制作記録も扱う。アーロンチュア解説はノートなし。
+- Worker間サービスBinding `YOUTUBE_AUTH` → `madogiwa-youtube-auth`、secret `YOUTUBE_AUTH_ADMIN_TOKEN`。OAuth tokenはブラウザーへ返さない。Cron失敗はWorkersログで監視する。
+- 初回移行は `migrations/0015_youtube_publications.sql` → `tools/migrate-youtube-20261009.sql`（冪等、pending登録）→ API確認 → デプロイ。対応表は `youtube-preview/migration-audit-20261009.json`。
+- 旧R2動画161行・約2.30GBは切り戻し用に保持。切り抜き用R2は別途。`/media/*`、旧クリップMP4、管理動画preview、動画upload/poster-uploadは410。新規R2動画登録を禁止。
+- R2削除は後日、ゲーム等の参照・原本の保管・切り戻し期間を確認して行う。画像・音声・資料は現役なので削除しない。旧Workerへ戻せば追加テーブルを残したまま切り戻せる。
+- 再生/音量/画質はYouTube標準UI。クリックでiframeを読み込み、他のプレイヤーを停止。サムネは高解像度優先・不足時フォールバック。テーマ固定のトップ画像は元の縦横比を保つ。
+
 ## 構成
 
 - TanStack Start + React + Vite: 公開ページのSSR、型付きルーティング、サーバー関数、管理画面
@@ -144,22 +157,9 @@ Workersランタイム上のSSR統合テストで公開ルートを横断検証�
 
 ## 動画登録
 
-管理画面で対象の生成バージョンを選んでアップロードできます。CLI/Codexからは、Remote MCPの
-`create_video_upload`で動画本体とサムネイル画像の一回限りURLを発行してから、それぞれへPUTします。
-管理画面は動画の先頭付近からJPEGサムネイルを自動生成します。専用の`poster`画像を使うため、
-iOS Safariでも再生前の動画カードを安定して表示できます。
-ローカルAPIを使う場合は次の補助コマンドも利用できます。
+完成原本を `python3 tools/upload-youtube.py <final.mp4> --metadata <youtube_metadata.json> --record <youtube_upload.json>` で直接YouTubeへ送信。既定はprivate。再開可能な8MiBチャンクで転送し、同じコマンドで復旧できる。秘密セッションURLはユーザーのprivate configへ保存する。
 
-```bash
-npm run upload:video -- \
-  http://127.0.0.1:5173 \
-  sobaya-beer-battery \
-  ../03_SCRIPTS/40_sobaya_beer_battery/final_video.mp4 \
-  "Final video"
-```
-
-各アップロードURLは1時間有効・一回限りです。トークンのハッシュだけをD1へ保存し、
-動画本体はWorkerでバッファせずR2へストリーミングします。
+IDを取得したら `register_youtube_video` でStudioへ登録。公開を認められた動画をYouTubeでpublicにすると、Cronが条件成立を検出して掲載する。CLI転送中断の復旧と、YouTube側の処理待ちは別。Studio向け再圧縮・サムネイルPUTは不要。
 
 ## 入力アセット
 
@@ -195,7 +195,9 @@ Streamable HTTPのエンドポイントは`/mcp`です。
 - `create_generation`
 - `update_generation`
 - `upsert_prompt`
-- `create_video_upload`
+- `register_youtube_video`
+- `list_youtube_videos`
+- `sync_youtube_videos`
 - `create_input_upload`
 - `set_video_status`
 - `set_video_featured`
@@ -255,7 +257,7 @@ OAuthキャッシュやCloudflare API tokenをリポジトリ間・利用者間�
 
 `src/official/`が本番の3スタイル（窓際酒場・仕事してるふりExcel・地下労働ゆめポイント）の正本。番号は画面へ表示しない。選択は同一ブラウザのlocalStorageへ保存し、theme指定なしで復元。
 
-`Layout`から既存の公開ページをフォールバックとして保持して読み込み、公開中のエピソード・ギャラリーを既存サーバー関数から取得する。管理画面・API・MCP・エピソード詳細の固有URLと公開メタデータを維持。動画は`/media/`、通常サムネイルは`/posters/`を使い、試作の固定エピソードJSON・動画キャッシュは本番へ含めない。
+`Layout`から既存の公開ページをフォールバックとして保持して読み込み、公開中のエピソード・ギャラリーを既存サーバー関数から取得する。管理画面・API・MCP・エピソード詳細の固有URLと公開メタデータを維持。動画はYouTube埋め込み、通常サムネイルはYouTube画像を使い、試作の固定エピソードJSON・動画キャッシュは本番へ含めない。
 
 配信用の布・紙・コンクリート・フォントは`public/themes/`。原本と生成プロンプトは`design-preview/source-assets/`。採用音声は`public/voice/sobaya.wav`。以前のローカル比較は`design-preview/`に制作履歴として保持する。今後の本番修正は`src/official/`へ反映する。
 
@@ -269,10 +271,7 @@ OAuthキャッシュやCloudflare API tokenをリポジトリ間・利用者間�
 
 ## 動画の音量設定
 
-公開ページの動画は `useVideoPreferences` で音量（0〜1）とミュート状態を共有する。
-`madogiwa-video-preferences` にブラウザーのlocalStorageで保存し、動画のマウント時と再生開始時に復元するため、別作品・再読み込み・再訪でも同じ設定を使う。
-保存できない環境ではページ内のメモリーに保持する。端末やブラウザーをまたぐ同期は行わない。
-再生位置・再生速度は保存しない。OSが音量を管理するモバイル環境では端末側の音量制御に従う。
+YouTube標準プレイヤーを使用する。旧HTML videoのローカル音量保存は公開YouTube動画には適用しない。
 
 ## 登録済みコンテンツの編集（2026-09-13）
 
@@ -280,11 +279,11 @@ OAuthキャッシュやCloudflare API tokenをリポジトリ間・利用者間�
 
 - 作品一覧でタイトル・Studio ID・slug検索、人物・公開状態・イチオシの絞り込み、掲載順・登録日・更新日・タイトル順の切り替え。
 - 「掲載順を編集」は全作品を対象にドラッグ／上下ボタンで移動し、「順序を保存」で確定。通常のソートは公開順を変更しません。
-- 作品編集ではタイトル・概要・人物・公開状態と、全生成バージョンの動画の表示名・★・状態・順序をまとめて保存。未保存の表示、キャンセル、離脱確認、再読み込みに対応。
-- 代表動画は作品一覧のサムネ・再生・制作ページ初期表示に使用。未指定なら掲載順先頭の再生可能な動画。イチオシは独立した動画単位のフラグ。
+- 作品編集ではタイトル・概要・人物・公開状態を保存。YouTube ID・種類・制作ノート・★はYouTube動画パネルで登録。未保存の表示、キャンセル、離脱確認、再読み込みに対応。
+- 最新の公開条件を満たしたYouTube登録を代表動画にする。旧R2代表動画の選択・並べ替えUIは廃止。
 - migration `0012_editor_order.sql` が既存順を初期値として保持。新規MCP登録は `display_order=-1` で先頭に入り、既存作品の更新日時変更で掲載順は動きません。テーマ固有のおすすめ作品指定は引き続き別設定です。
 - `PUT /admin-api/episodes/reorder` は全IDと変更前ID順を検証。`PUT /admin-api/episodes/:id/editor` は編集前タイムスタンプ・動画所属・人物ID・代表動画の再生可否を検証し、D1 batchで一括保存。revisionチェック用の制約により、保存中の競合時にも全体をロールバックします。
-- 認証付き `/admin-api/videos/:id/preview` と `/poster` は非公開動画の管理プレビューにも対応し、`private, no-store` で返します。公開メディアのアクセス制御は維持。
+- 管理プレビューもYouTubeを使用。旧 `/preview` は410、旧 `/poster` は移行用に保持。
 - デプロイは `npm run verify` → `npm run db:migrate:remote` → `npx wrangler deploy`。追加列は旧Workerと互換性があります。公開JSONキャッシュのURL世代はv2です。
 
 ## キャラクターの3Dビュー
@@ -325,28 +324,8 @@ OAuthキャッシュやCloudflare API tokenをリポジトリ間・利用者間�
 
 公開URL: https://madogiwa.work/clips
 
-- ホームの新着動画（酒場では「本日の入荷」）直下に案内を配置。ヘッダー・スマホメニューにも導線を用意。酒場・Excel・地下の3テーマを引き継ぐ。
-- `/clips`: クリックするまで静止画のみ。検索・絞り込みなし。1ページ18本、19本以上でページ送りを表示（`?page=2`）。現在20本。
-- `/clips/:slug`: 個別共有URL。canonicalとOGPサムネイル付き。
-- 「本編を再生」で切り抜き元の完成動画を先頭から再生するダイアログを表示。閉じると停止・アンマウント。登録済みエピソードには詳細リンクも表示する。79話は対応する公開エピソードがないため詳細リンクを出さない。
-- MP4保存、ファイル共有、ページURLコピーを用意。ファイル共有は準備→再クリックでユーザー操作を維持。対応状況は端末・アプリに依存し、使えない場合は保存を案内する。
-- `src/features/clips/catalog.json` は表示データ、`tools/clip-media.json` はローカルの素材対応表、`worker/clip-assets.json` は公開を許可するR2アセットのマニフェスト。
-- R2の `clips/<SHA-256>/<filename>` にクリップ20本・サムネイル20枚・切り抜き元11本を保存。元動画の版がStudioの掲載版と異なる場合があるため、切り抜きに使った正確な元動画を独立配信する。既存のエピソード一覧・DBは変更しない。
-- `/clip-media/<SHA-256>/<filename>` は許可リストのみ配信。ストリーミング・HEAD・Range・添付保存・ETagとimmutableキャッシュに対応。動画本体はGit管理外。
-
-### 素材更新と公開
-
-Node 24、ffmpeg、`tools/clip-media.json` に記載したローカル素材が必要。
-
-```sh
-npm run prepare:clips
-node tools/publish-clips.mjs           # 公開マニフェスト・catalogのハッシュURLを更新
-npm run dev:clips -- --port 5180       # 同じURLをローカル素材から配信
-node tools/publish-clips.mjs --upload  # 公開するときだけR2へアップロード
-npm run verify
-# 検証後mainへpushするとGitHub Actionsが本番デプロイ
-```
-
-素材を先にアップロードしてからWorkerを更新する。古いハッシュの素材は既存リンク・ロールバックのため保持する。サムネイル再生成後は必ずマニフェストを更新する。
-
-検証: 3テーマのPC・390px幅、クリック再生、本編ダイアログ、URLコピー、MP4保存を確認。共有メニューから各アプリへの受け渡し、iPhoneの写真への保存は実機検証を残す。
+- `/clips` は1ページ18本。`/clips/:slug` は個別共有URL。3テーマを引き継ぐ。
+- 公開中のYouTube動画に紐付くクリップのみ掲載する。対応する動画のない「ビールのために脱獄」は非掲載。
+- YouTubeのstart/endで該当範囲を再生。本編ダイアログは先頭から再生する。シーク位置はYouTubeの仕様により厳密なフレーム単位ではない。今後本編の版を更新した場合はクリップのstartSeconds/secondsも再確認する。
+- MP4保存・ファイル共有は廃止。YouTubeリンクとページURLコピーで共有する。
+- `catalog.json` の既存サムネイル画像は継続使用。旧R2 MP4は配信しない。旧素材対応表は切り戻し用に保持。`tools/publish-clips.mjs --upload` による動画登録は廃止。

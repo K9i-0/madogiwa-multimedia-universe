@@ -44,8 +44,10 @@ export function socialMeta({
   ];
 }
 
-export type PublicVideo = Pick<Video, "id" | "generation_id" | "label" | "created_at" | "is_featured"> & {
+export type PublicVideo = Pick<Video, "id" | "label" | "created_at" | "is_featured"> & {
   poster_url: string | null;
+  youtube_id?: string | null;
+  generation_id: string | null;
 };
 
 export type PublicPrompt = Pick<PromptVersion, "label" | "body" | "version">;
@@ -60,6 +62,7 @@ export type PublicProduction = {
   version: number;
   label: string;
   model_name: string | null;
+  notes?: string;
   prompt: PublicPrompt | null;
   inputs: PublicInputAsset[];
 };

@@ -1,3 +1,4 @@
+import {publish} from './youtube-fixture';
 import { env } from "cloudflare:workers";
 import { createExecutionContext, SELF } from "cloudflare:test";
 import { describe, expect, it } from "vitest";
@@ -99,61 +100,15 @@ describe("Madogiwa Studio Worker", () => {
     expect(detail.generations.find((item) => item.version === 2)?.model_name).toBe("Seedance 2.5");
   });
 
-  it("streams an uploaded featured video and supports featured filtering", async () => {
-    const detail = await (await adminFetch("http://localhost/admin-api/episodes/sobaya-beer-battery")).json<{ generations: Array<{ id: string }> }>();
-    const ticketResponse = await adminFetch(`http://localhost/admin-api/generations/${detail.generations[0].id}/uploads`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ filename: "test.mp4", label: "Range test", contentType: "video/mp4", featured: true }),
-    });
-    const ticket = await ticketResponse.json<{ videoId: string; uploadUrl: string; posterUploadUrl: string }>();
-    const posterBytes = new Uint8Array([255, 216, 255, 224, 0, 16, 74, 70, 73, 70, 255, 217]);
-    expect((await SELF.fetch(ticket.posterUploadUrl, {
-      method: "PUT",
-      headers: { "content-type": "image/jpeg", "content-length": String(posterBytes.byteLength) },
-      body: posterBytes,
-    })).status).toBe(201);
-    const bytes = new Uint8Array(256).map((_, index) => index);
-    expect((await SELF.fetch(ticket.uploadUrl, { method: "PUT", headers: { "content-type": "video/mp4", "content-length": "256" }, body: bytes })).status).toBe(201);
-    const mediaResponse = await SELF.fetch(`http://localhost/media/${ticket.videoId}`, { headers: { range: "bytes=10-19" } });
-    expect(mediaResponse.status).toBe(206);
-    expect(mediaResponse.headers.get("content-range")).toBe("bytes 10-19/256");
-    const posterResponse = await adminFetch(`http://localhost/posters/${ticket.videoId}`);
-    expect(posterResponse.status).toBe(200);
-    expect(posterResponse.headers.get("content-type")).toBe("image/jpeg");
-    expect(posterResponse.headers.get("cache-control")).toContain("immutable");
-    expect((await adminFetch("http://localhost/admin-api/episodes/sobaya-beer-battery", {
-      method: "PATCH",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ status: "archived" }),
-    })).status).toBe(200);
-    expect((await SELF.fetch(`http://localhost/media/${ticket.videoId}`)).status).toBe(401);
-    expect((await adminFetch(`http://localhost/media/${ticket.videoId}`)).status).toBe(200);
-    expect((await adminFetch("http://localhost/admin-api/episodes/sobaya-beer-battery", {
-      method: "PATCH",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ status: "published" }),
-    })).status).toBe(200);
-    const featuredList = await (await adminFetch("http://localhost/admin-api/episodes?featured=true")).json<{
-      episodes: Array<{ slug: string; primary_video_id: string | null; primary_video_poster_url: string | null; has_featured_video: number }>;
-    }>();
-    expect(featuredList.episodes).toContainEqual(expect.objectContaining({
-      slug: "sobaya-beer-battery",
-      primary_video_id: ticket.videoId,
-      primary_video_poster_url: `/posters/${ticket.videoId}`,
-      has_featured_video: 1,
-    }));
-    const clearResponse = await adminFetch(`http://localhost/admin-api/videos/${ticket.videoId}`, {
-      method: "PATCH",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ featured: false }),
-    });
-    expect(clearResponse.status).toBe(200);
-    expect((await clearResponse.json<{ is_featured: number }>()).is_featured).toBe(0);
+  it("retires video uploads and binary delivery", async () => {
+    expect((await adminFetch('http://localhost/admin-api/generations/id/uploads',{method:'POST'})).status).toBe(410);
+    for (const path of ['/media/id','/clip-media/hash/file.mp4','/api/uploads/id','/api/poster-uploads/id']) expect((await SELF.fetch('http://localhost'+path)).status).toBe(410);
   });
 
   it("registers input assets inside a generation", async () => {
     const detail = await (await adminFetch("http://localhost/admin-api/episodes/sobaya-beer-battery")).json<{ generations: Array<{ id: string }> }>();
+    const seeded = await env.DB.prepare("SELECT id FROM episodes WHERE slug='sobaya-beer-battery'").first<{id:string}>();
+    await publish(seeded!.id,detail.generations[0].id);
     const ticketResponse = await adminFetch(`http://localhost/admin-api/generations/${detail.generations[0].id}/input-uploads`, {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -216,12 +171,8 @@ describe("Madogiwa Studio Worker", () => {
       expect(adminResponse.headers.get("cache-control")).toBe("private, no-store");
       expect(await adminResponse.text()).toBe(markdown);
     }
-    const videoTicket = await (await adminFetch(`http://localhost/admin-api/generations/${generationId}/uploads`, {
-      method: "POST", headers: { "content-type": "application/json" },
-      body: JSON.stringify({ filename: "test.mp4", label: "Test", contentType: "video/mp4" }),
-    })).json<{ uploadUrl: string; posterUploadUrl: string }>();
-    expect((await SELF.fetch(videoTicket.posterUploadUrl, { method: "PUT", headers: { "content-type": "image/jpeg" }, body: new Uint8Array([255, 216, 255, 217]) })).status).toBe(201);
-    expect((await SELF.fetch(videoTicket.uploadUrl, { method: "PUT", body: new Uint8Array([1, 2, 3, 4]) })).status).toBe(201);
+    const episode = await env.DB.prepare('SELECT episode_id FROM generations WHERE id=?').bind(generationId).first<{episode_id:string}>();
+    await publish(episode!.episode_id,generationId);
 
     for (const query of ["", "?preview=1", "?download=1"]) {
       const response = await SELF.fetch(markdownUrl + query);
@@ -436,7 +387,9 @@ describe("Madogiwa Studio Worker", () => {
     expect(body).toContain("update_generation");
     expect(body).toContain("set_episode_members");
     expect(body).toContain("create_input_upload");
-    expect(body).toContain("set_video_featured");
+    expect(body).toContain("register_youtube_video");
+    expect(body).toContain("sync_youtube_videos");
+    expect(body).not.toContain("create_video_upload");
     expect(body).toContain("list_gallery_items");
     expect(body).toContain("create_gallery_image_upload");
     expect(body).toContain("reorder_gallery_items");

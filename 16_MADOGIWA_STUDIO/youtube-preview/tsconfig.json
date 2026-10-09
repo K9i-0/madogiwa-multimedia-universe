@@ -1,0 +1,1 @@
+{"extends": "../tsconfig.app.json", "compilerOptions": {"tsBuildInfoFile": "../node_modules/.tmp/youtube-preview.tsbuildinfo", "types": ["../worker-configuration.d.ts"]}, "include": ["main.tsx", "../src/vite-env.d.ts"]}

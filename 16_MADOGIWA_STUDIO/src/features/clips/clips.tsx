@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { YouTubePlayer } from "@/components/youtube-player";
+import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Link } from "@tanstack/react-router";
 import {
-  ArrowDownToLine,
   ArrowLeft,
   ArrowUpRight,
-  Check,
   Copy,
   Play,
   Share2,
@@ -26,12 +25,13 @@ import "@/official/sakaba.css";
 import "./clips.css";
 
 export const clips = catalog;
-type Clip = (typeof clips)[number];
+export type Clip = (typeof clips)[number] & { youtube_id?: string; source_youtube_id?: string; youtube_start?: number; youtube_end?: number };
 export const CLIPS_PER_PAGE = 18;
 const seconds = (clip: Clip) => `${clip.seconds.toFixed(1)}秒`;
 
 function Player({ clip }: { clip: Clip }) {
   const [playing, setPlaying] = useState(false);
+  if (clip.youtube_id) return <YouTubePlayer id={clip.youtube_id} title={clip.title} poster={clip.poster} start={clip.youtube_start} end={clip.youtube_end} />;
   return (
     <div className="clips-player">
       {playing ? (
@@ -101,7 +101,7 @@ function MainVideoDialog({ clip }: { clip: Clip }) {
               </button>
             </Dialog.Close>
           </div>
-          {open && (
+          {open && (clip.source_youtube_id ? <YouTubePlayer id={clip.source_youtube_id} title={`第${clip.episode}話の本編`} autoPlay /> :
             <video
               src={clip.source}
               controls
@@ -135,114 +135,17 @@ function MainVideoDialog({ clip }: { clip: Clip }) {
 }
 
 function Actions({ clip }: { clip: Clip }) {
-  const [file, setFile] = useState<File | null>(null);
-  const [busy, setBusy] = useState(false);
-  const [message, setMessage] = useState("");
   const [copied, setCopied] = useState(false);
   const [fallbackUrl, setFallbackUrl] = useState("");
-  const active = useRef(true);
-  useEffect(() => {
-    active.current = true;
-    return () => {
-      active.current = false;
-    };
-  }, []);
-  async function share() {
-    setMessage("");
-    if (file) {
-      try {
-        await navigator.share({ files: [file] });
-      } catch (error) {
-        if (import.meta.env.DEV)
-          console.warn("Clip file sharing failed", error);
-        if (!(error instanceof DOMException && error.name === "AbortError"))
-          setMessage("共有できませんでした。MP4を保存して添付できます。");
-      }
-      return;
-    }
-    if (!navigator.share || !navigator.canShare) {
-      setMessage(
-        "このブラウザでは動画の共有メニューを使えません。MP4を保存して添付してください。",
-      );
-      return;
-    }
-    setBusy(true);
-    try {
-      const response = await fetch(clip.video);
-      if (!response.ok) throw new Error("Video unavailable");
-      const prepared = new File([await response.blob()], clip.filename, {
-        type: "video/mp4",
-      });
-      if (!active.current) return;
-      if (!navigator.canShare({ files: [prepared] })) {
-        setMessage(
-          "この環境ではMP4を直接共有できません。MP4を保存して添付してください。",
-        );
-        return;
-      }
-      setFile(prepared);
-      setMessage(
-        "動画を準備しました。もう一度ボタンを押すと共有先を選べます。",
-      );
-    } catch {
-      if (active.current)
-        setMessage(
-          "動画を読み込めませんでした。接続を確認して、もう一度お試しください。",
-        );
-    } finally {
-      if (active.current) setBusy(false);
-    }
-  }
   async function copy() {
     const url = new URL(`/clips/${clip.id}`, window.location.origin).href;
-    try {
-      await navigator.clipboard.writeText(url);
-      setCopied(true);
-      setFallbackUrl("");
-    } catch {
-      setFallbackUrl(url);
-      setMessage("下のURLを選択してコピーしてください。");
-    }
+    try { await navigator.clipboard.writeText(url); setCopied(true); setFallbackUrl(""); }
+    catch { setFallbackUrl(url); }
   }
-  return (
-    <div className="clips-actions-wrap">
-      <div className="clips-actions">
-        <a
-          className="clips-download"
-          href={`${clip.video}?download=1`}
-          download={clip.filename}
-        >
-          <ArrowDownToLine size={17} />
-          MP4を保存
-        </a>
-        <button onClick={() => void share()} disabled={busy}>
-          <Share2 size={17} />
-          {busy ? "準備中…" : file ? "共有先を選ぶ" : "動画を共有"}
-        </button>
-        <button
-          onClick={() => void copy()}
-          aria-label={`${clip.title}のURLをコピー`}
-        >
-          {copied ? <Check size={17} /> : <Copy size={17} />}
-          {copied ? "コピー済み" : "URLをコピー"}
-        </button>
-      </div>
-      {message && (
-        <p className="clips-status" role="status">
-          {message}
-        </p>
-      )}
-      {fallbackUrl && (
-        <input
-          className="clips-copy-fallback"
-          aria-label="クリップのURL"
-          readOnly
-          value={fallbackUrl}
-          onFocus={(event) => event.target.select()}
-        />
-      )}
-    </div>
-  );
+  return <div className="clips-actions-wrap"><div className="clips-actions">
+    {clip.youtube_id && <a href={`https://www.youtube.com/watch?v=${clip.youtube_id}${clip.youtube_start ? `&t=${Math.floor(clip.youtube_start)}s` : ""}`} target="_blank" rel="noreferrer"><Share2 size={17} />YouTubeで開く・共有</a>}
+    <button onClick={() => void copy()}><Copy size={17} />{copied ? "コピーしました" : "ページURLをコピー"}</button>
+  </div>{fallbackUrl && <input readOnly value={fallbackUrl} aria-label="共有URL" onFocus={(event) => event.target.select()} />}</div>;
 }
 
 function Shell({ children }: { children: React.ReactNode }) {
@@ -309,35 +212,11 @@ function Shell({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Guide() {
-  return (
-    <details className="clips-guide">
-      <summary>
-        動画の使い方 <span>保存・共有・URLのちがい</span>
-      </summary>
-      <div>
-        <p>
-          <b>MP4を保存</b>
-          音声つきの動画を保存し、Xの返信やSlackのメッセージに添付。iPhoneでは「ファイル」に保存される場合があります。「ファイル」の共有メニューに「ビデオを保存」があれば写真アプリへ移せます。
-        </p>
-        <p>
-          <b>動画を共有</b>
-          動画を準備したあと「共有先を選ぶ」で端末の共有メニューを開きます。選べるアプリは環境によって異なります。Xの特定の投稿に返信する場合は、返信画面から保存したMP4を添付してください。
-        </p>
-        <p>
-          <b>URLをコピー</b>
-          このクリップのページを紹介するリンクです。動画ファイルの添付とは異なります。
-        </p>
-      </div>
-    </details>
-  );
-}
-
-export function ClipsPage({ page }: { page: number }) {
-  const pageCount = Math.max(1, Math.ceil(clips.length / CLIPS_PER_PAGE));
+export function ClipsPage({ page, items = clips }: { page: number; items?: Clip[] }) {
+  const pageCount = Math.max(1, Math.ceil(items.length / CLIPS_PER_PAGE));
   const currentPage = Math.min(page, pageCount);
   const offset = (currentPage - 1) * CLIPS_PER_PAGE;
-  const visibleClips = clips.slice(offset, offset + CLIPS_PER_PAGE);
+  const visibleClips = items.slice(offset, offset + CLIPS_PER_PAGE);
   return (
     <Shell>
       <main className="clips-main">
@@ -347,7 +226,7 @@ export function ClipsPage({ page }: { page: number }) {
         </header>
         <div className="clips-results">
           <h2>クリップ一覧</h2>
-          <span aria-live="polite">{clips.length} 本</span>
+          <span aria-live="polite">{items.length} 本</span>
         </div>
         <div className="clips-grid">
           {visibleClips.map((clip) => (
@@ -368,7 +247,7 @@ export function ClipsPage({ page }: { page: number }) {
                 <div className="clips-card-info">
                   <span>#{clip.tag}</span>
                   <span>
-                    {seconds(clip)} · {(clip.bytes / 1024 / 1024).toFixed(1)} MB
+                    {seconds(clip)}
                   </span>
                 </div>
                 <Actions clip={clip} />
@@ -418,7 +297,7 @@ export function ClipPage({ clip }: { clip: Clip }) {
               <span>
                 第{clip.episode}話 ／ {clip.character}
               </span>
-              <span>{seconds(clip)} · 音声つきMP4</span>
+              <span>{seconds(clip)} · 音声つき</span>
             </div>
           </section>
           <section className="clips-detail-info">
@@ -444,7 +323,7 @@ export function ClipPage({ clip }: { clip: Clip }) {
             </div>
           </section>
         </div>
-        <Guide />
+        <p className="clips-guide">ページURLをコピーして、この一幕を共有できます。</p>
         <aside className="clips-detail-next">
           <b>ほかの一幕も、のぞいていく？</b>
           <Link to="/clips">

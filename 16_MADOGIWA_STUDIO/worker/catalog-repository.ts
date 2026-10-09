@@ -8,7 +8,7 @@ export async function queryCatalog(db: D1Database, options: CatalogOptions = {},
   const cursor = parseCatalogCursor(options.cursor);
   const where = ["e.status = 'published'", "e.title NOT LIKE '%検証%'", 'v.id IS NOT NULL'];
   const bindings: (string | number)[] = [];
-  if (!options.all) where.push("EXISTS (SELECT 1 FROM videos f WHERE f.episode_id = e.id AND f.is_featured = 1 AND f.status NOT IN ('archived', 'upload_pending'))");
+  if (!options.all) where.push("EXISTS (SELECT 1 FROM published_youtube_videos f WHERE f.episode_id = e.id AND f.is_featured = 1 AND f.status NOT IN ('archived', 'upload_pending'))");
   if (options.member) {
     where.push('EXISTS (SELECT 1 FROM episode_members em JOIN members m ON m.id = em.member_id WHERE em.episode_id = e.id AND m.slug = ?)');
     bindings.push(options.member);
@@ -22,11 +22,11 @@ export async function queryCatalog(db: D1Database, options: CatalogOptions = {},
   }
   const sort = options.backwards ? 'e.display_order DESC, e.created_at, e.id DESC' : 'e.display_order, e.created_at DESC, e.id';
   const result = await db.prepare(`SELECT e.*, v.id AS primary_video_id,
-    CASE WHEN v.poster_r2_key IS NOT NULL THEN '/posters/' || v.id ELSE NULL END AS primary_video_poster_url,
-    EXISTS (SELECT 1 FROM videos f WHERE f.episode_id = e.id AND f.is_featured = 1 AND f.status NOT IN ('archived', 'upload_pending')) AS has_featured_video
-    FROM episodes e LEFT JOIN videos v ON v.id = COALESCE(
-      (SELECT r.id FROM videos r WHERE r.id = e.representative_video_id AND r.episode_id = e.id AND r.status NOT IN ('archived', 'upload_pending')),
-      (SELECT p.id FROM videos p WHERE p.episode_id = e.id AND p.status NOT IN ('archived', 'upload_pending') ORDER BY p.display_order, p.created_at DESC, p.id LIMIT 1)
+    v.poster_url AS primary_video_poster_url, v.youtube_id AS primary_youtube_id,
+    EXISTS (SELECT 1 FROM published_youtube_videos f WHERE f.episode_id = e.id AND f.is_featured = 1 AND f.status NOT IN ('archived', 'upload_pending')) AS has_featured_video
+    FROM episodes e LEFT JOIN published_youtube_videos v ON v.id = COALESCE(
+      (SELECT r.id FROM published_youtube_videos r WHERE r.id = e.representative_video_id AND r.episode_id = e.id AND r.status NOT IN ('archived', 'upload_pending')),
+      (SELECT p.id FROM published_youtube_videos p WHERE p.episode_id = e.id AND p.status NOT IN ('archived', 'upload_pending') ORDER BY p.display_order, p.created_at DESC, p.id LIMIT 1)
     ) WHERE ${where.join(' AND ')} ORDER BY ${sort} ${paginated ? `LIMIT ${CATALOG_SIZE + 1}` : ''}`).bind(...bindings).all<Omit<PublicCard, 'members'>>();
   const more = paginated && result.results.length > CATALOG_SIZE;
   const selected = paginated ? result.results.slice(0, CATALOG_SIZE) : result.results;
@@ -50,5 +50,5 @@ export function listCatalog(db: D1Database, options: CatalogOptions = {}, pagina
   parseCatalogCursor(options.cursor);
   if (options.member && !/^[a-z0-9_-]{1,80}$/.test(options.member)) throw new Error('Invalid member');
   const normalized = { all: !!options.all, member: options.member || '', cursor: options.cursor || '', backwards: !!options.backwards };
-  return cachedPublicData(db, `catalog-v1:${paginated}:${JSON.stringify(normalized)}`, () => queryCatalog(db, normalized, paginated));
+  return cachedPublicData(db, `catalog-youtube-v1:${paginated}:${JSON.stringify(normalized)}`, () => queryCatalog(db, normalized, paginated));
 }

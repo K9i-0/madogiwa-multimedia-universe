@@ -812,3 +812,7 @@ button.clips-source-link:hover {
   min-height: 32px;
   white-space: nowrap;
 }
+
+/* Link sharing replaces the former three download/share controls. */
+.clips-card .clips-actions { display: grid; grid-template-columns: minmax(0, 1fr); }
+.clips-actions > a, .clips-actions > button { min-width: 0; white-space: normal; overflow-wrap: anywhere; }

@@ -1,6 +1,5 @@
 {
-  "status": "blocked_authentication",
-  "reason": "Studio MCP returned: MCP authentication required. Reconnect to continue using this server.",
+  "status": "registered_waiting_public",
   "proposedSlug": "sobaya-five-unconventional-episodes",
   "title": "そば屋の奇行5選｜たこさん＆やめ太郎【窓際族物語】",
   "contentKind": "explainer",
@@ -724,14 +723,10 @@
       "bytes": 33794
     }
   ],
-  "registrationCompleted": false,
-  "youtubeUploadCompleted": false,
-  "nextSteps": [
-    "Reconnect Studio MCP",
-    "list_episodes and list_youtube_videos to avoid duplicates",
-    "Create or update episode and adopted generation",
-    "Upload adopted inputs; confirm ready",
-    "Upload final master to YouTube and register returned ID immediately",
-    "Sync and report publication state"
-  ]
+  "registrationCompleted": true,
+  "youtubeUploadCompleted": true,
+  "nextSteps": [],
+  "studioId": "MS-NTKH2QT8",
+  "episodeId": "706f2bc0-0b91-4cd8-913b-7a81b35c4c06",
+  "generationId": "4bcbfaa8-7da5-4f95-b4ee-ad3d9b224713"
 }

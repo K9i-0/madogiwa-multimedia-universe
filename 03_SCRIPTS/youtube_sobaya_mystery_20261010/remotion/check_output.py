@@ -4,6 +4,8 @@ import numpy as np
 P=Path(__file__).resolve().parent;m=json.loads((P/'src/edit-manifest.json').read_text());r=[]
 last=0
 for d in m['dialogue']:
+ if '霜重' in d['text']:
+  assert 'シモジュウ' in d['kana'].replace("'",'').replace('/',''),d['kana']
  assert d['startFrame']>=last
  assert len(d['caption'].splitlines())<=2
  assert max(map(len,d['caption'].splitlines()))<=38
@@ -19,7 +21,7 @@ for d in m['dialogue']:
  if d['startFrame']<reveal:
   assert 'そば屋' not in d['text'] and 'クローン' not in d['text'] and 'ビール' not in d['text'],d['text']
 report={'voiceFiles':len(r),'durationSeconds':m['composition']['durationInFrames']/30,'captionAndTimelineValidation':'pass','voices':r,'listeningAudit':'Not performed; technical checks do not establish listening quality'}
-f=P.parent/'final_remotion_sobaya_mystery_v3.mp4'
+f=P.parent/'final_remotion_sobaya_mystery_v4.mp4'
 if f.exists():
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(f)]))
  v=next(x for x in probe['streams'] if x['codec_type']=='video');a=next(x for x in probe['streams'] if x['codec_type']=='audio')

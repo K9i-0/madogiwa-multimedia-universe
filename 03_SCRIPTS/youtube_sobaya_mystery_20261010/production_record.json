@@ -5,9 +5,9 @@
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 20263
+    "durationInFrames": 20719
   },
-  "durationSeconds": 675.4333333333333,
+  "durationSeconds": 690.6333333333333,
   "voicevoxVersion": "0.25.1",
   "voiceSettings": {
     "metan": {
@@ -25,18 +25,50 @@
   "audioSynchronization": "Measured WAV lengths and per-frame RMS mouth shapes",
   "soundtrack": "Original procedural ambient; no third-party music",
   "publication": "Not published or uploaded",
-  "visualQA": "All 35 layouts inspected in rendered preview frames. Final MP4 decoded frames for cryptids, analysis recreation, ancient chamber reconstruction and employee reveal inspected; no text clipping or character overlap found.",
+  "visualQA": "Changed attribution layouts and subscription ending inspected both in previews and decoded final MP4 frames; no clipping or overlap found.",
   "listeningQA": "No listening-capable tool; not claimed as auditioned",
-  "revision": 3,
-  "voiceFiles": 128,
-  "cleanRevealFrame": 17295,
+  "revision": 4,
+  "voiceFiles": 130,
+  "cleanRevealFrame": 17369,
   "imageGeneration": "Built-in image_gen; inputs/imagegen_v3_prompts.json plus silhouette_prompt.txt",
   "evidenceTreatment": "Reframed, reduced resolution, grayscale, noise, handheld motion or fixed observation scanlines",
-  "comparisonVersion": "final_remotion_sobaya_mystery_v2.mp4",
-  "finalOutput": "final_remotion_sobaya_mystery_v3.mp4",
+  "comparisonVersion": "final_remotion_sobaya_mystery_v3.mp4",
+  "finalOutput": "final_remotion_sobaya_mystery_v4.mp4",
   "researchers": {
-    "木村": "広域未確認生物研究所・形態比較",
-    "林": "広域未確認生物研究所・映像解析",
-    "霜重": "狭間文明研究所・旧文明研究、読みシモシゲ"
-  }
+    "木村": {
+      "organization": "広域未確認生物研究所",
+      "role": "形態比較",
+      "reading": "キムラ"
+    },
+    "林": {
+      "organization": "中央映像解析センター",
+      "role": "映像解析",
+      "reading": "ハヤシ"
+    },
+    "霜重": {
+      "organization": "狭間文明研究所",
+      "role": "旧文明研究",
+      "reading": "シモジュウ"
+    },
+    "中口": {
+      "organization": "比較言語文化研究会",
+      "role": "儀式・言語調査",
+      "reading": "ナカグチ"
+    },
+    "北原": {
+      "organization": "未知環境生理研究所",
+      "role": "宇宙での行動・生理",
+      "reading": "キタハラ"
+    },
+    "江本": {
+      "organization": "未確認ニュースネット",
+      "role": "記者",
+      "reading": "エモト"
+    }
+  },
+  "pronunciationQA": "All four 霜重 utterances have シモジュウ in VOICEVOX kana; not a listening audit.",
+  "reusedVoiceFiles": 113,
+  "newVoiceFiles": 17,
+  "endingPreview": "preview_ending_v4.mp4",
+  "endingPreviewSeconds": 37.2
 }

@@ -14,7 +14,7 @@ export const Panel:React.FC<{view:string;elapsed:number;start:number}>=({view,st
  return <><Head>{v.heading}</Head>
  {['silhouette','outline','mask'].includes(view)&&<Silhouette labels={view==='outline'} head={view==='mask'}/>}
  {e&&<Evidence name={e[0]} handheld={e[1]} still={e[2]} zoom={e[3]} start={start}/>}
- {view==='enhance'&&<div style={{position:'relative',width:780,height:360}}><Img src={staticFile('research_desk_v3.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/><div style={{position:'absolute',bottom:14,left:18,background:'#081018dd',padding:'9px 14px',fontSize:20}}>広域未確認生物研究所・林研究員の解析（再現）</div></div>}
+ {view==='enhance'&&<div style={{position:'relative',width:780,height:360}}><Img src={staticFile('research_desk_v3.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/><div style={{position:'absolute',bottom:14,left:18,background:'#081018dd',padding:'9px 14px',fontSize:20}}>中央映像解析センター・林研究員の解析（再現）</div></div>}
  {view==='sleepers'&&<div style={{position:'relative',width:780,height:360}}><Img src={staticFile('ancient_chamber_v3.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/><div style={{position:'absolute',bottom:14,left:18,background:'#081018dd',padding:'9px 14px',fontSize:20}}>狭間文明研究所・霜重研究員の仮説による想像復元</div></div>}
  {view==='height'&&<Diagram label="広域未確認生物研究所・木村研究員" items={['大型画面で見る → 大きく見える','小型画面で見る → 小さく見える','推定身長：測定環境に依存']}/>}
  {view==='cryptids'&&<div style={{height:360,display:'flex',gap:24}}>{[['bigfoot_v3.png','ビッグフット','北米の伝承'],['yeti_v3.png','イエティ','ヒマラヤの伝承'],['sobaya_silhouette_v2.png','SOBAYA','マドギワの目撃記録']].map(([file,name,note])=><div key={name} style={{width:235}}><div style={{height:278,background:'#8b9488'}}><Img src={staticFile(file)} style={{width:'100%',height:'100%',objectFit:'contain'}}/></div><div style={{fontFamily:'serif',fontSize:25,color:gold,marginTop:9}}>{name}</div><div style={{fontSize:17,marginTop:5}}>{note}</div></div>)}</div>}
@@ -29,6 +29,7 @@ export const Panel:React.FC<{view:string;elapsed:number;start:number}>=({view,st
  {view==='corrections'&&<div style={{height:360,display:'flex',alignItems:'center',gap:20}}><div>{photo('lab',375,240)}<div style={{fontSize:23,color:gold,marginTop:15}}>遺跡 → クローン研究施設</div></div><div>{photo('window',375,240)}<div style={{fontSize:23,color:gold,marginTop:15}}>古代の門 → アルミサッシ</div></div></div>}
  {view==='research_response'&&<Diagram label="訂正発表と続報" items={['研究所：社員説も排除していなかった','報道：独自のつながりで正体を解明']}/>}
  {view==='space_question'&&photo('spacebeer')}
+ {view==='subscribe'&&<div style={{height:360,width:780,display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:27}}><div style={{fontSize:25,lineHeight:1.8}}>本日の調査報告を支持される方<br/>マドギワでの生息を希望される方</div><div style={{width:110,height:1,background:gold}}/><div style={{fontSize:40,color:gold,letterSpacing:3}}>高評価・チャンネル登録</div><div style={{fontSize:21,color:'#b0babd'}}>今後の観測記録も、お見逃しなく。</div></div>}
  {view==='closing'&&<div style={{height:360,display:'flex',alignItems:'center',fontSize:40,lineHeight:1.9,fontFamily:'serif'}}>研究費の精算は、<br/>今後の課題である。</div>}
  <div style={{fontSize:19,color:'#b0babd',marginTop:17,lineHeight:1.5}}>{v.note}</div>
  </>;

@@ -23,3 +23,15 @@
 元動画を改変せず、低解像度、ぼけ、減色、ノイズの派生MP4を用意。React側で手ぶれ、前景の遮蔽、走査線、信号抜け、受領映像の反復再生を重ねる。手持ち目撃映像と固定観測カメラを区別する。クリーンな既存エピソードの画は `employee` 以降にのみ使用する。
 
 カット元・時刻・フィルター・SHA-256は `evidence_sources_v2.json`、実装は `remotion/prepare_evidence.py` と `remotion/src/Evidence.tsx`。
+
+
+## v3 採用生成画像
+
+内蔵image_genで新規生成。実際の入力は `inputs/imagegen_v3_prompts.json`。画像内に正確な文字を描かせず、ラベルはRemotionで合成。
+
+- `inputs/bigfoot_v3.png` — SHA256 `76e293a25c0875969b07475ab60cc0d41cc6c3b3b14dc2b41d175ea7af9a60e6`
+- `inputs/yeti_v3.png` — SHA256 `aa27e18ff3dd24cbebf0f2a98917468a98c5fa0313492169ce53369c4f7b95b2`
+- `inputs/ancient_chamber_v3.png` — SHA256 `d4c3d086280f95b7bd53992f0ee0a8cbd30ee4418b48cd9219571da136177c10`
+- `inputs/research_desk_v3.png` — SHA256 `4d5d2f4fe3a1534a9016fb1d3bb81c2d023b030fe0a93b84397488db51f7cef5`
+
+ビッグフット・イエティは伝承の想像復元図、地下構造物は霜重研究員の仮説による想像復元、解析机は林研究員の作業再現として表示。実在の写真資料とは扱わない。

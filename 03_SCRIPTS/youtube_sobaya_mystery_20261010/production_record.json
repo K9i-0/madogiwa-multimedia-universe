@@ -5,9 +5,9 @@
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 19899
+    "durationInFrames": 20263
   },
-  "durationSeconds": 663.3,
+  "durationSeconds": 675.4333333333333,
   "voicevoxVersion": "0.25.1",
   "voiceSettings": {
     "metan": {
@@ -25,14 +25,18 @@
   "audioSynchronization": "Measured WAV lengths and per-frame RMS mouth shapes",
   "soundtrack": "Original procedural ambient; no third-party music",
   "publication": "Not published or uploaded",
-  "visualQA": "35 layouts and selected final MP4 frames inspected. A 450-frame ruins shot crossing to an unrelated face was replaced with the fixed tank-bank archive frame; final frame at 369s verified. Corrected mask label overlap, source HUD leakage and gate framing.",
+  "visualQA": "All 35 layouts inspected in rendered preview frames. Final MP4 decoded frames for cryptids, analysis recreation, ancient chamber reconstruction and employee reveal inspected; no text clipping or character overlap found.",
   "listeningQA": "No listening-capable tool; not claimed as auditioned",
-  "revision": 2,
+  "revision": 3,
   "voiceFiles": 128,
-  "cleanRevealFrame": 17096,
-  "imageGeneration": "Built-in image_gen; inputs/silhouette_prompt.txt; inputs/sobaya_silhouette_v2.png",
+  "cleanRevealFrame": 17295,
+  "imageGeneration": "Built-in image_gen; inputs/imagegen_v3_prompts.json plus silhouette_prompt.txt",
   "evidenceTreatment": "Reframed, reduced resolution, grayscale, noise, handheld motion or fixed observation scanlines",
-  "comparisonVersion": "final_remotion_sobaya_mystery.mp4",
-  "finalOutput": "final_remotion_sobaya_mystery_v2.mp4",
-  "finalPatch": "final_patch_record.json"
+  "comparisonVersion": "final_remotion_sobaya_mystery_v2.mp4",
+  "finalOutput": "final_remotion_sobaya_mystery_v3.mp4",
+  "researchers": {
+    "木村": "広域未確認生物研究所・形態比較",
+    "林": "広域未確認生物研究所・映像解析",
+    "霜重": "狭間文明研究所・旧文明研究、読みシモシゲ"
+  }
 }

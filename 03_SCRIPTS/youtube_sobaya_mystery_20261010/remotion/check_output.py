@@ -19,7 +19,7 @@ for d in m['dialogue']:
  if d['startFrame']<reveal:
   assert 'そば屋' not in d['text'] and 'クローン' not in d['text'] and 'ビール' not in d['text'],d['text']
 report={'voiceFiles':len(r),'durationSeconds':m['composition']['durationInFrames']/30,'captionAndTimelineValidation':'pass','voices':r,'listeningAudit':'Not performed; technical checks do not establish listening quality'}
-f=P.parent/'final_remotion_sobaya_mystery_v2.mp4'
+f=P.parent/'final_remotion_sobaya_mystery_v3.mp4'
 if f.exists():
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(f)]))
  v=next(x for x in probe['streams'] if x['codec_type']=='video');a=next(x for x in probe['streams'] if x['codec_type']=='audio')

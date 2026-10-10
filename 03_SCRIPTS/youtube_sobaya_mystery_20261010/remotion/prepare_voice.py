@@ -5,7 +5,7 @@ version=requests.get('http://127.0.0.1:50021/version',timeout=10).json()
 rows=json.loads((P/'dialogue.json').read_text());out=[];cursor=30
 for i,r in enumerate(rows):
  speaker=2 if r['who']=='metan' else 3
- spoken=r['text'].replace('福ギュン','フクギュン').replace('人型','ヒトガタ').replace('原個体','ゲンコタイ')
+ spoken=r['text'].replace('福ギュン','フクギュン').replace('人型','ヒトガタ').replace('原個体','ゲンコタイ').replace('霜重','シモシゲ')
  res=requests.post('http://127.0.0.1:50021/audio_query',params={'speaker':speaker,'text':spoken},timeout=60);res.raise_for_status();q=res.json()
  q.update(speedScale=1.08 if speaker==2 else 1.13,prePhonemeLength=.09,postPhonemeLength=.12,outputSamplingRate=24000)
  key=hashlib.sha256(json.dumps({'query':q,'speaker':speaker,'engine':version},sort_keys=True).encode()).hexdigest()[:12];name=f'voice_{i:03}_{key}.wav';f=P/'public'/name

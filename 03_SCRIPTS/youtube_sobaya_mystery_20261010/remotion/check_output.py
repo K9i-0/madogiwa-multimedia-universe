@@ -22,8 +22,17 @@ for d in m['dialogue']:
   assert 'そば屋' not in d['text'] and 'クローン' not in d['text'] and 'ビール' not in d['text'],d['text']
 assert sum('ラピュタ' in d['text'] for d in m['dialogue'])==1
 assert not any(d['view']=='movie_evidence' or 'E.T.' in d['text'] for d in m['dialogue'])
-report={'fictionReferenceValidation':'pass: one Laputa reference', 'voiceFiles':len(r),'durationSeconds':m['composition']['durationInFrames']/30,'captionAndTimelineValidation':'pass','voices':r,'listeningAudit':'Not performed; technical checks do not establish listening quality'}
-f=P.parent/'final_remotion_sobaya_mystery_v6.mp4'
+for cue in m['visualCues'].values():
+ row=m['dialogue'][cue['dialogueIndex']]
+ assert row['startFrame']<=cue['frame']<row['startFrame']+row['durationInFrames']
+for keys in [('portal_first_start','portal_first_end','portal_second_start','portal_second_end'),('height_large','height_measure','height_small'),('repeat_one','repeat_two','repeat_three','repeat_result'),('signal_shake','signal_sound','signal_response','signal_conference')]:
+ frames=[m['visualCues'][key]['frame'] for key in keys];assert frames==sorted(set(frames)),(keys,frames)
+roles={'木村':{'form','uma'},'霜重':{'gate','ritual','ruins'},'北原':{'orbit'},'中口':{'reveal'}}
+for name,scenes in roles.items():
+ for row in m['dialogue']:
+  if name in row['text']:assert row['scene'] in scenes,(name,row['scene'])
+report={'diagramSpeechCueValidation':'pass','researcherAssignmentValidation':'pass','fictionReferenceValidation':'pass: one Laputa reference', 'voiceFiles':len(r),'durationSeconds':m['composition']['durationInFrames']/30,'captionAndTimelineValidation':'pass','voices':r,'listeningAudit':'Not performed; technical checks do not establish listening quality'}
+f=P.parent/'final_remotion_sobaya_mystery_v7.mp4'
 if f.exists():
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(f)]))
  v=next(x for x in probe['streams'] if x['codec_type']=='video');a=next(x for x in probe['streams'] if x['codec_type']=='audio')

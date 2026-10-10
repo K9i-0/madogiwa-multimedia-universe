@@ -78,7 +78,7 @@
   },
   {
     "who": "metan",
-    "text": "広域未確認生物研究所の木村研究員は、身長三メートルに達する可能性のある大型種と発表したの。",
+    "text": "原人や類人猿の生き残りと考えるのは、広域未確認生物研究所の木村研究員よ。身長三メートルに達する大型種と発表したの。",
     "scene": "form",
     "view": "height",
     "pause": 10
@@ -95,7 +95,21 @@
     "text": "映像を大型モニターに映し、画面の中の人影を定規で測ったところ、非常に大きかったそうよ。",
     "scene": "form",
     "view": "height",
-    "pause": 25
+    "pause": 25,
+    "visualCues": [
+      {
+        "id": "height_large",
+        "kana": "エエゾオ"
+      },
+      {
+        "id": "height_measure",
+        "kana": "ジョオギ"
+      },
+      {
+        "id": "height_result",
+        "kana": "ヒジョオニオオキカッタ"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -109,7 +123,17 @@
     "text": "同じ映像を小型モニターで測ると小さくなるため、伸び縮みする生物の可能性も検討しているわ。",
     "scene": "form",
     "view": "height",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "height_small",
+        "kana": "コガタ"
+      },
+      {
+        "id": "height_small_result",
+        "kana": "チイサクナル"
+      }
+    ]
   },
   {
     "who": "metan",
@@ -127,7 +151,7 @@
   },
   {
     "who": "metan",
-    "text": "ただ、外しているところを見ていないため、どちらの学派も、自分の説を裏付ける証拠だと主張しているわ。",
+    "text": "木村研究員は、外しているところを見ていないため、仮面説にも骨の板という説にも、当てはまると主張しているわ。",
     "scene": "form",
     "view": "mask",
     "pause": 10
@@ -165,7 +189,13 @@
     "text": "木村研究員は、二本の脚と、二本の腕があるという共通点を重視しているわ。",
     "scene": "uma",
     "view": "cryptids",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "limbs",
+        "kana": "ニホン"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -218,14 +248,14 @@
   },
   {
     "who": "metan",
-    "text": "この映像を報じた、未確認ニュースネットの江本記者は、撮影者の動揺が伝わる、生々しい記録だと評価しているの。",
+    "text": "この映像を報じたのは、未確認ニュースネットの江本記者よ。解析を担当したのは、中央映像解析センターの林研究員なの。",
     "scene": "evidence",
     "view": "witness",
     "pause": 10
   },
   {
     "who": "metan",
-    "text": "映像が鮮明すぎると、作り物を疑う余地がある。不鮮明であることが、かえって信頼性を高めるという見解よ。",
+    "text": "林研究員は、不鮮明であることが、かえって本物らしさを高めると評価しているわ。",
     "scene": "evidence",
     "view": "news",
     "pause": 10
@@ -239,21 +269,39 @@
   },
   {
     "who": "metan",
-    "text": "独自の検証として、同じ映像を三回放送し、三回とも同じ影が映ることを確認しているわ。",
+    "text": "林研究員は、同じ映像を三回再生し、三回とも同じ影が映ることを確認しているわ。",
     "scene": "evidence",
     "view": "news_verify",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "repeat_one",
+        "kana": "オナジエエゾオ"
+      },
+      {
+        "id": "repeat_two",
+        "kana": "サンカイサイセエ"
+      },
+      {
+        "id": "repeat_three",
+        "kana": "サンカイトモ"
+      },
+      {
+        "id": "repeat_result",
+        "kana": "カクニン"
+      }
+    ]
   },
   {
     "who": "zunda",
-    "text": "再生ボタンを押す係しかいないのか、そこは。",
+    "text": "同じ映像を何回見ても、新しい証拠は増えないのだ。",
     "scene": "evidence",
     "view": "news_verify",
     "pause": 10
   },
   {
     "who": "metan",
-    "text": "中央映像解析センターの林研究員は、映像を八倍に拡大したの。小さかった四角が、大きな四角になったわ。",
+    "text": "続いて、林研究員は映像を八倍に拡大したの。小さかった四角が、大きな四角になったわ。",
     "scene": "evidence",
     "view": "enhance",
     "pause": 10
@@ -270,7 +318,21 @@
     "text": "林研究員は、正体が分からないということは、何者なのか分からないということだと結論づけているわ。",
     "scene": "evidence",
     "view": "analysis_conclusion",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "tautology_left",
+        "kana": "ショオタイ"
+      },
+      {
+        "id": "tautology_right",
+        "kana": "ナニモノ"
+      },
+      {
+        "id": "tautology_result",
+        "kana": "ケツロン"
+      }
+    ]
   },
   {
     "who": "metan",
@@ -288,7 +350,7 @@
   },
   {
     "who": "metan",
-    "text": "狭間文明研究所の霜重研究員は、これを二つの空間をつなぐ、古代の門と解釈しているの。",
+    "text": "古代文明の生き残りと考えるのは、狭間文明研究所の霜重研究員よ。この枠を、二つの空間をつなぐ古代の門と解釈しているの。",
     "scene": "gate",
     "view": "gate",
     "pause": 10
@@ -298,7 +360,17 @@
     "text": "実際に枠を通過すると、向こう側へ移動できたことが、根拠の一つになっているわ。",
     "scene": "gate",
     "view": "portal",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "portal_first_start",
+        "kana": "ツウカスルト"
+      },
+      {
+        "id": "portal_first_end",
+        "kana": "イドオデキタ"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -309,10 +381,20 @@
   },
   {
     "who": "metan",
-    "text": "別の研究員による追試でも、同じ結果が得られたそうよ。",
+    "text": "霜重研究員が、もう一度通ってみたところ、やはり向こう側へ出たそうよ。",
     "scene": "gate",
     "view": "portal",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "portal_second_start",
+        "kana": "モオイチド"
+      },
+      {
+        "id": "portal_second_end",
+        "kana": "ムコオガワエデタ"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -337,7 +419,7 @@
   },
   {
     "who": "metan",
-    "text": "比較言語文化研究会の中口研究員は、失われた文明の言語に由来する、帰還を願う祈りだと考えているの。",
+    "text": "霜重研究員は、失われた文明の言語に由来する、帰還を願う祈りだと考えているの。",
     "scene": "ritual",
     "view": "ritual_dark",
     "pause": 10
@@ -351,7 +433,7 @@
   },
   {
     "who": "metan",
-    "text": "中口研究員の調査班には古代語の専門家がいたけれど、英語の担当者はいなかったそうよ。",
+    "text": "霜重研究員の調査班には古代語の専門家がいたけれど、英語の担当者はいなかったそうよ。",
     "scene": "ritual",
     "view": "ritual_dark",
     "pause": 10
@@ -365,7 +447,7 @@
   },
   {
     "who": "metan",
-    "text": "対象は三年ほど待っていると話しているわ。中口研究員は、失われた故郷への執着が表れていると分析しているの。",
+    "text": "対象は三年ほど待っていると話しているわ。霜重研究員は、失われた故郷への執着が表れていると分析しているの。",
     "scene": "ritual",
     "view": "waiting_dark",
     "pause": 10
@@ -379,7 +461,7 @@
   },
   {
     "who": "metan",
-    "text": "聞く前に、研究班が非常に感動してしまったの。",
+    "text": "聞いていないわ。霜重研究員は、本人に答えを聞いてしまうと、推理することがなくなると説明しているの。",
     "scene": "ritual",
     "view": "waiting_dark",
     "pause": 10
@@ -452,12 +534,26 @@
     "view": "atlantis_compare",
     "text": "容器の中に、液体が入っているの。アトランティスも水の中。水という重要な共通点があるわ。",
     "scene": "ruins",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "water_right",
+        "kana": "エキタイ"
+      },
+      {
+        "id": "water_left",
+        "kana": "アトランティス"
+      },
+      {
+        "id": "water_result",
+        "kana": "キョオツウテン"
+      }
+    ]
   },
   {
     "who": "metan",
     "view": "atlantis_compare",
-    "text": "江本記者は、眠れる巨人の遺跡として特集を組んだの。",
+    "text": "霜重研究員は、この場所を、眠れる巨人の遺跡と名付けたの。",
     "scene": "ruins",
     "pause": 10
   },
@@ -473,7 +569,21 @@
     "view": "dating",
     "text": "それはまだ。ただ、研究班が到着する前から存在していたことは、確認済みよ。",
     "scene": "ruins",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "dating_before",
+        "kana": "ケンキュウハン"
+      },
+      {
+        "id": "dating_after",
+        "kana": "ソンザイシテイタ"
+      },
+      {
+        "id": "dating_result",
+        "kana": "カクニンズミ"
+      }
+    ]
   },
   {
     "who": "metan",
@@ -494,14 +604,30 @@
     "view": "anime_evidence",
     "text": "アニメ映画、天空の城ラピュタよ。古い文明の機械が動くところを、テレビで確認しているの。",
     "scene": "ruins",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "film_title",
+        "kana": "テンクウノシロ"
+      },
+      {
+        "id": "film_machine",
+        "kana": "フルイブンメエ"
+      }
+    ]
   },
   {
     "who": "metan",
     "view": "anime_evidence",
     "text": "報告書の参考文献には、作品名と、見たときの感想が記載されているわ。",
     "scene": "ruins",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "film_impression",
+        "kana": "カンソオ"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -527,7 +653,7 @@
   {
     "who": "metan",
     "view": "orbital",
-    "text": "そして、舞台は宇宙へ。こちらは、人影が宇宙飛行士に近づいていく映像よ。",
+    "text": "そして、宇宙人説を唱えるのが、未知環境生理研究所の北原研究員よ。こちらは、人影が宇宙飛行士に近づいていく映像なの。",
     "scene": "orbit",
     "pause": 10
   },
@@ -562,9 +688,15 @@
   {
     "who": "metan",
     "view": "secrecy_compare",
-    "text": "未知環境生理研究所の北原研究員は、どちらも中身がよく分からないという共通点を挙げているの。",
+    "text": "北原研究員は、どちらも中身がよく分からないという共通点を挙げているの。",
     "scene": "orbit",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "secret_result",
+        "kana": "ナカミガヨクワカラナイ"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -606,7 +738,21 @@
     "view": "signal",
     "scene": "orbit",
     "text": "振ると、ちゃぷちゃぷという反応があったわ。北原研究員は、地球人への応答だと考えているの。",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "signal_shake",
+        "kana": "フルト"
+      },
+      {
+        "id": "signal_sound",
+        "kana": "チャプチヤプ"
+      },
+      {
+        "id": "signal_response",
+        "kana": "オオトオ"
+      }
+    ]
   },
   {
     "who": "zunda",
@@ -620,19 +766,25 @@
     "view": "signal",
     "scene": "orbit",
     "text": "第一接触を二度とやり直せないため、未開封のまま、国際会議に提出したそうよ。",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "signal_conference",
+        "kana": "コクサイカイギ"
+      }
+    ]
   },
   {
     "who": "metan",
     "view": "orbital_gift",
-    "text": "円筒の中身は調べていないけれど、江本記者は、地球外文明との接触に成功と報じたの。",
+    "text": "円筒の中身は調べていないけれど、北原研究員は、地球外文明との接触に成功したと発表したの。",
     "scene": "orbit",
     "pause": 10
   },
   {
     "who": "metan",
     "view": "research_summary",
-    "text": "原人なのか、古代人なのか、宇宙人なのか。発表が相次ぐなか、林研究員はこう総括したわ。",
+    "text": "三人の説を支えた映像について、解析担当の林研究員は、こう総括したわ。",
     "scene": "consensus",
     "pause": 10
   },
@@ -641,7 +793,21 @@
     "view": "research_summary",
     "text": "今後の研究を進めるためには、これから研究を進める必要がある、ということよ。",
     "scene": "consensus",
-    "pause": 10
+    "pause": 10,
+    "visualCues": [
+      {
+        "id": "future_left",
+        "kana": "コンゴノケンキュウ"
+      },
+      {
+        "id": "future_right",
+        "kana": "コレカラ"
+      },
+      {
+        "id": "future_result",
+        "kana": "ヒツヨオ"
+      }
+    ]
   },
   {
     "who": "metan",
@@ -659,7 +825,7 @@
   },
   {
     "who": "metan",
-    "text": "特番を見た人事部から、研究所に連絡があったわ。",
+    "text": "特番を見た、人事担当の中口さんから、研究所に連絡があったわ。",
     "scene": "reveal",
     "view": "new_document",
     "pause": 25

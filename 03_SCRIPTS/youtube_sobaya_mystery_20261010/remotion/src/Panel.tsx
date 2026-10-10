@@ -1,6 +1,7 @@
 import React from 'react';
 import {Img,staticFile} from 'remotion';
 import views from './views.json';
+import {useDiagramTiming} from './DiagramTiming';
 import {Evidence} from './Evidence';
 import {LegendPlate,CommonPointFigure,FilmReport,SignalFigure} from './OccultFigures';
 import {HeightFigure,RepeatFigure,TautologyFigure,PortalFigure,DatingFigure,ConsensusFigure} from './ReasoningFigures';
@@ -10,6 +11,7 @@ const Diagram:React.FC<{items:string[];label?:string}>=({items,label})=><div sty
 const Silhouette:React.FC<{labels?:boolean;head?:boolean}>=({labels=false,head=false})=><div style={{height:360,width:780,background:'radial-gradient(ellipse at center,#b3b9ad,#798278)',position:'relative',overflow:'hidden'}}><Img src={staticFile('sobaya_silhouette_v2.png')} style={{position:'absolute',height:head?820:360,left:head?-40:270,top:head?-20:0}}/>{labels&&<><div style={{position:'absolute',top:85,left:30,fontSize:24,color:'#172018'}}>幅広い肩 ─────</div><div style={{position:'absolute',top:180,right:30,fontSize:24,color:'#172018'}}>──── 太い腕</div><div style={{position:'absolute',bottom:35,left:30,fontSize:19,color:'#172018'}}>目撃証言による輪郭再構成</div></>}{head&&<div style={{position:'absolute',right:40,top:145,fontSize:24,color:'#172018',textAlign:'left',lineHeight:1.8}}>仮面状の顔面構造<br/>材質・機能は不明</div>}</div>;
 const evidence:Record<string,[string,boolean,boolean?,number?]>={witness:['witness',true],news:['witness',true,true],gate:['gate',false,true],window_clue:['gate',false,true],ritual_dark:['ritual',false],waiting_dark:['ritual',false,true],amber:['amber',true],ruins:['ruins',false,true],power:['ruins',false,true],hologram:['hologram',false],awakening:['awakening',true],orbital:['orbital',false],swim_dark:['orbital',false],orbital_gift:['gift',false]};
 export const Panel:React.FC<{view:string;elapsed:number;start:number}>=({view,start,elapsed})=>{
+ const {show}=useDiagramTiming();
  const v=views[view as keyof typeof views];const e=evidence[view];
  const photo=(name:string,width=780,height=360)=><Img src={staticFile(`${name}.jpg`)} style={{width,height,objectFit:'contain'}}/>;
  if(view==='title')return <><div style={{fontSize:17,letterSpacing:7,color:gold,marginBottom:35}}>未知を、記録する。</div><div style={{fontFamily:'"Hiragino Mincho ProN",serif',fontSize:54,lineHeight:1.7}}>めたんの<br/>ミステリー研究所</div><div style={{width:100,height:1,background:gold,margin:'30px auto'}}/></>;
@@ -28,10 +30,10 @@ export const Panel:React.FC<{view:string;elapsed:number;start:number}>=({view,st
  {view==='enhance'&&<div style={{position:'relative',width:780,height:360}}><Img src={staticFile('research_desk_v3.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/><div style={{position:'absolute',bottom:14,left:18,background:'#081018dd',padding:'9px 14px',fontSize:20}}>中央映像解析センター・林研究員の解析（再現）</div></div>}
  {view==='sleepers'&&<div style={{position:'relative',width:780,height:360}}><Img src={staticFile('ancient_chamber_v3.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/><div style={{position:'absolute',bottom:14,left:18,background:'#081018dd',padding:'9px 14px',fontSize:20}}>狭間文明研究所・霜重研究員の仮説による想像復元</div></div>}
  {view==='height'&&<HeightFigure/>}
- {view==='cryptids'&&<div style={{height:360,display:'flex',gap:24}}>{[['bigfoot_v3.png','ビッグフット','北米の伝承'],['yeti_v3.png','イエティ','ヒマラヤの伝承'],['sobaya_silhouette_v2.png','SOBAYA','マドギワの目撃記録']].map(([file,name,note])=><div key={name} style={{width:235}}><div style={{height:240,background:'#8b9488'}}><Img src={staticFile(file)} style={{width:'100%',height:'100%',objectFit:'contain'}}/></div><div style={{fontFamily:'serif',fontSize:25,color:gold,marginTop:9}}>{name}</div><div style={{fontSize:17,marginTop:5}}>{note}</div><div style={{fontSize:20,color:gold,marginTop:8}}>腕 2 本 ／ 脚 2 本</div></div>)}</div>}
+ {view==='cryptids'&&<div style={{height:360,display:'flex',gap:24}}>{[['bigfoot_v3.png','ビッグフット','北米の伝承'],['yeti_v3.png','イエティ','ヒマラヤの伝承'],['sobaya_silhouette_v2.png','SOBAYA','マドギワの目撃記録']].map(([file,name,note])=><div key={name} style={{width:235}}><div style={{height:240,background:'#8b9488'}}><Img src={staticFile(file)} style={{width:'100%',height:'100%',objectFit:'contain'}}/></div><div style={{fontFamily:'serif',fontSize:25,color:gold,marginTop:9}}>{name}</div><div style={{fontSize:17,marginTop:5}}>{note}</div><div style={{opacity:show('limbs'),fontSize:20,color:gold,marginTop:8}}>腕 2 本 ／ 脚 2 本</div></div>)}</div>}
  {view==='hair'&&<Diagram label="研究上の解釈" items={['体毛が見えない','↓','非常に短い毛である可能性']}/>}
  {view==='lineage'&&<Diagram label="各専門家が支持する仮説" items={['絶滅原人の残存集団','未知の類人猿','旧文明の末裔']}/>}
- {view==='portal'&&<PortalFigure elapsed={elapsed}/>}
+ {view==='portal'&&<PortalFigure/>}
  {view==='dating'&&<DatingFigure/>}
  {view==='consensus'&&<ConsensusFigure/>}
  {view==='new_document'&&<Diagram label="予期しなかった外部からの情報" items={['特番の視聴者','↓','人事部から研究所へ連絡']}/>}

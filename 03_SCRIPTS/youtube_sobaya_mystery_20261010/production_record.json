@@ -5,9 +5,9 @@
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 19007
+    "durationInFrames": 19361
   },
-  "durationSeconds": 633.5666666666667,
+  "durationSeconds": 645.3666666666667,
   "voicevoxVersion": "0.25.1",
   "voiceSettings": {
     "metan": {
@@ -25,50 +25,51 @@
   "audioSynchronization": "Measured WAV lengths and per-frame RMS mouth shapes",
   "soundtrack": "Original procedural ambient; no third-party music",
   "publication": "Not published or uploaded",
-  "visualQA": "44 frames extracted from final MP4 inspected, covering all 41 layout runs, clean reveal boundary, and final fade. No clipping or overlap observed.",
+  "visualQA": "62 frames from final MP4 inspected: all layout runs, speech-timed diagram states including portal before/mid/after for each pass, reveal boundary, final fade.",
   "listeningQA": "No listening-capable tool; not claimed as auditioned",
-  "revision": 6,
+  "revision": 7,
   "voiceFiles": 116,
-  "cleanRevealFrame": 15657,
+  "cleanRevealFrame": 16011,
   "imageGeneration": "Built-in image_gen; inputs/imagegen_v3_prompts.json, inputs/imagegen_v6_prompts.json, silhouette_prompt.txt",
   "evidenceTreatment": "Reframed, reduced resolution, grayscale, noise, handheld motion or fixed observation scanlines",
-  "comparisonVersion": "final_remotion_sobaya_mystery_v4.mp4",
-  "finalOutput": "final_remotion_sobaya_mystery_v6.mp4",
+  "comparisonVersion": "final_remotion_sobaya_mystery_v6.mp4",
+  "finalOutput": "final_remotion_sobaya_mystery_v7.mp4",
   "researchers": {
     "木村": {
       "organization": "広域未確認生物研究所",
-      "role": "形態比較",
+      "role": "原人・類人猿説／形態比較",
       "reading": "キムラ"
     },
     "林": {
       "organization": "中央映像解析センター",
-      "role": "映像解析",
+      "role": "全編共通の映像解析（起源説は担当しない）",
       "reading": "ハヤシ"
     },
     "霜重": {
       "organization": "狭間文明研究所",
-      "role": "旧文明研究",
+      "role": "古代文明説／門・言語・遺跡",
       "reading": "シモジュウ"
     },
     "中口": {
-      "organization": "比較言語文化研究会",
-      "role": "儀式・言語調査",
+      "organization": "Accidenchua 人事部",
+      "role": "人事担当／正体を伝える照会窓口",
       "reading": "ナカグチ"
     },
     "北原": {
       "organization": "未知環境生理研究所",
-      "role": "宇宙での行動・生理",
+      "role": "宇宙人説／宇宙での行動・円筒の調査",
       "reading": "キタハラ"
     },
     "江本": {
       "organization": "未確認ニュースネット",
-      "role": "記者",
+      "role": "報道の窓口（冒頭の紹介・終盤の報道）",
       "reading": "エモト"
     }
   },
   "pronunciationQA": "All 霜重 utterances use シモジュウ in VOICEVOX kana; not a listening audit.",
   "fictionReferenceCount": 1,
   "fictionReference": "天空の城ラピュタ",
-  "technicalQA": "116 WAV/caption timing checks, 19007 video frames at 720p30, 48 kHz audio, full decode pass.",
-  "finalSHA256": "9eb2455b687fb06a00ab1c44a80265bc2592ac59964d9a08620c16f3fc501f57"
+  "technicalQA": "116 WAV/caption checks, 34 speech cues and fixed researcher assignments validated; 19361 frames at 720p30, 48 kHz audio, full decode pass.",
+  "diagramTiming": "VOICEVOX mora duration anchors scaled to measured WAV duration; integer frames in edit-manifest.visualCues",
+  "finalSHA256": "979b62c3cfd86f451d24289200dda24eb21822dafc2d93a3ba8d1b21cadd5850"
 }

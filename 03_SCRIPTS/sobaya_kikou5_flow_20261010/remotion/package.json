@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "render": "remotion render src/index.ts KikouFive ../final_remotion_kikou5.mp4 --concurrency=2 --log=error"
+    "render": "remotion render src/index.ts KikouFive ../final_remotion_kikou5_revision02.mp4 --concurrency=4 --log=error"
   },
   "dependencies": {
     "@remotion/cli": "4.0.534",

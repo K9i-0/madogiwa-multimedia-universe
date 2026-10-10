@@ -42,8 +42,8 @@
     },
     {
       "who": "takosan",
-      "text": "今日は、ビールを愛する窓際社員、そば屋さんのお話です。",
-      "reading": "今日は、ビールを愛するまどぎわ社員、そばやさんのお話です。",
+      "text": "今日は、会社の常識では測れない窓際社員、そば屋さんのお話です。",
+      "reading": "今日は、会社の常識では測れないまどぎわ社員、そばやさんのお話です。",
       "mood": "normal",
       "scene": "intro",
       "visual": "profile",
@@ -53,14 +53,14 @@
       "style": 89,
       "speedScale": 1.0,
       "startFrame": 192,
-      "durationInFrames": 159,
-      "sha256": "ec69f462a2eddfb0977dfc980868b8ec37ea6fa3ffdd37a5a8889efbcabf9800",
-      "seconds": 5.28
+      "durationInFrames": 185,
+      "sha256": "d0f3c3576a4ee71c0d172a8c31c9f05add99cf41b1f1fce536b59007575d9e4c",
+      "seconds": 6.165333
     },
     {
       "who": "yametaro",
-      "text": "一緒に飲むと、ええ人なんですよ。会社で会うと、話が変わるんですけど。",
-      "reading": "一緒に飲むと、ええ人なんですよ。会社で会うと、話が変わるんですけど。",
+      "text": "仕事の話してるはずやのに、だいたい想像の外に着地する人や。",
+      "reading": "仕事の話してるはずやのに、だいたい想像の外に着地する人や。",
       "mood": "worry",
       "scene": "intro",
       "visual": "profile",
@@ -72,10 +72,10 @@
       "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 366,
-      "durationInFrames": 154,
-      "sha256": "a9207c88dbd6c5ab6abb3c81e61d105c6b8215242903703f486cbd6e88de498e",
-      "seconds": 5.12
+      "startFrame": 392,
+      "durationInFrames": 149,
+      "sha256": "6a4cc88e0f556758e39108d8a673ef57ff17464a968c63921632a5bf29da4bed",
+      "seconds": 4.96
     },
     {
       "who": "takosan",
@@ -89,16 +89,16 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 535,
+      "startFrame": 556,
       "durationInFrames": 169,
       "sha256": "832d9bc8d103084f06e83ce48a010157ec1dd7f6d6aabc62a45a80895cf47779",
       "seconds": 5.632
     },
     {
       "who": "yametaro",
-      "text": "知れば知るほど、一緒に働くのは考えるで。",
-      "reading": "知れば知るほど、一緒に働くのは考えるで。",
-      "mood": "bored",
+      "text": "どこから驚いたらええか、順番に見ていこか。",
+      "reading": "どこから驚いたらええか、順番に見ていこか。",
+      "mood": "worry",
       "scene": "intro",
       "visual": "title",
       "gapFrames": 36,
@@ -106,13 +106,13 @@
       "model": "Aratako/Irodori-TTS-v4.1-Small",
       "reference": "02_CHARACTERS/Yametaro_voice.wav",
       "seed": 7,
-      "durationScale": 0.7,
+      "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 719,
-      "durationInFrames": 89,
-      "sha256": "401485754a781a3510ae19565e3fce4f0a7cd61610d6cd6e8dfce843e05f7cc5",
-      "seconds": 2.96
+      "startFrame": 740,
+      "durationInFrames": 98,
+      "sha256": "991c2c16bd4c679d761afe78421936d62eeb1c8fdd6b94c53dd79366bd2ea58a",
+      "seconds": 3.24
     },
     {
       "who": "takosan",
@@ -126,7 +126,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 844,
+      "startFrame": 874,
       "durationInFrames": 135,
       "sha256": "fa3ae57791c292e9c3a2467b3c59233f77de9adb92f5ff5f55ad9e09feef39fb",
       "seconds": 4.490667
@@ -146,7 +146,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 1315,
+      "startFrame": 1345,
       "durationInFrames": 76,
       "sha256": "4a9670996f134c3255772da5f5b1bcbd2083e55cb827bd8c25a260cf4b5b21f3",
       "seconds": 2.52
@@ -163,7 +163,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 1406,
+      "startFrame": 1436,
       "durationInFrames": 104,
       "sha256": "f1a10f37ea5dbbc633f5b8a0514de3aeff574903847978187fb4064f9cab150c",
       "seconds": 3.434667
@@ -183,7 +183,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 1525,
+      "startFrame": 1555,
       "durationInFrames": 88,
       "sha256": "9b9b655acbefb5bdf1e4f2e25224855ed76de046a9a3824444b1effe226c564a",
       "seconds": 2.92
@@ -203,7 +203,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 1871,
+      "startFrame": 1901,
       "durationInFrames": 84,
       "sha256": "000e2517fd17c3c7fba88d510fa36a60afd600b60696b07680f7367b1d579014",
       "seconds": 2.8
@@ -220,7 +220,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 1970,
+      "startFrame": 2000,
       "durationInFrames": 61,
       "sha256": "2d317c5f6c0f3ba688050529b4e178bb265ad8d6fafbb1a6af3025bd6335db2d",
       "seconds": 2.005333
@@ -240,7 +240,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 2046,
+      "startFrame": 2076,
       "durationInFrames": 87,
       "sha256": "ed76625e56ce8f9d58400c4610589e17cdb300abac383aa24ac8f073acec80b0",
       "seconds": 2.88
@@ -257,7 +257,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 2166,
+      "startFrame": 2196,
       "durationInFrames": 169,
       "sha256": "4683d7e944b1f0436e7485cbfef22fb4b8cc657a1af190ef2165ca88b99013e3",
       "seconds": 5.632
@@ -277,7 +277,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 2350,
+      "startFrame": 2380,
       "durationInFrames": 83,
       "sha256": "181dee33a3b065f267fe50e7c5a76d3e4061df3bfb99e3f8e78767b485f2c699",
       "seconds": 2.76
@@ -294,7 +294,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 2463,
+      "startFrame": 2493,
       "durationInFrames": 147,
       "sha256": "4eed52a4a117fa46f8106e2132aff8f786cece2cbb847ea61d0ebdd6a713eb38",
       "seconds": 4.885333
@@ -314,7 +314,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 3117,
+      "startFrame": 3147,
       "durationInFrames": 84,
       "sha256": "ae8128a9dfd2d8e7ebf71f12573f44b816a1cd0cedaf92253f4cd86289e573ac",
       "seconds": 2.8
@@ -331,7 +331,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 3216,
+      "startFrame": 3246,
       "durationInFrames": 56,
       "sha256": "1c655869f98222a651ea21d441c5fe3478f74cb35bea30e882d91b1236dc1c36",
       "seconds": 1.856
@@ -351,7 +351,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 3287,
+      "startFrame": 3317,
       "durationInFrames": 83,
       "sha256": "a7f5ef3dee7e71f3fa60d364d71ad5ba455d30770c34b10b9b84957dfe571e89",
       "seconds": 2.76
@@ -368,7 +368,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 3403,
+      "startFrame": 3433,
       "durationInFrames": 100,
       "sha256": "37704f62b34c8b3534810be88701db78b666cc63f38d07060602ed593ba432e8",
       "seconds": 3.328
@@ -388,7 +388,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 3518,
+      "startFrame": 3548,
       "durationInFrames": 78,
       "sha256": "3df0cbf18fd4a31b097340a0aa57b92468c718a9ba94528f5aa41082e44c5cf5",
       "seconds": 2.6
@@ -405,7 +405,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 3611,
+      "startFrame": 3641,
       "durationInFrames": 96,
       "sha256": "ce120beecda8e4c83cd9faaed4281592e0a99834abaf9b7e5f52624fe6e4e6b7",
       "seconds": 3.2
@@ -422,7 +422,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 3737,
+      "startFrame": 3767,
       "durationInFrames": 144,
       "sha256": "6fa44098a4846d96410876813c818ffea646f15f73c550a523cc47886ef4f7cb",
       "seconds": 4.8
@@ -439,7 +439,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 4280,
+      "startFrame": 4310,
       "durationInFrames": 150,
       "sha256": "176347e9e35434209e5aa3c723d11c4f1d41384c16d6b0448378f0c050a17bf9",
       "seconds": 4.992
@@ -459,7 +459,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 4445,
+      "startFrame": 4475,
       "durationInFrames": 89,
       "sha256": "a1875a82ecf0bea8b681dd3bd8a4474a9be8413efd2ecec2b45167d3d9a98486",
       "seconds": 2.96
@@ -476,7 +476,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 5125,
+      "startFrame": 5155,
       "durationInFrames": 71,
       "sha256": "856f076573dfa510cfc819482a1199c72a3c54c3f01d5122c2771b356ae3dc2f",
       "seconds": 2.336
@@ -496,7 +496,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 5211,
+      "startFrame": 5241,
       "durationInFrames": 87,
       "sha256": "83b51b6678e009da5e00de1b16357b6648097a4440f16cf4d094ef9f13bbe5b3",
       "seconds": 2.88
@@ -513,7 +513,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 5334,
+      "startFrame": 5364,
       "durationInFrames": 110,
       "sha256": "f5651af7db36ae4cd38e1322a935a06a678e2c247e8f6d382bebf3320fd321b1",
       "seconds": 3.648
@@ -533,7 +533,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 5459,
+      "startFrame": 5489,
       "durationInFrames": 76,
       "sha256": "0cc33932fa63986e77a48fc743a1dc5d4e61f7497c219b5231fc4ea9bd7842bc",
       "seconds": 2.52
@@ -550,7 +550,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 5550,
+      "startFrame": 5580,
       "durationInFrames": 143,
       "sha256": "011701127724887e2fe77d7d681db2115276b87512f738bd2780fd6b5007a2fc",
       "seconds": 4.736
@@ -567,7 +567,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 6023,
+      "startFrame": 6053,
       "durationInFrames": 168,
       "sha256": "f58c485563f5865437efeb99e7f27df314f438b3b4d72cf09b95d5e91be21641",
       "seconds": 5.568
@@ -587,7 +587,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 6206,
+      "startFrame": 6236,
       "durationInFrames": 80,
       "sha256": "993755d6d1f135a146cbaf648aa9e446b8f156bed5178b2dbe8cc52d53e4d6bc",
       "seconds": 2.64
@@ -607,7 +607,7 @@
       "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 6517,
+      "startFrame": 6547,
       "durationInFrames": 129,
       "sha256": "b01f6684d3f73c8652a4b9ef00582a9b58a6e414781da3cce0b9f2a9dd87e635",
       "seconds": 4.28
@@ -624,7 +624,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 6976,
+      "startFrame": 7006,
       "durationInFrames": 36,
       "sha256": "6539cd1a26b59cbe4c4cbefa7658edb7d63fb6901447665440a14eb1f899b26a",
       "seconds": 1.173333
@@ -644,7 +644,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 7027,
+      "startFrame": 7057,
       "durationInFrames": 111,
       "sha256": "435563e6415aec6f018821461555ca885764711dbbdb5637900084f8712ae2b7",
       "seconds": 3.68
@@ -661,7 +661,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 7153,
+      "startFrame": 7183,
       "durationInFrames": 96,
       "sha256": "c47ddd71907e7e6a0a46a71e8886768dcf8e1862137f21e42ecf067af1b40da8",
       "seconds": 3.189333
@@ -681,7 +681,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 7264,
+      "startFrame": 7294,
       "durationInFrames": 77,
       "sha256": "25081cbfe009adc315056fa18b3d0467dca1823543ac820e636fcaf28c73f762",
       "seconds": 2.56
@@ -698,7 +698,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 7356,
+      "startFrame": 7386,
       "durationInFrames": 74,
       "sha256": "44af8a3dbbb7ccee4f494b691aebd5a122337a086fb67168d6b527e41db2e5df",
       "seconds": 2.442667
@@ -718,7 +718,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 7445,
+      "startFrame": 7475,
       "durationInFrames": 75,
       "sha256": "a9331ffa1f7df804506b895b50130a18610c8de51675d2291f119356aa61130c",
       "seconds": 2.48
@@ -735,7 +735,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 7556,
+      "startFrame": 7586,
       "durationInFrames": 93,
       "sha256": "6134ec70d550311617716fa48758feaa54a8285e22e00207ced4dfe593e43305",
       "seconds": 3.072
@@ -755,7 +755,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 7664,
+      "startFrame": 7694,
       "durationInFrames": 86,
       "sha256": "0fed99b288e6380a86dc7aebecc7c3ac36de8ef17b2ee9480111ddc76df85c35",
       "seconds": 2.84
@@ -772,7 +772,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 7765,
+      "startFrame": 7795,
       "durationInFrames": 95,
       "sha256": "4c5f4cbab937226209f3ad92a00db987ca8d626b2e55f95e48c80971d413e3aa",
       "seconds": 3.136
@@ -792,7 +792,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 7875,
+      "startFrame": 7905,
       "durationInFrames": 84,
       "sha256": "b0c920a59625e7d4252e00637d2f99f1978e4381f9ffef5ac1b8da468505302f",
       "seconds": 2.8
@@ -809,7 +809,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 7974,
+      "startFrame": 8004,
       "durationInFrames": 105,
       "sha256": "ac3e68fea19d5b68d33610a87be8cea9c1b177845c516ce0fdfe8fcd95cfd2fb",
       "seconds": 3.488
@@ -829,7 +829,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 8811,
+      "startFrame": 8841,
       "durationInFrames": 117,
       "sha256": "c3af1b644738d799b493f491d321113eb21cc6dd0f774a5eaea2c4fa6d5e0d10",
       "seconds": 3.88
@@ -846,7 +846,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 8943,
+      "startFrame": 8973,
       "durationInFrames": 89,
       "sha256": "2da49d0da36c0511faaabb54f2c23f4324942c7bde286f4fef05b10c0a3911dd",
       "seconds": 2.965333
@@ -866,7 +866,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 9047,
+      "startFrame": 9077,
       "durationInFrames": 83,
       "sha256": "a3e73a48ee44f92b952c378521379c0c434bb994cd3b1ae5bfe196ee81af124c",
       "seconds": 2.76
@@ -883,7 +883,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 9160,
+      "startFrame": 9190,
       "durationInFrames": 114,
       "sha256": "5af5a352896c94c2ee34cf89f9ce0d5b12bbf4412f380c4a86ffa4085781db34",
       "seconds": 3.776
@@ -903,7 +903,7 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 9574,
+      "startFrame": 9604,
       "durationInFrames": 78,
       "sha256": "ce19deb96791f7e2a720737be60715f8c85dfd89642feba0018e2f8fab1b098f",
       "seconds": 2.6
@@ -920,7 +920,7 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 9667,
+      "startFrame": 9697,
       "durationInFrames": 90,
       "sha256": "1efde3bf156b6044e232438037586e697e86b776226a7ab67d9b23f0fab7bf4a",
       "seconds": 2.986667
@@ -940,16 +940,16 @@
       "durationScale": 0.7,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 9772,
+      "startFrame": 9802,
       "durationInFrames": 90,
       "sha256": "596c6c753f624f67a571e1238fbde6481f3083310f383d9f82ea201fcf315d68",
       "seconds": 3.0
     },
     {
       "who": "takosan",
-      "text": "反射神経も、行動力もある方でしたね。",
-      "reading": "反射神経も、行動力もある方でしたね。",
-      "mood": "happy",
+      "text": "そば屋さん、常識では測れない方でしたね。",
+      "reading": "そばやさん、常識では測れない方でしたね。",
+      "mood": "normal",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -957,16 +957,16 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 9907,
-      "durationInFrames": 113,
-      "sha256": "5938ba6fbc9f5dc10a9f55177f17e77bdb177605d0b389862afba9fb3317b60e",
-      "seconds": 3.744
+      "startFrame": 9937,
+      "durationInFrames": 111,
+      "sha256": "4d1d237af05c1154fe9a4cf588ac06e2f927291cabb0e9abc8218f8214539d7e",
+      "seconds": 3.68
     },
     {
       "who": "yametaro",
-      "text": "あるんよ。向かう先が、ずっとビールやねん。",
-      "reading": "あるんよ。向かう先が、ずっとビールやねん。",
-      "mood": "bored",
+      "text": "反射神経も行動力も、使い道まで規格外やったな。",
+      "reading": "反射神経も行動力も、使い道まで規格外やったな。",
+      "mood": "smug",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -974,18 +974,18 @@
       "model": "Aratako/Irodori-TTS-v4.1-Small",
       "reference": "02_CHARACTERS/Yametaro_voice.wav",
       "seed": 7,
-      "durationScale": 0.7,
+      "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 10035,
-      "durationInFrames": 84,
-      "sha256": "915c60fda6b05f4f69bb26f176dcb65792d8a2807b835b1123586051426e67a3",
-      "seconds": 2.8
+      "startFrame": 10063,
+      "durationInFrames": 132,
+      "sha256": "45e7dcff1e0be40ca0d5713f101952c75acdf9f33a5fc7c8cb78935527a2cd70",
+      "seconds": 4.4
     },
     {
       "who": "takosan",
-      "text": "それでも、一緒に飲むといい人なんですよね。",
-      "reading": "それでも、一緒に飲むといい人なんですよね。",
+      "text": "会社の枠には、収まりそうにありませんね。",
+      "reading": "会社の枠には、収まりそうにありませんね。",
       "mood": "normal",
       "scene": "ending",
       "visual": "summary",
@@ -994,16 +994,16 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 10134,
-      "durationInFrames": 106,
-      "sha256": "946a07acd3f3c8166a9f10320060422b89e2536dc3aa2746a3a1ef99876816b2",
-      "seconds": 3.52
+      "startFrame": 10210,
+      "durationInFrames": 102,
+      "sha256": "91292c9dc259686f0646d5b1e833c7b727948adf923f2e034035df22fa602335",
+      "seconds": 3.392
     },
     {
       "who": "yametaro",
-      "text": "それは間違いない。同じ部署は遠慮したいけど。",
-      "reading": "それは間違いない。同じ部署は遠慮したいけど。",
-      "mood": "happy",
+      "text": "枠どころか、建物まで揺らしてたからな。",
+      "reading": "枠どころか、建物まで揺らしてたからな。",
+      "mood": "worry",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -1011,18 +1011,18 @@
       "model": "Aratako/Irodori-TTS-v4.1-Small",
       "reference": "02_CHARACTERS/Yametaro_voice.wav",
       "seed": 7,
-      "durationScale": 0.7,
+      "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 10255,
-      "durationInFrames": 92,
-      "sha256": "c448c83bd6d570c3de4c8563008b029f87bf30f3f4d8d0b2f6c85ff83804af5b",
-      "seconds": 3.04
+      "startFrame": 10327,
+      "durationInFrames": 106,
+      "sha256": "c70b0150a0eb4c27f2650c195406e649faa6b48ec949573503d85ce79faabbb8",
+      "seconds": 3.52
     },
     {
       "who": "takosan",
-      "text": "では、このあと誘ってみましょうか。",
-      "reading": "では、このあと誘ってみましょうか。",
+      "text": "次は何をするのか、また一緒に見ていきましょう。",
+      "reading": "次は何をするのか、また一緒に見ていきましょう。",
       "mood": "happy",
       "scene": "ending",
       "visual": "summary",
@@ -1031,16 +1031,16 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "startFrame": 10362,
-      "durationInFrames": 80,
-      "sha256": "c23d1f5021332bdbd3b3242cc46d323a3755a8cd167c06fb291492b774a23a21",
-      "seconds": 2.634667
+      "startFrame": 10448,
+      "durationInFrames": 112,
+      "sha256": "8481b253a6b2217252c652f8bb31b10a5026d7c7e4f66f061cb38fbe47ee6cd2",
+      "seconds": 3.722667
     },
     {
       "who": "yametaro",
-      "text": "ええな。今度は本人が来てるか、確認しよ。",
-      "reading": "ええな。こんどは、ほんにんがきてるか、かくにんしよ。",
-      "mood": "smug",
+      "text": "ほな、また次回。次は何をしでかすんやろな。",
+      "reading": "ほな、また次回。次は何をしでかすんやろな。",
+      "mood": "worry",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 30,
@@ -1051,10 +1051,10 @@
       "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "startFrame": 10457,
-      "durationInFrames": 114,
-      "sha256": "a8a387f68e228c08e64ff485e6bf4186d92d31006744a4abc5f7aec1f0ccef84",
-      "seconds": 3.8
+      "startFrame": 10575,
+      "durationInFrames": 102,
+      "sha256": "aa22465b75a742d53b9da238b306ab5de35f561df491fc2283522108bcc82cca",
+      "seconds": 3.4
     }
   ]
 }

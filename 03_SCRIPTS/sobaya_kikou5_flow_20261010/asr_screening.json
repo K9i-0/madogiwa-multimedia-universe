@@ -37,8 +37,8 @@
     },
     {
       "who": "takosan",
-      "text": "今日は、ビールを愛する窓際社員、そば屋さんのお話です。",
-      "reading": "今日は、ビールを愛するまどぎわ社員、そばやさんのお話です。",
+      "text": "今日は、会社の常識では測れない窓際社員、そば屋さんのお話です。",
+      "reading": "今日は、会社の常識では測れないまどぎわ社員、そばやさんのお話です。",
       "mood": "normal",
       "scene": "intro",
       "visual": "profile",
@@ -47,13 +47,13 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "sha256": "ec69f462a2eddfb0977dfc980868b8ec37ea6fa3ffdd37a5a8889efbcabf9800",
-      "recognized": "今日は、ビールを愛する窓際社員、そば屋さんのお話です。"
+      "sha256": "d0f3c3576a4ee71c0d172a8c31c9f05add99cf41b1f1fce536b59007575d9e4c",
+      "recognized": "今日は会社の常識でははかれない窓際社員そば屋さんのお話です"
     },
     {
       "who": "yametaro",
-      "text": "一緒に飲むと、ええ人なんですよ。会社で会うと、話が変わるんですけど。",
-      "reading": "一緒に飲むと、ええ人なんですよ。会社で会うと、話が変わるんですけど。",
+      "text": "仕事の話してるはずやのに、だいたい想像の外に着地する人や。",
+      "reading": "仕事の話してるはずやのに、だいたい想像の外に着地する人や。",
       "mood": "worry",
       "scene": "intro",
       "visual": "profile",
@@ -66,8 +66,8 @@
       "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "sha256": "a9207c88dbd6c5ab6abb3c81e61d105c6b8215242903703f486cbd6e88de498e",
-      "recognized": "一緒に飲むと いい人なんですよ会社で会うと話が変わるんですけど"
+      "sha256": "6a4cc88e0f556758e39108d8a673ef57ff17464a968c63921632a5bf29da4bed",
+      "recognized": "仕事の話してるはずやのに大体想像の外に着地する人や"
     },
     {
       "who": "takosan",
@@ -86,9 +86,9 @@
     },
     {
       "who": "yametaro",
-      "text": "知れば知るほど、一緒に働くのは考えるで。",
-      "reading": "知れば知るほど、一緒に働くのは考えるで。",
-      "mood": "bored",
+      "text": "どこから驚いたらええか、順番に見ていこか。",
+      "reading": "どこから驚いたらええか、順番に見ていこか。",
+      "mood": "worry",
       "scene": "intro",
       "visual": "title",
       "gapFrames": 36,
@@ -97,11 +97,11 @@
       "reference": "02_CHARACTERS/Yametaro_voice.wav",
       "seed": 7,
       "caption": "",
-      "durationScale": 0.7,
+      "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "sha256": "401485754a781a3510ae19565e3fce4f0a7cd61610d6cd6e8dfce843e05f7cc5",
-      "recognized": "知れば知るほど一緒に働くのは考えるで"
+      "sha256": "991c2c16bd4c679d761afe78421936d62eeb1c8fdd6b94c53dd79366bd2ea58a",
+      "recognized": "どこから驚いたらええか順番に見ていこうか"
     },
     {
       "who": "takosan",
@@ -868,9 +868,9 @@
     },
     {
       "who": "takosan",
-      "text": "反射神経も、行動力もある方でしたね。",
-      "reading": "反射神経も、行動力もある方でしたね。",
-      "mood": "happy",
+      "text": "そば屋さん、常識では測れない方でしたね。",
+      "reading": "そばやさん、常識では測れない方でしたね。",
+      "mood": "normal",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -878,14 +878,14 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "sha256": "5938ba6fbc9f5dc10a9f55177f17e77bdb177605d0b389862afba9fb3317b60e",
-      "recognized": "反射神経も、行動力もある方でしたね"
+      "sha256": "4d1d237af05c1154fe9a4cf588ac06e2f927291cabb0e9abc8218f8214539d7e",
+      "recognized": "そば屋さん常識でははかれない方でしたね"
     },
     {
       "who": "yametaro",
-      "text": "あるんよ。向かう先が、ずっとビールやねん。",
-      "reading": "あるんよ。向かう先が、ずっとビールやねん。",
-      "mood": "bored",
+      "text": "反射神経も行動力も、使い道まで規格外やったな。",
+      "reading": "反射神経も行動力も、使い道まで規格外やったな。",
+      "mood": "worry",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -894,16 +894,16 @@
       "reference": "02_CHARACTERS/Yametaro_voice.wav",
       "seed": 7,
       "caption": "",
-      "durationScale": 0.7,
+      "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "sha256": "915c60fda6b05f4f69bb26f176dcb65792d8a2807b835b1123586051426e67a3",
-      "recognized": "あるんよ 向かう先がずっとビールだね"
+      "sha256": "45e7dcff1e0be40ca0d5713f101952c75acdf9f33a5fc7c8cb78935527a2cd70",
+      "recognized": "反射神経も行動力も使い道まで企画がやったな"
     },
     {
       "who": "takosan",
-      "text": "それでも、一緒に飲むといい人なんですよね。",
-      "reading": "それでも、一緒に飲むといい人なんですよね。",
+      "text": "会社の枠には、収まりそうにありませんね。",
+      "reading": "会社の枠には、収まりそうにありませんね。",
       "mood": "normal",
       "scene": "ending",
       "visual": "summary",
@@ -912,14 +912,14 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "sha256": "946a07acd3f3c8166a9f10320060422b89e2536dc3aa2746a3a1ef99876816b2",
-      "recognized": "それでも一緒に飲むといい人なんですとね"
+      "sha256": "91292c9dc259686f0646d5b1e833c7b727948adf923f2e034035df22fa602335",
+      "recognized": "会社の悪には収まりそうにありませんね"
     },
     {
       "who": "yametaro",
-      "text": "それは間違いない。同じ部署は遠慮したいけど。",
-      "reading": "それは間違いない。同じ部署は遠慮したいけど。",
-      "mood": "happy",
+      "text": "枠どころか、建物まで揺らしてたからな。",
+      "reading": "枠どころか、建物まで揺らしてたからな。",
+      "mood": "worry",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -928,17 +928,17 @@
       "reference": "02_CHARACTERS/Yametaro_voice.wav",
       "seed": 7,
       "caption": "",
-      "durationScale": 0.7,
+      "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "sha256": "c448c83bd6d570c3de4c8563008b029f87bf30f3f4d8d0b2f6c85ff83804af5b",
-      "recognized": "それは間違いない 同じ部署は遠慮したいけど"
+      "sha256": "c70b0150a0eb4c27f2650c195406e649faa6b48ec949573503d85ce79faabbb8",
+      "recognized": "枠どころか建物まで揺らしてたからな"
     },
     {
       "who": "takosan",
-      "text": "では、このあと誘ってみましょうか。",
-      "reading": "では、このあと誘ってみましょうか。",
-      "mood": "happy",
+      "text": "次は何をするのか、また一緒に見ていきましょう。",
+      "reading": "次は何をするのか、また一緒に見ていきましょう。",
+      "mood": "normal",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 15,
@@ -946,14 +946,14 @@
       "model": "VOICEVOX:Voidoll",
       "style": 89,
       "speedScale": 1.0,
-      "sha256": "c23d1f5021332bdbd3b3242cc46d323a3755a8cd167c06fb291492b774a23a21",
-      "recognized": "ではこの後誘ってみましょうか"
+      "sha256": "8481b253a6b2217252c652f8bb31b10a5026d7c7e4f66f061cb38fbe47ee6cd2",
+      "recognized": "次は何をするのか、また一緒に見ていきましょう。"
     },
     {
       "who": "yametaro",
-      "text": "ええな。今度は本人が来てるか、確認しよ。",
-      "reading": "ええな。こんどは、ほんにんがきてるか、かくにんしよ。",
-      "mood": "smug",
+      "text": "ほな、また次回。次は何をしでかすんやろな。",
+      "reading": "ほな、また次回。次は何をしでかすんやろな。",
+      "mood": "worry",
       "scene": "ending",
       "visual": "summary",
       "gapFrames": 30,
@@ -965,8 +965,8 @@
       "durationScale": 0.85,
       "textCfg": 5,
       "uncut": true,
-      "sha256": "a8a387f68e228c08e64ff485e6bf4186d92d31006744a4abc5f7aec1f0ccef84",
-      "recognized": "えな、今度は本人が来てるか確認しよう"
+      "sha256": "aa22465b75a742d53b9da238b306ab5de35f561df491fc2283522108bcc82cca",
+      "recognized": "ほなまた次回次は何をしてかすんやろな"
     }
   ]
 }

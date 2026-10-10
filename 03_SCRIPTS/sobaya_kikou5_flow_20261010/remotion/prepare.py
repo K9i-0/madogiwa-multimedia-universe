@@ -17,7 +17,7 @@ for i,r in enumerate(rows,1):
   caption=text[:k]+'\n'+text[k:]
 
  if str(i) in overrides:caption=overrides[str(i)]
- moods={2:'normal',18:'smug',21:'sad',34:'surprise',36:'bored',38:'angry',40:'sad'}
+ moods={53:'smug',56:'happy',2:'normal',18:'smug',21:'sad',34:'surprise',36:'bored',38:'angry',40:'sad'}
  if i in moods:r['mood']=moods[i]
  r.update(caption=caption,startFrame=frame,durationInFrames=n,envelope=env,sha256=hashlib.sha256(src.read_bytes()).hexdigest())
  frame+=n+r['gapFrames']

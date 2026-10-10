@@ -1,8 +1,8 @@
 {
   "width": 1280,
   "height": 720,
-  "frames": 10751,
-  "seconds": 358.3666666666667,
+  "frames": 10857,
+  "seconds": 361.9,
   "fps": 30,
   "decode": "pass",
   "voiceLines": 57,
@@ -12,45 +12,42 @@
   "visualFrames": [
     49,
     217,
-    869,
-    1138,
-    1733,
-    1896,
-    2488,
-    2850,
-    3142,
-    3762,
-    4076,
-    4305,
-    4819,
-    5150,
-    5359,
-    5855,
-    6048,
-    6391,
-    6796,
-    6994,
-    7381,
-    8445,
-    8836,
-    9409,
-    9599,
-    9932,
-    10706
+    899,
+    1168,
+    1763,
+    1926,
+    2518,
+    2880,
+    3172,
+    3792,
+    4106,
+    4335,
+    4849,
+    5180,
+    5389,
+    5885,
+    6078,
+    6421,
+    6826,
+    7024,
+    7411,
+    8475,
+    8866,
+    9439,
+    9629,
+    9962,
+    10812
   ],
+  "output": "final_remotion_kikou5_revision02.mp4",
+  "revision": 2,
   "visualInspection": {
-    "representativeFrames": 27,
     "fullResolutionFrames": [
-      "line5.png",
-      "line35.png"
+      "revision02_line3.png",
+      "revision02_line54.png",
+      "revision02_line57.png"
     ],
-    "result": "No caption clipping or face occlusion observed in inspected frames; source labels and all layout types checked"
+    "result": "Updated introduction, ending copy and captions confirmed; no clipping observed"
   },
   "captionTextMatch": true,
-  "allEightMoodsPerCharacter": true,
-  "asrLines": 57,
-  "limitations": [
-    "No independent full listening audit",
-    "No real-time precise lip-sync audit"
-  ]
+  "asrLines": 57
 }

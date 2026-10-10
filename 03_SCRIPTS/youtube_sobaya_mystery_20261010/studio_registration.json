@@ -1,0 +1,79 @@
+{
+  "episodeId": "b0fca6ae-b9b4-4b65-ae44-5ec0b222e178",
+  "studioId": "MS-2DRHUTJ7",
+  "slug": "sobaya-mystery-laboratory",
+  "generationId": "65c6882d-484a-47f2-a38e-01f2fdee2854",
+  "youtubeId": "YHar4HHQlYo",
+  "youtubeUrl": "https://www.youtube.com/watch?v=YHar4HHQlYo",
+  "publicPage": "https://madogiwa.work/episodes/sobaya-mystery-laboratory",
+  "contentKind": "explainer",
+  "productionNotes": false,
+  "adoptedVersion": 10,
+  "inputs": [
+    {
+      "assetId": "1f1d4fd7-12d2-412d-beb9-a613d68d9288",
+      "file": "studio_production_v10.zip",
+      "label": "採用台本・字幕・編集コード・設定・出典 v10"
+    },
+    {
+      "assetId": "df79d9c4-4cef-416d-bac9-703df5a7eb04",
+      "file": "studio_visuals_v10.zip",
+      "label": "採用観測静止画・立ち絵 v10"
+    },
+    {
+      "assetId": "c1e06301-2423-42ef-9574-6ab684c56e01",
+      "file": "ancient_chamber_v3.png",
+      "label": "ancient_chamber_v3.png"
+    },
+    {
+      "assetId": "c3d4df1e-a184-44f6-bde1-b1ef701ae510",
+      "file": "area51_v6.png",
+      "label": "area51_v6.png"
+    },
+    {
+      "assetId": "263d1292-4934-4cd5-a9b7-408725fee11d",
+      "file": "atlantis_v6.png",
+      "label": "atlantis_v6.png"
+    },
+    {
+      "assetId": "5365a55d-cf5f-4e0a-9f8a-24023bdca469",
+      "file": "bigfoot_v3.png",
+      "label": "bigfoot_v3.png"
+    },
+    {
+      "assetId": "4e1765e9-a728-410e-b90e-aba8cf6ccfa8",
+      "file": "research_desk_v3.png",
+      "label": "research_desk_v3.png"
+    },
+    {
+      "assetId": "334e8a54-86dc-41ca-94eb-d8ed5ae77091",
+      "file": "sobaya_silhouette_v2.png",
+      "label": "sobaya_silhouette_v2.png"
+    },
+    {
+      "assetId": "4d209c5e-65df-4ec4-b6b1-509918a864fd",
+      "file": "yeti_v3.png",
+      "label": "yeti_v3.png"
+    },
+    {
+      "assetId": "bd73f1be-5d66-48e3-bc03-a9c25f3f62e3",
+      "file": "youtube_thumbnail.jpg",
+      "label": "採用YouTube専用サムネ"
+    },
+    {
+      "assetId": "a4946d7b-085b-4fdd-af00-84d1f5875887",
+      "file": "thumbnail_prompt.txt",
+      "label": "実使用サムネ生成プロンプト"
+    }
+  ],
+  "state": "ready",
+  "thumbnail": {
+    "generator": "built-in image_gen",
+    "prompt": "Use case: ads-marketing. Create a finished Japanese YouTube thumbnail, landscape 16:9, 1536x864. References: 1 black transparent silhouette of SOBAYA, preserve its enormous muscular humanoid proportions (small head, massive shoulders and arms), render pure black with thin eerie pale rim light, no face or clothing details. 2 Zundamon green-haired chibi, 3 Shikoku Metan pink-haired chibi: preserve their exact recognizable faces, costumes and illustration style. Place Zundamon large at lower left looking alarmed, Metan large at lower right looking serious and analytical. Center upper middle SOBAYA looming in a misty dark forest with a mysterious glowing window-shaped portal far behind. Occult documentary aesthetic, deep teal-black, moonlight, subtle distressed archive texture. Three figures total. Very bold readable Japanese thumbnail typography: top short line in white 「マドギワに潜む」; huge dominant lower center text in pale yellow with heavy black stroke 「未確認生物」; below or adjacent slightly smaller strong white/red 「ソバヤの正体」. Keep words exact, clean, legible at small scale. Balanced composition, silhouette head and shoulders clearly visible above lettering, faces unobstructed. No other text, no logo, no watermark, no office worker spoiler, no beer. Professional impactful mystery show artwork.",
+    "source": "inputs/youtube_thumbnail_v1.png",
+    "upload": "youtube_thumbnail.jpg"
+  },
+  "is_active": 1,
+  "publicPageVerified": true,
+  "thumbnailLiveVerified": true
+}

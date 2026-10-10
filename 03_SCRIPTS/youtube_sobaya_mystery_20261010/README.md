@@ -53,3 +53,11 @@ Remotion 4.0.534固定。前作からの立ち絵とローカルの原本動画�
 全種類のレイアウトと証拠映像、正体判明前後の切替を実フレームで確認する。図解の開始・中間・完了は `remotion/preview_timing.mjs` で抽出し、`remotion/audit_final.py` で完成MP4も確認する。機械検査では107発話の存在、WAV実測尺、字幕長、時刻の整合、正体判明前の語彙、完成動画のフレーム数と終端までのデコードを確認。
 
 音声の通し試聴は利用可能な手段がなく未実施。機械的な音声検査と区別する。結果は `qa_record.json` と `production_record.json`。
+
+## 公開登録
+
+タイトル：マドギワに潜む未確認生物『ソバヤ』の正体とは？【めたんのミステリー研究所】
+
+YouTube: https://www.youtube.com/watch?v=YHar4HHQlYo
+Studio ID: MS-2DRHUTJ7。種類：解説。制作ノート非公開。
+専用サムネ：`youtube_thumbnail.jpg`。生成正本：`inputs/youtube_thumbnail_v1.png`。実使用プロンプト：`inputs/thumbnail_prompt.txt`。内蔵image_genで参照3枚から制作し、YouTube配信サムネの実画像も確認済み。

@@ -15,3 +15,7 @@ remotionで `npm ci`、`npm run typecheck`、`npm run render`。
 台詞はdialogue.json、資料範囲はclip_plan.json、生成後の時刻正本はremotion/src/edit-manifest.json。
 元動画に含まれる旧名・旧デザインは引用のまま保存。
 ASRは台詞照合の補助であり、人耳の通し試聴・精密な口パク監査とは区別する。
+
+## 現行採用版・登録状況
+
+採用動画は`final_remotion_kikou5_revision02.mp4`（361.9秒）。旧MP4・中間動画の削除記録は`cleanup_record.json`。Studio登録はMCP認証の再接続待ち。重複照合を含む送信計画は`studio_delivery_plan.json`。未アップロード・未登録。

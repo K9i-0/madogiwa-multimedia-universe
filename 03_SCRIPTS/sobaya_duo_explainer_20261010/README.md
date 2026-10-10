@@ -18,3 +18,7 @@
 - 再現：エンジンを127.0.0.1:50021で起動 → generate_voicevox.py → Irodori環境のPythonでremotion/prepare.py --voicevox → remotionでnpm run render:voicevox
 - タイミング正本：remotion/src/edit-manifest-voicevox.json。字幕・RMS口パクを新しい音声尺から再計算。終端にVOICEVOX:Voidollクレジット。
 - 読みとファイル構造を検証。声の自然さ・精密な口パク同期の実試聴確認は未実施。
+
+## 旧動画の整理（2026-10-10）
+
+ユーザー指定により、この版の完成MP4と不要な旧クリップを削除。採用版は[奇行5選・改訂2](../sobaya_kikou5_flow_20261010/README.md)。台本・編集コード・立ち絵は保持。

@@ -28,3 +28,7 @@
 再書き出し：`03_SCRIPTS/sobaya_duo_explainer_20261010/remotion/`で`node export_sprites.mjs`。
 
 そば屋解説動画：`03_SCRIPTS/sobaya_duo_explainer_20261010/`。自動口パク、左右反転、まばたき、全8種の採用例を含む。
+
+## 採用・共有状況（2026-10-10）
+
+ユーザー指定により、口開き／口閉じを合成済みの`exports/*.png`32枚もGitへ収録。元画像20枚と合わせて再利用できる。最新の採用動画は`03_SCRIPTS/sobaya_kikou5_flow_20261010/final_remotion_kikou5_revision02.mp4`。旧完成動画・確認用動画は整理済み。動画本体はGit管理外。

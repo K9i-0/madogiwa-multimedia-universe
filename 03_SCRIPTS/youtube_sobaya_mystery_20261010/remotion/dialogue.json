@@ -4,14 +4,14 @@
     "text": "こんばんは。めたんのミステリー研究所へようこそ。",
     "scene": "intro",
     "view": "title",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
     "text": "この番組では、現代科学では解明されていない怪現象や、未確認生物の謎をひもといていくわ。",
     "scene": "intro",
     "view": "title",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "zunda",
@@ -22,835 +22,877 @@
   },
   {
     "who": "metan",
-    "text": "今回取り上げるのは、マドギワと呼ばれる領域に潜む、人型の生物。",
+    "text": "密林の奥で目撃された、巨大な人影。白い顔面と、異様に発達した上半身。",
     "scene": "intro",
     "view": "title",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "通称、そば屋。白い顔と灰色の皮膚を持ち、各地で奇妙な行動が記録されているの。",
+    "text": "現地では、ソバヤと呼ばれているわ。マドギワという領域に潜む、人型の未確認生物よ。",
     "scene": "intro",
-    "view": "identity",
-    "pause": 30
+    "view": "silhouette",
+    "pause": 10
   },
   {
     "who": "zunda",
     "text": "……今日はそういう感じなのだな。",
     "scene": "intro",
-    "view": "identity",
+    "view": "silhouette",
     "pause": 25
   },
   {
     "who": "metan",
-    "text": "目撃例が身近にあることと、その生態が解明されていることは、別の問題よ。",
+    "text": "絶滅した原人の生き残りなのか。それとも、私たちとは異なる文明を継ぐ存在なのか。",
     "scene": "intro",
-    "view": "identity",
-    "pause": 12
+    "view": "silhouette",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "分かったのだ。それで、この生物には、どんな特徴があるのだ？",
+    "text": "分かったのだ。まずは、どんな証拠があるのか見せてほしいのだ。",
     "scene": "intro",
-    "view": "identity",
-    "pause": 12
+    "view": "silhouette",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "まず、白い仮面と、灰色の皮膚。そして非常に発達した筋肉が挙げられるわ。",
+    "text": "こちらは、目撃証言と不鮮明な映像をもとに、研究所が作成した輪郭図よ。",
     "scene": "form",
-    "view": "sobaya",
-    "pause": 12
+    "view": "outline",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ただし、見た目の印象だけで危険性を判断することはできない。手に持っているものにも注目してほしいの。",
+    "text": "幅広い肩。太い腕。そして、顔面を覆う仮面のような構造が、繰り返し報告されているわ。",
     "scene": "form",
-    "view": "sobaya",
-    "pause": 12
+    "view": "outline",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "大きなジョッキなのだ。中に入っているのは、ビールに見えるのだ。",
+    "text": "ただ大きいだけではなく、顔にも特徴があるのだな。",
     "scene": "form",
-    "view": "beer",
-    "pause": 12
+    "view": "outline",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ええ。今回集めた複数の資料でも、発酵飲料との強い結びつきが確認されたわ。",
+    "text": "広域未確認生物研究所は、この個体を、身長三メートルに達する可能性のある大型種と発表したの。",
     "scene": "form",
-    "view": "beer",
-    "pause": 12
+    "view": "height",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "それは、生命を維持するために必要なものなのだ？",
+    "text": "どうやって大きさを測ったのだ？",
     "scene": "form",
-    "view": "beer",
-    "pause": 12
+    "view": "height",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "そこまでは分からない。ただ、必要かどうかを確かめる前に、本人が飲んでしまうの。",
+    "text": "映像を大型モニターに映したところ、非常に大きく見えたそうよ。",
     "scene": "form",
-    "view": "beer",
-    "pause": 12
+    "view": "height",
+    "pause": 25
   },
   {
     "who": "zunda",
-    "text": "研究に協力する気がないのだ。",
+    "text": "モニターの大きさを測っているのだ。",
     "scene": "form",
-    "view": "beer",
-    "pause": 12
+    "view": "height",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "次に、生息域。長期にわたる映像資料の比較から、出現地点にはある共通点が見つかったわ。",
-    "scene": "habitat",
-    "view": "habitat_window",
-    "pause": 12
+    "text": "小型の画面では小さく見えるため、測定値には幅があるとしているわ。",
+    "scene": "form",
+    "view": "height",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "白い顔面については、仮面説と、骨の板が露出しているという説が対立しているの。",
+    "scene": "form",
+    "view": "mask",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "水場や、気温の条件のようなものなのだ？",
-    "scene": "habitat",
-    "view": "habitat_window",
-    "pause": 12
+    "text": "着けているものなのか、身体の一部なのかという違いなのだな。",
+    "scene": "form",
+    "view": "mask",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "窓よ。対象のすぐ近くに、窓が確認できるの。",
-    "scene": "habitat",
-    "view": "habitat_window",
-    "pause": 40
+    "text": "ただ、外しているところを見ていないため、どちらの学派も、自分の説を裏付ける証拠だと主張しているわ。",
+    "scene": "form",
+    "view": "mask",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "窓の近くにいるから、マドギワなのでは？",
-    "scene": "habitat",
-    "view": "habitat_window",
-    "pause": 12
+    "text": "同じ映像を見て、両方勝った気になっているのだ。",
+    "scene": "form",
+    "view": "mask",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "当時の研究者も、そこまでは考えていたの。",
-    "scene": "habitat",
-    "view": "habitat_window",
-    "pause": 12
+    "text": "比較対象として挙がったのが、ビッグフットとイエティよ。",
+    "scene": "uma",
+    "view": "cryptids",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "ビッグフットは北米、イエティはヒマラヤにいると語られる、毛に覆われた人型の未確認生物ね。",
+    "scene": "uma",
+    "view": "cryptids",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "その先があるのだな。",
-    "scene": "habitat",
-    "view": "habitat_window",
-    "pause": 12
+    "text": "マドギワの人影も、その仲間かもしれないのだ？",
+    "scene": "uma",
+    "view": "cryptids",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "決定的だったのは、密林で撮影された記録よ。そこには、建物から切り離された窓が存在していたの。",
-    "scene": "habitat",
-    "view": "jungle",
-    "pause": 12
+    "text": "広域未確認生物研究所は、二本の脚と、二本の腕があるという共通点を重視しているわ。",
+    "scene": "uma",
+    "view": "cryptids",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "壁も屋根もないのに、窓だけ置いてあるのだ。",
-    "scene": "habitat",
-    "view": "jungle",
-    "pause": 12
+    "text": "ずいぶん広い範囲の生き物が入るのだ。",
+    "scene": "uma",
+    "view": "cryptids",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "つまり、建物の都合で窓の近くにいる、という説明だけでは不十分になったわ。",
-    "scene": "habitat",
-    "view": "jungle",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "窓がある場所を選んだのか。それとも、選んだ場所に窓を設置したのか。この二つは、区別しなければならないの。",
-    "scene": "habitat",
-    "view": "jungle",
-    "pause": 12
+    "text": "一方、毛が見えないという指摘に対しては、極端に短い毛で覆われている可能性を提示したの。",
+    "scene": "uma",
+    "view": "hair",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "確かに、それでは行動の意味が変わってくるのだ。",
-    "scene": "habitat",
-    "view": "jungle",
-    "pause": 12
+    "text": "そもそも毛がない可能性は？",
+    "scene": "uma",
+    "view": "hair",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "本人は、窓があれば、ここが窓際だと説明しているわ。",
-    "scene": "habitat",
-    "view": "window",
-    "pause": 12
+    "text": "そちらは、短毛説の検証が終わってから検討する方針よ。",
+    "scene": "uma",
+    "view": "hair",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "自分で窓を持ち込んで、生息地を名乗っているのだ。かなり図々しい生物なのだ。",
-    "scene": "habitat",
-    "view": "window",
-    "pause": 12
+    "text": "研究の順番が終わっているのだ。",
+    "scene": "uma",
+    "view": "hair",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "環境に適応するだけでなく、環境の定義に介入している。研究上、見逃せない特徴よ。",
-    "scene": "habitat",
-    "view": "window",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "この密林では、複数の個体が窓へ祈りを捧げる様子も記録されているわ。",
-    "scene": "tribe",
-    "view": "ritual",
-    "pause": 12
+    "text": "現在は、絶滅した原人の残存集団、未知の類人猿、旧文明の末裔という三つの仮説が並行して研究されているわ。",
+    "scene": "uma",
+    "view": "lineage",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "そば屋は、単独で生活しているわけではないのだな。",
-    "scene": "tribe",
-    "view": "ritual",
-    "pause": 12
+    "text": "どの仮説が、いちばん有力なのだ？",
+    "scene": "uma",
+    "view": "lineage",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ええ。マドギワ族と呼ばれる集団の中で、族長として扱われているの。",
-    "scene": "tribe",
-    "view": "ritual",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "彼らは窓の前で、アベイラブルという言葉を繰り返しているわ。",
-    "scene": "tribe",
-    "view": "ritual",
-    "pause": 12
+    "text": "取材した三人の専門家は、それぞれ自分の専門分野に属する生物だと回答しているの。",
+    "scene": "uma",
+    "view": "lineage",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "群れの間で共有されている、特別な音声なのだ？",
-    "scene": "tribe",
-    "view": "ritual",
-    "pause": 12
+    "text": "生物の分類じゃなくて、予算の取り合いなのだ。",
+    "scene": "uma",
+    "view": "lineage",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "本人の説明では、いつでも、お受けできます、という意味だそうよ。",
-    "scene": "tribe",
-    "view": "ritual",
-    "pause": 12
+    "text": "ここで、第三者が撮影したという映像を見てみましょう。木々の向こうに、人型の影が現れるわ。",
+    "scene": "evidence",
+    "view": "witness",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "何かが来るのを、待っているのだな。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "かなり揺れているのだ。顔が見えそうになると、画面の外へ逃げてしまうのだ。",
+    "scene": "evidence",
+    "view": "witness",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "そう考えられるわ。しかも、本人の申告によると、待機期間は三年に及ぶの。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 40
+    "text": "この映像を報じた、未確認ニュースネットは、撮影者の動揺が伝わる、生々しい記録だと評価しているの。",
+    "scene": "evidence",
+    "view": "witness",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "映像が鮮明すぎると、作り物を疑う余地がある。不鮮明であることが、かえって信頼性を高めるという見解よ。",
+    "scene": "evidence",
+    "view": "news",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "三年。同じ目的のために、待ち続けているのだ？",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "ピントが合ってないだけで、信用が増える報道機関なのだ。",
+    "scene": "evidence",
+    "view": "news",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ええ。対象は、その間も受け入れ可能な状態を維持していると主張しているわ。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "独自の検証として、同じ映像を三回放送し、三回とも同じ影が映ることを確認しているわ。",
+    "scene": "evidence",
+    "view": "news",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "三年動いてないやつの、いつでも動けますは信用できないのだ。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "再生ボタンを押す係しかいないのか、そこは。",
+    "scene": "evidence",
+    "view": "news",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "しかし、取材中に窓の向こうから返事が来ることは、一度もなかった。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "研究所でも、映像を八倍に拡大して解析したの。その結果、小さかった四角が、大きな四角になったわ。",
+    "scene": "evidence",
+    "view": "enhance",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "観測を続けても、何も起こらなかったのだな。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "画素なのだ。それ以上の情報は増えてないのだ。",
+    "scene": "evidence",
+    "view": "enhance",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "何も起こらない状態が、さらに継続した。研究所では、これも重要な記録として保存しているわ。",
-    "scene": "tribe",
-    "view": "waiting",
-    "pause": 12
+    "text": "顔の詳細は依然として不明。しかし、詳細が不明であることは、以前よりはっきりしたの。",
+    "scene": "evidence",
+    "view": "enhance",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "では、こうした生物との接触は、どのように成立したのか。ここで鍵を握ったのが、ビールよ。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "次の映像には、人影の近くに、奇妙な構造物が写っているわ。",
+    "scene": "gate",
+    "view": "gate",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "最初に見た、ジョッキの中身なのだ。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "密林の中に、四角い枠が立っているのだ。",
+    "scene": "gate",
+    "view": "gate",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "取材班が一本を差し出した段階で、対象は、何本あります、と確認しているわ。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "狭間文明研究所の真壁教授は、これを二つの空間をつなぐ、古代の門と解釈しているの。",
+    "scene": "gate",
+    "view": "gate",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "その後、箱が提示されると、取材班に座るよう促したの。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "実際に枠を通過すると、向こう側へ移動できたことが、根拠の一つになっているわ。",
+    "scene": "gate",
+    "view": "portal",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "量を確認してから、話を聞くかどうか決めたのだな。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "通り抜けたら向こうに出る。当たり前なのだ。",
+    "scene": "gate",
+    "view": "portal",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "相手の資源量に応じて接触条件を調整する、高度な交渉行動と考えられるわ。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "別の研究員による追試でも、同じ結果が得られたそうよ。",
+    "scene": "gate",
+    "view": "portal",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "知能があるぶん、余計に卑しいのだ。",
-    "scene": "negotiation",
-    "view": "offering",
-    "pause": 12
+    "text": "二人も使って確認することなのだ？",
+    "scene": "gate",
+    "view": "portal",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ただし、必要だった最低本数までは分かっていない。一箱で成立したことと、一箱が必要だったことは、別だからよ。",
-    "scene": "negotiation",
-    "view": "exchange",
-    "pause": 12
+    "text": "下部には平行な溝があり、板状の部分は横方向へ動く。高度な加工技術の存在も示唆されているわ。",
+    "scene": "gate",
+    "view": "window_clue",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "一本ずつ増やせば、境目を調べられそうなのだ。",
-    "scene": "negotiation",
-    "view": "exchange",
-    "pause": 12
+    "text": "それ、普通の窓の構造なのでは？",
+    "scene": "gate",
+    "view": "window_clue",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "その方法では、調査が終わる前に、提示した分を消費される可能性があるわ。",
-    "scene": "negotiation",
-    "view": "exchange",
-    "pause": 12
+    "text": "教授は、現代の窓こそが、古代の門を模倣して作られた可能性を指摘しているの。",
+    "scene": "gate",
+    "view": "window_clue",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "調べるほど、こいつが得する仕組みなのだ。",
-    "scene": "negotiation",
-    "view": "exchange",
-    "pause": 12
+    "text": "間違いを認めるより、人類史を書き換える方を選んだのだ。",
+    "scene": "gate",
+    "view": "window_clue",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "一方で、友好的な接触ばかりが記録されているわけではないの。",
-    "scene": "territory",
-    "view": "captives",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "別の映像では、縄張りに入った三人が、木の前で拘束されていたわ。",
-    "scene": "territory",
-    "view": "captives",
-    "pause": 12
+    "text": "この門の前では、複数の個体が、アベイラブルという音声を繰り返しているわ。",
+    "scene": "ritual",
+    "view": "ritual_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "急に危険性が上がったのだ。そば屋も、その場にいたのだ？",
-    "scene": "territory",
-    "view": "captives",
-    "pause": 12
+    "text": "儀式のような行動も、残っているのだな。",
+    "scene": "ritual",
+    "view": "ritual_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ええ。道具を持った同行個体とともに現れ、侵入者に、マドギワに入ったと告げているの。",
-    "scene": "territory",
-    "view": "capture",
-    "pause": 12
+    "text": "真壁教授は、失われた文明の言語に由来する、帰還を願う祈りだと考えているの。",
+    "scene": "ritual",
+    "view": "ritual_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "縄張りの境界を認識しているのだな。",
-    "scene": "territory",
-    "view": "capture",
-    "pause": 12
+    "text": "英語のアベイラブルではないのだ？",
+    "scene": "ritual",
+    "view": "ritual_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "さらに集団は、仲間になるか、ギュンされるかという選択を提示しているわ。",
-    "scene": "territory",
-    "view": "capture",
-    "pause": 12
+    "text": "研究班には古代語の専門家がいたけれど、英語の担当者はいなかったそうよ。",
+    "scene": "ritual",
+    "view": "ritual_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "その、ギュンとは何なのだ？",
-    "scene": "territory",
-    "view": "choice",
-    "pause": 12
+    "text": "中学生を一人連れていくのだ。",
+    "scene": "ritual",
+    "view": "ritual_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "意味と具体的な処置は、この記録だけでは確定できないわ。",
-    "scene": "territory",
-    "view": "choice",
-    "pause": 12
+    "text": "対象は三年ほど待っていると話しているわ。教授は、失われた故郷への執着が表れていると分析しているの。",
+    "scene": "ritual",
+    "view": "waiting_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "分からない方を怖くして、実質一択にしているのだ。勧誘のやり方が最悪なのだ。",
-    "scene": "territory",
-    "view": "choice",
-    "pause": 12
+    "text": "何を待っているか、本人に聞いたのだ？",
+    "scene": "ritual",
+    "view": "waiting_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "自ら増えるだけでなく、外部の人型生物を集団へ取り込む。その可能性を示す資料として注目されているの。",
-    "scene": "territory",
-    "view": "choice",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "ここまで、地上での観測記録を見てきたわ。しかし、そば屋の活動範囲は、それだけでは説明できないの。",
-    "scene": "space",
-    "view": "earth",
-    "pause": 12
+    "text": "聞く前に、研究班が非常に感動してしまったの。",
+    "scene": "ritual",
+    "view": "waiting_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "密林以外でも、見つかっているのだ？",
-    "scene": "space",
-    "view": "earth",
-    "pause": 12
+    "text": "仕事しろ。取材する側まで、待機してどうするのだ。",
+    "scene": "ritual",
+    "view": "waiting_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "次の記録は、地球の外側で撮影されているわ。",
-    "scene": "space",
-    "view": "earth",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "船外作業中の二人に、白い上半身を持つ物体が接近する。その姿は、そば屋と一致しているの。",
-    "scene": "space",
-    "view": "approach",
-    "pause": 12
+    "text": "また、集団との接触には、琥珀色の液体を献上する必要があったと報告されているわ。",
+    "scene": "ritual",
+    "view": "amber",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "宇宙服を着ていないのだ。しかも、平泳ぎしているのだ。",
-    "scene": "space",
-    "view": "approach",
-    "pause": 12
+    "text": "それが、彼らにとって価値のあるものなのだな。",
+    "scene": "ritual",
+    "view": "amber",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "正確には、平泳ぎに似た運動をしているわ。その動作が推進に寄与しているかは、映像だけでは判断できないの。",
-    "scene": "space",
-    "view": "approach",
-    "pause": 12
+    "text": "対象は容器の本数を確認し、箱で提示されると、調査班を迎え入れたの。",
+    "scene": "ritual",
+    "view": "amber",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "移動の原理までは、まだ分かっていないのだな。",
-    "scene": "space",
-    "view": "approach",
-    "pause": 12
+    "text": "古代人でも類人猿でも、そいつが欲張りなのは確定なのだ。",
+    "scene": "ritual",
+    "view": "amber",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ええ。ただし本人は、困っている様子を見せていない。白い服も、地上と同じように着用しているわ。",
-    "scene": "space",
-    "view": "swim",
-    "pause": 12
+    "text": "そして、旧文明説を一気に広めたのが、地下構造物から送られてきた、この映像よ。",
+    "scene": "ruins",
+    "view": "ruins",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "環境が変わっても、行動が安定しているのだ。",
-    "scene": "space",
-    "view": "swim",
-    "pause": 12
+    "text": "円筒形の設備が、奥まで並んでいるのだ。",
+    "scene": "ruins",
+    "view": "ruins",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "そして研究所が特に注目したのは、接近後の行動よ。",
-    "scene": "space",
-    "view": "swim",
-    "pause": 12
+    "text": "未確認ニュースネットは、眠れる巨人の遺跡として特集を組んだわ。",
+    "scene": "ruins",
+    "view": "ruins",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "対象は、冷えたの、いります、と発言し、ビールを差し出しているの。",
-    "scene": "space",
-    "view": "spacebeer",
-    "pause": 12
+    "text": "容器の中には、よく似た体格の個体が、複数確認できるの。",
+    "scene": "ruins",
+    "view": "sleepers",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "宇宙まで来て、やっていることは差し入れなのだ。",
-    "scene": "space",
-    "view": "spacebeer",
-    "pause": 12
+    "text": "同じ集団の人々が、保存されている可能性があるのだな。",
+    "scene": "ruins",
+    "view": "sleepers",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ここから、自分が飲む分とは別に、他者へ提供する分を用意していた可能性が浮上したわ。",
-    "scene": "space",
-    "view": "spacebeer",
-    "pause": 12
+    "text": "真壁教授は、文明滅亡の直前に、人々が眠りについた保存装置ではないかと推測しているわ。",
+    "scene": "ruins",
+    "view": "sleepers",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "用意がいいのだ。",
-    "scene": "space",
-    "view": "spacebeer",
-    "pause": 12
+    "text": "その遺跡は、何年前のものなのだ？",
+    "scene": "ruins",
+    "view": "sleepers",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "単なる飲酒個体という従来の理解から、飲料を配布する個体へ。そば屋研究の視野が、大きく広がった瞬間よ。",
-    "scene": "space",
-    "view": "spacebeer",
-    "pause": 30
+    "text": "年代測定は、まだ行われていないの。",
+    "scene": "ruins",
+    "view": "dating",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "その身体で、もっと世の中の役に立つことがあるだろ。",
-    "scene": "space",
-    "view": "spacebeer",
-    "pause": 12
+    "text": "じゃあ、なんで遺跡って呼んでいるのだ？",
+    "scene": "ruins",
+    "view": "dating",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "密林ではビールを受け取り、宇宙ではビールを渡している。この違いも、今後の検討課題ね。",
-    "scene": "space",
-    "view": "exchange_space",
-    "pause": 12
+    "text": "研究班が到着した時点で、すでに存在していたからよ。",
+    "scene": "ruins",
+    "view": "dating",
+    "pause": 25
   },
   {
     "who": "zunda",
-    "text": "どちらにしても、酒の話をしないと交流が始まらないのだな。",
-    "scene": "space",
-    "view": "exchange_space",
-    "pause": 12
+    "text": "その基準だと、コンビニも遺跡なのだ。",
+    "scene": "ruins",
+    "view": "dating",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "続いて紹介するのは、そば屋の個体数そのものに関わる記録よ。",
-    "scene": "clone",
-    "view": "lab",
-    "pause": 12
+    "text": "さらに驚くべきことに、照明や一部の設備は、今も動いているわ。",
+    "scene": "ruins",
+    "view": "power",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "研究施設と思われる空間に、液体を満たした容器が並んでいるわ。",
-    "scene": "clone",
-    "view": "lab",
-    "pause": 12
+    "text": "教授は、失われた永久機関が地下に存在すると考え、調査範囲の拡大を提言したの。",
+    "scene": "ruins",
+    "view": "power",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "中に、同じ白い顔がいくつも見えるのだ。",
-    "scene": "clone",
-    "view": "tanks",
-    "pause": 12
+    "text": "電気の配線を、たどってみたのだ？",
+    "scene": "ruins",
+    "view": "power",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "この映像では、そば屋のクローンとして扱われているの。自然界での繁殖とは、区別して考える必要があるわ。",
-    "scene": "clone",
-    "view": "tanks",
-    "pause": 12
+    "text": "配線は、遺跡の景観を損ねるため、報道用の映像では画面外に整理されたそうよ。",
+    "scene": "ruins",
+    "view": "power",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "あの体格と、宇宙での活動能力まで再現できるのなら、すごい技術なのだ。",
-    "scene": "clone",
-    "view": "tanks",
-    "pause": 12
+    "text": "証拠を片づけてから、謎だ謎だと騒いでいるのだ。",
+    "scene": "ruins",
+    "view": "power",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ただし、この映像から複製できたと確認できる範囲は、慎重に見極めなければならないの。",
-    "scene": "clone",
-    "view": "tanks",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "施設内では、研究者と思われる存在が、侵入者を傷つけずに回収するよう指示しているわ。",
-    "scene": "clone",
-    "view": "researcher",
-    "pause": 12
+    "text": "中央には、小さな発光像も現れるわ。研究班は、文明の指導者をかたどった司祭像と呼んでいるの。",
+    "scene": "ruins",
+    "view": "hologram",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "複製個体に、具体的な行動を要求したのだな。",
-    "scene": "clone",
-    "view": "researcher",
-    "pause": 12
+    "text": "その像も、何か話しているのだ？",
+    "scene": "ruins",
+    "view": "hologram",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "その後、複製個体は行動を開始した。この点に、現場の証言者は強い違和感を示したの。",
-    "scene": "clone",
-    "view": "pursuit",
-    "pause": 12
+    "text": "個体に対して、傷つけずに回収するよう指示しているわ。",
+    "scene": "ruins",
+    "view": "hologram",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "その直後、人型の個体が動き出した。古代の契約が、現在も有効である可能性が指摘されているの。",
+    "scene": "ruins",
+    "view": "awakening",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "何か、動きに不自然なところがあったのだ？",
-    "scene": "clone",
-    "view": "pursuit",
-    "pause": 12
+    "text": "命令を聞いて動いただけなのに、話を古くする癖が強すぎるのだ。",
+    "scene": "ruins",
+    "view": "awakening",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "指示どおりに動いていたのよ。",
-    "scene": "clone",
-    "view": "pursuit",
-    "pause": 40
+    "text": "一方、旧文明の起源を、地球の外に求める説も浮上しているわ。",
+    "scene": "orbit",
+    "view": "orbital",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "……それが、不自然なのだ？",
-    "scene": "clone",
-    "view": "pursuit",
-    "pause": 12
+    "text": "今度は、宇宙から来たという話なのだ？",
+    "scene": "orbit",
+    "view": "orbital",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "原個体を知る証言者にとっては、看過できない違いだったようね。",
-    "scene": "clone",
-    "view": "pursuit",
-    "pause": 12
+    "text": "こちらは、地球周辺で記録されたという、人型物体の接近映像よ。",
+    "scene": "orbit",
+    "view": "orbital",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "オリジナルがいちばん出来悪いのだ。",
-    "scene": "clone",
-    "view": "pursuit",
-    "pause": 12
+    "text": "人が、泳ぐような動きをしているのだ。",
+    "scene": "orbit",
+    "view": "swim_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "見た目を再現できても、そば屋らしさまで再現できたとは限らない。複製研究の難しさが表れているわ。",
-    "scene": "clone",
-    "view": "comparison",
-    "pause": 12
+    "text": "研究班は、宇宙空間を泳ぐための未知の器官が、存在するのではないかと考えているわ。",
+    "scene": "orbit",
+    "view": "swim_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "言うことを聞かなくなったら完成って、研究者がかわいそうなのだ。",
-    "scene": "clone",
-    "view": "comparison",
-    "pause": 12
+    "text": "その器官は、どこにあるのだ？",
+    "scene": "orbit",
+    "view": "swim_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ここで、これまでの記録を整理しましょう。窓への執着。長時間の待機。発酵飲料を介した交流。",
-    "scene": "synthesis",
-    "view": "summary",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "さらに、集団への加入を迫る行動と、外部からの指示に対する独特の反応が確認されたわ。",
-    "scene": "synthesis",
-    "view": "summary",
-    "pause": 12
+    "text": "見つかっていないの。非常に高度な器官なので、見えない可能性があるそうよ。",
+    "scene": "orbit",
+    "view": "swim_dark",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "一つ一つは見えてきたけれど、どういう生物なのかは、ますます分からなくなったのだ。",
-    "scene": "synthesis",
-    "view": "summary",
-    "pause": 12
+    "text": "見えないものを、よくそこまで褒められるのだ。",
+    "scene": "orbit",
+    "view": "swim_dark",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "宇宙での活動や人工増殖も含め、従来の分類に当てはめることは困難と考えられていたの。",
-    "scene": "synthesis",
-    "view": "summary",
-    "pause": 12
+    "text": "接近した個体は、円筒形の物体を差し出しているわ。研究班は、文明間の贈与行動と解釈しているの。",
+    "scene": "orbit",
+    "view": "orbital_gift",
+    "pause": 10
+  },
+  {
+    "who": "zunda",
+    "text": "密林で受け取っていたものと、関係があるのだ？",
+    "scene": "orbit",
+    "view": "orbital_gift",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ところが近年、この研究に、大きな転機が訪れたわ。",
+    "text": "その可能性はあるわ。ただ、未確認ニュースネットは、物体の中身より、地球外文明の見出しを優先したの。",
+    "scene": "orbit",
+    "view": "orbital_gift",
+    "pause": 10
+  },
+  {
+    "who": "zunda",
+    "text": "中身を確認したら、特番が終わるからなのだ。",
+    "scene": "orbit",
+    "view": "orbital_gift",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "こうして研究班は、三つの仮説を統合した、新たな説明に到達したわ。",
+    "scene": "consensus",
+    "view": "consensus",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "地球外に起源を持つ原人が、古代文明を築き、その末裔が現在もマドギワに暮らしているという説よ。",
+    "scene": "consensus",
+    "view": "consensus",
+    "pause": 10
+  },
+  {
+    "who": "zunda",
+    "text": "間違っていそうな説を全部つなげたら、もっと長い間違いになるのだ。",
+    "scene": "consensus",
+    "view": "consensus",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "論文の結論では、さらなる研究が必要である、と慎重に締めくくられているわ。",
+    "scene": "consensus",
+    "view": "consensus",
+    "pause": 10
+  },
+  {
+    "who": "zunda",
+    "text": "さらに必要なのは、普通の確認なのだ。",
+    "scene": "consensus",
+    "view": "consensus",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "ところが近年、この研究に、大きな転機が訪れたの。",
     "scene": "reveal",
-    "view": "archive",
-    "pause": 12
+    "view": "new_document",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "新しい個体が、見つかったのだ？",
+    "text": "ようやく、ちゃんと調べた人が現れたのだ？",
     "scene": "reveal",
-    "view": "archive",
-    "pause": 12
+    "view": "new_document",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "調査班が、人事部に問い合わせたの。",
+    "text": "特番を見た人事部から、研究所に連絡があったわ。",
     "scene": "reveal",
-    "view": "archive",
-    "pause": 35
-  },
-  {
-    "who": "zunda",
-    "text": "急に普通の調べ方なのだ。",
-    "scene": "reveal",
-    "view": "archive",
-    "pause": 12
+    "view": "new_document",
+    "pause": 25
   },
   {
     "who": "metan",
-    "text": "回答は、うちの社員です。",
+    "text": "映っているのは、うちの社員です。",
     "scene": "reveal",
     "view": "answer",
-    "pause": 65
+    "pause": 50
   },
   {
     "who": "zunda",
     "text": "……社員だったのだ？",
     "scene": "reveal",
     "view": "answer",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "資料を照合した結果、そば屋は、アクシデンチュアに在籍する窓際社員であることが判明したの。",
+    "text": "対象は、アクシデンチュアに在籍する窓際社員、そば屋だったの。呼び名は、最初から合っていたわ。",
     "scene": "reveal",
     "view": "employee",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "長年、未確認とされてきた存在が、確認された瞬間だったわ。",
+    "text": "こちらが、不鮮明になる前の映像よ。白い上半身は、白いティーシャツ。顔の構造は、本人が着けている仮面だったわ。",
     "scene": "reveal",
     "view": "employee",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "確認してなかっただけなのだ。",
+    "text": "名前まで聞いて、社員かどうかは聞かなかったのだ。",
     "scene": "reveal",
     "view": "employee",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "マドギワは、窓際。反復されるアベイラブルという言葉は、仕事を受けられる状態を表していたの。",
+    "text": "眠れる巨人の遺跡は、稼働中のクローン研究施設。古代の門は、アルミサッシの窓だったの。",
     "scene": "reveal",
-    "view": "reinterpret",
-    "pause": 12
+    "view": "corrections",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "三年待っていたのも、仕事の割り当てだったのだな。",
+    "text": "一個も当たってないのだ。",
     "scene": "reveal",
-    "view": "reinterpret",
-    "pause": 12
+    "view": "corrections",
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "ええ。生態と思われていた特徴の一部は、配属と勤務状況から説明できる可能性が出てきたわ。",
+    "text": "三年の祈りは、仕事の割り当てを待つ行動。琥珀色の液体は、ビールだったわ。",
     "scene": "reveal",
-    "view": "reinterpret",
-    "pause": 12
+    "view": "corrections",
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "あれだけビールを飲んでいて、受けられる状態を名乗るのは無理があるのだ。",
+    "text": "本人も本人で、三年飲んで待っているだけなのだ。",
     "scene": "reveal",
-    "view": "reinterpret",
-    "pause": 12
+    "view": "corrections",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "研究所は、社員である可能性も排除していなかったと声明を発表しているわ。",
+    "scene": "reveal",
+    "view": "research_response",
+    "pause": 10
+  },
+  {
+    "who": "zunda",
+    "text": "原人と類人猿と宇宙人しか挙げてなかったのだ。",
+    "scene": "reveal",
+    "view": "research_response",
+    "pause": 10
+  },
+  {
+    "who": "metan",
+    "text": "未確認ニュースネットは、人事部との独自のつながりにより、正体を解明したと報じたの。",
+    "scene": "reveal",
+    "view": "research_response",
+    "pause": 10
+  },
+  {
+    "who": "zunda",
+    "text": "向こうから怒られただけなのだ。",
+    "scene": "reveal",
+    "view": "research_response",
+    "pause": 10
   },
   {
     "who": "zunda",
     "text": "でも、宇宙を泳いでいた件は、どう説明するのだ？",
     "scene": "ending",
     "view": "space_question",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
     "text": "人事資料には、記載がなかったわ。",
     "scene": "ending",
     "view": "space_question",
-    "pause": 35
+    "pause": 30
   },
   {
     "who": "zunda",
-    "text": "そこは、本当に調べるところなのだ。",
+    "text": "そっちは本当に研究しろ。酒に目を奪われるな。",
     "scene": "ending",
     "view": "space_question",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "metan",
-    "text": "研究所では引き続き、そば屋の観測を続けていくわ。身近にいるからこそ、見落としている謎があるのかもしれない。",
+    "text": "研究所では現在、これまでの研究成果を、社員を原人と誤認する条件の研究として整理し直しているわ。",
     "scene": "ending",
     "view": "closing",
-    "pause": 12
-  },
-  {
-    "who": "metan",
-    "text": "また、隣にいる福ギュンについても、人事部への照会を進めているわ。",
-    "scene": "ending",
-    "view": "closing",
-    "pause": 12
+    "pause": 10
   },
   {
     "who": "zunda",
-    "text": "まとめて聞くのだ。",
+    "text": "まず自分たちの目を調べるのだ。",
     "scene": "ending",
     "view": "closing",
-    "pause": 40
+    "pause": 10
   },
   {
     "who": "metan",
     "text": "それでは、また次回。めたんのミステリー研究所で、お会いしましょう。",
     "scene": "ending",
     "view": "closing",
-    "pause": 12
+    "pause": 10
   }
 ]

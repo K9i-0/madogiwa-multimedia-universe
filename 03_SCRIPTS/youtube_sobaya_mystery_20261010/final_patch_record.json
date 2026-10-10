@@ -1,0 +1,10 @@
+{
+  "startFrame": 10805,
+  "endFrameExclusive": 11255,
+  "reason": "The moving ruins source crossed a shot containing an unrelated character; fixed archival tank frame replaces this interval.",
+  "audio": "Original AAC stream copied unchanged",
+  "reproduction": "Full render.py includes the corrected Panel.tsx and does not require this splice.",
+  "patchRenderCommand": "npx remotion render src/index.ts Explainer out/ruins_patch.mp4 --frames=10805-11254 --muted --concurrency=4 --crf=18",
+  "decodedAudioHash": "SHA256=fd147724034fc63c79e6e76e8ba532bf0d71b2b872069b570ee8223c575a9e25",
+  "audioUnchanged": true
+}

@@ -1,5 +1,5 @@
 from pathlib import Path
-import requests,json,wave,math,numpy as np,hashlib
+import requests,json,wave,math,numpy as np,hashlib,os
 P=Path(__file__).resolve().parent
 version=requests.get('http://127.0.0.1:50021/version',timeout=10).json()
 rows=json.loads((P/'dialogue.json').read_text());out=[];cursor=30
@@ -9,6 +9,9 @@ for i,r in enumerate(rows):
  res=requests.post('http://127.0.0.1:50021/audio_query',params={'speaker':speaker,'text':spoken},timeout=60);res.raise_for_status();q=res.json()
  q.update(speedScale=1.08 if speaker==2 else 1.13,prePhonemeLength=.09,postPhonemeLength=.12,outputSamplingRate=24000)
  key=hashlib.sha256(json.dumps({'query':q,'speaker':speaker,'engine':version},sort_keys=True).encode()).hexdigest()[:12];name=f'voice_{i:03}_{key}.wav';f=P/'public'/name
+ if not f.exists():
+  cached=next((P/'public').glob(f'voice_*_{key}.wav'),None)
+  if cached is not None:os.link(cached,f)
  if not f.exists():
   res=requests.post('http://127.0.0.1:50021/synthesis',params={'speaker':speaker},json=q,timeout=120);res.raise_for_status();f.write_bytes(res.content)
  with wave.open(str(f)) as w:samples=np.frombuffer(w.readframes(w.getnframes()),dtype=np.int16).astype(float)/32768;rate=w.getframerate()

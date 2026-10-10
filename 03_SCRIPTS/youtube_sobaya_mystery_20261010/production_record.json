@@ -5,9 +5,9 @@
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 20719
+    "durationInFrames": 19007
   },
-  "durationSeconds": 690.6333333333333,
+  "durationSeconds": 633.5666666666667,
   "voicevoxVersion": "0.25.1",
   "voiceSettings": {
     "metan": {
@@ -25,15 +25,15 @@
   "audioSynchronization": "Measured WAV lengths and per-frame RMS mouth shapes",
   "soundtrack": "Original procedural ambient; no third-party music",
   "publication": "Not published or uploaded",
-  "visualQA": "Changed attribution layouts and subscription ending inspected both in previews and decoded final MP4 frames; no clipping or overlap found.",
+  "visualQA": "44 frames extracted from final MP4 inspected, covering all 41 layout runs, clean reveal boundary, and final fade. No clipping or overlap observed.",
   "listeningQA": "No listening-capable tool; not claimed as auditioned",
-  "revision": 4,
-  "voiceFiles": 130,
-  "cleanRevealFrame": 17369,
-  "imageGeneration": "Built-in image_gen; inputs/imagegen_v3_prompts.json plus silhouette_prompt.txt",
+  "revision": 6,
+  "voiceFiles": 116,
+  "cleanRevealFrame": 15657,
+  "imageGeneration": "Built-in image_gen; inputs/imagegen_v3_prompts.json, inputs/imagegen_v6_prompts.json, silhouette_prompt.txt",
   "evidenceTreatment": "Reframed, reduced resolution, grayscale, noise, handheld motion or fixed observation scanlines",
-  "comparisonVersion": "final_remotion_sobaya_mystery_v3.mp4",
-  "finalOutput": "final_remotion_sobaya_mystery_v4.mp4",
+  "comparisonVersion": "final_remotion_sobaya_mystery_v4.mp4",
+  "finalOutput": "final_remotion_sobaya_mystery_v6.mp4",
   "researchers": {
     "木村": {
       "organization": "広域未確認生物研究所",
@@ -66,9 +66,9 @@
       "reading": "エモト"
     }
   },
-  "pronunciationQA": "All four 霜重 utterances have シモジュウ in VOICEVOX kana; not a listening audit.",
-  "reusedVoiceFiles": 113,
-  "newVoiceFiles": 17,
-  "endingPreview": "preview_ending_v4.mp4",
-  "endingPreviewSeconds": 37.2
+  "pronunciationQA": "All 霜重 utterances use シモジュウ in VOICEVOX kana; not a listening audit.",
+  "fictionReferenceCount": 1,
+  "fictionReference": "天空の城ラピュタ",
+  "technicalQA": "116 WAV/caption timing checks, 19007 video frames at 720p30, 48 kHz audio, full decode pass.",
+  "finalSHA256": "9eb2455b687fb06a00ab1c44a80265bc2592ac59964d9a08620c16f3fc501f57"
 }

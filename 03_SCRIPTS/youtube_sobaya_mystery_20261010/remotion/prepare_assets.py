@@ -29,5 +29,5 @@ for f in old.glob('*.png'):
 (P.parent/'asset_sources.json').write_text(json.dumps({'sources':records,'portraits':{'author':'坂本アヒル','provenance':'03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json'},'music':'Original procedural ambient score; mix_audio.py'},ensure_ascii=False,indent=2)+'\n')
 
 # Adopted generated illustrations, retained as production inputs.
-for f in (P.parent/"inputs").glob("*_v3.png"):
+for f in (P.parent/"inputs").glob("*_v[36].png"):
  shutil.copy2(f,P/"public"/f.name)

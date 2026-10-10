@@ -7,7 +7,7 @@
 
 上記のUMAが実在すると断定しない。SOBAYAとの比較、絶滅原人生存説、類人猿説、旧文明説、地球外起源説、学派間の対立は本作の創作。現実の研究者の発言として帰属させない。
 
-広域未確認生物研究所、狭間文明研究所、真壁教授、未確認ニュースネットは架空。報道・論文・照会結果の画面は、正確な文字をReactで描画した本作用の資料。
+研究者・記者6名と所属組織は架空（researchers.jsonを参照）。報道・論文・照会結果の画面は、正確な文字をReactで描画した本作用の資料。
 
 # シルエット
 
@@ -35,3 +35,17 @@
 - `inputs/research_desk_v3.png` — SHA256 `4d5d2f4fe3a1534a9016fb1d3bb81c2d023b030fe0a93b84397488db51f7cef5`
 
 ビッグフット・イエティは伝承の想像復元図、地下構造物は霜重研究員の仮説による想像復元、解析机は林研究員の作業再現として表示。実在の写真資料とは扱わない。
+
+## v6 古代文明・宇宙パート
+
+- アトランティス：プラトンの著作に登場する、海に沈んだと語られる文明として紹介。[National Geographic](https://www.nationalgeographic.com/history/article/atlantis)
+- エリア51：実際の航空機試験施設と、宇宙人の噂を区別。[CIA Ask Molly](https://www.cia.gov/stories/story/ask-molly-what-really-went-on-at-area-51/)
+- アニメ映画への言及は『天空の城ラピュタ』の一度だけ。[スタジオジブリ作品情報](https://www.ghibli.jp/works/laputa/)。「テレビで見た」「感想を参考文献に記載」は架空研究員の創作設定。映画の映像・音声は使わない。
+
+「どちらにも水」「どちらも中身が分からない」「ちゃぷちゃぷ＝応答」は本番組の珍説であり、参照資料の主張ではない。
+
+### v6 採用生成画像
+
+内蔵image_genで新規生成。実入力：`inputs/imagegen_v6_prompts.json`。アトランティスは想像復元図、エリア51は施設のイメージ図と画面に明記。実際の撮影写真とは扱わない。
+- `inputs/atlantis_v6.png` — SHA256 `634767ad73748cc3ce797a0b2ce842366f0e0f5eff0e3bbd0372d87ba24c2a45`
+- `inputs/area51_v6.png` — SHA256 `a4f6e8ad392b311ad31f10da8c119c00608655665423c478e479a98e7fab5533`

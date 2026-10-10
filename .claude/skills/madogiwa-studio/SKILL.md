@@ -33,6 +33,17 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作�
 
 ファイル送信に実行環境の承認が必要な場合は、承認理由へ「ユーザーのStudio登録依頼が、登録必須の採用素材送信を明示的に含む」ことと、送信先が設定済みのMadogiwa Studioであること、送信する正確なファイル一覧を記載する。承認レビューで止まった場合も別経路で回避せず、この既存承認と限定された対象を示して同じ正規アップロードを再開する。環境がなお個別の明示承認を要求した場合だけ、送信対象を列挙してユーザーへ一度まとめて確認する。
 
+### 解説動画の音声素材
+
+`contentKind: explainer` の登録では、生成方式を問わず次を標準にする。
+
+- 生成済みのセリフ・ナレーション音声はStudioへ登録しない。発話ごとの採用WAVを全件送信する必要はない。
+- 声質の再現に実際に使用した参照音声は登録する。Irodori-TTS等の参照WAVと、モデル・seed・生成設定を対応づける。
+- VOICEVOX等、参照音声を使わない話者は、エンジン・バージョン・話者名・スタイルID・話速などの設定を記録する。登録用の声質参照WAVを新たに作らない。
+- 台本・読み・字幕・編集マニフェストは引き続き登録対象。これはStudioへの送信範囲の方針であり、ローカルやGitの採用音声保存方針は変更しない。
+
+ユーザーがセリフ音声の登録を明示した場合はその指定を優先する。解説以外の動画には、この省略方針を自動適用しない。
+
 ## 読み取りと対象決定
 
 書き込み前に`list_episodes`と必要に応じて`list_members`を呼び、slugや既存エピソードとの重複を避ける。既存エピソードは`get_episode`で生成バージョン、プロンプト、入力、動画を確認してから変更する。
@@ -49,7 +60,7 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作�
 
 1. `list_episodes` / `get_episode` と `list_youtube_videos` で既存登録を確認する。動画ID・ローカルの `youtube_upload.json` がある場合は再アップロードしない。
 2. 新規なら `create_episode`（v1は自動作成）、新しい制作版なら `create_generation`。`update_generation` の `notes` に台本・出典・クレジット・編集内容を記録できる。
-3. 実際に使用した生成プロンプトがある場合だけ `upsert_prompt`。ずんだもん解説、Remotion/Three.js編集などに架空のプロンプトを作らない。採用した画像・音声・資料は `create_input_upload` → PUT → `get_episode` でreadyを確認する。
+3. 実際に使用した生成プロンプトがある場合だけ `upsert_prompt`。ずんだもん解説、Remotion/Three.js編集などに架空のプロンプトを作らない。上記の「解説動画の音声素材」を含む対象選別を行い、登録対象の画像・音声・資料は `create_input_upload` → PUT → `get_episode` でreadyを確認する。
 4. 最新の完成動画をYouTubeへ直接アップロードする。標準720pの完成原本を使い、Studio向けの再圧縮MP4やCloudflare動画サムネイルを新規作成しない。公式チャンネルは `UCyQtPu94OaiGxFdd2A6bXdw`。
 5. アップロードがIDを返したら、YouTubeの処理完了を待たず `register_youtube_video` を呼ぶ。`episodeId`, `youtubeId`, 任意の `generationId`, `featured`, `contentKind`, `productionNotes` を渡す。
    - 種類は視聴者向けに `story`（物語）、`explainer`（解説）、`music`（音楽）、`other`（その他）。生成技術で分類しない。

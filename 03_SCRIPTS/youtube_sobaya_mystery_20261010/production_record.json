@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-10",
+  "composition": "Explainer",
+  "compositionSettings": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 19417
+  },
+  "durationSeconds": 647.2333333333333,
+  "voicevoxVersion": "0.25.1",
+  "voiceSettings": {
+    "metan": {
+      "speaker": 2,
+      "speedScale": 1.08
+    },
+    "zunda": {
+      "speaker": 3,
+      "speedScale": 1.13
+    },
+    "prePhonemeLength": 0.09,
+    "postPhonemeLength": 0.12,
+    "sampleRate": 24000
+  },
+  "audioSynchronization": "Measured WAV lengths and per-frame RMS mouth shapes",
+  "soundtrack": "Original procedural ambient; no third-party music",
+  "publication": "Not published or uploaded",
+  "visualQA": "All central layout types inspected; corrected title background, duplicate view names, tank evidence and window subtitle crop",
+  "listeningQA": "No listening-capable tool; not claimed as auditioned"
+}

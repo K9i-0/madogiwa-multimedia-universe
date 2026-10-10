@@ -1,11 +1,23 @@
 {
+  "revision": 10,
   "sampleRate": 48000,
   "durationFrames": 18329,
   "voiceLUFS": -18,
-  "musicLUFS": -35,
+  "musicLUFS": -34,
+  "endingLUFS": -38,
   "endingLift": false,
-  "originalScore": true,
-  "peak": 0.824350118637085,
+  "originalScore": false,
+  "peak": 0.8470711708068848,
+  "bodyStartFrame": 1441,
+  "endingStartFrame": 16849,
+  "revealFrame": 15058,
+  "crossfadeSeconds": 2,
+  "endingFadeSeconds": 4,
+  "tracks": [
+    "都市伝説 / shimtone",
+    "Truth Seeker / 松浦洋介",
+    "Unity / TheFatRat"
+  ],
   "clipAudio": "No original audio; archive video excerpts under narration",
-  "listeningAudit": "Not yet performed"
+  "listeningAudit": "Not performed"
 }

@@ -685,7 +685,7 @@
         "start_time": "0.000000",
         "duration_ts": 9384448,
         "duration": "610.966667",
-        "bit_rate": "475843",
+        "bit_rate": "454755",
         "bits_per_raw_sample": "8",
         "nb_frames": "18329",
         "nb_read_frames": "18329",
@@ -740,7 +740,7 @@
         "start_time": "0.000000",
         "duration_ts": 29326368,
         "duration": "610.966000",
-        "bit_rate": "192604",
+        "bit_rate": "197328",
         "nb_frames": "28641",
         "nb_read_frames": "28640",
         "extradata_size": 5,
@@ -773,7 +773,7 @@
       }
     ],
     "format": {
-      "filename": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_sobaya_mystery_20261010/final_remotion_sobaya_mystery_v9.mp4",
+      "filename": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_sobaya_mystery_20261010/final_remotion_sobaya_mystery_v10.mp4",
       "nb_streams": 2,
       "nb_programs": 0,
       "nb_stream_groups": 0,
@@ -781,8 +781,8 @@
       "format_long_name": "QuickTime / MOV",
       "start_time": "0.000000",
       "duration": "610.966667",
-      "size": "51724458",
-      "bit_rate": "677280",
+      "size": "50474758",
+      "bit_rate": "660916",
       "probe_score": 100,
       "tags": {
         "major_brand": "isom",
@@ -795,11 +795,10 @@
   },
   "fullDecode": "pass",
   "frameCount": "pass",
-  "revision": 9,
+  "revision": 10,
   "visualAudit": {
     "status": "pass",
-    "sampledFrames": 66,
-    "scope": "Layouts, diagram stages, four revised reactions, reveal and end; ritual still corrected",
-    "listening": "not performed"
-  }
+    "scope": "Changed credits frame from final encode at 605 seconds; v9 layout audit retained in git history"
+  },
+  "mixPeakDBFS": -1.4
 }

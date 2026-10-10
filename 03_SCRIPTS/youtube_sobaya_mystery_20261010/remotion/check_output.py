@@ -32,7 +32,7 @@ for name,scenes in roles.items():
  for row in m['dialogue']:
   if name in row['text']:assert row['scene'] in scenes,(name,row['scene'])
 report={'diagramSpeechCueValidation':'pass','researcherAssignmentValidation':'pass','fictionReferenceValidation':'pass: one Laputa reference', 'voiceFiles':len(r),'durationSeconds':m['composition']['durationInFrames']/30,'captionAndTimelineValidation':'pass','voices':r,'listeningAudit':'Not performed; technical checks do not establish listening quality'}
-f=P.parent/'final_remotion_sobaya_mystery_v9.mp4'
+f=P.parent/'final_remotion_sobaya_mystery_v10.mp4'
 if f.exists():
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(f)]))
  v=next(x for x in probe['streams'] if x['codec_type']=='video');a=next(x for x in probe['streams'] if x['codec_type']=='audio')

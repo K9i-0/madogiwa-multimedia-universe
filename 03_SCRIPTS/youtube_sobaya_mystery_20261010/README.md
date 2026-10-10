@@ -1,10 +1,13 @@
 # めたんのミステリー研究所：SOBAYA
 
-## 現行版 v9
+## 現行版 v10
+
+OP・本編・EDへ選定BGMを反映。取得元・hashは `bgm_sources.json`。音源復元は `remotion/prepare_music.py`。
 
 4か所の相づちをボケを拾う台詞へ変更し、重複する9発言を削除。v8から37秒短縮。10分10.967秒、1280×720・30fps、107発話。
 
-- 完成動画：`final_remotion_sobaya_mystery_v9.mp4`（ローカル保持）。
+- OP→本編の確認：`preview_opening_v10.mp4`。ED確認：`preview_ending_v10.mp4`。
+- 完成動画：`final_remotion_sobaya_mystery_v10.mp4`（ローカル保持）。
 - 改修部の抜粋：`preview_changes_v9.mp4`（モニター・脚と腕・アベイラブル・エリア51）。
 - 正本台本：`script.md`。発話と間：`remotion/dialogue.json`。
 - 今回の台本改善記録：`revision_v9.md`。図解の同期改修：`revision_v7.md`。前回の全パート見直し：`part_review_v6.md`。
@@ -34,13 +37,14 @@ npm ci
 ../../../.local/voicevox-explainer/venv/bin/python prepare_evidence.py
 ../../../.local/voicevox-explainer/venv/bin/python prepare_voice.py
 npm run typecheck
+../../../.local/voicevox-explainer/venv/bin/python prepare_music.py
 npm run render
 ../../../.local/voicevox-explainer/venv/bin/python check_output.py
 ```
 
 Remotion 4.0.534固定。前作からの立ち絵とローカルの原本動画を使用。画像生成は内蔵image_genによる参照付き生成。採用シルエットはGit管理の `inputs/sobaya_silhouette_v2.png` から復元できる。
 
-音声はVOICEVOX:四国めたん／ずんだもん。採用設定は `production_record.json`。環境音楽は自作アンビエント、`mix_audio.py` で再現する。元動画の音声は再生せず、解説とBGMを配置する。
+音声はVOICEVOX:四国めたん／ずんだもん。採用設定は `production_record.json`。環境音楽は「都市伝説」「Truth Seeker」「Unity」、`mix_audio.py` で再現する。元動画の音声は再生せず、解説とBGMを配置する。
 
 `public/`、`out/`、node_modules、生成動画はGit対象外。旧版の画面・音声はローカル保持、コードはGit履歴の `5138e2fa` から参照できる。
 

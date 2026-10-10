@@ -15,26 +15,35 @@ for d in m['dialogue']:
 save(P/'out/voice_unmixed.wav',voice);del voice
 voice=decode(P/'out/voice_unmixed.wav','loudnorm=I=-18:TP=-2:LRA=11')[:n]
 if len(voice)<n:voice=np.pad(voice,((0,n-len(voice)),(0,0)))
-# Original deterministic, quiet minor-mode ambient composition; no samples or voices.
+# Licensed music, normalized before mixing; all positions derive from dialogue frames.
+def fade(a,ins=0,outs=0):
+ a=a.copy()
+ if ins:a[:ins]*=np.linspace(0,1,ins)[:,None]
+ if outs:a[-outs:]*=np.linspace(1,0,outs)[:,None]
+ return a
+body_frame=next(d['startFrame'] for d in m['dialogue'] if d['scene']!='intro')
+end_frame=next(d['startFrame'] for d in m['dialogue'] if d['scene']=='ending')
+reveal_frame=next(d['startFrame'] for d in m['dialogue'] if 'うちの社員です' in d['text'])
+body=body_frame*1600;end=end_frame*1600;cross=2*sr
 bgm=np.zeros((n,2),np.float32)
-for start in range(0,n,sr*20):
- stop=min(n,start+sr*20);t=np.arange(start,stop,dtype=np.float64)/sr
- low=.15*np.sin(2*np.pi*73.416*t+.17*np.sin(t*.09))+.07*np.sin(2*np.pi*110*t)
- mid=.065*np.sin(2*np.pi*146.832*t)*(0.65+.35*np.sin(t*.13))
- high=np.zeros_like(t)
- notes=[293.665,349.228,440,329.628,293.665,220,261.626,220]
- for j in range(max(0,int(t[0]//12)-2),int(t[-1]//12)+1):
-  dt=t-j*12;env=np.where(dt>=0,(1-np.exp(-np.maximum(dt,0)*1.6))*np.exp(-np.maximum(dt,0)/4),0)
-  high+=.11*env*np.sin(2*np.pi*notes[j%len(notes)]*dt)
- a=low+mid+high;bgm[start:stop,0]=a;bgm[start:stop,1]=low+mid+high*.93
-save(P/'out/ambient_raw.wav',bgm);del bgm
-bgm=decode(P/'out/ambient_raw.wav','loudnorm=I=-35:TP=-6:LRA=8')[:n]
-bgm[:sr*3]*=np.linspace(0,1,sr*3)[:,None]
-ending=next(d['startFrame'] for d in m['dialogue'] if d['scene']=='ending')*1600
-bgm[ending:]*=.7
-bgm[-sr*5:]*=np.linspace(1,0,sr*5)[:,None]
+op=decode(P/'public/urban_legend.mp3','loudnorm=I=-34:TP=-6:LRA=8')[:body+cross]
+bgm[:len(op)]+=fade(op,sr,cross)
+track=decode(P/'public/truth_seeker.mp3','loudnorm=I=-34:TP=-6:LRA=8')
+length=end+cross-body;bed=np.zeros((length,2),np.float32);step=len(track)-cross
+for start in range(0,length,step):
+ part=fade(track,cross if start else 0,cross)[:length-start]
+ bed[start:start+len(part)]+=part
+bgm[body:end+cross]+=fade(bed,cross,cross)
+# A brief musical silence before and under the HR punchline, without changing dialogue.
+cut=reveal_frame*1600;down=sr//2;hold=sr*2
+bgm[cut-sr:cut-sr+down]*=np.linspace(1,0,down)[:,None]
+bgm[cut-sr+down:cut+hold]=0
+bgm[cut+hold:cut+hold+sr]*=np.linspace(0,1,sr)[:,None]
+unity=decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-end]
+bgm[end:]+=fade(unity,cross,4*sr)
+save(P/'out/music_v10.wav',bgm)
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'durationFrames':m['composition']['durationInFrames'],'voiceLUFS':-18,'musicLUFS':-35,'endingLift':False,'originalScore':True,'peak':peak,'clipAudio':'No original audio; archive video excerpts under narration','listeningAudit':'Not yet performed'},ensure_ascii=False,indent=2)+'\n')
+(P.parent/'mix_record.json').write_text(json.dumps({'revision':10,'sampleRate':sr,'durationFrames':m['composition']['durationInFrames'],'voiceLUFS':-18,'musicLUFS':-34,'endingLUFS':-38,'endingLift':False,'originalScore':False,'peak':peak,'bodyStartFrame':body_frame,'endingStartFrame':end_frame,'revealFrame':reveal_frame,'crossfadeSeconds':2,'endingFadeSeconds':4,'tracks':['都市伝説 / shimtone','Truth Seeker / 松浦洋介','Unity / TheFatRat'],'clipAudio':'No original audio; archive video excerpts under narration','listeningAudit':'Not performed'},ensure_ascii=False,indent=2)+'\n')
 print('Mixed',n/sr,'seconds; peak',peak)

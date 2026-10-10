@@ -23,17 +23,17 @@
     "sampleRate": 24000
   },
   "audioSynchronization": "Measured WAV lengths and per-frame RMS mouth shapes",
-  "soundtrack": "Original procedural ambient; no third-party music",
+  "soundtrack": "OP: 都市伝説 / shimtone; main: Truth Seeker / 松浦洋介; ED: TheFatRat - Unity",
   "publication": "Not published or uploaded",
-  "visualQA": "66 sampled final-encode frames inspected across layouts, cue stages, revised reactions and reveal; ritual footage replaced with Sobaya observation still.",
+  "visualQA": "v9 layouts retained; updated music credits inspected in final encode at 605 seconds, no overflow.",
   "listeningQA": "No listening-capable tool; not claimed as auditioned",
-  "revision": 9,
+  "revision": 10,
   "voiceFiles": 107,
   "cleanRevealFrame": 15230,
   "imageGeneration": "Built-in image_gen; inputs/imagegen_v3_prompts.json, inputs/imagegen_v6_prompts.json, silhouette_prompt.txt",
   "evidenceTreatment": "Reframed, reduced resolution, grayscale, noise, handheld motion or fixed observation scanlines",
-  "comparisonVersion": "final_remotion_sobaya_mystery_v8.mp4",
-  "finalOutput": "final_remotion_sobaya_mystery_v9.mp4",
+  "comparisonVersion": "final_remotion_sobaya_mystery_v9.mp4",
+  "finalOutput": "final_remotion_sobaya_mystery_v10.mp4",
   "researchers": {
     "中口": {
       "organization": "広域未確認生物研究所",
@@ -71,5 +71,5 @@
   "fictionReference": "天空の城ラピュタ",
   "technicalQA": "107 voice files, 34 speech cues, captions, roles, one film reference, 18329 frames at 1280x720/30fps and full decode passed; TypeScript passed.",
   "diagramTiming": "VOICEVOX mora duration anchors scaled to measured WAV duration; integer frames in edit-manifest.visualCues",
-  "finalSHA256": "66524d0703d3bc1c2e0692342ef02cbc3ed1ea0ec55fef4d295ef6bbbbb287e3"
+  "finalSHA256": "c3ae035a28d7431ea44047a595858d16e2e7f58ca6066659b03057691cd8940b"
 }

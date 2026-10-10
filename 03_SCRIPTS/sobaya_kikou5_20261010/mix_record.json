@@ -1,0 +1,71 @@
+{
+  "sampleRate": 48000,
+  "frames": 5399,
+  "voiceTargetLUFS": -18,
+  "bgmTargetLUFS": -34,
+  "clipTargetLUFS": -19,
+  "premasterPeak": 0.8045002222061157,
+  "clips": [
+    {
+      "id": "battery",
+      "afterLine": 15,
+      "source": "03_SCRIPTS/40_sobaya_beer_battery/final_video.mp4",
+      "sourceStartFrame": 510,
+      "durationInFrames": 285,
+      "label": "第40話「そば屋、電池切れ」",
+      "file": "clip_battery.mp4",
+      "sourceSha256": "17cfd7c9a4918a0d6a298c5da44adc12ece49537a1d384fa43bde8d7494ffe70",
+      "startFrame": 2058
+    },
+    {
+      "id": "taxi",
+      "afterLine": 19,
+      "source": "03_SCRIPTS/82_last_train_police_taxi/final_remotion_exterior_punchline.mp4",
+      "sourceStartFrame": 360,
+      "durationInFrames": 199,
+      "label": "第82話「終電とタクシー」",
+      "file": "clip_taxi.mp4",
+      "sourceSha256": "206abfe2fe7b6567802764242a87271dca5f72faa1fc1ea77b78aa3d6e21820d",
+      "startFrame": 2841
+    },
+    {
+      "id": "police",
+      "afterLine": 21,
+      "source": "03_SCRIPTS/82_last_train_police_taxi/final_remotion_exterior_punchline.mp4",
+      "sourceStartFrame": 733,
+      "durationInFrames": 63,
+      "label": "第82話「終電とタクシー」",
+      "file": "clip_police.mp4",
+      "sourceSha256": "206abfe2fe7b6567802764242a87271dca5f72faa1fc1ea77b78aa3d6e21820d",
+      "startFrame": 3253
+    },
+    {
+      "id": "shake",
+      "afterLine": 23,
+      "source": "03_SCRIPTS/76_sobaya_yakisoba_quake/final_remotion_revision02.mp4",
+      "sourceStartFrame": 390,
+      "durationInFrames": 90,
+      "label": "第76話「美味しい焼きそば」",
+      "file": "clip_shake.mp4",
+      "sourceSha256": "38b00c797e665e4ecb636579851fa802c0dfc08c1bc05501a4529b1f954532f6",
+      "startFrame": 3692
+    },
+    {
+      "id": "rescue",
+      "afterLine": 24,
+      "source": "03_SCRIPTS/76_sobaya_yakisoba_quake/final_remotion_revision02.mp4",
+      "sourceStartFrame": 480,
+      "durationInFrames": 270,
+      "label": "第76話「美味しい焼きそば」",
+      "file": "clip_rescue.mp4",
+      "sourceSha256": "38b00c797e665e4ecb636579851fa802c0dfc08c1bc05501a4529b1f954532f6",
+      "startFrame": 3896
+    }
+  ],
+  "endingStartFrame": 4893,
+  "endingTrack": "TheFatRat - Unity",
+  "endingTargetLUFS": -38,
+  "endingLiftAfterDialogue": false,
+  "endingCrossfadeSeconds": 2,
+  "endingFadeOutSeconds": 4
+}

@@ -1,0 +1,19 @@
+{
+  "name": "madogiwa-sobaya-kikou5",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts KikouFive ../final_remotion_kikou5.mp4 --concurrency=2 --log=error"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "remotion": "4.0.534",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

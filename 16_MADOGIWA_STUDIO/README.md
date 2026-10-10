@@ -11,6 +11,7 @@
 完成動画はYouTube、制作記録・入力素材はCloudflare。公開一覧・ホーム・人物/世界観・詳細・迷言集・管理プレビューはYouTubeを使用する。87作品を紐付け、解説1作品を追加。紐付けのない3作品は制作記録を残して掲載対象外。
 
 - `youtube_publications` が候補・現行動画を管理。登録した公式チャンネル動画だけを約5分ごとのCronで確認し、public / processed / embeddableで自動掲載。旧版は差し替え待ち中に維持。APIエラー時は掲載状態を変更しない。
+- 同期は差分がある動画だけ更新し、変更のない確認では公開キャッシュも維持する。全件成功時の確認時刻は `youtube_sync_status` の1行に集約（通常1回1行、1日288行）。途中失敗時は全件確認時刻を進めない。Cronログの `rowsWritten` でStudio D1への書き込み量を確認できる。
 - `register_youtube_video`, `list_youtube_videos`, `sync_youtube_videos` がMCPの正規運用。管理画面でもID・種類・ノート・イチオシを登録できる。
 - `content_kind`: story / explainer / music / other。`production_notes_enabled` は任意。プロンプトなしの制作記録も扱う。アーロンチュア解説はノートなし。
 - Worker間サービスBinding `YOUTUBE_AUTH` → `madogiwa-youtube-auth`、secret `YOUTUBE_AUTH_ADMIN_TOKEN`。OAuth tokenはブラウザーへ返さない。Cron失敗はWorkersログで監視する。

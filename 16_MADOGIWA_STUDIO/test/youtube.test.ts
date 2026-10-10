@@ -1,7 +1,7 @@
 import {env} from 'cloudflare:workers';
 import {describe,expect,it} from 'vitest';
 import {createEpisode,createGeneration} from '../worker/repository';
-import {applyYouTubeStatus,registerYouTube,youtubeRegistrationSchema,listYouTubePublications,publicationState} from '../worker/youtube';
+import {applyYouTubeStatus,registerYouTube,youtubeRegistrationSchema,listYouTubePublications,publicationState,recordYouTubeSync} from '../worker/youtube';
 import {queryPublicEpisodes} from '../worker/public-repository';
 import {loadPublicEpisode} from '../src/server/public-data.server';
 import {readyVideo,publish} from './youtube-fixture';
@@ -35,6 +35,34 @@ describe('YouTube publication lifecycle',()=>{
   await applyYouTubeStatus(env.DB,next,undefined);
   expect(await check()).toBeUndefined();
   expect(await loadPublicEpisode(episode.slug)).toBeNull();
+ });
+ it('writes no rows or cache revisions on unchanged checks, including stale scan inputs',async()=>{
+  const episode=await createEpisode(env.DB,{slug:crypto.randomUUID(),title:'No-op'},'test');
+  const row=await publish(episode.id);
+  const revision=()=>env.DB.prepare('SELECT revision FROM public_content_revision WHERE id=1').first('revision');
+  const before=await revision();
+  expect(await applyYouTubeStatus(env.DB,row,readyVideo(row.youtube_id))).toBe(0);
+  expect(await applyYouTubeStatus(env.DB,row,readyVideo(row.youtube_id))).toBe(0);
+  const scanTime=new Date(Date.now()+1000).toISOString();
+  expect((await recordYouTubeSync(env.DB,scanTime)).meta.rows_written).toBe(1);
+  expect((await recordYouTubeSync(env.DB,'2000-01-01')).meta.rows_written).toBe(0);
+  expect((await listYouTubePublications(env.DB,episode.id))[0].checked_at).toBe(scanTime);
+  expect(await revision()).toBe(before);
+  const changed=readyVideo(row.youtube_id);
+  changed.snippet.title='Updated title';
+  expect(await applyYouTubeStatus(env.DB,row,changed)).toBeGreaterThan(0);
+  expect(await revision()).not.toBe(before);
+  expect(await applyYouTubeStatus(env.DB,row,changed)).toBe(0);
+  expect(await applyYouTubeStatus(env.DB,row,undefined)).toBeGreaterThan(0);
+  expect(await applyYouTubeStatus(env.DB,row,undefined)).toBe(0);
+ });
+ it('does not mark unexamined registrations as checked by the shared heartbeat',async()=>{
+  const episode=await createEpisode(env.DB,{slug:crypto.randomUUID(),title:'Pending'},'test');
+  const row=await registerYouTube(env.DB,youtubeRegistrationSchema.parse({episodeId:episode.id,youtubeId:'abc12345678'}),'test');
+  await recordYouTubeSync(env.DB,new Date(Date.now()+1000).toISOString());
+  expect((await listYouTubePublications(env.DB,episode.id))[0].checked_at).toBeNull();
+  expect(await applyYouTubeStatus(env.DB,row,undefined)).toBeGreaterThan(0);
+  expect(await applyYouTubeStatus(env.DB,row,undefined)).toBe(0);
  });
  it('supports notes-free explainers and rejects duplicate channel IDs or foreign production records',async()=>{
   const episode=await createEpisode(env.DB,{slug:crypto.randomUUID(),title:'Explainer'},'test');

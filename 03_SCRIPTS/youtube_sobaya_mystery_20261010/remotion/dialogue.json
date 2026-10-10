@@ -112,13 +112,6 @@
     ]
   },
   {
-    "who": "zunda",
-    "text": "画面の条件も、記録しておく必要があるのだな。",
-    "scene": "form",
-    "view": "height",
-    "pause": 10
-  },
-  {
     "who": "metan",
     "text": "同じ映像を小型モニターで測ると小さくなるため、伸び縮みする生物の可能性も検討しているわ。",
     "scene": "form",
@@ -136,6 +129,13 @@
     ]
   },
   {
+    "who": "zunda",
+    "text": "それって、モニターのサイズを測ってるだけな気がするのだ。",
+    "scene": "form",
+    "view": "height",
+    "pause": 10
+  },
+  {
     "who": "metan",
     "text": "白い顔面については、仮面説と、骨の板が露出しているという説が対立しているの。",
     "scene": "form",
@@ -143,22 +143,8 @@
     "pause": 10
   },
   {
-    "who": "zunda",
-    "text": "着けているものなのか、身体の一部なのかという違いなのだな。",
-    "scene": "form",
-    "view": "mask",
-    "pause": 10
-  },
-  {
     "who": "metan",
     "text": "中口研究員は、外しているところを見ていないため、仮面説にも骨の板という説にも、当てはまると主張しているわ。",
-    "scene": "form",
-    "view": "mask",
-    "pause": 10
-  },
-  {
-    "who": "zunda",
-    "text": "両方の説を区別できる証拠が、次の課題なのだな。",
     "scene": "form",
     "view": "mask",
     "pause": 10
@@ -199,7 +185,7 @@
   },
   {
     "who": "zunda",
-    "text": "では、体毛についてはどう説明しているのだ？",
+    "text": "僕にも当てはまるのだ。すごい偶然なのだ。",
     "scene": "uma",
     "view": "cryptids",
     "pause": 10
@@ -256,13 +242,6 @@
   {
     "who": "metan",
     "text": "林研究員は、不鮮明であることが、かえって本物らしさを高めると評価しているわ。",
-    "scene": "evidence",
-    "view": "news",
-    "pause": 10
-  },
-  {
-    "who": "zunda",
-    "text": "撮影された状況も含めて、評価しているのだな。",
     "scene": "evidence",
     "view": "news",
     "pause": 10
@@ -411,13 +390,6 @@
     "pause": 10
   },
   {
-    "who": "zunda",
-    "text": "儀式のような行動も、残っているのだな。",
-    "scene": "ritual",
-    "view": "ritual_dark",
-    "pause": 10
-  },
-  {
     "who": "metan",
     "text": "霜重研究員は、失われた文明の言語に由来する、帰還を願う祈りだと考えているの。",
     "scene": "ritual",
@@ -426,7 +398,7 @@
   },
   {
     "who": "zunda",
-    "text": "その言葉の意味は、どうやって調べたのだ？",
+    "text": "アベイラブルって、普通に英語では？",
     "scene": "ritual",
     "view": "ritual_dark",
     "pause": 10
@@ -474,13 +446,6 @@
     "pause": 10
   },
   {
-    "who": "zunda",
-    "text": "それが、彼らにとって価値のあるものなのだな。",
-    "scene": "ritual",
-    "view": "amber",
-    "pause": 10
-  },
-  {
     "who": "metan",
     "text": "対象は容器の本数を確認し、箱で提示されると、調査班を迎え入れたの。",
     "scene": "ritual",
@@ -498,13 +463,6 @@
     "who": "metan",
     "view": "ruins",
     "text": "さらに、ソバヤによく似た個体が、透明な容器に並んでいる映像が見つかったの。",
-    "scene": "ruins",
-    "pause": 10
-  },
-  {
-    "who": "zunda",
-    "view": "ruins",
-    "text": "同じような大柄な人影が、何体もいるのだ。",
     "scene": "ruins",
     "pause": 10
   },
@@ -644,13 +602,6 @@
     "pause": 10
   },
   {
-    "who": "zunda",
-    "view": "power",
-    "text": "元の映像には、ほかにも手がかりが残っていそうなのだ。",
-    "scene": "ruins",
-    "pause": 10
-  },
-  {
     "who": "metan",
     "view": "orbital",
     "text": "そして、宇宙人説を唱えるのが、未知環境生理研究所の北原研究員よ。こちらは、人影が宇宙飛行士に近づいていく映像なの。",
@@ -701,7 +652,7 @@
   {
     "who": "zunda",
     "view": "secrecy_compare",
-    "text": "中身を調べると、何か分かるかもしれないのだな。",
+    "text": "それ、研究員が知らないもの全部に当てはまるのだ。",
     "scene": "orbit",
     "pause": 10
   },
@@ -901,22 +852,8 @@
     "pause": 10
   },
   {
-    "who": "zunda",
-    "text": "声明には、これまでの説明との関係も書かれているのだ？",
-    "scene": "reveal",
-    "view": "research_response",
-    "pause": 10
-  },
-  {
     "who": "metan",
     "text": "未確認ニュースネットの江本記者は、人事部との独自のつながりにより、正体を解明したと報じたの。",
-    "scene": "reveal",
-    "view": "research_response",
-    "pause": 10
-  },
-  {
-    "who": "zunda",
-    "text": "人事部からの連絡が、決め手になったのだな。",
     "scene": "reveal",
     "view": "research_response",
     "pause": 10

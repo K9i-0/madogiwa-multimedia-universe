@@ -74,7 +74,7 @@ Use `16_MADOGIWA_STUDIO/tools/upload-youtube.py` with the final master, metadata
     "defaultAudioLanguage": "ja"
   },
   "status": {
-    "privacyStatus": "private",
+    "privacyStatus": "public",
     "selfDeclaredMadeForKids": false,
     "embeddable": true,
     "containsSyntheticMedia": true
@@ -82,7 +82,7 @@ Use `16_MADOGIWA_STUDIO/tools/upload-youtube.py` with the final master, metadata
 }
 ```
 
-Set audience and synthetic-content disclosures according to the actual work. Preserve required VOICEVOX/asset credits. Only add a production-page link if productionNotes=true and that page is intended to be published. The uploader defaults to private; use public only with the user's publication authorization. IDs, URLs and SHA256 may be recorded in the repository. Access/refresh tokens and resumable session URLs must remain private.
+Set audience and synthetic-content disclosures according to the actual work. Preserve required VOICEVOX/asset credits. Only add a production-page link if productionNotes=true and that page is intended to be published. A Studio video-registration request authorizes publication of the selected adopted video. Explicitly set privacyStatus to public in metadata; the CLI fallback is private. Honor explicit private, unlisted, scheduled, or records-only instructions. For an existing private video ID, update its YouTube status to public rather than reuploading. register_youtube_video and the sync Cron do not change YouTube privacy. IDs, URLs and SHA256 may be recorded in the repository. Access/refresh tokens and resumable session URLs must remain private.
 
 The CLI reuses a private resumable session keyed by the video SHA256. Repeat the same command after interruption. A lost final response is recovered by querying the session. Expired sessions require checking the channel before starting another upload. Once an ID exists, register it immediately so Cloudflare can continue checking readiness independently.
 

@@ -18,4 +18,4 @@ ASRは台詞照合の補助であり、人耳の通し試聴・精密な口パ�
 
 ## 現行採用版・登録状況
 
-採用動画は`final_remotion_kikou5_revision02.mp4`（361.9秒）。旧MP4・中間動画の削除記録は`cleanup_record.json`。Studio登録完了：MS-NTKH2QT8。YouTube ID `nSvhSLkvZlg`、非公開・処理完了・公式サイト掲載は公開待ち。採用素材102点はready。制作ノートは非公開。詳細は`studio_registration.json`、素材送信結果は`studio_inputs_uploaded.jsonl`。
+採用動画は`final_remotion_kikou5_revision02.mp4`（361.9秒）。旧MP4・中間動画の削除記録は`cleanup_record.json`。Studio登録完了：MS-NTKH2QT8。YouTube ID `nSvhSLkvZlg`、公開・処理完了・公式サイト掲載済み。採用素材102点はready。制作ノートは非公開。詳細は`studio_registration.json`、素材送信結果は`studio_inputs_uploaded.jsonl`。

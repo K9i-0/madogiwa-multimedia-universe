@@ -19,7 +19,8 @@
     "typecheck": "tsc",
     "bundle": "remotion bundle",
     "render": "remotion render src/index.ts SobayaYakumi ../final_remotion_yakumi_call_crop.mp4 --codec=h264 --crf=16 --concurrency=2 --overwrite",
-    "render:stories": "node render-stories.mjs"
+    "render:stories": "node render-stories.mjs",
+    "render:shorts": "node render-shorts.mjs"
   },
   "sideEffects": [
     "*.css"

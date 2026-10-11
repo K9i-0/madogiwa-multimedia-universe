@@ -1,0 +1,36 @@
+{
+  "source": "final_remotion_yakumi_call_crop.mp4",
+  "output": "final_remotion_shorts_9x16.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "1037",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "r_frame_rate": "0/0",
+        "nb_read_frames": "1623"
+      }
+    ],
+    "format": {
+      "duration": "34.624000"
+    }
+  },
+  "source_audio_pcm_sha256": "04704bdbe6d23e2f3f31adc8ba5cc274fce4d1bcda1383ecc9a3df20db431f4e",
+  "output_audio_pcm_sha256": "04704bdbe6d23e2f3f31adc8ba5cc274fce4d1bcda1383ecc9a3df20db431f4e",
+  "audio_identical": true,
+  "decode": "pass",
+  "timing": "字幕文言はユーザー採用台本、発話時刻は既存の場面区切りとWhisperによる補助確認。精密な聴覚監査は未実施。",
+  "auditory_review": "not_performed",
+  "publication_status": "local_preview"
+}

@@ -5,7 +5,8 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "render": "remotion render src/index.tsx TakoGameIntro ../final_remotion_subtitles.mp4 --concurrency=2",
-    "render:v2": "remotion render src/index.tsx TakoGameIntroV2 ../final_remotion_subtitles_v2.mp4 --concurrency=2"
+    "render:v2": "remotion render src/index.tsx TakoGameIntroV2 ../final_remotion_subtitles_v2.mp4 --concurrency=2",
+    "render:shorts": "node render-shorts.mjs"
   },
   "dependencies": {
     "remotion": "4.0.523",

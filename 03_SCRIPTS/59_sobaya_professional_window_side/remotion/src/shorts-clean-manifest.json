@@ -1,0 +1,103 @@
+{
+  "composition": {
+    "id": "ProfessionalWindowSide",
+    "width": 832,
+    "height": 480,
+    "fps": 30,
+    "durationInFrames": 1095
+  },
+  "inputVideo": "input.mp4",
+  "sourceDurationInFrames": 900,
+  "inputVideoVolume": 1,
+  "replacementAudio": null,
+  "ambientBed": {
+    "src": "sobaya_ambient_bed.wav",
+    "volume": 0.1
+  },
+  "irodoriAudio": [
+    {
+      "startFrame": 177,
+      "endFrame": 399,
+      "src": "sobaya_answer01_beer.wav",
+      "volume": 1
+    },
+    {
+      "startFrame": 466,
+      "endFrame": 615,
+      "src": "sobaya_answer02_excel.wav",
+      "volume": 1
+    },
+    {
+      "startFrame": 699,
+      "endFrame": 885,
+      "src": "sobaya_answer03_final.wav",
+      "volume": 1
+    }
+  ],
+  "timeline": [
+    {
+      "kind": "video",
+      "startFrame": 0,
+      "endFrame": 120,
+      "sourceStartFrame": 0
+    },
+    {
+      "kind": "video",
+      "startFrame": 168,
+      "endFrame": 408,
+      "sourceStartFrame": 120
+    },
+    {
+      "kind": "video",
+      "startFrame": 450,
+      "endFrame": 630,
+      "sourceStartFrame": 360
+    },
+    {
+      "kind": "video",
+      "startFrame": 672,
+      "endFrame": 912,
+      "sourceStartFrame": 660
+    }
+  ],
+  "questionCards": [
+    {
+      "startFrame": 120,
+      "endFrame": 168,
+      "text": "なぜ、出社してすぐビールを？"
+    },
+    {
+      "startFrame": 408,
+      "endFrame": 450,
+      "text": "エクセルでは、何を？"
+    },
+    {
+      "startFrame": 630,
+      "endFrame": 672,
+      "text": "最後に、一言。"
+    }
+  ],
+  "openingTitle": {
+    "startFrame": 10,
+    "endFrame": 116,
+    "eyebrow": "YHK DOCUMENTARY",
+    "title": "プロフェッショナル",
+    "subtitle": "窓際の流儀"
+  },
+  "lowerThird": {
+    "startFrame": 168,
+    "endFrame": 408,
+    "company": "アクシデンチュア株式会社",
+    "role": "ウィンドウサイドエンジニア",
+    "name": "そば屋"
+  },
+  "outro": {
+    "startFrame": 912,
+    "endFrame": 1095,
+    "brand": "YHK",
+    "title": "プロフェッショナル",
+    "subtitle": "窓際の流儀"
+  },
+  "captions": [],
+  "irodoriCaptions": []
+}

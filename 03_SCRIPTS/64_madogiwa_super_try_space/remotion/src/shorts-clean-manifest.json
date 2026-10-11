@@ -1,0 +1,158 @@
+{
+  "composition": {
+    "width": 854,
+    "height": 480,
+    "fps": 30,
+    "durationInFrames": 900
+  },
+  "inputVideo": "input.mp4",
+  "background": "space_plate.png",
+  "alertAudio": "alert_B_critical.wav",
+  "events": {
+    "alert": 270,
+    "identified": 480,
+    "hudEnd": 584,
+    "brand": 787,
+    "trackEnd": 565
+  },
+  "comms": [
+    {
+      "start": 0,
+      "end": 105
+    },
+    {
+      "start": 299,
+      "end": 389
+    }
+  ],
+  "hud": [
+    {
+      "start": 0,
+      "end": 105
+    },
+    {
+      "start": 299,
+      "end": 584
+    }
+  ],
+  "captions": [
+    {
+      "start": -2,
+      "end": -1,
+      "text": "命綱を固定。アンテナへ進め。",
+      "startFrame": -2,
+      "endFrame": -1
+    },
+    {
+      "start": -2,
+      "end": -1,
+      "text": "管制、何かが接近している。",
+      "startFrame": -2,
+      "endFrame": -1
+    },
+    {
+      "start": -2,
+      "end": -1,
+      "text": "その場で待機。接触するな。",
+      "startFrame": -2,
+      "endFrame": -1
+    },
+    {
+      "start": -2,
+      "end": -1,
+      "text": "宇宙服を着てないぞ。",
+      "startFrame": -2,
+      "endFrame": -1
+    },
+    {
+      "start": -2,
+      "end": -1,
+      "text": "冷えたの、いります？",
+      "startFrame": -2,
+      "endFrame": -1
+    }
+  ],
+  "trackingStatus": "Manual mask/upper-body keyframes inspected at 13.5,15,16,17,18,19 s; brackets end before near-camera pass.",
+  "tracking": [
+    {
+      "frame": 390,
+      "x": 581,
+      "y": 196,
+      "size": 32
+    },
+    {
+      "frame": 405,
+      "x": 574,
+      "y": 196,
+      "size": 45
+    },
+    {
+      "frame": 420,
+      "x": 561,
+      "y": 203,
+      "size": 58
+    },
+    {
+      "frame": 450,
+      "x": 531,
+      "y": 208,
+      "size": 80
+    },
+    {
+      "frame": 480,
+      "x": 489,
+      "y": 216,
+      "size": 103
+    },
+    {
+      "frame": 510,
+      "x": 433,
+      "y": 218,
+      "size": 127
+    },
+    {
+      "frame": 540,
+      "x": 346,
+      "y": 203,
+      "size": 155
+    },
+    {
+      "frame": 564,
+      "x": 201,
+      "y": 190,
+      "size": 192
+    }
+  ],
+  "audioSegments": [
+    {
+      "from": 270,
+      "duration": 105,
+      "startFrom": 75
+    },
+    {
+      "from": 375,
+      "duration": 105,
+      "startFrom": 75
+    },
+    {
+      "from": 480,
+      "duration": 50,
+      "startFrom": 180
+    }
+  ],
+  "brandCopy": [
+    "宇宙でも、息抜き。",
+    "窓際スーパーつらい",
+    "Madogiwa Super TRY"
+  ],
+  "alertPulseFrames": [
+    270,
+    303,
+    330,
+    352,
+    375,
+    408,
+    435,
+    457
+  ]
+}

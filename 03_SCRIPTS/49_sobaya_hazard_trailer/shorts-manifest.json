@@ -1,0 +1,65 @@
+{
+  "slug": "sobaya-hazard-trailer",
+  "title": "そば屋ハザード",
+  "titleLines": [
+    "そば屋ハザード",
+    "窓際へようこそ"
+  ],
+  "accent": "#fff2d4",
+  "fps": 30.0,
+  "durationInFrames": 900,
+  "clips": [
+    {
+      "file": "03_SCRIPTS_49_sobaya_hazard_trailer_wan3_raw_seed260826_480p_mp4.mp4",
+      "source": "03_SCRIPTS/49_sobaya_hazard_trailer/wan3_raw_seed260826_480p.mp4",
+      "duration": 816,
+      "trimBefore": 0,
+      "width": 832,
+      "height": 480,
+      "from": 0
+    },
+    {
+      "file": "03_SCRIPTS_49_sobaya_hazard_trailer_sobaya_hazard_trailer_30s_seed260826_480p_mp4.mp4",
+      "source": "03_SCRIPTS/49_sobaya_hazard_trailer/sobaya_hazard_trailer_30s_seed260826_480p.mp4",
+      "duration": 84,
+      "trimBefore": 816,
+      "width": 832,
+      "height": 480,
+      "from": 816
+    }
+  ],
+  "captions": [
+    {
+      "startFrame": 10,
+      "endFrame": 74,
+      "speaker": "そば屋",
+      "text": "いたぞ！ 捕まえろ！"
+    },
+    {
+      "startFrame": 184,
+      "endFrame": 268,
+      "speaker": "福ギュン",
+      "text": "ゾンビじゃない　そば屋だ"
+    },
+    {
+      "startFrame": 472,
+      "endFrame": 543,
+      "speaker": "よーたん",
+      "text": "福ちゃん！ 城へ走れ！"
+    },
+    {
+      "startFrame": 660,
+      "endFrame": 734,
+      "speaker": "そば屋",
+      "text": "後ろだ　マヌケ！"
+    },
+    {
+      "startFrame": 753,
+      "endFrame": 814,
+      "speaker": "福ギュン",
+      "text": "窓際へようこそ"
+    }
+  ],
+  "captionPolicy": "Existing authored subtitles moved to lower space; new captions use production scripts and ASR-assisted timing. Intentional news/product/manga graphics retained.",
+  "audioSource": "03_SCRIPTS/49_sobaya_hazard_trailer/sobaya_hazard_trailer_30s_seed260826_480p.mp4"
+}

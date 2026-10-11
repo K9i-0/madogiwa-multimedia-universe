@@ -20,7 +20,7 @@ export const YakumiShorts: React.FC = () => {
       <OffthreadVideo src={src} muted style={{width:'100%',height:'100%',objectFit:'cover'}} />
     </div>
     {caption && <div style={{position:'absolute',top:876,left:40,right:88,textAlign:'center'}}>
-      <div style={{display:'inline-block',fontSize:20,fontWeight:500,color:'#ffffff',padding:'6px 0',marginBottom:16,letterSpacing:1,textShadow:'0 2px 5px #0009'}}>{caption.speaker}</div>
+      <div style={{display:'inline-block',fontSize:28,fontWeight:700,color:'#ffffff',padding:'2px 0',marginBottom:12,letterSpacing:1,textShadow:'0 2px 5px #0009'}}>{caption.speaker}</div>
       <div style={{fontSize:39,lineHeight:1.5,whiteSpace:'pre-line',...memberCaptionStyle(caption.speaker)}}>{caption.text.replace(/\\n/g,'\n')}</div>
     </div>}
   </AbsoluteFill>;

@@ -16,7 +16,7 @@ const Film:React.FC=()=>{
  <div style={{fontSize:m.titleLines[1].length>10?46:62,lineHeight:1.22,letterSpacing:-1,color:m.accent==='#ffdc86'?'#fff2d4':m.accent}}>{m.titleLines[1]}</div></div>
  <div style={{position:'absolute',top:350,left:0,width:720,height:480,overflow:'hidden'}}><OffthreadVideo src={src} muted style={{width:'100%',height:'100%',objectFit:m.fit as 'cover'|'contain'}}/></div>
  {m.popup&&f>=m.popup.startFrame&&f<m.popup.endFrame?<div style={{position:'absolute',top:871,left:60,right:90,textAlign:'center'}}><Img src={staticFile(m.popup.image)} style={{width:510,height:170,objectFit:'contain'}}/></div>:c&&<div style={{position:'absolute',top:876,left:40,right:88,textAlign:'center'}}>
- {c.speaker&&<div style={{display:'inline-block',fontSize:20,fontWeight:500,color:'#ffffff',padding:'6px 0',marginBottom:16,letterSpacing:1,textShadow:'0 2px 5px #0009'}}>{c.speaker}</div>}
+ {c.speaker&&<div style={{display:'inline-block',fontSize:28,fontWeight:700,color:'#ffffff',padding:'2px 0',marginBottom:12,letterSpacing:1,textShadow:'0 2px 5px #0009'}}>{c.speaker}</div>}
  <div style={{fontSize:38,lineHeight:1.5,whiteSpace:'pre-line',...memberCaptionStyle(c.speaker)}}>{c.text}</div></div>}
  </AbsoluteFill>;
 };

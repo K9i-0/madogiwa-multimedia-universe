@@ -1,0 +1,39 @@
+{
+  "videoId": "MZb8lOTVYCw",
+  "file": "thumbnail_nojobs_v1.jpg",
+  "sha256": "589b4157254bee077525f9fac7d6fc84271190015386aa9304441ba141ac4c1b",
+  "updatedAt": "2026-10-11T01:03:59.975240+00:00",
+  "response": {
+    "kind": "youtube#thumbnailSetResponse",
+    "etag": "sMPXbNrNDTGu7feBcwYQRQWhyuM",
+    "items": [
+      {
+        "default": {
+          "url": "https://i.ytimg.com/vi/MZb8lOTVYCw/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/MZb8lOTVYCw/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/MZb8lOTVYCw/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/MZb8lOTVYCw/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/MZb8lOTVYCw/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      }
+    ]
+  }
+}

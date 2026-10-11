@@ -15,7 +15,7 @@ Composition: `SobayaYakumi`。出力: `../final_remotion_yakumi_call_crop.mp4`�
 `npm run render:shorts` → `../final_remotion_shorts_9x16.mp4`。
 `src/shorts-manifest.json`が縦版の字幕タイミング正本。既存横版の設定は維持。
 入力`public/story-source.mp4`は採用横版とSHA-256一致。
-720×1280、30fps、1037フレーム。上下は本編をぼかした背景、上部コピー、下部に話者と字幕。
+720×1280、30fps、1037フレーム。上下は本編をぼかした背景、上部は作品タイトルのみ、下部に話者と字幕（シリーズ名のフッターなし）。
 本編領域720×480への軽い左右クロップで人物を拡大。映像・音声の速度や構成は変えない。
 音声はレンダー後に採用横版からストリームコピーし、二重再生を防ぐ。
 日本語フォントはmacOSのHiragino Sans。別環境での再現には同フォントが必要。

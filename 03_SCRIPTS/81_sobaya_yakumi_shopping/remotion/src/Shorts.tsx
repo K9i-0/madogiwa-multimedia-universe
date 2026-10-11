@@ -11,13 +11,16 @@ export const YakumiShorts: React.FC = () => {
       <OffthreadVideo src={src} muted style={{width:'100%',height:'100%',objectFit:'cover'}} />
     </AbsoluteFill>
     <AbsoluteFill style={{background:'linear-gradient(180deg,rgba(8,13,19,.7),rgba(8,13,19,.08) 48%,rgba(8,13,19,.75))'}} />
-    <div style={{position:'absolute',top:190,left:40,right:40,fontSize:44,lineHeight:1.4,textAlign:'center',fontWeight:600,textShadow:'0 2px 8px #0008'}}>{m.title}</div>
+    <div aria-label={m.title} style={{position:'absolute',top:142,left:36,right:36,textAlign:'center',fontWeight:700,textShadow:'0 3px 0 #17212b, 0 8px 18px #0005'}}>
+      <div style={{fontSize:32,letterSpacing:5,color:'#fff5de',marginBottom:14}}>そば屋の</div>
+      <div style={{display:'inline-block',fontSize:57,lineHeight:1.3,letterSpacing:1,color:'#ffdc86',WebkitTextStroke:'1px #ffdc86',paddingBottom:14,borderBottom:'3px solid #ffdc8699'}}>楽しいそば作り</div>
+    </div>
     <div style={{position:'absolute',top:350,left:0,width:720,height:480,overflow:'hidden',boxShadow:'0 12px 40px #0006'}}>
       <OffthreadVideo src={src} muted style={{width:'100%',height:'100%',objectFit:'cover'}} />
     </div>
     {caption && <div style={{position:'absolute',top:876,left:40,right:88,textAlign:'center'}}>
-      <div style={{fontSize:21,color:caption.speaker.includes('そば屋')?'#ffe268':'#c9dbe5',marginBottom:14,letterSpacing:1}}>{caption.speaker}</div>
-      <div style={{fontSize:38,lineHeight:1.45,whiteSpace:'pre-line',textShadow:'0 2px 8px #000, 0 0 3px #000'}}>{caption.text.replace(/\\n/g,'\n')}</div>
+      <div style={{display:'inline-block',fontSize:20,color:caption.speaker.includes('そば屋')?'#ffdc86':'#d7eaf2',background:'#17212bc9',border:'1px solid #ffffff30',borderRadius:7,padding:'5px 15px',marginBottom:16,letterSpacing:1}}>{caption.speaker}</div>
+      <div style={{fontSize:39,lineHeight:1.5,whiteSpace:'pre-line',color:'#fffdf7',WebkitTextStroke:'2px #17212b',paintOrder:'stroke fill',textShadow:'0 3px 0 #17212b, 0 5px 12px #0006'}}>{caption.text.replace(/\\n/g,'\n')}</div>
     </div>}
   </AbsoluteFill>;
 };

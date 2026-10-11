@@ -1,3 +1,4 @@
+import {memberColor, memberCaptionStyle} from '../../../00_TEMPLATES/subtitles/member-colors';
 import React from 'react';
 import {AbsoluteFill, OffthreadVideo, staticFile, useCurrentFrame} from 'remotion';
 import m from './shorts-manifest.json';
@@ -19,8 +20,8 @@ export const YakumiShorts: React.FC = () => {
       <OffthreadVideo src={src} muted style={{width:'100%',height:'100%',objectFit:'cover'}} />
     </div>
     {caption && <div style={{position:'absolute',top:876,left:40,right:88,textAlign:'center'}}>
-      <div style={{display:'inline-block',fontSize:20,color:caption.speaker.includes('そば屋')?'#ffdc86':'#d7eaf2',background:'#17212bc9',border:'1px solid #ffffff30',borderRadius:7,padding:'5px 15px',marginBottom:16,letterSpacing:1}}>{caption.speaker}</div>
-      <div style={{fontSize:39,lineHeight:1.5,whiteSpace:'pre-line',color:'#fffdf7',WebkitTextStroke:'2px #17212b',paintOrder:'stroke fill',textShadow:'0 3px 0 #17212b, 0 5px 12px #0006'}}>{caption.text.replace(/\\n/g,'\n')}</div>
+      <div style={{display:'inline-block',fontSize:20,color:memberColor(caption.speaker),background:'#17212bc9',border:'1px solid #ffffff30',borderRadius:7,padding:'5px 15px',marginBottom:16,letterSpacing:1}}>{caption.speaker}</div>
+      <div style={{fontSize:39,lineHeight:1.5,whiteSpace:'pre-line',...memberCaptionStyle(caption.speaker)}}>{caption.text.replace(/\\n/g,'\n')}</div>
     </div>}
   </AbsoluteFill>;
 };

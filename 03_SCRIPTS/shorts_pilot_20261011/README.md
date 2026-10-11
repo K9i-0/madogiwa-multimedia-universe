@@ -2,7 +2,7 @@
 
 対象はこのローカル環境で制作した1分未満の全動画。再生数で制限せず、2026-10-11のStudio制作版・YouTube IDの照合で候補42本（plan.json）。
 
-初回5本の縦版を投稿準備。今回の依頼は「用意して」のため、アップロード・公開・Studio登録はまだ行っていない。
+初回5本は2026-10-11にYouTube Shortsとして公開。ユーザー指定によりStudioには登録・変更していない。横版は維持。
 
 | 順 | 作品 | 縦版での編集 |
 |---|---|---|
@@ -35,3 +35,13 @@
 検証: 寸法・尺・全編デコード、横版とのPCM音声一致、代表字幕・タイトル・終了画面を確認。タコゲームは既存字幕の開始・終了フレームを全件保持。新規字幕は台本とASRによる時刻補助を使用。全編の直接試聴・精密な発話同期監査は未実施であり、機械検査の合格と区別する。
 
 `out/`、生成MP4、ASR中間物はGit管理外。完成MP4は各エピソード直下に保持。
+
+## YouTube Shorts公開記録
+
+- そば屋の楽しいそば作り: https://www.youtube.com/shorts/ZM4WOdtTMOc
+- そばシャーク — 遭遇: https://www.youtube.com/shorts/b7BwZA-_Ass
+- 窓際スーパーつらい — 出社インポッシブル篇: https://www.youtube.com/shorts/bO2KweQ0ot8
+- タコゲーム — 目覚め: https://www.youtube.com/shorts/qgLlgbr5wrY
+- 名探偵ヨータン 残されたちくわの謎: https://www.youtube.com/shorts/samXFzzJ4hQ
+
+`youtube_uploads/` に各動画のIDと完成MP4のSHA256、`youtube_verification.json` に公開・処理状況を保存。

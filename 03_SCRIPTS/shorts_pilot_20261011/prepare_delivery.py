@@ -5,6 +5,8 @@ from PIL import Image,ImageDraw
 root=Path(__file__).resolve().parent;repo=root.parents[1]
 items=[('81_sobaya_yakumi_shopping','sobaya-fun-soba-making','そば屋の楽しいそば作り',8.7,'final_remotion_yakumi_call_crop.mp4'),('42_chikuwa_line_fishing_soba_shark','chikuwa-line-fishing-soba-shark','そばシャーク — 遭遇',26.7,'final_remotion_daichikuwa.mp4'),('63_madogiwa_super_try_commute','madogiwa-super-try-commute','窓際スーパーつらい — 出社インポッシブル篇',7.6,'final_remotion_cm.mp4'),('68_tako_game_dormitory','tako-game-dormitory','タコゲーム — 目覚め',21.9,'final_remotion_subtitles_v2.mp4'),('88_doku_chikuwa','detective-yotan-chikuwa-mystery','名探偵ヨータン 残されたちくわの謎',36.2,'studio_delivery_v23.mp4')]
 plan=json.loads((root/'plan.json').read_text());rows=[];cards=[]
+if any((root/'youtube_uploads').glob('*.json')):
+ raise SystemExit('Already uploaded: preserve publication records; prepare a new batch for further edits.')
 (root/'out').mkdir(exist_ok=True);(root/'metadata').mkdir(exist_ok=True)
 def pcm(p):return hashlib.sha256(subprocess.check_output(['ffmpeg','-v','error','-i',str(p),'-vn','-f','s16le','-'])).hexdigest()
 for order,(folder,slug,title,cover,audio) in enumerate(items,1):
@@ -24,7 +26,7 @@ for order,(folder,slug,title,cover,audio) in enumerate(items,1):
  sheet.save(root/'out'/f'{order:02d}-audit.jpg',quality=88)
  thumb=root/'out'/f'{order:02d}-cover.jpg';subprocess.run(['ffmpeg','-v','error','-ss',str(cover),'-i',str(p),'-frames:v','1','-y',str(thumb)],check=True)
  original=next(x for x in plan['videos'] if x['slug']==slug)
- metadata={'snippet':{'title':title+' #Shorts','description':f'{title}\n\n窓際族物語の縦版ショート。\n横版：https://youtu.be/{original["youtube_id"]}\n\n#窓際族物語 #そば屋 #Shorts','categoryId':'23','tags':['窓際族物語','そば屋','Shorts']},'status':{'privacyStatus':'public','selfDeclaredMadeForKids':False}}
+ metadata={'snippet':{'title':title+' #Shorts','description':f'{title}\n\n窓際族物語の縦版ショート。\n横版：https://youtu.be/{original["youtube_id"]}\n\n#窓際族物語 #そば屋 #Shorts','categoryId':'23','defaultLanguage':'ja','tags':['窓際族物語','そば屋','Shorts']},'status':{'privacyStatus':'public','selfDeclaredMadeForKids':False,'containsSyntheticMedia':True,'embeddable':True}}
  (root/'metadata'/f'{order:02d}-{slug}.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n')
  rows.append({'order':order,'slug':slug,'title':title,'file':str(p.relative_to(repo)),'source_youtube_id':original['youtube_id'],'duration_seconds':float(probe['format']['duration']),'video_frames':int(v['nb_read_frames']),'resolution':[720,1280],'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'audio_pcm_sha256':after,'audio_unchanged':True,'decode':'pass','caption_layout':'bottom_area','caption_palette':'00_TEMPLATES/subtitles/member-colors.ts','caption_timing_review':'existing timing or ASR-assisted; direct auditory review not performed','publication_status':'prepared_not_uploaded'})
  relative='../'+folder+'/final_remotion_shorts_9x16.mp4';cards.append(f'<article><h2>{order}. {html.escape(title)}</h2><video controls preload="metadata" poster="out/{order:02d}-cover.jpg" src="{relative}"></video><p><a href="{relative}">MP4を開く</a> · {float(probe["format"]["duration"]):.1f}秒</p></article>')

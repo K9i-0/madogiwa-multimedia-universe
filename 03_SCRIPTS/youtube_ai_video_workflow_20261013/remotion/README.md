@@ -1,8 +1,16 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — v5
+# Codexで動画まで作る。窓際族物語のAI制作術 — v6
 
 やめ太郎の「ネタはあるのに、編集の操作で止まる」という悩みから、いつものAIで動画を作る流れを紹介する。導入は共感→第53話の完成例→内容の全容。本編は会話の欲求・失敗から道具の説明へ進め、参照画像の情報設計、部分音声修復、費用、制作ログからのスキル改善まで扱う。
 
-完成版：`../final_remotion_ai_video_workflow_v5.mp4`。実測仕様：`../delivery_v5.json`。確認・修正記録：`../review_v5.md`。旧版MP4と記録は保持する。v4コードはGit履歴で再現可能。YouTubeへの公開・アップロードは行わない。
+完成版：`../final_remotion_ai_video_workflow_v6.mp4`。実測仕様：`../delivery_v6.json`。確認・修正記録：`../review_v6.md`。旧版MP4と記録は保持する。v4コードはGit履歴で再現可能。YouTubeへの公開・アップロードは行わない。
+
+## v6の画面方針
+
+会話はv5の123発話と採用音声を維持。中央の解説画面を `src/VisualAid.tsx` に刷新し、重複する説明文・見出し・出典を減らした。画像比較、料金の棒、音声区間、短い工程図を用い、今の話題を強調する。細かな出典・クレジットは概要欄と `sources.json` に保持する。
+
+`src/visual-cues-v6.json` は発話内の整数フレーム。主要な説明の切替は採用VOICEVOXクエリのモーラ時間（前無音を含み、速度1.1で換算）を参照した。語句ごとの主観的な聞き取り検証とは区別する。台詞を変更したらキューも再設定する。
+
+静止画プレビュー：`node preview_visuals_v6.cjs`。音声の再生成は不要で、既存 `public/mixed.wav` を使う場合は `npm run render -- --skip-mix --output out/review_v6_01.mp4`。
 
 ## 正本
 
@@ -33,7 +41,7 @@ npm ci
 ../../../.local/Irodori-TTS/.venv/bin/python prepare_voice.py
 npm run typecheck
 ../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
-npm run render -- --output out/review_v5_01.mp4
+npm run render -- --output out/review_v6_01.mp4
 ```
 
 `prepare_v5_voice.py`は生成本文・設定・モデル・参照ハッシュをキャッシュ識別へ含める。進捗は`out/v5_progress.json`。台詞変更後の古い音声流用を防ぐ。導入だけの候補は`preview_v5.py`で生成可能。
@@ -45,12 +53,12 @@ npm run render -- --output out/review_v5_01.mp4
 ```sh
 ../../../.local/Irodori-TTS/.venv/bin/python audit_v5_audio.py
 ../../../.local/Irodori-TTS/.venv/bin/python audit_v5_secondpass.py
-../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v5_01.mp4 --tag v5_01
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v5_01.mp4 --tag v5_01
+../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v6_01.mp4 --tag v6_01
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v6_01.mp4 --tag v6_01
 ```
 
 全発話、資料映像の開始・中間・終了、図解の切替、末尾をMP4から抽出して確認する。ASRは本文をプロンプトで教えずにスクリーニングし、不確かな発音は別のモデルでも照合する。ASRや数値検査で主観的な聞き心地を保証しない。今回、主観的な通し試聴は実施できないため、機械的な検査と視覚確認を分けて報告する。
 
-完成名へ採用した後に `adopt_v5_audio.py` を実行し、採用WAV・対応表・章時刻・概要欄・出典情報を保存する。動画、中間WAV、監査画像、旧候補はGit管理外。採用セリフWAVと再現コードを追跡する。
+v5の音声採用時は `adopt_v5_audio.py` で採用WAV・対応表・章時刻・概要欄・出典情報を保存した。画面のみのv6改修では実行不要（同スクリプトはv5の台本ヘッダーを再生成するため）。動画、中間WAV、監査画像、旧候補はGit管理外。採用セリフWAVと再現コードを追跡する。
 
-全編確認後の資料表示修正は `render_visual_patches.py` と `../visual_revision_v5.json` に記録。通常の再現は更新済みmanifestから全編レンダーすればよい。部分差し替えは既存の候補MP4がある場合だけ使用する。
+旧v5の全編確認後の資料表示修正は `render_visual_patches.py` と `../visual_revision_v5.json` に記録。通常の再現は更新済みmanifestから全編レンダーすればよい。部分差し替えは既存の候補MP4がある場合だけ使用する。

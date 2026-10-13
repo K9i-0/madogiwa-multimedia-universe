@@ -1,15 +1,17 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — v5
+# Codexで動画まで作る。窓際族物語のAI制作術 — v6（会話はv5を継承）
 
 対象：Codex / Claude Codeでサイト・アプリを作る人。導入は共感→作例→全容。全編は願望と困りごとから技術へ進む。
 
 配役：やめ太郎（Irodori v4.1-Small）、たこさん（VOICEVOX:中国うさぎ・ノーマル、速度1.1、音高0）。末尾クレジットなし。YouTube未公開。
 
-完成版：`final_remotion_ai_video_workflow_v5.mp4`。音声設定・ハッシュ：`voice_record_v5.json`。検査結果：`review_v5.md`、`delivery_v5.json`。
+完成版：`final_remotion_ai_video_workflow_v6.mp4`。音声設定・ハッシュ：`voice_record_v5.json`。検査結果：`review_v6.md`、`delivery_v6.json`。
 
 参考（構成・会話の研究。セリフは今回のオリジナル）：
 - https://qiita.com/Yametaro/items/a40ffcd65d77ed8b29a0
 - https://qiita.com/Yametaro/items/21b8772e6c0d1d77e176
 - https://qiita.com/Yametaro/items/255eea3124e769ce845c
+
+画面改修：重複説明を削除し、発話に合わせて図・比較・数値を段階表示。画面の正本は `remotion/src/VisualAid.tsx`、語句の切替は `remotion/src/visual-cues-v6.json`。
 
 ## 導入
 

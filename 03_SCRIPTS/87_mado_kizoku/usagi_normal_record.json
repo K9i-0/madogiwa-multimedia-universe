@@ -1,0 +1,42 @@
+{
+  "source": "final_remotion_subtitles_v11_seedvc.mp4",
+  "sourceSha256": "8e658dca7020c7345216cccd324da7e237bcec01de2bb9730233296e3abcd42d",
+  "output": "final_remotion_subtitles_v12_usagi_normal.mp4",
+  "frames": 1162,
+  "fps": 30,
+  "width": 1280,
+  "height": 720,
+  "takosan": {
+    "engine": "VOICEVOX",
+    "style": 61,
+    "name": "中国うさぎ・ノーマル",
+    "speedScale": 1.1,
+    "pitchScale": 0,
+    "text": "本番もお燃えになってますわ。",
+    "startFrame": 1007,
+    "durationSeconds": 2.1546666666666665,
+    "peakTarget": 0.85,
+    "input": "part2_takosan_usagi_normal.wav",
+    "sha256": "59ec153031493f508d8a1a557f69cc1d7269c11469f2c59e3860874d7211ba98"
+  },
+  "otherPart2PCMUnchanged": true,
+  "peak": 0.87841796875,
+  "creditStartFrame": 1102,
+  "subjectiveListening": "unavailable",
+  "lipSync": "Existing Wan mouth shapes retained; not phoneme-synchronized to new voice.",
+  "outputSha256": "534b9d630cda86cbdb2f008a4c82329adc1b41d4af86a36eaa569fda3ffab75b",
+  "decode": "pass",
+  "typecheck": "pass for tsconfig.usagi.json; unrelated preexisting Shorts source errors in full project",
+  "visualFramesReviewed": [
+    220,
+    1015,
+    1040,
+    1065,
+    1140
+  ],
+  "loudness": {
+    "LUFS": -14.01,
+    "truePeakDBTP": -1.1,
+    "LRA": 7.3
+  }
+}

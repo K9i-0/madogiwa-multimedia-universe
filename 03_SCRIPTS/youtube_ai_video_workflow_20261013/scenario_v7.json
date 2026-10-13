@@ -4,7 +4,7 @@
   "script": "script.md",
   "currentRenderedVersion": 6,
   "checked": "2026-10-13",
-  "dialogueCount": 114,
+  "dialogueCount": 112,
   "openingMusicLeadSeconds": 2.5,
   "models": [
     {
@@ -54,10 +54,10 @@
   },
   "previousProductionEvidence": "evidence_v2.json",
   "checks": [
-    "114 dialogue turns reviewed as a complete sequence",
+    "112 dialogue turns reviewed as a complete sequence",
     "No popularity or performance ranking asserted",
     "API vs code/CLI vs GUI service distinguished",
-    "Human review and skill evolution pay off opening joke",
+    "Opening joke ends immediately; conversation moves to unfamiliarity with video editing software. No later callback.",
     "Wan generation resolution distinguished from final export and H3 workflow",
     "Existing rendered v6 timeline and audio unchanged"
   ],

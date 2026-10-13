@@ -1,0 +1,96 @@
+{
+  "sampleRate": 48000,
+  "frames": 21604,
+  "voiceTargetLUFS": -18,
+  "bgmTargetLUFS": -34,
+  "clipTargetLUFS": -19,
+  "premasterPeak": 0.8434682488441467,
+  "clips": [
+    {
+      "src": "doc.mp4",
+      "sourceStartFrame": 408,
+      "durationInFrames": 222,
+      "label": "プロフェッショナル 窓際の流儀",
+      "id": "doc_work",
+      "startFrame": 2628
+    },
+    {
+      "src": "doc.mp4",
+      "sourceStartFrame": 672,
+      "durationInFrames": 240,
+      "label": "プロフェッショナル 窓際の流儀",
+      "id": "doc_motto",
+      "startFrame": 3098
+    },
+    {
+      "src": "lab.mp4",
+      "sourceStartFrame": 0,
+      "durationInFrames": 255,
+      "label": "窓際力研究所",
+      "id": "lab",
+      "startFrame": 4577
+    },
+    {
+      "src": "quake.mp4",
+      "sourceStartFrame": 480,
+      "durationInFrames": 300,
+      "label": "美味しい焼きそば",
+      "id": "quake",
+      "startFrame": 6352
+    },
+    {
+      "src": "underground.mp4",
+      "sourceStartFrame": 0,
+      "durationInFrames": 825,
+      "label": "窓際スーパーつらい 地下労働編",
+      "id": "underground_a",
+      "startFrame": 9786
+    },
+    {
+      "src": "underground.mp4",
+      "sourceStartFrame": 825,
+      "durationInFrames": 435,
+      "label": "窓際スーパーつらい 地下労働編・続き",
+      "id": "underground_b",
+      "startFrame": 11692
+    },
+    {
+      "src": "invasion.mp4",
+      "sourceStartFrame": 143,
+      "durationInFrames": 192,
+      "label": "そば屋＆たこさん 初めての東京篇",
+      "id": "invasion",
+      "startFrame": 15016
+    },
+    {
+      "src": "mimic.mp4",
+      "sourceStartFrame": 0,
+      "durationInFrames": 446,
+      "label": "たこさんの擬態：そば屋 → たこさん → 福ギュン",
+      "id": "mimic",
+      "startFrame": 16841
+    },
+    {
+      "src": "kingdom.mp4",
+      "sourceStartFrame": 42,
+      "durationInFrames": 81,
+      "label": "ギュンギュン王国・異世界",
+      "id": "kingdom_a",
+      "startFrame": 19057
+    },
+    {
+      "src": "kingdom.mp4",
+      "sourceStartFrame": 810,
+      "durationInFrames": 279,
+      "label": "ギュンギュン王国・病院",
+      "id": "kingdom_b",
+      "startFrame": 19408
+    }
+  ],
+  "endingStartFrame": 20191,
+  "endingTrack": "TheFatRat - Unity",
+  "endingTargetLUFS": -38,
+  "endingLiftAfterDialogue": false,
+  "endingCrossfadeSeconds": 2,
+  "endingFadeOutSeconds": 4
+}

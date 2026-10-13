@@ -1,6 +1,6 @@
 {
   "sampleRate": 48000,
-  "frames": 27459,
+  "frames": 28101,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
@@ -12,7 +12,7 @@
       "afterId": "v012",
       "src": "news.mp4",
       "sourceStartFrame": 0,
-      "durationInFrames": 258,
+      "durationInFrames": 900,
       "label": "架空ニュース｜第53話「替え玉出社」",
       "layout": "full",
       "tag": "完成例",
@@ -29,7 +29,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 11842
+      "startFrame": 12484
     },
     {
       "id": "news_after_audio",
@@ -41,7 +41,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 11920
+      "startFrame": 12562
     },
     {
       "id": "park_comparison",
@@ -53,36 +53,36 @@
       "layout": "comparison",
       "tag": "別作品の比較実験／本編とは別の検証",
       "muteBgm": true,
-      "startFrame": 12874
+      "startFrame": 13516
     }
   ],
   "clipDucking": [
     {
       "id": "example_news",
       "startFrame": 2134,
-      "durationInFrames": 258,
+      "durationInFrames": 900,
       "bgmGain": 0
     },
     {
       "id": "news_before_audio",
-      "startFrame": 11842,
+      "startFrame": 12484,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "news_after_audio",
-      "startFrame": 11920,
+      "startFrame": 12562,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "park_comparison",
-      "startFrame": 12874,
+      "startFrame": 13516,
       "durationInFrames": 310,
       "bgmGain": 0
     }
   ],
-  "endingStartFrame": 24947,
+  "endingStartFrame": 25589,
   "endingTrack": "TheFatRat - Unity",
   "endingTargetLUFS": -38,
   "endingLiftAfterDialogue": false,

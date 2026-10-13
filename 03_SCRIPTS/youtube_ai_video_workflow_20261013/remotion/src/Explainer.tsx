@@ -33,14 +33,12 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
   const caption = active?.captionSegments?.find(s=>f-active.startFrame>=s.startFrame&&f-active.startFrame<s.endFrame)?.text ?? active?.caption;
   const clip = m.clips.find(c => f >= c.startFrame && f < c.startFrame + c.durationInFrames);
   const view = previous?.view ?? 'opening';
-  let sceneIndex = Math.max(0, previousIndex);
-  while (sceneIndex > 0 && m.dialogue[sceneIndex - 1].view === view) sceneIndex--;
-  const start = previousIndex<0 ? 0 : m.dialogue[sceneIndex]?.startFrame ?? 0;
-  const appear = interpolate(f - start, [0, 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  // Narration IDs are not scene boundaries. Keep reference images visible across
+  // speaker/caption changes; VisualAid owns intentional changes and highlights.
   return <AbsoluteFill style={{background: paper, fontFamily: '"Hiragino Sans", sans-serif', color: ink}}>
     <Audio src={staticFile(audioSrc)}/>
     {clip ? <ClipPlayer clip={clip}/> : <>
-      <div style={{position: 'absolute', left: 260, top: 24, width: 760, height: 531, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', opacity: appear, transform: `translateY(${(1 - appear) * 5}px)`}}><VisualAid view={view} frame={f} utterance={previous}/></div>
+      <div style={{position: 'absolute', left: 260, top: 24, width: 760, height: 531, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}><VisualAid view={view} frame={f} utterance={previous}/></div>
       {(['yametaro','takosan'] as const).map(who => {
         const speaking=active?.who===who; const local=active?f-active.startFrame:0;
         const peak=Math.max(...(active?.envelope??[0]));

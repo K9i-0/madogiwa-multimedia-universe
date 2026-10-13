@@ -1,0 +1,65 @@
+{
+  "version": 7,
+  "status": "scenario_complete_not_rendered",
+  "script": "script.md",
+  "currentRenderedVersion": 6,
+  "checked": "2026-10-13",
+  "dialogueCount": 114,
+  "openingMusicLeadSeconds": 2.5,
+  "models": [
+    {
+      "name": "Seedance",
+      "provider": "ByteDance",
+      "source": "https://seed.bytedance.com/en/blog/seedance-2-0-official-launch"
+    },
+    {
+      "name": "Wan",
+      "provider": "Alibaba",
+      "source": "https://home.alibabagroup.com/en-US/ai-governance/wan"
+    },
+    {
+      "name": "MiniMax H3",
+      "provider": "MiniMax",
+      "source": "https://www.minimax.io/news/minimax-h3-open-source",
+      "note": "Model name, not colleague name. Public weights / compatible GPU execution; do not imply every system component is available locally."
+    }
+  ],
+  "guiService": {
+    "name": "Higgsfield",
+    "source": "https://higgsfield.ai/creator-hub/help-center/plans/how-do-higgsfield-plans-work",
+    "note": "Models and features depend on plan. This episode describes the repository workflow rather than a GUI tutorial."
+  },
+  "h3Workflow": {
+    "repository": "https://github.com/sobaya-0141/Seedance_Madogiwa",
+    "reviewedFiles": [
+      ".claude/skills/colab-video/SKILL.md",
+      ".claude/skills/local-video/SKILL.md"
+    ],
+    "note": "Reviewed as production evidence, not installed or executed. CUDA GPU / Colab L4/A100 workflow; time and cost comparisons reserved for a future episode."
+  },
+  "pricing": {
+    "url": "https://www.qwencloud.com/models/wan3.0-video",
+    "currency": "USD",
+    "normalPerSecond": {
+      "480P": 0.05,
+      "720P": 0.1,
+      "1080P": 0.2
+    },
+    "displayedDiscountPerSecond": {
+      "480P": 0.035,
+      "720P": 0.07,
+      "1080P": 0.14
+    },
+    "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only."
+  },
+  "previousProductionEvidence": "evidence_v2.json",
+  "checks": [
+    "114 dialogue turns reviewed as a complete sequence",
+    "No popularity or performance ranking asserted",
+    "API vs code/CLI vs GUI service distinguished",
+    "Human review and skill evolution pay off opening joke",
+    "Wan generation resolution distinguished from final export and H3 workflow",
+    "Existing rendered v6 timeline and audio unchanged"
+  ],
+  "published": false
+}

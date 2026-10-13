@@ -1,0 +1,62 @@
+{
+  "file": "final_remotion_ai_video_workflow_v8.mp4",
+  "sha256": "297c98cae3a47e19b3c8b6406775cac959b40a7695b8739906ed5a4d600fd4e0",
+  "bytes": 57659138,
+  "durationSeconds": 926.0666666666667,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "pixelFormat": "yuv420p",
+    "sampleAspectRatio": "1:1",
+    "frames": "27782"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLUFS": "-18.05",
+    "truePeakDbTP": "-4.19",
+    "loudnessRangeLU": "3.40"
+  },
+  "fullDecode": "pass",
+  "subtitleTimingAndWidth": "See remotion/out/timeline_validation.json",
+  "visualReview": "See review_v8.md and remotion/out/audit_v8*",
+  "audioReview": "Irodori Yametaro, user-selected VOICEVOX Chugoku Usagi, reading-query verification and automated ASR; subjective continuous listening is not available in this tool environment.",
+  "newPaidVideoGeneration": false,
+  "published": false,
+  "endingExcerpt": {
+    "file": "remotion/out/ending_v8.mp4",
+    "frames": 743,
+    "durationSeconds": 24.766666666666666
+  },
+  "captionFrameComparison": {
+    "count": 154,
+    "maxMAE": 1.759310257523148,
+    "meanMAE": 1.0084087926324254,
+    "worst": [
+      [
+        "v096_caption1",
+        1.759310257523148
+      ],
+      [
+        "v096_caption0",
+        1.7147627314814815
+      ],
+      [
+        "v084_caption0",
+        1.5199283854166667
+      ],
+      [
+        "v083_caption1",
+        1.4135029658564815
+      ],
+      [
+        "v031_caption0",
+        1.4078870081018517
+      ]
+    ]
+  },
+  "referenceContinuity": "pass: 8 subtitle boundaries; 37 extracted frames"
+}

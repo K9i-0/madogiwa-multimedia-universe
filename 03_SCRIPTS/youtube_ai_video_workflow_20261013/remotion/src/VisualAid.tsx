@@ -1,7 +1,7 @@
 import React from 'react';
 import {Img,staticFile,interpolate} from 'remotion';
 import {VisualAid as Legacy} from './VisualAidLegacy';
-import cues from './visual-cues-v7.json';
+import cues from './visual-cues-v8.json';
 import {theme, headingStyle, cardStyle} from './theme';
 type U={id?:string;startFrame:number;durationInFrames:number};
 const blue=theme.blue,navy=theme.ink,grey=theme.muted;
@@ -26,15 +26,18 @@ export const VisualAid:React.FC<{view:string;frame:number;utterance?:U}>=({frame
  if(n>=15&&n<=17)return <><Head>映像を作るモデルも、選べる。</Head><Tiles labels={['指示を考える\nAI','映像を作る\nAI']} focus={1}/></>;
  if(n>=18&&n<=20){const p=n===18?phase(['Alibaba','それから'],[.4,.7]):n===20?1:-1;return <><Head>動画生成モデル</Head><Tiles labels={['Seedance\nByteDance','Wan\nAlibaba','H3\nMiniMax']} focus={p} shown={n===18?p:2}/>{n===20&&<div style={{fontSize:32,color:blue,marginTop:35}}>今回は Wan 3.0</div>}</>;}
  if(n===21||n===22)return <><Head>画面から操作する方法も</Head><div style={{fontSize:47,color:blue}}>Higgsfield</div><Small>使えるモデル・機能はプランによる</Small></>;
- if(n===23||n===24)return <><Head>いつもの会話から、制作へ</Head><Tiles labels={['人間','Codex /\nClaude Code','制作の道具']} focus={n===23?1:2}/><div style={{fontSize:34,marginTop:32,color:blue}}>相談 → 指示 → 実行</div></>;
+ if(n===23||n===24)return <><Head>いつもの会話から、制作へ</Head><Tiles labels={['人間','Codex /\nClaude Code','制作のツール']} focus={n===23?1:2}/><div style={{fontSize:34,marginTop:32,color:blue}}>相談 → 指示 → 実行</div></>;
  if(n===26){const p=at('音声',.3)?1:0;return <><Head>Codex / Claude Code から実行</Head><Tiles labels={['Wan\nAPI','音声・編集\nコード／コマンド']} focus={p}/></>;}
  if(n===32)return <><Pic name="news_mask.jpg" h={340}/><Tiles labels={['体格：福ギュン','仮面：そば屋']} focus={at('0.58',.58)?1:0}/></>;
  if(n===65||n===66)return <><Pic name="news_raw.jpg" h={335}/><div style={{fontSize:32,color:navy,marginTop:20}}>日本語の字幕は、あとから。</div></>;
  if(n===67){const p=phase(['時間','動画に'],[.55,.8]);return <><Head>Remotion</Head><Tiles labels={['Reactで\n画面を作る','時間に合わせて\n変化させる','動画へ\n書き出す']} focus={p} shown={p}/><div style={{width:650,height:60,position:'relative',marginTop:30,borderBottom:`3px solid ${theme.border}`}}><div style={{position:'absolute',left:interpolate(local,[0,dur],[0,600],{extrapolateRight:'clamp'}),color:blue,fontSize:30}}>●</div></div></>;}
- if(n===68)return <><Head>得意な道具で、役割分担</Head><Tiles labels={['Wan\n人物・演技','Remotion\n字幕・テロップ']} focus={!at('映像の演技',.3)||at('正確な字幕',.7)?1:0}/><Small>文字は、指定した文章をフォントで描画</Small></>;
+ if(n===68)return <><Head>得意なツールで、役割分担</Head><Tiles labels={['Wan\n人物・演技','Remotion\n字幕・テロップ']} focus={!at('映像の演技',.3)||at('正確な字幕',.7)?1:0}/><Small>文字は、指定した文章をフォントで描画</Small></>;
  if(n===76||n===77)return <><Head>動画の生成料金</Head><div style={{fontSize:44,color:blue}}>秒数 × 解像度</div><Small>Qwen Cloud・Wan 3.0</Small></>;
- if(n===78||n===79){const p=n===79?3:phase(['480p','720p','1080p'],[.53,.68,.81])-1;return <><Head>30秒・1回の生成</Head><div style={{display:'flex',alignItems:'flex-end',gap:38,height:285,width:660}}>{[240,480,960].map((v,i)=><div key={v} style={{flex:1,visibility:i>p?'hidden':'visible',borderBottom:`6px solid ${p===3||i===p?theme.yellow:'transparent'}`,paddingBottom:8}}><div style={{fontSize:34,fontWeight:700,marginBottom:12}}>約{v}円</div><div style={{height:v/6,background:blue,borderRadius:'6px 6px 0 0'}}/><div style={{fontSize:27,marginTop:12}}>{['480p','720p','1080p'][i]}</div></div>)}</div><Small>通常価格・1ドル160円換算（概算）</Small></>;}
- if(n===80||n===81)return <><Head>作った分が、制作費。</Head><Tiles labels={['候補1\n240円','候補2\n240円','採用\n240円']}/><div style={{opacity:n===81||at('約720円',.3)?1:0,fontSize:44,marginTop:35,color:navy}}>合計 約720円</div><Small>480p・30秒 × 3回／通常価格・1ドル160円換算</Small></>;
+ if(n===78||n===79||n===120){const discounted=n!==78;const p=n===79?3:phase(['480p','720p','1080p'],[.53,.68,.81])-1;const amounts=discounted?[168,336,672]:[240,480,960];return <><Head>{discounted?'30秒・30％割引の場合':'30秒・通常価格'}</Head><div style={{display:'flex',alignItems:'flex-end',gap:38,height:285,width:660}}>{amounts.map((v,i)=><div key={v} style={{flex:1,visibility:i>p?'hidden':'visible',borderBottom:`6px solid ${p===3||i===p?theme.yellow:'transparent'}`,paddingBottom:8}}><div style={{fontSize:34,fontWeight:700,marginBottom:12}}>約{v}円</div><div style={{height:v/6,background:blue,borderRadius:'6px 6px 0 0'}}/><div style={{fontSize:27,marginTop:12}}>{['480p','720p','1080p'][i]}</div></div>)}</div><Small>{discounted?'2026/10/13の表示・適用条件は実行時に確認':'通常価格'}／1ドル160円換算（概算）</Small></>;}
+ if(n===80||n===81)return <><Head>窓際族物語の制作実績</Head><div style={{fontSize:64,fontWeight:700,color:navy,borderBottom:`8px solid ${theme.yellow}`,paddingBottom:12}}>1本 平均 約300円</div><Small>30秒の作品／制作実績の概算</Small></>;
+ if(n===121||n===123)return <><Head>作り直した分も、制作費</Head><Tiles labels={['完成動画\n30秒','生成した合計\n約60秒']} focus={n===123?-1:1}/><Small>窓際族物語での目安／平均約300円は割引・為替等を含む概算実績</Small></>;
+ if(n===122)return <><Head>作り直す範囲を、小さく</Head><Tiles labels={['スキルで\n初回の完成度を上げる','必要な部分だけ\n再生成']} focus={at('必要な部分',.5)?1:0}/></>;
+ if(n===124)return <Legacy view="skill_intro" frame={local} utterance={{id:'u086',startFrame:0,durationInFrames:dur}}/>;
  if(n===82)return <><Head>動画生成のほかにも</Head><Tiles labels={['AIの利用料','音声・編集の\n実行環境']} focus={at('音声',.5)?1:0}/><Small>実際の費用は為替・割引・決済条件等で変わる</Small></>;
  if(n===83)return <><Head>低解像度で試す</Head><Pic name="news_sobaya.jpg" h={260}/>{at('画質',.45)&&<div style={{marginTop:20}}><Tiles labels={['そのまま採用','高解像度で再生成']} focus={1}/></div>}</>;
  if(n===100&&at('条件を',.65))return <Legacy view="validation" frame={local} utterance={{id:'u091',startFrame:0,durationInFrames:dur}}/>;
@@ -43,7 +46,9 @@ export const VisualAid:React.FC<{view:string;frame:number;utterance?:U}>=({frame
  if(n===96)return <><div style={{width:710,height:365,overflow:'hidden',borderRadius:10,position:'relative'}}><Img src={staticFile('repository_public_v7.png')} style={{position:'absolute',width:710,left:0,top:-84}}/></div><div style={{fontSize:22,color:blue,marginTop:22}}>github.com/K9i-0/madogiwa-multimedia-universe</div><Small>公開中・概要欄にリンク</Small></>;
  if(n===102)return <Legacy view="skill_reuse" frame={local} utterance={{id:at('モデルを比較',.53)?'u094':'u093',startFrame:0,durationInFrames:dur}}/>;
  if(n===110||n===111){const p=n===111?4:phase(['Wan','必要な声','Remotion'],[.3,.48,.65]);return <><Head>いつものAIに相談して、一本へ</Head><Tiles labels={['Wan\n映像','Irodori\n必要な声','Remotion\n仕上げ']} focus={n===111?-1:p-1} shown={p===0?-1:p===4?2:p-1}/></>;}
- if(n>=114&&n<=117)return <><Small>次回予告</Small><Head>MiniMax H3</Head>{n===114?<div style={{fontSize:29,color:blue}}>同僚が実践する、もう一つの作り方</div>:n===117?<Tiles labels={['費用','待ち時間','準備・作業']} focus={!at('実際の費用',.5)?-1:phase(['待ち時間','必要な作業'],[.7,.82])}/>:<><Tiles labels={['自分のGPU','ColabのGPU']} focus={n===116?-1:at('Colab',.6)?1:0}/><Small>対応するGPU環境が必要</Small></>}</>;
+ if(n===113)return <><Head>まずは、一本。</Head><div style={{fontSize:32,color:navy}}>いつものAIに、相談してみよう。</div></>;
+ if(n===114)return <><Small>今後の予定</Small><Head>MiniMax H3を使う制作方法</Head><div style={{fontSize:32,color:navy}}>また、次回。</div></>;
+
  const state=reuse[n];if(!state)throw Error('Missing v7 visual '+id);
  // Legacy cues are translated from v7 narration, never inherited from old audio.
  const localCues=(cues as Record<string,Record<string,number>>)[id]??{};

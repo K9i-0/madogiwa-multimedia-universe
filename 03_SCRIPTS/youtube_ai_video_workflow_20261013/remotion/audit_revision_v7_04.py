@@ -16,7 +16,17 @@ src = P / args.source
 out = P / 'out' / f'audit_{args.tag}'
 out.mkdir(exist_ok=True)
 m = json.loads((P / 'src/edit-manifest.json').read_text())
-points = json.loads((P / 'out/reference_continuity/points.json').read_text())
+points = []
+for id in ['v001', 'v014', 'v042', 'v053', 'v064', 'v066', 'v070']:
+    d = next(d for d in m['dialogue'] if d['id'] == id)
+    for offset in [-1, 0, 1, 8]:
+        points.append({'group': id, 'name': f'{id}_{offset}', 'frame': d['startFrame'] + offset})
+for id in ['v053', 'v064', 'v065', 'v069']:
+    d = next(d for d in m['dialogue'] if d['id'] == id)
+    for i, s in enumerate(d['captionSegments'][1:], 1):
+        for offset in [-1, 0, 1]:
+            group = f'{id}_page{i}'
+            points.append({'group': group, 'name': f'{group}_{offset}', 'frame': d['startFrame'] + s['startFrame'] + offset})
 groups = {}
 for point in points:
     groups.setdefault(point['group'], []).append(point)

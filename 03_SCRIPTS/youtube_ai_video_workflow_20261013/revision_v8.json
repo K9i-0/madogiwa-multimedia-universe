@@ -1,0 +1,66 @@
+{
+  "version": 8,
+  "dialogueCount": 118,
+  "changedAudioIds": [
+    "v006",
+    "v009",
+    "v010",
+    "v020",
+    "v023",
+    "v026",
+    "v027",
+    "v028",
+    "v035",
+    "v050",
+    "v053",
+    "v063",
+    "v076",
+    "v077",
+    "v120",
+    "v079",
+    "v080",
+    "v081",
+    "v121",
+    "v122",
+    "v123",
+    "v082",
+    "v087",
+    "v090",
+    "v091",
+    "v124",
+    "v092",
+    "v106",
+    "v108",
+    "v109",
+    "v110",
+    "v113",
+    "v114"
+  ],
+  "removedIds": [
+    "v111",
+    "v112",
+    "v115",
+    "v116",
+    "v117",
+    "v118",
+    "v119"
+  ],
+  "endingIds": [
+    "v110",
+    "v113",
+    "v114"
+  ],
+  "pricingSource": "https://www.qwencloud.com/models/wan3.0-video",
+  "discountPercent": 30,
+  "discount30SecondsJpy": {
+    "480p": 168,
+    "720p": 336,
+    "1080p": 672
+  },
+  "productionExperience": {
+    "source": "User feedback in this conversation",
+    "averageJpyPer30SecondVideo": 300,
+    "approximateGeneratedSeconds": 60,
+    "note": "Approximate experience including retries; separate from the fixed-rate examples."
+  }
+}

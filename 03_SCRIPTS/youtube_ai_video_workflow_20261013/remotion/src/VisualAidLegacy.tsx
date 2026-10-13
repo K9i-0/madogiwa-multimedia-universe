@@ -31,13 +31,13 @@ export const VisualAid:React.FC<{view:string;frame:number;utterance?:Utterance;c
  const phase=(cuts:number[])=>cuts.filter(at).length;
  const reveal=(ratio:number)=>interpolate(f,[cue(ratio),cue(ratio)+8],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
  if(view==='hook_wish')return <>
-   {['n000','n001'].includes(id)?<><div style={{fontSize:80,color:blue,marginBottom:20}}>▷</div><Big>動画も、作りたい。</Big></>:<><div style={{display:'flex',gap:12,alignItems:'flex-end',height:170}}>{[80,135,105,165,120].map((h,i)=><div key={i} style={{width:65,height:h,background:theme.blue,borderRadius:'9px 9px 0 0'}}/>)}</div><Head>しょうもない話なら、山ほど。</Head>{id==='n003'&&<div style={{fontSize:30,color:navy}}>いい話は？</div>}{id==='n004'&&<div style={{opacity:reveal(.45),fontSize:38,color:navy}}>0 本</div>}</>}
+   {['n000','n001'].includes(id)?<><div style={{fontSize:80,color:blue,marginBottom:20}}>▷</div><Big>動画も、作りたい。</Big></>:<><div style={{display:'flex',gap:12,alignItems:'flex-end',height:170}}>{[80,135,105,165,120].map((h,i)=><div key={i} style={{width:65,height:h,background:theme.blue,borderRadius:'9px 9px 0 0'}}/>)}</div><Head>しょうもないネタなら、山ほど。</Head>{id==='n003'&&<div style={{fontSize:30,color:navy}}>いい話は？</div>}{id==='n004'&&<div style={{opacity:reveal(.45),fontSize:38,color:navy}}>0 本</div>}</>}
  </>;
  if(view==='hook_barrier')return <><Row><Tile active={id==='n005'}>Web・アプリ<br/><span style={{fontSize:48,color:blue}}>✓</span></Tile><Arrow/><Tile active={id!=='n005'}>動画編集<br/><span style={{fontSize:48,color:navy}}>？</span></Tile></Row>{id==='n008'&&<div style={{fontSize:28,marginTop:35}}>ネタ ✓　やる気 ✓　操作 ？</div>}</>;
  if(view==='hook_bridge')return <>{['n024','n025','n026'].includes(id)?<Row><Tile active={id==='n024'}>アイデア</Tile><Arrow/><Tile active={id!=='n024'}>見て、直す</Tile></Row>:<><Big>Codex / Claude Code</Big><div style={{fontSize:29,marginTop:32,padding:'20px 35px',borderRadius:25,background:'white'}}>「ここ直して」</div></>}</>;
  if(view==='intro_ready'||view==='opening')return <><Head>いつものAIから</Head><Big>動画まで作る。</Big><Small>窓際族物語の実例</Small></>;
  if(view==='intro_reaction'||view==='promise')return <Pic name="news.jpg" h={430}/>;
- if(view==='hook_agenda'){const step=id==='n029'?3:phase([.33,.55,.74])-1;return <><Head>今日、持ち帰ること</Head><div style={{width:670,display:'grid',gridTemplateColumns:'1fr 1fr',gap:22}}>{['作る道具','かかるお金','失敗の直し方','次に残す手順'].map((x,i)=><Tile key={x} active={i===step} show={i<=step}>{x}</Tile>)}</div></>;}
+ if(view==='hook_agenda'){const step=id==='n029'?3:phase([.33,.55,.74])-1;return <><Head>今日、持ち帰ること</Head><div style={{width:670,display:'grid',gridTemplateColumns:'1fr 1fr',gap:22}}>{['作るツール','かかるお金','失敗の直し方','次に残す手順'].map((x,i)=><Tile key={x} active={i===step} show={i<=step}>{x}</Tile>)}</div></>;}
  if(view==='roadmap'||view==='roles'||view==='generate'||view==='summary'){
  const stage=view==='generate'?1:view==='summary'?phase([.25,.48,.7]):id==='u008'?0:id==='u009'?1:id==='u010'||id==='u011'?0:id==='u012'?(at(.52)?2:1):3;
  return <Workflow stage={stage} reached={view==='generate'||view==='summary'?3:id==='u010'||id==='u011'?1:stage} complete={id==='u102'}/>;

@@ -64,3 +64,22 @@ npm run render -- --output out/review_v7_01.mp4
 `src/theme.ts` に配色とカード・見出しを集約。非注目項目の文字を薄くせず、黄色で強調する。字幕は共通の話者色から濃色を計算し、この作品内だけで適用する。
 
 完成版 `../final_remotion_ai_video_workflow_v7_05.mp4`（15分36.7秒）。配色記録 `../design_v7_05.json`、検査記録 `../review_v7_05.md`。音声・タイムラインを変更しないため、`npm run render -- --skip-mix --output out/review_v7_05.mp4` で書き出す。
+
+## v8：会話・料金・短い締め
+
+`../script.md` と `dialogue.json` が118発話の正本。変更33発話の音声を差し替え、85発話は既存の採用音声を継続使用。Wan 3.0の読みは「ワン、サンテンゼロ」。台詞と中央図解の「道具」は「ツール」に統一する。
+
+通常価格・30％割引価格は説明用の1ドル160円換算。平均約300円／完成30秒に生成約60秒はユーザー提供の制作実績として区別する。最後は3発話・約25秒。
+
+```sh
+../../../.local/Irodori-TTS/.venv/bin/python prepare_v8_voice.py
+../../../.local/voicevox-explainer/venv/bin/python finalize_v8_timing.py
+npm run typecheck
+../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
+node preview_v8.cjs
+npm run render -- --output out/review_v8_01.mp4
+```
+
+採用音声は `../adopted_audio_v8.json` と `../voice_record_v8.json`。`adopt_v8_audio.py` で採用WAVと実測チャプターを保存する。音声検査は `audit_v8_audio.py`、`audit_v8_secondpass.py --ids ...`、ミックス検査は `audit_mix_v8.py`。完成MP4の全編抽出は `audit_video_v8.py`、切替境界は `audit_revision_v7_04.py --source out/review_v8_01.mp4 --tag v8_boundaries`（現行manifestから時刻算出）、最終codec・尺・音量は `final_checks.py --source out/review_v8_01.mp4 --tag v8`。
+
+完成版 `../final_remotion_ai_video_workflow_v8.mp4`、検査記録 `../review_v8.md`。短くしたエンディングの確認用抜粋も作成する。YouTube未公開。

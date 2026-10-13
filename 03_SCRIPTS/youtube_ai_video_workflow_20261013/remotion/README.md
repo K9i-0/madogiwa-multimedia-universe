@@ -83,3 +83,10 @@ npm run render -- --output out/review_v8_01.mp4
 採用音声は `../adopted_audio_v8.json` と `../voice_record_v8.json`。`adopt_v8_audio.py` で採用WAVと実測チャプターを保存する。音声検査は `audit_v8_audio.py`、`audit_v8_secondpass.py --ids ...`、ミックス検査は `audit_mix_v8.py`。完成MP4の全編抽出は `audit_video_v8.py`、切替境界は `audit_revision_v7_04.py --source out/review_v8_01.mp4 --tag v8_boundaries`（現行manifestから時刻算出）、最終codec・尺・音量は `final_checks.py --source out/review_v8_01.mp4 --tag v8`。
 
 完成版 `../final_remotion_ai_video_workflow_v8.mp4`、検査記録 `../review_v8.md`。短くしたエンディングの確認用抜粋も作成する。YouTube未公開。
+
+## v9：役割の整理・Irodori補足・冒頭無音作例
+
+`prepare_v9_voice.py` → `finalize_v9_timing.py` → `preview_v9.cjs` → `npm run render`。
+`audit_v9_audio.py` / `audit_v9_secondpass.py`で変更音声を照合し、`audit_video_v9.py` / `audit_continuity_v9.py` / `final_checks.py --tag v9`で完成MP4を検査する。
+冒頭は`VisualAid.tsx`内の固定フレームSequenceで連続再生し、両方ともmuted。素材と使用範囲は`../sources_v9.json`を参照。
+採用動画：`../final_remotion_ai_video_workflow_v9.mp4`。YouTube未公開。

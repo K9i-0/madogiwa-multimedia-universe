@@ -1,0 +1,105 @@
+{
+  "version": 9,
+  "status": "rendered_complete",
+  "script": "script.md",
+  "currentRenderedVersion": 9,
+  "checked": "2026-10-13",
+  "dialogueCount": 124,
+  "openingMusicLeadSeconds": 2.5,
+  "models": [
+    {
+      "name": "Seedance",
+      "provider": "ByteDance",
+      "source": "https://seed.bytedance.com/en/blog/seedance-2-0-official-launch"
+    },
+    {
+      "name": "Wan",
+      "provider": "Alibaba",
+      "source": "https://home.alibabagroup.com/en-US/ai-governance/wan"
+    },
+    {
+      "name": "MiniMax H3",
+      "provider": "MiniMax",
+      "source": "https://www.minimax.io/news/minimax-h3-open-source",
+      "note": "Model name, not colleague name. Public weights / compatible GPU execution; do not imply every system component is available locally."
+    }
+  ],
+  "guiService": {
+    "name": "Higgsfield",
+    "source": "https://higgsfield.ai/creator-hub/help-center/plans/how-do-higgsfield-plans-work",
+    "note": "Models and features depend on plan. This episode describes the repository workflow rather than a GUI tutorial."
+  },
+  "h3Workflow": {
+    "repository": "https://github.com/sobaya-0141/Seedance_Madogiwa",
+    "reviewedFiles": [
+      ".claude/skills/colab-video/SKILL.md",
+      ".claude/skills/local-video/SKILL.md"
+    ],
+    "note": "Reviewed as production evidence, not installed or executed. CUDA GPU / Colab L4/A100 workflow; time and cost comparisons reserved for a future episode."
+  },
+  "pricing": {
+    "url": "https://www.qwencloud.com/models/wan3.0-video",
+    "currency": "USD",
+    "normalPerSecond": {
+      "480P": 0.05,
+      "720P": 0.1,
+      "1080P": 0.2
+    },
+    "displayedDiscountPerSecond": {
+      "480P": 0.035,
+      "720P": 0.07,
+      "1080P": 0.14
+    },
+    "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only. Yen figures use an illustrative fixed exchange rate, not a live FX quote.",
+    "narrationCurrency": "JPY",
+    "illustrativeJpyPerUsd": 160,
+    "normal30SecondsJpy": {
+      "480P": 240,
+      "720P": 480,
+      "1080P": 960
+    },
+    "discount30SecondsJpy": {
+      "480P": 168,
+      "720P": 336,
+      "1080P": 672
+    },
+    "discountVerified": "2026-10-13",
+    "productionExperience": {
+      "source": "User feedback in this conversation",
+      "averageJpyPer30SecondVideo": 300,
+      "approximateGeneratedSeconds": 60,
+      "note": "Approximate experience including retries; separate from the fixed-rate examples."
+    }
+  },
+  "previousProductionEvidence": "evidence_v2.json",
+  "checks": [
+    "No popularity or performance ranking asserted",
+    "API vs code/CLI vs GUI service distinguished",
+    "Resolution chapter ends with cost-prioritized 480p generation; no final export or X algorithm narration",
+    "Skills, character sheets and past production records managed in Git; public repository link included",
+    "Remotion explanation connects exact Japanese typography to React-based frame rendering",
+    "JPY arithmetic verified at illustrative 160 JPY/USD",
+    "124 dialogue turns; natural spoken phrasing prioritized over rhymes",
+    "Opening joke callback explicitly added in skills chapter per latest user feedback",
+    "Wan 3.0 spoken as ワン、サンテンゼロ",
+    "Ending shortened to 3 utterances; H3 is a one-sentence teaser",
+    "Normal/discounted price examples distinguished from user-reported average production cost",
+    "Three functional model roles with tools/model distinction",
+    "Irodori text + reference voice explanation",
+    "Opening silent examples across utterance boundaries"
+  ],
+  "published": false,
+  "publicRepository": {
+    "url": "https://github.com/K9i-0/madogiwa-multimedia-universe",
+    "publicVerified": "2026-10-13 GitHub API",
+    "descriptionLinkRequired": true
+  },
+  "remotionExplanationSource": "https://www.remotion.dev/docs/idea",
+  "deliveryFile": "final_remotion_ai_video_workflow_v9.mp4",
+  "editRevision": 0,
+  "designRecord": "design_v7_05.json",
+  "revisionRecord": "revision_v9.json",
+  "durationSeconds": 998.0666666666667,
+  "endingSeconds": 24.766666666666666,
+  "completed": "2026-10-14"
+}

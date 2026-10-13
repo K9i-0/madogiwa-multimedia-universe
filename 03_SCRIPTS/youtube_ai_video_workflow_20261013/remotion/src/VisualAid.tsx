@@ -1,7 +1,7 @@
 import React from 'react';
-import {Img,staticFile,interpolate} from 'remotion';
+import {Img,OffthreadVideo,Sequence,staticFile,interpolate} from 'remotion';
 import {VisualAid as Legacy} from './VisualAidLegacy';
-import cues from './visual-cues-v8.json';
+import cues from './visual-cues-v9.json';
 import {theme, headingStyle, cardStyle} from './theme';
 type U={id?:string;startFrame:number;durationInFrames:number};
 const blue=theme.blue,navy=theme.ink,grey=theme.muted;
@@ -19,14 +19,18 @@ export const VisualAid:React.FC<{view:string;frame:number;utterance?:U}>=({frame
  const timing=(cues as Record<string,Record<string,number>>)[id]??{};
  const at=(key:string,fallback:number)=>local>=(timing[key]??Math.round(dur*fallback));
  const phase=(keys:string[],ratios:number[])=>keys.filter((k,i)=>at(k,ratios[i])).length;
- if(n<=7||n===12)return <Pic name="news.jpg" h={430}/>;
+ if(n<=7)return <><div style={{position:'relative',width:710,height:400}}><Sequence from={0} durationInFrames={900}><OffthreadVideo muted src={staticFile('opening_yakisoba.mp4')} style={{width:'100%',height:'100%',objectFit:'contain'}}/></Sequence><Sequence from={900} durationInFrames={900}><OffthreadVideo muted src={staticFile('opening_space.mp4')} startFrom={540} style={{width:'100%',height:'100%',objectFit:'contain'}}/></Sequence></div><Small>窓際族物語の作例／音声なし</Small></>;
+ if(n===12)return <Pic name="news.jpg" h={430}/>;
  if(n===8)return <><Head>動画編集、ほぼ未経験。</Head><Tiles labels={['Web・アプリ\n✓','動画編集\n？']} focus={1}/></>;
  if(n===9||n===10||n===25)return <><Head>Codex / Claude Code</Head><div style={{background:theme.paper,border:`3px solid ${theme.blue}`,borderBottom:`8px solid ${theme.yellow}`,padding:'20px 34px',borderRadius:12,fontSize:36,fontWeight:700,color:navy}}>「ここ直して」</div></>;
  if(n===11){const p=phase(['作り方','かかるお金','失敗'],[.4,.56,.69])-1;return <Tiles labels={['作る','費用','直す']} focus={p} shown={p}/>;}
- if(n>=15&&n<=17)return <><Head>映像を作るモデルも、選べる。</Head><Tiles labels={['指示を考える\nAI','映像を作る\nAI']} focus={1}/></>;
- if(n>=18&&n<=20){const p=n===18?phase(['Alibaba','それから'],[.4,.7]):n===20?1:-1;return <><Head>動画生成モデル</Head><Tiles labels={['Seedance\nByteDance','Wan\nAlibaba','H3\nMiniMax']} focus={p} shown={n===18?p:2}/>{n===20&&<div style={{fontSize:32,color:blue,marginTop:35}}>今回は Wan 3.0</div>}</>;}
+ if(n===15||n===16||n===17||n===125||n===126||n===127){const focus=n===16?phase(['指示を','映像を','声を'],[.5,.65,.8])-1:n===125?0:n===126?1:n===127?2:-1;return <><Head>今回使うAI、三つの役割</Head><Tiles labels={['指示を考える','映像を作る','声を作る']} focus={focus}/><div style={{display:'flex',width:710,gap:20,marginTop:18,fontSize:23,lineHeight:1.6}}>{['Codex /\nClaude Code\nの中のモデル','Wan など','Irodori など'].map(t=><div key={t} style={{flex:1,whiteSpace:'pre-line'}}>{t}</div>)}</div>{n===125&&<Small>ツールが、モデルを使って作業する</Small>}{n===127&&<Small>必要な声を、音声モデルで生成・修復</Small>}</>;}
+ if(n>=18&&n<=20){const p=n===18?phase(['Alibaba','MiniMax'],[.4,.7]):n===20?1:-1;return <><Head>動画生成モデル</Head><Tiles labels={['Seedance\nByteDance','Wan\nAlibaba','H3\nMiniMax']} focus={p} shown={n===18?p:2}/>{n===20&&<div style={{fontSize:32,color:blue,marginTop:35}}>今回は Wan 3.0</div>}</>;}
  if(n===21||n===22)return <><Head>画面から操作する方法も</Head><div style={{fontSize:47,color:blue}}>Higgsfield</div><Small>使えるモデル・機能はプランによる</Small></>;
  if(n===23||n===24)return <><Head>いつもの会話から、制作へ</Head><Tiles labels={['人間','Codex /\nClaude Code','制作のツール']} focus={n===23?1:2}/><div style={{fontSize:34,marginTop:32,color:blue}}>相談 → 指示 → 実行</div></>;
+ if(n===27||n===131)return <><Head>制作環境を、リポジトリに</Head><Tiles labels={['コード','素材','制作手順']}/><Small>詳しくは後半で紹介／URLは概要欄へ</Small></>;
+ if(n===54||n===129)return <><Head>Irodori：文章から声を作る</Head><div style={{display:'flex',alignItems:'center',gap:20,width:710}}><div style={{flex:1}}><div style={cardStyle(true)}>読ませたい文章</div><div style={{...cardStyle(n===129),marginTop:16}}>声の見本</div></div><div style={{fontSize:36}}>→</div><div style={{flex:1,...cardStyle(true)}}>新しいセリフの音声</div></div><Small>{n===129?'今回は、動画内のアナウンサーの声を参照':'映像を作り直さず、声だけ生成できる'}</Small></>;
+ if(n===130)return <Legacy view="news_patch" frame={local} utterance={{id:'u047',startFrame:0,durationInFrames:dur}}/>;
  if(n===26){const p=at('音声',.3)?1:0;return <><Head>Codex / Claude Code から実行</Head><Tiles labels={['Wan\nAPI','音声・編集\nコード／コマンド']} focus={p}/></>;}
  if(n===32)return <><Pic name="news_mask.jpg" h={340}/><Tiles labels={['体格：福ギュン','仮面：そば屋']} focus={at('0.58',.58)?1:0}/></>;
  if(n===65||n===66)return <><Pic name="news_raw.jpg" h={335}/><div style={{fontSize:32,color:navy,marginTop:20}}>日本語の字幕は、あとから。</div></>;

@@ -1,7 +1,9 @@
 from pathlib import Path
-import json,subprocess,wave
+import json,subprocess,wave,argparse
 import numpy as np
-P=Path(__file__).resolve().parent;m=json.loads((P/'src/edit-manifest.json').read_text());sr=48000
+P=Path(__file__).resolve().parent
+parser=argparse.ArgumentParser();parser.add_argument('--manifest',default='src/edit-manifest.json');parser.add_argument('--output',default='public/mixed.wav');parser.add_argument('--record',default='../mix_record.json');args=parser.parse_args()
+m=json.loads((P/args.manifest).read_text());sr=48000
 assert m['composition']['fps']==30
 n=m['composition']['durationInFrames']*1600
 (P/'out').mkdir(exist_ok=True)
@@ -19,7 +21,7 @@ def fade(a,head,tail):
  return a
 voice=np.zeros((n,2),np.float32)
 for d in m['dialogue']:
- a=decode(P/'public'/d['audio']);start=d['startFrame']*1600;voice[start:start+len(a)]+=a
+ a=decode(P/'public'/d['audio'],'loudnorm=I=-18:TP=-2:LRA=11' if m.get('voiceModel') else None);start=d['startFrame']*1600;voice[start:start+len(a)]+=a
 save(P/'out/voice_unmixed.wav',voice);voice=decode(P/'out/voice_unmixed.wav','loudnorm=I=-18:TP=-2:LRA=11')[:n]
 if len(voice)<n:voice=np.pad(voice,((0,n-len(voice)),(0,0)))
 bgm=np.zeros((n,2),np.float32);cut=m['mainStartFrame']*1600
@@ -47,12 +49,13 @@ for clip_index,c in enumerate(m['clips']):
  clip_duck_records.append({'id':c.get('id',clip_index),'startFrame':c['startFrame'],'durationInFrames':c['durationInFrames'],'bgmGain':duck})
 # Unity is a quiet ending cue; keep its level low even after dialogue.
 end=m['endingStartFrame']*1600;cross=2*sr
-bgm[end:end+cross]*=np.linspace(1,0,cross)[:,None];bgm[end+cross:]=0
-unity=decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-end]
-unity=fade(unity,2*sr,4*sr)
-bgm[end:]+=unity
+if end<n:
+ bgm[end:end+cross]*=np.linspace(1,0,cross)[:,None];bgm[end+cross:]=0
+ unity=decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-end]
+ unity=fade(unity,2*sr,4*sr)
+ bgm[end:]+=unity
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
-save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'frames':m['composition']['durationInFrames'],'voiceTargetLUFS':-18,'bgmTargetLUFS':-34,'clipTargetLUFS':-19,'premasterPeak':peak,'clips':m['clips'],'clipDucking':clip_duck_records,'endingStartFrame':m['endingStartFrame'],'endingTrack':'TheFatRat - Unity','endingTargetLUFS':-38,'endingLiftAfterDialogue':False,'endingCrossfadeSeconds':2,'endingFadeOutSeconds':4},ensure_ascii=False,indent=2))
+save(P/args.output,a)
+(P/args.record).write_text(json.dumps({'sampleRate':sr,'frames':m['composition']['durationInFrames'],'voiceTargetLUFS':-18,'perUtteranceNormalization':bool(m.get('voiceModel')),'bgmTargetLUFS':-34,'clipTargetLUFS':-19,'premasterPeak':peak,'clips':m['clips'],'clipDucking':clip_duck_records,'endingStartFrame':m['endingStartFrame'],'endingTrack':'TheFatRat - Unity','endingTargetLUFS':-38,'endingLiftAfterDialogue':False,'endingCrossfadeSeconds':2,'endingFadeOutSeconds':4},ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

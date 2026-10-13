@@ -3,18 +3,6 @@
     "intro.mp3": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/intro.mp3",
     "main.wav": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/main.wav",
     "unity.mp3": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/unity.mp3",
-    "zunda_normal_0.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/zunda_normal_0.png",
-    "zunda_normal_1.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/zunda_normal_1.png",
-    "zunda_blink_0.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/zunda_blink_0.png",
-    "zunda_blink_1.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/zunda_blink_1.png",
-    "zunda_surprise_0.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/zunda_surprise_0.png",
-    "zunda_surprise_1.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/zunda_surprise_1.png",
-    "metan_normal_0.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/metan_normal_0.png",
-    "metan_normal_1.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/metan_normal_1.png",
-    "metan_blink_0.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/metan_blink_0.png",
-    "metan_blink_1.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/metan_blink_1.png",
-    "metan_surprise_0.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/metan_surprise_0.png",
-    "metan_surprise_1.png": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/public/metan_surprise_1.png",
     "fuku_sheet.png": "03_SCRIPTS/00_TEMPLATES/characters/character_fukuchan_basic_sheet.png",
     "sobaya_sheet.png": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
     "tako_sheet.png": "03_SCRIPTS/00_TEMPLATES/characters/character_takosan_basic_sheet.png",
@@ -24,27 +12,25 @@
     "cm.mp4": "03_SCRIPTS/69_madogiwa_super_try_tanker/final_remotion_cm_v3.mp4",
     "news_fixed.mp4": "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p_hybrid_audio_v2.mp4",
     "voice_patch_comparison.mp4": "03_SCRIPTS/72_tokyo_madogiwa_park/remotion/out/voice_patch_comparison.mp4",
-    "park.mp4": "03_SCRIPTS/72_tokyo_madogiwa_park/final_remotion_vlog_v4.mp4"
+    "park.mp4": "03_SCRIPTS/72_tokyo_madogiwa_park/final_remotion_vlog_v4.mp4",
+    "yametaro_base.png": "03_SCRIPTS/youtube_ai_video_workflow_20261013/inputs/duo/yametaro_base.png",
+    "yametaro_open.png": "03_SCRIPTS/youtube_ai_video_workflow_20261013/inputs/duo/yametaro_open.png",
+    "yametaro_surprise.png": "03_SCRIPTS/youtube_ai_video_workflow_20261013/inputs/duo/yametaro_surprise.png",
+    "takosan_base.png": "03_SCRIPTS/youtube_ai_video_workflow_20261013/inputs/duo/takosan_base.png",
+    "takosan_open.png": "03_SCRIPTS/youtube_ai_video_workflow_20261013/inputs/duo/takosan_open.png",
+    "takosan_blink.png": "03_SCRIPTS/youtube_ai_video_workflow_20261013/inputs/duo/takosan_blink.png"
   },
-  "thirdPartyCredits": "../youtube_explainer_pilot_20261008/asset_sources.json",
+  "thirdPartyCredits": {
+    "music": "../youtube_explainer_pilot_20261008/asset_sources.json",
+    "characters": "窓際族物語：やめ太郎・たこさん。既存の正典準拠立ち絵と差分を再利用。",
+    "voices": "Irodori-TTS v4.1-Small / 02_CHARACTERS/VOICE_CAST.md"
+  },
   "unityTermsChecked": "2026-10-13",
   "unityTerms": "https://www.thefatrat.com/terms-and-conditions",
   "sha256": {
     "intro.mp3": "b3be5e54383b778ac1cd25ae21bc3597039989100853903dfe83d3a10ff471e4",
     "main.wav": "9ccfc9b032d1a1fd2e818f7128ba9a287f8c68344c5d18a3c8f01acb7399313f",
     "unity.mp3": "c4f222b12ea53819b0af5240a1a880b0459485980bf1479b933844efc249505c",
-    "zunda_normal_0.png": "612ec70f4a29a82368d72daf01ad253339a553cd16149a27d1f2bc6ee3c8ed85",
-    "zunda_normal_1.png": "75ceeef61e84c12688cf06d11ca657ed5f6b70c1dadefa95b9e44169c1374675",
-    "zunda_blink_0.png": "af57f535c214bd212bb1f616f67fe9f3fe32cd63a093c1fe2ddea6d2baf86456",
-    "zunda_blink_1.png": "c3109a11ae9c80799a69e0d8284441b0d7689a6e611e6c3ea634eec486087502",
-    "zunda_surprise_0.png": "e0b674a94629a4b2ac847df1a4ea9a73d7e852c888aeda682730a392612015f1",
-    "zunda_surprise_1.png": "1d3ed0dbae9100c32345d6051bffbacca54cf4df668a108848805983558540a9",
-    "metan_normal_0.png": "70dab52c524f82b28fef26684aaa030020c1e297f015559a51d3bbdd86e0a3a8",
-    "metan_normal_1.png": "3b3dc92700eba7fabb355eeefdf34c51da07d6e233bee7c31689ef8595ac4187",
-    "metan_blink_0.png": "3431ec311bd24362c8fcf21e9f8fdb7393b98f4ab03e21820dfed0b20a6fa713",
-    "metan_blink_1.png": "874be049a5bcdc5ba0f3960ed11f4af9f8ca51480370e17a69c20946c5796433",
-    "metan_surprise_0.png": "8736641d63ca8fdcf80df3fc774215f2c30bc17821d6d5070229262f09d91a08",
-    "metan_surprise_1.png": "ff54e8593d9a8f3ddef3bf32a3f388ac96dbdd07d79890644560e192be0ebe48",
     "fuku_sheet.png": "1756c275be0b8cc4ca93f1f16d59a4feb79eef5ee43756d23d006323bdd43bfd",
     "sobaya_sheet.png": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058",
     "tako_sheet.png": "62e6a6a9a92250b564b2ea8c7ffa90333ac0182f86d53e240d70399bf50da99d",
@@ -54,7 +40,13 @@
     "cm.mp4": "445c694f2ea8f095cba086b664552aee3105fe27a8207b2d92f702cead698daa",
     "news_fixed.mp4": "8025c95bacb10d5de1d70754d90ca975c835cfa076e551e856d963f01389fca3",
     "voice_patch_comparison.mp4": "a1431d7d7dea6c7660ac5979a396ba8583cfc694a07165311fe9af4eeeea4771",
-    "park.mp4": "eedd71110179afa2edc0a7da1bac4c3e3e84cf0d9808090b1f3e2db29a2d8c10"
+    "park.mp4": "eedd71110179afa2edc0a7da1bac4c3e3e84cf0d9808090b1f3e2db29a2d8c10",
+    "yametaro_base.png": "ee1ad469aecc5d646e3a5d12c74e45f48d272fbc92f32187ed169209e3fee040",
+    "yametaro_open.png": "71e44230d75ff9973f07d21e981df0dfb581b33d619dc316b9cee82fc33c9ce9",
+    "yametaro_surprise.png": "e87dd70c5aab2b496167dc7248ffbe1314272efa5b654ae3ee80637fefee5cc0",
+    "takosan_base.png": "ca753633feb322b72b75ef5146a62657b741f80af61adaa646b5d89a70a70f5c",
+    "takosan_open.png": "3804a3e2cce65a42bf78417c2f91c8aca798f105d80661966e0e483abf2a76c2",
+    "takosan_blink.png": "c02305c16bb1002238b4b7890b7e139819004a44a21476fdafbabe0bea9a7a5c"
   },
   "extractedFrames": {
     "comedy.jpg": {
@@ -137,5 +129,37 @@
     "park_sobaya.jpg": "5403fe6766e458e62fd13dfac679be7f4010762685eebac3bd0f69ce19306471",
     "patch_before.jpg": "8a6fccf8e87974cafe6bd9c7a6fa101759266cc8efae8078b905a332378acb94",
     "patch_after.jpg": "c72be0c77c2f394152bae5c8a7f1b94c14b96d2c9154ca32355eb654e6e8b4e2"
+  },
+  "duoSprites": {
+    "yametaro_base.png": {
+      "copiedFrom": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/yametaro_base.png",
+      "sha256": "ee1ad469aecc5d646e3a5d12c74e45f48d272fbc92f32187ed169209e3fee040",
+      "edited": false
+    },
+    "yametaro_open.png": {
+      "copiedFrom": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/yametaro_open.png",
+      "sha256": "71e44230d75ff9973f07d21e981df0dfb581b33d619dc316b9cee82fc33c9ce9",
+      "edited": false
+    },
+    "yametaro_surprise.png": {
+      "copiedFrom": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/yametaro_surprise.png",
+      "sha256": "e87dd70c5aab2b496167dc7248ffbe1314272efa5b654ae3ee80637fefee5cc0",
+      "edited": false
+    },
+    "takosan_base.png": {
+      "copiedFrom": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/takosan_base.png",
+      "sha256": "ca753633feb322b72b75ef5146a62657b741f80af61adaa646b5d89a70a70f5c",
+      "edited": false
+    },
+    "takosan_open.png": {
+      "copiedFrom": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/takosan_open.png",
+      "sha256": "3804a3e2cce65a42bf78417c2f91c8aca798f105d80661966e0e483abf2a76c2",
+      "edited": false
+    },
+    "takosan_blink.png": {
+      "copiedFrom": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/takosan_blink.png",
+      "sha256": "c02305c16bb1002238b4b7890b7e139819004a44a21476fdafbabe0bea9a7a5c",
+      "edited": false
+    }
   }
 }

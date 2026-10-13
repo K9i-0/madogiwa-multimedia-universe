@@ -40,18 +40,21 @@
     "url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai",
     "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."
   },
-  "version": 2,
+  "version": 3,
   "title": "Codexで動画まで作る。窓際族物語のAI制作術",
   "audience": "CodexやClaude CodeでWebサイト・アプリ等を作っている人。職業エンジニアには限定せず、AIモデルの名前や違いをなんとなく知っている。実制作の判断・比較・失敗例は詳しい視聴者にも役立つ深さで扱う。",
   "delivery": {
-    "file": "final_remotion_ai_video_workflow_v2.mp4",
-    "previousVersionPreserved": "final_remotion_ai_video_workflow.mp4",
+    "file": "final_remotion_ai_video_workflow_v3.mp4",
+    "previousVersionPreserved": [
+      "final_remotion_ai_video_workflow.mp4",
+      "final_remotion_ai_video_workflow_v2.mp4"
+    ],
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 18481,
-    "durationSeconds": 616.0333333333333,
-    "displayDuration": "10分16秒",
+    "durationInFrames": 22228,
+    "durationSeconds": 740.9333333333333,
+    "displayDuration": "12分21秒",
     "newPaidVideoGeneration": false,
     "published": false
   },
@@ -94,7 +97,7 @@
   "limitations": [
     "過去のAPI入力エラー記録から失敗時の課金額は断言しない。",
     "音声修復の一例を任意の台詞への成功率や完全リップシンクの保証へ一般化しない。",
-    "主観的な通し試聴と、VOICEVOX読み・ASR・機械的な音量検査を区別する。",
+    "主観的な通し試聴と、Irodoriの生成設定・ASR・機械的な音量検査を区別する。",
     "キャラクター資料、モデル選び、スキル運用の説明はこのリポジトリの制作経験に基づく。"
   ],
   "chapters": [
@@ -106,57 +109,69 @@
     },
     {
       "chapter": "道具の分担",
-      "startFrame": 1881,
-      "startSeconds": 62.7,
-      "youtubeTime": "01:02"
+      "startFrame": 1894,
+      "startSeconds": 63.13333333333333,
+      "youtubeTime": "01:03"
     },
     {
       "chapter": "依頼と生成指示",
-      "startFrame": 3949,
-      "startSeconds": 131.63333333333333,
-      "youtubeTime": "02:11"
+      "startFrame": 4371,
+      "startSeconds": 145.7,
+      "youtubeTime": "02:25"
     },
     {
       "chapter": "キャラクターの資料",
-      "startFrame": 5499,
-      "startSeconds": 183.3,
-      "youtubeTime": "03:03"
+      "startFrame": 6257,
+      "startSeconds": 208.56666666666666,
+      "youtubeTime": "03:28"
     },
     {
       "chapter": "生成と音声修正",
-      "startFrame": 7138,
-      "startSeconds": 237.93333333333334,
-      "youtubeTime": "03:57"
+      "startFrame": 8254,
+      "startSeconds": 275.1333333333333,
+      "youtubeTime": "04:35"
     },
     {
       "chapter": "編集",
-      "startFrame": 9948,
-      "startSeconds": 331.6,
-      "youtubeTime": "05:31"
+      "startFrame": 11520,
+      "startSeconds": 384.0,
+      "youtubeTime": "06:24"
     },
     {
       "chapter": "費用と解像度",
-      "startFrame": 11040,
-      "startSeconds": 368.0,
-      "youtubeTime": "06:08"
+      "startFrame": 12917,
+      "startSeconds": 430.56666666666666,
+      "youtubeTime": "07:10"
     },
     {
       "chapter": "スキルを育てる",
-      "startFrame": 14246,
-      "startSeconds": 474.8666666666667,
-      "youtubeTime": "07:54"
+      "startFrame": 16945,
+      "startSeconds": 564.8333333333334,
+      "youtubeTime": "09:24"
     },
     {
       "chapter": "まとめ",
-      "startFrame": 16897,
-      "startSeconds": 563.2333333333333,
-      "youtubeTime": "09:23"
+      "startFrame": 20223,
+      "startSeconds": 674.1,
+      "youtubeTime": "11:14"
     },
     {
       "chapter": "次回予告",
-      "startFrame": 17667,
-      "startSeconds": 588.9,
-      "youtubeTime": "09:48"
+      "startFrame": 21270,
+      "startSeconds": 709.0,
+      "youtubeTime": "11:49"
     }
-  ]
+  ],
+  "cast": [
+    "やめ太郎",
+    "たこさん"
+  ],
+  "narration": {
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "references": [
+      "02_CHARACTERS/Yametaro_voice.wav",
+      "02_CHARACTERS/Takosan_voice.wav"
+    ],
+    "note": "正典の声を参照した新規解説音声。作例の部分修復工程とは別。"
+  }
 }

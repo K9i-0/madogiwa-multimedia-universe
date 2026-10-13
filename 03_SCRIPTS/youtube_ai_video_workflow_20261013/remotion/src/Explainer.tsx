@@ -1,11 +1,12 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
 import rawManifest from './edit-manifest.json';
+import {DuoSprite} from './DuoSprite';
+import {memberColors} from '../../../00_TEMPLATES/subtitles/member-colors';
 
-type Dialogue = {id?: string; who: string; text: string; caption: string; captionFontSize?: number; view: string; chapter?: string; startFrame: number; durationInFrames: number; envelope: number[]};
+type Dialogue = {id?: string; who: string; text: string; caption: string; captionFontSize?: number; mood?: string; view: string; chapter?: string; startFrame: number; durationInFrames: number; envelope: number[]};
 type Clip = {src: string; startFrame: number; durationInFrames: number; sourceStartFrame: number; label: string; layout?: 'full' | 'comparison'; tag?: string};
 type Manifest = {dialogue: Dialogue[]; clips: Clip[]; creditsStartFrame: number; composition: {durationInFrames: number}};
-const m = rawManifest as Manifest;
 const ink = '#263e44', green = '#438255', purple = '#95527e', muted = '#61716d', paper = '#f6f3eb';
 const Title: React.FC<{children: React.ReactNode}> = ({children}) => <div style={{fontSize: 33, fontWeight: 700, lineHeight: 1.4, marginBottom: 24}}>{children}</div>;
 const Note: React.FC<{children: React.ReactNode}> = ({children}) => <div style={{fontSize: 23, lineHeight: 1.6, marginTop: 21, color: '#52666a'}}>{children}</div>;
@@ -61,10 +62,12 @@ const Center: React.FC<{view: string; localFrame: number; utterance?: Dialogue}>
     <div style={{fontSize: 28, lineHeight: 1.7}}>窓際族物語のAI制作術</div>
     <Note>{view === 'intro_ready' ? 'まず、実際に作った動画を見てみましょう。' : 'いつものAIとのものづくりを、動画へ。'}</Note>
   </>;
-  if (view === 'promise' && ['u006','u007'].includes(utterance?.id ?? '')) return <><Title>この動画で分かること</Title><Lines items={['制作の道具は、どう分担する？', '顔・声・編集を、どう仕上げる？', '費用と失敗を、次の制作にどう生かす？']}/><Note>実際の作品と、制作ログで見ていきます。</Note></>;
+  if (view === 'promise' && ['u005','u006','u007'].includes(utterance?.id ?? '')) return <><Title>この動画で分かること</Title><Lines items={['制作の道具は、どう分担する？', '顔・声・編集を、どう仕上げる？', '費用と失敗を、次の制作にどう生かす？']}/><Note>実際の作品と、制作ログで見ていきます。</Note></>;
+  if (view === 'intro_reaction') return <><Title>窓際族物語の動画制作</Title><Pair a="news.jpg" b="cm.jpg" al="架空ニュース" bl="架空CM"/><Note>この映像、どうやって作っている？</Note></>;
+  if (view === 'promise' && ['u003','u004'].includes(utterance?.id ?? '')) return <><Title>いつものAIから、動画づくりへ</Title><div style={{fontSize:39,color:green,margin:'25px 0'}}>Claude Code / Codex</div><Note>制作手順・素材・実行コードを用意した環境で</Note><Source>このリポジトリの作り方を、実例で紹介します。</Source></>;
   if (view === 'promise') return <><Eyebrow>今回分解するのは、このニュース</Eyebrow><Title>第53話「替え玉出社」</Title><Pic name="news.jpg" w={690} h={360}/><Source>窓際族物語／生成映像に音声修正と編集を加えた完成版</Source></>;
   if (view === 'roadmap') return <><Title>映像は、動画生成モデルが作る</Title><Workflow focus="all"/><Source>Codex・Claude Codeが、Wanへ生成の指示を渡す</Source></>;
-  if (view === 'roles') return <><Title>Codexが、動画制作の道具を動かす</Title><Workflow/><Source>この解説の二人の声はVOICEVOX</Source></>;
+  if (view === 'roles') return <><Title>Codexが、動画制作の道具を動かす</Title><Workflow/><Source>この解説の二人の声も、正典音声を参照したIrodoriで生成</Source></>;
   if (view === 'automation') return <><Title>操作は、会話からプログラムへ</Title><div style={{fontSize: 33, color: green, fontWeight: 700, marginBottom: 29}}>Codex / Claude Code</div><div style={{width: 710, display: 'grid', gridTemplateColumns: '190px 1fr 205px', alignItems: 'center', gap: 15, fontSize: 25, lineHeight: 1.8}}><div style={{textAlign: 'left'}}>Wan<br/>Irodori<br/>Remotion</div><div style={{color: muted}}>APIで呼び出す →<br/>コードで実行 →<br/>コマンドで実行 →</div><div style={{textAlign: 'left', color: green}}>動画生成<br/>音声の修正<br/>編集・書き出し</div></div><Note>編集ソフトのタイムライン操作なしで制作</Note></>;
   if (view === 'environment') return <><Title>リポジトリに、制作環境を用意する</Title><div style={{width: 650, textAlign: 'left', background: '#e8ebe3', padding: '24px 33px', borderRadius: 12, fontSize: 27, lineHeight: 1.9}}><span style={{color: green}}>制作リポジトリ</span><br/>├ キャラクター・音声の参照資料<br/>├ AIが読む制作手順（スキル）<br/>└ 道具を呼び出すコード</div><Note>Webアプリの開発環境を整える感覚で。</Note></>;
   if (view === 'human_review') return <><Title>人間が、作るものと採用を決める</Title><Row><Box>依頼する</Box><Arrow/><Box>結果を確認</Box><Arrow/><Box color={purple}>修正・採用</Box></Row><Note>映像を見る。声を聴く。意図に合っているか確かめる。</Note></>;
@@ -90,7 +93,7 @@ const Center: React.FC<{view: string; localFrame: number; utterance?: Dialogue}>
   if (view === 'price') return <><Title>30秒を、1回生成する料金</Title><div style={{display: 'flex', alignItems: 'flex-end', gap: 30, height: 287, width: 650}}>{[1.5, 3, 6].map((p, i) => <div key={i} style={{flex: 1}}><div style={{fontSize: 32, fontWeight: 700, marginBottom: 10}}>${p.toFixed(2)}</div><div style={{height: p * 29, background: [green, '#87976c', purple][i], borderRadius: '7px 7px 0 0'}}/><div style={{fontSize: 25, marginTop: 12}}>{['480p', '720p', '1080p'][i]}</div></div>)}</div><Note>通常表示価格／解像度で2倍・4倍に</Note><Source>Qwen Cloud / wan3.0-video｜2026-10-13確認｜動画生成分のみ<br/>確認時点で30%割引表示あり。適用条件・価格は実行時に確認。</Source></>;
   if (view === 'retry') return <><Title>不採用の生成分も、制作費。</Title><div style={{fontSize: 44, fontWeight: 700, margin: '18px 0 30px'}}>$1.50 × 3回 = <span style={{color: purple}}>$4.50</span></div><Row gap={16}>{['候補 1', '候補 2', '採用'].map((t, i) => <div key={t} style={{flex: 1, background: i === 2 ? '#dce8d7' : '#e8e5df', padding: '25px 10px', borderRadius: 10, fontSize: 27}}>{t}<div style={{fontSize: 21, marginTop: 11, color: muted}}>$1.50</div></div>)}</Row><Note>480p・30秒を3回生成／通常表示価格で計算</Note></>;
   if (view === 'resolution' || view === 'highres') return <><Title>{view === 'resolution' ? '低解像度で試して、採用方法を選ぶ' : '高解像度で再生成した結果も、確認する'}</Title><ResolutionBranches/></>;
-  if (view === 'choice') return <><Title>窓際動画は、480pを基本に採用</Title><Pair a="news_sobaya.jpg" b="park_sobaya.jpg" al="ニュース" bl="パークCM"/><Note>ネタ・会話が伝わることを優先<br/>予算を、次の一本にも使う</Note></>;
+  if (view === 'choice') return <><Title>窓際動画は、480pを基本に採用</Title><Pair a="news_sobaya.jpg" b="park_sobaya.jpg" al="ニュース" bl="架空CM"/><Note>ネタ・会話が伝わることを優先<br/>予算を、次の一本にも使う</Note></>;
   if (view === 'export') return <><Title>生成解像度と、完成出力を分ける</Title><div style={{width: 710, display: 'flex', flexDirection: 'column', gap: 24}}><div style={{textAlign: 'left', fontSize: 22, color: green}}>普段の投稿用</div><Row><Box small>480pで生成</Box><Arrow/><Box small>720pへ拡大<br/>字幕を追加</Box></Row><div style={{textAlign: 'left', fontSize: 22, color: purple, marginTop: 2}}>精細さが必要な場合</div><Row><Box small color={purple}>高解像度で<br/>再生成</Box><Arrow/><Box small color={purple}>演技・細部を<br/>あらためて確認</Box></Row></div><Source>通常の拡大だけで、元映像の細かい情報は増えない</Source></>;
   if (view === 'total') return <><Title>制作費は、生成料金だけではない</Title><Lines items={['動画生成の料金 × 試行回数', 'Codex・Claude Codeなどの利用料', '処理する環境・待ち時間・人の作業']}/><Note>何を含めた金額か、分けて考える。</Note></>;
   if (view === 'logs') return <><Eyebrow>完成動画の裏側に残るもの</Eyebrow><Title>失敗と修正を、次の制作へ</Title><div style={{width: 675, textAlign: 'left', fontSize: 25, lineHeight: 1.65}}>{[['v3', '音声1本が長すぎて、APIで拒否'], ['v4', '分割したが、合計時間でも拒否'], ['現在', '送信前に、各素材と合計を確認']].map(([v,t], i) => <div key={v} style={{display: 'flex', padding: '18px 0', gap: 22, borderBottom: i < 2 ? '1px solid #dce0d5' : undefined}}><span style={{color: i === 2 ? green : purple, width: 64, flexShrink: 0, fontWeight: 700}}>{v}</span><span>{t}</span></div>)}</div><Source>第53話の制作ログと、現在の実行コード</Source></>;
@@ -120,7 +123,8 @@ const ClipPlayer: React.FC<{clip: Clip}> = ({clip}) => {
   </AbsoluteFill>;
 };
 
-export const Explainer: React.FC = () => {
+export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({manifest, audioSrc='mixed.wav'}) => {
+  const m=manifest ?? rawManifest as Manifest;
   const f = useCurrentFrame();
   const active = m.dialogue.find(d => f >= d.startFrame && f < d.startFrame + d.durationInFrames);
   const previousIndex = m.dialogue.reduce((last, d, i) => f >= d.startFrame ? i : last, -1);
@@ -133,22 +137,20 @@ export const Explainer: React.FC = () => {
   const start = m.dialogue[sceneIndex]?.startFrame ?? 0;
   const appear = interpolate(f - start, [0, 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return <AbsoluteFill style={{background: paper, fontFamily: '"Hiragino Sans", sans-serif', color: ink}}>
-    <Audio src={staticFile('mixed.wav')}/>
+    <Audio src={staticFile(audioSrc)}/>
     {clip ? <ClipPlayer clip={clip}/> : credits ? <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontSize: 23, lineHeight: 2, textAlign: 'center'}}>
       <div style={{fontSize: 30, marginBottom: 24}}>窓際族物語 ／ 制作の裏側</div>
-      <div>音声：VOICEVOX:ずんだもん ／ VOICEVOX:四国めたん<br/>立ち絵：坂本アヒル<br/>導入：昼下がり気分 ／ KK<br/>本編：ほのぼのワルツ【リコーダー】／ エクシエ<br/>エンディング：TheFatRat - Unity<br/>資料映像・キャラクター：窓際族物語</div>
+      <div>出演：やめ太郎 ／ たこさん<br/>音声：Irodori-TTS（正典声質参照）<br/>立ち絵：窓際族物語<br/>導入：昼下がり気分 ／ KK<br/>本編：ほのぼのワルツ【リコーダー】／ エクシエ<br/>エンディング：TheFatRat - Unity<br/>資料映像・キャラクター：窓際族物語</div>
       <div style={{fontSize: 17, marginTop: 25}}>料金確認：2026年10月13日 ／ 出典・音源リンクは概要欄</div>
     </AbsoluteFill> : <>
       <div style={{position: 'absolute', left: 260, top: 24, width: 760, height: 531, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', opacity: appear, transform: `translateY(${(1 - appear) * 5}px)`}}><Center view={view} localFrame={f - start} utterance={previous}/></div>
-      {(['zunda', 'metan'] as const).map((who, i) => {
-        const speaking = active?.who === who;
-        const j = active ? f - active.startFrame : 0;
-        const open = speaking && (active?.envelope[j] ?? 0) > .023;
-        const blink = (f + (i ? 49 : 0)) % 157 < 4;
-        const surprise = speaking && who === 'zunda' && /顔が消|顔を消|2倍|出演|変身/.test(active?.text ?? '');
-        return <Img key={who} src={staticFile(`${who}_${blink ? 'blink' : surprise ? 'surprise' : 'normal'}_${Number(open)}.png`)} style={{position: 'absolute', left: i ? 1035 : 0, bottom: 0, width: 245, transform: who === 'zunda' ? 'scaleX(-1)' : undefined}}/>;
+      {(['yametaro','takosan'] as const).map(who => {
+        const speaking=active?.who===who; const local=active?f-active.startFrame:0;
+        const peak=Math.max(...(active?.envelope??[0]));
+        const open=speaking&&(active?.envelope[Math.floor(local/2)*2]??0)>Math.max(.0025,peak*.15);
+        return <DuoSprite key={who} who={who} speaking={speaking} open={open} surprise={speaking&&active?.mood==='surprise'} local={local}/>;
       })}
-      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 29, minHeight: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'zunda' ? '#347526' : '#884474', WebkitTextStroke: '5px #fff', paintOrder: 'stroke fill', textShadow: '0 2px 3px #0002'}}>{active.caption}</div></div>}
+      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 29, minHeight: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? memberColors.yametaro : memberColors.takosan, WebkitTextStroke: '5px #fff', paintOrder: 'stroke fill', textShadow: '0 2px 3px #0002'}}>{active.caption}</div></div>}
     </>}
     <AbsoluteFill style={{background: paper, opacity: interpolate(f, [m.composition.durationInFrames - 30, m.composition.durationInFrames - 1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}/>
   </AbsoluteFill>;

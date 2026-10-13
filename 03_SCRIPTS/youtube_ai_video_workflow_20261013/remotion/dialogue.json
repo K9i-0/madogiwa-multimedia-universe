@@ -3,992 +3,1123 @@
     "id": "u000",
     "chapter": "導入",
     "view": "opening",
-    "who": "zunda",
-    "text": "CodexやClaude Codeで、Webサイトやアプリは作っているけど、動画も作れるのだ？",
-    "caption": "CodexやClaude Codeで、Webサイトやアプリは\n作っているけど、動画も作れるのだ？",
-    "pause": 18
+    "who": "takosan",
+    "text": "Claude CodeやCodexで、動画づくりも始めてみませんか。",
+    "caption": "Claude CodeやCodexで、\n動画づくりも始めてみませんか。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u001",
     "chapter": "導入",
-    "view": "opening",
-    "who": "metan",
-    "text": "動画を生成するAIや、編集の道具を組み合わせれば、制作の操作も会話で進められるわ。",
-    "caption": "動画を生成するAIや、編集の道具を組み合わせれば、\n制作の操作も会話で進められるわ。",
-    "pause": 12
+    "view": "intro_ready",
+    "who": "takosan",
+    "text": "まずは、窓際族物語で実際に作った動画をご覧ください。",
+    "caption": "まずは、窓際族物語で実際に作った動画をご覧ください。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u002",
     "chapter": "導入",
-    "view": "opening",
-    "who": "metan",
-    "text": "今回は、普段AIでものづくりをしている人に向けて、その作り方を紹介するわね。",
-    "caption": "今回は、普段AIでものづくりをしている人に向けて、\nその作り方を紹介するわね。",
-    "pause": 12
+    "view": "intro_reaction",
+    "who": "yametaro",
+    "text": "窓際族物語の動画は相変わらずアホやな〜",
+    "caption": "窓際族物語の動画は相変わらずアホやな〜",
+    "pause": 12,
+    "mood": "surprise",
+    "reading": "まどぎわぞくものがたりの動画は、相変わらずアホやなあ。",
+    "durationScale": 0.85
   },
   {
     "id": "u003",
     "chapter": "導入",
-    "view": "intro_ready",
-    "who": "metan",
-    "text": "まず、実際に作った動画を見てみましょう。",
-    "caption": "まず、実際に作った動画を見てみましょう。",
-    "pause": 12
+    "view": "promise",
+    "who": "yametaro",
+    "text": "たこさんワイも窓際族物語の動画を作ってみたいやで",
+    "caption": "たこさんワイも\n窓際族物語の動画を作ってみたいやで",
+    "pause": 12,
+    "mood": "normal",
+    "reading": "たこさん、ワイも、まどぎわぞくものがたりの動画を作ってみたいやで。",
+    "durationScale": 0.85
   },
   {
     "id": "u004",
     "chapter": "導入",
     "view": "promise",
-    "who": "zunda",
-    "text": "作れるジャンルは広いのに、会社員の行動がおかしいのだ。",
-    "caption": "作れるジャンルは広いのに、\n会社員の行動がおかしいのだ。",
-    "pause": 18
+    "who": "takosan",
+    "text": "Claude CodeやCodexを普段使ってる方なら簡単に作れますよ！",
+    "caption": "Claude CodeやCodexを\n普段使ってる方なら簡単に作れますよ！",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u005",
     "chapter": "導入",
     "view": "promise",
-    "who": "metan",
-    "text": "「窓際族物語」というシリーズよ。今回は、このニュースができるまでを分解してみましょう。",
-    "caption": "「窓際族物語」というシリーズよ。今回は、\nこのニュースができるまでを分解してみましょう。",
-    "pause": 12
+    "who": "takosan",
+    "text": "このニュースを例に、道具の分担と、顔や声をそろえる工夫を見ていきましょう。",
+    "caption": "このニュースを例に、道具の分担と、\n顔や声をそろえる工夫を見ていきましょう。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u006",
     "chapter": "導入",
     "view": "promise",
-    "who": "metan",
-    "text": "使う道具の分担、顔や声をそろえて完成させる工夫。",
-    "caption": "使う道具の分担、顔や声をそろえて完成させる工夫。",
-    "pause": 12
+    "who": "yametaro",
+    "text": "ワイでもできるんか。ついでに、いくらかかるかも知りたいわ。",
+    "caption": "ワイでもできるんか。ついでに、\nいくらかかるかも知りたいわ。",
+    "pause": 12,
+    "mood": "normal",
+    "reading": "ワイでもできるんか。ついでに、いくらかかるかも知りたいわ。",
+    "durationScale": 0.85
   },
   {
     "id": "u007",
     "chapter": "導入",
     "view": "promise",
-    "who": "metan",
-    "text": "そして、費用を抑えながら、制作の経験を次へ残す方法を見ていくわ。",
-    "caption": "そして、費用を抑えながら、\n制作の経験を次へ残す方法を見ていくわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "料金と、制作の経験を次に残す方法もご紹介します。",
+    "caption": "料金と、制作の経験を次に残す方法もご紹介します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u008",
     "chapter": "道具の分担",
     "view": "roadmap",
-    "who": "zunda",
-    "text": "この映像も、Codexが直接描いているのだ？",
-    "caption": "この映像も、Codexが直接描いているのだ？",
-    "pause": 18
+    "who": "yametaro",
+    "text": "この映像も、Codexが直接描いてるんか？",
+    "caption": "この映像も、Codexが直接描いてるんか？",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u009",
     "chapter": "道具の分担",
     "view": "roadmap",
-    "who": "metan",
-    "text": "映像を生成しているのは、Wan 3.0という動画生成モデルよ。",
-    "caption": "映像を生成しているのは、\nWan 3.0という動画生成モデルよ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "映像を生成しているのは、Wan 3.0という動画生成モデルです。",
+    "caption": "映像を生成しているのは、\nWan 3.0という動画生成モデルです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u010",
     "chapter": "道具の分担",
     "view": "roadmap",
-    "who": "metan",
-    "text": "CodexやClaude Codeは、依頼を整理してプロンプトを作り、必要な道具を操作する役割ね。",
-    "caption": "CodexやClaude Codeは、依頼を整理して\nプロンプトを作り、必要な道具を操作する役割ね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "CodexやClaude Codeは、依頼を整理してプロンプトを作り、必要な道具を操作します。",
+    "caption": "CodexやClaude Codeは、\n依頼を整理してプロンプトを作り、必要な道具を操作します。",
+    "pause": 12,
+    "mood": "normal",
+    "captionFontSize": 27
   },
   {
     "id": "u011",
     "chapter": "道具の分担",
     "view": "roadmap",
-    "who": "zunda",
-    "text": "いつものAIが、動画を作るAIに指示を出すのだな。",
-    "caption": "いつものAIが、動画を作るAIに指示を出すのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "いつものAIが、動画を作るAIに指示を出すんやな。",
+    "caption": "いつものAIが、動画を作るAIに指示を出すんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u012",
     "chapter": "道具の分担",
     "view": "roles",
-    "who": "metan",
-    "text": "そう。Wanは映像と音声を生成する。必要な声の修正にはIrodori。",
-    "caption": "そう。Wanは映像と音声を生成する。\n必要な声の修正にはIrodori。",
-    "pause": 12
+    "who": "takosan",
+    "text": "はい。Wanは映像と音声を生成します。必要な声の修正にはIrodoriを使います。",
+    "caption": "はい。Wanは映像と音声を生成します。\n必要な声の修正にはIrodoriを使います。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u013",
     "chapter": "道具の分担",
     "view": "roles",
-    "who": "metan",
-    "text": "字幕やテロップ、音量や間の調整にはRemotionを使うわ。",
-    "caption": "字幕やテロップ、\n音量や間の調整にはRemotionを使うわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "字幕やテロップ、音量や間の調整にはRemotionを使います。",
+    "caption": "字幕やテロップ、\n音量や間の調整にはRemotionを使います。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u014",
     "chapter": "道具の分担",
     "view": "automation",
-    "who": "zunda",
-    "text": "その道具の画面を、順番に操作するのだ？",
-    "caption": "その道具の画面を、順番に操作するのだ？",
-    "pause": 18
+    "who": "yametaro",
+    "text": "その道具の画面を、順番に操作するんか？",
+    "caption": "その道具の画面を、順番に操作するんか？",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u015",
     "chapter": "道具の分担",
     "view": "automation",
-    "who": "metan",
-    "text": "この制作では、操作はすべてCodexやClaude Codeを通しているの。",
-    "caption": "この制作では、\n操作はすべてCodexやClaude Codeを通しているの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "この制作では、操作はすべてCodexやClaude Codeを通しています。",
+    "caption": "この制作では、\n操作はすべてCodexやClaude Codeを通しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u016",
     "chapter": "道具の分担",
     "view": "automation",
-    "who": "metan",
-    "text": "Wanは、プログラムから呼び出せるAPIを利用する。IrodoriやRemotionも、コードやコマンドで実行するわ。",
-    "caption": "Wanは、プログラムから呼び出せるAPIを利用する。\nIrodoriやRemotionも、コードやコマンドで実行するわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "Wanは、プログラムから呼び出せるAPIを利用します。IrodoriやRemotionもコードやコマンドで実行します。",
+    "caption": "Wanは、プログラムから呼び出せるAPIを利用します。\nIrodoriやRemotionもコードやコマンドで実行します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u017",
     "chapter": "道具の分担",
     "view": "environment",
-    "who": "metan",
-    "text": "そのために、制作手順や参照資料、実行用のコードをリポジトリへ用意しているの。",
-    "caption": "そのために、制作手順や参照資料、\n実行用のコードをリポジトリへ用意しているの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "そのために、制作手順や参照資料、実行用のコードをリポジトリへ用意しているんです。",
+    "caption": "そのために、制作手順や参照資料、\n実行用のコードをリポジトリへ用意しているんです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u018",
     "chapter": "道具の分担",
     "view": "environment",
-    "who": "zunda",
-    "text": "Webアプリの開発環境みたいに、動画を作る環境も整えてあるのだな。",
-    "caption": "Webアプリの開発環境みたいに、\n動画を作る環境も整えてあるのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "Webアプリみたいに、動画を作る環境も整えてあるんやな。",
+    "caption": "Webアプリみたいに、\n動画を作る環境も整えてあるんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u019",
     "chapter": "道具の分担",
     "view": "human_review",
-    "who": "metan",
-    "text": "人間は、何を作るかを伝えて、結果を見て、直すところを決める。",
-    "caption": "人間は、何を作るかを伝えて、\n結果を見て、直すところを決める。",
-    "pause": 12
+    "who": "takosan",
+    "text": "人間は、何を作るかを伝えて、結果を見て、直すところを決めます。",
+    "caption": "人間は、何を作るかを伝えて、\n結果を見て、直すところを決めます。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u020",
     "chapter": "道具の分担",
     "view": "human_review",
-    "who": "metan",
-    "text": "編集ソフトのタイムラインを、手でドラッグする作業はしていないわ。",
-    "caption": "編集ソフトのタイムラインを、\n手でドラッグする作業はしていないわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "編集ソフトのタイムラインを、手でドラッグする作業はしていません。",
+    "caption": "編集ソフトのタイムラインを、\n手でドラッグする作業はしていません。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u021",
     "chapter": "依頼と生成指示",
     "view": "request",
-    "who": "metan",
-    "text": "このニュースなら、出発点はこんな内容。これを、AIと相談しながら台本と映像の指示へ具体化していくの。",
-    "caption": "このニュースなら、出発点はこんな内容。これを、\nAIと相談しながら台本と映像の指示へ具体化していくの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "このニュースなら、出発点はこんな内容です。AIと相談しながら台本と映像の指示へ具体化します。",
+    "caption": "このニュースなら、出発点はこんな内容です。\nAIと相談しながら台本と映像の指示へ具体化します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u022",
     "chapter": "依頼と生成指示",
     "view": "request",
-    "who": "zunda",
-    "text": "働かないための準備だけ、妙に手が込んでいるのだ。",
-    "caption": "働かないための準備だけ、妙に手が込んでいるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "働かんための準備だけ、妙に手が込んどるな。",
+    "caption": "働かんための準備だけ、妙に手が込んどるな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u023",
     "chapter": "依頼と生成指示",
     "view": "prompt_evidence",
-    "who": "metan",
-    "text": "たとえば、身代わりの福ギュンが仮面を着けても、体格までそば屋さんに変わったら困るでしょう。",
-    "caption": "たとえば、身代わりの福ギュンが仮面を着けても、\n体格までそば屋さんに変わったら困るでしょう。",
-    "pause": 12
+    "who": "takosan",
+    "text": "たとえば、身代わりの福ギュンさんが仮面を着けても、体格までそば屋さんに変わったら困りますよね。",
+    "caption": "たとえば、身代わりの福ギュンさんが仮面を着けても、\n体格までそば屋さんに変わったら困りますよね。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u024",
     "chapter": "依頼と生成指示",
     "view": "prompt_evidence",
-    "who": "metan",
-    "text": "誰の顔、誰の体格、どの仮面なのかを分けて指示しているわ。",
-    "caption": "誰の顔、誰の体格、\nどの仮面なのかを分けて指示しているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "誰の顔、誰の体格、どの仮面なのかを分けて指示しています。",
+    "caption": "誰の顔、誰の体格、\nどの仮面なのかを分けて指示しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u025",
     "chapter": "依頼と生成指示",
     "view": "prompt_evidence",
-    "who": "zunda",
-    "text": "仮面を着けたら、別人へ変身してしまう可能性があるのだな。",
-    "caption": "仮面を着けたら、\n別人へ変身してしまう可能性があるのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "仮面を着けただけで、別人に変身されたらあかんな。",
+    "caption": "仮面を着けただけで、別人に変身されたらあかんな。",
+    "pause": 18,
+    "mood": "surprise"
   },
   {
     "id": "u026",
     "chapter": "依頼と生成指示",
     "view": "prompt_model",
-    "who": "metan",
-    "text": "こうした条件を整理するので、指示を考える側のモデルの性能も大事なの。",
-    "caption": "こうした条件を整理するので、\n指示を考える側のモデルの性能も大事なの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "こうした条件を整理するので、指示を考える側のモデルの性能も大事です。",
+    "caption": "こうした条件を整理するので、\n指示を考える側のモデルの性能も大事です。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u027",
     "chapter": "依頼と生成指示",
     "view": "prompt_model",
-    "who": "metan",
-    "text": "依頼の意図や演出を落とすと、動画生成モデルにも違う指示が届いてしまうわ。",
-    "caption": "依頼の意図や演出を落とすと、\n動画生成モデルにも違う指示が届いてしまうわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "依頼の意図や演出を落とすと、動画生成モデルにも違う指示が届いてしまいます。",
+    "caption": "依頼の意図や演出を落とすと、\n動画生成モデルにも違う指示が届いてしまいます。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u028",
     "chapter": "依頼と生成指示",
     "view": "prompt_model",
-    "who": "zunda",
-    "text": "動画のモデル選びに加えて、いつも使っているAIの仕事ぶりも効いてくるのだ。",
-    "caption": "動画のモデル選びに加えて、\nいつも使っているAIの仕事ぶりも効いてくるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "動画のモデル選びだけやなく、いつものAIの仕事ぶりも効いてくるんやな。",
+    "caption": "動画のモデル選びだけやなく、\nいつものAIの仕事ぶりも効いてくるんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u029",
     "chapter": "依頼と生成指示",
     "view": "prompt_model",
-    "who": "metan",
-    "text": "だから、生成前にも台本を読む。誰が何をするか、見せる順序やオチが残っているかを確認するの。",
-    "caption": "だから、生成前にも台本を読む。誰が何をするか、\n見せる順序やオチが残っているかを確認するの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "だから、生成前にも台本を読みます。誰が何をするか、見せる順序やオチが残っているかを確認します。",
+    "caption": "だから、生成前にも台本を読みます。誰が何をするか、\n見せる順序やオチが残っているかを確認します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u030",
     "chapter": "キャラクターの資料",
     "view": "sheet_identity",
-    "who": "zunda",
-    "text": "ところで、毎回同じ人を出すのは、文章だけで指定するのだ？",
-    "caption": "ところで、毎回同じ人を出すのは、\n文章だけで指定するのだ？",
-    "pause": 18
+    "who": "yametaro",
+    "text": "ところで、毎回同じ人を出すのは、文章だけで指定するんか？",
+    "caption": "ところで、毎回同じ人を出すのは、\n文章だけで指定するんか？",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u031",
     "chapter": "キャラクターの資料",
     "view": "sheet_identity",
-    "who": "metan",
-    "text": "基準になるキャラクターシートを、画像で渡しているわ。",
-    "caption": "基準になるキャラクターシートを、画像で渡しているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "基準になるキャラクターシートを、画像で渡しています。",
+    "caption": "基準になるキャラクターシートを、画像で渡しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u032",
     "chapter": "キャラクターの資料",
     "view": "sheet_identity",
-    "who": "metan",
-    "text": "顔、髪型、体格などを見せることで、別の作品でも同じ人物として登場させやすくなるの。",
-    "caption": "顔、髪型、体格などを見せることで、\n別の作品でも同じ人物として登場させやすくなるの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "顔や髪型、体格を見せることで、別の作品でも同じ人物として登場させやすくなるんです。",
+    "caption": "顔や髪型、体格を見せることで、\n別の作品でも同じ人物として登場させやすくなるんです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u033",
     "chapter": "キャラクターの資料",
     "view": "fuku_sheet",
-    "who": "zunda",
-    "text": "衣装や場所が変わっても、本人だと分かるのだ。",
-    "caption": "衣装や場所が変わっても、本人だと分かるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "衣装も場所も違うのに、福ギュンやって分かるな。",
+    "caption": "衣装も場所も違うのに、福ギュンやって分かるな。",
+    "pause": 18,
+    "mood": "normal",
+    "durationScale": 0.85,
+    "reading": "衣装も場所も違うのに、フクギュンやって分かるな。"
   },
   {
     "id": "u034",
     "chapter": "キャラクターの資料",
     "view": "fuku_sheet",
-    "who": "metan",
-    "text": "ただし、渡せば必ず一致するわけではないから、生成後にも確認するわ。",
-    "caption": "ただし、渡せば必ず一致するわけではないから、\n生成後にも確認するわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "ただし、渡せば必ず一致するわけではないので、生成後にも確認します。",
+    "caption": "ただし、渡せば必ず一致するわけではないので、\n生成後にも確認します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u035",
     "chapter": "キャラクターの資料",
     "view": "faceless",
-    "who": "zunda",
-    "text": "この全身のほう、顔が消えているのだ。",
-    "caption": "この全身のほう、顔が消えているのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "この全身のほう、顔が消えてるやん。",
+    "caption": "この全身のほう、顔が消えてるやん。",
+    "pause": 18,
+    "mood": "surprise"
   },
   {
     "id": "u036",
     "chapter": "キャラクターの資料",
     "view": "faceless",
-    "who": "metan",
-    "text": "実写メンバーでは、あえてそうしているの。全身を一枚に収めると、顔が小さくなるでしょう。",
-    "caption": "実写メンバーでは、あえてそうしているの。\n全身を一枚に収めると、顔が小さくなるでしょう。",
-    "pause": 12
+    "who": "takosan",
+    "text": "実写メンバーでは、あえてそうしています。全身を一枚に収めると、顔が小さくなりますよね。",
+    "caption": "実写メンバーでは、あえてそうしています。\n全身を一枚に収めると、顔が小さくなりますよね。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u037",
     "chapter": "キャラクターの資料",
     "view": "faceless",
-    "who": "metan",
-    "text": "その粗い顔に引っ張られて、本人の顔の再現精度が落ちることがあるのよ。",
-    "caption": "その粗い顔に引っ張られて、\n本人の顔の再現精度が落ちることがあるのよ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "その粗い顔に引っ張られて、本人の顔の再現精度が落ちることがあるんです。",
+    "caption": "その粗い顔に引っ張られて、\n本人の顔の再現精度が落ちることがあるんです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u038",
     "chapter": "キャラクターの資料",
     "view": "ref_roles",
-    "who": "zunda",
-    "text": "顔の資料を増やしたつもりが、基準を曖昧にしてしまうのだな。",
-    "caption": "顔の資料を増やしたつもりが、\n基準を曖昧にしてしまうのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "顔の資料を増やしたつもりが、かえって迷わせるんやな。",
+    "caption": "顔の資料を増やしたつもりが、かえって迷わせるんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u039",
     "chapter": "キャラクターの資料",
     "view": "ref_roles",
-    "who": "metan",
+    "who": "takosan",
     "text": "だから、顔は大きく鮮明な写真。全身は体格や服装。",
     "caption": "だから、顔は大きく鮮明な写真。全身は体格や服装。",
-    "pause": 12
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u040",
     "chapter": "キャラクターの資料",
     "view": "ref_roles",
-    "who": "metan",
-    "text": "それぞれ何を参考にしてほしいか、役割を分けているわ。",
-    "caption": "それぞれ何を参考にしてほしいか、役割を分けているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "それぞれ何を参考にしてほしいか、役割を分けています。",
+    "caption": "それぞれ何を参考にしてほしいか、役割を分けています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u041",
     "chapter": "生成と音声修正",
     "view": "generate",
-    "who": "metan",
-    "text": "人物の資料と台本がそろったら、Wanで動画を生成する。",
-    "caption": "人物の資料と台本がそろったら、Wanで動画を生成する。",
-    "pause": 12
+    "who": "takosan",
+    "text": "人物の資料と台本がそろったら、Wanで動画を生成します。",
+    "caption": "人物の資料と台本がそろったら、\nWanで動画を生成します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u042",
     "chapter": "生成と音声修正",
     "view": "voice_sources",
-    "who": "metan",
-    "text": "このニュースでは、アナウンサーの声の見本も渡しているわ。",
-    "caption": "このニュースでは、\nアナウンサーの声の見本も渡しているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "このニュースでは、アナウンサーの声の見本も渡しています。",
+    "caption": "このニュースでは、\nアナウンサーの声の見本も渡しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u043",
     "chapter": "生成と音声修正",
     "view": "voice_sources",
-    "who": "zunda",
-    "text": "声の見本と、読ませたい台詞は別に用意するのだな。",
-    "caption": "声の見本と、読ませたい台詞は別に用意するのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "声の見本と、読ませたい台詞は別に用意するんやな。",
+    "caption": "声の見本と、読ませたい台詞は別に用意するんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u044",
     "chapter": "生成と音声修正",
     "view": "voice_sources",
-    "who": "metan",
-    "text": "そう。画面内で話す場面では、Wanが映像と一緒に生成した声を生かす。",
-    "caption": "そう。画面内で話す場面では、\nWanが映像と一緒に生成した声を生かす。",
-    "pause": 12
+    "who": "takosan",
+    "text": "そうです。画面内で話す場面では、Wanが映像と一緒に生成した声を生かします。",
+    "caption": "そうです。画面内で話す場面では、\nWanが映像と一緒に生成した声を生かします。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u045",
     "chapter": "生成と音声修正",
     "view": "voice_problem",
-    "who": "metan",
-    "text": "ただ、日本語の読み間違いや、言葉の抜けが起きることもあるの。",
-    "caption": "ただ、日本語の読み間違いや、\n言葉の抜けが起きることもあるの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "ただ、日本語の読み間違いや、言葉の抜けが起きることもあります。",
+    "caption": "ただ、日本語の読み間違いや、\n言葉の抜けが起きることもあります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u046",
     "chapter": "生成と音声修正",
     "view": "voice_problem",
-    "who": "zunda",
-    "text": "顔も動きもよかったのに、一言だけ違うと悩むのだ。",
-    "caption": "顔も動きもよかったのに、一言だけ違うと悩むのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "顔も動きもええのに、一言だけ違うと悩むわ。",
+    "caption": "顔も動きもええのに、一言だけ違うと悩むわ。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u047",
     "chapter": "生成と音声修正",
     "view": "news_patch",
-    "who": "metan",
-    "text": "このニュースでは、冒頭の「速報です」を、Irodoriで用意した音声に差し替えているわ。",
-    "caption": "このニュースでは、冒頭の「速報です」を、\nIrodoriで用意した音声に差し替えているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "このニュースでは、冒頭の「速報です」を、Irodoriで用意した音声に差し替えています。",
+    "caption": "このニュースでは、冒頭の「速報です」を、\nIrodoriで用意した音声に差し替えています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u048",
     "chapter": "生成と音声修正",
     "view": "patch_cost",
-    "who": "zunda",
-    "text": "この修正のために、動画を丸ごと生成し直したのだ？",
-    "caption": "この修正のために、動画を丸ごと生成し直したのだ？",
-    "pause": 18
+    "who": "yametaro",
+    "text": "その一言のために、動画を丸ごと作り直したんか？",
+    "caption": "その一言のために、動画を丸ごと作り直したんか？",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u049",
     "chapter": "生成と音声修正",
     "view": "patch_cost",
-    "who": "metan",
-    "text": "この音声修正では、動画生成APIを再送していないわ。",
-    "caption": "この音声修正では、動画生成APIを再送していないわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "この音声修正では、動画生成APIを再送していません。",
+    "caption": "この音声修正では、動画生成APIを再送していません。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u050",
     "chapter": "生成と音声修正",
     "view": "patch_cost",
-    "who": "metan",
-    "text": "映像を残して、必要な声の部分を直しているの。",
-    "caption": "映像を残して、必要な声の部分を直しているの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "映像を残して、必要な声の部分を直しています。",
+    "caption": "映像を残して、必要な声の部分を直しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u051",
     "chapter": "生成と音声修正",
     "view": "park_intro",
-    "who": "metan",
-    "text": "別の回では、短い言葉だけ生成すると長すぎて、元の尺に入らなかった。",
-    "caption": "別の回では、短い言葉だけ生成すると長すぎて、\n元の尺に入らなかった。",
-    "pause": 12
+    "who": "takosan",
+    "text": "別の回では、短い言葉だけ生成すると長すぎて、元の尺に入りませんでした。",
+    "caption": "別の回では、短い言葉だけ生成すると長すぎて、\n元の尺に入りませんでした。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u052",
     "chapter": "生成と音声修正",
     "view": "park_method",
-    "who": "metan",
-    "text": "そこで一文を生成して、必要な部分を切り出す方法も試したわ。",
-    "caption": "そこで一文を生成して、\n必要な部分を切り出す方法も試したわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "そこで一文を生成して、必要な部分を切り出す方法も試しました。",
+    "caption": "そこで一文を生成して、\n必要な部分を切り出す方法も試しました。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u053",
     "chapter": "生成と音声修正",
     "view": "park_method",
-    "who": "zunda",
-    "text": "一語を直すにも、作り方の工夫があるのだ。",
-    "caption": "一語を直すにも、作り方の工夫があるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "一語直すだけでも、そんな工夫があるんやな。",
+    "caption": "一語直すだけでも、そんな工夫があるんやな。",
+    "pause": 18,
+    "mood": "normal",
+    "durationScale": 0.85
   },
   {
     "id": "u054",
     "chapter": "生成と音声修正",
     "view": "sync",
-    "who": "metan",
-    "text": "ただし、音声を替えても口の動きは変わらない。声の調子、長さ、口とのずれを確認する必要があるわ。",
-    "caption": "ただし、音声を替えても口の動きは変わらない。\n声の調子、長さ、口とのずれを確認する必要があるわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "ただし、音声を替えても口の動きは変わりません。声の調子、長さ、口とのずれを確認します。",
+    "caption": "ただし、音声を替えても口の動きは変わりません。\n声の調子、長さ、口とのずれを確認します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u055",
     "chapter": "生成と音声修正",
     "view": "offscreen",
-    "who": "metan",
-    "text": "ニュースの長い説明は、資料映像に声を重ねる構成も使っているの。",
-    "caption": "ニュースの長い説明は、\n資料映像に声を重ねる構成も使っているの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "ニュースの長い説明は、資料映像に声を重ねる構成も使っています。",
+    "caption": "ニュースの長い説明は、\n資料映像に声を重ねる構成も使っています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u056",
     "chapter": "生成と音声修正",
     "view": "offscreen",
-    "who": "metan",
-    "text": "何を直すかに加えて、どう見せるかも大切ね。",
-    "caption": "何を直すかに加えて、どう見せるかも大切ね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "何を直すかに加えて、どう見せるかも大切です。",
+    "caption": "何を直すかに加えて、どう見せるかも大切です。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u057",
     "chapter": "編集",
     "view": "news_before",
-    "who": "metan",
-    "text": "次は編集。見出しや字幕、局のロゴは、Remotionで正確に配置するわ。",
-    "caption": "次は編集。見出しや字幕、局のロゴは、\nRemotionで正確に配置するわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "次は編集です。見出しや字幕、局のロゴは、Remotionで正確に配置します。",
+    "caption": "次は編集です。見出しや字幕、局のロゴは、\nRemotionで正確に配置します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u058",
     "chapter": "編集",
     "view": "news_after",
-    "who": "zunda",
-    "text": "テロップが付くと、急にちゃんとした報道になるのだ。",
-    "caption": "テロップが付くと、急にちゃんとした報道になるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "テロップが付いたら、急にちゃんとした報道になるやん。",
+    "caption": "テロップが付いたら、急にちゃんとした報道になるやん。",
+    "pause": 18,
+    "mood": "surprise"
   },
   {
     "id": "u059",
     "chapter": "編集",
     "view": "news_after",
-    "who": "metan",
-    "text": "事件の内容は、そのままだけれどね。",
-    "caption": "事件の内容は、そのままだけれどね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "事件の内容は、そのままですけどね。",
+    "caption": "事件の内容は、そのままですけどね。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u060",
     "chapter": "編集",
     "view": "edit_demo",
-    "who": "metan",
-    "text": "文字や位置、表示する時間をコードで管理しているので、修正も会話で頼める。",
-    "caption": "文字や位置、表示する時間をコードで管理しているので、\n修正も会話で頼める。",
-    "pause": 12
+    "who": "takosan",
+    "text": "文字や位置、表示する時間をコードで管理しているので、修正も会話で頼めます。",
+    "caption": "文字や位置、表示する時間をコードで管理しているので、\n修正も会話で頼めます。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u061",
     "chapter": "編集",
     "view": "edit_demo",
-    "who": "metan",
-    "text": "同じレイアウトを、次の作品へ使い回すこともできるわ。",
-    "caption": "同じレイアウトを、次の作品へ使い回すこともできるわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "同じレイアウトを、次の作品へ使い回すこともできます。",
+    "caption": "同じレイアウトを、次の作品へ使い回すこともできます。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u062",
     "chapter": "編集",
     "view": "edit_demo",
-    "who": "zunda",
-    "text": "Webサイトの見た目を直すときと、感覚が近いのだ。",
-    "caption": "Webサイトの見た目を直すときと、感覚が近いのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "Webサイトの見た目を直すときと、感覚が近いな。",
+    "caption": "Webサイトの見た目を直すときと、感覚が近いな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u063",
     "chapter": "編集",
     "view": "repair",
-    "who": "metan",
-    "text": "字幕の位置は編集で直せる。でも、顔や演技そのものが違うなら、生成素材の見直しが必要。",
-    "caption": "字幕の位置は編集で直せる。でも、顔や演技そのものが\n違うなら、生成素材の見直しが必要。",
-    "pause": 12
+    "who": "takosan",
+    "text": "字幕の位置は編集で直せます。でも、顔や演技そのものが違うなら、生成素材の見直しが必要です。",
+    "caption": "字幕の位置は編集で直せます。でも、\n顔や演技そのものが違うなら、生成素材の見直しが必要です。",
+    "pause": 12,
+    "mood": "normal",
+    "captionFontSize": 27
   },
   {
     "id": "u064",
     "chapter": "編集",
     "view": "repair",
-    "who": "metan",
-    "text": "問題に合った直し方を選ぶの。",
-    "caption": "問題に合った直し方を選ぶの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "問題に合った直し方を選びます。",
+    "caption": "問題に合った直し方を選びます。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u065",
     "chapter": "費用と解像度",
     "view": "price",
-    "who": "zunda",
-    "text": "そろそろ、何回まで失敗していいのか、お財布にも聞きたいのだ。",
-    "caption": "そろそろ、何回まで失敗していいのか、\nお財布にも聞きたいのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "そろそろ、何回まで失敗してええか、ワイの財布にも聞きたいわ。",
+    "caption": "そろそろ、何回まで失敗してええか、\nワイの財布にも聞きたいわ。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u066",
     "chapter": "費用と解像度",
     "view": "price",
-    "who": "metan",
-    "text": "今回使っているQwen CloudのWan 3.0では、生成料金は秒数と解像度で変わるわ。",
-    "caption": "今回使っているQwen CloudのWan 3.0では、\n生成料金は秒数と解像度で変わるわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "今回使っているQwen CloudのWan 3.0では、生成料金は秒数と解像度で変わります。",
+    "caption": "今回使っているQwen CloudのWan 3.0では、\n生成料金は秒数と解像度で変わります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u067",
     "chapter": "費用と解像度",
     "view": "price",
-    "who": "metan",
-    "text": "通常表示価格で30秒なら、480pは1ドル50セント、720pは3ドル、1080pは6ドル。",
-    "caption": "通常表示価格で30秒なら、480pは1ドル50セント、\n720pは3ドル、1080pは6ドル。",
-    "pause": 12
+    "who": "takosan",
+    "text": "通常表示価格で30秒なら、480pは1ドル50セント、720pは3ドル、1080pは6ドルです。",
+    "caption": "通常表示価格で30秒なら、480pは1ドル50セント、\n720pは3ドル、1080pは6ドルです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u068",
     "chapter": "費用と解像度",
     "view": "price",
-    "who": "zunda",
-    "text": "同じ長さでも、2倍、4倍になるのだ。",
-    "caption": "同じ長さでも、2倍、4倍になるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "同じ長さでも、2倍、4倍になるんか。",
+    "caption": "同じ長さでも、2倍、4倍になるんか。",
+    "pause": 18,
+    "mood": "surprise"
   },
   {
     "id": "u069",
     "chapter": "費用と解像度",
     "view": "retry",
-    "who": "metan",
-    "text": "さらに、480pで30秒を3回生成したら4ドル50セント。",
-    "caption": "さらに、480pで30秒を3回生成したら4ドル50セント。",
-    "pause": 12
+    "who": "takosan",
+    "text": "さらに、480pで30秒を3回生成したら4ドル50セントです。",
+    "caption": "さらに、\n480pで30秒を3回生成したら4ドル50セントです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u070",
     "chapter": "費用と解像度",
     "view": "retry",
-    "who": "metan",
-    "text": "一つだけ採用しても、生成した分の費用で考える必要があるわ。",
-    "caption": "一つだけ採用しても、\n生成した分の費用で考える必要があるわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "一つだけ採用しても、生成した分の費用で考える必要があります。",
+    "caption": "一つだけ採用しても、\n生成した分の費用で考える必要があります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u071",
     "chapter": "費用と解像度",
     "view": "retry",
-    "who": "zunda",
-    "text": "完成動画に出なかった二本も、お財布には出演しているのだ。",
-    "caption": "完成動画に出なかった二本も、\nお財布には出演しているのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "完成動画に出えへん二本も、財布には出演しとるんやな。",
+    "caption": "完成動画に出えへん二本も、財布には出演しとるんやな。",
+    "pause": 18,
+    "mood": "surprise"
   },
   {
     "id": "u072",
     "chapter": "費用と解像度",
     "view": "resolution",
-    "who": "metan",
-    "text": "だから、まず低解像度で構図や演出を試す。画質が必要な作品は、最後に高解像度で生成する進め方があるの。",
-    "caption": "だから、まず低解像度で構図や演出を試す。\n画質が必要な作品は、最後に高解像度で生成する進め方があるの。",
+    "who": "takosan",
+    "text": "だから、まず低解像度で構図や演出を試します。",
+    "caption": "だから、まず低解像度で構図や演出を試します。",
     "pause": 12,
-    "captionFontSize": 26
+    "mood": "normal"
+  },
+  {
+    "id": "u072b",
+    "chapter": "費用と解像度",
+    "view": "resolution",
+    "who": "takosan",
+    "text": "画質が必要な作品は、最後に高解像度で生成する進め方があります。",
+    "caption": "画質が必要な作品は、\n最後に高解像度で生成する進め方があります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u073",
     "chapter": "費用と解像度",
     "view": "choice",
-    "who": "metan",
-    "text": "窓際動画はネタが伝わることを優先して、基本的に480pの生成結果を採用しているわ。",
-    "caption": "窓際動画はネタが伝わることを優先して、\n基本的に480pの生成結果を採用しているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "窓際動画はネタが伝わることを優先して、基本的に480pの生成結果を採用しています。",
+    "caption": "窓際動画はネタが伝わることを優先して、\n基本的に480pの生成結果を採用しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u074",
     "chapter": "費用と解像度",
     "view": "choice",
-    "who": "metan",
-    "text": "その分の予算を、次のネタにも使えるからね。",
-    "caption": "その分の予算を、次のネタにも使えるからね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "その分の予算を、次のネタにも使えますからね。",
+    "caption": "その分の予算を、次のネタにも使えますからね。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u075",
     "chapter": "費用と解像度",
     "view": "choice",
-    "who": "zunda",
-    "text": "精細さと、作れる本数のバランスなのだな。",
-    "caption": "精細さと、作れる本数のバランスなのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "精細さと、作れる本数のバランスやな。",
+    "caption": "精細さと、作れる本数のバランスやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u076",
     "chapter": "費用と解像度",
     "view": "highres",
-    "who": "metan",
-    "text": "画質を重視するなら、高解像度を選ぶ余地もある。",
-    "caption": "画質を重視するなら、高解像度を選ぶ余地もある。",
-    "pause": 12
+    "who": "takosan",
+    "text": "画質を重視するなら、高解像度を選ぶ余地もあります。",
+    "caption": "画質を重視するなら、高解像度を選ぶ余地もあります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u077",
     "chapter": "費用と解像度",
     "view": "highres",
-    "who": "metan",
-    "text": "ただ、再生成では演技や細部も変わり得るので、最終版を確認するわ。",
-    "caption": "ただ、再生成では演技や細部も変わり得るので、\n最終版を確認するわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "ただ、再生成では演技や細部も変わり得るので、最終版を確認します。",
+    "caption": "ただ、再生成では演技や細部も変わり得るので、\n最終版を確認します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u078",
     "chapter": "費用と解像度",
     "view": "export",
-    "who": "metan",
-    "text": "普段の投稿用は720pで書き出しているけれど、これは480pの映像を拡大して仕上げる工程よ。",
-    "caption": "普段の投稿用は720pで書き出しているけれど、\nこれは480pの映像を拡大して仕上げる工程よ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "普段の投稿用は720pで書き出していますが、これは480pの映像を拡大して仕上げる工程です。",
+    "caption": "普段の投稿用は720pで書き出していますが、\nこれは480pの映像を拡大して仕上げる工程です。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u079",
     "chapter": "費用と解像度",
     "view": "export",
-    "who": "metan",
-    "text": "字幕は完成サイズで描く。元映像の細かい情報が、拡大だけで増えるわけではないの。",
-    "caption": "字幕は完成サイズで描く。元映像の細かい情報が、\n拡大だけで増えるわけではないの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "字幕は完成サイズで描きます。元映像の細かい情報が、拡大だけで増えるわけではありません。",
+    "caption": "字幕は完成サイズで描きます。元映像の細かい情報が、\n拡大だけで増えるわけではありません。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u080",
     "chapter": "費用と解像度",
     "view": "export",
-    "who": "zunda",
-    "text": "生成するときの解像度と、完成ファイルの解像度は分けて考えるのだ。",
-    "caption": "生成するときの解像度と、\n完成ファイルの解像度は分けて考えるのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "生成するときの解像度と、完成ファイルの解像度は分けて考えるんやな。",
+    "caption": "生成するときの解像度と、\n完成ファイルの解像度は分けて考えるんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u081",
     "chapter": "費用と解像度",
     "view": "total",
-    "who": "metan",
-    "text": "それに、Codexなどの利用料や、音声生成・編集を動かす環境、処理時間もある。",
-    "caption": "それに、Codexなどの利用料や、\n音声生成・編集を動かす環境、処理時間もある。",
-    "pause": 12
+    "who": "takosan",
+    "text": "それに、Codexなどの利用料や、音声生成・編集を動かす環境、処理時間もあります。",
+    "caption": "それに、Codexなどの利用料や、\n音声生成・編集を動かす環境、処理時間もあります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u082",
     "chapter": "費用と解像度",
     "view": "total",
-    "who": "metan",
-    "text": "ここで示した金額は動画生成の分よ。価格や割引条件は、実行するときに確認してね。",
-    "caption": "ここで示した金額は動画生成の分よ。\n価格や割引条件は、実行するときに確認してね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "ここで示した金額は動画生成の分です。価格や割引条件は、実行するときに確認してくださいね。",
+    "caption": "ここで示した金額は動画生成の分です。\n価格や割引条件は、実行するときに確認してくださいね。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u083",
     "chapter": "スキルを育てる",
     "view": "logs",
-    "who": "zunda",
-    "text": "これだけ覚えることがあると、次の動画でも同じ失敗をしそうなのだ。",
-    "caption": "これだけ覚えることがあると、\n次の動画でも同じ失敗をしそうなのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "こんだけ覚えることがあると、次の動画でも同じ失敗しそうやわ。",
+    "caption": "こんだけ覚えることがあると、\n次の動画でも同じ失敗しそうやわ。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u084",
     "chapter": "スキルを育てる",
     "view": "skill_intro",
-    "who": "metan",
-    "text": "そこで、制作の経験をスキルへ残しているわ。",
-    "caption": "そこで、制作の経験をスキルへ残しているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "そこで、制作の経験をスキルへ残しています。",
+    "caption": "そこで、制作の経験をスキルへ残しています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u085",
     "chapter": "スキルを育てる",
     "view": "skill_intro",
-    "who": "metan",
-    "text": "AIが必要なときに読む作業手順と、参照資料や実行用コードをまとめたものよ。",
-    "caption": "AIが必要なときに読む作業手順と、\n参照資料や実行用コードをまとめたものよ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "AIが必要なときに読む作業手順と、参照資料や実行用コードをまとめたものです。",
+    "caption": "AIが必要なときに読む作業手順と、\n参照資料や実行用コードをまとめたものです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u086",
     "chapter": "スキルを育てる",
     "view": "skill_intro",
-    "who": "zunda",
-    "text": "一本作ると、次の一本を作る道具も育つのだな。",
-    "caption": "一本作ると、次の一本を作る道具も育つのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "一本作ったら、次の一本を作る道具も育つんやな。",
+    "caption": "一本作ったら、次の一本を作る道具も育つんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u087",
     "chapter": "スキルを育てる",
     "view": "api_failure",
-    "who": "metan",
-    "text": "たとえば、このニュースの制作では、参照音声の長さでAPIに拒否されたことがあるの。",
-    "caption": "たとえば、このニュースの制作では、\n参照音声の長さでAPIに拒否されたことがあるの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "たとえば、このニュースの制作では、参照音声の長さでAPIに拒否されたことがあります。",
+    "caption": "たとえば、このニュースの制作では、\n参照音声の長さでAPIに拒否されたことがあります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u088",
     "chapter": "スキルを育てる",
     "view": "api_split",
-    "who": "metan",
-    "text": "一本ずつ短く分割して再送したけれど、合計時間にも上限があって、またエラーになった。",
-    "caption": "一本ずつ短く分割して再送したけれど、\n合計時間にも上限があって、またエラーになった。",
-    "pause": 12
+    "who": "takosan",
+    "text": "一本ずつ短く分割して再送しましたが、合計時間にも上限があって、またエラーになりました。",
+    "caption": "一本ずつ短く分割して再送しましたが、\n合計時間にも上限があって、またエラーになりました。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u089",
     "chapter": "スキルを育てる",
     "view": "api_split",
-    "who": "zunda",
-    "text": "ファイルを分けただけでは、解決していなかったのだ。",
-    "caption": "ファイルを分けただけでは、解決していなかったのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "ファイルを分けただけやと、解決してへんかったんやな。",
+    "caption": "ファイルを分けただけやと、解決してへんかったんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u090",
     "chapter": "スキルを育てる",
     "view": "validation",
-    "who": "metan",
-    "text": "今は、送信する前に両方の長さを測って、条件を外れたら止める処理がある。",
-    "caption": "今は、送信する前に両方の長さを測って、\n条件を外れたら止める処理がある。",
-    "pause": 12
+    "who": "takosan",
+    "text": "今は、送信する前に両方の長さを測って、条件を外れたら止める処理があります。",
+    "caption": "今は、送信する前に両方の長さを測って、\n条件を外れたら止める処理があります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u091",
     "chapter": "スキルを育てる",
     "view": "validation",
-    "who": "metan",
-    "text": "分かった制約を、次の実行で確認できるコードへ残しているの。",
-    "caption": "分かった制約を、\n次の実行で確認できるコードへ残しているの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "分かった制約を、次の実行で確認できるコードへ残しているんです。",
+    "caption": "分かった制約を、\n次の実行で確認できるコードへ残しているんです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u092",
     "chapter": "スキルを育てる",
     "view": "validation",
-    "who": "zunda",
-    "text": "開発で不具合を直したあとに、同じ問題を検出するチェックを入れるのと近いのだ。",
-    "caption": "開発で不具合を直したあとに、\n同じ問題を検出するチェックを入れるのと近いのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "開発で不具合を直したあとに、同じ問題を検出するチェックを入れるのと近いな。",
+    "caption": "開発で不具合を直したあとに、\n同じ問題を検出するチェックを入れるのと近いな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u093",
     "chapter": "スキルを育てる",
     "view": "skill_reuse",
-    "who": "metan",
-    "text": "さっきの音声修復も、比較してよかった手順を、スキルから参照するようにしたわ。",
-    "caption": "さっきの音声修復も、比較してよかった手順を、\nスキルから参照するようにしたわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "さっきの音声修復も、比較してよかった手順を、スキルから参照するようにしました。",
+    "caption": "さっきの音声修復も、比較してよかった手順を、\nスキルから参照するようにしました。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u094",
     "chapter": "スキルを育てる",
     "view": "skill_reuse",
-    "who": "metan",
-    "text": "モデルを比較して、修正に使う標準を更新したこともあるの。",
-    "caption": "モデルを比較して、\n修正に使う標準を更新したこともあるの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "モデルを比較して、修正に使う標準を更新したこともあります。",
+    "caption": "モデルを比較して、\n修正に使う標準を更新したこともあります。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u095",
     "chapter": "スキルを育てる",
     "view": "skill_scope",
-    "who": "zunda",
-    "text": "うまくいった設定を、全部共通にすればいいのだ？",
-    "caption": "うまくいった設定を、全部共通にすればいいのだ？",
-    "pause": 18
+    "who": "yametaro",
+    "text": "うまくいった設定を、全部共通にしたらええんか？",
+    "caption": "うまくいった設定を、全部共通にしたらええんか？",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u096",
     "chapter": "スキルを育てる",
     "view": "skill_scope",
-    "who": "metan",
-    "text": "使う条件も一緒に残すの。",
-    "caption": "使う条件も一緒に残すの。",
-    "pause": 12
+    "who": "takosan",
+    "text": "使う条件も一緒に残すんです。",
+    "caption": "使う条件も一緒に残すんです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u097",
     "chapter": "スキルを育てる",
     "view": "skill_scope",
-    "who": "metan",
-    "text": "あるキャラクターの短文に効いた設定が、別の人や長文にも合うとは限らないからね。",
-    "caption": "あるキャラクターの短文に効いた設定が、\n別の人や長文にも合うとは限らないからね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "あるキャラクターの短文に効いた設定が、別の人や長文にも合うとは限りませんからね。",
+    "caption": "あるキャラクターの短文に効いた設定が、\n別の人や長文にも合うとは限りませんからね。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u098",
     "chapter": "スキルを育てる",
     "view": "skill_loop",
-    "who": "metan",
+    "who": "takosan",
     "text": "何を使ったか、どう直したか、どこまで確認したか。",
     "caption": "何を使ったか、どう直したか、どこまで確認したか。",
-    "pause": 12
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u099",
     "chapter": "スキルを育てる",
     "view": "skill_loop",
-    "who": "metan",
-    "text": "そこまで残して、次の制作で使い、また見直す。",
-    "caption": "そこまで残して、次の制作で使い、また見直す。",
-    "pause": 12
+    "who": "takosan",
+    "text": "そこまで残して、次の制作で使い、また見直します。",
+    "caption": "そこまで残して、次の制作で使い、また見直します。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u100",
     "chapter": "スキルを育てる",
     "view": "skill_loop",
-    "who": "metan",
-    "text": "開発と同じように、スキルを継続的に育てているわ。",
-    "caption": "開発と同じように、スキルを継続的に育てているわ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "開発と同じように、スキルを継続的に育てています。",
+    "caption": "開発と同じように、スキルを継続的に育てています。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u101",
     "chapter": "まとめ",
     "view": "summary",
-    "who": "metan",
+    "who": "takosan",
     "text": "今回の流れは、CodexやClaude Codeで依頼と操作をまとめ、Wanで映像を生成する。",
-    "caption": "今回の流れは、CodexやClaude Codeで\n依頼と操作をまとめ、Wanで映像を生成する。",
-    "pause": 12
+    "caption": "今回の流れは、CodexやClaude Codeで依頼と操作をまとめ、\nWanで映像を生成する。",
+    "pause": 12,
+    "mood": "normal",
+    "captionFontSize": 26
   },
   {
     "id": "u102",
     "chapter": "まとめ",
     "view": "summary",
-    "who": "metan",
-    "text": "必要な音声修正と編集を加えて、完成させる。",
-    "caption": "必要な音声修正と編集を加えて、完成させる。",
-    "pause": 12
+    "who": "takosan",
+    "text": "必要な音声修正と編集を加えて、完成させる、というものです。",
+    "caption": "必要な音声修正と編集を加えて、\n完成させる、というものです。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u103",
     "chapter": "まとめ",
     "view": "summary",
-    "who": "zunda",
-    "text": "人物の資料をそろえて、失敗に合った直し方を選んで、次に使える手順まで残すのだな。",
-    "caption": "人物の資料をそろえて、失敗に合った直し方を選んで、\n次に使える手順まで残すのだな。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "人物の資料をそろえて、失敗に合った直し方を選んで、次に使える手順まで残すんやな。",
+    "caption": "人物の資料をそろえて、失敗に合った直し方を選んで、\n次に使える手順まで残すんやな。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u104",
     "chapter": "まとめ",
     "view": "first_step",
-    "who": "metan",
+    "who": "takosan",
     "text": "最初に試すなら、一人・一場面の短い動画から。",
     "caption": "最初に試すなら、一人・一場面の短い動画から。",
-    "pause": 12
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u105",
     "chapter": "まとめ",
     "view": "first_step",
-    "who": "metan",
-    "text": "いつものAIとのものづくりを、動画にも広げてみてね。",
-    "caption": "いつものAIとのものづくりを、動画にも広げてみてね。",
-    "pause": 12
+    "who": "takosan",
+    "text": "やめ太郎さんも、いつものAIとのものづくりを、動画へ広げてみてください。",
+    "caption": "やめ太郎さんも、いつものAIとのものづくりを、\n動画へ広げてみてください。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u106",
     "chapter": "次回予告",
     "view": "h3",
-    "who": "metan",
-    "text": "今後は、同僚のh3さんの手法も紹介する予定よ。",
-    "caption": "今後は、同僚のh3さんの手法も紹介する予定よ。",
-    "pause": 12
+    "who": "takosan",
+    "text": "今後は、同僚のh3さんの手法も紹介する予定です。",
+    "caption": "今後は、同僚のh3さんの手法も紹介する予定です。",
+    "pause": 12,
+    "mood": "normal"
   },
   {
     "id": "u107",
     "chapter": "次回予告",
     "view": "h3",
-    "who": "metan",
-    "text": "費用を抑えられる一方で、時間がかかるなどの違いがあるので、料金と待ち時間、手作業を比べていくわ。",
-    "caption": "費用を抑えられる一方で、時間がかかるなどの違いがあるので、\n料金と待ち時間、手作業を比べていくわ。",
+    "who": "takosan",
+    "text": "費用を抑えられる一方で、時間がかかるなどの違いがあるので、料金と待ち時間、手作業を比べていきます。",
+    "caption": "費用を抑えられる一方で、時間がかかるなどの違いがあるので、\n料金と待ち時間、手作業を比べていきます。",
     "pause": 12,
+    "mood": "normal",
     "captionFontSize": 26
   },
   {
     "id": "u108",
     "chapter": "次回予告",
     "view": "ending",
-    "who": "zunda",
-    "text": "財布と休日、両方に合う作り方を探すのだ。",
-    "caption": "財布と休日、両方に合う作り方を探すのだ。",
-    "pause": 18
+    "who": "yametaro",
+    "text": "財布と休日、両方に合う作り方を探したいわ。",
+    "caption": "財布と休日、両方に合う作り方を探したいわ。",
+    "pause": 18,
+    "mood": "normal"
   },
   {
     "id": "u109",
     "chapter": "次回予告",
     "view": "ending",
-    "who": "metan",
-    "text": "それでは、また次回。",
-    "caption": "それでは、また次回。",
-    "pause": 12
+    "who": "takosan",
+    "text": "それでは、また次回お会いしましょう。",
+    "caption": "それでは、また次回お会いしましょう。",
+    "pause": 12,
+    "mood": "normal"
   }
 ]

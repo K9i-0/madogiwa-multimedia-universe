@@ -1,0 +1,1241 @@
+{
+  "version": 3,
+  "count": 111,
+  "models": [
+    "openai/whisper-small",
+    "openai/whisper-large-v3-turbo"
+  ],
+  "secondPassCount": 20,
+  "expectedTextPrompt": false,
+  "subjectiveContinuousListening": false,
+  "method": "全111発話をSmallで自動スクリーニング。主要用語・料金・疑義のある20発話を別チェックポイントで再照合。字幕との漢字表記差や固有名詞の誤認識を発話ミスと混同しない。",
+  "iterations": [
+    "導入のやめ太郎3台詞（u002/u003/u006）の発音用文面・句読点・生成尺倍率を調整。指定の字幕本文は保持。",
+    "u033は福ギュンの発音用表記をカタカナへ変更し、生成尺倍率0.85で再合成。",
+    "u053は生成尺倍率0.85で再合成。Largeでは「いちご直す」と認識し、一語の音を確認。"
+  ],
+  "limitations": [
+    "ASRは自然さ、声質、関西弁の抑揚、精密な口元同期を保証しない。主観的な通し試聴は未実施。",
+    "福ギュン、Codex等の固有名詞は認識表記が揺れるため、字幕・発音用文面・正典音声のハッシュも残す。",
+    "完成ミックスのCM抜粋はASRが反復文を出し、台詞の正否を自動判定できなかった。採用済み作例の指定区間を使用。"
+  ],
+  "utterances": [
+    {
+      "id": "u000",
+      "speaker": "takosan",
+      "text": "Claude CodeやCodexで、動画づくりも始めてみませんか。",
+      "spoken": "クロードコードやコーデックスで、動画づくりも始めてみませんか。",
+      "audio": "duo_u000_takosan_17e047eb7c4e.wav",
+      "sha256": "437e8bc1620b23ccea243eae28cad1905929773ae0555e5405bf0712f0d6a995",
+      "firstPass": "クロードコードやコーデックスで動画作りも始めてみませんか",
+      "secondPass": null
+    },
+    {
+      "id": "u001",
+      "speaker": "takosan",
+      "text": "まずは、窓際族物語で実際に作った動画をご覧ください。",
+      "spoken": "まずは、窓際族物語で実際に作った動画をご覧ください。",
+      "audio": "duo_u001_takosan_577b641f16c6.wav",
+      "sha256": "9e6a142da7cdbc82d834bb01ea1062201d6663ff946e124ff9eac0664a27309b",
+      "firstPass": "まずは、窓際属物語で実際に作った動画をご覧ください。",
+      "secondPass": null
+    },
+    {
+      "id": "u002",
+      "speaker": "yametaro",
+      "text": "窓際族物語の動画は相変わらずアホやな〜",
+      "spoken": "まどぎわぞくものがたりの動画は、相変わらずアホやなあ。",
+      "audio": "duo_u002_yametaro_e9cbeb78f77d.wav",
+      "sha256": "e56ce06ab04e1140f0904444ab6c614432bf0435cf7eabbe805aea82eb97c90d",
+      "firstPass": "窓際属物語の動画は相変わらずアホやなぁ",
+      "secondPass": "窓際族物語の動画は相変わらずアホやなぁ"
+    },
+    {
+      "id": "u003",
+      "speaker": "yametaro",
+      "text": "たこさんワイも窓際族物語の動画を作ってみたいやで",
+      "spoken": "たこさん、ワイも、まどぎわぞくものがたりの動画を作ってみたいやで。",
+      "audio": "duo_u003_yametaro_a7ad73165b2a.wav",
+      "sha256": "2cf36f5a96aa016ccd4ebf19a308bd3e96f334aa71693a92dab8c8d91e77f37c",
+      "firstPass": "たこさん、ワイも窓際属物語の動画を作ってみたいやで",
+      "secondPass": "たこさん、わいもまどぎわぞくものがたりの動画を作ってみたいやで"
+    },
+    {
+      "id": "u004",
+      "speaker": "takosan",
+      "text": "Claude CodeやCodexを普段使ってる方なら簡単に作れますよ！",
+      "spoken": "クロードコードやコーデックスを普段使ってる方なら簡単に作れますよ！",
+      "audio": "duo_u004_takosan_4743ee382dc4.wav",
+      "sha256": "53b309ca4ea8f4580bd4431868f719f51247d17314130c006e61add127b49984",
+      "firstPass": "クロードコードやコーティックスを普段使ってる方なら簡単に作れますよ",
+      "secondPass": "クロードコードやコーテックスを普段使ってる方なら簡単に作れますよ"
+    },
+    {
+      "id": "u005",
+      "speaker": "takosan",
+      "text": "このニュースを例に、道具の分担と、顔や声をそろえる工夫を見ていきましょう。",
+      "spoken": "このニュースを例に、道具の分担と、顔や声をそろえる工夫を見ていきましょう。",
+      "audio": "duo_u005_takosan_1a359a95c4c7.wav",
+      "sha256": "bf2351d0ffdb24ffc5b7a370541e905b5cbebdac1df8f458d983f63a529d733c",
+      "firstPass": "このニュースを例に、道具の分担と顔や声を揃える工夫を見ていきましょう。",
+      "secondPass": null
+    },
+    {
+      "id": "u006",
+      "speaker": "yametaro",
+      "text": "ワイでもできるんか。ついでに、いくらかかるかも知りたいわ。",
+      "spoken": "ワイでもできるんか。ついでに、いくらかかるかも知りたいわ。",
+      "audio": "duo_u006_yametaro_a903ecc5e508.wav",
+      "sha256": "014c7d33d080afd8440d131db80d80fd4b2e8d7ac23ad50bc6836785228b3417",
+      "firstPass": "ワイでもできるんか?ついでにいくらかかるかもしりたいわ",
+      "secondPass": null
+    },
+    {
+      "id": "u007",
+      "speaker": "takosan",
+      "text": "料金と、制作の経験を次に残す方法もご紹介します。",
+      "spoken": "料金と、制作の経験を次に残す方法もご紹介します。",
+      "audio": "duo_u007_takosan_b5288d1f6891.wav",
+      "sha256": "ffd85cc17f83a73be5445bbc039f3aae6ceaa251a2ede0afbdff2132a37763e2",
+      "firstPass": "料金と政策の経験を次に残す方法もご紹介します",
+      "secondPass": null
+    },
+    {
+      "id": "u008",
+      "speaker": "yametaro",
+      "text": "この映像も、Codexが直接描いてるんか？",
+      "spoken": "この映像も、コーデックスが直接描いてるんか？",
+      "audio": "duo_u008_yametaro_cb5f8dd8c690.wav",
+      "sha256": "d278b5f65e535eecb380ef2631014ad21d5c8c87897e567167b1f7b6e8b92331",
+      "firstPass": "この映像もコーテックスが直接書いてるのか",
+      "secondPass": null
+    },
+    {
+      "id": "u009",
+      "speaker": "takosan",
+      "text": "映像を生成しているのは、Wan 3.0という動画生成モデルです。",
+      "spoken": "映像を生成しているのは、ワン、スリーポイントゼロという動画生成モデルです。",
+      "audio": "duo_u009_takosan_f73ade257295.wav",
+      "sha256": "4f97226e7f85589c817bedd7be44662092709fdba70c01cc302d85aeb0096e95",
+      "firstPass": "映像を生成しているのは、One 3.0という動画生成モデルです。",
+      "secondPass": null
+    },
+    {
+      "id": "u010",
+      "speaker": "takosan",
+      "text": "CodexやClaude Codeは、依頼を整理してプロンプトを作り、必要な道具を操作します。",
+      "spoken": "コーデックスやクロードコードは、依頼を整理してプロンプトを作り、必要な道具を操作します。",
+      "audio": "duo_u010_takosan_2f169cb0849e.wav",
+      "sha256": "fd2e5f6853c639be466358e6bb19912b12ae8d9f1f3e11b2e1ccd2f2b75e3392",
+      "firstPass": "コーデックスやクロードコードは 依頼を整理してプロンプトを作り、必要な道具を操作します。",
+      "secondPass": null
+    },
+    {
+      "id": "u011",
+      "speaker": "yametaro",
+      "text": "いつものAIが、動画を作るAIに指示を出すんやな。",
+      "spoken": "いつものエーアイが、動画を作るエーアイに指示を出すんやな。",
+      "audio": "duo_u011_yametaro_5e3a6f73b588.wav",
+      "sha256": "af5cd793bb8b18f0523b2bdcfa4f029d86f9acf3a97d569d7fd20ba6065c3da4",
+      "firstPass": "いつものAIが動画を作るAIに指示を出すんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u012",
+      "speaker": "takosan",
+      "text": "はい。Wanは映像と音声を生成します。必要な声の修正にはIrodoriを使います。",
+      "spoken": "はい。ワンは映像と音声を生成します。必要な声の修正にはイロドリを使います。",
+      "audio": "duo_u012_takosan_4b48db470ca5.wav",
+      "sha256": "cc8a2df69dabb799c6645d8e6decc1e661ee0a72689c224c97c49bbf89fc547e",
+      "firstPass": "はい。ワンは映像と音声を生成します。必要な声の修正には、色取りを使います。",
+      "secondPass": null
+    },
+    {
+      "id": "u013",
+      "speaker": "takosan",
+      "text": "字幕やテロップ、音量や間の調整にはRemotionを使います。",
+      "spoken": "字幕やテロップ、音量や、まの調整にはリモーションを使います。",
+      "audio": "duo_u013_takosan_eecf9b4234fa.wav",
+      "sha256": "56773801572e4847c2728d76b667e8cd162ec6f8a844e401c6e5d7f91bf57e81",
+      "firstPass": "字幕やテロップ、音量やマノ調整にはリモーションを使います。",
+      "secondPass": null
+    },
+    {
+      "id": "u014",
+      "speaker": "yametaro",
+      "text": "その道具の画面を、順番に操作するんか？",
+      "spoken": "その道具の画面を、順番に操作するんか？",
+      "audio": "duo_u014_yametaro_2db4095b6417.wav",
+      "sha256": "ed0fdda29e30cfde4159e14e7efbb60db917ba2319fa3bf5aa1cc85d8fc1b08f",
+      "firstPass": "その道具の画面を順番に操作するのか",
+      "secondPass": null
+    },
+    {
+      "id": "u015",
+      "speaker": "takosan",
+      "text": "この制作では、操作はすべてCodexやClaude Codeを通しています。",
+      "spoken": "この制作では、操作はすべてコーデックスやクロードコードを通しています。",
+      "audio": "duo_u015_takosan_66dc7526c2c6.wav",
+      "sha256": "ac894ae41fc464d61587b0231b71c48e510e308dd3cf93d591a6e381ce1d12d1",
+      "firstPass": "この制作では、操作はすべてコーデックスやクロードコードを通しています。",
+      "secondPass": null
+    },
+    {
+      "id": "u016",
+      "speaker": "takosan",
+      "text": "Wanは、プログラムから呼び出せるAPIを利用します。IrodoriやRemotionもコードやコマンドで実行します。",
+      "spoken": "ワンは、プログラムから呼び出せるエーピーアイを利用します。イロドリやリモーションもコードやコマンドで実行します。",
+      "audio": "duo_u016_takosan_6039970463e7.wav",
+      "sha256": "812b4040367b2f6e35edd55be626ae44d3abf2b588e23deb6300c9f2cc358f35",
+      "firstPass": "1は、プログラムから呼び出せるAPIを利用します。色取りやリモーションもコードやコマンドで実行します。",
+      "secondPass": null
+    },
+    {
+      "id": "u017",
+      "speaker": "takosan",
+      "text": "そのために、制作手順や参照資料、実行用のコードをリポジトリへ用意しているんです。",
+      "spoken": "そのために、制作手順や参照資料、実行用のコードをリポジトリへ用意しているんです。",
+      "audio": "duo_u017_takosan_9d15db20e49e.wav",
+      "sha256": "2e9ca2a08656043bf18f9a5700c88a2e88d6d827bdc83cc894a4aeafe7ecdf58",
+      "firstPass": "そのために制作手順や参照資料、実行用のコードをリポジトリーへ用意しているんです。",
+      "secondPass": null
+    },
+    {
+      "id": "u018",
+      "speaker": "yametaro",
+      "text": "Webアプリみたいに、動画を作る環境も整えてあるんやな。",
+      "spoken": "ウェブアプリみたいに、動画を作る環境も整えてあるんやな。",
+      "audio": "duo_u018_yametaro_0094dc6869f9.wav",
+      "sha256": "5abef54c234df0dd32c91f7c0f7634fec80c1130fe9df3b745ccdc1559ed0c88",
+      "firstPass": "ウェブアプリみたいに動画を作る環境も整えてあるんだな",
+      "secondPass": null
+    },
+    {
+      "id": "u019",
+      "speaker": "takosan",
+      "text": "人間は、何を作るかを伝えて、結果を見て、直すところを決めます。",
+      "spoken": "人間は、何を作るかを伝えて、結果を見て、直すところを決めます。",
+      "audio": "duo_u019_takosan_4e94d007b852.wav",
+      "sha256": "58a38f4bfdbf219d3c36f94ce1607bbcd6d54a9198f64809361db5d1c7da1511",
+      "firstPass": "人間は何を作るかを伝えて、結果を見て、直すところを決めます。",
+      "secondPass": null
+    },
+    {
+      "id": "u020",
+      "speaker": "takosan",
+      "text": "編集ソフトのタイムラインを、手でドラッグする作業はしていません。",
+      "spoken": "編集ソフトのタイムラインを、手でドラッグする作業はしていません。",
+      "audio": "duo_u020_takosan_62dc668bfb74.wav",
+      "sha256": "3afb7063d2af4a636954d6a04a85b1240d4ea7631ba6992ce545753c81d4d5ed",
+      "firstPass": "編集ソフトのタイムラインを手でドラッグする作業はしていません",
+      "secondPass": null
+    },
+    {
+      "id": "u021",
+      "speaker": "takosan",
+      "text": "このニュースなら、出発点はこんな内容です。AIと相談しながら台本と映像の指示へ具体化します。",
+      "spoken": "このニュースなら、出発点はこんな内容です。エーアイと相談しながら台本と映像の指示へ具体化します。",
+      "audio": "duo_u021_takosan_b2b9d69908b4.wav",
+      "sha256": "aa885196e398bb0814e96dd9faf18154fc3c81894fa80daf91c3ab79282bb1c7",
+      "firstPass": "このニュースなら、出発点はこんな内容です。AIと相談しながら、台本と映像の指示へ具体化します。",
+      "secondPass": null
+    },
+    {
+      "id": "u022",
+      "speaker": "yametaro",
+      "text": "働かんための準備だけ、妙に手が込んどるな。",
+      "spoken": "働かんための準備だけ、妙に手が込んどるな。",
+      "audio": "duo_u022_yametaro_94431b1d214b.wav",
+      "sha256": "09616b2f5762135d49c00236d3f31eb60352de7811353117daccee0c9333ed2f",
+      "firstPass": "働かんための準備だけ、妙に手が込んでるな",
+      "secondPass": null
+    },
+    {
+      "id": "u023",
+      "speaker": "takosan",
+      "text": "たとえば、身代わりの福ギュンさんが仮面を着けても、体格までそば屋さんに変わったら困りますよね。",
+      "spoken": "たとえば、身代わりのふくぎゅんさんが仮面を着けても、体格までそば屋さんに変わったら困りますよね。",
+      "audio": "duo_u023_takosan_51f656889146.wav",
+      "sha256": "ece7ba63dfeda7768e118093941f36ab38aba63816508afa6ee9bd9955bc0054",
+      "firstPass": "例えば、みがわりのふくぎゅんさんが画面をつけても、体格までそば屋さんに変わったら、困りますよね。",
+      "secondPass": "例えば身代わりの福牛さんが仮面をつけても、体格まで蕎麦屋さんに変わったら困りますよね。"
+    },
+    {
+      "id": "u024",
+      "speaker": "takosan",
+      "text": "誰の顔、誰の体格、どの仮面なのかを分けて指示しています。",
+      "spoken": "誰の顔、誰の体格、どの仮面なのかを分けて指示しています。",
+      "audio": "duo_u024_takosan_e52b35bba5f0.wav",
+      "sha256": "49a89feea5906d670b777a596a60d39a9ad19293654dd773fa46ee709a7c1122",
+      "firstPass": "誰の顔、誰の体格、どの画面なのかを分けて指示しています。",
+      "secondPass": null
+    },
+    {
+      "id": "u025",
+      "speaker": "yametaro",
+      "text": "仮面を着けただけで、別人に変身されたらあかんな。",
+      "spoken": "仮面を着けただけで、別人に変身されたらあかんな。",
+      "audio": "duo_u025_yametaro_89c6eb040408.wav",
+      "sha256": "e2391da77f9f97002596bfae8c7d31bec407d805e5c01506e118d4e5c814be6d",
+      "firstPass": "画面をつけただけで別人に変身されたらわかんな",
+      "secondPass": null
+    },
+    {
+      "id": "u026",
+      "speaker": "takosan",
+      "text": "こうした条件を整理するので、指示を考える側のモデルの性能も大事です。",
+      "spoken": "こうした条件を整理するので、指示を考える側のモデルの性能も大事です。",
+      "audio": "duo_u026_takosan_3134cab940d9.wav",
+      "sha256": "8542e4bcd767561f192f3b443f06fd98eb89ff73fafeb26e0ac82a8738200c53",
+      "firstPass": "こうした条件を整理するので、指示を考える側のモデルの性能も大事です。",
+      "secondPass": null
+    },
+    {
+      "id": "u027",
+      "speaker": "takosan",
+      "text": "依頼の意図や演出を落とすと、動画生成モデルにも違う指示が届いてしまいます。",
+      "spoken": "依頼の意図や演出を落とすと、動画生成モデルにも違う指示が届いてしまいます。",
+      "audio": "duo_u027_takosan_2f825452ef2a.wav",
+      "sha256": "946319a991fa1d3678ad46ee2480d11926b6838b1ccc7e9b05060403d73500cb",
+      "firstPass": "依頼の糸や演出を落とすと、動画生成モデルにも違う指示が届いてしまいます。",
+      "secondPass": null
+    },
+    {
+      "id": "u028",
+      "speaker": "yametaro",
+      "text": "動画のモデル選びだけやなく、いつものAIの仕事ぶりも効いてくるんやな。",
+      "spoken": "動画のモデル選びだけやなく、いつものエーアイの仕事ぶりも効いてくるんやな。",
+      "audio": "duo_u028_yametaro_657fd7cacc76.wav",
+      "sha256": "589bde12261d341ab288096174effb9fb840085b6ea0c526ac4e0995e50b03d5",
+      "firstPass": "動画のモデル選びだけやなく、いつものAIの仕事ぶりも聞いてくるんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u029",
+      "speaker": "takosan",
+      "text": "だから、生成前にも台本を読みます。誰が何をするか、見せる順序やオチが残っているかを確認します。",
+      "spoken": "だから、生成前にも台本を読みます。誰が何をするか、見せる順序やオチが残っているかを確認します。",
+      "audio": "duo_u029_takosan_1b81bedf2e06.wav",
+      "sha256": "e905eb6a7b934f3330f83cb2e6beac9987bb0136eed4f4c65e013950f4d21d57",
+      "firstPass": "だから、生成前にも台本を読みます。誰が何をするか、見せる順序や、落ちが残っているかを確認します。",
+      "secondPass": null
+    },
+    {
+      "id": "u030",
+      "speaker": "yametaro",
+      "text": "ところで、毎回同じ人を出すのは、文章だけで指定するんか？",
+      "spoken": "ところで、毎回同じ人を出すのは、文章だけで指定するんか？",
+      "audio": "duo_u030_yametaro_ca800d138561.wav",
+      "sha256": "9850ba9d236b1962da3c4f2d83fc37d176a3403480eaad29db2f72356152fec8",
+      "firstPass": "ところで毎回同じ人を出すのは文章だけで指定するのか",
+      "secondPass": null
+    },
+    {
+      "id": "u031",
+      "speaker": "takosan",
+      "text": "基準になるキャラクターシートを、画像で渡しています。",
+      "spoken": "基準になるキャラクターシートを、画像で渡しています。",
+      "audio": "duo_u031_takosan_73f643647e74.wav",
+      "sha256": "04e6826cad8f0f55721d7ba800721c9efae3a0893945a53e0d93583df435eb93",
+      "firstPass": "基準になるキャラクターシートを画像で渡しています",
+      "secondPass": null
+    },
+    {
+      "id": "u032",
+      "speaker": "takosan",
+      "text": "顔や髪型、体格を見せることで、別の作品でも同じ人物として登場させやすくなるんです。",
+      "spoken": "顔や髪型、体格を見せることで、別の作品でも同じ人物として登場させやすくなるんです。",
+      "audio": "duo_u032_takosan_e4e3ecc4cd43.wav",
+      "sha256": "384a1274c3ffb0a75a69052cbbb8883b8fde1cc3ae649f5c5a4503ebb5db1e63",
+      "firstPass": "顔や髪型、体格を見せることで、別の作品でも同じ人物として登場させやすくなるんです。",
+      "secondPass": null
+    },
+    {
+      "id": "u033",
+      "speaker": "yametaro",
+      "text": "衣装も場所も違うのに、福ギュンやって分かるな。",
+      "spoken": "衣装も場所も違うのに、フクギュンやって分かるな。",
+      "audio": "duo_u033_yametaro_daefe1443d9b.wav",
+      "sha256": "2c69bb893b28f4eb5fc9cbf0a3b5fa3437411acde8bd6da8b91be3e2126df1ba",
+      "firstPass": "衣装も場所も違うのに復讐にやってわかるな",
+      "secondPass": "衣装も場所も違うのに服御んやってわかるなぁ"
+    },
+    {
+      "id": "u034",
+      "speaker": "takosan",
+      "text": "ただし、渡せば必ず一致するわけではないので、生成後にも確認します。",
+      "spoken": "ただし、渡せば必ず一致するわけではないので、生成後にも確認します。",
+      "audio": "duo_u034_takosan_bf6ecc179d1a.wav",
+      "sha256": "42bceecb26b802363769fbb660eafef464de223bf94660b9228921662dd86c3e",
+      "firstPass": "ただし、渡せば必ず一致するわけではないので、生成後にも確認します。",
+      "secondPass": null
+    },
+    {
+      "id": "u035",
+      "speaker": "yametaro",
+      "text": "この全身のほう、顔が消えてるやん。",
+      "spoken": "この全身のほう、顔が消えてるやん。",
+      "audio": "duo_u035_yametaro_44fb30bb105e.wav",
+      "sha256": "0fbe1cbe4811f29fbf67f52000bd77a98873db20afd84ff33bad07ec1932460a",
+      "firstPass": "この前進の方顔が消えてるやん",
+      "secondPass": null
+    },
+    {
+      "id": "u036",
+      "speaker": "takosan",
+      "text": "実写メンバーでは、あえてそうしています。全身を一枚に収めると、顔が小さくなりますよね。",
+      "spoken": "実写メンバーでは、あえてそうしています。全身を一枚に収めると、顔が小さくなりますよね。",
+      "audio": "duo_u036_takosan_a46b10fffcd8.wav",
+      "sha256": "09ad3e0375663337540360767f3043c7b17a72c60658f616d53bda40f1c24dde",
+      "firstPass": "実写メンバーでは、あえてそうしています。全身を1枚に収めると、顔が小さくなりますよね。",
+      "secondPass": null
+    },
+    {
+      "id": "u037",
+      "speaker": "takosan",
+      "text": "その粗い顔に引っ張られて、本人の顔の再現精度が落ちることがあるんです。",
+      "spoken": "その粗い顔に引っ張られて、本人の顔の再現精度が落ちることがあるんです。",
+      "audio": "duo_u037_takosan_e153fc050d26.wav",
+      "sha256": "aaf5f57bc48398a1ae122123402eafacd0a5665f7fcd42f4aee6e56c1d553aba",
+      "firstPass": "その洗い顔に引っ張られて本人の顔の再現制度が落ちることがあるんです",
+      "secondPass": null
+    },
+    {
+      "id": "u038",
+      "speaker": "yametaro",
+      "text": "顔の資料を増やしたつもりが、かえって迷わせるんやな。",
+      "spoken": "顔の資料を増やしたつもりが、かえって迷わせるんやな。",
+      "audio": "duo_u038_yametaro_d5d77cfda29e.wav",
+      "sha256": "c57cde223f2a1ef1b73e1e0ae16e295cf82414aaed32a1df23b555ef501b7bcc",
+      "firstPass": "顔の資料を増やしたつもりが、かえって迷わせるんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u039",
+      "speaker": "takosan",
+      "text": "だから、顔は大きく鮮明な写真。全身は体格や服装。",
+      "spoken": "だから、顔は大きく鮮明な写真。全身は体格や服装。",
+      "audio": "duo_u039_takosan_67aef75bfc80.wav",
+      "sha256": "a83fa11ea7910ef91803246f30123e4855658af010f3db18a309be9b91a41342",
+      "firstPass": "だから、顔は大きく鮮明な写真。全身は大格や服装。",
+      "secondPass": null
+    },
+    {
+      "id": "u040",
+      "speaker": "takosan",
+      "text": "それぞれ何を参考にしてほしいか、役割を分けています。",
+      "spoken": "それぞれ何を参考にしてほしいか、役割を分けています。",
+      "audio": "duo_u040_takosan_2638627dd960.wav",
+      "sha256": "283574ebff09f7d76ca8c67817c56933d27db316c20ab1410732fa7fec99d539",
+      "firstPass": "それぞれ何を参考にしてほしいか、役割を分けています。",
+      "secondPass": null
+    },
+    {
+      "id": "u041",
+      "speaker": "takosan",
+      "text": "人物の資料と台本がそろったら、Wanで動画を生成します。",
+      "spoken": "人物の資料と台本がそろったら、ワンで動画を生成します。",
+      "audio": "duo_u041_takosan_79f91e5e9af7.wav",
+      "sha256": "4be5029d74bad101c7d9db0396e77f61ddbd999ddfc748af004b206eac435a1b",
+      "firstPass": "人物の資料と台本が揃ったら、ワンで動画を生成します。",
+      "secondPass": null
+    },
+    {
+      "id": "u042",
+      "speaker": "takosan",
+      "text": "このニュースでは、アナウンサーの声の見本も渡しています。",
+      "spoken": "このニュースでは、アナウンサーの声の見本も渡しています。",
+      "audio": "duo_u042_takosan_502c0eaf0af0.wav",
+      "sha256": "4376c4e942f932c72d4ea6b3f515b74c09d15e34e742945015d81b9dd436a169",
+      "firstPass": "このニュースではアナウンサーの声の見本も渡しています",
+      "secondPass": null
+    },
+    {
+      "id": "u043",
+      "speaker": "yametaro",
+      "text": "声の見本と、読ませたい台詞は別に用意するんやな。",
+      "spoken": "声の見本と、読ませたい台詞は別に用意するんやな。",
+      "audio": "duo_u043_yametaro_3c6ec58d2d8d.wav",
+      "sha256": "bbd8bbdf834143da2d5e16db4548d855e30db944d07bf4fa60ce9091ec2e4439",
+      "firstPass": "声の見本と読ませたいセリフは別に用意するんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u044",
+      "speaker": "takosan",
+      "text": "そうです。画面内で話す場面では、Wanが映像と一緒に生成した声を生かします。",
+      "spoken": "そうです。画面内で話す場面では、ワンが映像と一緒に生成した声を生かします。",
+      "audio": "duo_u044_takosan_2b9541b2c2a1.wav",
+      "sha256": "6d730d1420c3d5e131d02620be61cf9f07b398dd5d8731bb3eb52d705f440c39",
+      "firstPass": "そうです画面内で話す場面ではワンガ映像と一緒に生成した声を生かします",
+      "secondPass": null
+    },
+    {
+      "id": "u045",
+      "speaker": "takosan",
+      "text": "ただ、日本語の読み間違いや、言葉の抜けが起きることもあります。",
+      "spoken": "ただ、日本語の読み間違いや、言葉の抜けが起きることもあります。",
+      "audio": "duo_u045_takosan_11809df59f3e.wav",
+      "sha256": "c75946f9e58faaeb111dda0afbfb248994b8e448f4df2600b9ce2e56a410e14c",
+      "firstPass": "ただ、日本語の読み間違いや、言葉の抜けが起きることもあります。",
+      "secondPass": null
+    },
+    {
+      "id": "u046",
+      "speaker": "yametaro",
+      "text": "顔も動きもええのに、一言だけ違うと悩むわ。",
+      "spoken": "顔も動きもええのに、一言だけ違うと悩むわ。",
+      "audio": "duo_u046_yametaro_9cc5e22e1997.wav",
+      "sha256": "4a8cc08d647fd0d10bcfe8ae8bbdfef0374b2f294e8d609c8703dea784977afb",
+      "firstPass": "顔も動きもええのに一言だけ違うと悩むわ",
+      "secondPass": null
+    },
+    {
+      "id": "u047",
+      "speaker": "takosan",
+      "text": "このニュースでは、冒頭の「速報です」を、Irodoriで用意した音声に差し替えています。",
+      "spoken": "このニュースでは、冒頭の「速報です」を、イロドリで用意した音声に差し替えています。",
+      "audio": "duo_u047_takosan_5d8b79b412f4.wav",
+      "sha256": "ba9669f3f261d9310fd36ee4c93386ecda7b5bae46665d754e24f766eb9e027f",
+      "firstPass": "このニュースでは、冒頭の即報ですを彩りで用意した音声に差し替えています。",
+      "secondPass": null
+    },
+    {
+      "id": "u048",
+      "speaker": "yametaro",
+      "text": "その一言のために、動画を丸ごと作り直したんか？",
+      "spoken": "その一言のために、動画を丸ごと作り直したんか？",
+      "audio": "duo_u048_yametaro_a84c966886cd.wav",
+      "sha256": "69cce6869b2b596d0798f0bbbdc6ddfb913048c341e1cd9060f1c6e122444b91",
+      "firstPass": "その一言のために動画を丸ごと作り直したんか",
+      "secondPass": null
+    },
+    {
+      "id": "u049",
+      "speaker": "takosan",
+      "text": "この音声修正では、動画生成APIを再送していません。",
+      "spoken": "この音声修正では、動画生成エーピーアイを再送していません。",
+      "audio": "duo_u049_takosan_92547ab3c312.wav",
+      "sha256": "ea7c4df767d2f1cfbc6b9daae4afc481512d814dbe13fb5e744da58cd0476320",
+      "firstPass": "この音声修正では、動画声勢APIを再送していません。",
+      "secondPass": null
+    },
+    {
+      "id": "u050",
+      "speaker": "takosan",
+      "text": "映像を残して、必要な声の部分を直しています。",
+      "spoken": "映像を残して、必要な声の部分を直しています。",
+      "audio": "duo_u050_takosan_74e4783563d1.wav",
+      "sha256": "deefc875037ba0b7a193f3c2e0c8efbe83bb230ba978677043b868bda5b8bb4a",
+      "firstPass": "映像を残して必要な声の部分を直しています",
+      "secondPass": null
+    },
+    {
+      "id": "u051",
+      "speaker": "takosan",
+      "text": "別の回では、短い言葉だけ生成すると長すぎて、元の尺に入りませんでした。",
+      "spoken": "別の回では、短い言葉だけ生成すると長すぎて、元の尺に入りませんでした。",
+      "audio": "duo_u051_takosan_3702bf546f8e.wav",
+      "sha256": "84dbb8023ee003a382bd7bc8c062e9f44f8a6c7c506c229666e99ec587050fed",
+      "firstPass": "別の会では短い言葉だけ生成すると長すぎて、元の尺に入りませんでした。",
+      "secondPass": null
+    },
+    {
+      "id": "u052",
+      "speaker": "takosan",
+      "text": "そこで一文を生成して、必要な部分を切り出す方法も試しました。",
+      "spoken": "そこで一文を生成して、必要な部分を切り出す方法も試しました。",
+      "audio": "duo_u052_takosan_d31823360c4c.wav",
+      "sha256": "cbd6d5ca3a7642dec78b85d1645ae8f88f03493dcce6fb6489206bf971177bdb",
+      "firstPass": "そこで一文を整成して、必要な部分を切り出す方法も試しました。",
+      "secondPass": null
+    },
+    {
+      "id": "u053",
+      "speaker": "yametaro",
+      "text": "一語直すだけでも、そんな工夫があるんやな。",
+      "spoken": "一語直すだけでも、そんな工夫があるんやな。",
+      "audio": "duo_u053_yametaro_0d2089359d91.wav",
+      "sha256": "030ecf7d2008c698d28742b75c12c545b49f40456ac8f59e7448ca75899687dd",
+      "firstPass": "一応直すだけでもそんな工夫があるんやな",
+      "secondPass": "いちご直すだけでもそんな工夫があるんやな"
+    },
+    {
+      "id": "u054",
+      "speaker": "takosan",
+      "text": "ただし、音声を替えても口の動きは変わりません。声の調子、長さ、口とのずれを確認します。",
+      "spoken": "ただし、音声を替えても口の動きは変わりません。声の調子、長さ、口とのずれを確認します。",
+      "audio": "duo_u054_takosan_a5f8a81ff8f3.wav",
+      "sha256": "65b9de4df3ff7fefeaf8a4368cec113d06a9063e8db1da03bcd28cf911e23367",
+      "firstPass": "ただし、音声を変えても口の動きは変わりません。声の調子、長さ、口とのズレを確認します。",
+      "secondPass": null
+    },
+    {
+      "id": "u055",
+      "speaker": "takosan",
+      "text": "ニュースの長い説明は、資料映像に声を重ねる構成も使っています。",
+      "spoken": "ニュースの長い説明は、資料映像に声を重ねる構成も使っています。",
+      "audio": "duo_u055_takosan_3bb9a6c6fc00.wav",
+      "sha256": "a4bc01da34c66bf96450340efdee003a835caf3876a428e3bbcbf8cd44909367",
+      "firstPass": "ニュースの長い説明は、資料映像に声を重ねる構成も使っています。",
+      "secondPass": null
+    },
+    {
+      "id": "u056",
+      "speaker": "takosan",
+      "text": "何を直すかに加えて、どう見せるかも大切です。",
+      "spoken": "何を直すかに加えて、どう見せるかも大切です。",
+      "audio": "duo_u056_takosan_7c2316553508.wav",
+      "sha256": "9ee015e93c3ac0042170c141655e5687d26c2fab2c233a31c71dbecadb7a1e4c",
+      "firstPass": "何を直すかに加えて、どう見せるかも大切です。",
+      "secondPass": null
+    },
+    {
+      "id": "u057",
+      "speaker": "takosan",
+      "text": "次は編集です。見出しや字幕、局のロゴは、Remotionで正確に配置します。",
+      "spoken": "次は編集です。見出しや字幕、局のロゴは、リモーションで正確に配置します。",
+      "audio": "duo_u057_takosan_53c35936b14a.wav",
+      "sha256": "c448b4cdcfe5169be56cbd5b18db0d7542e97e67337371fa066ddaa7f0c993d6",
+      "firstPass": "次は編集です。 見出しや字幕、曲のロゴはリモーションで正確に配置します。",
+      "secondPass": null
+    },
+    {
+      "id": "u058",
+      "speaker": "yametaro",
+      "text": "テロップが付いたら、急にちゃんとした報道になるやん。",
+      "spoken": "テロップが付いたら、急にちゃんとした報道になるやん。",
+      "audio": "duo_u058_yametaro_e0d7d08e5de3.wav",
+      "sha256": "0b04b94fa684c4f0b1a2f7d88b418c186543e451e8bd4ffdb011c7eaeaea5e32",
+      "firstPass": "テロップがついたら急にちゃんとした報道になるやん",
+      "secondPass": null
+    },
+    {
+      "id": "u059",
+      "speaker": "takosan",
+      "text": "事件の内容は、そのままですけどね。",
+      "spoken": "事件の内容は、そのままですけどね。",
+      "audio": "duo_u059_takosan_6be05a754128.wav",
+      "sha256": "2ed30c8a8104ab7066ae1f850c03f1db3ecbf5217595455b2c266c22565966d9",
+      "firstPass": "事件の内容はそのままですけどね",
+      "secondPass": null
+    },
+    {
+      "id": "u060",
+      "speaker": "takosan",
+      "text": "文字や位置、表示する時間をコードで管理しているので、修正も会話で頼めます。",
+      "spoken": "文字や位置、表示する時間をコードで管理しているので、修正も会話で頼めます。",
+      "audio": "duo_u060_takosan_f042e36d212a.wav",
+      "sha256": "03b7ce7c2fafae8aee357a09079018c63c14ddb680ded0c4da3b43b79036e6d7",
+      "firstPass": "文字や位置、表示する時間をコードで管理しているので修正も会話で頼めます。",
+      "secondPass": null
+    },
+    {
+      "id": "u061",
+      "speaker": "takosan",
+      "text": "同じレイアウトを、次の作品へ使い回すこともできます。",
+      "spoken": "同じレイアウトを、次の作品へ使い回すこともできます。",
+      "audio": "duo_u061_takosan_088b71869a54.wav",
+      "sha256": "883a0f99c79ed4491d1bc49108ce29005ec585b4ebfe4ff0640f4f1de30bcd2d",
+      "firstPass": "同じレイアウトを次の作品へ使い回すこともできます",
+      "secondPass": null
+    },
+    {
+      "id": "u062",
+      "speaker": "yametaro",
+      "text": "Webサイトの見た目を直すときと、感覚が近いな。",
+      "spoken": "ウェブサイトの見た目を直すときと、感覚が近いな。",
+      "audio": "duo_u062_yametaro_59ece409f47a.wav",
+      "sha256": "b2b1900bd61e792454707ccf2a1db5f577fa5f1e007efc8f85d4e6ee94388f04",
+      "firstPass": "ウェブサイトの見た目を直すときと感覚が近いな",
+      "secondPass": null
+    },
+    {
+      "id": "u063",
+      "speaker": "takosan",
+      "text": "字幕の位置は編集で直せます。でも、顔や演技そのものが違うなら、生成素材の見直しが必要です。",
+      "spoken": "字幕の位置は編集で直せます。でも、顔や演技そのものが違うなら、生成素材の見直しが必要です。",
+      "audio": "duo_u063_takosan_b198922e4fa0.wav",
+      "sha256": "81525bb38708318bf1070291b64d3cf1ce563aa6c165516516cc1cd19c908a0e",
+      "firstPass": "字幕の位置は編集で直せます。でも、歯や演技そのものが違うなら、生成素材の見直しが必要です。",
+      "secondPass": "字幕の位置は編集で直せます。でも、顔や演技そのものが違うなら、生成素材の見直しが必要です。"
+    },
+    {
+      "id": "u064",
+      "speaker": "takosan",
+      "text": "問題に合った直し方を選びます。",
+      "spoken": "問題に合った直し方を選びます。",
+      "audio": "duo_u064_takosan_430b52410ecb.wav",
+      "sha256": "06c689185c0684b15179a3fd95f12528436ab9522b057b2aa3b2b236bb5f3c4c",
+      "firstPass": "問題にあった直し方を選びます",
+      "secondPass": null
+    },
+    {
+      "id": "u065",
+      "speaker": "yametaro",
+      "text": "そろそろ、何回まで失敗してええか、ワイの財布にも聞きたいわ。",
+      "spoken": "そろそろ、何回まで失敗してええか、ワイの財布にも聞きたいわ。",
+      "audio": "duo_u065_yametaro_6bbd53ca6108.wav",
+      "sha256": "e516b9b32ef0b2a6e0bde4356309fd295bb35890f6daab07ef919bd823b28b8f",
+      "firstPass": "そろそろ何回まで失敗していいか、Yの財布にも聞きたいわ",
+      "secondPass": null
+    },
+    {
+      "id": "u066",
+      "speaker": "takosan",
+      "text": "今回使っているQwen CloudのWan 3.0では、生成料金は秒数と解像度で変わります。",
+      "spoken": "今回使っているクウェンクラウドのワン、スリーポイントゼロでは、生成料金は秒数と解像度で変わります。",
+      "audio": "duo_u066_takosan_bc189cc338e6.wav",
+      "sha256": "3aa3f8ff624726988ad6d5a6e5d728064ae7cdaaf54b628199a10546b206582c",
+      "firstPass": "今回使っているクエンプラウドの1、3.0では、生成料金は量数と改造度で変わります。",
+      "secondPass": "今回使っているクエンクラウドのWAN 3.0では、生成料金は秒数と解像度で変わります。"
+    },
+    {
+      "id": "u067",
+      "speaker": "takosan",
+      "text": "通常表示価格で30秒なら、480pは1ドル50セント、720pは3ドル、1080pは6ドルです。",
+      "spoken": "通常表示価格で30秒なら、四百八十ピーは1ドル50セント、七百二十ピーは3ドル、千八十ピーは6ドルです。",
+      "audio": "duo_u067_takosan_cd0b075fc7b9.wav",
+      "sha256": "52199907e6d3524c8e07973dc9c8214bcc4075f4065b5316aa7a4a3930156495",
+      "firstPass": "通常表示価格で30秒なら480pは1ドル50セント720pは3ドル1080pは6ドルです",
+      "secondPass": "通常表示価格で30秒なら、480Pは1ドル50セント、720Pは3ドル、1080Pは6ドルです。"
+    },
+    {
+      "id": "u068",
+      "speaker": "yametaro",
+      "text": "同じ長さでも、2倍、4倍になるんか。",
+      "spoken": "同じ長さでも、2倍、4倍になるんか。",
+      "audio": "duo_u068_yametaro_a0bacc10996c.wav",
+      "sha256": "fa12d5d5ba1706e612b7d1a373bdd0e5248729e7bf67476db0a85d13ffe6efce",
+      "firstPass": "同じ長さでも2倍4倍になるのか",
+      "secondPass": null
+    },
+    {
+      "id": "u069",
+      "speaker": "takosan",
+      "text": "さらに、480pで30秒を3回生成したら4ドル50セントです。",
+      "spoken": "さらに、四百八十ピーで30秒を3回生成したら4ドル50セントです。",
+      "audio": "duo_u069_takosan_626e381d87a4.wav",
+      "sha256": "6b56b3e1efce51a4fcc2ffc83460dce612bfa8d142574d7eceececed9a32c52a",
+      "firstPass": "さらに、480pで30秒を3回生成したら、4ドル50セントです。",
+      "secondPass": "さらに、480Pで30秒を3回生成したら、4ドル50セントです。"
+    },
+    {
+      "id": "u070",
+      "speaker": "takosan",
+      "text": "一つだけ採用しても、生成した分の費用で考える必要があります。",
+      "spoken": "一つだけ採用しても、生成した分の費用で考える必要があります。",
+      "audio": "duo_u070_takosan_5067c8d9654a.wav",
+      "sha256": "4b7844ba76bfede71c660f9027597ef405d95eec33f7fe608a38d5774f326e3c",
+      "firstPass": "一つだけ採用しても、生成した分の費用で考える必要があります。",
+      "secondPass": null
+    },
+    {
+      "id": "u071",
+      "speaker": "yametaro",
+      "text": "完成動画に出えへん二本も、財布には出演しとるんやな。",
+      "spoken": "完成動画に出えへん二本も、財布には出演しとるんやな。",
+      "audio": "duo_u071_yametaro_943f0316aaab.wav",
+      "sha256": "5684ebc260c52a2208685045c58c9c0198d06f36900e2e9a3dcc851a71c8e40f",
+      "firstPass": "完成動画に出へん日本も財布には出演しておるんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u072",
+      "speaker": "takosan",
+      "text": "だから、まず低解像度で構図や演出を試します。",
+      "spoken": "だから、まず低解像度で構図や演出を試します。",
+      "audio": "duo_u072_takosan_75e675a5d7be.wav",
+      "sha256": "f3285e14334e4e9c83ac96298694167b4d6305d4bbc7b68875eddaad4a465581",
+      "firstPass": "だからまず低海ゾードで構図や演出を試します",
+      "secondPass": "だから、まず低解像度で構図や演出を試します。"
+    },
+    {
+      "id": "u072b",
+      "speaker": "takosan",
+      "text": "画質が必要な作品は、最後に高解像度で生成する進め方があります。",
+      "spoken": "画質が必要な作品は、最後に高解像度で生成する進め方があります。",
+      "audio": "duo_u072b_takosan_20799e8956bd.wav",
+      "sha256": "822a62f42d16fe57f012fb7a2b06f77a25bf0acf4e7d48ec5bc05d990ca5d3bd",
+      "firstPass": "画質が必要な作品は最後に公開増度で生成する進め方があります。",
+      "secondPass": "画質が必要な作品は、最後に高解像度で生成する進め方があります。"
+    },
+    {
+      "id": "u073",
+      "speaker": "takosan",
+      "text": "窓際動画はネタが伝わることを優先して、基本的に480pの生成結果を採用しています。",
+      "spoken": "窓際動画はネタが伝わることを優先して、基本的に四百八十ピーの生成結果を採用しています。",
+      "audio": "duo_u073_takosan_61fb999ff194.wav",
+      "sha256": "7e966c9cf845659e5a7fd888e6b3705d185b1f5d4f45fd136519b1773ed86025",
+      "firstPass": "窓際動画はネタが伝わることを優先して、基本的に480pの生成結果を採用しています。",
+      "secondPass": null
+    },
+    {
+      "id": "u074",
+      "speaker": "takosan",
+      "text": "その分の予算を、次のネタにも使えますからね。",
+      "spoken": "その分の予算を、次のネタにも使えますからね。",
+      "audio": "duo_u074_takosan_611432cd8335.wav",
+      "sha256": "4fb48df0b18067b6c7264fb1a3bf3ffaabadba3d1ec28bfbf3ae6bdbd69b7a22",
+      "firstPass": "その分の予算を次のネタにも使えますからね",
+      "secondPass": null
+    },
+    {
+      "id": "u075",
+      "speaker": "yametaro",
+      "text": "精細さと、作れる本数のバランスやな。",
+      "spoken": "精細さと、作れる本数のバランスやな。",
+      "audio": "duo_u075_yametaro_b00ee428407a.wav",
+      "sha256": "ad0dc3b21159793b3ab6b44d2cd9ee34a755bfed103b0713ea2dfcd4196d79a9",
+      "firstPass": "精細さと作れる本数のバランスやな",
+      "secondPass": null
+    },
+    {
+      "id": "u076",
+      "speaker": "takosan",
+      "text": "画質を重視するなら、高解像度を選ぶ余地もあります。",
+      "spoken": "画質を重視するなら、高解像度を選ぶ余地もあります。",
+      "audio": "duo_u076_takosan_d899cf372114.wav",
+      "sha256": "4776336519fc4e0cbb5955c34c2361b6dfd6a38c84b047d96209420048a11b64",
+      "firstPass": "画質を重視するなら公開増度を選ぶ余地もあります",
+      "secondPass": null
+    },
+    {
+      "id": "u077",
+      "speaker": "takosan",
+      "text": "ただ、再生成では演技や細部も変わり得るので、最終版を確認します。",
+      "spoken": "ただ、再生成では演技や細部も変わり得るので、最終版を確認します。",
+      "audio": "duo_u077_takosan_f120c5716eca.wav",
+      "sha256": "018ab81c6a3f9f995b53004bf76b24313ebb1e459edb69571f75703574f1c3a2",
+      "firstPass": "ただ、再生成では演技や細部も変わり得るので、最終版を確認します。",
+      "secondPass": null
+    },
+    {
+      "id": "u078",
+      "speaker": "takosan",
+      "text": "普段の投稿用は720pで書き出していますが、これは480pの映像を拡大して仕上げる工程です。",
+      "spoken": "普段の投稿用は七百二十ピーで書き出していますが、これは四百八十ピーの映像を拡大して仕上げる工程です。",
+      "audio": "duo_u078_takosan_c6c75cdcf635.wav",
+      "sha256": "81e41b31eedd54a45949b6bfe24b06051c3b82e54d7ccbfeae8479961ae4e344",
+      "firstPass": "普段の投稿用は720pで書き出していますが、これは480pの映像を拡大して仕上げる工程です。",
+      "secondPass": "普段の投稿用は720pで書き出していますが、これは480pの映像を拡大して仕上げる工程です。"
+    },
+    {
+      "id": "u079",
+      "speaker": "takosan",
+      "text": "字幕は完成サイズで描きます。元映像の細かい情報が、拡大だけで増えるわけではありません。",
+      "spoken": "字幕は完成サイズで描きます。元映像の細かい情報が、拡大だけで増えるわけではありません。",
+      "audio": "duo_u079_takosan_a9031d602a10.wav",
+      "sha256": "ab777061086fa4f3313ec0b7670f1d6121f022f398d19f73b5523bc7b9af60e9",
+      "firstPass": "字幕は完成サイズで書きます。元映像の細かい情報が拡大だけで増えるわけではありません。",
+      "secondPass": null
+    },
+    {
+      "id": "u080",
+      "speaker": "yametaro",
+      "text": "生成するときの解像度と、完成ファイルの解像度は分けて考えるんやな。",
+      "spoken": "生成するときの解像度と、完成ファイルの解像度は分けて考えるんやな。",
+      "audio": "duo_u080_yametaro_6407c14ef2b5.wav",
+      "sha256": "53dcc88cc80a0b39336931663c912fa039c55eaf329bdcd71195150c5e0c8b65",
+      "firstPass": "生成する時の改造度と完成ファイルの改造度は分けて考えるんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u081",
+      "speaker": "takosan",
+      "text": "それに、Codexなどの利用料や、音声生成・編集を動かす環境、処理時間もあります。",
+      "spoken": "それに、コーデックスなどの利用料や、音声生成・編集を動かす環境、処理時間もあります。",
+      "audio": "duo_u081_takosan_028219a22a3f.wav",
+      "sha256": "8086807c7070747cb8b8b0a43c6b66be9aa8fff82c5c7ec003f2be79e27e68d5",
+      "firstPass": "それに、コーデックスなどの利用量や音声声声編集を動かす環境、処理時間もあります。",
+      "secondPass": "それに、コーデックスなどの利用量や、音声生成・編集を動かす環境、処理時間もあります。"
+    },
+    {
+      "id": "u082",
+      "speaker": "takosan",
+      "text": "ここで示した金額は動画生成の分です。価格や割引条件は、実行するときに確認してくださいね。",
+      "spoken": "ここで示した金額は動画生成のぶんです。価格や割引条件は、実行するときに確認してくださいね。",
+      "audio": "duo_u082_takosan_110614af4081.wav",
+      "sha256": "219a7b9defaf7b5d562b3820a2a017650e1ba53d07b527119fd3176accb27ccf",
+      "firstPass": "ここで示した金額は動画生成の分です。価格や割引条件は実行するときに確認してくださいね。",
+      "secondPass": null
+    },
+    {
+      "id": "u083",
+      "speaker": "yametaro",
+      "text": "こんだけ覚えることがあると、次の動画でも同じ失敗しそうやわ。",
+      "spoken": "こんだけ覚えることがあると、次の動画でも同じ失敗しそうやわ。",
+      "audio": "duo_u083_yametaro_cd09a6df9428.wav",
+      "sha256": "dcfbe9d461d14a3f86b1cc21ba38e9fa429f0e8ae65740ef7daa17060ec0d063",
+      "firstPass": "これだけ覚えることがあると次の動画でも同じ失敗しそうやわ",
+      "secondPass": null
+    },
+    {
+      "id": "u084",
+      "speaker": "takosan",
+      "text": "そこで、制作の経験をスキルへ残しています。",
+      "spoken": "そこで、制作の経験をスキルへ残しています。",
+      "audio": "duo_u084_takosan_2f72b5369f44.wav",
+      "sha256": "4d2f992851cee3dbe51dd4f011384f42edc50d270b81dc737e045563a3ee05f7",
+      "firstPass": "そこで、政策の経験をスキルへ残しています。",
+      "secondPass": null
+    },
+    {
+      "id": "u085",
+      "speaker": "takosan",
+      "text": "AIが必要なときに読む作業手順と、参照資料や実行用コードをまとめたものです。",
+      "spoken": "エーアイが必要なときに読む作業手順と、参照資料や実行用コードをまとめたものです。",
+      "audio": "duo_u085_takosan_0826211f79f8.wav",
+      "sha256": "14cade7f6400b81c84e0ad266753bab050472f8a2edf9b797a3c87d83b6a6936",
+      "firstPass": "AIが必要なときに読む作業手順と、参照資料や実行用コードをまとめたものです。",
+      "secondPass": null
+    },
+    {
+      "id": "u086",
+      "speaker": "yametaro",
+      "text": "一本作ったら、次の一本を作る道具も育つんやな。",
+      "spoken": "一本作ったら、次の一本を作る道具も育つんやな。",
+      "audio": "duo_u086_yametaro_b59c2e8ae5b2.wav",
+      "sha256": "23998bb2d3872f4367ffeeff1b4bd134b72ed19f5388cf1f5260c5a50e51e816",
+      "firstPass": "1本作ったら次の1本を作る道具も育つんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u087",
+      "speaker": "takosan",
+      "text": "たとえば、このニュースの制作では、参照音声の長さでAPIに拒否されたことがあります。",
+      "spoken": "たとえば、このニュースの制作では、参照音声の長さでエーピーアイに拒否されたことがあります。",
+      "audio": "duo_u087_takosan_15923ac5dfc2.wav",
+      "sha256": "b8e3339421a453510386dbc65069e3a6cd84afe8fd87264d6aabc810b5c41635",
+      "firstPass": "例えば、このニュースの制作では、参照音声の長さでAPIに許しされたことがあります。",
+      "secondPass": "例えば、このニュースの制作では、参照音声の長さでAPIに拒否されたことがあります。"
+    },
+    {
+      "id": "u088",
+      "speaker": "takosan",
+      "text": "一本ずつ短く分割して再送しましたが、合計時間にも上限があって、またエラーになりました。",
+      "spoken": "一本ずつ短く分割して再送しましたが、合計時間にも上限があって、またエラーになりました。",
+      "audio": "duo_u088_takosan_579068bd9365.wav",
+      "sha256": "9beaa4ee6c3ca46d2ff7fcaac12dc37f73754c211f47ded5f62080875d032ea0",
+      "firstPass": "一本ずつ短く分割して再送しましたが、合計時間にも上限があって、またエラーになりました。",
+      "secondPass": null
+    },
+    {
+      "id": "u089",
+      "speaker": "yametaro",
+      "text": "ファイルを分けただけやと、解決してへんかったんやな。",
+      "spoken": "ファイルを分けただけやと、解決してへんかったんやな。",
+      "audio": "duo_u089_yametaro_e213a338481d.wav",
+      "sha256": "e67043a1088de21cccd020530a790f86dfcd188f4bd26ff8ce0b9c51ebd04045",
+      "firstPass": "ファイルを分けただけやと解決して変かったんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u090",
+      "speaker": "takosan",
+      "text": "今は、送信する前に両方の長さを測って、条件を外れたら止める処理があります。",
+      "spoken": "今は、送信する前に両方の長さを測って、条件を外れたら止める処理があります。",
+      "audio": "duo_u090_takosan_6d2b7b82512a.wav",
+      "sha256": "4ff72f4b5fc591a3bf155d702a0dc5e27674b0b19d13b1b06e1f56f139c56692",
+      "firstPass": "今は送信する前に両方の長さを図って条件を外れたら止める処理があります",
+      "secondPass": null
+    },
+    {
+      "id": "u091",
+      "speaker": "takosan",
+      "text": "分かった制約を、次の実行で確認できるコードへ残しているんです。",
+      "spoken": "分かった制約を、次の実行で確認できるコードへ残しているんです。",
+      "audio": "duo_u091_takosan_f285210f150f.wav",
+      "sha256": "da29898d2bdb4c6fc4233236ffa39441e9078067760f240adcc637a75c4a3df8",
+      "firstPass": "分かった制約を次の実行で確認できる行動へ残しているんです",
+      "secondPass": "分かった制約を、次の実行で確認できるコードへ、残しているんです。"
+    },
+    {
+      "id": "u092",
+      "speaker": "yametaro",
+      "text": "開発で不具合を直したあとに、同じ問題を検出するチェックを入れるのと近いな。",
+      "spoken": "開発で不具合を直したあとに、同じ問題を検出するチェックを入れるのと近いな。",
+      "audio": "duo_u092_yametaro_2102a8b9bcfe.wav",
+      "sha256": "aa0454ec31bc8ef212af8a7ecbe24d7cf1712794700e293b259c51bfea8428b2",
+      "firstPass": "開発で不具合を直した後に同じ問題を検出するチェックを入れるのと近いな",
+      "secondPass": null
+    },
+    {
+      "id": "u093",
+      "speaker": "takosan",
+      "text": "さっきの音声修復も、比較してよかった手順を、スキルから参照するようにしました。",
+      "spoken": "さっきの音声修復も、比較してよかった手順を、スキルから参照するようにしました。",
+      "audio": "duo_u093_takosan_61c4b17331a2.wav",
+      "sha256": "0a82ae2fc51210c4992f95b446643126ac76e544470c3036bb3a2c1dd228d2c2",
+      "firstPass": "さっきの音声修復も比較して良かった手順をスキルから参照するようにしました",
+      "secondPass": null
+    },
+    {
+      "id": "u094",
+      "speaker": "takosan",
+      "text": "モデルを比較して、修正に使う標準を更新したこともあります。",
+      "spoken": "モデルを比較して、修正に使う標準を更新したこともあります。",
+      "audio": "duo_u094_takosan_861abc6f8f5f.wav",
+      "sha256": "e257cf7394e2bf3eb474a14deeb80bebbb30e571418cd5649912c00b59ae08bd",
+      "firstPass": "モデルを比較して修正に使う標準を更新したこともあります",
+      "secondPass": "モデルを比較して、修正に使う標準を更新したこともあります。"
+    },
+    {
+      "id": "u095",
+      "speaker": "yametaro",
+      "text": "うまくいった設定を、全部共通にしたらええんか？",
+      "spoken": "うまくいった設定を、全部共通にしたらええんか？",
+      "audio": "duo_u095_yametaro_22ecdd72285b.wav",
+      "sha256": "0116487d32642cf9c47ac48eca7cee492e5ef520f851321fda87bd9f10e9c913",
+      "firstPass": "うまくいった設定を全部共通にしたらいいんか",
+      "secondPass": null
+    },
+    {
+      "id": "u096",
+      "speaker": "takosan",
+      "text": "使う条件も一緒に残すんです。",
+      "spoken": "使う条件も一緒に残すんです。",
+      "audio": "duo_u096_takosan_dc7f50baebf7.wav",
+      "sha256": "c507d76274d940d4ec27d7d0ad0f2b4254f8e713f141576212fa7b37a2b60764",
+      "firstPass": "使う条件も一緒に残すんです",
+      "secondPass": null
+    },
+    {
+      "id": "u097",
+      "speaker": "takosan",
+      "text": "あるキャラクターの短文に効いた設定が、別の人や長文にも合うとは限りませんからね。",
+      "spoken": "あるキャラクターの短文に効いた設定が、別の人や長文にも合うとは限りませんからね。",
+      "audio": "duo_u097_takosan_afe80c90e1af.wav",
+      "sha256": "2072d2e3eaa216ca00ecf7da21ea153b4834abc48b23093d709f94d742357492",
+      "firstPass": "あるキャラクターのパンブンに聞いた設定が、別の人や勝負にも合うとは限りませんからね。",
+      "secondPass": "あるキャラクターの短文に聞いた設定が、別の人や長文にも合うとは限りませんからね。"
+    },
+    {
+      "id": "u098",
+      "speaker": "takosan",
+      "text": "何を使ったか、どう直したか、どこまで確認したか。",
+      "spoken": "何を使ったか、どう直したか、どこまで確認したか。",
+      "audio": "duo_u098_takosan_4dfe03165c65.wav",
+      "sha256": "0f70e7bef7ed38df8ca5c54a3354fc8356bd64190153323df33088355e28e16b",
+      "firstPass": "何を使ったか、どう直したか、どこまで確認したか",
+      "secondPass": null
+    },
+    {
+      "id": "u099",
+      "speaker": "takosan",
+      "text": "そこまで残して、次の制作で使い、また見直します。",
+      "spoken": "そこまで残して、次の制作で使い、また見直します。",
+      "audio": "duo_u099_takosan_02fadf81fd6c.wav",
+      "sha256": "5f9db87145790b2348d5a65558531d46957f42a71960442e31339fb589cb8f80",
+      "firstPass": "そこまで残して、次の製作で使い、また見直します。",
+      "secondPass": null
+    },
+    {
+      "id": "u100",
+      "speaker": "takosan",
+      "text": "開発と同じように、スキルを継続的に育てています。",
+      "spoken": "開発と同じように、スキルを継続的に育てています。",
+      "audio": "duo_u100_takosan_ab330bf7cc01.wav",
+      "sha256": "31c5508d8a3ce980bec883dba5155412d7e28c05823ed1779f5240a468102e1a",
+      "firstPass": "開発と同じようにスキルを継続的に育てています",
+      "secondPass": null
+    },
+    {
+      "id": "u101",
+      "speaker": "takosan",
+      "text": "今回の流れは、CodexやClaude Codeで依頼と操作をまとめ、Wanで映像を生成する。",
+      "spoken": "今回の流れは、コーデックスやクロードコードで依頼と操作をまとめ、ワンで映像を生成する。",
+      "audio": "duo_u101_takosan_bd9086635178.wav",
+      "sha256": "92f43fa90760710beb4f49bad1f6aa89174373f84e5ba794c57c8cc2da670d99",
+      "firstPass": "今回の流れは、コーデックスやクロードコードで 依頼と操作をまとめ、ファンで映像を生成する。",
+      "secondPass": null
+    },
+    {
+      "id": "u102",
+      "speaker": "takosan",
+      "text": "必要な音声修正と編集を加えて、完成させる、というものです。",
+      "spoken": "必要な音声修正と編集を加えて、完成させる、というものです。",
+      "audio": "duo_u102_takosan_d02ace9a202c.wav",
+      "sha256": "68bbb627ec4082e07e6434df1473fafdf3696f47e47772c461e78c90beb40a5b",
+      "firstPass": "強い音声修正と編集を加えて完成させるというものです",
+      "secondPass": "必要な音声修正と編集を加えて、完成させる、というものです。"
+    },
+    {
+      "id": "u103",
+      "speaker": "yametaro",
+      "text": "人物の資料をそろえて、失敗に合った直し方を選んで、次に使える手順まで残すんやな。",
+      "spoken": "人物の資料をそろえて、失敗に合った直し方を選んで、次に使える手順まで残すんやな。",
+      "audio": "duo_u103_yametaro_93f85b86d649.wav",
+      "sha256": "34aca5507d3a7a7de00aa762d29896cc1a4fb51f751b705b65f85f618014802b",
+      "firstPass": "人物の資料を揃えて失敗にあった直し方を選んで次に使える手順まで残すんやな",
+      "secondPass": null
+    },
+    {
+      "id": "u104",
+      "speaker": "takosan",
+      "text": "最初に試すなら、一人・一場面の短い動画から。",
+      "spoken": "最初に試すなら、一人・一場面の短い動画から。",
+      "audio": "duo_u104_takosan_fabcba07b0cf.wav",
+      "sha256": "e4ed33179c7ecff8835c37d8fb57d2aff8e12f7ead6f295d6d4ccea97b65c086",
+      "firstPass": "最初に試すなら一人一場面の短い動画から",
+      "secondPass": null
+    },
+    {
+      "id": "u105",
+      "speaker": "takosan",
+      "text": "やめ太郎さんも、いつものAIとのものづくりを、動画へ広げてみてください。",
+      "spoken": "やめ太郎さんも、いつものエーアイとのものづくりを、動画へ広げてみてください。",
+      "audio": "duo_u105_takosan_d3572fd02d69.wav",
+      "sha256": "59d0e383b5f519f625c2095fd74f301a288b4920780b902b12a2b6ca59f6e066",
+      "firstPass": "やめたろうさんも、いつものAIとのものづくりを、動画へ広げてみてください。",
+      "secondPass": null
+    },
+    {
+      "id": "u106",
+      "speaker": "takosan",
+      "text": "今後は、同僚のh3さんの手法も紹介する予定です。",
+      "spoken": "今後は、同僚のエイチスリーさんの手法も紹介する予定です。",
+      "audio": "duo_u106_takosan_fe285a75b273.wav",
+      "sha256": "28f0efa5f9f1dcc1d19cab9aef9db7ac0822e7aec5f0d4e0939fdf9edd19aa49",
+      "firstPass": "今後は同僚のH3さんの手法も紹介する予定です",
+      "secondPass": "今後は、同僚のH3さんの手法も紹介する予定です。"
+    },
+    {
+      "id": "u107",
+      "speaker": "takosan",
+      "text": "費用を抑えられる一方で、時間がかかるなどの違いがあるので、料金と待ち時間、手作業を比べていきます。",
+      "spoken": "費用を抑えられる一方で、時間がかかるなどの違いがあるので、料金と待ち時間、手作業を比べていきます。",
+      "audio": "duo_u107_takosan_fe6144ca6f43.wav",
+      "sha256": "d5ec2c80f187f6c8773f01de077f522a10944aa0ae03aa0771cf8ba5570af054",
+      "firstPass": "費用を抑えられる一方で時間がかかるなどの違いがあるので、料金と待ち時間、手作業を比べていきます。",
+      "secondPass": null
+    },
+    {
+      "id": "u108",
+      "speaker": "yametaro",
+      "text": "財布と休日、両方に合う作り方を探したいわ。",
+      "spoken": "財布と休日、両方に合う作り方を探したいわ。",
+      "audio": "duo_u108_yametaro_e9b9ef752adb.wav",
+      "sha256": "f2c610dd892740460c2110d38aefb866b11df6d612560c449b281634f229d4a3",
+      "firstPass": "財布と休日両方に合う作り方を探したいわ",
+      "secondPass": null
+    },
+    {
+      "id": "u109",
+      "speaker": "takosan",
+      "text": "それでは、また次回お会いしましょう。",
+      "spoken": "それでは、また次回お会いしましょう。",
+      "audio": "duo_u109_takosan_853517916b68.wav",
+      "sha256": "d09848ec1387c1a1c5621d7f46e83493dd570e456033f6ba98e50b03f9378177",
+      "firstPass": "それではまた次回お会いしましょう",
+      "secondPass": null
+    }
+  ],
+  "mixedAudioScreening": {
+    "note": "Automated screening of final mixed waveform; no subjective listening claim.",
+    "segments": [
+      {
+        "name": "example_comedy",
+        "start": 11.733333333333333,
+        "duration": 3.9,
+        "recognized": "あー、パクられた。くそ。"
+      },
+      {
+        "name": "example_news",
+        "start": 15.633333333333333,
+        "duration": 8.6,
+        "recognized": "即報です。そばやと名乗る窓際社員の男に実形判決が言い渡されました。"
+      },
+      {
+        "name": "example_cm",
+        "start": 24.233333333333334,
+        "duration": 5.5,
+        "recognized": "この車は、スタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのスタッフのス"
+      },
+      {
+        "name": "news_before_audio",
+        "start": 314.03333333333336,
+        "duration": 2.1,
+        "recognized": "即帽です"
+      },
+      {
+        "name": "news_after_audio",
+        "start": 316.1333333333333,
+        "duration": 2.1,
+        "recognized": "即報です。"
+      },
+      {
+        "name": "park_comparison",
+        "start": 346.9,
+        "duration": 10.333333333333334,
+        "recognized": "このTシャツ、好奇事態でも買えるんですって!このTシャツ、公式サイトでも買えるんですって!"
+      },
+      {
+        "name": "u000",
+        "start": 0.5,
+        "duration": 4.9,
+        "recognized": "クロードコードやコーデックスで動画作りも始めてみませんか"
+      },
+      {
+        "name": "u009",
+        "start": 66.5,
+        "duration": 5.966666666666667,
+        "recognized": "映像を生成しているのは、One 3.0という動画生成モデルです。"
+      },
+      {
+        "name": "u023",
+        "start": 158.46666666666667,
+        "duration": 8.466666666666667,
+        "recognized": "例えば、みがわりのくぎゅんさんが画面をつけても、体格までそば屋さんに変わったら困りますよね。"
+      },
+      {
+        "name": "u047",
+        "start": 306.6333333333333,
+        "duration": 7.0,
+        "recognized": "このニュースでは、冒頭の即報です。を、彩りで用意した音声に差し替えています。"
+      },
+      {
+        "name": "u052",
+        "start": 340.5,
+        "duration": 6.0,
+        "recognized": "そこで一分を整成して、必要な部分を切り出す方法も試しました。"
+      },
+      {
+        "name": "u067",
+        "start": 445.3,
+        "duration": 12.333333333333334,
+        "recognized": "通常表示価格で30秒なら480pは1ドル50セント720pは3ドル1080pは6ドルです"
+      },
+      {
+        "name": "u069",
+        "start": 461.5,
+        "duration": 6.8,
+        "recognized": "さらに480pで30秒を3回生成したら4ドル50セントです"
+      },
+      {
+        "name": "u078",
+        "start": 520.9666666666667,
+        "duration": 9.733333333333333,
+        "recognized": "普段の投稿用は720pで書き出していますが、これは480pの映像を拡大して仕上げる工程です。"
+      },
+      {
+        "name": "u087",
+        "start": 586.8,
+        "duration": 7.7,
+        "recognized": "例えば、このニュースの政策では、参照音声の長さでAPIに許しされたことがあります。"
+      },
+      {
+        "name": "u106",
+        "start": 709.0,
+        "duration": 4.966666666666667,
+        "recognized": "今後は同僚のH3さんの手法も紹介する予定です"
+      },
+      {
+        "name": "u109",
+        "start": 728.1666666666666,
+        "duration": 3.3666666666666667,
+        "recognized": "それではまた次回お会いしましょう"
+      }
+    ]
+  }
+}

@@ -13,7 +13,7 @@ parser.add_argument('--concurrency', type=int, default=4)
 args = parser.parse_args()
 if args.output and args.output_path:
     parser.error('Supply either a positional output or --output, not both')
-output = Path(args.output or args.output_path or 'out/review_v2_01.mp4')
+output = Path(args.output or args.output_path or 'out/review_v3_01.mp4')
 if not output.is_absolute():
     output = P / output
 output.parent.mkdir(parents=True, exist_ok=True)

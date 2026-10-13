@@ -2,7 +2,7 @@ from pathlib import Path
 import json,subprocess,argparse,concurrent.futures
 from PIL import Image,ImageDraw
 P=Path(__file__).resolve().parent
-parser=argparse.ArgumentParser();parser.add_argument('--source',default='../final_remotion_ai_video_workflow_v2.mp4');parser.add_argument('--tag',default='v2');parser.add_argument('--manifest',default='src/edit-manifest.json');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--source',default='../final_remotion_ai_video_workflow_v3.mp4');parser.add_argument('--tag',default='v3');parser.add_argument('--manifest',default='src/edit-manifest.json');args=parser.parse_args()
 m=json.loads((P/args.manifest).read_text());src=(P/args.source).resolve();out=P/'out'/f'audit_{args.tag}';out.mkdir(exist_ok=True)
 points=[('opening',30)]
 for i,d in enumerate(m['dialogue']):

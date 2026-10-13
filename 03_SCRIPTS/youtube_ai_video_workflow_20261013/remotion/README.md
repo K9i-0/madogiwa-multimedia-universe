@@ -1,75 +1,67 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — v2
+# Codexで動画まで作る。窓際族物語のAI制作術 — やめ太郎＆たこさん版
 
-CodexやClaude Codeでものづくりをしている人向けの、ずんだもん・四国めたんによる解説。第53話のニュース制作を軸に、人物資料、音声修復、編集、費用、制作スキルの継続改善を扱う。
+やめ太郎が「ワイも動画を作ってみたい」と質問し、たこさんが実際の制作例で解説する。ユーザー指定の3台詞を導入に使い、第53話を主線とする説明、キャラクターシート、音声修復、料金、スキルの改善過程を引き継ぐ。
 
-完成版は `../final_remotion_ai_video_workflow_v2.mp4`。1280×720 / 30fps / 18,481フレーム、10分16.033秒。旧版 `../final_remotion_ai_video_workflow.mp4` は比較用に保存し、上書きしない。
+今回の完成版は `../final_remotion_ai_video_workflow_v3.mp4`。仕様と実測尺は `../delivery_v3.json`、確認結果は `../review_v3.md`。旧VOICEVOX版の完成MP4と確認記録は保存する。旧版のコード一式はGitコミット `9aa43d7f` で再現できる。
 
-## 編集の正本
+## 正本
 
-- `dialogue.json`：110発話の台本・字幕改行・画面・章。
-- `clips_config.json`：作例と原音比較の挿入位置、素材内の範囲、BGMを止める指定。
-- `src/edit-manifest.json`：VOICEVOXの読み、実測音声長、フレーム単位の完成タイムライン。
-- `../asset_sources.json`：ローカル素材、抽出フレームの時刻、SHA-256。
-- `../evidence_v2.json`：制作ログの根拠、音声比較の範囲、別実験の区別。
-- `../sources.json`：料金・制作手順・過去エピソードの出典。
+- `dialogue.json`：111発話の本文、話者、字幕改行、発音用文面、必要な生成尺調整。
+- `clips_config.json`：作例と音声比較の挿入位置、範囲、BGM停止。
+- `src/edit-manifest.json`：生成音声から算出したフレーム単位のタイムラインと口パク波形。
+- `../duo_adopted_audio.json`、エピソード直下の `duo_v3_*.wav`：採用音声と復元用の対応表。
+- `../duo_voice_record.json`：Irodoriモデル、正典参照、seed、設定、音声ハッシュ。
+- `../asset_sources.json`、`../inputs/duo/`：採用立ち絵6枚と由来。既存差分の目・口部分だけCSSマスクで使用し、全身の位置を固定する。
+- `../sources.json`、`../evidence_v2.json`：解説に使う制作ログ・価格・実例の根拠。配役変更で実例の生成履歴は変更しない。
 
-Remotion 4.0.535 / React 19.2.3。VOICEVOX 0.25.1、四国めたん2・ずんだもん3。立ち絵と静かなBGMは採用済み解説テンプレを継承する。
+やめ太郎は左で左右反転、たこさんは右。白レンズを維持し、やめ太郎にまばたきを追加しない。字幕色は共通の `00_TEMPLATES/subtitles/member-colors.ts` を参照する。
 
-## 再現とレビュー候補の書き出し
+## 音声
 
-以下はこの `remotion/` ディレクトリで実行する。Node.js、ffmpeg・ffprobe、ローカル素材、既存のPython環境が必要。VOICEVOXを `127.0.0.1:50021` で起動しておく。
+Irodori-TTS v4.1-Smallを正典参照で新規合成する。既存動画内の声を修正する工程とは別であり、音声修復用Largeへ自動的に切り替えない。
+
+- やめ太郎：`02_CHARACTERS/Yametaro_voice.wav`、seed 7。
+- たこさん：`02_CHARACTERS/Takosan_voice.wav`、seed 43。
+- captionなし、本文CFG 5、40 steps、トリムなし、生成後の速度変更なし。
+- やめ太郎の短文は生成尺倍率0.70を出発点とする。長めの台詞は自動尺、個別に調整した台詞は `durationScale` を指定する。たこさんは自動尺。
+- 原文と発音用文面を分ける。専門用語と数値を読める表記にし、ユーザー指定の台詞の字幕本文を保持する。
+
+## 再現
+
+このディレクトリで実行する。Node.js、ffmpeg、ローカルIrodori環境と元素材が必要。モデルを一回読み込み、発話ごとに逐次生成する。GUI操作や新しいWan有料生成は行わない。
 
 ```sh
 npm ci
 ../../../.local/voicevox-explainer/venv/bin/python prepare_assets.py
-../../../.local/voicevox-explainer/venv/bin/python prepare_voice.py
+../../../.local/Irodori-TTS/.venv/bin/python prepare_voice.py
+../../../.local/Irodori-TTS/.venv/bin/python audit_audio.py
 npm run typecheck
 ../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
-npm run render -- --output out/review_v2_01.mp4 --concurrency 4
+npm run render -- --output out/review_v3_01.mp4
 ```
 
-`prepare_assets.py` は元素材を変更せずhardlinkし、指定時刻から実フレームを抽出する。既存の公開用ファイルが宣言した素材と異なる場合は停止する。素材にはGit管理外のローカル動画・立ち絵・BGMがあるため、Gitだけでは再現に必要な全ファイルはそろわない。
+`prepare_voice.py` は現在の配役用 `prepare_duo_voice.py` を呼び出す。モデル、参照ハッシュ、本文、seed、生成尺倍率などをキャッシュ識別へ含める。`--ids u003` などで部分生成も可能。未生成行が残る場合は完成マニフェストを更新しない。生成進捗は `out/duo_progress.json`。`audit_audio.py` は未照合のWAVを順次確認するため、生成中に別プロセスで開始してもよい。
 
-`prepare_voice.py` はエンジン版・話者・音声クエリのSHA-256でキャッシュを照合し、変更した発話だけ合成する。音声とクリップの実測長からマニフェストを再生成するため、実測尺を確認する。
+`mix_audio.py` は各新規発話を−18 LUFSへ調整したうえで合成し、全体を整える。比較映像ではBGM・実況を止める。通常BGMは−34 LUFS、Unityは−38 LUFSを出発点に、締めで持ち上げず4秒フェードする。出力は48kHz stereo。
 
-`render.py` はタイムライン検証、音声ミックス、映像レンダー、AAC音声とのmuxを実行する。引数なしの出力は `out/review_v2_01.mp4`。映像のみ直した場合は `--skip-mix` で既存の `public/mixed.wav` を使用できる。比較する候補は `review_v2_02.mp4` など別名へ書き出す。完成MP4への暗黙の上書きは行わない。
+映像のみの修正は `render.py --skip-mix` で既存ミックスを利用できる。候補は別名へ書き出す。導入確認用 `preview_duo.py` は最初の8発話から短いMP4を作る。
 
-この解説の再現では既存作品を使い、新しいWan動画生成・有料API送信は行わない。
-
-## 監査と採用
+## 監査・採用
 
 ```sh
-../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v2_01.mp4 --tag v2_01
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v2_01.mp4 --tag v2_01
-```
-
-`--source` はこのディレクトリからの相対パス、または絶対パス。`--tag` を変えると、候補ごとの `out/audit_<tag>/` と `../delivery_<tag>.json` を保存できる。`audit_video.py` は全110発話の表示中・各クリップの開始／中間／終了・動く図解の後半・締めを抽出し、全編をデコードする。候補と現行タイムラインが異なる場合は、候補保存時のマニフェストを `--manifest out/候補のmanifest.json` で指定する。コンタクトシートと個別フレームを目視する。`final_checks.py` は720p、30fps、18,481フレーム、48kHz stereo、全編デコード、ピーク超過、ファイルハッシュを検証する。
-
-字幕は文の切れ目で2行までにし、通常29px、長文2件のみ26px。立ち絵の間の790px内に収める。字幕本文・幅・音声尺・原音クリップとの重なりは `out/timeline_validation.json` に記録する。音声の自動照合は別環境で実行する。
-
-```sh
-../../../.local/Irodori-TTS/.venv/bin/python audit_audio.py
+../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v3_01.mp4 --tag v3_01
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v3_01.mp4 --tag v3_01
 ../../../.local/Irodori-TTS/.venv/bin/python audit_mix.py
 ```
 
-ASRは発音確認の補助で、聴感や完全リップシンクの合格判定にはしない。VOICEVOXの読み、ASRの疑義、画面と話す内容の対応、引用音声とBGMの切替を確認し、改善点があれば候補を再出力する。
+全発話の表示中、引用の開始・中間・終了、図解の変化後、締めをMP4から抽出し、文字・顔・素材との対応を目視する。ASRは自動スクリーニングであり、自然さ・声質・精密な口元同期の合格と同一視しない。主観的な通し試聴をできなかった場合は記録する。
 
-レビュー済み候補を採用するときだけ、ファイル名を固定する。以下の候補名は実際に採用したものへ置き換える。
+候補を採用後、完成名へ保存して最終検査する。既存の完成ファイルは暗黙に上書きしない。
 
 ```sh
-cp -n out/review_v2_01.mp4 ../final_remotion_ai_video_workflow_v2.mp4
-../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source ../final_remotion_ai_video_workflow_v2.mp4 --tag v2
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source ../final_remotion_ai_video_workflow_v2.mp4 --tag v2
+cp -n out/review_v3_01.mp4 ../final_remotion_ai_video_workflow_v3.mp4
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --tag v3
+../../../.local/voicevox-explainer/venv/bin/python adopt_duo_audio.py --version v3
 ```
 
-`cp -n` は既存の完成版を上書きしない。すでに同名がある場合は、採用版のハッシュを確認し、別候補の監査結果と取り違えない。最終の確認内容と限界は `../review_v2.md`、`../delivery_v2.json` に記録する。音量の詳細記録 `out/final_loudness.json` は最後の検査で更新され、候補ごとの値は各delivery JSONにも保存される。
-
-## 実例の扱い
-
-第53話の「速報です」は `news_raw.mp4` と `news_fixed.mp4` の各0〜2.1秒を比較する。両者の映像ストリームは同一。比較区間ごとに音量を合わせ、BGMと二人の解説を止める。
-
-第72話の `voice_patch_comparison.mp4` は完成本編とは別の部分修復実験。全310フレームで、前半155フレームが元音声、後半155フレームが修正候補。下部の比較ラベルは素材へ焼き込まれている。この福ギュンの実験はIrodori Smallによるもの。後日のおかやまんでの比較を受けたLargeの運用採用と区別する。根拠は `../evidence_v2.json` と `../../72_tokyo_madogiwa_park/voice_patch_experiment.md`、`../../72_tokyo_madogiwa_park/okayaman_large_patch.md`。
-
-第53話のAPI失敗記録は参照音声の各尺・合計尺を事前検査する理由として使用し、失敗時の課金額は断言しない。タスクIDやAPI応答全文は画面に出さない。
-
-料金は2026年10月13日確認の通常表示価格を基準にする。720pの完成書き出しと480pの生成料金を混同しない。動画はローカル保存で、公開・アップロードは別作業。概要欄とクレジットは `../youtube_description.txt`。
+動画・中間音声・監査画像はGit管理外。採用したセリフWAVだけエピソード直下へ保存し、参照ハッシュ・設定・コードとともに管理する。元動画・BGMにはローカル保持の素材があるため、Gitだけで全素材がそろうわけではない。公開・アップロードは別作業。

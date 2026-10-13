@@ -3,8 +3,16 @@
   "pricing": {
     "url": "https://www.qwencloud.com/models/wan3.0-video",
     "currency": "USD",
-    "normalPerSecond": {"480P": 0.05, "720P": 0.10, "1080P": 0.20},
-    "displayedDiscountPerSecond": {"480P": 0.035, "720P": 0.07, "1080P": 0.14},
+    "normalPerSecond": {
+      "480P": 0.05,
+      "720P": 0.1,
+      "1080P": 0.2
+    },
+    "displayedDiscountPerSecond": {
+      "480P": 0.035,
+      "720P": 0.07,
+      "1080P": 0.14
+    },
     "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only."
   },
   "workflow": [
@@ -13,9 +21,142 @@
     ".claude/skills/voicevox-explainer/SKILL.md",
     "tools/IRODORI_TTS.md",
     "03_SCRIPTS/85_pakurareta/script.md",
-    "03_SCRIPTS/53_sobaya_proxy_worker_news/script.md"
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/script.md",
+    ".claude/skills/wan-video/scripts/qwen_wan3_generate.py",
+    ".claude/skills/wan-video/references/video-voice-patch.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v4.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v6.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/prompt_wan3_v6.txt",
+    "03_SCRIPTS/72_tokyo_madogiwa_park/voice_patch_experiment.md",
+    "03_SCRIPTS/72_tokyo_madogiwa_park/okayaman_large_patch.md",
+    "tools/irodori-yametaro-tail-20260923.md"
   ],
   "characterSheetTechnique": "User's production experience; actual canonical character_fukuchan_basic_sheet.png shown. No universal accuracy guarantee.",
-  "h3": {"url": "https://github.com/sobaya-0141/Seedance_Madogiwa", "status": "Future episode teaser. Cheaper/time tradeoff supplied by user; not independently benchmarked."},
-  "resolution": {"url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai", "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."}
+  "h3": {
+    "url": "https://github.com/sobaya-0141/Seedance_Madogiwa",
+    "status": "Future episode teaser. Cheaper/time tradeoff supplied by user; not independently benchmarked."
+  },
+  "resolution": {
+    "url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai",
+    "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."
+  },
+  "version": 2,
+  "title": "Codexで動画まで作る。窓際族物語のAI制作術",
+  "audience": "CodexやClaude CodeでWebサイト・アプリ等を作っている人。職業エンジニアには限定せず、AIモデルの名前や違いをなんとなく知っている。実制作の判断・比較・失敗例は詳しい視聴者にも役立つ深さで扱う。",
+  "delivery": {
+    "file": "final_remotion_ai_video_workflow_v2.mp4",
+    "previousVersionPreserved": "final_remotion_ai_video_workflow.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 18481,
+    "durationSeconds": 616.0333333333333,
+    "displayDuration": "10分16秒",
+    "newPaidVideoGeneration": false,
+    "published": false
+  },
+  "localEvidence": "03_SCRIPTS/youtube_ai_video_workflow_20261013/evidence_v2.json",
+  "sourceAssets": "03_SCRIPTS/youtube_ai_video_workflow_20261013/asset_sources.json",
+  "examples": [
+    {
+      "episode": 85,
+      "title": "パクられた",
+      "usage": "導入の会話コント作例",
+      "source": "03_SCRIPTS/85_pakurareta/final_remotion_audio_v2_720p.mp4"
+    },
+    {
+      "episode": 53,
+      "title": "そば屋・替え玉出社事件",
+      "usage": "全体を貫くニュース制作例、生成素材と完成編集、冒頭音声の修正前後",
+      "sources": [
+        "03_SCRIPTS/53_sobaya_proxy_worker_news/final_remotion_news.mp4",
+        "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p.mp4",
+        "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p_hybrid_audio_v2.mp4"
+      ]
+    },
+    {
+      "episode": 69,
+      "title": "窓際スーパーつらい",
+      "usage": "導入のCM作例",
+      "source": "03_SCRIPTS/69_madogiwa_super_try_tanker/final_remotion_cm_v3.mp4"
+    },
+    {
+      "episode": 72,
+      "title": "東京マドギワランド",
+      "usage": "別作品でも同じ人物を示す実フレームと、本編とは別の音声修復実験",
+      "sources": [
+        "03_SCRIPTS/72_tokyo_madogiwa_park/final_remotion_vlog_v4.mp4",
+        "03_SCRIPTS/72_tokyo_madogiwa_park/remotion/out/voice_patch_comparison.mp4"
+      ],
+      "note": "福ギュンの1.2秒切り出し比較は2026-09-22のIrodori Small実験。2026-09-30のおかやまんの別比較に基づくLarge運用採用と区別する。"
+    }
+  ],
+  "limitations": [
+    "過去のAPI入力エラー記録から失敗時の課金額は断言しない。",
+    "音声修復の一例を任意の台詞への成功率や完全リップシンクの保証へ一般化しない。",
+    "主観的な通し試聴と、VOICEVOX読み・ASR・機械的な音量検査を区別する。",
+    "キャラクター資料、モデル選び、スキル運用の説明はこのリポジトリの制作経験に基づく。"
+  ],
+  "chapters": [
+    {
+      "chapter": "導入",
+      "startFrame": 0,
+      "startSeconds": 0.0,
+      "youtubeTime": "00:00"
+    },
+    {
+      "chapter": "道具の分担",
+      "startFrame": 1881,
+      "startSeconds": 62.7,
+      "youtubeTime": "01:02"
+    },
+    {
+      "chapter": "依頼と生成指示",
+      "startFrame": 3949,
+      "startSeconds": 131.63333333333333,
+      "youtubeTime": "02:11"
+    },
+    {
+      "chapter": "キャラクターの資料",
+      "startFrame": 5499,
+      "startSeconds": 183.3,
+      "youtubeTime": "03:03"
+    },
+    {
+      "chapter": "生成と音声修正",
+      "startFrame": 7138,
+      "startSeconds": 237.93333333333334,
+      "youtubeTime": "03:57"
+    },
+    {
+      "chapter": "編集",
+      "startFrame": 9948,
+      "startSeconds": 331.6,
+      "youtubeTime": "05:31"
+    },
+    {
+      "chapter": "費用と解像度",
+      "startFrame": 11040,
+      "startSeconds": 368.0,
+      "youtubeTime": "06:08"
+    },
+    {
+      "chapter": "スキルを育てる",
+      "startFrame": 14246,
+      "startSeconds": 474.8666666666667,
+      "youtubeTime": "07:54"
+    },
+    {
+      "chapter": "まとめ",
+      "startFrame": 16897,
+      "startSeconds": 563.2333333333333,
+      "youtubeTime": "09:23"
+    },
+    {
+      "chapter": "次回予告",
+      "startFrame": 17667,
+      "startSeconds": 588.9,
+      "youtubeTime": "09:48"
+    }
+  ]
 }

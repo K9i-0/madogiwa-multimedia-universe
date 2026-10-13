@@ -21,7 +21,10 @@
     "comedy.mp4": "03_SCRIPTS/85_pakurareta/final_remotion_audio_v2_720p.mp4",
     "news.mp4": "03_SCRIPTS/53_sobaya_proxy_worker_news/final_remotion_news.mp4",
     "news_raw.mp4": "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p.mp4",
-    "cm.mp4": "03_SCRIPTS/69_madogiwa_super_try_tanker/final_remotion_cm_v3.mp4"
+    "cm.mp4": "03_SCRIPTS/69_madogiwa_super_try_tanker/final_remotion_cm_v3.mp4",
+    "news_fixed.mp4": "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p_hybrid_audio_v2.mp4",
+    "voice_patch_comparison.mp4": "03_SCRIPTS/72_tokyo_madogiwa_park/remotion/out/voice_patch_comparison.mp4",
+    "park.mp4": "03_SCRIPTS/72_tokyo_madogiwa_park/final_remotion_vlog_v4.mp4"
   },
   "thirdPartyCredits": "../youtube_explainer_pilot_20261008/asset_sources.json",
   "unityTermsChecked": "2026-10-13",
@@ -48,6 +51,91 @@
     "comedy.mp4": "c8c7ec154b6b2e1b4aa20fcea2e0eacabc73da58d8d8662e172793c07163be51",
     "news.mp4": "f59f42c8d8ce0102718fc4ec8c646d07a1ac1b509d4986b13f374c26a231f16e",
     "news_raw.mp4": "88244ab760f269b063e2856a0a0bb34d5de3e69a6115fd32fa14589b85f02915",
-    "cm.mp4": "445c694f2ea8f095cba086b664552aee3105fe27a8207b2d92f702cead698daa"
+    "cm.mp4": "445c694f2ea8f095cba086b664552aee3105fe27a8207b2d92f702cead698daa",
+    "news_fixed.mp4": "8025c95bacb10d5de1d70754d90ca975c835cfa076e551e856d963f01389fca3",
+    "voice_patch_comparison.mp4": "a1431d7d7dea6c7660ac5979a396ba8583cfc694a07165311fe9af4eeeea4771",
+    "park.mp4": "eedd71110179afa2edc0a7da1bac4c3e3e84cf0d9808090b1f3e2db29a2d8c10"
+  },
+  "extractedFrames": {
+    "comedy.jpg": {
+      "asset": "comedy.mp4",
+      "seconds": 4,
+      "description": "第85話・やめ太郎"
+    },
+    "news.jpg": {
+      "asset": "news.mp4",
+      "seconds": 3,
+      "description": "第53話・Remotion完成編集後。news_raw.jpgと同じ時刻"
+    },
+    "news_raw.jpg": {
+      "asset": "news_raw.mp4",
+      "seconds": 3,
+      "description": "第53話・Wan生成素材。news.jpgと同じ時刻"
+    },
+    "cm.jpg": {
+      "asset": "cm.mp4",
+      "seconds": 3,
+      "description": "第69話・CM"
+    },
+    "news_anchor.jpg": {
+      "asset": "news_raw.mp4",
+      "seconds": 1,
+      "description": "第53話・冒頭のアナウンサー"
+    },
+    "news_fuku.jpg": {
+      "asset": "news_raw.mp4",
+      "seconds": 13,
+      "description": "第53話・福ギュンの素顔。仮面装着前"
+    },
+    "news_mask.jpg": {
+      "asset": "news_raw.mp4",
+      "seconds": 15,
+      "description": "第53話・同じ福ギュンが仮面を着け、細身の体格のまま入館"
+    },
+    "news_mask_close.jpg": {
+      "asset": "news_raw.mp4",
+      "seconds": 14,
+      "description": "第53話・福ギュンの仮面装着動作"
+    },
+    "news_sobaya.jpg": {
+      "asset": "news_raw.mp4",
+      "seconds": 20,
+      "description": "第53話・そば屋本人の自宅飲酒"
+    },
+    "park_fuku.jpg": {
+      "asset": "park.mp4",
+      "seconds": 2,
+      "description": "第72話・福ギュンの屋外Vlog。別作品の一貫性実例"
+    },
+    "park_sobaya.jpg": {
+      "asset": "park.mp4",
+      "seconds": 15,
+      "description": "第72話・福ギュンとプリントTシャツのそば屋。別作品の一貫性実例"
+    },
+    "patch_before.jpg": {
+      "asset": "voice_patch_comparison.mp4",
+      "seconds": 2,
+      "description": "第72話・本編とは別の部分修復実験。元音声側のフレーム"
+    },
+    "patch_after.jpg": {
+      "asset": "voice_patch_comparison.mp4",
+      "seconds": 7.166667,
+      "description": "第72話・本編とは別の部分修復実験。修正候補側の同一場面"
+    }
+  },
+  "extractedFrameSha256": {
+    "comedy.jpg": "3816433bb2988f0f8cddf7d33daf40ac9c55f51bc580f9146652c314cc7ce08a",
+    "news.jpg": "ffb3dc4f2f8fabab9de346355c9e4419e645964ed2d476317c45d2ed8fe2c886",
+    "news_raw.jpg": "93d2375d8adc9e625c7fcb396915fa659e06f9d1c1f7f1095125c0cca90b1b56",
+    "cm.jpg": "c0b991d64440fb4bb4a2d0ebdf82f3c05984b00c4cfccc49d9ed99c2cbf60437",
+    "news_anchor.jpg": "fe5167dc64de9144dadb92d8a10c6bbe66ca33e899bf786b82a615edd24aa2ec",
+    "news_fuku.jpg": "d6578a142044128a3b93960af1618cd3f3c239d4eb349e4ce625ee9649c274d6",
+    "news_mask.jpg": "4d0f8df841622a1461e02656bf76ab2eed6f554f33a505528abffaf14b249f71",
+    "news_mask_close.jpg": "b7580aa4133c194a8c0a89d6275370c8a73461c80080b5b01c494a450fd380a3",
+    "news_sobaya.jpg": "9ffa13a70848b9e789ba1ee3f533401c0fe1bd22b25eda5e1ce711b2f244de28",
+    "park_fuku.jpg": "a560277384f59e039186406ca62e39e4e1cc33a80d35ea62f0f6b9e56ef742b6",
+    "park_sobaya.jpg": "5403fe6766e458e62fd13dfac679be7f4010762685eebac3bd0f69ce19306471",
+    "patch_before.jpg": "8a6fccf8e87974cafe6bd9c7a6fa101759266cc8efae8078b905a332378acb94",
+    "patch_after.jpg": "c72be0c77c2f394152bae5c8a7f1b94c14b96d2c9154ca32355eb654e6e8b4e2"
   }
 }

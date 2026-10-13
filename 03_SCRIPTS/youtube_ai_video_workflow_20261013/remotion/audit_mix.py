@@ -4,9 +4,10 @@ from transformers import WhisperProcessor,WhisperForConditionalGeneration
 P=Path(__file__).resolve().parent;R=P.parents[2];m=json.loads((P/'src/edit-manifest.json').read_text());torch.set_num_threads(2)
 processor=WhisperProcessor.from_pretrained('openai/whisper-small',cache_dir=R/'.local/hazard_voice/asr-cache')
 model=WhisperForConditionalGeneration.from_pretrained('openai/whisper-small',cache_dir=R/'.local/hazard_voice/asr-cache',use_safetensors=True).to('cpu')
-segments=[('opening_comedy',0,3.9),('opening_news',3.9,8.6),('opening_cm',12.5,5.5)]
-for i in [2,6,34,42,68,69,96,103]:
- d=m['dialogue'][i];segments.append((f'dialogue_{i}',d['startFrame']/30,d['durationInFrames']/30))
+segments=[(c['id'],c['startFrame']/30,c['durationInFrames']/30) for c in m['clips']]
+ids={'u000','u009','u023','u047','u052','u067','u069','u078','u087','u106','u109'}
+for d in m['dialogue']:
+ if d['id'] in ids:segments.append((d['id'],d['startFrame']/30,d['durationInFrames']/30))
 rows=[]
 for name,start,duration in segments:
  data=subprocess.check_output(['ffmpeg','-v','error','-ss',str(start),'-t',str(duration),'-i',str(P/'public/mixed.wav'),'-f','f32le','-ac','1','-ar','16000','-'])

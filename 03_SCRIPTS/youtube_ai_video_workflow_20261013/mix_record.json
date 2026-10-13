@@ -1,34 +1,120 @@
 {
   "sampleRate": 48000,
-  "frames": 16417,
+  "frames": 18481,
   "voiceTargetLUFS": -18,
   "bgmTargetLUFS": -34,
   "clipTargetLUFS": -19,
-  "premasterPeak": 0.834035336971283,
+  "premasterPeak": 0.8370251655578613,
   "clips": [
     {
-      "startFrame": 0,
-      "durationInFrames": 117,
+      "id": "example_comedy",
+      "afterId": "u003",
       "src": "comedy.mp4",
       "sourceStartFrame": 60,
-      "label": "会話コント｜第85話「パクられた」"
+      "durationInFrames": 117,
+      "label": "会話コント｜第85話「パクられた」",
+      "layout": "full",
+      "tag": "完成例",
+      "startFrame": 699
     },
     {
-      "startFrame": 117,
-      "durationInFrames": 258,
+      "id": "example_news",
+      "afterId": "u003",
       "src": "news.mp4",
       "sourceStartFrame": 0,
-      "label": "架空ニュース｜第53話「替え玉出社」"
+      "durationInFrames": 258,
+      "label": "架空ニュース｜第53話「替え玉出社」",
+      "layout": "full",
+      "tag": "完成例",
+      "startFrame": 816
     },
     {
-      "startFrame": 375,
-      "durationInFrames": 165,
+      "id": "example_cm",
+      "afterId": "u003",
       "src": "cm.mp4",
       "sourceStartFrame": 90,
-      "label": "架空CM｜第69話「窓際スーパーつらい」"
+      "durationInFrames": 165,
+      "label": "架空CM｜第69話「窓際スーパーつらい」",
+      "layout": "full",
+      "tag": "完成例",
+      "startFrame": 1074
+    },
+    {
+      "id": "news_before_audio",
+      "afterId": "u047",
+      "src": "news_raw.mp4",
+      "sourceStartFrame": 0,
+      "durationInFrames": 63,
+      "label": "修正前｜Wanの生成音声",
+      "layout": "comparison",
+      "tag": "第53話「速報です」の音声修正",
+      "muteBgm": true,
+      "startFrame": 8163
+    },
+    {
+      "id": "news_after_audio",
+      "afterId": "u047",
+      "src": "news_fixed.mp4",
+      "sourceStartFrame": 0,
+      "durationInFrames": 63,
+      "label": "修正後｜Irodoriで差し替え",
+      "layout": "comparison",
+      "tag": "第53話「速報です」の音声修正",
+      "muteBgm": true,
+      "startFrame": 8226
+    },
+    {
+      "id": "park_comparison",
+      "afterId": "u052",
+      "src": "voice_patch_comparison.mp4",
+      "sourceStartFrame": 0,
+      "durationInFrames": 310,
+      "label": "第72話｜一文から必要な1.2秒を切り出す",
+      "layout": "comparison",
+      "tag": "別作品の比較実験／本編とは別の検証",
+      "muteBgm": true,
+      "startFrame": 9013
     }
   ],
-  "endingStartFrame": 15104,
+  "clipDucking": [
+    {
+      "id": "example_comedy",
+      "startFrame": 699,
+      "durationInFrames": 117,
+      "bgmGain": 0.08
+    },
+    {
+      "id": "example_news",
+      "startFrame": 816,
+      "durationInFrames": 258,
+      "bgmGain": 0.08
+    },
+    {
+      "id": "example_cm",
+      "startFrame": 1074,
+      "durationInFrames": 165,
+      "bgmGain": 0.08
+    },
+    {
+      "id": "news_before_audio",
+      "startFrame": 8163,
+      "durationInFrames": 63,
+      "bgmGain": 0
+    },
+    {
+      "id": "news_after_audio",
+      "startFrame": 8226,
+      "durationInFrames": 63,
+      "bgmGain": 0
+    },
+    {
+      "id": "park_comparison",
+      "startFrame": 9013,
+      "durationInFrames": 310,
+      "bgmGain": 0
+    }
+  ],
+  "endingStartFrame": 17667,
   "endingTrack": "TheFatRat - Unity",
   "endingTargetLUFS": -38,
   "endingLiftAfterDialogue": false,

@@ -1,0 +1,236 @@
+{
+  "version": 2,
+  "checked": "2026-10-13",
+  "purpose": "制作過程の実例を解説へ使用するための根拠と素材境界。task ID、認証情報、API応答全文は表示しない。",
+  "newsOpeningRepair": {
+    "before": "news_raw.mp4",
+    "after": "news_fixed.mp4",
+    "recommendedRange": {
+      "sourceStartFrame": 0,
+      "durationInFrames": 63,
+      "fps": 30,
+      "seconds": 2.1
+    },
+    "replacementSeconds": [
+      0.819208,
+      1.819208
+    ],
+    "actualSpeechSecondsApprox": [
+      0.906,
+      1.714
+    ],
+    "nextSentenceStartsSecondsApprox": 2.18,
+    "sameVideoStream": true,
+    "videoStreamSha256": "13875bb9c243ab8a4a221082c4151f047748af8ecd3c8de8830e644689367014",
+    "verification": "ffmpeg -map 0:v:0 -c copy -f hash -hash sha256で両動画の映像streamが一致。",
+    "audioMixNote": "元音声は全編-8.0 LUFS、修正マスターは-16.5 LUFSという過去監査記録。比較区間を個別に同じラウドネスへ合わせ、BGMとホスト発話を止める。",
+    "source": {
+      "path": "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v6.md",
+      "lines": [
+        73,
+        85
+      ],
+      "summary": "冒頭「速報です」を正典Irodoriマスターの1秒で置換。映像stream copy、有料API再送なし。"
+    },
+    "limits": "この比較は冒頭修正の実例。全編の日本語完全一致・完全リップシンクの実証として使用しない。"
+  },
+  "parkRepairExperiment": {
+    "asset": "voice_patch_comparison.mp4",
+    "fps": 30,
+    "videoFrames": 310,
+    "videoDurationSeconds": 10.333333333333334,
+    "containerDurationSeconds": 10.389333,
+    "before": {
+      "sourceStartFrame": 0,
+      "durationInFrames": 155
+    },
+    "after": {
+      "sourceStartFrame": 155,
+      "durationInFrames": 155
+    },
+    "burnedInLabels": true,
+    "burnedInDialogueCaptions": false,
+    "labels": [
+      "修正前：Wanの元音声",
+      "検証：動画の声を参照したIrodoriで1.2秒だけ差し替え"
+    ],
+    "labelArea": "854×480画面の下部約50px。追加テロップを重ねない。",
+    "requiredContext": "第72話・本編とは別の部分修復実験。完成本編の差し替えではない。",
+    "originalSceneSourceStartSeconds": 12.433333,
+    "sceneDurationSeconds": 5.166667,
+    "patchSceneRelativeSeconds": [
+      1.7,
+      2.9
+    ],
+    "patchGeneratedContextSeconds": [
+      1.5,
+      2.7
+    ],
+    "text": "公式サイトでも",
+    "timeStretch": false,
+    "crossfade": false,
+    "observedStills": {
+      "patch_before.jpg": 2,
+      "patch_after.jpg": 7.166667
+    },
+    "source": {
+      "path": "03_SCRIPTS/72_tokyo_madogiwa_park/voice_patch_experiment.md",
+      "lines": [
+        18,
+        37
+      ],
+      "summary": "短句2.54秒では枠に入らず、一文4.35秒から1.2秒を切り出した。区間外PCM一致。ASRは品質・完全同期の合格判定ではない。"
+    }
+  },
+  "characterContinuity": {
+    "fukugyun": [
+      "news_fuku.jpg",
+      "park_fuku.jpg"
+    ],
+    "sobaya": [
+      "news_sobaya.jpg",
+      "park_sobaya.jpg"
+    ],
+    "description": "第53話と第72話の異なる作品で同じ人物を提示。作品名を表示して混同を防ぐ。福ギュンは中分け黒髪、顔、黒ジャケット、細身の体格が共通。そば屋は仮面の意匠、黒い短髪、灰色の肌、筋肉質の体格が共通。",
+    "costumeContrast": "news_sobayaは無地の白T、park_sobayaはプリント白T。",
+    "fukuSheet": {
+      "asset": "fuku_sheet.png",
+      "width": 1536,
+      "height": 1024,
+      "frontBodyPanelPixels": [
+        0,
+        0,
+        489,
+        1024
+      ],
+      "facePanelPixels": [
+        972,
+        0,
+        564,
+        510
+      ],
+      "renderMethod": "元画像をCSS overflowで切り出す。顔の編集・再生成なし。"
+    },
+    "promptSource": {
+      "path": "03_SCRIPTS/53_sobaya_proxy_worker_news/prompt_wan3_v6.txt",
+      "lines": [
+        9,
+        38
+      ],
+      "summary": "顔写真と体格・服装パネルの役割を分離し、仮面装着後も福ギュンの細身を保持する指示。",
+      "excerpt": "Face portraits define identity; clothing panels define body and outfit only."
+    },
+    "maskShotSource": {
+      "path": "03_SCRIPTS/53_sobaya_proxy_worker_news/prompt_wan3_v6.txt",
+      "lines": [
+        48,
+        52
+      ],
+      "summary": "12.8秒から福ギュンが仮面を着け、同じ細い体格で入館・仕事する指示。"
+    }
+  },
+  "skillEvolution": [
+    {
+      "id": "reference-duration",
+      "title": "参照音声の長さ制限を送信前に検査",
+      "evidence": [
+        {
+          "path": "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v4.md",
+          "lines": [
+            5,
+            10
+          ],
+          "summary": "30秒の参照音声一本は各素材15秒上限で失敗。8.5334秒・8.4624秒・13.0041秒へ分割。"
+        },
+        {
+          "path": "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v4.md",
+          "lines": [
+            38,
+            41
+          ],
+          "summary": "分割後は各音声15秒以下でも合計30秒のため再び失敗。",
+          "excerpt": "参照音声3本の合計30.0秒が、reference_audio合計15秒上限を超えたため送信直後に`InvalidParameter`"
+        },
+        {
+          "path": ".claude/skills/wan-video/scripts/qwen_wan3_generate.py",
+          "lines": [
+            194,
+            210
+          ],
+          "summary": "現在の送信前検証はffprobe由来の各素材の尺が1〜15秒か、合計が15秒を超えないかを調べ、逸脱時はValueErrorで停止。",
+          "excerpt": "total = sum(durations)\nif total > 15.0005:\n    raise ValueError(...)"
+        }
+      ],
+      "displayLabels": [
+        "30秒の参照音声 → エラー",
+        "分割しても合計30秒 → エラー",
+        "送信前に各尺と合計尺を検査"
+      ],
+      "limits": "当時の失敗と現在の検証処理を結び付けて説明する。失敗時の課金額は示さない。記録内のタスクIDは画面に出さない。"
+    },
+    {
+      "id": "voice-patch",
+      "title": "部分修復の比較結果を再利用する手順へ",
+      "evidence": [
+        {
+          "path": "03_SCRIPTS/72_tokyo_madogiwa_park/voice_patch_experiment.md",
+          "lines": [
+            18,
+            31
+          ],
+          "summary": "短句単独と一文生成を比較し、一文から1.2秒を切り出す候補を作った。"
+        },
+        {
+          "path": ".claude/skills/wan-video/references/video-voice-patch.md",
+          "lines": [
+            62,
+            64
+          ],
+          "summary": "ユーザーが比較を評価し再利用を希望。部分修復手順として参照される。"
+        }
+      ]
+    },
+    {
+      "id": "model-update",
+      "title": "比較評価を受けて修正用途の標準モデルを更新",
+      "evidence": [
+        {
+          "path": "03_SCRIPTS/72_tokyo_madogiwa_park/okayaman_large_patch.md",
+          "lines": [
+            63,
+            65
+          ],
+          "summary": "2026-09-30、Small/Largeの比較試聴を受けて今後のセリフ修正をLargeへ更新するユーザー指示。"
+        },
+        {
+          "path": ".claude/skills/wan-video/references/video-voice-patch.md",
+          "lines": [
+            10,
+            10
+          ],
+          "summary": "現行スキルで既存動画のセリフ修正・改変にLargeを明示指定する。"
+        }
+      ],
+      "limits": "第72話「公式サイトでも」比較は以前のSmallによる実験。後日のLarge更新と同一実験のように見せない。"
+    },
+    {
+      "id": "scope",
+      "title": "成功設定の適用条件を残す",
+      "evidence": [
+        {
+          "path": "tools/irodori-yametaro-tail-20260923.md",
+          "lines": [
+            110,
+            110
+          ],
+          "summary": "やめ太郎の短い通常会話に対する第一候補として採用。別話者・長文・別参照へ合格を拡張しない。"
+        }
+      ]
+    }
+  ],
+  "visualReview": {
+    "performed": true,
+    "method": "ffmpegで実素材からフレームを抽出し目視。キャラクター、画面内容、焼込ラベルの有無を確認。",
+    "subjectiveAudioListening": false
+  }
+}

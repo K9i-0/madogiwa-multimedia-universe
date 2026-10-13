@@ -1,11 +1,19 @@
 from pathlib import Path
-import json,subprocess,sys,concurrent.futures
+import json,subprocess,argparse,concurrent.futures
 from PIL import Image,ImageDraw
-P=Path(__file__).resolve().parent;m=json.loads((P/'src/edit-manifest.json').read_text());tag=sys.argv[1] if len(sys.argv)>1 else 'v1';src=P.parent/'final_remotion_ai_video_workflow.mp4';out=P/'out'/f'audit_{tag}';out.mkdir(exist_ok=True)
-points=[(f'opening_{i}',i*180+70) for i in range(3)];seen=set()
+P=Path(__file__).resolve().parent
+parser=argparse.ArgumentParser();parser.add_argument('--source',default='../final_remotion_ai_video_workflow_v2.mp4');parser.add_argument('--tag',default='v2');parser.add_argument('--manifest',default='src/edit-manifest.json');args=parser.parse_args()
+m=json.loads((P/args.manifest).read_text());src=(P/args.source).resolve();out=P/'out'/f'audit_{args.tag}';out.mkdir(exist_ok=True)
+points=[('opening',30)]
 for i,d in enumerate(m['dialogue']):
- if d['view'] not in seen:points.append((f'{i:03}_{d["view"]}',d['startFrame']+min(35,d['durationInFrames']//2)));seen.add(d['view'])
+ points.append((f'{i:03}_{d["view"]}',d['startFrame']+min(35,d['durationInFrames']//2)))
 points.extend([('credits',m['creditsStartFrame']+60),('last',m['composition']['durationInFrames']-5)])
+for c in m['clips']:
+ points.extend([(c['id']+'_start',c['startFrame']+3),(c['id']+'_middle',c['startFrame']+c['durationInFrames']//2),(c['id']+'_end',c['startFrame']+c['durationInFrames']-3)])
+for view in ('edit_demo','api_split','validation','skill_loop','export'):
+ rows=[d for d in m['dialogue'] if d['view']==view]
+ if rows:points.append((view+'_late',rows[-1]['startFrame']+rows[-1]['durationInFrames']//2))
+points.sort(key=lambda x:x[1])
 def get(x):
  name,frame=x;subprocess.run(['ffmpeg','-v','error','-y','-ss',str(frame/30),'-i',str(src),'-frames:v','1',str(out/f'{name}.jpg')],check=True)
 with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:list(pool.map(get,points))

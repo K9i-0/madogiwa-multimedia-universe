@@ -1,0 +1,237 @@
+{
+  "auditedAt": "2026-10-13T03:56:34.941782+00:00",
+  "scope": "改訂版のVOICEVOX単体110発話と最終mixed.wavの17抜粋を、台本・発音クエリ・ASR・配置情報で照合。",
+  "result": "machine_screen_pass_with_limitations",
+  "summary": "修正済み3件以外に、台本と発音クエリが食い違う新たな読み違いは確認されなかった。ASRの漢字・固有名詞・子音の誤認だけで追加再生成は行っていない。",
+  "inputs": {
+    "manifest": "remotion/src/edit-manifest.json",
+    "utteranceAsr": "remotion/out/asr.json",
+    "mixedAsr": "remotion/out/mixed_asr.json",
+    "comparisonWaveformCheck": "remotion/out/comparison_waveform_screen_v2.json",
+    "audioTimelineSha256": "e8e3ac958e22575798385d1af9d354a8838e7a66b839be3fcc6b3bd7b8d6c3af",
+    "mixedWavSha256": "0e52259ed0abfd8a510ab883978b7187d31cf4429397c2d30c311e05fbcd3571"
+  },
+  "checks": {
+    "utteranceCount": 110,
+    "utteranceAudioNamesMatchManifest": true,
+    "asrExpectedTextMatchesManifest": true,
+    "asrKanaMatchesCurrentManifest": true,
+    "allUtteranceKanaScreenedAgainstText": true,
+    "mixedSegmentCount": 17,
+    "allMixedSegmentTimesMatchManifest": true,
+    "totalFrames": 18481,
+    "durationSeconds": 616.0333333333333,
+    "sampleRate": 48000,
+    "channels": 2,
+    "subjectiveListeningPerformed": false
+  },
+  "appliedReadingFixes": [
+    {
+      "id": "u013",
+      "text": "間",
+      "reading": "ま",
+      "currentAudio": "voice_013_a95c088f663f.wav"
+    },
+    {
+      "id": "u023",
+      "text": "福ギュン",
+      "reading": "フクギュ'ン（単一アクセント句）",
+      "currentAudio": "voice_023_1d291a040807.wav"
+    },
+    {
+      "id": "u082",
+      "text": "分",
+      "reading": "ぶん",
+      "currentAudio": "voice_082_a605aa6bdbe6.wav"
+    }
+  ],
+  "asrDiscrepancyReviewExamples": [
+    {
+      "id": "u013",
+      "classification": "reading_corrected_asr_still_substitutes",
+      "expected": "字幕やテロップ、音量や間の調整にはRemotionを使うわ。",
+      "recognized": "字幕やテロップ、音量や窓調整にはリモーションを使うわ。",
+      "kana": "ジマクヤ'/テロ'ップ、オンリョオヤ'、マ'ノ/チョオセエニワ'/リモ'オションオ/_ツカウ'ワ",
+      "assessment": "間をマへ修正済み。ASRは窓調整とするが、現クエリはマ'ノ/チョオセエ。追加修正の根拠にしない。"
+    },
+    {
+      "id": "u023",
+      "classification": "proper_name_asr_substitution",
+      "expected": "たとえば、身代わりの福ギュンが仮面を着けても、体格までそば屋さんに変わったら困るでしょう。",
+      "recognized": "例えば、身代わりの副順が仮面をつけても、体格までそば屋さんに変わったら困るでしょう。",
+      "kana": "タト'エバ、ミガワリノ'/フクギュ'ンガ/カメンオ'/_ツケテモ'、タイカクマ'デ/ソバヤサンニ'/カワッタ'ラ/コマ'ルデショオ",
+      "assessment": "福ギュンを一つのアクセント句へ統合済み。ASRは副順とするが、現クエリはフクギュ'ンガ。"
+    },
+    {
+      "id": "u082",
+      "classification": "reading_corrected_asr_still_substitutes",
+      "expected": "ここで示した金額は動画生成の分よ。価格や割引条件は、実行するときに確認してね。",
+      "recognized": "ここで示した筋駆は動画生成の分量、価格や割引条件は実行する時に確認してね。",
+      "kana": "ココデ'/シメ'_シタ/キンガクワ'/ドオガセ'エセエノ/ブンヨ'、カカクヤ'/ワリビキジョオケ'ンワ、ジッコオ'/スル'/ト'キニ/カクニン'/_シテネ'",
+      "assessment": "分をブンへ修正済み。ASRは分量とするが、現クエリはブンヨ。"
+    },
+    {
+      "id": "u009",
+      "classification": "proper_name_asr_substitution",
+      "expected": "映像を生成しているのは、Wan 3.0という動画生成モデルよ。",
+      "recognized": "映像を生成しているのは、1.3.0という動画生成モデルよ。",
+      "kana": "エエゾオオ'/セエセエ'/_シテ'/イル'/ノワ'、ワ'ン、スリイポイント'ゼロト/イウ'/ドオガセエセエモ'デルヨ",
+      "assessment": "Wan 3.0を1.3.0と認識。ワン、スリーポイントゼロの読みは指定と一致。"
+    },
+    {
+      "id": "u024",
+      "classification": "asr_word_boundary_substitution",
+      "expected": "誰の顔、誰の体格、どの仮面なのかを分けて指示しているわ。",
+      "recognized": "誰の顔、誰の体格、どの仮面なの顔を分けて支持しているわ",
+      "kana": "ダ'レノ/カオ'、ダ'レノ/タイカク'、ド'ノ/カメンナ'/ノカオ'/ワケ'テ/シ'ジ/_シテ'/イル'ワ",
+      "assessment": "なのかを→なの顔とASRが分割。現クエリの音列は台本文言と一致。"
+    },
+    {
+      "id": "u025",
+      "classification": "asr_consonant_substitution",
+      "expected": "仮面を着けたら、別人へ変身してしまう可能性があるのだな。",
+      "recognized": "画面をつけたら別人へ変身してしまう可能性があるのだな",
+      "kana": "カメンオ'/_ツケタ'ラ、ベツジンエ'/ヘンシン'/_シテ'/シマウ'/カノオセエガ'/ア'ル/ノダ'ナ",
+      "assessment": "仮面→画面とASRが認識。現クエリはカメン。"
+    },
+    {
+      "id": "u044",
+      "classification": "asr_consonant_substitution",
+      "expected": "そう。画面内で話す場面では、Wanが映像と一緒に生成した声を生かす。",
+      "recognized": "そう画面内で話す画面ではワンが映像と一緒に生成した声を活かす",
+      "kana": "ソオ'、ガメン'ナイデ/ハナ'ス/バ'メンデワ、ワ'ンガ/エエゾオト'/イッショニ'/セエセエ'/_シタ'/コ'エオ/イカ'ス",
+      "assessment": "場面→画面とASRが認識。現クエリはバメン。"
+    },
+    {
+      "id": "u049",
+      "classification": "asr_orthographic_substitution",
+      "expected": "この音声修正では、動画生成APIを再送していないわ。",
+      "recognized": "この音声修正では動画声勢APIを採奏していないわ。",
+      "kana": "コノ'/オンセエシュ'ウセエデワ、ドオガセエセエエエピイ'アイオ/サイソオ'/_シテ'/イナイ'ワ",
+      "assessment": "生成API・再送のASR表記が崩れるが、現クエリはセエセエエエピイアイ・サイソオ。"
+    },
+    {
+      "id": "u067",
+      "classification": "numeric_reading_checked",
+      "expected": "通常表示価格で30秒なら、480pは1ドル50セント、720pは3ドル、1080pは6ドル。",
+      "recognized": "通常表示価格で30両なら480pは1ドル50セント、720pは3ドル、1080pは6ドル。",
+      "kana": "ツウジョオヒョオジカ'カクデ/サンジュウ'ビョオナラ、ヨ'ンヒャ_ク/ハチジュウ'ピイワ/イチ'ドル/ゴジュッセ'ント、ナナ'ヒャク/ニジュウ'ピイワ/サン'ドル、セ'ン/ハチジュウ'ピイワ/ロク'ドル",
+      "assessment": "30秒が単体ASRでは30両。クエリはサンジュウビョオ、混合音声ASRでは30秒。解像度と金額は双方で一致。"
+    },
+    {
+      "id": "u069",
+      "classification": "asr_consonant_substitution",
+      "expected": "さらに、480pで30秒を3回生成したら4ドル50セント。",
+      "recognized": "さらに、480pで30量を3回生成したら4ドル50セント。",
+      "kana": "サ'ラニ、ヨ'ンヒャ_ク/ハチジュウ'ピイデ/サンジュウ'ビョオオ/サン'カイ/セエセエ'/_シタ'ラ/ヨン'ドル/ゴジュッセ'ント",
+      "assessment": "30秒を30量と認識するが、クエリはサンジュウビョオ。480p・3回・4ドル50セントは一致。"
+    },
+    {
+      "id": "u075",
+      "classification": "asr_word_boundary_substitution",
+      "expected": "精細さと、作れる本数のバランスなのだな。",
+      "recognized": "制裁者と作れる本数のバランスなのだな",
+      "kana": "セエサイ'サト、_ツクレ'ル/ホンス'ウノ/バランスナ'/ノダ'ナ",
+      "assessment": "精細さ→制裁者と認識。現クエリはセエサイサ。"
+    },
+    {
+      "id": "u087",
+      "classification": "asr_orthographic_substitution",
+      "expected": "たとえば、このニュースの制作では、参照音声の長さでAPIに拒否されたことがあるの。",
+      "recognized": "例えばこのニュースの制作では3小本制の長さでAPIに拒否されたことがあるの",
+      "kana": "タト'エバ、コノ'/ニュ'ウスノ/セエサクデワ'、サンショオオ'ンセエノ/ナガ'サデ/エエピイ'アイニ/キョ'_ヒ/サレタ'/コト'ガ/ア'ルノ",
+      "assessment": "参照音声のASR表記が崩れるが、現クエリはサンショオオンセエ。"
+    },
+    {
+      "id": "u103",
+      "classification": "asr_consonant_substitution",
+      "expected": "人物の資料をそろえて、失敗に合った直し方を選んで、次に使える手順まで残すのだな。",
+      "recognized": "新物の使用を揃えて失敗に合った直し方を選んで次に使える手順まで残すのだな",
+      "kana": "ジ'ンブツノ/シ'リョオオ/ソロエ'テ、シッパイニ'/ア'ッタ/ナオシ'カタオ/エラ'ンデ、ツギ'ニ/_ツカエ'ル/テジュンマ'デ/ノコ'ス/ノダ'ナ",
+      "assessment": "人物の資料のASR表記が崩れるが、現クエリはジンブツノシリョオ。"
+    },
+    {
+      "id": "u106",
+      "classification": "proper_name_and_word_asr_substitution",
+      "expected": "今後は、同僚のh3さんの手法も紹介する予定よ。",
+      "recognized": "今後は同僚のH3さんの相方も紹介する予定よ。",
+      "kana": "コンゴワ'、ドオリョオノ'/エイチスリ'イサンノ/_シュホオモ'/ショオカイ'/スル'/ヨテエヨ'",
+      "assessment": "h3はエイチスリー、手法はシュホオ。ASRの相方/スホーだけを根拠に変更しない。"
+    }
+  ],
+  "comparisonChecks": {
+    "news": {
+      "order": [
+        "news_before_audio",
+        "news_after_audio"
+      ],
+      "beforeStartSeconds": 272.1,
+      "afterStartSeconds": 274.2,
+      "eachDurationSeconds": 2.1,
+      "beforeAsr": "即帽です",
+      "afterAsr": "即報です。",
+      "assessment": "修正前のWan素材→修正後のIrodori差替素材の順をmanifest・混合波形と各入力の相関・ASR差で確認。修正後のASR表記は速報と同音。原制作記録でも速報ですの差替区間が0.819208–1.819208秒と記載され、両引用は0–2.1秒を含む。",
+      "sourceRecord": "../53_sobaya_proxy_worker_news/wan_generation_log_v6.md"
+    },
+    "park": {
+      "startSeconds": 300.43333333333334,
+      "durationSeconds": 10.333333333333334,
+      "beforeDurationFrames": 155,
+      "afterDurationFrames": 155,
+      "combinedAsr": "このTシャツ、好奇事態でも買えるんですって!このTシャツ、公式サイトでも買えるんですって!",
+      "assessment": "比較素材の前半=元音声、後半=修正音声。ASRも誤読を含む前半→公式サイトでもを含む後半の順。引用全体の波形相関で正しい素材の配置を確認。"
+    },
+    "waveformCorrelations": [
+      {
+        "id": "news_before_audio",
+        "source": "news_raw.mp4",
+        "startFrame": 8163,
+        "durationInFrames": 63,
+        "sourceStartFrame": 0,
+        "normalizedWaveformCorrelation": 0.9999999442838418
+      },
+      {
+        "id": "news_after_audio",
+        "source": "news_fixed.mp4",
+        "startFrame": 8226,
+        "durationInFrames": 63,
+        "sourceStartFrame": 0,
+        "normalizedWaveformCorrelation": 0.9999999346273427
+      },
+      {
+        "id": "park_comparison",
+        "source": "voice_patch_comparison.mp4",
+        "startFrame": 9013,
+        "durationInFrames": 310,
+        "sourceStartFrame": 0,
+        "normalizedWaveformCorrelation": 0.9962973654106357,
+        "halves": [
+          {
+            "kind": "before",
+            "startFrame": 9013,
+            "durationInFrames": 155
+          },
+          {
+            "kind": "after",
+            "startFrame": 9168,
+            "durationInFrames": 155
+          }
+        ]
+      }
+    ],
+    "hostOverlap": false,
+    "bgmMutedForAllComparisonClips": true
+  },
+  "nonDialogueCaveat": {
+    "clip": "example_cm",
+    "issue": "ASRがスタッフ等の反復語を大量に出力しており、この5.5秒のCMアクション引用では信頼できる発話監査にならない。",
+    "handling": "既存採用原音を保持。ASRだけを根拠に台詞の存在や反復音声を断定せず、音声内容の正誤を合格扱いにしない。"
+  },
+  "limits": [
+    "これは機械的な文字起こしと発音クエリのスクリーニングであり、主観的な通し試聴ではない。",
+    "かなクエリが正しくても、自然さ・アクセントの良さ・聞き取りやすさ・声質・精密なリップシンクを保証しない。",
+    "混合音声は17抜粋でのASR確認。全尺の主観的な聴感確認は未実施。",
+    "波形相関は指定素材の配置・順序を裏付けるもので、修正の自然さを保証するものではない。",
+    "ニュース/parkの元音声の誤読を比較として残している。修正前区間を完成版の新たな読み違いとして除去しない。"
+  ]
+}

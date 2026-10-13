@@ -1,0 +1,27 @@
+{
+  "file": "final_remotion_ai_video_workflow_v2.mp4",
+  "sha256": "6b842a36c8d738b4b24a24a412262170ae9a34069f7c52b213524113f08fc144",
+  "bytes": 37300490,
+  "durationSeconds": 616.0333333333333,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frames": "18481"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLUFS": "-18.00",
+    "truePeakDbTP": "-1.53",
+    "loudnessRangeLU": "3.70"
+  },
+  "fullDecode": "pass",
+  "subtitleTimingAndWidth": "See remotion/out/timeline_validation.json",
+  "visualReview": "See review_v2.md and remotion/out/audit_v2*",
+  "audioReview": "VOICEVOX kana plus automated ASR; subjective continuous listening is not available in this tool environment.",
+  "newPaidVideoGeneration": false,
+  "published": false
+}

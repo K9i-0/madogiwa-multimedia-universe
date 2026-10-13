@@ -72,6 +72,10 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作�
 7. `sync_youtube_videos` を一度実行し、`list_youtube_videos` で状態確認。処理中ならその状態とIDを報告する。`waiting_public` で非公開等の指定がない場合は、YouTubeの公開設定を修正してから同期する。Cloudflare Cronは約5分ごとに状態を確認するが、非公開動画を公開へ変更する機能はない。
 8. `ready` かつ `is_active:1` なら公開ページを確認する。差し替えは新IDを同作品に登録し、条件成立まで旧版を維持。チャンネルにある未登録動画は勝手に掲載されない。旧YouTube動画は自動削除しない。
 
+## YouTubeの概要欄クレジット
+
+声・音楽・素材のクレジットは概要欄へ記載するのを標準とし、アップロード準備のために末尾クレジットを追加しない。[Remotionの共通方針](../remotion-video/SKILL.md#クレジットは概要欄を標準にする)に従い、必要な話者名・出典・ライセンス・編集表記がmetadataのdescriptionに揃っていることを確認する。
+
 ## YouTubeアップロードと再開
 
 MMUリポジトリでは以下を使用する（詳細・JSON形式はリファレンス）。秘密情報は `~/.config/mmu-youtube/`、結果の動画ID・URL・ハッシュは制作物の登録記録へ保存する。

@@ -65,11 +65,31 @@ Seedance動画のセリフ（台本）作成やIrodori-TTSプロンプト（capt
 - **セリフ作成のコツ**: 自虐・逃走・ツッコミ・ぼやき・関西弁を効かせるとやめ太郎らしさが際立つ。
 - **Irodori-TTS caption例**: `落ち着いた成人男性。やや脱力感のある関西弁交じりで、飄々としたユーモアを含んで話す。`
 
-## たこさん（2026-10-02 正典採用）
+## たこさん（Irodori参照・2026-10-02採用）
 
 ユーザー指定により、第84話完成版で使った `takosan_irodori_line.wav` を `02_CHARACTERS/Takosan_voice.wav` へ無加工コピーして正典声質参照に採用。「なかまなる。ぎゅんされる。えらべ。」の採用音声であり、84話のWan未修正版の声ではない。今回の採用により、過去の「全体正典は変更しない」「試聴確認未実施」という記録とは別に、今後の作品で継続する正典が確定した。片言は84話の演技であり、今後の台詞へ強制しない。
 
-- 今後の新規音声: `Aratako/Irodori-TTS-v4.1-Small`、正典参照 `Takosan_voice.wav`、既定seed 43、固有後処理なし。captionなし・本文CFG 5・尺倍率1・トリムなしを初期設定とし、今回の台詞の演技に合わせて確認する。
+- Irodori経路の新規音声: `Aratako/Irodori-TTS-v4.1-Small`、正典参照 `Takosan_voice.wav`、既定seed 43、固有後処理なし。captionなし・本文CFG 5・尺倍率1・トリムなしを初期設定とし、今回の台詞の演技に合わせて確認する。
 - Wanでは正典参照を声質だけに使用し、参照元の言葉・片言・文間をコピーさせない。
 - 84話採用音声そのものの再生成用参照は `voice_references/Takosan_ref_ep84_regeneration.wav`（元は84話の `takosan_irodori_reference_ep80.wav`）。SHA-256: `05cdaa0c3c83ae930dcb9bb8bc5985aa65fe6bf3210b228a4a08ac04c11f11c0`。
 - 84話の再生成条件: seed 43、caption空、CFG text 5、uncut true、duration scale 1。詳細は `03_SCRIPTS/84_madogiwa_tribe_origin/takosan_audio_patch.json`。採用元は無加工WAVで、完成映像では文間配置と一定ゲインのみ変更されている。
+
+
+### たこさんのVOICEVOX設定（2026-10-13採用）
+
+ユーザーが中国うさぎの標準音高・速度1.1倍を「そば屋の奇行5選」「窓際お嬢様部」で採用。**たこさんをVOICEVOXで生成・差し替えするときの既定**は以下とする。旧Voidoll（style89）や比較用の音高−0.04は継承しない。Irodori/Wan用の正典参照と過去入力は保持し、この設定を別経路へ自動適用しない。
+
+| 項目 | 設定 |
+|---|---|
+| 話者・スタイル | 中国うさぎ・ノーマル |
+| speaker / style ID | `61` |
+| speedScale | `1.1` |
+| pitchScale | `0`（標準音高） |
+| intonationScale / volumeScale | `1.0` / `1.0`（生成後のミックス音量は作品で調整） |
+| 出力 | 48,000 Hz・mono |
+| 再現確認済み | VOICEVOX Engine 0.25.1、話者バージョン0.16.1 |
+| クレジット | `VOICEVOX:中国うさぎ`（標準は概要欄） |
+
+前後無音は声質の固定値とせず、会話の間に合わせる。解説の採用例は `prePhonemeLength=.15` / `postPhonemeLength=.55`、お嬢様部の短い発話枠では `.09` / `.12`。速度1.1は合成クエリで指定し、生成後の一律早送りで合わせない。字幕本文と読みを分け、「方（人）」→「かた」、「その間」→「そのあいだ」等は文脈に応じて指定する。全文クエリ・エンジン版・話者ID・音声SHAを制作記録に残す。
+
+再現例：`03_SCRIPTS/sobaya_kikou5_flow_20261010/voice_usagi_record.json`、`03_SCRIPTS/87_mado_kizoku/usagi_query.json`。読みは生成クエリと試聴で確認し、ASR一致だけで聴感を合格にしない。

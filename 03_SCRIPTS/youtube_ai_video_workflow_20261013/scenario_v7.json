@@ -4,7 +4,7 @@
   "script": "script.md",
   "currentRenderedVersion": 6,
   "checked": "2026-10-13",
-  "dialogueCount": 112,
+  "dialogueCount": 120,
   "openingMusicLeadSeconds": 2.5,
   "models": [
     {
@@ -50,16 +50,33 @@
       "720P": 0.07,
       "1080P": 0.14
     },
-    "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only."
+    "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only. Yen figures use an illustrative fixed exchange rate, not a live FX quote.",
+    "narrationCurrency": "JPY",
+    "illustrativeJpyPerUsd": 160,
+    "normal30SecondsJpy": {
+      "480P": 240,
+      "720P": 480,
+      "1080P": 960
+    },
+    "three480p30SecondAttemptsJpy": 720
   },
   "previousProductionEvidence": "evidence_v2.json",
   "checks": [
-    "112 dialogue turns reviewed as a complete sequence",
+    "120 dialogue turns reviewed as a complete sequence",
     "No popularity or performance ranking asserted",
     "API vs code/CLI vs GUI service distinguished",
     "Opening joke ends immediately; conversation moves to unfamiliarity with video editing software. No later callback.",
-    "Wan generation resolution distinguished from final export and H3 workflow",
-    "Existing rendered v6 timeline and audio unchanged"
+    "Resolution chapter ends with cost-prioritized 480p generation; no final export or X algorithm narration",
+    "Existing rendered v6 timeline and audio unchanged",
+    "Skills, character sheets and past production records managed in Git; public repository link included",
+    "Remotion explanation connects exact Japanese typography to React-based frame rendering",
+    "JPY arithmetic verified at illustrative 160 JPY/USD"
   ],
-  "published": false
+  "published": false,
+  "publicRepository": {
+    "url": "https://github.com/K9i-0/madogiwa-multimedia-universe",
+    "publicVerified": "2026-10-13 GitHub API",
+    "descriptionLinkRequired": true
+  },
+  "remotionExplanationSource": "https://www.remotion.dev/docs/idea"
 }

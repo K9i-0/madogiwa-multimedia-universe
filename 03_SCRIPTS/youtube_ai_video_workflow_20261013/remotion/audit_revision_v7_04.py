@@ -2,13 +2,18 @@
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import json
+import argparse
 import subprocess
 import numpy as np
 from PIL import Image, ImageDraw
 
 P = Path(__file__).resolve().parent
-src = P / 'out/review_v7_04.mp4'
-out = P / 'out/audit_v7_04'
+parser = argparse.ArgumentParser()
+parser.add_argument('--source', default='out/review_v7_04.mp4')
+parser.add_argument('--tag', default='v7_04')
+args = parser.parse_args()
+src = P / args.source
+out = P / 'out' / f'audit_{args.tag}'
 out.mkdir(exist_ok=True)
 m = json.loads((P / 'src/edit-manifest.json').read_text())
 points = json.loads((P / 'out/reference_continuity/points.json').read_text())

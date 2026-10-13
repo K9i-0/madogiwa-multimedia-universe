@@ -2,12 +2,12 @@ import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
 import rawManifest from './edit-manifest.json';
 import {DuoSprite} from './DuoSprite';
-import {memberColors} from '../../../00_TEMPLATES/subtitles/member-colors';
+import {theme, captionColors} from './theme';
 
 type Dialogue = {id?: string; who: string; text: string; caption: string; captionFontSize?: number; captionSegments?: {startFrame:number;endFrame:number;text:string}[]; mood?: string; view: string; chapter?: string; startFrame: number; durationInFrames: number; envelope: number[]};
 type Clip = {src: string; startFrame: number; durationInFrames: number; sourceStartFrame: number; label: string; layout?: 'full' | 'comparison'; tag?: string};
 type Manifest = {dialogue: Dialogue[]; clips: Clip[]; creditsStartFrame: number; composition: {durationInFrames: number}};
-const ink = '#263e44', green = '#438255', purple = '#95527e', muted = '#61716d', paper = '#f6f3eb';
+const {ink, muted, paper} = theme;
 const Pic: React.FC<{name: string; w?: number; h?: number}> = ({name,w=710,h=390}) => <Img src={staticFile(name)} style={{width:w,height:h,objectFit:'contain'}}/>;
 import {VisualAid} from './VisualAid';
 
@@ -16,7 +16,7 @@ const ClipPlayer: React.FC<{clip: Clip}> = ({clip}) => {
   return <AbsoluteFill style={{background: paper}}>
     <div style={{position: 'absolute', top: comparison ? 22 : 16, left: 70, right: 70, height: comparison ? 74 : 42, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 5}}>
       {clip.tag && <div style={{fontSize: 18, color: muted}}>{clip.tag}</div>}
-      <div style={{fontSize: comparison ? 27 : 24, fontWeight: 700, color: comparison ? purple : ink}}>{clip.label}</div>
+      <div style={{fontSize: comparison ? 27 : 24, fontWeight: 700, color: theme.blue}}>{clip.label}</div>
     </div>
     <Sequence from={clip.startFrame} durationInFrames={clip.durationInFrames}>
       <OffthreadVideo muted src={staticFile(clip.src)} startFrom={clip.sourceStartFrame} style={{position: 'absolute', left: comparison ? 136 : 72, top: comparison ? 113 : 69, width: comparison ? 1008 : 1136, height: comparison ? 567 : 639, objectFit: 'contain', background: '#15272a'}}/>
@@ -45,7 +45,7 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
         const open=speaking&&(active?.envelope[Math.floor(local/2)*2]??0)>Math.max(.0025,peak*.15);
         return <DuoSprite key={who} who={who} speaking={speaking} open={open} surprise={speaking&&active?.mood==='surprise'} local={local}/>;
       })}
-      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 29, minHeight: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? memberColors.yametaro : memberColors.takosan, WebkitTextStroke: '5px #fff', paintOrder: 'stroke fill', textShadow: '0 2px 3px #0002'}}>{caption}</div></div>}
+      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 29, minHeight: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? captionColors.yametaro : captionColors.takosan, WebkitTextStroke: '3px #fff', paintOrder: 'stroke fill', textShadow: 'none'}}>{caption}</div></div>}
     </>}
     <AbsoluteFill style={{background: paper, opacity: interpolate(f, [m.composition.durationInFrames - 30, m.composition.durationInFrames - 1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}/>
   </AbsoluteFill>;

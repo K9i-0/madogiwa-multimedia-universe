@@ -58,3 +58,9 @@ npm run render -- --output out/review_v7_01.mp4
 参考画像の親要素から発話ごとのフェード・上下移動を削除。字幕切替と独立して表示し、図解内部の意図した強調は維持する。ニュース完成例は900フレーム（30秒）すべてを使う。`clips_config.json` の変更後は `python3 retime_clips.py` で採用音声・字幕の相対タイミングを保持して時系列と概要欄チャプターを更新し、ミックスとレンダーを再実行する。
 
 `node audit_reference_continuity.cjs` は同じ参考画像が続く発話境界の直前・当該・直後を出力する。字幕途中の画像だけでなく、この境界を確認する。完成版は `../final_remotion_ai_video_workflow_v7_04.mp4`、15分36.7秒。
+
+## v7改訂5：白・紺・青・黄の解説画面
+
+`src/theme.ts` に配色とカード・見出しを集約。非注目項目の文字を薄くせず、黄色で強調する。字幕は共通の話者色から濃色を計算し、この作品内だけで適用する。
+
+完成版 `../final_remotion_ai_video_workflow_v7_05.mp4`（15分36.7秒）。配色記録 `../design_v7_05.json`、検査記録 `../review_v7_05.md`。音声・タイムラインを変更しないため、`npm run render -- --skip-mix --output out/review_v7_05.mp4` で書き出す。

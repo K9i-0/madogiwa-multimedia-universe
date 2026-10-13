@@ -1,0 +1,212 @@
+{
+  "checked": "2026-10-13",
+  "pricing": {
+    "url": "https://www.qwencloud.com/models/wan3.0-video",
+    "currency": "USD",
+    "normalPerSecond": {
+      "480P": 0.05,
+      "720P": 0.1,
+      "1080P": 0.2
+    },
+    "displayedDiscountPerSecond": {
+      "480P": 0.035,
+      "720P": 0.07,
+      "1080P": 0.14
+    },
+    "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only. Yen figures use an illustrative fixed exchange rate, not a live FX quote.",
+    "narrationCurrency": "JPY",
+    "illustrativeJpyPerUsd": 160,
+    "normal30SecondsJpy": {
+      "480P": 240,
+      "720P": 480,
+      "1080P": 960
+    },
+    "three480p30SecondAttemptsJpy": 720
+  },
+  "workflow": [
+    ".claude/skills/wan-video/SKILL.md",
+    ".claude/skills/remotion-video/SKILL.md",
+    ".claude/skills/voicevox-explainer/SKILL.md",
+    "tools/IRODORI_TTS.md",
+    "03_SCRIPTS/85_pakurareta/script.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/script.md",
+    ".claude/skills/wan-video/scripts/qwen_wan3_generate.py",
+    ".claude/skills/wan-video/references/video-voice-patch.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v4.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v6.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/prompt_wan3_v6.txt",
+    "03_SCRIPTS/72_tokyo_madogiwa_park/voice_patch_experiment.md",
+    "03_SCRIPTS/72_tokyo_madogiwa_park/okayaman_large_patch.md",
+    "tools/irodori-yametaro-tail-20260923.md"
+  ],
+  "characterSheetTechnique": "User's production experience; actual canonical character_fukuchan_basic_sheet.png shown. No universal accuracy guarantee.",
+  "h3": {
+    "url": "https://github.com/sobaya-0141/Seedance_Madogiwa",
+    "status": "Future episode teaser. Cheaper/time tradeoff supplied by user; not independently benchmarked."
+  },
+  "resolution": {
+    "url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai",
+    "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."
+  },
+  "version": 7,
+  "title": "Codexで動画まで作る。窓際族物語のAI制作術",
+  "audience": "CodexやClaude CodeでWebサイト・アプリ等を作っている人。職業エンジニアには限定せず、AIモデルの名前や違いをなんとなく知っている。実制作の判断・比較・失敗例は詳しい視聴者にも役立つ深さで扱う。",
+  "delivery": {
+    "file": "final_remotion_ai_video_workflow_v7.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 27459,
+    "durationSeconds": 915.3,
+    "newPaidVideoGeneration": false,
+    "published": false
+  },
+  "localEvidence": "03_SCRIPTS/youtube_ai_video_workflow_20261013/evidence_v2.json",
+  "sourceAssets": "03_SCRIPTS/youtube_ai_video_workflow_20261013/asset_sources.json",
+  "examples": [
+    {
+      "episode": 85,
+      "title": "パクられた",
+      "usage": "v4以前の導入作例。v5ではこの動画クリップを使用しない。",
+      "source": "03_SCRIPTS/85_pakurareta/final_remotion_audio_v2_720p.mp4"
+    },
+    {
+      "episode": 53,
+      "title": "そば屋・替え玉出社事件",
+      "usage": "全体を貫くニュース制作例、生成素材と完成編集、冒頭音声の修正前後",
+      "sources": [
+        "03_SCRIPTS/53_sobaya_proxy_worker_news/final_remotion_news.mp4",
+        "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p.mp4",
+        "03_SCRIPTS/53_sobaya_proxy_worker_news/wan3_result_v6_seed530030_480p_hybrid_audio_v2.mp4"
+      ]
+    },
+    {
+      "episode": 69,
+      "title": "窓際スーパーつらい",
+      "usage": "v4以前の導入作例。v5ではこの動画クリップを使用しない。",
+      "source": "03_SCRIPTS/69_madogiwa_super_try_tanker/final_remotion_cm_v3.mp4"
+    },
+    {
+      "episode": 72,
+      "title": "東京マドギワランド",
+      "usage": "別作品でも同じ人物を示す実フレームと、本編とは別の音声修復実験",
+      "sources": [
+        "03_SCRIPTS/72_tokyo_madogiwa_park/final_remotion_vlog_v4.mp4",
+        "03_SCRIPTS/72_tokyo_madogiwa_park/remotion/out/voice_patch_comparison.mp4"
+      ],
+      "note": "福ギュンの1.2秒切り出し比較は2026-09-22のIrodori Small実験。2026-09-30のおかやまんの別比較に基づくLarge運用採用と区別する。"
+    }
+  ],
+  "limitations": [
+    "過去のAPI入力エラー記録から失敗時の課金額は断言しない。",
+    "音声修復の一例を任意の台詞への成功率や完全リップシンクの保証へ一般化しない。",
+    "主観的な通し試聴と、Irodoriの生成設定・ASR・機械的な音量検査を区別する。",
+    "キャラクター資料、モデル選び、スキル運用の説明はこのリポジトリの制作経験に基づく。"
+  ],
+  "chapters": [
+    {
+      "chapter": "1. いつものCodexで、動画も作れる？",
+      "startFrame": 0,
+      "youtubeTime": "00:00"
+    },
+    {
+      "chapter": "2. 動画のモデルと、使うための道具",
+      "startFrame": 2756,
+      "youtubeTime": "01:31"
+    },
+    {
+      "chapter": "3. プロンプトを書くAIも大事",
+      "startFrame": 6293,
+      "youtubeTime": "03:29"
+    },
+    {
+      "chapter": "4. 同じキャラクターを、次の一本にも",
+      "startFrame": 8360,
+      "youtubeTime": "04:38"
+    },
+    {
+      "chapter": "5. 惜しい一言は、音声だけ直す",
+      "startFrame": 10447,
+      "youtubeTime": "05:48"
+    },
+    {
+      "chapter": "6. 編集も「ここ直して」で進める",
+      "startFrame": 13906,
+      "youtubeTime": "07:43"
+    },
+    {
+      "chapter": "7. かかるお金と、解像度の選び方",
+      "startFrame": 16724,
+      "youtubeTime": "09:17"
+    },
+    {
+      "chapter": "8. 一本作るたび、スキルも育てる",
+      "startFrame": 20263,
+      "youtubeTime": "11:15"
+    },
+    {
+      "chapter": "9. 最初の一本と、次回予告",
+      "startFrame": 24947,
+      "youtubeTime": "13:51"
+    }
+  ],
+  "cast": [
+    "やめ太郎",
+    "たこさん"
+  ],
+  "narration": {
+    "yametaro": "Irodori-TTS v4.1-Small; canonical reference, new dialogue and unchanged adopted lines",
+    "takosan": {
+      "model": "VOICEVOX:中国うさぎ",
+      "style": "ノーマル",
+      "speedScale": 1.1,
+      "pitchScale": 0,
+      "license": "https://zunko.jp/con_ongen_kiyaku.html",
+      "credit": "VOICEVOX:中国うさぎ"
+    },
+    "record": "voice_record_v7.json",
+    "scope": "たこさんは2026-10-13採用の共通VOICEVOX設定。作品別に無音長を調整。"
+  },
+  "scenarioReferences": [
+    "https://qiita.com/Yametaro/items/a40ffcd65d77ed8b29a0",
+    "https://qiita.com/Yametaro/items/21b8772e6c0d1d77e176",
+    "https://qiita.com/Yametaro/items/255eea3124e769ce845c"
+  ],
+  "models": [
+    {
+      "name": "Seedance",
+      "provider": "ByteDance",
+      "source": "https://seed.bytedance.com/en/blog/seedance-2-0-official-launch"
+    },
+    {
+      "name": "Wan",
+      "provider": "Alibaba",
+      "source": "https://home.alibabagroup.com/en-US/ai-governance/wan"
+    },
+    {
+      "name": "MiniMax H3",
+      "provider": "MiniMax",
+      "source": "https://www.minimax.io/news/minimax-h3-open-source",
+      "note": "Model name, not colleague name. Public weights / compatible GPU execution; do not imply every system component is available locally."
+    }
+  ],
+  "h3Workflow": {
+    "repository": "https://github.com/sobaya-0141/Seedance_Madogiwa",
+    "reviewedFiles": [
+      ".claude/skills/colab-video/SKILL.md",
+      ".claude/skills/local-video/SKILL.md"
+    ],
+    "note": "Reviewed as production evidence, not installed or executed. CUDA GPU / Colab L4/A100 workflow; time and cost comparisons reserved for a future episode."
+  },
+  "publicRepository": {
+    "url": "https://github.com/K9i-0/madogiwa-multimedia-universe",
+    "publicVerified": "2026-10-13 GitHub API",
+    "descriptionLinkRequired": true
+  },
+  "repositoryScreenshot": {
+    "file": "repository_public_v7.png",
+    "url": "https://github.com/K9i-0/madogiwa-multimedia-universe",
+    "captured": "2026-10-13",
+    "sha256": "b6c7136bd2974931cbe6389ffdbc3d1004386d60c0517fab0f93ba75f01dd838"
+  }
+}

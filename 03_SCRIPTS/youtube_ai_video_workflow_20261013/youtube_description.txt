@@ -7,29 +7,29 @@ CodexやClaude CodeでWebサイト・アプリなどを作っている人へ。
 制作の操作はCodex・Claude CodeからAPI・コード・コマンドで実行しています。参照資料や実行環境をリポジトリへ用意したうえで、人間が内容と採用結果を判断しています。
 
 チャプター
-00:00 導入
-01:43 道具の分担
-03:06 依頼と生成指示
-04:05 キャラクターの資料
-05:13 生成と音声修正
-07:04 編集
-07:52 費用と解像度
-10:10 スキルを育てる
-12:00 まとめ
-12:35 次回予告
+00:00 いつものCodexで、動画も作れる？
+01:31 動画のモデルと、使うための道具
+03:29 プロンプトを書くAIも大事
+04:38 同じキャラクターを、次の一本にも
+05:48 惜しい一言は、音声だけ直す
+07:43 編集も「ここ直して」で進める
+09:17 かかるお金と、解像度の選び方
+11:15 一本作るたび、スキルも育てる
+13:51 最初の一本と、次回予告
 
 制作リポジトリ
 https://github.com/K9i-0/madogiwa-multimedia-universe
-今後紹介予定のh3さんのリポジトリ
+今後紹介予定のMiniMax H3の制作手法（同僚のリポジトリ）
 https://github.com/sobaya-0141/Seedance_Madogiwa
 
 料金出典：Qwen Cloud / wan3.0-video（2026-10-13確認）
 https://www.qwencloud.com/models/wan3.0-video
 通常表示価格：480p $0.05/秒、720p $0.10/秒、1080p $0.20/秒。
+説明用の固定換算1ドル160円で、30秒あたり約240円／480円／960円。480p・30秒を3回生成すると約720円です。実際の請求額は為替・割引・決済条件等で変わります。
 確認時点の割引表示は30%引き。適用条件・最新料金は利用時に確認してください。
 本編の金額は動画生成分のみ。AIツールの利用料、機材、ローカル処理などは含みません。
 低解像度から試す進め方は制作の選択肢として紹介しており、再生成で同一の演技や画面が保証されるものではありません。
-h3さんの費用差・所要時間の具体的な比較は今後の紹介を予定しています。
+MiniMax H3を使う手法の費用差・所要時間の具体的な比較は今後の紹介を予定しています。
 
 制作過程の資料
 第53話「そば屋・替え玉出社事件」：冒頭「速報です」の音声修復、参照音声の長さ制限に関する失敗記録、現在の送信前検証。
@@ -61,4 +61,11 @@ https://qiita.com/Yametaro/items/a40ffcd65d77ed8b29a0
 https://qiita.com/Yametaro/items/21b8772e6c0d1d77e176
 https://qiita.com/Yametaro/items/255eea3124e769ce845c
 
-導入と全編の掛け合いを改稿したv5。たこさんは中国うさぎ・ノーマルです。
+完成稿v7。たこさんは中国うさぎ・ノーマルです。
+
+モデル・サービスの出典
+Seedance / ByteDance: https://seed.bytedance.com/en/blog/seedance-2-0-official-launch
+Wan / Alibaba: https://home.alibabagroup.com/en-US/ai-governance/wan
+MiniMax H3: https://www.minimax.io/news/minimax-h3-open-source
+Higgsfieldのプラン: https://higgsfield.ai/creator-hub/help-center/plans/how-do-higgsfield-plans-work
+Remotionの仕組み: https://www.remotion.dev/docs/idea

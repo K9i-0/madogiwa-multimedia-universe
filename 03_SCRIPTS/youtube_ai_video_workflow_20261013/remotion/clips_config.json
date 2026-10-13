@@ -1,17 +1,18 @@
 [
   {
     "id": "example_news",
-    "afterId": "u001",
+    "afterId": "v012",
     "src": "news.mp4",
     "sourceStartFrame": 0,
     "durationInFrames": 258,
     "label": "架空ニュース｜第53話「替え玉出社」",
     "layout": "full",
-    "tag": "完成例"
+    "tag": "完成例",
+    "muteBgm": true
   },
   {
     "id": "news_before_audio",
-    "afterId": "u047",
+    "afterId": "v054",
     "src": "news_raw.mp4",
     "sourceStartFrame": 0,
     "durationInFrames": 63,
@@ -22,7 +23,7 @@
   },
   {
     "id": "news_after_audio",
-    "afterId": "u047",
+    "afterId": "v054",
     "src": "news_fixed.mp4",
     "sourceStartFrame": 0,
     "durationInFrames": 63,
@@ -33,7 +34,7 @@
   },
   {
     "id": "park_comparison",
-    "afterId": "u052",
+    "afterId": "v058",
     "src": "voice_patch_comparison.mp4",
     "sourceStartFrame": 0,
     "durationInFrames": 310,

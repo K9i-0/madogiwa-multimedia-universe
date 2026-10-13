@@ -1,8 +1,8 @@
 {
   "version": 7,
-  "status": "scenario_complete_not_rendered",
+  "status": "rendered_complete",
   "script": "script.md",
-  "currentRenderedVersion": 6,
+  "currentRenderedVersion": 7,
   "checked": "2026-10-13",
   "dialogueCount": 120,
   "openingMusicLeadSeconds": 2.5,
@@ -67,7 +67,7 @@
     "API vs code/CLI vs GUI service distinguished",
     "Opening joke ends immediately; conversation moves to unfamiliarity with video editing software. No later callback.",
     "Resolution chapter ends with cost-prioritized 480p generation; no final export or X algorithm narration",
-    "Existing rendered v6 timeline and audio unchanged",
+    "Previous completed v6 MP4 preserved; v7 timeline and audio regenerated",
     "Skills, character sheets and past production records managed in Git; public repository link included",
     "Remotion explanation connects exact Japanese typography to React-based frame rendering",
     "JPY arithmetic verified at illustrative 160 JPY/USD"
@@ -78,5 +78,7 @@
     "publicVerified": "2026-10-13 GitHub API",
     "descriptionLinkRequired": true
   },
-  "remotionExplanationSource": "https://www.remotion.dev/docs/idea"
+  "remotionExplanationSource": "https://www.remotion.dev/docs/idea",
+  "deliveryFile": "final_remotion_ai_video_workflow_v7.mp4",
+  "durationSeconds": 915.3
 }

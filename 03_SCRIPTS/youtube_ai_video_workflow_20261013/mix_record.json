@@ -1,26 +1,27 @@
 {
   "sampleRate": 48000,
-  "frames": 23399,
+  "frames": 27459,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
   "clipTargetLUFS": -19,
-  "premasterPeak": 0.6342313885688782,
+  "premasterPeak": 0.6168263554573059,
   "clips": [
     {
       "id": "example_news",
-      "afterId": "u001",
+      "afterId": "v012",
       "src": "news.mp4",
       "sourceStartFrame": 0,
       "durationInFrames": 258,
       "label": "架空ニュース｜第53話「替え玉出社」",
       "layout": "full",
       "tag": "完成例",
-      "startFrame": 1544
+      "muteBgm": true,
+      "startFrame": 2134
     },
     {
       "id": "news_before_audio",
-      "afterId": "u047",
+      "afterId": "v054",
       "src": "news_raw.mp4",
       "sourceStartFrame": 0,
       "durationInFrames": 63,
@@ -28,11 +29,11 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 10657
+      "startFrame": 11842
     },
     {
       "id": "news_after_audio",
-      "afterId": "u047",
+      "afterId": "v054",
       "src": "news_fixed.mp4",
       "sourceStartFrame": 0,
       "durationInFrames": 63,
@@ -40,11 +41,11 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 10735
+      "startFrame": 11920
     },
     {
       "id": "park_comparison",
-      "afterId": "u052",
+      "afterId": "v058",
       "src": "voice_patch_comparison.mp4",
       "sourceStartFrame": 0,
       "durationInFrames": 310,
@@ -52,36 +53,36 @@
       "layout": "comparison",
       "tag": "別作品の比較実験／本編とは別の検証",
       "muteBgm": true,
-      "startFrame": 11656
+      "startFrame": 12874
     }
   ],
   "clipDucking": [
     {
       "id": "example_news",
-      "startFrame": 1544,
+      "startFrame": 2134,
       "durationInFrames": 258,
-      "bgmGain": 0.08
+      "bgmGain": 0
     },
     {
       "id": "news_before_audio",
-      "startFrame": 10657,
+      "startFrame": 11842,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "news_after_audio",
-      "startFrame": 10735,
+      "startFrame": 11920,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "park_comparison",
-      "startFrame": 11656,
+      "startFrame": 12874,
       "durationInFrames": 310,
       "bgmGain": 0
     }
   ],
-  "endingStartFrame": 22660,
+  "endingStartFrame": 24947,
   "endingTrack": "TheFatRat - Unity",
   "endingTargetLUFS": -38,
   "endingLiftAfterDialogue": false,

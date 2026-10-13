@@ -1,66 +1,54 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — v6
+# Codexで動画まで作る。窓際族物語のAI制作術 — v7
 
-> 次回制作のシナリオ完成稿は `../script.md`（v7）。v7はまだ音声生成・動画化していない。このディレクトリのdialogue・manifest・描画コードは完成動画v6の再現用。v6の旧台本はGitコミット `1334d02c` で参照できる。
-
-やめ太郎の「ネタはあるのに、編集の操作で止まる」という悩みから、いつものAIで動画を作る流れを紹介する。導入は共感→第53話の完成例→内容の全容。本編は会話の欲求・失敗から道具の説明へ進め、参照画像の情報設計、部分音声修復、費用、制作ログからのスキル改善まで扱う。
-
-完成版：`../final_remotion_ai_video_workflow_v6.mp4`。実測仕様：`../delivery_v6.json`。確認・修正記録：`../review_v6.md`。旧版MP4と記録は保持する。v4コードはGit履歴で再現可能。YouTubeへの公開・アップロードは行わない。
-
-## v6の画面方針
-
-会話はv5の123発話と採用音声を維持。中央の解説画面を `src/VisualAid.tsx` に刷新し、重複する説明文・見出し・出典を減らした。画像比較、料金の棒、音声区間、短い工程図を用い、今の話題を強調する。細かな出典・クレジットは概要欄と `sources.json` に保持する。
-
-`src/visual-cues-v6.json` は発話内の整数フレーム。主要な説明の切替は採用VOICEVOXクエリのモーラ時間（前無音を含み、速度1.1で換算）を参照した。語句ごとの主観的な聞き取り検証とは区別する。台詞を変更したらキューも再設定する。
-
-静止画プレビュー：`node preview_visuals_v6.cjs`。音声の再生成は不要で、既存 `public/mixed.wav` を使う場合は `npm run render -- --skip-mix --output out/review_v6_01.mp4`。
+`../script.md` の完成稿120発話を映像化。やめ太郎・たこさんの導入、動画モデルと提供会社、Remotionの文字合成、日本円の生成料金、Gitで制作ノウハウを残す話を反映する。旧v6はGitコミット `d7d55361` から再現でき、旧MP4と採用音声も保持する。
 
 ## 正本
 
-- `dialogue.json`：本文・話者・読み・字幕改行・発話後の間・Irodoriの生成尺補正。
-- `clips_config.json`：ニュース作例と音声修復比較の範囲、原音・BGM停止。
-- `src/edit-manifest.json`：採用音声から算出した整数フレームのタイムラインと口パク波形。
-- `../voice_record_v5.json`：モデル・参照・seed・VOICEVOXクエリ・実測尺・音声ハッシュ。
-- `../adopted_audio_v5.json`、`../v5_*.wav`：採用セリフとpublic内ファイルとの対応。
-- `../script.md`：章・会話・画面指示・完成版の発話開始時刻。
-- `../sources.json`、`../evidence_v2.json`：料金・過去の制作ログ・台本構成の参考記事。
-- `../youtube_description.txt`：概要欄用クレジットと出典。専用の末尾カードは表示しない。
+- `dialogue.json`：承認済み本文・話者・読み・生成尺・発話後の間。
+- `src/edit-manifest.json`：音声実測から作る整数フレームのタイムライン、字幕の分割区間、口パク波形。
+- `src/VisualAid.tsx`：v7の発話ごとの資料。`VisualAidLegacy.tsx` は継承する図解部品。旧音声の切替キューは使用しない。
+- `src/visual-cues-v7.json`：新しいVOICEVOX音声クエリから求めた発話内の強調位置。Irodori字幕の分割は本文の位置による補助時刻。
+- `caption-layout-v7.json`：長文13発話の意味単位の字幕ページ・改行指定。
+- `clips_config.json`：第53話の完成例と修復前後、第72話の別実験。作例中はBGM・実況を停止。
+- `../voice_record_v7.json`：採用音声のモデル、参照、設定、読み、SHA-256。`../adopted_audio_v7.json` は正本WAVとpublic音声の対応。
+- `../scenario_v7.json`、`../sources_v7.json`：モデル、料金、使用素材の根拠。`../youtube_description.txt`：出典・クレジット・公開リポジトリURL。YouTubeへの公開は行わない。
 
-## 配役・音響
+## 音声と字幕
 
-やめ太郎は左で左右反転、たこさんは右。既存の採用立ち絵を維持する。白レンズを維持し、やめ太郎にまばたきを付けない。字幕色は `00_TEMPLATES/subtitles/member-colors.ts` が正本。
+やめ太郎はIrodori v4.1-Small・正典参照・seed 7・本文CFG 5・captionなし・トリムなし。短文0.7、長めの台詞0.85を出発点とし、読み落とし疑いを個別修正する。生成後の早送りは行わない。たこさんはVOICEVOX:中国うさぎ・ノーマル61、速度1.1、音高0、前無音0.10秒・後無音0.20秒。
 
-- やめ太郎：Irodori-TTS v4.1-Small、正典 `Yametaro_voice.wav`、seed 7、captionなし、本文CFG 5、トリムなし。短文の生成尺0.7を出発点に、台詞ごとに0.85 / 1.0へ調整。生成後の早送りはしない。変更のない採用音声は再利用。
-- たこさん：VOICEVOX:中国うさぎ・ノーマル、speaker 61、速度1.1、音高0、抑揚1、音量1、48kHz mono。掛け合い用に前無音0.10秒・後無音0.20秒。発話間はタイムライン側で管理する。
-- 通常の発話後は9〜12フレーム、オチは18フレーム等。字幕を縮小しすぎず、意味の切れ目で2行以内に分ける。
-- 各セリフを−18 LUFSへ整えてミックス。BGMは−34 LUFS、Unityは−38 LUFSを出発点とし、締めで持ち上げない。原音比較中はBGMと実況を止める。最終48kHz stereo。
+字幕は29pxを保ち、長文を意味単位で複数画面へ分割する。1画面2行以内・最大770px。VOICEVOXは元クエリのモーラ長と前無音、速度を用いて分割・強調時刻を算出する。ASRの一致や音量の数値だけで主観的な聞き心地を保証しない。
+
+冒頭はBGMを2.5秒先行。本編は第2章から、エンディング曲は第9章から。−18 LUFSの会話、−34 LUFSのBGM、−38 LUFSのUnityを出発点にミックス。末尾クレジットは設けず、静かにフェードする。
 
 ## 再現
 
-このディレクトリで実行する。ローカルIrodori、VOICEVOX（127.0.0.1:50021）、元素材、FFmpegが必要。
-
 ```sh
-npm ci
-../../../.local/Irodori-TTS/.venv/bin/python prepare_voice.py
+../../../.local/Irodori-TTS/.venv/bin/python prepare_v7_voice.py
+../../../.local/voicevox-explainer/venv/bin/python finalize_v7_timing.py
 npm run typecheck
 ../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
-npm run render -- --output out/review_v6_01.mp4
+node preview_v7.cjs
+npm run render -- --output out/review_v7_01.mp4
 ```
 
-`prepare_v5_voice.py`は生成本文・設定・モデル・参照ハッシュをキャッシュ識別へ含める。進捗は`out/v5_progress.json`。台詞変更後の古い音声流用を防ぐ。導入だけの候補は`preview_v5.py`で生成可能。
+音声を再生成せず復元する場合、`adopted_audio_v7.json` の `file` を `publicAudio` へhardlinkまたはコピーし、SHA-256を照合する。元素材・BGMは既存publicを使い、リポジトリ画面は `../repository_public_v7.png` を `public/` へ配置する。
 
-採用WAVをpublicへ復元する場合は `adopted_audio_v5.json` の `file` → `publicAudio` へhardlinkし、SHA-256を確認する。音声合成環境の版が異なる場合は、再生成と採用WAVの復元を区別する。
+`prepare_v7_voice.py` は音声の設定と本文をハッシュで識別する。変更後は必ず `finalize_v7_timing.py` を再実行。作例と字幕のタイミングに旧版の秒数を流用しない。
 
-## 監査
+## 検証
 
 ```sh
-../../../.local/Irodori-TTS/.venv/bin/python audit_v5_audio.py
-../../../.local/Irodori-TTS/.venv/bin/python audit_v5_secondpass.py
-../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v6_01.mp4 --tag v6_01
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v6_01.mp4 --tag v6_01
+../../../.local/Irodori-TTS/.venv/bin/python audit_v7_audio.py
+../../../.local/Irodori-TTS/.venv/bin/python audit_v7_secondpass.py --ids <確認する発話ID>
+../../../.local/voicevox-explainer/venv/bin/python audit_video_v7.py --source out/review_v7_03.mp4 --tag v7
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source ../final_remotion_ai_video_workflow_v7.mp4 --tag v7
 ```
 
-全発話、資料映像の開始・中間・終了、図解の切替、末尾をMP4から抽出して確認する。ASRは本文をプロンプトで教えずにスクリーニングし、不確かな発音は別のモデルでも照合する。ASRや数値検査で主観的な聞き心地を保証しない。今回、主観的な通し試聴は実施できないため、機械的な検査と視覚確認を分けて報告する。
+全字幕ページと強調切替をプレビューし、完成MP4からも発話・作例・切替・末尾を抽出して確認する。全編デコード、尺、音量、音声の重複・欠落を機械的に検査。主観的な通し試聴はこの実行環境では未実施として記録する。
 
-v5の音声採用時は `adopt_v5_audio.py` で採用WAV・対応表・章時刻・概要欄・出典情報を保存した。画面のみのv6改修では実行不要（同スクリプトはv5の台本ヘッダーを再生成するため）。動画、中間WAV、監査画像、旧候補はGit管理外。採用セリフWAVと再現コードを追跡する。
+監査後に `adopt_v7_audio.py` で採用WAVと概要欄の実測チャプターを保存する。動画・中間素材・監査画像はGit管理外。採用音声・入力画像・再現コード・記録を追跡する。
 
-旧v5の全編確認後の資料表示修正は `render_visual_patches.py` と `../visual_revision_v5.json` に記録。通常の再現は更新済みmanifestから全編レンダーすればよい。部分差し替えは既存の候補MP4がある場合だけ使用する。
+## v7完成版
+
+`../final_remotion_ai_video_workflow_v7.mp4`（15分15.3秒、720p）。検証結果は `../delivery_v7.json` と `../review_v7.md`。YouTube未公開。

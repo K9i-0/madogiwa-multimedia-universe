@@ -12,11 +12,16 @@ for i,d in enumerate(m['dialogue']):
  with wave.open(str(P/'public'/d['audio'])) as w:duration=w.getnframes()/w.getframerate()
  assert math.ceil(duration*fps)==d['durationInFrames']
  assert len(d['envelope'])==d['durationInFrames']
- assert len(d['caption'].splitlines())<=2
- caption_font=ImageFont.truetype('/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc',d.get('captionFontSize',29))
- widths=[caption_font.getlength(x) for x in d['caption'].splitlines()]
+ segments=d.get('captionSegments',[{'text':d['caption'],'startFrame':0,'endFrame':d['durationInFrames']}])
+ assert ''.join(s['text'].replace('\n','') for s in segments)==d['text'],i
+ widths=[];end=0
+ for seg in segments:
+  assert seg['startFrame']==end and seg['endFrame']>end,(i,seg)
+  end=seg['endFrame'];assert len(seg['text'].splitlines())<=2
+  caption_font=ImageFont.truetype('/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc',d.get('captionFontSize',29))
+  widths += [caption_font.getlength(x) for x in seg['text'].splitlines()]
+ assert end==d['durationInFrames']
  assert max(widths)<=790,(i,widths)
- assert d['caption'].replace('\n','')==d['text'],i
  prev=d['startFrame']+d['durationInFrames'];report.append({'index':i,'maxCaptionWidth':max(widths),'durationSeconds':duration})
 previous_clip_end=0
 clip_report=[]

@@ -1,0 +1,110 @@
+{
+  "file": "final_remotion_ai_video_workflow_v10.mp4",
+  "sha256": "308479a26a7a55bdaded7012f136082958149b69ade3fa85f44893728921c1d3",
+  "bytes": 68864980,
+  "durationSeconds": 1012.6,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "pixelFormat": "yuv420p",
+    "sampleAspectRatio": "1:1",
+    "frames": "30378"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLUFS": "-17.99",
+    "truePeakDbTP": "-4.01",
+    "loudnessRangeLU": "3.10"
+  },
+  "fullDecode": "pass",
+  "subtitleTimingAndWidth": "See remotion/out/timeline_validation.json",
+  "visualReview": "See review_v10.md and remotion/out/audit_v10*",
+  "audioReview": "Irodori Yametaro, user-selected VOICEVOX Chugoku Usagi, reading-query verification and automated ASR; subjective continuous listening is not available in this tool environment.",
+  "newPaidVideoGeneration": false,
+  "published": false,
+  "completed": "2026-10-14",
+  "introExcerpt": {
+    "file": "remotion/out/intro_revision_v10.mp4",
+    "durationSeconds": 33.56666666666667,
+    "frames": 1007
+  },
+  "captionFrameComparison": {
+    "count": 166,
+    "maxMAE": 1.7690668402777778,
+    "meanMAE": 1.034150142235609,
+    "worst": [
+      [
+        "v096_caption1",
+        1.7690668402777778
+      ],
+      [
+        "v096_caption0",
+        1.7232486979166666
+      ],
+      [
+        "v000_caption0",
+        1.6060771122685185
+      ],
+      [
+        "v084_caption0",
+        1.5325206163194445
+      ],
+      [
+        "v083_caption1",
+        1.412955005787037
+      ],
+      [
+        "v031_caption0",
+        1.4081926359953705
+      ],
+      [
+        "v005_caption0",
+        1.3917151331018518
+      ],
+      [
+        "v007_caption0",
+        1.3824251302083332
+      ],
+      [
+        "v032_caption1",
+        1.3739373553240741
+      ],
+      [
+        "v086_caption0",
+        1.3718258101851852
+      ]
+    ]
+  },
+  "referenceContinuity": "pass: 7 static-reference boundaries",
+  "expressionRecord": "expressions_v10.json",
+  "audioQA": {
+    "dialogue": 127,
+    "captions": 165,
+    "durationSeconds": 1012.6,
+    "unchangedAudio": 124,
+    "newAudio": 3,
+    "subjectiveListening": false,
+    "expressions": {
+      "takosan": {
+        "normal": 51,
+        "happy": 14,
+        "surprise": 2,
+        "bored": 9,
+        "smug": 35,
+        "worry": 16
+      },
+      "yametaro": {
+        "happy": 14,
+        "worry": 24,
+        "normal": 74,
+        "surprise": 6,
+        "smug": 8,
+        "bored": 1
+      }
+    }
+  }
+}

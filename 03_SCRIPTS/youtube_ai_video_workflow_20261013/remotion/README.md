@@ -90,3 +90,11 @@ npm run render -- --output out/review_v8_01.mp4
 `audit_v9_audio.py` / `audit_v9_secondpass.py`で変更音声を照合し、`audit_video_v9.py` / `audit_continuity_v9.py` / `final_checks.py --tag v9`で完成MP4を検査する。
 冒頭は`VisualAid.tsx`内の固定フレームSequenceで連続再生し、両方ともmuted。素材と使用範囲は`../sources_v9.json`を参照。
 採用動画：`../final_remotion_ai_video_workflow_v9.mp4`。YouTube未公開。
+
+## v10：自己紹介と既存表情の活用
+
+`prepare_expression_assets.py`で共有の32枚をpublicへ配置。`src/expressions-v10.json`で発話ごとに話者／聞き手の表情を指定する。
+`prepare_v10_voice.py` → `finalize_v10_timing.py` → `preview_v10.cjs` → `npm run render`。
+音声監査は`audit_v10_audio.py` / `audit_v10_secondpass.py --ids v132 v133 v134`。
+完成映像は`audit_video_v10.py`、`qa_compare_v10.py`、`final_checks.py --tag v10`で監査。
+採用動画：`../final_remotion_ai_video_workflow_v10.mp4`。YouTube未公開。

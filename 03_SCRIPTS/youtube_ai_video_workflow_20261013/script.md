@@ -1,6 +1,6 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — 完成稿 v9
+# Codexで動画まで作る。窓際族物語のAI制作術 — 完成稿 v10
 
-完成動画：`final_remotion_ai_video_workflow_v9.mp4`（16分38秒、1280×720 / 30fps、2026-10-14書き出し）。検証記録：`review_v9.md` / `delivery_v9.json`。
+完成動画：`final_remotion_ai_video_workflow_v10.mp4`（16分52.6秒、1280×720 / 30fps、2026-10-14書き出し）。検証記録：`review_v10.md` / `delivery_v10.json`。
 
 2026-10-13の追加FB反映版。やめ太郎＆たこさん。やめ太郎は正典Irodori v4.1-Small、たこさんは中国うさぎ・ノーマル、速度1.1・音高0。Wan 3.0は「ワン、サンテンゼロ」と読む。無理に韻を踏まず、自然な会話を優先する。
 
@@ -10,7 +10,9 @@
 
 ## 1. いつものCodexで、動画も作れる？
 
-演出：静かなBGMを先に2.5秒。中央は第76話の焼きそば動画を無音で再生。30秒を超えたら第64話の宇宙CMへ切り替え、編集経験の話に移るまで再生を続ける。
+表情：既存の実況用6差分を会話に合わせて使用。詳細は`expressions_v10.json`。
+
+演出：静かなBGMを先に2.5秒。中央は第76話の焼きそば動画を無音で再生。30秒を超えたら第64話の宇宙CMへ切り替え、自己紹介に入るまで再生を続ける。
 
 **やめ太郎**「窓際族物語の動画は、相変わらずアホやな〜」
 
@@ -27,6 +29,12 @@
 **やめ太郎**「みんなから、『やめさん、もう要らないね』って、AIの使い方を褒められとる」
 
 **たこさん**「それ、本当に要らないと思われてるんじゃ……」
+
+**たこさん**「どうも、たこさんです。」
+
+**やめ太郎**「どうも、無職やめ太郎やで！」
+
+**たこさん**「今回は、CodexやClaude Codeを使った、窓際族物語の動画の作り方を紹介します。」
 
 画面・演出：短く間を置き、編集ソフトの話へ。スキル章では今回のユーザー指定により「要らない」のボケを一度だけ再使用する。
 
@@ -305,4 +313,4 @@
 - Qwen Cloud料金：https://www.qwencloud.com/models/wan3.0-video （2026-10-13確認）
 - 公開制作リポジトリ：https://github.com/K9i-0/madogiwa-multimedia-universe
 - H3の別手法：https://github.com/sobaya-0141/Seedance_Madogiwa
-- 台詞・読み：`remotion/dialogue.json`／`prepare_v9_voice.py`。整数フレームのタイミング正本：`remotion/src/edit-manifest.json`。
+- 台詞・読み：`remotion/dialogue.json`／`prepare_v10_voice.py`。整数フレームのタイミング正本：`remotion/src/edit-manifest.json`。

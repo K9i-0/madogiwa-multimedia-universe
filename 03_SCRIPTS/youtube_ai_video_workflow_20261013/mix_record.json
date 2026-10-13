@@ -1,11 +1,11 @@
 {
   "sampleRate": 48000,
-  "frames": 29942,
+  "frames": 30378,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
   "clipTargetLUFS": -19,
-  "premasterPeak": 0.6255627274513245,
+  "premasterPeak": 0.6262455582618713,
   "clips": [
     {
       "id": "example_news",
@@ -17,7 +17,7 @@
       "layout": "full",
       "tag": "完成例",
       "muteBgm": true,
-      "startFrame": 2143
+      "startFrame": 2579
     },
     {
       "id": "news_before_audio",
@@ -29,7 +29,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 14607
+      "startFrame": 15043
     },
     {
       "id": "news_after_audio",
@@ -41,7 +41,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 14685
+      "startFrame": 15121
     },
     {
       "id": "park_comparison",
@@ -53,36 +53,36 @@
       "layout": "comparison",
       "tag": "別作品の比較実験／本編とは別の検証",
       "muteBgm": true,
-      "startFrame": 15639
+      "startFrame": 16075
     }
   ],
   "clipDucking": [
     {
       "id": "example_news",
-      "startFrame": 2143,
+      "startFrame": 2579,
       "durationInFrames": 900,
       "bgmGain": 0
     },
     {
       "id": "news_before_audio",
-      "startFrame": 14607,
+      "startFrame": 15043,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "news_after_audio",
-      "startFrame": 14685,
+      "startFrame": 15121,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "park_comparison",
-      "startFrame": 15639,
+      "startFrame": 16075,
       "durationInFrames": 310,
       "bgmGain": 0
     }
   ],
-  "endingStartFrame": 29199,
+  "endingStartFrame": 29635,
   "endingTrack": "TheFatRat - Unity",
   "endingTargetLUFS": -38,
   "endingLiftAfterDialogue": false,

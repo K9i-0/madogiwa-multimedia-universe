@@ -1,7 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
 import rawManifest from './edit-manifest.json';
-import {DuoSprite} from './DuoSprite';
+import {DuoSprite, Mood} from './DuoSprite';
+import expressions from './expressions-v10.json';
 import {theme, captionColors} from './theme';
 
 type Dialogue = {id?: string; who: string; text: string; caption: string; captionFontSize?: number; captionSegments?: {startFrame:number;endFrame:number;text:string}[]; mood?: string; view: string; chapter?: string; startFrame: number; durationInFrames: number; envelope: number[]};
@@ -43,7 +44,8 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
         const speaking=active?.who===who; const local=active?f-active.startFrame:0;
         const peak=Math.max(...(active?.envelope??[0]));
         const open=speaking&&(active?.envelope[Math.floor(local/2)*2]??0)>Math.max(.0025,peak*.15);
-        return <DuoSprite key={who} who={who} speaking={speaking} open={open} surprise={speaking&&active?.mood==='surprise'} local={local}/>;
+        const mood=((expressions as Record<string,Record<string,Mood>>)[previous?.id??'v000']??{})[who]??'normal';
+        return <DuoSprite key={who} who={who} speaking={speaking} open={open} mood={mood} local={local}/>;
       })}
       {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 29, minHeight: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? captionColors.yametaro : captionColors.takosan, WebkitTextStroke: '3px #fff', paintOrder: 'stroke fill', textShadow: 'none'}}>{caption}</div></div>}
     </>}

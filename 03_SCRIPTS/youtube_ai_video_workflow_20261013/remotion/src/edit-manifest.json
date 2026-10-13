@@ -3,11 +3,11 @@
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 29942
+    "durationInFrames": 30378
   },
-  "mainStartFrame": 3407,
-  "endingStartFrame": 29199,
-  "creditsStartFrame": 29942,
+  "mainStartFrame": 3843,
+  "endingStartFrame": 29635,
+  "creditsStartFrame": 30378,
   "creditsInDescription": true,
   "voiceModel": "Irodori Yametaro + VOICEVOX Chugoku Usagi",
   "dialogue": [
@@ -2075,6 +2075,1149 @@
       "captionFontSize": 29
     },
     {
+      "id": "v132",
+      "chapter": "1. いつものCodexで、動画も作れる？",
+      "view": "v10_v132",
+      "who": "takosan",
+      "text": "どうも、たこさんです。",
+      "caption": "どうも、たこさんです。",
+      "pause": 12,
+      "durationScale": 0.7,
+      "audio": "v10_v132_1a06d35ad168.wav",
+      "spoken": "どうも、たこさんです。",
+      "kana": "ド'オモ、タ'コサンデ_ス",
+      "durationInFrames": 64,
+      "envelope": [
+        0.00927,
+        0.00956,
+        0.00586,
+        0.02552,
+        0.07028,
+        0.07415,
+        0.06266,
+        0.02797,
+        0.06351,
+        0.08438,
+        0.08716,
+        0.05665,
+        0.04588,
+        0.03663,
+        0.02618,
+        0.00821,
+        0.00488,
+        0.00326,
+        0.00484,
+        0.00238,
+        0.0066,
+        0.00727,
+        0.00742,
+        0.00221,
+        0.00512,
+        0.00326,
+        0.0024,
+        0.00574,
+        0.0066,
+        0.0041,
+        0.0034,
+        0.00257,
+        0.03989,
+        0.08757,
+        0.02579,
+        0.00624,
+        0.00639,
+        0.02124,
+        0.11981,
+        0.10956,
+        0.0281,
+        0.02563,
+        0.02584,
+        0.08129,
+        0.078,
+        0.05918,
+        0.04511,
+        0.06673,
+        0.04487,
+        0.03635,
+        0.0351,
+        0.03151,
+        0.02524,
+        0.03129,
+        0.03112,
+        0.02266,
+        0.01981,
+        0.01427,
+        0.01521,
+        0.0142,
+        0.00768,
+        0.01161,
+        0.01052,
+        0.01714
+      ],
+      "voiceSettings": {
+        "model": "VOICEVOX:中国うさぎ",
+        "engineVersion": "0.25.1",
+        "speakerVersion": "0.16.1",
+        "speakerId": 61,
+        "style": "ノーマル",
+        "query": {
+          "accent_phrases": [
+            {
+              "moras": [
+                {
+                  "text": "ド",
+                  "consonant": "d",
+                  "consonant_length": 0.03280150145292282,
+                  "vowel": "o",
+                  "vowel_length": 0.09129685908555984,
+                  "pitch": 5.453128814697266
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.12387795001268387,
+                  "pitch": 5.536259174346924
+                },
+                {
+                  "text": "モ",
+                  "consonant": "m",
+                  "consonant_length": 0.08083855360746384,
+                  "vowel": "o",
+                  "vowel_length": 0.13133180141448975,
+                  "pitch": 5.2890706062316895
+                }
+              ],
+              "accent": 1,
+              "pause_mora": {
+                "text": "、",
+                "consonant": null,
+                "consonant_length": null,
+                "vowel": "pau",
+                "vowel_length": 0.5920411944389343,
+                "pitch": 0.0
+              },
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "タ",
+                  "consonant": "t",
+                  "consonant_length": 0.0410657674074173,
+                  "vowel": "a",
+                  "vowel_length": 0.0699242427945137,
+                  "pitch": 5.452735900878906
+                },
+                {
+                  "text": "コ",
+                  "consonant": "k",
+                  "consonant_length": 0.12561941146850586,
+                  "vowel": "o",
+                  "vowel_length": 0.07211179286241531,
+                  "pitch": 5.6733927726745605
+                },
+                {
+                  "text": "サ",
+                  "consonant": "s",
+                  "consonant_length": 0.11574041098356247,
+                  "vowel": "a",
+                  "vowel_length": 0.10307867079973221,
+                  "pitch": 5.530041217803955
+                },
+                {
+                  "text": "ン",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "N",
+                  "vowel_length": 0.09695959836244583,
+                  "pitch": 5.391961097717285
+                },
+                {
+                  "text": "デ",
+                  "consonant": "d",
+                  "consonant_length": 0.029184162616729736,
+                  "vowel": "e",
+                  "vowel_length": 0.13588088750839233,
+                  "pitch": 5.2718281745910645
+                },
+                {
+                  "text": "ス",
+                  "consonant": "s",
+                  "consonant_length": 0.15073591470718384,
+                  "vowel": "U",
+                  "vowel_length": 0.02590349316596985,
+                  "pitch": 0.0
+                }
+              ],
+              "accent": 1,
+              "pause_mora": null,
+              "is_interrogative": false
+            }
+          ],
+          "speedScale": 1.1,
+          "pitchScale": 0,
+          "intonationScale": 1,
+          "volumeScale": 1,
+          "prePhonemeLength": 0.1,
+          "postPhonemeLength": 0.2,
+          "pauseLength": null,
+          "pauseLengthScale": 1.0,
+          "outputSamplingRate": 48000,
+          "outputStereo": false,
+          "kana": "ド'オモ、タ'コサンデ_ス"
+        },
+        "text": "どうも、たこさんです。"
+      },
+      "audioSha256": "83f6c357e127595e7775a132a3ef02bec0d64fcd5724bce1a0a776a65326f11a",
+      "sampleRate": 48000,
+      "startFrame": 1119,
+      "captionSegments": [
+        {
+          "startFrame": 0,
+          "endFrame": 64,
+          "text": "どうも、たこさんです。"
+        }
+      ],
+      "captionFontSize": 29
+    },
+    {
+      "id": "v133",
+      "chapter": "1. いつものCodexで、動画も作れる？",
+      "view": "v10_v133",
+      "who": "yametaro",
+      "text": "どうも、無職やめ太郎やで！",
+      "caption": "どうも、無職やめ太郎やで！",
+      "pause": 12,
+      "durationScale": 0.7,
+      "audio": "v10_v133_b476de5f179a.wav",
+      "spoken": "どうも、無職やめ太郎やで！",
+      "kana": null,
+      "durationInFrames": 75,
+      "envelope": [
+        0.01761,
+        0.03798,
+        0.10675,
+        0.20062,
+        0.19227,
+        0.23293,
+        0.33402,
+        0.17037,
+        0.09477,
+        0.10703,
+        0.17709,
+        0.22948,
+        0.24909,
+        0.20841,
+        0.14682,
+        0.14065,
+        0.07736,
+        0.0344,
+        0.01099,
+        0.01055,
+        0.00695,
+        0.01327,
+        0.04743,
+        0.10792,
+        0.18765,
+        0.19462,
+        0.16213,
+        0.06076,
+        0.02706,
+        0.11013,
+        0.18076,
+        0.15906,
+        0.06478,
+        0.01976,
+        0.01626,
+        0.10373,
+        0.12819,
+        0.1385,
+        0.20994,
+        0.19212,
+        0.15243,
+        0.14107,
+        0.15404,
+        0.19348,
+        0.15302,
+        0.05866,
+        0.01406,
+        0.09111,
+        0.1982,
+        0.29318,
+        0.28656,
+        0.15407,
+        0.33378,
+        0.28147,
+        0.25845,
+        0.2702,
+        0.30117,
+        0.2396,
+        0.17612,
+        0.25514,
+        0.27977,
+        0.2066,
+        0.03969,
+        0.05373,
+        0.12448,
+        0.15474,
+        0.17148,
+        0.20645,
+        0.19804,
+        0.17402,
+        0.05655,
+        0.02607,
+        0.01017,
+        0.01446,
+        0.01486
+      ],
+      "voiceSettings": {
+        "model": "Aratako/Irodori-TTS-v4.1-Small",
+        "runtimeRevision": "8224dafb46d0aba89209a8f905f1cb7e3299d9c1",
+        "reference": "02_CHARACTERS/Yametaro_voice.wav",
+        "referenceSha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+        "seed": 7,
+        "caption": null,
+        "cfgScaleText": 5,
+        "cfgScaleSpeaker": 5,
+        "numSteps": 40,
+        "durationScale": 0.7,
+        "trimTail": false,
+        "postTrim": false,
+        "text": "どうも、無職やめ太郎やで！"
+      },
+      "audioSha256": "ea8d91d7b774323a43ff83848502853343e85a635a6345fab61db6f1efb180a5",
+      "sampleRate": 48000,
+      "startFrame": 1195,
+      "captionSegments": [
+        {
+          "startFrame": 0,
+          "endFrame": 75,
+          "text": "どうも、無職やめ太郎やで！"
+        }
+      ],
+      "captionFontSize": 29
+    },
+    {
+      "id": "v134",
+      "chapter": "1. いつものCodexで、動画も作れる？",
+      "view": "v10_v134",
+      "who": "takosan",
+      "text": "今回は、CodexやClaude Codeを使った、窓際族物語の動画の作り方を紹介します。",
+      "caption": "今回は、CodexやClaude Codeを使った、\n窓際族物語の動画の作り方を紹介します。",
+      "pause": 12,
+      "durationScale": 0.7,
+      "audio": "v10_v134_06eab7b79aee.wav",
+      "spoken": "今回は、コーデックスやクロードコードを使った、窓際族物語の動画の作り方を紹介します。",
+      "kana": "コ'ンカイワ、コオデ'ッ_クスヤ/クロオドコ'オドオ/_ツカッタ'、マドギワ'ゾク/モノガ'タリノ/ドオガノ'/_ツクリカ'タオ/ショオカイ'/シマ'_ス",
+      "durationInFrames": 261,
+      "envelope": [
+        0.00428,
+        0.00453,
+        0.00354,
+        0.01032,
+        0.01269,
+        0.06271,
+        0.15088,
+        0.19358,
+        0.21035,
+        0.15555,
+        0.02379,
+        0.00573,
+        0.01111,
+        0.02178,
+        0.0444,
+        0.03897,
+        0.03978,
+        0.03588,
+        0.02714,
+        0.01569,
+        0.02532,
+        0.03493,
+        0.0427,
+        0.03514,
+        0.02242,
+        0.01096,
+        0.00852,
+        0.00415,
+        0.00285,
+        0.00471,
+        0.00418,
+        0.00972,
+        0.01042,
+        0.00729,
+        0.00557,
+        0.00454,
+        0.00884,
+        0.00585,
+        0.0058,
+        0.0038,
+        0.00382,
+        0.00226,
+        0.00714,
+        0.03868,
+        0.07601,
+        0.07982,
+        0.09174,
+        0.09494,
+        0.01134,
+        0.07214,
+        0.1069,
+        0.0894,
+        0.01196,
+        0.00496,
+        0.00793,
+        0.00734,
+        0.00978,
+        0.01689,
+        0.03065,
+        0.02736,
+        0.01931,
+        0.02382,
+        0.02482,
+        0.04442,
+        0.0388,
+        0.03247,
+        0.03004,
+        0.01996,
+        0.00542,
+        0.00606,
+        0.01237,
+        0.03877,
+        0.05024,
+        0.02652,
+        0.08364,
+        0.08959,
+        0.08102,
+        0.09643,
+        0.06935,
+        0.00785,
+        0.0501,
+        0.08028,
+        0.03829,
+        0.00499,
+        0.0052,
+        0.01049,
+        0.05029,
+        0.10442,
+        0.10623,
+        0.101,
+        0.09851,
+        0.04932,
+        0.0067,
+        0.05491,
+        0.06103,
+        0.0306,
+        0.02421,
+        0.01505,
+        0.00408,
+        0.00848,
+        0.01533,
+        0.02741,
+        0.01259,
+        0.00644,
+        0.01093,
+        0.0313,
+        0.03581,
+        0.02393,
+        0.00776,
+        0.00487,
+        0.00639,
+        0.00475,
+        0.03491,
+        0.05107,
+        0.04058,
+        0.03152,
+        0.0212,
+        0.00862,
+        0.00791,
+        0.00515,
+        0.00328,
+        0.00337,
+        0.00616,
+        0.00821,
+        0.00541,
+        0.00635,
+        0.00389,
+        0.01181,
+        0.01176,
+        0.0038,
+        0.00425,
+        0.00321,
+        0.02745,
+        0.03727,
+        0.04233,
+        0.04518,
+        0.01664,
+        0.01983,
+        0.06808,
+        0.06144,
+        0.03081,
+        0.01281,
+        0.04056,
+        0.09182,
+        0.09096,
+        0.06918,
+        0.11179,
+        0.12029,
+        0.07765,
+        0.00927,
+        0.01847,
+        0.09067,
+        0.07775,
+        0.00785,
+        0.00349,
+        0.01392,
+        0.04023,
+        0.05088,
+        0.0458,
+        0.04368,
+        0.04013,
+        0.04307,
+        0.05624,
+        0.06705,
+        0.08586,
+        0.08562,
+        0.03077,
+        0.01415,
+        0.11928,
+        0.10948,
+        0.00867,
+        0.00585,
+        0.03759,
+        0.10594,
+        0.08492,
+        0.03644,
+        0.05976,
+        0.07922,
+        0.07453,
+        0.05587,
+        0.04398,
+        0.036,
+        0.03638,
+        0.01366,
+        0.02641,
+        0.03839,
+        0.04241,
+        0.0577,
+        0.07789,
+        0.04567,
+        0.01376,
+        0.06048,
+        0.10222,
+        0.08176,
+        0.07757,
+        0.07521,
+        0.09204,
+        0.04345,
+        0.02001,
+        0.00753,
+        0.00906,
+        0.01749,
+        0.02417,
+        0.00893,
+        0.00537,
+        0.01373,
+        0.02172,
+        0.07346,
+        0.03642,
+        0.08423,
+        0.09162,
+        0.01523,
+        0.00576,
+        0.01006,
+        0.05776,
+        0.07883,
+        0.00869,
+        0.00596,
+        0.01863,
+        0.10029,
+        0.07723,
+        0.05387,
+        0.04174,
+        0.03073,
+        0.0345,
+        0.02895,
+        0.04413,
+        0.02719,
+        0.03591,
+        0.03933,
+        0.04436,
+        0.03395,
+        0.00864,
+        0.00938,
+        0.01734,
+        0.03035,
+        0.05896,
+        0.06963,
+        0.07047,
+        0.05821,
+        0.03762,
+        0.03757,
+        0.03628,
+        0.05027,
+        0.07137,
+        0.08624,
+        0.05852,
+        0.0469,
+        0.05021,
+        0.04873,
+        0.02542,
+        0.02416,
+        0.02289,
+        0.02224,
+        0.01717,
+        0.0196,
+        0.01992,
+        0.0077,
+        0.00874,
+        0.01168,
+        0.01558
+      ],
+      "voiceSettings": {
+        "model": "VOICEVOX:中国うさぎ",
+        "engineVersion": "0.25.1",
+        "speakerVersion": "0.16.1",
+        "speakerId": 61,
+        "style": "ノーマル",
+        "query": {
+          "accent_phrases": [
+            {
+              "moras": [
+                {
+                  "text": "コ",
+                  "consonant": "k",
+                  "consonant_length": 0.09388064593076706,
+                  "vowel": "o",
+                  "vowel_length": 0.07648443430662155,
+                  "pitch": 5.552982807159424
+                },
+                {
+                  "text": "ン",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "N",
+                  "vowel_length": 0.08862774819135666,
+                  "pitch": 5.617660999298096
+                },
+                {
+                  "text": "カ",
+                  "consonant": "k",
+                  "consonant_length": 0.1270080804824829,
+                  "vowel": "a",
+                  "vowel_length": 0.10993432253599167,
+                  "pitch": 5.363666534423828
+                },
+                {
+                  "text": "イ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "i",
+                  "vowel_length": 0.08662838488817215,
+                  "pitch": 5.245948314666748
+                },
+                {
+                  "text": "ワ",
+                  "consonant": "w",
+                  "consonant_length": 0.07601188868284225,
+                  "vowel": "a",
+                  "vowel_length": 0.16102975606918335,
+                  "pitch": 5.192821025848389
+                }
+              ],
+              "accent": 1,
+              "pause_mora": {
+                "text": "、",
+                "consonant": null,
+                "consonant_length": null,
+                "vowel": "pau",
+                "vowel_length": 0.5968242883682251,
+                "pitch": 0.0
+              },
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "コ",
+                  "consonant": "k",
+                  "consonant_length": 0.0673956498503685,
+                  "vowel": "o",
+                  "vowel_length": 0.07289523631334305,
+                  "pitch": 5.5042619705200195
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.09815943986177444,
+                  "pitch": 5.561365604400635
+                },
+                {
+                  "text": "デ",
+                  "consonant": "d",
+                  "consonant_length": 0.06442693620920181,
+                  "vowel": "e",
+                  "vowel_length": 0.0932350680232048,
+                  "pitch": 5.5691118240356445
+                },
+                {
+                  "text": "ッ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "cl",
+                  "vowel_length": 0.1513427197933197,
+                  "pitch": 0.0
+                },
+                {
+                  "text": "ク",
+                  "consonant": "k",
+                  "consonant_length": 0.054104745388031006,
+                  "vowel": "U",
+                  "vowel_length": 0.03873191028833389,
+                  "pitch": 0.0
+                },
+                {
+                  "text": "ス",
+                  "consonant": "s",
+                  "consonant_length": 0.13687968254089355,
+                  "vowel": "u",
+                  "vowel_length": 0.06886809319257736,
+                  "pitch": 5.390364170074463
+                },
+                {
+                  "text": "ヤ",
+                  "consonant": "y",
+                  "consonant_length": 0.04372592270374298,
+                  "vowel": "a",
+                  "vowel_length": 0.07405035942792892,
+                  "pitch": 5.258069038391113
+                }
+              ],
+              "accent": 3,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "ク",
+                  "consonant": "k",
+                  "consonant_length": 0.13269132375717163,
+                  "vowel": "u",
+                  "vowel_length": 0.05887302756309509,
+                  "pitch": 5.380438804626465
+                },
+                {
+                  "text": "ロ",
+                  "consonant": "r",
+                  "consonant_length": 0.04387799650430679,
+                  "vowel": "o",
+                  "vowel_length": 0.08607151359319687,
+                  "pitch": 5.47150993347168
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.07888699322938919,
+                  "pitch": 5.559614181518555
+                },
+                {
+                  "text": "ド",
+                  "consonant": "d",
+                  "consonant_length": 0.07410656660795212,
+                  "vowel": "o",
+                  "vowel_length": 0.0773337259888649,
+                  "pitch": 5.504831314086914
+                },
+                {
+                  "text": "コ",
+                  "consonant": "k",
+                  "consonant_length": 0.14239037036895752,
+                  "vowel": "o",
+                  "vowel_length": 0.07797106355428696,
+                  "pitch": 5.578313827514648
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.0950668677687645,
+                  "pitch": 5.5583648681640625
+                },
+                {
+                  "text": "ド",
+                  "consonant": "d",
+                  "consonant_length": 0.07367431372404099,
+                  "vowel": "o",
+                  "vowel_length": 0.08684509247541428,
+                  "pitch": 5.430820465087891
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.0750507041811943,
+                  "pitch": 5.240540027618408
+                }
+              ],
+              "accent": 5,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "ツ",
+                  "consonant": "ts",
+                  "consonant_length": 0.13197612762451172,
+                  "vowel": "U",
+                  "vowel_length": 0.05707824230194092,
+                  "pitch": 0.0
+                },
+                {
+                  "text": "カ",
+                  "consonant": "k",
+                  "consonant_length": 0.09490156918764114,
+                  "vowel": "a",
+                  "vowel_length": 0.08475848287343979,
+                  "pitch": 5.341976642608643
+                },
+                {
+                  "text": "ッ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "cl",
+                  "vowel_length": 0.14670434594154358,
+                  "pitch": 0.0
+                },
+                {
+                  "text": "タ",
+                  "consonant": "t",
+                  "consonant_length": 0.030995197594165802,
+                  "vowel": "a",
+                  "vowel_length": 0.16507011651992798,
+                  "pitch": 5.276680946350098
+                }
+              ],
+              "accent": 4,
+              "pause_mora": {
+                "text": "、",
+                "consonant": null,
+                "consonant_length": null,
+                "vowel": "pau",
+                "vowel_length": 0.5559166073799133,
+                "pitch": 0.0
+              },
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "マ",
+                  "consonant": "m",
+                  "consonant_length": 0.05022343993186951,
+                  "vowel": "a",
+                  "vowel_length": 0.10255195945501328,
+                  "pitch": 5.28727912902832
+                },
+                {
+                  "text": "ド",
+                  "consonant": "d",
+                  "consonant_length": 0.06053038686513901,
+                  "vowel": "o",
+                  "vowel_length": 0.10471997410058975,
+                  "pitch": 5.412339210510254
+                },
+                {
+                  "text": "ギ",
+                  "consonant": "g",
+                  "consonant_length": 0.06822089105844498,
+                  "vowel": "i",
+                  "vowel_length": 0.08429541438817978,
+                  "pitch": 5.518454074859619
+                },
+                {
+                  "text": "ワ",
+                  "consonant": "w",
+                  "consonant_length": 0.04062020778656006,
+                  "vowel": "a",
+                  "vowel_length": 0.10146728903055191,
+                  "pitch": 5.562753677368164
+                },
+                {
+                  "text": "ゾ",
+                  "consonant": "z",
+                  "consonant_length": 0.09452766925096512,
+                  "vowel": "o",
+                  "vowel_length": 0.06330318003892899,
+                  "pitch": 5.573038101196289
+                },
+                {
+                  "text": "ク",
+                  "consonant": "k",
+                  "consonant_length": 0.1277240812778473,
+                  "vowel": "u",
+                  "vowel_length": 0.052281998097896576,
+                  "pitch": 5.386316299438477
+                }
+              ],
+              "accent": 4,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "モ",
+                  "consonant": "m",
+                  "consonant_length": 0.08026065677404404,
+                  "vowel": "o",
+                  "vowel_length": 0.08030188828706741,
+                  "pitch": 5.292621612548828
+                },
+                {
+                  "text": "ノ",
+                  "consonant": "n",
+                  "consonant_length": 0.06407539546489716,
+                  "vowel": "o",
+                  "vowel_length": 0.09440907090902328,
+                  "pitch": 5.419699668884277
+                },
+                {
+                  "text": "ガ",
+                  "consonant": "g",
+                  "consonant_length": 0.06059709191322327,
+                  "vowel": "a",
+                  "vowel_length": 0.07472734898328781,
+                  "pitch": 5.540195465087891
+                },
+                {
+                  "text": "タ",
+                  "consonant": "t",
+                  "consonant_length": 0.10211857408285141,
+                  "vowel": "a",
+                  "vowel_length": 0.08808179944753647,
+                  "pitch": 5.542423725128174
+                },
+                {
+                  "text": "リ",
+                  "consonant": "r",
+                  "consonant_length": 0.028513632714748383,
+                  "vowel": "i",
+                  "vowel_length": 0.09010837227106094,
+                  "pitch": 5.451573371887207
+                },
+                {
+                  "text": "ノ",
+                  "consonant": "n",
+                  "consonant_length": 0.06198043376207352,
+                  "vowel": "o",
+                  "vowel_length": 0.11073427647352219,
+                  "pitch": 5.256863594055176
+                }
+              ],
+              "accent": 3,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "ド",
+                  "consonant": "d",
+                  "consonant_length": 0.06360175460577011,
+                  "vowel": "o",
+                  "vowel_length": 0.09894076734781265,
+                  "pitch": 5.297768592834473
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.09500984102487564,
+                  "pitch": 5.498915195465088
+                },
+                {
+                  "text": "ガ",
+                  "consonant": "g",
+                  "consonant_length": 0.06879078596830368,
+                  "vowel": "a",
+                  "vowel_length": 0.08823061734437943,
+                  "pitch": 5.514791011810303
+                },
+                {
+                  "text": "ノ",
+                  "consonant": "n",
+                  "consonant_length": 0.08067885786294937,
+                  "vowel": "o",
+                  "vowel_length": 0.0723443552851677,
+                  "pitch": 5.466372966766357
+                }
+              ],
+              "accent": 4,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "ツ",
+                  "consonant": "ts",
+                  "consonant_length": 0.1334570050239563,
+                  "vowel": "U",
+                  "vowel_length": 0.055905163288116455,
+                  "pitch": 0.0
+                },
+                {
+                  "text": "ク",
+                  "consonant": "k",
+                  "consonant_length": 0.12851813435554504,
+                  "vowel": "u",
+                  "vowel_length": 0.04670405387878418,
+                  "pitch": 5.490556716918945
+                },
+                {
+                  "text": "リ",
+                  "consonant": "r",
+                  "consonant_length": 0.030431203544139862,
+                  "vowel": "i",
+                  "vowel_length": 0.08169890195131302,
+                  "pitch": 5.529067516326904
+                },
+                {
+                  "text": "カ",
+                  "consonant": "k",
+                  "consonant_length": 0.10282439738512039,
+                  "vowel": "a",
+                  "vowel_length": 0.06188824772834778,
+                  "pitch": 5.538972854614258
+                },
+                {
+                  "text": "タ",
+                  "consonant": "t",
+                  "consonant_length": 0.10842204838991165,
+                  "vowel": "a",
+                  "vowel_length": 0.09344973415136337,
+                  "pitch": 5.51762056350708
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.0954137071967125,
+                  "pitch": 5.364933013916016
+                }
+              ],
+              "accent": 4,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "ショ",
+                  "consonant": "sh",
+                  "consonant_length": 0.14977210760116577,
+                  "vowel": "o",
+                  "vowel_length": 0.061271704733371735,
+                  "pitch": 5.349924087524414
+                },
+                {
+                  "text": "オ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "o",
+                  "vowel_length": 0.07943495362997055,
+                  "pitch": 5.384212017059326
+                },
+                {
+                  "text": "カ",
+                  "consonant": "k",
+                  "consonant_length": 0.13206452131271362,
+                  "vowel": "a",
+                  "vowel_length": 0.10120231658220291,
+                  "pitch": 5.419235706329346
+                },
+                {
+                  "text": "イ",
+                  "consonant": null,
+                  "consonant_length": null,
+                  "vowel": "i",
+                  "vowel_length": 0.06709273904561996,
+                  "pitch": 5.412761211395264
+                }
+              ],
+              "accent": 4,
+              "pause_mora": null,
+              "is_interrogative": false
+            },
+            {
+              "moras": [
+                {
+                  "text": "シ",
+                  "consonant": "sh",
+                  "consonant_length": 0.143207848072052,
+                  "vowel": "i",
+                  "vowel_length": 0.03663385659456253,
+                  "pitch": 5.443322658538818
+                },
+                {
+                  "text": "マ",
+                  "consonant": "m",
+                  "consonant_length": 0.08014246076345444,
+                  "vowel": "a",
+                  "vowel_length": 0.11081751435995102,
+                  "pitch": 5.380813121795654
+                },
+                {
+                  "text": "ス",
+                  "consonant": "s",
+                  "consonant_length": 0.1421283781528473,
+                  "vowel": "U",
+                  "vowel_length": 0.025066830217838287,
+                  "pitch": 0.0
+                }
+              ],
+              "accent": 2,
+              "pause_mora": null,
+              "is_interrogative": false
+            }
+          ],
+          "speedScale": 1.1,
+          "pitchScale": 0,
+          "intonationScale": 1,
+          "volumeScale": 1,
+          "prePhonemeLength": 0.1,
+          "postPhonemeLength": 0.2,
+          "pauseLength": null,
+          "pauseLengthScale": 1.0,
+          "outputSamplingRate": 48000,
+          "outputStereo": false,
+          "kana": "コ'ンカイワ、コオデ'ッ_クスヤ/クロオドコ'オドオ/_ツカッタ'、マドギワ'ゾク/モノガ'タリノ/ドオガノ'/_ツクリカ'タオ/ショオカイ'/シマ'_ス"
+        },
+        "text": "今回は、コーデックスやクロードコードを使った、窓際族物語の動画の作り方を紹介します。"
+      },
+      "audioSha256": "9323f0ce1a09b8ecad3dda5f38684159ad5bc85e0516f0f49ed3d4c376e87700",
+      "sampleRate": 48000,
+      "startFrame": 1282,
+      "captionSegments": [
+        {
+          "startFrame": 0,
+          "endFrame": 261,
+          "text": "今回は、CodexやClaude Codeを使った、\n窓際族物語の動画の作り方を紹介します。"
+        }
+      ],
+      "captionFontSize": 29
+    },
+    {
       "id": "v008",
       "chapter": "1. いつものCodexで、動画も作れる？",
       "view": "v7_8",
@@ -2223,7 +3366,7 @@
       },
       "audioSha256": "865a08ee90d3108c5815330c118e663aed3e79e54e5697b1aed55db0b4d39e08",
       "sampleRate": 48000,
-      "startFrame": 1119,
+      "startFrame": 1555,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -3197,7 +4340,7 @@
       },
       "audioSha256": "b73a7cc9575bafb3a39e0215da74506cb9242fe4e7d8edc3bcb9b3b8659fe99e",
       "sampleRate": 48000,
-      "startFrame": 1245,
+      "startFrame": 1681,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -3356,7 +4499,7 @@
       },
       "audioSha256": "ef77bcafad0547cb020c052f08eb208f442c24884ac62e811bdc9189011cdd74",
       "sampleRate": 48000,
-      "startFrame": 1562,
+      "startFrame": 1998,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -4206,7 +5349,7 @@
       },
       "audioSha256": "ec55c9764a451b618d66da3a391a76ace002a118359d31bae769dc1570f26d88",
       "sampleRate": 48000,
-      "startFrame": 1684,
+      "startFrame": 2120,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -4694,7 +5837,7 @@
       },
       "audioSha256": "5ecc3dafabfcab7e1bd5d977e9fe7acef38b001cb11790d435f6cffcdea96718",
       "sampleRate": 48000,
-      "startFrame": 1975,
+      "startFrame": 2411,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -4937,7 +6080,7 @@
       },
       "audioSha256": "584a092196932186a8e78a57ca8373a0e0723e7d56e740870d4814fa9878af00",
       "sampleRate": 48000,
-      "startFrame": 3058,
+      "startFrame": 3494,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -5371,7 +6514,7 @@
       },
       "audioSha256": "0f8a563ee41a0c1084e30f0bcc88bc55d0c56cdada257fca17d032ac2aed90c1",
       "sampleRate": 48000,
-      "startFrame": 3269,
+      "startFrame": 3705,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -5495,7 +6638,7 @@
       },
       "audioSha256": "1357425f3b49efbcf624961c429a3889872d67a8b505aa4d9e5e178d194dc7dc",
       "sampleRate": 48000,
-      "startFrame": 3407,
+      "startFrame": 3843,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -6499,7 +7642,7 @@
       },
       "audioSha256": "56cc550b869234ac73334e31c3e2da5587254504bd6cf62fa693c491ccf7e464",
       "sampleRate": 48000,
-      "startFrame": 3499,
+      "startFrame": 3935,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -7800,7 +8943,7 @@
       },
       "audioSha256": "e48a33eb060cc96deff5d18de5c8456d1b2c825660cb55c1fd2b229610cb100a",
       "sampleRate": 48000,
-      "startFrame": 3858,
+      "startFrame": 4294,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -8513,7 +9656,7 @@
       },
       "audioSha256": "9f4aadfb858dd1f4e7b4cabbc2f113fac0e51a5aaf944576d5ceed06282f7227",
       "sampleRate": 48000,
-      "startFrame": 4298,
+      "startFrame": 4734,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -9637,7 +10780,7 @@
       },
       "audioSha256": "768b47174314ac17d40ca8d087c6bcdaba55d6f8bdb0a943d2a9bde06c66fd14",
       "sampleRate": 48000,
-      "startFrame": 4545,
+      "startFrame": 4981,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -9830,7 +10973,7 @@
       },
       "audioSha256": "b4a1ee8afeabc149816c6cca5a6bb8626d1ee29d3c2836f36e875512380b208e",
       "sampleRate": 48000,
-      "startFrame": 4928,
+      "startFrame": 5364,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -10908,7 +12051,7 @@
       },
       "audioSha256": "be157c35dbc008879481a2214ac408946e5dfd8fb83a39a4f8db9fd9dd09c5ce",
       "sampleRate": 48000,
-      "startFrame": 5084,
+      "startFrame": 5520,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -11049,7 +12192,7 @@
       },
       "audioSha256": "9dd509b5aa0e6d2c1da23ae59679dc60462aa3fa188ae6b49914af735f9a6f41",
       "sampleRate": 48000,
-      "startFrame": 5452,
+      "startFrame": 5888,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -11878,7 +13021,7 @@
       },
       "audioSha256": "64807c18ec75cfce0acc193219d768ae3ed97d4fb86fb244a86a12cb9f54b1ea",
       "sampleRate": 48000,
-      "startFrame": 5556,
+      "startFrame": 5992,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -13014,7 +14157,7 @@
       },
       "audioSha256": "3f6b21d431788ac3534912ec945fa8ea92452e2dfb50d29a03966fc604c2aff1",
       "sampleRate": 48000,
-      "startFrame": 5839,
+      "startFrame": 6275,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -13172,7 +14315,7 @@
       },
       "audioSha256": "9f15d41b5c227340e38daf875f73878a4d5453c17b962810665f4187327e371c",
       "sampleRate": 48000,
-      "startFrame": 6203,
+      "startFrame": 6639,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -14351,7 +15494,7 @@
       },
       "audioSha256": "88cf2d78d2acf2b1a7315a2cc6191ce42c125a2b6c02bcfed0c430bc6f4ec611",
       "sampleRate": 48000,
-      "startFrame": 6324,
+      "startFrame": 6760,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -15333,7 +16476,7 @@
       },
       "audioSha256": "e8a6a1413ee0a902c831bb73d3f0042943962590c2811eff9f7dcb0c97224252",
       "sampleRate": 48000,
-      "startFrame": 6707,
+      "startFrame": 7143,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -15462,7 +16605,7 @@
       },
       "audioSha256": "6f48c1c38b33a07deacd87710e606f3702e011942f40ceebecae47d488851805",
       "sampleRate": 48000,
-      "startFrame": 7023,
+      "startFrame": 7459,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -16776,7 +17919,7 @@
       },
       "audioSha256": "8e40446a6203a5f768fd7c77bf60fdb240cebceeba2029c68ec4abe200fa7af9",
       "sampleRate": 48000,
-      "startFrame": 7115,
+      "startFrame": 7551,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -17954,7 +19097,7 @@
       },
       "audioSha256": "cdf4f7f84894cf6ef449be2fdc886b813172b772f767cb5421f135c13f6d596c",
       "sampleRate": 48000,
-      "startFrame": 7549,
+      "startFrame": 7985,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -18671,7 +19814,7 @@
       },
       "audioSha256": "d99958b22e54760752e12c6c4efce4c7eba5b96ee4058faf20f1118fb4777f5d",
       "sampleRate": 48000,
-      "startFrame": 7942,
+      "startFrame": 8378,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -18895,7 +20038,7 @@
       },
       "audioSha256": "bc1a6cb6d17d9ce83be82ef04932038e79b679ab40da5d44eee54f3a6d439c42",
       "sampleRate": 48000,
-      "startFrame": 8177,
+      "startFrame": 8613,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -19020,7 +20163,7 @@
       },
       "audioSha256": "f7617acb2e7b8a309c0162767f18977cc40e65c2b9b4727851d393832c1ec78c",
       "sampleRate": 48000,
-      "startFrame": 8369,
+      "startFrame": 8805,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -20111,7 +21254,7 @@
       },
       "audioSha256": "22890a6de7fa8765084a1b3d5f8c0628ce72e75dd3ed5ed13c63896e09555ec9",
       "sampleRate": 48000,
-      "startFrame": 8462,
+      "startFrame": 8898,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -20733,7 +21876,7 @@
       },
       "audioSha256": "4f977784996e199de998609c2945454406100fbc3a843f426d93bd8ec6bb8f8d",
       "sampleRate": 48000,
-      "startFrame": 8819,
+      "startFrame": 9255,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -21805,7 +22948,7 @@
       },
       "audioSha256": "8374d850e2d9a93bf90d7eedb9f87b28598d96a9d43d8e57d346878d570b6243",
       "sampleRate": 48000,
-      "startFrame": 9023,
+      "startFrame": 9459,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -21945,7 +23088,7 @@
       },
       "audioSha256": "c56697d6a49a1f4b2d08d671446bec78b25c21d9b8421c92f1962592044eada2",
       "sampleRate": 48000,
-      "startFrame": 9387,
+      "startFrame": 9823,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -22867,7 +24010,7 @@
       },
       "audioSha256": "b1ec1cd2efb38bca746b729ac9cabc597bbc848180855607232a5b69950708f2",
       "sampleRate": 48000,
-      "startFrame": 9498,
+      "startFrame": 9934,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -23013,7 +24156,7 @@
       },
       "audioSha256": "152fb5f3752880b5a52ac7a9a990be4b907be86dae8f958483ad53f870d59233",
       "sampleRate": 48000,
-      "startFrame": 9796,
+      "startFrame": 10232,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -23826,7 +24969,7 @@
       },
       "audioSha256": "ba00111ad8998c665af03758024bc18d803dc94d8942cedd4ee4f4470aedaf66",
       "sampleRate": 48000,
-      "startFrame": 9913,
+      "startFrame": 10349,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -23968,7 +25111,7 @@
       },
       "audioSha256": "3c67d66683ac2b5c64411698a04b38673157f4ad6e45adbe9340aeac72a1ce0f",
       "sampleRate": 48000,
-      "startFrame": 10192,
+      "startFrame": 10628,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -24362,7 +25505,7 @@
       },
       "audioSha256": "d6336c61616caf8414941d5f2ea1a1375982f809b3efd23e4d7b01b2ff2e515c",
       "sampleRate": 48000,
-      "startFrame": 10302,
+      "startFrame": 10738,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -24506,7 +25649,7 @@
       },
       "audioSha256": "e7bf43498928effb1963608f1df9b1f3e480f9f7ec309e3acdedbb34899124ae",
       "sampleRate": 48000,
-      "startFrame": 10437,
+      "startFrame": 10873,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -25344,7 +26487,7 @@
       },
       "audioSha256": "dd887896994f1daa5bd8113d7665bbecc1412a458d4153b615f953d4ebb5a930",
       "sampleRate": 48000,
-      "startFrame": 10549,
+      "startFrame": 10985,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -25478,7 +26621,7 @@
       },
       "audioSha256": "45a939be8931fab6be23fd5808e8feccb49c3d8e9ff4d22130fa0dbd69b7c007",
       "sampleRate": 48000,
-      "startFrame": 10843,
+      "startFrame": 11279,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -26558,7 +27701,7 @@
       },
       "audioSha256": "e37b34aee01ad6c52896622aa2619858ef4d1ef310934a4ddb0154b287abb42c",
       "sampleRate": 48000,
-      "startFrame": 10940,
+      "startFrame": 11376,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -26685,7 +27828,7 @@
       },
       "audioSha256": "e4359db3667b9ab73009347be30837b7f1d807226e4200634750233f50fee9af",
       "sampleRate": 48000,
-      "startFrame": 11295,
+      "startFrame": 11731,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -27455,7 +28598,7 @@
       },
       "audioSha256": "9fb847526bab967a3bff701a17369d26d2939203742726717d579a3ac41bedc2",
       "sampleRate": 48000,
-      "startFrame": 11385,
+      "startFrame": 11821,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -28105,7 +29248,7 @@
       },
       "audioSha256": "4659d42980f7ba4c8afd35a4e1a9469123dd464ffd722ecc18e52c2001abb044",
       "sampleRate": 48000,
-      "startFrame": 11648,
+      "startFrame": 12084,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -28245,7 +29388,7 @@
       },
       "audioSha256": "11bf30b58e9fa3de52be6680ada497f52e7d60d9587e9ffdfce44ac833a24af7",
       "sampleRate": 48000,
-      "startFrame": 11846,
+      "startFrame": 12282,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -29196,7 +30339,7 @@
       },
       "audioSha256": "638ed790c37cdea9eaa7ae5885068035870ba657bc85b2211bf63163f6f17be0",
       "sampleRate": 48000,
-      "startFrame": 11954,
+      "startFrame": 12390,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -29928,7 +31071,7 @@
       },
       "audioSha256": "434eca9f6bcd540b675c4d29cecd96a6a97e99a47217ca4ac27384a5a0df4f55",
       "sampleRate": 48000,
-      "startFrame": 12283,
+      "startFrame": 12719,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -30844,7 +31987,7 @@
       },
       "audioSha256": "20340b6d9fafea5ad8f4eb3f6e58671c70ce2f2830feb89380e4cdb5dab9d2f0",
       "sampleRate": 48000,
-      "startFrame": 12524,
+      "startFrame": 12960,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -30967,7 +32110,7 @@
       },
       "audioSha256": "ef1fce116b23846c1860c21e578804715cbb8db693c6c3f131503cf4d4801ec9",
       "sampleRate": 48000,
-      "startFrame": 12825,
+      "startFrame": 13261,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -32149,7 +33292,7 @@
       },
       "audioSha256": "81553c693bc0ea6f6ed47060effb4d1f14e832097ac0ae1ca6865b2d6f1e576d",
       "sampleRate": 48000,
-      "startFrame": 12911,
+      "startFrame": 13347,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -32703,7 +33846,7 @@
       },
       "audioSha256": "e5da2f61d901ddde49ed6ad4fa07c4b69170a6fc1e2acefa399849f53fc9e6d1",
       "sampleRate": 48000,
-      "startFrame": 13300,
+      "startFrame": 13736,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -32861,7 +34004,7 @@
       },
       "audioSha256": "57e073f5446968d9f54c22fa1a2543303dbe3d4e5c6cf2485d38a234cd8c6f35",
       "sampleRate": 48000,
-      "startFrame": 13484,
+      "startFrame": 13920,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -33674,7 +34817,7 @@
       },
       "audioSha256": "792308743dcb991fbbaf6096700b3ef300a2da40cf84565deb9c3dc128d3ca36",
       "sampleRate": 48000,
-      "startFrame": 13610,
+      "startFrame": 14046,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -34789,7 +35932,7 @@
       },
       "audioSha256": "e4456dac4dee29249896c3d37115c979c2e2e300a22f9d0716f262ebe2a6b6ff",
       "sampleRate": 48000,
-      "startFrame": 13878,
+      "startFrame": 14314,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -35762,7 +36905,7 @@
       },
       "audioSha256": "b014636e3a3c9ed219a8ddd82e8bc3001035a15bb544a94b510b91b6d0223849",
       "sampleRate": 48000,
-      "startFrame": 14253,
+      "startFrame": 14689,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -35901,7 +37044,7 @@
       },
       "audioSha256": "69cce6869b2b596d0798f0bbbdc6ddfb913048c341e1cd9060f1c6e122444b91",
       "sampleRate": 48000,
-      "startFrame": 14763,
+      "startFrame": 15199,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -36819,7 +37962,7 @@
       },
       "audioSha256": "b59f1bc3546aef98abffff4235c7c1b47aec3d47e71ea8a59a4006055a208f00",
       "sampleRate": 48000,
-      "startFrame": 14869,
+      "startFrame": 15305,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -37520,7 +38663,7 @@
       },
       "audioSha256": "36c5c69e6a8af09499f7c7c18ddf8c84b9b26461318b40e2ff16d871e3634035",
       "sampleRate": 48000,
-      "startFrame": 15188,
+      "startFrame": 15624,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -38183,7 +39326,7 @@
       },
       "audioSha256": "2d93c512a50c4d14d9c897524c673b5e1c60929ba19796853857b7f00a7800e9",
       "sampleRate": 48000,
-      "startFrame": 15421,
+      "startFrame": 15857,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -38347,7 +39490,7 @@
       },
       "audioSha256": "65f992cfe933883053c2730ea470829bbf08b845e10aace6ffae04ca214a11e2",
       "sampleRate": 48000,
-      "startFrame": 15964,
+      "startFrame": 16400,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -39149,7 +40292,7 @@
       },
       "audioSha256": "385e73c22c805e21a85ae6d182ee3e361a54aaa20c776bbaccd1d28fde8a7437",
       "sampleRate": 48000,
-      "startFrame": 16096,
+      "startFrame": 16532,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -39749,7 +40892,7 @@
       },
       "audioSha256": "a53dbf62acd3b9c99a782f3f008e1948b8d18a680c397b8819286711586d789d",
       "sampleRate": 48000,
-      "startFrame": 16379,
+      "startFrame": 16815,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -39880,7 +41023,7 @@
       },
       "audioSha256": "8d02f4e1bb7aefaf16c2d191f3ea85e7adab0405034272100287ab239bbadd50",
       "sampleRate": 48000,
-      "startFrame": 16572,
+      "startFrame": 17008,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -40781,7 +41924,7 @@
       },
       "audioSha256": "7fa6858c2e84d1f101f0fdb7b16587fa3852191e06f0db4106a68eb0cf74975d",
       "sampleRate": 48000,
-      "startFrame": 16671,
+      "startFrame": 17107,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -40907,7 +42050,7 @@
       },
       "audioSha256": "295ffffbe92934efc53e1897b1c396d77c71cf710f731ca31a7cdefd54ccaa43",
       "sampleRate": 48000,
-      "startFrame": 16982,
+      "startFrame": 17418,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -42245,7 +43388,7 @@
       },
       "audioSha256": "a67914c1afe7a4ae51fe8ae7c06760ea7581011934a68945c63842915e2b98ac",
       "sampleRate": 48000,
-      "startFrame": 17076,
+      "startFrame": 17512,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -42384,7 +43527,7 @@
       },
       "audioSha256": "e8ab96f72528d23f093087e10793a5559ecd85387adfcab3838622af1abdda39",
       "sampleRate": 48000,
-      "startFrame": 17510,
+      "startFrame": 17946,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -43399,7 +44542,7 @@
       },
       "audioSha256": "2db5136d70cb34dbf52305031a1d4c3242c0c5db2f6d3d34f18f4815e240dc49",
       "sampleRate": 48000,
-      "startFrame": 17620,
+      "startFrame": 18056,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -44434,7 +45577,7 @@
       },
       "audioSha256": "134d552a22f28195c86dfbaf734d69b7538d2cf22a328aa54ecdd48c0249a1d6",
       "sampleRate": 48000,
-      "startFrame": 17966,
+      "startFrame": 18402,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -44565,7 +45708,7 @@
       },
       "audioSha256": "b9f46fa48f273392415a12f8b6b046a4e7888029a2335fdf38a1acefefe48335",
       "sampleRate": 48000,
-      "startFrame": 18303,
+      "startFrame": 18739,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -44893,7 +46036,7 @@
       },
       "audioSha256": "3f817e119830f6cae948625711a447d81e0ec7667f42b6303d43bf22931f4a63",
       "sampleRate": 48000,
-      "startFrame": 18397,
+      "startFrame": 18833,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -45628,7 +46771,7 @@
       },
       "audioSha256": "112f2e9b231253f861b662f60cc9cf0a86f46c3b483cc530473c2c696f1834bd",
       "sampleRate": 48000,
-      "startFrame": 18514,
+      "startFrame": 18950,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -45764,7 +46907,7 @@
       },
       "audioSha256": "d2dbf7d8ddec16e509d3e9278880e05458ab7f9cc9aecb36c7b201aae8b96856",
       "sampleRate": 48000,
-      "startFrame": 18774,
+      "startFrame": 19210,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -46378,7 +47521,7 @@
       },
       "audioSha256": "5f44a9c64e0afad0711ec870c9f9b58d811a8e2d185a2189f61c9225314242ee",
       "sampleRate": 48000,
-      "startFrame": 18878,
+      "startFrame": 19314,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -47288,7 +48431,7 @@
       },
       "audioSha256": "3431f7a05783d4b6f4b1b3f71d0e4ae5d41b0a9673ae8f0f363129cf69ebb614",
       "sampleRate": 48000,
-      "startFrame": 19071,
+      "startFrame": 19507,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -47435,7 +48578,7 @@
       },
       "audioSha256": "5754c372d9095d0b228c10aa5b202e23e3da21fe37af262079e21aefc73e33f5",
       "sampleRate": 48000,
-      "startFrame": 19380,
+      "startFrame": 19816,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -47597,7 +48740,7 @@
       },
       "audioSha256": "77754fb114550f6dc3578ca72ff8da5bcb1c6fb60e124b9ac1b1736aef8a8d7b",
       "sampleRate": 48000,
-      "startFrame": 19490,
+      "startFrame": 19926,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -48412,7 +49555,7 @@
       },
       "audioSha256": "865e78bdca1b466db45a8cd7234e9415637ef63b1069e3f83b64730bfd8edcbe",
       "sampleRate": 48000,
-      "startFrame": 19620,
+      "startFrame": 20056,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -50357,7 +51500,7 @@
       },
       "audioSha256": "bf0da01d2d148037fc320b5a8d57c1394bb17617421179f5d7ff67dcf3b713d3",
       "sampleRate": 48000,
-      "startFrame": 19887,
+      "startFrame": 20323,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -52340,7 +53483,7 @@
       },
       "audioSha256": "4d6bd0775bf8c180ad85e82cb31d0b317168cfefdb480c59acc72185afee6d6b",
       "sampleRate": 48000,
-      "startFrame": 20523,
+      "startFrame": 20959,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -52486,7 +53629,7 @@
       },
       "audioSha256": "940ab05eda8e0b88272ea09a4783154b7f87b7b3361d66a752424dd33a5056bc",
       "sampleRate": 48000,
-      "startFrame": 21175,
+      "startFrame": 21611,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -53300,7 +54443,7 @@
       },
       "audioSha256": "5a2288d7951f3353c3fcccf3075fe3887ff0ed739bdac409d3fc617de3e78bb4",
       "sampleRate": 48000,
-      "startFrame": 21274,
+      "startFrame": 21710,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -53414,7 +54557,7 @@
       },
       "audioSha256": "dea14d913adcd8ffaa171260d25d968ba5b2f4ea62fb28a73b7097556adcb0e6",
       "sampleRate": 48000,
-      "startFrame": 21540,
+      "startFrame": 21976,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -54814,7 +55957,7 @@
       },
       "audioSha256": "e962258c40f83318469c5f718b834113fc31c58602f43f31f67becfb5104fe5b",
       "sampleRate": 48000,
-      "startFrame": 21630,
+      "startFrame": 22066,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -55781,7 +56924,7 @@
       },
       "audioSha256": "389a99efd99cd5066d660e28178ee1e1f7fb1253d28fea72be76424aadf78cd4",
       "sampleRate": 48000,
-      "startFrame": 22108,
+      "startFrame": 22544,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -55918,7 +57061,7 @@
       },
       "audioSha256": "32ea8e2be0bb169dd22656f79cf9386cb1b760a21c6d5f792c4ddeec989728f0",
       "sampleRate": 48000,
-      "startFrame": 22414,
+      "startFrame": 22850,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -56952,7 +58095,7 @@
       },
       "audioSha256": "7face6854cba0004803fadfd3fc584ee11a21fe1380b2fc0dfe844175b4c837a",
       "sampleRate": 48000,
-      "startFrame": 22514,
+      "startFrame": 22950,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -58027,7 +59170,7 @@
       },
       "audioSha256": "02a47d7084e569336447f9cab0fc84be9db7970326b571a864fa4e4bbbcf1328",
       "sampleRate": 48000,
-      "startFrame": 22860,
+      "startFrame": 23296,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -58894,7 +60037,7 @@
       },
       "audioSha256": "c1fc6691eead7eff7900c207f7c65802a3cefa3842753606e00c49ad8161f5dd",
       "sampleRate": 48000,
-      "startFrame": 23212,
+      "startFrame": 23648,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -59018,7 +60161,7 @@
       },
       "audioSha256": "fe00b977bff973f7205cc5f5e3b01a7e40946d51a7da155c7b83b827881de853",
       "sampleRate": 48000,
-      "startFrame": 23498,
+      "startFrame": 23934,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -60186,7 +61329,7 @@
       },
       "audioSha256": "71b5a6a21ea582ea6de5a733bad21d4b63c8d01fce3221a02aa52ec5ffdd4d7a",
       "sampleRate": 48000,
-      "startFrame": 23590,
+      "startFrame": 24026,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -60353,7 +61496,7 @@
       },
       "audioSha256": "f175d051f67ea370b06b0446bb47deb585614d91f5087a4e5a371cfbb07f884f",
       "sampleRate": 48000,
-      "startFrame": 23973,
+      "startFrame": 24409,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -60778,7 +61921,7 @@
       },
       "audioSha256": "77a13d4e235b957dc472d63ddc01edbe0cfce0fbd81a006f701586a7b673323e",
       "sampleRate": 48000,
-      "startFrame": 24111,
+      "startFrame": 24547,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -60934,7 +62077,7 @@
       },
       "audioSha256": "60614bb74e0297420aedfbcbe388279b0b7781fcc83733af80a0011fe26e9112",
       "sampleRate": 48000,
-      "startFrame": 24257,
+      "startFrame": 24693,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -62073,7 +63216,7 @@
       },
       "audioSha256": "b9822a4bd9c40c63b9ffede6b55da952e63e25a2578421c8fca37439b1ceaa25",
       "sampleRate": 48000,
-      "startFrame": 24381,
+      "startFrame": 24817,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -62284,7 +63427,7 @@
       },
       "audioSha256": "480241fac3a7f362916a285a2e958de1da07c3c3bf8c467020ab3807c77a78e4",
       "sampleRate": 48000,
-      "startFrame": 24755,
+      "startFrame": 25191,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -62710,7 +63853,7 @@
       },
       "audioSha256": "94eab10cbfe8a5d2163e12a10d37bfb337055e90359d5ee9bf5f94ed50f38960",
       "sampleRate": 48000,
-      "startFrame": 24929,
+      "startFrame": 25365,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -63632,7 +64775,7 @@
       },
       "audioSha256": "8608967527daf302612a16d13ce50797089caee6309a0f9398af127956e4b99c",
       "sampleRate": 48000,
-      "startFrame": 25067,
+      "startFrame": 25503,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -63758,7 +64901,7 @@
       },
       "audioSha256": "03c08333cbbd0e0d3ec6add3bd645a0d55a2f634afd0050d02c5faee8e275717",
       "sampleRate": 48000,
-      "startFrame": 25382,
+      "startFrame": 25818,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -65054,7 +66197,7 @@
       },
       "audioSha256": "50b823a935a9c2145991bb23e2ac24c70aa6557d5e34fa7a4145ccef4fb9ae48",
       "sampleRate": 48000,
-      "startFrame": 25476,
+      "startFrame": 25912,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -65196,7 +66339,7 @@
       },
       "audioSha256": "ec0f10f4e24117fa0ca3c1fbaa3bca3689992176a77e4cd76ad8c5fe5afd6f69",
       "sampleRate": 48000,
-      "startFrame": 25917,
+      "startFrame": 26353,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -66384,7 +67527,7 @@
       },
       "audioSha256": "4fb938ad31f808f3eb6b4f28caea00acb5df697b6db91e71ed5934e9b165d318",
       "sampleRate": 48000,
-      "startFrame": 26030,
+      "startFrame": 26466,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -67381,7 +68524,7 @@
       },
       "audioSha256": "1c456a2bdf7b1afd9b58d4458770501ce84e24959563a4a35e05e78a5d9d9fd7",
       "sampleRate": 48000,
-      "startFrame": 26414,
+      "startFrame": 26850,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -68010,7 +69153,7 @@
       },
       "audioSha256": "654c8e5d9aacaa910632457b66c3f80249aeda07049e27b938e312d89a51c018",
       "sampleRate": 48000,
-      "startFrame": 26759,
+      "startFrame": 27195,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -68134,7 +69277,7 @@
       },
       "audioSha256": "416fe770156c0a522a1d2010c03db4d619690fa9508efc67dd66101507b56e8d",
       "sampleRate": 48000,
-      "startFrame": 26954,
+      "startFrame": 27390,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -69169,7 +70312,7 @@
       },
       "audioSha256": "d463ce29ce82d1bd8d2477a6293b7c6300ddc7ed5c1f9e979a97c92b0c6aae49",
       "sampleRate": 48000,
-      "startFrame": 27054,
+      "startFrame": 27490,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -69336,7 +70479,7 @@
       },
       "audioSha256": "fb0a43941b385965af35920c2e7c7f8f20a59e64dae13b9ac741a859d84f5430",
       "sampleRate": 48000,
-      "startFrame": 27398,
+      "startFrame": 27834,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -70530,7 +71673,7 @@
       },
       "audioSha256": "4231c09a15ee05e6ae727f479675fc2669d2cae5dbd522648dc5b32c19568f03",
       "sampleRate": 48000,
-      "startFrame": 27528,
+      "startFrame": 27964,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -70669,7 +71812,7 @@
       },
       "audioSha256": "94f1a7ceab86dd038ca46d1952eb8a9e56cd23ab89e2b3d47a4980c47458acb0",
       "sampleRate": 48000,
-      "startFrame": 27920,
+      "startFrame": 28356,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -71550,7 +72693,7 @@
       },
       "audioSha256": "3654913c614ec8ec42a3196e34a8c91c59574ba8f1eaa2c5693fe6ee5d9e4dbd",
       "sampleRate": 48000,
-      "startFrame": 28022,
+      "startFrame": 28458,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -72369,7 +73512,7 @@
       },
       "audioSha256": "a363dc3a7161211f94d2e65604bde9fe1ed6d62fa09ec812ad1479957a7b8adf",
       "sampleRate": 48000,
-      "startFrame": 28303,
+      "startFrame": 28739,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -72531,7 +73674,7 @@
       },
       "audioSha256": "c6e295ebfcadb65896f10a689a1a10f4a1c4927429dba3ff064abbe6b04c00fd",
       "sampleRate": 48000,
-      "startFrame": 28602,
+      "startFrame": 29038,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -73244,7 +74387,7 @@
       },
       "audioSha256": "fa0776252e75620bfd5a9c2f9e1b160223f8479bed0cf7989f146e7d136133aa",
       "sampleRate": 48000,
-      "startFrame": 28732,
+      "startFrame": 29168,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -73387,7 +74530,7 @@
       },
       "audioSha256": "b058a2572624b57dac5e1ca96b6ffa140420562780bcb466740445905f13b84a",
       "sampleRate": 48000,
-      "startFrame": 28978,
+      "startFrame": 29414,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -73668,7 +74811,7 @@
       },
       "audioSha256": "2c460dd24e976bccb7248304a4fb3089bf4d90f15e6eed7ac70bee9dfb5aba18",
       "sampleRate": 48000,
-      "startFrame": 29097,
+      "startFrame": 29533,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -74773,7 +75916,7 @@
       },
       "audioSha256": "ee36b4261ba465b5014805bc8c6a49230111f7747a22072f571e8e3b5ca9edc5",
       "sampleRate": 48000,
-      "startFrame": 29199,
+      "startFrame": 29635,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -74892,7 +76035,7 @@
       },
       "audioSha256": "6bbd5ff208c072a998fe1405c25f028e419c043c1975ef72de2d4d8d253cf1e0",
       "sampleRate": 48000,
-      "startFrame": 29565,
+      "startFrame": 30001,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -75570,7 +76713,7 @@
       },
       "audioSha256": "9e29e41a45d2cc0b7fd127e804a403d9d3a0a793ee5ead1bff751571cb07f368",
       "sampleRate": 48000,
-      "startFrame": 29647,
+      "startFrame": 30083,
       "captionSegments": [
         {
           "startFrame": 0,
@@ -75592,7 +76735,7 @@
       "layout": "full",
       "tag": "完成例",
       "muteBgm": true,
-      "startFrame": 2143
+      "startFrame": 2579
     },
     {
       "id": "news_before_audio",
@@ -75604,7 +76747,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 14607
+      "startFrame": 15043
     },
     {
       "id": "news_after_audio",
@@ -75616,7 +76759,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 14685
+      "startFrame": 15121
     },
     {
       "id": "park_comparison",
@@ -75628,7 +76771,7 @@
       "layout": "comparison",
       "tag": "別作品の比較実験／本編とは別の検証",
       "muteBgm": true,
-      "startFrame": 15639
+      "startFrame": 16075
     }
   ]
 }

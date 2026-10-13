@@ -35,9 +35,9 @@ for c in m['clips']:
  assert any(s['codec_type']=='audio' for s in probe['streams']),('missing clip audio',c['src'])
  for d in m['dialogue']:assert c['startFrame']+c['durationInFrames']<=d['startFrame'] or c['startFrame']>=d['startFrame']+d['durationInFrames']
  clip_report.append({'id':c.get('id'),'startFrame':c['startFrame'],'durationInFrames':c['durationInFrames'],'source':c['src'],'sourceDurationSeconds':float(probe['format']['duration'])})
-assert prev<m['creditsStartFrame']<m['composition']['durationInFrames']
+assert prev<m['creditsStartFrame']<=m['composition']['durationInFrames']
 assert previous_clip_end<m['creditsStartFrame']
 assert 0<=m['mainStartFrame']<m['endingStartFrame']<m['creditsStartFrame']
-assert m['composition']['durationInFrames']-m['creditsStartFrame']==8*fps
+assert m.get('creditsInDescription') and m['creditsStartFrame']==m['composition']['durationInFrames']
 (P/'out/timeline_validation.json').write_text(json.dumps({'utterances':len(report),'maxCaptionWidth':max(x['maxCaptionWidth'] for x in report),'dialogueClipOverlap':False,'captionTextMatches':True,'utteranceAudioDurationsMatch':True,'clips':clip_report,'items':report},indent=2))
 print('PASS',len(report),'utterances; max caption width',max(x['maxCaptionWidth'] for x in report))

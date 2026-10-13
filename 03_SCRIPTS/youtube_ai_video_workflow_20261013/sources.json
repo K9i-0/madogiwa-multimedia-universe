@@ -40,24 +40,21 @@
     "url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai",
     "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."
   },
-  "version": 4,
+  "version": 5,
   "title": "Codexで動画まで作る。窓際族物語のAI制作術",
   "audience": "CodexやClaude CodeでWebサイト・アプリ等を作っている人。職業エンジニアには限定せず、AIモデルの名前や違いをなんとなく知っている。実制作の判断・比較・失敗例は詳しい視聴者にも役立つ深さで扱う。",
   "delivery": {
-    "file": "final_remotion_ai_video_workflow_v4.mp4",
-    "previousVersionPreserved": [
-      "final_remotion_ai_video_workflow.mp4",
-      "final_remotion_ai_video_workflow_v2.mp4",
-      "final_remotion_ai_video_workflow_v3.mp4"
-    ],
+    "file": "final_remotion_ai_video_workflow_v5.mp4",
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 23421,
-    "durationSeconds": 780.7,
-    "displayDuration": "13分01秒",
+    "durationInFrames": 23399,
+    "durationSeconds": 779.9666666666667,
     "newPaidVideoGeneration": false,
-    "published": false
+    "published": false,
+    "previousVersionPreserved": [
+      "final_remotion_ai_video_workflow_v4.mp4"
+    ]
   },
   "localEvidence": "03_SCRIPTS/youtube_ai_video_workflow_20261013/evidence_v2.json",
   "sourceAssets": "03_SCRIPTS/youtube_ai_video_workflow_20261013/asset_sources.json",
@@ -65,7 +62,7 @@
     {
       "episode": 85,
       "title": "パクられた",
-      "usage": "導入の会話コント作例",
+      "usage": "v4以前の導入作例。v5ではこの動画クリップを使用しない。",
       "source": "03_SCRIPTS/85_pakurareta/final_remotion_audio_v2_720p.mp4"
     },
     {
@@ -81,7 +78,7 @@
     {
       "episode": 69,
       "title": "窓際スーパーつらい",
-      "usage": "導入のCM作例",
+      "usage": "v4以前の導入作例。v5ではこの動画クリップを使用しない。",
       "source": "03_SCRIPTS/69_madogiwa_super_try_tanker/final_remotion_cm_v3.mp4"
     },
     {
@@ -105,62 +102,52 @@
     {
       "chapter": "導入",
       "startFrame": 0,
-      "startSeconds": 0.0,
       "youtubeTime": "00:00"
     },
     {
       "chapter": "道具の分担",
-      "startFrame": 1982,
-      "startSeconds": 66.06666666666666,
-      "youtubeTime": "01:06"
+      "startFrame": 3118,
+      "youtubeTime": "01:43"
     },
     {
       "chapter": "依頼と生成指示",
-      "startFrame": 4591,
-      "startSeconds": 153.03333333333333,
-      "youtubeTime": "02:33"
+      "startFrame": 5585,
+      "youtubeTime": "03:06"
     },
     {
       "chapter": "キャラクターの資料",
-      "startFrame": 6542,
-      "startSeconds": 218.06666666666666,
-      "youtubeTime": "03:38"
+      "startFrame": 7373,
+      "youtubeTime": "04:05"
     },
     {
       "chapter": "生成と音声修正",
-      "startFrame": 8634,
-      "startSeconds": 287.8,
-      "youtubeTime": "04:47"
+      "startFrame": 9394,
+      "youtubeTime": "05:13"
     },
     {
       "chapter": "編集",
-      "startFrame": 12106,
-      "startSeconds": 403.53333333333336,
-      "youtubeTime": "06:43"
+      "startFrame": 12736,
+      "youtubeTime": "07:04"
     },
     {
       "chapter": "費用と解像度",
-      "startFrame": 13551,
-      "startSeconds": 451.7,
-      "youtubeTime": "07:31"
+      "startFrame": 14181,
+      "youtubeTime": "07:52"
     },
     {
       "chapter": "スキルを育てる",
-      "startFrame": 17808,
-      "startSeconds": 593.6,
-      "youtubeTime": "09:53"
+      "startFrame": 18321,
+      "youtubeTime": "10:10"
     },
     {
       "chapter": "まとめ",
-      "startFrame": 21283,
-      "startSeconds": 709.4333333333333,
-      "youtubeTime": "11:49"
+      "startFrame": 21623,
+      "youtubeTime": "12:00"
     },
     {
       "chapter": "次回予告",
-      "startFrame": 22424,
-      "startSeconds": 747.4666666666667,
-      "youtubeTime": "12:27"
+      "startFrame": 22660,
+      "youtubeTime": "12:35"
     }
   ],
   "cast": [
@@ -168,16 +155,21 @@
     "たこさん"
   ],
   "narration": {
-    "yametaro": "v3 adopted Irodori-TTS v4.1-Small",
+    "yametaro": "Irodori-TTS v4.1-Small; canonical reference, new dialogue and unchanged adopted lines",
     "takosan": {
       "model": "VOICEVOX:中国うさぎ",
       "style": "ノーマル",
       "speedScale": 1.1,
-      "pitchScale": -0.04,
+      "pitchScale": 0,
       "license": "https://zunko.jp/con_ongen_kiyaku.html",
       "credit": "VOICEVOX:中国うさぎ"
     },
-    "record": "usagi_voice_record_v4.json",
-    "scope": "今回の解説動画。共通ボイスキャスト正典は変更しない。"
-  }
+    "record": "voice_record_v5.json",
+    "scope": "たこさんは2026-10-13採用の共通VOICEVOX設定。作品別に無音長を調整。"
+  },
+  "scenarioReferences": [
+    "https://qiita.com/Yametaro/items/a40ffcd65d77ed8b29a0",
+    "https://qiita.com/Yametaro/items/21b8772e6c0d1d77e176",
+    "https://qiita.com/Yametaro/items/255eea3124e769ce845c"
+  ]
 }

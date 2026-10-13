@@ -1,67 +1,56 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — やめ太郎＆たこさん版
+# Codexで動画まで作る。窓際族物語のAI制作術 — v5
 
-やめ太郎が「ワイも動画を作ってみたい」と質問し、たこさんが実際の制作例で解説する。ユーザー指定の3台詞を導入に使い、第53話を主線とする説明、キャラクターシート、音声修復、料金、スキルの改善過程を引き継ぐ。
+やめ太郎の「ネタはあるのに、編集の操作で止まる」という悩みから、いつものAIで動画を作る流れを紹介する。導入は共感→第53話の完成例→内容の全容。本編は会話の欲求・失敗から道具の説明へ進め、参照画像の情報設計、部分音声修復、費用、制作ログからのスキル改善まで扱う。
 
-今回の完成版は `../final_remotion_ai_video_workflow_v4.mp4`。仕様と実測尺は `../delivery_v4.json`、確認結果は `../review_v4.md`。v3の完成版も保持。旧VOICEVOX版の完成MP4と確認記録は保存する。旧版のコード一式はGitコミット `9aa43d7f` で再現できる。
+完成版：`../final_remotion_ai_video_workflow_v5.mp4`。実測仕様：`../delivery_v5.json`。確認・修正記録：`../review_v5.md`。旧版MP4と記録は保持する。v4コードはGit履歴で再現可能。YouTubeへの公開・アップロードは行わない。
 
 ## 正本
 
-- `dialogue.json`：111発話の本文、話者、字幕改行、発音用文面、必要な生成尺調整。
-- `clips_config.json`：作例と音声比較の挿入位置、範囲、BGM停止。
-- `src/edit-manifest.json`：生成音声から算出したフレーム単位のタイムラインと口パク波形。
-- `../duo_adopted_audio.json`、エピソード直下の `duo_v3_*.wav`：採用音声と復元用の対応表。
-- `../duo_voice_record.json`：Irodoriモデル、正典参照、seed、設定、音声ハッシュ。
-- `../asset_sources.json`、`../inputs/duo/`：採用立ち絵6枚と由来。既存差分の目・口部分だけCSSマスクで使用し、全身の位置を固定する。
-- `../sources.json`、`../evidence_v2.json`：解説に使う制作ログ・価格・実例の根拠。配役変更で実例の生成履歴は変更しない。
+- `dialogue.json`：本文・話者・読み・字幕改行・発話後の間・Irodoriの生成尺補正。
+- `clips_config.json`：ニュース作例と音声修復比較の範囲、原音・BGM停止。
+- `src/edit-manifest.json`：採用音声から算出した整数フレームのタイムラインと口パク波形。
+- `../voice_record_v5.json`：モデル・参照・seed・VOICEVOXクエリ・実測尺・音声ハッシュ。
+- `../adopted_audio_v5.json`、`../v5_*.wav`：採用セリフとpublic内ファイルとの対応。
+- `../script.md`：章・会話・画面指示・完成版の発話開始時刻。
+- `../sources.json`、`../evidence_v2.json`：料金・過去の制作ログ・台本構成の参考記事。
+- `../youtube_description.txt`：概要欄用クレジットと出典。専用の末尾カードは表示しない。
 
-やめ太郎は左で左右反転、たこさんは右。白レンズを維持し、やめ太郎にまばたきを追加しない。字幕色は共通の `00_TEMPLATES/subtitles/member-colors.ts` を参照する。
+## 配役・音響
 
-## 音声
+やめ太郎は左で左右反転、たこさんは右。既存の採用立ち絵を維持する。白レンズを維持し、やめ太郎にまばたきを付けない。字幕色は `00_TEMPLATES/subtitles/member-colors.ts` が正本。
 
-v4はユーザーが試聴して選んだ中国うさぎを、今回のたこさんの声に使用する。共通のボイスキャスト正典は変更しない。
-
-- たこさん：VOICEVOX:中国うさぎ、ノーマル（speaker 61）、エンジン0.25.1、速度1.1倍、音高−0.04。
-- サンプルと同じ前無音0.15秒・後無音0.55秒、48kHz mono。生成後の速度変更なし。
-- `voicevoxReading` で必要な読みを指定し、字幕本文と分離。「方→かた」を修正。u010/u027の「依頼」は句読点と局所モーラ長を調整し、全体の速度・音高は維持。
-- `../usagi_voice_record_v4.json` に全クエリ・実際の読み・設定・ハッシュを保存。`../usagi_adopted_audio_v4.json` と `usagi_v4_*_takosan.wav` が採用音声。
-- やめ太郎はv3の採用WAVを再利用。Irodori v4.1-Small、正典Yametaro_voice.wav、seed 7。`../duo_voice_record.json` と `duo_v3_*_yametaro.wav` で保持。
+- やめ太郎：Irodori-TTS v4.1-Small、正典 `Yametaro_voice.wav`、seed 7、captionなし、本文CFG 5、トリムなし。短文の生成尺0.7を出発点に、台詞ごとに0.85 / 1.0へ調整。生成後の早送りはしない。変更のない採用音声は再利用。
+- たこさん：VOICEVOX:中国うさぎ・ノーマル、speaker 61、速度1.1、音高0、抑揚1、音量1、48kHz mono。掛け合い用に前無音0.10秒・後無音0.20秒。発話間はタイムライン側で管理する。
+- 通常の発話後は9〜12フレーム、オチは18フレーム等。字幕を縮小しすぎず、意味の切れ目で2行以内に分ける。
+- 各セリフを−18 LUFSへ整えてミックス。BGMは−34 LUFS、Unityは−38 LUFSを出発点とし、締めで持ち上げない。原音比較中はBGMと実況を止める。最終48kHz stereo。
 
 ## 再現
 
-このディレクトリで実行する。Node.js、ffmpeg、ローカルIrodori環境と元素材が必要。稼働中のローカルVOICEVOXエンジンへ、発話ごとにAPIを呼び出す。GUI操作や新しいWan有料生成は行わない。
+このディレクトリで実行する。ローカルIrodori、VOICEVOX（127.0.0.1:50021）、元素材、FFmpegが必要。
 
 ```sh
 npm ci
-../../../.local/voicevox-explainer/venv/bin/python prepare_assets.py
 ../../../.local/Irodori-TTS/.venv/bin/python prepare_voice.py
-../../../.local/Irodori-TTS/.venv/bin/python audit_usagi_audio.py
 npm run typecheck
 ../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
-npm run render -- --output out/review_v4_01.mp4
+npm run render -- --output out/review_v5_01.mp4
 ```
 
-`prepare_voice.py` は `prepare_usagi_voice.py` を呼び出す。エンジン版・話者版・話者ID・全クエリをキャッシュ識別に含める。進捗は `out/usagi_progress.json`。`audit_usagi_audio.py` は新しいWAVをASRで確認し、変更しないやめ太郎はv3の検査結果を再利用する。旧Irodori生成は `prepare_duo_voice.py` に保持。
+`prepare_v5_voice.py`は生成本文・設定・モデル・参照ハッシュをキャッシュ識別へ含める。進捗は`out/v5_progress.json`。台詞変更後の古い音声流用を防ぐ。導入だけの候補は`preview_v5.py`で生成可能。
 
-`mix_audio.py` は各新規発話を−18 LUFSへ調整したうえで合成し、全体を整える。比較映像ではBGM・実況を止める。通常BGMは−34 LUFS、Unityは−38 LUFSを出発点に、締めで持ち上げず4秒フェードする。出力は48kHz stereo。
+採用WAVをpublicへ復元する場合は `adopted_audio_v5.json` の `file` → `publicAudio` へhardlinkし、SHA-256を確認する。音声合成環境の版が異なる場合は、再生成と採用WAVの復元を区別する。
 
-映像のみの修正は `render.py --skip-mix` で既存ミックスを利用できる。候補は別名へ書き出す。導入確認用 `preview_duo.py` は最初の8発話から短いMP4を作る。
-
-## 監査・採用
+## 監査
 
 ```sh
-../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v4_01.mp4 --tag v4_01
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v4_01.mp4 --tag v4_01
-../../../.local/Irodori-TTS/.venv/bin/python audit_mix.py
+../../../.local/Irodori-TTS/.venv/bin/python audit_v5_audio.py
+../../../.local/Irodori-TTS/.venv/bin/python audit_v5_secondpass.py
+../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v5_01.mp4 --tag v5_01
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v5_01.mp4 --tag v5_01
 ```
 
-全発話の表示中、引用の開始・中間・終了、図解の変化後、締めをMP4から抽出し、文字・顔・素材との対応を目視する。ASRは自動スクリーニングであり、自然さ・声質・精密な口元同期の合格と同一視しない。主観的な通し試聴をできなかった場合は記録する。
+全発話、資料映像の開始・中間・終了、図解の切替、末尾をMP4から抽出して確認する。ASRは本文をプロンプトで教えずにスクリーニングし、不確かな発音は別のモデルでも照合する。ASRや数値検査で主観的な聞き心地を保証しない。今回、主観的な通し試聴は実施できないため、機械的な検査と視覚確認を分けて報告する。
 
-候補を採用後、完成名へ保存して最終検査する。既存の完成ファイルは暗黙に上書きしない。
+完成名へ採用した後に `adopt_v5_audio.py` を実行し、採用WAV・対応表・章時刻・概要欄・出典情報を保存する。動画、中間WAV、監査画像、旧候補はGit管理外。採用セリフWAVと再現コードを追跡する。
 
-```sh
-cp -n out/review_v4_01.mp4 ../final_remotion_ai_video_workflow_v4.mp4
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --tag v4
-../../../.local/voicevox-explainer/venv/bin/python adopt_usagi_audio.py
-```
-
-動画・中間音声・監査画像はGit管理外。採用したセリフWAVだけエピソード直下へ保存し、参照ハッシュ・設定・コードとともに管理する。元動画・BGMにはローカル保持の素材があるため、Gitだけで全素材がそろうわけではない。公開・アップロードは別作業。
+全編確認後の資料表示修正は `render_visual_patches.py` と `../visual_revision_v5.json` に記録。通常の再現は更新済みmanifestから全編レンダーすればよい。部分差し替えは既存の候補MP4がある場合だけ使用する。

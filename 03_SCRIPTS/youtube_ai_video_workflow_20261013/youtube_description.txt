@@ -7,16 +7,16 @@ CodexやClaude CodeでWebサイト・アプリなどを作っている人へ。
 制作の操作はCodex・Claude CodeからAPI・コード・コマンドで実行しています。参照資料や実行環境をリポジトリへ用意したうえで、人間が内容と採用結果を判断しています。
 
 チャプター
-00:00 いつものAIで動画を作る・完成例
-01:06 Codex・Wan・Irodori・Remotionの分担
-02:33 依頼を生成指示へ具体化する
-03:38 キャラクターシートの情報設計
-04:47 生成と日本語音声の部分修復
-06:43 Remotionで完成編集
-07:31 費用・試行回数・解像度
-09:53 制作ログからスキルを育てる
-11:49 まとめ・最初の一本
-12:27 次回予告：h3さんの制作手法
+00:00 導入
+01:43 道具の分担
+03:06 依頼と生成指示
+04:05 キャラクターの資料
+05:13 生成と音声修正
+07:04 編集
+07:52 費用と解像度
+10:10 スキルを育てる
+12:00 まとめ
+12:35 次回予告
 
 制作リポジトリ
 https://github.com/K9i-0/madogiwa-multimedia-universe
@@ -46,7 +46,7 @@ https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/03_SCRIPTS/youtu
 
 出演・立ち絵：窓際族物語／やめ太郎、たこさん
 やめ太郎音声：Irodori-TTS v4.1-Small（正典音声を参照）
-たこさん音声：VOICEVOX:中国うさぎ（ノーマル、速度1.1倍、音高−0.04）
+たこさん音声：VOICEVOX:中国うさぎ（ノーマル、速度1.1倍、音高0）
 BGM：昼下がり気分 / KK
 https://opentracks.com/bgm/detail/4695
 BGM：ほのぼのワルツ【リコーダー】 / エクシエ
@@ -54,6 +54,11 @@ https://commons.nicovideo.jp/works/nc116360
 Music: TheFatRat - Unity
 Watch the official music video: https://www.youtube.com/watch?v=n8X9_MgEdCg
 
-使用映像：窓際族物語 第85話「パクられた」、第53話「そば屋・替え玉出社事件」、第69話「窓際スーパーつらい」、第72話「東京マドギワランド」と同話の部分修復比較実験。いずれもフィクションです。
+使用映像：窓際族物語 第53話「そば屋・替え玉出社事件」、第72話「東京マドギワランド」と同話の部分修復比較実験。いずれもフィクションです。
 
-本動画は、たこさんの声を中国うさぎに変更したv4（13分01秒）です。
+台本構成の参考：無職やめ太郎さんの会話形式の記事
+https://qiita.com/Yametaro/items/a40ffcd65d77ed8b29a0
+https://qiita.com/Yametaro/items/21b8772e6c0d1d77e176
+https://qiita.com/Yametaro/items/255eea3124e769ce845c
+
+導入と全編の掛け合いを改稿したv5。たこさんは中国うさぎ・ノーマルです。

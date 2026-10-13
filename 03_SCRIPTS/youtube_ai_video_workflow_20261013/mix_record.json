@@ -1,23 +1,12 @@
 {
   "sampleRate": 48000,
-  "frames": 23421,
+  "frames": 23399,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
   "clipTargetLUFS": -19,
-  "premasterPeak": 0.6175761818885803,
+  "premasterPeak": 0.6342313885688782,
   "clips": [
-    {
-      "id": "example_comedy",
-      "afterId": "u001",
-      "src": "comedy.mp4",
-      "sourceStartFrame": 60,
-      "durationInFrames": 117,
-      "label": "会話コント｜第85話「パクられた」",
-      "layout": "full",
-      "tag": "完成例",
-      "startFrame": 392
-    },
     {
       "id": "example_news",
       "afterId": "u001",
@@ -27,18 +16,7 @@
       "label": "架空ニュース｜第53話「替え玉出社」",
       "layout": "full",
       "tag": "完成例",
-      "startFrame": 509
-    },
-    {
-      "id": "example_cm",
-      "afterId": "u001",
-      "src": "cm.mp4",
-      "sourceStartFrame": 90,
-      "durationInFrames": 165,
-      "label": "架空CM｜第69話「窓際スーパーつらい」",
-      "layout": "full",
-      "tag": "完成例",
-      "startFrame": 767
+      "startFrame": 1544
     },
     {
       "id": "news_before_audio",
@@ -50,7 +28,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 9921
+      "startFrame": 10657
     },
     {
       "id": "news_after_audio",
@@ -62,7 +40,7 @@
       "layout": "comparison",
       "tag": "第53話「速報です」の音声修正",
       "muteBgm": true,
-      "startFrame": 9984
+      "startFrame": 10735
     },
     {
       "id": "park_comparison",
@@ -74,48 +52,36 @@
       "layout": "comparison",
       "tag": "別作品の比較実験／本編とは別の検証",
       "muteBgm": true,
-      "startFrame": 10973
+      "startFrame": 11656
     }
   ],
   "clipDucking": [
     {
-      "id": "example_comedy",
-      "startFrame": 392,
-      "durationInFrames": 117,
-      "bgmGain": 0.08
-    },
-    {
       "id": "example_news",
-      "startFrame": 509,
+      "startFrame": 1544,
       "durationInFrames": 258,
       "bgmGain": 0.08
     },
     {
-      "id": "example_cm",
-      "startFrame": 767,
-      "durationInFrames": 165,
-      "bgmGain": 0.08
-    },
-    {
       "id": "news_before_audio",
-      "startFrame": 9921,
+      "startFrame": 10657,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "news_after_audio",
-      "startFrame": 9984,
+      "startFrame": 10735,
       "durationInFrames": 63,
       "bgmGain": 0
     },
     {
       "id": "park_comparison",
-      "startFrame": 10973,
+      "startFrame": 11656,
       "durationInFrames": 310,
       "bgmGain": 0
     }
   ],
-  "endingStartFrame": 22424,
+  "endingStartFrame": 22660,
   "endingTrack": "TheFatRat - Unity",
   "endingTargetLUFS": -38,
   "endingLiftAfterDialogue": false,

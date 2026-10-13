@@ -56,6 +56,31 @@ const ApiCheck: React.FC<{mode: 'single' | 'split' | 'validation'}> = ({mode}) =
 </>;
 
 const Center: React.FC<{view: string; localFrame: number; utterance?: Dialogue}> = ({view, localFrame, utterance}) => {
+  if (view === 'hook_wish') return <>
+    <Eyebrow>いつものAIで、次は何を作る？</Eyebrow>
+    <Title>頭の中のネタを、動画にしたい。</Title>
+    <div style={{width: 620, padding: '32px 25px', borderRadius: 28, background: '#e2ebdf', fontSize: 37, lineHeight: 1.6, color: green}}>{['n000','n001'].includes(utterance?.id ?? '') ? <>ワイも、<br/>動画を作りたい。</> : <>しょうもない話なら、<br/>山ほどある。</>}</div>
+    {['n003','n004'].includes(utterance?.id ?? '') && <Note>{utterance?.id === 'n004' ? 'いい話：見つかりませんでした。' : 'いい話も、一本くらい……？'}</Note>}
+  </>;
+  if (view === 'hook_barrier') return <>
+    <Title>サイトは作れた。動画は……？</Title>
+    <Row gap={26}><Box>作りたいネタ<br/><span style={{color: green}}>ある</span></Box><Box>作る気持ち<br/><span style={{color: green}}>ある</span></Box><Box color={purple}>編集の操作<br/><span style={{color: purple}}>分からない</span></Box></Row>
+    <div style={{marginTop: 35, fontSize: 27, color: muted}}>知らないボタンを見て、そっと閉じる。</div>
+  </>;
+  if (view === 'hook_bridge') return <>
+    <Eyebrow>使い慣れたところから、始められる</Eyebrow>
+    <Title>「ここ直して」で、動画も作る。</Title>
+    <div style={{background: '#e2ebdf', borderRadius: 18, padding: '25px 34px', width: 625, fontSize: 32, color: green, fontWeight: 700}}>Claude Code / Codex</div>
+    <div style={{fontSize: 29, color: muted, margin: '13px 0'}}>↓</div>
+    <Row><Box small>映像を作る</Box><Box small>声を直す</Box><Box small color={purple}>字幕を編集</Box></Row>
+    <Note>人間は、アイデアと出来上がりの判断を。</Note>
+  </>;
+  if (view === 'hook_agenda') return <>
+    <Eyebrow>実際に作った一本を、分解してみる</Eyebrow>
+    <Title>どう作る？ いくら？ 失敗したら？</Title>
+    <Lines items={['いつものAIから、道具を動かす', '顔・声・字幕を整え、費用を考える', '失敗を残し、次の一本を楽にする']}/>
+    <Note>作品と制作ログを、両方見せます。</Note>
+  </>;
   if (view === 'opening' || view === 'intro_ready') return <>
     <Eyebrow>AIとWebサイト・アプリを作っている人へ</Eyebrow>
     <div style={{fontSize: 43, fontWeight: 700, lineHeight: 1.5, margin: '14px 0 26px'}}>Codexで<br/><span style={{color: green}}>動画まで作る。</span></div>
@@ -63,7 +88,7 @@ const Center: React.FC<{view: string; localFrame: number; utterance?: Dialogue}>
     <Note>{view === 'intro_ready' ? 'まず、実際に作った動画を見てみましょう。' : 'いつものAIとのものづくりを、動画へ。'}</Note>
   </>;
   if (view === 'promise' && ['u005','u006','u007'].includes(utterance?.id ?? '')) return <><Title>この動画で分かること</Title><Lines items={['制作の道具は、どう分担する？', '顔・声・編集を、どう仕上げる？', '費用と失敗を、次の制作にどう生かす？']}/><Note>実際の作品と、制作ログで見ていきます。</Note></>;
-  if (view === 'intro_reaction') return <><Title>窓際族物語の動画制作</Title><Pair a="news.jpg" b="cm.jpg" al="架空ニュース" bl="架空CM"/><Note>この映像、どうやって作っている？</Note></>;
+  if (view === 'intro_reaction') return <><Title>このニュースを、いつものAIから。</Title><Pic name="news.jpg" w={690} h={350}/><Note>第53話「替え玉出社」</Note></>;
   if (view === 'promise' && ['u003','u004'].includes(utterance?.id ?? '')) return <><Title>いつものAIから、動画づくりへ</Title><div style={{fontSize:39,color:green,margin:'25px 0'}}>Claude Code / Codex</div><Note>制作手順・素材・実行コードを用意した環境で</Note><Source>このリポジトリの作り方を、実例で紹介します。</Source></>;
   if (view === 'promise') return <><Eyebrow>今回分解するのは、このニュース</Eyebrow><Title>第53話「替え玉出社」</Title><Pic name="news.jpg" w={690} h={360}/><Source>窓際族物語／生成映像に音声修正と編集を加えた完成版</Source></>;
   if (view === 'roadmap') return <><Title>映像は、動画生成モデルが作る</Title><Workflow focus="all"/><Source>Codex・Claude Codeが、Wanへ生成の指示を渡す</Source></>;
@@ -130,7 +155,6 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
   const previousIndex = m.dialogue.reduce((last, d, i) => f >= d.startFrame ? i : last, -1);
   const previous = m.dialogue[previousIndex];
   const clip = m.clips.find(c => f >= c.startFrame && f < c.startFrame + c.durationInFrames);
-  const credits = f >= m.creditsStartFrame;
   const view = previous?.view ?? 'opening';
   let sceneIndex = Math.max(0, previousIndex);
   while (sceneIndex > 0 && m.dialogue[sceneIndex - 1].view === view) sceneIndex--;
@@ -138,11 +162,7 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
   const appear = interpolate(f - start, [0, 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return <AbsoluteFill style={{background: paper, fontFamily: '"Hiragino Sans", sans-serif', color: ink}}>
     <Audio src={staticFile(audioSrc)}/>
-    {clip ? <ClipPlayer clip={clip}/> : credits ? <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontSize: 23, lineHeight: 2, textAlign: 'center'}}>
-      <div style={{fontSize: 30, marginBottom: 24}}>窓際族物語 ／ 制作の裏側</div>
-      <div>出演：やめ太郎 ／ たこさん<br/>やめ太郎音声：Irodori-TTS<br/>たこさん音声：VOICEVOX:中国うさぎ<br/>立ち絵：窓際族物語<br/>導入：昼下がり気分 ／ KK<br/>本編：ほのぼのワルツ【リコーダー】／ エクシエ<br/>エンディング：TheFatRat - Unity<br/>資料映像・キャラクター：窓際族物語</div>
-      <div style={{fontSize: 17, marginTop: 25}}>料金確認：2026年10月13日 ／ 出典・音源リンクは概要欄</div>
-    </AbsoluteFill> : <>
+    {clip ? <ClipPlayer clip={clip}/> : <>
       <div style={{position: 'absolute', left: 260, top: 24, width: 760, height: 531, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', opacity: appear, transform: `translateY(${(1 - appear) * 5}px)`}}><Center view={view} localFrame={f - start} utterance={previous}/></div>
       {(['yametaro','takosan'] as const).map(who => {
         const speaking=active?.who===who; const local=active?f-active.startFrame:0;

@@ -7,7 +7,7 @@ m=json.loads((P/args.manifest).read_text());src=(P/args.source).resolve();out=P/
 points=[('opening',30)]
 for i,d in enumerate(m['dialogue']):
  points.append((f'{i:03}_{d["view"]}',d['startFrame']+min(35,d['durationInFrames']//2)))
-points.extend([('credits',m['creditsStartFrame']+60),('last',m['composition']['durationInFrames']-5)])
+points.extend([('ending_hold',m['composition']['durationInFrames']-40),('last',m['composition']['durationInFrames']-5)])
 for c in m['clips']:
  points.extend([(c['id']+'_start',c['startFrame']+3),(c['id']+'_middle',c['startFrame']+c['durationInFrames']//2),(c['id']+'_end',c['startFrame']+c['durationInFrames']-3)])
 for view in ('edit_demo','api_split','validation','skill_loop','export'):

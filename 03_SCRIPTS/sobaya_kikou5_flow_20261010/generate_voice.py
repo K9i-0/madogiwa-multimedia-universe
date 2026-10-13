@@ -12,8 +12,8 @@ for r in rows:
  if out.exists() and meta.exists() and meta.read_text()==key:continue
  start=time.perf_counter()
  if r['who']=='takosan':
-  q=json.loads(post('audio_query',{'speaker':89,'text':r['reading']}));q['speedScale']=1.0
-  out.write_bytes(post('synthesis',{'speaker':89},json.dumps(q).encode()))
+  q=json.loads(post('audio_query',{'speaker':r['style'],'text':r['reading']}));q.update(speedScale=r['speedScale'],pitchScale=r.get('pitchScale',0),prePhonemeLength=.15,postPhonemeLength=.55,outputSamplingRate=48000,outputStereo=False)
+  out.write_bytes(post('synthesis',{'speaker':r['style']},json.dumps(q).encode()))
   (logs/(out.stem+'.query.json')).write_text(json.dumps(q,ensure_ascii=False,indent=2))
  else:
   env=dict(os.environ,IRODORI_UNCUT='1',IRODORI_CFG_SCALE_TEXT='5',IRODORI_DURATION_SCALE=str(r['durationScale']))

@@ -1,0 +1,37 @@
+{
+  "sampleRate": 48000,
+  "frames": 16417,
+  "voiceTargetLUFS": -18,
+  "bgmTargetLUFS": -34,
+  "clipTargetLUFS": -19,
+  "premasterPeak": 0.834035336971283,
+  "clips": [
+    {
+      "startFrame": 0,
+      "durationInFrames": 117,
+      "src": "comedy.mp4",
+      "sourceStartFrame": 60,
+      "label": "会話コント｜第85話「パクられた」"
+    },
+    {
+      "startFrame": 117,
+      "durationInFrames": 258,
+      "src": "news.mp4",
+      "sourceStartFrame": 0,
+      "label": "架空ニュース｜第53話「替え玉出社」"
+    },
+    {
+      "startFrame": 375,
+      "durationInFrames": 165,
+      "src": "cm.mp4",
+      "sourceStartFrame": 90,
+      "label": "架空CM｜第69話「窓際スーパーつらい」"
+    }
+  ],
+  "endingStartFrame": 15104,
+  "endingTrack": "TheFatRat - Unity",
+  "endingTargetLUFS": -38,
+  "endingLiftAfterDialogue": false,
+  "endingCrossfadeSeconds": 2,
+  "endingFadeOutSeconds": 4
+}

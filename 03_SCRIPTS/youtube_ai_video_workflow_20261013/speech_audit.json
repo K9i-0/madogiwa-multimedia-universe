@@ -1,0 +1,11 @@
+{
+  "model": "openai/whisper-small",
+  "utterances": 104,
+  "method": "VOICEVOX kana review and unprompted Whisper-small screening; mixed waveform spot checks.",
+  "corrected": [
+    "AIに作って、と頼む の言い回し",
+    "480p / 720p / 1080p の音声用表記を数字＋ピーへ変更"
+  ],
+  "finalPriceASR": "720pでは3ドル、1080pでは6ドルになるわ",
+  "limitations": "No subjective continuous listening. ASR homophone and proper-noun errors are not treated as source-text changes."
+}

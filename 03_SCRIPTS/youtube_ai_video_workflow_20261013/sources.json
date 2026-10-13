@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-13",
+  "pricing": {
+    "url": "https://www.qwencloud.com/models/wan3.0-video",
+    "currency": "USD",
+    "normalPerSecond": {"480P": 0.05, "720P": 0.10, "1080P": 0.20},
+    "displayedDiscountPerSecond": {"480P": 0.035, "720P": 0.07, "1080P": 0.14},
+    "note": "30% discount displayed; applicability and period must be checked at execution. Video generation only."
+  },
+  "workflow": [
+    ".claude/skills/wan-video/SKILL.md",
+    ".claude/skills/remotion-video/SKILL.md",
+    ".claude/skills/voicevox-explainer/SKILL.md",
+    "tools/IRODORI_TTS.md",
+    "03_SCRIPTS/85_pakurareta/script.md",
+    "03_SCRIPTS/53_sobaya_proxy_worker_news/script.md"
+  ],
+  "characterSheetTechnique": "User's production experience; actual canonical character_fukuchan_basic_sheet.png shown. No universal accuracy guarantee.",
+  "h3": {"url": "https://github.com/sobaya-0141/Seedance_Madogiwa", "status": "Future episode teaser. Cheaper/time tradeoff supplied by user; not independently benchmarked."},
+  "resolution": {"url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai", "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."}
+}

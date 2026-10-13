@@ -1,0 +1,38 @@
+窓際族物語の生成AI動画をどう作っているのか、ずんだもんと四国めたんが解説します。
+Codex・Claude Codeを窓口に、Wan 3.0、Irodori-TTS、Remotionを組み合わせた制作と修正の流れ、キャラクターシートの工夫、解像度と料金について紹介します。
+
+制作リポジトリ
+https://github.com/K9i-0/madogiwa-multimedia-universe
+今後紹介予定のh3さんのリポジトリ
+https://github.com/sobaya-0141/Seedance_Madogiwa
+
+料金出典：Qwen Cloud / wan3.0-video（2026-10-13確認）
+https://www.qwencloud.com/models/wan3.0-video
+通常表示価格：480p $0.05/秒、720p $0.10/秒、1080p $0.20/秒。
+確認時点の割引表示は30%引き。適用条件・最新料金は利用時に確認してください。
+本編の金額は動画生成分のみ。AIツールの利用料、機材、ローカル処理などは含みません。
+低解像度から試す進め方は制作の選択肢として紹介しており、再生成で同一の演技や画面が保証されるものではありません。
+h3さんの費用差・所要時間の具体的な比較は今後の紹介を予定しています。
+
+音声：VOICEVOX:ずんだもん、VOICEVOX:四国めたん
+立ち絵：坂本アヒル
+https://ux.getuploader.com/s_ahiru/download/37
+https://ux.getuploader.com/s_ahiru/download/35
+BGM：昼下がり気分 / KK
+https://opentracks.com/bgm/detail/4695
+BGM：ほのぼのワルツ【リコーダー】 / エクシエ
+https://commons.nicovideo.jp/works/nc116360
+Music: TheFatRat - Unity
+Watch the official music video: https://www.youtube.com/watch?v=n8X9_MgEdCg
+
+使用映像：窓際族物語 第85話「パクられた」、第53話「そば屋の替え玉出社」、第69話「窓際スーパーつらい」。いずれもフィクションです。
+
+チャプター
+00:00 作れる動画の例
+00:43 Codex・Claude Codeから制作
+02:35 キャラクターシートの工夫
+03:56 日本語音声とIrodori
+04:58 Remotionで完成編集
+05:35 料金と解像度
+08:02 制作で効いた工夫
+08:23 h3さんの手法を次回紹介

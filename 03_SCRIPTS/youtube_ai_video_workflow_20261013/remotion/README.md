@@ -2,7 +2,7 @@
 
 やめ太郎が「ワイも動画を作ってみたい」と質問し、たこさんが実際の制作例で解説する。ユーザー指定の3台詞を導入に使い、第53話を主線とする説明、キャラクターシート、音声修復、料金、スキルの改善過程を引き継ぐ。
 
-今回の完成版は `../final_remotion_ai_video_workflow_v3.mp4`。仕様と実測尺は `../delivery_v3.json`、確認結果は `../review_v3.md`。旧VOICEVOX版の完成MP4と確認記録は保存する。旧版のコード一式はGitコミット `9aa43d7f` で再現できる。
+今回の完成版は `../final_remotion_ai_video_workflow_v4.mp4`。仕様と実測尺は `../delivery_v4.json`、確認結果は `../review_v4.md`。v3の完成版も保持。旧VOICEVOX版の完成MP4と確認記録は保存する。旧版のコード一式はGitコミット `9aa43d7f` で再現できる。
 
 ## 正本
 
@@ -18,29 +18,29 @@
 
 ## 音声
 
-Irodori-TTS v4.1-Smallを正典参照で新規合成する。既存動画内の声を修正する工程とは別であり、音声修復用Largeへ自動的に切り替えない。
+v4はユーザーが試聴して選んだ中国うさぎを、今回のたこさんの声に使用する。共通のボイスキャスト正典は変更しない。
 
-- やめ太郎：`02_CHARACTERS/Yametaro_voice.wav`、seed 7。
-- たこさん：`02_CHARACTERS/Takosan_voice.wav`、seed 43。
-- captionなし、本文CFG 5、40 steps、トリムなし、生成後の速度変更なし。
-- やめ太郎の短文は生成尺倍率0.70を出発点とする。長めの台詞は自動尺、個別に調整した台詞は `durationScale` を指定する。たこさんは自動尺。
-- 原文と発音用文面を分ける。専門用語と数値を読める表記にし、ユーザー指定の台詞の字幕本文を保持する。
+- たこさん：VOICEVOX:中国うさぎ、ノーマル（speaker 61）、エンジン0.25.1、速度1.1倍、音高−0.04。
+- サンプルと同じ前無音0.15秒・後無音0.55秒、48kHz mono。生成後の速度変更なし。
+- `voicevoxReading` で必要な読みを指定し、字幕本文と分離。「方→かた」を修正。u010/u027の「依頼」は句読点と局所モーラ長を調整し、全体の速度・音高は維持。
+- `../usagi_voice_record_v4.json` に全クエリ・実際の読み・設定・ハッシュを保存。`../usagi_adopted_audio_v4.json` と `usagi_v4_*_takosan.wav` が採用音声。
+- やめ太郎はv3の採用WAVを再利用。Irodori v4.1-Small、正典Yametaro_voice.wav、seed 7。`../duo_voice_record.json` と `duo_v3_*_yametaro.wav` で保持。
 
 ## 再現
 
-このディレクトリで実行する。Node.js、ffmpeg、ローカルIrodori環境と元素材が必要。モデルを一回読み込み、発話ごとに逐次生成する。GUI操作や新しいWan有料生成は行わない。
+このディレクトリで実行する。Node.js、ffmpeg、ローカルIrodori環境と元素材が必要。稼働中のローカルVOICEVOXエンジンへ、発話ごとにAPIを呼び出す。GUI操作や新しいWan有料生成は行わない。
 
 ```sh
 npm ci
 ../../../.local/voicevox-explainer/venv/bin/python prepare_assets.py
 ../../../.local/Irodori-TTS/.venv/bin/python prepare_voice.py
-../../../.local/Irodori-TTS/.venv/bin/python audit_audio.py
+../../../.local/Irodori-TTS/.venv/bin/python audit_usagi_audio.py
 npm run typecheck
 ../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
-npm run render -- --output out/review_v3_01.mp4
+npm run render -- --output out/review_v4_01.mp4
 ```
 
-`prepare_voice.py` は現在の配役用 `prepare_duo_voice.py` を呼び出す。モデル、参照ハッシュ、本文、seed、生成尺倍率などをキャッシュ識別へ含める。`--ids u003` などで部分生成も可能。未生成行が残る場合は完成マニフェストを更新しない。生成進捗は `out/duo_progress.json`。`audit_audio.py` は未照合のWAVを順次確認するため、生成中に別プロセスで開始してもよい。
+`prepare_voice.py` は `prepare_usagi_voice.py` を呼び出す。エンジン版・話者版・話者ID・全クエリをキャッシュ識別に含める。進捗は `out/usagi_progress.json`。`audit_usagi_audio.py` は新しいWAVをASRで確認し、変更しないやめ太郎はv3の検査結果を再利用する。旧Irodori生成は `prepare_duo_voice.py` に保持。
 
 `mix_audio.py` は各新規発話を−18 LUFSへ調整したうえで合成し、全体を整える。比較映像ではBGM・実況を止める。通常BGMは−34 LUFS、Unityは−38 LUFSを出発点に、締めで持ち上げず4秒フェードする。出力は48kHz stereo。
 
@@ -49,8 +49,8 @@ npm run render -- --output out/review_v3_01.mp4
 ## 監査・採用
 
 ```sh
-../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v3_01.mp4 --tag v3_01
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v3_01.mp4 --tag v3_01
+../../../.local/voicevox-explainer/venv/bin/python audit_video.py --source out/review_v4_01.mp4 --tag v4_01
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --source out/review_v4_01.mp4 --tag v4_01
 ../../../.local/Irodori-TTS/.venv/bin/python audit_mix.py
 ```
 
@@ -59,9 +59,9 @@ npm run render -- --output out/review_v3_01.mp4
 候補を採用後、完成名へ保存して最終検査する。既存の完成ファイルは暗黙に上書きしない。
 
 ```sh
-cp -n out/review_v3_01.mp4 ../final_remotion_ai_video_workflow_v3.mp4
-../../../.local/voicevox-explainer/venv/bin/python final_checks.py --tag v3
-../../../.local/voicevox-explainer/venv/bin/python adopt_duo_audio.py --version v3
+cp -n out/review_v4_01.mp4 ../final_remotion_ai_video_workflow_v4.mp4
+../../../.local/voicevox-explainer/venv/bin/python final_checks.py --tag v4
+../../../.local/voicevox-explainer/venv/bin/python adopt_usagi_audio.py
 ```
 
 動画・中間音声・監査画像はGit管理外。採用したセリフWAVだけエピソード直下へ保存し、参照ハッシュ・設定・コードとともに管理する。元動画・BGMにはローカル保持の素材があるため、Gitだけで全素材がそろうわけではない。公開・アップロードは別作業。

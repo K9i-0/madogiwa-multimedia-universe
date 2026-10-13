@@ -1,0 +1,32 @@
+{
+  "file": "final_remotion_ai_video_workflow_v4.mp4",
+  "sha256": "b074d60a509c9ff6f8530b878ef47ec1ee38bd4e55a9cd19010745c7c08478fa",
+  "bytes": 49868011,
+  "durationSeconds": 780.7,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "pixelFormat": "yuv420p",
+    "sampleAspectRatio": "1:1",
+    "frames": "23421"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLUFS": "-18.08",
+    "truePeakDbTP": "-4.16",
+    "loudnessRangeLU": "3.30"
+  },
+  "fullDecode": "pass",
+  "subtitleTimingAndWidth": "See remotion/out/timeline_validation.json",
+  "visualReview": "See review_v4.md and remotion/out/audit_v4/",
+  "audioReview": "Irodori Yametaro, user-selected VOICEVOX Chugoku Usagi, reading-query verification and automated ASR; subjective continuous listening is not available in this tool environment.",
+  "newPaidVideoGeneration": false,
+  "published": false,
+  "visualReviewFrames": 137,
+  "narrationUtterances": 111,
+  "auditProvenance": "Reviewed candidate and delivered MP4 are byte-identical; SHA-256 verified."
+}

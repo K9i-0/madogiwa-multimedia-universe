@@ -4,7 +4,7 @@
 
 ユーザー指定の3台詞は本文をそのまま採用。作例の前に短い案内を置き、作例を見たやめ太郎の反応から制作相談へつなぐ。
 
-映像化正本：`remotion/dialogue.json`。音声：Irodori v4.1-Small、正典Yametaro_voice.wav seed 7／Takosan_voice.wav seed 43。生成後の速度変更なし。発話ごとの実際の設定・参照ハッシュ・音声ハッシュは `duo_voice_record.json`。
+映像化正本：`remotion/dialogue.json`。v4のたこさん音声はユーザー指定のVOICEVOX:中国うさぎ（ノーマル、速度1.1倍、音高−0.04）。「普段使ってる方なら」は「かたなら」と読む。やめ太郎はv3で採用したIrodori v4.1-Smallの音声を維持。今回の設定・読み・音声ハッシュは `usagi_voice_record_v4.json`。正典の共通ボイスキャストは変更しない。
 
 ## 導入
 

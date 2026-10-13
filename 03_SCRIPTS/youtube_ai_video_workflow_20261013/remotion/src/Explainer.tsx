@@ -67,7 +67,7 @@ const Center: React.FC<{view: string; localFrame: number; utterance?: Dialogue}>
   if (view === 'promise' && ['u003','u004'].includes(utterance?.id ?? '')) return <><Title>いつものAIから、動画づくりへ</Title><div style={{fontSize:39,color:green,margin:'25px 0'}}>Claude Code / Codex</div><Note>制作手順・素材・実行コードを用意した環境で</Note><Source>このリポジトリの作り方を、実例で紹介します。</Source></>;
   if (view === 'promise') return <><Eyebrow>今回分解するのは、このニュース</Eyebrow><Title>第53話「替え玉出社」</Title><Pic name="news.jpg" w={690} h={360}/><Source>窓際族物語／生成映像に音声修正と編集を加えた完成版</Source></>;
   if (view === 'roadmap') return <><Title>映像は、動画生成モデルが作る</Title><Workflow focus="all"/><Source>Codex・Claude Codeが、Wanへ生成の指示を渡す</Source></>;
-  if (view === 'roles') return <><Title>Codexが、動画制作の道具を動かす</Title><Workflow/><Source>この解説の二人の声も、正典音声を参照したIrodoriで生成</Source></>;
+  if (view === 'roles') return <><Title>Codexが、動画制作の道具を動かす</Title><Workflow/><Source>この解説：やめ太郎はIrodori、たこさんはVOICEVOX</Source></>;
   if (view === 'automation') return <><Title>操作は、会話からプログラムへ</Title><div style={{fontSize: 33, color: green, fontWeight: 700, marginBottom: 29}}>Codex / Claude Code</div><div style={{width: 710, display: 'grid', gridTemplateColumns: '190px 1fr 205px', alignItems: 'center', gap: 15, fontSize: 25, lineHeight: 1.8}}><div style={{textAlign: 'left'}}>Wan<br/>Irodori<br/>Remotion</div><div style={{color: muted}}>APIで呼び出す →<br/>コードで実行 →<br/>コマンドで実行 →</div><div style={{textAlign: 'left', color: green}}>動画生成<br/>音声の修正<br/>編集・書き出し</div></div><Note>編集ソフトのタイムライン操作なしで制作</Note></>;
   if (view === 'environment') return <><Title>リポジトリに、制作環境を用意する</Title><div style={{width: 650, textAlign: 'left', background: '#e8ebe3', padding: '24px 33px', borderRadius: 12, fontSize: 27, lineHeight: 1.9}}><span style={{color: green}}>制作リポジトリ</span><br/>├ キャラクター・音声の参照資料<br/>├ AIが読む制作手順（スキル）<br/>└ 道具を呼び出すコード</div><Note>Webアプリの開発環境を整える感覚で。</Note></>;
   if (view === 'human_review') return <><Title>人間が、作るものと採用を決める</Title><Row><Box>依頼する</Box><Arrow/><Box>結果を確認</Box><Arrow/><Box color={purple}>修正・採用</Box></Row><Note>映像を見る。声を聴く。意図に合っているか確かめる。</Note></>;
@@ -140,7 +140,7 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
     <Audio src={staticFile(audioSrc)}/>
     {clip ? <ClipPlayer clip={clip}/> : credits ? <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', fontSize: 23, lineHeight: 2, textAlign: 'center'}}>
       <div style={{fontSize: 30, marginBottom: 24}}>窓際族物語 ／ 制作の裏側</div>
-      <div>出演：やめ太郎 ／ たこさん<br/>音声：Irodori-TTS（正典声質参照）<br/>立ち絵：窓際族物語<br/>導入：昼下がり気分 ／ KK<br/>本編：ほのぼのワルツ【リコーダー】／ エクシエ<br/>エンディング：TheFatRat - Unity<br/>資料映像・キャラクター：窓際族物語</div>
+      <div>出演：やめ太郎 ／ たこさん<br/>やめ太郎音声：Irodori-TTS<br/>たこさん音声：VOICEVOX:中国うさぎ<br/>立ち絵：窓際族物語<br/>導入：昼下がり気分 ／ KK<br/>本編：ほのぼのワルツ【リコーダー】／ エクシエ<br/>エンディング：TheFatRat - Unity<br/>資料映像・キャラクター：窓際族物語</div>
       <div style={{fontSize: 17, marginTop: 25}}>料金確認：2026年10月13日 ／ 出典・音源リンクは概要欄</div>
     </AbsoluteFill> : <>
       <div style={{position: 'absolute', left: 260, top: 24, width: 760, height: 531, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', opacity: appear, transform: `translateY(${(1 - appear) * 5}px)`}}><Center view={view} localFrame={f - start} utterance={previous}/></div>

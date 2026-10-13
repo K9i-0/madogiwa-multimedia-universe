@@ -40,21 +40,22 @@
     "url": "https://fal.ai/learn/tools/how-to-generate-videos-with-ai",
     "note": "Related low-cost iteration / high-quality final workflow. Script does not claim universal multi-provider recommendation of resolution-only regeneration."
   },
-  "version": 3,
+  "version": 4,
   "title": "Codexで動画まで作る。窓際族物語のAI制作術",
   "audience": "CodexやClaude CodeでWebサイト・アプリ等を作っている人。職業エンジニアには限定せず、AIモデルの名前や違いをなんとなく知っている。実制作の判断・比較・失敗例は詳しい視聴者にも役立つ深さで扱う。",
   "delivery": {
-    "file": "final_remotion_ai_video_workflow_v3.mp4",
+    "file": "final_remotion_ai_video_workflow_v4.mp4",
     "previousVersionPreserved": [
       "final_remotion_ai_video_workflow.mp4",
-      "final_remotion_ai_video_workflow_v2.mp4"
+      "final_remotion_ai_video_workflow_v2.mp4",
+      "final_remotion_ai_video_workflow_v3.mp4"
     ],
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 22228,
-    "durationSeconds": 740.9333333333333,
-    "displayDuration": "12分21秒",
+    "durationInFrames": 23421,
+    "durationSeconds": 780.7,
+    "displayDuration": "13分01秒",
     "newPaidVideoGeneration": false,
     "published": false
   },
@@ -109,57 +110,57 @@
     },
     {
       "chapter": "道具の分担",
-      "startFrame": 1894,
-      "startSeconds": 63.13333333333333,
-      "youtubeTime": "01:03"
+      "startFrame": 1982,
+      "startSeconds": 66.06666666666666,
+      "youtubeTime": "01:06"
     },
     {
       "chapter": "依頼と生成指示",
-      "startFrame": 4371,
-      "startSeconds": 145.7,
-      "youtubeTime": "02:25"
+      "startFrame": 4591,
+      "startSeconds": 153.03333333333333,
+      "youtubeTime": "02:33"
     },
     {
       "chapter": "キャラクターの資料",
-      "startFrame": 6257,
-      "startSeconds": 208.56666666666666,
-      "youtubeTime": "03:28"
+      "startFrame": 6542,
+      "startSeconds": 218.06666666666666,
+      "youtubeTime": "03:38"
     },
     {
       "chapter": "生成と音声修正",
-      "startFrame": 8254,
-      "startSeconds": 275.1333333333333,
-      "youtubeTime": "04:35"
+      "startFrame": 8634,
+      "startSeconds": 287.8,
+      "youtubeTime": "04:47"
     },
     {
       "chapter": "編集",
-      "startFrame": 11520,
-      "startSeconds": 384.0,
-      "youtubeTime": "06:24"
+      "startFrame": 12106,
+      "startSeconds": 403.53333333333336,
+      "youtubeTime": "06:43"
     },
     {
       "chapter": "費用と解像度",
-      "startFrame": 12917,
-      "startSeconds": 430.56666666666666,
-      "youtubeTime": "07:10"
+      "startFrame": 13551,
+      "startSeconds": 451.7,
+      "youtubeTime": "07:31"
     },
     {
       "chapter": "スキルを育てる",
-      "startFrame": 16945,
-      "startSeconds": 564.8333333333334,
-      "youtubeTime": "09:24"
+      "startFrame": 17808,
+      "startSeconds": 593.6,
+      "youtubeTime": "09:53"
     },
     {
       "chapter": "まとめ",
-      "startFrame": 20223,
-      "startSeconds": 674.1,
-      "youtubeTime": "11:14"
+      "startFrame": 21283,
+      "startSeconds": 709.4333333333333,
+      "youtubeTime": "11:49"
     },
     {
       "chapter": "次回予告",
-      "startFrame": 21270,
-      "startSeconds": 709.0,
-      "youtubeTime": "11:49"
+      "startFrame": 22424,
+      "startSeconds": 747.4666666666667,
+      "youtubeTime": "12:27"
     }
   ],
   "cast": [
@@ -167,11 +168,16 @@
     "たこさん"
   ],
   "narration": {
-    "model": "Aratako/Irodori-TTS-v4.1-Small",
-    "references": [
-      "02_CHARACTERS/Yametaro_voice.wav",
-      "02_CHARACTERS/Takosan_voice.wav"
-    ],
-    "note": "正典の声を参照した新規解説音声。作例の部分修復工程とは別。"
+    "yametaro": "v3 adopted Irodori-TTS v4.1-Small",
+    "takosan": {
+      "model": "VOICEVOX:中国うさぎ",
+      "style": "ノーマル",
+      "speedScale": 1.1,
+      "pitchScale": -0.04,
+      "license": "https://zunko.jp/con_ongen_kiyaku.html",
+      "credit": "VOICEVOX:中国うさぎ"
+    },
+    "record": "usagi_voice_record_v4.json",
+    "scope": "今回の解説動画。共通ボイスキャスト正典は変更しない。"
   }
 }

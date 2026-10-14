@@ -50,3 +50,13 @@ ffmpeg -y -i out/visuals.mp4 -i public/mixed.wav -map 0:v:0 -map 1:a:0 -c:v copy
 Blender版そば屋画像、回転動画、実際の四方向入力、たこさんの前後入力、そば屋の姿勢・ウェイト比較、福ギュンの正典写真、公式サイトの実操作録画、AR入口のスクリーンショット、保存済みゲーム画面。原型がローカルに残っていない箇所を架空の「修正前」で補わない。
 
 公式サイト録画の再取得は `capture_site.cjs`。サイト更新により外観やボタンが変わり得るので、初稿の映像はfootage内の記録を保持する。
+
+## 完成ファイルの検証
+
+```sh
+../../../.local/voicevox-explainer/venv/bin/python validate_timeline.py
+../../../.local/voicevox-explainer/venv/bin/python audit_final.py
+../../../.local/voicevox-explainer/venv/bin/python contact.py --final
+```
+
+`audit_final.py`は全編デコード、フレーム数・音声形式、既知の緑帯繰り返しの全フレーム検査を行い、各画面と主要切替前後を実MP4から抽出する。目視・試聴の実施範囲は一つ上の`review_v1.md`へ記録する。

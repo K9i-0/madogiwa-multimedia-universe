@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/deploy-games-pages.yml"
+      - ".mise.toml"
       - "GAMES_PORTAL/**"
       - "04_GAME_ASSETS/voxel/models/**"
       - "04_GAME_ASSETS/videos/**"
@@ -49,10 +50,20 @@ jobs:
             13_COMPANY_BREAKER_GAME/package-lock.json
             14_MADOGIWA_CARD_GAME/package-lock.json
 
+      - name: Read Flutter version from .mise.toml
+        id: mise
+        run: |
+          node --input-type=module -e '
+            import { readFileSync, appendFileSync } from "node:fs";
+            const version = readFileSync(".mise.toml", "utf8").match(/^flutter\s*=\s*"([^"]+)"/m)?.[1];
+            if (!version) throw new Error("Flutter version is missing from .mise.toml");
+            appendFileSync(process.env.GITHUB_OUTPUT, "flutter_version=" + version + "\n");
+          '
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.44.0"
+          flutter-version: ${{ steps.mise.outputs.flutter_version }}
           channel: stable
           cache: true
 

@@ -240,7 +240,8 @@ GitHubの`madogiwa-studio-production` Environmentへ次のSecretsを登録しま
 - `CLOUDFLARE_API_TOKEN`: 対象アカウントに限定し、Workers Scriptsの編集とD1マイグレーションに必要な権限だけを持つトークン
 
 依存パッケージとGitHub ActionsはDependabotが定期的に更新PRを作成します。Secrets未登録でもPRのCIは動作し、
-本番デプロイだけが実行できません。
+本番デプロイだけが実行できません。デプロイジョブの最初にSecretsの存在を確認し、未登録の名前をエラーに表示します。
+値はログへ出力しません。登録後はActionsの`Madogiwa Studio CI/CD`を`main`で手動実行すると再検証できます。
 
 ## 別リポジトリから利用する
 

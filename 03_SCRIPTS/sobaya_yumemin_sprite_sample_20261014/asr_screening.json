@@ -1,0 +1,75 @@
+{
+  "note": "Automated screening only; not listening verification",
+  "lines": [
+    {
+      "who": "yumemin",
+      "text": "今日は、そば屋さんと立ち絵のテストみん！",
+      "pose": "normal",
+      "audio": "line01_yumemin_min.wav",
+      "start": 18,
+      "frames": 82,
+      "duration": 2.730667,
+      "recognized": "今日はそば屋さんと立ちへのテストミン"
+    },
+    {
+      "who": "sobaya",
+      "text": "表情も、ポーズも、ばっちりです！",
+      "pose": "happy",
+      "audio": "line02_sobaya.wav",
+      "start": 112,
+      "frames": 85,
+      "duration": 2.833333,
+      "recognized": "表情のポーズもバッチリです"
+    },
+    {
+      "who": "yumemin",
+      "text": "でも、なんでビールを持ってるみん？",
+      "pose": "beer_hold",
+      "audio": "line03_yumemin_min.wav",
+      "start": 209,
+      "frames": 74,
+      "duration": 2.464,
+      "recognized": "でも、なんでビールを持ってる?"
+    },
+    {
+      "who": "sobaya",
+      "text": "解説には、水分補給が大切です！",
+      "pose": "beer_hold",
+      "audio": "line04_sobaya.wav",
+      "start": 295,
+      "frames": 89,
+      "duration": 2.942063,
+      "recognized": "解説には水分補給が大切です"
+    },
+    {
+      "who": "yumemin",
+      "text": "それ、水じゃなくてビールみん！",
+      "pose": "worry",
+      "audio": "line05_yumemin_min.wav",
+      "start": 396,
+      "frames": 65,
+      "duration": 2.165333,
+      "recognized": "それ、水じゃなくてビールミン"
+    },
+    {
+      "who": "sobaya",
+      "text": "細かいことは気にせず、乾杯！",
+      "pose": "beer_cheers",
+      "audio": "line06_sobaya.wav",
+      "start": 473,
+      "frames": 80,
+      "duration": 2.654979,
+      "recognized": "細かいことは気にせず、乾杯!"
+    },
+    {
+      "who": "yumemin",
+      "text": "仕事は、乾杯してからみん！",
+      "pose": "beer_cheers",
+      "audio": "line07_yumemin_min.wav",
+      "start": 565,
+      "frames": 68,
+      "duration": 2.261333,
+      "recognized": "仕事は乾杯してからみん"
+    }
+  ]
+}

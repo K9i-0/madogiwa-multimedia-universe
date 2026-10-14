@@ -93,3 +93,9 @@ Seedance動画のセリフ（台本）作成やIrodori-TTSプロンプト（capt
 前後無音は声質の固定値とせず、会話の間に合わせる。解説の採用例は `prePhonemeLength=.15` / `postPhonemeLength=.55`、お嬢様部の短い発話枠では `.09` / `.12`。速度1.1は合成クエリで指定し、生成後の一律早送りで合わせない。字幕本文と読みを分け、「方（人）」→「かた」、「その間」→「そのあいだ」等は文脈に応じて指定する。全文クエリ・エンジン版・話者ID・音声SHAを制作記録に残す。
 
 再現例：`03_SCRIPTS/sobaya_kikou5_flow_20261010/voice_usagi_record.json`、`03_SCRIPTS/87_mado_kizoku/usagi_query.json`。読みは生成クエリと試聴で確認し、ASR一致だけで聴感を合格にしない。
+
+### ゆめみんの解説音声（2026-10-14採用）
+
+ユーザーが雨晴はう版を採用し、音声に問題ないことを確認。解説・立ち絵の会話用は **VOICEVOX 雨晴はう・ノーマル（style10）**、speedScale **1.15**、pitchScale **0**、intonationScale/volumeScale **1.0**。Engine 0.25.1。生成24kHz、完成ミックス48kHz mono・-18 LUFS。サンプルの前後無音 .09/.12 秒は作品の間に合わせて変更可。語尾は「〜みん！」（疑問文「〜みん？」）。旧ずんだもんは比較用。必要クレジット `VOICEVOX:雨晴はう`。
+
+採用音声と再現記録：`03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/voice_adoption_hau.json`。採用済み4行はエピソード直下。今回の立ち絵更新では声・音量・発話尺を変更しない。

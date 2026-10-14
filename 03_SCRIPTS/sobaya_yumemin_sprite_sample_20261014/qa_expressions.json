@@ -1,0 +1,68 @@
+{
+  "durationFrames": 672,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "fullDecode": "passed",
+  "audioPCMIdenticalToAcceptedHau": true,
+  "mouthMotion": [
+    {
+      "pose": "normal",
+      "openFrames": 44,
+      "stateChanges": 16
+    },
+    {
+      "pose": "normal",
+      "openFrames": 47,
+      "stateChanges": 20
+    },
+    {
+      "pose": "beer_cheers",
+      "openFrames": 36,
+      "stateChanges": 14
+    }
+  ],
+  "auditoryReview": "User accepted previous Hau audio; this revision preserves audio",
+  "frames": [
+    [
+      "yumemin_happy_0",
+      38
+    ],
+    [
+      "normal_open",
+      122
+    ],
+    [
+      "normal_closed",
+      128
+    ],
+    [
+      "yumemin_x_2",
+      230
+    ],
+    [
+      "normal_open",
+      303
+    ],
+    [
+      "normal_closed",
+      309
+    ],
+    [
+      "yumemin_angry_4",
+      415
+    ],
+    [
+      "beer_cheers_open",
+      480
+    ],
+    [
+      "beer_cheers_closed",
+      486
+    ],
+    [
+      "yumemin_blush_6",
+      583
+    ]
+  ]
+}

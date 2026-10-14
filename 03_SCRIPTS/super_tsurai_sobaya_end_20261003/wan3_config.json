@@ -1,0 +1,29 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "local_madogiwa_member_japanese",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 3,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "product_super_try.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 3,
+    "audio": true,
+    "seed": 310033,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_end_480p.mp4",
+  "postproduction": "remotion"
+}

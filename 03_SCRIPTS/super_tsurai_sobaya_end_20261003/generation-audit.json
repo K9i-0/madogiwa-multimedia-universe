@@ -1,0 +1,22 @@
+{
+  "task_id": "1baf39d5-a3c3-4497-b564-d2f1a9e68581",
+  "model": "wan3.0-video",
+  "seed": 310033,
+  "generated_resolution": "480P",
+  "generation_seconds": 3,
+  "estimated_cost_usd": 0.105,
+  "output": "final_remotion_sobaya_end.mp4",
+  "composition": "SobayaEnd",
+  "frames": 90,
+  "fps": 30,
+  "resolution": [
+    1280,
+    720
+  ],
+  "call_start_frame": 6,
+  "call_sha256": "e10a6940081c93716d584b08cc18deeb577d56ce184e9c0d4b96368aa2cf6d39",
+  "visual_audit": "Mask remains worn; drink/lower/present sequence present. Logo placed upper right to avoid can. Can fine lettering varies slightly; small localized T-shirt chest highlights remain despite prompt.",
+  "decode": "passed",
+  "audio_listening_verified": false,
+  "adopted": false
+}

@@ -1,0 +1,18 @@
+{
+  "name": "super-tsurai-sobaya-end",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.tsx SobayaEnd ../final_remotion_sobaya_end.mp4 --codec h264"
+  },
+  "dependencies": {
+    "remotion": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/react": "19.0.0"
+  }
+}

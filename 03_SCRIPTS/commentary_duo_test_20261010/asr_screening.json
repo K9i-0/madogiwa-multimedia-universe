@@ -1,0 +1,59 @@
+{
+  "note": "Automated screening only; not listening verification",
+  "lines": [
+    {
+      "who": "takosan",
+      "text": "今日は、立ち絵を使った解説のテストです。",
+      "mood": "normal",
+      "audio": "line01_takosan.wav",
+      "seed": 43,
+      "durationScale": "1",
+      "recognized": "今日は、立ち絵を使った解説のテストです。"
+    },
+    {
+      "who": "yametaro",
+      "text": "ワイらも、ついに解説する側になったんやな。",
+      "mood": "normal",
+      "audio": "line02_yametaro.wav",
+      "seed": 7,
+      "durationScale": "0.70",
+      "recognized": "ワイラーもついに解説する側になったんやな"
+    },
+    {
+      "who": "takosan",
+      "text": "話すと口が動いて、表情も変わります。",
+      "mood": "happy",
+      "audio": "line03_takosan.wav",
+      "seed": 43,
+      "durationScale": "1",
+      "recognized": "話すと口が動いて、表情も変わります。"
+    },
+    {
+      "who": "yametaro",
+      "text": "おお、ちゃんと動いとる。仕事してるみたいや。",
+      "mood": "surprise",
+      "audio": "line04_yametaro.wav",
+      "seed": 7,
+      "durationScale": "0.70",
+      "recognized": "おーちゃんと動いてる仕事をしてるみたいや"
+    },
+    {
+      "who": "takosan",
+      "text": "見た目が動いても、仕事が進むとは限りません。",
+      "mood": "normal",
+      "audio": "line05_takosan.wav",
+      "seed": 43,
+      "durationScale": "1",
+      "recognized": "見た目が動いても仕事が進むとは限りません"
+    },
+    {
+      "who": "yametaro",
+      "text": "初回から、ワイに厳しすぎるやろ。",
+      "mood": "surprise",
+      "audio": "line06_yametaro.wav",
+      "seed": 7,
+      "durationScale": "0.70",
+      "recognized": "初回からワイに厳しすぎるやろ"
+    }
+  ]
+}

@@ -4,12 +4,12 @@
 ■ チャプター
 00:00 この一体を、動かして使う
 01:10 3Dの前に、回転動画
-03:25 四方向を選んで、Tripoへ
-04:31 料金と、道具の使い分け
-06:26 生成したあとが、本人らしさ
-07:36 形に、骨と動作を付ける
-08:43 Web・動画・AR・ゲームへ
-10:24 まず一体、使ってみる
+03:26 四方向を選んで、Tripoへ
+04:56 料金と、道具の使い分け
+06:51 生成したあとが、本人らしさ
+08:00 形に、骨と動作を付ける
+09:08 Web・動画・AR・ゲームへ
+10:49 まず一体、使ってみる
 
 ■ 公式サイトで3Dモデルを触る
 そば屋のページの「3Dで見る」から回転・拡大・キャラクター切替を試せます。
@@ -25,6 +25,18 @@ https://github.com/K9i-0/madogiwa-multimedia-universe
 本動画の台本・編集コード：
 https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/03_SCRIPTS/youtube_3d_character_workflow_20261014
 元プロジェクト（そば屋さん）：https://github.com/sobaya-0141/Seedance_Madogiwa
+
+■ Codexへ渡す制作資料と依頼例
+動画の生成、四方向画像の切り出し、Tripoでの3D生成と保存まで、Codexにまとめて依頼しています。次のリポジトリと制作手順のリンクを、自分のキャラクターシートと一緒に渡すと進め方を伝えやすくなります。
+リポジトリ：
+https://github.com/K9i-0/madogiwa-multimedia-universe
+そば屋の制作手順・実例：
+https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/04_GAME_ASSETS/3d/SOBAYA_V3_LESSONS.md
+
+依頼例：
+「このリポジトリの3D制作手順を参考に、添付のキャラクターシートから3Dモデルを作って。回転動画は縦長・1080pで。動画の生成、実際の向きを見た四方向画像の切り出し、Tripoでの3D生成とモデルの保存まで進めて。」
+
+制作資料にある720Pは当時の実績です。新しく回転素材を作る場合の1080p指定は、依頼文にも添えてください。WanとTripoそれぞれのAPIキー・支払い設定は必要です。できた画像とモデルが意図した姿か、人が確認します。
 
 ■ Tripo
 Studio料金：https://www.tripo3d.ai/pricing

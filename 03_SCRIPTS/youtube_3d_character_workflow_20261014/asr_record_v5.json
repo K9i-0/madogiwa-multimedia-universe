@@ -1,0 +1,79 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "note": "No expected-text prompt; independent ASR screening, not subjective listening.",
+  "utterances": [
+    {
+      "id": "u039",
+      "expected": "はい。このキャラクターシートを渡して、Codexに頼んで、Wanでぐるっと回転する動画を作りました。",
+      "spoken": "はい。このキャラクターシートを渡して、コーデックスに頼んで、ワンでぐるっと回転する動画を作りました。",
+      "recognized": "はい、このキャラクターシートを渡してコーデックスに頼んでワンでぐるっと回転する動画を作りました。",
+      "generationFile": "v5_u039_e3d09b2ea991.wav",
+      "audio": "clip_v5_u039_takosan.wav",
+      "audioSha256": "e03fefb308afbdbc476e0e4b1f85ed2c629c8693faadefd9a67d10be4e53092c"
+    },
+    {
+      "id": "u055",
+      "expected": "動画ができたら、正面、左、背面、右の四枚を切り出すところも、Codexに頼みます。",
+      "spoken": "動画ができたら、正面、左、背面、右の四枚を切り出すところも、コーデックスに頼みます。",
+      "recognized": "動画ができたら、正面、左、背面、右の4枚を切り出すところもコーデックスに頼みます。",
+      "generationFile": "v5_u055_49933610f337.wav",
+      "audio": "clip_v5_u055_takosan.wav",
+      "audioSha256": "b594677ff080bd9b2bf0cf67b26a90e3c508171d952cdec415009dff3f8aef37"
+    },
+    {
+      "id": "r058",
+      "expected": "動画を作るのも、四枚を切り出すのも、まとめて頼めるんやな？",
+      "spoken": "動画を作るのも、四枚を切り出すのも、まとめて頼めるんやな？",
+      "recognized": "動画を作るのも4枚を切り出すのもまとめて頼めるんやな",
+      "generationFile": "v5_r058_08cd9d94c27a.wav",
+      "audio": "clip_v5_r058_yametaro.wav",
+      "audioSha256": "4def93ed821e5668dc5a31ce039c6ceb17473712974ef17b29771005389dd7d4"
+    },
+    {
+      "id": "r059",
+      "expected": "はい。回転動画の生成から、四枚の切り出し、Tripoでの3D生成と保存まで、まとめてCodexに依頼しています。",
+      "spoken": "はい。回転動画の生成から、四枚の切り出し、トリポでのスリーディー生成と保存まで、まとめてコーデックスに依頼しています。",
+      "recognized": "はい、回転動画の生成から4枚の切り出し、トリポでの3D生成と保存までまとめてコーデックスに依頼しています。",
+      "generationFile": "v5_r059_2730729b7b3e.wav",
+      "audio": "clip_v5_r059_takosan.wav",
+      "audioSha256": "e545b01a6724b1badd4f99b3d1a2341e95c145731eb2fd73123edd8c8876bf9a"
+    },
+    {
+      "id": "p059",
+      "expected": "概要欄の窓際族リポジトリのリンクを渡して、「この制作手順を参考に、このキャラクターを3Dにして」と頼むと、始めやすいです。",
+      "spoken": "概要欄の窓際族リポジトリのリンクを渡して、「この制作手順を参考に、このキャラクターをスリーディーにして」と頼むと、始めやすいです。",
+      "recognized": "概要欄の窓際属リポジトリのリンクを渡して、この制作手順を参考に、このキャラクターを3Dにして、と頼むと始めやすいです。",
+      "generationFile": "v5_p059_01c32aab4f3d.wav",
+      "audio": "clip_v5_p059_takosan.wav",
+      "audioSha256": "aa5eec095bb2f2a7ca20db1abbb2684321494db6c261fb2f08d6234f71697010"
+    },
+    {
+      "id": "p060",
+      "expected": "作り方のメモごと渡すんやな。それなら頼みやすいわ。",
+      "spoken": "作り方のメモごと渡すんやな。それなら頼みやすいわ。",
+      "recognized": "作り方のメモごと渡すんやなそれなら頼みやすいわ",
+      "generationFile": "v5_p060_e138f4f824e6.wav",
+      "audio": "clip_v5_p060_yametaro.wav",
+      "audioSha256": "70ab96b41fc5e644e60cdd3083bf82fc94e556b3ac38e825315216c6443251d7"
+    },
+    {
+      "id": "r060",
+      "expected": "APIは、CodexからWanやTripoを呼ぶための窓口です。最初に、それぞれのAPIキーと支払い設定を用意します。",
+      "spoken": "エーピーアイは、コーデックスからワンやトリポを呼ぶための窓口です。最初に、それぞれのエーピーアイキーと支払い設定を用意します。",
+      "recognized": "APIは、コーデックスからWANやTRIPを呼ぶための窓口です。最初に、それぞれのAPIキーと支払い設定を用意します。",
+      "generationFile": "v5_r060_86e02077e1f5.wav",
+      "audio": "clip_v5_r060_takosan.wav",
+      "audioSha256": "02078982e54f224ddb1f70b7879b6045719c7be94cb4a2d65ae04fd1717adcc9"
+    }
+  ],
+  "review": {
+    "reviewedUtterances": 7,
+    "contentOmissionsOrAdditionsDetected": false,
+    "orthographicDifferences": [
+      "窓際族 → 窓際属 (同音)",
+      "Codex → コーデックス",
+      "Tripo → トリポ / TRIP (保存queryはトリポ)"
+    ],
+    "subjectiveListening": false
+  }
+}

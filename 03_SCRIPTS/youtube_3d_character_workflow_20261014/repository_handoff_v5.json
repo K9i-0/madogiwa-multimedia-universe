@@ -1,0 +1,20 @@
+{
+  "repositoryUrl": "https://github.com/K9i-0/madogiwa-multimedia-universe",
+  "workflowFile": "04_GAME_ASSETS/3d/SOBAYA_V3_LESSONS.md",
+  "workflowUrl": "https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/04_GAME_ASSETS/3d/SOBAYA_V3_LESSONS.md",
+  "workflowSha256": "67156f0925248d719e56d3d64e566407af10128e70a6a1f512ede5273055198b",
+  "delegateToCodex": [
+    "Wan回転動画の生成",
+    "実際の向きを見て4方向の画像を切り出す",
+    "Tripoで3D生成",
+    "モデルを保存"
+  ],
+  "viewerProvides": [
+    "キャラクターシート",
+    "制作リポジトリと手順のリンク",
+    "縦長・1080pの生成指定"
+  ],
+  "initialSetup": "Wan/TripoそれぞれのAPIキーと支払い設定",
+  "humanReview": "できた画像とモデルが意図した姿か確認",
+  "historical720P": "実績資料の720Pは保持し、今回の推奨・依頼例は1080pと明示"
+}

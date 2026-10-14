@@ -1,0 +1,33 @@
+{
+  "video": "final_remotion_workflow_shorts_9x16.mp4",
+  "sha256": "83373122e48a61c4b3672bf30f3096ebd1b981d7bb03c0e7769db2d56cf97d76",
+  "source": "final_remotion_ai_video_workflow_v12.mp4",
+  "sourceFrames": [
+    0,
+    1707
+  ],
+  "durationSeconds": 59.9,
+  "frameCount": 1797,
+  "resolution": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "audioCodec": "aac",
+  "audioSampleRate": "48000",
+  "cta": "続きは関連動画から",
+  "relatedVideoId": "RMWefLVS9vQ",
+  "checks": {
+    "typecheck": "passed",
+    "fullDecode": "passed",
+    "visualReview": "18 extracted frames: all 13 caption cards, opening, cut and end card; no clipping or duplicate captions",
+    "audio": {
+      "comparisonDurationSeconds": 56.5,
+      "correlation": 0.9997954597138945,
+      "method": "decoded mono 16kHz PCM; original adopted v12 vs reencoded Shorts",
+      "listened": false
+    },
+    "endCreditRoll": false
+  },
+  "uploadStatus": "not_uploaded"
+}

@@ -26,7 +26,7 @@ const ClipPlayer: React.FC<{clip: Clip}> = ({clip}) => {
   </AbsoluteFill>;
 };
 
-export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({manifest, audioSrc='mixed.wav'}) => {
+export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string; hideCaptions?: boolean}> = ({manifest, audioSrc='mixed.wav', hideCaptions=false}) => {
   const m=manifest ?? rawManifest as Manifest;
   const f = useCurrentFrame();
   const active = m.dialogue.find(d => f >= d.startFrame && f < d.startFrame + d.durationInFrames);
@@ -49,7 +49,7 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
         const mood=((expressions as Record<string,Record<string,Mood>>)[previous?.id??'v000']??{})[who]??'normal';
         return <DuoSprite key={who} who={who} speaking={speaking} open={open} mood={mood} local={local}/>;
       })}
-      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 42, minHeight: 108, background:'#fff', borderTop:'1px solid #cbd4ce', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? captionColors.yametaro : captionColors.takosan, WebkitTextStroke: '3px #fff', paintOrder: 'stroke fill', textShadow: 'none'}}>{caption}</div></div>}
+      {active && !hideCaptions && <div style={{position: 'absolute', left: 245, right: 245, bottom: 42, minHeight: 108, background:'#fff', borderTop:'1px solid #cbd4ce', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? captionColors.yametaro : captionColors.takosan, WebkitTextStroke: '3px #fff', paintOrder: 'stroke fill', textShadow: 'none'}}>{caption}</div></div>}
     </>}
     </SpreadsheetFrame>
     <AbsoluteFill style={{background: paper, opacity: interpolate(f, [m.composition.durationInFrames - 30, m.composition.durationInFrames - 1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}/>

@@ -1,0 +1,510 @@
+{
+  "file": "final_remotion_tripo_workflow_v3.mp4",
+  "bytes": 41099670,
+  "sha256": "1f1c0ab1ea9ef8ea7228add913f95a20068f7a3eb398811d1f184eedf298371d",
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "videoFrames": 19048,
+  "durationSeconds": 634.9333333333333,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "fullDecode": "pass",
+  "repeatedHeaderBandScan": {
+    "frames": 19048,
+    "anomalies": []
+  },
+  "blackFrameScan": {
+    "frames": 19048,
+    "anomalies": []
+  },
+  "representativeFrames": {
+    "opening": 42,
+    "old": 256,
+    "sobaya_intro": 629,
+    "promise": 1168,
+    "hosts": 1433,
+    "takosan_intro": 1744,
+    "pipeline": 1844,
+    "sheet": 2149,
+    "turn": 2696,
+    "consistency": 3239,
+    "portrait": 4379,
+    "wan_link": 4768,
+    "video_models": 5153,
+    "views": 5546,
+    "codex_request": 6086,
+    "setup": 6494,
+    "ai_handoff": 6770,
+    "tako_views": 7168,
+    "cost": 7541,
+    "cost_video": 7635,
+    "cost_tripo": 7973,
+    "cost_total": 8296,
+    "plans": 8773,
+    "api": 9224,
+    "agents": 9646,
+    "cost_time": 10070,
+    "roles": 10615,
+    "sobaya_raw": 11005,
+    "blender": 11088,
+    "face_fix": 11398,
+    "tako_fix": 11691,
+    "fuku": 12447,
+    "rig_compare": 13088,
+    "rig": 13458,
+    "weights": 14132,
+    "walk": 14386,
+    "tako_bones": 14748,
+    "website": 15111,
+    "three": 15945,
+    "remotion": 16134,
+    "ar": 16843,
+    "game_unity": 17310,
+    "game": 17564,
+    "uses": 17932,
+    "links": 18476,
+    "ending": 18698,
+    "sobaya_intro_cut_before": 598,
+    "sobaya_intro_cut_after": 599,
+    "turn_cut_before": 2665,
+    "turn_cut_after": 2666,
+    "views_cut_before": 5515,
+    "views_cut_after": 5516,
+    "rig_cut_before": 13427,
+    "rig_cut_after": 13428,
+    "website_cut_before": 15080,
+    "website_cut_after": 15081,
+    "remotion_cut_before": 16103,
+    "remotion_cut_after": 16104,
+    "ending_cut_before": 18667,
+    "ending_cut_after": 18668,
+    "hand_cue": 16461,
+    "close_cue": 16512,
+    "pelvis_cue": 14270,
+    "dollar_cue": 7746,
+    "yen_cue": 7905,
+    "site_held": 15681,
+    "face_compare": 11458,
+    "game_record": 17684,
+    "ending_joke": 18928,
+    "ending_last": 19003,
+    "plan_studio": 8914,
+    "plan_api": 9034,
+    "plans_separate": 9485,
+    "human_check": 6800,
+    "unity_example": 17340,
+    "acting_awkward": 429,
+    "acting_surprise": 775,
+    "acting_bored": 18797,
+    "acting_punchline": 18934,
+    "analogy_blueprint": 2588,
+    "analogy_turn": 4254,
+    "analogy_specialists": 10645,
+    "analogy_rig": 13758,
+    "ten_limbs": 11969,
+    "eight_limbs": 12136,
+    "framing_join_0_before": 1713,
+    "framing_join_0_start": 1714,
+    "framing_join_0_last": 1813,
+    "framing_join_0_after": 1814,
+    "framing_join_1_before": 11660,
+    "framing_join_1_start": 11661,
+    "framing_join_1_last": 12416,
+    "framing_join_1_after": 12417,
+    "framing_join_2_before": 14717,
+    "framing_join_2_start": 14718,
+    "framing_join_2_last": 15080,
+    "framing_join_2_after": 15081
+  },
+  "subjectiveListening": false,
+  "acceptedNewVoices": 16,
+  "reusedV2Voices": 77,
+  "dialogueCount": 93,
+  "captionPages": 127,
+  "captionBoundaries": 34,
+  "captionWarnings": [],
+  "officialSourceAssets": 14,
+  "audioMeasurements": {
+    "source": "Final MP4 AAC, FFmpeg loudnorm analysis only",
+    "integratedLUFS": -17.9,
+    "truePeakDBTP": -3.69,
+    "loudnessRangeLU": 3.3
+  },
+  "visualReview": {
+    "uniqueLayouts": 46,
+    "extractedFinalFrames": 97,
+    "notes": "85 representative frames reviewed before framing repair; 12 added replacement boundaries and 4 corrected Takosan cuts reviewed after repair. Critical text/model/acting cuts also reviewed at 1280x720. Not continuous real-time viewing."
+  },
+  "actingValidation": {
+    "pass": true,
+    "issues": [],
+    "dialogueCount": 93,
+    "composition": {
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "durationInFrames": 19048
+    },
+    "sourceManifestSha256": "1655e0800007af590e0d5a78957fe15d32928c7ea987b2737eff5ffeab819676",
+    "sourceDialogueSha256": "1695f90af7d65ddea4b81231272754e21a4f98bd38205bc928b8e148a043daff",
+    "allTextsAndSpeakersMatch": true,
+    "assetCountVerified": 32,
+    "beatCount": 116,
+    "motionCounts": {
+      "tilt": 15,
+      "nod": 30,
+      "hop": 2,
+      "recoil": 2
+    },
+    "corrections": [
+      "u081/s117の最終本文を一致",
+      "u002 T傾きを36→24fに短縮し語尾までに終了",
+      "r061 Tうなずきを28→26fに短縮し語尾までに終了",
+      "u082 Y増量への傾きを80f、T反応を94fへ移動し尺内に収めた"
+    ],
+    "visualReview": {
+      "eightTakosanMouthlessExpressions": "out/acting_v3_takosan_mouthless_css.png",
+      "reviewedAtEnlargedFaceSize": true,
+      "mouthMarksAbsent": true,
+      "noObviousPatchEdges": true
+    },
+    "scope": "ID・本文・話者・全キュー・全動作の尺内終了・既存32素材のSHAを照合。聴覚評価は含まない。"
+  },
+  "sourceHashes": {
+    "src/edit-manifest-v3.json": "1655e0800007af590e0d5a78957fe15d32928c7ea987b2737eff5ffeab819676",
+    "dialogue-v3.json": "1695f90af7d65ddea4b81231272754e21a4f98bd38205bc928b8e148a043daff",
+    "acting-plan-v3.json": "a4c92a75c8780bec0f4895df0c76d22d16fd0a961bcc8ff0606149e11486aa92"
+  },
+  "framingCorrection": {
+    "reason": "Moving Takosan foot touched lower viewport edge; add 10% camera margin in all three matching views.",
+    "cameraZoom": 0.9,
+    "replacedFrameRangesEndExclusive": [
+      [
+        1714,
+        1814
+      ],
+      [
+        11661,
+        12417
+      ],
+      [
+        14718,
+        15081
+      ]
+    ],
+    "baseSha256": "a962263e5450173c449cd98ac922ac3d020058e982b9bdb0c288af34cd385ebb",
+    "expectedFrames": 19048,
+    "encoding": "libx264 CRF16 yuv420p, 30fps; AAC from unchanged source mix",
+    "motionFrameBounds": [
+      {
+        "rangeIndex": 0,
+        "frames": 100,
+        "minimumDarkModelBottomMarginPixels": 14,
+        "underEightPixels": []
+      },
+      {
+        "rangeIndex": 1,
+        "frames": 756,
+        "minimumDarkModelBottomMarginPixels": 14,
+        "underEightPixels": []
+      },
+      {
+        "rangeIndex": 2,
+        "frames": 363,
+        "minimumDarkModelBottomMarginPixels": 18,
+        "underEightPixels": []
+      }
+    ]
+  },
+  "avTimingCheck": {
+    "id": "u110",
+    "source": "clip110_line1_yametaro.wav",
+    "sha256": "9efe6c215d85cb16590021ed3ba32c29859d399c3c283f95c7b300a0ac41bebe",
+    "durationSeconds": 4.28,
+    "method": "Local cached openai/whisper-small, CPU eager cross-attention token alignment, Japanese word timestamps",
+    "subjectiveListening": false,
+    "transcript": "字幕を出すタイミングで手を振らせたり説明している場所へ寄ったりできるのか",
+    "alignment": {
+      "chunks": [
+        {
+          "text": "字",
+          "timestamp": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "text": "幕",
+          "timestamp": [
+            0.0,
+            0.28
+          ]
+        },
+        {
+          "text": "を",
+          "timestamp": [
+            0.28,
+            0.46
+          ]
+        },
+        {
+          "text": "出",
+          "timestamp": [
+            0.46,
+            0.58
+          ]
+        },
+        {
+          "text": "す",
+          "timestamp": [
+            0.58,
+            0.7
+          ]
+        },
+        {
+          "text": "タ",
+          "timestamp": [
+            0.7,
+            0.86
+          ]
+        },
+        {
+          "text": "イ",
+          "timestamp": [
+            0.86,
+            0.94
+          ]
+        },
+        {
+          "text": "ミ",
+          "timestamp": [
+            0.94,
+            1.0
+          ]
+        },
+        {
+          "text": "ング",
+          "timestamp": [
+            1.0,
+            1.18
+          ]
+        },
+        {
+          "text": "で",
+          "timestamp": [
+            1.18,
+            1.32
+          ]
+        },
+        {
+          "text": "手",
+          "timestamp": [
+            1.32,
+            1.48
+          ]
+        },
+        {
+          "text": "を",
+          "timestamp": [
+            1.48,
+            1.6
+          ]
+        },
+        {
+          "text": "振",
+          "timestamp": [
+            1.6,
+            1.7
+          ]
+        },
+        {
+          "text": "ら",
+          "timestamp": [
+            1.7,
+            1.8
+          ]
+        },
+        {
+          "text": "せ",
+          "timestamp": [
+            1.8,
+            1.9
+          ]
+        },
+        {
+          "text": "た",
+          "timestamp": [
+            1.9,
+            2.04
+          ]
+        },
+        {
+          "text": "り",
+          "timestamp": [
+            2.04,
+            2.24
+          ]
+        },
+        {
+          "text": "説",
+          "timestamp": [
+            2.24,
+            2.5
+          ]
+        },
+        {
+          "text": "明",
+          "timestamp": [
+            2.5,
+            2.7
+          ]
+        },
+        {
+          "text": "して",
+          "timestamp": [
+            2.7,
+            2.82
+          ]
+        },
+        {
+          "text": "いる",
+          "timestamp": [
+            2.82,
+            2.94
+          ]
+        },
+        {
+          "text": "場",
+          "timestamp": [
+            2.94,
+            3.06
+          ]
+        },
+        {
+          "text": "所",
+          "timestamp": [
+            3.06,
+            3.18
+          ]
+        },
+        {
+          "text": "へ",
+          "timestamp": [
+            3.18,
+            3.28
+          ]
+        },
+        {
+          "text": "寄",
+          "timestamp": [
+            3.28,
+            3.38
+          ]
+        },
+        {
+          "text": "った",
+          "timestamp": [
+            3.38,
+            3.52
+          ]
+        },
+        {
+          "text": "り",
+          "timestamp": [
+            3.52,
+            3.62
+          ]
+        },
+        {
+          "text": "でき",
+          "timestamp": [
+            3.62,
+            3.74
+          ]
+        },
+        {
+          "text": "る",
+          "timestamp": [
+            3.74,
+            3.94
+          ]
+        },
+        {
+          "text": "の",
+          "timestamp": [
+            3.94,
+            4.02
+          ]
+        },
+        {
+          "text": "か",
+          "timestamp": [
+            4.02,
+            4.14
+          ]
+        }
+      ]
+    },
+    "visualCuesSeconds": {
+      "hand": 1.3,
+      "cameraClose": 3.2
+    },
+    "reuseCheck": {
+      "v2Sha256": "9efe6c215d85cb16590021ed3ba32c29859d399c3c283f95c7b300a0ac41bebe",
+      "v3Sha256": "9efe6c215d85cb16590021ed3ba32c29859d399c3c283f95c7b300a0ac41bebe",
+      "actualSha256": "9efe6c215d85cb16590021ed3ba32c29859d399c3c283f95c7b300a0ac41bebe",
+      "sameText": true,
+      "sameWav": true
+    },
+    "priorMeasurementMatch": {
+      "handStartSeconds": 1.32,
+      "waveVerbStartSeconds": 1.6,
+      "explainPlaceStartSeconds": 2.24,
+      "cameraVerbStartSeconds": 3.28,
+      "matchesPreviousMeasurement": true
+    },
+    "cueAssessment": [
+      {
+        "visual": "手振り",
+        "visualStartSeconds": 1.3,
+        "phrase": "手を振らせたり",
+        "phraseRangeSeconds": [
+          1.32,
+          2.24
+        ],
+        "visualLeadSeconds": 0.02,
+        "judgment": "一致範囲。変更不要。"
+      },
+      {
+        "visual": "寄り",
+        "visualStartSeconds": 3.2,
+        "phrase": "寄ったり",
+        "phraseRangeSeconds": [
+          3.28,
+          3.62
+        ],
+        "contextPhraseRangeSeconds": [
+          2.24,
+          3.62
+        ],
+        "visualLeadSeconds": 0.08,
+        "judgment": "場所への言及の末尾から寄りへつながる。明確な不一致なし。変更不要。"
+      }
+    ],
+    "limitations": [
+      "Whisper-smallの機械的な時刻推定で、聴覚評価は未実施。数十ms単位の確定値ではない。",
+      "既存測定値を同一SHAの採用WAVへ適用して照合。親の再計測不要通知より前に開始済みだった確認処理も終了し同じ時刻を得た。",
+      "単一音声の推定時にattention_mask未指定の精度注意警告あり。今回の判定は明らかな同期不一致の有無であり、厳密な音素境界の保証ではない。"
+    ]
+  },
+  "renderSourceHashes": {
+    "src/VisualV3.tsx": "ec944cc547cd12438bcee6246bf525282a9cd94567cf5fd128e9f35082b03aae",
+    "src/ExplainerV3.tsx": "f32aae89afbb4e3cf0bd227b3c3bfa5ca0096bda52efd768c5070d2faec877ed",
+    "src/DuoSpriteV3.tsx": "b35d61639f49638bf34bedb76d9f79ee109eb9a7d2f43389ffbfe93e0c64e806",
+    "src/SpreadsheetFrameV3.tsx": "b6fcf2e3782344d3966b02aa0ed0fef2b9e9aab78488c91b4100836a28059ba7",
+    "src/ModelSceneV2.tsx": "5943b62ecd1cb121cafc78dbc96e641ed10deb5aabd14dfcf2a352355bc69e1f"
+  }
+}

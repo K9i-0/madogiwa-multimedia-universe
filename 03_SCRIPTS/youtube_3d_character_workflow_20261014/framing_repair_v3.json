@@ -1,0 +1,21 @@
+{
+  "reason": "Moving Takosan foot touched lower viewport edge; add 10% camera margin in all three matching views.",
+  "cameraZoom": 0.9,
+  "replacedFrameRangesEndExclusive": [
+    [
+      1714,
+      1814
+    ],
+    [
+      11661,
+      12417
+    ],
+    [
+      14718,
+      15081
+    ]
+  ],
+  "baseSha256": "a962263e5450173c449cd98ac922ac3d020058e982b9bdb0c288af34cd385ebb",
+  "expectedFrames": 19048,
+  "encoding": "libx264 CRF16 yuv420p, 30fps; AAC from unchanged source mix"
+}

@@ -1,0 +1,135 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "method": "Independent ASR with no expected-text prompt; accepted v3 takes only. Homophones/transliteration compared manually; no missing or extra clauses detected.",
+  "subjectiveListening": false,
+  "utterances": [
+    {
+      "id": "s038",
+      "audio": "clip_v3_s038_yametaro.wav",
+      "expected": "いきなり立体を作る前に、まずは設計図をそろえるんやな。",
+      "spoken": "いきなり立体を作る前に、まずは設計図をそろえるんやな。",
+      "recognized": "いきなり立体を作る前にまずは設計図を揃えるんやな",
+      "audioSha256": "bee454e7e4869f3728531b26e220a20dcb29541d7c634ddc893377e4455e8f5f"
+    },
+    {
+      "id": "s046",
+      "audio": "clip_v3_s046_yametaro.wav",
+      "expected": "別々の似顔絵を集めるより、同じ人をぐるっと撮る感じやな。",
+      "spoken": "別々の似顔絵を集めるより、同じ人をぐるっと撮る感じやな。",
+      "recognized": "別々の似顔絵を集めるより同じ人をぐるっと撮る感じやな",
+      "audioSha256": "e1a2e62c44b0959709e277aa8e9859b075765571dcb08f9fdaeceac5e28505f6"
+    },
+    {
+      "id": "r060",
+      "audio": "clip_v3_r060_takosan.wav",
+      "expected": "APIは、CodexからTripoを呼ぶための窓口です。最初にAPIキーとクレジットを用意します。",
+      "spoken": "エーピーアイは、コーデックスからトリポを呼ぶための窓口です。最初にエーピーアイキーとクレジットを用意します。",
+      "recognized": "APIは、コーデックスからトリポを呼ぶための窓口です。最初にAPIキーとクレジットを用意します。",
+      "audioSha256": "816260c1422bba0f5c4aece6510d6e1965dfa7f84af93f64df5ea85fa62f93c6"
+    },
+    {
+      "id": "r062",
+      "audio": "clip_v3_r062_takosan.wav",
+      "expected": "生成から保存まではAIに任せて、人はできた形と使い道を確認します。",
+      "spoken": "生成から保存まではエーアイに任せて、人はできた形と使い道を確認します。",
+      "recognized": "生成から保存まではAIに任せて、人はできた形と使い道を確認します。",
+      "audioSha256": "5ba7c67ca28124b47e3499624c3e36761ccb8d2f693054dee63ccd47259ae036"
+    },
+    {
+      "id": "r061",
+      "audio": "clip_v3_r061_yametaro.wav",
+      "expected": "注文と出来上がりの確認は人がして、裏の手続きはAIに任せるんやな。",
+      "spoken": "注文と出来上がりの確認は人がして、裏の手続きはエーアイに任せるんやな。",
+      "recognized": "注文と出来上がりの確認は人がして裏の手続きはAIに任せるんやな",
+      "audioSha256": "bc14e5b8afc108a98ac23bf19da0085809edfce4faf213e8e294e11f16ff6452"
+    },
+    {
+      "id": "r015",
+      "audio": "clip_v3_r015_yametaro.wav",
+      "expected": "餅は餅屋ってことやな！　形はTripo、仕上げはCodexに頼む、と。",
+      "spoken": "餅は餅屋ってことやな！　形はトリポ、仕上げはコーデックスに頼む、と。",
+      "recognized": "餅は餅屋ってことやな形はトリポ仕上げはコーデックスに頼むと",
+      "audioSha256": "674645a284fe540241b6107a7d00b630e4d440b8616ba883c517053ff7529765"
+    },
+    {
+      "id": "s016",
+      "audio": "clip_v3_s016_takosan.wav",
+      "expected": "はい。得意な道具を組み合わせると、作品にするところへ時間を使えます。",
+      "spoken": "はい。得意な道具を組み合わせると、作品にするところへ時間を使えます。",
+      "recognized": "はい、得意な道具を組み合わせると作品にするところへ時間を使えます",
+      "audioSha256": "d9d03f325b14d33da1c4e3d42123932c90358a73a22eb782b53dbd73b920294a"
+    },
+    {
+      "id": "u081",
+      "audio": "clip_v3_u081_takosan.wav",
+      "expected": "生成したときは、手が二本、足が八本ありました。",
+      "spoken": "生成したときは、手が二本、足が八本ありました。",
+      "recognized": "生成した時は手が2本足が8本ありました",
+      "audioSha256": "7917ef427607dca810d480447b128cfa0c00f16517719d6d7644ae75823cad29"
+    },
+    {
+      "id": "u082",
+      "audio": "clip_v3_u082_yametaro.wav",
+      "expected": "手の二本も足したら、十本やん。ちょっと増量されとる！",
+      "spoken": "手の二本も足したら、十本やん。ちょっと増量されとる！",
+      "recognized": "手の2本も足したら10本やんちょっと増量されとる",
+      "audioSha256": "242de07c212f4fb98f97f5506a5c653e3fd1e4f5734bd443236cc1280dafa832"
+    },
+    {
+      "id": "u083",
+      "audio": "clip_v3_u083_takosan.wav",
+      "expected": "本来は、手が二本、足が六本で、合計八本です。余分な足を直し、配置や丸い手、ローブの内側も整えました。",
+      "spoken": "本来は、手が二本、足が六本で、合計八本です。余分な足を直し、配置や丸い手、ローブの内側も整えました。",
+      "recognized": "本来は手が2本、足が6本で合計8本です。余分な足を直し、配置やまるいて、ローブの内側も整えました。",
+      "audioSha256": "e4311d7bb65bb16dbf9e23bdebe2b751489945c72cb27b9b7421e0164fe995fd"
+    },
+    {
+      "id": "u095",
+      "audio": "clip_v3_u095_yametaro.wav",
+      "expected": "ぬいぐるみに骨組みを入れて、外側の布も一緒についてくるようにする感じか。",
+      "spoken": "ぬいぐるみに骨組みを入れて、外側の布も一緒についてくるようにする感じか。",
+      "recognized": "ぬいぐるみに骨組みを入れて外側の布も一緒についてくるようにする感じか",
+      "audioSha256": "8cd08e32e95d818d72ef7f8fefd120c84a177cb624a7660db1ea6d8a5f441cd6"
+    },
+    {
+      "id": "u096",
+      "audio": "clip_v3_u096_takosan.wav",
+      "expected": "そば屋さんでは、腕を上げたときの変形や、脚を開いたときの股周りを見て調整しました。",
+      "spoken": "そば屋さんでは、腕を上げたときの変形や、脚を開いたときの股周りを見て調整しました。",
+      "recognized": "蕎麦屋さんでは腕を上げた時の変形や足を開いた時の股回りを見て調整しました。",
+      "audioSha256": "ccc7c24c13d80bd4cbb1f45a4800e804780dcb6f762fcf755798c1a7bd0e5c8e"
+    },
+    {
+      "id": "u100",
+      "audio": "clip_v3_u100_takosan.wav",
+      "expected": "私の足には、それぞれ三つの関節を用意しています。この形に合う仕組みが必要ですね。",
+      "spoken": "私の足には、それぞれ三つの関節を用意しています。この形に合う仕組みが必要ですね。",
+      "recognized": "私の足にはそれぞれ3つの関節を用意しています。この形に合う仕組みが必要ですね。",
+      "audioSha256": "55f5c2eff5a9f29880f5dfe2e07bb962e093548e73c43cbb3a232f25ee161c4a"
+    },
+    {
+      "id": "s116",
+      "audio": "clip_v3_s116_takosan.wav",
+      "expected": "ゲームなら、Unityなどのゲームエンジンでも使えます。",
+      "spoken": "ゲームなら、ユニティなどのゲームエンジンでも使えます。",
+      "recognized": "ゲームなら、ユニティなどのゲームエンジンでも使えます。",
+      "audioSha256": "585eefcd9add76fce68ba7758948c4eedb36b88c8003c1c4b530b0d8d6170999"
+    },
+    {
+      "id": "s117",
+      "audio": "clip_v3_s117_yametaro.wav",
+      "expected": "窓際族物語のゲームもUnityで作っとるん？",
+      "spoken": "窓際族物語のゲームもユニティで作っとるん？",
+      "recognized": "窓際属物語のゲームもユニティで作っとるん?",
+      "audioSha256": "b6a0ffc51522d4f21e7e8798bba6c2e351a1047756e7ae7252c73a2d6f75f6d2"
+    },
+    {
+      "id": "s118",
+      "audio": "clip_v3_s118_takosan.wav",
+      "expected": "この例はFlutter Sceneです。投稿者がFlutterエンジニアなので、使い慣れたFlutterでも動かしています。",
+      "spoken": "この例はフラッターシーンです。投稿者がフラッターエンジニアなので、使い慣れたフラッターでも動かしています。",
+      "recognized": "この例はフラッターシーンです。投稿者がフラッターエンジニアなので、使い慣れたフラッターでも動かしています。",
+      "audioSha256": "b0202b9732d3541b297283a6ad861a12ea21429f4292a1a46bd043790655a959"
+    }
+  ]
+}

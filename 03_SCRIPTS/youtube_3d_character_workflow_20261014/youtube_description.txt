@@ -4,12 +4,12 @@
 ■ チャプター
 00:00 この一体を、動かして使う
 01:10 3Dの前に、回転動画
-02:54 四方向を選んで、Tripoへ
-04:33 料金と、道具の使い分け
-06:28 生成したあとが、本人らしさ
-07:32 形に、骨と動作を付ける
-08:37 Web・動画・AR・ゲームへ
-10:09 まず一体、使ってみる
+03:03 四方向を選んで、Tripoへ
+04:10 料金と、道具の使い分け
+06:05 生成したあとが、本人らしさ
+07:15 形に、骨と動作を付ける
+08:22 Web・動画・AR・ゲームへ
+10:01 まず一体、使ってみる
 
 ■ 公式サイトで3Dモデルを触る
 そば屋のページの「3Dで見る」から回転・拡大・キャラクター切替を試せます。
@@ -40,8 +40,27 @@ StudioとAPIの契約・クレジットは別です。
 
 ■ 制作について
 冒頭の「やめ太郎がCodexで作った」は劇中設定で、Blender版そば屋には既存の動画用画像を使っています。
-そば屋は回転動画からの四方向入力、たこさんはシートからの正面・背面入力で制作しました。回転動画も画像の完全な一貫性を保証するものではありません。
-3D実演は採用モデルをThree.jsとRemotionで描画。Web紹介は公式サイトの実操作録画、ARは公式サイトの入口、ゲームは2026年9月7日の開発実録を使用しています。ゲーム録画にはモデル更新前の姿が含まれます。
+そば屋は回転動画からの四方向入力、たこさんはシートからの正面・背面入力で制作しました。回転動画も画像の完全な一貫性を保証するものではありません。たこさんは手2本＋足6本＝計8本。生成時は足だけで8本あったため、余分な2本を手直ししました。
+3D実演は採用モデルをThree.jsとRemotionで描画。Web紹介は公式サイトの実操作録画、ARは公式サイトの入口、ゲームは2026年9月7日の開発実録を使用しています。ゲーム録画にはモデル更新前の姿が含まれます。Unityは一般的なゲームエンジンの例として紹介し、本動画のゲーム実録はFlutter Scene製です。投稿者がFlutterエンジニアのため、Flutterでも3Dを活用しています。
+
+■ 公式ページ引用・サービスロゴ（2026年10月14日取得）
+Tripo Studio料金画面は月払い・USDを選択した実ページです。APIとは別契約・別クレジットです。最新の料金・条件は各公式ページでご確認ください。
+Tripo Studio 料金：https://www.tripo3d.ai/pricing
+Tripo API 料金：https://developers.tripo3d.ai/en/pricing
+Tripo Studio/APIの課金は別：https://docs.tripo3d.ai/other/support-faq.html
+Codex：https://chatgpt.com/codex/
+OpenAI ブランド：https://openai.com/brand/
+Claude Code：https://claude.com/product/claude-code
+Cursor ブランド：https://cursor.com/brand
+Wan：https://wan.video/
+MiniMax H3：https://www.minimax.io/blog/minimax-h3
+Blender ロゴ：https://www.blender.org/about/logo/
+Three.js：https://threejs.org/
+Remotion：https://www.remotion.dev/
+Unity 商標：https://unity.com/legal/branding-trademarks
+Flutter ブランド：https://flutter.dev/brand
+サービスを識別するために公式サイト・公式配布のロゴを使用。CodexにはOpenAIのマークを使用しています。料金画面は可読性のために切り抜いています。
+本動画はUnity Technologiesまたはその関連会社の後援を受けておらず、提携関係もありません。UnityはUnity Technologiesまたはその関連会社の米国その他の国における商標または登録商標です。
 
 ■ 音声
 VOICEVOX:中国うさぎ（たこさん）

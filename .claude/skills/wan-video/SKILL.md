@@ -250,4 +250,6 @@ python3 -u .claude/skills/wan-video/scripts/qwen_wan3_generate.py \
 
 ## 関連する制作知見
 
+四面図を得るための回転動画では、[画像からリグ付き人物への制作判断](../humanoid-motion/references/image-to-rigged-character.md)を参照する。背面の服構造・文字参照、回転不足の判定と側面補完を扱う。尺だけで一周完了と見なさず、採用画像の実角度を確認する。
+
 キャラクターシートから回転動画・四面図を作って全身3D化する場合、またはそば屋v3の顔・リグ・手の向きを修正する場合は、[そば屋v3の制作知見](../../../04_GAME_ASSETS/3d/SOBAYA_V3_LESSONS.md)を参照する。8秒動画の実設定、フレーム選定、Imagegenによる投影テクスチャ修復、輪郭固定、ウェイト修正、手の表裏の誤判定と終盤の回転、画像検証の注意を記録している。

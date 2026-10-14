@@ -41,6 +41,10 @@ description: Remotionで生成済み動画を編集し、正確な日本語字�
 
 ずんだもん・めたん等の解説テンプレは [voicevox-explainer](../voicevox-explainer/SKILL.md) が台本・配役・中央素材・音楽方針を担当する。本スキルはその仕様を受けて実装・書き出し・監査を行う。解説の依頼だけでニュースプリセットを適用しない。
 
+## Three.jsモデルのプレビュー
+
+モデルの回転・動作・装備動画は [Three.jsのアセットプレビュー](../threejs-video/references/asset-preview.md) を参照する。任意時刻の再現、装備解除時の姿勢復元、デコード成功でも残る描画破損の切り分けを扱う。通常の映像編集すべてに3D用の診断やレンダー設定を適用しない。
+
 ## 編集へ回す判断
 
 生成と編集の分担を決めるときは[references/editing-strategy.md](references/editing-strategy.md)を読む。

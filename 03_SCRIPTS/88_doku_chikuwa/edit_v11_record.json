@@ -1,0 +1,73 @@
+{
+  "tasks": [
+    {
+      "name": "interior",
+      "task_id": "0af18597-34dc-4fd6-b52a-e8308bd69bb2",
+      "status": "SUCCEEDED",
+      "duration": 28,
+      "resolution": "480P",
+      "estimated_usd": 0.9800000000000001,
+      "config": "wan3_config_interior_v11.json"
+    },
+    {
+      "name": "rear",
+      "task_id": "d8ec99a0-e2f1-4fe3-b958-3212fd417392",
+      "status": "SUCCEEDED",
+      "duration": 6,
+      "resolution": "480P",
+      "estimated_usd": 0.21000000000000002,
+      "config": "wan3_config_rear_v11.json"
+    },
+    {
+      "name": "collapse",
+      "task_id": "1ba2a23e-d2f9-4f86-ac0e-906d04338db8",
+      "status": "SUCCEEDED",
+      "duration": 6,
+      "resolution": "480P",
+      "estimated_usd": 0.21000000000000002,
+      "config": "wan3_config_collapse_v11.json"
+    }
+  ],
+  "total_estimated_usd": 1.4,
+  "price_source": "https://www.qwencloud.com/models/wan3.0-video",
+  "price_checked": "2026-10-07",
+  "output": "final_remotion_doku_chikuwa_v11.mp4",
+  "composition": "DokuChikuwaInterior",
+  "durationInFrames": 1460,
+  "fps": 30,
+  "audio": "master_v10.wav unchanged",
+  "preserved": [
+    "intro 0–596 frames",
+    "entrance insert 973–992 frames",
+    "endcard 1424–1459 frames",
+    "accepted character voices and 0.5 second pause"
+  ],
+  "rejected": [
+    "interior first shot: duplicate Yotan",
+    "interior third shot: duplicate Fukugyun foreground",
+    "interior collapse: chikuwa reappears",
+    "collapse repair frames after 78: chikuwa reappears",
+    "collapse repair first 60 frames: mask expression drift"
+  ],
+  "adopted": [
+    "interior Fukugyun listener cropped as offscreen Yotan coverage",
+    "rear first 170 frames: real body movement and stable marker",
+    "interior eating/diagnosis: stable marker and no corpse",
+    "collapse frames 60–77 then clean empty-table hold",
+    "Collapse crop: 2x anchored left/bottom, table and falling mug/torso, excludes generated mask-expression drift."
+  ],
+  "limitations": [
+    "Yotan interior speech is offscreen over Fukugyun listener; his face remains in preserved entry scene",
+    "After collapse the empty table is held as a still for 110 frames to exclude prop regeneration",
+    "No claim of visible lip sync; accepted speech samples retained"
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "full_decode": "passed final render",
+    "resolution": "1280x720",
+    "fps": 30,
+    "duration_seconds": 48.683,
+    "visual_review": "No original victim or duplicate characters in selected shots; rear figure moves; marker 1 remains in visible table area; consumed chikuwa excluded after eating."
+  },
+  "imagegen_prompt": "prompt_imagegen_room_v11.txt"
+}

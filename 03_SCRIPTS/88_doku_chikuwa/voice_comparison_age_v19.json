@@ -1,0 +1,32 @@
+{
+  "status": "selection_pending",
+  "candidates": [
+    {
+      "file": "report_40s.wav",
+      "label": "40代",
+      "text": "被害者は赤坂在住、40代の男性。夕食のおでんを食べた直後に倒れたとみられます。",
+      "duration": 7.64,
+      "sha256": "9bebd17e586e8b9f026a3d22dad32ee8d347eb7fa2e42e473a1e74417a5f3828"
+    },
+    {
+      "file": "report_43.wav",
+      "label": "43歳",
+      "text": "被害者は赤坂在住、43歳の男性。夕食のおでんを食べた直後に倒れたとみられます。",
+      "duration": 7.92,
+      "sha256": "a09147e93fdc7459b6446a6bf49f30e6e85528dc02a5d3b1e034d489937c81ee"
+    }
+  ],
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "reference": "report_v5.wav",
+  "reference_sha256": "6b1338350e748495e19ea3c16d76a629e61442c243630ad124bc482c78ea413a",
+  "seed": 100,
+  "caption": "",
+  "cfg_text": 3,
+  "duration_scale": 1,
+  "uncut": true,
+  "attempts_per_candidate": 1,
+  "asr": false,
+  "time_stretch": false,
+  "video_modified": false,
+  "url": "https://kotamacbook-air.tailb7d942.ts.net/doku-chikuwa-voice-v16/age-v19/"
+}

@@ -1,0 +1,57 @@
+{
+  "version": 13,
+  "fps": 30,
+  "duration_frames": 1484,
+  "marker_overlay_removed": true,
+  "video_regenerated": false,
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "seed": 100,
+  "caption": "",
+  "cfg_text": 3,
+  "duration_scale": 1,
+  "uncut": true,
+  "asr_usage": "boundary location only; not pronunciation approval or retry trigger",
+  "tts_attempts_per_line": 1,
+  "time_stretch": false,
+  "outside_audio_patches_pcm_equal": true,
+  "deduction": {
+    "text": "被害者は、大のちくわ好きだった可能性が高い。",
+    "reference": "yotan_reference_v13.wav",
+    "reference_source": "wan3_investigation_v12_480p.mp4",
+    "reference_seconds": [
+      0,
+      4.133333333333334
+    ],
+    "reference_sha256": "65064d16100ab2d8e7db9e26a5cde3114a5c464c8fc246b661ba4045f756ddf8",
+    "target_frames": [
+      684,
+      702
+    ],
+    "source_seconds": [
+      2.7,
+      3.25
+    ],
+    "gain": 1.0302900210335812,
+    "padding_seconds": 0.05,
+    "edge_fade_samples": 96,
+    "replacement": "possibility_patch_v13.wav"
+  },
+  "warning": {
+    "text": "おい！それは証拠品ギュン！",
+    "reference": "warning_v5.wav",
+    "reference_sha256": "1971f643c25c5b879d256947fef22888b942ec90a409ffee14049598cb1750d0",
+    "start_frame": 1056,
+    "duration_seconds": 2.72,
+    "replacement": "warning_v13.wav"
+  },
+  "reaction": {
+    "source": "wan3_aftermath_v12c_potfix_480p.mp4",
+    "keep_frames": [
+      45,
+      132
+    ],
+    "audio_preserved": true
+  },
+  "listening_approval": "user",
+  "precise_lip_sync_verified": false
+}

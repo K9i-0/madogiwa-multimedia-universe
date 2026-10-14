@@ -1,0 +1,59 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "local_madogiwa_member_japanese",
+  "audio_sync_strategy": "local_post_mux_offscreen",
+  "project_duration": 49,
+  "generation_mode": "segmented_over_30",
+  "prompt_file": "prompt_wan3_interior_v11.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_yotan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_fukuchan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "room_master_v11.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "oden_marker1_v9.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "fukugyun_oden_rear_v9.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "crime_scene_outline_v9.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 28,
+    "audio": true,
+    "seed": 881101,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_interior_v11_480p.mp4",
+  "planned_postproduction": {
+    "preserve": "intro evidence, entry insert, natural adopted character audio, half-second pause, endcard",
+    "replace": "all indoor acting footage",
+    "audio": "local accepted Japanese voices; no visible unmasked speaking mouths; Wan room tone and foley only"
+  },
+  "price_check": {
+    "date": "2026-10-07",
+    "usd_per_second": 0.035,
+    "estimated_usd": 0.98,
+    "source": "https://www.qwencloud.com/models/wan3.0-video"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "lines": [
+    {
+      "id": "report",
+      "speaker": "fukuchan",
+      "text": "被害者は赤坂在住、40歳の男性。夕食のおでんを食べた直後に倒れたとみられます。",
+      "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+      "output": "report.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    },
+    {
+      "id": "message",
+      "speaker": "fukuchan",
+      "text": "最期に残した言葉は……ちくわ。",
+      "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+      "output": "message.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    },
+    {
+      "id": "deduction",
+      "speaker": "yotan",
+      "text": "被害者は、大のちくわ好きだった可能性が高い。",
+      "reference": "03_SCRIPTS/88_doku_chikuwa/yotan_reference_v3.wav",
+      "output": "deduction.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    },
+    {
+      "id": "abbreviation",
+      "speaker": "fukuchan",
+      "text": "大のちくわ好き……略すと、だいちくわですね。",
+      "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+      "output": "abbreviation.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    },
+    {
+      "id": "question",
+      "speaker": "yotan",
+      "text": "え、何で略した？",
+      "reference": "03_SCRIPTS/88_doku_chikuwa/yotan_reference_v3.wav",
+      "output": "question.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    },
+    {
+      "id": "warning",
+      "speaker": "fukuchan",
+      "text": "おい！それは証拠品だ！",
+      "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+      "output": "warning.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    },
+    {
+      "id": "reaction",
+      "speaker": "yotan",
+      "text": "えぇ……",
+      "reference": "03_SCRIPTS/88_doku_chikuwa/yotan_reference_v3.wav",
+      "output": "reaction.wav",
+      "seed": 100,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "text_cfg": "default (3)",
+      "duration_scale": 1,
+      "uncut": true
+    }
+  ],
+  "asr_used": false,
+  "retry_count": 0,
+  "pronunciation_review": "user",
+  "output": "final_remotion_doku_chikuwa_v5.mp4",
+  "patches": [
+    {
+      "id": "report",
+      "file": "report_v5.wav",
+      "startFrame": 3,
+      "durationSeconds": 7.72,
+      "sha256": "6b1338350e748495e19ea3c16d76a629e61442c243630ad124bc482c78ea413a",
+      "pcm_exact": true
+    },
+    {
+      "id": "message",
+      "file": "message_v5.wav",
+      "startFrame": 237,
+      "durationSeconds": 4.52,
+      "sha256": "1f06a136f65e3aecf9b3a2cfd80a0d85e2e6cab5a7b1a6d2dda9b5c16454a420",
+      "pcm_exact": true
+    },
+    {
+      "id": "deduction",
+      "file": "deduction_v5.wav",
+      "startFrame": 620,
+      "durationSeconds": 3.96,
+      "sha256": "20feffbca9f6cc0329308688008c764015ad555ab558f2aa9fe9190d93ecb1a5",
+      "pcm_exact": true
+    },
+    {
+      "id": "abbreviation",
+      "file": "abbreviation_v5.wav",
+      "startFrame": 752,
+      "durationSeconds": 4.32,
+      "sha256": "e8c8b5fe2fe331477d0505b4af632dd8876e23fd4934a565cd8c3f73b4cb164f",
+      "pcm_exact": true
+    },
+    {
+      "id": "question",
+      "file": "question_v5.wav",
+      "startFrame": 888,
+      "durationSeconds": 2.16,
+      "sha256": "70de50a875160e3e763fc66f93ac4eed714fed9a8f1c2cadf3753a21f87b3308",
+      "pcm_exact": true
+    },
+    {
+      "id": "warning",
+      "file": "warning_v5.wav",
+      "startFrame": 1169,
+      "durationSeconds": 3.16,
+      "sha256": "1971f643c25c5b879d256947fef22888b942ec90a409ffee14049598cb1750d0",
+      "pcm_exact": true
+    },
+    {
+      "id": "reaction",
+      "file": "reaction_v5.wav",
+      "startFrame": 1447,
+      "durationSeconds": 1.16,
+      "sha256": "aa7ac076cba01a1255bba00348d27e920a13cab673fdc9f4194de2bfef25828e",
+      "pcm_exact": true
+    }
+  ],
+  "extra_intro_frames": 37,
+  "durationInFrames": 1528,
+  "fps": 30,
+  "audio_time_stretch": false,
+  "silence_trimming": false,
+  "sobaya_pcm_unchanged": true
+}

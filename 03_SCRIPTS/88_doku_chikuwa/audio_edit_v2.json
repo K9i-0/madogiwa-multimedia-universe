@@ -1,0 +1,41 @@
+{
+  "input": "wan3_result_v2_480p.mp4",
+  "output": "preview_v2_720p.mp4",
+  "patches": [
+    {
+      "file": "fukugyun_warning_v2.wav",
+      "start": 19.85,
+      "end": 22.55,
+      "duration": 2.56,
+      "gain": 1.1794136342051993,
+      "sha256": "0d1c3f9cd11b278aba4c9814d41df305ed9f4139ae54aeabf7665b7a1fe397b0"
+    },
+    {
+      "file": "sobaya_doku_chikuwa_v2.wav",
+      "start": 24.08,
+      "end": 26.5,
+      "duration": 2.1606666666666667,
+      "gain": 1.2613616324107835,
+      "sha256": "a90cca97edefb4a114bd59d6a97d27d796e63317342e3d44da1ac0b43d64fb7e"
+    }
+  ],
+  "unmodified_pcm_outside_windows": true,
+  "speech_time_stretch": false,
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "text_cfg": 5,
+  "duration_scale": 1,
+  "uncut": true,
+  "sobaya": {
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "seed": 42,
+    "caption": "落ち着いて、自信たっぷりに短く言い切る。",
+    "postprocess": "sobaya_monsterize.sh"
+  },
+  "fukugyun": {
+    "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+    "seed": 100,
+    "caption": "短く鋭く制止する。",
+    "text": "おい！ それはしょうこひんだ！"
+  },
+  "listening_verified": false
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-08",
+  "status": "adopted_reference",
+  "reason": "User prefers original episode88 Yotan voice; v24 not adopted",
+  "canonical": "02_CHARACTERS/Yotan_voice.wav",
+  "sha256": "52d9a8d60e679ea5b9aac0ae7df5541c13ed0c87c86ecaba76011517cc61156b",
+  "seconds": 4.133333333333334,
+  "sampleRate": 48000,
+  "channels": 1,
+  "sourceMaster": "03_SCRIPTS/88_doku_chikuwa/remotion/public/master_v22.wav",
+  "sourceMasterSha256": "25b8d559c4b7852e983fb0a0fe922cc3de18d6a48e3b2f580988240e7e8d78f7",
+  "sourceVideo": "03_SCRIPTS/88_doku_chikuwa/final_remotion_doku_chikuwa_v23.mp4",
+  "sourceVideoSha256": "22ce647eebf70b7fa915a1f9e3313def5245908c8e8452b3a8d257c9e96a5fb6",
+  "sourceFrames": [
+    612,
+    736
+  ],
+  "fps": 30,
+  "transcript": "被害者は、大のちくわ好きだった可能性が高い。",
+  "provenance": "Wan investigation v12 with adopted Irodori repair of 可能性; no post-added music",
+  "processing": "PCM extraction, rounded average of stereo channels; no gain, pitch, speed or silence changes",
+  "previousReference": "03_SCRIPTS/88_doku_chikuwa/voice_ref_yotan.wav",
+  "previousSha256": "9bd48c5577f5c70c7ed1ff7d684cca3f98ed23f24e89a02eee20907b47c1ec0c",
+  "defaultSeed": 100,
+  "defaultModel": "Aratako/Irodori-TTS-v4.1-Small",
+  "evaluation": "User preferred original episode88 voice. Different-sentence synthesis with this new canonical reference has not yet been auditioned.",
+  "monoPcmVerified": true
+}

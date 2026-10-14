@@ -21,7 +21,7 @@
 | そば屋 | `Sobaya_voice.wav`（8.0秒） | 42 | 生成後に`sobaya_monsterize.sh`を適用 | `976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58` |
 | 福ギュン | `Fukuchan_voice.wav`（9.0秒） | 100 | なし（サブseed: 42） | `3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35` |
 | 無職やめたろう | `Yametaro_voice.wav`（7.0秒） | 7 | なし | `ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b` |
-| よーたん | `Yotan_voice.wav`（5.0秒） | 100 | なし | `9bd48c5577f5c70c7ed1ff7d684cca3f98ed23f24e89a02eee20907b47c1ec0c` |
+| よーたん | `Yotan_voice.wav`（4.133秒、88完成版の推理セリフ） | 100 | なし | `52d9a8d60e679ea5b9aac0ae7df5541c13ed0c87c86ecaba76011517cc61156b` |
 | 窓際王おかやまん | `Okayaman_voice.wav`（3.5秒） | 42 | なし | `6939d8da2ce43a33ad672610fb9843481220b37010a968d76a98a0cbaf1ee357` |
 | たこさん | `Takosan_voice.wav`（3.84秒） | 43 | なし | `f0663c8e8cebb5c0b700b8399d2ce22c744ca8b8d68ab3b7e0b5ee016c30741c` |
 | ゆめテレアナウンサー | `YumeTeleAnchor_voice.wav`（3.65秒） | 2026 | ニュース読みcaptionを使用 | `e3cd210adad43fb3338684555e7e066f83cfad2400265c8a73fa55b9f96b753f` |
@@ -93,6 +93,12 @@ Seedance動画のセリフ（台本）作成やIrodori-TTSプロンプト（capt
 前後無音は声質の固定値とせず、会話の間に合わせる。解説の採用例は `prePhonemeLength=.15` / `postPhonemeLength=.55`、お嬢様部の短い発話枠では `.09` / `.12`。速度1.1は合成クエリで指定し、生成後の一律早送りで合わせない。字幕本文と読みを分け、「方（人）」→「かた」、「その間」→「そのあいだ」等は文脈に応じて指定する。全文クエリ・エンジン版・話者ID・音声SHAを制作記録に残す。
 
 再現例：`03_SCRIPTS/sobaya_kikou5_flow_20261010/voice_usagi_record.json`、`03_SCRIPTS/87_mado_kizoku/usagi_query.json`。読みは生成クエリと試聴で確認し、ASR一致だけで聴感を合格にしない。
+
+### よーたんの参照更新（2026-10-08）
+
+ユーザーが88「名探偵ヨータン 残されたちくわの謎」の元の完成版の声を評価し、今後の参照へ採用。`Yotan_voice.wav`は完成v23の推理セリフ「被害者は、大のちくわ好きだった可能性が高い。」。音声正本`03_SCRIPTS/88_doku_chikuwa/remotion/public/master_v22.wav`の612〜735フレーム（30fps、20.4〜24.533秒）から抽出。Wan生成音声が主体で、「可能性」のみ既存のIrodori局所修復を含む。BGMなし・単独話者。左右チャンネルの平均でモノラル化。追加の音量・ピッチ・速度変更なし。既定モデルSmall・seed100は維持。別台本での再生成品質は参照の採用評価と区別する。
+
+旧5秒参照は88の本番入力`03_SCRIPTS/88_doku_chikuwa/voice_ref_yotan.wav`として保持（SHA-256 `9bd48c5577f5c70c7ed1ff7d684cca3f98ed23f24e89a02eee20907b47c1ec0c`）。88完成動画と既存入力・生成履歴は変更しない。抽出・検証記録は`02_CHARACTERS/voice_references/Yotan_reference_20261008.json`。
 
 ### ゆめみんの解説音声（2026-10-14採用）
 

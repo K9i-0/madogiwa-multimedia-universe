@@ -1,0 +1,46 @@
+{
+  "task_id": "c8584195-f0f9-4bed-b0c3-c83114b3255d",
+  "status": "SUCCEEDED",
+  "date": "2026-10-07",
+  "config": "wan3_config_v2.json",
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 881007,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "prompt_sha256": "eede93d19307b2e5a266c2564c3a92e0a89c1c31e6dae4e1267d1b8fc4b734fe",
+  "estimated_usd": 1.05,
+  "submission_count": 1,
+  "output": "wan3_result_v2_480p.mp4",
+  "final_preview": "preview_v2_720p.mp4",
+  "specs": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "duration": 30.023
+  },
+  "qa": {
+    "confirmed": [
+      "Fukugyun himself presents credential",
+      "usual outfits and no guitar",
+      "Sobaya absent until after question",
+      "hard cut to dining table",
+      "stable left/right investigation positions",
+      "canonical Sobaya voice replacement",
+      "outside replacement windows PCM unchanged",
+      "full decode passed"
+    ],
+    "remaining": [
+      "Fukugyun smiles during abbreviation line",
+      "ASR still renders warning as 商品; exact pronunciation unverified",
+      "ASR renders 略すと inconsistently; human listening needed"
+    ],
+    "listening_verified": false,
+    "precise_lip_sync_verified": false
+  },
+  "audio_edit": "audio_edit_v2.json"
+}

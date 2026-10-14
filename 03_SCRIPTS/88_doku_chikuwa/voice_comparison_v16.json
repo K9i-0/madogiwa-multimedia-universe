@@ -1,0 +1,112 @@
+{
+  "status": "A_adopted",
+  "url": "https://kotamacbook-air.tailb7d942.ts.net/doku-chikuwa-voice-v16/",
+  "local_dir": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/.local/doku-chikuwa-voice-v16",
+  "generation": [
+    {
+      "id": "A",
+      "name": "正典の声から全文生成",
+      "text": "おい！それは証拠品だギュン！",
+      "ref": "02_CHARACTERS/Fukuchan_voice.wav",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "caption": ""
+    },
+    {
+      "id": "B",
+      "name": "制止する演技で全文生成",
+      "text": "おい！それは証拠品だギュン！",
+      "ref": "03_SCRIPTS/88_doku_chikuwa/warning_v5.wav",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "caption": "驚いて相手を鋭く制止する。自然な会話の声。"
+    },
+    {
+      "id": "D_suffix",
+      "name": "追加用の語尾",
+      "text": "ギュン！",
+      "ref": "03_SCRIPTS/88_doku_chikuwa/warning_v5.wav",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "caption": ""
+    },
+    {
+      "id": "C",
+      "name": "Smallモデルで全文生成",
+      "text": "おい！それは証拠品だギュン！",
+      "ref": "02_CHARACTERS/Fukuchan_voice.wav",
+      "model": "Aratako/Irodori-TTS-v4.1-Small",
+      "caption": ""
+    }
+  ],
+  "comparison": {
+    "text": "おい！それは証拠品だギュン！",
+    "candidates": [
+      {
+        "id": "current",
+        "title": "現行版",
+        "description": "前回の音声。旧セリフを声の参照にして、Largeで全文を生成。",
+        "raw": "current_raw.wav",
+        "comparison": "current.wav",
+        "duration_seconds": 2.84,
+        "gain_db": -2.619999999999999,
+        "normalization": "constant gain only; no compression/time stretch",
+        "sha256": "1288cc8b583c2d7371bcd1f32d942fd3568443557448fa323906dcc034488c23"
+      },
+      {
+        "id": "A",
+        "title": "正典の声から全文生成",
+        "description": "福ギュンの正典参照＋Large。現行版との違いは参照音声。",
+        "raw": "A_raw.wav",
+        "comparison": "A.wav",
+        "duration_seconds": 2.96,
+        "gain_db": -2.67,
+        "normalization": "constant gain only; no compression/time stretch",
+        "sha256": "1a07415967c985e2cea7c23fc8e7f56035b119446764b9525f8884a3401fc33e"
+      },
+      {
+        "id": "B",
+        "title": "制止する演技で全文生成",
+        "description": "現行版と同じ参照＋Large。「驚いて相手を鋭く制止する。自然な会話の声。」を指定。",
+        "raw": "B_raw.wav",
+        "comparison": "B.wav",
+        "duration_seconds": 2.88,
+        "gain_db": -2.2799999999999994,
+        "normalization": "constant gain only; no compression/time stretch",
+        "sha256": "f3b3482cdf9fd92dc3525988fcbe8871bd4781d4da4ed0d9f37c584570340e60"
+      },
+      {
+        "id": "C",
+        "title": "Smallモデルで全文生成",
+        "description": "Aと同じ正典参照、Irodori v4.1 Small。モデルの違いを比較。",
+        "raw": "C_raw.wav",
+        "comparison": "C.wav",
+        "duration_seconds": 2.96,
+        "gain_db": -2.51,
+        "normalization": "constant gain only; no compression/time stretch",
+        "sha256": "6d20d51e836178addd78ee9cc50fd2f1837160581ae01569c1c036035086549d"
+      },
+      {
+        "id": "D",
+        "title": "元の発話＋「ギュン！」",
+        "description": "以前の「おい！それは証拠品だ！」を保持。Largeで生成した「ギュン！」だけ末尾へ接続。",
+        "raw": "D_raw.wav",
+        "comparison": "D.wav",
+        "duration_seconds": 4.36,
+        "gain_db": -2.6999999999999993,
+        "normalization": "constant gain only; no compression/time stretch",
+        "sha256": "303456c73ea5436df6dbaebf2701ff86a9c66616ad53f27c95a1932235f10620"
+      }
+    ],
+    "suffix_splice": {
+      "source": "warning_v5.wav",
+      "source_end_sample": 151680,
+      "suffix_start_sample": 0,
+      "suffix_end_sample": 57600,
+      "source_prefix_pcm_equal": true
+    },
+    "asr": false,
+    "pronunciation_review": "user",
+    "adopted": null
+  },
+  "video_modified": false,
+  "adopted": "A",
+  "adopted_output": "final_remotion_doku_chikuwa_v17.mp4"
+}

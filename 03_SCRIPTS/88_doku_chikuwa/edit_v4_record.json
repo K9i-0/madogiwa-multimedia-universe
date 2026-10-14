@@ -1,0 +1,90 @@
+{
+  "composition": "DokuChikuwa",
+  "durationInFrames": 1491,
+  "fps": 30,
+  "reused_source": "wan3_result_v2_480p.mp4",
+  "insert_source": "wan3_entrance_inserts_v4_480p.mp4",
+  "voices": [
+    {
+      "speaker": "福ギュン",
+      "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+      "seed": 100,
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "lines": [
+        "report_v4.wav",
+        "message_v4.wav",
+        "abbreviation_v4.wav",
+        "warning_v4.wav"
+      ]
+    },
+    {
+      "speaker": "よーたん",
+      "reference": "yotan_reference_v3.wav",
+      "seed": 100,
+      "lines": [
+        "yotan_deduction_v3.wav",
+        "yotan_question_v3.wav",
+        "yotan_reaction_v4.wav"
+      ]
+    },
+    {
+      "speaker": "そば屋",
+      "reference": "02_CHARACTERS/Sobaya_voice.wav",
+      "line": "sobaya_doku_chikuwa_v2.wav",
+      "processing": "unchanged canonical Irodori Large + monsterize"
+    }
+  ],
+  "voice_generation": [
+    [
+      "report",
+      "被害者は赤坂在住、四十歳の男性。夕食のおでんを食べた直後に倒れたとみられます。",
+      "落ち着いた刑事の報告。自然な速さで明瞭に話す。"
+    ],
+    [
+      "message",
+      "最期に残した言葉は、ちくわ。",
+      "真剣な報告。"
+    ],
+    [
+      "abbreviation",
+      "だいのちくわ好き。りゃくすと、だいちくわですね。",
+      "真剣に淡々と話す。"
+    ],
+    [
+      "warning",
+      "おい！それは、しょうこひんだ！",
+      "鋭く制止する。"
+    ],
+    [
+      "yotan_reaction",
+      "えぇ……。",
+      "信じられないものを見て、困惑して小さく声を漏らす。"
+    ]
+  ],
+  "text_cfg": 5,
+  "uncut": true,
+  "duration_scale": 1,
+  "endcard": "endcard_oden_glitter.png",
+  "generation_tool": "built-in image_gen",
+  "listening_verified": false,
+  "precise_lip_sync_verified": false,
+  "final_output": "final_remotion_doku_chikuwa_v4.mp4",
+  "actual_duration": 49.707,
+  "checks": {
+    "typecheck": "passed",
+    "full_decode": "passed",
+    "resolution": [
+      1280,
+      720
+    ],
+    "fps": 30,
+    "visual_contact_sheet": "reviewed",
+    "master_sha256": "b94929e89afe4f7a0d97a19343412e9fed891d404d308de1be1d95eb57b2f21e",
+    "endcard": "oden reference glitter edit, 36 frames"
+  },
+  "limitations": [
+    "ASR recognizes full report; chikuwa pun and shoukohin retain ASR ambiguity",
+    "human listening and phoneme-level lip sync not verified",
+    "new insert lowers cordon tape rather than lifting it"
+  ]
+}

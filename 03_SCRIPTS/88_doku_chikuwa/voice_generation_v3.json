@@ -1,0 +1,62 @@
+{
+  "reference_source": "generated_video",
+  "source_video": "wan3_result_v2_480p.mp4",
+  "references": [
+    {
+      "speaker": "yotan",
+      "path": "yotan_reference_v3.wav",
+      "start": 6.2,
+      "end": 10.35,
+      "sha256": "ef8c9888010d1cef50ccd2240a47a9fc02d2dcb0d9b42b796c3d64c79a10e482"
+    },
+    {
+      "speaker": "fukuchan",
+      "path": "fukuchan_reference_v3.wav",
+      "start": 10.1,
+      "end": 14.9,
+      "sha256": "bf5f9c0f5ca7f3acea75a2822172c562e2930993401b5ab7ceabe29446ede3cb"
+    }
+  ],
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "seed": 100,
+  "text_cfg": 5,
+  "duration_scale": 1,
+  "uncut": true,
+  "lines": [
+    [
+      "fuku_intro",
+      "fukuchan",
+      "被害者が最期に残した、ちくわ。",
+      "重々しく真剣に話す。"
+    ],
+    [
+      "yotan_deduction",
+      "yotan",
+      "被害者は、大のちくわ好きだった可能性が高い。",
+      "真剣に、自信をもって推理を述べる。"
+    ],
+    [
+      "fuku_abbreviation",
+      "fukuchan",
+      "大のちくわ好き。略すと、だいちくわですね。",
+      "真剣に淡々と話す。"
+    ],
+    [
+      "yotan_question",
+      "yotan",
+      "え、なんで略した？",
+      "小声で素直に困惑する。"
+    ],
+    [
+      "fuku_warning",
+      "fukuchan",
+      "おい！ それは証拠品だ！",
+      "鋭く制止する。証拠品を明瞭に。"
+    ]
+  ],
+  "kana_revisions": {
+    "fuku_abbreviation": "だいのちくわ好き。りゃくすと、だいちくわですね。",
+    "fuku_warning": "おい！それは、しょうこひんだ！"
+  },
+  "listening_verified": false
+}

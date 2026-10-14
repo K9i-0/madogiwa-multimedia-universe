@@ -1,0 +1,59 @@
+{
+  "task_id": "5689efa7-5d6e-465e-b5bd-6c63abfc43c2",
+  "status": "SUCCEEDED",
+  "submitted_date": "2026-10-07",
+  "model": "wan3.0-video",
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 881006,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "prompt_sha256": "6fe6f98bca4f1c4b8be8ffae8cfad4e63df13e799b27d8f53e51232f9fff1204",
+  "config_sha256": "f3ebce266f6d63daa6d152eea00e7c3274d531a0def5b7cdc9382af48dfdf946",
+  "output": "wan3_result_seed881006_480p.mp4",
+  "estimated_usd": 1.05,
+  "price_source": "https://www.qwencloud.com/models/wan3.0-video",
+  "price_checked_date": "2026-10-07",
+  "submission_count": 1,
+  "generated_specs": {
+    "width": 854,
+    "height": 480,
+    "fps": 30,
+    "duration": 30.022993,
+    "audio": "AAC 44100Hz"
+  },
+  "preview": "preview_720p.mp4",
+  "preview_specs": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "duration": 30.022993,
+    "resize": "Lanczos, single resize from original",
+    "audio": "stream copy"
+  },
+  "output_sha256": "9408a01acf1e61fd480326d769749dde84208e6806ff66cdff0ac2ddaeb25668",
+  "qa": {
+    "visual_sampling": "1fps contact sheet reviewed",
+    "confirmed": [
+      "readable floor message",
+      "purple C chikuwa",
+      "no guitar",
+      "beer mug",
+      "mask preserved in sampled frames",
+      "eating then drinking then diagnosis then collapse"
+    ],
+    "issues": [
+      "entrance credential presenter is in police uniform rather than Fukugyun suit; identity/wardrobe continuity not approved",
+      "ASR twice recognizes 商品だ instead of 証拠品だ; requires listening review"
+    ],
+    "asr_full": "被害者が最後に残したチクワ 被害者は大のチクワ好きだった可能性が高い 大のチクワ好き 略すと大チクワですね え?なんで略した? おい!それは商品だ! これ、毒チクワです",
+    "human_listening": false,
+    "phoneme_lip_sync_audit": false,
+    "full_decode": "passed",
+    "status": "preview_with_issues"
+  }
+}

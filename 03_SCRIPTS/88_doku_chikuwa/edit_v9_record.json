@@ -1,0 +1,43 @@
+{
+  "generator": "built-in image_gen",
+  "image_generations": 5,
+  "video_generations": 0,
+  "audio": "master_v7.wav unchanged",
+  "durationInFrames": 1445,
+  "fps": 30,
+  "composition": "DokuChikuwaEvidence",
+  "output": "final_remotion_doku_chikuwa_v9.mp4",
+  "evidence_numbers": {
+    "1": "おでん",
+    "2": "血文字"
+  },
+  "inputs": [
+    {
+      "file": "evidence_markers_reference.png",
+      "sha256": "6252de40c8bce6f67160ca1cc45332b21bac82a329fd6c22ce6dab9a58aeef14"
+    },
+    {
+      "file": "crime_scene_outline_v9.png",
+      "sha256": "864ef9fbc591c64673c101a958c15ac7169cc19f9c75238c6cc2039a039244cd"
+    },
+    {
+      "file": "blood_overhead_v9.png",
+      "sha256": "1b47ef9243908bc3f5938870966a2113c4252e6b2402ffb08666bcca7f18c770"
+    },
+    {
+      "file": "oden_marker1_v9.png",
+      "sha256": "394c8a2744e1576755fae59b23b5c54b786d8322c61cf76c589ff2e3d0f2519b"
+    },
+    {
+      "file": "fukugyun_oden_rear_v9.png",
+      "sha256": "c2d493ae0990f462b92234a16266b49378c109e3d490fefc56e7ef425db5fc6e"
+    }
+  ],
+  "notes": [
+    "Four scene stills and one shared marker design reference.",
+    "Subtle 1.0 to 1.045 scale for new stills, fixed 1.85 final close-up.",
+    "Retained dialogue videos reframed 1.25 to hide old floor.",
+    "Existing Sobaya action footage retained; no added numbered marker inside this original moving footage.",
+    "No TTS, ASR, pronunciation changes or time stretching."
+  ]
+}

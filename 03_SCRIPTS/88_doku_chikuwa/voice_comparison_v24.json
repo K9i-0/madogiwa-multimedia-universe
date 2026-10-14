@@ -1,0 +1,256 @@
+{
+  "status": "not_adopted_keep_v23",
+  "date": "2026-10-08",
+  "based_on_episode": 87,
+  "video_modified": false,
+  "studio_modified": false,
+  "lines": [
+    {
+      "id": "report",
+      "speaker": "福ギュン",
+      "text": "被害者は、赤坂に住む43歳の男性。夕食のおでんを食べた直後、倒れたとみられます。",
+      "source": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/88_doku_chikuwa/report_adopted43_v21.wav",
+      "frames": null,
+      "seconds": 8.08,
+      "vcStartSample": 0,
+      "vcSamples": 387840,
+      "method": "Seed-VC：元の演技を保ち、正典参照へ声質変換",
+      "comparison": {
+        "before": {
+          "file": "report_before.wav",
+          "seconds": 8.08,
+          "gain_db": -2.289999999999999,
+          "raw_sha256": "0aad732bd16d228ef84f7a52e9b4a90f6daf8f60f695f365f388ad31dfe837c3"
+        },
+        "after": {
+          "file": "report_after.wav",
+          "seconds": 8.08,
+          "gain_db": -1.6700000000000017,
+          "raw_sha256": "bebbb1fe0d6784b72b551867cd9d099c7255db2e92be3f1f2dcab99959214eef"
+        }
+      }
+    },
+    {
+      "id": "message",
+      "speaker": "福ギュン",
+      "text": "最期に残した言葉は……ちくわ。",
+      "source": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/88_doku_chikuwa/message_v5.wav",
+      "frames": null,
+      "seconds": 4.52,
+      "vcStartSample": 435840,
+      "vcSamples": 216960,
+      "method": "Seed-VC：元の演技を保ち、正典参照へ声質変換",
+      "comparison": {
+        "before": {
+          "file": "message_before.wav",
+          "seconds": 4.52,
+          "gain_db": -3.289999999999999,
+          "raw_sha256": "8a15ce09e7c916c8502885cb71b10d64393b868d8db6cb03ba985d3eadd76f35"
+        },
+        "after": {
+          "file": "message_after.wav",
+          "seconds": 4.52,
+          "gain_db": -2.6799999999999997,
+          "raw_sha256": "28915cb37ec9af8d47f7d8698bb6d0337573f3cdab98558995d492b39af4e29c"
+        }
+      }
+    },
+    {
+      "id": "deduction",
+      "speaker": "よーたん",
+      "text": "被害者は、大のちくわ好きだった可能性が高い。",
+      "source": "remotion/public/master_v22.wav",
+      "frames": [
+        612,
+        736
+      ],
+      "seconds": 4.133333333333334,
+      "method": "Irodori Large：正典参照＋短い演技指定",
+      "comparison": {
+        "before": {
+          "file": "deduction_before.wav",
+          "seconds": 4.133333333333334,
+          "gain_db": 0.77,
+          "raw_sha256": "277061f620149d015c6a15ef5c16d477f5b657bafdc3f9c03bdc421d56e814c6"
+        },
+        "after": {
+          "file": "deduction_after.wav",
+          "seconds": 3.68,
+          "gain_db": -2.2699999999999996,
+          "raw_sha256": "94263bb3d41a24beda32cf0033b7ebc8ebb66fc3030367ff433fcbacb54d90e1"
+        }
+      }
+    },
+    {
+      "id": "abbreviation",
+      "speaker": "福ギュン",
+      "text": "大のちくわ好き……略すと、だいちくわですね。",
+      "source": "remotion/public/master_v22.wav",
+      "frames": [
+        736,
+        913
+      ],
+      "seconds": 5.9,
+      "vcStartSample": 700800,
+      "vcSamples": 283200,
+      "method": "Seed-VC：元の演技を保ち、正典参照へ声質変換",
+      "comparison": {
+        "before": {
+          "file": "abbreviation_before.wav",
+          "seconds": 5.9,
+          "gain_db": 3.039999999999999,
+          "raw_sha256": "bea47e27c4250e242ce999b671ad9d8cb9093dfc89d73cba162535e73811057b"
+        },
+        "after": {
+          "file": "abbreviation_after.wav",
+          "seconds": 5.9,
+          "gain_db": -0.08999999999999997,
+          "raw_sha256": "274a1b2fc684f82df86b46e47eb337fd9f1a17d05ce5069355f0ce51cfd727bc"
+        }
+      }
+    },
+    {
+      "id": "question",
+      "speaker": "よーたん",
+      "text": "え、何で略した？",
+      "source": "remotion/public/master_v22.wav",
+      "frames": [
+        913,
+        982
+      ],
+      "seconds": 2.3,
+      "method": "Irodori Large：正典参照＋短い演技指定",
+      "comparison": {
+        "before": {
+          "file": "question_before.wav",
+          "seconds": 2.3,
+          "gain_db": 4.07,
+          "raw_sha256": "25b9bf5b8f86ca9c0a22ff89e5a1ad04cca74fa83292593662bcbb6ccf5d4221"
+        },
+        "after": {
+          "file": "question_after.wav",
+          "seconds": 2.16,
+          "gain_db": -2.42,
+          "raw_sha256": "4c22a44b8e01e07df523c25fa228571487ae922f06284b77d2bcf26e4ccb61dd"
+        }
+      }
+    },
+    {
+      "id": "warning",
+      "speaker": "福ギュン",
+      "text": "おい！それは証拠品だギュン！",
+      "source": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/88_doku_chikuwa/warning_adopted_A_v17.wav",
+      "frames": null,
+      "seconds": 2.96,
+      "vcStartSample": 1032000,
+      "vcSamples": 142080,
+      "method": "Seed-VC：元の演技を保ち、正典参照へ声質変換",
+      "comparison": {
+        "before": {
+          "file": "warning_before.wav",
+          "seconds": 2.96,
+          "gain_db": -2.67,
+          "raw_sha256": "bf2d38eaf55b4f1f926ecd529f61404512c855553227e8ea6fa04954c69999da"
+        },
+        "after": {
+          "file": "warning_after.wav",
+          "seconds": 2.96,
+          "gain_db": -3.1999999999999993,
+          "raw_sha256": "fa2d0336a56abf9f24fc3271f65419659ba95aa70d523249b8cffdb14a012c1d"
+        }
+      }
+    },
+    {
+      "id": "sobaya",
+      "speaker": "そば屋",
+      "text": "これ、毒ちくわです。",
+      "source": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/88_doku_chikuwa/sobaya_doku_chikuwa_v2.wav",
+      "frames": null,
+      "seconds": 2.1606666666666667,
+      "method": "Irodori Large：正典参照＋短い演技指定＋通常のモンスター加工",
+      "comparison": {
+        "before": {
+          "file": "sobaya_before.wav",
+          "seconds": 2.1606666666666667,
+          "gain_db": 0.3999999999999986,
+          "raw_sha256": "88dd581addcdd2d5ff58ca310d0c224be6f8f71855d39139c626102bed212358"
+        },
+        "after": {
+          "file": "sobaya_after.wav",
+          "seconds": 2.1510208333333334,
+          "gain_db": 1.0599999999999987,
+          "raw_sha256": "ced8fdbcc3b1d11f329096e4a4a59ecf92cf7b5df6a946187bd197c0129329f9"
+        }
+      }
+    },
+    {
+      "id": "reaction",
+      "speaker": "よーたん",
+      "text": "誰この人。こわ…",
+      "source": "remotion/public/master_v22.wav",
+      "frames": [
+        1376,
+        1484
+      ],
+      "seconds": 3.6,
+      "method": "Irodori Large：正典参照＋短い演技指定",
+      "comparison": {
+        "before": {
+          "file": "reaction_before.wav",
+          "seconds": 3.6,
+          "gain_db": 1.88,
+          "raw_sha256": "31d01bd332929bab55d61c8ee890cf6766dc9d43d939b4383148dafa844614fb"
+        },
+        "after": {
+          "file": "reaction_after.wav",
+          "seconds": 2.44,
+          "gain_db": -2.3000000000000007,
+          "raw_sha256": "54a1a599d6dd94fd7fc14c1317d02925703362e9c33801059196c7cd478d327c"
+        }
+      }
+    }
+  ],
+  "seedvc": {
+    "diffusion_steps": 50,
+    "length_adjust": 1,
+    "inference_cfg_rate": 0.7,
+    "f0_condition": true,
+    "auto_f0_adjust": true,
+    "fp16": false,
+    "target": "02_CHARACTERS/Fukuchan_voice.wav",
+    "sourceSeconds": 25.46,
+    "outputSeconds": 25.449083333333334,
+    "checkpointWarning": "Existing loader skipped shape-mismatched keys; retained in log"
+  },
+  "irodori": {
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": "canonical voice for each character",
+    "seed": {
+      "yotan": 100,
+      "sobaya": 42
+    },
+    "captions": {
+      "deduction": "真剣に推理を述べる。落ち着いた自然な会話。",
+      "question": "声を張らず、素で困惑する。",
+      "reaction": "小声で戸惑い、少し引いている。",
+      "sobaya": "得意げに、当然の事実として言い切る。"
+    },
+    "uncut": {
+      "yotan": true,
+      "sobaya": false
+    },
+    "yotan_reference_at_generation": {
+      "path": "03_SCRIPTS/88_doku_chikuwa/voice_ref_yotan.wav",
+      "sha256": "9bd48c5577f5c70c7ed1ff7d684cca3f98ed23f24e89a02eee20907b47c1ec0c"
+    }
+  },
+  "normalization": "comparison constant gain -18 LUFS / peak cap -1 dB; no compression or time stretching",
+  "asr": false,
+  "listening": "Unavailable in agent runtime; awaiting user review",
+  "candidateDirectory": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/.local/doku-chikuwa-voice-v24",
+  "comparisonUrl": "https://kotamacbook-air.tailb7d942.ts.net/doku-chikuwa-voice-v24/",
+  "user_feedback": "今回は元のままの方がいい",
+  "yotan_original_voice_promoted_to_canonical": true
+}

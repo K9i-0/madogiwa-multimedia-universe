@@ -1,0 +1,60 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "wan_generated_lip_sync",
+  "reference_audio_usage": "voice_timbre_only",
+  "project_duration": 52,
+  "generation_mode": "segmented_over_30",
+  "prompt_file": "prompt_wan3_aftermath_v12.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_yotan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_fukuchan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "blocking_aftermath_v12.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "original_table_after_v12.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "empty_table_hold_v11.png"
+    },
+    {
+      "type": "reference_audio",
+      "path": "yotan_reference_v3.wav"
+    },
+    {
+      "type": "reference_audio",
+      "path": "voice_ref_fukuchan.wav"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 6,
+    "audio": true,
+    "seed": 881202,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_aftermath_v12_480p.mp4",
+  "preparation_status": "ready_authorized",
+  "duration_note": "52 is a planning estimate, not a fixed final duration; keep natural speech and existing intro/entry/meal.",
+  "price_check": {
+    "date": "2026-10-07",
+    "usd_per_second": 0.035,
+    "estimated_usd": 0.21
+  }
+}

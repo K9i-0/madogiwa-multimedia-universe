@@ -1,0 +1,20 @@
+{
+  "text": "誰この人。こわ…",
+  "reference": "yotan_reference_v3.wav",
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "seed": 100,
+  "caption": "",
+  "cfg": 3,
+  "uncut": true,
+  "asr": false,
+  "time_stretch": false,
+  "cut_v6_frames": [
+    958,
+    1080
+  ],
+  "extra_hold_frames": 39,
+  "reaction_start_frame": 1325,
+  "reaction_seconds": 2.48,
+  "durationInFrames": 1445,
+  "sha256": "dd1d6605f1a0cfa8507f99710527c361b12db76f4c57a49334895c582e4d7a98"
+}

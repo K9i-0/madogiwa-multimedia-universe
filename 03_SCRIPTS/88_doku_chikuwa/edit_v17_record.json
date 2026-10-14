@@ -1,0 +1,29 @@
+{
+  "adopted": "A",
+  "text": "おい！それは証拠品だギュン！",
+  "source": "warning_adopted_A_v17.wav",
+  "source_sha256": "1a07415967c985e2cea7c23fc8e7f56035b119446764b9525f8884a3401fc33e",
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+  "seed": 100,
+  "caption": "",
+  "cfg_text": 3,
+  "duration_scale": 1,
+  "uncut": true,
+  "voice_gain_db": 0,
+  "start_frame": 1056,
+  "duration_seconds": 2.96,
+  "music_removed_frames": [
+    0,
+    888
+  ],
+  "foley_preserved": true,
+  "narration_before_radio_pcm_equals_pre_bgm": true,
+  "unchanged_outside_edits_pcm": true,
+  "video_stream_copy": true,
+  "time_stretch": false,
+  "tts_regenerated": false,
+  "output": "final_remotion_doku_chikuwa_v17.mp4",
+  "video_stream_hash": "SHA256=132d7da15b5a19124ba24c181ea1dc28e48ffafc538fb54ac98c86107f29792c",
+  "full_decode_ok": true
+}

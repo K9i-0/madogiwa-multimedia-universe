@@ -1,0 +1,96 @@
+{
+  "assets": [
+    {
+      "reference": "Image 1",
+      "path": "character_sobaya_basic_sheet.png",
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058",
+      "copy_verified": true
+    },
+    {
+      "reference": "Image 2",
+      "path": "character_yotan_basic_sheet.png",
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_yotan_basic_sheet.png",
+      "sha256": "a5fcff5308da91a9690426b6a4028a0fdf537cf362b6fb1438fdf14c51878e5a",
+      "copy_verified": true
+    },
+    {
+      "reference": "Image 3",
+      "path": "character_fukuchan_basic_sheet.png",
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_fukuchan_basic_sheet.png",
+      "sha256": "1756c275be0b8cc4ca93f1f16d59a4feb79eef5ee43756d23d006323bdd43bfd",
+      "copy_verified": true
+    },
+    {
+      "reference": "Audio 1",
+      "path": "voice_ref_sobaya.wav",
+      "source": "02_CHARACTERS/Sobaya_voice.wav",
+      "source_sha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+      "sha256": "54d090ff1843d513e2ac2b5520d71c3df102a0ba2e662ee8f09f730fd5b5a338",
+      "start": 0,
+      "end": 2.45,
+      "duration": 2.45,
+      "usage": "voice_timbre_only",
+      "boundary": "silence boundary; same adopted slice as episode 87",
+      "processing": "PCM slice only"
+    },
+    {
+      "reference": "Audio 2",
+      "path": "voice_ref_yotan.wav",
+      "source": "02_CHARACTERS/Yotan_voice.wav",
+      "source_sha256": "9bd48c5577f5c70c7ed1ff7d684cca3f98ed23f24e89a02eee20907b47c1ec0c",
+      "sha256": "9bd48c5577f5c70c7ed1ff7d684cca3f98ed23f24e89a02eee20907b47c1ec0c",
+      "start": 0,
+      "end": 5.0,
+      "duration": 5.0,
+      "usage": "voice_timbre_only",
+      "boundary": "entire canonical file",
+      "processing": "unchanged copy"
+    },
+    {
+      "reference": "Audio 3",
+      "path": "voice_ref_fukuchan.wav",
+      "source": "02_CHARACTERS/Fukuchan_voice.wav",
+      "source_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+      "sha256": "ffc1cf31f034195ae9676c0d014611d3ab549a3cc1ccf8294660b8789b8a82e4",
+      "start": 0,
+      "end": 3.01,
+      "duration": 3.01,
+      "usage": "voice_timbre_only",
+      "boundary": "silence boundary; same adopted slice as episode 87",
+      "processing": "PCM slice only"
+    },
+    {
+      "reference": "Image 4",
+      "path": "blood_message_reference.png",
+      "source": "/Users/kotahayashi/.codex/generated_images/01a1113b-4194-7681-8d3f-084c59c8026a/exec-fc33dd2a-5114-4648-a405-b33a724834f7.png",
+      "sha256": "40e155a278ed796205a91a1878abbfe9496c68dd1a016323d0694079a13e7a08",
+      "generation_tool": "built-in image_gen",
+      "prompt_file": "prompt_imagegen_blood.txt",
+      "role": "lettering, floor and opening composition; no person",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "visual_check": "passed"
+    },
+    {
+      "reference": "Image 5",
+      "path": "oden_toxic_c_reference.png",
+      "source": "/Users/kotahayashi/.codex/generated_images/01a1113b-4194-7681-8d3f-084c59c8026a/exec-16c4eda0-b917-4679-bd23-345966ec3731.png",
+      "sha256": "acc274cff1340f2eeb3bfd32540c3b71af273f20a2c78c4df322681a4e48cb01",
+      "generation_tool": "built-in image_gen",
+      "prompt_file": "prompt_imagegen_oden_toxic_c.txt",
+      "role": "adopted C: visibly toxic purple chikuwa with magenta and yellow-green mottling; pot, other food, table and lighting unchanged",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "visual_check": "passed",
+      "edit_input": "oden_reference.png",
+      "selected_by": "user",
+      "selected_date": "2026-10-06"
+    }
+  ],
+  "audio_total_seconds": 10.46
+}

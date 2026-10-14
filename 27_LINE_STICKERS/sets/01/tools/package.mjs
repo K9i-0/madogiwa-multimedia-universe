@@ -5,6 +5,6 @@ import {execFileSync} from 'node:child_process';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const archive=path.join(root,'release.zip');
 fs.rmSync(archive,{force:true});
-execFileSync('zip',['-qr',archive,'README.md','set.json','all-members-preview.gif','all-members-still.png','all-members-black-preview.gif','all-members-black-still.png','static','stickers','reports','-x','*/.DS_Store','static/line-upload.zip'],{cwd:root});
+execFileSync('zip',['-qr',archive,'README.md','set.json','all-members-preview.gif','all-members-still.png','all-members-black-preview.gif','all-members-black-still.png','all-members-white-preview.gif','all-members-white-still.png','static','stickers','reports','-x','*/.DS_Store','static/line-upload.zip'],{cwd:root});
 execFileSync('unzip',['-t',archive],{stdio:'inherit'});
 console.log(archive);

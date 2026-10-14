@@ -8,16 +8,18 @@ for(const name of names){
  for(const f of fs.readdirSync(d))fs.unlinkSync(path.join(d,f));
  ff('-i',path.join(root,'stickers',name,'sticker.png'),'-vsync','0',path.join(d,'%02d.png'));
 }
+for(const background of ['black','white']){
 const frames=[];
 for(let i=0;i<20;i++){
  const tiles=names.map(name=>{
-  const f=path.join(dir,`${name}-${i}.png`),index=name==='sobaya'?Math.min(i,12):i;
-  mag(path.join(dir,name,String(index+1).padStart(2,'0')+'.png'),'-background','black','-alpha','remove','-alpha','off',f);return f;
+  const f=path.join(dir,`${background}-${name}-${i}.png`),index=name==='sobaya'?Math.min(i,12):i;
+  mag(path.join(dir,name,String(index+1).padStart(2,'0')+'.png'),'-background',background,'-alpha','remove','-alpha','off',f);return f;
  });
- const f=path.join(dir,`sheet${i}.png`);
- mag('montage',...tiles,'-tile','4x2','-geometry','320x270+0+0','-background','black',f);frames.push(f);
+ const f=path.join(dir,`${background}-sheet${i}.png`);
+ mag('montage',...tiles,'-tile','4x2','-geometry','320x270+0+0','-background',background,f);frames.push(f);
 }
-gif(frames,[...Array(19).fill(90),1290],path.join(root,'all-members-black-preview.gif'));
-fs.copyFileSync(frames[0],path.join(root,'all-members-black-still.png'));
-mag('montage',...names.map((_,i)=>path.join(root,'static/images',String(i+1).padStart(2,'0')+'.png')),'-tile','4x2','-geometry','370x320+0+0','-background','black','-alpha','remove','-alpha','off',path.join(root,'static/preview-black.png'));
-console.log('Black previews rendered from delivered files.');
+gif(frames,[...Array(19).fill(90),1290],path.join(root,`all-members-${background}-preview.gif`));
+fs.copyFileSync(frames[0],path.join(root,`all-members-${background}-still.png`));
+mag('montage',...names.map((_,i)=>path.join(root,'static/images',String(i+1).padStart(2,'0')+'.png')),'-tile','4x2','-geometry','370x320+0+0','-background',background,'-alpha','remove','-alpha','off',path.join(root,`static/preview-${background}.png`));
+}
+console.log('Black and white previews rendered from delivered files.');

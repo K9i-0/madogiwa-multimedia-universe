@@ -49,3 +49,7 @@ node 27_LINE_STICKERS/sets/01/tools/package.mjs
 文字は白地から黒インクの被覆率を求め、文字内の閉じた白も透過する。人物はOpenCVの外形マスクで白い服・仮面・泡を保護し、輪郭の白背景混入を補正する。全160作業フレームへ同じ処理を適用。APNGはRGBAで書き出し、半透明の輪郭を保持する。容量抑制のためRGBのみ約6bitへ丸め、アルファは8bitを維持する。
 
 [黒背景の全員GIF](all-members-black-preview.gif)は納品APNGをデコードして合成したもの。[静止版の黒背景一覧](static/preview-black.png)も用意。文字と独立した黒い集中線には約2px（400px原画上）の滑らかな白フチを追加し、暗い背景でも読みやすくする。
+
+文字下の残留断片4か所（そば屋・とーくん・やめ太郎・おかやまん）も原画から除去済み。修正範囲は `reports/caption-cleanup.json` に記録。
+
+[白背景の全員GIF](all-members-white-preview.gif)も納品APNGから作成。黒背景版と同じ配置・寸法・タイミングで比較できる。

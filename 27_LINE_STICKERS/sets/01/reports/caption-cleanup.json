@@ -1,0 +1,49 @@
+{
+  "reason": "Remove four residual fragments beneath lettering before white outline",
+  "fixes": [
+    {
+      "member": "sobaya",
+      "removedComponentBounds": [
+        225,
+        86,
+        5,
+        2,
+        6
+      ],
+      "changedPixels": 17
+    },
+    {
+      "member": "tokun",
+      "removedComponentBounds": [
+        152,
+        84,
+        48,
+        4,
+        125
+      ],
+      "changedPixels": 183
+    },
+    {
+      "member": "yametaro",
+      "removedComponentBounds": [
+        191,
+        76,
+        17,
+        1,
+        17
+      ],
+      "changedPixels": 57
+    },
+    {
+      "member": "okayaman",
+      "removedComponentBounds": [
+        178,
+        120,
+        9,
+        1,
+        9
+      ],
+      "changedPixels": 33
+    }
+  ]
+}

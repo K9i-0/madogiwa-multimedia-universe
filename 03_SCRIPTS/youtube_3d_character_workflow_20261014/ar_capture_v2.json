@@ -1,0 +1,27 @@
+{
+  "source": "https://madogiwa.work/camera/sobaya",
+  "captureDate": "2026-10-14",
+  "browser": "system Google Chrome headless via Playwright",
+  "viewport": {
+    "width": 430,
+    "height": 932,
+    "deviceScaleFactor": 1,
+    "isMobile": true,
+    "hasTouch": true
+  },
+  "screenshot": {
+    "width": 430,
+    "height": 1246,
+    "fullPage": true,
+    "path": "inputs/ar_v2.png",
+    "sha256": "f5f13e113c1ccfe39bf36884af4532c91879282360a01d8fb356bdd9afab88e4"
+  },
+  "actions": "Navigation and screenshot only. No camera permission requested, no AR activation button clicked.",
+  "visibleButton": "そば屋と撮る準備をする",
+  "controlsCropSuggestion": {
+    "x": 20,
+    "y": 715,
+    "width": 390,
+    "height": 430
+  }
+}

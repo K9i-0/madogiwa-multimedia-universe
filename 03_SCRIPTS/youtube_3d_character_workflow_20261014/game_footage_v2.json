@@ -1,0 +1,49 @@
+{
+  "source": ".local/hazard-intro-recording-20260907/sobaya-hazard-intro.mp4",
+  "sourceSha256": "ab3eca42079d792f1146ab998022c59709dacbdbd35315e07c0861d77ee224fd",
+  "recordingDate": "2026-09-07",
+  "type": "native game development recording, excerpt montage",
+  "warning": "Uses game model versions before the 2026-09-17 model update; not the exact current adopted GLB. Not new gameplay recorded on 2026-10-14.",
+  "segments": [
+    {
+      "startSeconds": 19.1,
+      "durationSeconds": 6.0,
+      "content": "そば屋複数体の3D俯瞰"
+    },
+    {
+      "startSeconds": 117.0,
+      "durationSeconds": 2.7,
+      "content": "やめ太郎のゲーム内会話"
+    },
+    {
+      "startSeconds": 109.9,
+      "durationSeconds": 6.5,
+      "content": "別角度からの村とそば屋"
+    },
+    {
+      "startSeconds": 122.2,
+      "durationSeconds": 2.8,
+      "content": "探索画面への復帰"
+    }
+  ],
+  "output": {
+    "path": "game_demo_v2.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationSeconds": 18,
+    "audio": false
+  },
+  "currentScreenshot": {
+    "path": "game_current_v2.png",
+    "capturedDate": "2026-10-14",
+    "app": "21_SOBAYA_HAZARD_LAB debug lib/game_main.dart",
+    "scenario": "stealthVision + paused viewpoint x=1.5 z=-20 yaw=pi pitch=0.05 keepEnemies=true",
+    "note": "Real Flutter Scene pixels from Marionette, static art review frame, not evidence of completed playthrough"
+  },
+  "captureAttempt": {
+    "nativeRecording": "Failed with ScreenCaptureKit -3811/-5822; standard screencapture did not start; no screen input from avfoundation",
+    "savedProgress": "Original preferences backed up and dictionary equality checked after capture. No changes; no restoration overwrite needed.",
+    "gameCodeChanged": false
+  }
+}

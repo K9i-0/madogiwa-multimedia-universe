@@ -1,0 +1,39 @@
+{
+  "engine": "VOICEVOX 0.25.1",
+  "speaker": 61,
+  "speedScale": 1.1,
+  "pitchScale": 0,
+  "sourceShorts": "03_SCRIPTS/85_pakurareta/final_remotion_shorts_9x16.mp4",
+  "sourceSha256": "6f0a0f914344f96cb96989a97c72acc290981056e081a9c6eb7e996d42bab4b1",
+  "horizontalSource": "03_SCRIPTS/85_pakurareta/final_remotion_audio_v2.mp4",
+  "horizontalSha256": "574ddd1aa6e310db80d75ec0778635112987deb7e7bd1d4b4dd9e0130b24004e",
+  "windowFrames": [
+    198,
+    426
+  ],
+  "lines": [
+    {
+      "file": "shorts_takosan_usagi_01.wav",
+      "sha256": "93c0b5a8ef012b745dab60b11f249f95d5b093f91bdbee661782bc6326f93aa5",
+      "startFrame": 209,
+      "endFrame": 253,
+      "durationSamples": 69120,
+      "gainDb": 9.5844087600708
+    },
+    {
+      "file": "shorts_takosan_usagi_02.wav",
+      "sha256": "47cef2ea7fc727b97b8936f2a02b5e2972cd50ea73c69a900b24f7cb3fd6c461",
+      "startFrame": 254,
+      "endFrame": 386,
+      "durationSamples": 210944,
+      "gainDb": 8.652395248413086
+    }
+  ],
+  "peakDbfs": -0.047897644340991974,
+  "outsideWindowPcmIdentical": true,
+  "timeStretch": false,
+  "fullQueryFile": "shorts-usagi-queries.json",
+  "subjectiveListening": false,
+  "output": "final_remotion_shorts_usagi_9x16.mp4",
+  "readingCheck": "Whisper transcription agrees with dialogue apart from orthographic variants."
+}

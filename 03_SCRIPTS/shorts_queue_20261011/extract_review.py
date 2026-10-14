@@ -7,7 +7,7 @@ Q=Path(__file__).resolve().parent;R=Q.parents[1]
 def one(row):
  p=R/row['output'];m=json.loads((R/row['manifest']).read_text());out=Q/'out/review'/row['slug'];out.mkdir(parents=True,exist_ok=True)
  marker=out/'source-sha256.txt'
- with p.open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
+ digest=hashlib.sha256(p.read_bytes()).hexdigest()
  if marker.exists() and marker.read_text()==digest:return row['slug']
  frames=sorted(set([0, max(0,m['durationInFrames']-2),m['durationInFrames']//2,*[round((c['startFrame']+c['endFrame'])/2) for c in m['captions']]]))
  expr='+'.join(f'eq(n,{n})' for n in frames)

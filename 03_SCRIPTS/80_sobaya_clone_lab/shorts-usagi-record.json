@@ -1,0 +1,55 @@
+{
+  "engine": "VOICEVOX 0.25.1",
+  "speaker": 61,
+  "speedScale": 1.1,
+  "pitchScale": 0,
+  "sourceShorts": "03_SCRIPTS/80_sobaya_clone_lab/final_remotion_shorts_9x16.mp4",
+  "sourceSha256": "0f250c9d8011abf262e954dab91d9116759400ee8b9306fe567cd049fdc1164d",
+  "horizontalSource": "03_SCRIPTS/80_sobaya_clone_lab/final_remotion_sns_skin.mp4",
+  "horizontalSha256": "7e3802c06d48f0edd38cfa5abb43729de8c96d8a3249d887c58565a05a149169",
+  "windowFrames": [
+    348,
+    751
+  ],
+  "lines": [
+    {
+      "file": "shorts_takosan_usagi_01.wav",
+      "sha256": "6152e7bc345425f78e6fcd99d79d28f1af203ceed869561a5fd23cc38678084f",
+      "startFrame": 361,
+      "endFrame": 429,
+      "durationSamples": 108032,
+      "gainDb": 7.915678528343982
+    },
+    {
+      "file": "shorts_takosan_usagi_02.wav",
+      "sha256": "f4c55a8a5d4a839eb5f75b1ad5f8d635df5f34069bdda125bd66639f5b4db0a1",
+      "startFrame": 469,
+      "endFrame": 529,
+      "durationSamples": 94208,
+      "gainDb": 6.168480441394719
+    },
+    {
+      "file": "shorts_takosan_usagi_03.wav",
+      "sha256": "6f6e2e5cb0ee036568ec2f98aaa42bc254c3fb6e22005f328ea44d28ad83e700",
+      "startFrame": 548,
+      "endFrame": 635,
+      "durationSamples": 138752,
+      "gainDb": 6.434713980386865
+    },
+    {
+      "file": "shorts_takosan_usagi_04.wav",
+      "sha256": "9750656ca70e0b4ef9a7e2c2bf7662527ec99494195d06a56d78b637a3e153ff",
+      "startFrame": 638,
+      "endFrame": 750,
+      "durationSamples": 177664,
+      "gainDb": 8.440939213247649
+    }
+  ],
+  "peakDbfs": -2.0624592304229736,
+  "outsideWindowPcmIdentical": true,
+  "timeStretch": false,
+  "fullQueryFile": "shorts-usagi-queries.json",
+  "subjectiveListening": false,
+  "output": "final_remotion_shorts_usagi_9x16.mp4",
+  "readingCheck": "Whisper transcription agrees with dialogue apart from orthographic variants."
+}

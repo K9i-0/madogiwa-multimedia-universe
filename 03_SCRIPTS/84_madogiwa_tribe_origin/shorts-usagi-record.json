@@ -1,0 +1,47 @@
+{
+  "engine": "VOICEVOX 0.25.1",
+  "speaker": 61,
+  "speedScale": 1.1,
+  "pitchScale": 0,
+  "sourceShorts": "03_SCRIPTS/84_madogiwa_tribe_origin/final_remotion_shorts_9x16.mp4",
+  "sourceSha256": "e03c87355b2be2411a9ccff5bdb233af8d14ce2aecbd516b1e7979165b9f143c",
+  "horizontalSource": "03_SCRIPTS/84_madogiwa_tribe_origin/final_remotion_story.mp4",
+  "horizontalSha256": "d3085f3000a9a3197357e45b6041690502db0c83dca74e4f5b7eb2d271bd09e9",
+  "windowFrames": [
+    1024,
+    1134
+  ],
+  "lines": [
+    {
+      "file": "shorts_takosan_usagi_01.wav",
+      "sha256": "ff9f69e84db5c130323ad20b0b2d1886acb9a83bb1b5bde07cb208a7f3cfba21",
+      "startFrame": 1029,
+      "endFrame": 1057,
+      "durationSamples": 44032,
+      "gainDb": 2.020134925842285
+    },
+    {
+      "file": "shorts_takosan_usagi_02.wav",
+      "sha256": "76d88eec51b485dbe3587d2d1adf1251207347c79618eed9ef5c3ed67a11ffe9",
+      "startFrame": 1064,
+      "endFrame": 1093,
+      "durationSamples": 46080,
+      "gainDb": 4.267605781555176
+    },
+    {
+      "file": "shorts_takosan_usagi_03.wav",
+      "sha256": "4740f99d89578882082ee1f1db5476a96fb39d5a0b452f69d3773d23aca33b77",
+      "startFrame": 1110,
+      "endFrame": 1130,
+      "durationSamples": 31232,
+      "gainDb": 9.780377388000488
+    }
+  ],
+  "peakDbfs": -0.9671579599380493,
+  "outsideWindowPcmIdentical": true,
+  "timeStretch": false,
+  "fullQueryFile": "shorts-usagi-queries.json",
+  "subjectiveListening": false,
+  "output": "final_remotion_shorts_usagi_9x16.mp4",
+  "readingCheck": "VOICEVOX mora sequence checked; ギュン=gy/u + N. Whisper is auxiliary and misrecognizes this coined word."
+}

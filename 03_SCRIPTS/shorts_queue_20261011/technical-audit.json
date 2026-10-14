@@ -3,7 +3,7 @@
   "scope": "37 remaining locally produced episodes under 60 seconds; five published pilot Shorts excluded",
   "allPassed": true,
   "listeningAudit": false,
-  "listeningNote": "Original adopted audio retained byte-for-byte. ASR-assisted timestamps and source scripts used; no claim of subjective full listening.",
+  "listeningNote": "Audio compared with adopted manifest audioSource; three Shorts-only VOICEVOX revisions on 2026-10-15. ASR and mora checks are auxiliary; no subjective listening claim.",
   "videos": [
     {
       "slug": "madogiwa-super-try-keisha",
@@ -185,17 +185,19 @@
         "decode": true,
         "captions": true
       },
-      "sha256": "0f250c9d8011abf262e954dab91d9116759400ee8b9306fe567cd049fdc1164d",
+      "sha256": "d49ea48c81cbec7810ded7e236ca8fdb01e3177bf77f2534805353b0d3e16722",
       "sourceSha256": "7e3802c06d48f0edd38cfa5abb43729de8c96d8a3249d887c58565a05a149169",
-      "manifestSha256": "2b95f6ca752c90657d176e31375e77214c569d916cb28b1275b7abfc02515fb1",
+      "manifestSha256": "a5caf14b32b1dca4256c209dc007b2ddd55a61a71f3a53d907e203fbd9e96dd9",
       "duration": 36.3,
       "width": 720,
       "height": 1280,
       "fps": "30/1",
       "frames": 1089,
       "audioCodec": "aac",
-      "bytes": 12698597,
-      "decodeErrors": ""
+      "bytes": 12439850,
+      "decodeErrors": "",
+      "horizontalSourceUnchanged": true,
+      "subjectiveListening": false
     },
     {
       "slug": "madogiwa-super-try-space-casual",
@@ -449,17 +451,19 @@
         "decode": true,
         "captions": true
       },
-      "sha256": "6f0a0f914344f96cb96989a97c72acc290981056e081a9c6eb7e996d42bab4b1",
+      "sha256": "0aae0777800741ebbfcc0c2e433a9fae1e7fa4fbcc19ed207b06941e9929acb0",
       "sourceSha256": "574ddd1aa6e310db80d75ec0778635112987deb7e7bd1d4b4dd9e0130b24004e",
-      "manifestSha256": "e9ecf09b22ed23470bd75b45a8818d543d7141cc143d59da4ca43a78fedb9476",
+      "manifestSha256": "35a789f318476f0c96441ff06a251d59ae81c996b84831daad72b3dd7b028038",
       "duration": 24.0,
       "width": 720,
       "height": 1280,
       "fps": "30/1",
       "frames": 720,
       "audioCodec": "aac",
-      "bytes": 7273685,
-      "decodeErrors": ""
+      "bytes": 7258929,
+      "decodeErrors": "",
+      "horizontalSourceUnchanged": true,
+      "subjectiveListening": false
     },
     {
       "slug": "sova",
@@ -497,17 +501,19 @@
         "decode": true,
         "captions": true
       },
-      "sha256": "e03c87355b2be2411a9ccff5bdb233af8d14ce2aecbd516b1e7979165b9f143c",
+      "sha256": "4bf729396e8660e4a5e5510870760b99d4b53e9f10b6d7bee2765b848ea9de2a",
       "sourceSha256": "d3085f3000a9a3197357e45b6041690502db0c83dca74e4f5b7eb2d271bd09e9",
-      "manifestSha256": "5bf9c88ba1dbdfcb6c8f3c5c371f8c5a1e1bfc458bb8b5aa2432e380eae18067",
-      "duration": 49.301,
+      "manifestSha256": "dd9d22b9222c9150e054a7f879a6f1bd64e356e14396c1fbcbf3cb0c2b9e0911",
+      "duration": 49.3,
       "width": 720,
       "height": 1280,
       "fps": "30/1",
       "frames": 1479,
       "audioCodec": "aac",
-      "bytes": 17941235,
-      "decodeErrors": ""
+      "bytes": 17185387,
+      "decodeErrors": "",
+      "horizontalSourceUnchanged": true,
+      "subjectiveListening": false
     },
     {
       "slug": "tokyo-madogiwa-land",
@@ -893,5 +899,6 @@
       "bytes": 7856637,
       "decodeErrors": ""
     }
-  ]
+  ],
+  "shortsUsagiRevisionAt": "2026-10-14T15:49:45.962440+00:00"
 }

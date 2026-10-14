@@ -1,20 +1,12 @@
 {
-  "title": "Codex・Claude Code × Wan 3.0｜いつものコーディングAIから始める動画制作【窓際族物語】",
-  "thumbnail": "thumbnail_f_original_v4.png",
-  "copy": "いつものコーディングAIで、動画まで。",
-  "tool": "Remotion deterministic composition",
-  "published": true,
-  "source": "remotion/public/news_raw.mp4",
-  "framesSeconds": {
-    "anchor": 3,
-    "arrest": 9,
-    "home": 20,
-    "office": 16
-  },
-  "resolution": [
-    2560,
-    1440
+  "version": "v5",
+  "file": "thumbnail_text_v5.png",
+  "uploadFile": "thumbnail_text_v5_youtube.jpg",
+  "copy": [
+    "いつものAIで",
+    "動画まで。"
   ],
-  "note": "Original frames cropped/resized only. Existing transparent character PNGs; text and selection frame drawn with React/CSS. No image generation in v4.",
-  "youtubeId": "RMWefLVS9vQ"
+  "design": "white/yellow oversized text, black outline, darkened original four frames, red supporting banner",
+  "youtubeVideoId": "RMWefLVS9vQ",
+  "uploaded": true
 }

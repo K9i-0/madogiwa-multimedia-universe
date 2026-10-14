@@ -1,7 +1,7 @@
 from pathlib import Path
 from PIL import Image,ImageDraw
 import sys
-P=Path(__file__).resolve().parent;final='--final' in sys.argv;version='v5' if '--v5' in sys.argv else 'v4' if '--v4' in sys.argv else 'v3' if '--v3' in sys.argv else 'v2' if '--v2' in sys.argv else ''
+P=Path(__file__).resolve().parent;final='--final' in sys.argv;version='v6' if '--v6' in sys.argv else 'v5' if '--v5' in sys.argv else 'v4' if '--v4' in sys.argv else 'v3' if '--v3' in sys.argv else 'v2' if '--v2' in sys.argv else ''
 files=sorted((P/('out/final_frames'+('_'+version if version else ''))).glob('*.jpg')) if final else sorted((P/'out').glob(version+'_still_*.png' if version else 'still_*.png'))
 for offset in range(0,len(files),12):
  batch=files[offset:offset+12];canvas=Image.new('RGB',(1280,((len(batch)+2)//3)*260),'#ddd');d=ImageDraw.Draw(canvas)

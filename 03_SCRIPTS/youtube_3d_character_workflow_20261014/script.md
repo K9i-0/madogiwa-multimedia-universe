@@ -1,8 +1,8 @@
-# Tripoで窓際族を3Dにする — 完成版v5
+# Tripoで窓際族を3Dにする — 完成版v6
 
-2026-10-15の追加フィードバックを反映。回転動画の生成・四方向の切り出し・Tripo生成・保存までCodexへ依頼する流れを明示。概要欄の制作リポジトリを渡す依頼例と、Wan/Tripo双方のAPI準備を紹介する。冒頭には基準のそば屋画像を並べ、Blender版・Tripo版との違いを直接比較する。回転素材の生成設定は制作例720pと、これから作る場合の1080p推奨を区別。ARの自宅ネタとスマホアプリへの展開の台詞を変更。画面上の文字を厳選し、Excel風の数式バー・セル番地を撤去。公式サービスのロゴと実ページを出典付きで紹介する。API監視の詳細は削り、準備・依頼・生成物の確認を説明。ゲームはUnityを一般例として紹介し、投稿者がFlutterエンジニアなのでFlutter Sceneでも動かしている実例へつなぐ。両者の表情と聞き手の反応を台詞ごとに指定する。
+2026-10-15の追加フィードバックを反映。エンディングで、Tripoの使い方やリグの作り方に自己流の部分もあることを説明し、おすすめの方法をコメントで募る。回転動画の生成・四方向の切り出し・Tripo生成・保存までCodexへ依頼する流れを明示。概要欄の制作リポジトリを渡す依頼例と、Wan/Tripo双方のAPI準備を紹介する。冒頭には基準のそば屋画像を並べ、Blender版・Tripo版との違いを直接比較する。回転素材の生成設定は制作例720pと、これから作る場合の1080p推奨を区別。ARの自宅ネタとスマホアプリへの展開の台詞を変更。画面上の文字を厳選し、Excel風の数式バー・セル番地を撤去。公式サービスのロゴと実ページを出典付きで紹介する。API監視の詳細は削り、準備・依頼・生成物の確認を説明。ゲームはUnityを一般例として紹介し、投稿者がFlutterエンジニアなのでFlutter Sceneでも動かしている実例へつなぐ。両者の表情と聞き手の反応を台詞ごとに指定する。
 
-登場：やめ太郎（Irodori v4.1-Small、正典参照・seed7・CFG5）、たこさん（VOICEVOX中国うさぎ・ノーマル61、速度1.1・音高0）。新規7発話、v4から90発話を再利用。元版は保持。
+登場：やめ太郎（Irodori v4.1-Small、正典参照・seed7・CFG5）、たこさん（VOICEVOX中国うさぎ・ノーマル61、速度1.1・音高0）。新規2発話、v5から97発話を再利用。元版は保持。
 
 そば屋の縦832×1108のWan回転動画、四方向入力、たこさんの前後2画像、採用モデルと修正資料は実素材。冒頭のBlender版制作担当は劇中設定。ゲーム実録は2026年9月7日の開発記録で、Unityの実例とは扱わない。
 
@@ -10,7 +10,7 @@
 
 やめ太郎は「設計図」「同じ人の回転撮影」「ぬいぐるみの骨組み」「餅は餅屋」という例えで理解を助ける。たこさんは手2本＋足6本＝計8本。生成時は足8本（手を含め計10本）だったため余分な足を修正した。
 
-タイムライン：682.867秒／1280×720／30fps。正本：`remotion/src/edit-manifest-v5.json`。
+タイムライン：694.400秒／1280×720／30fps。正本：`remotion/src/edit-manifest-v6.json`。
 
 
 ## 1. この一体を、動かして使う
@@ -224,6 +224,10 @@
   - 画面：`website`
 - u124 たこさん「公式サイトと制作リポジトリ、Wanの動画解説は、概要欄に載せています。」
   - 画面：`links`
+- c124 たこさん「今回のTripoの使い方やリグの作り方には、自己流の部分もあります。」
+  - 画面：`comments`
+- c125 やめ太郎「おすすめのやり方があったら、コメントで教えてな！ ワイらも勉強したいわ。」
+  - 画面：`comments`
 - u125 やめ太郎「できたらワイの代わりに、会社にも置いとこ。」
   - 画面：`ending`
 - u126 たこさん「表示しているだけでは、仕事は進みませんよ。」
@@ -233,10 +237,10 @@
 
 ## 制作資料
 
-- `remotion/dialogue-v5.json`、`remotion/acting-plan-v5.json`、`voice_record_v5.json`
-- `asset_sources_v4.json`、`resolution_source_v4.json`、`asr_record_v5.json`
+- `remotion/dialogue-v6.json`、`remotion/acting-plan-v6.json`、`voice_record_v6.json`
+- `asset_sources_v4.json`、`resolution_source_v4.json`、`asr_record_v6.json`
 - `repository_handoff_v5.json`
-- `web_refs_v3.json`、`review_v5.md`、`delivery_v5.json`
+- `web_refs_v3.json`、`review_v6.md`、`delivery_v6.json`
 - 公式3D：https://madogiwa.work/characters/sobaya
 - Wan解説：https://www.youtube.com/watch?v=RMWefLVS9vQ
 - 出典・クレジット：`youtube_description.txt`

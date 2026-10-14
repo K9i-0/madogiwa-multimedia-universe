@@ -1,0 +1,24 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "note": "No expected-text prompt; independent ASR screening, not subjective listening.",
+  "utterances": [
+    {
+      "id": "c124",
+      "audio": "clip_v6_c124_takosan.wav",
+      "expected": "今回のTripoの使い方やリグの作り方には、自己流の部分もあります。",
+      "spoken": "今回のトリポの使い方やリグの作り方には、自己流の部分もあります。",
+      "recognized": "今回のトリポの使い方やリグの作り方には自己流の部分もあります。",
+      "audioSha256": "aeb487a0e822aa58d9c4f7672477e99bfae74380dcd10ae68e53431c1c9e75c1"
+    },
+    {
+      "id": "c125",
+      "audio": "clip_v6_c125_yametaro.wav",
+      "expected": "おすすめのやり方があったら、コメントで教えてな！ ワイらも勉強したいわ。",
+      "spoken": "おすすめのやり方があったら、コメントで教えてな！ ワイらも勉強したいわ。",
+      "recognized": "おすすめのやり方があったらコメントで教えてな。わいらも勉強したいわ。",
+      "audioSha256": "7f87a2489f6078880c65129cf3dc496a40b5abfe5d3cf1646503ddfce9b84a5e"
+    }
+  ],
+  "subjectiveListening": false,
+  "review": "両発話とも内容の欠落・追加なし。Tripo→トリポ、ワイ→わい等の表記差のみ。自然さ・声質の通し試聴とは区別する。"
+}

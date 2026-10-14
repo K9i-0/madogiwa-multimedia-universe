@@ -1,0 +1,2379 @@
+{
+  "version": 6,
+  "fps": 30,
+  "source": "dialogue-v6.json",
+  "sourceSha256": "662acab2eee896f980c8943676adf98747a6252d841732f52e0334d4115464af",
+  "policy": [
+    "台詞IDごとに意味を読み、話者と聞き手の両方を指定する。正規表現・ランダム切替を使わない。",
+    "うなずき・傾きは理解や質問の節目だけ。ホップは冒頭の完成品に驚く1回だけ。常時上下動なし。",
+    "台詞ローカルの整数フレームが演技時刻の正本。表情は次の指定まで保持する。",
+    "たこさんはclosed素材だけ。小さな既存の口をnormal素材の無口部分でCSSマスク合成し、目と手・触手のポーズを使う。",
+    "最終配置はY left16 bottom35 width146、T left1122 bottom35 width158。足の不透明領域を基準に最大0.3pxだけ補正。",
+    "理解の比喩・役割分担の要約では、やめ太郎が提示ポーズで説明し、聞き手のたこさんが後から肯定する。単なる反応役に限定しない。"
+  ],
+  "assetAudit": {
+    "all32FilesExistAndDecode": true,
+    "assets": [
+      {
+        "path": "expressions/yametaro_normal_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "5f79b2e4b6c0c09dd2c0fbf635884c8de3f8495754392e09ed78250ae3de45ec",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_normal_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "4f1845c26bc137c1bc8b41aaa1ec8decd9985b50779e1ae156df4d6f17174fef",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_happy_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "05d9c7f62a38590354ffc607dc6ebe9c981f860a02d46f5f3338215a09e023ba",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_happy_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "526ecf23cb5c880df2ed7e4a4ee5bc654b2f3970a0346874caaf0e6ad5cbdcaa",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_surprise_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "581960d67a77bae1f6eecca389097acd2cc364560fa212a275727fa1a3e01cad",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_surprise_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "29b960d777693bc4d86203d6ce55f42e5a81574f7acd3515712d1b5c84a1f7c8",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_worry_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "479e135b4f0b016721da22f2f80529038d86594cd583fd66c803588d192cdd5f",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_worry_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "76269fbbf14c0fde7183ea750077b97973e98854610f81b99d69f1f493289c06",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_bored_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "714308635d725a054a3b490276a7fd6caf77e0866c439b1f9161ae38fe615520",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_bored_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "04b49975c423ca7ed63f5a5992e4feb12697583334d2d831de1e6a434b148eb4",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_angry_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "4547d63f41b65a220f9e9cca6b37021a07702d8557a45caabd815dbd309b042b",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_angry_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "6869767986081b32b34db8cd4524447b7b30fd499d7170e7652df33e7ec82c7c",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_sad_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "f37b04852a4e26de3119b4e028cb57d8b5cae0fbd9d9d42d8a63a31065507528",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_sad_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "7ad93a5978f0fcf676c9eaf033cd9a4af7106e3b7ad11d9d16fa9c3bed3e2afa",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_smug_closed.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "303ebda06053e9f46a3f032898b2db908471f37fc55c7913759c18c4a93cc767",
+        "exists": true
+      },
+      {
+        "path": "expressions/yametaro_smug_open.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sha256": "915817558755bef9df706b5cda21800d9aecc2c4abc3c60027f8a91c6e177ef5",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_normal_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "fa4278c5ce3e5d4d03d89c518acfea0620e35638774e6a8a73c391f8b7f9e111",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_normal_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "4de5bdb4c54afc90c513ba2fb6cc657ef40656cde68ecedb2d059a3a8150f459",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_happy_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "780350def1c6923bf47deac77264c668a84db3cdcf491110ecc5712ebb01239a",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_happy_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "75ede99946cf02a0eced6f14bc23c737fe88b6a6d75ead5cac1c5bcf3084fc77",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_surprise_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "fc1bcc31acc7469afb2ed3ece668677fbcedb25910375149d5faa27e882853d2",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_surprise_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "7dec6a844b13d1b196b28bbabc663f141c1f3b0643124e10641f8a05857db0fb",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_worry_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "e77b688c391ded30a11febbe574c8a8b8fed1836068cc0c8feee32609ccbcae4",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_worry_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "be434bb3fcd0b9e2415d7442c98998af4b84fd089836210179b300a9dc6b1e7c",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_bored_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "4a09055d5e6988edfe7b55f6ab04cd704823548162513e3227308a05c71e659f",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_bored_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "b06ddd5e3e3f55794514ad497190b46def297ff6234f7f10bdbd6c2e9a472aa5",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_angry_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "0a590f03bc2562fc3ebc2c1b50e6f13f3ad5f3b9c07ec638a347f52b70d3c6f4",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_angry_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "8a73cfc551b5968c1e81383e24ae08aca40a3dc5a36c0b90a499e3f16f643a2e",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_sad_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "b25ecd7e895a472e54d218b6397895266d2062bd2cff31a1bf4e1a9ec361bf87",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_sad_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "4a835fda72ea886893bb7db65eccb0daa64391ee737002268e332718953f8dc0",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_smug_closed.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "a2f254a5bbb4f5e557d3e99cb853d78244bc3e254750aa97d14df08969b6b933",
+        "exists": true
+      },
+      {
+        "path": "expressions/takosan_smug_open.png",
+        "size": [
+          1164,
+          1351
+        ],
+        "sha256": "17b0bbbf400482e88540e87e2e13dcef099d92865b088f7286589d6f03bbf063",
+        "exists": true
+      }
+    ]
+  },
+  "dialogue": {
+    "u000": {
+      "speaker": "yametaro",
+      "text": "最近、AIで作った3Dモデルの投稿、よう見るなあ。画像一枚から作りました、みたいなやつ。",
+      "intent": "新しいAI制作例を興味深く眺める",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 45,
+            "mood": "normal",
+            "motion": "tilt",
+            "durationInFrames": 36
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 140,
+            "mood": "happy"
+          }
+        ]
+      }
+    },
+    "u002": {
+      "speaker": "yametaro",
+      "text": "ワイもCodexに頼んでみたんや。そば屋さんを3Dにして、って。これや。",
+      "intent": "自作を見せた瞬間に二人が気まずくなる",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 133,
+            "mood": "worry"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 135,
+            "mood": "worry",
+            "motion": "tilt",
+            "durationInFrames": 24
+          }
+        ]
+      }
+    },
+    "u004": {
+      "speaker": "takosan",
+      "text": "誰を作ろうとしたかは、伝わります。",
+      "intent": "たこさんは言葉を選び、やめ太郎には微妙な褒め方が刺さる",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 64,
+            "mood": "bored"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u005": {
+      "speaker": "yametaro",
+      "text": "その感想、いちばん困るやつや。",
+      "intent": "困る感想への小さなツッコミ",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 5,
+            "mood": "worry",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "worry",
+        "beats": []
+      }
+    },
+    "r006": {
+      "speaker": "takosan",
+      "text": "Tripoというサービスを使うと、ここまで作れます。",
+      "intent": "新モデルを提示し、聞き手は実物を見て驚く",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 28,
+            "mood": "surprise"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      }
+    },
+    "u007": {
+      "speaker": "yametaro",
+      "text": "全然違うやん！　仮面も服も、ちゃんとそば屋さんや！",
+      "intent": "最初の完成品への大きな反応は一度だけ跳ねる",
+      "yametaro": {
+        "mood": "surprise",
+        "beats": [
+          {
+            "atFrame": 3,
+            "mood": "surprise",
+            "motion": "hop",
+            "durationInFrames": 20
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u008": {
+      "speaker": "takosan",
+      "text": "これはTripoで原型を作って、生成後に手直ししたモデルです。",
+      "intent": "喜びを保ちつつ、手直し済みという条件も伝える",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 112,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "r009": {
+      "speaker": "yametaro",
+      "text": "しかも動いとる！　これ、動画を貼ってるんやなくて？",
+      "intent": "動いているモデルへ身を乗り出す",
+      "yametaro": {
+        "mood": "surprise",
+        "beats": [
+          {
+            "atFrame": 2,
+            "mood": "surprise",
+            "motion": "recoil",
+            "durationInFrames": 24
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 58,
+            "mood": "happy"
+          }
+        ]
+      }
+    },
+    "r010": {
+      "speaker": "takosan",
+      "text": "はい。今ここで3Dを描画しています。この一体を、あとでサイトやゲームにも持っていきます。",
+      "intent": "同じ一体を使い回せると分かって納得する",
+      "yametaro": {
+        "mood": "surprise",
+        "beats": [
+          {
+            "atFrame": 70,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 171,
+            "mood": "happy"
+          }
+        ]
+      }
+    },
+    "u020": {
+      "speaker": "yametaro",
+      "text": "どうも、やめ太郎やで。",
+      "intent": "視聴者への挨拶",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 7,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "r021": {
+      "speaker": "takosan",
+      "text": "たこさんです。そば屋さんと私の実物で、画像から動く3Dまで見せます。",
+      "intent": "たこさんの自己紹介と実物への案内",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 110,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 4,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 30
+          }
+        ]
+      }
+    },
+    "u022": {
+      "speaker": "yametaro",
+      "text": "本人が、自分の作り方を説明するんか。",
+      "intent": "本人が自分を解説することへの軽いツッコミ",
+      "yametaro": {
+        "mood": "bored",
+        "beats": [
+          {
+            "atFrame": 10,
+            "mood": "bored",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 32,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "r023": {
+      "speaker": "takosan",
+      "text": "流れは四つ。姿を決める。Tripoで立体にする。本人らしく直す。そして、動かして使います。",
+      "intent": "工程の全体像を落ち着いて示す",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 251,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u036": {
+      "speaker": "yametaro",
+      "text": "ほな、まず何を用意するん？",
+      "intent": "最初に用意する物への素直な質問",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "normal",
+            "motion": "tilt",
+            "durationInFrames": 32
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u037": {
+      "speaker": "takosan",
+      "text": "基準になるキャラクターシートです。顔、体格、服、後ろ姿など、どんなキャラクターを作るのかを決めます。",
+      "intent": "基準シートを示し、聞き手は後半で納得する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 230,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "s038": {
+      "intent": "設計図という比喩をやめ太郎が自分の言葉で提示し、たこさんが理解を認める",
+      "yametaro": {
+        "mood": "smug",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 72,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "いきなり立体を作る前に、まずは設計図をそろえるんやな。"
+    },
+    "u039": {
+      "intent": "シートを渡してCodexへ動画生成を依頼する実際の役割を示し、先に回転動画を作る点へ聞き手が反応する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 240,
+            "mood": "surprise"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 126,
+            "mood": "smug"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "はい。このキャラクターシートを渡して、Codexに頼んで、Wanでぐるっと回転する動画を作りました。"
+    },
+    "u040": {
+      "speaker": "yametaro",
+      "text": "3Dを作りたいのに、先に動画を作るんか。",
+      "intent": "工程の順番への疑問",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "worry",
+            "motion": "tilt",
+            "durationInFrames": 34
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "r041": {
+      "speaker": "takosan",
+      "text": "同じ姿の、正面、横、後ろをそろえるためです。",
+      "intent": "三方向をそろえる目的が分かる",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 120,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u042": {
+      "speaker": "yametaro",
+      "text": "画像生成で、次は横向き、次は後ろ向き、って頼んだら、あかんの？",
+      "intent": "簡単そうな代案を思いつく",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 4,
+            "mood": "smug",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u043": {
+      "speaker": "takosan",
+      "text": "それでも作れます。ただ、別々に生成すると、髪や服、体格が少しずつ変わることがあります。正面ではなかった飾りが、背中に増えていたり。",
+      "intent": "一貫性が崩れる例を聞いて心配になる",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 184,
+            "mood": "worry"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 87,
+            "mood": "worry"
+          },
+          {
+            "atFrame": 310,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "u045": {
+      "speaker": "takosan",
+      "text": "回転動画なら、姿が連続して変わるので、方向ごとのつながりを確認しやすくなります。ただし、動画でも途中で形が変わることはあります。",
+      "intent": "回転動画の利点と限界を両方確認する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 158,
+            "mood": "happy"
+          },
+          {
+            "atFrame": 310,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 287,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "s046": {
+      "intent": "同じ人を撮るという比喩で一貫性を言い換え、説明役が肯定する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 105,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "別々の似顔絵を集めるより、同じ人をぐるっと撮る感じやな。"
+    },
+    "u048": {
+      "intent": "縦長で人物を大きく収める意図と、当時の720pという制作記録を穏やかに伝える",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 156,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 186,
+            "mood": "worry"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "人型は縦に長いので、縦長の画面に大きく収めました。このときは試行錯誤中で、生成設定は720pです。"
+    },
+    "t049": {
+      "intent": "3D用素材では解像度を上げるべきか、視聴者の判断につながる質問をする",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "normal",
+            "motion": "tilt",
+            "durationInFrames": 32
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      },
+      "speaker": "yametaro",
+      "text": "ここは高い解像度にしたほうがええん？"
+    },
+    "t050": {
+      "intent": "1080pをすすめる理由を細部の保持へ結び付け、聞き手が用途と画質の関係を理解する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 338,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 360,
+            "mood": "happy"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "はい。今から3D用の回転素材を作るなら、Wan 3.0では最も高い解像度の1080pをおすすめします。顔や服の細部を残したいので、ここはケチらないほうがよいと感じています。"
+    },
+    "u051": {
+      "intent": "あとで立体にする材料だから画質を優先する、とやめ太郎が理由を自分の言葉で整理する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 102,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "あとで立体にするための材料やから、ここはきれいに作っとくんやな。"
+    },
+    "u052": {
+      "speaker": "takosan",
+      "text": "はい。Wanを使う具体的な流れは、公開済みの動画で紹介しています。概要欄から見られるようにします。",
+      "intent": "公開済みの解説へ案内する",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 211,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u053": {
+      "speaker": "takosan",
+      "text": "MiniMax H3など、別の動画生成サービスも選択肢です。投稿者が普段からWanを使い慣れているので、今回はWanを使いました。",
+      "intent": "他の選択肢もあるという穏やかな補足",
+      "yametaro": {
+        "mood": "normal",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 210,
+            "mood": "happy"
+          }
+        ]
+      }
+    },
+    "u055": {
+      "intent": "四方向を選んで切り出す作業もCodexへ依頼できることを理解する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 258,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "動画ができたら、正面、左、背面、右の四枚を切り出すところも、Codexに頼みます。"
+    },
+    "u056": {
+      "speaker": "yametaro",
+      "text": "8秒やったら、2秒ずつでええ？",
+      "intent": "等間隔でよいという思い付き",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "smug",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u057": {
+      "speaker": "takosan",
+      "text": "時間だけでは決めません。回る速さが一定とは限らないので、実際の向きを見て選びます。",
+      "intent": "時間でなく向きという注意を聞いて考え直す",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 38,
+            "mood": "worry"
+          },
+          {
+            "atFrame": 170,
+            "mood": "normal",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "r058": {
+      "intent": "動画生成と画像切り出しをまとめて頼める、とやめ太郎が工程のつながりを整理して確認する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "smug",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 110,
+            "mood": "happy"
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "動画を作るのも、四枚を切り出すのも、まとめて頼めるんやな？"
+    },
+    "r059": {
+      "intent": "動画から四枚、3D生成と保存まで一続きに頼めるという説明で、聞き手が納得する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 303,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "はい。回転動画の生成から、四枚の切り出し、Tripoでの3D生成と保存まで、まとめてCodexに依頼しています。"
+    },
+    "p059": {
+      "intent": "制作手順のリポジトリを渡す具体的な頼み方を提示し、始める方法が分かって聞き手が安心する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 326,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "概要欄の窓際族リポジトリのリンクを渡して、「この制作手順を参考に、このキャラクターを3Dにして」と頼むと、始めやすいです。"
+    },
+    "p060": {
+      "intent": "作り方のメモごと渡すという比喩で、依頼の仕方をやめ太郎が自分の言葉に置き換える",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 84,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "作り方のメモごと渡すんやな。それなら頼みやすいわ。"
+    },
+    "r060": {
+      "intent": "WanとTripoそれぞれのAPIが窓口だと説明し、最初のキー・支払い準備を落ち着いて確認する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 300,
+            "mood": "normal",
+            "motion": "nod",
+            "durationInFrames": 24
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "APIは、CodexからWanやTripoを呼ぶための窓口です。最初に、それぞれのAPIキーと支払い設定を用意します。"
+    },
+    "r062": {
+      "intent": "AIに任せる処理と、人が判断する形・使い道を分けて伝える",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 150,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "生成から保存まではAIに任せて、人はできた形と使い道を確認します。"
+    },
+    "r061": {
+      "intent": "注文と完成品確認の例えで、人とAIの担当をやめ太郎が整理する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 144,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "注文と出来上がりの確認は人がして、裏の手続きはAIに任せるんやな。"
+    },
+    "u064": {
+      "speaker": "yametaro",
+      "text": "たこさんも、この回転動画から作ったん？",
+      "intent": "たこさん本人の制作経路を聞く",
+      "yametaro": {
+        "mood": "normal",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u065": {
+      "speaker": "takosan",
+      "text": "私の採用モデルは、シートから用意した正面と背面の二枚で作りました。全員が同じ経路ではありません。",
+      "intent": "実は二枚で作れたという違いに反応する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 166,
+            "mood": "surprise"
+          },
+          {
+            "atFrame": 235,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u067": {
+      "speaker": "yametaro",
+      "text": "ここで聞いときたい。そば屋さん一人、おいくらなん？",
+      "intent": "費用の話は少し身構える",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 10,
+            "mood": "worry",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u068": {
+      "intent": "推奨1080p・8秒の通常料金を円で確認し、聞き手は予算の目安が分かる",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 320,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 315,
+            "mood": "happy"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "推奨する1080pで8秒作ると、通常料金では1.60ドル。1ドル160円なら、256円です。"
+    },
+    "u069": {
+      "intent": "Tripoの実例費用を確認し、聞き手が動画費用と合わせて考える",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 269,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "Tripoはそば屋を作った実例で、120クレジット。1クレジット0.01ドルなので、192円です。"
+    },
+    "u070": {
+      "intent": "やめ太郎が二工程を自分で足し合わせ、約450円という予算を整理する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 5,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 47,
+            "mood": "happy"
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "二つ合わせて、約450円か！"
+    },
+    "u071": {
+      "intent": "1080pを選んだ試算という条件と、別途必要な費用を慎重に伝える",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 180,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 134,
+            "mood": "worry"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "はい。1080pを選んだ場合の試算です。キャラクターシートの準備や、作り直し、Codexなどの利用料は別にかかります。"
+    },
+    "u026": {
+      "speaker": "yametaro",
+      "text": "使うには、月額の契約がいるん？",
+      "intent": "月額契約が必要か心配して聞く",
+      "yametaro": {
+        "mood": "worry",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "r027": {
+      "speaker": "takosan",
+      "text": "ブラウザで使うStudioには、月額などのプランがあります。窓際族物語では、使った分だけクレジットを消費するAPIを選びました。",
+      "intent": "APIの従量利用を知って安心する",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 290,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 151,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "r028": {
+      "speaker": "yametaro",
+      "text": "Codexから呼べて、必要なときだけ使えるからか。",
+      "intent": "選んだ理由に納得する",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 5,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "r031": {
+      "speaker": "takosan",
+      "text": "毎日ガッツリ作るなら、月額も比較するとよいですね。ただし、StudioとAPIの契約やクレジットは別です。",
+      "intent": "月額も候補だが契約は別だと留意する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 232,
+            "mood": "worry"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 180,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "u034": {
+      "speaker": "yametaro",
+      "text": "ちなみにワイ、Claude CodeやCursorを使う日もあるんやけど。",
+      "intent": "自分の別の開発エージェントでも使いたい",
+      "yametaro": {
+        "mood": "worry",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "r035": {
+      "speaker": "takosan",
+      "text": "Claude CodeやCursorからも利用できます。大事なのは、いつもの開発エージェントから専用の生成サービスを呼ぶことです。",
+      "intent": "Claude CodeやCursorでも使えると分かる",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 72,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 141,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "u010": {
+      "speaker": "yametaro",
+      "text": "でも、契約してるCodexだけで作れたら、追加料金いらんやん？",
+      "intent": "追加料金ゼロという誘惑を持ち出す",
+      "yametaro": {
+        "mood": "smug",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 91,
+            "mood": "bored"
+          }
+        ]
+      }
+    },
+    "r013": {
+      "speaker": "takosan",
+      "text": "それで作る試みも面白いです。ただ、追加の支払いがなくても、何度も直す時間はかかります。",
+      "intent": "試みを認めた上で時間コストを指摘する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 215,
+            "mood": "sad"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 99,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "u014": {
+      "speaker": "yametaro",
+      "text": "無料や思って粘ってたら、休日が終わっとるやつか。",
+      "intent": "休日が消える失敗への自嘲",
+      "yametaro": {
+        "mood": "sad",
+        "beats": [
+          {
+            "atFrame": 15,
+            "mood": "sad",
+            "motion": "tilt",
+            "durationInFrames": 36
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "worry",
+        "beats": []
+      }
+    },
+    "r015": {
+      "intent": "餅は餅屋という結論をやめ太郎が発見し、具体的な役割分担を自分から説明する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 7,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 78,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "餅は餅屋ってことやな！　形はTripo、仕上げはCodexに頼む、と。"
+    },
+    "s016": {
+      "intent": "たこさんが要約を肯定し、作品制作へ時間を使える利点を補う",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "はい。得意な道具を組み合わせると、作品にするところへ時間を使えます。"
+    },
+    "u074": {
+      "speaker": "yametaro",
+      "text": "ここで、冒頭のそば屋さんが完成？",
+      "intent": "もう完成したのかという期待",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u075": {
+      "speaker": "takosan",
+      "text": "まだ手直しがあります。生成したモデルをBlenderで開き、Codexに修正用のコードを書いてもらいながら整えています。",
+      "intent": "手直しが残ると知り、実際の修正に注目する",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 35,
+            "mood": "worry"
+          },
+          {
+            "atFrame": 196,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 224,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "u079": {
+      "speaker": "takosan",
+      "text": "そば屋さんでは、仮面の顔パーツや赤い模様、材質の光沢、全身の傾きなどを調整しました。",
+      "intent": "具体的な修正点を確認する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 228,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u080": {
+      "speaker": "yametaro",
+      "text": "たこさんは、どこを直したん？",
+      "intent": "本人の修正箇所を聞く",
+      "yametaro": {
+        "mood": "normal",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u081": {
+      "intent": "生成時は手二本と足八本だったと本人が説明し、聞き手が総数を考える",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 99,
+            "mood": "worry"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "worry",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "生成したときは、手が二本、足が八本ありました。"
+    },
+    "u082": {
+      "intent": "手二本も足すと十本という計算をやめ太郎が示し、増量へのツッコミになる",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 55,
+            "mood": "surprise"
+          },
+          {
+            "atFrame": 80,
+            "mood": "bored",
+            "motion": "tilt",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 94,
+            "mood": "bored"
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "手の二本も足したら、十本やん。ちょっと増量されとる！"
+    },
+    "u083": {
+      "intent": "手二本と足六本の正しい構造を確認してから、余分な足の修正へ進む",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 150,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 196,
+            "mood": "happy"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "本来は、手が二本、足が六本で、合計八本です。余分な足を直し、配置や丸い手、ローブの内側も整えました。"
+    },
+    "u085": {
+      "speaker": "yametaro",
+      "text": "福ギュンも3Dにしとるんやな。",
+      "intent": "実写メンバーの作例も発見する",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u086": {
+      "speaker": "takosan",
+      "text": "はい。ただ、実写の人物を本人らしく再現するのは、今回も難しかったところです。",
+      "intent": "本人らしい再現の難しさを共有する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 136,
+            "mood": "worry"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "worry",
+        "beats": []
+      }
+    },
+    "u088": {
+      "speaker": "takosan",
+      "text": "顔の立体感や肌、髪を調整しました。正面では近く見えても、横から見ると印象が変わることもあります。",
+      "intent": "方向が変わると顔の印象も変わる注意点",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 238,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 195,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "u091": {
+      "speaker": "yametaro",
+      "text": "立体になっただけやと、まだ歩かれへんの？",
+      "intent": "形だけで歩けるのかという疑問",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 9,
+            "mood": "worry",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "u092": {
+      "speaker": "takosan",
+      "text": "モデル全体を移動したり回したりはできます。でも、腕や脚を曲げるには、そのための仕組みが必要です。",
+      "intent": "全体移動と関節変形を分けて理解する",
+      "yametaro": {
+        "mood": "worry",
+        "beats": [
+          {
+            "atFrame": 218,
+            "mood": "normal",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 125,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "r094": {
+      "speaker": "takosan",
+      "text": "腕や脚を曲げるための骨格などを、リグと呼びます。まず、骨を動かせるようにします。",
+      "intent": "リグという仕組みをモデルで確認する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 198,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u095": {
+      "intent": "ぬいぐるみの骨組みと布の比喩で骨と表面の関係を説明し、たこさんが肯定する",
+      "yametaro": {
+        "mood": "smug",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 130,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "ぬいぐるみに骨組みを入れて、外側の布も一緒についてくるようにする感じか。"
+    },
+    "r096": {
+      "speaker": "takosan",
+      "text": "そうです。どの骨が、表面のどこを、どれくらい引っ張るか。これがウェイトです。",
+      "intent": "ウェイトを落ち着いて説明する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 165,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u096": {
+      "intent": "腕と股周りの変形比較へ集中する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 196,
+            "mood": "worry"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "そば屋さんでは、腕を上げたときの変形や、脚を開いたときの股周りを見て調整しました。"
+    },
+    "u098": {
+      "speaker": "takosan",
+      "text": "動作自体も、既存のアニメーションを体格に合わせたり、コードで作ったりします。形の生成と、動作を作る工程は分けています。",
+      "intent": "形と動作が別工程だと納得する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 285,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u099": {
+      "speaker": "yametaro",
+      "text": "たこさんは、人間用の歩き方を入れても困るもんな。",
+      "intent": "人用の動作では困る非人型への共感",
+      "yametaro": {
+        "mood": "worry",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 63,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "u100": {
+      "intent": "足ごとの三つの関節を示し、この体形に合う仕組みを納得する",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 180,
+            "mood": "happy"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      },
+      "speaker": "takosan",
+      "text": "私の足には、それぞれ三つの関節を用意しています。この形に合う仕組みが必要ですね。"
+    },
+    "u102": {
+      "speaker": "yametaro",
+      "text": "せっかく動くようになったし、いろんなところで使いたいな。",
+      "intent": "用途を広げたくなる期待",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u103": {
+      "speaker": "takosan",
+      "text": "まずはWebサイトです。今回紹介した3Dモデルは、窓際族物語の公式サイトでも触れるようにしています。",
+      "intent": "公式サイトで触れると知って楽しみになる",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 207,
+            "mood": "surprise"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u104": {
+      "speaker": "yametaro",
+      "text": "この動画で見てるだけやなく、自分でぐるっと回せるんやな。",
+      "intent": "自分で操作できることへの喜び",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 7,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u105": {
+      "speaker": "takosan",
+      "text": "はい。気になる角度から見たり、動きを試したりしてみてください。公式サイトのURLは概要欄に載せておきます。",
+      "intent": "視聴者も気軽に試せるよう案内する",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 230,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u107": {
+      "speaker": "takosan",
+      "text": "Three.jsを使うと、こうした3D表示をWebページへ組み込めます。",
+      "intent": "Webへの組み込み方法を短く示す",
+      "yametaro": {
+        "mood": "normal",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u109": {
+      "speaker": "takosan",
+      "text": "次は動画です。いま中央に出しているモデルも、Three.jsで表示し、Remotionの時間に合わせて動かしています。",
+      "intent": "今見ている動画自体が実例だと気付く",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 176,
+            "mood": "surprise"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 206,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "u110": {
+      "speaker": "yametaro",
+      "text": "字幕を出すタイミングで手を振らせたり、説明してる場所へ寄ったりできるんか。",
+      "intent": "手振りと寄りの映像を見ながら用途を思い付く",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u111": {
+      "speaker": "takosan",
+      "text": "はい。一度作ったモデルと動作を使い、カメラや背景、字幕を変えて別の動画にもできます。",
+      "intent": "再利用して別動画を作れる可能性",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 190,
+            "mood": "normal"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "u114": {
+      "speaker": "takosan",
+      "text": "ARなら、スマートフォンを通して現実の空間へ置くこともできます。公式サイトにも、対応端末で試すための入口を用意しています。",
+      "intent": "現実の部屋にも置けるという意外性",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 135,
+            "mood": "surprise"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u115": {
+      "intent": "ARで部屋へ置ける驚きから、自宅まで窓際という困り顔の冗談へ移る",
+      "yametaro": {
+        "mood": "surprise",
+        "beats": [
+          {
+            "atFrame": 55,
+            "mood": "worry",
+            "motion": "tilt",
+            "durationInFrames": 36
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 108,
+            "mood": "bored"
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "部屋にそば屋さん置けるんか。自宅まで窓際になりそうで嫌やなぁ……。"
+    },
+    "s116": {
+      "speaker": "takosan",
+      "text": "ゲームなら、Unityなどのゲームエンジンでも使えます。",
+      "intent": "ゲームエンジンへ用途を広げる",
+      "yametaro": {
+        "mood": "normal",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": []
+      }
+    },
+    "s117": {
+      "speaker": "yametaro",
+      "text": "窓際族物語のゲームもUnityで作っとるん？",
+      "intent": "窓際族物語のゲームもUnityかを確認し、次のFlutterの説明へつなぐ",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "normal",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": []
+      }
+    },
+    "s118": {
+      "speaker": "takosan",
+      "text": "この例はFlutter Sceneです。投稿者がFlutterエンジニアなので、使い慣れたFlutterでも動かしています。",
+      "intent": "投稿者の得意なFlutterで作っていると分かる",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 198,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 103,
+            "mood": "smug"
+          }
+        ]
+      }
+    },
+    "r117": {
+      "intent": "スマホアプリへ組み込む用途が自分にも想像でき、やめ太郎が前向きな理解を示す",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 54,
+            "mood": "happy"
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "スマホアプリにも、簡単に組み込めそうやね！"
+    },
+    "u120": {
+      "speaker": "takosan",
+      "text": "アイデア次第で、ほかの使い方にも広げられますね。",
+      "intent": "使い道が広がることを一緒に喜ぶ",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "r122": {
+      "speaker": "takosan",
+      "text": "画像をそろえ、Tripoで作り、Blenderで整える。動かす仕組みを付ければ、一体の使い道が広がります。",
+      "intent": "四工程を振り返り、一体の用途へ戻る",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 241,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 238,
+            "mood": "happy"
+          }
+        ]
+      }
+    },
+    "u123": {
+      "speaker": "yametaro",
+      "text": "ワイもまず一体、サイトに置くところからやってみるわ。",
+      "intent": "自分も始めようという前向きな決意",
+      "yametaro": {
+        "mood": "happy",
+        "beats": [
+          {
+            "atFrame": 6,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "happy",
+        "beats": []
+      }
+    },
+    "u124": {
+      "speaker": "takosan",
+      "text": "公式サイトと制作リポジトリ、Wanの動画解説は、概要欄に載せています。",
+      "intent": "資料とリンクを案内して締める",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 127,
+            "mood": "happy"
+          }
+        ]
+      }
+    },
+    "c124": {
+      "intent": "制作手順には自己流もあるとたこさんが控えめに伝え、やめ太郎は事情を理解して小さくうなずく。",
+      "yametaro": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 148,
+            "mood": "normal",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 123,
+            "mood": "worry"
+          }
+        ]
+      },
+      "speaker": "takosan",
+      "text": "今回のTripoの使い方やリグの作り方には、自己流の部分もあります。"
+    },
+    "c125": {
+      "intent": "やめ太郎は手を開いた喜びの表情で視聴者の知恵を歓迎し、たこさんも明るい表情とうなずきで学びたい気持ちを共有する。",
+      "yametaro": {
+        "mood": "happy",
+        "beats": []
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 58,
+            "mood": "happy"
+          },
+          {
+            "atFrame": 92,
+            "mood": "happy",
+            "motion": "nod",
+            "durationInFrames": 28
+          }
+        ]
+      },
+      "speaker": "yametaro",
+      "text": "おすすめのやり方があったら、コメントで教えてな！ ワイらも勉強したいわ。"
+    },
+    "u125": {
+      "speaker": "yametaro",
+      "text": "できたらワイの代わりに、会社にも置いとこ。",
+      "intent": "会社で自分の代役にする冗談",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 5,
+            "mood": "smug",
+            "motion": "tilt",
+            "durationInFrames": 30
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "normal",
+        "beats": [
+          {
+            "atFrame": 51,
+            "mood": "worry"
+          }
+        ]
+      }
+    },
+    "u126": {
+      "speaker": "takosan",
+      "text": "表示しているだけでは、仕事は進みませんよ。",
+      "intent": "真顔で仕事は進まないと返されて黙る",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 64,
+            "mood": "bored"
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "bored",
+        "beats": []
+      }
+    },
+    "u127": {
+      "speaker": "yametaro",
+      "text": "ほな、再現度は高いな。",
+      "intent": "働かない点まで本人そっくりという最後の自嘲",
+      "yametaro": {
+        "mood": "smug",
+        "beats": [
+          {
+            "atFrame": 8,
+            "mood": "smug",
+            "motion": "nod",
+            "durationInFrames": 26
+          }
+        ]
+      },
+      "takosan": {
+        "mood": "bored",
+        "beats": [
+          {
+            "atFrame": 34,
+            "mood": "angry"
+          }
+        ]
+      }
+    }
+  },
+  "revisionNote": "V6・99行、694.4秒。V5の既存97台詞の表情・相対時刻をそのまま維持。追加c124は自己流の部分への控えめな表情と聞き手の理解、c125は視聴者のおすすめを歓迎し一緒に学ぶ表情と相槌。保存VOICEVOX queryの「自己流」開始4.085秒に合わせてc124の表情を123fで切り替える。",
+  "finalValidation": {
+    "status": "passed against final v6 manifest",
+    "manifestSha256": "015a07099b81d229891614ccdee5dd5d42eafd6860377b72b4ff0f6a1bcbb79f",
+    "dialogueCount": 99,
+    "durationInFrames": 20832,
+    "utteranceSignatureSha256": "5eb0bc52aad502b6e2b118f151af5d08dadbc6e8baadc79096959c64987b298c",
+    "all97PreviousActingRowsUnchanged": true,
+    "allCuesAndMotionsWithinUtterance": true,
+    "all99AudioAnd32SpriteHashesMatch": true,
+    "issues": []
+  }
+}

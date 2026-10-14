@@ -1039,7 +1039,7 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
               </div>
               <div className="j-goods-item">
                 <a className="j-goods-image j-goods-image-stickers" href="https://store.line.me/stickershop/product/37292753/ja" target="_blank" rel="noreferrer" aria-label="窓際族スタンプ第一弾をLINE STOREで見る（新しいタブ）">
-                  <img src="/site/goods/madogiwa-line-stickers.png" alt="窓際族の仲間たちが集合したLINEスタンプ第一弾のメイン画像" width="240" height="240" loading="lazy" />
+                  <img src="/site/goods/madogiwa-line-stickers-preview.png" alt="窓際族スタンプ第一弾の全8枚。そば屋、たこさん、とーくん、よーたん、福ギュン、やめ太郎、おかやまん、ゆめみんのスタンプ一覧" width="1480" height="640" loading="lazy" />
                 </a>
                 <div className="j-goods-copy">
                   <h3>窓際族スタンプ第一弾</h3>

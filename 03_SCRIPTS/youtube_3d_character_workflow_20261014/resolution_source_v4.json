@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-15",
+  "model": "wan3.0-video",
+  "officialUrl": "https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-api-reference",
+  "supportedResolutionSettings": [
+    "480P",
+    "720P",
+    "1080P"
+  ],
+  "historicalExample": {
+    "config": "03_SCRIPTS/sobaya_turnaround_wan_20260916/wan3_config.json",
+    "record": "03_SCRIPTS/sobaya_turnaround_wan_20260916/generation_record.json",
+    "resolutionSetting": "720P",
+    "actualPixels": [
+      832,
+      1108
+    ],
+    "seconds": 8,
+    "fps": 30
+  },
+  "recommendation": "投稿者の制作上の選択として、3D入力用の回転素材には1080Pを推奨。公式の3D用途推奨とは表現しない。通常動画生成の480p既定や完成動画720pを変更するものではない。",
+  "pricingEstimate": {
+    "basis": "1080P recommended setting estimate at undiscounted standard price; not historical invoice",
+    "checkedAt": "2026-10-15",
+    "wan": {
+      "model": "wan3.0-video",
+      "region": "Singapore / International",
+      "inputImages": 1,
+      "inputVideo": false,
+      "seconds": 8,
+      "usdPerSecond": 0.2,
+      "usd": 1.6,
+      "jpy": 256,
+      "audioAffectsPrice": false,
+      "officialUrl": "https://www.qwencloud.com/models/wan3.0-video",
+      "secondaryOfficialUrl": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "currentPromotion": {
+        "discount": 0.3,
+        "usdPerSecond": 0.14,
+        "usd": 1.12,
+        "totalWithTripoJpy": 371.2,
+        "usedInVideo": false
+      }
+    },
+    "tripo": {
+      "basis": "actual adopted Sobaya generation, 120 credits",
+      "credits": 120,
+      "usdPerCredit": 0.01,
+      "usd": 1.2,
+      "jpy": 192,
+      "officialUrl": "https://developers.tripo3d.ai/en/pricing"
+    },
+    "jpyPerUsd": 160,
+    "totalUsd": 2.8,
+    "totalJpy": 448,
+    "spokenRoundedTotalJpy": 450,
+    "excluded": [
+      "input image preparation",
+      "retries",
+      "coding-agent subscriptions or API use"
+    ]
+  }
+}

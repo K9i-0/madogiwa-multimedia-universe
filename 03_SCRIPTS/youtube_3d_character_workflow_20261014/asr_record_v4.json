@@ -1,0 +1,106 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "note": "No expected-text prompt; independent ASR screening, not subjective listening.",
+  "utterances": [
+    {
+      "id": "u048",
+      "expected": "人型は縦に長いので、縦長の画面に大きく収めました。このときは試行錯誤中で、生成設定は720pです。",
+      "spoken": "人型は縦に長いので、縦長の画面に大きく収めました。このときは試行錯誤中で、生成設定は七百二十ピーです。",
+      "recognized": "人型は縦に長いので縦長の画面に大きく収めましたこの時は試行錯誤中で生成設定は720pです",
+      "generationFile": "v4_u048_c9a76d8ad8b4.wav",
+      "audio": "clip_v4_u048_takosan.wav",
+      "audioSha256": "5ba2d51ea3ca6e9bc52b977ecc1d8ab0875c8807e11df986512fdc81511e2003"
+    },
+    {
+      "id": "t049",
+      "expected": "ここは高い解像度にしたほうがええん？",
+      "spoken": "ここは高い解像度にしたほうがええん？",
+      "recognized": "ここは高い解像度にした方がええん",
+      "generationFile": "v4_t049_4f54eb4db445.wav",
+      "audio": "clip_v4_t049_yametaro.wav",
+      "audioSha256": "ce12e41f3fb9d109c51b7f0fd8242b469b7d1b61a80340b9a1f387515865f987"
+    },
+    {
+      "id": "t050",
+      "expected": "はい。今から3D用の回転素材を作るなら、Wan 3.0では最も高い解像度の1080pをおすすめします。顔や服の細部を残したいので、ここはケチらないほうがよいと感じています。",
+      "spoken": "はい。今からスリーディー用の回転素材を作るなら、ワン、サンテンゼロでは最も高い解像度の千八十ピーをおすすめします。顔や服の細部を残したいので、ここはケチらないほうがよいと感じています。",
+      "recognized": "はい、今から3D用の回転素材を作るなら、1.3.0では最も高い解像度の1080pをおすすめします。顔や服の細部を残したいので、ここはけちらない方が良いと感じています。",
+      "generationFile": "v4_t050_66aef3cc058f.wav",
+      "audio": "clip_v4_t050_takosan.wav",
+      "audioSha256": "facc7818a825f2d82b7661621f68b14650a922d6cc2089b87a10fd0cab3f1a6d"
+    },
+    {
+      "id": "u051",
+      "expected": "あとで立体にするための材料やから、ここはきれいに作っとくんやな。",
+      "spoken": "あとで立体にするための材料やから、ここはきれいに作っとくんやな。",
+      "recognized": "後で立体にするための材料やからここはきれいに作っとくんやな",
+      "generationFile": "v4_u051_b87f30c39fe2.wav",
+      "audio": "clip_v4_u051_yametaro.wav",
+      "audioSha256": "6a1330003694d8959bdfddec0c55fd24d0484ef80b251af0872b27076ee656d0"
+    },
+    {
+      "id": "u068",
+      "expected": "推奨する1080pで8秒作ると、通常料金では1.60ドル。1ドル160円なら、256円です。",
+      "spoken": "推奨する千八十ピーで8秒作ると、通常料金では1.60ドル。1ドル160円なら、256円です。",
+      "recognized": "推奨する1080Pで8秒作ると、通常料金では1.60ドル、1ドル160円なら256円です。",
+      "generationFile": "v4_u068_3a23235cc011.wav",
+      "audio": "clip_v4_u068_takosan.wav",
+      "audioSha256": "cc175394917fa70937aba44af776ad43ccb7db09370cba1b1c8034476e6b34cf"
+    },
+    {
+      "id": "u069",
+      "expected": "Tripoはそば屋を作った実例で、120クレジット。1クレジット0.01ドルなので、192円です。",
+      "spoken": "トリポはそば屋を作った実例で、120クレジット。1クレジット0.01ドルなので、192円です。",
+      "recognized": "トリポはそば屋を作った実例で、120クレジット、1クレジット0.01ドルなので192円です。",
+      "generationFile": "v4_u069_63a2282e00bb.wav",
+      "audio": "clip_v4_u069_takosan.wav",
+      "audioSha256": "21323f3f04ca460baa76decbeae6e99d4d4db7343886b5f387cd5233f10d5d56"
+    },
+    {
+      "id": "u070",
+      "expected": "二つ合わせて、約450円か！",
+      "spoken": "二つ合わせて、約450円か！",
+      "recognized": "2つ合わせて約450円か",
+      "generationFile": "v4_u070_0205508e31b2.wav",
+      "audio": "clip_v4_u070_yametaro.wav",
+      "audioSha256": "adf76aec2c86e938e51bed5631663ff919c69f5da964278379f4ce1d2af25214"
+    },
+    {
+      "id": "u071",
+      "expected": "はい。1080pを選んだ場合の試算です。キャラクターシートの準備や、作り直し、Codexなどの利用料は別にかかります。",
+      "spoken": "はい。千八十ピーを選んだ場合の試算です。キャラクターシートの準備や、作り直し、コーデックスなどの利用料は別にかかります。",
+      "recognized": "はい、1080pを選んだ場合の試算です。キャラクターシートの準備や、作り直し、コーデックスなどの利用料は別にかかります。",
+      "generationFile": "v4_u071_e5e901662895.wav",
+      "audio": "clip_v4_u071_takosan.wav",
+      "audioSha256": "cec0ce405959310fc523b3d045bedacd7564cdfb199bb6082a139f5a1d6d0d4f"
+    },
+    {
+      "id": "u115",
+      "expected": "部屋にそば屋さん置けるんか。自宅まで窓際になりそうで嫌やなぁ……。",
+      "spoken": "部屋にそば屋さん置けるんか。自宅まで窓際になりそうで、いややなあ。",
+      "recognized": "部屋に蕎麦屋さん置けるんか自宅まで窓際になりそうで嫌やなぁ",
+      "generationFile": "v4_u115_fb20b880b293.wav",
+      "audio": "clip_v4_u115_yametaro.wav",
+      "audioSha256": "ca0ada8fe7a590808fbdacce926250ebd62b06885517cac5660288d9abb29522"
+    },
+    {
+      "id": "r117",
+      "expected": "スマホアプリにも、簡単に組み込めそうやね！",
+      "spoken": "スマホアプリにも、簡単に組み込めそうやね！",
+      "recognized": "スマホアプリにも簡単に組み込めそうやね",
+      "generationFile": "v4_r117_6c41cdecb8d0.wav",
+      "audio": "clip_v4_r117_yametaro.wav",
+      "audioSha256": "60283155df292ac02ad99b41a15076215e607947567775a0c11b257d4a0f30ef"
+    }
+  ],
+  "review": {
+    "reviewedUtterances": 10,
+    "contentOmissionsOrAdditionsDetected": false,
+    "orthographicDifferences": [
+      "Wan 3.0 → 1.3.0 (ワン、サンテンゼロ)",
+      "そば屋 → 蕎麦屋",
+      "Codex → コーデックス"
+    ],
+    "subjectiveListening": false
+  }
+}

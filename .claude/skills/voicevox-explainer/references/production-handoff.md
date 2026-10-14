@@ -1,10 +1,10 @@
 # 制作時の引き渡し・採用実装
 
-パスはリポジトリルート基準。2026-10-08採用版を出発点にする。
+パスはリポジトリルート基準。この資料はネタ系の2026-10-08採用版を扱う。技術解説は[技術解説テンプレート](technical-explainer.md)のv12を参照し、配役・画面・作品固有の設定を混ぜない。
 
 ## 再利用元
 
-- 現行の完成テンプレ：`03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/`
+- ネタ系の既存完成例：`03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/`
 - 台詞：同ディレクトリの `dialogue.json`。初期の `scenario.json` / `editor.html` は古い叩きであり、完成動画の正本ではない。
 - タイミング：`src/edit-manifest.json`。BGMの本編・終了開始、音声の実測尺、資料動画のsourceStartFrameとdurationInFramesを持つ。
 - 最新音響方針：`mix_audio.py` とエピソード直下の `mix_record.json`。READMEやvideo_script.mdにある旧「会話後に音量を上げる」説明は採用前の履歴。現行は持ち上げなし。

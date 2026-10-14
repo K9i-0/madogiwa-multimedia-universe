@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 import cv2
 import numpy as np
-from scipy.ndimage import distance_transform_edt
+from scipy.ndimage import distance_transform_edt, median_filter
 src,dst,header=sys.argv[1],sys.argv[2],int(sys.argv[3])
 im=cv2.imread(src,cv2.IMREAD_UNCHANGED)
 if im.dtype==np.uint16: im=(im/257).round().astype(np.uint8)
@@ -14,6 +14,25 @@ if im.shape[2]==4:
  rgb=rgb*a+1-a
 h,w=rgb.shape[:2]
 body=rgb[header:]
+if Path(src).parent.name=='yametaro':
+ # Optical-flow interpolation left a pale echo above the moving hair.
+ # Recover the top hair boundary from its dark, solid core each frame.
+ dark=(np.max(body,axis=2)<0.40).astype(np.uint8)
+ dark[150:]=0
+ dark=cv2.morphologyEx(dark,cv2.MORPH_OPEN,cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(7,7)))
+ count,lab,st,_=cv2.connectedComponentsWithStats(dark,8)
+ k=1+np.argmax(st[1:,cv2.CC_STAT_AREA])
+ ys,xs=np.where(lab==k)
+ boundary=np.full(w,float(ys.min()))
+ for x in range(xs.min(),xs.max()+1):
+  col=np.where(lab[:,x]==k)[0]
+  if len(col): boundary[x]=col.min()
+ boundary=median_filter(boundary,size=9)+1
+ for x in range(w):
+  # Only the crown region; eyes, sweat, clothes and outer sides stay intact.
+  limit=min(int(boundary[x]),int(ys.min())+16)
+  body[:max(0,limit),x]=1
+
 # Dark/colored boundaries enclose opaque white shirts, masks, eyes and foam.
 ink=(np.min(body,axis=2)<0.78).astype(np.uint8)
 # The cropped white shirt meets the lower canvas edge; close its silhouette

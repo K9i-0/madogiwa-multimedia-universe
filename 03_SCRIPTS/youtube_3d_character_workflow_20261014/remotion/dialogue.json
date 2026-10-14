@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "u000",
+    "who": "yametaro",
+    "view": "opening",
+    "text": "最近、AIで作った3Dモデルの投稿、よう見るなあ。画像一枚から作りました、みたいなやつ。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u001",
+    "who": "takosan",
+    "view": "opening",
+    "text": "見かける機会が増えましたね。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u002",
+    "who": "yametaro",
+    "view": "old",
+    "text": "ワイもCodexに頼んでみたんや。そば屋さんを3Dにして、って。これや。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 18,
+    "seed": 7,
+    "durationScale": 0.85,
+    "reading": "ワイも、コーデックスに頼んでみたんや。そば屋さんをスリーディーにして、って。これや。",
+    "take": "term_clear"
+  },
+  {
+    "id": "u003",
+    "who": "yametaro",
+    "view": "old",
+    "text": "そば屋さんの特徴は、拾っとるんやけどな。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u004",
+    "who": "takosan",
+    "view": "old",
+    "text": "誰を作ろうとしたかは、伝わります。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u005",
+    "who": "yametaro",
+    "view": "old",
+    "text": "その感想、いちばん困るやつや。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 18
+  },
+  {
+    "id": "u006",
+    "who": "takosan",
+    "view": "tripo",
+    "text": "こういうキャラクターなら、Tripoという3D生成サービスを使ってみるといいですよ。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u007",
+    "who": "yametaro",
+    "view": "sobaya_intro",
+    "text": "全然違うやん！　仮面も服も、ちゃんとそば屋さんや！",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u008",
+    "who": "takosan",
+    "view": "sobaya_intro",
+    "text": "これはTripoで原型を作って、生成後に手直ししたモデルです。",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u009",
+    "who": "yametaro",
+    "view": "sobaya_intro",
+    "text": "ワイが欲しかったん、こっちや！",
+    "chapter": "1. まずは完成モデル",
+    "pause": 12
+  },
+  {
+    "id": "u010",
+    "who": "yametaro",
+    "view": "cost_time",
+    "text": "でも、契約してるCodexだけで作れたら、追加料金いらんやん？",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12,
+    "seed": 7,
+    "durationScale": 0.85,
+    "reading": "でも、契約してる、コーデックスだけで作れたら、追加料金いらんやん？",
+    "take": "term_clear"
+  },
+  {
+    "id": "u011",
+    "who": "takosan",
+    "view": "cost_time",
+    "text": "そこは魅力ですね。汎用モデルとコードだけで、どこまで3Dを作れるか試すのも面白いです。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u012",
+    "who": "yametaro",
+    "view": "cost_time",
+    "text": "せやろ。サブスクの枠内やったら、実質無料や。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 18
+  },
+  {
+    "id": "u013",
+    "who": "takosan",
+    "view": "cost_time",
+    "text": "ただ、追加の支払いがないことと、コストがかからないことは別です。何度も修正を頼んで、確認している時間もありますから。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u014",
+    "who": "yametaro",
+    "view": "cost_time",
+    "text": "無料や思って粘ってたら、休日が終わっとるやつか。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u015",
+    "who": "takosan",
+    "view": "roles",
+    "text": "今回のようなキャラクターなら、専用サービスで原型を作って、Codexに仕上げや組み込みを手伝ってもらう方が、費用と手間に見合うと感じています。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u016",
+    "who": "yametaro",
+    "view": "roles",
+    "text": "数百円を浮かすために、何時間も悩むことはあるもんな。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u017",
+    "who": "takosan",
+    "view": "roles",
+    "text": "もちろん、コードで作りやすい形もあります。ただ、現状の動画や複雑な3D生成は、餅は餅屋という場面が多いですね。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u018",
+    "who": "yametaro",
+    "view": "roles",
+    "text": "Codexには、餅屋への注文と、その後の料理を頼むんか。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u019",
+    "who": "takosan",
+    "view": "roles",
+    "text": "そうです。今回は、その組み合わせ方を紹介します。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u020",
+    "who": "yametaro",
+    "view": "hosts",
+    "text": "どうも、やめ太郎やで。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u021",
+    "who": "takosan",
+    "view": "hosts",
+    "text": "たこさんです。窓際族物語で実際に作った、そば屋さんと私のモデルを使って、画像の準備から、修正、動かし方まで紹介します。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u022",
+    "who": "yametaro",
+    "view": "takosan_intro",
+    "text": "本人が、自分の作り方を説明するんか。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u023",
+    "who": "takosan",
+    "view": "pipeline",
+    "text": "最後はWebサイトや動画、AR、ゲームでの使い道も見ていきましょう。",
+    "chapter": "2. 餅は餅屋、どう使い分ける？",
+    "pause": 12
+  },
+  {
+    "id": "u024",
+    "who": "yametaro",
+    "view": "tripo",
+    "text": "そもそもTripoって、何をしてくれるん？",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u025",
+    "who": "takosan",
+    "view": "tripo",
+    "text": "画像や文章から、立体の形や表面の色を生成するサービスです。今回はキャラクターの画像を渡して、3Dモデルを作っています。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u026",
+    "who": "yametaro",
+    "view": "plans",
+    "text": "使うには、月額の契約がいるん？",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u027",
+    "who": "takosan",
+    "view": "plans",
+    "text": "ブラウザで操作するStudioには、月額などのプランがあります。一方、窓際族物語では、プログラムから呼び出すAPIを使っています。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u028",
+    "who": "yametaro",
+    "view": "plans",
+    "text": "いつものCodexから、生成を頼むため？",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u029",
+    "who": "takosan",
+    "view": "api",
+    "text": "それが一つ。もう一つは、必要なときに生成して、使った量に応じて費用を払いたいからです。APIはクレジットを購入し、処理ごとに消費する仕組みです。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u030",
+    "who": "yametaro",
+    "view": "api",
+    "text": "作らん月もあるから、その使い方は合いそうやな。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u031",
+    "who": "takosan",
+    "view": "plans",
+    "text": "逆に、ブラウザで毎日のように作ったり、編集機能もガッツリ使ったりするなら、月額プランも比較するといいと思います。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u032",
+    "who": "yametaro",
+    "view": "plans",
+    "text": "月額に入ったら、APIも使い放題になるん？",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u033",
+    "who": "takosan",
+    "view": "plans",
+    "text": "StudioとAPIは、別の契約とクレジットです。そこは分けて考えてください。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u034",
+    "who": "yametaro",
+    "view": "agents",
+    "text": "ちなみにワイ、Claude CodeやCursorを使う日もあるんやけど。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u035",
+    "who": "takosan",
+    "view": "agents",
+    "text": "Codex専用の仕組みではありません。Tripo公式にも、その三つから利用する案内があります。今回は、このリポジトリで使っている手順を紹介します。",
+    "chapter": "3. Tripo：月額プランとAPI",
+    "pause": 12
+  },
+  {
+    "id": "u036",
+    "who": "yametaro",
+    "view": "sheet",
+    "text": "ほな、まず何を用意するん？",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u037",
+    "who": "takosan",
+    "view": "sheet",
+    "text": "基準になるキャラクターシートです。顔、体格、服、後ろ姿など、どんなキャラクターを作るのかを決めます。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u038",
+    "who": "yametaro",
+    "view": "sheet",
+    "text": "そば屋さんやったら、この仮面と体格が大事やな。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u039",
+    "who": "takosan",
+    "view": "turn",
+    "text": "はい。そして今回のそば屋さんでは、この姿をもとに、ぐるっと回転する動画を作りました。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u040",
+    "who": "yametaro",
+    "view": "turn",
+    "text": "3Dを作りたいのに、先に動画を作るんか。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u041",
+    "who": "takosan",
+    "view": "turn",
+    "text": "正面、横、後ろの画像を、同じ姿から取り出したいからです。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u042",
+    "who": "yametaro",
+    "view": "consistency",
+    "text": "画像生成で、次は横向き、次は後ろ向き、って頼んだら、あかんの？",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u043",
+    "who": "takosan",
+    "view": "consistency",
+    "text": "それでも作れます。ただ、別々に生成すると、髪や服、体格が少しずつ変わることがあります。正面ではなかった飾りが、背中に増えていたり。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u044",
+    "who": "yametaro",
+    "view": "consistency",
+    "text": "着替えながら回っとる場合やないな。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u045",
+    "who": "takosan",
+    "view": "turn",
+    "text": "回転動画なら、姿が連続して変わるので、方向ごとのつながりを確認しやすくなります。ただし、動画でも途中で形が変わることはあります。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u046",
+    "who": "yametaro",
+    "view": "turn",
+    "text": "動画にしたら絶対に一貫する、ってわけではないんやな。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u047",
+    "who": "takosan",
+    "view": "turn",
+    "text": "はい。顔や服が変わっていないか、全身が切れていないかを確認して使います。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u048",
+    "who": "takosan",
+    "view": "portrait",
+    "text": "人型は縦に長いので、縦長の画面に大きく収めました。切り出した画像を3D生成へ使うため、今回は細部も見える解像度を選んでいます。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u049",
+    "who": "yametaro",
+    "view": "portrait",
+    "text": "横長の画面の真ん中に、そば屋さんがちっちゃく立っとったら、もったいないもんな。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u050",
+    "who": "takosan",
+    "view": "portrait",
+    "text": "この制作例は、縦832かける1108の8秒動画です。すべての制作で、この解像度が必須というわけではありません。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u051",
+    "who": "yametaro",
+    "view": "wan_link",
+    "text": "動画を作るところも、いつものWan？",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u052",
+    "who": "takosan",
+    "view": "wan_link",
+    "text": "はい。Wanを使う具体的な流れは、公開済みの動画で紹介しています。概要欄から見られるようにします。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u053",
+    "who": "takosan",
+    "view": "video_models",
+    "text": "MiniMax H3など、別の動画生成サービスも選択肢です。投稿者が普段からWanを使い慣れているので、今回はWanを使いました。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u054",
+    "who": "yametaro",
+    "view": "video_models",
+    "text": "3D用の回転動画も、普段の動画づくりの延長なんやな。",
+    "chapter": "4. シートから回転動画へ",
+    "pause": 12
+  },
+  {
+    "id": "u055",
+    "who": "takosan",
+    "view": "views",
+    "text": "動画ができたら、正面、左、背面、右の画像を切り出します。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u056",
+    "who": "yametaro",
+    "view": "views",
+    "text": "8秒やったら、2秒ずつでええ？",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u057",
+    "who": "takosan",
+    "view": "views",
+    "text": "時間だけでは決めません。回る速さが一定とは限らないので、実際の向きを見て選びます。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u058",
+    "who": "yametaro",
+    "view": "views",
+    "text": "本人が横向いた瞬間を拾うんやな。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u059",
+    "who": "takosan",
+    "view": "config",
+    "text": "この四枚をTripoへ渡します。リポジトリでは、画像の場所や生成設定をファイルに書いて、Pythonのスクリプトから送信しています。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u060",
+    "who": "yametaro",
+    "view": "config",
+    "text": "その操作をCodexに進めてもらう、と。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u061",
+    "who": "takosan",
+    "view": "tasks",
+    "text": "はい。生成タスクの番号を記録し、完了を確認して、モデルをダウンロードします。待っている間は、何度も生成を送らず、状態を確認します。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u062",
+    "who": "yametaro",
+    "view": "tasks",
+    "text": "待ちきれんで連打したら、そば屋さんが増えるんか。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u063",
+    "who": "takosan",
+    "view": "tasks",
+    "text": "追加生成の費用もかかります。このリポジトリのスクリプトでは、送信記録を残して重複を防いでいます。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u064",
+    "who": "yametaro",
+    "view": "tako_views",
+    "text": "たこさんも、この回転動画から作ったん？",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u065",
+    "who": "takosan",
+    "view": "tako_views",
+    "text": "私の採用モデルは、シートから用意した正面と背面の二枚で作りました。全員が同じ経路ではありません。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u066",
+    "who": "yametaro",
+    "view": "tako_views",
+    "text": "必要な方向をどうそろえるか。その方法の一つが、回転動画なんやな。",
+    "chapter": "5. 四方向の画像をTripoへ",
+    "pause": 12
+  },
+  {
+    "id": "u067",
+    "who": "yametaro",
+    "view": "cost",
+    "text": "ここで聞いときたい。そば屋さん一人、おいくらなん？",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u068",
+    "who": "takosan",
+    "view": "cost_video",
+    "text": "今回の記録では、回転動画の生成が推定0.56ドル。1ドル160円で計算すると、約90円です。",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u069",
+    "who": "takosan",
+    "view": "cost_tripo",
+    "text": "Tripoで立体を生成した分は120クレジット。1クレジット0.01ドルで換算すると、約192円です。",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u070",
+    "who": "yametaro",
+    "view": "cost_total",
+    "text": "合わせて、約280円？",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u071",
+    "who": "takosan",
+    "view": "cost_total",
+    "text": "この二つの生成工程だけなら、そのくらいです。ただし、キャラクターシートの準備や、作り直し、Codexなどの利用料は含んでいません。",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u072",
+    "who": "yametaro",
+    "view": "cost_total",
+    "text": "完成まで全部込みで280円、ではないんやな。",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u073",
+    "who": "takosan",
+    "view": "cost_total",
+    "text": "はい。私のTripo生成も記録上は120クレジットでした。モデルや設定によって変わるので、今回の実例として見てください。",
+    "chapter": "6. 今回の生成費用",
+    "pause": 12
+  },
+  {
+    "id": "u074",
+    "who": "yametaro",
+    "view": "sobaya_raw",
+    "text": "ここで、冒頭のそば屋さんが完成？",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u075",
+    "who": "takosan",
+    "view": "blender",
+    "text": "まだ手直しがあります。生成したモデルをBlenderで開き、Codexに修正用のコードを書いてもらいながら整えています。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u076",
+    "who": "yametaro",
+    "view": "blender",
+    "text": "最初に微妙なそば屋さんを作ったCodexが、ここで再登場するんか。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u077",
+    "who": "takosan",
+    "view": "roles",
+    "text": "画像から複雑な形を作るところはTripoに任せて、修正や組み込みにはCodexを使う、という分担です。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u078",
+    "who": "yametaro",
+    "view": "roles",
+    "text": "全部を一人に頼むより、仕事を分けるんやな。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u079",
+    "who": "takosan",
+    "view": "face_fix",
+    "text": "そば屋さんでは、仮面の顔パーツや赤い模様、材質の光沢、全身の傾きなどを調整しました。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u080",
+    "who": "yametaro",
+    "view": "tako_fix",
+    "text": "たこさんは、どこを直したん？",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u081",
+    "who": "takosan",
+    "view": "tako_fix",
+    "text": "最初は触手が八本ありました。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u082",
+    "who": "yametaro",
+    "view": "tako_fix",
+    "text": "そこは律儀にタコなんか。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u083",
+    "who": "takosan",
+    "view": "takosan_intro",
+    "text": "私のデザインは六本なので、本数を直しています。その後、配置や丸い手、ローブの内側も整えました。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u084",
+    "who": "yametaro",
+    "view": "takosan_intro",
+    "text": "それっぽい3Dと、本人の3Dの差を詰めていくんやな。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u085",
+    "who": "yametaro",
+    "view": "fuku",
+    "text": "福ギュンも3Dにしとるんやな。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u086",
+    "who": "takosan",
+    "view": "fuku",
+    "text": "はい。ただ、実写の人物を本人らしく再現するのは、今回も難しかったところです。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u087",
+    "who": "yametaro",
+    "view": "fuku",
+    "text": "人間の形にはなってても、本人に似てるかは別なんやな。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u088",
+    "who": "takosan",
+    "view": "fuku",
+    "text": "顔の立体感や肌、髪を調整しました。正面では近く見えても、横から見ると印象が変わることもあります。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u089",
+    "who": "yametaro",
+    "view": "fuku",
+    "text": "そば屋さんがうまくいったから、誰でも同じようにできるわけやないんか。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u090",
+    "who": "takosan",
+    "view": "fuku",
+    "text": "そうですね。福ギュンは、生成後の修正にも手間がかかった例です。",
+    "chapter": "7. Blenderで本人らしく仕上げる",
+    "pause": 12
+  },
+  {
+    "id": "u091",
+    "who": "yametaro",
+    "view": "rig",
+    "text": "立体になっただけやと、まだ歩かれへんの？",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u092",
+    "who": "takosan",
+    "view": "rig",
+    "text": "モデル全体を移動したり回したりはできます。でも、腕や脚を曲げるには、そのための仕組みが必要です。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u093",
+    "who": "yametaro",
+    "view": "rig",
+    "text": "ここで骨を入れるんやな。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u094",
+    "who": "takosan",
+    "view": "rig",
+    "text": "はい。骨格などの動かす仕組みをリグと呼びます。さらに、どの骨が表面をどれくらい引っ張るかを設定します。これがウェイトです。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u095",
+    "who": "yametaro",
+    "view": "rig",
+    "text": "腕の骨を動かしたら、腕の肉と服も付いてくるようにするんか。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u096",
+    "who": "takosan",
+    "view": "weights",
+    "text": "そうです。そば屋さんでは、腕を上げたときの変形や、脚を開いたときの股周りを見て調整しました。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u097",
+    "who": "yametaro",
+    "view": "greeting",
+    "text": "骨が動けば終わりやなくて、曲がり方も見るんやな。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u098",
+    "who": "takosan",
+    "view": "walk",
+    "text": "動作自体も、既存のアニメーションを体格に合わせたり、コードで作ったりします。形の生成と、動作を作る工程は分けています。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u099",
+    "who": "yametaro",
+    "view": "tako_bones",
+    "text": "たこさんは、人間用の歩き方を入れても困るもんな。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u100",
+    "who": "takosan",
+    "view": "tako_bones",
+    "text": "私には触手用の関節を用意しています。この形に合う仕組みが必要ですね。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u101",
+    "who": "yametaro",
+    "view": "tako_bones",
+    "text": "人間もタコも、とりあえず同じ骨で、とはいかへんか。",
+    "chapter": "8. 骨と動作を付ける",
+    "pause": 12
+  },
+  {
+    "id": "u102",
+    "who": "yametaro",
+    "view": "website",
+    "text": "せっかく動くようになったし、いろんなところで使いたいな。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u103",
+    "who": "takosan",
+    "view": "website",
+    "text": "まずはWebサイトです。今回紹介した3Dモデルは、窓際族物語の公式サイトでも触れるようにしています。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u104",
+    "who": "yametaro",
+    "view": "website",
+    "text": "この動画で見てるだけやなく、自分でぐるっと回せるんやな。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u105",
+    "who": "takosan",
+    "view": "website",
+    "text": "はい。気になる角度から見たり、動きを試したりしてみてください。公式サイトのURLは概要欄に載せておきます。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u106",
+    "who": "yametaro",
+    "view": "website",
+    "text": "福ギュンの再現度も、各自で確かめてみてな。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u107",
+    "who": "takosan",
+    "view": "three",
+    "text": "Three.jsを使うと、こうした3D表示をWebページへ組み込めます。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u108",
+    "who": "yametaro",
+    "view": "three",
+    "text": "普段作ってるサイトに、自分のキャラが住みつくわけや。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 18
+  },
+  {
+    "id": "u109",
+    "who": "takosan",
+    "view": "remotion",
+    "text": "次は動画です。いま中央に出しているモデルも、Three.jsで表示し、Remotionの時間に合わせて動かしています。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u110",
+    "who": "yametaro",
+    "view": "remotion",
+    "text": "字幕を出すタイミングで手を振らせたり、説明してる場所へ寄ったりできるんか。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u111",
+    "who": "takosan",
+    "view": "remotion",
+    "text": "はい。一度作ったモデルと動作を使い、カメラや背景、字幕を変えて別の動画にもできます。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u112",
+    "who": "yametaro",
+    "view": "remotion",
+    "text": "毎回、顔が変わらんか祈りながら生成せんでもええんやな。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u113",
+    "who": "takosan",
+    "view": "remotion",
+    "text": "同じモデルを使うので形は保てます。ただ、演技や表情は、そのモデルに用意した仕組みの範囲になります。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u114",
+    "who": "takosan",
+    "view": "ar",
+    "text": "ARなら、スマートフォンを通して現実の空間へ置くこともできます。公式サイトにも、対応端末で試すための入口を用意しています。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u115",
+    "who": "yametaro",
+    "view": "ar",
+    "text": "部屋にそば屋さん置けるんか。散らかってたら怒られそうや。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 18
+  },
+  {
+    "id": "u116",
+    "who": "takosan",
+    "view": "game",
+    "text": "ゲームでも使っています。窓際族物語ではFlutter Sceneでモデルを描画し、移動やゲームの処理と組み合わせています。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u117",
+    "who": "yametaro",
+    "view": "game",
+    "text": "サイトで挨拶してた人が、今度は追いかけてきとる！",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u118",
+    "who": "takosan",
+    "view": "uses",
+    "text": "3Dモデルは共通でも、周りにどんな仕組みを作るかで、使い道が変わります。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u119",
+    "who": "yametaro",
+    "view": "uses",
+    "text": "紹介ページ、動画、AR、ゲーム。同じ一体が、あちこちで働けるんやな。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u120",
+    "who": "takosan",
+    "view": "uses",
+    "text": "アイデア次第で、ほかの使い方にも広げられますね。",
+    "chapter": "9. Web・動画・AR・ゲームへ",
+    "pause": 12
+  },
+  {
+    "id": "u121",
+    "who": "yametaro",
+    "view": "pipeline",
+    "text": "最初は、Codexもっと似せてくれ、って思っとったけど、形を作るサービスと組み合わせたらよかったんやな。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  },
+  {
+    "id": "u122",
+    "who": "takosan",
+    "view": "pipeline",
+    "text": "今回は、Tripoで原型を作り、CodexとBlenderで整えて、いろいろな場所へ組み込む方法でした。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  },
+  {
+    "id": "u123",
+    "who": "yametaro",
+    "view": "website",
+    "text": "ワイもまず一体、サイトに置くところからやってみるわ。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  },
+  {
+    "id": "u124",
+    "who": "takosan",
+    "view": "links",
+    "text": "公式サイトと制作リポジトリ、Wanの動画解説は、概要欄に載せています。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  },
+  {
+    "id": "u125",
+    "who": "yametaro",
+    "view": "ending",
+    "text": "できたらワイの代わりに、会社にも置いとこ。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  },
+  {
+    "id": "u126",
+    "who": "takosan",
+    "view": "ending",
+    "text": "表示しているだけでは、仕事は進みませんよ。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  },
+  {
+    "id": "u127",
+    "who": "yametaro",
+    "view": "ending",
+    "text": "ほな、再現度は高いな。",
+    "chapter": "10. まずは一体、動かしてみる",
+    "pause": 12
+  }
+]

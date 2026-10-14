@@ -1,0 +1,70 @@
+画像から3Dキャラクターを作り、Web・動画・AR・ゲームで使うまで。
+たこさん＆やめ太郎が、窓際族物語で実際に使ったTripoとCodex・Blenderの制作手順を紹介します。
+
+■ チャプター
+00:00 まずは完成モデル
+00:37 餅は餅屋、どう使い分ける？
+01:52 Tripo：月額プランとAPI
+03:17 シートから回転動画へ
+05:02 四方向の画像をTripoへ
+05:59 今回の生成費用
+06:41 Blenderで本人らしく仕上げる
+07:45 骨と動作を付ける
+08:47 Web・動画・AR・ゲームへ
+10:20 まずは一体、動かしてみる
+
+■ 公式サイトで3Dモデルを触る
+そば屋のページの「3Dで見る」から回転・拡大・キャラクター切替を試せます。
+https://madogiwa.work/characters/sobaya
+公式サイト：https://madogiwa.work/
+ARカメラ（対応するiPhone／Safari）：https://madogiwa.work/camera/sobaya
+
+■ 公開済み：Wanを使ったAI動画制作の解説
+https://www.youtube.com/watch?v=RMWefLVS9vQ
+
+■ 制作リポジトリ：Madogiwa Multimedia Universe
+https://github.com/K9i-0/madogiwa-multimedia-universe
+本動画の台本・編集コード：
+https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/03_SCRIPTS/youtube_3d_character_workflow_20261014
+元プロジェクト（そば屋さん）：https://github.com/sobaya-0141/Seedance_Madogiwa
+
+■ Tripo
+Studio料金：https://www.tripo3d.ai/pricing
+API料金：https://developers.tripo3d.ai/en/pricing
+Codex・Claude Code・Cursorからの利用案内：https://developers.tripo3d.ai/en
+StudioとAPIの契約・クレジットは別です。
+
+■ 費用の読み方
+説明用に1ドル160円で固定換算しています。
+そば屋の2026年9月制作記録：Wan回転動画8秒・720P設定、推定$0.56（約90円）。Tripo P2生成は実消費120クレジット。APIの1 credit=$0.01で換算して約192円。2工程の合計は約282円です。
+動画費用は請求確定額ではなく記録上の推定。入力画像の制作、試行錯誤・再生成、Codex等の利用料、編集作業は含みません。現在の標準料金や全モデルの価格を示すものではありません。
+通常の新規動画生成は480pを既定とし、今回紹介した既存の720P回転動画とは区別しています。
+
+■ 制作について
+冒頭の「やめ太郎がCodexで作った」は劇中設定で、Blender版そば屋には既存の動画用画像を使っています。
+そば屋は回転動画からの四方向入力、たこさんはシートからの正面・背面入力で制作しました。回転動画も画像の完全な一貫性を保証するものではありません。
+3D実演は採用モデルをThree.jsとRemotionで描画。Web紹介は公式サイトの実操作録画、ARは公式サイトの入口、ゲームは実際の保存済み画面を使用しています。
+
+■ 音声
+VOICEVOX:中国うさぎ（たこさん）
+やめ太郎：Irodori-TTS v4.1-Small、正典参照音声
+https://voicevox.hiroshiba.jp/
+https://github.com/Aratako/Irodori-TTS
+
+■ BGM
+昼下がり気分／KK
+https://opentracks.com/bgm/detail/4695
+ほのぼのワルツ【リコーダー】／エクシエ
+https://commons.nicovideo.jp/works/nc116360
+Music: TheFatRat - Unity
+Watch the official music video: https://www.youtube.com/watch?v=n8X9_MgEdCg
+https://www.thefatrat.com/copyright
+
+■ モデル・動作
+モデル：窓際族物語のTripo生成・Blender修正版。
+そば屋の動作には既存ライブラリのリターゲットと独自調整を含みます。Mixamo由来の動作を含むため、モデル・動作一式をCC0として配布するものではありません。
+Mesh2Motion／Quaternius由来の動作素材：CC0 1.0
+https://mesh2motion.org/
+https://quaternius.com/
+
+#Tripo #Codex #3Dモデル #Blender #Threejs #Remotion #窓際族物語

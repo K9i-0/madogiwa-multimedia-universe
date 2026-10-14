@@ -8,5 +8,5 @@
 - 再現：`remotion/`で`python3 render_shorts.py`。映像が同じで音声のみ修正するときは`--skip-render`。
 - 型検査・全編デコード・1797フレーム確認済み。全13字幕カードと切替・終了を含む18フレームを確認。初回プレビューのタイトル折返しを修正。
 - 音声は原音とのPCM相関0.999795（先頭56.5秒）を確認。通し聴感・実時間再生の確認は未実施。
-- 投稿未実施。`shorts_metadata.json`と`shorts_description.txt`を用意。本編IDは`RMWefLVS9vQ`。公開時にYouTube Studioで関連動画へ設定する。
+- 2026-10-14公開済み：https://www.youtube.com/shorts/1y1o89AVzek 。`shorts_metadata.json`と`shorts_description.txt`を用意。本編IDは`RMWefLVS9vQ`。YouTube Studioで本編を関連動画へ設定し、保存完了を確認。
 - Shorts概要欄URLはクリックできないため、画面は関連動画へ誘導。概要欄にも本編URLを記載。仕様：https://support.google.com/youtube/answer/13748639?hl=ja

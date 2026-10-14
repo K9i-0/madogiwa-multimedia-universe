@@ -36,3 +36,10 @@ python3 03_SCRIPTS/shorts_queue_20261011/publish_batch.py --batch 1
 ```
 
 `publish_batch.py`は既定dry-run。ユーザーから登録指示があるときだけ`--upload`を付ける。毎週5本という目安であり、cron等は作成しない。別キューを作るときは日付別フォルダへ複製し、元の投稿記録を絶対に上書きしない。
+
+## 同僚環境への共有（2026-10-15）
+
+同僚制作回もユーザー指定の対象に含める。共有先では個人のキューや未導入のRemotionスキルに依存しない版を提供する。独立した初期化・レンダーテンプレート、字幕色正本、用途別ゆめみん音声設定をまとめたPR：
+https://github.com/sobaya-0141/Seedance_Madogiwa/pull/118
+
+共有先の既存Irodori配役と動画内VOICEVOXクレジット方針は保持している。MMUの投稿待ちデータ・OAuth・23時の自動投稿ルーチンは共有対象に含めていない。

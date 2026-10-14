@@ -1,0 +1,103 @@
+{
+  "status": "comparison; v10 retained; not a global voice-cast change",
+  "sourceVideo": "wan3_fukuchan_closeup_480p.mp4",
+  "upstream": {
+    "repository": "https://github.com/sobaya-0141/Seedance_Madogiwa",
+    "revision": "af92df24b277a45450cda975b0549d4c6ee890e4"
+  },
+  "takosan": {
+    "engine": "VOICEVOX",
+    "version": "0.25.1",
+    "speaker": "Voidoll",
+    "style": 89,
+    "speedScale": 1.0,
+    "text": "本番もお燃えになってますわ。",
+    "kana": "ホンバンモ / オモエニ / ナッテマスワ",
+    "startFrameInFull": 1007,
+    "seconds": 2.08725,
+    "credit": "VOICEVOX:Voidoll(CV:丹下桜)"
+  },
+  "fukugyun": {
+    "target": "02_CHARACTERS/Fukuchan_voice.wav",
+    "targetSha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+    "sourceClipSeconds": [
+      0,
+      3.466666666666667
+    ],
+    "placementFramesInFull": [
+      180,
+      284
+    ],
+    "sourceSpeechIntervals": [
+      [
+        1.089458,
+        2.087667
+      ],
+      [
+        2.608292,
+        3.340667
+      ]
+    ],
+    "seedvc": {
+      "steps": 50,
+      "length_adjust": 1.0,
+      "cfg": 0.7,
+      "f0_condition": true,
+      "auto_f0_adjust": true,
+      "fp16": false,
+      "rawSeconds": 3.459791666666667,
+      "timeStretch": false,
+      "silenceArtifactGateSeconds": [
+        [
+          1.0,
+          2.23
+        ],
+        [
+          2.5,
+          3.466666666666667
+        ]
+      ],
+      "warning": "Existing Seed-VC checkpoint loader reports skipped shape-mismatched keys; recorded in local log. Voice quality needs listening."
+    },
+    "irodori": {
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "seed": 100,
+      "cfg_text": 5,
+      "duration_scale": 0.7,
+      "uncut": true,
+      "text": "こちらのお菓子も、ギュンですわ。",
+      "rawSeconds": 2.08,
+      "limitation": "Onset aligned only; TTS does not inherit source pause or phoneme timing."
+    }
+  },
+  "durationInFrames": 1162,
+  "fps": 30,
+  "width": 1280,
+  "height": 720,
+  "checks": {
+    "seedvc_outside_repair_equal": true,
+    "irodori_outside_repair_equal": true,
+    "takosan_outside_repair_equal": true
+  },
+  "listening": "Unavailable in this runtime; ASR, waveform and decoded frames inspected, not subjective approval.",
+  "outputs": {
+    "part1_irodori.wav": {
+      "sha256": "91f95129e9dcfe176300e6664cf06fb3e5ede22868028b78d758d3f850a6dbdf"
+    },
+    "part2_voidoll.wav": {
+      "sha256": "29a5c1eb4e5efc3201571a16084e5993db77b946db4062a2fd62ed9253c227bc"
+    },
+    "fukugyun_seedvc.wav": {
+      "sha256": "58256a8e58f8feb468e234a9ccde39aba7debb4e1faeda0ecfaeaac874bf6176"
+    },
+    "part1_seedvc.wav": {
+      "sha256": "234b7ccf34c4507a545ec91733d13633509bb89f56e441116507b8784e66ef15"
+    },
+    "fukugyun_irodori.wav": {
+      "sha256": "3885ad9d25db2fd64aa5650f6e52c43192b067967d4651a0b75ba17d379a8ca8"
+    },
+    "takosan_voidoll.wav": {
+      "sha256": "45221aecdcafffa0fcd0d87d8be71a5b27293e0d136c2dfaa52f5802edd3a246"
+    }
+  }
+}

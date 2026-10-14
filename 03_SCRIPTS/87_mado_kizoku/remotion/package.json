@@ -20,7 +20,9 @@
     "bundle": "remotion bundle",
     "render": "remotion render src/index.ts MadoKizokuPart2 ../final_remotion_subtitles_part2_v3.mp4 --codec=h264 --overwrite --concurrency=2",
     "render:part1": "remotion render src/index.ts MadoKizokuPart1 ../final_remotion_subtitles_part1.mp4 --codec=h264 --overwrite --concurrency=2",
-    "render:full": "remotion render src/index.ts MadoKizokuFull ../final_remotion_subtitles_v10.mp4 --codec=h264 --overwrite --concurrency=2"
+    "render:full": "remotion render src/index.ts MadoKizokuFull ../final_remotion_subtitles_v11_seedvc.mp4 --props=voice-seedvc.json --codec=h264 --overwrite --concurrency=2",
+    "render:voice-irodori": "remotion render src/index.ts MadoKizokuFull ../final_remotion_subtitles_v11_irodori.mp4 --props=voice-irodori.json --codec=h264 --overwrite --concurrency=2",
+    "render:voice-seedvc": "remotion render src/index.ts MadoKizokuFull ../final_remotion_subtitles_v11_seedvc.mp4 --props=voice-seedvc.json --codec=h264 --overwrite --concurrency=2"
   },
   "sideEffects": [
     "*.css"

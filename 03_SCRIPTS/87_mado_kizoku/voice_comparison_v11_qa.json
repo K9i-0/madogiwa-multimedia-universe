@@ -1,0 +1,56 @@
+{
+  "seedvc": {
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "duration": "38.733333",
+        "nb_frames": "1162",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "duration": "38.741000",
+        "nb_frames": "1818"
+      }
+    ],
+    "decodedPeak": 0.9059466123580933,
+    "sha256": "8e658dca7020c7345216cccd324da7e237bcec01de2bb9730233296e3abcd42d",
+    "savedPcmOutsideFukugyunEqual": true
+  },
+  "irodori": {
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "duration": "38.733333",
+        "nb_frames": "1162",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0",
+        "duration": "38.741000",
+        "nb_frames": "1818"
+      }
+    ],
+    "decodedPeak": 0.9059466123580933,
+    "sha256": "c06c0ca30fa0c3132f70219391844af7e147ce2360aa5db5f23fe7a534900ca0",
+    "savedPcmOutsideFukugyunEqual": true
+  },
+  "savedPcmOutsideTakosanEqual": true,
+  "review": "TypeScript and full decode pass; credit and Fuku caption frames visually checked. No direct listening available.",
+  "adoptedWavRebuildMaxLsbDifference": [
+    0,
+    1
+  ]
+}

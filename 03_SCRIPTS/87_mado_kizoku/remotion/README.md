@@ -58,3 +58,8 @@ npm run render:full
 
 ## 通し版v10：福ギュンへ改名
 2026-10-06ユーザー指示により字幕の話者名を福ギュンへ変更。caption-script.json・part1-manifest.json・prepare_part1.pyの表示名を更新。映像・音声・BGM・暗転・2秒クレジットは維持。過去の生成プロンプトと入力画像スナップショットは保持。出力 final_remotion_subtitles_v10.mp4、1162フレーム＝38.733秒。
+
+## v11音声比較：福ギュンの同期とたこさんの声
+元の発話から声質を変えるSeed-VC版と、正典声を参照して読み直すIrodori版を別々に用意。両版のたこさんは指定元リポジトリのVOICEVOX/Voidoll（89）へ変更。既存v10と標準のrender:fullは保持。試作の生成・ミックス・レンダリング方法、未確認点は[voice-comparison.md](voice-comparison.md)。
+
+2026-10-06採用確定：ユーザーが① Seed-VC版を選択。正式タイトルは「窓際お嬢様部」。`render:full`は採用版へ変更。`prepare_adopted_voice.py`で追跡済み採用WAVから差し替えミックスを復元する。Studio登録は`../studio_registration.json`。

@@ -4,14 +4,11 @@ import manifest from './part1-manifest.json';
 import {EditComposition} from './ShortsCleanPart2';
 export type VoiceVariant = 'original' | 'irodori' | 'seedvc';
 export const Part1: React.FC<{voiceVariant?: VoiceVariant}> = ({voiceVariant='original'}) => {
-  const frame=useCurrentFrame();
   const videoStyle: React.CSSProperties={width:'100%',height:'100%',objectFit:'fill'};
-  const caption=manifest.captions.find(c=>frame>=c.startFrame&&frame<c.endFrame);
   return <AbsoluteFill style={{backgroundColor:'#000',overflow:'hidden'}}>
     {manifest.sourceSegments.map((seg,i)=><Sequence key={i} from={manifest.sourceSegments.slice(0,i).reduce((n,s)=>n+s.endFrame-s.startFrame,0)} durationInFrames={seg.endFrame-seg.startFrame}><OffthreadVideo src={staticFile('part1.mp4')} startFrom={seg.startFrame} endAt={seg.endFrame} muted style={videoStyle} /></Sequence>)}
     <Sequence from={180} durationInFrames={104}><OffthreadVideo src={staticFile('fukuchan_closeup.mp4')} muted style={videoStyle}/></Sequence>
     <Html5Audio src={staticFile(voiceVariant==='original' ? 'part1_audio.wav' : `voice-v11/part1_${voiceVariant}.wav`)}/>
-    {false&&caption&&<div style={{position:'absolute',left:48,right:48,bottom:38,textAlign:'center',fontFamily:'"Hiragino Sans", "Yu Gothic", sans-serif',fontSynthesis:'none',fontSize:38,fontWeight:600,lineHeight:1.3,whiteSpace:'pre-line',color:'#fff',WebkitTextStroke:'2.2px #171717',paintOrder:'stroke fill',textShadow:'0 2px 3px rgba(0,0,0,0.75)'}}>{caption.speaker}「{caption.text}」</div>}
   </AbsoluteFill>;
 };
 export const FullFilm: React.FC<{voiceVariant?: VoiceVariant}>=({voiceVariant='original'})=> {

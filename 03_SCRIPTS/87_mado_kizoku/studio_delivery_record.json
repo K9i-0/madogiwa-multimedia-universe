@@ -1,0 +1,59 @@
+{
+  "encoding": "libx264 slow crf16 yuv420p faststart; AAC copy",
+  "files": [
+    {
+      "path": "03_SCRIPTS/87_mado_kizoku/final_remotion_subtitles_v11_seedvc.mp4",
+      "size": 13099557,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "30/1",
+          "duration": "38.733333",
+          "nb_frames": "1162",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_name": "aac",
+          "avg_frame_rate": "0/0",
+          "duration": "38.741000",
+          "nb_frames": "1818"
+        }
+      ],
+      "audioHash": "SHA256=ca1183c17902c1d76fbc82767c28e035c1d7303c0b6b6185bdc047d7ec42f142",
+      "sha256": "8e658dca7020c7345216cccd324da7e237bcec01de2bb9730233296e3abcd42d"
+    },
+    {
+      "path": ".local/mado-kizoku-studio/madogiwa-ojousama-club.mp4",
+      "size": 14405852,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "30/1",
+          "duration": "38.733008",
+          "nb_frames": "1162",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_name": "aac",
+          "avg_frame_rate": "0/0",
+          "duration": "38.741000",
+          "nb_frames": "1818"
+        }
+      ],
+      "audioHash": "SHA256=ca1183c17902c1d76fbc82767c28e035c1d7303c0b6b6185bdc047d7ec42f142",
+      "sha256": "4e5592fe58f73e95c523fde7f5c921b262be3497e9c2df0719ba20439c1863fc"
+    }
+  ],
+  "fullDecode": "pass",
+  "audioCopyVerified": true,
+  "durationDifferenceSeconds": 0.000325,
+  "durationNote": "MP4 track timescale rounding; frame count and fps unchanged"
+}

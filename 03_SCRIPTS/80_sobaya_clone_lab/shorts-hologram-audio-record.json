@@ -1,0 +1,60 @@
+{
+  "source": "final_remotion_shorts_usagi_9x16.mp4",
+  "sourceSha256": "d49ea48c81cbec7810ded7e236ca8fdb01e3177bf77f2534805353b0d3e16722",
+  "output": "final_remotion_shorts_usagi_hologram_9x16.mp4",
+  "sha256": "d66ef5fb25593f8f3837103efee666230530c406641ca1f9333f35fa1f5a62d7",
+  "settings": {
+    "fps": 30,
+    "sampleRate": 48000,
+    "effectStartFrame": 540,
+    "effectEndFrame": 754,
+    "lineIndexes": [
+      2,
+      3
+    ],
+    "ringFrequencyHz": 42,
+    "ringWetGain": 0.14,
+    "dryGain": 0.96,
+    "electronicBandHz": [
+      220,
+      5200
+    ],
+    "stereoDelaySeconds": [
+      0.023,
+      0.031
+    ],
+    "stereoDelayGain": 0.12,
+    "reverbRt60Seconds": 0.42,
+    "reverbLengthSeconds": 0.55,
+    "reverbPreDelaySeconds": 0.028,
+    "reverbWetRmsRatio": 0.12,
+    "reverbSeed": 801015,
+    "tailFadeSeconds": 0.18,
+    "output": "final_remotion_shorts_usagi_hologram_9x16.mp4"
+  },
+  "processedLines": [
+    {
+      "file": "shorts_takosan_usagi_03.wav",
+      "sha256": "6f6e2e5cb0ee036568ec2f98aaa42bc254c3fb6e22005f328ea44d28ad83e700",
+      "startFrame": 548,
+      "endFrame": 635,
+      "durationSamples": 138752,
+      "gainDb": 6.434713980386865
+    },
+    {
+      "file": "shorts_takosan_usagi_04.wav",
+      "sha256": "9750656ca70e0b4ef9a7e2c2bf7662527ec99494195d06a56d78b637a3e153ff",
+      "startFrame": 638,
+      "endFrame": 750,
+      "durationSamples": 177664,
+      "gainDb": 8.440939213247649
+    }
+  ],
+  "activeSpeechGainMatchDb": 0.2273980702539814,
+  "peakDbfs": -2.06247615814209,
+  "outsideEffectWindowPcmIdentical": true,
+  "videoStreamIdentical": true,
+  "horizontalSourceUnchanged": true,
+  "fullDecode": true,
+  "subjectiveListening": false
+}

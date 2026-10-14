@@ -1,0 +1,20 @@
+{
+  "fps": 30,
+  "sampleRate": 48000,
+  "effectStartFrame": 540,
+  "effectEndFrame": 754,
+  "lineIndexes": [2, 3],
+  "ringFrequencyHz": 42,
+  "ringWetGain": 0.14,
+  "dryGain": 0.96,
+  "electronicBandHz": [220, 5200],
+  "stereoDelaySeconds": [0.023, 0.031],
+  "stereoDelayGain": 0.12,
+  "reverbRt60Seconds": 0.42,
+  "reverbLengthSeconds": 0.55,
+  "reverbPreDelaySeconds": 0.028,
+  "reverbWetRmsRatio": 0.12,
+  "reverbSeed": 801015,
+  "tailFadeSeconds": 0.18,
+  "output": "final_remotion_shorts_usagi_hologram_9x16.mp4"
+}

@@ -1,0 +1,440 @@
+{
+  "date": "2026-10-14",
+  "policy": "Preserve local files; commit production inputs, adopted audio, source code and records. Do not track rendered videos, comparisons or rebuildable media.",
+  "local_only": [
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261010/takosan_base_v1.png",
+      "reason": "Superseded by v2 left-facing sprite",
+      "bytes": 1271004,
+      "sha256": "cbb68d0f430f07dfd17e2403341e60a2f447db77b1962bb710f273b5270fdfee"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261010/yametaro_base_v1.png",
+      "reason": "Superseded by v2 left-facing sprite",
+      "bytes": 1447670,
+      "sha256": "7a3dabfc66febe8f5fa921e756e401be3273db44651cd16c76a0644107df9e59"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261014/lineup_a.png",
+      "reason": "Unselected proportion or lineup comparison image",
+      "bytes": 1749584,
+      "sha256": "e2ebdf69296ca98527b4d5ca48d2926ed015cf34d8babaa518b7ce64cff32f6e"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261014/lineup_b.png",
+      "reason": "Unselected proportion or lineup comparison image",
+      "bytes": 1631980,
+      "sha256": "a8238d5959b163bcb0a37300a592ac1f6385e0acf3333c0c775e51a61a08370f"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261014/lineup_c.png",
+      "reason": "Unselected proportion or lineup comparison image",
+      "bytes": 1679007,
+      "sha256": "14e5a17964f629f81e5726df5836475f279870953bb0bd19f2ab83455c119bdf"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261014/sobaya_base_v1.png",
+      "reason": "Unselected proportion or lineup comparison image",
+      "bytes": 1288252,
+      "sha256": "0f155ff8bc3adc6ab6a7deb4d1770a477f22699fcebf1683032a8ffdf715b10e"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261014/sobaya_proportion_a.png",
+      "reason": "Unselected proportion or lineup comparison image",
+      "bytes": 1867980,
+      "sha256": "59d80eeb782dc6824fdbc87545b59fb95f417fae1d2c56032e59dc27c4b9a54d"
+    },
+    {
+      "path": "03_SCRIPTS/00_TEMPLATES/characters/commentary_base_20261014/sobaya_proportion_c.png",
+      "reason": "Unselected proportion or lineup comparison image",
+      "bytes": 1159765,
+      "sha256": "cafa080a4d27bdd0e798a1f0760a602936fdcf44fd72d796d01a621dcc883b52"
+    },
+    {
+      "path": "03_SCRIPTS/87_mado_kizoku/remotion/public/usagi-normal/mix.wav",
+      "reason": "Local comparison mix",
+      "bytes": 7436844,
+      "sha256": "c201af370f3c32cca72c106f0028d24fb4d372a2996fcb38192e37fb8621835e"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/.mosaic_audit_v18.jpg",
+      "reason": "Review still",
+      "bytes": 408666,
+      "sha256": "bd2b836e8a37718a6fe8b5c449f369b9f3b1d065b6f8a706a240c92b0102dfb4"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/abbreviation_v4.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 361038,
+      "sha256": "d43acb87433c78cd36a28e73e1f12ae92a4f4480addfbb630462454e44aaf71e"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/aftermath_potfix_audit_v12.jpg",
+      "reason": "Review still",
+      "bytes": 286844,
+      "sha256": "cfcb6096d549cd3912b79f163886ba3e714562a10ff24d5187fceaa92b7dafae"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/deduction_repaired_v13.wav",
+      "reason": "Standalone review extraction from edited mix",
+      "bytes": 793644,
+      "sha256": "31f89107672cf360f368b4f920114c330487cde0d2b76b7abc2077f90017ee66"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/fuku_abbreviation_kana_v3.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 464718,
+      "sha256": "27bfd47c808682a2ed7203deb08f1d047f4a1562d30f279f31fca7ca5a2c2b42"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/fuku_intro_v3.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 314958,
+      "sha256": "3a21e01c187b370078b24fa69633f1549c43eb8774f830decb555959cad9ffbb"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/fuku_warning_kana_v3.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 253518,
+      "sha256": "d3fabc31761005ac86b5e5353b4987f9f77e02d179c3139ab08da54c39e55cd5"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/fukugyun_warning_v2.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 245838,
+      "sha256": "0d1c3f9cd11b278aba4c9814d41df305ed9f4139ae54aeabf7665b7a1fe397b0"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/marker_audit_v12.jpg",
+      "reason": "Review still",
+      "bytes": 347467,
+      "sha256": "f5a388b95268813cd78a9f99363c9dbc3f7ca0c8bebd738e31512f35a4538c76"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/message_v4.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 326478,
+      "sha256": "001a2da4acc410afe75ae82ed0ca8f9ff25d18674840b0755aa7c0855975baa7"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/oden_candidates/.gitignore",
+      "reason": "Unselected food image comparison",
+      "bytes": 6,
+      "sha256": "88d1099650ee449edf68179321b1fbfb215d89a5170e36a4d6371141027bc9dd"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/oden_candidates/README.md",
+      "reason": "Unselected food image comparison",
+      "bytes": 351,
+      "sha256": "8b6f95cac5034e835f5efef4d338d53a9d46a76d9bfc649ed1e99fad643f0ee5"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/oden_candidates/manifest.json",
+      "reason": "Unselected food image comparison",
+      "bytes": 4820,
+      "sha256": "69aea098398e9f7d88657e09c988ccce3ab7f67df702de60a91280d33afdc452"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/oden_candidates/prompt_a_subtle.txt",
+      "reason": "Unselected food image comparison",
+      "bytes": 726,
+      "sha256": "b4fbd29204744a691fab6bed902aef35d70095df3aaef9b5f260e669cc70ef09"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/oden_candidates/prompt_b_purple.txt",
+      "reason": "Unselected food image comparison",
+      "bytes": 812,
+      "sha256": "df93fd39bb7dbdc9a98250414ce1b9485ccc82e1cf4ee8685c6767c85196190a"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/oden_candidates/prompt_c_toxic.txt",
+      "reason": "Unselected food image comparison",
+      "bytes": 914,
+      "sha256": "69d8184b37f577dbbf8bbe57a4e36964e9ef1456577e6f3475f4beb1fb55cbac"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/reaction_trimmed_v13.wav",
+      "reason": "Standalone review extraction from edited mix",
+      "bytes": 556844,
+      "sha256": "ec18ebe56ff2ffd547a8019b4227add5ec815a27a41c3337c3ce87188ad10049"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/report_v4.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 710478,
+      "sha256": "5c532d00698d839ef9ea459258a2c3429e08527331dbbc2ad519dfea26524359"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/studio_preview_0.5.jpg",
+      "reason": "Review still",
+      "bytes": 91863,
+      "sha256": "acbd66b9a101a0a7a548830da520f3e78620040ea8000ef5d6f63c08403ccc50"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/studio_preview_25.jpg",
+      "reason": "Review still",
+      "bytes": 44897,
+      "sha256": "b908d8438f46dc150484db010ace087d37b858de14888c0d6ea8ba8f87420923"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/studio_preview_50.jpg",
+      "reason": "Review still",
+      "bytes": 100309,
+      "sha256": "24eacbe4f9906bdc9f65ef984ac935ae5de3da05b7950f5112701ebb375b5512"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v12_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1065038,
+      "sha256": "233482c7ac3bfe6593691b8301deecd0c57849e3b7f4280465221fcf5f9f9d84"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v12b_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1065038,
+      "sha256": "f92cb3101e0790f142c40161f72012b3d1297b52af2f953b063baf6962c0dc75"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v12c_generated_audio.asr.json",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 316,
+      "sha256": "81b77f22bf5b87ef2f498b7f2e197c78090aca504d3abba2210344dc5a66981d"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v12c_generated_audio.tokens.json",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1950,
+      "sha256": "bb9da272b05fd3e091723488c79477074f08bd59a29634643af07ab213b401d1"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v12c_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1065038,
+      "sha256": "94388266084866bf30baa3a3e576b464f5356d71f1ce347443489e0d22b2818f"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v12d_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1065038,
+      "sha256": "b2a84bea9113a7bbbd4c298a6e3bfac8ac67b99227da1b3dcbd6c8ab51048d91"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v15_generated_audio.tokens.json",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1025,
+      "sha256": "9657f52fe516f3b2d50555bd063fa7dafb9410969efab7d76e3685ad4c622503"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_aftermath_v15_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 888910,
+      "sha256": "71f08aefa8847f396a94ea79acd354484211cdbe9a9d23a71a254bc377f6625f"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_investigation_v12_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 2474062,
+      "sha256": "2d7ed076ea032bbd3f40b3c9930cc170be0cc89b1645d50ebd41fdc65bcf0b2c"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/wan3_rear_v12_generated_audio.wav",
+      "reason": "Generated-video audio extraction; original videos remain local",
+      "bytes": 1065038,
+      "sha256": "d100b616fa5a70c99fc84b85a14f4e81c11b928b7f0132cbd89fff08c389fea8"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/warning_v4.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 261198,
+      "sha256": "674e4c0f17fe6b85dfcaf7dbae5846fd7f6ae62f3290919a6763b8885bd59522"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/yotan_deduction_v3.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 384078,
+      "sha256": "d73f961998ef0f62f9e954e1bf468e1139861c2503865dd8214902d597c0dcf9"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/yotan_question_v3.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 215118,
+      "sha256": "d2629d5a4055ec07b9e8d134ed4cd01bef8bcf0f8c9ab69fa4caa81325ce4507"
+    },
+    {
+      "path": "03_SCRIPTS/88_doku_chikuwa/yotan_reaction_v4.wav",
+      "reason": "Superseded dialogue take; production references and later adopted takes retained",
+      "bytes": 119118,
+      "sha256": "1183562230a6ce57108339bab17e8561b5b0709279209c92b31bda2d4e69a57b"
+    },
+    {
+      "path": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/line01_takosan.wav",
+      "reason": "Rebuildable normalized copy of episode dialogue WAV",
+      "bytes": 353358,
+      "sha256": "d71660b76753922d52ce51adecfed3a3317ea4d684fb430e0106314ef88d1242"
+    },
+    {
+      "path": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/line02_yametaro.wav",
+      "reason": "Rebuildable normalized copy of episode dialogue WAV",
+      "bytes": 268878,
+      "sha256": "12e61c3ed8a2ca3f6112f7e9d38838fb887cd977b7f356ea0a4da21b63f5841a"
+    },
+    {
+      "path": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/line03_takosan.wav",
+      "reason": "Rebuildable normalized copy of episode dialogue WAV",
+      "bytes": 399438,
+      "sha256": "ad2a1ef60e77094f90b5afa57ab67bfe76d9736372bb256078d0c0bedfd9e2a1"
+    },
+    {
+      "path": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/line04_yametaro.wav",
+      "reason": "Rebuildable normalized copy of episode dialogue WAV",
+      "bytes": 257358,
+      "sha256": "ef7be856054bd2b7ee2774bef52464909cbb4f9459af061860d6e08eb1a47039"
+    },
+    {
+      "path": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/line05_takosan.wav",
+      "reason": "Rebuildable normalized copy of episode dialogue WAV",
+      "bytes": 407118,
+      "sha256": "256c4bfd2181d4f755325fadd7a01692d911be2a769879f6eca2ca387a83c698"
+    },
+    {
+      "path": "03_SCRIPTS/commentary_duo_test_20261010/remotion/public/line06_yametaro.wav",
+      "reason": "Rebuildable normalized copy of episode dialogue WAV",
+      "bytes": 261198,
+      "sha256": "f345e3c83c93d4964cfcd260215c34ca611779310740266464c9e66269bb0d36"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line01_yumemin.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 283726,
+      "sha256": "373d2d5f94e9772522c6167e72b0df7e8d2e8a24b54ef2370b91f56b7ba70304"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line01_yumemin_min.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 262222,
+      "sha256": "bc15ee6d890faec812123fb5b0685a2a64212de39ed3827c47bc4d70f892e407"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line03_yumemin.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 254030,
+      "sha256": "74bc257dc4330cc36ee53fb9cae53b00191ff338bae14ad0fa927b2728fd37ff"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line03_yumemin_min.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 236622,
+      "sha256": "df5045cda59703b041a3882a563cd7e078e636a9a44409e8d4ef43c0e5612297"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line05_yumemin.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 226382,
+      "sha256": "7c40b1d0064c8f43c9628f1dfaca04df2c01b6140465cbe755bb0c4a08182495"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line05_yumemin_min.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 207950,
+      "sha256": "85f044c12b14ae7f0c685894345e0e9a9292f9def66cb436e653c1636edb8e3e"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line07_yumemin.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 234574,
+      "sha256": "081d22e25b66288dab6bb1bd093c607a045aa7d805749924af82a6a8911784a9"
+    },
+    {
+      "path": "03_SCRIPTS/sobaya_yumemin_sprite_sample_20261014/line07_yumemin_min.wav",
+      "reason": "Superseded Zundamon comparison voice; Hau adopted",
+      "bytes": 217166,
+      "sha256": "a7c6f4a45a7bd5f8634cdb4b231e13c73618092534ec8bda040580a13dcd6a97"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/source_quad_anchor.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 245261,
+      "sha256": "9b86127c16addf95a069d85c38f5ccaf3b601a0d63059ecd7c3e21c7a0886846"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/source_quad_arrest.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 418300,
+      "sha256": "0e5576d6650a1fc4451e4972b7d1c2aa856932c20cd572f49a5a3bfa5686dac0"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/source_quad_home.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 372672,
+      "sha256": "598e945cb50126101f5c51167520aab18eec572ec36ca1eceb3bff2e27d5417b"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/source_quad_office.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 306310,
+      "sha256": "e4302ff8f62d16e49037f65668c386ca177679ab3322ff728c458c2a18e64ddf"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/source_sobaya_arrest_9s.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 418300,
+      "sha256": "0e5576d6650a1fc4451e4972b7d1c2aa856932c20cd572f49a5a3bfa5686dac0"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_a_chat.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1841790,
+      "sha256": "d0fe8ee8909a8fd2726d3f641eeef7566de772ae15d5173c020957ddbd65468d"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_b_excel.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1636589,
+      "sha256": "2337e2f81f41353fb116b932dafb78cb22d0dab8979e5cc850ebee0bdedf616a"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_c_conversation.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1898560,
+      "sha256": "e48ab1de46373eb9346146b06f6a9936b27811caf9a2aeab4b5b7f26df82e038"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_d_arrest.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1984353,
+      "sha256": "622562f3ee42323a456e98cf8ddcb65f8e2ce15c53f6e1ca8b3a4c46ecc85b2a"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_e_quad_center.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1975713,
+      "sha256": "7a975d1767b6ab88b0e51b54cac51ded56fb081e056c3ba8a4cf9f62a68c69b3"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_f_chat_v2.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1929812,
+      "sha256": "f60332c801e9a4aba31089d23b62e3b3c0dcf216dab35a6fde512ac44ddba034"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_f_quad_clean.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 1887727,
+      "sha256": "acbcb82b11070745de779bc32e8937591b14d10207d72553aa400e7ba0bcad84"
+    },
+    {
+      "path": "03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_g_quad_showcase.png",
+      "reason": "Unselected thumbnail/source candidate; selected_thumbnail.json points to tracked thumbnail_f_original_v4.png",
+      "bytes": 2114567,
+      "sha256": "1c00e02f351c11927e941705368544e4ba50da8d4d1b446bc9df0e9687eb2845"
+    }
+  ],
+  "validation": {
+    "local_only_files_preserved": true,
+    "json_parse": "89 files passed",
+    "python_parse": "24 files passed",
+    "typescript": "87, 88, commentary_duo_test, super_tsurai_sobaya_end passed",
+    "yotan_reference_sha256": "verified against VOICE_CAST.md",
+    "fix": "Removed unreachable subtitle markup and unused declarations from episode 87 Shorts sources; rendered output unchanged."
+  }
+}

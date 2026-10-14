@@ -13,9 +13,10 @@ for(const name of names){
  for(const f of ['sticker.png','preview.gif'])execFileSync('ffmpeg',['-v','error','-i',path.join(root,'stickers',name,f),'-f','null','-']);
  const pixels=f=>execFileSync('magick',[path.join(root,'build',name,f),'-depth','8','rgba:-']);
  const first=pixels('display0.png'),last=pixels('display19.png');
+ for(let i=0;i<20;i++){const rgba=pixels(`display${i}.png`);let partial=0;for(let j=3;j<rgba.length;j+=4)if(rgba[j]>0&&rgba[j]<255)partial++;if(partial<20)throw Error('Missing soft alpha edges: '+name+' '+i);}
  if(!first.equals(last))throw Error('Loop endpoints differ: '+name);
  const headerHeight=Number(execFileSync('magick',['identify','-format','%h',path.join(root,'build',name,'header.png')]));
- const textPixels=i=>execFileSync('magick',[path.join(root,'build',name,`display${i}.png`),'-crop',`400x${headerHeight}+0+0`,'+repage','-depth','8','rgb:-']);
+ const textPixels=i=>execFileSync('magick',[path.join(root,'build',name,`display${i}.png`),'-crop',`400x${headerHeight}+0+0`,'+repage','-depth','8','rgba:-']);
  const title=textPixels(0);for(let i=1;i<20;i++)if(!title.equals(textPixels(i)))throw Error('Caption changed: '+name+' '+i);
  report.push({name,...probe,frames:count,duration,plays,bytes:b.length,decodeVerified:true,loopEndpointsMatch:true,captionPixelsFixed:true});
 }

@@ -1,9 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {root,work,mag,apng,gif,names} from './lib.mjs';
+import {root,work,mag,run,apng,gif,names} from './lib.mjs';
 import {buildMotion} from './motion.mjs';
 const reused=['takosan','tokun','yotan','fukuchan','yametaro'];
-for(const name of reused)buildMotion(name);
+const selected=process.env.STICKER_MEMBERS?.split(',')||names;
+for(const name of reused)if(selected.includes(name))buildMotion(name);
 const delays=[...Array(19).fill(90),1290],allFrames={},stats=[];
 function transparent(src,dst){mag(src,'-bordercolor','white','-border','1','-alpha','set','-fuzz','3%','-fill','none','-draw','alpha 0,0 floodfill','-shave','1x1',dst);}
 function decal(name){
@@ -42,6 +43,7 @@ const yumArts=yumAngles.map((angle,i)=>{
 const okayArt=path.join(work,'okayaman-original.png');
 mag(path.join(root,'source','okayaman','art.png'),'-resize','500x500','-background','white','-alpha','remove','-alpha','off',okayArt);
 for(const name of names){
+ if(!selected.includes(name)){allFrames[name]=Array.from({length:20},(_,i)=>path.join(work,name,`display${i}.png`));continue;}
  const dir=path.join(work,name),out=path.join(root,'stickers',name);fs.mkdirSync(dir,{recursive:true});fs.mkdirSync(out,{recursive:true});
  const header=path.join(dir,'header.png');fs.copyFileSync(path.join(root,'source',name,'caption.png'),header);
  const hh=Number(mag('identify','-format','%h',header));const areaH=400-hh;
@@ -70,7 +72,8 @@ for(const name of names){
   const args=['-size','400x400','xc:white','(',arts[i],'-crop',crop,'+repage','-resize',`${dw}x${dh}`,')','-gravity','south','-geometry','+0+4','-composite'];
   for(const [f,w,x,y]of decals[name]||[])args.push('(',f,'-resize',`${w}x`,')','-gravity','northwest','-geometry',`+${x}+${y}`,'-composite');
   args.push(header,'-gravity','northwest','-geometry','+0+0','-composite',dst);mag(...args);frames.push(dst);
-  const lf=path.join(dir,`line${i}.png`);transparent(dst,lf);mag(lf,'-resize','260x260','-background','none','-gravity','center','-extent','320x270',lf);line.push(lf);
+  run(process.env.STICKER_PYTHON||'python3',[path.join(root,'tools/matte.py'),dst,dst,String(hh)]);
+  const lf=path.join(dir,`line${i}.png`);fs.copyFileSync(dst,lf);mag(lf,'-resize','260x260','-background','none','-gravity','center','-extent','320x270',lf);line.push(lf);
  }
  gif(frames,delays,path.join(out,'preview.gif'));
  if(name==='sobaya')apng(line.slice(0,13),[...Array(12).fill(90),1920],path.join(out,'sticker.png'));
@@ -81,4 +84,5 @@ for(const name of names){
 const sheets=[];for(let i=0;i<20;i++){const dst=path.join(work,`sheet${i}.png`);mag('montage',...names.map(n=>allFrames[n][i]),'-tile','4x2','-geometry','320x320+0+0','-background','white',dst);sheets.push(dst);}
 gif(sheets,delays,path.join(root,'all-members-preview.gif'));fs.copyFileSync(sheets[0],path.join(root,'all-members-still.png'));
 fs.mkdirSync(path.join(root,'reports'),{recursive:true});
+if(selected.length!==names.length){const prior=JSON.parse(fs.readFileSync(path.join(root,'reports','render.json')));for(const m of prior.members)if(!selected.includes(m.name))stats.push(m);stats.sort((a,b)=>names.indexOf(a.name)-names.indexOf(b.name));}
 fs.writeFileSync(path.join(root,'reports','render.json'),JSON.stringify({cycleMs:3000,previewLayout:'4x2',previewFrames:20,delays,yumeminRotationDegrees:yumAngles,yumeminPivot:[230,213],okayamanZoom:[1,1.06],members:stats},null,2));

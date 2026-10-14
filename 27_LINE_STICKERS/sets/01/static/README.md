@@ -9,7 +9,7 @@
 - `line-upload.zip`：上記10枚だけを直下に収録した一括アップロード用ZIP（再生成可能なためGit対象外）。
 - [manifest.json](manifest.json)：番号とメンバーの対応、寸法・容量・透過・非アニメーションの検証結果。
 
-画像は8bit RGBA・72dpi、各1MB以下。スタンプの周囲は約10px以上の余白を確保。人物・文字・装飾は採用済み静止画を使用しており、描き直しなし。
+画像は8bit RGBA・72dpi、各1MB以下。スタンプの周囲は約10px以上の余白を確保。人物・文字・装飾は採用済み静止画を使用しており、描き直しなし。2026-10-14に白い縁・文字内の抜け残りを補正。
 
 リポジトリ直下で再生成・検証・ZIP作成：
 
@@ -17,8 +17,10 @@
 node 27_LINE_STICKERS/sets/01/tools/build-static.mjs
 ```
 
-必要環境はNode.js、ImageMagick 7、zip/unzip。動く版の再ビルドは不要。
+必要環境はNode.js、ImageMagick 7、zip/unzip。通常の再書き出しは動く版の再ビルド不要。透過処理を変更した場合は先に `tools/build.mjs` でRGBA原画を更新する。
 
 登録時は「スタンプ」の静止画形式・8個を選び、ZIPをアップロードする。タイトル、説明文、クリエイター名、コピーライト等の販売情報は登録時に入力する。画像の形式チェック済みであり、LINEの審査承認済みではない。
 
 仕様参照：[LINE公式・静止スタンプ制作ガイドライン](https://creator.line.me/ja/guideline/sticker/)（2026-10-09確認）。
+
+[黒背景での確認画像](preview-black.png)

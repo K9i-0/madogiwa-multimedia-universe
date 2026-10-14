@@ -27,14 +27,25 @@
 
 `source/<メンバーID>/` に採用した文字画像、動作原画、装飾、参照画像、生成プロンプトを保存している。おかやまん・ゆめみんは採用静止画から動きを作り、そば屋は4ポーズ、ほか5名は採用キーフレームから書き出す。新たな画像生成API呼び出しや旧候補フォルダは不要。
 
-必要環境：Node.js 22、ImageMagick 7（`magick`）、FFmpeg / ffprobe。npm依存なし。リポジトリ直下で実行する。
+必要環境：Node.js 22、ImageMagick 7（`magick`）、FFmpeg / ffprobe、Python 3（OpenCV・NumPy・SciPy）。npm依存なし。リポジトリ直下で実行する。
 
 ```sh
+python3 -m venv 27_LINE_STICKERS/sets/01/.venv
+27_LINE_STICKERS/sets/01/.venv/bin/pip install -r 27_LINE_STICKERS/sets/01/tools/requirements.txt
+export STICKER_PYTHON="$PWD/27_LINE_STICKERS/sets/01/.venv/bin/python"
 node 27_LINE_STICKERS/sets/01/tools/build.mjs
 node 27_LINE_STICKERS/sets/01/tools/verify.mjs
+node 27_LINE_STICKERS/sets/01/tools/build-static.mjs
+node 27_LINE_STICKERS/sets/01/tools/preview-black.mjs
 node 27_LINE_STICKERS/sets/01/tools/package.mjs
 ```
 
 検証では全8点のデコード、APNGの寸法・容量・フレーム数・時間・再生回数、ループ端の一致、文字の固定、全員GIFの寸法・時間を確認する。結果は `reports/` に保存する。
 
 `release.zip` は完成画像・GIF・APNG・README・セット情報・検証結果をまとめた共有用ZIPで、LINE申請用ZIPではない。`build/` と `release.zip` は再作成可能なためGit管理しない。
+
+## 透過処理（2026-10-14修正）
+
+文字は白地から黒インクの被覆率を求め、文字内の閉じた白も透過する。人物はOpenCVの外形マスクで白い服・仮面・泡を保護し、輪郭の白背景混入を補正する。全160作業フレームへ同じ処理を適用。APNGはRGBAで書き出し、半透明の輪郭を保持する。容量抑制のためRGBのみ約6bitへ丸め、アルファは8bitを維持する。
+
+[黒背景の全員GIF](all-members-black-preview.gif)は納品APNGをデコードして合成したもの。[静止版の黒背景一覧](static/preview-black.png)も用意。文字と独立した黒い集中線には約2px（400px原画上）の滑らかな白フチを追加し、暗い背景でも読みやすくする。

@@ -9,7 +9,7 @@ function exportPng(src,dest,w,h){
 }
 for(const [i,name] of names.entries()){
  const src=path.join(root,'stickers',name,'still.png'),cut=path.join(work,`static-${name}.png`);
- mag(src,'-bordercolor','white','-border','1','-alpha','set','-fuzz','3%','-fill','none','-draw','alpha 0,0 floodfill','-shave','1x1',cut);
+ fs.copyFileSync(src,cut); // Clean RGBA master from build.mjs; never matte twice.
  const filename=String(i+1).padStart(2,'0')+'.png';
  exportPng(cut,path.join(images,filename),370,320);
  mapping.push({filename,member:name,source:`stickers/${name}/still.png`});

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Img,OffthreadVideo,Sequence,staticFile,interpolate} from 'remotion';
 import {VisualAid as Legacy} from './VisualAidLegacy';
-import cues from './visual-cues-v10.json';
+import cues from './visual-cues-v11.json';
 import {theme, headingStyle, cardStyle} from './theme';
 type U={id?:string;startFrame:number;durationInFrames:number};
 const blue=theme.blue,navy=theme.ink,grey=theme.muted;
@@ -20,8 +20,8 @@ export const VisualAid:React.FC<{view:string;frame:number;utterance?:U}>=({frame
  const at=(key:string,fallback:number)=>local>=(timing[key]??Math.round(dur*fallback));
  const phase=(keys:string[],ratios:number[])=>keys.filter((k,i)=>at(k,ratios[i])).length;
  if(n<=7)return <><div style={{position:'relative',width:710,height:400}}><Sequence from={0} durationInFrames={900}><OffthreadVideo muted src={staticFile('opening_yakisoba.mp4')} style={{width:'100%',height:'100%',objectFit:'contain'}}/></Sequence><Sequence from={900} durationInFrames={900}><OffthreadVideo muted src={staticFile('opening_space.mp4')} startFrom={540} style={{width:'100%',height:'100%',objectFit:'contain'}}/></Sequence></div><Small>窓際族物語の作例／音声なし</Small></>;
- if(n===132||n===133)return <><Head>どうも！</Head><Tiles labels={['無職やめ太郎','たこさん']} focus={n===132?1:0}/></>;
- if(n===134)return <><Head>いつものAIで、動画づくり。</Head><div style={{fontSize:32,color:navy}}>Codex / Claude Code から始める<br/>窓際族物語の制作方法</div></>;
+ if(n===132||n===133)return <><Tiles labels={['無職やめ太郎','たこさん']} focus={n===132?1:0}/></>;
+ if(n===134)return <><Head>いつものAIで、動画づくり。</Head><div style={{fontSize:32,color:navy}}>Codex / Claude Code から始める<br/>窓際族物語のような動画の作り方</div></>;
  if(n===12)return <Pic name="news.jpg" h={430}/>;
  if(n===8)return <><Head>動画編集、ほぼ未経験。</Head><Tiles labels={['Web・アプリ\n✓','動画編集\n？']} focus={1}/></>;
  if(n===9||n===10||n===25)return <><Head>Codex / Claude Code</Head><div style={{background:theme.paper,border:`3px solid ${theme.blue}`,borderBottom:`8px solid ${theme.yellow}`,padding:'20px 34px',borderRadius:12,fontSize:36,fontWeight:700,color:navy}}>「ここ直して」</div></>;

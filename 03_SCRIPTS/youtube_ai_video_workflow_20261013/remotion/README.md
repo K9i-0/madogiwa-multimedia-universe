@@ -98,3 +98,10 @@ npm run render -- --output out/review_v8_01.mp4
 音声監査は`audit_v10_audio.py` / `audit_v10_secondpass.py --ids v132 v133 v134`。
 完成映像は`audit_video_v10.py`、`qa_compare_v10.py`、`final_checks.py --tag v10`で監査。
 採用動画：`../final_remotion_ai_video_workflow_v10.mp4`。YouTube未公開。
+
+## v11：導入スライドと言い回し
+
+`prepare_v11_voice.py` → `finalize_v11_timing.py` → `preview_v11.cjs` → `npm run render`。
+音声差分はv008・v134のみ。自己紹介スライドの見出しを削除し、テーマを「窓際族物語のような動画」へ広げた。
+`audit_v11_audio.py` / `audit_v11_secondpass.py --ids v008 v134`、`audit_video_v11.py` / `qa_compare_v11.py` / `final_checks.py --tag v11`で検証する。
+採用動画：`../final_remotion_ai_video_workflow_v11.mp4`。YouTube未公開。

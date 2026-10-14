@@ -1,6 +1,6 @@
-# Codexで動画まで作る。窓際族物語のAI制作術 — 完成稿 v10
+# Codexで動画まで作る。窓際族物語のAI制作術 — 完成稿 v11
 
-完成動画：`final_remotion_ai_video_workflow_v10.mp4`（16分52.6秒、1280×720 / 30fps、2026-10-14書き出し）。検証記録：`review_v10.md` / `delivery_v10.json`。
+完成動画：`final_remotion_ai_video_workflow_v11.mp4`（16分53.5秒、1280×720 / 30fps、2026-10-14書き出し）。検証記録：`review_v11.md` / `delivery_v11.json`。
 
 2026-10-13の追加FB反映版。やめ太郎＆たこさん。やめ太郎は正典Irodori v4.1-Small、たこさんは中国うさぎ・ノーマル、速度1.1・音高0。Wan 3.0は「ワン、サンテンゼロ」と読む。無理に韻を踏まず、自然な会話を優先する。
 
@@ -34,11 +34,11 @@
 
 **やめ太郎**「どうも、無職やめ太郎やで！」
 
-**たこさん**「今回は、CodexやClaude Codeを使った、窓際族物語の動画の作り方を紹介します。」
+**たこさん**「今回は、CodexやClaude Codeを使って、窓際族物語のような動画を作る方法を紹介します。」
 
 画面・演出：短く間を置き、編集ソフトの話へ。スキル章では今回のユーザー指定により「要らない」のボケを一度だけ再使用する。
 
-**やめ太郎**「でもワイ、動画編集ソフトとか、ほとんど使ったことないで」
+**やめ太郎**「ちなみにワイ、動画編集ソフトとか、ほとんど使ったことないで」
 
 **たこさん**「今回の方法なら、編集もCodexに会話で頼めます。慣れないソフトの画面を自分で操作しなくても進められますよ」
 
@@ -313,4 +313,4 @@
 - Qwen Cloud料金：https://www.qwencloud.com/models/wan3.0-video （2026-10-13確認）
 - 公開制作リポジトリ：https://github.com/K9i-0/madogiwa-multimedia-universe
 - H3の別手法：https://github.com/sobaya-0141/Seedance_Madogiwa
-- 台詞・読み：`remotion/dialogue.json`／`prepare_v10_voice.py`。整数フレームのタイミング正本：`remotion/src/edit-manifest.json`。
+- 台詞・読み：`remotion/dialogue.json`／`prepare_v11_voice.py`。整数フレームのタイミング正本：`remotion/src/edit-manifest.json`。

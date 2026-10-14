@@ -1,0 +1,93 @@
+{
+  "file": "final_remotion_ai_video_workflow_v11.mp4",
+  "sha256": "45b5243ea79b48fb49fb6b127363069e7cfcb3a3e7b77ca820954668ba3e6eaa",
+  "bytes": 68912302,
+  "durationSeconds": 1013.5,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "pixelFormat": "yuv420p",
+    "sampleAspectRatio": "1:1",
+    "frames": "30405"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLUFS": "-17.99",
+    "truePeakDbTP": "-4.01",
+    "loudnessRangeLU": "3.20"
+  },
+  "fullDecode": "pass",
+  "subtitleTimingAndWidth": "See remotion/out/timeline_validation.json",
+  "visualReview": "See review_v11.md and remotion/out/audit_v11*",
+  "audioReview": "Irodori Yametaro, user-selected VOICEVOX Chugoku Usagi, reading-query verification and automated ASR; subjective continuous listening is not available in this tool environment.",
+  "newPaidVideoGeneration": false,
+  "published": false,
+  "completed": "2026-10-14",
+  "introExcerpt": {
+    "file": "remotion/out/intro_revision_v11.mp4",
+    "durationSeconds": 34.46666666666667,
+    "frames": 1034
+  },
+  "captionFrameComparison": {
+    "count": 166,
+    "maxMAE": 1.7690668402777778,
+    "meanMAE": 1.034004026086987,
+    "worst": [
+      [
+        "v096_caption1",
+        1.7690668402777778
+      ],
+      [
+        "v096_caption0",
+        1.7232486979166666
+      ],
+      [
+        "v000_caption0",
+        1.6060771122685185
+      ],
+      [
+        "v084_caption0",
+        1.5315194589120371
+      ],
+      [
+        "v083_caption1",
+        1.4141890914351851
+      ],
+      [
+        "v031_caption0",
+        1.4083445457175925
+      ],
+      [
+        "v005_caption0",
+        1.3917151331018518
+      ],
+      [
+        "v007_caption0",
+        1.3824251302083332
+      ],
+      [
+        "v032_caption1",
+        1.3739373553240741
+      ],
+      [
+        "v086_caption0",
+        1.371808449074074
+      ]
+    ]
+  },
+  "referenceContinuity": "pass: 7 static-reference boundaries",
+  "audioQA": {
+    "dialogue": 127,
+    "captions": 165,
+    "durationSeconds": 1013.5,
+    "unchangedAudio": 125,
+    "changedAudio": 2,
+    "primaryASR": 127,
+    "independentASR": 2,
+    "subjectiveListening": false
+  }
+}

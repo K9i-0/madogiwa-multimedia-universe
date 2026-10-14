@@ -3,18 +3,18 @@ import {memberColors} from '../../../00_TEMPLATES/subtitles/member-colors';
 
 // White information-program palette. Focus never makes other text translucent.
 export const theme = {
-  paper: '#FFFFFF', ink: '#172B46', blue: '#174E9F', muted: '#46566C',
-  border: '#718096', yellow: '#FFD447', alert: '#AD2443',
+  paper: '#FFFFFF', ink: '#182F24', blue: '#176B47', muted: '#485C50',
+  border: '#A7B8AD', yellow: '#E0F0E5', alert: '#AD2443',
 } as const;
 
 export const headingStyle: CSSProperties = {
   fontSize: 32, fontWeight: 700, marginBottom: 28, lineHeight: 1.5,
-  color: theme.blue, borderBottom: `6px solid ${theme.yellow}`, paddingBottom: 8,
+  color: theme.blue, borderBottom: `3px solid ${theme.blue}`, paddingBottom: 8,
 };
 
 export const cardStyle = (active = true, show = true): CSSProperties => ({
   flex: 1, minWidth: 0, boxSizing: 'border-box', padding: '20px 10px',
-  borderRadius: 8, border: `3px solid ${active ? theme.blue : theme.border}`,
+  borderRadius: 0, border: `3px solid ${active ? theme.blue : theme.border}`,
   background: active ? theme.yellow : theme.paper, color: theme.ink,
   visibility: show ? 'visible' : 'hidden', fontSize: 27, fontWeight: 600,
   lineHeight: 1.65, whiteSpace: 'pre-line',

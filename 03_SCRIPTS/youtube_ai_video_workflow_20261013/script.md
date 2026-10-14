@@ -1,6 +1,6 @@
 # Codexで動画まで作る。窓際族物語のAI制作術 — 完成稿 v11
 
-完成動画：`final_remotion_ai_video_workflow_v11.mp4`（16分53.5秒、1280×720 / 30fps、2026-10-14書き出し）。検証記録：`review_v11.md` / `delivery_v11.json`。
+完成動画：`final_remotion_ai_video_workflow_v12.mp4`（16分53.5秒、1280×720 / 30fps、2026-10-14書き出し）。画面はExcel風のv12へ更新（台本・音声はv11を継続）。検証記録：`review_v12.md` / `delivery_v12.json`。
 
 2026-10-13の追加FB反映版。やめ太郎＆たこさん。やめ太郎は正典Irodori v4.1-Small、たこさんは中国うさぎ・ノーマル、速度1.1・音高0。Wan 3.0は「ワン、サンテンゼロ」と読む。無理に韻を踏まず、自然な会話を優先する。
 

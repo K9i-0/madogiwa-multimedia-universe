@@ -11,16 +11,17 @@ type Manifest = {dialogue: Dialogue[]; clips: Clip[]; creditsStartFrame: number;
 const {ink, muted, paper} = theme;
 const Pic: React.FC<{name: string; w?: number; h?: number}> = ({name,w=710,h=390}) => <Img src={staticFile(name)} style={{width:w,height:h,objectFit:'contain'}}/>;
 import {VisualAid} from './VisualAid';
+import {SpreadsheetFrame} from './SpreadsheetFrame';
 
 const ClipPlayer: React.FC<{clip: Clip}> = ({clip}) => {
   const comparison = clip.layout === 'comparison';
-  return <AbsoluteFill style={{background: paper}}>
-    <div style={{position: 'absolute', top: comparison ? 22 : 16, left: 70, right: 70, height: comparison ? 74 : 42, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 5}}>
+  return <AbsoluteFill>
+    <div style={{position: 'absolute', top: 104, left: 70, right: 70, height: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 5}}>
       {clip.tag && <div style={{fontSize: 18, color: muted}}>{clip.tag}</div>}
       <div style={{fontSize: comparison ? 27 : 24, fontWeight: 700, color: theme.blue}}>{clip.label}</div>
     </div>
     <Sequence from={clip.startFrame} durationInFrames={clip.durationInFrames}>
-      <OffthreadVideo muted src={staticFile(clip.src)} startFrom={clip.sourceStartFrame} style={{position: 'absolute', left: comparison ? 136 : 72, top: comparison ? 113 : 69, width: comparison ? 1008 : 1136, height: comparison ? 567 : 639, objectFit: 'contain', background: '#15272a'}}/>
+      <OffthreadVideo muted src={staticFile(clip.src)} startFrom={clip.sourceStartFrame} style={{position: 'absolute', left: 176, top: 160, width: 928, height: 522, objectFit: 'contain', background: '#15272a'}}/>
     </Sequence>
   </AbsoluteFill>;
 };
@@ -38,8 +39,9 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
   // speaker/caption changes; VisualAid owns intentional changes and highlights.
   return <AbsoluteFill style={{background: paper, fontFamily: '"Hiragino Sans", sans-serif', color: ink}}>
     <Audio src={staticFile(audioSrc)}/>
+    <SpreadsheetFrame chapter={previous?.chapter}>
     {clip ? <ClipPlayer clip={clip}/> : <>
-      <div style={{position: 'absolute', left: 260, top: 24, width: 760, height: 531, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}><VisualAid view={view} frame={f} utterance={previous}/></div>
+      <div style={{position: 'absolute', left: 260, top: 88, width: 760, height: 531, transform:'scale(0.90)', transformOrigin:'top center', background:'#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center'}}><VisualAid view={view} frame={f} utterance={previous}/></div>
       {(['yametaro','takosan'] as const).map(who => {
         const speaking=active?.who===who; const local=active?f-active.startFrame:0;
         const peak=Math.max(...(active?.envelope??[0]));
@@ -47,8 +49,9 @@ export const Explainer: React.FC<{manifest?: Manifest; audioSrc?: string}> = ({m
         const mood=((expressions as Record<string,Record<string,Mood>>)[previous?.id??'v000']??{})[who]??'normal';
         return <DuoSprite key={who} who={who} speaking={speaking} open={open} mood={mood} local={local}/>;
       })}
-      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 29, minHeight: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? captionColors.yametaro : captionColors.takosan, WebkitTextStroke: '3px #fff', paintOrder: 'stroke fill', textShadow: 'none'}}>{caption}</div></div>}
+      {active && <div style={{position: 'absolute', left: 245, right: 245, bottom: 42, minHeight: 108, background:'#fff', borderTop:'1px solid #cbd4ce', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{fontSize: active.captionFontSize ?? 29, fontWeight: 700, lineHeight: 1.65, textAlign: 'center', whiteSpace: 'pre-line', color: active.who === 'yametaro' ? captionColors.yametaro : captionColors.takosan, WebkitTextStroke: '3px #fff', paintOrder: 'stroke fill', textShadow: 'none'}}>{caption}</div></div>}
     </>}
+    </SpreadsheetFrame>
     <AbsoluteFill style={{background: paper, opacity: interpolate(f, [m.composition.durationInFrames - 30, m.composition.durationInFrames - 1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}/>
   </AbsoluteFill>;
 };

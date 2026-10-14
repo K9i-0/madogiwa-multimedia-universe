@@ -1025,15 +1025,28 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
               <h2 id="goods-title">{theme === "sakaba" ? "酒場の土産棚" : theme === "underground" ? "地下売店" : "窓際購買部"}</h2>
               <p>これであなたも窓際族 by そば屋</p>
             </header>
-            <div className="j-goods-item">
-              <a className="j-goods-image" href="https://suzuri.jp/sobaya15/20889070/t-shirt/xl/white" target="_blank" rel="noreferrer" aria-label="窓際族TシャツをSUZURIで見る（新しいタブ）">
-                <img src="/site/goods/madogiwa-tshirt.webp" alt="窓際族の仲間たちが集合したイラストと、白い窓際族Tシャツ" width="1200" height="630" loading="lazy" />
-              </a>
-              <div className="j-goods-copy">
-                <h3>窓際族Tシャツ</h3>
-                <p>いつもの仲間たちが、一枚に。<br />窓際族が好きなあなたへ。</p>
-                <a className="j-goods-link" href="https://suzuri.jp/sobaya15/20889070/t-shirt/xl/white" target="_blank" rel="noreferrer">SUZURIで見る <ArrowUpRight size={16} /></a>
-                <small>ご購入・色・サイズの選択はSUZURIへ。</small>
+            <div className="j-goods-grid">
+              <div className="j-goods-item">
+                <a className="j-goods-image" href="https://suzuri.jp/sobaya15/20889070/t-shirt/xl/white" target="_blank" rel="noreferrer" aria-label="窓際族TシャツをSUZURIで見る（新しいタブ）">
+                  <img src="/site/goods/madogiwa-tshirt.webp" alt="窓際族の仲間たちが集合したイラストと、白い窓際族Tシャツ" width="1200" height="630" loading="lazy" />
+                </a>
+                <div className="j-goods-copy">
+                  <h3>窓際族Tシャツ</h3>
+                  <p>いつもの仲間たちが、一枚に。<br />窓際族が好きなあなたへ。</p>
+                  <a className="j-goods-link" href="https://suzuri.jp/sobaya15/20889070/t-shirt/xl/white" target="_blank" rel="noreferrer">SUZURIで見る <ArrowUpRight size={16} /></a>
+                  <small>ご購入・色・サイズの選択はSUZURIへ。</small>
+                </div>
+              </div>
+              <div className="j-goods-item">
+                <a className="j-goods-image j-goods-image-stickers" href="https://store.line.me/stickershop/product/37292753/ja" target="_blank" rel="noreferrer" aria-label="窓際族スタンプ第一弾をLINE STOREで見る（新しいタブ）">
+                  <img src="/site/goods/madogiwa-line-stickers.png" alt="窓際族の仲間たちが集合したLINEスタンプ第一弾のメイン画像" width="240" height="240" loading="lazy" />
+                </a>
+                <div className="j-goods-copy">
+                  <h3>窓際族スタンプ第一弾</h3>
+                  <p>いつものトークにも、窓際族を。<br />仲間たちのLINEスタンプ、販売中。</p>
+                  <a className="j-goods-link" href="https://store.line.me/stickershop/product/37292753/ja" target="_blank" rel="noreferrer">LINE STOREで見る <ArrowUpRight size={16} /></a>
+                  <small>スタンプの一覧・ご購入はLINE STOREへ。</small>
+                </div>
               </div>
             </div>
           </section>

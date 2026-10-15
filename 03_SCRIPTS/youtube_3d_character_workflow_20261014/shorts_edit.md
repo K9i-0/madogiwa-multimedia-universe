@@ -9,6 +9,6 @@ Wan解説版の `youtube_ai_video_workflow_20261013/remotion/src/shorts-entry.ts
 再現：`remotion/`で `python3 render_shorts.py`。映像変更がなければ `--skip-render`。
 
 本編：https://www.youtube.com/watch?v=hCWMw1nB43A
-ショートは作成のみ。公開時はYouTube Studioで関連動画にこの本編IDを設定する（現時点でショートのアップロード・関連動画設定は未実施）。Studioへ別エピソードは作らない。
+2026-10-15公開：https://www.youtube.com/shorts/GWgXgNkq_7o 。YouTube Studioで本編ID `hCWMw1nB43A` を関連動画に設定し、「すべての変更を保存しました」を確認。APIでpublic・processing succeeded・公式チャンネルを確認。Studioへ別エピソードは作らない。
 
 クレジットは `shorts_description.txt`。検証は `shorts_delivery.json`。静止画監査と音声の数値比較を実施し、通しの聴感確認は未実施。

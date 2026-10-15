@@ -13,22 +13,22 @@ FONT='/System/Library/Fonts/ヒラギノ角ゴシック W9.ttc'
 SPECS=json.loads((ROOT/'source/animation-manifest.json').read_text())
 # Stationary patches in 512px cell coordinates; no moving face/limb registration.
 ANCHORS=[[(80,70,60,100),(90,370,65,70),(380,55,55,120)],
- [(20,400,100,65),(400,410,85,50),(95,190,55,90)],
+ [(25,435,100,55),(405,440,75,45)],
  [(70,320,60,100),(360,360,60,80),(110,35,60,100)],
- [(325,355,50,80),(405,40,65,130),(180,380,80,70)],
+ [(335,70,55,90),(215,370,80,65),(120,350,40,70)],
  [(340,50,65,150),(320,410,75,55),(50,75,70,60)],
  [(105,210,35,70),(390,60,65,65),(395,310,55,45)],
  [(85,310,65,95),(100,285,55,50)],
  [(100,60,65,90),(65,20,40,80),(65,410,160,40)]]
 # Regions containing the complete union of moving anatomy, in base cell coords.
 POLYS=[ [[(310,40),(457,40),(457,455),(282,455),(282,180),(310,180)]],
- [[(182,25),(500,35),(510,395),(405,405),(405,490),(240,490),(245,360),(175,320)]],
+ [[(360,230),(511,230),(511,511),(240,511),(240,295),(350,295)]],
  [[(160,80),(365,80),(402,290),(320,307),(178,285),(145,220),(112,210),(112,105)]],
- [[(188,15),(330,15),(400,130),(410,310),(300,315),(267,205),(150,180),(150,140)]],
+ [[(305,155),(390,155),(390,310),(260,310),(260,195),(305,195)]],
  [[(40,65),(270,65),(290,260),(355,325),(320,410),(110,430),(45,355)]],
  [],[],
  [[(365,155),(480,155),(490,382),(335,385),(315,295),(350,245)]]]
-NAMES=['下ろした手を上げ、口元が輝く','仕切り越しに前へ乗り出してのぞく','肩をすくめて震え、白い息を吐く','指差す手を下ろし、窓を向く','ドリルで締め、引いて窓を見る','両手で頭を抱え、丸くなる','書類を投げ、手招きして帰る','寝たまま手を上げてサムズアップ']
+NAMES=['下ろした手を上げ、口元が輝く','空いた腕をパーティションに置き、馴れ馴れしくもたれる','肩をすくめて震え、白い息を吐く','顔をこちらに固定し、手を上げて指差す','ドリルで締め、引いて窓を見る','両手で頭を抱え、丸くなる','書類を投げ、手招きして帰る','寝たまま手を上げてサムズアップ']
 
 def save(im,p):
  p.parent.mkdir(parents=True,exist_ok=True);im.save(p)
@@ -53,11 +53,11 @@ def gray(im):
  bg=Image.new('RGBA',im.size,'white');bg.alpha_composite(im)
  return cv2.cvtColor(np.asarray(bg.convert('RGB')),cv2.COLOR_RGB2GRAY)
 
-def register(base,other,anchors):
+def register(base,other,anchors,radius=38):
  g0=gray(base);g=gray(other);moves=[]
  for x,y,w,h in anchors:
-  t=g0[y:y+h,x:x+w];sx=max(0,x-38);sy=max(0,y-38)
-  search=g[sy:min(512,y+h+38),sx:min(512,x+w+38)]
+  t=g0[y:y+h,x:x+w];sx=max(0,x-radius);sy=max(0,y-radius)
+  search=g[sy:min(512,y+h+radius),sx:min(512,x+w+radius)]
   res=cv2.matchTemplate(search,t,cv2.TM_CCOEFF_NORMED);_,score,_,loc=cv2.minMaxLoc(res)
   if score>.65:moves.append((sx+loc[0]-x,sy+loc[1]-y,score))
  if not moves:return other,{'dx':0,'dy':0,'matches':[]}
@@ -65,17 +65,22 @@ def register(base,other,anchors):
  out=Image.new('RGBA',(512,512));out.paste(other,(-int(dx),-int(dy)))
  return out,{'dx':int(dx),'dy':int(dy),'matches':moves}
 
+def fit_cell(im):
+ if im.width==im.height:return im.resize((512,512),Image.Resampling.LANCZOS)
+ im=im.copy();im.thumbnail((512,512),Image.Resampling.LANCZOS)
+ out=Image.new('RGBA',(512,512));out.paste(im,((512-im.width)//2,(512-im.height)//2));return out
+
 def prepare(k,s):
  d=ROOT/'source/animation'/s['id'];sheet=Image.open(d/'keyframes.png').convert('RGBA')
  cw=sheet.width//3;ch=sheet.height//2
- raw=[clean(sheet.crop((i%3*cw,i//3*ch,(i%3+1)*cw,(i//3+1)*ch)).resize((512,512),Image.Resampling.LANCZOS)) for i in range(6)]
+ raw=[clean(fit_cell(sheet.crop((i%3*cw,i//3*ch,(i%3+1)*cw,(i//3+1)*ch)))) for i in range(6)]
  if k==4:
   extra=Image.open(d/'finish-keyframes.png').convert('RGBA');ew=extra.width//3;eh=extra.height//2
   # Replace abrupt final pose with five generated intermediate/end poses.
   raw=raw[:5]+[clean(extra.crop((i%3*ew,i//3*eh,(i%3+1)*ew,(i//3+1)*eh)).resize((512,512),Image.Resampling.LANCZOS)) for i in range(1,6)]
  frames=[raw[0]];regs=[]
  for im in raw[1:]:
-  aligned,r=register(raw[0],im,ANCHORS[k]);frames.append(aligned);regs.append(r)
+  aligned,r=register(raw[0],im,ANCHORS[k],64 if k==1 else 38);frames.append(aligned);regs.append(r)
  if POLYS[k]:
   m=Image.new('L',(512,512));dr=ImageDraw.Draw(m)
   for p in POLYS[k]:dr.polygon(p,fill=255)
@@ -178,7 +183,7 @@ def main():
   p=out/'sticker.png'
   delivery[0].save(p,save_all=True,append_images=delivery[1:],duration=ds,loop=1,disposal=0,blend=0,optimize=True,compress_level=9)
   # Representative still is final gesture, except two-level quote/beckon.
-  hero=0 if k in [3] else 3 if k==6 else len(masters)-1
+  hero=3 if k==6 else len(masters)-1
   save(masters[hero],out/'master.png');save(display[hero],out/'still.png')
   save(masters[0],out/'start.png');save(masters[-1],out/'end.png')
   st=Image.new('RGBA',(370,320));st.alpha_composite(masters[hero].resize((310,310),Image.Resampling.LANCZOS),(30,5));save(st,ROOT/'static/images'/f'{k+1:02d}.png')

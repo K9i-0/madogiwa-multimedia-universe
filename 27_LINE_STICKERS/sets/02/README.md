@@ -9,9 +9,9 @@
 | # | セリフ | 動き | 個別プレビュー |
 |---|---|---|---|
 | 1 | おはよう | 下ろした手を挨拶の位置まで上げ、口元の✨が光る | [GIF](stickers/01_ohayo/preview.gif) |
-| 2 | ちゃんと働いてるか？ | B案。仕切り越しにジョッキ片手で前へ乗り出してのぞく | [GIF](stickers/02_hataraiteruka/preview.gif) |
+| 2 | ちゃんと働いてるか？ | B案。寄りを抑え、空いた腕をパーティションに置いて馴れ馴れしくもたれる | [GIF](stickers/02_hataraiteruka/preview.gif) |
 | 3 | 冷えてる。待遇も。 | 真冬のベランダ席で肩をすくめ、白い息を吐く。雪が降る | [GIF](stickers/03_hieteru/preview.gif) |
-| 4 | 窓際に追い込まれているうちは二流 | アーロンチュアに座り、指差した手を下ろして窓へ顔を向ける | [GIF](stickers/04_niryu/preview.gif) |
+| 4 | 窓際に追い込まれているうちは二流 | アーロンチュアに座り、頭は固定してこちらへ指差す。頭の回転なし | [GIF](stickers/04_niryu/preview.gif) |
 | 5 | 一流の窓際族は窓際を作り出す | オフィス中央の窓をドリルで締め、ドリルを引いて窓を見る | [GIF](stickers/05_ichiryu/preview.gif) |
 | 6 | 二日酔い | 両手で頭を抱え、脚を引き寄せて横向きに丸くなる | [GIF](stickers/06_futsukayoi/preview.gif) |
 | 7 | 飲みに行こう | 書類を投げ、手招きして帰る方向へ体を向ける。ジャケットなし | [GIF](stickers/07_nomini/preview.gif) |

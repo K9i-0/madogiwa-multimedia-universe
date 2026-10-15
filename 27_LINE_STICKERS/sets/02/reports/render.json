@@ -41,11 +41,11 @@
     {
       "id": "02_hataraiteruka",
       "caption": "ちゃんと働いてるか？",
-      "motion": "仕切り越しに前へ乗り出してのぞく",
+      "motion": "空いた腕をパーティションに置き、馴れ馴れしくもたれる",
       "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 288290,
+      "bytes": 206903,
       "headerHeight1200": 325,
       "poseOrder": [
         0,
@@ -65,10 +65,10 @@
       ],
       "source": "source/animation/02_hataraiteruka/keyframes.png",
       "commonCrop": [
-        2,
-        58,
+        6,
+        70,
         512,
-        485
+        512
       ],
       "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
@@ -121,11 +121,11 @@
     {
       "id": "04_niryu",
       "caption": "窓際に追い込まれているうちは二流",
-      "motion": "指差す手を下ろし、窓を向く",
+      "motion": "顔をこちらに固定し、手を上げて指差す",
       "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 202213,
+      "bytes": 130210,
       "headerHeight1200": 320,
       "poseOrder": [
         0,
@@ -145,10 +145,10 @@
       ],
       "source": "source/animation/04_niryu/keyframes.png",
       "commonCrop": [
-        13,
-        0,
-        492,
-        495
+        85,
+        39,
+        407,
+        463
       ],
       "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },

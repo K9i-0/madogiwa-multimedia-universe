@@ -244,3 +244,11 @@
 - 公式3D：https://madogiwa.work/characters/sobaya
 - Wan解説：https://www.youtube.com/watch?v=RMWefLVS9vQ
 - 出典・クレジット：`youtube_description.txt`
+
+
+## 2026-10-15 公開・本編誘導ショート
+
+- 採用完成版v6をYouTube公開：https://www.youtube.com/watch?v=hCWMw1nB43A
+- Studio：MS-K3SHU77L。公式サイト：https://madogiwa.work/episodes/codex-tripo-3d-character-workflow
+- 採用サムネイル：`thumbnail_overlay_v1.png`。`studio_registration.json`へ公開状態と入力資料IDを記録。
+- Wan解説と同じスタイルの約49.8秒ショート：`final_remotion_shorts_9x16.mp4`。比較→動作実演→本編案内。作成のみで未投稿。詳細は`shorts_edit.md`と`shorts_delivery.json`。

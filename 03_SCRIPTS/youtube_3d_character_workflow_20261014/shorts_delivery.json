@@ -1,0 +1,51 @@
+{
+  "video": "final_remotion_shorts_9x16.mp4",
+  "sha256": "05fe2d8d35100592286a3ba8299af7b672bc8f00f5ba5a55a292965d5e45d59e",
+  "source": "final_remotion_tripo_workflow_v6.mp4",
+  "sourceFrames": [
+    0,
+    1403
+  ],
+  "durationSeconds": 49.766666666666666,
+  "frameCount": 1493,
+  "resolution": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "cta": "続きは関連動画から",
+  "relatedVideoId": "hCWMw1nB43A",
+  "uploadStatus": "not_uploaded",
+  "checks": {
+    "typecheck": "passed",
+    "fullDecode": "passed",
+    "visualReviewFrames": [
+      0,
+      70,
+      173,
+      266,
+      346,
+      443,
+      546,
+      663,
+      787,
+      933,
+      1077,
+      1200,
+      1328,
+      1402,
+      1433,
+      1480
+    ],
+    "audio": {
+      "comparisonDurationSeconds": 46.4,
+      "correlation": 0.9998200056984209,
+      "method": "decoded mono 16kHz PCM; adopted v6 vs Shorts",
+      "listened": false
+    },
+    "endCreditRoll": false,
+    "visualReview": "16 extracted frames inspected: all 12 caption cards, opening, cut and ending; no clipping or duplicate captions"
+  }
+}

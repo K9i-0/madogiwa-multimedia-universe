@@ -1,0 +1,38 @@
+{
+  "youtubeId": "hCWMw1nB43A",
+  "file": "thumbnail_overlay_v1.png",
+  "sha256": "7f968905aaf2023a8d6740441e1455c4c8a7f4fc6a3b0b162963231f9173a3aa",
+  "result": {
+    "kind": "youtube#thumbnailSetResponse",
+    "etag": "zPsrkSUefh6cOt2s7U6e21Eff6g",
+    "items": [
+      {
+        "default": {
+          "url": "https://i.ytimg.com/vi/hCWMw1nB43A/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/hCWMw1nB43A/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/hCWMw1nB43A/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/hCWMw1nB43A/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/hCWMw1nB43A/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      }
+    ]
+  }
+}

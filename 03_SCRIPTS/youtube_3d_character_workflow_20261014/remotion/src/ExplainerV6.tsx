@@ -5,7 +5,7 @@ import {SpreadsheetFrameV3} from './SpreadsheetFrameV3';
 import {DuoSpriteV6} from './DuoSpriteV6';
 import {captionColors} from './theme';
 import {VisualV6} from './VisualV6';
-export function ExplainerV6({audioEnabled=true}:{audioEnabled?:boolean}){
+export function ExplainerV6({audioEnabled=true,hideCaptions=false}:{audioEnabled?:boolean;hideCaptions?:boolean}){
  const f=useCurrentFrame();const m=manifest;const idx=m.dialogue.reduce((last,d,i)=>f>=d.startFrame?i:last,0);const d=m.dialogue[idx];const local=Math.max(0,f-d.startFrame);const speaking=local<d.durationInFrames&&f>=d.startFrame;
  let first=idx;while(first>0&&m.dialogue[first-1].view===d.view)first--;
  const t=Math.max(0,f-m.dialogue[first].startFrame)/30;
@@ -19,7 +19,7 @@ export function ExplainerV6({audioEnabled=true}:{audioEnabled?:boolean}){
   const isSpeaking=speaking&&d.who===who;const peak=Math.max(...(d.envelope??[0]));const open=who==='yametaro'&&isSpeaking&&(d.envelope[Math.floor(local/2)*2]??0)>Math.max(.003,peak*.14);
   return <DuoSpriteV6 key={who} who={who} id={d.id} speaking={isSpeaking} open={open} local={local} durationInFrames={d.durationInFrames}/>;
  })}
- {caption&&<div style={{position:'absolute',left:170,right:170,top:575,height:106,background:'#fff',borderTop:'1px solid #d9e1db',display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{fontSize:32,fontWeight:700,lineHeight:1.45,whiteSpace:'pre-line',textAlign:'center',color:captionColors[d.who as 'yametaro'|'takosan']}}>{caption}</div></div>}
+ {!hideCaptions&&caption&&<div style={{position:'absolute',left:170,right:170,top:575,height:106,background:'#fff',borderTop:'1px solid #d9e1db',display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{fontSize:32,fontWeight:700,lineHeight:1.45,whiteSpace:'pre-line',textAlign:'center',color:captionColors[d.who as 'yametaro'|'takosan']}}>{caption}</div></div>}
  </SpreadsheetFrameV3>
  <AbsoluteFill style={{pointerEvents:'none',background:'#fff',opacity:interpolate(f,[m.composition.durationInFrames-24,m.composition.durationInFrames-1],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}}/>
  </AbsoluteFill>;

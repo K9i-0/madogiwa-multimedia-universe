@@ -13,7 +13,7 @@ FONT='/System/Library/Fonts/ヒラギノ角ゴシック W9.ttc'
 SPECS=json.loads((ROOT/'source/animation-manifest.json').read_text())
 # Stationary patches in 512px cell coordinates; no moving face/limb registration.
 ANCHORS=[[(80,70,60,100),(90,370,65,70),(380,55,55,120)],
- [(25,435,100,55),(405,440,75,45)],
+ [(32,440,100,50)],
  [(70,320,60,100),(360,360,60,80),(110,35,60,100)],
  [(335,70,55,90),(215,370,80,65),(120,350,40,70)],
  [(340,50,65,150),(320,410,75,55),(50,75,70,60)],
@@ -22,13 +22,13 @@ ANCHORS=[[(80,70,60,100),(90,370,65,70),(380,55,55,120)],
  [(100,60,65,90),(65,20,40,80),(65,410,160,40)]]
 # Regions containing the complete union of moving anatomy, in base cell coords.
 POLYS=[ [[(310,40),(457,40),(457,455),(282,455),(282,180),(310,180)]],
- [[(360,230),(511,230),(511,511),(240,511),(240,295),(350,295)]],
+ [[(0,0),(511,0),(511,401),(345,401),(345,506),(235,506),(235,378),(0,378)]],
  [[(160,80),(365,80),(402,290),(320,307),(178,285),(145,220),(112,210),(112,105)]],
  [[(305,155),(390,155),(390,310),(260,310),(260,195),(305,195)]],
  [[(40,65),(270,65),(290,260),(355,325),(320,410),(110,430),(45,355)]],
  [],[],
  [[(365,155),(480,155),(490,382),(335,385),(315,295),(350,245)]]]
-NAMES=['下ろした手を上げ、口元が輝く','空いた腕をパーティションに置き、馴れ馴れしくもたれる','肩をすくめて震え、白い息を吐く','顔をこちらに固定し、手を上げて指差す','ドリルで締め、引いて窓を見る','両手で頭を抱え、丸くなる','正面から書類を横へ捨て、背を向けながらこちらを振り返る','寝たまま手を上げてサムズアップ']
+NAMES=['下ろした手を上げ、口元が輝く','肘をついたまま肩ごと少し傾き、馴れ馴れしく覗き込んで返事を待つ','肩をすくめて震え、白い息を吐く','顔をこちらに固定し、手を上げて指差す','ドリルで締め、引いて窓を見る','両手で頭を抱え、丸くなる','正面から書類を横へ捨て、背を向けながらこちらを振り返る','寝たまま手を上げてサムズアップ']
 
 def save(im,p):
  p.parent.mkdir(parents=True,exist_ok=True);im.save(p)
@@ -73,7 +73,8 @@ def fit_cell(im):
 def prepare(k,s):
  d=ROOT/'source/animation'/s['id'];sheet=Image.open(d/'keyframes.png').convert('RGBA')
  cw=sheet.width//3;ch=sheet.height//2
- raw=[clean(fit_cell(sheet.crop((i%3*cw,i//3*ch,(i%3+1)*cw,(i//3+1)*ch)))) for i in range(6)]
+ cells=s.get('cells',[(i%3*cw,i//3*ch,(i%3+1)*cw,(i//3+1)*ch) for i in range(6)])
+ raw=[clean(fit_cell(sheet.crop(cell))) for cell in cells]
  if k==4:
   extra=Image.open(d/'finish-keyframes.png').convert('RGBA');ew=extra.width//3;eh=extra.height//2
   # Replace abrupt final pose with five generated intermediate/end poses.
@@ -102,7 +103,7 @@ def prepare(k,s):
    arr=np.array(f);n,lab,stats,_=cv2.connectedComponentsWithStats((arr[:,:,3]>20).astype('uint8'),8)
    for j in range(1,n):
     x,y,w,h,area=stats[j]
-    if y<12 and h<6 and w>h*5:arr[lab==j]=0
+    if y<20 and h<6 and w>h*5:arr[lab==j]=0
    cleaned.append(Image.fromarray(arr))
   frames=cleaned
  for i,f in enumerate(frames):save(f,d/'poses'/f'{i:02d}.png')
@@ -173,10 +174,12 @@ def main():
   sid=s['id'];src=ROOT/'source/animation'/sid;out=ROOT/'stickers'/sid;out.mkdir(parents=True,exist_ok=True)
   frames,box=prepare(k,s);cap,hh=caption(s['lines']);save(cap,src/'caption.png')
   order=list(range(6));ds=[360,180,180,180,180,1920]
+  if k==1:order=[0,1,3,4,5];ds=[450,150,170,200,2030]
   if k==2:order=[0,1,2,3,4,5,1,2,3,4,5,0];ds=[160]*11+[1240]
   if k==3:ds=[420,180,240,220,220,1720]
   if k==4:order=[0,1,2,3,2,3,4,5,6,7,8,9];ds=[300,160,130,130,130,130,180,160,160,160,160,1200]
-  if k==5:ds=[360,180,200,220,220,1820]
+  # Let the headache register before the body curls; keep final pose readable.
+  if k==5:ds=[300,320,280,240,240,1620]
   if k==6:ds=[300,160,180,180,200,1980]
   arts=[frames[i] for i in order]
   if k==2:arts=[snow(f,i,box) for i,f in enumerate(arts)]

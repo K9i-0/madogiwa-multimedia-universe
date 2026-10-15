@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-15",
+  "status": "completed",
+  "method": "built-in image_gen sequential drawings; crop/registration/composite only; no body warping",
+  "reviewed": [
+    "all final frames at delivery size",
+    "white and black backgrounds",
+    "mask identity and rounded mouth",
+    "fixed captions and transparent counters",
+    "static props and frame transitions"
+  ],
+  "changes": {
+    "02": "Connected small shoulder/chest/head tilt, five selected poses, 2030ms final hold. Replaces mechanical elbow candidates.",
+    "06": "Headache hold lengthened and curl slightly slower; drawings preserved.",
+    "07": "Approved motion retained; disconnected top-edge sliver removed."
+  },
+  "unchanged": [
+    "01",
+    "03",
+    "04",
+    "05",
+    "08"
+  ],
+  "knownMinorLimitations": [
+    "06 hand-drawn chair/floor details vary slightly between poses; a trial background replacement produced seams and was rejected."
+  ],
+  "independentVisualReview": "02 has connected restrained inquisitive motion, no visible neck seam or mask-mouth deformation; other accepted gestures retained."
+}

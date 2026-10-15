@@ -18,15 +18,16 @@
     {
       "id": "02_hataraiteruka",
       "caption": "ちゃんと働いてるか？",
-      "motion": "空いた腕をパーティションに置き、馴れ馴れしくもたれる",
+      "motion": "肘をついたまま肩ごと少し傾き、馴れ馴れしく覗き込んで返事を待つ",
       "apng": "stickers/02_hataraiteruka/sticker.png",
       "still": "stickers/02_hataraiteruka/still.png",
       "master": "stickers/02_hataraiteruka/master.png",
       "keyframes": "source/animation/02_hataraiteruka/keyframes.png",
       "revision": {
-        "status": "candidate_review",
-        "request": "最初のB案の腕位置を保ち、肘に体重をかける弱い動き",
-        "candidates": "drafts/elbow-weight/comparison-white.gif"
+        "status": "completed",
+        "direction": "細かい動作指定より、馴れ馴れしく軽く覗き込む先輩の雰囲気を優先",
+        "method": "内蔵image_genの連続原画。肩・胸・頭がつながる5ポーズを採用し、最後を長めに保持",
+        "prompt": "source/animation/02_hataraiteruka/prompt-final-peek.txt"
       }
     },
     {
@@ -72,7 +73,8 @@
       "apng": "stickers/07_nomini/sticker.png",
       "still": "stickers/07_nomini/still.png",
       "master": "stickers/07_nomini/master.png",
-      "keyframes": "source/animation/07_nomini/keyframes.png"
+      "keyframes": "source/animation/07_nomini/keyframes.png",
+      "animationApproved": "2026-10-15"
     },
     {
       "id": "08_kinshu",
@@ -91,5 +93,5 @@
   "reserve": {
     "乾杯！": "reserve/02_kanpai"
   },
-  "changes": "02は肘に体重をかける弱い動き3案を比較中。04は頭を固定して指差しのみ。07は正面から書類を横へ捨て、背を向けながら振り返る動きへ変更。"
+  "changes": "02は腕を置いた姿勢から肩ごと少し傾いて様子をうかがう動きで完成。07は承認済みの演技を維持し切り抜き残りを除去。全8枚の顔・背景・透過を再監査。06は頭を抱える間を長めに調整。"
 }

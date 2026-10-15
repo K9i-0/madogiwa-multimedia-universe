@@ -1,0 +1,112 @@
+{
+  "video": "final_remotion_line_stickers.mp4",
+  "sha256": "30e85f431bc9628ff4d755b60480a7c13ddb1a2db820973afa6f4217c40491bd",
+  "bytes": 37140237,
+  "durationInFrames": 18753,
+  "durationSeconds": 625.1,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "audio": {
+    "codec": "aac",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "utterances": 91,
+  "subtitlePages": 114,
+  "fullDecode": "passed",
+  "dialogueAndCaptionIntegrity": "passed",
+  "requestedIntroRevisions": "passed",
+  "introExcerpt": "preview_intro.mp4",
+  "reviewFrames": [
+    {
+      "id": "intro-04",
+      "frame": 511,
+      "path": "remotion/out/final-audit/intro-04.png"
+    },
+    {
+      "id": "intro-08",
+      "frame": 987,
+      "path": "remotion/out/final-audit/intro-08.png"
+    },
+    {
+      "id": "intro-09",
+      "frame": 1069,
+      "path": "remotion/out/final-audit/intro-09.png"
+    },
+    {
+      "id": "intro-10",
+      "frame": 1158,
+      "path": "remotion/out/final-audit/intro-10.png"
+    },
+    {
+      "id": "main-01",
+      "frame": 1626,
+      "path": "remotion/out/final-audit/main-01.png"
+    },
+    {
+      "id": "main-04",
+      "frame": 2001,
+      "path": "remotion/out/final-audit/main-04.png"
+    },
+    {
+      "id": "flow-03",
+      "frame": 3100,
+      "path": "remotion/out/final-audit/flow-03.png"
+    },
+    {
+      "id": "sheet-04",
+      "frame": 6833,
+      "path": "remotion/out/final-audit/sheet-04.png"
+    },
+    {
+      "id": "sheet-08",
+      "frame": 8123,
+      "path": "remotion/out/final-audit/sheet-08.png"
+    },
+    {
+      "id": "motion-06",
+      "frame": 9891,
+      "path": "remotion/out/final-audit/motion-06.png"
+    },
+    {
+      "id": "alpha-09",
+      "frame": 12271,
+      "path": "remotion/out/final-audit/alpha-09.png"
+    },
+    {
+      "id": "alpha-13",
+      "frame": 13181,
+      "path": "remotion/out/final-audit/alpha-13.png"
+    },
+    {
+      "id": "export-05",
+      "frame": 14526,
+      "path": "remotion/out/final-audit/export-05.png"
+    },
+    {
+      "id": "record-06",
+      "frame": 17150,
+      "path": "remotion/out/final-audit/record-06.png"
+    },
+    {
+      "id": "end-05",
+      "frame": 18530,
+      "path": "remotion/out/final-audit/end-05.png"
+    },
+    {
+      "id": "title",
+      "frame": 1523,
+      "path": "remotion/out/final-audit/title.png"
+    },
+    {
+      "id": "final",
+      "frame": 18752,
+      "path": "remotion/out/final-audit/final.png"
+    }
+  ],
+  "subjectiveListening": false,
+  "note": "Machine checks do not constitute a subjective listening pass. Visual review is recorded separately in review.md."
+}

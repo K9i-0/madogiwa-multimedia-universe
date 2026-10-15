@@ -1,0 +1,59 @@
+{
+  "sampleRate": 48000,
+  "frames": 18753,
+  "voiceTargetLUFS": -18,
+  "perUtteranceNormalization": true,
+  "bgmTargetLUFS": -34,
+  "endingTrack": "ほのぼのワルツ【リコーダー】",
+  "endingTargetLUFS": -34,
+  "endingLiftAfterDialogue": false,
+  "endingTrackChange": false,
+  "endingFadeOutSeconds": 4,
+  "premasterPeak": 0.6177022457122803,
+  "masterGain": 1,
+  "soundEvents": [
+    {
+      "name": "original two-tone notification",
+      "startFrame": 464,
+      "durationInFrames": 24
+    },
+    {
+      "name": "original soft major triad title cue",
+      "startFrame": 1507,
+      "durationInFrames": 60
+    }
+  ],
+  "musicInputs": {
+    "intro.mp3": {
+      "title": "昼下がり気分",
+      "author": "KK",
+      "url": "https://opentracks.com/bgm/detail/4695",
+      "originalGlob": ".local/voicevox-explainer/intro.mp3",
+      "originalSha256": "b3be5e54383b778ac1cd25ae21bc3597039989100853903dfe83d3a10ff471e4",
+      "workingSha256": "b3be5e54383b778ac1cd25ae21bc3597039989100853903dfe83d3a10ff471e4",
+      "workingConversion": "Unchanged distribution MP3, Track 1.",
+      "canonicalOriginal": ".local/voicevox-explainer/intro.mp3",
+      "workingInput": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/public/intro.mp3",
+      "sha256": "b3be5e54383b778ac1cd25ae21bc3597039989100853903dfe83d3a10ff471e4",
+      "provenanceRecord": "03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json"
+    },
+    "main.wav": {
+      "title": "ほのぼのワルツ【リコーダー】",
+      "author": "エクシエ",
+      "url": "https://commons.nicovideo.jp/works/nc116360",
+      "originalGlob": "03_SCRIPTS/youtube_explainer_pilot_20261008/input/nc116360_*.wav",
+      "originalSha256": "93b3e15199b1a924854efed27c1e8762ef070874546a388a1a78da0764e8afc2",
+      "workingSha256": "9ccfc9b032d1a1fd2e818f7128ba9a287f8c68344c5d18a3c8f01acb7399313f",
+      "workingConversion": "FFmpeg decode to 48000 Hz stereo float32, then PCM16 WAV using this script save(); no loudness change in the working input.",
+      "canonicalOriginal": "03_SCRIPTS/youtube_explainer_pilot_20261008/input/nc116360_【オリジナル曲】ほのぼのワルツ【リコーダー】.wav",
+      "workingInput": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/public/main.wav",
+      "sha256": "9ccfc9b032d1a1fd2e818f7128ba9a287f8c68344c5d18a3c8f01acb7399313f",
+      "provenanceRecord": "03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json"
+    }
+  },
+  "mixedSha256": "ec35931d41c7ea4b2ba6d8328a9a7ce1b77f86e060626f56f0943b2bcf76d883",
+  "subjectiveListening": false,
+  "measuredIntegratedLUFS": -18.02,
+  "measuredTruePeakDBTP": -4.18,
+  "measuredLRA": 3.4
+}

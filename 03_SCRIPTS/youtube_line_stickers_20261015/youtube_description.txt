@@ -1,0 +1,52 @@
+Codexで動くLINEスタンプを作る！原画づくりから透過・仕上げまで【窓際族物語】
+
+やめ太郎に届いた、よーたんの「お前島流し！」スタンプ。
+冗談だと思ってOutlookの辞令メールを開くと、赴任先はゆめみ村（廃村）でした。
+
+今回は、実際に販売中の「窓際族スタンプ第一弾」を題材に、Codexで動くLINEスタンプを作った工程を、やめ太郎とたこさんが解説します。
+キャラクターの参照画像、連続原画の生成、切り出しと再生順、動いたあとの間、文字と白い服を守る透過処理、白黒背景での確認、APNGとmain/tab、制作記録をスキルに残す方法を紹介します。
+
+窓際族スタンプ第一弾（申請担当：そば屋さん）
+https://store.line.me/stickershop/product/37292753/ja
+
+チャプター
+00:00 スタンプで島流し
+00:53 挨拶・今回作ったスタンプ
+01:28 Codexに何を頼むのか
+02:26 まず静止画を決める
+03:30 連続原画を作る
+04:57 再生順と動いたあとの間
+06:07 文字・服・泡を守る透過
+07:32 APNGと申請用画像
+08:56 制作記録とスキル
+10:03 おわりに
+
+制作リポジトリ
+https://github.com/K9i-0/madogiwa-multimedia-universe
+第一弾の原画・制作記録
+https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/27_LINE_STICKERS/sets/01
+LINEスタンプ制作スキル
+https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/.claude/skills/line-stickers
+
+LINE公式アニメーションスタンプ制作ガイドライン（2026-10-15確認）
+https://creator.line.me/ja/guideline/animationsticker/
+https://creator.line.me/ja/guideline/animationsticker/detail/
+OpenAI公式：スキル
+https://learn.chatgpt.com/docs/build-skills
+
+第一弾では複数のアニメーション方式を併用しています。そば屋は採用4原画を往復・休止させた13フレーム、よーたんは6原画、たこさん・とーくん・福ギュン・やめ太郎は原画と補間、おかやまんは全体拡大、ゆめみんは本体と木槌の回転を使用しました。
+動画内のスタンプは動作説明のため繰り返し再生しています。元APNGの再生回数とは区別しています。
+画像生成が利用できるCodexの制作環境を使った実例です。素材の参照、生成結果の選択、完成後の確認を人が行い、画像の加工・検査をコードで実行しています。
+冒頭のトーク・Outlookメールは、窓際族物語の架空のやり取りを再現した演出です。
+
+出演・立ち絵：窓際族物語／やめ太郎、たこさん
+やめ太郎音声：Irodori-TTS v4.1-Small（正典音声を参照）
+たこさん音声：VOICEVOX:中国うさぎ（ノーマル、速度1.1倍、音高0）
+https://voicevox.hiroshiba.jp/
+https://github.com/Aratako/Irodori-TTS
+
+BGM：昼下がり気分 / KK
+https://opentracks.com/bgm/detail/4695
+BGM：ほのぼのワルツ【リコーダー】 / エクシエ
+https://commons.nicovideo.jp/works/nc116360
+通知音・タイトル転換音：本動画用に合成。

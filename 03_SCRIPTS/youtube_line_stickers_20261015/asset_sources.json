@@ -1,0 +1,503 @@
+{
+  "preparedOn": "2026-10-15",
+  "generator": "prepare_assets.py",
+  "set": "27_LINE_STICKERS/sets/01",
+  "sources": [
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/sobaya/still.png",
+      "publicPath": "stickers/sobaya/still.png",
+      "sha256": "3566112660ecd12b6b02583154fa2e5f4635771794ff8932e6a085e9f5a12e12",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+      "sha256": "b17673139e4cbc23fcdf7aac3ef22fb485de711613b6c3cd5e575e6c78095f8e",
+      "publicDirectory": "stickers/sobaya",
+      "frames": 13,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/takosan/still.png",
+      "publicPath": "stickers/takosan/still.png",
+      "sha256": "9add383c59a14b260d7f82ea548508d613c0bbd0960b061020edb70a2c71b575",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/takosan/sticker.png",
+      "sha256": "2976a5bef6154840ca65083cb77586ab42f11b41d88c0f08d0e42fa66dcf7de3",
+      "publicDirectory": "stickers/takosan",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/tokun/still.png",
+      "publicPath": "stickers/tokun/still.png",
+      "sha256": "e029714727f49c0faa64f85b06caf5e18004bbf042676df6929179cbfd0a3bf7",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/tokun/sticker.png",
+      "sha256": "2f56e9c6ea573639093a514ef3a60ea4515c9ae3524b003e0a807d9ce021d05f",
+      "publicDirectory": "stickers/tokun",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/yotan/still.png",
+      "publicPath": "stickers/yotan/still.png",
+      "sha256": "098a6d5665bb4cf87abfdcd925dc9c6ce4957a075e1cd4e7f09bece9f2c88ac3",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/yotan/sticker.png",
+      "sha256": "286b0e9273076f870469a0f5397396b5095af509c83ec48574661ccefea03e78",
+      "publicDirectory": "stickers/yotan",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/fukuchan/still.png",
+      "publicPath": "stickers/fukuchan/still.png",
+      "sha256": "c0838dda5a623584bb040adc47dd36173ccb0274d3de1e3c227f8e727e463167",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/fukuchan/sticker.png",
+      "sha256": "9b3f1ecb7020e830319792618a99d12e5357e5744c71a46f16c1704e818828f8",
+      "publicDirectory": "stickers/fukuchan",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/yametaro/still.png",
+      "publicPath": "stickers/yametaro/still.png",
+      "sha256": "99bd36e39ab267fccdb7809af093d5293269bb96a3447d4ff7cd8c1e3305652b",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/yametaro/sticker.png",
+      "sha256": "1c3959d160ce7069d9ead5322632fa1a439920ddba9a4cfb3dc87d65d6bbec8a",
+      "publicDirectory": "stickers/yametaro",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/okayaman/still.png",
+      "publicPath": "stickers/okayaman/still.png",
+      "sha256": "066ee47f2040aa4fe77a5a9f4073e4d6b57a92459525ddd2abaed8625ef4b18a",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/okayaman/sticker.png",
+      "sha256": "15f669fe9bd2ada6b810dada6f04188909958e357d8ef5e2183869e150be2deb",
+      "publicDirectory": "stickers/okayaman",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/yumemin/still.png",
+      "publicPath": "stickers/yumemin/still.png",
+      "sha256": "d2e88e6e12d846aec98eba82eaac735fb9caa5cbd819849f76aff584b1a1c839",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted 400px still; final APNG frames are 320x270."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/stickers/yumemin/sticker.png",
+      "sha256": "b3eea8d79f534efeda087dcb3cb8e5579aa2a0df4585b56f405c6a8c99164ad1",
+      "publicDirectory": "stickers/yumemin",
+      "frames": 20,
+      "durationMs": 3000.0,
+      "operation": "Pillow APNG composite decode; original RGBA pixels preserved",
+      "note": "Review may repeat this cycle; LINE file original play count is unchanged."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/00.png",
+      "publicPath": "stickers/source/sobaya/poses/00.png",
+      "sha256": "913aa876bed86af4d199084ecb10a9b99347f324299ef1d17be18b9770c97c46",
+      "operation": "hardlink/copy, unchanged",
+      "note": "One of four adopted drawings, not a fabricated 12-cell source sheet."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/01.png",
+      "publicPath": "stickers/source/sobaya/poses/01.png",
+      "sha256": "e500057e248f8c07c9e20d2dd5a6e738aa355038d9be52fd630d9f3cb20b95b2",
+      "operation": "hardlink/copy, unchanged",
+      "note": "One of four adopted drawings, not a fabricated 12-cell source sheet."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/02.png",
+      "publicPath": "stickers/source/sobaya/poses/02.png",
+      "sha256": "a65c2441bbdd21ab49bd891de5dc5f816b9e2efb5690a9bab4ae532ebb4cf69c",
+      "operation": "hardlink/copy, unchanged",
+      "note": "One of four adopted drawings, not a fabricated 12-cell source sheet."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/03.png",
+      "publicPath": "stickers/source/sobaya/poses/03.png",
+      "sha256": "85849779b6f91a164a1a70f2e3ce33357f1a3780b666d4caff71e3c34fc7fd75",
+      "operation": "hardlink/copy, unchanged",
+      "note": "One of four adopted drawings, not a fabricated 12-cell source sheet."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/reference.png",
+      "publicPath": "stickers/source/sobaya/reference.png",
+      "sha256": "793ba5adbf7da63b35e9afd823843affb615740a0a019425f0bb342651d26b31",
+      "operation": "hardlink/copy, unchanged",
+      "note": ""
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/caption.png",
+      "publicPath": "stickers/source/sobaya/caption.png",
+      "sha256": "78f52d75591b884211b73ba9f533b701e6b669fd9cbbbf34414428947a637235",
+      "operation": "hardlink/copy, unchanged",
+      "note": ""
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "publicPath": "stickers/source/sobaya/canonical-sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Current canonical identity sheet, separate from first-series illustration style."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/yotan/keyframes.png",
+      "publicPath": "stickers/source/yotan/keyframes.png",
+      "sha256": "87ef3531a0e55be3974389f038741899d5e12f1908cbed216ff45540f8fdba81",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Actual retained 3x2 generated pose sheet."
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/yotan/reference.png",
+      "publicPath": "stickers/source/yotan/reference.png",
+      "sha256": "e5fe6a305ab5c0c5cfc067fd1e0bb5e121cb8631821da88f3912806550f4b748",
+      "operation": "hardlink/copy, unchanged",
+      "note": ""
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/all-members-white-still.png",
+      "publicPath": "stickers/overview-white.png",
+      "sha256": "5de4e73548d37a4b7da3497c5f6de909ec0c6e2a6a801616b239680480a1bb1c",
+      "operation": "hardlink/copy, unchanged",
+      "note": ""
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/all-members-black-still.png",
+      "publicPath": "stickers/overview-black.png",
+      "sha256": "c21a885b39531697f4457b1cf1a72fd48a7ed5fb74b2d2099088fe6167c1fedc",
+      "operation": "hardlink/copy, unchanged",
+      "note": ""
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/source/yotan/keyframes.png",
+      "outputs": [
+        "stickers/source/yotan/cell-00.png",
+        "stickers/source/yotan/cell-01.png",
+        "stickers/source/yotan/cell-02.png",
+        "stickers/source/yotan/cell-03.png",
+        "stickers/source/yotan/cell-04.png",
+        "stickers/source/yotan/cell-05.png"
+      ],
+      "operation": "3x2 exact cell crop without rescale or retouch"
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_angry_closed.png",
+      "publicPath": "expressions/takosan_angry_closed.png",
+      "sha256": "0a590f03bc2562fc3ebc2c1b50e6f13f3ad5f3b9c07ec638a347f52b70d3c6f4",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_angry_open.png",
+      "publicPath": "expressions/takosan_angry_open.png",
+      "sha256": "8a73cfc551b5968c1e81383e24ae08aca40a3dc5a36c0b90a499e3f16f643a2e",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_bored_closed.png",
+      "publicPath": "expressions/takosan_bored_closed.png",
+      "sha256": "4a09055d5e6988edfe7b55f6ab04cd704823548162513e3227308a05c71e659f",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_bored_open.png",
+      "publicPath": "expressions/takosan_bored_open.png",
+      "sha256": "b06ddd5e3e3f55794514ad497190b46def297ff6234f7f10bdbd6c2e9a472aa5",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_happy_closed.png",
+      "publicPath": "expressions/takosan_happy_closed.png",
+      "sha256": "780350def1c6923bf47deac77264c668a84db3cdcf491110ecc5712ebb01239a",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_happy_open.png",
+      "publicPath": "expressions/takosan_happy_open.png",
+      "sha256": "75ede99946cf02a0eced6f14bc23c737fe88b6a6d75ead5cac1c5bcf3084fc77",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_normal_closed.png",
+      "publicPath": "expressions/takosan_normal_closed.png",
+      "sha256": "fa4278c5ce3e5d4d03d89c518acfea0620e35638774e6a8a73c391f8b7f9e111",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_normal_open.png",
+      "publicPath": "expressions/takosan_normal_open.png",
+      "sha256": "4de5bdb4c54afc90c513ba2fb6cc657ef40656cde68ecedb2d059a3a8150f459",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_sad_closed.png",
+      "publicPath": "expressions/takosan_sad_closed.png",
+      "sha256": "b25ecd7e895a472e54d218b6397895266d2062bd2cff31a1bf4e1a9ec361bf87",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_sad_open.png",
+      "publicPath": "expressions/takosan_sad_open.png",
+      "sha256": "4a835fda72ea886893bb7db65eccb0daa64391ee737002268e332718953f8dc0",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_smug_closed.png",
+      "publicPath": "expressions/takosan_smug_closed.png",
+      "sha256": "a2f254a5bbb4f5e557d3e99cb853d78244bc3e254750aa97d14df08969b6b933",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_smug_open.png",
+      "publicPath": "expressions/takosan_smug_open.png",
+      "sha256": "17b0bbbf400482e88540e87e2e13dcef099d92865b088f7286589d6f03bbf063",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_surprise_closed.png",
+      "publicPath": "expressions/takosan_surprise_closed.png",
+      "sha256": "fc1bcc31acc7469afb2ed3ece668677fbcedb25910375149d5faa27e882853d2",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_surprise_open.png",
+      "publicPath": "expressions/takosan_surprise_open.png",
+      "sha256": "7dec6a844b13d1b196b28bbabc663f141c1f3b0643124e10641f8a05857db0fb",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_worry_closed.png",
+      "publicPath": "expressions/takosan_worry_closed.png",
+      "sha256": "e77b688c391ded30a11febbe574c8a8b8fed1836068cc0c8feee32609ccbcae4",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/takosan_worry_open.png",
+      "publicPath": "expressions/takosan_worry_open.png",
+      "sha256": "be434bb3fcd0b9e2415d7442c98998af4b84fd089836210179b300a9dc6b1e7c",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_angry_closed.png",
+      "publicPath": "expressions/yametaro_angry_closed.png",
+      "sha256": "4547d63f41b65a220f9e9cca6b37021a07702d8557a45caabd815dbd309b042b",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_angry_open.png",
+      "publicPath": "expressions/yametaro_angry_open.png",
+      "sha256": "6869767986081b32b34db8cd4524447b7b30fd499d7170e7652df33e7ec82c7c",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_bored_closed.png",
+      "publicPath": "expressions/yametaro_bored_closed.png",
+      "sha256": "714308635d725a054a3b490276a7fd6caf77e0866c439b1f9161ae38fe615520",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_bored_open.png",
+      "publicPath": "expressions/yametaro_bored_open.png",
+      "sha256": "04b49975c423ca7ed63f5a5992e4feb12697583334d2d831de1e6a434b148eb4",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_happy_closed.png",
+      "publicPath": "expressions/yametaro_happy_closed.png",
+      "sha256": "05d9c7f62a38590354ffc607dc6ebe9c981f860a02d46f5f3338215a09e023ba",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_happy_open.png",
+      "publicPath": "expressions/yametaro_happy_open.png",
+      "sha256": "526ecf23cb5c880df2ed7e4a4ee5bc654b2f3970a0346874caaf0e6ad5cbdcaa",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_normal_closed.png",
+      "publicPath": "expressions/yametaro_normal_closed.png",
+      "sha256": "5f79b2e4b6c0c09dd2c0fbf635884c8de3f8495754392e09ed78250ae3de45ec",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_normal_open.png",
+      "publicPath": "expressions/yametaro_normal_open.png",
+      "sha256": "4f1845c26bc137c1bc8b41aaa1ec8decd9985b50779e1ae156df4d6f17174fef",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_sad_closed.png",
+      "publicPath": "expressions/yametaro_sad_closed.png",
+      "sha256": "f37b04852a4e26de3119b4e028cb57d8b5cae0fbd9d9d42d8a63a31065507528",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_sad_open.png",
+      "publicPath": "expressions/yametaro_sad_open.png",
+      "sha256": "7ad93a5978f0fcf676c9eaf033cd9a4af7106e3b7ad11d9d16fa9c3bed3e2afa",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_smug_closed.png",
+      "publicPath": "expressions/yametaro_smug_closed.png",
+      "sha256": "303ebda06053e9f46a3f032898b2db908471f37fc55c7913759c18c4a93cc767",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_smug_open.png",
+      "publicPath": "expressions/yametaro_smug_open.png",
+      "sha256": "915817558755bef9df706b5cda21800d9aecc2c4abc3c60027f8a91c6e177ef5",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_surprise_closed.png",
+      "publicPath": "expressions/yametaro_surprise_closed.png",
+      "sha256": "581960d67a77bae1f6eecca389097acd2cc364560fa212a275727fa1a3e01cad",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_surprise_open.png",
+      "publicPath": "expressions/yametaro_surprise_open.png",
+      "sha256": "29b960d777693bc4d86203d6ce55f42e5a81574f7acd3515712d1b5c84a1f7c8",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_worry_closed.png",
+      "publicPath": "expressions/yametaro_worry_closed.png",
+      "sha256": "479e135b4f0b016721da22f2f80529038d86594cd583fd66c803588d192cdd5f",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/exports/yametaro_worry_open.png",
+      "publicPath": "expressions/yametaro_worry_open.png",
+      "sha256": "76269fbbf14c0fde7183ea750077b97973e98854610f81b99d69f1f493289c06",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical adopted commentary expression export, unchanged."
+    },
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/takosan_blink.png",
+      "publicPath": "takosan_blink.png",
+      "sha256": "c02305c16bb1002238b4b7890b7e139819004a44a21476fdafbabe0bea9a7a5c",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Canonical shared blink, no redraw."
+    },
+    {
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/line-store-main-37292753.png",
+      "publicPath": "stickers/store/main.png",
+      "sha256": "aa8096d0f330cd6e6d94b2fb87cbb676bfa2bb89ecddd150b7b0ddc095261372",
+      "operation": "hardlink/copy, unchanged",
+      "note": "Adopted actual LINE STORE listing image, unchanged.",
+      "sourceUrl": "https://stickershop.line-scdn.net/stickershop/v1/product/37292753/LINEStorePC/main.png?v=1"
+    },
+    {
+      "sourceUrl": "https://store.line.me/stickershop/product/37292753/ja",
+      "fetchedOn": "2026-10-15",
+      "cachedHtml": "03_SCRIPTS/youtube_line_stickers_20261015/.asset-cache/line-store-37292753.html",
+      "sha256": "53e72ee0ea522412c233e820bf84f5b150cd3f3551226b12457648982674cfee",
+      "operation": "Read official Product structured data and preview attributes",
+      "evidence": {
+        "type": "animation",
+        "purchaseButton": true
+      }
+    },
+    {
+      "sourceUrl": "https://stickershop.line-scdn.net/stickershop/v1/product/37292753/LINEStorePC/main.png?v=1",
+      "publicPath": "stickers/store/main.png",
+      "sha256": "aa8096d0f330cd6e6d94b2fb87cbb676bfa2bb89ecddd150b7b0ddc095261372",
+      "operation": "Adopted production input from original download, unchanged",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/line-store-main-37292753.png"
+    }
+  ],
+  "store": {
+    "url": "https://store.line.me/stickershop/product/37292753/ja",
+    "productId": "37292753",
+    "checkedOn": "2026-10-15",
+    "title": "窓際族スタンプ第一弾",
+    "description": "大人気窓際族がスタンプになった！",
+    "seller": "窓際族",
+    "type": "animation",
+    "priceYen": 250,
+    "hasPurchaseButton": true,
+    "mainImage": "stickers/store/main.png",
+    "mainImageUrl": "https://stickershop.line-scdn.net/stickershop/v1/product/37292753/LINEStorePC/main.png?v=1",
+    "animationUrl": "https://stickershop.line-scdn.net/stickershop/v1/product/37292753/iPhone/main_animation@2x.png?v=1",
+    "submissionHandledBy": "そば屋さん（ユーザー共有）",
+    "presentationNote": "実物の掲載画像と掲載情報。画面キャプチャではない。価格は確認日の参考情報。",
+    "localListingAssetsNote": "申請に使用した動く版main/tabはローカル未収録。販売中であることとは別。"
+  },
+  "limitations": [
+    "No retained raw Sobaya 12-pose sheet; do not depict reconstructed sheet as historical input.",
+    "Use global composition frame for all sticker previews; no browser GIF/APNG timebase.",
+    "First series is on sale; submitted animated main/tab files are not archived locally."
+  ]
+}

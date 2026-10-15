@@ -1,0 +1,1480 @@
+{
+  "version": 4,
+  "subjectiveListening": false,
+  "yametaroSelection": "VOICEVOX:玄野武宏・ノーマル style11 / speed1.15 pitch0 intonation1",
+  "yametaroLines": 43,
+  "takosanUnchangedLines": 46,
+  "adoptedBIntroExactReuse": 10,
+  "newYametaroBodyLines": 33,
+  "unchangedTextAndViews": 89,
+  "durationInFrames": 17763,
+  "durationSeconds": 592.1,
+  "sampleRate": 48000,
+  "mixClippedSamples": 0,
+  "mixNonFiniteSamples": 0,
+  "mixedSha256": "d085787fd39b3dade246455cf862209a368434f224a71e75d5bfd6cbd8174e09",
+  "reproduction": {
+    "status": "pass",
+    "frozenCandidateInput": "input/voice_b_adopted.json",
+    "candidateOutputsNotRead": true,
+    "unchangedFields": [
+      "id",
+      "text",
+      "spoken",
+      "startFrame",
+      "durationInFrames",
+      "audioSha256",
+      "captionSegments",
+      "voiceSettings"
+    ],
+    "unchangedLines": 89,
+    "durationInFrames": 17763,
+    "retiredRootWavs": 45
+  },
+  "pronunciationAdjustments": {
+    "intro-04": {
+      "from": "ヨオ'/タ'ンカラヤ",
+      "to": "ヨオ'タンカラヤ"
+    },
+    "main-01": {
+      "from": "ヤメ'/タ'ロオデ_ス",
+      "to": "ヤメタ'ロオデ_ス"
+    },
+    "pets-01": {
+      "from": "ヨオ'/タ'ンガ",
+      "to": "ヨオ'タンガ",
+      "reason": "Use the same single-name accent phrase as the adopted opening B."
+    },
+    "options-01": {
+      "from": "ゼンタイ'/ハエ'エケド",
+      "to": "ゼンタイワ'/エ'エケド",
+      "moraChanges": [
+        {
+          "index": 4,
+          "from": "ハ",
+          "to": "ワ"
+        }
+      ],
+      "reason": "Correct particle は, misparsed as ハ before Kansai ええ; display and spoken text are unchanged."
+    }
+  },
+  "postProcessingCuts": 0,
+  "utterances": [
+    {
+      "id": "intro-01",
+      "audioSha256": "88a136c6cbfb49326773a81ac2e76183eb122ec1c74d028101718e4325adb375",
+      "sampleRate": 48000,
+      "durationSeconds": 4.1706666666666665,
+      "peakDbFS": -2.285469855810298,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.9759166666666665,
+      "kana": "マドギワ'ゾクノ/_スタ'ンプ、ヨ'オ/デ_キテ'ルケド、_ツカイド'コロ/ムズカシ'クナイ？"
+    },
+    {
+      "id": "intro-02",
+      "audioSha256": "b787a78785fc383d99aae566b609e2a9fac8737a9127c3bbebe9bb0071815da7",
+      "sampleRate": 48000,
+      "durationSeconds": 3.978666666666667,
+      "peakDbFS": -9.481144996029858,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.978645833333333,
+      "kana": "ゴメンヤデ'、ト'カ、_ツカイヤ'ス/ソオデ'_スヨ"
+    },
+    {
+      "id": "intro-03",
+      "audioSha256": "29e9911aba847d7b236c05e0504522c22a5c8b02471f7d4146a3c22306333b5d",
+      "sampleRate": 48000,
+      "durationSeconds": 5.856,
+      "peakDbFS": -4.32495634712592,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 5.675416666666667,
+      "kana": "ワイダケ'/シヨオヒ'ンドガ/タカ'ソオヤナ、デ'モ、コノ'、オマエシマナ'ガシ、ワ'、イ'_ツ/ツカウ'ネン"
+    },
+    {
+      "id": "intro-04",
+      "audioSha256": "13e82e435a85f8441b8cbe65328aee764927caa8dc9453b9a5a25616761541a9",
+      "sampleRate": 48000,
+      "durationSeconds": 0.9493333333333334,
+      "peakDbFS": -9.0190901633398,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 0.763,
+      "kana": "ヨオ'タンカラヤ"
+    },
+    {
+      "id": "intro-05",
+      "audioSha256": "63051cf32ddabf700d17de2ea405e298f8a6d0ae2d551d916ac34d7f7c0fa885",
+      "sampleRate": 48000,
+      "durationSeconds": 2.592,
+      "peakDbFS": -7.427482575223348,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.4166875,
+      "kana": "チョオド'/キ'タワ、コオユウ'/ジョオダ'ンニ/_ツカウ'/ン'ヤナ"
+    },
+    {
+      "id": "intro-06",
+      "audioSha256": "9c680d359f44500a79f883cf49c9afebddb1bd49893890bc110f32de5ef8b0d9",
+      "sampleRate": 48000,
+      "durationSeconds": 2.2293333333333334,
+      "peakDbFS": -7.795470491547696,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.2293125,
+      "kana": "ジレエッテ'/カ'イテ/アリマ'_スケド"
+    },
+    {
+      "id": "intro-07",
+      "audioSha256": "b53d246e9fb3a26577f369871c1ce07e7bc6d2ba0f9cceecc044e8afe22c8844",
+      "sampleRate": 48000,
+      "durationSeconds": 0.7466666666666667,
+      "peakDbFS": -9.809439257281864,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 0.5530416666666667,
+      "kana": "ジレエ'？"
+    },
+    {
+      "id": "intro-08",
+      "audioSha256": "2f4cab8847f7e9766cda03bec66d261b920a1b92eeb04cd266ed9e680f468036",
+      "sampleRate": 48000,
+      "durationSeconds": 1.4826666666666666,
+      "peakDbFS": -6.859859211182615,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.3206458333333333,
+      "kana": "ガ'チノ/シマナ'ガシヤ/ナ'イカ"
+    },
+    {
+      "id": "intro-09",
+      "audioSha256": "f8228d3880f3cecd98a06b65fd82318ce7c8134ea53009e1d6e68f8c4ed9b507",
+      "sampleRate": 48000,
+      "durationSeconds": 2.6666666666666665,
+      "peakDbFS": -6.599288864504974,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.6666458333333334,
+      "kana": "ア_シタ'カラ/ハイソンエンジ'ニアデ_スネ"
+    },
+    {
+      "id": "intro-10",
+      "audioSha256": "60792fed7866378684782b845e155ef000527faba29830a14eaf000b17525986",
+      "sampleRate": 48000,
+      "durationSeconds": 1.728,
+      "peakDbFS": -2.3926894295235677,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.5550833333333334,
+      "kana": "パイソンエンジ'ニアミタイニ/イウ'ナ"
+    },
+    {
+      "id": "intro-11",
+      "audioSha256": "9c1e74904c10d46caafb783bf1cad593c82d871f4ccb9946d5f2f6c88fa0d614",
+      "sampleRate": 48000,
+      "durationSeconds": 3.872,
+      "peakDbFS": -4.690150579220395,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.729229166666667,
+      "kana": "_ヒトノ'/ジ'ンセエ/キメル'/レンラクオ'、コンナ'/ケエカイナ'/ウゴキ'デ/オクッテ'/ク'ンナヤ"
+    },
+    {
+      "id": "intro-12",
+      "audioSha256": "be49a91b26a4ad85761411fec2b53590a1c852ea4f593c66e5d65364ae1b8700",
+      "sampleRate": 48000,
+      "durationSeconds": 2.496,
+      "peakDbFS": -8.82510809115799,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.4959583333333333,
+      "kana": "_ツカイド'コロ、アリマ'_シタネ"
+    },
+    {
+      "id": "intro-13",
+      "audioSha256": "62351d32c2166665effe05b9e6212ffca4ff6e098302816df0cf2046ca4173c3",
+      "sampleRate": 48000,
+      "durationSeconds": 1.056,
+      "peakDbFS": -5.404669560240985,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 0.871,
+      "kana": "ジツレエ'/イラ'ンネン"
+    },
+    {
+      "id": "main-01",
+      "audioSha256": "00c4916c6a21fadee45959d68d9b8feb8da8f42bd5062dd463ef8f85ec0b7ff7",
+      "sampleRate": 48000,
+      "durationSeconds": 1.8773333333333333,
+      "peakDbFS": -8.525031363091381,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.6949375,
+      "kana": "ド'オモ、ム'ショク/ヤメタ'ロオデ_ス"
+    },
+    {
+      "id": "main-02",
+      "audioSha256": "83f6c357e127595e7775a132a3ef02bec0d64fcd5724bce1a0a776a65326f11a",
+      "sampleRate": 48000,
+      "durationSeconds": 2.112,
+      "peakDbFS": -9.052848035751172,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.1119791666666665,
+      "kana": "ド'オモ、タ'コサンデ_ス"
+    },
+    {
+      "id": "main-03",
+      "audioSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005",
+      "sampleRate": 48000,
+      "durationSeconds": 7.104,
+      "peakDbFS": -6.86979161894082,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 7.103979166666667,
+      "kana": "コ'ンカイワ、コチラノ'/ウゴ'ク/ライン_スタ'ンプオ、コオデ'ッ_クスデ/ド'オ/_ツク'ッタ/ノカ'/カイセ_ツ'/シマ'_ス"
+    },
+    {
+      "id": "tips-01",
+      "audioSha256": "5773013a4c942f26f2480283ef643de115e065d7efd85a3dbc7768e10a62c0a2",
+      "sampleRate": 48000,
+      "durationSeconds": 10.336,
+      "peakDbFS": -9.639719377646257,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.335979166666666,
+      "kana": "ダイザイワ'/コチラノ'、マドギワ'ゾ_ク/スタ'ンプ/ダ'イ/イチ'ダン、ゾ_クヘン'ズクリデ/ワカ'ッタ/コト'モ/マジエ'テ、_ツク'ル/ト'キノ/コツオ'/ショオカイ'/シマ'_ス"
+    },
+    {
+      "id": "tips-02",
+      "audioSha256": "1252624da9bc4490e1a36e37a2ac10ed72bf043727e084d7c596e66cca0dd3b0",
+      "sampleRate": 48000,
+      "durationSeconds": 2.7946666666666666,
+      "peakDbFS": -2.8548080914758516,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.641166666666667,
+      "kana": "ワ'イガ/タノ'ム/ト'キ、ナ'ニオ/イエ'/バエ'エカ/シリタ'イワ"
+    },
+    {
+      "id": "tips-03",
+      "audioSha256": "fc760e8257fbcf3583ecdf18374a5edd79c5ee5e7df68a90211531f6a04ff8d7",
+      "sampleRate": 48000,
+      "durationSeconds": 9.738666666666667,
+      "peakDbFS": -9.48667413980466,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 9.738645833333333,
+      "kana": "サイショニ'/ド'ンナ/ガゾオオ'/ダ'_シテ/モラウ'カ、キニイラ'ナイ/ト'キニ/ド'オ/エラビナオ'_スカ、ソオユウ'、ジッサイニ'/ヤ'ッテ/ヤクダ'ッタ/ハナシ'デ_ス"
+    },
+    {
+      "id": "tips-04",
+      "audioSha256": "c350b4697a9e0540c5332a41d0685071bc73992ada0c60dc3a6e07949c91db3b",
+      "sampleRate": 48000,
+      "durationSeconds": 2.517333333333333,
+      "peakDbFS": -6.776756699357022,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.300854166666667,
+      "kana": "チナミニ'、エ'モ/コオデ'ッ_クスカラ/_ツクレル'ン？"
+    },
+    {
+      "id": "tips-05",
+      "audioSha256": "10549df504c1a99ebee232a31a277cb6d7dc668ddb25ffae5ed0d31d2d2abfd8",
+      "sampleRate": 48000,
+      "durationSeconds": 14.186666666666667,
+      "peakDbFS": -8.16683530022328,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 14.186645833333333,
+      "kana": "ハ'イ、イメ'エジ/ジェ'ント/イウ'/キ'ノオデ、オ'オプンエエアイノ/ガゾオセエセエモ'デルオ/_ツカエマ'_ス、タイオオ'/スル'/チャットジイピイティイプランナラ'、プ'ランニ/_フク'マレル/コオデ'ッ_クスノ/リヨオ'ワクデ/_ツカエマ'_ス"
+    },
+    {
+      "id": "ideas-01",
+      "audioSha256": "43f5f1873656cb410148a69e3d48cb861ad1eaf2b542abbdf0c5e3834867d71c",
+      "sampleRate": 48000,
+      "durationSeconds": 2.3253333333333335,
+      "peakDbFS": -3.602248193983476,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.1445625,
+      "kana": "ホ'ナ、イッコ'メカラ/キアイ'/イレテ'/_ツク'ルカ"
+    },
+    {
+      "id": "ideas-02",
+      "audioSha256": "dd7fe507f29314b8585423f8df859bb4210ffbcdafef7ab123e285bfb08b5ec0",
+      "sampleRate": 48000,
+      "durationSeconds": 5.898666666666666,
+      "peakDbFS": -8.270622025585887,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 5.898645833333333,
+      "kana": "サイショノ'/アン_シュツ'/シ'ワ、ハ'ッコ/マトメテ'/イチ'マイニ/ダ'_シテ/モラウト'/ハヤ'カッタデ_ス"
+    },
+    {
+      "id": "ideas-03",
+      "audioSha256": "2e2099051fc1e7c5fc6cc2809e0fb641bcede71366f47af08e19f3e91241e03c",
+      "sampleRate": 48000,
+      "durationSeconds": 1.184,
+      "peakDbFS": -5.579261171682537,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 0.9893958333333334,
+      "kana": "サイショカラ'/ゼ'ンブ？"
+    },
+    {
+      "id": "ideas-04",
+      "audioSha256": "63a73090f73e77698fd42ea4d2c303377233c5f94def5a490bacd53f506495c9",
+      "sampleRate": 48000,
+      "durationSeconds": 5.429333333333333,
+      "peakDbFS": -8.679892142742888,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 5.4293125,
+      "kana": "ハ'イ、セリ_フト'/オオマ'カナ/ネタオ'/ワタ_シテ'、コンナフ'ウニ/タノミマ'_ス"
+    },
+    {
+      "id": "ideas-05",
+      "audioSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2",
+      "sampleRate": 48000,
+      "durationSeconds": 11.242666666666667,
+      "peakDbFS": -8.835364709668692,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 11.242645833333333,
+      "kana": "イチランニ'/ナ'ルト、セ'ット/ゼンタイオ'/ミワタセマ'_ス、ニタ'/ポ'オズバカリニ/ナ'ッテ/イナイ'カ、セリフノ'/フンイ'キニ/ア'ッテ/イル'カオ、イチ'ドニ/クラベラレマ'_ス"
+    },
+    {
+      "id": "ideas-06",
+      "audioSha256": "7483db90ac796a4011bfc7d90b15ec11b6caa40460182715ee38cc760eee7226",
+      "sampleRate": 48000,
+      "durationSeconds": 5.568,
+      "peakDbFS": -5.7250922216614715,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 5.404208333333333,
+      "kana": "イッコズ'ツ/ミ'テタラ/キズカ'ンケド、ナラベルト'、ゼンイン'、オナジ'/タチ'カタヤナ、ッテ'/ナ'ル/ン'カ"
+    },
+    {
+      "id": "ideas-07",
+      "audioSha256": "ecf58fdeb577a7dfdc5ee383259cfd4f256aee8c7fdfb329896448cce23b5497",
+      "sampleRate": 48000,
+      "durationSeconds": 9.664,
+      "peakDbFS": -8.989192914518839,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 9.663979166666667,
+      "kana": "ジッサイ'、ダ'イ/ニ'ダンデワ、ニタ'/ポ'オズガ/オ'オイ、ト'/イウ'/トコロカラ'、ハ'ッコ/ナランダ'/ア'ンオ/ナンパタ'アンカ/_ツクリナオシマ'_シタ"
+    },
+    {
+      "id": "ideas-08",
+      "audioSha256": "e6ba44252d2f1f76648ed2df760de36e2b5e0eac5188866f8270dfb552605912",
+      "sampleRate": 48000,
+      "durationSeconds": 3.1786666666666665,
+      "peakDbFS": -5.726629592615318,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.0252916666666665,
+      "kana": "カンセエ'/サセテカラ'/ハ'ッコトモ/ニテ'ルッテ/キズ'ク/ノ'、ツライナ'"
+    },
+    {
+      "id": "ideas-09",
+      "audioSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb",
+      "sampleRate": 48000,
+      "durationSeconds": 7.061333333333334,
+      "peakDbFS": -8.82510809115799,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 7.0613125,
+      "kana": "コノ'/ダンカイデワ'、コマ'カナ/シアゲヨ'リ、ド'ノ/ホオコオデ'/_ツクリタ'イカ、オ'/エラビマ'_ス"
+    },
+    {
+      "id": "options-01",
+      "audioSha256": "7aa43740ef99bdc09997eaf20dac2631fd6d492d56c3a39a2fe8b98f4b226f3d",
+      "sampleRate": 48000,
+      "durationSeconds": 4.650666666666667,
+      "peakDbFS": -6.67841505706429,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 4.496854166666667,
+      "kana": "ゼンタイワ'/エ'エケド、コノ'/イッコダケ'、ナ'ンカ/チガウ'、コオユウ'/ト'_キ/コマ'ルネンナ"
+    },
+    {
+      "id": "options-02",
+      "audioSha256": "868f69d22e8c2b80fb81e580daf4a143bc191b060bcb0fa06de7304bb040e160",
+      "sampleRate": 48000,
+      "durationSeconds": 5.888,
+      "peakDbFS": -8.648985307663693,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 5.887979166666667,
+      "kana": "イワ'カンオ/ウマ'_ク/セツメエ'/デキ'ナケレバ、ソノ'/イッコダケ'/ベツ'アンオ/ダ'_シテ/モライマ'_ス"
+    },
+    {
+      "id": "options-03",
+      "audioSha256": "4a798e661a7a91b93803c63b4f8b81f93af8f81338c3bb63b5e3b069b34795ba",
+      "sampleRate": 48000,
+      "durationSeconds": 2.1333333333333333,
+      "peakDbFS": -8.162763789380884,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.917625,
+      "kana": "ナ'ンカ/チガウ'、ノ'/ママ'デモ/エ'エン？"
+    },
+    {
+      "id": "options-04",
+      "audioSha256": "e8cfc02e48930bf1e18bf7f552199508e093302f42a281e5d4d4b28a41b6c389",
+      "sampleRate": 48000,
+      "durationSeconds": 14.549333333333333,
+      "peakDbFS": -7.819566320804606,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 14.5493125,
+      "kana": "ソコカラ'、コオズオ'/カエテ'/サンアンク'ライ、ジッサイノ'、チャント'/ハタライテ'ルカ？、モ'、タ_チス'ガタ、パ'ア_ティションニ/ヒジ'オ/オ_ク'/ス'ガタ、イスデ'/フンゾリカ'エル/ス'ガタオ/クラベマ'_シタ"
+    },
+    {
+      "id": "options-05",
+      "audioSha256": "1c3fd0d2d597b92cc5f8a0e382872839a38125e290de9a99d33834d2d4ab932c",
+      "sampleRate": 48000,
+      "durationSeconds": 1.536,
+      "peakDbFS": -8.426566782383132,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.361125,
+      "kana": "ド'レモ/ハタライテ'/ナサ'ソオヤナ"
+    },
+    {
+      "id": "options-06",
+      "audioSha256": "86ea35424c47a696548fb8f7117267aa42e0344bcba4d54765bad3c6daf45702",
+      "sampleRate": 48000,
+      "durationSeconds": 6.432,
+      "peakDbFS": -7.292028565803902,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 6.431979166666666,
+      "kana": "ナ'ベテ/ミ'ルト、ホシ'カッタ/ノワ'、コノ'/ナレナレシ'サダ、ト'/エラビヤ_スクナリマ'_ス"
+    },
+    {
+      "id": "options-07",
+      "audioSha256": "df9e467d4859ff9aa6acc07f8034712d62f6f927c2bc443f4ada87ea8a8f9938",
+      "sampleRate": 48000,
+      "durationSeconds": 4.384,
+      "peakDbFS": -3.552628123760333,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 4.255875,
+      "kana": "サイショカラ'/セエカイノ'/セツメエ'ブンオ/カンガ'エンデモ、エ'オ/ミ'テ/コ'ノミオ/_ツタエラレル'/ン'ヤ"
+    },
+    {
+      "id": "options-08",
+      "audioSha256": "2447bea5ccadcea5ecb43a76d7409376a80c10ccde818799a0c3057e059bae24",
+      "sampleRate": 48000,
+      "durationSeconds": 10.229333333333333,
+      "peakDbFS": -8.576108286978254,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.2293125,
+      "kana": "ハ'イ、サイヨオ'/シナカッタ'/イスノ'/ア'ンワ、ベツノ'/_スタ'ンプニ/_ツカイマ'_シタ、コ'オホワ/ノコ'_シテ/オ_クト'、ア'トデ/ヤクダ'_ツ/コト'モ/アリマ'_ス"
+    },
+    {
+      "id": "redraw-01",
+      "audioSha256": "44cf3d47b38d9286fe638bff21a5577ea31b793f8c89d05523cd18d2fe188df2",
+      "sampleRate": 48000,
+      "durationSeconds": 3.296,
+      "peakDbFS": -4.8898349973524144,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.138333333333333,
+      "kana": "ナオ_シテ'ル/ウチニ'、カオトカ'/セ'ンガ/ガ'ビガビニ/ナ'ッテ/キ'タ/ン'ヤケド"
+    },
+    {
+      "id": "redraw-02",
+      "audioSha256": "9380831e588df8228f8299c0d3e8e04e223d1492f8eab07341e12a1b73c8d803",
+      "sampleRate": 48000,
+      "durationSeconds": 9.024,
+      "peakDbFS": -7.179832994385231,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 9.023979166666667,
+      "kana": "コ'ンカイモ/アリマ'_シタ、ナン'ドモ/ヘンシュウ'/_シテ'/コオズオ'/ツメ'タ/ア'ト、イチマイズ'ツ、キ'レイニ/セエセエ'/シナオシマ'_シタ"
+    },
+    {
+      "id": "redraw-03",
+      "audioSha256": "2ede6be4f8b0c07914e29871c8b7d1568b14a69b430bb2e3fb813e53ad654cfe",
+      "sampleRate": 48000,
+      "durationSeconds": 2.368,
+      "peakDbFS": -7.542313057773978,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.1517916666666665,
+      "kana": "セッカク'/キマッタ'/エ'ガ、マタ'/カワラヘン'？"
+    },
+    {
+      "id": "redraw-04",
+      "audioSha256": "51681539fb9800678c6b5cfa87b2c03f46a1e2fe0989821d5995fd9afb00e432",
+      "sampleRate": 48000,
+      "durationSeconds": 6.538666666666667,
+      "peakDbFS": -9.24128270284472,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 6.538645833333334,
+      "kana": "サイヨオ'/_シタ'/ガゾオオ'/コオズノ'/ミホンニ'/_シテ'、キャラ_クタアノ'/モト'ノ/シ'リョオモ/イッショニ'/ワタシマ'_ス"
+    },
+    {
+      "id": "redraw-05",
+      "audioSha256": "6bf5fee51e82a64bf8b12ce442e248e91135e5bbbea542b63b95e2c76122f8e6",
+      "sampleRate": 48000,
+      "durationSeconds": 11.765333333333333,
+      "peakDbFS": -7.851580241905648,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 11.7653125,
+      "kana": "カキナオ'_シタラ、カオヤ'/_クチノ'/カタチガ'/カワッテ'/イナイ'カオ/ミマ'_ス、ソバヤサンモ'、エガラダケデナク'、キャラ_クタア'/ホ'ンライノ/ト_クチョオオ'/ミナオシマ'_シタ"
+    },
+    {
+      "id": "redraw-06",
+      "audioSha256": "fab752aeb4e7230fe32a5205a5eef1bac15b85e243eae1c52e466398b27e33bf",
+      "sampleRate": 48000,
+      "durationSeconds": 3.2426666666666666,
+      "peakDbFS": -7.150801374667461,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.0793541666666666,
+      "kana": "ウゴカ'ス/マ'エニ、キニイ'ッタ/イチ'マイオ/チャント'/ヨ'オイ/スル'/ン'ヤナ"
+    },
+    {
+      "id": "pets-01",
+      "audioSha256": "e25e9584dd5daaa4b11c954228cb91e7c61f8bce54a9c21191f0fdbc867d0857",
+      "sampleRate": 48000,
+      "durationSeconds": 2.784,
+      "peakDbFS": -7.117654834521953,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.6317083333333335,
+      "kana": "ココカラ'/ウゴカ'ス/ン'カ、ヨオ'タンガ/ロク'ニン/オ'ルケド"
+    },
+    {
+      "id": "pets-02",
+      "audioSha256": "1d92b6a569e85d742e0e60976af98f47cc7ad5a46835d3e58d2ca2cbfe451037",
+      "sampleRate": 48000,
+      "durationSeconds": 8.64,
+      "peakDbFS": -8.948994176290922,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 8.639979166666667,
+      "kana": "オナジ'/_ヒトノ'、ウゴキ'ノ/トチュウオ'/ナラベタ'/ガゾオデ'_ス、コレオ'/イ_チコマズ'_ツ/キリダ_シテ'、ジュンバンニ'/ヒョオジ'/シマ'_ス"
+    },
+    {
+      "id": "pets-03",
+      "audioSha256": "7137f21a6e0789e9df2e1113a2c9efbdbb437db2c88be8a19804426c1e1fc995",
+      "sampleRate": 48000,
+      "durationSeconds": 3.6266666666666665,
+      "peakDbFS": -5.51450261346504,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.4015208333333335,
+      "kana": "パ'ラパラ/マンガヤ'ナ、コノ'/_ツクリカ'タワ、ド'コカラ/モ'ッテ/_キタン'？"
+    },
+    {
+      "id": "pets-04",
+      "audioSha256": "c53f575a8a8b7f6e6603b1aa2815e42bd96d62b9f61061aefe3b04a9868bee4c",
+      "sampleRate": 48000,
+      "durationSeconds": 15.413333333333334,
+      "peakDbFS": -9.0190901633398,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 15.4133125,
+      "kana": "オ'オプンエエアイガ/テエキョオ'/_シテ'/イル'、コオデ'ッ_クス、ペ'ッ/ツ'/ヨ'オノ/_スキ'ルオ/サンコオニ'/シマ'_シタ、レンゾク'/_シタ'/ポ'オズオ/イチ'マイニ/エガ'イテ、キリダ_シテ'/ウゴカ'ス/ブ'ブンオ、ライン_スタ'ンプニモ/オオヨオ'/_シテ'/イマ'_ス"
+    },
+    {
+      "id": "pets-05",
+      "audioSha256": "66dbfab91be24deaee9c4f415a1ec555f301ba4f49b47df05370ca7c1e72b81a",
+      "sampleRate": 48000,
+      "durationSeconds": 2.9013333333333335,
+      "peakDbFS": -3.3530343926979675,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.743145833333333,
+      "kana": "ペ'ットノ/_ツクリカ'タガ、シマナガ_シスタ'ンプニ/ナ'ッタ/ン'カ"
+    },
+    {
+      "id": "pets-06",
+      "audioSha256": "0d94263c1b09200c2ea23360faa9fa8ea6d89c5881fdc253a3d581f713f72c3c",
+      "sampleRate": 48000,
+      "durationSeconds": 6.474666666666667,
+      "peakDbFS": -9.107135022704991,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 6.474645833333334,
+      "kana": "コオユウ'、ウゴキ'ノ/コマオ'/マトメタ'/ガゾオオ'、_スプライトシ'イト、ト'/ヨビマ'_ス"
+    },
+    {
+      "id": "pets-07",
+      "audioSha256": "65b0b31bcc84627a0fb2efa730f70f901ea987c259978499291ed0808ad999f5",
+      "sampleRate": 48000,
+      "durationSeconds": 2.7946666666666666,
+      "peakDbFS": -5.032964540868134,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.629375,
+      "kana": "イチマイズ'ツ/ベツベツニ'/エガ'イテ/モラウ'/ン'トワ/チガウ'/ン'ヤナ"
+    },
+    {
+      "id": "pets-08",
+      "audioSha256": "500af79dee2a85825d6b3440195e3a6cdfc57cf8d3e532a2e2bc5fc368681b1b",
+      "sampleRate": 48000,
+      "durationSeconds": 12.832,
+      "peakDbFS": -7.490043272341115,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 12.831979166666667,
+      "kana": "イチ'マイノ/ナ'カニ、オナジ'/キャラ_クタアノ'/レンゾク'/_シタ'/_シセエオ'/ダ'_シテ/モライマ'_ス、タノ'ム/ト'キワ、コノ'/_シュホオノ'/ナマエト'、サンコオニ'/スル'/_スキ'ルオ/_ツタエルト'/ハナシ'ガ/ハヤ'イデ_ス"
+    },
+    {
+      "id": "pets-09",
+      "audioSha256": "a952748eeb8ae00577265fd24190458a80bf5638a5ed09613604b859998a7d04",
+      "sampleRate": 48000,
+      "durationSeconds": 8.768,
+      "peakDbFS": -8.250039339086886,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 8.767958333333333,
+      "kana": "ダ'イ/イチ'ダンデモ、コノ'/ヨ'オニ/セエセエ'/_シタ'/ゲンガオ'/_ツカッテ'/イマ'_ス、_スタンプゴトニ'、アウウゴカシ'カタオ/エラビマ'_シタ"
+    },
+    {
+      "id": "acting-01",
+      "audioSha256": "80724f71fe0f1d62bfce196a6bce25d004abb3abe8f316dd85d7f8aa0ccbc517",
+      "sampleRate": 48000,
+      "durationSeconds": 3.957333333333333,
+      "peakDbFS": -6.6339245873352155,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.724083333333333,
+      "kana": "ウゴキ'ノ/チュウモンッテ'/ムズカシ'ソオヤナ、ウデ'オ/ナン'ド/マゲテ'、ト'カ？"
+    },
+    {
+      "id": "acting-02",
+      "audioSha256": "6ae11fa70e85187fa0fcf1e0cc09cf2f701a966b9e78edc28eb9b1521a64387d",
+      "sampleRate": 48000,
+      "durationSeconds": 9.589333333333334,
+      "peakDbFS": -6.549001251097652,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 9.5893125,
+      "kana": "コ'ンカイ、_ツタエヤス'カッタ/ノワ'、ウゴキ'ノ/ゴ'オルデ_シタ、タト'エバ、ビ'イルオ/ダイジ'ソオニ/メデ'テ/イル'/カンジ'、デ'_ス"
+    },
+    {
+      "id": "acting-03",
+      "audioSha256": "46f61264e97188b10c9bc18f22811559371585c3fa17ca489a8c84eb483cc666",
+      "sampleRate": 48000,
+      "durationSeconds": 2.5493333333333332,
+      "peakDbFS": -8.4763628866582,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.379625,
+      "kana": "ナ'ニオ/ウゴカ'_スカヨリ、ド'オ/ミエ'テホシイカ"
+    },
+    {
+      "id": "acting-04",
+      "audioSha256": "35c2c9ad91ccfd9e44d6750819b99247d6a5ffb0f45ea35f73ee58be9d7ef1cf",
+      "sampleRate": 48000,
+      "durationSeconds": 10.112,
+      "peakDbFS": -8.145142596493518,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.111979166666666,
+      "kana": "ダ'イ/ニ'ダンノ、チャント'/ハタライテ'ルカ？、デ'ワ、ヒジ'ヤ/ウデ'ノ/イ'チオ/コマカ'クイイナオ_シテモ、ナカナカ'/シック'リ/キマセ'ンデ_シタ"
+    },
+    {
+      "id": "acting-05",
+      "audioSha256": "7cdb875b4d94d118193f1424b2b08ddccb1ecd4413a28348db346e3d0e31c650",
+      "sampleRate": 48000,
+      "durationSeconds": 7.7973333333333334,
+      "peakDbFS": -7.21565114674285,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 7.7973125,
+      "kana": "ソコデ'/_ツタエタ'カッタ/ノガ'、ナレナレシ'_クカランデ/ク'ル、チョ'ット/ウザ'イ/センパイ'、ト'/イウ'/フンイ'キデ_ス"
+    },
+    {
+      "id": "acting-06",
+      "audioSha256": "cba5563e85bb6a35ae7f57e29b5a7965746745104deb8e9bcc985c3497a6b894",
+      "sampleRate": 48000,
+      "durationSeconds": 3.3813333333333335,
+      "peakDbFS": -7.867303684976972,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.227875,
+      "kana": "ウゴキ'ノ/カ'クドワ/ワカラ'ンケド、ソノ'/センパイワ'/ソオゾオ'/デキ'ルワ"
+    },
+    {
+      "id": "acting-07",
+      "audioSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4",
+      "sampleRate": 48000,
+      "durationSeconds": 7.221333333333333,
+      "peakDbFS": -8.02946353339743,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 7.221291666666667,
+      "kana": "シ'ジワ/フンイ'キノ/サンコオニ'/_シテ'、エ'ニ/ア'ウ/ウゴキ'オ/カンガ'エテ、ト'/_ツタエタ'/ノモ'/ポイントデ_シタ'"
+    },
+    {
+      "id": "acting-08",
+      "audioSha256": "ff1efc392b4201b73903b64a6235ddc5068fc526d49fefdf6305f4a4e979222b",
+      "sampleRate": 48000,
+      "durationSeconds": 4.789333333333333,
+      "peakDbFS": -5.660258514783266,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 4.623625,
+      "kana": "コッチ'ガ/ナニゲナ'クイッタ、ヒジ'オ/ウゴカ'ス、オ'、ゼッタイ'/ジョオケ'ンニ/セ'ンデ/エ'エ/ン'ヤナ"
+    },
+    {
+      "id": "acting-09",
+      "audioSha256": "3bb66f673cdab736e2a9f2204f30dd295db885521ea02b896d46d23f879db63a",
+      "sampleRate": 48000,
+      "durationSeconds": 10.570666666666666,
+      "peakDbFS": -8.5413149772403,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.570645833333334,
+      "kana": "ハ'イ、サ'イゴワ/コノ'/セエシガノ'/_シセエニ'/_シタ'イ、ナ'ド、ユズレナイ'/トコロワ'/ソエマ'_ス、ソノウエ'デ、エ'ンギノ/フンイ'キオ/_ツタエマ'_ス"
+    },
+    {
+      "id": "acting-10",
+      "audioSha256": "dc0db75d039199c26ee81162821c5fcd454b881e15fa8e0fa2aba9a62c48f274",
+      "sampleRate": 48000,
+      "durationSeconds": 2.2826666666666666,
+      "peakDbFS": -5.214654330729797,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.1182083333333335,
+      "kana": "ウゴキ'モ、ミクラベ'テ/エラ'ンデ/エ'エ/ン'カ"
+    },
+    {
+      "id": "acting-11",
+      "audioSha256": "d559ca97b4abf73e8f2f89f1bc672cefdcdc8c31671c793833eb2446486b7d44",
+      "sampleRate": 48000,
+      "durationSeconds": 10.848,
+      "peakDbFS": -7.305540771331732,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.847958333333333,
+      "kana": "モチ'ロンデ_ス、ツヨメ'、_ヒカエメ'、_スコ'シ/アイダオ'/ト'ル/カンジ'、コトバダケデ'/キメルヨリ'、ウゴ'_ク/コ'オホオ/ナラベルト'/コ'ノミガ/ワカリマ'_ス"
+    },
+    {
+      "id": "acting-12",
+      "audioSha256": "aa66f7f3b51806483df4ea1e1d356a6dbcea8c49a679fbdffee4cd341f2b2f4a",
+      "sampleRate": 48000,
+      "durationSeconds": 2.058666666666667,
+      "peakDbFS": -6.171941699060401,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.8468541666666667,
+      "kana": "ミッツ'トモ/チガウ'ナ、ッテ'/ナ'ッタラ？"
+    },
+    {
+      "id": "acting-13",
+      "audioSha256": "e4df986e3729e815bd96e7b572092d3bb2d11494e64171c988889d1c65f880b5",
+      "sampleRate": 48000,
+      "durationSeconds": 10.122666666666667,
+      "peakDbFS": -7.895546233542207,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.122625,
+      "kana": "ソノ'/ミッツ'カラ/ム'リニ/エラ'ブ/_ヒツヨオワアリマセ'ン、ジッサイニ'、ゼ'ンブ/シック'リ/コ'ナ_クテ、フンイ'キオ/_ツタエナオ_シタ'/コト'モ/アリマ'_シタ"
+    },
+    {
+      "id": "inspect-01",
+      "audioSha256": "dc26f670fa8d31a52f73fe8ba0f2df20761a83540fdfcdd093fe745293ae6b8d",
+      "sampleRate": 48000,
+      "durationSeconds": 2.474666666666667,
+      "peakDbFS": -7.326464704342072,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.23425,
+      "kana": "ウゴキ'ワ/キマッタ'、ココカラ'/ナ'ニオ/ミル'ン？"
+    },
+    {
+      "id": "inspect-02",
+      "audioSha256": "139acd1b6498d086dc7ef93e7d3a223b691ef28c9f276869dbea07f12ad6ed1f",
+      "sampleRate": 48000,
+      "durationSeconds": 8.490666666666666,
+      "peakDbFS": -8.568285403081155,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 8.490625,
+      "kana": "オナジ'/_スタ'ンプオ、シ'ロト/ク'ロ、リョオホ'オノ/ハ'イケエニ/ノセマ'_ス、コレワ'、ス'グ/タメセ'テ/ヤクダチマ'_シタ"
+    },
+    {
+      "id": "inspect-03",
+      "audioSha256": "5b2e72392ba7e0e4800dd97eb9d22c8d639c77879474a94a8cb8859c9431dbde",
+      "sampleRate": 48000,
+      "durationSeconds": 2.5813333333333333,
+      "peakDbFS": -6.118162258862352,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 2.4155,
+      "kana": "ク'ロニ/_シタ'ラ、マワリノ'/シロ'イ/ノコリ'ガ/ミエ'ルナ"
+    },
+    {
+      "id": "inspect-04",
+      "audioSha256": "6e555d940d40ae79635a7d1026d4b90815f0db5997734cfde005b7c5362d43be",
+      "sampleRate": 48000,
+      "durationSeconds": 10.261333333333333,
+      "peakDbFS": -8.586787223167967,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.2613125,
+      "kana": "シロ'イ/ハイケエダケデ'ワ、ハ'イケエノ/ケシ'/ノコシニ'/キズキニク'イ/ン'デ_ス、ギャクニ'、シロ'イ/_フク'ガ/カケ'テ/イテモ'/ワカリニク'イ/コト'ガ/アリマ'_ス"
+    },
+    {
+      "id": "inspect-05",
+      "audioSha256": "0e8c7a30a24cfc323301cd7da51f845462e7e24e6e1318b27c398e1062741502",
+      "sampleRate": 48000,
+      "durationSeconds": 10.058666666666667,
+      "peakDbFS": -8.517961041465277,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.058645833333333,
+      "kana": "モ'ジノ/アナ'ニ/シ'ロガ/ノコ'ッテ/イナイ'カ、_フク'ヤ/カオマ'デ/_スケテ'/イナイ'カ、リンカクガ'/チラ_ツカナイ'カ、ハ'イケエオ/キリカエナ'ガラ/ミマ'_ス"
+    },
+    {
+      "id": "inspect-06",
+      "audioSha256": "c7838b3ce403c32300b1273b3f6428892d78c5ed4e3d4039192211fa256d3ec2",
+      "sampleRate": 48000,
+      "durationSeconds": 3.6373333333333333,
+      "peakDbFS": -4.295350278593152,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.4839166666666666,
+      "kana": "イチマイダケ'/キ'レイデモ、ウゴイテ'ル/トチュウデ'/ヘ'ンニ/ナ'ルカモ/シレ'ン/ノカ'"
+    },
+    {
+      "id": "inspect-07",
+      "audioSha256": "5f007a2433c1e0f28ed7187d2986d789cc7a73e13214df1e3677d9dfd98c9e24",
+      "sampleRate": 48000,
+      "durationSeconds": 7.296,
+      "peakDbFS": -8.718138551136237,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 7.295979166666666,
+      "kana": "ナ'ノデ、サ'イゴワ/アニメ'エションデ、イチランニ'/_シテ'/モラエ'バ、ハ'ッコ/マトメテ'/カクニン'/デキマ'_ス"
+    },
+    {
+      "id": "tools-01",
+      "audioSha256": "e373bb669f5a8de0699d4189005cbd35daf103419ed51da963bda2b9c198880a",
+      "sampleRate": 48000,
+      "durationSeconds": 4.16,
+      "peakDbFS": -4.807380730057187,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.9600625,
+      "kana": "シロ'イ/ゴミ'ガ/ノコ'ッテタラ、イメ'エジ/ジェ'ンニ、ココ'/ケ_シテ'、デ'/エ'エ？"
+    },
+    {
+      "id": "tools-02",
+      "audioSha256": "57407ea15db18d5c521d1d1dcf4e62306cc04d087bbb244716b612043ac25cd8",
+      "sampleRate": 48000,
+      "durationSeconds": 10.144,
+      "peakDbFS": -8.032136320444618,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.143979166666666,
+      "kana": "コオユウ'/コマカ'イ/ケシ'/ノコシニワ'、ツウジョオノ'/ガゾオ'ショリモ/_ツカエマ'_ス、コ'ンカイ/_ツカッタ'/ノワ'、オオプンシイブ'イト/イメエジマ'ジックデ_ス"
+    },
+    {
+      "id": "tools-03",
+      "audioSha256": "853a7ec2545a3a528f60a96b2efb43acac2f4e9669c61d6b90e6cc022903d422",
+      "sampleRate": 48000,
+      "durationSeconds": 1.9626666666666666,
+      "peakDbFS": -3.3044261040970535,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.7542083333333334,
+      "kana": "エ'オ/エガ'ク/エエア'イトワ/ベツノ'/ドオグ'？"
+    },
+    {
+      "id": "tools-04",
+      "audioSha256": "895238be946d8e43d08f323b52a16d46794919e855de2dc728f41f32e7aca6eb",
+      "sampleRate": 48000,
+      "durationSeconds": 8.970666666666666,
+      "peakDbFS": -9.051344896587073,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 8.970625,
+      "kana": "ハ'イ、ガゾオノ'/ナ'カカラ/ト_クテエノ'/リョオイキオ'/トリダ_シタ'リ、キリヌイタ'リ、トオメエニ'/_シタ'リ/スル'/タメ'ノ/ドオグ'デ_ス"
+    },
+    {
+      "id": "tools-05",
+      "audioSha256": "04a0aa42e48064d13340e5fc9badfd492e1a3ae2d976811f6f8f8a67648f59e5",
+      "sampleRate": 48000,
+      "durationSeconds": 3.2746666666666666,
+      "peakDbFS": -5.576238415557349,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.1154166666666665,
+      "kana": "ガゾオノ'/コト'ワ、ゼ'ンブ/イメ'エジ/ジェ'ンデ/ヤル'/ン'ヤト/オモ'ッテタワ"
+    },
+    {
+      "id": "tools-06",
+      "audioSha256": "c0ce3e5fb2191aeb1b18a1f0be00e5dfc65dae6279757512e76ab5fb46c39c8d",
+      "sampleRate": 48000,
+      "durationSeconds": 14.154666666666667,
+      "peakDbFS": -9.001886673395056,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 14.154645833333333,
+      "kana": "アタラシ'イ/ポ'オズオ/エガ_キタ'イ、コオズオ'/カエタ'イ、ソオユウ'/ト'キワ/イメ'エジ/ジェ'ン、イ'マノ/エ'オ/タモ'ッテ、ココニ'/ノコ'ッタ/ハイケエダケオ'/ケ_シタ'イ、ソオユウ'/ト'キワ/ガゾオ'ショリガ/ムイテ'/イマ'_ス"
+    },
+    {
+      "id": "tools-07",
+      "audioSha256": "179946961108cee51ed5605414ac9a6ed4f67eee441508e2fbf1b0b6267ceaff",
+      "sampleRate": 48000,
+      "durationSeconds": 12.394666666666666,
+      "peakDbFS": -9.816822776663201,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 12.394645833333334,
+      "kana": "タト'エバ、ソバヤサンワ'/_フク'モ/ハ'イケエモ/シロ'イノデ、シ'ロオ/ゼ'ンブ/ケ_スト'/_フク'マデ/キエテ'/シマイマ'_ス、ノコ'ス/バショオ'/ワケ'テ、ハ'イケエヤ/モ'ジノ/アナ'オ/ショ'リ/シマ'_シタ"
+    },
+    {
+      "id": "tools-08",
+      "audioSha256": "712fad30d4e22e489b2c55e134643ea54bd49813d6eb4a5cdad5b7ed7913116b",
+      "sampleRate": 48000,
+      "durationSeconds": 3.2426666666666666,
+      "peakDbFS": -7.334478371231427,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.0827916666666666,
+      "kana": "ケシゴムデ'/ス'ム/トコロマ'デ、カキナオ'_シテ/モラワンデ'/エ'エ/ン'ヤナ"
+    },
+    {
+      "id": "tools-09",
+      "audioSha256": "354fb72afd6a73eeabe362e93969138a1f9da90f6686338a2739dbfaed054f58",
+      "sampleRate": 48000,
+      "durationSeconds": 3.8933333333333335,
+      "peakDbFS": -7.907396016605296,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.8933125,
+      "kana": "コオデ'ッ_クスエノ/タノミ'カタモ、コンナ'/カンジデ'_ス"
+    },
+    {
+      "id": "tools-10",
+      "audioSha256": "769904002abd62a821d37148487c50e0f47283f3454160bf9c8868ed70244790",
+      "sampleRate": 48000,
+      "durationSeconds": 7.498666666666667,
+      "peakDbFS": -8.173625395658243,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 7.498645833333334,
+      "kana": "_ツカウ'/ドオグ'オ/シッテ'/イルト'、エ'オ/カエタ'イ/ノカ'、イ'マノ/エ'オ/トトノエタ'イ/ノカオ'/_ツタエワケラレマ'_ス"
+    },
+    {
+      "id": "close-01",
+      "audioSha256": "2bb594d557b5a9ed206886229c84f87cf8aae081eb1e6c5dd61fe043dec43e58",
+      "sampleRate": 48000,
+      "durationSeconds": 4.992,
+      "peakDbFS": -4.460775722437858,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 4.8332291666666665,
+      "kana": "サイショカラ'/カンペキナ'/チュウモンオ'/カ'コオト/セ'ンデモ、マ'ズ/ナラベテ'、ミ'テ/エラ'ンデ/イケ'バ/エ'エ/ン'ヤナ"
+    },
+    {
+      "id": "close-02",
+      "audioSha256": "9c7cf733b44df80657e79311750454f50869352ade26ca0f6c99c31dcd5db3cd",
+      "sampleRate": 48000,
+      "durationSeconds": 10.037333333333333,
+      "peakDbFS": -7.09182808559453,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 10.0373125,
+      "kana": "ハ'イ、ホオコオガ'/キマッタ'ラ/キ'レイニ/カキナオ'_シテ、ウゴキ'ワ/フンイ'キオ/_ツタエテ'/クラベル'、シアゲワ'/シロクロリョ'オホオデ/カクニン'/シマ'_ス"
+    },
+    {
+      "id": "close-03",
+      "audioSha256": "7729f9cde3831b693b67cf62e33d0faae65d3daacb0aae523eb8ba8c141a658b",
+      "sampleRate": 48000,
+      "durationSeconds": 12.224,
+      "peakDbFS": -7.1002283663634564,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 12.223979166666666,
+      "kana": "コ'ンカイノ/ダ'イ/イチ'ダンワ、ソバヤサンガ'/シンセエオ'/タントオ'/_シテ'/クレテ'、ハンバイチュウデ'_ス、_スタ'ン_プト、サンコオニ'/_シタ'/_スキ'ルノ/リ'ンクワ/ガイヨオ'ランニ/ノセテ'/イマ'_ス"
+    },
+    {
+      "id": "close-04",
+      "audioSha256": "9ee04a92af1e38fc56a538acfd57ed4e59fa0f89de9ccad89f778ed0b299cdc8",
+      "sampleRate": 48000,
+      "durationSeconds": 5.066666666666666,
+      "peakDbFS": -2.856281087559946,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 4.923041666666666,
+      "kana": "ホ'ナ/ワ'イノモ、アヤマッテ'ルケド、ソコマ'デ/ハンセエ'/_シテナイ'/カンジ'、デ'/サン'アン/ホシ'イワ"
+    },
+    {
+      "id": "close-05",
+      "audioSha256": "45e63a519a3dd86faf51b2f67601e0c5625bf3aded9afda47e8c31fa5b298999",
+      "sampleRate": 48000,
+      "durationSeconds": 3.3386666666666667,
+      "peakDbFS": -7.691392423321329,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 3.3386458333333335,
+      "kana": "ハンセエノ'/ウス'サデ、サンダ'ンカイデ_スネ"
+    },
+    {
+      "id": "close-06",
+      "audioSha256": "2d96f89f04691b88339bd5e8f02bc1dff18d518b1c566d5d2d63d3f587b372e0",
+      "sampleRate": 48000,
+      "durationSeconds": 1.2266666666666666,
+      "peakDbFS": -11.264777537020978,
+      "clippedSamples": 0,
+      "lastAboveMinus50DbSeconds": 1.0458958333333332,
+      "kana": "ソコオ'/_ヒカ_ク'/サセル'ナ"
+    }
+  ],
+  "asr": {
+    "status": "complete",
+    "model": "openai/whisper-small",
+    "newBodyLines": 33,
+    "reusedBIntroLines": 10,
+    "totalLines": 43,
+    "subjectiveListening": false,
+    "note": "Automatic transcript screening only. No additional sentence was detected. Proper names, Kansai phrases and short question endings have spelling/recognition differences; the queries and waveform tails were checked, without cutting audio on the basis of ASR. This is not subjective listening or a guarantee of perceived pronunciation.",
+    "observations": [
+      {
+        "ids": [
+          "pets-01"
+        ],
+        "detail": "よーたん is transcribed 溶担; source query is ヨオタン."
+      },
+      {
+        "ids": [
+          "acting-08"
+        ],
+        "detail": "せんでええ is transcribed 1000で円; query has センデエエンヤナ."
+      },
+      {
+        "ids": [
+          "tools-01",
+          "tools-05"
+        ],
+        "detail": "Imagegen is transcribed with spelling differences; source query is イメエジジェン."
+      },
+      {
+        "ids": [
+          "tips-04",
+          "inspect-01"
+        ],
+        "detail": "Short question-ending ン is omitted in ASR text; source query includes ン and no audio tail was cut."
+      }
+    ],
+    "lines": [
+      {
+        "id": "intro-01",
+        "audioSha256": "88a136c6cbfb49326773a81ac2e76183eb122ec1c74d028101718e4325adb375",
+        "expected": "窓際族のスタンプ、よう出来てるけど、使いどころ難しくない？",
+        "recognized": "窓際属のスタンプ用できてるけど使いどころ難しくない"
+      },
+      {
+        "id": "intro-03",
+        "audioSha256": "29e9911aba847d7b236c05e0504522c22a5c8b02471f7d4146a3c22306333b5d",
+        "expected": "ワイだけ使用頻度が高そうやな。でも、この「お前島流し！」は、いつ使うねん。",
+        "recognized": "ワイだけ使用頻度が高そうやな でもこのお前島流しはいつ使うねん"
+      },
+      {
+        "id": "intro-04",
+        "audioSha256": "13e82e435a85f8441b8cbe65328aee764927caa8dc9453b9a5a25616761541a9",
+        "expected": "よーたんからや。",
+        "recognized": "溶担からや"
+      },
+      {
+        "id": "intro-05",
+        "audioSha256": "63051cf32ddabf700d17de2ea405e298f8a6d0ae2d551d916ac34d7f7c0fa885",
+        "expected": "ちょうど来たわ。こういう冗談に使うんやな。",
+        "recognized": "ちょうど来たはこういう冗談に使うやな"
+      },
+      {
+        "id": "intro-07",
+        "audioSha256": "b53d246e9fb3a26577f369871c1ce07e7bc6d2ba0f9cceecc044e8afe22c8844",
+        "expected": "辞令？",
+        "recognized": "じれい"
+      },
+      {
+        "id": "intro-08",
+        "audioSha256": "2f4cab8847f7e9766cda03bec66d261b920a1b92eeb04cd266ed9e680f468036",
+        "expected": "ガチの島流しやないか！",
+        "recognized": "ガチの島流しじゃないか"
+      },
+      {
+        "id": "intro-10",
+        "audioSha256": "60792fed7866378684782b845e155ef000527faba29830a14eaf000b17525986",
+        "expected": "パイソンエンジニアみたいに言うな！",
+        "recognized": "対尊エンジニアみたいにいるな"
+      },
+      {
+        "id": "intro-11",
+        "audioSha256": "9c1e74904c10d46caafb783bf1cad593c82d871f4ccb9946d5f2f6c88fa0d614",
+        "expected": "人の人生決める連絡を、こんな軽快な動きで送ってくんなや！",
+        "recognized": "人の人生決める連絡をこんな 軽快な動きで送ってくんなよ"
+      },
+      {
+        "id": "intro-13",
+        "audioSha256": "62351d32c2166665effe05b9e6212ffca4ff6e098302816df0cf2046ca4173c3",
+        "expected": "実例いらんねん！",
+        "recognized": "実例いらんねん"
+      },
+      {
+        "id": "main-01",
+        "audioSha256": "00c4916c6a21fadee45959d68d9b8feb8da8f42bd5062dd463ef8f85ec0b7ff7",
+        "expected": "どうも、無職やめ太郎です。",
+        "recognized": "どうも無色やめたろうです。"
+      },
+      {
+        "id": "tips-02",
+        "audioSha256": "1252624da9bc4490e1a36e37a2ac10ed72bf043727e084d7c596e66cca0dd3b0",
+        "expected": "ワイが頼むとき、何を言えばええか知りたいわ。",
+        "recognized": "ワイが頼む時何を言えばええか知りたいわ"
+      },
+      {
+        "id": "tips-04",
+        "audioSha256": "c350b4697a9e0540c5332a41d0685071bc73992ada0c60dc3a6e07949c91db3b",
+        "expected": "ちなみに、絵もコーデックスから作れるん？",
+        "recognized": "ちなみに、絵もコーデックスから作れる"
+      },
+      {
+        "id": "ideas-01",
+        "audioSha256": "43f5f1873656cb410148a69e3d48cb861ad1eaf2b542abbdf0c5e3834867d71c",
+        "expected": "ほな、一個目から気合い入れて作るか。",
+        "recognized": "ほな1個目から気合入れて作るか"
+      },
+      {
+        "id": "ideas-03",
+        "audioSha256": "2e2099051fc1e7c5fc6cc2809e0fb641bcede71366f47af08e19f3e91241e03c",
+        "expected": "最初から全部？",
+        "recognized": "最初から全部"
+      },
+      {
+        "id": "ideas-06",
+        "audioSha256": "7483db90ac796a4011bfc7d90b15ec11b6caa40460182715ee38cc760eee7226",
+        "expected": "一個ずつ見てたら気づかんけど、並べると「全員、同じ立ち方やな」ってなるんか。",
+        "recognized": "一個ずつ見てたら気づかんけど並べると全員同じ立ち方やなってなるんか"
+      },
+      {
+        "id": "ideas-08",
+        "audioSha256": "e6ba44252d2f1f76648ed2df760de36e2b5e0eac5188866f8270dfb552605912",
+        "expected": "完成させてから八個とも似てるって気づくの、つらいな。",
+        "recognized": "完成させてから8個とも似てるって気付くの辛いな"
+      },
+      {
+        "id": "options-01",
+        "audioSha256": "7aa43740ef99bdc09997eaf20dac2631fd6d492d56c3a39a2fe8b98f4b226f3d",
+        "expected": "全体はええけど、この一個だけ、なんか違う。こういうとき困るねんな。",
+        "recognized": "全体はええけどこの一個だけなんか違う こういう時困るねな"
+      },
+      {
+        "id": "options-03",
+        "audioSha256": "4a798e661a7a91b93803c63b4f8b81f93af8f81338c3bb63b5e3b069b34795ba",
+        "expected": "「なんか違う」のままでもええん？",
+        "recognized": "何か違うのままでもええん"
+      },
+      {
+        "id": "options-05",
+        "audioSha256": "1c3fd0d2d597b92cc5f8a0e382872839a38125e290de9a99d33834d2d4ab932c",
+        "expected": "どれも働いてなさそうやな。",
+        "recognized": "どれも働いてなさそうやな"
+      },
+      {
+        "id": "options-07",
+        "audioSha256": "df9e467d4859ff9aa6acc07f8034712d62f6f927c2bc443f4ada87ea8a8f9938",
+        "expected": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+        "recognized": "最初から正解の説明文を考えんでも 絵を見てこの身を伝えられるんや"
+      },
+      {
+        "id": "redraw-01",
+        "audioSha256": "44cf3d47b38d9286fe638bff21a5577ea31b793f8c89d05523cd18d2fe188df2",
+        "expected": "直してるうちに、顔とか線がガビガビになってきたんやけど。",
+        "recognized": "直しているうちに、顔とか線がガビガビになってきたんやけど"
+      },
+      {
+        "id": "redraw-03",
+        "audioSha256": "2ede6be4f8b0c07914e29871c8b7d1568b14a69b430bb2e3fb813e53ad654cfe",
+        "expected": "せっかく決まった絵が、また変わらへん？",
+        "recognized": "せっかく決まった絵がまた変わらへん"
+      },
+      {
+        "id": "redraw-06",
+        "audioSha256": "fab752aeb4e7230fe32a5205a5eef1bac15b85e243eae1c52e466398b27e33bf",
+        "expected": "動かす前に、気に入った一枚をちゃんと用意するんやな。",
+        "recognized": "動かす前に気に入った1枚をちゃんと用意するんやな"
+      },
+      {
+        "id": "pets-01",
+        "audioSha256": "e25e9584dd5daaa4b11c954228cb91e7c61f8bce54a9c21191f0fdbc867d0857",
+        "expected": "ここから動かすんか。よーたんが六人おるけど。",
+        "recognized": "ここから動かすんか、 溶担が6人おるけど"
+      },
+      {
+        "id": "pets-03",
+        "audioSha256": "7137f21a6e0789e9df2e1113a2c9efbdbb437db2c88be8a19804426c1e1fc995",
+        "expected": "パラパラ漫画やな。この作り方は、どこから持ってきたん？",
+        "recognized": "パラパラ漫画やな この作り方はどこから持ってきたん"
+      },
+      {
+        "id": "pets-05",
+        "audioSha256": "66dbfab91be24deaee9c4f415a1ec555f301ba4f49b47df05370ca7c1e72b81a",
+        "expected": "ペットの作り方が、島流しスタンプになったんか。",
+        "recognized": "ペットの作り方が島流出タンプになったんか"
+      },
+      {
+        "id": "pets-07",
+        "audioSha256": "65b0b31bcc84627a0fb2efa730f70f901ea987c259978499291ed0808ad999f5",
+        "expected": "一枚ずつ別々に描いてもらうんとは違うんやな。",
+        "recognized": "1枚ずつ別々に描いてもらうとは違うにやな"
+      },
+      {
+        "id": "acting-01",
+        "audioSha256": "80724f71fe0f1d62bfce196a6bce25d004abb3abe8f316dd85d7f8aa0ccbc517",
+        "expected": "動きの注文って難しそうやな。腕を何度曲げて、とか？",
+        "recognized": "動きの注文って難しそうやな腕を何度曲げてとか"
+      },
+      {
+        "id": "acting-03",
+        "audioSha256": "46f61264e97188b10c9bc18f22811559371585c3fa17ca489a8c84eb483cc666",
+        "expected": "何を動かすかより、どう見えてほしいか。",
+        "recognized": "何を動かすかより、どう見えてほしいか。"
+      },
+      {
+        "id": "acting-06",
+        "audioSha256": "cba5563e85bb6a35ae7f57e29b5a7965746745104deb8e9bcc985c3497a6b894",
+        "expected": "動きの角度は分からんけど、その先輩は想像できるわ。",
+        "recognized": "動きの角度はわからんけどその先輩は想像できるわ"
+      },
+      {
+        "id": "acting-08",
+        "audioSha256": "ff1efc392b4201b73903b64a6235ddc5068fc526d49fefdf6305f4a4e979222b",
+        "expected": "こっちが何気なく言った「肘を動かす」を、絶対条件にせんでええんやな。",
+        "recognized": "こっちが何気なくいった肘を動かす、絶対条件に1000で円やな"
+      },
+      {
+        "id": "acting-10",
+        "audioSha256": "dc0db75d039199c26ee81162821c5fcd454b881e15fa8e0fa2aba9a62c48f274",
+        "expected": "動きも、見比べて選んでええんか。",
+        "recognized": "動きも見比べて選んでええんか"
+      },
+      {
+        "id": "acting-12",
+        "audioSha256": "aa66f7f3b51806483df4ea1e1d356a6dbcea8c49a679fbdffee4cd341f2b2f4a",
+        "expected": "三つとも違うな、ってなったら？",
+        "recognized": "三つとも違うなってなったら"
+      },
+      {
+        "id": "inspect-01",
+        "audioSha256": "dc26f670fa8d31a52f73fe8ba0f2df20761a83540fdfcdd093fe745293ae6b8d",
+        "expected": "動きは決まった。ここから何を見るん？",
+        "recognized": "動きは決まった ここから何を見る"
+      },
+      {
+        "id": "inspect-03",
+        "audioSha256": "5b2e72392ba7e0e4800dd97eb9d22c8d639c77879474a94a8cb8859c9431dbde",
+        "expected": "黒にしたら、周りの白い残りが見えるな。",
+        "recognized": "黒にしたら周りの白い残りが見えるな"
+      },
+      {
+        "id": "inspect-06",
+        "audioSha256": "c7838b3ce403c32300b1273b3f6428892d78c5ed4e3d4039192211fa256d3ec2",
+        "expected": "一枚だけきれいでも、動いてる途中で変になるかもしれんのか。",
+        "recognized": "1枚だけ綺麗でも動いている途中で変になるかもしれんのか"
+      },
+      {
+        "id": "tools-01",
+        "audioSha256": "e373bb669f5a8de0699d4189005cbd35daf103419ed51da963bda2b9c198880a",
+        "expected": "白いゴミが残ってたら、イメージジェンに「ここ消して」でええ？",
+        "recognized": "白いゴミが残ってたら、イメージでに、ここ消して、でへへ"
+      },
+      {
+        "id": "tools-03",
+        "audioSha256": "853a7ec2545a3a528f60a96b2efb43acac2f4e9669c61d6b90e6cc022903d422",
+        "expected": "絵を描くエーアイとは別の道具？",
+        "recognized": "絵を描く AI とは別の道具"
+      },
+      {
+        "id": "tools-05",
+        "audioSha256": "04a0aa42e48064d13340e5fc9badfd492e1a3ae2d976811f6f8f8a67648f59e5",
+        "expected": "画像のことは、全部イメージジェンでやるんやと思ってたわ。",
+        "recognized": "画像のことは全部イメージ人でやるにはと思ってたわ"
+      },
+      {
+        "id": "tools-08",
+        "audioSha256": "712fad30d4e22e489b2c55e134643ea54bd49813d6eb4a5cdad5b7ed7913116b",
+        "expected": "消しゴムで済むところまで、描き直してもらわんでええんやな。",
+        "recognized": "消しゴムで済むところまで書き直してもらわんでええんやな"
+      },
+      {
+        "id": "close-01",
+        "audioSha256": "2bb594d557b5a9ed206886229c84f87cf8aae081eb1e6c5dd61fe043dec43e58",
+        "expected": "最初から完璧な注文を書こうとせんでも、まず並べて、見て選んでいけばええんやな。",
+        "recognized": "最初から完璧な注文を書こうとせんでも まず並べて見て選んでいけばええんやな"
+      },
+      {
+        "id": "close-04",
+        "audioSha256": "9ee04a92af1e38fc56a538acfd57ed4e59fa0f89de9ccad89f778ed0b299cdc8",
+        "expected": "ほなワイのも、「謝ってるけど、そこまで反省してない感じ」で三案ほしいわ。",
+        "recognized": "ほなわいのもあやまってるけどそこまで反省してない感じ でサンアン欲しいわ"
+      },
+      {
+        "id": "close-06",
+        "audioSha256": "2d96f89f04691b88339bd5e8f02bc1dff18d518b1c566d5d2d63d3f587b372e0",
+        "expected": "そこを比較させるな。",
+        "recognized": "そこを比較させるな"
+      }
+    ]
+  },
+  "mixLoudness": {
+    "integratedLUFS": -17.79,
+    "truePeakDbTP": -2.64,
+    "loudnessRangeLU": 4.5,
+    "method": "FFmpeg loudnorm input measurement; not a second normalization pass"
+  },
+  "tailCheck": {
+    "method": "Last query accent phrase plus last PCM sample at or above -50 dBFS; descriptive measurement, not listening or automatic trim.",
+    "postCuts": 0,
+    "minimumTrailingSeconds": 0.1281250000000007,
+    "maximumTrailingSeconds": 0.24041666666666694,
+    "lines": [
+      {
+        "id": "intro-01",
+        "lastAccentPhrase": "ムズカシクナイ",
+        "trailingBelowMinus50DbSeconds": 0.19474999999999998
+      },
+      {
+        "id": "intro-03",
+        "lastAccentPhrase": "ツカウネン",
+        "trailingBelowMinus50DbSeconds": 0.18058333333333287
+      },
+      {
+        "id": "intro-04",
+        "lastAccentPhrase": "ヨオタンカラヤ",
+        "trailingBelowMinus50DbSeconds": 0.18633333333333335
+      },
+      {
+        "id": "intro-05",
+        "lastAccentPhrase": "ンヤナ",
+        "trailingBelowMinus50DbSeconds": 0.17531249999999998
+      },
+      {
+        "id": "intro-07",
+        "lastAccentPhrase": "ジレエ",
+        "trailingBelowMinus50DbSeconds": 0.19362500000000005
+      },
+      {
+        "id": "intro-08",
+        "lastAccentPhrase": "ナイカ",
+        "trailingBelowMinus50DbSeconds": 0.16202083333333328
+      },
+      {
+        "id": "intro-10",
+        "lastAccentPhrase": "イウナ",
+        "trailingBelowMinus50DbSeconds": 0.1729166666666666
+      },
+      {
+        "id": "intro-11",
+        "lastAccentPhrase": "クンナヤ",
+        "trailingBelowMinus50DbSeconds": 0.14277083333333307
+      },
+      {
+        "id": "intro-13",
+        "lastAccentPhrase": "イランネン",
+        "trailingBelowMinus50DbSeconds": 0.18500000000000005
+      },
+      {
+        "id": "main-01",
+        "lastAccentPhrase": "ヤメタロオデス",
+        "trailingBelowMinus50DbSeconds": 0.1823958333333333
+      },
+      {
+        "id": "tips-02",
+        "lastAccentPhrase": "シリタイワ",
+        "trailingBelowMinus50DbSeconds": 0.15349999999999975
+      },
+      {
+        "id": "tips-04",
+        "lastAccentPhrase": "ツクレルン",
+        "trailingBelowMinus50DbSeconds": 0.21647916666666633
+      },
+      {
+        "id": "ideas-01",
+        "lastAccentPhrase": "ツクルカ",
+        "trailingBelowMinus50DbSeconds": 0.18077083333333333
+      },
+      {
+        "id": "ideas-03",
+        "lastAccentPhrase": "ゼンブ",
+        "trailingBelowMinus50DbSeconds": 0.19460416666666658
+      },
+      {
+        "id": "ideas-06",
+        "lastAccentPhrase": "ンカ",
+        "trailingBelowMinus50DbSeconds": 0.16379166666666656
+      },
+      {
+        "id": "ideas-08",
+        "lastAccentPhrase": "ツライナ",
+        "trailingBelowMinus50DbSeconds": 0.15337500000000004
+      },
+      {
+        "id": "options-01",
+        "lastAccentPhrase": "コマルネンナ",
+        "trailingBelowMinus50DbSeconds": 0.1538124999999999
+      },
+      {
+        "id": "options-03",
+        "lastAccentPhrase": "エエン",
+        "trailingBelowMinus50DbSeconds": 0.2157083333333334
+      },
+      {
+        "id": "options-05",
+        "lastAccentPhrase": "ナサソオヤナ",
+        "trailingBelowMinus50DbSeconds": 0.1748750000000001
+      },
+      {
+        "id": "options-07",
+        "lastAccentPhrase": "ンヤ",
+        "trailingBelowMinus50DbSeconds": 0.1281250000000007
+      },
+      {
+        "id": "redraw-01",
+        "lastAccentPhrase": "ンヤケド",
+        "trailingBelowMinus50DbSeconds": 0.15766666666666662
+      },
+      {
+        "id": "redraw-03",
+        "lastAccentPhrase": "カワラヘン",
+        "trailingBelowMinus50DbSeconds": 0.21620833333333334
+      },
+      {
+        "id": "redraw-06",
+        "lastAccentPhrase": "ンヤナ",
+        "trailingBelowMinus50DbSeconds": 0.16331249999999997
+      },
+      {
+        "id": "pets-01",
+        "lastAccentPhrase": "オルケド",
+        "trailingBelowMinus50DbSeconds": 0.15229166666666627
+      },
+      {
+        "id": "pets-03",
+        "lastAccentPhrase": "キタン",
+        "trailingBelowMinus50DbSeconds": 0.22514583333333293
+      },
+      {
+        "id": "pets-05",
+        "lastAccentPhrase": "ンカ",
+        "trailingBelowMinus50DbSeconds": 0.15818750000000037
+      },
+      {
+        "id": "pets-07",
+        "lastAccentPhrase": "ンヤナ",
+        "trailingBelowMinus50DbSeconds": 0.16529166666666661
+      },
+      {
+        "id": "acting-01",
+        "lastAccentPhrase": "トカ",
+        "trailingBelowMinus50DbSeconds": 0.23324999999999996
+      },
+      {
+        "id": "acting-03",
+        "lastAccentPhrase": "ミエテホシイカ",
+        "trailingBelowMinus50DbSeconds": 0.16970833333333335
+      },
+      {
+        "id": "acting-06",
+        "lastAccentPhrase": "デキルワ",
+        "trailingBelowMinus50DbSeconds": 0.15345833333333347
+      },
+      {
+        "id": "acting-08",
+        "lastAccentPhrase": "ンヤナ",
+        "trailingBelowMinus50DbSeconds": 0.1657083333333338
+      },
+      {
+        "id": "acting-10",
+        "lastAccentPhrase": "ンカ",
+        "trailingBelowMinus50DbSeconds": 0.16445833333333315
+      },
+      {
+        "id": "acting-12",
+        "lastAccentPhrase": "ナッタラ",
+        "trailingBelowMinus50DbSeconds": 0.21181250000000018
+      },
+      {
+        "id": "inspect-01",
+        "lastAccentPhrase": "ミルン",
+        "trailingBelowMinus50DbSeconds": 0.24041666666666694
+      },
+      {
+        "id": "inspect-03",
+        "lastAccentPhrase": "ミエルナ",
+        "trailingBelowMinus50DbSeconds": 0.16583333333333306
+      },
+      {
+        "id": "inspect-06",
+        "lastAccentPhrase": "ノカ",
+        "trailingBelowMinus50DbSeconds": 0.15341666666666676
+      },
+      {
+        "id": "tools-01",
+        "lastAccentPhrase": "エエ",
+        "trailingBelowMinus50DbSeconds": 0.19993750000000032
+      },
+      {
+        "id": "tools-03",
+        "lastAccentPhrase": "ドオグ",
+        "trailingBelowMinus50DbSeconds": 0.2084583333333332
+      },
+      {
+        "id": "tools-05",
+        "lastAccentPhrase": "オモッテタワ",
+        "trailingBelowMinus50DbSeconds": 0.1592500000000001
+      },
+      {
+        "id": "tools-08",
+        "lastAccentPhrase": "ンヤナ",
+        "trailingBelowMinus50DbSeconds": 0.159875
+      },
+      {
+        "id": "close-01",
+        "lastAccentPhrase": "ンヤナ",
+        "trailingBelowMinus50DbSeconds": 0.15877083333333353
+      },
+      {
+        "id": "close-04",
+        "lastAccentPhrase": "ホシイワ",
+        "trailingBelowMinus50DbSeconds": 0.1436250000000001
+      },
+      {
+        "id": "close-06",
+        "lastAccentPhrase": "サセルナ",
+        "trailingBelowMinus50DbSeconds": 0.18077083333333333
+      }
+    ]
+  }
+}

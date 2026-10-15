@@ -1,9 +1,20 @@
 {
-  "video": "final_remotion_line_stickers_v3.mp4",
-  "sha256": "37936d9410666e0b39ce336bde0a1487fa13a7c512502b45432e3badc7103b4a",
-  "bytes": 37843983,
-  "durationInFrames": 17891,
-  "durationSeconds": 596.3666666666667,
+  "utterances": 89,
+  "subtitlePages": 111,
+  "durationInFrames": 17763,
+  "durationSeconds": 592.1,
+  "scriptAndViewsPreserved": true,
+  "takosanUnchangedAudio": 46,
+  "yametaroSelectedVoice": 43,
+  "openingSelectedBHashesMatched": 10,
+  "dialogueGapsPreserved": true,
+  "captionTextPagesPreserved": true,
+  "adoptedAudioHashes": "passed",
+  "mixedSha256": "d085787fd39b3dade246455cf862209a368434f224a71e75d5bfd6cbd8174e09",
+  "subjectiveListening": false,
+  "video": "final_remotion_line_stickers_v4.mp4",
+  "sha256": "676d9ffa99bba652eb5e15470c5cd0d02a6997f2e5e624e4cf0e9c1762d73058",
+  "bytes": 37659197,
   "resolution": [
     1280,
     720
@@ -14,254 +25,323 @@
     "sampleRate": 48000,
     "channels": 2
   },
-  "utterances": 89,
-  "subtitlePages": 111,
   "fullDecode": "passed",
   "dialogueAndCaptionIntegrity": "passed",
-  "preservedOpening": {
-    "reference": "intro_reference_v2.json",
-    "utterances": 16,
-    "audioHashesAndTimingAndCaptions": "passed"
-  },
-  "adoptedAudioHashes": "passed",
+  "voiceReplacementReference": "v4_voice_replacement_reference.json",
+  "voiceSelection": "B / VOICEVOX:玄野武宏（ノーマル） / speaker 11 / speed 1.15",
   "techniqueExcerpt": {
-    "file": "preview_tips_v3.mp4",
-    "startFrame": 3128,
-    "endFrame": 6466,
-    "durationSeconds": 111.26666666666667
+    "file": "preview_tips_v4.mp4",
+    "startFrame": 3073,
+    "endFrame": 6390,
+    "durationSeconds": 110.56666666666666
   },
   "reviewFrames": [
     {
+      "id": "intro-01",
+      "frame": 95,
+      "path": "remotion/out/final-audit-v4/intro-01.png"
+    },
+    {
+      "id": "intro-03",
+      "frame": 359,
+      "path": "remotion/out/final-audit-v4/intro-03.png"
+    },
+    {
       "id": "intro-04",
-      "frame": 498,
-      "path": "remotion/out/final-audit-v3/intro-04.png"
+      "frame": 544,
+      "path": "remotion/out/final-audit-v4/intro-04.png"
+    },
+    {
+      "id": "intro-07",
+      "frame": 832,
+      "path": "remotion/out/final-audit-v4/intro-07.png"
     },
     {
       "id": "intro-08",
-      "frame": 913,
-      "path": "remotion/out/final-audit-v3/intro-08.png"
+      "frame": 929,
+      "path": "remotion/out/final-audit-v4/intro-08.png"
     },
     {
       "id": "intro-09",
-      "frame": 995,
-      "path": "remotion/out/final-audit-v3/intro-09.png"
+      "frame": 1002,
+      "path": "remotion/out/final-audit-v4/intro-09.png"
     },
     {
       "id": "intro-10",
-      "frame": 1084,
-      "path": "remotion/out/final-audit-v3/intro-10.png"
+      "frame": 1082,
+      "path": "remotion/out/final-audit-v4/intro-10.png"
     },
     {
       "id": "main-01",
-      "frame": 1552,
-      "path": "remotion/out/final-audit-v3/main-01.png"
+      "frame": 1504,
+      "path": "remotion/out/final-audit-v4/main-01.png"
     },
     {
       "id": "main-03",
-      "frame": 1704,
-      "path": "remotion/out/final-audit-v3/main-03.png"
+      "frame": 1650,
+      "path": "remotion/out/final-audit-v4/main-03.png"
     },
     {
       "id": "ideas-07",
-      "frame": 4249,
-      "path": "remotion/out/final-audit-v3/ideas-07.png"
+      "frame": 4195,
+      "path": "remotion/out/final-audit-v4/ideas-07.png"
     },
     {
       "id": "options-04",
-      "frame": 5284,
-      "path": "remotion/out/final-audit-v3/options-04.png"
+      "frame": 5243,
+      "path": "remotion/out/final-audit-v4/options-04.png"
     },
     {
       "id": "options-08",
-      "frame": 6170,
-      "path": "remotion/out/final-audit-v3/options-08.png"
+      "frame": 6094,
+      "path": "remotion/out/final-audit-v4/options-08.png"
     },
     {
       "id": "redraw-05",
-      "frame": 7266,
-      "path": "remotion/out/final-audit-v3/redraw-05.png"
+      "frame": 7181,
+      "path": "remotion/out/final-audit-v4/redraw-05.png"
     },
     {
       "id": "pets-04",
-      "frame": 8234,
-      "path": "remotion/out/final-audit-v3/pets-04.png"
+      "frame": 8145,
+      "path": "remotion/out/final-audit-v4/pets-04.png"
     },
     {
       "id": "acting-05",
-      "frame": 10694,
-      "path": "remotion/out/final-audit-v3/acting-05.png"
+      "frame": 10598,
+      "path": "remotion/out/final-audit-v4/acting-05.png"
     },
     {
       "id": "acting-13",
-      "frame": 12323,
-      "path": "remotion/out/final-audit-v3/acting-13.png"
+      "frame": 12223,
+      "path": "remotion/out/final-audit-v4/acting-13.png"
     },
     {
       "id": "inspect-03",
-      "frame": 13004,
-      "path": "remotion/out/final-audit-v3/inspect-03.png"
+      "frame": 12905,
+      "path": "remotion/out/final-audit-v4/inspect-03.png"
     },
     {
       "id": "tools-06",
-      "frame": 15050,
-      "path": "remotion/out/final-audit-v3/tools-06.png"
+      "frame": 14951,
+      "path": "remotion/out/final-audit-v4/tools-06.png"
     },
     {
       "id": "close-05",
-      "frame": 17553,
-      "path": "remotion/out/final-audit-v3/close-05.png"
+      "frame": 17471,
+      "path": "remotion/out/final-audit-v4/close-05.png"
     },
     {
       "id": "close-06",
-      "frame": 17663,
-      "path": "remotion/out/final-audit-v3/close-06.png"
+      "frame": 17564,
+      "path": "remotion/out/final-audit-v4/close-06.png"
+    },
+    {
+      "id": "options-04-page-2",
+      "frame": 5434,
+      "path": "remotion/out/final-audit-v4/options-04-page-2.png"
+    },
+    {
+      "id": "options-04-page-3",
+      "frame": 5598,
+      "path": "remotion/out/final-audit-v4/options-04-page-3.png"
+    },
+    {
+      "id": "pets-04-page-2",
+      "frame": 8416,
+      "path": "remotion/out/final-audit-v4/pets-04-page-2.png"
+    },
+    {
+      "id": "pets-04-page-3",
+      "frame": 8535,
+      "path": "remotion/out/final-audit-v4/pets-04-page-3.png"
+    },
+    {
+      "id": "tools-02-page-2",
+      "frame": 14384,
+      "path": "remotion/out/final-audit-v4/tools-02-page-2.png"
+    },
+    {
+      "id": "tools-06-page-2",
+      "frame": 15227,
+      "path": "remotion/out/final-audit-v4/tools-06-page-2.png"
+    },
+    {
+      "id": "tools-07-page-2",
+      "frame": 15654,
+      "path": "remotion/out/final-audit-v4/tools-07-page-2.png"
     },
     {
       "id": "view-tip-intro",
-      "frame": 2047,
-      "path": "remotion/out/final-audit-v3/view-tip-intro.png"
+      "frame": 1993,
+      "path": "remotion/out/final-audit-v4/view-tip-intro.png"
     },
     {
       "id": "view-idea-grid",
-      "frame": 3163,
-      "path": "remotion/out/final-audit-v3/view-idea-grid.png"
+      "frame": 3108,
+      "path": "remotion/out/final-audit-v4/view-idea-grid.png"
     },
     {
       "id": "view-idea-prompt",
-      "frame": 3544,
-      "path": "remotion/out/final-audit-v3/view-idea-prompt.png"
+      "frame": 3464,
+      "path": "remotion/out/final-audit-v4/view-idea-prompt.png"
     },
     {
       "id": "prompt-hold-ideas-04",
-      "frame": 3656,
-      "path": "remotion/out/final-audit-v3/prompt-hold-ideas-04.png"
+      "frame": 3576,
+      "path": "remotion/out/final-audit-v4/prompt-hold-ideas-04.png"
     },
     {
       "id": "view-option-compare",
-      "frame": 4916,
-      "path": "remotion/out/final-audit-v3/view-option-compare.png"
+      "frame": 4870,
+      "path": "remotion/out/final-audit-v4/view-option-compare.png"
     },
     {
       "id": "view-redraw-compare",
-      "frame": 6519,
-      "path": "remotion/out/final-audit-v3/view-redraw-compare.png"
+      "frame": 6439,
+      "path": "remotion/out/final-audit-v4/view-redraw-compare.png"
     },
     {
       "id": "view-redraw-prompt",
-      "frame": 7042,
-      "path": "remotion/out/final-audit-v3/view-redraw-prompt.png"
+      "frame": 6957,
+      "path": "remotion/out/final-audit-v4/view-redraw-prompt.png"
     },
     {
       "id": "prompt-hold-redraw-04",
-      "frame": 7171,
-      "path": "remotion/out/final-audit-v3/prompt-hold-redraw-04.png"
+      "frame": 7086,
+      "path": "remotion/out/final-audit-v4/prompt-hold-redraw-04.png"
     },
     {
       "id": "view-pets-sheet",
-      "frame": 7768,
-      "path": "remotion/out/final-audit-v3/view-pets-sheet.png"
+      "frame": 7672,
+      "path": "remotion/out/final-audit-v4/view-pets-sheet.png"
     },
     {
       "id": "view-pets-process",
-      "frame": 8430,
-      "path": "remotion/out/final-audit-v3/view-pets-process.png"
+      "frame": 8341,
+      "path": "remotion/out/final-audit-v4/view-pets-process.png"
     },
     {
       "id": "view-pets-prompt",
-      "frame": 9267,
-      "path": "remotion/out/final-audit-v3/view-pets-prompt.png"
+      "frame": 9168,
+      "path": "remotion/out/final-audit-v4/view-pets-prompt.png"
     },
     {
       "id": "prompt-hold-pets-08",
-      "frame": 9490,
-      "path": "remotion/out/final-audit-v3/prompt-hold-pets-08.png"
+      "frame": 9391,
+      "path": "remotion/out/final-audit-v4/prompt-hold-pets-08.png"
     },
     {
       "id": "view-acting-sobaya",
-      "frame": 9890,
-      "path": "remotion/out/final-audit-v3/view-acting-sobaya.png"
+      "frame": 9798,
+      "path": "remotion/out/final-audit-v4/view-acting-sobaya.png"
     },
     {
       "id": "view-acting-work",
-      "frame": 10498,
-      "path": "remotion/out/final-audit-v3/view-acting-work.png"
+      "frame": 10402,
+      "path": "remotion/out/final-audit-v4/view-acting-work.png"
     },
     {
       "id": "view-acting-prompt",
-      "frame": 11540,
-      "path": "remotion/out/final-audit-v3/view-acting-prompt.png"
+      "frame": 11455,
+      "path": "remotion/out/final-audit-v4/view-acting-prompt.png"
     },
     {
       "id": "prompt-hold-acting-09",
-      "frame": 11729,
-      "path": "remotion/out/final-audit-v3/prompt-hold-acting-09.png"
+      "frame": 11644,
+      "path": "remotion/out/final-audit-v4/prompt-hold-acting-09.png"
     },
     {
       "id": "view-acting-options",
-      "frame": 11827,
-      "path": "remotion/out/final-audit-v3/view-acting-options.png"
+      "frame": 11738,
+      "path": "remotion/out/final-audit-v4/view-acting-options.png"
     },
     {
       "id": "view-inspect-whiteblack",
-      "frame": 12659,
-      "path": "remotion/out/final-audit-v3/view-inspect-whiteblack.png"
+      "frame": 12559,
+      "path": "remotion/out/final-audit-v4/view-inspect-whiteblack.png"
     },
     {
       "id": "view-inspect-details",
-      "frame": 13532,
-      "path": "remotion/out/final-audit-v3/view-inspect-details.png"
+      "frame": 13425,
+      "path": "remotion/out/final-audit-v4/view-inspect-details.png"
     },
     {
       "id": "view-inspect-prompt",
-      "frame": 13918,
-      "path": "remotion/out/final-audit-v3/view-inspect-prompt.png"
+      "frame": 13813,
+      "path": "remotion/out/final-audit-v4/view-inspect-prompt.png"
     },
     {
       "id": "prompt-hold-inspect-07",
-      "frame": 14058,
-      "path": "remotion/out/final-audit-v3/prompt-hold-inspect-07.png"
+      "frame": 13953,
+      "path": "remotion/out/final-audit-v4/prompt-hold-inspect-07.png"
     },
     {
       "id": "view-tools-beforeafter",
-      "frame": 14168,
-      "path": "remotion/out/final-audit-v3/view-tools-beforeafter.png"
+      "frame": 14075,
+      "path": "remotion/out/final-audit-v4/view-tools-beforeafter.png"
     },
     {
       "id": "view-tools-choice",
-      "frame": 14959,
-      "path": "remotion/out/final-audit-v3/view-tools-choice.png"
+      "frame": 14857,
+      "path": "remotion/out/final-audit-v4/view-tools-choice.png"
     },
     {
       "id": "view-tools-prompt",
-      "frame": 15998,
-      "path": "remotion/out/final-audit-v3/view-tools-prompt.png"
+      "frame": 15896,
+      "path": "remotion/out/final-audit-v4/view-tools-prompt.png"
     },
     {
       "id": "prompt-hold-tools-09",
-      "frame": 16087,
-      "path": "remotion/out/final-audit-v3/prompt-hold-tools-09.png"
+      "frame": 15985,
+      "path": "remotion/out/final-audit-v4/prompt-hold-tools-09.png"
     },
     {
       "id": "view-closing-flow",
-      "frame": 16608,
-      "path": "remotion/out/final-audit-v3/view-closing-flow.png"
+      "frame": 16504,
+      "path": "remotion/out/final-audit-v4/view-closing-flow.png"
     },
     {
       "id": "view-ending",
-      "frame": 17445,
-      "path": "remotion/out/final-audit-v3/view-ending.png"
+      "frame": 17351,
+      "path": "remotion/out/final-audit-v4/view-ending.png"
     },
     {
       "id": "title",
-      "frame": 1449,
-      "path": "remotion/out/final-audit-v3/title.png"
+      "frame": 1408,
+      "path": "remotion/out/final-audit-v4/title.png"
     },
     {
       "id": "final",
-      "frame": 17890,
-      "path": "remotion/out/final-audit-v3/final.png"
+      "frame": 17762,
+      "path": "remotion/out/final-audit-v4/final.png"
     }
   ],
-  "subjectiveListening": false,
-  "note": "Automated checks and extracted frames are separate from subjective listening/continuous visual review."
+  "note": "Automated checks and extracted frames are separate from subjective listening/continuous visual review.",
+  "independentReview": {
+    "status": "pass_with_stated_review_scope",
+    "report": "remotion/out/final-audit-v4/independent_report.json",
+    "reviewedAt": "2026-10-15T14:43:48.518450+00:00",
+    "summary": {
+      "utterances": 89,
+      "yametaroAdoptedB": 43,
+      "takosanUnchanged": 46,
+      "adoptedBIntroIdentical": 10,
+      "subtitlePages": 111,
+      "moraBoundariesVerified": 22,
+      "staticFramesReviewed": 56,
+      "encodedAudioIntervals": 4,
+      "encodedAudioSeconds": 50,
+      "minimumZeroLagAudioCorrelation": 0.9995143768598366
+    },
+    "staticVisualIssues": [],
+    "subjectiveListening": false,
+    "continuousLipSyncReview": false,
+    "limitations": [
+      "Subjective voice timbre, emotional delivery and pronunciation were not judged by listening.",
+      "The entire video and excerpt were not watched in continuous playback; exact mouth synchronization and every animation frame were not visually reviewed.",
+      "Final MP4 full decode and frame count are renderer-verifier evidence recorded in delivery.json; the independent reviewer verified that record against the final MP4 SHA and did not duplicate the full decode.",
+      "Encoded audio was independently checked in four representative intervals totaling 50 seconds, not at every sample of the full movie."
+    ]
+  }
 }

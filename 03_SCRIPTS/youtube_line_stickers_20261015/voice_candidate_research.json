@@ -1,12 +1,33 @@
 {
   "checkedAt": "2026-10-15",
   "request": "やめ太郎の声の違和感を減らすため、YouTubeのなんJ民ボイスを調査し、冒頭を複数候補で比較する",
-  "status": "audition_only_not_adopted",
+  "status": "audition_completed_b_selected_for_this_episode",
   "finding": "なんJ民ボイスという単一の正式話者・統一プリセット・共通数値は確認できなかった。候補の数値は今回の比較用提案であり、特定YouTube投稿者の設定を再現したとは主張しない。",
   "candidates": [
-    {"key": "aoyama", "engine": "VOICEVOX", "speaker": "青山龍星", "style": "ノーマル", "officialDescription": "重厚で低音な声", "source": "https://voicevox.hiroshiba.jp/product/aoyama_ryusei/"},
-    {"key": "kurono", "engine": "VOICEVOX", "speaker": "玄野武宏", "style": "ノーマル", "officialDescription": "爽やかな青年の声", "source": "https://voicevox.hiroshiba.jp/product/kurono_takehiro/"},
-    {"key": "shirakami", "engine": "VOICEVOX", "speaker": "白上虎太郎", "style": "ふつう", "officialDescription": "声変わり直後の少年の声", "source": "https://voicevox.hiroshiba.jp/product/shirakami_kotarou/"}
+    {
+      "key": "aoyama",
+      "engine": "VOICEVOX",
+      "speaker": "青山龍星",
+      "style": "ノーマル",
+      "officialDescription": "重厚で低音な声",
+      "source": "https://voicevox.hiroshiba.jp/product/aoyama_ryusei/"
+    },
+    {
+      "key": "kurono",
+      "engine": "VOICEVOX",
+      "speaker": "玄野武宏",
+      "style": "ノーマル",
+      "officialDescription": "爽やかな青年の声",
+      "source": "https://voicevox.hiroshiba.jp/product/kurono_takehiro/"
+    },
+    {
+      "key": "shirakami",
+      "engine": "VOICEVOX",
+      "speaker": "白上虎太郎",
+      "style": "ふつう",
+      "officialDescription": "声変わり直後の少年の声",
+      "source": "https://voicevox.hiroshiba.jp/product/shirakami_kotarou/"
+    }
   ],
   "auditionSettings": {
     "speedScale": 1.15,
@@ -32,7 +53,20 @@
     ]
   },
   "voicevoxTerms": "https://voicevox.hiroshiba.jp/term/",
-  "credits": ["VOICEVOX:青山龍星", "VOICEVOX:玄野武宏", "VOICEVOX:白上虎太郎", "VOICEVOX:中国うさぎ"],
-  "scope": "導入〜本編挨拶16発話。やめ太郎10発話のみ差し替え、たこさん6発話と台詞・画面・演出は維持。現行v3と全体の正典声は変更しない。",
-  "subjectiveListening": false
+  "credits": [
+    "VOICEVOX:青山龍星",
+    "VOICEVOX:玄野武宏",
+    "VOICEVOX:白上虎太郎",
+    "VOICEVOX:中国うさぎ"
+  ],
+  "scope": "比較制作時点では導入〜本編挨拶16発話が対象。やめ太郎10発話のみ差し替え、たこさん6発話と台詞・画面・演出を維持。元v3と全体の正典声は保持。今回の全編への採用はselectionに記録。",
+  "subjectiveListening": false,
+  "selection": {
+    "date": "2026-10-15",
+    "candidate": "kurono",
+    "instruction": "Bかな 今回の動画を全部Bで作ってみて",
+    "scope": "今回の動画のやめ太郎全43発話",
+    "globalVoiceCanonChanged": false,
+    "resultVersion": "v4"
+  }
 }

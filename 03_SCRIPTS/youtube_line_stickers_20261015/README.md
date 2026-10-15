@@ -2,12 +2,22 @@
 
 ユーザー採用の「人が使える頼み方・選び方・直し方」を紹介する解説動画。第一弾の完成品を軸に、第二弾の比較案と試行錯誤も実例として使う。
 
-## 実践のコツ版 v3（2026-10-15）
+## 玄野武宏版 v4（2026-10-15）
+
+ユーザーが声の比較Bを選択し、今回の動画のやめ太郎全43発話へ採用。VOICEVOX玄野武宏・ノーマル（style 11）、話速1.15・音高0・抑揚1.0。冒頭10発話は採用Bの音源を再利用、本編33発話を同条件で生成した。たこさん46発話は既存音源を保持する。
+
+- [全編 v4](final_remotion_line_stickers_v4.mp4)：9分52.1秒、1280×720、30fps。
+- [案出し・候補選びの抜粋 v4](preview_tips_v4.mp4)：1分50.57秒。本編でのBの掛け合いを短く確認できる。
+- [台本](script.md)・[日本語字幕](subtitles_ja.srt)・[YouTube概要欄](youtube_description.txt)。
+- [検査記録](review.md)・[完成ファイル情報](delivery.json)。
+
+台詞・構成・資料・指示例・発話間を保ち、字幕・口パク・通知・タイトル・章の切り替えを新しい音声の実測尺へ合わせた。候補比較用の声ラベルは本編に表示しない。これはこの作品の配役であり、他作品の正典声を変更しない。
+
+## 実践のコツ版 v3（旧版）
 
 - [全編](final_remotion_line_stickers_v3.mp4)：9分56.37秒、1280×720、30fps。
 - [案出し・候補選びの抜粋](preview_tips_v3.mp4)：約1分51秒。8個入り案の一覧、複数構図からの選択、椅子案の転用。
-- [台本](script.md)・[日本語字幕](subtitles_ja.srt)・[YouTube概要欄](youtube_description.txt)。
-- [検査記録](review.md)・[完成ファイル情報](delivery.json)。音声の自動検査と主観的な通し試聴は区別する。
+- v3の制作正本はGit `61f44365`、音声・設定・台本・検査記録はローカル `remotion/out/v3_records/` にも保全。
 
 導入から挨拶まで16発話はv2の採用音声・時刻・字幕・演出を維持。本編73発話を採用改稿へ差し替えた。全89発話、111字幕ページ。指示例は全文を追加音読せず、画面で読める間を設ける。
 
@@ -15,9 +25,9 @@
 
 MP4と確認画像はローカル成果物。公開・アップロードは行っていない。
 
-## やめ太郎の声の比較（2026-10-15・未採用）
+## やめ太郎の声の比較（2026-10-15・B採用）
 
-冒頭の茶番〜本編挨拶16発話で、やめ太郎の10発話だけを差し替えた試聴候補。たこさんの6発話・台詞・画面・会話の間・BGM・効果音を揃え、声の実測尺に合わせて字幕・口パクと後続演出を配置する。v3全編と `VOICE_CAST.md` は変更しない。
+冒頭の茶番〜本編挨拶16発話で、やめ太郎の10発話だけを差し替えた試聴候補。たこさんの6発話・台詞・画面・会話の間・BGM・効果音を揃え、声の実測尺に合わせて字幕・口パクと後続演出を配置する。ユーザーがBを今回の全編用に選択した。比較動画内の「現行」は比較実施時のv3 Irodori版を指す。
 
 まず [短い比較動画](preview_voice_comparison.mp4)（68.10秒）。同じ最初の3発話を、現行→A→B→Cの順に再生する。各台詞を最後まで含め、LINE通知が鳴る前で区切っている。
 
@@ -38,7 +48,7 @@ node render_voice_candidates.mjs current aoyama kurono shirakami
 python3 compare_voice_candidates.py
 ```
 
-候補のWAV・全文クエリ・ハッシュ・実測尺・独立manifestは `remotion/out/voice-candidates/<key>/`、再生用音声は `remotion/public/voice-candidates/` に保持する。候補・中間音声はGitへ追加せず、採用前に正典へ昇格しない。声のクレジットは各候補の `VOICEVOX:青山龍星`／`VOICEVOX:玄野武宏`／`VOICEVOX:白上虎太郎` と、共通の `VOICEVOX:中国うさぎ`。音楽はv3の概要欄と同じ。
+比較動画の現行Irodori基準はGit `61f44365` のmanifestに固定している。候補のWAV・全文クエリ・ハッシュ・実測尺・独立manifestは `remotion/out/voice-candidates/<key>/`、再生用音声は `remotion/public/voice-candidates/` に保持する。候補・中間音声はGitへ追加せず、採用前に正典へ昇格しない。声のクレジットは各候補の `VOICEVOX:青山龍星`／`VOICEVOX:玄野武宏`／`VOICEVOX:白上虎太郎` と、共通の `VOICEVOX:中国うさぎ`。音楽はv3の概要欄と同じ。
 
 [検査・ファイル情報](voice_candidate_delivery.json)：全5本のデコードと形式、字幕全文、発話間、原音保持を確認。完成動画から計60フレームを目視し、文字の欠け・重なりなし。最終MP4の音声も予定ミックスとの波形相関で照合した。主観的な通し試聴や声の好み・自然さの判定は未実施。
 
@@ -47,10 +57,12 @@ python3 compare_voice_candidates.py
 - `script.md` / `remotion/dialogue.json`：採用台詞・画面・音声用の読み・発話間。
 - `remotion/tip-prompts.json`：表示する6種類の指示例。React側と本文一致を検査。
 - `remotion/src/edit-manifest.json`：音声実測から作る整数フレームの正本。字幕ページと口パク用波形を含む。
-- `intro_reference_v2.json`：変更しない導入16発話の台詞・音声SHA・時刻・字幕。
-- `voice_audit_v3.json`：新しいやめ太郎音声のASR・VAD・語尾比較、導入保持、字幕・音量の検証。
+- `v4_voice_replacement_reference.json`：v3の台詞・画面・たこさん音声SHAと、採用B冒頭10発話の音声SHAを照合する比較基準。
+- `voice_audit_v4.json`：今回の声の生成・再利用・発音・字幕・音量の検証。`voice_audit_v3.json` と `intro_reference_v2.json` は旧版の記録。
 - `voice_record.json` / `adopted_audio.json`：採用音声の生成設定・ハッシュ・実測尺。エピソード直下の `voice_*.wav` が採用音声。
-- `remotion/voice_cleanup.json`：導入の既存2カット。未加工原音は `input/voice_uncut/`。新本文の音声は個別の生成条件で調整する。
+- `remotion/voice_config.json`：この作品のやめ太郎B採用とVOICEVOX設定。生成スクリプトはこの配役を使う。
+- `input/voice_b_adopted.json`：採用Bの冒頭10発話のクエリ・設定・音声SHAを凍結。候補を再生成しても全編の採用音声は変わらない。
+- `remotion/voice_cleanup.json`：旧Irodori版の修復記録。玄野武宏の音源へ旧カットを適用しない。
 - `asset_sources.json`：第一弾の完成APNG・正典・立ち絵の参照先。
 - `asset_sources_v3.json` / `remotion/src/tips-assets.json`：実際の比較案・再描画・動き・透過前後の出典、SHA、切出し範囲、再生時間。
 - `input/tips/`：今回の映像に採用した制作途中資料。元画素を保ち、故意の劣化や汚れを加えない。
@@ -58,7 +70,7 @@ python3 compare_voice_candidates.py
 
 ## 再現
 
-リポジトリ直下で実行。Python環境は既存の `.local/Irodori-TTS/.venv`（音声）と `27_LINE_STICKERS/sets/02/.venv`（画像）を使用する。VOICEVOX Engineは `127.0.0.1:50021`。正典声は `02_CHARACTERS/VOICE_CAST.md`、Irodori手順は `tools/IRODORI_TTS.md` を参照。
+リポジトリ直下で実行。Python環境は既存の `.local/Irodori-TTS/.venv`（音声処理ライブラリ）と `27_LINE_STICKERS/sets/02/.venv`（画像）を使用する。v4の合成は両名ともVOICEVOX Engine `127.0.0.1:50021`、今回のやめ太郎設定は `remotion/voice_config.json`。他作品の正典声は `02_CHARACTERS/VOICE_CAST.md`、旧Irodori手順は `tools/IRODORI_TTS.md` を参照。
 
 ```sh
 python3 03_SCRIPTS/youtube_line_stickers_20261015/prepare_assets.py
@@ -70,8 +82,8 @@ python3 03_SCRIPTS/youtube_line_stickers_20261015/prepare_assets.py
 cd 03_SCRIPTS/youtube_line_stickers_20261015/remotion
 npm ci
 npm run typecheck
-python3 render.py ../final_remotion_line_stickers_v3.mp4
-python3 ../verify_delivery_v3.py --video final_remotion_line_stickers_v3.mp4
+python3 render.py ../final_remotion_line_stickers_v4.mp4
+python3 ../verify_delivery_v4.py --video final_remotion_line_stickers_v4.mp4
 ```
 
 `voice_overrides.json` は個別生成条件、`caption_layout.json` は意味の切れ目を優先した字幕。`voice_timeline_config.json` の終了開始IDは `close-01`。音声は採用ハッシュと生成設定を照合して再利用する。
@@ -82,8 +94,8 @@ python3 ../verify_delivery_v3.py --video final_remotion_line_stickers_v3.mp4
 
 - 初稿：`final_remotion_line_stickers.mp4`。
 - v2：`final_remotion_line_stickers_v2.mp4`。Imagegen説明・やめ太郎4箇所の音声を修正した10分26.3秒版。制作正本はGit `a09eabbf`。
-- v2の音声比較：`preview_voice_cleanup.mp4`（21.6秒）。当時の4箇所で、現行v3の音声一覧とは別。
-- v2の記録と退役WAVはローカル `remotion/out/v2_records/` にも保全。現行の導入2箇所の修復は引き続き採用。
+- v2の音声比較：`preview_voice_cleanup.mp4`（21.6秒）。当時の4箇所で、v3・v4の音声一覧とは別。
+- v2の記録と退役WAVはローカル `remotion/out/v2_records/` にも保全。導入2箇所の修復はv3まで採用し、v4の玄野武宏音源には適用しない。
 
 ## 事実と見せ方
 

@@ -1,0 +1,1120 @@
+{
+  "sourceVersion": "v3",
+  "sourceManifestSha256": "6bdc00015fdde62f6c2d700848100a9287f47fc7d65c1ddf5c4c74b6dbfcf777",
+  "selectedCandidate": "B / VOICEVOX:玄野武宏（ノーマル）",
+  "selectedIntroAudioHashes": {
+    "intro-01": "88a136c6cbfb49326773a81ac2e76183eb122ec1c74d028101718e4325adb375",
+    "intro-03": "29e9911aba847d7b236c05e0504522c22a5c8b02471f7d4146a3c22306333b5d",
+    "intro-04": "13e82e435a85f8441b8cbe65328aee764927caa8dc9453b9a5a25616761541a9",
+    "intro-05": "63051cf32ddabf700d17de2ea405e298f8a6d0ae2d551d916ac34d7f7c0fa885",
+    "intro-07": "b53d246e9fb3a26577f369871c1ce07e7bc6d2ba0f9cceecc044e8afe22c8844",
+    "intro-08": "2f4cab8847f7e9766cda03bec66d261b920a1b92eeb04cd266ed9e680f468036",
+    "intro-10": "60792fed7866378684782b845e155ef000527faba29830a14eaf000b17525986",
+    "intro-11": "9c1e74904c10d46caafb783bf1cad593c82d871f4ccb9946d5f2f6c88fa0d614",
+    "intro-13": "62351d32c2166665effe05b9e6212ffca4ff6e098302816df0cf2046ca4173c3",
+    "main-01": "00c4916c6a21fadee45959d68d9b8feb8da8f42bd5062dd463ef8f85ec0b7ff7"
+  },
+  "expectedSettings": {
+    "speakerId": 11,
+    "speedScale": 1.15,
+    "pitchScale": 0,
+    "intonationScale": 1,
+    "volumeScale": 1,
+    "prePhonemeLength": 0.1,
+    "postPhonemeLength": 0.2,
+    "outputSamplingRate": 48000,
+    "outputStereo": false
+  },
+  "dialogue": [
+    {
+      "id": "intro-01",
+      "who": "yametaro",
+      "text": "窓際族のスタンプ、よう出来てるけど、使いどころ難しくない？",
+      "view": "opening-grid",
+      "chapter": 0,
+      "audioSha256": "11f686d328d54f40aa12fb97546752d7281a405ea9aaec0c33069aa27a33b7a1",
+      "gapBeforeFrames": 60,
+      "captionTextPages": [
+        "窓際族のスタンプ、よう出来てるけど、\n使いどころ難しくない？"
+      ]
+    },
+    {
+      "id": "intro-02",
+      "who": "takosan",
+      "text": "「ごめんやで」とか、使いやすそうですよ。",
+      "view": "opening-grid",
+      "chapter": 0,
+      "audioSha256": "b787a78785fc383d99aae566b609e2a9fac8737a9127c3bbebe9bb0071815da7",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "「ごめんやで」とか、使いやすそうですよ。"
+      ]
+    },
+    {
+      "id": "intro-03",
+      "who": "yametaro",
+      "text": "ワイだけ使用頻度が高そうやな。でも、この「お前島流し！」は、いつ使うねん。",
+      "view": "opening-grid",
+      "chapter": 0,
+      "audioSha256": "91f915c7472e665e53b057a93c6618d9c9e0edf2cae04a1fa2fd8b8f0df4884d",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "ワイだけ使用頻度が高そうやな。\nでも、この「お前島流し！」は、いつ使うねん。"
+      ]
+    },
+    {
+      "id": "intro-04",
+      "who": "yametaro",
+      "text": "よーたんからや。",
+      "view": "line-chat",
+      "chapter": 0,
+      "audioSha256": "3aa53d818cbfa9c7fcadaec14e464c1c2128e22c6d3716341b0b73c1b7d8353d",
+      "gapBeforeFrames": 30,
+      "captionTextPages": [
+        "よーたんからや。"
+      ]
+    },
+    {
+      "id": "intro-05",
+      "who": "yametaro",
+      "text": "ちょうど来たわ。こういう冗談に使うんやな。",
+      "view": "line-chat",
+      "chapter": 0,
+      "audioSha256": "32a53cee3f0d83f07f882ff4914a10a69a7c0139055127413d9019e8b51d94a7",
+      "gapBeforeFrames": 99,
+      "captionTextPages": [
+        "ちょうど来たわ。こういう冗談に使うんやな。"
+      ]
+    },
+    {
+      "id": "intro-06",
+      "who": "takosan",
+      "text": "辞令って書いてありますけど。",
+      "view": "line-chat",
+      "chapter": 0,
+      "audioSha256": "9c680d359f44500a79f883cf49c9afebddb1bd49893890bc110f32de5ef8b0d9",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "辞令って書いてありますけど。"
+      ]
+    },
+    {
+      "id": "intro-07",
+      "who": "yametaro",
+      "text": "辞令？",
+      "view": "line-chat",
+      "chapter": 0,
+      "audioSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "辞令？"
+      ]
+    },
+    {
+      "id": "intro-08",
+      "who": "yametaro",
+      "text": "ガチの島流しやないか！",
+      "view": "outlook",
+      "chapter": 0,
+      "audioSha256": "b39f27658988a0695995458373cd68f8a97126bd58a5ee415e1c3f7aef5b24a9",
+      "gapBeforeFrames": 63,
+      "captionTextPages": [
+        "ガチの島流しやないか！"
+      ]
+    },
+    {
+      "id": "intro-09",
+      "who": "takosan",
+      "text": "明日から廃村（ハイソン）エンジニアですね。",
+      "view": "outlook",
+      "chapter": 0,
+      "audioSha256": "f8228d3880f3cecd98a06b65fd82318ce7c8134ea53009e1d6e68f8c4ed9b507",
+      "gapBeforeFrames": 15,
+      "captionTextPages": [
+        "明日から廃村（ハイソン）エンジニアですね。"
+      ]
+    },
+    {
+      "id": "intro-10",
+      "who": "yametaro",
+      "text": "Pythonエンジニアみたいに言うな！",
+      "view": "outlook",
+      "chapter": 0,
+      "audioSha256": "e2dd981c3ca7919f63ad8b1c2ab03f50846a9e0773a2cde55cee3b68a587f1c6",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "Pythonエンジニアみたいに言うな！"
+      ]
+    },
+    {
+      "id": "intro-11",
+      "who": "yametaro",
+      "text": "人の人生決める連絡を、こんな軽快な動きで送ってくんなや！",
+      "view": "opening-chat",
+      "chapter": 0,
+      "audioSha256": "479e74fc2741a396f0879e9e1d546d0292db896d6dbe0eaca058d8518b8efdee",
+      "gapBeforeFrames": 18,
+      "captionTextPages": [
+        "人の人生決める連絡を、\nこんな軽快な動きで送ってくんなや！"
+      ]
+    },
+    {
+      "id": "intro-12",
+      "who": "takosan",
+      "text": "使いどころ、ありましたね。",
+      "view": "opening-chat",
+      "chapter": 0,
+      "audioSha256": "be49a91b26a4ad85761411fec2b53590a1c852ea4f593c66e5d65364ae1b8700",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "使いどころ、ありましたね。"
+      ]
+    },
+    {
+      "id": "intro-13",
+      "who": "yametaro",
+      "text": "実例いらんねん！",
+      "view": "opening-chat",
+      "chapter": 0,
+      "audioSha256": "df4d20a0abbd82b6871b5a55aa03d5caccc356e6816454b376baa594289d75bd",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "実例いらんねん！"
+      ]
+    },
+    {
+      "id": "main-01",
+      "who": "yametaro",
+      "text": "どうも、無職やめ太郎です。",
+      "view": "greeting",
+      "chapter": 1,
+      "audioSha256": "296943c211af0f1f219d2e9a6d8f6d3040f47849360b6be2c2266fcac6c837e2",
+      "gapBeforeFrames": 108,
+      "captionTextPages": [
+        "どうも、無職やめ太郎です。"
+      ]
+    },
+    {
+      "id": "main-02",
+      "who": "takosan",
+      "text": "どうも、たこさんです。",
+      "view": "greeting",
+      "chapter": 1,
+      "audioSha256": "83f6c357e127595e7775a132a3ef02bec0d64fcd5724bce1a0a776a65326f11a",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "どうも、たこさんです。"
+      ]
+    },
+    {
+      "id": "main-03",
+      "who": "takosan",
+      "text": "今回は、こちらの動くLINEスタンプを、Codexでどう作ったのか解説します。",
+      "view": "opening-grid",
+      "chapter": 1,
+      "audioSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "今回は、こちらの動くLINEスタンプを、\nCodexでどう作ったのか解説します。"
+      ]
+    },
+    {
+      "id": "tips-01",
+      "who": "takosan",
+      "text": "題材はこちらの「窓際族スタンプ第一弾」。続編づくりで分かったことも交えて、作るときのコツを紹介します。",
+      "view": "tip-intro",
+      "chapter": 1,
+      "audioSha256": "5773013a4c942f26f2480283ef643de115e065d7efd85a3dbc7768e10a62c0a2",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "題材はこちらの「窓際族スタンプ第一弾」。",
+        "続編づくりで分かったことも交えて、\n作るときのコツを紹介します。"
+      ]
+    },
+    {
+      "id": "tips-02",
+      "who": "yametaro",
+      "text": "ワイが頼むとき、何を言えばええか知りたいわ。",
+      "view": "tip-intro",
+      "chapter": 1,
+      "audioSha256": "5d1bb9ddeab5504c577b9ba8519450191c8d580e956c6a72df2201a4fbac6bde",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "ワイが頼むとき、何を言えばええか知りたいわ。"
+      ]
+    },
+    {
+      "id": "tips-03",
+      "who": "takosan",
+      "text": "最初にどんな画像を出してもらうか。気に入らないときにどう選び直すか。そういう、実際にやって役立った話です。",
+      "view": "tip-intro",
+      "chapter": 1,
+      "audioSha256": "fc760e8257fbcf3583ecdf18374a5edd79c5ee5e7df68a90211531f6a04ff8d7",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "最初にどんな画像を出してもらうか。\n気に入らないときにどう選び直すか。",
+        "そういう、実際にやって役立った話です。"
+      ]
+    },
+    {
+      "id": "tips-04",
+      "who": "yametaro",
+      "text": "ちなみに、絵もCodexから作れるん？",
+      "view": "tip-intro",
+      "chapter": 1,
+      "audioSha256": "127a41b6783a505c274c22d095776bcdc752dc736f48242b95bdb2cd2b7cd10f",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "ちなみに、絵もCodexから作れるん？"
+      ]
+    },
+    {
+      "id": "tips-05",
+      "who": "takosan",
+      "text": "はい。Imagegenという機能で、OpenAIの画像生成モデルを使えます。対応するChatGPTプランなら、プランに含まれるCodexの利用枠で使えます。",
+      "view": "tip-intro",
+      "chapter": 1,
+      "audioSha256": "10549df504c1a99ebee232a31a277cb6d7dc668ddb25ffae5ed0d31d2d2abfd8",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "はい。Imagegenという機能で、\nOpenAIの画像生成モデルを使えます。",
+        "対応するChatGPTプランなら、\nプランに含まれるCodexの利用枠で使えます。"
+      ]
+    },
+    {
+      "id": "ideas-01",
+      "who": "yametaro",
+      "text": "ほな、一個目から気合い入れて作るか。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "ほな、一個目から気合い入れて作るか。"
+      ]
+    },
+    {
+      "id": "ideas-02",
+      "who": "takosan",
+      "text": "最初の案出しは、八個まとめて一枚に出してもらうと早かったです。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "dd7fe507f29314b8585423f8df859bb4210ffbcdafef7ab123e285bfb08b5ec0",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "最初の案出しは、\n八個まとめて一枚に出してもらうと早かったです。"
+      ]
+    },
+    {
+      "id": "ideas-03",
+      "who": "yametaro",
+      "text": "最初から全部？",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "e0d8d5f832a8dfbd9e9c9e11da6ba580505dabc6fae1eaba4603c973898da346",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "最初から全部？"
+      ]
+    },
+    {
+      "id": "ideas-04",
+      "who": "takosan",
+      "text": "はい。セリフと大まかなネタを渡して、こんなふうに頼みます。",
+      "view": "idea-prompt",
+      "chapter": 2,
+      "audioSha256": "63a73090f73e77698fd42ea4d2c303377233c5f94def5a490bacd53f506495c9",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "はい。セリフと大まかなネタを渡して、\nこんなふうに頼みます。"
+      ]
+    },
+    {
+      "id": "ideas-05",
+      "who": "takosan",
+      "text": "一覧になると、セット全体を見渡せます。似たポーズばかりになっていないか、セリフの雰囲気に合っているかを、一度に比べられます。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2",
+      "gapBeforeFrames": 90,
+      "captionTextPages": [
+        "一覧になると、セット全体を見渡せます。",
+        "似たポーズばかりになっていないか、\nセリフの雰囲気に合っているかを、一度に比べられます。"
+      ]
+    },
+    {
+      "id": "ideas-06",
+      "who": "yametaro",
+      "text": "一個ずつ見てたら気づかんけど、並べると「全員、同じ立ち方やな」ってなるんか。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "5a9725dc20eee5ce0474f6b6e88f8f41967245c4034147347d60365e3caddb16",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "一個ずつ見てたら気づかんけど、\n並べると「全員、同じ立ち方やな」ってなるんか。"
+      ]
+    },
+    {
+      "id": "ideas-07",
+      "who": "takosan",
+      "text": "実際、第二弾では「似たポーズが多い」というところから、八個並んだ案を何パターンか作り直しました。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "ecf58fdeb577a7dfdc5ee383259cfd4f256aee8c7fdfb329896448cce23b5497",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "実際、第二弾では\n「似たポーズが多い」というところから、",
+        "八個並んだ案を何パターンか作り直しました。"
+      ]
+    },
+    {
+      "id": "ideas-08",
+      "who": "yametaro",
+      "text": "完成させてから八個とも似てるって気づくの、つらいな。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "b0775ccdcc9a52199bd70ab1b3a548feb6d3f5e14518f20f0e18c1911dd63925",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "完成させてから八個とも似てるって気づくの、つらいな。"
+      ]
+    },
+    {
+      "id": "ideas-09",
+      "who": "takosan",
+      "text": "この段階では、細かな仕上げより「どの方向で作りたいか」を選びます。",
+      "view": "idea-grid",
+      "chapter": 2,
+      "audioSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "この段階では、\n細かな仕上げより「どの方向で作りたいか」を選びます。"
+      ]
+    },
+    {
+      "id": "options-01",
+      "who": "yametaro",
+      "text": "全体はええけど、この一個だけ、なんか違う。こういうとき困るねんな。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "d034f8d5b710354bcc167a54f4f32eac06a5978884201393f15777c8679bf224",
+      "gapBeforeFrames": 24,
+      "captionTextPages": [
+        "全体はええけど、この一個だけ、なんか違う。\nこういうとき困るねんな。"
+      ]
+    },
+    {
+      "id": "options-02",
+      "who": "takosan",
+      "text": "違和感をうまく説明できなければ、その一個だけ別案を出してもらいます。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "868f69d22e8c2b80fb81e580daf4a143bc191b060bcb0fa06de7304bb040e160",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "違和感をうまく説明できなければ、\nその一個だけ別案を出してもらいます。"
+      ]
+    },
+    {
+      "id": "options-03",
+      "who": "yametaro",
+      "text": "「なんか違う」のままでもええん？",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "cfea0319baf7fe0adc59fae2acb64102df41b918bb459ff2b863d3de11eed78f",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "「なんか違う」のままでもええん？"
+      ]
+    },
+    {
+      "id": "options-04",
+      "who": "takosan",
+      "text": "そこから、構図を変えて三案くらい。実際の「ちゃんと働いてるか？」も、立ち姿、パーティションに肘を置く姿、椅子でふんぞり返る姿を比べました。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "e8cfc02e48930bf1e18bf7f552199508e093302f42a281e5d4d4b28a41b6c389",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "そこから、構図を変えて三案くらい。",
+        "実際の「ちゃんと働いてるか？」も、\n立ち姿、パーティションに肘を置く姿、",
+        "椅子でふんぞり返る姿を比べました。"
+      ]
+    },
+    {
+      "id": "options-05",
+      "who": "yametaro",
+      "text": "どれも働いてなさそうやな。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "4c9716a06c3c2fd89274ab18e28e5d8b0347f3fed1da350f350bbfb70ecb7c52",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "どれも働いてなさそうやな。"
+      ]
+    },
+    {
+      "id": "options-06",
+      "who": "takosan",
+      "text": "並べて見ると、「欲しかったのは、この馴れ馴れしさだ」と選びやすくなります。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "86ea35424c47a696548fb8f7117267aa42e0344bcba4d54765bad3c6daf45702",
+      "gapBeforeFrames": 15,
+      "captionTextPages": [
+        "並べて見ると、「欲しかったのは、\nこの馴れ馴れしさだ」と選びやすくなります。"
+      ]
+    },
+    {
+      "id": "options-07",
+      "who": "yametaro",
+      "text": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "23f27df48fbd3e532df2e0202b49f44d0fab21e07bd719aed14572401ae0d923",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "最初から正解の説明文を考えんでも、\n絵を見て好みを伝えられるんや。"
+      ]
+    },
+    {
+      "id": "options-08",
+      "who": "takosan",
+      "text": "はい。採用しなかった椅子の案は、別のスタンプに使いました。候補は残しておくと、あとで役立つこともあります。",
+      "view": "option-compare",
+      "chapter": 3,
+      "audioSha256": "2447bea5ccadcea5ecb43a76d7409376a80c10ccde818799a0c3057e059bae24",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "はい。採用しなかった椅子の案は、\n別のスタンプに使いました。",
+        "候補は残しておくと、あとで役立つこともあります。"
+      ]
+    },
+    {
+      "id": "redraw-01",
+      "who": "yametaro",
+      "text": "直してるうちに、顔とか線がガビガビになってきたんやけど。",
+      "view": "redraw-compare",
+      "chapter": 4,
+      "audioSha256": "502c00c4f310756813ff202cbbf91d013ea245d1af095c4f935f3ee11013a5fb",
+      "gapBeforeFrames": 24,
+      "captionTextPages": [
+        "直してるうちに、\n顔とか線がガビガビになってきたんやけど。"
+      ]
+    },
+    {
+      "id": "redraw-02",
+      "who": "takosan",
+      "text": "今回もありました。何度も編集して構図を詰めたあと、一枚ずつ、きれいに生成し直しました。",
+      "view": "redraw-compare",
+      "chapter": 4,
+      "audioSha256": "9380831e588df8228f8299c0d3e8e04e223d1492f8eab07341e12a1b73c8d803",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "今回もありました。何度も編集して構図を詰めたあと、\n一枚ずつ、きれいに生成し直しました。"
+      ]
+    },
+    {
+      "id": "redraw-03",
+      "who": "yametaro",
+      "text": "せっかく決まった絵が、また変わらへん？",
+      "view": "redraw-compare",
+      "chapter": 4,
+      "audioSha256": "19fdeea18f04e66b426d994911c013281642d885f903f07c6712f8e88e99f05f",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "せっかく決まった絵が、また変わらへん？"
+      ]
+    },
+    {
+      "id": "redraw-04",
+      "who": "takosan",
+      "text": "採用した画像を構図の見本にして、キャラクターの元の資料も一緒に渡します。",
+      "view": "redraw-prompt",
+      "chapter": 4,
+      "audioSha256": "51681539fb9800678c6b5cfa87b2c03f46a1e2fe0989821d5995fd9afb00e432",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "採用した画像を構図の見本にして、\nキャラクターの元の資料も一緒に渡します。"
+      ]
+    },
+    {
+      "id": "redraw-05",
+      "who": "takosan",
+      "text": "描き直したら、顔や口の形が変わっていないかを見ます。そば屋さんも、絵柄だけでなく、キャラクター本来の特徴を見直しました。",
+      "view": "redraw-compare",
+      "chapter": 4,
+      "audioSha256": "6bf5fee51e82a64bf8b12ce442e248e91135e5bbbea542b63b95e2c76122f8e6",
+      "gapBeforeFrames": 90,
+      "captionTextPages": [
+        "描き直したら、顔や口の形が変わっていないかを見ます。",
+        "そば屋さんも、絵柄だけでなく、\nキャラクター本来の特徴を見直しました。"
+      ]
+    },
+    {
+      "id": "redraw-06",
+      "who": "yametaro",
+      "text": "動かす前に、気に入った一枚をちゃんと用意するんやな。",
+      "view": "redraw-compare",
+      "chapter": 4,
+      "audioSha256": "c20a4ba503353ef200667cbb45f48bd2d765ded619e84103fe56f2741e3e72e6",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "動かす前に、気に入った一枚をちゃんと用意するんやな。"
+      ]
+    },
+    {
+      "id": "pets-01",
+      "who": "yametaro",
+      "text": "ここから動かすんか。よーたんが六人おるけど。",
+      "view": "pets-sheet",
+      "chapter": 5,
+      "audioSha256": "f61c488c0b54d704d9372360f7c2487a2e306ff7ac5ef6068095f2041cef22db",
+      "gapBeforeFrames": 24,
+      "captionTextPages": [
+        "ここから動かすんか。よーたんが六人おるけど。"
+      ]
+    },
+    {
+      "id": "pets-02",
+      "who": "takosan",
+      "text": "同じ人の、動きの途中を並べた画像です。これを一コマずつ切り出して、順番に表示します。",
+      "view": "pets-sheet",
+      "chapter": 5,
+      "audioSha256": "1d92b6a569e85d742e0e60976af98f47cc7ad5a46835d3e58d2ca2cbfe451037",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "同じ人の、動きの途中を並べた画像です。\nこれを一コマずつ切り出して、順番に表示します。"
+      ]
+    },
+    {
+      "id": "pets-03",
+      "who": "yametaro",
+      "text": "パラパラ漫画やな。この作り方は、どこから持ってきたん？",
+      "view": "pets-sheet",
+      "chapter": 5,
+      "audioSha256": "42976c8c3e10ba729008795acefe8a98c753d718c948d3faea58cd6a161c8b8f",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "パラパラ漫画やな。\nこの作り方は、どこから持ってきたん？"
+      ]
+    },
+    {
+      "id": "pets-04",
+      "who": "takosan",
+      "text": "OpenAIが提供している、Codex Pets用のスキルを参考にしました。連続したポーズを一枚に描いて、切り出して動かす部分を、LINEスタンプにも応用しています。",
+      "view": "pets-process",
+      "chapter": 5,
+      "audioSha256": "c53f575a8a8b7f6e6603b1aa2815e42bd96d62b9f61061aefe3b04a9868bee4c",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "OpenAIが提供している、\nCodex Pets用のスキルを参考にしました。",
+        "連続したポーズを一枚に描いて、\n切り出して動かす部分を、",
+        "LINEスタンプにも応用しています。"
+      ]
+    },
+    {
+      "id": "pets-05",
+      "who": "yametaro",
+      "text": "ペットの作り方が、島流しスタンプになったんか。",
+      "view": "pets-process",
+      "chapter": 5,
+      "audioSha256": "af8021d189d2a82c319e9543467516a6f8db7a64f4f89955e01e92b0456c344c",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "ペットの作り方が、島流しスタンプになったんか。"
+      ]
+    },
+    {
+      "id": "pets-06",
+      "who": "takosan",
+      "text": "こういう、動きのコマをまとめた画像を「スプライトシート」と呼びます。",
+      "view": "pets-sheet",
+      "chapter": 5,
+      "audioSha256": "0d94263c1b09200c2ea23360faa9fa8ea6d89c5881fdc253a3d581f713f72c3c",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "こういう、動きのコマをまとめた画像を\n「スプライトシート」と呼びます。"
+      ]
+    },
+    {
+      "id": "pets-07",
+      "who": "yametaro",
+      "text": "一枚ずつ別々に描いてもらうんとは違うんやな。",
+      "view": "pets-sheet",
+      "chapter": 5,
+      "audioSha256": "3616f0c95410e17a8d92c6299dd1fcc5c36eaf575a06b0f1ba6a4268626cbc02",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "一枚ずつ別々に描いてもらうんとは違うんやな。"
+      ]
+    },
+    {
+      "id": "pets-08",
+      "who": "takosan",
+      "text": "一枚の中に、同じキャラクターの連続した姿勢を出してもらいます。頼むときは、この手法の名前と、参考にするスキルを伝えると話が早いです。",
+      "view": "pets-prompt",
+      "chapter": 5,
+      "audioSha256": "500af79dee2a85825d6b3440195e3a6cdfc57cf8d3e532a2e2bc5fc368681b1b",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "一枚の中に、\n同じキャラクターの連続した姿勢を出してもらいます。",
+        "頼むときは、この手法の名前と、\n参考にするスキルを伝えると話が早いです。"
+      ]
+    },
+    {
+      "id": "pets-09",
+      "who": "takosan",
+      "text": "第一弾でも、このように生成した原画を使っています。スタンプごとに、合う動かし方を選びました。",
+      "view": "pets-process",
+      "chapter": 5,
+      "audioSha256": "a952748eeb8ae00577265fd24190458a80bf5638a5ed09613604b859998a7d04",
+      "gapBeforeFrames": 90,
+      "captionTextPages": [
+        "第一弾でも、このように生成した原画を使っています。\nスタンプごとに、合う動かし方を選びました。"
+      ]
+    },
+    {
+      "id": "acting-01",
+      "who": "yametaro",
+      "text": "動きの注文って難しそうやな。腕を何度曲げて、とか？",
+      "view": "acting-sobaya",
+      "chapter": 6,
+      "audioSha256": "530a2b30af72fb0448c01294518371c9b5dc4eb106dc6ce228f68a3fbaae38dc",
+      "gapBeforeFrames": 24,
+      "captionTextPages": [
+        "動きの注文って難しそうやな。腕を何度曲げて、とか？"
+      ]
+    },
+    {
+      "id": "acting-02",
+      "who": "takosan",
+      "text": "今回、伝えやすかったのは、動きのゴールでした。たとえば「ビールを大事そうに愛でている感じ」です。",
+      "view": "acting-sobaya",
+      "chapter": 6,
+      "audioSha256": "6ae11fa70e85187fa0fcf1e0cc09cf2f701a966b9e78edc28eb9b1521a64387d",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "今回、伝えやすかったのは、動きのゴールでした。\nたとえば「ビールを大事そうに愛でている感じ」です。"
+      ]
+    },
+    {
+      "id": "acting-03",
+      "who": "yametaro",
+      "text": "何を動かすかより、どう見えてほしいか。",
+      "view": "acting-sobaya",
+      "chapter": 6,
+      "audioSha256": "557ec698918c998dfa709f1d9860e1ab7490b0b19295771f8c33cd796d1ea3b6",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "何を動かすかより、どう見えてほしいか。"
+      ]
+    },
+    {
+      "id": "acting-04",
+      "who": "takosan",
+      "text": "第二弾の「ちゃんと働いてるか？」では、肘や腕の位置を細かく言い直しても、なかなかしっくりきませんでした。",
+      "view": "acting-work",
+      "chapter": 6,
+      "audioSha256": "35c2c9ad91ccfd9e44d6750819b99247d6a5ffb0f45ea35f73ee58be9d7ef1cf",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "第二弾の「ちゃんと働いてるか？」では、肘や腕の位置を\n細かく言い直しても、なかなかしっくりきませんでした。"
+      ]
+    },
+    {
+      "id": "acting-05",
+      "who": "takosan",
+      "text": "そこで伝えたかったのが、「馴れ馴れしく絡んでくる、ちょっとウザい先輩」という雰囲気です。",
+      "view": "acting-work",
+      "chapter": 6,
+      "audioSha256": "7cdb875b4d94d118193f1424b2b08ddccb1ecd4413a28348db346e3d0e31c650",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "そこで伝えたかったのが、「馴れ馴れしく絡んでくる、\nちょっとウザい先輩」という雰囲気です。"
+      ]
+    },
+    {
+      "id": "acting-06",
+      "who": "yametaro",
+      "text": "動きの角度は分からんけど、その先輩は想像できるわ。",
+      "view": "acting-work",
+      "chapter": 6,
+      "audioSha256": "1cac7104621f06bfae5738d1044b74f9f89fd40a532e36c708d7c11f7cdcd83d",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "動きの角度は分からんけど、その先輩は想像できるわ。"
+      ]
+    },
+    {
+      "id": "acting-07",
+      "who": "takosan",
+      "text": "「指示は雰囲気の参考にして、絵に合う動きを考えて」と伝えたのもポイントでした。",
+      "view": "acting-work",
+      "chapter": 6,
+      "audioSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "「指示は雰囲気の参考にして、\n絵に合う動きを考えて」と伝えたのもポイントでした。"
+      ]
+    },
+    {
+      "id": "acting-08",
+      "who": "yametaro",
+      "text": "こっちが何気なく言った「肘を動かす」を、絶対条件にせんでええんやな。",
+      "view": "acting-work",
+      "chapter": 6,
+      "audioSha256": "9c5ce9a1e4a039633e4281cba5db22fccbc8a80457504c49612f2c1681f3a009",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "こっちが何気なく言った「肘を動かす」を、\n絶対条件にせんでええんやな。"
+      ]
+    },
+    {
+      "id": "acting-09",
+      "who": "takosan",
+      "text": "はい。「最後はこの静止画の姿勢にしたい」など、譲れないところは添えます。そのうえで、演技の雰囲気を伝えます。",
+      "view": "acting-prompt",
+      "chapter": 6,
+      "audioSha256": "3bb66f673cdab736e2a9f2204f30dd295db885521ea02b896d46d23f879db63a",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "はい。「最後はこの静止画の姿勢にしたい」など、\n譲れないところは添えます。",
+        "そのうえで、演技の雰囲気を伝えます。"
+      ]
+    },
+    {
+      "id": "acting-10",
+      "who": "yametaro",
+      "text": "動きも、見比べて選んでええんか。",
+      "view": "acting-options",
+      "chapter": 6,
+      "audioSha256": "c22b1442034d41c89da517e341e5a6ed808e310956937ff0c13c223492822f16",
+      "gapBeforeFrames": 90,
+      "captionTextPages": [
+        "動きも、見比べて選んでええんか。"
+      ]
+    },
+    {
+      "id": "acting-11",
+      "who": "takosan",
+      "text": "もちろんです。強め、控えめ、少し間を取る感じ。言葉だけで決めるより、動く候補を並べると好みが分かります。",
+      "view": "acting-options",
+      "chapter": 6,
+      "audioSha256": "d559ca97b4abf73e8f2f89f1bc672cefdcdc8c31671c793833eb2446486b7d44",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "もちろんです。\n強め、控えめ、少し間を取る感じ。",
+        "言葉だけで決めるより、\n動く候補を並べると好みが分かります。"
+      ]
+    },
+    {
+      "id": "acting-12",
+      "who": "yametaro",
+      "text": "三つとも違うな、ってなったら？",
+      "view": "acting-options",
+      "chapter": 6,
+      "audioSha256": "6729b4fb3c195697d73b10a8f471303ab36ad0e6e0f4be8d0036f9ebca90ad6e",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "三つとも違うな、ってなったら？"
+      ]
+    },
+    {
+      "id": "acting-13",
+      "who": "takosan",
+      "text": "その三つから無理に選ぶ必要はありません。実際に、全部しっくりこなくて、雰囲気を伝え直したこともありました。",
+      "view": "acting-options",
+      "chapter": 6,
+      "audioSha256": "e4df986e3729e815bd96e7b572092d3bb2d11494e64171c988889d1c65f880b5",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "その三つから無理に選ぶ必要はありません。",
+        "実際に、全部しっくりこなくて、\n雰囲気を伝え直したこともありました。"
+      ]
+    },
+    {
+      "id": "inspect-01",
+      "who": "yametaro",
+      "text": "動きは決まった。ここから何を見るん？",
+      "view": "inspect-whiteblack",
+      "chapter": 7,
+      "audioSha256": "5dae87b7343c21fc435a7646dd673eab6911e0fb3d397b62a13eb91b55458562",
+      "gapBeforeFrames": 30,
+      "captionTextPages": [
+        "動きは決まった。ここから何を見るん？"
+      ]
+    },
+    {
+      "id": "inspect-02",
+      "who": "takosan",
+      "text": "同じスタンプを、白と黒、両方の背景に載せます。これは、すぐ試せて役立ちました。",
+      "view": "inspect-whiteblack",
+      "chapter": 7,
+      "audioSha256": "139acd1b6498d086dc7ef93e7d3a223b691ef28c9f276869dbea07f12ad6ed1f",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "同じスタンプを、白と黒、両方の背景に載せます。\nこれは、すぐ試せて役立ちました。"
+      ]
+    },
+    {
+      "id": "inspect-03",
+      "who": "yametaro",
+      "text": "黒にしたら、周りの白い残りが見えるな。",
+      "view": "inspect-whiteblack",
+      "chapter": 7,
+      "audioSha256": "cf0d1b3db2e13c1b19fdee9fb27610f0dc2f69ecf1479e7161b21b97cdd710dd",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "黒にしたら、周りの白い残りが見えるな。"
+      ]
+    },
+    {
+      "id": "inspect-04",
+      "who": "takosan",
+      "text": "白い背景だけでは、背景の消し残しに気づきにくいんです。逆に、白い服が欠けていても分かりにくいことがあります。",
+      "view": "inspect-whiteblack",
+      "chapter": 7,
+      "audioSha256": "6e555d940d40ae79635a7d1026d4b90815f0db5997734cfde005b7c5362d43be",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "白い背景だけでは、\n背景の消し残しに気づきにくいんです。",
+        "逆に、白い服が欠けていても\n分かりにくいことがあります。"
+      ]
+    },
+    {
+      "id": "inspect-05",
+      "who": "takosan",
+      "text": "文字の穴に白が残っていないか。服や顔まで透けていないか。輪郭がちらつかないか。背景を切り替えながら見ます。",
+      "view": "inspect-details",
+      "chapter": 7,
+      "audioSha256": "0e8c7a30a24cfc323301cd7da51f845462e7e24e6e1318b27c398e1062741502",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "文字の穴に白が残っていないか。\n服や顔まで透けていないか。輪郭がちらつかないか。",
+        "背景を切り替えながら見ます。"
+      ]
+    },
+    {
+      "id": "inspect-06",
+      "who": "yametaro",
+      "text": "一枚だけきれいでも、動いてる途中で変になるかもしれんのか。",
+      "view": "inspect-details",
+      "chapter": 7,
+      "audioSha256": "141f62f38eb549fe2c6b9a8ebb6c99ee6d9c203ea56102aada0905d49868345b",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "一枚だけきれいでも、\n動いてる途中で変になるかもしれんのか。"
+      ]
+    },
+    {
+      "id": "inspect-07",
+      "who": "takosan",
+      "text": "なので、最後はアニメーションで。一覧にしてもらえば、八個まとめて確認できます。",
+      "view": "inspect-prompt",
+      "chapter": 7,
+      "audioSha256": "5f007a2433c1e0f28ed7187d2986d789cc7a73e13214df1e3677d9dfd98c9e24",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "なので、最後はアニメーションで。\n一覧にしてもらえば、八個まとめて確認できます。"
+      ]
+    },
+    {
+      "id": "tools-01",
+      "who": "yametaro",
+      "text": "白いゴミが残ってたら、Imagegenに「ここ消して」でええ？",
+      "view": "tools-beforeafter",
+      "chapter": 8,
+      "audioSha256": "62f8c444aafcc06bbc781fbb1de2fac2365177967820ca6e88004e60005e4004",
+      "gapBeforeFrames": 90,
+      "captionTextPages": [
+        "白いゴミが残ってたら、\nImagegenに「ここ消して」でええ？"
+      ]
+    },
+    {
+      "id": "tools-02",
+      "who": "takosan",
+      "text": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、OpenCVとImageMagickです。",
+      "view": "tools-beforeafter",
+      "chapter": 8,
+      "audioSha256": "57407ea15db18d5c521d1d1dcf4e62306cc04d087bbb244716b612043ac25cd8",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "こういう細かい消し残しには、\n通常の画像処理も使えます。",
+        "今回使ったのは、\nOpenCVとImageMagickです。"
+      ]
+    },
+    {
+      "id": "tools-03",
+      "who": "yametaro",
+      "text": "絵を描くAIとは別の道具？",
+      "view": "tools-beforeafter",
+      "chapter": 8,
+      "audioSha256": "0556cf7b08195401c8ba29313adaf5d0779c9d4c0faf6c605a22c78b15c1c613",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "絵を描くAIとは別の道具？"
+      ]
+    },
+    {
+      "id": "tools-04",
+      "who": "takosan",
+      "text": "はい。画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするための道具です。",
+      "view": "tools-beforeafter",
+      "chapter": 8,
+      "audioSha256": "895238be946d8e43d08f323b52a16d46794919e855de2dc728f41f32e7aca6eb",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "はい。画像の中から特定の領域を取り出したり、\n切り抜いたり、透明にしたりするための道具です。"
+      ]
+    },
+    {
+      "id": "tools-05",
+      "who": "yametaro",
+      "text": "画像のことは、全部Imagegenでやるんやと思ってたわ。",
+      "view": "tools-choice",
+      "chapter": 8,
+      "audioSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "画像のことは、全部Imagegenでやるんやと思ってたわ。"
+      ]
+    },
+    {
+      "id": "tools-06",
+      "who": "takosan",
+      "text": "新しいポーズを描きたい、構図を変えたい。そういうときはImagegen。今の絵を保って、ここに残った背景だけを消したい。そういうときは画像処理が向いています。",
+      "view": "tools-choice",
+      "chapter": 8,
+      "audioSha256": "c0ce3e5fb2191aeb1b18a1f0be00e5dfc65dae6279757512e76ab5fb46c39c8d",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "新しいポーズを描きたい、構図を変えたい。\nそういうときはImagegen。",
+        "今の絵を保って、ここに残った背景だけを消したい。\nそういうときは画像処理が向いています。"
+      ]
+    },
+    {
+      "id": "tools-07",
+      "who": "takosan",
+      "text": "たとえば、そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。残す場所を分けて、背景や文字の穴を処理しました。",
+      "view": "tools-choice",
+      "chapter": 8,
+      "audioSha256": "179946961108cee51ed5605414ac9a6ed4f67eee441508e2fbf1b0b6267ceaff",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "たとえば、そば屋さんは服も背景も白いので、\n白を全部消すと服まで消えてしまいます。",
+        "残す場所を分けて、背景や文字の穴を処理しました。"
+      ]
+    },
+    {
+      "id": "tools-08",
+      "who": "yametaro",
+      "text": "消しゴムで済むところまで、描き直してもらわんでええんやな。",
+      "view": "tools-choice",
+      "chapter": 8,
+      "audioSha256": "f499c7451c9b43c6e8907dd4c709c280acd3a934fc90fb9e11c5afd253e34c2f",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "消しゴムで済むところまで、\n描き直してもらわんでええんやな。"
+      ]
+    },
+    {
+      "id": "tools-09",
+      "who": "takosan",
+      "text": "Codexへの頼み方も、こんな感じです。",
+      "view": "tools-prompt",
+      "chapter": 8,
+      "audioSha256": "354fb72afd6a73eeabe362e93969138a1f9da90f6686338a2739dbfaed054f58",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "Codexへの頼み方も、こんな感じです。"
+      ]
+    },
+    {
+      "id": "tools-10",
+      "who": "takosan",
+      "text": "使う道具を知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
+      "view": "tools-choice",
+      "chapter": 8,
+      "audioSha256": "769904002abd62a821d37148487c50e0f47283f3454160bf9c8868ed70244790",
+      "gapBeforeFrames": 225,
+      "captionTextPages": [
+        "使う道具を知っていると、絵を変えたいのか、\n今の絵を整えたいのかを伝え分けられます。"
+      ]
+    },
+    {
+      "id": "close-01",
+      "who": "yametaro",
+      "text": "最初から完璧な注文を書こうとせんでも、まず並べて、見て選んでいけばええんやな。",
+      "view": "closing-flow",
+      "chapter": 9,
+      "audioSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7",
+      "gapBeforeFrames": 24,
+      "captionTextPages": [
+        "最初から完璧な注文を書こうとせんでも、\nまず並べて、見て選んでいけばええんやな。"
+      ]
+    },
+    {
+      "id": "close-02",
+      "who": "takosan",
+      "text": "はい。方向が決まったらきれいに描き直して、動きは雰囲気を伝えて比べる。仕上げは白黒両方で確認します。",
+      "view": "closing-flow",
+      "chapter": 9,
+      "audioSha256": "9c7cf733b44df80657e79311750454f50869352ade26ca0f6c99c31dcd5db3cd",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "はい。方向が決まったらきれいに描き直して、",
+        "動きは雰囲気を伝えて比べる。\n仕上げは白黒両方で確認します。"
+      ]
+    },
+    {
+      "id": "close-03",
+      "who": "takosan",
+      "text": "今回の第一弾は、そば屋さんが申請を担当してくれて、販売中です。スタンプと、参考にしたスキルのリンクは概要欄に載せています。",
+      "view": "closing-flow",
+      "chapter": 9,
+      "audioSha256": "7729f9cde3831b693b67cf62e33d0faae65d3daacb0aae523eb8ba8c141a658b",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "今回の第一弾は、\nそば屋さんが申請を担当してくれて、販売中です。",
+        "スタンプと、参考にしたスキルのリンクは\n概要欄に載せています。"
+      ]
+    },
+    {
+      "id": "close-04",
+      "who": "yametaro",
+      "text": "ほなワイのも、「謝ってるけど、そこまで反省してない感じ」で三案ほしいわ。",
+      "view": "ending",
+      "chapter": 9,
+      "audioSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "ほなワイのも、「謝ってるけど、\nそこまで反省してない感じ」で三案ほしいわ。"
+      ]
+    },
+    {
+      "id": "close-05",
+      "who": "takosan",
+      "text": "反省の薄さで、三段階ですね。",
+      "view": "ending",
+      "chapter": 9,
+      "audioSha256": "45e63a519a3dd86faf51b2f67601e0c5625bf3aded9afda47e8c31fa5b298999",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "反省の薄さで、三段階ですね。"
+      ]
+    },
+    {
+      "id": "close-06",
+      "who": "yametaro",
+      "text": "そこを比較させるな。",
+      "view": "ending",
+      "chapter": 9,
+      "audioSha256": "40caeea2d867c89e78eb9c25d395d0a3e577a6a273813b9c11f9346e8a2555df",
+      "gapBeforeFrames": 9,
+      "captionTextPages": [
+        "そこを比較させるな。"
+      ]
+    }
+  ]
+}

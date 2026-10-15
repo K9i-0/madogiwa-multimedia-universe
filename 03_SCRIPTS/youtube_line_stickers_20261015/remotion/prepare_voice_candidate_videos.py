@@ -9,6 +9,8 @@ import argparse
 import copy
 import json
 import math
+import hashlib
+import subprocess
 import numpy as np
 import soundfile as sf
 
@@ -17,6 +19,9 @@ from mix_audio import decode, save, fade, loop_to, tones, music_inputs, SR, SAMP
 
 P = Path(__file__).resolve().parent
 FPS = 30
+# Auditions compare the original Irodori voice even after a candidate is adopted.
+BASELINE_COMMIT = '61f44365'
+BASELINE_PATH = '03_SCRIPTS/youtube_line_stickers_20261015/remotion/src/edit-manifest.json'
 LABELS = {
     'current': '現行 Irodori',
     'aoyama': 'A 青山龍星（ノーマル）',
@@ -25,7 +30,7 @@ LABELS = {
 }
 
 
-def make_candidate(key, index, original):
+def make_candidate(key, index, original, source_hash):
     directory = P / 'out/voice-candidates' / key
     directory.mkdir(parents=True, exist_ok=True)
     public = P / 'public/voice-candidates' / key
@@ -75,7 +80,7 @@ def make_candidate(key, index, original):
         dialogue=rows, clips=[], audioSrc=f'voice-candidates/{key}/mixed.wav',
         mainStartFrame=next(row['startFrame'] for row in rows if row['id']=='main-01'),
         endingStartFrame=end, creditsStartFrame=end, creditsInDescription=True,
-        auditionOnly=True, sourceManifestSha256=sha(P/'src/edit-manifest.json'))
+        auditionOnly=True, sourceManifestSha256=source_hash, sourceCommit=BASELINE_COMMIT)
     n = end*SAMPLES_PER_FRAME
     sources = music_inputs()
     voice = np.zeros((n,2), np.float32)
@@ -135,13 +140,16 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('candidates',nargs='+',help='current or a key with out/voice-candidates/<key>/index.json')
     args=parser.parse_args()
-    original=json.loads((P/'src/edit-manifest.json').read_text())
+    baseline=subprocess.check_output(['git','show',f'{BASELINE_COMMIT}:{BASELINE_PATH}'],cwd=P)
+    original=json.loads(baseline)
+    source_hash=hashlib.sha256(baseline).hexdigest()
+    assert all('Irodori' in row['voiceSettings']['model'] for row in original['dialogue'][:16] if row['who']=='yametaro')
     manifest_hash=sha(P/'src/edit-manifest.json')
     master_hash=sha(P/'public/mixed.wav')
     for key in args.candidates:
         assert key.replace('_','').isalnum()
         index=None if key=='current' else json.loads((P/'out/voice-candidates'/key/'index.json').read_text())
-        make_candidate(key,index,original)
+        make_candidate(key,index,original,source_hash)
     assert sha(P/'src/edit-manifest.json')==manifest_hash
     assert sha(P/'public/mixed.wav')==master_hash
 

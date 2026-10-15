@@ -25,6 +25,17 @@
 
 「冷えてる。待遇も。」の窓は上端を遠近に沿う直線でカットし、突き出した柱と輪郭の凹凸を整理。人物と白い息の動作領域を狭め、窓の上端・枠は全コマで同一画素に固定。生成原画は変更せず、`tools/build.py` の切り抜き処理で再現する。
 
+## LINE申請用のmain・tab（2026-10-15）
+
+[公式アニメーションスタンプ制作ガイド](https://creator.line.me/ja/guideline/animationsticker/)と[詳細ガイド](https://creator.line.me/ja/guideline/animationsticker/detail/)で確認。mainは240×240pxのAPNG、tabは96×74pxの静止PNG。どちらもRGB系・透過・1MB以下。ZIPは60MB以下。tabの再生マークはLINE側で自動追加されるため描かない。
+
+- [main.png](main.png)：240×240px、5コマ・3秒・1回再生。文字なしの顔・ジョッキ・パーティション。
+- [tab.png](tab.png)：96×74px、静止PNG。顔とジョッキのアップ。
+- [白背景の確認GIF](main-tab-white-preview.gif) / [黒背景の確認GIF](main-tab-black-preview.gif)
+- `line-submission.zip`：直下に `main.png`、`tab.png`、`01.png`〜`08.png` の10ファイルだけを収録したアップロード用画像ZIP。実際の申請は未実施。
+
+採用済み02の原画から共通範囲を切り出し、縦横比を保って縮小。キャラクターの再生成や変形なし。先頭コマは正面の顔とジョッキが見える姿勢とし、静止表示でも内容が伝わるようにした。実際の寸法・コマ数・時間・容量・透過の検証結果は `reports/validation.json`、切り出しと出典は `reports/listing-source.json`。
+
 ## 完成ファイル
 
 - `stickers/<ID>/sticker.png`：透過APNG、320×270px、3秒、再生回数1、5〜12フレーム、各1MB未満。
@@ -32,8 +43,8 @@
 - `stickers/<ID>/master.png`：1200×1200pxの代表ポーズ静止画像。`still.png`：400×400px。`start.png` / `end.png`：開始／終了ポーズ。
 - `all-members-{white,black}-preview.gif`：実際の納品APNGを時刻同期して合成した4列×2行GIF。1280×540px。
 - `static/images/01.png`〜`08.png`：370×320pxの透過静止画像。
-- `animated-stickers.zip`：完成APNG8点を `01.png`〜`08.png` としてまとめたもの。
-- `release.zip`：完成画像・プレビュー・連続原画・加工ツール・検証結果を収録。メイン画像・タブ画像を含むLINE申請一式ではない。
+- `animated-stickers.zip`：スタンプ本体のAPNG8点のみを `01.png`〜`08.png` としてまとめたもの。申請にはmain/tabも含む `line-submission.zip` を使用。
+- `release.zip`：完成画像・プレビュー・連続原画・加工ツール・検証結果を収録。main/tabも収録した制作資料アーカイブ。アップロード用は `line-submission.zip`。
 
 ## 制作方式
 
@@ -51,6 +62,7 @@
 
 ```sh
 27_LINE_STICKERS/sets/02/.venv/bin/python 27_LINE_STICKERS/sets/02/tools/build.py
+27_LINE_STICKERS/sets/02/.venv/bin/python 27_LINE_STICKERS/sets/02/tools/build-listing.py
 27_LINE_STICKERS/sets/02/.venv/bin/python 27_LINE_STICKERS/sets/02/tools/verify.py
 27_LINE_STICKERS/sets/02/.venv/bin/python 27_LINE_STICKERS/sets/02/tools/review-package.py
 ```

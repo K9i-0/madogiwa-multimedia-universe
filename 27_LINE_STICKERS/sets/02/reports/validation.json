@@ -123,6 +123,37 @@
       "decoded": true
     }
   ],
+  "listing": [
+    {
+      "file": "main.png",
+      "size": [
+        240,
+        240
+      ],
+      "format": "APNG",
+      "frames": 5,
+      "durationMs": 3000,
+      "plays": 1,
+      "bytes": 352696,
+      "transparent": true,
+      "decoded": true
+    },
+    {
+      "file": "tab.png",
+      "size": [
+        96,
+        74
+      ],
+      "format": "PNG",
+      "frames": 1,
+      "durationMs": 0,
+      "plays": null,
+      "bytes": 13176,
+      "transparent": true,
+      "decoded": true
+    }
+  ],
+  "officialGuideline": "https://creator.line.me/ja/guideline/animationsticker/",
   "previewGifs": {
     "size": [
       1280,
@@ -131,5 +162,22 @@
     "durationMs": 3000,
     "source": "decoded final APNG"
   },
-  "note": "One-shot animations finish on final gesture. No forced reverse or loop closure."
+  "note": "One-shot animations finish on final gesture. No forced reverse or loop closure.",
+  "submissionArchive": {
+    "file": "line-submission.zip",
+    "bytes": 2818527,
+    "files": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png",
+      "07.png",
+      "08.png",
+      "main.png",
+      "tab.png"
+    ],
+    "crcPassed": true
+  }
 }

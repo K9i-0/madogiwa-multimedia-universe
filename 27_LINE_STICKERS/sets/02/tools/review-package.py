@@ -23,6 +23,19 @@ for row,s in enumerate(specs):
  for j in range(6):
   im=Image.open(paths[round(j*(len(paths)-1)/5)]).resize((256,256));bg=Image.new('RGBA',(256,256),'white' if j%2==0 else 'black');bg.alpha_composite(im);contact.paste(bg.convert('RGB'),(j*256,row*256))
 contact.save(ROOT/'reports/pose-contact.png')
+# Upload images only, all at the archive root.
+with zipfile.ZipFile(ROOT/'animated-stickers.zip','w',zipfile.ZIP_DEFLATED) as z:
+ for i,s in enumerate(specs):z.write(ROOT/'stickers'/s['id']/'sticker.png',f'{i+1:02d}.png')
+with zipfile.ZipFile(ROOT/'line-submission.zip','w',zipfile.ZIP_DEFLATED) as z:
+ for name in ['main.png','tab.png']:z.write(ROOT/name,name)
+ for i,s in enumerate(specs):z.write(ROOT/'stickers'/s['id']/'sticker.png',f'{i+1:02d}.png')
+assert (ROOT/'line-submission.zip').stat().st_size < 60_000_000
+with zipfile.ZipFile(ROOT/'line-submission.zip') as z:
+ assert set(z.namelist())=={'main.png','tab.png'}|{f'{i:02d}.png' for i in range(1,9)}
+ assert z.testzip() is None
+ validation=json.loads((ROOT/'reports/validation.json').read_text())
+ validation['submissionArchive']={'file':'line-submission.zip','bytes':(ROOT/'line-submission.zip').stat().st_size,'files':sorted(z.namelist()),'crcPassed':True}
+ (ROOT/'reports/validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n')
 # Full delivery archive excludes historical rejected assets from active package.
 with zipfile.ZipFile(ROOT/'release.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
  for s in specs:
@@ -33,9 +46,6 @@ with zipfile.ZipFile(ROOT/'release.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6
  for folder in ['static','tools','reports','source/references']:
   for p in sorted((ROOT/folder).rglob('*')):
    if p.is_file() and '__pycache__' not in p.parts and p.name!='face-review.png':z.write(p,p.relative_to(ROOT))
- for name in ['README.md','set.json','source/animation-manifest.json','all-members-white-preview.gif','all-members-black-preview.gif','all-members-white-still.png','all-members-black-still.png']:
+ for name in ['README.md','set.json','source/animation-manifest.json','main.png','tab.png','main-still.png','main-tab-white-preview.gif','main-tab-black-preview.gif','main-tab-white-preview.png','main-tab-black-preview.png','all-members-white-preview.gif','all-members-black-preview.gif','all-members-white-still.png','all-members-black-still.png']:
   z.write(ROOT/name,name)
-# Flat APNG set is convenient for handoff; not an automatic LINE submission.
-with zipfile.ZipFile(ROOT/'animated-stickers.zip','w',zipfile.ZIP_DEFLATED) as z:
- for i,s in enumerate(specs):z.write(ROOT/'stickers'/s['id']/'sticker.png',f'{i+1:02d}.png')
-print('Created release.zip and animated-stickers.zip')
+print('Created release.zip, animated-stickers.zip and line-submission.zip')

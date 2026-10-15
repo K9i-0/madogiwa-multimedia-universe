@@ -34,5 +34,20 @@ for bg in ['white','black']:
  subprocess.run(['ffmpeg','-v','error','-i',str(ROOT/f'all-members-{bg}-preview.gif'),'-f','null','-'],check=True,capture_output=True)
 assert [x['id'] for x in r['members']][1]=='02_hataraiteruka'
 assert 'remap' not in (ROOT/'tools/build.py').read_text(),'Old deformation renderer present'
-(ROOT/'reports/validation.json').write_text(json.dumps({'passed':True,'method':'generated pose sequences','stickers':results,'previewGifs':{'size':[1280,540],'durationMs':3000,'source':'decoded final APNG'},'note':'One-shot animations finish on final gesture. No forced reverse or loop closure.'},ensure_ascii=False,indent=2)+'\n')
+listing=[]
+for name,size,animated in [('main.png',(240,240),True),('tab.png',(96,74),False)]:
+ p=ROOT/name;im=Image.open(p);assert im.size==size and im.mode=='RGBA' and p.stat().st_size<1_000_000
+ assert 5<=im.n_frames<=20 if animated else im.n_frames==1
+ ds=[];fs=[]
+ for i in range(im.n_frames):
+  im.seek(i);a=np.array(im.convert('RGBA'));fs.append(a);ds.append(round(im.info.get('duration',0)))
+  assert (a[:,:,3]==0).any() and (a[:,:,3]==255).any()
+  assert not a[:2,:,3].any() and not a[-2:,:,3].any() and not a[:,:2,3].any() and not a[:,-2:,3].any()
+ if animated:
+  assert sum(ds) in [1000,2000,3000,4000]
+  assert 1<=im.info['loop']<=4 and sum(ds)*im.info['loop']<=4000
+  assert any(not np.array_equal(a,fs[0]) for a in fs[1:])
+ subprocess.run(['ffmpeg','-v','error','-i',str(p),'-f','null','-'],check=True,capture_output=True)
+ listing.append({'file':name,'size':list(size),'format':'APNG' if animated else 'PNG','frames':im.n_frames,'durationMs':sum(ds),'plays':im.info.get('loop'),'bytes':p.stat().st_size,'transparent':True,'decoded':True})
+(ROOT/'reports/validation.json').write_text(json.dumps({'passed':True,'method':'generated pose sequences','stickers':results,'listing':listing,'officialGuideline':'https://creator.line.me/ja/guideline/animationsticker/','previewGifs':{'size':[1280,540],'durationMs':3000,'source':'decoded final APNG'},'note':'One-shot animations finish on final gesture. No forced reverse or loop closure.'},ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'passed':True,'stickers':len(results),'maxBytes':max(x['bytes'] for x in results)},indent=2))

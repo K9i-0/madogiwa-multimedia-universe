@@ -94,5 +94,24 @@
   "reserve": {
     "乾杯！": "reserve/02_kanpai"
   },
-  "changes": "02は腕を置いた姿勢から肩ごと少し傾いて様子をうかがう動きで完成。07は承認済みの演技を維持し切り抜き残りを除去。全8枚の顔・背景・透過を再監査。06は頭を抱える間を長めに調整。03は窓上端を直線カットし、背景の固定範囲を拡大。"
+  "changes": "02は腕を置いた姿勢から肩ごと少し傾いて様子をうかがう動きで完成。07は承認済みの演技を維持し切り抜き残りを除去。全8枚の顔・背景・透過を再監査。06は頭を抱える間を長めに調整。03は窓上端を直線カットし、背景の固定範囲を拡大。",
+  "listing": {
+    "main": "main.png",
+    "mainFormat": "APNG",
+    "mainSize": [
+      240,
+      240
+    ],
+    "tab": "tab.png",
+    "tabFormat": "PNG",
+    "tabSize": [
+      96,
+      74
+    ],
+    "preview": "main-tab-white-preview.gif",
+    "source": "source/animation/02_hataraiteruka/poses",
+    "guideline": "https://creator.line.me/ja/guideline/animationsticker/",
+    "checkedOn": "2026-10-15"
+  },
+  "submissionArchive": "line-submission.zip"
 }

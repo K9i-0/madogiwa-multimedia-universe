@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-15",
   "request": "やめ太郎の声の違和感を減らすため、YouTubeのなんJ民ボイスを調査し、冒頭を複数候補で比較する",
-  "status": "audition_completed_b_selected_for_this_episode",
+  "status": "v3_irodori_reselected_after_full_b_trial",
   "finding": "なんJ民ボイスという単一の正式話者・統一プリセット・共通数値は確認できなかった。候補の数値は今回の比較用提案であり、特定YouTube投稿者の設定を再現したとは主張しない。",
   "candidates": [
     {
@@ -67,6 +67,17 @@
     "instruction": "Bかな 今回の動画を全部Bで作ってみて",
     "scope": "今回の動画のやめ太郎全43発話",
     "globalVoiceCanonChanged": false,
-    "resultVersion": "v4"
+    "resultVersion": "v4",
+    "status": "superseded_by_v3_irodori_on_2026-10-16"
+  },
+  "currentSelection": {
+    "date": "2026-10-16",
+    "candidate": "original_irodori",
+    "instruction": "やっぱり普段のIrodoriで良かったかも v3ベースで作成を再開しよう",
+    "activeVersion": "v3",
+    "baselineCommit": "61f44365",
+    "globalVoiceCanonChanged": false,
+    "preservedComparisonVersion": "v4",
+    "preservedComparisonCommit": "83f5cb12"
   }
 }

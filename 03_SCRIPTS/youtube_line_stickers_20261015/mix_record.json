@@ -1,6 +1,6 @@
 {
   "sampleRate": 48000,
-  "frames": 17763,
+  "frames": 17891,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
@@ -9,17 +9,17 @@
   "endingLiftAfterDialogue": false,
   "endingTrackChange": false,
   "endingFadeOutSeconds": 4,
-  "premasterPeak": 0.735034704208374,
+  "premasterPeak": 0.6184718012809753,
   "masterGain": 1,
   "soundEvents": [
     {
       "name": "original two-tone notification",
-      "startFrame": 518,
+      "startFrame": 464,
       "durationInFrames": 24
     },
     {
       "name": "original soft major triad title cue",
-      "startFrame": 1392,
+      "startFrame": 1433,
       "durationInFrames": 60
     }
   ],
@@ -51,6 +51,12 @@
       "provenanceRecord": "03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json"
     }
   },
-  "mixedSha256": "d085787fd39b3dade246455cf862209a368434f224a71e75d5bfd6cbd8174e09",
-  "subjectiveListening": false
+  "mixedSha256": "7c259ac23dd49f5df069f6ae522e05e953368c2aba62d68e2b063495b664ea7f",
+  "subjectiveListening": false,
+  "measuredLoudness": {
+    "integratedLUFS": -17.94,
+    "truePeakDbTP": -4.17,
+    "loudnessRangeLU": 3.8,
+    "method": "FFmpeg loudnorm input measurements, no processing applied during measurement."
+  }
 }

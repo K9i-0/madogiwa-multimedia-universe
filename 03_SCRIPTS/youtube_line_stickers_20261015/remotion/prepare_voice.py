@@ -1,13 +1,11 @@
-"""Generate this episode's selected voices and measure the integer-frame timeline.
+"""Generate this episode's two canonical voices and measure the integer-frame timeline.
 
 Run with .local/Irodori-TTS/.venv/bin/python from the repository root.
 No speed/pitch postprocessing is applied. Raw TTS is kept untrimmed;
-reviewed Irodori cuts in voice_cleanup.json only apply to matching Irodori audio.
-The episode-specific choice in voice_config.json does not edit VOICE_CAST.md.
+reviewed cuts in voice_cleanup.json are applied separately.
 """
 from pathlib import Path
 import argparse
-import copy
 import hashlib
 import json
 import math
@@ -83,21 +81,14 @@ def main():
     if args.only:
         assert set(args.only).issubset({d['id'] for d in rows}), args.only
     voice_overrides = json.loads((P / 'voice_overrides.json').read_text()) if (P / 'voice_overrides.json').exists() else {}
-    voice_config = json.loads((P / 'voice_config.json').read_text()) if (P / 'voice_config.json').exists() else {}
     cleanup_recipes = load_recipes()
     timeline_config = json.loads((P / 'voice_timeline_config.json').read_text()) if (P / 'voice_timeline_config.json').exists() else {}
     engine = json.load(urllib.request.urlopen(BASE + '/version'))
-    speakers = json.load(urllib.request.urlopen(BASE + '/speakers'))
-    speaker = next(x for x in speakers if x['name'] == '中国うさぎ')
+    speaker = next(x for x in json.load(urllib.request.urlopen(BASE + '/speakers')) if x['name'] == '中国うさぎ')
     ref = R / '02_CHARACTERS/Yametaro_voice.wav'
-    ref_hash = revision = None
-    candidate_rows = {}
-    candidate_meta = voice_config.get('yametaro', {}).get('adoptedCandidate')
-    if candidate_meta and (P / candidate_meta['index']).exists():
-        candidate_path = P / candidate_meta['index']
-        assert sha(candidate_path) == candidate_meta['indexSha256'], candidate_path
-        candidate_index = json.loads(candidate_path.read_text())
-        candidate_rows = {row['id']: row for row in candidate_index['lines']}
+    ref_hash = sha(ref)
+    assert ref_hash == 'ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b'
+    revision = subprocess.check_output(['git', '-C', str(R / '.local/Irodori-TTS'), 'rev-parse', 'HEAD'], text=True).strip()
     old_by_identity = {}
     for record in [OLD / 'voice_record_v11.json', P.parent / 'voice_record.json']:
         if not record.exists():
@@ -118,17 +109,11 @@ def main():
     prepared = []
     for original_row in rows:
         row = dict(original_row, **voice_overrides.get(original_row['id'], {}))
-        protected = bool(args.only and row['id'] not in args.only) or bool(
-            row['who'] in voice_config.get('preserveRecordedSpeakers', [])
-            and row['id'] in previous_lines and not (args.only and row['id'] in args.only))
+        protected = bool(args.only and row['id'] not in args.only)
         spoken = row.get('voicevoxReading', row.get('reading', row['text'])) if row['who'] == 'takosan' else row.get('reading', row['text'])
         for source, replacement in replacements.items():
             spoken = spoken.replace(source, replacement)
-        if voice_config.get('preserveRecordedReadings') and row['id'] in previous_lines:
-            assert previous_lines[row['id']]['text'] == row['text'], ('Recorded text differs', row['id'])
-            spoken = previous_lines[row['id']]['spoken']
         kana = None
-        candidate = None
         if protected:
             previous = previous_lines[row['id']]
             for field in ['who', 'text', 'reading', 'voicevoxReading', 'seed', 'durationScale']:
@@ -144,47 +129,8 @@ def main():
                 'speakerVersion': speaker['version'], 'speakerId': 61, 'style': 'ノーマル',
                 'query': query, 'text': spoken}
             kana = query.get('kana')
-        elif row['who'] in voice_config:
-            selection = voice_config[row['who']]
-            assert selection['engine'] == 'VOICEVOX'
-            chosen_speaker = next(x for x in speakers if x['name'] == selection['speakerName'])
-            assert any(s['id'] == selection['speakerId'] and s['name'] == selection['style'] for s in chosen_speaker['styles'])
-            candidate = candidate_rows.get(row['id'])
-            if candidate:
-                assert candidate['text'] == row['text'] and candidate['spoken'] == spoken
-                assert candidate_index['engineVersion'] == engine
-                assert candidate_index['speakerId'] == selection['speakerId']
-                assert candidate_index['speakerVersion'] == chosen_speaker['version']
-                query = copy.deepcopy(candidate['query'])
-                assert all(query.get(k) == v for k, v in selection['settings'].items())
-            else:
-                query = json.loads(post('audio_query', {'speaker': selection['speakerId'], 'text': spoken}))
-                adjustment = selection.get('kanaOverrides', {}).get(row['id'])
-                if adjustment:
-                    before = query['kana']
-                    assert adjustment['from'] in before, (row['id'], before)
-                    query['kana'] = before.replace(adjustment['from'], adjustment['to'])
-                    old_moras = [m['text'] for a in query['accent_phrases'] for m in a['moras']]
-                    query['accent_phrases'] = json.loads(post('accent_phrases', {
-                        'speaker': selection['speakerId'], 'text': query['kana'], 'is_kana': 'true'}))
-                    for change in adjustment.get('moraChanges', []):
-                        assert old_moras[change['index']] == change['from']
-                        old_moras[change['index']] = change['to']
-                    assert old_moras == [m['text'] for a in query['accent_phrases'] for m in a['moras']]
-                query.update(selection['settings'])
-            settings = {'model': f"VOICEVOX:{selection['speakerName']}", 'engineVersion': engine,
-                'speakerVersion': chosen_speaker['version'], 'speakerId': selection['speakerId'],
-                'style': selection['style'], 'query': query, 'text': spoken,
-                'enableInterrogativeUpspeak': True}
-            if row['id'] in selection.get('kanaOverrides', {}):
-                settings['kanaAdjustment'] = selection['kanaOverrides'][row['id']]
-            kana = query.get('kana')
         else:
             assert row['who'] == 'yametaro', row
-            if ref_hash is None:
-                ref_hash = sha(ref)
-                assert ref_hash == 'ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b'
-                revision = subprocess.check_output(['git', '-C', str(R / '.local/Irodori-TTS'), 'rev-parse', 'HEAD'], text=True).strip()
             settings = {'model': 'Aratako/Irodori-TTS-v4.1-Small', 'runtimeRevision': revision,
                 'reference': str(ref.relative_to(R)), 'referenceSha256': ref_hash,
                 'seed': row.get('seed', 7), 'caption': None, 'cfgScaleText': 5,
@@ -194,21 +140,12 @@ def main():
         name = f'voice_{row["id"]}_{key[:12]}.wav'
         path = P / 'public' / name
         reused_from = None
-        active_cleanup = row['id'] in cleanup_recipes and settings['model'].startswith('Aratako/Irodori')
-        if active_cleanup:
+        if row['id'] in cleanup_recipes:
             recipe = cleanup_recipes[row['id']]
             assert key == recipe['generationSettingsSha256'], ('Cut recipe belongs to a different generation', row['id'])
             original = P.parent / recipe['source']
             assert sha(original) == recipe['sourceSha256']
             link_or_copy(original, path)
-        if candidate:
-            candidate_audio = Path(candidate['audio'])
-            if not candidate_audio.is_absolute():
-                candidate_audio = (P.parent if candidate_index.get('audioPathBase') == 'episode' else P) / candidate_audio
-            if candidate_audio.exists():
-                assert sha(candidate_audio) == candidate['audioSha256']
-                link_or_copy(candidate_audio, path)
-                reused_from = str(candidate_audio.relative_to(R))
         if not path.exists() and key in old_by_identity:
             old_path, old_hash = old_by_identity[key]
             assert old_path.exists() and sha(old_path) == old_hash
@@ -216,9 +153,8 @@ def main():
             reused_from = str(old_path.relative_to(R))
         if not path.exists():
             assert not protected, ('Protected adopted audio is missing', row['id'])
-            if settings['model'].startswith('VOICEVOX:'):
-                path.write_bytes(post('synthesis', {'speaker': settings['speakerId'],
-                    'enable_interrogative_upspeak': 'true'}, query))
+            if row['who'] == 'takosan':
+                path.write_bytes(post('synthesis', {'speaker': 61}, query))
             else:
                 sys.path.insert(0, str(R / '.local/Irodori-TTS'))
                 from irodori_tts.inference_runtime import InferenceRuntime, RuntimeKey, SamplingRequest, download_hf_checkpoint, save_wav
@@ -230,7 +166,7 @@ def main():
                 write_json(P / 'out' / (name + '.json'), {'settings': settings, 'messages': result.messages, 'timings': result.stage_timings})
         generated_name, generated_hash = name, sha(path)
         processing = None
-        if active_cleanup:
+        if row['id'] in cleanup_recipes:
             path, processing = apply_cleanup(row['id'], path, key)
             name = path.name
         x, sr = sf.read(path)
@@ -243,10 +179,6 @@ def main():
         item = dict(row, audio=name, spoken=spoken, kana=kana, durationInFrames=frames,
             envelope=envelope, voiceSettings=settings, audioSha256=sha(path), sampleRate=sr,
             durationSeconds=len(x)/sr, reusedFrom=reused_from)
-        if candidate:
-            assert item['audioSha256'] == candidate['audioSha256'], ('Adopted candidate changed', row['id'])
-            item['adoptedCandidate'] = {'key': candidate_meta['key'], 'audioSha256': candidate['audioSha256'],
-                'querySha256': candidate['querySha256']}
         if processing:
             item.update(generatedAudio=generated_name, generatedAudioSha256=generated_hash, audioProcessing=processing)
         prepared.append(item)
@@ -265,11 +197,10 @@ def main():
         'mainStartFrame': next((d['startFrame'] for d in prepared if d['id'] == main_id), prepared[0]['startFrame']),
         'endingStartFrame': next((d['startFrame'] for d in prepared if d['id'] == ending_id), end),
         'creditsStartFrame': end, 'creditsInDescription': True,
-        'voiceModel': voice_config.get('voiceModel', 'Irodori Yametaro + VOICEVOX Chugoku Usagi'), 'audioSrc': 'mixed.wav', 'dialogue': prepared, 'clips': []}
+        'voiceModel': 'Irodori Yametaro + VOICEVOX Chugoku Usagi', 'audioSrc': 'mixed.wav', 'dialogue': prepared, 'clips': []}
     write_json(P / 'src/edit-manifest.json', manifest)
     write_json(P.parent / 'voice_record.json', {'version': 1, 'subjectiveListening': False,
         'takosanSelection': '中国うさぎ・ノーマル・速度1.1・音高0',
-        'yametaroSelection': voice_config.get('yametaroSelection', 'Irodori正典参照'),
         'lines': [{k: v for k, v in d.items() if k != 'envelope'} for d in prepared]})
     adoption = []
     for d in prepared:

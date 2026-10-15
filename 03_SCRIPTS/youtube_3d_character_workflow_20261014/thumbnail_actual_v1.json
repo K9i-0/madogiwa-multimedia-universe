@@ -1,0 +1,49 @@
+{
+  "title": "Codex × Tripoで、自分のキャラを3Dモデルにしてみよう！",
+  "file": "thumbnail_actual_v1.png",
+  "method": "Remotion / Three.js actual-asset composition; imagegen drafts not adopted",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "sha256": "7775b3838718a74d280b5de0288fe4df99cb6ea746cb78a39fcbb4b5fc1fb5b1",
+  "bytes": 502254,
+  "composition": "ThumbnailActualV1",
+  "renderCommand": "node render_thumbnail.cjs",
+  "inputs": [
+    {
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+    },
+    {
+      "source": "04_GAME_ASSETS/3d/characters/sobaya/motion_v3_20260917/sobaya_motion.glb",
+      "sha256": "c0cdb21cd0505255a2722fa017eb679df16013fc865146f461864c5dde42fb7d"
+    },
+    {
+      "source": "03_SCRIPTS/youtube_ai_video_workflow_20261013/remotion/public/expressions/yametaro_happy_closed.png",
+      "sha256": "05d9c7f62a38590354ffc607dc6ebe9c981f860a02d46f5f3338215a09e023ba"
+    },
+    {
+      "source": "03_SCRIPTS/youtube_ai_video_workflow_20261013/remotion/public/expressions/takosan_normal_closed.png",
+      "sha256": "fa4278c5ce3e5d4d03d89c518acfea0620e35638774e6a8a73c391f8b7f9e111"
+    },
+    {
+      "source": "03_SCRIPTS/youtube_3d_character_workflow_20261014/inputs/webrefs_v3/tripo_logo.svg",
+      "sha256": "a177c486a7946697e16b5fd084f125677d0cf4f8ea9f5996c8d1cd9ff9c7d7cb"
+    },
+    {
+      "source": "03_SCRIPTS/youtube_3d_character_workflow_20261014/inputs/webrefs_v3/openai_icon.svg",
+      "sha256": "8f2de046d22cfecfe3917cf87ff1ce49a48d79956f6b18be3b37db29148a0aeb"
+    }
+  ],
+  "modelSettings": {
+    "mode": "turn",
+    "t": 2.8,
+    "freeze": true,
+    "yawRadians": 0.456,
+    "zoom": 1.14,
+    "background": "#263831",
+    "floorGrid": true
+  },
+  "note": "Original source pixels and canonical GLB are rendered directly, without generated character replacement. Head-to-waist/upper-leg framing is intentional. Existing hosts are smaller corner figures."
+}

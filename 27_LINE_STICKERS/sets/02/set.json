@@ -1,85 +1,90 @@
 {
   "id": "02",
   "title": "第2弾：そば屋オンリー",
-  "status": "animation_rework_required",
+  "status": "completed",
   "compositionStatus": "approved",
+  "animationMethod": "generated sequential poses; no body deformation",
   "lineSubmission": "not_submitted",
   "stickers": [
     {
       "id": "01_ohayo",
       "caption": "おはよう",
-      "motion": "手を振り、口元の輝きが明滅",
+      "motion": "下ろした手を上げ、口元が輝く",
       "apng": "stickers/01_ohayo/sticker.png",
       "still": "stickers/01_ohayo/still.png",
-      "master": "stickers/01_ohayo/master.png"
+      "master": "stickers/01_ohayo/master.png",
+      "keyframes": "source/animation/01_ohayo/keyframes.png"
     },
     {
-      "id": "02_kanpai",
-      "caption": "乾杯！",
-      "motion": "乾杯のジャンプを2回",
-      "apng": "stickers/02_kanpai/sticker.png",
-      "still": "stickers/02_kanpai/still.png",
-      "master": "stickers/02_kanpai/master.png",
-      "replacement": {
-        "caption": "ちゃんと働いてるか？",
-        "status": "C_selected_cardboard_chair_revised",
-        "archive": "reserve/02_kanpai",
-        "selectedImage": "source/02_hataraiteruka/selected-chair.png",
-        "direction": "椅子でふんぞり返って指差し。椅子は段ボール製アーロンチュア。"
-      }
+      "id": "02_hataraiteruka",
+      "caption": "ちゃんと働いてるか？",
+      "motion": "仕切り越しに前へ乗り出してのぞく",
+      "apng": "stickers/02_hataraiteruka/sticker.png",
+      "still": "stickers/02_hataraiteruka/still.png",
+      "master": "stickers/02_hataraiteruka/master.png",
+      "keyframes": "source/animation/02_hataraiteruka/keyframes.png"
     },
     {
       "id": "03_hieteru",
       "caption": "冷えてる。待遇も。",
-      "motion": "上半身が寒さで震え、雪が流れる",
+      "motion": "肩をすくめて震え、白い息を吐く",
       "apng": "stickers/03_hieteru/sticker.png",
       "still": "stickers/03_hieteru/still.png",
-      "master": "stickers/03_hieteru/master.png"
+      "master": "stickers/03_hieteru/master.png",
+      "keyframes": "source/animation/03_hieteru/keyframes.png"
     },
     {
       "id": "04_niryu",
       "caption": "窓際に追い込まれているうちは二流",
-      "motion": "仮面を固定したまま腕組みした肩がわずかに上下",
+      "motion": "指差す手を下ろし、窓を向く",
       "apng": "stickers/04_niryu/sticker.png",
       "still": "stickers/04_niryu/still.png",
-      "master": "stickers/04_niryu/master.png"
+      "master": "stickers/04_niryu/master.png",
+      "keyframes": "source/animation/04_niryu/keyframes.png"
     },
     {
       "id": "05_ichiryu",
       "caption": "一流の窓際族は窓際を作り出す",
-      "motion": "ドリルと手元が小刻みに振動",
+      "motion": "ドリルで締め、引いて窓を見る",
       "apng": "stickers/05_ichiryu/sticker.png",
       "still": "stickers/05_ichiryu/still.png",
-      "master": "stickers/05_ichiryu/master.png"
+      "master": "stickers/05_ichiryu/master.png",
+      "keyframes": "source/animation/05_ichiryu/keyframes.png"
     },
     {
       "id": "06_futsukayoi",
       "caption": "二日酔い",
-      "motion": "横たわった胸が小さく呼吸し、頭上の線が揺れる",
+      "motion": "両手で頭を抱え、丸くなる",
       "apng": "stickers/06_futsukayoi/sticker.png",
       "still": "stickers/06_futsukayoi/still.png",
-      "master": "stickers/06_futsukayoi/master.png"
+      "master": "stickers/06_futsukayoi/master.png",
+      "keyframes": "source/animation/06_futsukayoi/keyframes.png"
     },
     {
       "id": "07_nomini",
       "caption": "飲みに行こう",
-      "motion": "手招きし、投げた書類がひらひら動く",
+      "motion": "書類を投げ、手招きして帰る",
       "apng": "stickers/07_nomini/sticker.png",
       "still": "stickers/07_nomini/still.png",
-      "master": "stickers/07_nomini/master.png"
+      "master": "stickers/07_nomini/master.png",
+      "keyframes": "source/animation/07_nomini/keyframes.png"
     },
     {
       "id": "08_kinshu",
       "caption": "禁酒中",
-      "motion": "点滴の滴とビールの泡が動き、ゆっくり呼吸",
+      "motion": "寝たまま手を上げてサムズアップ",
       "apng": "stickers/08_kinshu/sticker.png",
       "still": "stickers/08_kinshu/still.png",
-      "master": "stickers/08_kinshu/master.png"
+      "master": "stickers/08_kinshu/master.png",
+      "keyframes": "source/animation/08_kinshu/keyframes.png"
     }
   ],
   "preview": {
     "white": "all-members-white-preview.gif",
     "black": "all-members-black-preview.gif"
   },
-  "animationReview": "rejected: procedural deformation; replace with generated pose sequences"
+  "reserve": {
+    "乾杯！": "reserve/02_kanpai"
+  },
+  "changes": "02はB案。04はアーロンチュアに座るC案を窓際へ配置。"
 }

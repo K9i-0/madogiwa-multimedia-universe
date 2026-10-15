@@ -3,110 +3,306 @@
     {
       "id": "01_ohayo",
       "caption": "おはよう",
-      "motion": "手を振り、口元の輝きが明滅",
-      "frames": 24,
+      "motion": "下ろした手を上げ、口元が輝く",
+      "frames": 8,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 362209,
-      "headerHeight1200": 247
+      "bytes": 233137,
+      "headerHeight1200": 253,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        5,
+        5
+      ],
+      "durations": [
+        360,
+        180,
+        180,
+        180,
+        180,
+        120,
+        120,
+        1680
+      ],
+      "source": "source/animation/01_ohayo/keyframes.png",
+      "commonCrop": [
+        70,
+        12,
+        466,
+        476
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
-      "id": "02_kanpai",
-      "caption": "乾杯！",
-      "motion": "乾杯のジャンプを2回",
-      "frames": 23,
+      "id": "02_hataraiteruka",
+      "caption": "ちゃんと働いてるか？",
+      "motion": "仕切り越しに前へ乗り出してのぞく",
+      "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 776751,
-      "headerHeight1200": 249
+      "bytes": 288290,
+      "headerHeight1200": 325,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durations": [
+        360,
+        180,
+        180,
+        180,
+        180,
+        1920
+      ],
+      "source": "source/animation/02_hataraiteruka/keyframes.png",
+      "commonCrop": [
+        2,
+        58,
+        512,
+        485
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
       "id": "03_hieteru",
       "caption": "冷えてる。待遇も。",
-      "motion": "上半身が寒さで震え、雪が流れる",
-      "frames": 24,
+      "motion": "肩をすくめて震え、白い息を吐く",
+      "frames": 12,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 769369,
-      "headerHeight1200": 317
+      "bytes": 395711,
+      "headerHeight1200": 323,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "durations": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        1240
+      ],
+      "source": "source/animation/03_hieteru/keyframes.png",
+      "commonCrop": [
+        28,
+        4,
+        512,
+        506
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
       "id": "04_niryu",
       "caption": "窓際に追い込まれているうちは二流",
-      "motion": "仮面を固定したまま腕組みした肩がわずかに上下",
-      "frames": 24,
+      "motion": "指差す手を下ろし、窓を向く",
+      "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 385637,
-      "headerHeight1200": 317
+      "bytes": 202213,
+      "headerHeight1200": 320,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durations": [
+        420,
+        180,
+        240,
+        220,
+        220,
+        1720
+      ],
+      "source": "source/animation/04_niryu/keyframes.png",
+      "commonCrop": [
+        13,
+        0,
+        492,
+        495
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
       "id": "05_ichiryu",
       "caption": "一流の窓際族は窓際を作り出す",
-      "motion": "ドリルと手元が小刻みに振動",
-      "frames": 24,
+      "motion": "ドリルで締め、引いて窓を見る",
+      "frames": 12,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 225842,
-      "headerHeight1200": 321
+      "bytes": 522079,
+      "headerHeight1200": 327,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "durations": [
+        300,
+        160,
+        130,
+        130,
+        130,
+        130,
+        180,
+        160,
+        160,
+        160,
+        160,
+        1200
+      ],
+      "source": "source/animation/05_ichiryu/keyframes.png",
+      "commonCrop": [
+        15,
+        15,
+        512,
+        512
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
       "id": "06_futsukayoi",
       "caption": "二日酔い",
-      "motion": "横たわった胸が小さく呼吸し、頭上の線が揺れる",
-      "frames": 24,
+      "motion": "両手で頭を抱え、丸くなる",
+      "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 456697,
-      "headerHeight1200": 248
+      "bytes": 426573,
+      "headerHeight1200": 254,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durations": [
+        360,
+        180,
+        200,
+        220,
+        220,
+        1820
+      ],
+      "source": "source/animation/06_futsukayoi/keyframes.png",
+      "commonCrop": [
+        16,
+        14,
+        512,
+        504
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
       "id": "07_nomini",
       "caption": "飲みに行こう",
-      "motion": "手招きし、投げた書類がひらひら動く",
-      "frames": 24,
+      "motion": "書類を投げ、手招きして帰る",
+      "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 873991,
-      "headerHeight1200": 236
+      "bytes": 298250,
+      "headerHeight1200": 240,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durations": [
+        300,
+        160,
+        180,
+        180,
+        200,
+        1980
+      ],
+      "source": "source/animation/07_nomini/keyframes.png",
+      "commonCrop": [
+        61,
+        10,
+        476,
+        508
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },
     {
       "id": "08_kinshu",
       "caption": "禁酒中",
-      "motion": "点滴の滴とビールの泡が動き、ゆっくり呼吸",
-      "frames": 24,
+      "motion": "寝たまま手を上げてサムズアップ",
+      "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 676599,
-      "headerHeight1200": 249
+      "bytes": 171476,
+      "headerHeight1200": 255,
+      "poseOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durations": [
+        360,
+        180,
+        180,
+        180,
+        180,
+        1920
+      ],
+      "source": "source/animation/08_kinshu/keyframes.png",
+      "commonCrop": [
+        21,
+        1,
+        508,
+        493
+      ],
+      "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     }
   ],
-  "delays": [
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    80,
-    1160
-  ],
   "previewSource": "decoded delivery APNG",
-  "font": "/System/Library/Fonts/ヒラギノ角ゴシック W9.ttc"
+  "font": "/System/Library/Fonts/ヒラギノ角ゴシック W9.ttc",
+  "durationMs": 3000,
+  "method": "generated sequential pose sheets"
 }

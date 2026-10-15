@@ -1,11 +1,11 @@
 # 窓際族物語 LINEスタンプ
 
-スタンプを販売セット単位で管理する。第1弾の8点を採用済み、第2弾のそば屋オンリー8点は描き直し・動作の確認待ち。
+スタンプを販売セット単位で管理する。第1弾の8点を採用済み、第2弾のそば屋オンリー8点は採用済み構図から連続ポーズ方式で完成。
 
 | セット | 内容・状態 | 確認用 |
 |---|---|---|
 | [第1弾](sets/01/README.md) | 全8名・動く版＋[静止版](sets/01/static/README.md)。LINE未申請 | [全員GIF](sets/01/all-members-preview.gif) / [静止画](sets/01/all-members-still.png) |
-| [第2弾](sets/02/README.md) | そば屋オンリー8点。構図採用済み・描き直しと動作は確認待ち。LINE未申請 | [白背景GIF](sets/02/all-members-white-preview.gif) / [黒背景GIF](sets/02/all-members-black-preview.gif) |
+| [第2弾](sets/02/README.md) | そば屋オンリー8点。連続ポーズ方式で動く版・静止版を書き出し済み。LINE未申請 | [白背景GIF](sets/02/all-members-white-preview.gif) / [黒背景GIF](sets/02/all-members-black-preview.gif) |
 
 ## ファイルの見方
 

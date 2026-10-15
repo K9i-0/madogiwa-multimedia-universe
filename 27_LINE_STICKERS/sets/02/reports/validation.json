@@ -1,119 +1,129 @@
 {
+  "passed": true,
+  "method": "generated pose sequences",
   "stickers": [
     {
       "id": "01_ohayo",
+      "frames": 8,
+      "durationMs": 3000,
+      "bytes": 233137,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 362209,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1680,
       "decoded": true
     },
     {
-      "id": "02_kanpai",
+      "id": "02_hataraiteruka",
+      "frames": 6,
+      "durationMs": 3000,
+      "bytes": 288290,
       "size": [
         320,
         270
       ],
-      "frames": 23,
-      "durationMs": 3000.0,
-      "bytes": 776751,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1920,
       "decoded": true
     },
     {
       "id": "03_hieteru",
+      "frames": 12,
+      "durationMs": 3000,
+      "bytes": 395711,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 769369,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1240,
       "decoded": true
     },
     {
       "id": "04_niryu",
+      "frames": 6,
+      "durationMs": 3000,
+      "bytes": 202213,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 385637,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1720,
       "decoded": true
     },
     {
       "id": "05_ichiryu",
+      "frames": 12,
+      "durationMs": 3000,
+      "bytes": 522079,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 225842,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1200,
       "decoded": true
     },
     {
       "id": "06_futsukayoi",
+      "frames": 6,
+      "durationMs": 3000,
+      "bytes": 426573,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 456697,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1820,
       "decoded": true
     },
     {
       "id": "07_nomini",
+      "frames": 6,
+      "durationMs": 3000,
+      "bytes": 298250,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 873991,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1980,
       "decoded": true
     },
     {
       "id": "08_kinshu",
+      "frames": 6,
+      "durationMs": 3000,
+      "bytes": 171476,
       "size": [
         320,
         270
       ],
-      "frames": 24,
-      "durationMs": 3000.0,
-      "bytes": 676599,
-      "continuousAlpha": true,
+      "plays": 1,
+      "softAlpha": true,
       "fixedCaption": true,
-      "loopMatches": true,
+      "endHoldMs": 1920,
       "decoded": true
     }
   ],
-  "reviewGifs": {
+  "previewGifs": {
     "size": [
       1280,
       540
@@ -121,5 +131,5 @@
     "durationMs": 3000,
     "source": "decoded final APNG"
   },
-  "passed": true
+  "note": "One-shot animations finish on final gesture. No forced reverse or loop closure."
 }

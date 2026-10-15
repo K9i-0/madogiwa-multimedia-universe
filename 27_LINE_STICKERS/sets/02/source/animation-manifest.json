@@ -1,0 +1,94 @@
+[
+  {
+    "id": "01_ohayo",
+    "caption": "おはよう",
+    "lines": [
+      "おはよう"
+    ],
+    "reference": "source/animation/01_ohayo/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nOffice greeting scene as reference. Beer mug in hand on viewer LEFT stays perfectly fixed along with head, body, desk, office windows and skyline. Animate ONLY free arm on viewer RIGHT: cell1 arm hangs down beside hip with relaxed open hand; cell2 elbow bends slightly and hand reaches waist; cell3 hand at lower chest; cell4 hand at shoulder; cell5 palm reaches cheek height; cell6 open palm faces viewer beside head matching reference final raised greeting pose. Keep face fixed. Remove original sparkle and speed marks; those will be composited separately. Full lower arm in cell1 must fit cell.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "02_hataraiteruka",
+    "caption": "ちゃんと働いてるか？",
+    "lines": [
+      "ちゃんと",
+      "働いてるか？"
+    ],
+    "reference": "source/animation/02_hataraiteruka/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nSame waist-up smug senior leaning over low gray OFFICE PARTITION with laptop corner lower left. Beer mug held in hand on viewer LEFT, free forearm draped over partition at viewer RIGHT. Freeze partition, laptop, mug position and its supporting hand. Gradually lean upper torso and head a LITTLE toward viewer inquisitively while elbow stays on partition. Cell1 head upright and slightly back; cell2 lean 1/5 forward; cell3 2/5; cell4 3/5; cell5 4/5; cell6 full modest forward lean with head slightly cocked, nose closer to camera. Head moves only about 8% cell height total, no huge zoom. Free hand stays draped. No pointing gesture. Remove ALL reference text.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "03_hieteru",
+    "caption": "冷えてる。待遇も。",
+    "lines": [
+      "冷えてる。",
+      "待遇も。"
+    ],
+    "reference": "source/animation/03_hieteru/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nExact snowy high-rise outdoor winter balcony office with desk, boxes, cardboard chair, railing, blue glass facade and skyline from reference. Sobaya seated huddling over beer. All scenery, beer mug and legs remain stationary. SIX tiny articulated shivering poses: 1 shoulders normal hunched; 2 shoulders lifted close to neck and elbows drawn inward; 3 shoulders lower; 4 shoulders slightly raised asymmetrically; 5 shoulders lifted tight again; 6 shoulders relax into hunch. Head stays same size, mask undeformed. Shoulder motion small but visible, max 3% cell width. Small white breath puff from mask starts tiny in cell2, expands cell3, drifts away4, fades5, absent6; gentle few snowflakes change heights. Do not add motion/speed marks.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "04_niryu",
+    "caption": "窓際に追い込まれているうちは二流",
+    "lines": [
+      "窓際に追い込まれて",
+      "いるうちは二流"
+    ],
+    "reference": "source/animation/04_niryu/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nUse the reference pose: seated crossed legs, reclining arrogantly on the SAME handmade taped cardboard-box armchair AERON CHUA, beer mug in viewer LEFT hand, pointing toward viewer with other hand. ADD a tall office window on viewer RIGHT just behind cardboard chair, blue sky and buildings visible. Small floor patch only, compact scene. Window, chair, legs and beer mug completely fixed. SIX-step animation: 1 faces viewer and points forward as reference; 2 starts lowering pointing hand; 3 pointing hand rests on cardboard armrest, head still toward viewer; 4 turns head and upper torso 20 degrees toward window on viewer RIGHT; 5 turns 40 degrees; 6 looks out the window in side/profile view, body comfortably reclined. Mask remains correctly worn on turned face, never turns into human face. Chair built of brown cardboard rectangular boxes and taped seams, no wheels or metal. OMIT ALL LETTERING including chair label and reference caption for consistent frames.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "05_ichiryu",
+    "caption": "一流の窓際族は窓際を作り出す",
+    "lines": [
+      "一流の窓際族は",
+      "窓際を作り出す"
+    ],
+    "reference": "source/animation/05_ichiryu/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nSame scene: kneeling Sobaya yellow hardhat and toolbelt, installing ONLY standalone window in CENTER of existing open-plan office far from perimeter windows, small black stool. All scenery, window, legs and hand holding window FIXED. Animate drilling hand and small head turn: 1 drill held 10cm back from lower window screw; 2 drill moves halfway forward; 3 bit touches screw; 4 drill presses straight into screw subtly, NO bent drill; 5 drill withdrawn 10cm; 6 drill lowered slightly, head tilts up to inspect completed window. Six clear articulated arm poses with identical machine dimensions. No extra columns or building structure, no magic.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "06_futsukayoi",
+    "caption": "二日酔い",
+    "lines": [
+      "二日酔い"
+    ],
+    "reference": "source/animation/06_futsukayoi/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nSame overhead three-quarter floor view, white shirt/black pants/white sneakers, scattered papers, tissue, fallen chair edge and blue icepack. Fixed camera and floor props. SIX poses of miserable hungover man curling up and holding head, from reference spread-out pose: 1 lying on back arms and legs spread as reference; 2 elbows bend hands moving toward temples, knees start bending; 3 both hands touch sides of head and knees draw up; 4 rolls halfway onto side with hands cradling head and knees closer to chest; 5 nearly fetal position on side; 6 curled tight on side knees tucked to belly, BOTH hands clutching head. Keep white mask worn, visible partly between hands, never a human face. Continuous anatomically correct changes, no disappearing limbs. Ice pack can stay on head supported by hand; don't change camera angle or scale as he curls.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "07_nomini",
+    "caption": "飲みに行こう",
+    "lines": [
+      "飲みに行こう"
+    ],
+    "reference": "source/animation/07_nomini/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nSame muscular Sobaya in WHITE T-SHIRT NO JACKET, walking away from office desk corner and looking back at viewer. Chronological six poses: 1 rear hand on viewer LEFT holds stack of documents beside desk, other hand on viewer RIGHT reaching toward viewer palm open; 2 rear hand flings documents upward behind, sheets just released; 3 papers spread and free front hand begins beckoning with fingers bending toward himself; 4 front fingers curl fully in inviting beckon; 5 hand draws closer to shoulder as papers descend; 6 torso and head turn a little toward walking direction away, clearly abandoning work, papers drifting down. Legs make one small natural forward step. Keep desk and ground fixed. Face remains same mask whenever visible, gray hands anatomically attached, exactly two arms. Separate sheets move gradually, no duplicates multiplying.",
+    "cols": 3,
+    "rows": 2
+  },
+  {
+    "id": "08_kinshu",
+    "caption": "禁酒中",
+    "lines": [
+      "禁酒中"
+    ],
+    "reference": "source/animation/08_kinshu/reference.png",
+    "prompt": "Use case: identity-preserve animation sprites. Create exactly SIX chronological animation keyframes in ONE sprite sheet, THREE columns by TWO rows, row-major order, equal SQUARE cells, landscape 3:2 canvas, preferably 1536x1024 or larger. Transparent RGBA background and transparent gutters. No grid lines, frame numbers, captions, letters, text, motion streaks or watermark. Each entire scene fits central 84% of its cell with 8% margins. Same camera, framing, scale, floor baseline and static scenery positions in all six cells. Reference1 is approved sticker composition/style; reference2 is canonical Sobaya identity. Preserve thick clean black ink outlines, 2D cel shading, stocky muscular body, neutral gray exposed skin, black short spiky hair, opaque white oval mask with round black eyeholes, dark forehead dot, tapered red marks. Mask ALWAYS worn, rigid and expressionless: small horizontal BLACK CAPSULE mouth with gently rounded ends, no square mouth, no smile/teeth. White fitted short-sleeve shirt with natural chest/folds, NO nipple bumps or dot shadows. Exactly two arms, anatomically consistent hands. Produce actual distinct incremental articulated poses, not whole-image wobble or changes of illustration style. Retain scenery inside the reference scene silhouette but keep outside transparent. Do NOT copy any reference caption. \nACTION:\nExact hospital bed scene: Sobaya reclined on white pillow under blue blanket, beer MUG on IV stand on viewer LEFT, yellow tube from mug through drip chamber attached to arm on viewer LEFT. IV arm and connected tubing, bed, mug, face and body STAY FIXED. Animate ONLY FREE arm on viewer RIGHT: 1 relaxed hand on blanket as reference; 2 elbow bends lifting fist a little; 3 fist rises to lower chest; 4 fist reaches shoulder with thumb beginning to extend; 5 thumb fully upright in unmistakable thumbs-up; 6 holds thumbs-up beside shoulder confidently. Five fingers correct, one upright thumb and four curled fingers; not pointing index. Keep IV connected to opposite immobile arm, no new IV bag. Tiny beer drip in chamber may move. No lettering.",
+    "cols": 3,
+    "rows": 2
+  }
+]

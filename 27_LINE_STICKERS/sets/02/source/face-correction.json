@@ -1,0 +1,37 @@
+{
+  "prompt": "Use case: identity-preserve precise character correction. Image 1 is the EDIT TARGET (single sticker artwork, no text). Image 2 is the CANONICAL SOBAYA CHARACTER SHEET and has HIGHEST PRIORITY for face/mask identity. Image 3 is FIRST-SERIES STICKER, reference for clean bold 2D cel shading and the simplified mask. Correct ONLY Sobaya's face/mask in image 1 to faithfully match the canonical sheet, translated to the 2D first-series illustration style.\nIMPORTANT corrections: mouth is a SMALL NARROW HORIZONTAL BLACK CAPSULE SLOT with clearly rounded semicircular ends (width about 3.5 to 4 times height), subtly inset, neutral expression. NOT a sharp-cornered rectangle, NOT a big open square mouth, NOT a smile, NO teeth. Eyes are two ROUND BLACK RECESSED EYE HOLES in the white mask, not glossy discs, eyeballs, goggles or thick protruding rings. Mask is a solid oval white faceplate, rounded chin and softly shaped nose, characteristic paired long red tapered vertical markings passing above and below the eye holes exactly like canonical sheet; keep the small DARK forehead circle (not an oversized pale coin). Preserve canonical eye spacing, mouth size and mask proportions. No invented triangle sticker on nose. Properly worn mask, no human face. Gray skin at ears, head perimeter and neck; short black hair. Maintain head angle and helmet if present. Match coherent anatomy and head/body scale, no new facial expression.\nPreserve ALL other pixels as closely as possible: full composition, body pose, hands, clothing, props, background, camera framing, scene size and transparent margins. No shifts to pose or prop positions because this is already rigged for animation. Do not add any text, panels or labels from references. Keep original transparency; clean high-resolution single image. White shirt retains chest volume and natural folds without nipple dots, points or contours. All other content is unchanged.",
+  "entries": [
+    {
+      "id": "01_ohayo",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-0f16bfc9-32bb-44d8-a128-20dc89101661.png"
+    },
+    {
+      "id": "02_kanpai",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-fa8e3c9d-276a-4240-a125-ab196231c749.png"
+    },
+    {
+      "id": "03_hieteru",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-2ff24936-dccd-47b3-b7fc-305dc8658c3c.png"
+    },
+    {
+      "id": "04_niryu",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-afd0a093-2fb6-4dd7-9344-ec83314c32d5.png"
+    },
+    {
+      "id": "05_ichiryu",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-c3d36876-de97-4970-a199-2106c0da736f.png"
+    },
+    {
+      "id": "06_futsukayoi",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-cc658e32-51e7-4310-b376-d02bd984caff.png"
+    },
+    {
+      "id": "07_nomini",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-a0516b0b-54d0-4f6f-9c9e-8bfead0d5594.png"
+    },
+    {
+      "id": "08_kinshu",
+      "generatedPath": "/Users/kotahayashi/.codex/generated_images/01a13ae8-4f13-79e3-a6e1-550b7a0af48d/exec-1a219038-f59e-4bfd-9f4e-cd7d3436f91c.png"
+    }
+  ]
+}

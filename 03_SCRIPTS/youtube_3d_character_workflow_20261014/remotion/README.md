@@ -121,3 +121,14 @@ node render_thumbnail.cjs
 ```
 
 `src/thumbnail-index.tsx`は動画のRootとは別のエントリーポイントで、完成動画の画面や尺へ影響しない。
+
+### imagegen前景を重ねた版
+
+最新サムネイルは`../thumbnail_overlay_v1.png`。`../inputs/thumbnail_foreground_v1.png`は、imagegen版からロゴ・文字・矢印・小さな解説2人を残した真正RGBA透過PNG。そば屋2体と背景は除去し、原画像と実GLBをRemotionで下へ重ねる。imagegenで実モデルを描き直さない。元レイアウトは`../inputs/thumbnail_layout_source_v1.png`、透過化プロンプトは`../prompt_thumbnail_foreground_v1.txt`、素材ハッシュと合成記録は`../thumbnail_overlay_v1.json`。
+
+```sh
+python3 prepare_assets.py
+node render_thumbnail_overlay.cjs
+```
+
+前の実素材版`thumbnail_actual_v1.png`も保持する。

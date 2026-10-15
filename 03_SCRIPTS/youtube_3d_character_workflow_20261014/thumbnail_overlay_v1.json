@@ -1,0 +1,51 @@
+{
+  "title": "Codex × Tripoで、自分のキャラを3Dモデルにしてみよう！",
+  "foregroundMethod": "Built-in image_gen, transparent_background=true, extraction from previous imagegen layout",
+  "compositeMethod": "Remotion: unchanged source-image pixels and direct canonical GLB rendering under foreground PNG",
+  "prompt": "prompt_thumbnail_foreground_v1.txt",
+  "files": [
+    {
+      "file": "inputs/thumbnail_layout_source_v1.png",
+      "sha256": "779b792092d0b2a301bde12739589c2375cbe073a56841469632bf27e4a21455",
+      "bytes": 1790667,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "file": "inputs/thumbnail_foreground_v1.png",
+      "sha256": "ed098e15156617e639885fe45bf51ae4721b974415bd578855c8bc79a7cabb03",
+      "bytes": 1020282,
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "file": "thumbnail_overlay_v1.png",
+      "sha256": "7f968905aaf2023a8d6740441e1455c4c8a7f4fc6a3b0b162963231f9173a3aa",
+      "bytes": 921161,
+      "dimensions": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "backgroundInputsRecord": "thumbnail_actual_v1.json",
+  "composition": "ThumbnailOverlayV1",
+  "renderCommand": "node render_thumbnail_overlay.cjs",
+  "checks": {
+    "actualRgbaTransparency": true,
+    "largeSobayaFiguresRemovedFromForeground": true,
+    "labelsFacesAndHeadlineVisible": true,
+    "typescript": "pass"
+  },
+  "model": {
+    "canonicalAsset": "04_GAME_ASSETS/3d/characters/sobaya/motion_v3_20260917/sobaya_motion.glb",
+    "yawRadians": 0.456,
+    "zoom": 1.14,
+    "grid": true,
+    "modelRedrawnByImagegen": false
+  }
+}

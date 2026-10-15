@@ -6,6 +6,7 @@ records=json.loads((P.parent/'asset_sources.json').read_text())
 if (P.parent/'asset_sources_v2.json').exists():records+=json.loads((P.parent/'asset_sources_v2.json').read_text())
 if (P.parent/'web_refs_v3.json').exists():records+=json.loads((P.parent/'web_refs_v3.json').read_text())['assets']
 if (P.parent/'asset_sources_v4.json').exists():records+=json.loads((P.parent/'asset_sources_v4.json').read_text())
+if (P.parent/'asset_sources_thumbnail.json').exists():records+=json.loads((P.parent/'asset_sources_thumbnail.json').read_text())
 for a in records:
  src=R/a['source'];dst=P/'public'/a['target']
  if not src.exists():raise FileNotFoundError(f"Restore the recorded local asset: {src}")

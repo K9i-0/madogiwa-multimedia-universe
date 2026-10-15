@@ -1,0 +1,13 @@
+Create a transparent foreground overlay from this exact thumbnail. This is background extraction and compositing preparation, NOT a redesign. Keep the exact original 16:9 canvas, registration and positions.
+KEEP ONLY:
+- top OpenAI knot icon and the text “Codex × TRIPO” with the Tripo icon, exactly the existing typography and position;
+- the left “元画像” black brushstroke label and right “3Dモデル” dark green brushstroke label;
+- the central yellow right-pointing arrow and its dark outline/glow;
+- the entire huge bottom headline “自分のキャラを3Dに！” with its existing white outlines and shadows;
+- the small Yametaro host at lower left and the small hooded Takosan host at lower right, with all visible details unchanged;
+- the small yellow/green emphasis marks adjacent to these hosts if present.
+REMOVE completely to genuine alpha transparency:
+- BOTH large muscular Sobaya characters (the source figure holding a beer mug AND the big standing 3D figure);
+- ALL beige/mint/white backdrop, floor, grid, diagonal background decoration and background glow.
+The two large central figure areas must become completely empty transparent holes, not silhouettes or ghost images. Do not leave any Sobaya hair, mask, hands, mug, shirt, pants or shoes. Preserve the headline and hosts that overlap their lower areas; do not remove those foreground pixels.
+Output a real RGBA PNG with genuine transparent background, no rendered checkerboard. Keep the foreground elements at exactly their original scale and location and preserve exact Japanese lettering. Do not add, repaint, rephrase or relocate anything.

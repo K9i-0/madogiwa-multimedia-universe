@@ -1,0 +1,118 @@
+{
+  "researchedAt": "2026-10-16",
+  "status": "verified_historical_example_not_yet_applied_to_video",
+  "subject": "第一弾の書き出し済みスタンプの透過不良と白黒背景チェックの導入",
+  "videoBaseline": "final_remotion_line_stickers_v3.mp4",
+  "historicalArtifacts": [
+    {
+      "stage": "before",
+      "commit": "1bcd3478d9fba7f0b319a3b9a976e9ed1fcd17a2",
+      "path": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+      "sha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+      "note": "実際の修正前納品APNG。e7e51591の本体と同一。"
+    },
+    {
+      "stage": "first_alpha_fix",
+      "commit": "4151d63c5137a1b111b82f4ed53a3cc67467b9f4",
+      "date": "2026-10-14",
+      "path": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+      "sha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+      "note": "OpenCVによる文字・人物別の透過処理、RGBA APNG、初回黒背景チェック。"
+    },
+    {
+      "stage": "paired_white_black_qa",
+      "commit": "a38b2d81d4fbca848f4741f8a95ad4aca3f8dff8",
+      "date": "2026-10-14",
+      "path": "27_LINE_STICKERS/sets/01/tools/preview-black.mjs",
+      "note": "納品APNGをデコードし、白黒を同じ配置・寸法・経過時間で比較。"
+    }
+  ],
+  "localResearchArtifacts": [
+    {
+      "file": "remotion/out/alpha-history-research/sessions/original_user_report_20261014.png",
+      "sha256": "095bf2d59b46e23ecce15d030571d4994fc4e4edafc9fd62929bcb26a408608e"
+    },
+    {
+      "file": "remotion/out/alpha-history-research/git/sobaya-comparison.png",
+      "sha256": "556ceef4d6d81e4c8a369c90f0241ab356f901f9724dd88df65a02ea6f0a4e7d"
+    },
+    {
+      "file": "remotion/out/alpha-history-research/git/1bcd3478-white.png",
+      "sha256": "6967e4078d2ddcb63e3beebe18bbc58397f6da04c368789086db76d9036d41f6"
+    },
+    {
+      "file": "remotion/out/alpha-history-research/git/1bcd3478-black.png",
+      "sha256": "64bf4831093cedc62390dba8703447173188d451c960bcc14cfd09b8a2fb6778"
+    },
+    {
+      "file": "remotion/out/alpha-history-research/git/4151d63c-black.png",
+      "sha256": "553d443fdbd09aaa3d8386df5fa84249a623bd58d60e1fe204376aa4e28b1068"
+    },
+    {
+      "file": "remotion/out/alpha-history-research/git/yametaro-caption-comparison.png",
+      "sha256": "21cd8b1cd7418f19ea9efb76ac6d7da7320dd6db0c551306ce50b2a33883b346"
+    }
+  ],
+  "localDetailedEvidence": [
+    "remotion/out/alpha-history-research/git/extraction.json",
+    "remotion/out/alpha-history-research/git/timeline.json",
+    "remotion/out/alpha-history-research/sessions/session_evidence.json"
+  ],
+  "sourceAuthenticity": {
+    "reportedScreenshot": "2026-10-14の当時ユーザーが添付した画像。元temporaryファイルは消失していたためセッションの埋め込み画像データから無加工復元。",
+    "comparison": "Gitの実際のAPNGを抽出し、同じ第0フレームを白/黒背景へ合成。sobaya-comparison.pngは左=修正前白、中=同じ修正前黒、右=修正直後黒。各2倍nearest-neighbor表示。",
+    "noGeneratedOrArtificialDamage": true
+  },
+  "visibleDefects": [
+    "閉じた文字の内側に不透明の白が残る",
+    "髪・ジョッキ・身体の輪郭に白い背景成分とギザギザが残る",
+    "そば屋の白Tシャツ右下や福ギュンの白シャツで、残すべき白が透過する箇所も存在"
+  ],
+  "pixelEvidence": {
+    "member": "yametaro",
+    "frame": 0,
+    "coordinate": [
+      130,
+      42
+    ],
+    "region": "ごめんやでの「め」の内部",
+    "beforeRgba": [
+      250,
+      250,
+      250,
+      255
+    ],
+    "afterRgba": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "historicalUserFeedbackSequence": [
+    {
+      "timeJst": "2026-10-14 16:00:30",
+      "event": "実際に登録して透過処理の甘さが分かった旨を報告。失敗スクショ添付。"
+    },
+    {
+      "timeJst": "2026-10-14 16:04:49",
+      "event": "黒背景で粗が目立ったため、全スタンプを黒背景へまとめた確認GIFを依頼。"
+    },
+    {
+      "timeJst": "2026-10-14 16:26:13",
+      "event": "念のため白背景GIFも依頼。"
+    },
+    {
+      "timeJst": "2026-10-14 16:30:53",
+      "event": "白黒両背景の確認GIF完成報告。"
+    }
+  ],
+  "implementation": {
+    "before": "ImageMagickの外側からの白floodfillでは囲まれた文字内白へ届かず、白を含む境界ピクセルも残った。旧パレット出力では半透明の保持も不十分。",
+    "fix": "OpenCV外形マスクで白服・仮面・泡を保護。文字は黒インクの被覆率で閉じ穴も透過。人物輪郭の白混入を補正し、APNGをRGBAへ変更して半透明を保持。ImageMagickで合成・縮尺・書き出し。",
+    "intentionalOutline": "修正後の文字・集中線にある細い白フチは暗い背景で読むために追加した意図的な装飾。消し残しと区別する。"
+  },
+  "suggestedNarration": "第一弾では白背景で目立たなかった消し残しが、登録後に暗い背景で発覚した。画像処理を修正し、完成品を白黒両方で確認するよう改善した。",
+  "evidenceLimit": "動く版の確認は白背景中心で、当時の助手も暗い背景の確認不足を認めている。一方、静止版には淡色背景プレビューも存在するため、全工程で白背景しか確認していないとは断定しない。",
+  "nextEdit": "既存動画のraw白背景入力によるbefore例を、この実際の不良出力と失敗報告スクショへ置き換える案。台本・動画はまだ変更していない。"
+}

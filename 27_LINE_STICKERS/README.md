@@ -6,7 +6,7 @@
 
 | セット | 内容・状態 | 確認用 |
 |---|---|---|
-| [第1弾](sets/01/README.md) | 全8名・動く版＋[静止版](sets/01/static/README.md)。LINE未申請 | [全員GIF](sets/01/all-members-preview.gif) / [静止画](sets/01/all-members-still.png) |
+| [第1弾](sets/01/README.md) | 全8名。動く版はそば屋さんが申請し、[LINE STOREで販売中](https://store.line.me/stickershop/product/37292753/ja)。[静止版](sets/01/static/README.md)も収録 | [全員GIF](sets/01/all-members-preview.gif) / [静止画](sets/01/all-members-still.png) |
 | [第2弾](sets/02/README.md) | そば屋オンリー8点。連続ポーズ方式で動く版・静止版を書き出し済み。LINE未申請 | [白背景GIF](sets/02/all-members-white-preview.gif) / [黒背景GIF](sets/02/all-members-black-preview.gif) |
 
 ## ファイルの見方

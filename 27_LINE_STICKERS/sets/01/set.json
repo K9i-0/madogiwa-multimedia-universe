@@ -2,7 +2,16 @@
   "id": "01",
   "title": "第1弾",
   "status": "approved",
-  "lineSubmission": "not_submitted",
+  "lineSubmission": "on_sale",
+  "lineStore": {
+    "productId": "37292753",
+    "url": "https://store.line.me/stickershop/product/37292753/ja",
+    "title": "窓際族スタンプ第一弾",
+    "variant": "animated",
+    "submissionHandledBy": "そば屋さん",
+    "confirmedOn": "2026-10-15",
+    "confirmation": "申請担当はユーザー共有。販売ページでアニメーション表示と購入ボタンを確認。"
+  },
   "members": [
     {
       "id": "sobaya",
@@ -56,9 +65,10 @@
   "variants": {
     "animated": {
       "directory": "stickers",
-      "mainImage": "not_created",
-      "tabImage": "not_created",
-      "lineSubmission": "not_submitted"
+      "mainImage": "not_in_repository",
+      "tabImage": "not_in_repository",
+      "lineSubmission": "on_sale",
+      "listingAssetsNote": "そば屋さんが申請。提出版main/tabは本リポジトリに未収録。"
     },
     "static": {
       "directory": "static",

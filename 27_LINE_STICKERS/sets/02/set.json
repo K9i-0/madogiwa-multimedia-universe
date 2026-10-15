@@ -22,7 +22,12 @@
       "apng": "stickers/02_hataraiteruka/sticker.png",
       "still": "stickers/02_hataraiteruka/still.png",
       "master": "stickers/02_hataraiteruka/master.png",
-      "keyframes": "source/animation/02_hataraiteruka/keyframes.png"
+      "keyframes": "source/animation/02_hataraiteruka/keyframes.png",
+      "revision": {
+        "status": "candidate_review",
+        "request": "最初のB案の腕位置を保ち、肘に体重をかける弱い動き",
+        "candidates": "drafts/elbow-weight/comparison-white.gif"
+      }
     },
     {
       "id": "03_hieteru",
@@ -63,7 +68,7 @@
     {
       "id": "07_nomini",
       "caption": "飲みに行こう",
-      "motion": "書類を投げ、手招きして帰る",
+      "motion": "正面から書類を横へ捨て、背を向けながらこちらを振り返る",
       "apng": "stickers/07_nomini/sticker.png",
       "still": "stickers/07_nomini/still.png",
       "master": "stickers/07_nomini/master.png",
@@ -86,5 +91,5 @@
   "reserve": {
     "乾杯！": "reserve/02_kanpai"
   },
-  "changes": "02はB案。空いた腕をパーティションに置いて馴れ馴れしくもたれる。04はアーロンチュアに座って指差しのみ。頭の回転なし。"
+  "changes": "02は肘に体重をかける弱い動き3案を比較中。04は頭を固定して指差しのみ。07は正面から書類を横へ捨て、背を向けながら振り返る動きへ変更。"
 }

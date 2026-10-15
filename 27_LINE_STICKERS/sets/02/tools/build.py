@@ -18,7 +18,7 @@ ANCHORS=[[(80,70,60,100),(90,370,65,70),(380,55,55,120)],
  [(335,70,55,90),(215,370,80,65),(120,350,40,70)],
  [(340,50,65,150),(320,410,75,55),(50,75,70,60)],
  [(105,210,35,70),(390,60,65,65),(395,310,55,45)],
- [(85,310,65,95),(100,285,55,50)],
+ [(40,350,65,90),(33,325,80,30)],
  [(100,60,65,90),(65,20,40,80),(65,410,160,40)]]
 # Regions containing the complete union of moving anatomy, in base cell coords.
 POLYS=[ [[(310,40),(457,40),(457,455),(282,455),(282,180),(310,180)]],
@@ -28,7 +28,7 @@ POLYS=[ [[(310,40),(457,40),(457,455),(282,455),(282,180),(310,180)]],
  [[(40,65),(270,65),(290,260),(355,325),(320,410),(110,430),(45,355)]],
  [],[],
  [[(365,155),(480,155),(490,382),(335,385),(315,295),(350,245)]]]
-NAMES=['下ろした手を上げ、口元が輝く','空いた腕をパーティションに置き、馴れ馴れしくもたれる','肩をすくめて震え、白い息を吐く','顔をこちらに固定し、手を上げて指差す','ドリルで締め、引いて窓を見る','両手で頭を抱え、丸くなる','書類を投げ、手招きして帰る','寝たまま手を上げてサムズアップ']
+NAMES=['下ろした手を上げ、口元が輝く','空いた腕をパーティションに置き、馴れ馴れしくもたれる','肩をすくめて震え、白い息を吐く','顔をこちらに固定し、手を上げて指差す','ドリルで締め、引いて窓を見る','両手で頭を抱え、丸くなる','正面から書類を横へ捨て、背を向けながらこちらを振り返る','寝たまま手を上げてサムズアップ']
 
 def save(im,p):
  p.parent.mkdir(parents=True,exist_ok=True);im.save(p)
@@ -96,6 +96,15 @@ def prepare(k,s):
    main=1+np.argmax(stats[1:,cv2.CC_STAT_AREA]);keep=cv2.dilate((lab==main).astype('uint8'),np.ones((3,3),'uint8'))
    arr[keep==0]=0;kept.append(Image.fromarray(arr))
   frames=kept
+ if k==6:
+  cleaned=[]
+  for f in frames:
+   arr=np.array(f);n,lab,stats,_=cv2.connectedComponentsWithStats((arr[:,:,3]>20).astype('uint8'),8)
+   for j in range(1,n):
+    x,y,w,h,area=stats[j]
+    if y<12 and h<6 and w>h*5:arr[lab==j]=0
+   cleaned.append(Image.fromarray(arr))
+  frames=cleaned
  for i,f in enumerate(frames):save(f,d/'poses'/f'{i:02d}.png')
  # One COMMON crop across ALL poses preserves intentional motion and scale.
  boxes=[f.getbbox() for f in frames]
@@ -183,7 +192,7 @@ def main():
   p=out/'sticker.png'
   delivery[0].save(p,save_all=True,append_images=delivery[1:],duration=ds,loop=1,disposal=0,blend=0,optimize=True,compress_level=9)
   # Representative still is final gesture, except two-level quote/beckon.
-  hero=3 if k==6 else len(masters)-1
+  hero=len(masters)-1
   save(masters[hero],out/'master.png');save(display[hero],out/'still.png')
   save(masters[0],out/'start.png');save(masters[-1],out/'end.png')
   st=Image.new('RGBA',(370,320));st.alpha_composite(masters[hero].resize((310,310),Image.Resampling.LANCZOS),(30,5));save(st,ROOT/'static/images'/f'{k+1:02d}.png')

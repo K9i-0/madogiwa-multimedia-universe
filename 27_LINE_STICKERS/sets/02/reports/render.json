@@ -235,11 +235,11 @@
     {
       "id": "07_nomini",
       "caption": "飲みに行こう",
-      "motion": "書類を投げ、手招きして帰る",
+      "motion": "正面から書類を横へ捨て、背を向けながらこちらを振り返る",
       "frames": 6,
       "durationMs": 3000,
       "plays": 1,
-      "bytes": 298250,
+      "bytes": 306054,
       "headerHeight1200": 240,
       "poseOrder": [
         0,
@@ -259,10 +259,10 @@
       ],
       "source": "source/animation/07_nomini/keyframes.png",
       "commonCrop": [
-        61,
-        10,
-        476,
-        508
+        9,
+        9,
+        490,
+        512
       ],
       "method": "generated keyframes; rigid registration; fixed-background compositing; no body warp"
     },

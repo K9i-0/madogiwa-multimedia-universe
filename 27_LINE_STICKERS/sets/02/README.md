@@ -14,8 +14,12 @@
 | 4 | 窓際に追い込まれているうちは二流 | アーロンチュアに座り、頭は固定してこちらへ指差す。頭の回転なし | [GIF](stickers/04_niryu/preview.gif) |
 | 5 | 一流の窓際族は窓際を作り出す | オフィス中央の窓をドリルで締め、ドリルを引いて窓を見る | [GIF](stickers/05_ichiryu/preview.gif) |
 | 6 | 二日酔い | 両手で頭を抱え、脚を引き寄せて横向きに丸くなる | [GIF](stickers/06_futsukayoi/preview.gif) |
-| 7 | 飲みに行こう | 書類を投げ、手招きして帰る方向へ体を向ける。ジャケットなし | [GIF](stickers/07_nomini/preview.gif) |
+| 7 | 飲みに行こう | 正面から書類を横へ捨て、背を向けながらこちらを振り返る。終端は元の静止画のポーズ。ジャケットなし | [GIF](stickers/07_nomini/preview.gif) |
 | 8 | 禁酒中 | ビールの点滴をつないだまま、空いた手を上げてサムズアップ | [GIF](stickers/08_kinshu/preview.gif) |
+
+## 追加調整
+
+「ちゃんと働いてるか？」は、最初のB案の腕位置を維持して肘へ体重を預ける弱い動き3案を比較中。`drafts/elbow-weight/comparison-white.gif` と `comparison-black.gif`。A＝軽く預ける、B＝肘側へもたれる、C＝ゆっくり預ける。候補は本番8枚へまだ反映していない。生成プロンプトは `source/elbow-weight-candidates.json`、加工は `tools/build-elbow-candidates.py`。候補の原画・GIFはローカルのdraftsに保持。
 
 ## 完成ファイル
 

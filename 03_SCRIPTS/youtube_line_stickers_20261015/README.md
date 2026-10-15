@@ -15,6 +15,33 @@
 
 MP4と確認画像はローカル成果物。公開・アップロードは行っていない。
 
+## やめ太郎の声の比較（2026-10-15・未採用）
+
+冒頭の茶番〜本編挨拶16発話で、やめ太郎の10発話だけを差し替えた試聴候補。たこさんの6発話・台詞・画面・会話の間・BGM・効果音を揃え、声の実測尺に合わせて字幕・口パクと後続演出を配置する。v3全編と `VOICE_CAST.md` は変更しない。
+
+まず [短い比較動画](preview_voice_comparison.mp4)（68.10秒）。同じ最初の3発話を、現行→A→B→Cの順に再生する。各台詞を最後まで含め、LINE通知が鳴る前で区切っている。
+
+- [現行 Irodori](preview_voice_current.mp4)：65.77秒。
+- [A：青山龍星・ノーマル](preview_voice_aoyama.mp4)：65.70秒。
+- [B：玄野武宏・ノーマル](preview_voice_kurono.mp4)：63.97秒。
+- [C：白上虎太郎・ふつう](preview_voice_shirakami.mp4)：66.70秒。
+
+VOICEVOXの3候補は話速1.15・音高0・抑揚1.0、前無音0.10秒／後無音0.20秒、48kHz mono。これは今回の比較設定であり、YouTubeの「なんJ民」に統一された設定という意味ではない。よーたん・やめ太郎の固有名詞は一つのアクセント句にまとめ、生成クエリと変更前後の読みを記録する。音声の一律早送りや語尾カットは行わない。
+
+調査出典と対象範囲は [voice_candidate_research.json](voice_candidate_research.json)。AquesTalkのゆっくり男性声は今回含まれない。公式Mac配布の取得に失敗し、商用候補制作に使えるライセンスも未確認だったため。特定のYouTube動画の声や設定を同定・再現したとは主張しない。
+
+```sh
+.local/Irodori-TTS/.venv/bin/python 03_SCRIPTS/youtube_line_stickers_20261015/remotion/generate_voice_candidates.py
+.local/Irodori-TTS/.venv/bin/python 03_SCRIPTS/youtube_line_stickers_20261015/remotion/prepare_voice_candidate_videos.py current aoyama kurono shirakami
+cd 03_SCRIPTS/youtube_line_stickers_20261015/remotion
+node render_voice_candidates.mjs current aoyama kurono shirakami
+python3 compare_voice_candidates.py
+```
+
+候補のWAV・全文クエリ・ハッシュ・実測尺・独立manifestは `remotion/out/voice-candidates/<key>/`、再生用音声は `remotion/public/voice-candidates/` に保持する。候補・中間音声はGitへ追加せず、採用前に正典へ昇格しない。声のクレジットは各候補の `VOICEVOX:青山龍星`／`VOICEVOX:玄野武宏`／`VOICEVOX:白上虎太郎` と、共通の `VOICEVOX:中国うさぎ`。音楽はv3の概要欄と同じ。
+
+[検査・ファイル情報](voice_candidate_delivery.json)：全5本のデコードと形式、字幕全文、発話間、原音保持を確認。完成動画から計60フレームを目視し、文字の欠け・重なりなし。最終MP4の音声も予定ミックスとの波形相関で照合した。主観的な通し試聴や声の好み・自然さの判定は未実施。
+
 ## 正本
 
 - `script.md` / `remotion/dialogue.json`：採用台詞・画面・音声用の読み・発話間。

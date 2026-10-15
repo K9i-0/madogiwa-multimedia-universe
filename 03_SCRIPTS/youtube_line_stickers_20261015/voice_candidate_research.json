@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-15",
+  "request": "やめ太郎の声の違和感を減らすため、YouTubeのなんJ民ボイスを調査し、冒頭を複数候補で比較する",
+  "status": "audition_only_not_adopted",
+  "finding": "なんJ民ボイスという単一の正式話者・統一プリセット・共通数値は確認できなかった。候補の数値は今回の比較用提案であり、特定YouTube投稿者の設定を再現したとは主張しない。",
+  "candidates": [
+    {"key": "aoyama", "engine": "VOICEVOX", "speaker": "青山龍星", "style": "ノーマル", "officialDescription": "重厚で低音な声", "source": "https://voicevox.hiroshiba.jp/product/aoyama_ryusei/"},
+    {"key": "kurono", "engine": "VOICEVOX", "speaker": "玄野武宏", "style": "ノーマル", "officialDescription": "爽やかな青年の声", "source": "https://voicevox.hiroshiba.jp/product/kurono_takehiro/"},
+    {"key": "shirakami", "engine": "VOICEVOX", "speaker": "白上虎太郎", "style": "ふつう", "officialDescription": "声変わり直後の少年の声", "source": "https://voicevox.hiroshiba.jp/product/shirakami_kotarou/"}
+  ],
+  "auditionSettings": {
+    "speedScale": 1.15,
+    "pitchScale": 0,
+    "intonationScale": 1,
+    "prePhonemeLength": 0.1,
+    "postPhonemeLength": 0.2,
+    "outputSamplingRate": 48000,
+    "note": "声質を比較するため共通設定から始める。音声の一律早送りや現行尺へのタイムストレッチはしない。"
+  },
+  "aquesTalk": {
+    "included": false,
+    "generatedFiles": 0,
+    "engineFinding": "AquesTalk1がゆっくりボイスと呼ばれること、AquesTalkPlayer MacのCLI出力は公式確認済み。なんJ共通の男声番号・速度・音程は未確認。",
+    "reason": "公式Mac配布の通常取得が403となり、ブラウザの公式リンクからも取得できなかった。Playerの無料条件は個人非営利であり、この候補制作に使える商用ライセンスは未確認。評価版は音素置換制限があるため使用しない。",
+    "sources": [
+      "https://www.a-quest.com/products/aquestalk_1.html",
+      "https://www.a-quest.com/products/aquestalkplayer.html",
+      "https://www.a-quest.com/products/aquestalkplayer_mac_man.html",
+      "https://www.a-quest.com/licence_free.html",
+      "https://www.a-quest.com/download.html",
+      "https://manjubox.net/ymm4/faq/ゆっくりボイス/声質を変更する/"
+    ]
+  },
+  "voicevoxTerms": "https://voicevox.hiroshiba.jp/term/",
+  "credits": ["VOICEVOX:青山龍星", "VOICEVOX:玄野武宏", "VOICEVOX:白上虎太郎", "VOICEVOX:中国うさぎ"],
+  "scope": "導入〜本編挨拶16発話。やめ太郎10発話のみ差し替え、たこさん6発話と台詞・画面・演出は維持。現行v3と全体の正典声は変更しない。",
+  "subjectiveListening": false
+}

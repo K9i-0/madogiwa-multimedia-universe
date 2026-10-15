@@ -1,0 +1,483 @@
+{
+  "date": "2026-10-15",
+  "status": "audition_only_not_adopted",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "audioSampleRate": 48000,
+  "files": [
+    {
+      "key": "current",
+      "file": "preview_voice_current.mp4",
+      "sha256": "ff7209e7e5ae72085c49292ea7ebfd2043feff0705bafdbeda064ce06457cf2a",
+      "bytes": 4588710,
+      "durationSeconds": 65.76666666666667,
+      "frames": 1973,
+      "checks": {
+        "dialogueCount": 16,
+        "takosanPreservedCount": 6,
+        "yametaroCount": 10,
+        "textAndCaptionMatch": true,
+        "gapsPreserved": true,
+        "original19FilesUnchanged": true,
+        "fullDecodePassed": true,
+        "audioStreamCount": 1,
+        "mixedAudioCorrelation": 0.9998649552465174,
+        "aacErrorRMS": 0.0012580188922584057,
+        "finiteAudio": true,
+        "speechTimeStretch": false,
+        "subjectiveListening": false,
+        "visualReviewPending": false
+      },
+      "visualReview": {
+        "selectedFramesReviewed": 13,
+        "result": "pass",
+        "details": [
+          "Opening grid, LINE transfer joke, Outlook transfer notice, Haison/Python captions, punchline, title, greetings and final fade visible.",
+          "Caption colors, two-line layout and candidate label remain legible; no visible overlaps in selected frames."
+        ],
+        "continuousMotionReview": false,
+        "subjectiveListening": false
+      }
+    },
+    {
+      "key": "aoyama",
+      "file": "preview_voice_aoyama.mp4",
+      "sha256": "4965388621e0a7f0366ff0d1652cfdd07513746f0115d347b94ebbac13234a75",
+      "bytes": 4732600,
+      "durationSeconds": 65.7,
+      "frames": 1971,
+      "checks": {
+        "dialogueCount": 16,
+        "takosanPreservedCount": 6,
+        "yametaroCount": 10,
+        "textAndCaptionMatch": true,
+        "gapsPreserved": true,
+        "original19FilesUnchanged": true,
+        "fullDecodePassed": true,
+        "audioStreamCount": 1,
+        "mixedAudioCorrelation": 0.9997521821986316,
+        "aacErrorRMS": 0.0016291601350530982,
+        "finiteAudio": true,
+        "speechTimeStretch": false,
+        "subjectiveListening": false,
+        "visualReviewPending": false
+      },
+      "visualReview": {
+        "selectedFramesReviewed": 13,
+        "result": "pass",
+        "details": [
+          "Opening grid, LINE transfer joke, Outlook transfer notice, Haison/Python captions, punchline, title, greetings and final fade visible.",
+          "Caption colors, two-line layout and candidate label remain legible; no visible overlaps in selected frames."
+        ],
+        "continuousMotionReview": false,
+        "subjectiveListening": false
+      },
+      "voice": {
+        "engineVersion": "0.25.1",
+        "speakerName": "青山龍星",
+        "speakerId": 13,
+        "speakerVersion": "0.16.1",
+        "style": "ノーマル",
+        "settings": {
+          "speedScale": 1.15,
+          "pitchScale": 0,
+          "intonationScale": 1.0,
+          "volumeScale": 1,
+          "prePhonemeLength": 0.1,
+          "postPhonemeLength": 0.2,
+          "outputSamplingRate": 48000,
+          "outputStereo": false
+        },
+        "credit": "VOICEVOX:青山龍星"
+      },
+      "generatedAudio": [
+        {
+          "id": "intro-01",
+          "audioSha256": "105c751ee5c51b945b38001f2a6ca616efc781eca996788bfce71d20c1122b8c",
+          "querySha256": "9a75a91b743dbaadce9f1d9fee739844741f72ef7988f295523aba59a3bc527f",
+          "durationSeconds": 4.245333333333333
+        },
+        {
+          "id": "intro-03",
+          "audioSha256": "cffb69a1a3b2d67f16e3475851336c46b6ddde1144b4083e4743731ba69c5b8f",
+          "querySha256": "1313563dadc91c29e1a938953cd329897eaf9bfaff59f79c36995c554fef9605",
+          "durationSeconds": 6.677333333333333
+        },
+        {
+          "id": "intro-04",
+          "audioSha256": "779eb53e86cfe2b34ce9818da802ef2f5c98bf4df63db9601be9efc5cb114ba5",
+          "querySha256": "b78959602dd7fe63a7ab202bc7c7f5b3ab6bd879a405563c8d8a2274c4f8788a",
+          "durationSeconds": 1.056
+        },
+        {
+          "id": "intro-05",
+          "audioSha256": "35814b332b6afa364fcf346a53c790d19296d0e41d47a13d5fcde6964a55463c",
+          "querySha256": "63e21ff70103a8cad7bc687e2cacb8848def568d3e040f82ee65fdc2e394691b",
+          "durationSeconds": 2.72
+        },
+        {
+          "id": "intro-07",
+          "audioSha256": "cf2aa52f417f5873f6e1ce68aab10c6fff2f23f888b637a4891830fcb557a6d6",
+          "querySha256": "f2fecf2ea073b082452532b230bcd201a3243d949c66646e151ed86739a1634c",
+          "durationSeconds": 0.8533333333333334
+        },
+        {
+          "id": "intro-08",
+          "audioSha256": "06dda89709f32292ae574bb2fe8301e03a9428c50ec01e86463b4ced1cf4d044",
+          "querySha256": "cf06792a244c389aac6ee3a45b981d034780524541928803d4eaa11324bfa2ce",
+          "durationSeconds": 1.5146666666666666
+        },
+        {
+          "id": "intro-10",
+          "audioSha256": "f7ad83c4af5c94509ae17e7706e92da2be4c6e0e201cb598882120b93cff1a5c",
+          "querySha256": "e92356e34ea4258f5bc7c69cdffd726a045bbfa64e207af247adbb0059bcc157",
+          "durationSeconds": 1.824
+        },
+        {
+          "id": "intro-11",
+          "audioSha256": "d18ad484c3c6bff3d9a527c3e3c5b0b8c56ca66c6934370587afbc73234fa8e3",
+          "querySha256": "01f0ec5b354f3acdd98315b5113219954661a666d013b39a5d218b46a64dd42e",
+          "durationSeconds": 4.032
+        },
+        {
+          "id": "intro-13",
+          "audioSha256": "b7e6b6fc8400feb2678183b61b159b9ea70d613ad0d9b0023512b074a1560616",
+          "querySha256": "5d665b8b14b2197203c8a7db58afe061dcb13cfc2f740c4ca292223e1db3ca9c",
+          "durationSeconds": 1.1733333333333333
+        },
+        {
+          "id": "main-01",
+          "audioSha256": "59a80aa1bd107833d456fbe1c89c70bcdaf8a03bc0856e050496d03fc36cc8b7",
+          "querySha256": "1fd2a30cae38f2fb4f6bd397c9393616667f41d60a84928389a5d3db8e728d02",
+          "durationSeconds": 1.984
+        }
+      ]
+    },
+    {
+      "key": "kurono",
+      "file": "preview_voice_kurono.mp4",
+      "sha256": "80f3ab2912da8e56a7d7d0c0fc01f721f0972b97179cab2cf5793ed1c7881969",
+      "bytes": 4659802,
+      "durationSeconds": 63.96666666666667,
+      "frames": 1919,
+      "checks": {
+        "dialogueCount": 16,
+        "takosanPreservedCount": 6,
+        "yametaroCount": 10,
+        "textAndCaptionMatch": true,
+        "gapsPreserved": true,
+        "original19FilesUnchanged": true,
+        "fullDecodePassed": true,
+        "audioStreamCount": 1,
+        "mixedAudioCorrelation": 0.9995594049218056,
+        "aacErrorRMS": 0.0021614807192236185,
+        "finiteAudio": true,
+        "speechTimeStretch": false,
+        "subjectiveListening": false,
+        "visualReviewPending": false
+      },
+      "visualReview": {
+        "selectedFramesReviewed": 13,
+        "result": "pass",
+        "details": [
+          "Opening grid, LINE transfer joke, Outlook transfer notice, Haison/Python captions, punchline, title, greetings and final fade visible.",
+          "Caption colors, two-line layout and candidate label remain legible; no visible overlaps in selected frames."
+        ],
+        "continuousMotionReview": false,
+        "subjectiveListening": false
+      },
+      "voice": {
+        "engineVersion": "0.25.1",
+        "speakerName": "玄野武宏",
+        "speakerId": 11,
+        "speakerVersion": "0.16.1",
+        "style": "ノーマル",
+        "settings": {
+          "speedScale": 1.15,
+          "pitchScale": 0,
+          "intonationScale": 1.0,
+          "volumeScale": 1,
+          "prePhonemeLength": 0.1,
+          "postPhonemeLength": 0.2,
+          "outputSamplingRate": 48000,
+          "outputStereo": false
+        },
+        "credit": "VOICEVOX:玄野武宏"
+      },
+      "generatedAudio": [
+        {
+          "id": "intro-01",
+          "audioSha256": "88a136c6cbfb49326773a81ac2e76183eb122ec1c74d028101718e4325adb375",
+          "querySha256": "57542881d60ed90fbf0ae080c8bb656b248528d51590f0ea8aa6d2664adefd88",
+          "durationSeconds": 4.1706666666666665
+        },
+        {
+          "id": "intro-03",
+          "audioSha256": "29e9911aba847d7b236c05e0504522c22a5c8b02471f7d4146a3c22306333b5d",
+          "querySha256": "f557ecc43fb36961526fb1e467d13c27f08ed0074d6c7a26b676216fe75dd71e",
+          "durationSeconds": 5.856
+        },
+        {
+          "id": "intro-04",
+          "audioSha256": "13e82e435a85f8441b8cbe65328aee764927caa8dc9453b9a5a25616761541a9",
+          "querySha256": "f12a29d40237261218cb5bf0bae84f91b69dc64bf245b886c9fa568de38d3592",
+          "durationSeconds": 0.9493333333333334
+        },
+        {
+          "id": "intro-05",
+          "audioSha256": "63051cf32ddabf700d17de2ea405e298f8a6d0ae2d551d916ac34d7f7c0fa885",
+          "querySha256": "11fbb38c79a5b803660664a68f07aa8e1f387112f517ada6d5fd176d9cea4b6c",
+          "durationSeconds": 2.592
+        },
+        {
+          "id": "intro-07",
+          "audioSha256": "b53d246e9fb3a26577f369871c1ce07e7bc6d2ba0f9cceecc044e8afe22c8844",
+          "querySha256": "64c6d4afdd7fc7836e2bae2d014330487fa7d85946b0a616a5a522eb47e01c46",
+          "durationSeconds": 0.7466666666666667
+        },
+        {
+          "id": "intro-08",
+          "audioSha256": "2f4cab8847f7e9766cda03bec66d261b920a1b92eeb04cd266ed9e680f468036",
+          "querySha256": "35274f36932fc96e9942a87b80423bc33a138179e25595b71171035d96b97ee2",
+          "durationSeconds": 1.4826666666666666
+        },
+        {
+          "id": "intro-10",
+          "audioSha256": "60792fed7866378684782b845e155ef000527faba29830a14eaf000b17525986",
+          "querySha256": "62d6ee1c72e9a8566c7c007a819db59096536e3d8b42659551c66ad98e9b4210",
+          "durationSeconds": 1.728
+        },
+        {
+          "id": "intro-11",
+          "audioSha256": "9c1e74904c10d46caafb783bf1cad593c82d871f4ccb9946d5f2f6c88fa0d614",
+          "querySha256": "108f7331a827080557bafffc9cf9dc43472df883e84c146b6dfc5c96cce17aaf",
+          "durationSeconds": 3.872
+        },
+        {
+          "id": "intro-13",
+          "audioSha256": "62351d32c2166665effe05b9e6212ffca4ff6e098302816df0cf2046ca4173c3",
+          "querySha256": "d7dcae2344e7fd9e4cda21488a1614a49871590b13a0db3488df1753d0b88ff3",
+          "durationSeconds": 1.056
+        },
+        {
+          "id": "main-01",
+          "audioSha256": "00c4916c6a21fadee45959d68d9b8feb8da8f42bd5062dd463ef8f85ec0b7ff7",
+          "querySha256": "f1ddbef19d59b791630bef172cefda4f59806f5fdfede225be09f1052fce4f9f",
+          "durationSeconds": 1.8773333333333333
+        }
+      ]
+    },
+    {
+      "key": "shirakami",
+      "file": "preview_voice_shirakami.mp4",
+      "sha256": "c78d93b03e991828fa94ddea08c746521cb9ae936f2b78bab0d6e5cecf9de330",
+      "bytes": 4803909,
+      "durationSeconds": 66.7,
+      "frames": 2001,
+      "checks": {
+        "dialogueCount": 16,
+        "takosanPreservedCount": 6,
+        "yametaroCount": 10,
+        "textAndCaptionMatch": true,
+        "gapsPreserved": true,
+        "original19FilesUnchanged": true,
+        "fullDecodePassed": true,
+        "audioStreamCount": 1,
+        "mixedAudioCorrelation": 0.9995919620561121,
+        "aacErrorRMS": 0.002045419067144394,
+        "finiteAudio": true,
+        "speechTimeStretch": false,
+        "subjectiveListening": false,
+        "visualReviewPending": false
+      },
+      "visualReview": {
+        "selectedFramesReviewed": 13,
+        "result": "pass",
+        "details": [
+          "Opening grid, LINE transfer joke, Outlook transfer notice, Haison/Python captions, punchline, title, greetings and final fade visible.",
+          "Caption colors, two-line layout and candidate label remain legible; no visible overlaps in selected frames."
+        ],
+        "continuousMotionReview": false,
+        "subjectiveListening": false
+      },
+      "voice": {
+        "engineVersion": "0.25.1",
+        "speakerName": "白上虎太郎",
+        "speakerId": 12,
+        "speakerVersion": "0.16.0",
+        "style": "ふつう",
+        "settings": {
+          "speedScale": 1.15,
+          "pitchScale": 0,
+          "intonationScale": 1.0,
+          "volumeScale": 1,
+          "prePhonemeLength": 0.1,
+          "postPhonemeLength": 0.2,
+          "outputSamplingRate": 48000,
+          "outputStereo": false
+        },
+        "credit": "VOICEVOX:白上虎太郎"
+      },
+      "generatedAudio": [
+        {
+          "id": "intro-01",
+          "audioSha256": "ed5405cbc5d614b156544616771fa73ae339324cc1c5a4d0620389a835faf3df",
+          "querySha256": "d1eb299fec0ae3af0034427e49cc475fede7ebd7f8be88362b1c421cacc190f4",
+          "durationSeconds": 4.576
+        },
+        {
+          "id": "intro-03",
+          "audioSha256": "4e0245eca9399d8405ea30289560d713e951281e528ced833b7e73b26db79d10",
+          "querySha256": "2310ea6f425b446d4a90378eab174ae57dac4720a8f7774809d88add515e2614",
+          "durationSeconds": 6.570666666666667
+        },
+        {
+          "id": "intro-04",
+          "audioSha256": "bb96775cf449928ebe66aa90dc1ff65ea87e1ef81b9d27286b1f7e8c85a003ab",
+          "querySha256": "61dfbdc5d5d5c1fe6c1cf5aee85f1aef418e6417e60bf587165720483c050a0a",
+          "durationSeconds": 1.056
+        },
+        {
+          "id": "intro-05",
+          "audioSha256": "911f067e2addeddc4b54cc7b9f474dc7b5c9b6278af57b82399b00868c65c383",
+          "querySha256": "4ada0e39c88d69b134d8bf544ccc57ffb8e661cc3e84a6e0cbc5eebfeae6ca25",
+          "durationSeconds": 2.88
+        },
+        {
+          "id": "intro-07",
+          "audioSha256": "289ef3a7b2121371213c111e48dc1bd4b2927c1d2613f1a0da3400f30f396ab0",
+          "querySha256": "a9d70ecb93834010f23829b827802adc27799ecbc153087226f4abed0a5a7683",
+          "durationSeconds": 0.7786666666666666
+        },
+        {
+          "id": "intro-08",
+          "audioSha256": "e5c6c650b9ec430680f9842f31f89d3b1722a6888c568fd2f4bbb7e91e9864dc",
+          "querySha256": "559b451c449dd7f974bb26ed07bfe184a512dc800d9781d2d9f0df181a272e59",
+          "durationSeconds": 1.6533333333333333
+        },
+        {
+          "id": "intro-10",
+          "audioSha256": "5e5c98a12b5dac1b0f297fcbacd1bffb61daaeddab92369f9c1a531a00dd96bc",
+          "querySha256": "c9d8517c94ab22225f82bdb0e0bf95f07c9712522c44d99534ff85bf9c7a65c4",
+          "durationSeconds": 1.9093333333333333
+        },
+        {
+          "id": "intro-11",
+          "audioSha256": "5878e2b8e9bd02ef17c0f94090b49fe5ab531e3992f0dd539200552cc7a06853",
+          "querySha256": "ba3e295059922f523f24e347d2e4a60b9dcd89490ba50951ddfabcb604985dbf",
+          "durationSeconds": 4.309333333333333
+        },
+        {
+          "id": "intro-13",
+          "audioSha256": "a54aefe4997b939964f47e1251f93fa8d757dd9e713027b040edb2243d29df05",
+          "querySha256": "f2625ffc219a8dd7aacfdddf5b6f98202ce840cdf2ae3f8adc31ccc3cdb51d96",
+          "durationSeconds": 1.1413333333333333
+        },
+        {
+          "id": "main-01",
+          "audioSha256": "6cdcacb30fcf17746af710d209fd380a348ebc78c77b6c59f0d1dc73e95af4a0",
+          "querySha256": "c6574221aba56fd3a273ba5ef329c6a3c35838bbc61e34c1cbe230f07421b2d7",
+          "durationSeconds": 2.1546666666666665
+        }
+      ]
+    },
+    {
+      "key": "comparison",
+      "file": "preview_voice_comparison.mp4",
+      "sha256": "65542a7dba5a47c2fd3176dc020cac998e0c7882cafe866142e952f71dfc057e",
+      "bytes": 5700418,
+      "durationSeconds": 68.1,
+      "frames": 2043,
+      "checks": {},
+      "visualReview": {
+        "selectedFramesReviewed": 8,
+        "result": "pass",
+        "details": [
+          "Each candidate label is visible at the first and final complete spoken turn.",
+          "All four segments preserve the same three complete turns; final utterance is followed by nine frames before cut."
+        ],
+        "subjectiveListening": false,
+        "continuousMotionReview": false
+      },
+      "order": [
+        "current",
+        "aoyama",
+        "kurono",
+        "shirakami"
+      ]
+    }
+  ],
+  "independentAudit": {
+    "status": "passed_objective_and_selected_frame_review",
+    "reports": [
+      {
+        "candidate": "current",
+        "report": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/voice-candidates/qa/current/report.json",
+        "durationSeconds": 65.76666666666667,
+        "totalFrames": 1973,
+        "sha256": "ff7209e7e5ae72085c49292ea7ebfd2043feff0705bafdbeda064ce06457cf2a",
+        "fullDecodePassed": true,
+        "selectedFramesReviewed": 13,
+        "visualResult": "pass"
+      },
+      {
+        "candidate": "aoyama",
+        "report": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/voice-candidates/qa/aoyama/report.json",
+        "durationSeconds": 65.7,
+        "totalFrames": 1971,
+        "sha256": "4965388621e0a7f0366ff0d1652cfdd07513746f0115d347b94ebbac13234a75",
+        "fullDecodePassed": true,
+        "selectedFramesReviewed": 13,
+        "visualResult": "pass"
+      },
+      {
+        "candidate": "kurono",
+        "report": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/voice-candidates/qa/kurono/report.json",
+        "durationSeconds": 63.96666666666667,
+        "totalFrames": 1919,
+        "sha256": "80f3ab2912da8e56a7d7d0c0fc01f721f0972b97179cab2cf5793ed1c7881969",
+        "fullDecodePassed": true,
+        "selectedFramesReviewed": 13,
+        "visualResult": "pass"
+      },
+      {
+        "candidate": "shirakami",
+        "report": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/voice-candidates/qa/shirakami/report.json",
+        "durationSeconds": 66.7,
+        "totalFrames": 2001,
+        "sha256": "c78d93b03e991828fa94ddea08c746521cb9ae936f2b78bab0d6e5cecf9de330",
+        "fullDecodePassed": true,
+        "selectedFramesReviewed": 13,
+        "visualResult": "pass"
+      },
+      {
+        "candidate": "comparison",
+        "report": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/voice-candidates/qa/comparison/report.json",
+        "durationSeconds": 68.1,
+        "totalFrames": 2043,
+        "sha256": "65542a7dba5a47c2fd3176dc020cac998e0c7882cafe866142e952f71dfc057e",
+        "fullDecodePassed": true,
+        "selectedFramesReviewed": 8,
+        "visualResult": "pass"
+      }
+    ],
+    "selectedFramesTotal": 60,
+    "original19SourceFilesUnchanged": true,
+    "all16DialogueTurnsPreserved": true,
+    "takosanSixSourceAudioHashesPreservedPerCandidate": true,
+    "candidateYametaroTenSourcesOnlyReplaced": true,
+    "subjectiveListening": false,
+    "continuousMotionReview": false,
+    "notes": [
+      "Audio correlation checks compare decoded final MP4 with intended mix, independently from source metadata.",
+      "Selected static frames do not establish continuous motion quality or precise perceptual lip synchronization.",
+      "No subjective voice preference, naturalness or filler-noise absence claim made."
+    ]
+  },
+  "subjectiveListening": false,
+  "continuousLipSyncReview": false,
+  "currentFullVideoAndVoiceCanonUnchanged": true
+}

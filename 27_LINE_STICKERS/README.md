@@ -2,6 +2,8 @@
 
 スタンプを販売セット単位で管理する。第1弾の8点を採用済み、第2弾のそば屋オンリー8点は採用済み構図から連続ポーズ方式で完成。
 
+制作・修正では [line-stickersスキル](../.claude/skills/line-stickers/SKILL.md) を入口にする。[第一弾の実装と第二弾の失敗・改善](../.claude/skills/line-stickers/references/history.md)、[連続原画・文字と透過](../.claude/skills/line-stickers/references/animation-and-alpha.md)、[main/tabと納品規格](../.claude/skills/line-stickers/references/delivery.md) に知見を集約している。各セットの採用状態と原画は引き続き各README・台帳を正本とする。
+
 | セット | 内容・状態 | 確認用 |
 |---|---|---|
 | [第1弾](sets/01/README.md) | 全8名・動く版＋[静止版](sets/01/static/README.md)。LINE未申請 | [全員GIF](sets/01/all-members-preview.gif) / [静止画](sets/01/all-members-still.png) |

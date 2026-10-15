@@ -39,6 +39,7 @@ Gitでは、Seedanceの再生成と同じ声の継続利用に必要な最小限
 制作方式未指定の動画は `wan-video` を標準とする。Three.js / Remotionで既存3Dモデルを演技させる舞台動画、背景画像＋モデルの芝居、73型の動画は `threejs-video` を使う。後者は音声方針を含めWanとは独立した制作経路とする。
 制作物ごとのワークフローはスキルに分離している。該当する作業ではスキルを呼び出して従うこと。
 
+- **LINEスタンプ制作** (`line-stickers`): 静止・動くLINEスタンプの企画、連続原画生成、透過・背景・動きの修正、main/tab、申請用画像ZIPの作成で使用する。着手時に過去の採用原画・実際の組立コード・再生順を確認し、第一弾の記録を参照する。LINEのAPNG/GIFは一般動画制作とは分ける。詳細: `.claude/skills/line-stickers/SKILL.md`
 - **人型モーション** (`humanoid-motion`): リアル頭身のGLB/VRMへの動作適用、ローカルプレビュー、体格別比較、肩・腕のスキニング診断、そば屋ハザードへの採用時に使用する。詳細: `.claude/skills/humanoid-motion/SKILL.md`
 
 - **Wan動画制作** (`wan-video`): Wan 3.0、Qwen Cloud、Alibaba Cloud Model Studioで動画を新規制作・改修・生成・監査するときに使用する。台本、参照素材、プロンプト、従量課金API設定、生成結果を一体で管理する。詳細: `.claude/skills/wan-video/SKILL.md`

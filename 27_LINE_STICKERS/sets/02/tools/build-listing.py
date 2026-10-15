@@ -34,6 +34,11 @@ def main():
     frames[0].save(ROOT / 'main.png', save_all=True, append_images=frames[1:],
                    duration=DURATIONS, loop=1, disposal=0, blend=0,
                    optimize=True, compress_level=9, dpi=(72, 72))
+    # Preview the encoded deliverable, including its actual APNG frame timing.
+    decoded = b.decode(ROOT / 'main.png')
+    frames = [frame for _, frame in decoded]
+    ends = [0] + [end for end, _ in decoded]
+    preview_durations = [end - start for start, end in zip(ends, ends[1:])]
     frames[0].save(ROOT / 'main-still.png', dpi=(72, 72))
     # Small chat icon: retain the mask, mug and gripping hand; omit tiny lettering.
     tab_box = (10, 32, 378, 315)
@@ -51,7 +56,7 @@ def main():
             draw.text((10, 7), 'main 240×240 APNG', font=font, fill=ink)
             draw.text((265, 85), 'tab 96×74 PNG', font=font, fill=ink)
             previews.append(panel.convert('RGB'))
-        b.gif(previews, DURATIONS, ROOT / f'main-tab-{bg}-preview.gif')
+        b.gif(previews, preview_durations, ROOT / f'main-tab-{bg}-preview.gif')
         previews[0].save(ROOT / f'main-tab-{bg}-preview.png')
     (ROOT / 'reports/listing-source.json').write_text(json.dumps({
         'source': str(SOURCE.relative_to(ROOT)), 'poseOrder': ORDER,

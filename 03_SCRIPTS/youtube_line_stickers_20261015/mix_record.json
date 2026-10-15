@@ -1,6 +1,6 @@
 {
   "sampleRate": 48000,
-  "frames": 18789,
+  "frames": 17891,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
@@ -9,7 +9,7 @@
   "endingLiftAfterDialogue": false,
   "endingTrackChange": false,
   "endingFadeOutSeconds": 4,
-  "premasterPeak": 0.6199668049812317,
+  "premasterPeak": 0.6184718012809753,
   "masterGain": 1,
   "soundEvents": [
     {
@@ -51,9 +51,12 @@
       "provenanceRecord": "03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json"
     }
   },
-  "mixedSha256": "8c6dca7c7fb41508dd5fb3ac79f0e050564c87149ae557861df4b730f243b9a2",
+  "mixedSha256": "7c259ac23dd49f5df069f6ae522e05e953368c2aba62d68e2b063495b664ea7f",
   "subjectiveListening": false,
-  "measuredIntegratedLUFS": -18.01,
-  "measuredTruePeakDBTP": -4.15,
-  "measuredLRA": 3.3
+  "measuredLoudness": {
+    "integratedLUFS": -17.94,
+    "truePeakDbTP": -4.17,
+    "loudnessRangeLU": 3.8,
+    "method": "FFmpeg loudnorm input measurements, no processing applied during measurement."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "authorization": "2026-10-15 user requested cutting filler-like noises in Yametaro generated speech. Four individually inspected edits; no blanket gate.",
+  "authorization": "2026-10-15 user requested cutting filler-like noises. Retain the two adopted opening repairs unchanged in the v3 restructured video; retired v2 body cuts are archived with v2 records.",
   "algorithm": "keep PCM16 samples, then linear amplitude tail fade; no speech rate or pitch alteration",
   "subjectiveListening": false,
   "cuts": [
@@ -33,56 +33,6 @@
       "expectedOutputSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619",
       "expectedText": "辞令？",
       "candidateASR": "じれぇぇぇぇ"
-    },
-    {
-      "id": "alpha-03",
-      "source": "input/voice_uncut/voice_alpha-03_yametaro_e0ee664d.wav",
-      "sourceSha256": "e0ee664d8eebea6f6fda7cd6ea0e9e9e00a0c6bdb1aae35bed5ec60bd98c378d",
-      "generationSettingsSha256": "3ce9ed9aa9bffc9ecd1f8917a594d0584cb183f8d4a2102f5400551289eaf5e7",
-      "sampleRate": 48000,
-      "keepStartSample": 0,
-      "keepEndSample": 61440,
-      "tailFadeSamples": 576,
-      "classification": "post_utterance_nonlexical_island",
-      "reason": "Separate post-utterance vocal/noise island after a gap; ASR ends at .96 s, first VAD region ends about 1.2 s.",
-      "expectedOutputSha256": "a593402ad7a86d03cd286d0909cf3e13611b2d9fd4c747b46b8213c41f104571",
-      "expectedText": "まだあるんか。",
-      "candidateASR": "まだあるんか"
-    },
-    {
-      "id": "end-03",
-      "source": "input/voice_uncut/voice_end-03_yametaro_a2f3fb9f.wav",
-      "sourceSha256": "a2f3fb9f205bcf4f01b89606b2e091e1102a516bb4fe7956cb0b805dcd43cd4f",
-      "generationSettingsSha256": "c787864b7597f3cec16a70727006131f25e5c19eddeec308f515c7d52d9c0075",
-      "sampleRate": 48000,
-      "keepStartSample": 0,
-      "keepEndSample": 132000,
-      "tailFadeSamples": 960,
-      "classification": "post_utterance_burst",
-      "reason": "preserve 190 ms after ASR end 2.56 s, remove renewed low-frequency burst starting near 2.80 s.",
-      "expectedOutputSha256": "91e9bbea9aa8af9e607679da7ad7fb3c0c746a680737ed94a4e0c2a6126ce8fc",
-      "expectedText": "謝ってるけど、そこまで反省してない感じ。",
-      "candidateASR": "誤っているけどそこまで反省してない感じ"
-    }
-  ],
-  "rejectedCandidates": [
-    {
-      "id": "motion-01",
-      "source": "voice_motion-01_yametaro_61218307.wav",
-      "sourceSha256": "61218307723b149fe33017ef971ce6fcc6a18574a9e2363217db2b1da5ae5c0d",
-      "generationSettingsSha256": "4c9787361a2698776f7fd8490ac8aebd045404c221798fe2e1e790e781d00a9d",
-      "sampleRate": 48000,
-      "keepStartSample": 0,
-      "keepEndSample": 109920,
-      "tailFadeSamples": 576,
-      "classification": "post_utterance_burst",
-      "reason": "Removed tail is likely final せい of 完成: removed-only ASR せー; raw last-word ASR 完成 versus cut かん. At 2.25–2.30 s high-frequency frication is followed by a voiced vowel. Whole-utterance ASR word end was not a safe phoneme boundary.",
-      "expectedOutputSha256": "75fc54ce15767b33c4a5a25f8c7ba7185ac2472593a09689a5d8bab43a0c7674",
-      "expectedText": "四枚を順番に流したら完成？",
-      "candidateASR": "4枚を順番に流したら完成",
-      "status": "rejected_and_raw_restored",
-      "evidence": "remotion/out/yametaro_noise_analysis/motion_tail_review.json",
-      "restoredOutputSha256": "61218307723b149fe33017ef971ce6fcc6a18574a9e2363217db2b1da5ae5c0d"
     }
   ]
 }

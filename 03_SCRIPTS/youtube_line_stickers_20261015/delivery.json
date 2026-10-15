@@ -1,9 +1,9 @@
 {
-  "video": "final_remotion_line_stickers_v2.mp4",
-  "sha256": "1ee41a01f73658000bb210e551d56260d0450c4bcd383a36db327d64ab251075",
-  "bytes": 37098519,
-  "durationInFrames": 18789,
-  "durationSeconds": 626.3,
+  "video": "final_remotion_line_stickers_v3.mp4",
+  "sha256": "37936d9410666e0b39ce336bde0a1487fa13a7c512502b45432e3badc7103b4a",
+  "bytes": 37843983,
+  "durationInFrames": 17891,
+  "durationSeconds": 596.3666666666667,
   "resolution": [
     1280,
     720
@@ -14,175 +14,254 @@
     "sampleRate": 48000,
     "channels": 2
   },
-  "utterances": 91,
-  "subtitlePages": 114,
+  "utterances": 89,
+  "subtitlePages": 111,
   "fullDecode": "passed",
   "dialogueAndCaptionIntegrity": "passed",
-  "requestedIntroRevisions": "passed",
-  "introExcerpt": "preview_intro.mp4",
+  "preservedOpening": {
+    "reference": "intro_reference_v2.json",
+    "utterances": 16,
+    "audioHashesAndTimingAndCaptions": "passed"
+  },
+  "adoptedAudioHashes": "passed",
+  "techniqueExcerpt": {
+    "file": "preview_tips_v3.mp4",
+    "startFrame": 3128,
+    "endFrame": 6466,
+    "durationSeconds": 111.26666666666667
+  },
   "reviewFrames": [
     {
       "id": "intro-04",
       "frame": 498,
-      "path": "remotion/out/final-audit/intro-04.png"
+      "path": "remotion/out/final-audit-v3/intro-04.png"
     },
     {
       "id": "intro-08",
       "frame": 913,
-      "path": "remotion/out/final-audit/intro-08.png"
+      "path": "remotion/out/final-audit-v3/intro-08.png"
     },
     {
       "id": "intro-09",
       "frame": 995,
-      "path": "remotion/out/final-audit/intro-09.png"
+      "path": "remotion/out/final-audit-v3/intro-09.png"
     },
     {
       "id": "intro-10",
       "frame": 1084,
-      "path": "remotion/out/final-audit/intro-10.png"
+      "path": "remotion/out/final-audit-v3/intro-10.png"
     },
     {
       "id": "main-01",
       "frame": 1552,
-      "path": "remotion/out/final-audit/main-01.png"
+      "path": "remotion/out/final-audit-v3/main-01.png"
     },
     {
-      "id": "main-04",
-      "frame": 1927,
-      "path": "remotion/out/final-audit/main-04.png"
+      "id": "main-03",
+      "frame": 1704,
+      "path": "remotion/out/final-audit-v3/main-03.png"
     },
     {
-      "id": "flow-03",
-      "frame": 3026,
-      "path": "remotion/out/final-audit/flow-03.png"
+      "id": "ideas-07",
+      "frame": 4249,
+      "path": "remotion/out/final-audit-v3/ideas-07.png"
     },
     {
-      "id": "sheet-04",
-      "frame": 6929,
-      "path": "remotion/out/final-audit/sheet-04.png"
+      "id": "options-04",
+      "frame": 5284,
+      "path": "remotion/out/final-audit-v3/options-04.png"
     },
     {
-      "id": "sheet-08",
-      "frame": 8219,
-      "path": "remotion/out/final-audit/sheet-08.png"
+      "id": "options-08",
+      "frame": 6170,
+      "path": "remotion/out/final-audit-v3/options-08.png"
     },
     {
-      "id": "motion-06",
-      "frame": 9987,
-      "path": "remotion/out/final-audit/motion-06.png"
+      "id": "redraw-05",
+      "frame": 7266,
+      "path": "remotion/out/final-audit-v3/redraw-05.png"
     },
     {
-      "id": "alpha-09",
-      "frame": 12312,
-      "path": "remotion/out/final-audit/alpha-09.png"
+      "id": "pets-04",
+      "frame": 8234,
+      "path": "remotion/out/final-audit-v3/pets-04.png"
     },
     {
-      "id": "alpha-13",
-      "frame": 13222,
-      "path": "remotion/out/final-audit/alpha-13.png"
+      "id": "acting-05",
+      "frame": 10694,
+      "path": "remotion/out/final-audit-v3/acting-05.png"
     },
     {
-      "id": "export-05",
-      "frame": 14567,
-      "path": "remotion/out/final-audit/export-05.png"
+      "id": "acting-13",
+      "frame": 12323,
+      "path": "remotion/out/final-audit-v3/acting-13.png"
     },
     {
-      "id": "record-06",
-      "frame": 17191,
-      "path": "remotion/out/final-audit/record-06.png"
+      "id": "inspect-03",
+      "frame": 13004,
+      "path": "remotion/out/final-audit-v3/inspect-03.png"
     },
     {
-      "id": "end-05",
-      "frame": 18566,
-      "path": "remotion/out/final-audit/end-05.png"
+      "id": "tools-06",
+      "frame": 15050,
+      "path": "remotion/out/final-audit-v3/tools-06.png"
     },
     {
-      "id": "flow-04-page-1",
-      "frame": 3318,
-      "path": "remotion/out/final-audit/flow-04-page-1.png"
+      "id": "close-05",
+      "frame": 17553,
+      "path": "remotion/out/final-audit-v3/close-05.png"
     },
     {
-      "id": "flow-05-page-1",
-      "frame": 3497,
-      "path": "remotion/out/final-audit/flow-05-page-1.png"
+      "id": "close-06",
+      "frame": 17663,
+      "path": "remotion/out/final-audit-v3/close-06.png"
     },
     {
-      "id": "flow-05-page-2",
-      "frame": 3731,
-      "path": "remotion/out/final-audit/flow-05-page-2.png"
+      "id": "view-tip-intro",
+      "frame": 2047,
+      "path": "remotion/out/final-audit-v3/view-tip-intro.png"
     },
     {
-      "id": "flow-06-page-1",
-      "frame": 3885,
-      "path": "remotion/out/final-audit/flow-06-page-1.png"
+      "id": "view-idea-grid",
+      "frame": 3163,
+      "path": "remotion/out/final-audit-v3/view-idea-grid.png"
     },
     {
-      "id": "flow-07-page-1",
-      "frame": 4041,
-      "path": "remotion/out/final-audit/flow-07-page-1.png"
+      "id": "view-idea-prompt",
+      "frame": 3544,
+      "path": "remotion/out/final-audit-v3/view-idea-prompt.png"
     },
     {
-      "id": "flow-07-page-2",
-      "frame": 4239,
-      "path": "remotion/out/final-audit/flow-07-page-2.png"
+      "id": "prompt-hold-ideas-04",
+      "frame": 3656,
+      "path": "remotion/out/final-audit-v3/prompt-hold-ideas-04.png"
     },
     {
-      "id": "voice-cut-intro-04-end",
-      "frame": 520,
-      "path": "remotion/out/final-audit/voice-cut-intro-04-end.png"
+      "id": "view-option-compare",
+      "frame": 4916,
+      "path": "remotion/out/final-audit-v3/view-option-compare.png"
     },
     {
-      "id": "voice-cut-intro-04-after",
-      "frame": 523,
-      "path": "remotion/out/final-audit/voice-cut-intro-04-after.png"
+      "id": "view-redraw-compare",
+      "frame": 6519,
+      "path": "remotion/out/final-audit-v3/view-redraw-compare.png"
     },
     {
-      "id": "voice-cut-intro-07-end",
-      "frame": 817,
-      "path": "remotion/out/final-audit/voice-cut-intro-07-end.png"
+      "id": "view-redraw-prompt",
+      "frame": 7042,
+      "path": "remotion/out/final-audit-v3/view-redraw-prompt.png"
     },
     {
-      "id": "voice-cut-intro-07-after",
-      "frame": 820,
-      "path": "remotion/out/final-audit/voice-cut-intro-07-after.png"
+      "id": "prompt-hold-redraw-04",
+      "frame": 7171,
+      "path": "remotion/out/final-audit-v3/prompt-hold-redraw-04.png"
     },
     {
-      "id": "voice-cut-alpha-03-end",
-      "frame": 11309,
-      "path": "remotion/out/final-audit/voice-cut-alpha-03-end.png"
+      "id": "view-pets-sheet",
+      "frame": 7768,
+      "path": "remotion/out/final-audit-v3/view-pets-sheet.png"
     },
     {
-      "id": "voice-cut-alpha-03-after",
-      "frame": 11312,
-      "path": "remotion/out/final-audit/voice-cut-alpha-03-after.png"
+      "id": "view-pets-process",
+      "frame": 8430,
+      "path": "remotion/out/final-audit-v3/view-pets-process.png"
     },
     {
-      "id": "voice-cut-end-03-end",
-      "frame": 18408,
-      "path": "remotion/out/final-audit/voice-cut-end-03-end.png"
+      "id": "view-pets-prompt",
+      "frame": 9267,
+      "path": "remotion/out/final-audit-v3/view-pets-prompt.png"
     },
     {
-      "id": "voice-cut-end-03-after",
-      "frame": 18411,
-      "path": "remotion/out/final-audit/voice-cut-end-03-after.png"
+      "id": "prompt-hold-pets-08",
+      "frame": 9490,
+      "path": "remotion/out/final-audit-v3/prompt-hold-pets-08.png"
+    },
+    {
+      "id": "view-acting-sobaya",
+      "frame": 9890,
+      "path": "remotion/out/final-audit-v3/view-acting-sobaya.png"
+    },
+    {
+      "id": "view-acting-work",
+      "frame": 10498,
+      "path": "remotion/out/final-audit-v3/view-acting-work.png"
+    },
+    {
+      "id": "view-acting-prompt",
+      "frame": 11540,
+      "path": "remotion/out/final-audit-v3/view-acting-prompt.png"
+    },
+    {
+      "id": "prompt-hold-acting-09",
+      "frame": 11729,
+      "path": "remotion/out/final-audit-v3/prompt-hold-acting-09.png"
+    },
+    {
+      "id": "view-acting-options",
+      "frame": 11827,
+      "path": "remotion/out/final-audit-v3/view-acting-options.png"
+    },
+    {
+      "id": "view-inspect-whiteblack",
+      "frame": 12659,
+      "path": "remotion/out/final-audit-v3/view-inspect-whiteblack.png"
+    },
+    {
+      "id": "view-inspect-details",
+      "frame": 13532,
+      "path": "remotion/out/final-audit-v3/view-inspect-details.png"
+    },
+    {
+      "id": "view-inspect-prompt",
+      "frame": 13918,
+      "path": "remotion/out/final-audit-v3/view-inspect-prompt.png"
+    },
+    {
+      "id": "prompt-hold-inspect-07",
+      "frame": 14058,
+      "path": "remotion/out/final-audit-v3/prompt-hold-inspect-07.png"
+    },
+    {
+      "id": "view-tools-beforeafter",
+      "frame": 14168,
+      "path": "remotion/out/final-audit-v3/view-tools-beforeafter.png"
+    },
+    {
+      "id": "view-tools-choice",
+      "frame": 14959,
+      "path": "remotion/out/final-audit-v3/view-tools-choice.png"
+    },
+    {
+      "id": "view-tools-prompt",
+      "frame": 15998,
+      "path": "remotion/out/final-audit-v3/view-tools-prompt.png"
+    },
+    {
+      "id": "prompt-hold-tools-09",
+      "frame": 16087,
+      "path": "remotion/out/final-audit-v3/prompt-hold-tools-09.png"
+    },
+    {
+      "id": "view-closing-flow",
+      "frame": 16608,
+      "path": "remotion/out/final-audit-v3/view-closing-flow.png"
+    },
+    {
+      "id": "view-ending",
+      "frame": 17445,
+      "path": "remotion/out/final-audit-v3/view-ending.png"
     },
     {
       "id": "title",
       "frame": 1449,
-      "path": "remotion/out/final-audit/title.png"
+      "path": "remotion/out/final-audit-v3/title.png"
     },
     {
       "id": "final",
-      "frame": 18788,
-      "path": "remotion/out/final-audit/final.png"
+      "frame": 17890,
+      "path": "remotion/out/final-audit-v3/final.png"
     }
   ],
   "subjectiveListening": false,
-  "note": "Machine checks do not constitute a subjective listening pass. Visual review is recorded separately in review.md.",
-  "sectionExcerpt": {
-    "file": "preview_imagegen_v2.mp4",
-    "startFrame": 3280,
-    "endFrame": 4342,
-    "durationSeconds": 35.4
-  }
+  "note": "Automated checks and extracted frames are separate from subjective listening/continuous visual review."
 }

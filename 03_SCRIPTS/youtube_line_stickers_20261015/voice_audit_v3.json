@@ -1,0 +1,1944 @@
+{
+  "version": 3,
+  "subjectiveListening": false,
+  "scope": "89 adopted utterances; 16 opening utterances retained exactly, 73 new body utterances. All 33 new Yametaro utterances screened with ASR, VAD, RMS, and approximate word timestamps.",
+  "durationInFrames": 17891,
+  "fps": 30,
+  "durationSeconds": 596.3666666666667,
+  "captionPages": 111,
+  "openingReference": "intro_reference_v2.json",
+  "openingFieldsVerified": [
+    "text",
+    "reading",
+    "voicevoxReading",
+    "audioSha256",
+    "startFrame",
+    "durationInFrames",
+    "captionSegments"
+  ],
+  "openingExactMatch": true,
+  "newBodyCuts": 0,
+  "retainedOpeningCuts": [
+    "intro-04",
+    "intro-07"
+  ],
+  "protectedCaptionTerms": [
+    "Codex Pets",
+    "Imagegen",
+    "OpenAI",
+    "OpenCV",
+    "ImageMagick",
+    "こういう"
+  ],
+  "protectedCaptionTermsUnbroken": true,
+  "generationAdjustment": {
+    "id": "ideas-03",
+    "expected": "最初から全部？",
+    "referenceAndModelUnchanged": true,
+    "seed": 7,
+    "defaultDurationScale": 0.7,
+    "defaultDurationSeconds": 3.08,
+    "adoptedDurationScale": 0.45,
+    "adoptedDurationSeconds": 2.0,
+    "rejectedDurationScale": 0.35,
+    "rejectedDurationSeconds": 1.56,
+    "decision": "The 1.3 s onward region contains the intended final word 全部, not disposable filler. Adopt the moderate 0.45 generation to shorten excessive duration while retaining the final question. Reject the 0.35 generation conservatively: whole-utterance ASR completed the phrase but its isolated final region could not independently confirm the word. No samples were cut.",
+    "partialASR": [
+      {
+        "candidate": "original_070",
+        "source": "voice_ideas-03_61513cd041b1.wav",
+        "region": "full",
+        "start": 0,
+        "end": 3.08,
+        "recognized": "最初から全部"
+      },
+      {
+        "candidate": "original_070",
+        "source": "voice_ideas-03_61513cd041b1.wav",
+        "region": "word_region",
+        "start": 0.65,
+        "end": 1.3,
+        "recognized": "はい、また"
+      },
+      {
+        "candidate": "original_070",
+        "source": "voice_ideas-03_61513cd041b1.wav",
+        "region": "post_13",
+        "start": 1.3,
+        "end": 3.08,
+        "recognized": "全部"
+      },
+      {
+        "candidate": "candidate_045",
+        "source": "voice_ideas-03_34c9b8e35aaa.wav",
+        "region": "full",
+        "start": 0,
+        "end": 2.0,
+        "recognized": "最初から全部"
+      },
+      {
+        "candidate": "candidate_045",
+        "source": "voice_ideas-03_34c9b8e35aaa.wav",
+        "region": "word_region",
+        "start": 0.65,
+        "end": 1.3,
+        "recognized": "ああ"
+      },
+      {
+        "candidate": "candidate_045",
+        "source": "voice_ideas-03_34c9b8e35aaa.wav",
+        "region": "post_13",
+        "start": 1.3,
+        "end": 2.0,
+        "recognized": "せーの、ぶー"
+      },
+      {
+        "candidate": "candidate_035",
+        "source": "voice_ideas-03_9abe02c601a2.wav",
+        "region": "full",
+        "start": 0,
+        "end": 1.56,
+        "recognized": "最初から全部"
+      },
+      {
+        "candidate": "candidate_035",
+        "source": "voice_ideas-03_9abe02c601a2.wav",
+        "region": "word_region",
+        "start": 0.65,
+        "end": 1.3,
+        "recognized": "例えば"
+      },
+      {
+        "candidate": "candidate_035",
+        "source": "voice_ideas-03_9abe02c601a2.wav",
+        "region": "post_13",
+        "start": 1.3,
+        "end": 1.56,
+        "recognized": "シュッ"
+      }
+    ]
+  },
+  "machineValidation": {
+    "waveformHashesMatch": true,
+    "finiteSamples": true,
+    "clippedSamples": 37,
+    "noDialogueOverlaps": true,
+    "captionTextMatches": true,
+    "captionBoundsValid": true
+  },
+  "asrLimitations": "ASR orthographic variations and ambiguous recognition remain (e.g. 窓際族, dialect, Pets). Exact synthesis text and VOICEVOX phonemes were also checked for Imagegen/OpenAI/Codex Pets/OpenCV/ImageMagick. This is not subjective listening or proof of perfect pronunciation.",
+  "mixedSha256": "7c259ac23dd49f5df069f6ae522e05e953368c2aba62d68e2b063495b664ea7f",
+  "measuredLoudness": {
+    "integratedLUFS": -17.94,
+    "truePeakDbTP": -4.17,
+    "loudnessRangeLU": 3.8,
+    "method": "FFmpeg loudnorm input measurements, no processing applied during measurement."
+  },
+  "mixedSpotCheck": {
+    "model": "openai/whisper-small",
+    "expectedTextPrompt": false,
+    "subjectiveListening": false,
+    "note": "Automated spot check of the final music/effects/narration mix.",
+    "segments": [
+      {
+        "id": "tips-05",
+        "startFrame": 2693,
+        "durationInFrames": 426,
+        "expected": "はい。Imagegenという機能で、OpenAIの画像生成モデルを使えます。対応するChatGPTプランなら、プランに含まれるCodexの利用枠で使えます。",
+        "recognized": "はい、イメージジェント有機能でオープンAIの画像生成モデルを使えます。対応するチャットGPTプランならプランに含まれるコーデックスの利用枠で使えます。"
+      },
+      {
+        "id": "ideas-03",
+        "startFrame": 3394,
+        "durationInFrames": 60,
+        "expected": "最初から全部？",
+        "recognized": "最初から全部"
+      },
+      {
+        "id": "options-04",
+        "startFrame": 5249,
+        "durationInFrames": 437,
+        "expected": "そこから、構図を変えて三案くらい。実際の「ちゃんと働いてるか？」も、立ち姿、パーティションに肘を置く姿、椅子でふんぞり返る姿を比べました。",
+        "recognized": "そこから構図を変えて3案くらい、実際のちゃんと働いてるか?もう立ち姿、パーティションに肘を奥姿、椅子でふんぞり帰る姿を比べました。"
+      },
+      {
+        "id": "pets-04",
+        "startFrame": 8199,
+        "durationInFrames": 463,
+        "expected": "OpenAIが提供している、Codex Pets用のスキルを参考にしました。連続したポーズを一枚に描いて、切り出して動かす部分を、LINEスタンプにも応用しています。",
+        "recognized": "オープンAIが提供しているコーデックス レッツ用のスキルを参考にしました連続したポーズを1枚に描いて切り出して動かす部分をラインスタンプにも応用しています"
+      },
+      {
+        "id": "acting-09",
+        "startFrame": 11381,
+        "durationInFrames": 318,
+        "expected": "はい。「最後はこの静止画の姿勢にしたい」など、譲れないところは添えます。そのうえで、演技の雰囲気を伝えます。",
+        "recognized": "はい、最後はこの静止画の姿勢にしたい、など、譲れないところは添えます。その上で演技の雰囲気を伝えます。"
+      },
+      {
+        "id": "tools-02",
+        "startFrame": 14227,
+        "durationInFrames": 305,
+        "expected": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、OpenCVとImageMagickです。",
+        "recognized": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、オープンCVとイメージマジックです。"
+      },
+      {
+        "id": "close-06",
+        "startFrame": 17628,
+        "durationInFrames": 83,
+        "expected": "そこを比較させるな。",
+        "recognized": "そこを比較させるな"
+      }
+    ]
+  },
+  "newYametaroTailScreen": [
+    {
+      "id": "tips-02",
+      "audioSha256": "5d1bb9ddeab5504c577b9ba8519450191c8d580e956c6a72df2201a4fbac6bde",
+      "expected": "ワイが頼むとき、何を言えばええか知りたいわ。",
+      "durationSeconds": 2.8,
+      "approximateWordEnd": 2.68,
+      "recognized": "我が頼むとき何を言えばいいか知りたいわ",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.8
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.8
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "tips-04",
+      "audioSha256": "127a41b6783a505c274c22d095776bcdc752dc736f48242b95bdb2cd2b7cd10f",
+      "expected": "ちなみに、絵もCodexから作れるん？",
+      "durationSeconds": 2.56,
+      "approximateWordEnd": 2.54,
+      "recognized": "ちなみに、MをCodexから作れるん?",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 2.56
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.0,
+            "end": 2.56
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "ideas-01",
+      "audioSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c",
+      "expected": "ほな、一個目から気合い入れて作るか。",
+      "durationSeconds": 2.36,
+      "approximateWordEnd": 2.14,
+      "recognized": "ほな、1個目からキャイ入れて作るか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.36
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.36
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "ideas-03",
+      "audioSha256": "e0d8d5f832a8dfbd9e9c9e11da6ba580505dabc6fae1eaba4603c973898da346",
+      "expected": "最初から全部？",
+      "durationSeconds": 2.0,
+      "approximateWordEnd": 1.54,
+      "recognized": "最初から全部",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 2.0
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.0,
+            "end": 1.2
+          },
+          {
+            "start": 1.4,
+            "end": 2.0
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "ideas-06",
+      "audioSha256": "5a9725dc20eee5ce0474f6b6e88f8f41967245c4034147347d60365e3caddb16",
+      "expected": "一個ずつ見てたら気づかんけど、並べると「全員、同じ立ち方やな」ってなるんか。",
+      "durationSeconds": 4.72,
+      "approximateWordEnd": 4.6,
+      "recognized": "一つずつ見てたら気づくんけど並べると全員同じ立ち方やなってなるんか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 4.7
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 4.7
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "ideas-08",
+      "audioSha256": "b0775ccdcc9a52199bd70ab1b3a548feb6d3f5e14518f20f0e18c1911dd63925",
+      "expected": "完成させてから八個とも似てるって気づくの、つらいな。",
+      "durationSeconds": 3.32,
+      "approximateWordEnd": 3.12,
+      "recognized": "完成させてから発酵とも似てるって気付くの辛いな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.2,
+            "end": 3.3
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.2,
+            "end": 3.3
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "options-01",
+      "audioSha256": "d034f8d5b710354bcc167a54f4f32eac06a5978884201393f15777c8679bf224",
+      "expected": "全体はええけど、この一個だけ、なんか違う。こういうとき困るねんな。",
+      "durationSeconds": 3.84,
+      "approximateWordEnd": 3.64,
+      "recognized": "全体は良いけどこの1個だけなんか違う こういう時困るねんな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.8
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.8
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "options-03",
+      "audioSha256": "cfea0319baf7fe0adc59fae2acb64102df41b918bb459ff2b863d3de11eed78f",
+      "expected": "「なんか違う」のままでもええん？",
+      "durationSeconds": 2.36,
+      "approximateWordEnd": 2.28,
+      "recognized": "なんか違うのままでもええん",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 2.36
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.36
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "options-05",
+      "audioSha256": "4c9716a06c3c2fd89274ab18e28e5d8b0347f3fed1da350f350bbfb70ecb7c52",
+      "expected": "どれも働いてなさそうやな。",
+      "durationSeconds": 2.64,
+      "approximateWordEnd": 2.42,
+      "recognized": "どれも働いてなさそうやな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.6
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.6
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "options-07",
+      "audioSha256": "23f27df48fbd3e532df2e0202b49f44d0fab21e07bd719aed14572401ae0d923",
+      "expected": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+      "durationSeconds": 4.44,
+      "approximateWordEnd": 4.26,
+      "recognized": "最初から正解の説明本考えんでも絵を見て好みを伝えられるんや",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 4.4
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 4.4
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "redraw-01",
+      "audioSha256": "502c00c4f310756813ff202cbbf91d013ea245d1af095c4f935f3ee11013a5fb",
+      "expected": "直してるうちに、顔とか線がガビガビになってきたんやけど。",
+      "durationSeconds": 3.52,
+      "approximateWordEnd": 3.3,
+      "recognized": "直してるうちに顔とか線がガビガビになってきたんやけど",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.5
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.5
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "redraw-03",
+      "audioSha256": "19fdeea18f04e66b426d994911c013281642d885f903f07c6712f8e88e99f05f",
+      "expected": "せっかく決まった絵が、また変わらへん？",
+      "durationSeconds": 2.44,
+      "approximateWordEnd": 2.32,
+      "recognized": "せっかく決まった映画また変わらへん",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 2.4
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.0,
+            "end": 1.3
+          },
+          {
+            "start": 1.5,
+            "end": 2.4
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "redraw-06",
+      "audioSha256": "c20a4ba503353ef200667cbb45f48bd2d765ded619e84103fe56f2741e3e72e6",
+      "expected": "動かす前に、気に入った一枚をちゃんと用意するんやな。",
+      "durationSeconds": 3.52,
+      "approximateWordEnd": 3.38,
+      "recognized": "動かす前に気に入った1枚をちゃんと用意するんやな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.5
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.5
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "pets-01",
+      "audioSha256": "f61c488c0b54d704d9372360f7c2487a2e306ff7ac5ef6068095f2041cef22db",
+      "expected": "ここから動かすんか。よーたんが六人おるけど。",
+      "durationSeconds": 3.0,
+      "approximateWordEnd": 2.76,
+      "recognized": "ここから動かすんか 両端が6人おるけど",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.0
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.0
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "pets-03",
+      "audioSha256": "42976c8c3e10ba729008795acefe8a98c753d718c948d3faea58cd6a161c8b8f",
+      "expected": "パラパラ漫画やな。この作り方は、どこから持ってきたん？",
+      "durationSeconds": 3.28,
+      "approximateWordEnd": 3.26,
+      "recognized": "パラパラ漫画やなこの作り方はどこから持ってきたん?",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.28
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.28
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "pets-05",
+      "audioSha256": "af8021d189d2a82c319e9543467516a6f8db7a64f4f89955e01e92b0456c344c",
+      "expected": "ペットの作り方が、島流しスタンプになったんか。",
+      "durationSeconds": 3.0,
+      "approximateWordEnd": 2.84,
+      "recognized": "ペットの作り方が島流しスタンプになったんか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 3.0
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.0,
+            "end": 3.0
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "pets-07",
+      "audioSha256": "3616f0c95410e17a8d92c6299dd1fcc5c36eaf575a06b0f1ba6a4268626cbc02",
+      "expected": "一枚ずつ別々に描いてもらうんとは違うんやな。",
+      "durationSeconds": 3.04,
+      "approximateWordEnd": 2.96,
+      "recognized": "1枚ずつ別々に書いてもらうのとは違うんやな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.0
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.0
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "acting-01",
+      "audioSha256": "530a2b30af72fb0448c01294518371c9b5dc4eb106dc6ce228f68a3fbaae38dc",
+      "expected": "動きの注文って難しそうやな。腕を何度曲げて、とか？",
+      "durationSeconds": 3.48,
+      "approximateWordEnd": 3.14,
+      "recognized": "動きの注文って難しそうやな腕を何度曲げてとか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.48
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.48
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "acting-03",
+      "audioSha256": "557ec698918c998dfa709f1d9860e1ab7490b0b19295771f8c33cd796d1ea3b6",
+      "expected": "何を動かすかより、どう見えてほしいか。",
+      "durationSeconds": 2.92,
+      "approximateWordEnd": 2.72,
+      "recognized": "何を動かすかよりどう見えて欲しいか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.9
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.9
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "acting-06",
+      "audioSha256": "1cac7104621f06bfae5738d1044b74f9f89fd40a532e36c708d7c11f7cdcd83d",
+      "expected": "動きの角度は分からんけど、その先輩は想像できるわ。",
+      "durationSeconds": 3.48,
+      "approximateWordEnd": 3.36,
+      "recognized": "動きの角度はわからんけど その先輩は想像できるわ",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.48
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.48
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "acting-08",
+      "audioSha256": "9c5ce9a1e4a039633e4281cba5db22fccbc8a80457504c49612f2c1681f3a009",
+      "expected": "こっちが何気なく言った「肘を動かす」を、絶対条件にせんでええんやな。",
+      "durationSeconds": 4.32,
+      "approximateWordEnd": 4.2,
+      "recognized": "こっちが何気なくいった肘を動かすを絶対条件にせんでええんやな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 4.3
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.0,
+            "end": 4.3
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "acting-10",
+      "audioSha256": "c22b1442034d41c89da517e341e5a6ed808e310956937ff0c13c223492822f16",
+      "expected": "動きも、見比べて選んでええんか。",
+      "durationSeconds": 2.52,
+      "approximateWordEnd": 2.34,
+      "recognized": "動きも見比べて選んでいえんか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.5
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.5
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "acting-12",
+      "audioSha256": "6729b4fb3c195697d73b10a8f471303ab36ad0e6e0f4be8d0036f9ebca90ad6e",
+      "expected": "三つとも違うな、ってなったら？",
+      "durationSeconds": 2.32,
+      "approximateWordEnd": 2.16,
+      "recognized": "3つとも違うなってなったら",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.3
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.3
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "inspect-01",
+      "audioSha256": "5dae87b7343c21fc435a7646dd673eab6911e0fb3d397b62a13eb91b55458562",
+      "expected": "動きは決まった。ここから何を見るん？",
+      "durationSeconds": 2.44,
+      "approximateWordEnd": 2.42,
+      "recognized": "動きは決まった。ここから何を見るん?",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.4
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.4
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "inspect-03",
+      "audioSha256": "cf0d1b3db2e13c1b19fdee9fb27610f0dc2f69ecf1479e7161b21b97cdd710dd",
+      "expected": "黒にしたら、周りの白い残りが見えるな。",
+      "durationSeconds": 2.84,
+      "approximateWordEnd": 2.62,
+      "recognized": "黒にしたら周りの白い残りが見えるな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 2.8
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.8
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "inspect-06",
+      "audioSha256": "141f62f38eb549fe2c6b9a8ebb6c99ee6d9c203ea56102aada0905d49868345b",
+      "expected": "一枚だけきれいでも、動いてる途中で変になるかもしれんのか。",
+      "durationSeconds": 3.6,
+      "approximateWordEnd": 3.4,
+      "recognized": "一枚だけ綺麗でも動いている途中で変になるかもしれんのか",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.6
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.6
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "tools-01",
+      "audioSha256": "62f8c444aafcc06bbc781fbb1de2fac2365177967820ca6e88004e60005e4004",
+      "expected": "白いゴミが残ってたら、Imagegenに「ここ消して」でええ？",
+      "durationSeconds": 3.32,
+      "approximateWordEnd": 3.0,
+      "recognized": "白いゴミが残ってたらイメージ犬にここ消してで",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.3
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.3
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "tools-03",
+      "audioSha256": "0556cf7b08195401c8ba29313adaf5d0779c9d4c0faf6c605a22c78b15c1c613",
+      "expected": "絵を描くAIとは別の道具？",
+      "durationSeconds": 2.8,
+      "approximateWordEnd": 2.62,
+      "recognized": "絵を描く AI とは別の道具",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 2.8
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.8
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "tools-05",
+      "audioSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440",
+      "expected": "画像のことは、全部Imagegenでやるんやと思ってたわ。",
+      "durationSeconds": 3.08,
+      "approximateWordEnd": 2.92,
+      "recognized": "画像のことは全部イメージジェンでやるんやと思ってたわ",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 3.08
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.08
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "tools-08",
+      "audioSha256": "f499c7451c9b43c6e8907dd4c709c280acd3a934fc90fb9e11c5afd253e34c2f",
+      "expected": "消しゴムで済むところまで、描き直してもらわんでええんやな。",
+      "durationSeconds": 3.36,
+      "approximateWordEnd": 3.22,
+      "recognized": "消しゴムで済むところまで書き直してもらわないでいいやな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 3.36
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 3.36
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "close-01",
+      "audioSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7",
+      "expected": "最初から完璧な注文を書こうとせんでも、まず並べて、見て選んでいけばええんやな。",
+      "durationSeconds": 5.12,
+      "approximateWordEnd": 4.98,
+      "recognized": "最初から完璧な注文を書こうとせんでもまず並べて見て選んでいけばいいやな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 5.1
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.0,
+            "end": 5.1
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "close-04",
+      "audioSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8",
+      "expected": "ほなワイのも、「謝ってるけど、そこまで反省してない感じ」で三案ほしいわ。",
+      "durationSeconds": 4.24,
+      "approximateWordEnd": 4.12,
+      "recognized": "このワイのも誤っているけどそこまで反省してない感じで3案欲しいわ",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.1,
+            "end": 4.2
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 4.2
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    },
+    {
+      "id": "close-06",
+      "audioSha256": "40caeea2d867c89e78eb9c25d395d0a3e577a6a273813b9c11f9346e8a2555df",
+      "expected": "そこを比較させるな。",
+      "durationSeconds": 2.76,
+      "approximateWordEnd": 2.44,
+      "recognized": "そこを比較させるな",
+      "sileroVAD": {
+        "0.25": [
+          {
+            "start": 0.0,
+            "end": 2.76
+          }
+        ],
+        "0.5": [
+          {
+            "start": 0.1,
+            "end": 2.76
+          }
+        ]
+      },
+      "postprocessingApplied": false
+    }
+  ],
+  "adoptedUtteranceASR": [
+    {
+      "id": "intro-01",
+      "who": "yametaro",
+      "audioSha256": "11f686d328d54f40aa12fb97546752d7281a405ea9aaec0c33069aa27a33b7a1",
+      "expected": "窓際族のスタンプ、よう出来てるけど、使いどころ難しくない？",
+      "spoken": "窓際族のスタンプ、よう出来てるけど、使いどころ難しくない？",
+      "recognized": "窓際属のスタンプ用できてるけど使えるところ難しくない?",
+      "durationSeconds": 3.68,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-02",
+      "who": "takosan",
+      "audioSha256": "b787a78785fc383d99aae566b609e2a9fac8737a9127c3bbebe9bb0071815da7",
+      "expected": "「ごめんやで」とか、使いやすそうですよ。",
+      "spoken": "「ごめんやで」とか、使いやすそうですよ。",
+      "recognized": "ごめんね、で、とか、使いやすそうですよ",
+      "durationSeconds": 3.978666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-03",
+      "who": "yametaro",
+      "audioSha256": "91f915c7472e665e53b057a93c6618d9c9e0edf2cae04a1fa2fd8b8f0df4884d",
+      "expected": "ワイだけ使用頻度が高そうやな。でも、この「お前島流し！」は、いつ使うねん。",
+      "spoken": "ワイだけ使用頻度が高そうやな。でも、この「お前島流し！」は、いつ使うねん。",
+      "recognized": "ワイだけ使用頻度が高そうやな でもこのお前島流しはいつ使うねん",
+      "durationSeconds": 4.56,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-04",
+      "who": "yametaro",
+      "audioSha256": "3aa53d818cbfa9c7fcadaec14e464c1c2128e22c6d3716341b0b73c1b7d8353d",
+      "expected": "よーたんからや。",
+      "spoken": "よーたんからや。",
+      "recognized": "両端からや",
+      "durationSeconds": 1.5,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-05",
+      "who": "yametaro",
+      "audioSha256": "32a53cee3f0d83f07f882ff4914a10a69a7c0139055127413d9019e8b51d94a7",
+      "expected": "ちょうど来たわ。こういう冗談に使うんやな。",
+      "spoken": "ちょうど来たわ。こういう冗談に使うんやな。",
+      "recognized": "ちょうどキタはこういう状態に使うんやな",
+      "durationSeconds": 2.76,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-06",
+      "who": "takosan",
+      "audioSha256": "9c680d359f44500a79f883cf49c9afebddb1bd49893890bc110f32de5ef8b0d9",
+      "expected": "辞令って書いてありますけど。",
+      "spoken": "辞令って書いてありますけど。",
+      "recognized": "事例って書いてありますけど",
+      "durationSeconds": 2.2293333333333334,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-07",
+      "who": "yametaro",
+      "audioSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619",
+      "expected": "辞令？",
+      "spoken": "辞令？",
+      "recognized": "じれぇぇぇぇ",
+      "durationSeconds": 1.0,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-08",
+      "who": "yametaro",
+      "audioSha256": "b39f27658988a0695995458373cd68f8a97126bd58a5ee415e1c3f7aef5b24a9",
+      "expected": "ガチの島流しやないか！",
+      "spoken": "ガチの島流しやないか！",
+      "recognized": "ガチの島流しやないか",
+      "durationSeconds": 2.12,
+      "clippedSamples": 1,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-09",
+      "who": "takosan",
+      "audioSha256": "f8228d3880f3cecd98a06b65fd82318ce7c8134ea53009e1d6e68f8c4ed9b507",
+      "expected": "明日から廃村（ハイソン）エンジニアですね。",
+      "spoken": "明日からハイソンエンジニアですね。",
+      "recognized": "わしたから配送エンジニアですね",
+      "durationSeconds": 2.6666666666666665,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-10",
+      "who": "yametaro",
+      "audioSha256": "e2dd981c3ca7919f63ad8b1c2ab03f50846a9e0773a2cde55cee3b68a587f1c6",
+      "expected": "Pythonエンジニアみたいに言うな！",
+      "spoken": "パイソンエンジニアみたいに言うな！",
+      "recognized": "パイソンエンジニアみたいに言うな",
+      "durationSeconds": 2.32,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-11",
+      "who": "yametaro",
+      "audioSha256": "479e74fc2741a396f0879e9e1d546d0292db896d6dbe0eaca058d8518b8efdee",
+      "expected": "人の人生決める連絡を、こんな軽快な動きで送ってくんなや！",
+      "spoken": "人の人生決める連絡を、こんな軽快な動きで送ってくんなや！",
+      "recognized": "人の人生決める連絡をこんな軽快な動きで送ってくんだよ",
+      "durationSeconds": 3.76,
+      "clippedSamples": 1,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-12",
+      "who": "takosan",
+      "audioSha256": "be49a91b26a4ad85761411fec2b53590a1c852ea4f593c66e5d65364ae1b8700",
+      "expected": "使いどころ、ありましたね。",
+      "spoken": "使いどころ、ありましたね。",
+      "recognized": "使い所ありましたね",
+      "durationSeconds": 2.496,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "intro-13",
+      "who": "yametaro",
+      "audioSha256": "df4d20a0abbd82b6871b5a55aa03d5caccc356e6816454b376baa594289d75bd",
+      "expected": "実例いらんねん！",
+      "spoken": "実例いらんねん！",
+      "recognized": "実例いらんねー",
+      "durationSeconds": 2.2,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "main-01",
+      "who": "yametaro",
+      "audioSha256": "296943c211af0f1f219d2e9a6d8f6d3040f47849360b6be2c2266fcac6c837e2",
+      "expected": "どうも、無職やめ太郎です。",
+      "spoken": "どうも、無職やめ太郎です。",
+      "recognized": "どうも、無職やめたろうです",
+      "durationSeconds": 2.32,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "main-02",
+      "who": "takosan",
+      "audioSha256": "83f6c357e127595e7775a132a3ef02bec0d64fcd5724bce1a0a776a65326f11a",
+      "expected": "どうも、たこさんです。",
+      "spoken": "どうも、たこさんです。",
+      "recognized": "どうも、たこさんです。",
+      "durationSeconds": 2.112,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "main-03",
+      "who": "takosan",
+      "audioSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005",
+      "expected": "今回は、こちらの動くLINEスタンプを、Codexでどう作ったのか解説します。",
+      "spoken": "今回は、こちらの動くラインスタンプを、コーデックスでどう作ったのか解説します。",
+      "recognized": "今回はこちらの動くラインスタンプをコーデックスでどう作ったのか解説します",
+      "durationSeconds": 7.104,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tips-01",
+      "who": "takosan",
+      "audioSha256": "5773013a4c942f26f2480283ef643de115e065d7efd85a3dbc7768e10a62c0a2",
+      "expected": "題材はこちらの「窓際族スタンプ第一弾」。続編づくりで分かったことも交えて、作るときのコツを紹介します。",
+      "spoken": "題材はこちらの「窓際族スタンプ第一弾」。続編づくりで分かったことも交えて、作るときのコツを紹介します。",
+      "recognized": "題材はこちらの窓際属スタンプ第1弾、属編作りで分かったことも交えて作る時のコツを紹介します",
+      "durationSeconds": 10.336,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tips-02",
+      "who": "yametaro",
+      "audioSha256": "5d1bb9ddeab5504c577b9ba8519450191c8d580e956c6a72df2201a4fbac6bde",
+      "expected": "ワイが頼むとき、何を言えばええか知りたいわ。",
+      "spoken": "ワイが頼むとき、何を言えばええか知りたいわ。",
+      "recognized": "我が頼むとき何を言えばいいか知りたいわ",
+      "durationSeconds": 2.8,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tips-03",
+      "who": "takosan",
+      "audioSha256": "fc760e8257fbcf3583ecdf18374a5edd79c5ee5e7df68a90211531f6a04ff8d7",
+      "expected": "最初にどんな画像を出してもらうか。気に入らないときにどう選び直すか。そういう、実際にやって役立った話です。",
+      "spoken": "最初にどんな画像を出してもらうか。気に入らないときにどう選び直すか。そういう、実際にやって役立った話です。",
+      "recognized": "最初にどんな画像を出してもらうか 気に入らない時にどう選び直すかそういう実際にやって役立った話です",
+      "durationSeconds": 9.738666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tips-04",
+      "who": "yametaro",
+      "audioSha256": "127a41b6783a505c274c22d095776bcdc752dc736f48242b95bdb2cd2b7cd10f",
+      "expected": "ちなみに、絵もCodexから作れるん？",
+      "spoken": "ちなみに、絵もコーデックスから作れるん？",
+      "recognized": "ちなみに、MをCodexから作れる",
+      "durationSeconds": 2.56,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tips-05",
+      "who": "takosan",
+      "audioSha256": "10549df504c1a99ebee232a31a277cb6d7dc668ddb25ffae5ed0d31d2d2abfd8",
+      "expected": "はい。Imagegenという機能で、OpenAIの画像生成モデルを使えます。対応するChatGPTプランなら、プランに含まれるCodexの利用枠で使えます。",
+      "spoken": "はい。イメージジェンという機能で、オープンエーアイの画像生成モデルを使えます。対応するチャットジーピーティープランなら、プランに含まれるコーデックスの利用枠で使えます。",
+      "recognized": "はい、イメージジェント有機能でオープンAIの画像生成モデルを使えます。対応するチャットGPTプランなら、プランに含まれるコーデックスの利用枠で使えます。",
+      "durationSeconds": 14.186666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-01",
+      "who": "yametaro",
+      "audioSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c",
+      "expected": "ほな、一個目から気合い入れて作るか。",
+      "spoken": "ほな、一個目から気合い入れて作るか。",
+      "recognized": "ほな、1個目からキャイ入れて作るか",
+      "durationSeconds": 2.36,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-02",
+      "who": "takosan",
+      "audioSha256": "dd7fe507f29314b8585423f8df859bb4210ffbcdafef7ab123e285bfb08b5ec0",
+      "expected": "最初の案出しは、八個まとめて一枚に出してもらうと早かったです。",
+      "spoken": "最初の案出しは、八個まとめて一枚に出してもらうと早かったです。",
+      "recognized": "最初の搬出詩は8個まとめて1枚に出してもらうと早かったです",
+      "durationSeconds": 5.898666666666666,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-03",
+      "who": "yametaro",
+      "audioSha256": "e0d8d5f832a8dfbd9e9c9e11da6ba580505dabc6fae1eaba4603c973898da346",
+      "expected": "最初から全部？",
+      "spoken": "最初から全部？",
+      "recognized": "最初から全部",
+      "durationSeconds": 2.0,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-04",
+      "who": "takosan",
+      "audioSha256": "63a73090f73e77698fd42ea4d2c303377233c5f94def5a490bacd53f506495c9",
+      "expected": "はい。セリフと大まかなネタを渡して、こんなふうに頼みます。",
+      "spoken": "はい。セリフと大まかなネタを渡して、こんなふうに頼みます。",
+      "recognized": "はい、セリフと大まかなネタを渡して、こんな風に頼みます。",
+      "durationSeconds": 5.429333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-05",
+      "who": "takosan",
+      "audioSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2",
+      "expected": "一覧になると、セット全体を見渡せます。似たポーズばかりになっていないか、セリフの雰囲気に合っているかを、一度に比べられます。",
+      "spoken": "一覧になると、セット全体を見渡せます。似たポーズばかりになっていないか、セリフの雰囲気に合っているかを、一度に比べられます。",
+      "recognized": "一覧になるとセット全体を見渡せます。板ポーズばかりになっていないか、セリフの雰囲気にあっているかを一度に比べられます。",
+      "durationSeconds": 11.242666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-06",
+      "who": "yametaro",
+      "audioSha256": "5a9725dc20eee5ce0474f6b6e88f8f41967245c4034147347d60365e3caddb16",
+      "expected": "一個ずつ見てたら気づかんけど、並べると「全員、同じ立ち方やな」ってなるんか。",
+      "spoken": "一個ずつ見てたら気づかんけど、並べると「全員、同じ立ち方やな」ってなるんか。",
+      "recognized": "一つずつ見てたら気づくんけど並べると全員同じ立ち方やなってなるんか",
+      "durationSeconds": 4.72,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-07",
+      "who": "takosan",
+      "audioSha256": "ecf58fdeb577a7dfdc5ee383259cfd4f256aee8c7fdfb329896448cce23b5497",
+      "expected": "実際、第二弾では「似たポーズが多い」というところから、八個並んだ案を何パターンか作り直しました。",
+      "spoken": "実際、第二弾では「似たポーズが多い」というところから、八個並んだ案を何パターンか作り直しました。",
+      "recognized": "実際、第2弾では、似たポーズが多いというところから8個並んだ案を何パターンか作り直しました。",
+      "durationSeconds": 9.664,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-08",
+      "who": "yametaro",
+      "audioSha256": "b0775ccdcc9a52199bd70ab1b3a548feb6d3f5e14518f20f0e18c1911dd63925",
+      "expected": "完成させてから八個とも似てるって気づくの、つらいな。",
+      "spoken": "完成させてから八個とも似てるって気づくの、つらいな。",
+      "recognized": "完成させてから発酵とも似てるって気付くのを辛いな",
+      "durationSeconds": 3.32,
+      "clippedSamples": 4,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "ideas-09",
+      "who": "takosan",
+      "audioSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb",
+      "expected": "この段階では、細かな仕上げより「どの方向で作りたいか」を選びます。",
+      "spoken": "この段階では、細かな仕上げより「どの方向で作りたいか」を選びます。",
+      "recognized": "この段階では細かな仕上げよりどの方向で作りたいかを選びます",
+      "durationSeconds": 7.061333333333334,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-01",
+      "who": "yametaro",
+      "audioSha256": "d034f8d5b710354bcc167a54f4f32eac06a5978884201393f15777c8679bf224",
+      "expected": "全体はええけど、この一個だけ、なんか違う。こういうとき困るねんな。",
+      "spoken": "全体はええけど、この一個だけ、なんか違う。こういうとき困るねんな。",
+      "recognized": "全体は良いけどこの1個だけなんか違う こういう時困るねんな",
+      "durationSeconds": 3.84,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-02",
+      "who": "takosan",
+      "audioSha256": "868f69d22e8c2b80fb81e580daf4a143bc191b060bcb0fa06de7304bb040e160",
+      "expected": "違和感をうまく説明できなければ、その一個だけ別案を出してもらいます。",
+      "spoken": "違和感をうまく説明できなければ、その一個だけ別案を出してもらいます。",
+      "recognized": "違和感をまく説明できなければその1個だけ別案を出してもらいます",
+      "durationSeconds": 5.888,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-03",
+      "who": "yametaro",
+      "audioSha256": "cfea0319baf7fe0adc59fae2acb64102df41b918bb459ff2b863d3de11eed78f",
+      "expected": "「なんか違う」のままでもええん？",
+      "spoken": "「なんか違う」のままでもええん？",
+      "recognized": "なんか違うのままでもええん",
+      "durationSeconds": 2.36,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-04",
+      "who": "takosan",
+      "audioSha256": "e8cfc02e48930bf1e18bf7f552199508e093302f42a281e5d4d4b28a41b6c389",
+      "expected": "そこから、構図を変えて三案くらい。実際の「ちゃんと働いてるか？」も、立ち姿、パーティションに肘を置く姿、椅子でふんぞり返る姿を比べました。",
+      "spoken": "そこから、構図を変えて三案くらい。実際の「ちゃんと働いてるか？」も、立ち姿、パーティションに肘を置く姿、椅子でふんぞり返る姿を比べました。",
+      "recognized": "そこから構図を変えて3案くらい実際のちゃんと働いてるか?もう立ち姿、パーティションに肘を奥姿、椅子でふんぞり帰る姿を比べました",
+      "durationSeconds": 14.549333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-05",
+      "who": "yametaro",
+      "audioSha256": "4c9716a06c3c2fd89274ab18e28e5d8b0347f3fed1da350f350bbfb70ecb7c52",
+      "expected": "どれも働いてなさそうやな。",
+      "spoken": "どれも働いてなさそうやな。",
+      "recognized": "どれも働いてなさそうやな",
+      "durationSeconds": 2.64,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-06",
+      "who": "takosan",
+      "audioSha256": "86ea35424c47a696548fb8f7117267aa42e0344bcba4d54765bad3c6daf45702",
+      "expected": "並べて見ると、「欲しかったのは、この馴れ馴れしさだ」と選びやすくなります。",
+      "spoken": "並べて見ると、「欲しかったのは、この馴れ馴れしさだ」と選びやすくなります。",
+      "recognized": "鍋で見ると欲しかったのはこの慣れ慣れしさだと選びやすくなります",
+      "durationSeconds": 6.432,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-07",
+      "who": "yametaro",
+      "audioSha256": "23f27df48fbd3e532df2e0202b49f44d0fab21e07bd719aed14572401ae0d923",
+      "expected": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+      "spoken": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+      "recognized": "最初から正解の説明本考えんでも絵を見て好みを伝えられるんや",
+      "durationSeconds": 4.44,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "options-08",
+      "who": "takosan",
+      "audioSha256": "2447bea5ccadcea5ecb43a76d7409376a80c10ccde818799a0c3057e059bae24",
+      "expected": "はい。採用しなかった椅子の案は、別のスタンプに使いました。候補は残しておくと、あとで役立つこともあります。",
+      "spoken": "はい。採用しなかった椅子の案は、別のスタンプに使いました。候補は残しておくと、あとで役立つこともあります。",
+      "recognized": "はい、採用しなかった椅子の案は別のスタンプに使いました。候補は残しておくと、後で役立つこともあります。",
+      "durationSeconds": 10.229333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "redraw-01",
+      "who": "yametaro",
+      "audioSha256": "502c00c4f310756813ff202cbbf91d013ea245d1af095c4f935f3ee11013a5fb",
+      "expected": "直してるうちに、顔とか線がガビガビになってきたんやけど。",
+      "spoken": "直してるうちに、顔とか線がガビガビになってきたんやけど。",
+      "recognized": "直してるうちに顔とか線がガビガビになってきたんやけど",
+      "durationSeconds": 3.52,
+      "clippedSamples": 6,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "redraw-02",
+      "who": "takosan",
+      "audioSha256": "9380831e588df8228f8299c0d3e8e04e223d1492f8eab07341e12a1b73c8d803",
+      "expected": "今回もありました。何度も編集して構図を詰めたあと、一枚ずつ、きれいに生成し直しました。",
+      "spoken": "今回もありました。何度も編集して構図を詰めたあと、一枚ずつ、きれいに生成し直しました。",
+      "recognized": "今回もありました。何度も編集して構図を詰めた後、1枚ずつ、綺麗に生成し直しました。",
+      "durationSeconds": 9.024,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "redraw-03",
+      "who": "yametaro",
+      "audioSha256": "19fdeea18f04e66b426d994911c013281642d885f903f07c6712f8e88e99f05f",
+      "expected": "せっかく決まった絵が、また変わらへん？",
+      "spoken": "せっかく決まった絵が、また変わらへん？",
+      "recognized": "せっかく決まった映画また変わらへん",
+      "durationSeconds": 2.44,
+      "clippedSamples": 1,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "redraw-04",
+      "who": "takosan",
+      "audioSha256": "51681539fb9800678c6b5cfa87b2c03f46a1e2fe0989821d5995fd9afb00e432",
+      "expected": "採用した画像を構図の見本にして、キャラクターの元の資料も一緒に渡します。",
+      "spoken": "採用した画像を構図の見本にして、キャラクターの元の資料も一緒に渡します。",
+      "recognized": "採用した画像を構図の見本にして、キャラクターの元の資料も一緒に渡します。",
+      "durationSeconds": 6.538666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "redraw-05",
+      "who": "takosan",
+      "audioSha256": "6bf5fee51e82a64bf8b12ce442e248e91135e5bbbea542b63b95e2c76122f8e6",
+      "expected": "描き直したら、顔や口の形が変わっていないかを見ます。そば屋さんも、絵柄だけでなく、キャラクター本来の特徴を見直しました。",
+      "spoken": "描き直したら、顔や口の形が変わっていないかを見ます。そば屋さんも、絵柄だけでなく、キャラクター本来の特徴を見直しました。",
+      "recognized": "描き直したら、顔や口の形が変わっていない顔を見ます。そば屋さんも、絵柄だけでなく、キャラクター本来の特徴を見直しました。",
+      "durationSeconds": 11.765333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "redraw-06",
+      "who": "yametaro",
+      "audioSha256": "c20a4ba503353ef200667cbb45f48bd2d765ded619e84103fe56f2741e3e72e6",
+      "expected": "動かす前に、気に入った一枚をちゃんと用意するんやな。",
+      "spoken": "動かす前に、気に入った一枚をちゃんと用意するんやな。",
+      "recognized": "動かす前に気に入った1枚をちゃんと用意するんやな",
+      "durationSeconds": 3.52,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-01",
+      "who": "yametaro",
+      "audioSha256": "f61c488c0b54d704d9372360f7c2487a2e306ff7ac5ef6068095f2041cef22db",
+      "expected": "ここから動かすんか。よーたんが六人おるけど。",
+      "spoken": "ここから動かすんか。よーたんが六人おるけど。",
+      "recognized": "ここから動かすんか 両端が6人おるけど",
+      "durationSeconds": 3.0,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-02",
+      "who": "takosan",
+      "audioSha256": "1d92b6a569e85d742e0e60976af98f47cc7ad5a46835d3e58d2ca2cbfe451037",
+      "expected": "同じ人の、動きの途中を並べた画像です。これを一コマずつ切り出して、順番に表示します。",
+      "spoken": "同じ人の、動きの途中を並べた画像です。これを一コマずつ切り出して、順番に表示します。",
+      "recognized": "同じ人の動きの途中を並べた画像です。これを1個まずつ切り出して順番に表示します。",
+      "durationSeconds": 8.64,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-03",
+      "who": "yametaro",
+      "audioSha256": "42976c8c3e10ba729008795acefe8a98c753d718c948d3faea58cd6a161c8b8f",
+      "expected": "パラパラ漫画やな。この作り方は、どこから持ってきたん？",
+      "spoken": "パラパラ漫画やな。この作り方は、どこから持ってきたん？",
+      "recognized": "パラパラ漫画やなこの作り方はどこから持ってきたん",
+      "durationSeconds": 3.28,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-04",
+      "who": "takosan",
+      "audioSha256": "c53f575a8a8b7f6e6603b1aa2815e42bd96d62b9f61061aefe3b04a9868bee4c",
+      "expected": "OpenAIが提供している、Codex Pets用のスキルを参考にしました。連続したポーズを一枚に描いて、切り出して動かす部分を、LINEスタンプにも応用しています。",
+      "spoken": "オープンエーアイが提供している、コーデックス ペッツ用のスキルを参考にしました。連続したポーズを一枚に描いて、切り出して動かす部分を、ラインスタンプにも応用しています。",
+      "recognized": "オープンAIが提供しているコーデックス レッツ用のスキルを参考にしました連続したポーズを1枚に描いて切り出して動かす部分をラインスタンプにも応用しています",
+      "durationSeconds": 15.413333333333334,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-05",
+      "who": "yametaro",
+      "audioSha256": "af8021d189d2a82c319e9543467516a6f8db7a64f4f89955e01e92b0456c344c",
+      "expected": "ペットの作り方が、島流しスタンプになったんか。",
+      "spoken": "ペットの作り方が、島流しスタンプになったんか。",
+      "recognized": "ペットの作り方が島流しスタンプになったんか",
+      "durationSeconds": 3.0,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-06",
+      "who": "takosan",
+      "audioSha256": "0d94263c1b09200c2ea23360faa9fa8ea6d89c5881fdc253a3d581f713f72c3c",
+      "expected": "こういう、動きのコマをまとめた画像を「スプライトシート」と呼びます。",
+      "spoken": "こういう、動きのコマをまとめた画像を「スプライトシート」と呼びます。",
+      "recognized": "こういう動きのコマをまとめた画像をスプライトシートと呼びます",
+      "durationSeconds": 6.474666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-07",
+      "who": "yametaro",
+      "audioSha256": "3616f0c95410e17a8d92c6299dd1fcc5c36eaf575a06b0f1ba6a4268626cbc02",
+      "expected": "一枚ずつ別々に描いてもらうんとは違うんやな。",
+      "spoken": "一枚ずつ別々に描いてもらうんとは違うんやな。",
+      "recognized": "1枚ずつ別々に書いてもらうのとは違うんやな",
+      "durationSeconds": 3.04,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-08",
+      "who": "takosan",
+      "audioSha256": "500af79dee2a85825d6b3440195e3a6cdfc57cf8d3e532a2e2bc5fc368681b1b",
+      "expected": "一枚の中に、同じキャラクターの連続した姿勢を出してもらいます。頼むときは、この手法の名前と、参考にするスキルを伝えると話が早いです。",
+      "spoken": "一枚の中に、同じキャラクターの連続した姿勢を出してもらいます。頼むときは、この手法の名前と、参考にするスキルを伝えると話が早いです。",
+      "recognized": "1枚の中に同じキャラクターの連続した姿勢を出してもらいます頼む時は、この手法の名前と参考にするスキルを伝えると話が早いです",
+      "durationSeconds": 12.832,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "pets-09",
+      "who": "takosan",
+      "audioSha256": "a952748eeb8ae00577265fd24190458a80bf5638a5ed09613604b859998a7d04",
+      "expected": "第一弾でも、このように生成した原画を使っています。スタンプごとに、合う動かし方を選びました。",
+      "spoken": "第一弾でも、このように生成した原画を使っています。スタンプごとに、合う動かし方を選びました。",
+      "recognized": "第1弾でもこのように生成した原画を使っていますスタンプごとに合う動かし方を選びました",
+      "durationSeconds": 8.768,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-01",
+      "who": "yametaro",
+      "audioSha256": "530a2b30af72fb0448c01294518371c9b5dc4eb106dc6ce228f68a3fbaae38dc",
+      "expected": "動きの注文って難しそうやな。腕を何度曲げて、とか？",
+      "spoken": "動きの注文って難しそうやな。腕を何度曲げて、とか？",
+      "recognized": "動きの注文って難しそうやな 腕を何度曲げてとか",
+      "durationSeconds": 3.48,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-02",
+      "who": "takosan",
+      "audioSha256": "6ae11fa70e85187fa0fcf1e0cc09cf2f701a966b9e78edc28eb9b1521a64387d",
+      "expected": "今回、伝えやすかったのは、動きのゴールでした。たとえば「ビールを大事そうに愛でている感じ」です。",
+      "spoken": "今回、伝えやすかったのは、動きのゴールでした。たとえば「ビールを大事そうに愛でている感じ」です。",
+      "recognized": "今回伝えやすかったのは動きのゴールでした。例えばビールを大事そうに目でている感じです。",
+      "durationSeconds": 9.589333333333334,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-03",
+      "who": "yametaro",
+      "audioSha256": "557ec698918c998dfa709f1d9860e1ab7490b0b19295771f8c33cd796d1ea3b6",
+      "expected": "何を動かすかより、どう見えてほしいか。",
+      "spoken": "何を動かすかより、どう見えてほしいか。",
+      "recognized": "何を動かすかよりどう見えて欲しいか",
+      "durationSeconds": 2.92,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-04",
+      "who": "takosan",
+      "audioSha256": "35c2c9ad91ccfd9e44d6750819b99247d6a5ffb0f45ea35f73ee58be9d7ef1cf",
+      "expected": "第二弾の「ちゃんと働いてるか？」では、肘や腕の位置を細かく言い直しても、なかなかしっくりきませんでした。",
+      "spoken": "第二弾の「ちゃんと働いてるか？」では、肘や腕の位置を細かく言い直しても、なかなかしっくりきませんでした。",
+      "recognized": "第2弾のちゃんと働いてるか?では、肘や腕の位置を細かく位置直しても、なかなかしっくりきませんでした。",
+      "durationSeconds": 10.112,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-05",
+      "who": "takosan",
+      "audioSha256": "7cdb875b4d94d118193f1424b2b08ddccb1ecd4413a28348db346e3d0e31c650",
+      "expected": "そこで伝えたかったのが、「馴れ馴れしく絡んでくる、ちょっとウザい先輩」という雰囲気です。",
+      "spoken": "そこで伝えたかったのが、「馴れ馴れしく絡んでくる、ちょっとウザい先輩」という雰囲気です。",
+      "recognized": "そこで伝えたかったのが、慣れ慣れしくからんでくるちょっとうざい先輩という雰囲気です",
+      "durationSeconds": 7.7973333333333334,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-06",
+      "who": "yametaro",
+      "audioSha256": "1cac7104621f06bfae5738d1044b74f9f89fd40a532e36c708d7c11f7cdcd83d",
+      "expected": "動きの角度は分からんけど、その先輩は想像できるわ。",
+      "spoken": "動きの角度は分からんけど、その先輩は想像できるわ。",
+      "recognized": "動きの角度は分からんけど その先輩は想像できるわ",
+      "durationSeconds": 3.48,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-07",
+      "who": "takosan",
+      "audioSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4",
+      "expected": "「指示は雰囲気の参考にして、絵に合う動きを考えて」と伝えたのもポイントでした。",
+      "spoken": "「指示は雰囲気の参考にして、絵に合う動きを考えて」と伝えたのもポイントでした。",
+      "recognized": "指示は雰囲気の参考にして、 絵に合う動きを考えて、と伝えたのもポイントでした。",
+      "durationSeconds": 7.221333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-08",
+      "who": "yametaro",
+      "audioSha256": "9c5ce9a1e4a039633e4281cba5db22fccbc8a80457504c49612f2c1681f3a009",
+      "expected": "こっちが何気なく言った「肘を動かす」を、絶対条件にせんでええんやな。",
+      "spoken": "こっちが何気なく言った「肘を動かす」を、絶対条件にせんでええんやな。",
+      "recognized": "こっちが何気なくいった肘を動かすを絶対条件にせんで言えんやな",
+      "durationSeconds": 4.32,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-09",
+      "who": "takosan",
+      "audioSha256": "3bb66f673cdab736e2a9f2204f30dd295db885521ea02b896d46d23f879db63a",
+      "expected": "はい。「最後はこの静止画の姿勢にしたい」など、譲れないところは添えます。そのうえで、演技の雰囲気を伝えます。",
+      "spoken": "はい。「最後はこの静止画の姿勢にしたい」など、譲れないところは添えます。そのうえで、演技の雰囲気を伝えます。",
+      "recognized": "はい、最後はこの静止画の姿勢にしたいなど譲れないところは添えます。その上で演技の雰囲気を伝えます。",
+      "durationSeconds": 10.570666666666666,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-10",
+      "who": "yametaro",
+      "audioSha256": "c22b1442034d41c89da517e341e5a6ed808e310956937ff0c13c223492822f16",
+      "expected": "動きも、見比べて選んでええんか。",
+      "spoken": "動きも、見比べて選んでええんか。",
+      "recognized": "動きも見比べて選んでいえんか",
+      "durationSeconds": 2.52,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-11",
+      "who": "takosan",
+      "audioSha256": "d559ca97b4abf73e8f2f89f1bc672cefdcdc8c31671c793833eb2446486b7d44",
+      "expected": "もちろんです。強め、控えめ、少し間を取る感じ。言葉だけで決めるより、動く候補を並べると好みが分かります。",
+      "spoken": "もちろんです。強め、控えめ、少し間を取る感じ。言葉だけで決めるより、動く候補を並べると好みが分かります。",
+      "recognized": "もちろんです。強め、控えめ、少し間を取る感じ、言葉だけで決めるより、動く交放並べると好みが分かります。",
+      "durationSeconds": 10.848,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-12",
+      "who": "yametaro",
+      "audioSha256": "6729b4fb3c195697d73b10a8f471303ab36ad0e6e0f4be8d0036f9ebca90ad6e",
+      "expected": "三つとも違うな、ってなったら？",
+      "spoken": "三つとも違うな、ってなったら？",
+      "recognized": "3つとも違うなってなったら",
+      "durationSeconds": 2.32,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "acting-13",
+      "who": "takosan",
+      "audioSha256": "e4df986e3729e815bd96e7b572092d3bb2d11494e64171c988889d1c65f880b5",
+      "expected": "その三つから無理に選ぶ必要はありません。実際に、全部しっくりこなくて、雰囲気を伝え直したこともありました。",
+      "spoken": "その三つから無理に選ぶ必要はありません。実際に、全部しっくりこなくて、雰囲気を伝え直したこともありました。",
+      "recognized": "その3つから無理に選ぶ必要はありません。実際に全部しっくりこなくて雰囲気を伝え直したこともありました。",
+      "durationSeconds": 10.122666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-01",
+      "who": "yametaro",
+      "audioSha256": "5dae87b7343c21fc435a7646dd673eab6911e0fb3d397b62a13eb91b55458562",
+      "expected": "動きは決まった。ここから何を見るん？",
+      "spoken": "動きは決まった。ここから何を見るん？",
+      "recognized": "動きは決まったここから何を見るん",
+      "durationSeconds": 2.44,
+      "clippedSamples": 3,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-02",
+      "who": "takosan",
+      "audioSha256": "139acd1b6498d086dc7ef93e7d3a223b691ef28c9f276869dbea07f12ad6ed1f",
+      "expected": "同じスタンプを、白と黒、両方の背景に載せます。これは、すぐ試せて役立ちました。",
+      "spoken": "同じスタンプを、白と黒、両方の背景に載せます。これは、すぐ試せて役立ちました。",
+      "recognized": "同じスタンプを白と黒両方の背景に載せます。これはすぐ試せて役立ちました。",
+      "durationSeconds": 8.490666666666666,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-03",
+      "who": "yametaro",
+      "audioSha256": "cf0d1b3db2e13c1b19fdee9fb27610f0dc2f69ecf1479e7161b21b97cdd710dd",
+      "expected": "黒にしたら、周りの白い残りが見えるな。",
+      "spoken": "黒にしたら、周りの白い残りが見えるな。",
+      "recognized": "黒にしたら周りの白い残りが見えるな",
+      "durationSeconds": 2.84,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-04",
+      "who": "takosan",
+      "audioSha256": "6e555d940d40ae79635a7d1026d4b90815f0db5997734cfde005b7c5362d43be",
+      "expected": "白い背景だけでは、背景の消し残しに気づきにくいんです。逆に、白い服が欠けていても分かりにくいことがあります。",
+      "spoken": "白い背景だけでは、背景の消し残しに気づきにくいんです。逆に、白い服が欠けていても分かりにくいことがあります。",
+      "recognized": "白い背景だけでは背景の消し残しに気付きにくいんです。逆に白い服がかけていてもわかりにくいことがあります。",
+      "durationSeconds": 10.261333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-05",
+      "who": "takosan",
+      "audioSha256": "0e8c7a30a24cfc323301cd7da51f845462e7e24e6e1318b27c398e1062741502",
+      "expected": "文字の穴に白が残っていないか。服や顔まで透けていないか。輪郭がちらつかないか。背景を切り替えながら見ます。",
+      "spoken": "文字の穴に白が残っていないか。服や顔まで透けていないか。輪郭がちらつかないか。背景を切り替えながら見ます。",
+      "recognized": "文字の穴に白が残っていないか、服や顔まで透けていないか、輪郭が散らつかないか、背景を切り替えながら見ます。",
+      "durationSeconds": 10.058666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-06",
+      "who": "yametaro",
+      "audioSha256": "141f62f38eb549fe2c6b9a8ebb6c99ee6d9c203ea56102aada0905d49868345b",
+      "expected": "一枚だけきれいでも、動いてる途中で変になるかもしれんのか。",
+      "spoken": "一枚だけきれいでも、動いてる途中で変になるかもしれんのか。",
+      "recognized": "一枚だけ綺麗でも動いている途中で変になるかもしれんのか",
+      "durationSeconds": 3.6,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "inspect-07",
+      "who": "takosan",
+      "audioSha256": "5f007a2433c1e0f28ed7187d2986d789cc7a73e13214df1e3677d9dfd98c9e24",
+      "expected": "なので、最後はアニメーションで。一覧にしてもらえば、八個まとめて確認できます。",
+      "spoken": "なので、最後はアニメーションで。一覧にしてもらえば、八個まとめて確認できます。",
+      "recognized": "なので最後はアニメーションで一覧にしてもらえば8個まとめて確認できます",
+      "durationSeconds": 7.296,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-01",
+      "who": "yametaro",
+      "audioSha256": "62f8c444aafcc06bbc781fbb1de2fac2365177967820ca6e88004e60005e4004",
+      "expected": "白いゴミが残ってたら、Imagegenに「ここ消して」でええ？",
+      "spoken": "白いゴミが残ってたら、イメージジェンに「ここ消して」でええ？",
+      "recognized": "白いゴミが残っていたらイメージ犬にここ消してで",
+      "durationSeconds": 3.32,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-02",
+      "who": "takosan",
+      "audioSha256": "57407ea15db18d5c521d1d1dcf4e62306cc04d087bbb244716b612043ac25cd8",
+      "expected": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、OpenCVとImageMagickです。",
+      "spoken": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、オープンシーブイとイメージマジックです。",
+      "recognized": "こういう細かい消し残しには通常の画像処理も使えます。今回使ったのはオープンCVとイメージマジックです。",
+      "durationSeconds": 10.144,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-03",
+      "who": "yametaro",
+      "audioSha256": "0556cf7b08195401c8ba29313adaf5d0779c9d4c0faf6c605a22c78b15c1c613",
+      "expected": "絵を描くAIとは別の道具？",
+      "spoken": "絵を描くエーアイとは別の道具？",
+      "recognized": "絵を描く AI とは別の道具",
+      "durationSeconds": 2.8,
+      "clippedSamples": 2,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-04",
+      "who": "takosan",
+      "audioSha256": "895238be946d8e43d08f323b52a16d46794919e855de2dc728f41f32e7aca6eb",
+      "expected": "はい。画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするための道具です。",
+      "spoken": "はい。画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするための道具です。",
+      "recognized": "はい、画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするための道具です。",
+      "durationSeconds": 8.970666666666666,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-05",
+      "who": "yametaro",
+      "audioSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440",
+      "expected": "画像のことは、全部Imagegenでやるんやと思ってたわ。",
+      "spoken": "画像のことは、全部イメージジェンでやるんやと思ってたわ。",
+      "recognized": "画像のことは全部イメージジェンでやるんやと思ってたわ",
+      "durationSeconds": 3.08,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-06",
+      "who": "takosan",
+      "audioSha256": "c0ce3e5fb2191aeb1b18a1f0be00e5dfc65dae6279757512e76ab5fb46c39c8d",
+      "expected": "新しいポーズを描きたい、構図を変えたい。そういうときはImagegen。今の絵を保って、ここに残った背景だけを消したい。そういうときは画像処理が向いています。",
+      "spoken": "新しいポーズを描きたい、構図を変えたい。そういうときはイメージジェン。今の絵を保って、ここに残った背景だけを消したい。そういうときは画像処理が向いています。",
+      "recognized": "新しいポーズを描きたい、構図を変えたい、そういう時はイメージ全。今の絵を保って、ここに残った背景だけを消したい、そういう時は画像処理が向いています。",
+      "durationSeconds": 14.154666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-07",
+      "who": "takosan",
+      "audioSha256": "179946961108cee51ed5605414ac9a6ed4f67eee441508e2fbf1b0b6267ceaff",
+      "expected": "たとえば、そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。残す場所を分けて、背景や文字の穴を処理しました。",
+      "spoken": "たとえば、そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。残す場所を分けて、背景や文字の穴を処理しました。",
+      "recognized": "例えば、そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。残す場所を分けて、背景や文字の穴を処理しました。",
+      "durationSeconds": 12.394666666666666,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-08",
+      "who": "yametaro",
+      "audioSha256": "f499c7451c9b43c6e8907dd4c709c280acd3a934fc90fb9e11c5afd253e34c2f",
+      "expected": "消しゴムで済むところまで、描き直してもらわんでええんやな。",
+      "spoken": "消しゴムで済むところまで、描き直してもらわんでええんやな。",
+      "recognized": "消しゴムで済むところまで書き直してもらわないでいいやな",
+      "durationSeconds": 3.36,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-09",
+      "who": "takosan",
+      "audioSha256": "354fb72afd6a73eeabe362e93969138a1f9da90f6686338a2739dbfaed054f58",
+      "expected": "Codexへの頼み方も、こんな感じです。",
+      "spoken": "コーデックスへの頼み方も、こんな感じです。",
+      "recognized": "コーデックスへの頼み方もこんな感じです",
+      "durationSeconds": 3.8933333333333335,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "tools-10",
+      "who": "takosan",
+      "audioSha256": "769904002abd62a821d37148487c50e0f47283f3454160bf9c8868ed70244790",
+      "expected": "使う道具を知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
+      "spoken": "使う道具を知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
+      "recognized": "使う道具を知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
+      "durationSeconds": 7.498666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "close-01",
+      "who": "yametaro",
+      "audioSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7",
+      "expected": "最初から完璧な注文を書こうとせんでも、まず並べて、見て選んでいけばええんやな。",
+      "spoken": "最初から完璧な注文を書こうとせんでも、まず並べて、見て選んでいけばええんやな。",
+      "recognized": "最初から完璧な注文を書こうとせんでもまず並べて見て選んでいけばいいやな",
+      "durationSeconds": 5.12,
+      "clippedSamples": 4,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "close-02",
+      "who": "takosan",
+      "audioSha256": "9c7cf733b44df80657e79311750454f50869352ade26ca0f6c99c31dcd5db3cd",
+      "expected": "はい。方向が決まったらきれいに描き直して、動きは雰囲気を伝えて比べる。仕上げは白黒両方で確認します。",
+      "spoken": "はい。方向が決まったらきれいに描き直して、動きは雰囲気を伝えて比べる。仕上げは白黒両方で確認します。",
+      "recognized": "はい、方向が決まったら綺麗に描き直して、動きは雰囲気を伝えて比べる。仕上げは白黒両方で確認します。",
+      "durationSeconds": 10.037333333333333,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "close-03",
+      "who": "takosan",
+      "audioSha256": "7729f9cde3831b693b67cf62e33d0faae65d3daacb0aae523eb8ba8c141a658b",
+      "expected": "今回の第一弾は、そば屋さんが申請を担当してくれて、販売中です。スタンプと、参考にしたスキルのリンクは概要欄に載せています。",
+      "spoken": "今回の第一弾は、そば屋さんが申請を担当してくれて、販売中です。スタンプと、参考にしたスキルのリンクは概要欄に載せています。",
+      "recognized": "今回の第1弾は、そば屋さんが申請を担当してくれて販売中です。スタンプと参考にしたスキルのリンクは概要欄に載せています。",
+      "durationSeconds": 12.224,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "close-04",
+      "who": "yametaro",
+      "audioSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8",
+      "expected": "ほなワイのも、「謝ってるけど、そこまで反省してない感じ」で三案ほしいわ。",
+      "spoken": "ほなワイのも、「謝ってるけど、そこまで反省してない感じ」で三案ほしいわ。",
+      "recognized": "このYのも誤っているけど、そこまで反省していない感じで3案欲しいわ",
+      "durationSeconds": 4.24,
+      "clippedSamples": 3,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "close-05",
+      "who": "takosan",
+      "audioSha256": "45e63a519a3dd86faf51b2f67601e0c5625bf3aded9afda47e8c31fa5b298999",
+      "expected": "反省の薄さで、三段階ですね。",
+      "spoken": "反省の薄さで、三段階ですね。",
+      "recognized": "反省の薄さで3段階ですね",
+      "durationSeconds": 3.3386666666666667,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    },
+    {
+      "id": "close-06",
+      "who": "yametaro",
+      "audioSha256": "40caeea2d867c89e78eb9c25d395d0a3e577a6a273813b9c11f9346e8a2555df",
+      "expected": "そこを比較させるな。",
+      "spoken": "そこを比較させるな。",
+      "recognized": "そこを比較させるな",
+      "durationSeconds": 2.76,
+      "clippedSamples": 0,
+      "nonFiniteSamples": 0
+    }
+  ]
+}

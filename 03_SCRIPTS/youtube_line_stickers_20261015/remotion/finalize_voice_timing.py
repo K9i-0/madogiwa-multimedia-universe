@@ -49,7 +49,10 @@ def wrap(text):
     if font.getlength(text) <= 770:
         return text
     candidates = []
+    protected_spans = [match.span() for token in ['Codex Pets', 'Imagegen', 'OpenAI', 'OpenCV', 'ImageMagick', 'こういう'] for match in re.finditer(re.escape(token), text)]
     for i in range(1, len(text)):
+        if any(start < i < end for start, end in protected_spans):
+            continue
         if text[i] in '、。！？）」』…' or text[i-1] in '「『（':
             continue
         if re.match(r'[A-Za-z0-9]', text[i-1]) and re.match(r'[A-Za-z0-9]', text[i]):

@@ -148,608 +148,587 @@
     "pause": 0.3
   },
   {
-    "id": "main-04",
+    "id": "tips-01",
     "who": "takosan",
     "chapter": 1,
-    "view": "store",
-    "text": "題材は、現在販売中の「窓際族スタンプ第一弾」です。販売ページは概要欄に載せています。",
-    "pause": 1.2
+    "view": "tip-intro",
+    "text": "題材はこちらの「窓際族スタンプ第一弾」。続編づくりで分かったことも交えて、作るときのコツを紹介します。",
+    "pause": 0.3
   },
   {
-    "id": "main-05",
+    "id": "tips-02",
     "who": "yametaro",
     "chapter": 1,
-    "view": "sobaya-still",
-    "text": "そば屋さん、めっちゃ大事そうにビールなでてるやん。",
+    "view": "tip-intro",
+    "text": "ワイが頼むとき、何を言えばええか知りたいわ。",
     "pause": 0.3
   },
   {
-    "id": "main-06",
+    "id": "tips-03",
     "who": "takosan",
     "chapter": 1,
-    "view": "sobaya-still",
-    "text": "「酒は友達」ですからね。このスタンプが動くまでを、順番に見ていきましょう。",
-    "pause": 1.8
+    "view": "tip-intro",
+    "text": "最初にどんな画像を出してもらうか。気に入らないときにどう選び直すか。そういう、実際にやって役立った話です。",
+    "pause": 0.3
   },
   {
-    "id": "flow-01",
+    "id": "tips-04",
+    "who": "yametaro",
+    "chapter": 1,
+    "view": "tip-intro",
+    "text": "ちなみに、絵もCodexから作れるん？",
+    "pause": 0.3
+  },
+  {
+    "id": "tips-05",
+    "who": "takosan",
+    "chapter": 1,
+    "view": "tip-intro",
+    "text": "はい。Imagegenという機能で、OpenAIの画像生成モデルを使えます。対応するChatGPTプランなら、プランに含まれるCodexの利用枠で使えます。",
+    "pause": 0.3
+  },
+  {
+    "id": "ideas-01",
     "who": "yametaro",
     "chapter": 2,
-    "view": "overview",
-    "text": "まずは「動くスタンプ作って」って言えばええんか？",
+    "view": "idea-grid",
+    "text": "ほな、一個目から気合い入れて作るか。",
     "pause": 0.3
   },
   {
-    "id": "flow-02",
+    "id": "ideas-02",
     "who": "takosan",
     "chapter": 2,
-    "view": "overview",
-    "text": "最初の相談は、それで大丈夫です。ただ、途中で絵と動きを確認できるように、段階を分けて進めます。",
+    "view": "idea-grid",
+    "text": "最初の案出しは、八個まとめて一枚に出してもらうと早かったです。",
     "pause": 0.3
   },
   {
-    "id": "flow-03",
-    "who": "takosan",
-    "chapter": 2,
-    "view": "overview",
-    "text": "ネタを決めて、静止画を作る。動きの原画を用意して、切り出してつなぐ。最後に透過と書き出しです。",
-    "pause": 0.3
-  },
-  {
-    "id": "flow-04",
+    "id": "ideas-03",
     "who": "yametaro",
     "chapter": 2,
-    "view": "roles",
-    "text": "絵を描くのも、Codexがやってるん？",
+    "view": "idea-grid",
+    "text": "最初から全部？",
     "pause": 0.3
   },
   {
-    "id": "flow-05",
+    "id": "ideas-04",
     "who": "takosan",
     "chapter": 2,
-    "view": "roles",
-    "text": "はい。CodexのImagegenという画像生成機能で、OpenAIのモデルに絵を描いてもらいます。ChatGPTの対応プランなら、プランに含まれるCodexの利用枠で使えます。",
-    "pause": 0.3,
-    "reading": "はい。コーデックスのイメージジェンという画像生成機能で、オープンエーアイのモデルに絵を描いてもらいます。チャットジーピーティーの対応プランなら、プランに含まれるコーデックスの利用枠で使えます。"
-  },
-  {
-    "id": "flow-06",
-    "who": "yametaro",
-    "chapter": 2,
-    "view": "roles",
-    "text": "絵を作るところから、同じチャットで頼めるんやな。",
-    "pause": 0.3
-  },
-  {
-    "id": "flow-07",
-    "who": "takosan",
-    "chapter": 2,
-    "view": "roles",
-    "text": "そうです。原画の生成から、画像の加工や書き出しまで続けて頼めます。人は、どんなスタンプにしたいかと、出来上がりが狙いどおりかを判断します。",
-    "pause": 0.3
-  },
-  {
-    "id": "flow-08",
-    "who": "yametaro",
-    "chapter": 2,
-    "view": "overview",
-    "text": "注文して、出来たものを見て、また注文する。そこはいつもの開発と似てるな。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-01",
-    "who": "takosan",
-    "chapter": 3,
-    "view": "reference",
-    "text": "最初に、キャラクターの見た目が分かる画像を渡します。それから、セリフと場面を決めます。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-02",
-    "who": "yametaro",
-    "chapter": 3,
-    "view": "reference",
-    "text": "そば屋さんなら、ビール持たせとけば大体合うやろ。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-03",
-    "who": "takosan",
-    "chapter": 3,
-    "view": "sobaya-still",
-    "text": "今回は、さらに一歩進めて、巨大なジョッキを抱きしめる絵にしました。「酒は友達」という気持ちが、止まった絵でも伝わります。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-04",
-    "who": "yametaro",
-    "chapter": 3,
-    "view": "sobaya-still",
-    "text": "飲んでるんやなくて、愛でてるんやな。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-05",
-    "who": "takosan",
-    "chapter": 3,
-    "view": "reference",
-    "text": "ここで顔や構図を決めます。動かしてから顔を直すと、何枚もの原画を修正することになるので。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-06",
-    "who": "takosan",
-    "chapter": 3,
-    "view": "reference",
-    "text": "参照画像も、顔や体格の基準なのか、イラストの絵柄の参考なのか、役割を伝えると整理しやすいです。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-07",
-    "who": "yametaro",
-    "chapter": 3,
-    "view": "reference",
-    "text": "この人に似せて、このタッチで描いて、って分けるんか。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-08",
-    "who": "takosan",
-    "chapter": 3,
-    "view": "readability",
-    "text": "はい。それから、小さく表示しても読めるかを確認します。大きな画像で良く見えても、スタンプになると細かすぎることがあります。",
-    "pause": 0.3
-  },
-  {
-    "id": "still-09",
-    "who": "yametaro",
-    "chapter": 3,
-    "view": "readability",
-    "text": "ワイの謝罪は、小さくてもちゃんと伝わってほしいな。",
-    "pause": 0.6
-  },
-  {
-    "id": "sheet-01",
-    "who": "yametaro",
-    "chapter": 4,
-    "view": "yotan-sheet",
-    "text": "よーたんが六人おる。全員から島流しにされたら、帰る場所なくなるで。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-02",
-    "who": "takosan",
-    "chapter": 4,
-    "view": "yotan-sheet",
-    "text": "同じ人の、動きの途中を並べています。手を下ろしたところから、指を差すところまでです。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-03",
-    "who": "yametaro",
-    "chapter": 4,
-    "view": "yotan-sheet",
-    "text": "なるほど、パラパラ漫画か。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-04",
-    "who": "takosan",
-    "chapter": 4,
-    "view": "yotan-sheet",
-    "text": "そうです。一枚の画像に連続した姿勢を描いてもらって、あとで一コマずつ切り出します。こういう画像をスプライトシートと呼びます。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-05",
-    "who": "takosan",
-    "chapter": 4,
-    "view": "prompt",
-    "text": "指示を短くすると、こんな感じです。指差しするまでの六つの姿勢を、三列、二行に描いて。顔と服、カメラ位置、人物の大きさをそろえて、と頼みます。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-06",
-    "who": "yametaro",
-    "chapter": 4,
-    "view": "prompt",
-    "text": "「同じ人を六枚」だけやと、六枚とも同じポーズになるかもしれんのか。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-07",
-    "who": "takosan",
-    "chapter": 4,
-    "view": "prompt",
-    "text": "はい。始まりと終わり、そのあいだに何をするかを伝えます。動かしたいところと、保ちたいところを分けるのもポイントです。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-08",
-    "who": "takosan",
-    "chapter": 4,
-    "view": "sobaya-poses",
-    "text": "そば屋さんは、ジョッキをなでる動きです。完成版に使ったのは、この四つの原画。顔とジョッキを保ちながら、手と腕で動きを作っています。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-09",
-    "who": "yametaro",
-    "chapter": 4,
-    "view": "sobaya-poses",
-    "text": "顔までぐにゃぐにゃ動いたら、急に怖いもんな。",
-    "pause": 0.3
-  },
-  {
-    "id": "sheet-10",
-    "who": "takosan",
-    "chapter": 4,
-    "view": "sobaya-poses",
-    "text": "生成されたコマを全部使う必要はありません。顔が変わっていないか、手がつながっているかを見て、使える原画を選びます。",
-    "pause": 1.5
-  },
-  {
-    "id": "motion-01",
-    "who": "yametaro",
-    "chapter": 5,
-    "view": "sequence",
-    "text": "四枚を順番に流したら完成？",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-02",
-    "who": "takosan",
-    "chapter": 5,
-    "view": "alignment",
-    "text": "まず、コマごとの位置と大きさをそろえます。動かしていないはずのジョッキまで上下すると、画面全体がガタついて見えます。",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-03",
-    "who": "yametaro",
-    "chapter": 5,
-    "view": "alignment",
-    "text": "手を動かしたいのに、ビールごと踊り出したらあかんな。",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-04",
-    "who": "takosan",
-    "chapter": 5,
-    "view": "sequence",
-    "text": "そろえたら、順番と表示時間を決めます。このスタンプは四つの原画を往復させて、二回なでたあとに止めています。",
-    "pause": 1.2
-  },
-  {
-    "id": "motion-05",
-    "who": "yametaro",
-    "chapter": 5,
-    "view": "sequence",
-    "text": "ずっと忙しくなで続けるわけやないんや。",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-06",
-    "who": "takosan",
-    "chapter": 5,
-    "view": "sequence",
-    "text": "止まる時間があると、抱きしめて満足している感じが出ます。完成ファイルでは、同じ原画を再利用して十三フレーム、全体で三秒です。",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-07",
-    "who": "yametaro",
-    "chapter": 5,
-    "view": "sequence",
-    "text": "描いた絵の数と、再生するコマの数は別なんやな。",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-08",
-    "who": "takosan",
-    "chapter": 5,
-    "view": "fixed-caption",
-    "text": "はい。文字は一枚の素材を同じ位置に重ねます。毎コマ描き直すと、文字まで揺れて読みにくくなるので。",
-    "pause": 0.3
-  },
-  {
-    "id": "motion-09",
-    "who": "takosan",
-    "chapter": 5,
-    "view": "methods",
-    "text": "第一弾では、コマの間を補う処理や、絵全体の拡大を使ったものもあります。絵に合う方法を選び、動かした結果を確認しました。",
-    "pause": 1.0,
-    "reading": "第一弾では、コマのあいだを補う処理や、絵全体の拡大を使ったものもあります。絵に合う方法を選び、動かした結果を確認しました。"
-  },
-  {
-    "id": "alpha-01",
-    "who": "yametaro",
-    "chapter": 6,
-    "view": "alpha-white",
-    "text": "動いた！ほな完成やな。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-02",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "alpha-white",
-    "text": "次は背景を見ます。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-03",
-    "who": "yametaro",
-    "chapter": 6,
-    "view": "alpha-white",
-    "text": "まだあるんか。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-04",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "alpha",
-    "text": "スタンプは、トーク画面の上に重なります。だから、イラストの外側を透明にします。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-05",
-    "who": "yametaro",
-    "chapter": 6,
-    "view": "alpha",
-    "text": "白いところを全部消したらええんちゃう？",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-06",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "alpha",
-    "text": "それをすると、そば屋さんの白い服や、顔、ビールの泡まで消えてしまいます。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-07",
-    "who": "yametaro",
-    "chapter": 6,
-    "view": "alpha",
-    "text": "友達の泡まで失ってまう。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-08",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "alpha",
-    "text": "背景の白と、絵の中の白を分けます。文字には、内側に囲まれた白い部分もあるので、そこまで確認します。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-09",
-    "who": "yametaro",
-    "chapter": 6,
-    "view": "caption-alpha",
-    "text": "外側だけ透明でも、文字の穴に白が残るんやな。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-10",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "alpha-black",
-    "text": "それから、輪郭に薄い白が残ることもあります。白背景では気づきにくいので、黒背景でも見ます。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-11",
-    "who": "yametaro",
-    "chapter": 6,
-    "view": "alpha-black",
-    "text": "背景を変えただけで、取りこぼしが見える。ワイの仕事みたいや。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-12",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "caption-alpha",
-    "text": "黒い文字には、暗い背景でも読めるように細い白フチを付けています。残ってしまった白と、読みやすくするための白フチは、分けて調整します。",
-    "pause": 0.3
-  },
-  {
-    "id": "alpha-13",
-    "who": "takosan",
-    "chapter": 6,
-    "view": "compare-grid",
-    "text": "最後は止め絵だけでなく、動いているあいだも確認します。途中の一コマだけ欠けたり、輪郭がちらついたりすることがあるからです。",
+    "view": "idea-prompt",
+    "text": "はい。セリフと大まかなネタを渡して、こんなふうに頼みます。",
     "pause": 3.0
   },
   {
-    "id": "export-01",
+    "id": "ideas-05",
+    "who": "takosan",
+    "chapter": 2,
+    "view": "idea-grid",
+    "text": "一覧になると、セット全体を見渡せます。似たポーズばかりになっていないか、セリフの雰囲気に合っているかを、一度に比べられます。",
+    "pause": 0.3
+  },
+  {
+    "id": "ideas-06",
     "who": "yametaro",
-    "chapter": 7,
-    "view": "files",
-    "text": "確認に使ってる、このGIFを提出すればええん？",
-    "pause": 0.3,
-    "reading": "確認に使ってる、このジフを提出すればええん？"
+    "chapter": 2,
+    "view": "idea-grid",
+    "text": "一個ずつ見てたら気づかんけど、並べると「全員、同じ立ち方やな」ってなるんか。",
+    "pause": 0.3
   },
   {
-    "id": "export-02",
+    "id": "ideas-07",
     "who": "takosan",
-    "chapter": 7,
-    "view": "files",
-    "text": "LINEのアニメーションスタンプに使うのは、APNGという形式です。拡張子はPNGですが、複数のコマと再生時間が入っています。",
-    "pause": 0.3,
-    "reading": "ラインのアニメーションスタンプに使うのは、エーピーエヌジーという形式です。拡張子はピーエヌジーですが、複数のコマと再生時間が入っています。"
+    "chapter": 2,
+    "view": "idea-grid",
+    "text": "実際、第二弾では「似たポーズが多い」というところから、八個並んだ案を何パターンか作り直しました。",
+    "pause": 0.3
   },
   {
-    "id": "export-03",
+    "id": "ideas-08",
     "who": "yametaro",
-    "chapter": 7,
-    "view": "files",
-    "text": "PNGやのに動くんか。ファイル名だけやと分からんな。",
-    "pause": 0.3,
-    "reading": "ピーエヌジーやのに動くんか。ファイル名だけやと分からんな。"
-  },
-  {
-    "id": "export-04",
-    "who": "takosan",
-    "chapter": 7,
-    "view": "specs",
-    "text": "書き出しと規格のチェックも、Codexに頼みます。画像の大きさ、容量、フレーム数、再生時間を確認します。",
+    "chapter": 2,
+    "view": "idea-grid",
+    "text": "完成させてから八個とも似てるって気づくの、つらいな。",
     "pause": 0.3
   },
   {
-    "id": "export-05",
+    "id": "ideas-09",
     "who": "takosan",
-    "chapter": 7,
-    "view": "specs",
-    "text": "必要なのは、スタンプ本体に加えて、メイン画像とタブ画像です。動く版では、メイン画像もアニメーション、タブ画像は静止画になります。",
-    "pause": 0.3
+    "chapter": 2,
+    "view": "idea-grid",
+    "text": "この段階では、細かな仕上げより「どの方向で作りたいか」を選びます。",
+    "pause": 0.8
   },
   {
-    "id": "export-06",
+    "id": "options-01",
     "who": "yametaro",
-    "chapter": 7,
-    "view": "specs",
-    "text": "八個作って終わりやなくて、メインとタブも要るんや。",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "全体はええけど、この一個だけ、なんか違う。こういうとき困るねんな。",
     "pause": 0.3
   },
   {
-    "id": "export-07",
+    "id": "options-02",
     "who": "takosan",
-    "chapter": 7,
-    "view": "first-frame",
-    "text": "はい。それから、最初の一コマは静止画としても表示されます。動き出す前から、何を伝えるスタンプか分かる絵にします。",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "違和感をうまく説明できなければ、その一個だけ別案を出してもらいます。",
     "pause": 0.3
   },
   {
-    "id": "export-08",
+    "id": "options-03",
     "who": "yametaro",
-    "chapter": 7,
-    "view": "first-frame",
-    "text": "最後まで見ないと謝ってるか分からん、では困るんやな。",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "「なんか違う」のままでもええん？",
     "pause": 0.3
   },
   {
-    "id": "export-09",
+    "id": "options-04",
     "who": "takosan",
-    "chapter": 7,
-    "view": "checks",
-    "text": "規格のチェックが通ったら、書き出したファイルをもう一度再生します。数字が合っていることと、自然に見えることは、それぞれ確認します。",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "そこから、構図を変えて三案くらい。実際の「ちゃんと働いてるか？」も、立ち姿、パーティションに肘を置く姿、椅子でふんぞり返る姿を比べました。",
     "pause": 0.3
   },
   {
-    "id": "export-10",
+    "id": "options-05",
+    "who": "yametaro",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "どれも働いてなさそうやな。",
+    "pause": 0.5
+  },
+  {
+    "id": "options-06",
     "who": "takosan",
-    "chapter": 7,
-    "view": "store",
-    "text": "今回の第一弾は、そば屋さんがLINEへの申請を担当してくれました。実際に販売しているスタンプです。",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "並べて見ると、「欲しかったのは、この馴れ馴れしさだ」と選びやすくなります。",
+    "pause": 0.3
+  },
+  {
+    "id": "options-07",
+    "who": "yametaro",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+    "pause": 0.3
+  },
+  {
+    "id": "options-08",
+    "who": "takosan",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "はい。採用しなかった椅子の案は、別のスタンプに使いました。候補は残しておくと、あとで役立つこともあります。",
+    "pause": 0.8
+  },
+  {
+    "id": "redraw-01",
+    "who": "yametaro",
+    "chapter": 4,
+    "view": "redraw-compare",
+    "text": "直してるうちに、顔とか線がガビガビになってきたんやけど。",
+    "pause": 0.3
+  },
+  {
+    "id": "redraw-02",
+    "who": "takosan",
+    "chapter": 4,
+    "view": "redraw-compare",
+    "text": "今回もありました。何度も編集して構図を詰めたあと、一枚ずつ、きれいに生成し直しました。",
+    "pause": 0.3
+  },
+  {
+    "id": "redraw-03",
+    "who": "yametaro",
+    "chapter": 4,
+    "view": "redraw-compare",
+    "text": "せっかく決まった絵が、また変わらへん？",
+    "pause": 0.3
+  },
+  {
+    "id": "redraw-04",
+    "who": "takosan",
+    "chapter": 4,
+    "view": "redraw-prompt",
+    "text": "採用した画像を構図の見本にして、キャラクターの元の資料も一緒に渡します。",
+    "pause": 3.0
+  },
+  {
+    "id": "redraw-05",
+    "who": "takosan",
+    "chapter": 4,
+    "view": "redraw-compare",
+    "text": "描き直したら、顔や口の形が変わっていないかを見ます。そば屋さんも、絵柄だけでなく、キャラクター本来の特徴を見直しました。",
+    "pause": 0.3
+  },
+  {
+    "id": "redraw-06",
+    "who": "yametaro",
+    "chapter": 4,
+    "view": "redraw-compare",
+    "text": "動かす前に、気に入った一枚をちゃんと用意するんやな。",
+    "pause": 0.8
+  },
+  {
+    "id": "pets-01",
+    "who": "yametaro",
+    "chapter": 5,
+    "view": "pets-sheet",
+    "text": "ここから動かすんか。よーたんが六人おるけど。",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-02",
+    "who": "takosan",
+    "chapter": 5,
+    "view": "pets-sheet",
+    "text": "同じ人の、動きの途中を並べた画像です。これを一コマずつ切り出して、順番に表示します。",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-03",
+    "who": "yametaro",
+    "chapter": 5,
+    "view": "pets-sheet",
+    "text": "パラパラ漫画やな。この作り方は、どこから持ってきたん？",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-04",
+    "who": "takosan",
+    "chapter": 5,
+    "view": "pets-process",
+    "text": "OpenAIが提供している、Codex Pets用のスキルを参考にしました。連続したポーズを一枚に描いて、切り出して動かす部分を、LINEスタンプにも応用しています。",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-05",
+    "who": "yametaro",
+    "chapter": 5,
+    "view": "pets-process",
+    "text": "ペットの作り方が、島流しスタンプになったんか。",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-06",
+    "who": "takosan",
+    "chapter": 5,
+    "view": "pets-sheet",
+    "text": "こういう、動きのコマをまとめた画像を「スプライトシート」と呼びます。",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-07",
+    "who": "yametaro",
+    "chapter": 5,
+    "view": "pets-sheet",
+    "text": "一枚ずつ別々に描いてもらうんとは違うんやな。",
+    "pause": 0.3
+  },
+  {
+    "id": "pets-08",
+    "who": "takosan",
+    "chapter": 5,
+    "view": "pets-prompt",
+    "text": "一枚の中に、同じキャラクターの連続した姿勢を出してもらいます。頼むときは、この手法の名前と、参考にするスキルを伝えると話が早いです。",
+    "pause": 3.0
+  },
+  {
+    "id": "pets-09",
+    "who": "takosan",
+    "chapter": 5,
+    "view": "pets-process",
+    "text": "第一弾でも、このように生成した原画を使っています。スタンプごとに、合う動かし方を選びました。",
+    "pause": 0.8
+  },
+  {
+    "id": "acting-01",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-sobaya",
+    "text": "動きの注文って難しそうやな。腕を何度曲げて、とか？",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-02",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-sobaya",
+    "text": "今回、伝えやすかったのは、動きのゴールでした。たとえば「ビールを大事そうに愛でている感じ」です。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-03",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-sobaya",
+    "text": "何を動かすかより、どう見えてほしいか。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-04",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "第二弾の「ちゃんと働いてるか？」では、肘や腕の位置を細かく言い直しても、なかなかしっくりきませんでした。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-05",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "そこで伝えたかったのが、「馴れ馴れしく絡んでくる、ちょっとウザい先輩」という雰囲気です。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-06",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "動きの角度は分からんけど、その先輩は想像できるわ。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-07",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "「指示は雰囲気の参考にして、絵に合う動きを考えて」と伝えたのもポイントでした。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-08",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "こっちが何気なく言った「肘を動かす」を、絶対条件にせんでええんやな。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-09",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-prompt",
+    "text": "はい。「最後はこの静止画の姿勢にしたい」など、譲れないところは添えます。そのうえで、演技の雰囲気を伝えます。",
+    "pause": 3.0
+  },
+  {
+    "id": "acting-10",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-options",
+    "text": "動きも、見比べて選んでええんか。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-11",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-options",
+    "text": "もちろんです。強め、控えめ、少し間を取る感じ。言葉だけで決めるより、動く候補を並べると好みが分かります。",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-12",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-options",
+    "text": "三つとも違うな、ってなったら？",
+    "pause": 0.3
+  },
+  {
+    "id": "acting-13",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-options",
+    "text": "その三つから無理に選ぶ必要はありません。実際に、全部しっくりこなくて、雰囲気を伝え直したこともありました。",
     "pause": 1.0
   },
   {
-    "id": "record-01",
+    "id": "inspect-01",
+    "who": "yametaro",
+    "chapter": 7,
+    "view": "inspect-whiteblack",
+    "text": "動きは決まった。ここから何を見るん？",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-02",
+    "who": "takosan",
+    "chapter": 7,
+    "view": "inspect-whiteblack",
+    "text": "同じスタンプを、白と黒、両方の背景に載せます。これは、すぐ試せて役立ちました。",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-03",
+    "who": "yametaro",
+    "chapter": 7,
+    "view": "inspect-whiteblack",
+    "text": "黒にしたら、周りの白い残りが見えるな。",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-04",
+    "who": "takosan",
+    "chapter": 7,
+    "view": "inspect-whiteblack",
+    "text": "白い背景だけでは、背景の消し残しに気づきにくいんです。逆に、白い服が欠けていても分かりにくいことがあります。",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-05",
+    "who": "takosan",
+    "chapter": 7,
+    "view": "inspect-details",
+    "text": "文字の穴に白が残っていないか。服や顔まで透けていないか。輪郭がちらつかないか。背景を切り替えながら見ます。",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-06",
+    "who": "yametaro",
+    "chapter": 7,
+    "view": "inspect-details",
+    "text": "一枚だけきれいでも、動いてる途中で変になるかもしれんのか。",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-07",
+    "who": "takosan",
+    "chapter": 7,
+    "view": "inspect-prompt",
+    "text": "なので、最後はアニメーションで。一覧にしてもらえば、八個まとめて確認できます。",
+    "pause": 3.0
+  },
+  {
+    "id": "tools-01",
     "who": "yametaro",
     "chapter": 8,
-    "view": "records",
-    "text": "一個できたら、次は「前と同じ感じで」でいける？",
+    "view": "tools-beforeafter",
+    "text": "白いゴミが残ってたら、Imagegenに「ここ消して」でええ？",
     "pause": 0.3
   },
   {
-    "id": "record-02",
+    "id": "tools-02",
     "who": "takosan",
     "chapter": 8,
-    "view": "records",
-    "text": "そのために、何を使って、どう作ったかを残します。採用した絵、生成の指示、コマの順番、透過で直したところです。",
+    "view": "tools-beforeafter",
+    "text": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、OpenCVとImageMagickです。",
     "pause": 0.3
   },
   {
-    "id": "record-03",
+    "id": "tools-03",
     "who": "yametaro",
     "chapter": 8,
-    "view": "records",
-    "text": "完成品だけあっても、作り方までは分からんもんな。",
+    "view": "tools-beforeafter",
+    "text": "絵を描くAIとは別の道具？",
     "pause": 0.3
   },
   {
-    "id": "record-04",
+    "id": "tools-04",
     "who": "takosan",
     "chapter": 8,
-    "view": "skill",
-    "text": "今回も、第一弾の方法を次の制作で十分に引き継げなかったことがありました。それで、制作手順をLINEスタンプ用のスキルにまとめました。",
+    "view": "tools-beforeafter",
+    "text": "はい。画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするための道具です。",
     "pause": 0.3
   },
   {
-    "id": "record-05",
+    "id": "tools-05",
     "who": "yametaro",
     "chapter": 8,
-    "view": "skill",
-    "text": "スキルって、作業の引き継ぎ書みたいなもん？",
+    "view": "tools-choice",
+    "text": "画像のことは、全部Imagegenでやるんやと思ってたわ。",
     "pause": 0.3
   },
   {
-    "id": "record-06",
+    "id": "tools-06",
     "who": "takosan",
     "chapter": 8,
-    "view": "skill",
-    "text": "そうです。Codexに読ませる手順と、参考資料をまとめたものです。連続原画で作ることや、白と黒の背景で確認することも残せます。",
+    "view": "tools-choice",
+    "text": "新しいポーズを描きたい、構図を変えたい。そういうときはImagegen。今の絵を保って、ここに残った背景だけを消したい。そういうときは画像処理が向いています。",
     "pause": 0.3
   },
   {
-    "id": "record-07",
+    "id": "tools-07",
+    "who": "takosan",
+    "chapter": 8,
+    "view": "tools-choice",
+    "text": "たとえば、そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。残す場所を分けて、背景や文字の穴を処理しました。",
+    "pause": 0.3
+  },
+  {
+    "id": "tools-08",
     "who": "yametaro",
     "chapter": 8,
-    "view": "skill",
-    "text": "「なんか前と違う」を、毎回説明せんで済むようにするんやな。",
+    "view": "tools-choice",
+    "text": "消しゴムで済むところまで、描き直してもらわんでええんやな。",
     "pause": 0.3
   },
   {
-    "id": "record-08",
+    "id": "tools-09",
     "who": "takosan",
     "chapter": 8,
-    "view": "start-prompt",
-    "text": "最初は、一個のスタンプでこの流れを試すと分かりやすいです。絵を決めて、動きを作って、背景を整える。その経験を、残りのスタンプにも使えます。",
-    "pause": 2.0
+    "view": "tools-prompt",
+    "text": "Codexへの頼み方も、こんな感じです。",
+    "pause": 7.5
   },
   {
-    "id": "end-01",
+    "id": "tools-10",
+    "who": "takosan",
+    "chapter": 8,
+    "view": "tools-choice",
+    "text": "使う道具を知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
+    "pause": 0.8
+  },
+  {
+    "id": "close-01",
+    "who": "yametaro",
+    "chapter": 9,
+    "view": "closing-flow",
+    "text": "最初から完璧な注文を書こうとせんでも、まず並べて、見て選んでいけばええんやな。",
+    "pause": 0.3
+  },
+  {
+    "id": "close-02",
+    "who": "takosan",
+    "chapter": 9,
+    "view": "closing-flow",
+    "text": "はい。方向が決まったらきれいに描き直して、動きは雰囲気を伝えて比べる。仕上げは白黒両方で確認します。",
+    "pause": 0.3
+  },
+  {
+    "id": "close-03",
+    "who": "takosan",
+    "chapter": 9,
+    "view": "closing-flow",
+    "text": "今回の第一弾は、そば屋さんが申請を担当してくれて、販売中です。スタンプと、参考にしたスキルのリンクは概要欄に載せています。",
+    "pause": 0.3
+  },
+  {
+    "id": "close-04",
     "who": "yametaro",
     "chapter": 9,
     "view": "ending",
-    "text": "ワイは「ごめんやで」の動きを、もうちょっと軽くしたいわ。",
+    "text": "ほなワイのも、「謝ってるけど、そこまで反省してない感じ」で三案ほしいわ。",
     "pause": 0.3
   },
   {
-    "id": "end-02",
+    "id": "close-05",
     "who": "takosan",
     "chapter": 9,
     "view": "ending",
-    "text": "どういう感じですか？",
+    "text": "反省の薄さで、三段階ですね。",
     "pause": 0.3
   },
   {
-    "id": "end-03",
+    "id": "close-06",
     "who": "yametaro",
     "chapter": 9,
     "view": "ending",
-    "text": "謝ってるけど、そこまで反省してない感じ。",
-    "pause": 0.6
-  },
-  {
-    "id": "end-04",
-    "who": "takosan",
-    "chapter": 9,
-    "view": "ending",
-    "text": "動きの狙いが、はっきりしましたね。",
-    "pause": 0.3
-  },
-  {
-    "id": "end-05",
-    "who": "yametaro",
-    "chapter": 9,
-    "view": "ending",
-    "text": "そこは伝わらんでええねん。",
+    "text": "そこを比較させるな。",
     "pause": 3.0
   }
 ]

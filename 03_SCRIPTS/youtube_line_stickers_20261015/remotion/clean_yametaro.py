@@ -1,4 +1,4 @@
-"""Replay four individually reviewed cuts without changing the preserved TTS originals.
+"""Replay individually reviewed cuts without changing the preserved TTS originals.
 
 prepare_voice.py applies these recipes automatically before measuring its timeline.
 Running this file directly restores/verifies the processed public WAVs only.

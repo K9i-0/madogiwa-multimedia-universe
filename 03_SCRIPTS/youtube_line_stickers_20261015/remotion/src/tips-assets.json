@@ -1,0 +1,725 @@
+{
+  "version": 3,
+  "images": {
+    "ideasA": {
+      "path": "tips/images/ideasA.png",
+      "width": 1536,
+      "height": 1024,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-A.png",
+      "note": "実際の第2弾8個入り初期案A。文字と絵を含む元生成画像。"
+    },
+    "ideasB": {
+      "path": "tips/images/ideasB.png",
+      "width": 1536,
+      "height": 1024,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-B.png",
+      "note": "実際の第2弾8個入り初期案B。文字と絵を含む元生成画像。"
+    },
+    "ideasC": {
+      "path": "tips/images/ideasC.png",
+      "width": 1536,
+      "height": 1024,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-C.png",
+      "note": "実際の第2弾8個入り初期案C。文字と絵を含む元生成画像。"
+    },
+    "workA": {
+      "path": "tips/images/workA.png",
+      "width": 1254,
+      "height": 1254,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-A.png",
+      "note": "立ち姿の静止案。未採用。"
+    },
+    "workB": {
+      "path": "tips/images/workB.png",
+      "width": 1254,
+      "height": 1254,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-B.png",
+      "note": "パーティションに肘を置く静止案。採用。"
+    },
+    "workC": {
+      "path": "tips/images/workC.png",
+      "width": 1254,
+      "height": 1254,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-C.png",
+      "note": "普通の椅子で指差す静止案。後に椅子をアーロンチュア化して二流へ転用。"
+    },
+    "redrawBefore": {
+      "path": "tips/images/redrawBefore.png",
+      "width": 344,
+      "height": 358,
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/reference.png",
+      "note": "8個sheetの反復編集後から取り出した、実際の再描画参照。文字と隣セル断片のみ表示範囲外。"
+    },
+    "redrawAfter": {
+      "path": "tips/images/redrawAfter.png",
+      "width": 1109,
+      "height": 1194,
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/art-generated.png",
+      "note": "同じ構図を1枚で描き直した実際の生成原画。線や口も完全な同一画素ではない。"
+    },
+    "redrawBeforeFace": {
+      "path": "tips/images/redrawBeforeFace.png",
+      "width": 120,
+      "height": 128,
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/reference.png",
+      "note": "再描画前の元画素拡大用。画像劣化を追加していない。"
+    },
+    "redrawAfterFace": {
+      "path": "tips/images/redrawAfterFace.png",
+      "width": 390,
+      "height": 416,
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/art-generated.png",
+      "note": "再描画後の元画素拡大用。"
+    },
+    "canonicalSobaya": {
+      "path": "tips/images/canonicalSobaya.png",
+      "width": 1672,
+      "height": 941,
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "note": "現在のそば屋人物同一性の正典シート。"
+    },
+    "niryuAdopted": {
+      "path": "tips/images/niryuAdopted.png",
+      "width": 400,
+      "height": 400,
+      "source": "27_LINE_STICKERS/sets/02/stickers/04_niryu/still.png",
+      "note": "椅子の静止候補からアーロンチュアへ修正し、二流に転用した完成スタンプ。"
+    },
+    "firstWhite": {
+      "path": "tips/images/firstWhite.png",
+      "width": 1280,
+      "height": 540,
+      "source": "27_LINE_STICKERS/sets/01/all-members-white-still.png",
+      "note": "実際の第一弾完成確認画像。"
+    },
+    "firstBlack": {
+      "path": "tips/images/firstBlack.png",
+      "width": 1280,
+      "height": 540,
+      "source": "27_LINE_STICKERS/sets/01/all-members-black-still.png",
+      "note": "実際の第一弾完成確認画像。"
+    },
+    "matteCaptionBefore": {
+      "path": "tips/images/matteCaptionBefore.png",
+      "width": 400,
+      "height": 88,
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/caption.png",
+      "note": "実際の白背景付き文字入力。失敗版を人工的に作ったものではない。"
+    },
+    "matteCaptionAfter": {
+      "path": "tips/images/matteCaptionAfter.png",
+      "width": 400,
+      "height": 90,
+      "source": "27_LINE_STICKERS/sets/01/stickers/sobaya/still.png",
+      "note": "実際の完成スタンプから対応文字領域を切り出したもの。閉じ穴透過と意図的な白縁。白縁が入力文字高より2px下まで伸びるため90px。"
+    },
+    "matteBodyBefore": {
+      "path": "tips/images/matteBodyBefore.png",
+      "width": 320,
+      "height": 210,
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/00.png",
+      "note": "実際の白背景付き原画。白い服・泡もあるため単純な白一括消去は不適切。"
+    },
+    "matteBodyAfter": {
+      "path": "tips/images/matteBodyAfter.png",
+      "width": 400,
+      "height": 308,
+      "source": "27_LINE_STICKERS/sets/01/stickers/sobaya/still.png",
+      "note": "同じ先頭ポーズの実際の透過済み完成画像。描き直しではなく切抜き・縮尺・配置処理。"
+    },
+    "yotanSheet": {
+      "path": "tips/images/yotanSheet.png",
+      "width": 1536,
+      "height": 1024,
+      "source": "27_LINE_STICKERS/sets/01/source/yotan/keyframes.png",
+      "note": "第一弾の実際の3列2行原画。"
+    },
+    "sobayaPose0": {
+      "path": "tips/images/sobayaPose0.png",
+      "width": 320,
+      "height": 210,
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/00.png",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    "sobayaPose1": {
+      "path": "tips/images/sobayaPose1.png",
+      "width": 320,
+      "height": 210,
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/01.png",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    "sobayaPose2": {
+      "path": "tips/images/sobayaPose2.png",
+      "width": 320,
+      "height": 210,
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/02.png",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    "sobayaPose3": {
+      "path": "tips/images/sobayaPose3.png",
+      "width": 320,
+      "height": 210,
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/03.png",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    }
+  },
+  "animations": {
+    "elbowA": {
+      "id": "elbowA",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/elbowA/frame-000.png",
+          "durationMs": 300.0,
+          "startMs": 0.0,
+          "endMs": 300.0
+        },
+        {
+          "path": "tips/animations/elbowA/frame-001.png",
+          "durationMs": 120.0,
+          "startMs": 300.0,
+          "endMs": 420.0
+        },
+        {
+          "path": "tips/animations/elbowA/frame-002.png",
+          "durationMs": 120.0,
+          "startMs": 420.0,
+          "endMs": 540.0
+        },
+        {
+          "path": "tips/animations/elbowA/frame-003.png",
+          "durationMs": 120.0,
+          "startMs": 540.0,
+          "endMs": 660.0
+        },
+        {
+          "path": "tips/animations/elbowA/frame-004.png",
+          "durationMs": 120.0,
+          "startMs": 660.0,
+          "endMs": 780.0
+        },
+        {
+          "path": "tips/animations/elbowA/frame-005.png",
+          "durationMs": 2220.0,
+          "startMs": 780.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-A.png",
+      "note": "肘に体重をかける旧試作。A/B/Cの3案はすべて不採用。"
+    },
+    "elbowB": {
+      "id": "elbowB",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/elbowB/frame-000.png",
+          "durationMs": 400.0,
+          "startMs": 0.0,
+          "endMs": 400.0
+        },
+        {
+          "path": "tips/animations/elbowB/frame-001.png",
+          "durationMs": 140.0,
+          "startMs": 400.0,
+          "endMs": 540.0
+        },
+        {
+          "path": "tips/animations/elbowB/frame-002.png",
+          "durationMs": 140.0,
+          "startMs": 540.0,
+          "endMs": 680.0
+        },
+        {
+          "path": "tips/animations/elbowB/frame-003.png",
+          "durationMs": 140.0,
+          "startMs": 680.0,
+          "endMs": 820.0
+        },
+        {
+          "path": "tips/animations/elbowB/frame-004.png",
+          "durationMs": 140.0,
+          "startMs": 820.0,
+          "endMs": 960.0
+        },
+        {
+          "path": "tips/animations/elbowB/frame-005.png",
+          "durationMs": 2040.0,
+          "startMs": 960.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-B.png",
+      "note": "肘に体重をかける旧試作。A/B/Cの3案はすべて不採用。"
+    },
+    "elbowC": {
+      "id": "elbowC",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/elbowC/frame-000.png",
+          "durationMs": 700.0,
+          "startMs": 0.0,
+          "endMs": 700.0
+        },
+        {
+          "path": "tips/animations/elbowC/frame-001.png",
+          "durationMs": 200.0,
+          "startMs": 700.0,
+          "endMs": 900.0
+        },
+        {
+          "path": "tips/animations/elbowC/frame-002.png",
+          "durationMs": 240.0,
+          "startMs": 900.0,
+          "endMs": 1140.0
+        },
+        {
+          "path": "tips/animations/elbowC/frame-003.png",
+          "durationMs": 260.0,
+          "startMs": 1140.0,
+          "endMs": 1400.0
+        },
+        {
+          "path": "tips/animations/elbowC/frame-004.png",
+          "durationMs": 240.0,
+          "startMs": 1400.0,
+          "endMs": 1640.0
+        },
+        {
+          "path": "tips/animations/elbowC/frame-005.png",
+          "durationMs": 1360.0,
+          "startMs": 1640.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-C.png",
+      "note": "肘に体重をかける旧試作。A/B/Cの3案はすべて不採用。"
+    },
+    "workAdopted": {
+      "id": "workAdopted",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 5,
+      "frames": [
+        {
+          "path": "tips/animations/workAdopted/frame-000.png",
+          "durationMs": 450.0,
+          "startMs": 0.0,
+          "endMs": 450.0
+        },
+        {
+          "path": "tips/animations/workAdopted/frame-001.png",
+          "durationMs": 150.0,
+          "startMs": 450.0,
+          "endMs": 600.0
+        },
+        {
+          "path": "tips/animations/workAdopted/frame-002.png",
+          "durationMs": 170.0,
+          "startMs": 600.0,
+          "endMs": 770.0
+        },
+        {
+          "path": "tips/animations/workAdopted/frame-003.png",
+          "durationMs": 200.0,
+          "startMs": 770.0,
+          "endMs": 970.0
+        },
+        {
+          "path": "tips/animations/workAdopted/frame-004.png",
+          "durationMs": 2030.0,
+          "startMs": 970.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/02_hataraiteruka/sticker.png",
+      "note": "最終採用。肩・胸・頭が連動して小さく傾き、返事を待つ。"
+    },
+    "niryuAdopted": {
+      "id": "niryuAdopted",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/niryuAdopted/frame-000.png",
+          "durationMs": 420.0,
+          "startMs": 0.0,
+          "endMs": 420.0
+        },
+        {
+          "path": "tips/animations/niryuAdopted/frame-001.png",
+          "durationMs": 180.0,
+          "startMs": 420.0,
+          "endMs": 600.0
+        },
+        {
+          "path": "tips/animations/niryuAdopted/frame-002.png",
+          "durationMs": 240.0,
+          "startMs": 600.0,
+          "endMs": 840.0
+        },
+        {
+          "path": "tips/animations/niryuAdopted/frame-003.png",
+          "durationMs": 220.0,
+          "startMs": 840.0,
+          "endMs": 1060.0
+        },
+        {
+          "path": "tips/animations/niryuAdopted/frame-004.png",
+          "durationMs": 220.0,
+          "startMs": 1060.0,
+          "endMs": 1280.0
+        },
+        {
+          "path": "tips/animations/niryuAdopted/frame-005.png",
+          "durationMs": 1720.0,
+          "startMs": 1280.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/04_niryu/sticker.png",
+      "note": "二流の最終採用。頭の回転なし、指差しのみ。"
+    },
+    "nominiAdopted": {
+      "id": "nominiAdopted",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/nominiAdopted/frame-000.png",
+          "durationMs": 300.0,
+          "startMs": 0.0,
+          "endMs": 300.0
+        },
+        {
+          "path": "tips/animations/nominiAdopted/frame-001.png",
+          "durationMs": 160.0,
+          "startMs": 300.0,
+          "endMs": 460.0
+        },
+        {
+          "path": "tips/animations/nominiAdopted/frame-002.png",
+          "durationMs": 180.0,
+          "startMs": 460.0,
+          "endMs": 640.0
+        },
+        {
+          "path": "tips/animations/nominiAdopted/frame-003.png",
+          "durationMs": 180.0,
+          "startMs": 640.0,
+          "endMs": 820.0
+        },
+        {
+          "path": "tips/animations/nominiAdopted/frame-004.png",
+          "durationMs": 200.0,
+          "startMs": 820.0,
+          "endMs": 1020.0
+        },
+        {
+          "path": "tips/animations/nominiAdopted/frame-005.png",
+          "durationMs": 1980.0,
+          "startMs": 1020.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/07_nomini/sticker.png",
+      "note": "飲みに行こうの最終採用。正面から書類を捨て、背を向けて振り返る。"
+    },
+    "firstWhite": {
+      "id": "firstWhite",
+      "width": 1280,
+      "height": 540,
+      "durationMs": 3000.0,
+      "frameCount": 20,
+      "frames": [
+        {
+          "path": "tips/animations/firstWhite/frame-000.png",
+          "durationMs": 90.0,
+          "startMs": 0.0,
+          "endMs": 90.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-001.png",
+          "durationMs": 90.0,
+          "startMs": 90.0,
+          "endMs": 180.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-002.png",
+          "durationMs": 90.0,
+          "startMs": 180.0,
+          "endMs": 270.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-003.png",
+          "durationMs": 90.0,
+          "startMs": 270.0,
+          "endMs": 360.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-004.png",
+          "durationMs": 90.0,
+          "startMs": 360.0,
+          "endMs": 450.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-005.png",
+          "durationMs": 90.0,
+          "startMs": 450.0,
+          "endMs": 540.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-006.png",
+          "durationMs": 90.0,
+          "startMs": 540.0,
+          "endMs": 630.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-007.png",
+          "durationMs": 90.0,
+          "startMs": 630.0,
+          "endMs": 720.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-008.png",
+          "durationMs": 90.0,
+          "startMs": 720.0,
+          "endMs": 810.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-009.png",
+          "durationMs": 90.0,
+          "startMs": 810.0,
+          "endMs": 900.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-010.png",
+          "durationMs": 90.0,
+          "startMs": 900.0,
+          "endMs": 990.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-011.png",
+          "durationMs": 90.0,
+          "startMs": 990.0,
+          "endMs": 1080.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-012.png",
+          "durationMs": 90.0,
+          "startMs": 1080.0,
+          "endMs": 1170.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-013.png",
+          "durationMs": 90.0,
+          "startMs": 1170.0,
+          "endMs": 1260.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-014.png",
+          "durationMs": 90.0,
+          "startMs": 1260.0,
+          "endMs": 1350.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-015.png",
+          "durationMs": 90.0,
+          "startMs": 1350.0,
+          "endMs": 1440.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-016.png",
+          "durationMs": 90.0,
+          "startMs": 1440.0,
+          "endMs": 1530.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-017.png",
+          "durationMs": 90.0,
+          "startMs": 1530.0,
+          "endMs": 1620.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-018.png",
+          "durationMs": 90.0,
+          "startMs": 1620.0,
+          "endMs": 1710.0
+        },
+        {
+          "path": "tips/animations/firstWhite/frame-019.png",
+          "durationMs": 1290.0,
+          "startMs": 1710.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 0,
+      "source": "27_LINE_STICKERS/sets/01/all-members-white-preview.gif",
+      "note": "実際の第一弾8個の確認用GIF。白黒に新たな欠陥を追加していない。"
+    },
+    "firstBlack": {
+      "id": "firstBlack",
+      "width": 1280,
+      "height": 540,
+      "durationMs": 3000.0,
+      "frameCount": 20,
+      "frames": [
+        {
+          "path": "tips/animations/firstBlack/frame-000.png",
+          "durationMs": 90.0,
+          "startMs": 0.0,
+          "endMs": 90.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-001.png",
+          "durationMs": 90.0,
+          "startMs": 90.0,
+          "endMs": 180.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-002.png",
+          "durationMs": 90.0,
+          "startMs": 180.0,
+          "endMs": 270.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-003.png",
+          "durationMs": 90.0,
+          "startMs": 270.0,
+          "endMs": 360.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-004.png",
+          "durationMs": 90.0,
+          "startMs": 360.0,
+          "endMs": 450.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-005.png",
+          "durationMs": 90.0,
+          "startMs": 450.0,
+          "endMs": 540.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-006.png",
+          "durationMs": 90.0,
+          "startMs": 540.0,
+          "endMs": 630.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-007.png",
+          "durationMs": 90.0,
+          "startMs": 630.0,
+          "endMs": 720.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-008.png",
+          "durationMs": 90.0,
+          "startMs": 720.0,
+          "endMs": 810.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-009.png",
+          "durationMs": 90.0,
+          "startMs": 810.0,
+          "endMs": 900.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-010.png",
+          "durationMs": 90.0,
+          "startMs": 900.0,
+          "endMs": 990.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-011.png",
+          "durationMs": 90.0,
+          "startMs": 990.0,
+          "endMs": 1080.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-012.png",
+          "durationMs": 90.0,
+          "startMs": 1080.0,
+          "endMs": 1170.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-013.png",
+          "durationMs": 90.0,
+          "startMs": 1170.0,
+          "endMs": 1260.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-014.png",
+          "durationMs": 90.0,
+          "startMs": 1260.0,
+          "endMs": 1350.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-015.png",
+          "durationMs": 90.0,
+          "startMs": 1350.0,
+          "endMs": 1440.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-016.png",
+          "durationMs": 90.0,
+          "startMs": 1440.0,
+          "endMs": 1530.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-017.png",
+          "durationMs": 90.0,
+          "startMs": 1530.0,
+          "endMs": 1620.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-018.png",
+          "durationMs": 90.0,
+          "startMs": 1620.0,
+          "endMs": 1710.0
+        },
+        {
+          "path": "tips/animations/firstBlack/frame-019.png",
+          "durationMs": 1290.0,
+          "startMs": 1710.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 0,
+      "source": "27_LINE_STICKERS/sets/01/all-members-black-preview.gif",
+      "note": "実際の第一弾8個の確認用GIF。白黒に新たな欠陥を追加していない。"
+    }
+  },
+  "playback": {
+    "timebase": "Remotion frame / fps",
+    "select": "t=(frame/fps*1000)%durationMs; first frame with t < endMs",
+    "repeatForReview": true
+  },
+  "historicalNotes": [
+    "8個入り案・候補画像は第2弾。第一弾の完成品と工程例へ補足として使う。",
+    "elbowA/B/Cは全不採用。workAdoptedだけが採用された動き。",
+    "matteCaptionBeforeは元の白背景付き入力。故意に汚れを足した失敗版ではない。",
+    "art-generated再描画は元構図に沿うが形や顔の微差がある。完全一致とは称さない。"
+  ]
+}

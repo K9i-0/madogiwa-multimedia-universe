@@ -1,0 +1,419 @@
+{
+  "generator": "prepare_tips_assets.py",
+  "preparedOn": "2026-10-15",
+  "records": [
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/comparison/A_action.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-A.png",
+      "sha256": "7fe79b7b4abce8718d6a554f8b071eeacdd853dd40a56be576089658531b9a74",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "ideasA",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-A.png",
+      "sourceSha256": "7fe79b7b4abce8718d6a554f8b071eeacdd853dd40a56be576089658531b9a74",
+      "output": "tips/images/ideasA.png",
+      "outputSha256": "30c003839815195a07eed254122ea9050b394e3a0469384d3d0945214cb291fb",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の第2弾8個入り初期案A。文字と絵を含む元生成画像。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/comparison/B_deadpan.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-B.png",
+      "sha256": "1c7b7da5ba26d16542137f44b26adfc251a041206362e6b4034a00c88e6acea7",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "ideasB",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-B.png",
+      "sourceSha256": "1c7b7da5ba26d16542137f44b26adfc251a041206362e6b4034a00c88e6acea7",
+      "output": "tips/images/ideasB.png",
+      "outputSha256": "f53987b4ccd9611b0ff5526ba106b7dd7d9ac49a55078472a50c189c6758bdf1",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の第2弾8個入り初期案B。文字と絵を含む元生成画像。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/comparison/C_exaggerated.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-C.png",
+      "sha256": "6f16f7cd339367e236667199a237e3ac851ec74d31c92210ec6049f0c43d649f",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "ideasC",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/ideas-C.png",
+      "sourceSha256": "6f16f7cd339367e236667199a237e3ac851ec74d31c92210ec6049f0c43d649f",
+      "output": "tips/images/ideasC.png",
+      "outputSha256": "fb290a6a42a54d9079d8a391ebc00aee23b7b20589f8237d9d338c49fe15d0f6",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の第2弾8個入り初期案C。文字と絵を含む元生成画像。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/work-check/A.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-A.png",
+      "sha256": "4e983329860b91b94bd599ca1c65ef539dc70a36201b18172502b24cfa0e2702",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "workA",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-A.png",
+      "sourceSha256": "4e983329860b91b94bd599ca1c65ef539dc70a36201b18172502b24cfa0e2702",
+      "output": "tips/images/workA.png",
+      "outputSha256": "a43f83b1a71c219f56ff4c9528cbfdebf49083c84e8b5c1aa435744316c460a6",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "立ち姿の静止案。未採用。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/elbow-weight/A/sticker.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-A.png",
+      "sha256": "a0c8f03fd4a7997ab6813998b099a216f501d6c2e0964f7e2e35ca39ad62af0a",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "elbowA",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-A.png",
+      "sourceSha256": "a0c8f03fd4a7997ab6813998b099a216f501d6c2e0964f7e2e35ca39ad62af0a",
+      "outputDirectory": "tips/animations/elbowA",
+      "durationMs": 3000.0,
+      "frames": 6,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "肘に体重をかける旧試作。A/B/Cの3案はすべて不採用。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/work-check/B.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-B.png",
+      "sha256": "e384c05291cb362040d64fefb6dedcdb383c2f1d2454cf27cf202eacdbfee797",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "workB",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-B.png",
+      "sourceSha256": "e384c05291cb362040d64fefb6dedcdb383c2f1d2454cf27cf202eacdbfee797",
+      "output": "tips/images/workB.png",
+      "outputSha256": "291a3d1155d931b68a6a6e22b1ccb05cb0d082d6bf79a0a17587e6b0dbb6c59b",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "パーティションに肘を置く静止案。採用。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/elbow-weight/B/sticker.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-B.png",
+      "sha256": "81e96f7fd462fe68931754fd3e24ec7d01fb8808e82ca89487bcd2b9137fda05",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "elbowB",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-B.png",
+      "sourceSha256": "81e96f7fd462fe68931754fd3e24ec7d01fb8808e82ca89487bcd2b9137fda05",
+      "outputDirectory": "tips/animations/elbowB",
+      "durationMs": 3000.0,
+      "frames": 6,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "肘に体重をかける旧試作。A/B/Cの3案はすべて不採用。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/work-check/C.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-C.png",
+      "sha256": "21ce5b0b5e3f64f423df2702b40357d51ce64940ce3aa26bf741657ffa3fb585",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "workC",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/work-C.png",
+      "sourceSha256": "21ce5b0b5e3f64f423df2702b40357d51ce64940ce3aa26bf741657ffa3fb585",
+      "output": "tips/images/workC.png",
+      "outputSha256": "b8837deaa4f27094c3c0e5342e45fac2f7100d6db01660c5092c6bd18f7b385b",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "普通の椅子で指差す静止案。後に椅子をアーロンチュア化して二流へ転用。"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/02/drafts/elbow-weight/C/sticker.png",
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-C.png",
+      "sha256": "775f08ef32627671b8a2b0f5f585362d3ddb5363cec958f5c79a626e291a9d57",
+      "operation": "unchanged independent copy of retained production draft"
+    },
+    {
+      "key": "elbowC",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/tips/elbow-C.png",
+      "sourceSha256": "775f08ef32627671b8a2b0f5f585362d3ddb5363cec958f5c79a626e291a9d57",
+      "outputDirectory": "tips/animations/elbowC",
+      "durationMs": 3000.0,
+      "frames": 6,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "肘に体重をかける旧試作。A/B/Cの3案はすべて不採用。"
+    },
+    {
+      "key": "redrawBefore",
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/reference.png",
+      "sourceSha256": "3c845466239d084b3b9091484c9006b590891bccd86a32a020bb4822e760cfa0",
+      "output": "tips/images/redrawBefore.png",
+      "outputSha256": "28bbf858c2ac0581ec4fcbd1febebc13614e85569519f364a0ca57ea6e5e6dcd",
+      "crop": [
+        24,
+        106,
+        368,
+        464
+      ],
+      "operation": "lossless RGBA decode and exact rectangle crop",
+      "note": "8個sheetの反復編集後から取り出した、実際の再描画参照。文字と隣セル断片のみ表示範囲外。"
+    },
+    {
+      "key": "redrawAfter",
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/art-generated.png",
+      "sourceSha256": "e2c37e90e2bbecb36aac5e39c6ac9f22756a1a654664f2c21e04bff641559cd9",
+      "output": "tips/images/redrawAfter.png",
+      "outputSha256": "94705558106494491e02ca22170603f499ff4f9b03a7865be375c020f43a3844",
+      "crop": [
+        74,
+        29,
+        1183,
+        1223
+      ],
+      "operation": "lossless RGBA decode and exact rectangle crop",
+      "note": "同じ構図を1枚で描き直した実際の生成原画。線や口も完全な同一画素ではない。"
+    },
+    {
+      "key": "redrawBeforeFace",
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/reference.png",
+      "sourceSha256": "3c845466239d084b3b9091484c9006b590891bccd86a32a020bb4822e760cfa0",
+      "output": "tips/images/redrawBeforeFace.png",
+      "outputSha256": "9734d99f6106459e897a3c8071f291c6283239e509ad832960379e5d53834e46",
+      "crop": [
+        120,
+        100,
+        240,
+        228
+      ],
+      "operation": "lossless RGBA decode and exact rectangle crop",
+      "note": "再描画前の元画素拡大用。画像劣化を追加していない。"
+    },
+    {
+      "key": "redrawAfterFace",
+      "source": "27_LINE_STICKERS/sets/02/source/01_ohayo/art-generated.png",
+      "sourceSha256": "e2c37e90e2bbecb36aac5e39c6ac9f22756a1a654664f2c21e04bff641559cd9",
+      "output": "tips/images/redrawAfterFace.png",
+      "outputSha256": "a74e24fe5910c076edb61f50a5b6f458b1430d5a8086fabf35c300a10dadff65",
+      "crop": [
+        410,
+        20,
+        800,
+        436
+      ],
+      "operation": "lossless RGBA decode and exact rectangle crop",
+      "note": "再描画後の元画素拡大用。"
+    },
+    {
+      "key": "canonicalSobaya",
+      "source": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "sourceSha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058",
+      "output": "tips/images/canonicalSobaya.png",
+      "outputSha256": "12e5d82911d8c73e91cdbf11e197d32a1813af64fc61429951a1b919e3bab68c",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "現在のそば屋人物同一性の正典シート。"
+    },
+    {
+      "key": "niryuAdopted",
+      "source": "27_LINE_STICKERS/sets/02/stickers/04_niryu/still.png",
+      "sourceSha256": "29164cdaadc54b87d4681f953927a32ec85226030620764b78c2500e0ccbb730",
+      "output": "tips/images/niryuAdopted.png",
+      "outputSha256": "bf3945a5d4f178cc25aeca83bc3d5e6ca1a9202f9f27c601fe4ea4e90439dc7c",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "椅子の静止候補からアーロンチュアへ修正し、二流に転用した完成スタンプ。"
+    },
+    {
+      "key": "workAdopted",
+      "source": "27_LINE_STICKERS/sets/02/stickers/02_hataraiteruka/sticker.png",
+      "sourceSha256": "26f9a0843289a68634369f4f3106bc0021cc12dea2976c98a2e999263bf89bee",
+      "outputDirectory": "tips/animations/workAdopted",
+      "durationMs": 3000.0,
+      "frames": 5,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "最終採用。肩・胸・頭が連動して小さく傾き、返事を待つ。"
+    },
+    {
+      "key": "niryuAdopted",
+      "source": "27_LINE_STICKERS/sets/02/stickers/04_niryu/sticker.png",
+      "sourceSha256": "7081e0f526d77459d068981f0269044936b4260482656c08cddf0b96e6c0baac",
+      "outputDirectory": "tips/animations/niryuAdopted",
+      "durationMs": 3000.0,
+      "frames": 6,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "二流の最終採用。頭の回転なし、指差しのみ。"
+    },
+    {
+      "key": "nominiAdopted",
+      "source": "27_LINE_STICKERS/sets/02/stickers/07_nomini/sticker.png",
+      "sourceSha256": "8fbb8c6f8e845d3bac041b803408bf30e9a0cdf8e7b6ab3d415ca09be10fe94f",
+      "outputDirectory": "tips/animations/nominiAdopted",
+      "durationMs": 3000.0,
+      "frames": 6,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "飲みに行こうの最終採用。正面から書類を捨て、背を向けて振り返る。"
+    },
+    {
+      "key": "firstWhite",
+      "source": "27_LINE_STICKERS/sets/01/all-members-white-preview.gif",
+      "sourceSha256": "94a1ea748ca0b49804f4dcd1b9da4ceb992472da4f2422d42cda9d28c8fa7260",
+      "outputDirectory": "tips/animations/firstWhite",
+      "durationMs": 3000.0,
+      "frames": 20,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "実際の第一弾8個の確認用GIF。白黒に新たな欠陥を追加していない。"
+    },
+    {
+      "key": "firstWhite",
+      "source": "27_LINE_STICKERS/sets/01/all-members-white-still.png",
+      "sourceSha256": "5de4e73548d37a4b7da3497c5f6de909ec0c6e2a6a801616b239680480a1bb1c",
+      "output": "tips/images/firstWhite.png",
+      "outputSha256": "3ac4e0d5a436796e05db89a2255ea50f15b5654d9342a83440412090d4059332",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の第一弾完成確認画像。"
+    },
+    {
+      "key": "firstBlack",
+      "source": "27_LINE_STICKERS/sets/01/all-members-black-preview.gif",
+      "sourceSha256": "3955cece328e4247ab7626e7ce4c9b04d69743d149cc8fb75144218db23eeb07",
+      "outputDirectory": "tips/animations/firstBlack",
+      "durationMs": 3000.0,
+      "frames": 20,
+      "operation": "Pillow full composited GIF/APNG frames; disposal and blend applied",
+      "note": "実際の第一弾8個の確認用GIF。白黒に新たな欠陥を追加していない。"
+    },
+    {
+      "key": "firstBlack",
+      "source": "27_LINE_STICKERS/sets/01/all-members-black-still.png",
+      "sourceSha256": "c21a885b39531697f4457b1cf1a72fd48a7ed5fb74b2d2099088fe6167c1fedc",
+      "output": "tips/images/firstBlack.png",
+      "outputSha256": "b349a74adcce7942666129da8e67a736b14942ad14783cd72feb49d6c5fe5362",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の第一弾完成確認画像。"
+    },
+    {
+      "key": "matteCaptionBefore",
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/caption.png",
+      "sourceSha256": "78f52d75591b884211b73ba9f533b701e6b669fd9cbbbf34414428947a637235",
+      "output": "tips/images/matteCaptionBefore.png",
+      "outputSha256": "9ba795ef62271f7aa9f283484b7e9101dc8bf7584744f48735a144114a7ac334",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の白背景付き文字入力。失敗版を人工的に作ったものではない。"
+    },
+    {
+      "key": "matteCaptionAfter",
+      "source": "27_LINE_STICKERS/sets/01/stickers/sobaya/still.png",
+      "sourceSha256": "3566112660ecd12b6b02583154fa2e5f4635771794ff8932e6a085e9f5a12e12",
+      "output": "tips/images/matteCaptionAfter.png",
+      "outputSha256": "5ad4c6a03789f9ce09a018a97cf3ea95c4655cfc5e095df54bb306900a235269",
+      "crop": [
+        0,
+        0,
+        400,
+        90
+      ],
+      "operation": "lossless RGBA decode and exact rectangle crop",
+      "note": "実際の完成スタンプから対応文字領域を切り出したもの。閉じ穴透過と意図的な白縁。白縁が入力文字高より2px下まで伸びるため90px。"
+    },
+    {
+      "key": "matteBodyBefore",
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/00.png",
+      "sourceSha256": "913aa876bed86af4d199084ecb10a9b99347f324299ef1d17be18b9770c97c46",
+      "output": "tips/images/matteBodyBefore.png",
+      "outputSha256": "c29d387b7d278f8f4119665269de916ae207d627adf2a9919a7b9b2f19a2ba5f",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "実際の白背景付き原画。白い服・泡もあるため単純な白一括消去は不適切。"
+    },
+    {
+      "key": "matteBodyAfter",
+      "source": "27_LINE_STICKERS/sets/01/stickers/sobaya/still.png",
+      "sourceSha256": "3566112660ecd12b6b02583154fa2e5f4635771794ff8932e6a085e9f5a12e12",
+      "output": "tips/images/matteBodyAfter.png",
+      "outputSha256": "65eeae524ad02f08d1df60d9be4b12ae78d75203680bddb4bb1a2ed6481cf388",
+      "crop": [
+        0,
+        92,
+        400,
+        400
+      ],
+      "operation": "lossless RGBA decode and exact rectangle crop",
+      "note": "同じ先頭ポーズの実際の透過済み完成画像。描き直しではなく切抜き・縮尺・配置処理。"
+    },
+    {
+      "key": "yotanSheet",
+      "source": "27_LINE_STICKERS/sets/01/source/yotan/keyframes.png",
+      "sourceSha256": "87ef3531a0e55be3974389f038741899d5e12f1908cbed216ff45540f8fdba81",
+      "output": "tips/images/yotanSheet.png",
+      "outputSha256": "d78bcea3a88b40560dc8e10a3c135aa56a5c27d0265c4b1761403029cc1653ca",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾の実際の3列2行原画。"
+    },
+    {
+      "key": "sobayaPose0",
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/00.png",
+      "sourceSha256": "913aa876bed86af4d199084ecb10a9b99347f324299ef1d17be18b9770c97c46",
+      "output": "tips/images/sobayaPose0.png",
+      "outputSha256": "c29d387b7d278f8f4119665269de916ae207d627adf2a9919a7b9b2f19a2ba5f",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    {
+      "key": "sobayaPose1",
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/01.png",
+      "sourceSha256": "e500057e248f8c07c9e20d2dd5a6e738aa355038d9be52fd630d9f3cb20b95b2",
+      "output": "tips/images/sobayaPose1.png",
+      "outputSha256": "5239659d264c53549382744a5abbbfdcf0a63895c24fd2cc0eb94dd12499ffbc",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    {
+      "key": "sobayaPose2",
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/02.png",
+      "sourceSha256": "a65c2441bbdd21ab49bd891de5dc5f816b9e2efb5690a9bab4ae532ebb4cf69c",
+      "output": "tips/images/sobayaPose2.png",
+      "outputSha256": "e22d65e546aa834bce167437d51cc969d177db5f9cfa3c55f45f9d46b7cac9a9",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    {
+      "key": "sobayaPose3",
+      "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/03.png",
+      "sourceSha256": "85849779b6f91a164a1a70f2e3ce33357f1a3780b666d4caff71e3c34fc7fd75",
+      "output": "tips/images/sobayaPose3.png",
+      "outputSha256": "91ff3c1348ef7455865c15a27fa4ad6e8ab7be3ca82d1dd3945d8614ab4c4f1d",
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    }
+  ],
+  "imageEdits": "No Imagegen calls, no artificial degradation or defects. Lossless decode/crop only.",
+  "verifiedLegacyTools": [
+    {
+      "source": "27_LINE_STICKERS/sets/01/tools/matte.py",
+      "sha256": "ff3bf68521762066e93d39cfc15bf3db3d947825ea127ae6546f6a7a46efca90",
+      "purpose": "OpenCV contours/masks, white-matte removal, enclosed white preservation, caption transparency"
+    },
+    {
+      "source": "27_LINE_STICKERS/sets/01/tools/build.mjs",
+      "sha256": "54cac13664d6521b4c72caf8d38e013e03eea9dd2b49331230e2e3a5dade3186",
+      "purpose": "ImageMagick crop/resize/composite, floodfill, connected components, APNG/GIF assembly"
+    }
+  ],
+  "limitations": [
+    "8個入り案・候補画像は第2弾。第一弾の完成品と工程例へ補足として使う。",
+    "elbowA/B/Cは全不採用。workAdoptedだけが採用された動き。",
+    "matteCaptionBeforeは元の白背景付き入力。故意に汚れを足した失敗版ではない。",
+    "art-generated再描画は元構図に沿うが形や顔の微差がある。完全一致とは称さない。"
+  ]
+}

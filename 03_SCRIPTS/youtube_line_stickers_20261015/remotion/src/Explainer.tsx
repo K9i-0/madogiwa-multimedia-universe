@@ -5,6 +5,7 @@ import {DuoSprite} from './DuoSprite';
 import {captionColors,theme} from './theme';
 import {SpreadsheetFrame} from './SpreadsheetFrame';
 import {VisualAid} from './VisualAid';
+import {TipsVisualAid,tipsViews} from './TipsVisualAid';
 import type {Manifest,Who,Mood} from './types';
 
 const moodFor=(who:Who,d:Manifest['dialogue'][number]|undefined):Mood=>{
@@ -24,6 +25,15 @@ const moodFor=(who:Who,d:Manifest['dialogue'][number]|undefined):Mood=>{
   'alpha-06':['surprise','normal'],'alpha-07':['sad','normal'],'alpha-11':['bored','normal'],
   'export-03':['surprise','normal'],'export-06':['worry','normal'],'record-05':['normal','happy'],
   'end-01':['smug','normal'],'end-02':['smug','normal'],'end-03':['smug','normal'],'end-04':['smug','happy'],'end-05':['bored','normal'],
+  'tips-02':['happy','normal'],'tips-04':['surprise','normal'],
+  'ideas-01':['smug','normal'],'ideas-03':['surprise','normal'],'ideas-06':['bored','normal'],'ideas-08':['worry','normal'],
+  'options-01':['worry','normal'],'options-03':['surprise','normal'],'options-05':['bored','normal'],'options-07':['happy','normal'],
+  'redraw-01':['worry','normal'],'redraw-03':['worry','normal'],'redraw-06':['happy','normal'],
+  'pets-01':['surprise','normal'],'pets-05':['bored','happy'],'pets-07':['happy','normal'],
+  'acting-01':['worry','normal'],'acting-03':['happy','normal'],'acting-06':['bored','normal'],'acting-08':['surprise','normal'],'acting-10':['happy','normal'],'acting-12':['worry','normal'],
+  'inspect-03':['surprise','normal'],'inspect-06':['worry','normal'],
+  'tools-01':['normal','normal'],'tools-03':['surprise','normal'],'tools-05':['surprise','normal'],'tools-08':['happy','normal'],
+  'close-01':['happy','normal'],'close-02':['happy','happy'],'close-04':['smug','normal'],'close-05':['smug','happy'],'close-06':['bored','happy'],
  };
  return specific[id]?.[who==='yametaro'?0:1]??'normal';
 };
@@ -44,15 +54,19 @@ export const Explainer:React.FC<{manifest?:Manifest;audioSrc?:string;hideCaption
  const previewChat=chatStart>0&&f>=chatStart-12&&f<chatStart;
  const openMail=mailTurn&&f>=mailTurn.startFrame+mailTurn.durationInFrames+9&&previous?.id==='intro-07';
  const view=title?'title':titleScene?.view??(afterTitle?'greeting':previewChat?'line-chat':openMail?'outlook':previous?.view??'opening-grid');
+ const tips=Boolean(previous&&tipsViews.has(view)&&!previous.id.startsWith('intro-')&&!['main-01','main-02','main-03'].includes(previous.id));
+ const previousIndex=m.dialogue.indexOf(previous);let viewIndex=previousIndex;
+ while(viewIndex>0&&m.dialogue[viewIndex-1].view===view)viewIndex--;
+ const viewStart=m.dialogue[viewIndex]?.startFrame;
  return <AbsoluteFill style={{background:'#fff',fontFamily:'"Hiragino Sans",sans-serif',color:theme.ink}}>
   {!silentPreview&&<Audio src={staticFile(audioSrc??m.audioSrc??'mixed.wav')}/>}
   {title?<AbsoluteFill style={{background:theme.blue,color:'white',justifyContent:'center',alignItems:'center'}}>
    <div style={{fontSize:26,letterSpacing:5,marginBottom:28,opacity:.85}}>窓際族物語・制作ノート</div>
    <div style={{fontSize:57,fontWeight:800,lineHeight:1.45,textAlign:'center'}}>Codexで<br/>動くLINEスタンプを作る</div>
    <div style={{fontSize:21,marginTop:40}}>やめ太郎 ＆ たこさん</div>
-  </AbsoluteFill>:<SpreadsheetFrame chapter={previous?.chapter}>
+  </AbsoluteFill>:<SpreadsheetFrame chapter={previous?.chapter} variant={tips?'tips':'original'}>
     <div style={{position:'absolute',left:260,top:106,width:760,height:485,transform:'scale(.90)',transformOrigin:'top center',background:'#fff',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',textAlign:'center'}}>
-     <VisualAid view={view} frame={f} utterance={previous} chatStart={chatStart}/>
+     {tips?<TipsVisualAid view={view} frame={f} utterance={previous} viewStart={viewStart}/>:<VisualAid view={view} frame={f} utterance={previous} chatStart={chatStart}/>}
     </div>
     {(['yametaro','takosan'] as Who[]).map(who=>{
      const speaking=active?.who===who;const local=active?f-active.startFrame:0;

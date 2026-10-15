@@ -1,46 +1,54 @@
-Codexで動くLINEスタンプを作る！原画づくりから透過・仕上げまで【窓際族物語】
+Codexで動くLINEスタンプを作る！頼み方・選び方・仕上げのコツ【窓際族物語】
 
 やめ太郎に届いた、よーたんの「お前島流し！」スタンプ。
-冗談だと思ってOutlookの辞令メールを開くと、赴任先はゆめみ村（廃村）でした。
+Outlookの辞令メールを開くと、赴任先はゆめみ村（廃村）でした。
 
-今回は、実際に販売中の「窓際族スタンプ第一弾」を題材に、Codexで動くLINEスタンプを作った工程を、やめ太郎とたこさんが解説します。
-キャラクターの参照画像、連続原画の生成、切り出しと再生順、動いたあとの間、文字と白い服を守る透過処理、白黒背景での確認、APNGとmain/tab、制作記録をスキルに残す方法を紹介します。
+販売中の「窓際族スタンプ第一弾」を題材に、第二弾の試行錯誤も交えながら、実際の制作で役立ったコツを紹介します。
+
+・最初の案出しは1枚に8種類まとめる
+・しっくりこない構図は複数案を見比べる
+・方向が決まったら一枚ずつきれいに描き直す
+・Codex Pets用スキルの連続原画・切り出し手法を応用する
+・アニメーションは雰囲気とゴールを伝え、動く候補から選ぶ
+・白と黒の両背景で消し残しや欠けを確認する
+・Imagegenと、OpenCV・ImageMagickによる画像処理を使い分ける
 
 窓際族スタンプ第一弾（申請担当：そば屋さん）
 https://store.line.me/stickershop/product/37292753/ja
 
 チャプター
 00:00 スタンプで島流し
-00:50 挨拶・今回作ったスタンプ
-01:26 Codexに何を頼むのか
-02:29 まず静止画を決める
-03:33 連続原画を作る
-05:01 再生順と動いたあとの間
-06:10 文字・服・泡を守る透過
-07:33 APNGと申請用画像
-08:57 制作記録とスキル
-10:05 おわりに
+00:50 挨拶・今回のコツ
+01:44 1枚に8個まとめて案出し
+02:41 候補を並べて選ぶ
+03:35 構図が決まったら描き直す
+04:17 Codex Petsの手法を応用
+05:27 動きは雰囲気・ゴールで伝える
+07:00 白黒両背景で確認する
+07:50 Imagegenと画像処理を使い分ける
+09:11 おわりに
 
 制作リポジトリ
 https://github.com/K9i-0/madogiwa-multimedia-universe
 第一弾の原画・制作記録
 https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/27_LINE_STICKERS/sets/01
+第二弾の制作記録
+https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/27_LINE_STICKERS/sets/02
 LINEスタンプ制作スキル
 https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/.claude/skills/line-stickers
 
-LINE公式アニメーションスタンプ制作ガイドライン（2026-10-15確認）
-https://creator.line.me/ja/guideline/animationsticker/
-https://creator.line.me/ja/guideline/animationsticker/detail/
-OpenAI公式：スキル
-https://learn.chatgpt.com/docs/build-skills
+OpenAI公式：Codex Pets / Create a custom pet
+https://learn.chatgpt.com/docs/pets#create-a-custom-pet
 OpenAI公式：Codexの画像生成と利用枠
 https://learn.chatgpt.com/docs/image-generation
 https://learn.chatgpt.com/docs/pricing#image-generation-usage-limits
+OpenAI公式：スキル
+https://learn.chatgpt.com/docs/build-skills
 
-第一弾では複数のアニメーション方式を併用しています。そば屋は採用4原画を往復・休止させた13フレーム、よーたんは6原画、たこさん・とーくん・福ギュン・やめ太郎は原画と補間、おかやまんは全体拡大、ゆめみんは本体と木槌の回転を使用しました。
-動画内のスタンプは動作説明のため繰り返し再生しています。元APNGの再生回数とは区別しています。
-CodexのImagegenからOpenAIの画像生成モデルを利用した制作例です。ChatGPTの対応プランでは、プランに含まれるCodexの利用枠で画像を生成できます。APIキーで利用する場合はAPI料金が適用されます。素材の参照、生成結果の選択、完成後の確認を人が行い、Codexに画像生成から加工・書き出し・検査まで続けて依頼しています。
-冒頭のトーク・Outlookメールは、窓際族物語の架空のやり取りを再現した演出です。
+Pets用スキルから、連続した姿勢を一枚に生成して切り出す考え方をLINEスタンプへ応用しています。OpenAI公式のLINEスタンプ制作手順という意味ではありません。実際の第一弾では、原画の再生や補間、全体の拡大・回転など複数の方法を併用しています。
+動画内のスタンプは説明のため繰り返し再生しています。元APNGの再生回数とは区別しています。
+Imagegenは、ChatGPTの対応プランに含まれるCodexの利用枠で利用できます。APIキーで利用する場合はAPI料金が適用されます。
+冒頭のトークとOutlookメールは架空のやり取りを再現した演出です。
 
 出演・立ち絵：窓際族物語／やめ太郎、たこさん
 やめ太郎音声：Irodori-TTS v4.1-Small（正典音声を参照）

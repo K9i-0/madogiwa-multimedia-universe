@@ -60,7 +60,7 @@ def link_or_copy(source, destination):
 
 replacements = {
     'Claude Code': 'クロードコード', 'Codex': 'コーデックス',
-    'Imagegen': 'イメージジェン', 'OpenAI': 'オープンエーアイ', 'ChatGPT': 'チャットジーピーティー',
+    'Imagegen': 'イメージジェン', 'Pets': 'ペッツ', 'OpenCV': 'オープンシーブイ', 'ImageMagick': 'イメージマジック', 'OpenAI': 'オープンエーアイ', 'ChatGPT': 'チャットジーピーティー',
     'Python': 'パイソン', 'Outlook': 'アウトルック', 'LINE': 'ライン',
     'APNG': 'エーピーエヌジー', 'PNG': 'ピーエヌジー', 'GIF': 'ジフ',
     'AI': 'エーアイ', 'GitHub': 'ギットハブ', 'Git': 'ギット',

@@ -1,7 +1,7 @@
 {
   "id": "02",
   "title": "第2弾：そば屋オンリー",
-  "status": "ready_for_review",
+  "status": "animation_rework_required",
   "compositionStatus": "approved",
   "lineSubmission": "not_submitted",
   "stickers": [
@@ -19,7 +19,12 @@
       "motion": "乾杯のジャンプを2回",
       "apng": "stickers/02_kanpai/sticker.png",
       "still": "stickers/02_kanpai/still.png",
-      "master": "stickers/02_kanpai/master.png"
+      "master": "stickers/02_kanpai/master.png",
+      "replacement": {
+        "caption": "ちゃんと働いてるか？",
+        "status": "candidate_review",
+        "archive": "reserve/02_kanpai"
+      }
     },
     {
       "id": "03_hieteru",
@@ -73,5 +78,6 @@
   "preview": {
     "white": "all-members-white-preview.gif",
     "black": "all-members-black-preview.gif"
-  }
+  },
+  "animationReview": "rejected: procedural deformation; replace with generated pose sequences"
 }

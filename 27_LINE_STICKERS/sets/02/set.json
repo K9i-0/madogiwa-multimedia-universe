@@ -37,7 +37,8 @@
       "apng": "stickers/03_hieteru/sticker.png",
       "still": "stickers/03_hieteru/still.png",
       "master": "stickers/03_hieteru/master.png",
-      "keyframes": "source/animation/03_hieteru/keyframes.png"
+      "keyframes": "source/animation/03_hieteru/keyframes.png",
+      "edgeCleanup": "窓上端を遠近に沿う直線でカット。人物・白い息以外の窓面を固定。"
     },
     {
       "id": "04_niryu",
@@ -93,5 +94,5 @@
   "reserve": {
     "乾杯！": "reserve/02_kanpai"
   },
-  "changes": "02は腕を置いた姿勢から肩ごと少し傾いて様子をうかがう動きで完成。07は承認済みの演技を維持し切り抜き残りを除去。全8枚の顔・背景・透過を再監査。06は頭を抱える間を長めに調整。"
+  "changes": "02は腕を置いた姿勢から肩ごと少し傾いて様子をうかがう動きで完成。07は承認済みの演技を維持し切り抜き残りを除去。全8枚の顔・背景・透過を再監査。06は頭を抱える間を長めに調整。03は窓上端を直線カットし、背景の固定範囲を拡大。"
 }

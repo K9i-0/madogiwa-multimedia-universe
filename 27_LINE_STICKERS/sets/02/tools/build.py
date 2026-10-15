@@ -6,7 +6,7 @@ import json, shutil, math
 from pathlib import Path
 import cv2
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 from scipy.ndimage import distance_transform_edt
 ROOT=Path(__file__).resolve().parents[1]
 FONT='/System/Library/Fonts/ヒラギノ角ゴシック W9.ttc'
@@ -23,7 +23,8 @@ ANCHORS=[[(80,70,60,100),(90,370,65,70),(380,55,55,120)],
 # Regions containing the complete union of moving anatomy, in base cell coords.
 POLYS=[ [[(310,40),(457,40),(457,455),(282,455),(282,180),(310,180)]],
  [[(0,0),(511,0),(511,401),(345,401),(345,506),(235,506),(235,378),(0,378)]],
- [[(160,80),(365,80),(402,290),(320,307),(178,285),(145,220),(112,210),(112,105)]],
+ [[(228,91),(289,92),(316,104),(330,132),(330,158),(359,168),(386,192),(393,241),(387,283),(364,303),(312,305),(271,291),(227,285),(199,283),(176,271),(173,237),(185,211),(198,186),(222,172),(222,133)],
+  [(140,113),(190,109),(210,127),(219,148),(237,154),(237,179),(212,180),(187,169),(163,166),(143,156),(137,139)]],
  [[(305,155),(390,155),(390,310),(260,310),(260,195),(305,195)]],
  [[(40,65),(270,65),(290,260),(355,325),(320,410),(110,430),(45,355)]],
  [],[],
@@ -70,6 +71,15 @@ def fit_cell(im):
  im=im.copy();im.thumbnail((512,512),Image.Resampling.LANCZOS)
  out=Image.new('RGBA',(512,512));out.paste(im,((512-im.width)//2,(512-im.height)//2));return out
 
+def trim_window_top(im):
+ # Cut the projecting mullion ends to one perspective-aligned straight edge.
+ # (106,27) -> (451,114), with subpixel coverage to avoid alpha sawteeth.
+ scale=8;m=Image.new('L',(512*scale,512*scale))
+ slope=87/345;intercept=27-106*slope
+ ImageDraw.Draw(m).polygon([(0,intercept*scale),(512*scale,(512*slope+intercept)*scale),(512*scale,512*scale),(0,512*scale)],fill=255)
+ m=m.resize((512,512),Image.Resampling.LANCZOS)
+ out=im.copy();out.putalpha(ImageChops.multiply(out.getchannel('A'),m));return out
+
 def prepare(k,s):
  d=ROOT/'source/animation'/s['id'];sheet=Image.open(d/'keyframes.png').convert('RGBA')
  cw=sheet.width//3;ch=sheet.height//2
@@ -89,6 +99,7 @@ def prepare(k,s):
   m=m.filter(ImageFilter.GaussianBlur(1))
   frames=[Image.composite(f,frames[0],m) for f in frames]
  (d/'registration.json').write_text(json.dumps(regs,indent=2)+'\n')
+ if k==2:frames=[trim_window_top(f) for f in frames]
  if k==5:
   # Reject disconnected narrow slivers from neighbouring sprite cells.
   kept=[]

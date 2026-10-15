@@ -1,6 +1,6 @@
 {
   "sampleRate": 48000,
-  "frames": 18753,
+  "frames": 18789,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
@@ -9,7 +9,7 @@
   "endingLiftAfterDialogue": false,
   "endingTrackChange": false,
   "endingFadeOutSeconds": 4,
-  "premasterPeak": 0.6177022457122803,
+  "premasterPeak": 0.6199668049812317,
   "masterGain": 1,
   "soundEvents": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "name": "original soft major triad title cue",
-      "startFrame": 1507,
+      "startFrame": 1433,
       "durationInFrames": 60
     }
   ],
@@ -51,9 +51,9 @@
       "provenanceRecord": "03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json"
     }
   },
-  "mixedSha256": "ec35931d41c7ea4b2ba6d8328a9a7ce1b77f86e060626f56f0943b2bcf76d883",
+  "mixedSha256": "8c6dca7c7fb41508dd5fb3ac79f0e050564c87149ae557861df4b730f243b9a2",
   "subjectiveListening": false,
-  "measuredIntegratedLUFS": -18.02,
-  "measuredTruePeakDBTP": -4.18,
-  "measuredLRA": 3.4
+  "measuredIntegratedLUFS": -18.01,
+  "measuredTruePeakDBTP": -4.15,
+  "measuredLRA": 3.3
 }

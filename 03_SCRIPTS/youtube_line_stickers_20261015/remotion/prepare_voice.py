@@ -1,9 +1,11 @@
 """Generate this episode's two canonical voices and measure the integer-frame timeline.
 
 Run with .local/Irodori-TTS/.venv/bin/python from the repository root.
-No speed/pitch postprocessing or silence trimming is applied to voice inputs.
+No speed/pitch postprocessing is applied. Raw TTS is kept untrimmed;
+reviewed cuts in voice_cleanup.json are applied separately.
 """
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import math
@@ -15,6 +17,7 @@ import urllib.request
 
 import numpy as np
 import soundfile as sf
+from clean_yametaro import load_recipes, apply_cleanup
 
 P = Path(__file__).resolve().parent
 R = P.parents[2]
@@ -57,6 +60,7 @@ def link_or_copy(source, destination):
 
 replacements = {
     'Claude Code': 'クロードコード', 'Codex': 'コーデックス',
+    'Imagegen': 'イメージジェン', 'OpenAI': 'オープンエーアイ', 'ChatGPT': 'チャットジーピーティー',
     'Python': 'パイソン', 'Outlook': 'アウトルック', 'LINE': 'ライン',
     'APNG': 'エーピーエヌジー', 'PNG': 'ピーエヌジー', 'GIF': 'ジフ',
     'AI': 'エーアイ', 'GitHub': 'ギットハブ', 'Git': 'ギット',
@@ -66,10 +70,18 @@ replacements = {
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--only', nargs='+', help='Regenerate only these IDs; preserve the recorded waveform/settings of every other line.')
+    args = parser.parse_args()
     for sub in ['public', 'out', 'src']:
         (P / sub).mkdir(exist_ok=True)
     rows = json.loads((P / 'dialogue.json').read_text())
+    previous_record = P.parent / 'voice_record.json'
+    previous_lines = {d['id']: d for d in json.loads(previous_record.read_text())['lines']} if previous_record.exists() else {}
+    if args.only:
+        assert set(args.only).issubset({d['id'] for d in rows}), args.only
     voice_overrides = json.loads((P / 'voice_overrides.json').read_text()) if (P / 'voice_overrides.json').exists() else {}
+    cleanup_recipes = load_recipes()
     timeline_config = json.loads((P / 'voice_timeline_config.json').read_text()) if (P / 'voice_timeline_config.json').exists() else {}
     engine = json.load(urllib.request.urlopen(BASE + '/version'))
     speaker = next(x for x in json.load(urllib.request.urlopen(BASE + '/speakers')) if x['name'] == '中国うさぎ')
@@ -85,20 +97,31 @@ def main():
         adopted_by_hash = {item['sha256']: record.parent / item['file']
             for item in json.loads(adoption_file.read_text())['audio']} if adoption_file.exists() else {}
         for d in json.loads(record.read_text())['lines']:
-            source = record.parent / 'remotion/public' / d['audio']
+            generated_hash = d.get('generatedAudioSha256', d['audioSha256'])
+            source = record.parent / 'remotion/public' / d.get('generatedAudio', d['audio'])
+            if d.get('audioProcessing'):
+                source = record.parent / d['audioProcessing']['source']
             if not source.exists():
-                source = adopted_by_hash.get(d['audioSha256'], source)
+                source = adopted_by_hash.get(generated_hash, source)
             if source.exists():
-                old_by_identity[identity(d['voiceSettings'])] = (source, d['audioSha256'])
+                old_by_identity[identity(d['voiceSettings'])] = (source, generated_hash)
     runtime = None
     prepared = []
     for original_row in rows:
         row = dict(original_row, **voice_overrides.get(original_row['id'], {}))
+        protected = bool(args.only and row['id'] not in args.only)
         spoken = row.get('voicevoxReading', row.get('reading', row['text'])) if row['who'] == 'takosan' else row.get('reading', row['text'])
         for source, replacement in replacements.items():
             spoken = spoken.replace(source, replacement)
         kana = None
-        if row['who'] == 'takosan':
+        if protected:
+            previous = previous_lines[row['id']]
+            for field in ['who', 'text', 'reading', 'voicevoxReading', 'seed', 'durationScale']:
+                assert row.get(field) == previous.get(field), ('Protected line changed', row['id'], field)
+            settings = previous['voiceSettings']
+            spoken = previous['spoken']
+            kana = previous.get('kana')
+        elif row['who'] == 'takosan':
             query = json.loads(post('audio_query', {'speaker': 61, 'text': spoken}))
             query.update(speedScale=1.1, pitchScale=0, intonationScale=1, volumeScale=1,
                 outputSamplingRate=48000, outputStereo=False, prePhonemeLength=.10, postPhonemeLength=.20)
@@ -117,12 +140,19 @@ def main():
         name = f'voice_{row["id"]}_{key[:12]}.wav'
         path = P / 'public' / name
         reused_from = None
+        if row['id'] in cleanup_recipes:
+            recipe = cleanup_recipes[row['id']]
+            assert key == recipe['generationSettingsSha256'], ('Cut recipe belongs to a different generation', row['id'])
+            original = P.parent / recipe['source']
+            assert sha(original) == recipe['sourceSha256']
+            link_or_copy(original, path)
         if not path.exists() and key in old_by_identity:
             old_path, old_hash = old_by_identity[key]
             assert old_path.exists() and sha(old_path) == old_hash
             link_or_copy(old_path, path)
             reused_from = str(old_path.relative_to(R))
         if not path.exists():
+            assert not protected, ('Protected adopted audio is missing', row['id'])
             if row['who'] == 'takosan':
                 path.write_bytes(post('synthesis', {'speaker': 61}, query))
             else:
@@ -134,7 +164,14 @@ def main():
                     caption=None, cfg_scale_text=5, duration_scale=settings['durationScale'], trim_tail=False), log_fn=None)
                 save_wav(str(path), result.audio, result.sample_rate)
                 write_json(P / 'out' / (name + '.json'), {'settings': settings, 'messages': result.messages, 'timings': result.stage_timings})
+        generated_name, generated_hash = name, sha(path)
+        processing = None
+        if row['id'] in cleanup_recipes:
+            path, processing = apply_cleanup(row['id'], path, key)
+            name = path.name
         x, sr = sf.read(path)
+        if protected:
+            assert sha(path) == previous['audioSha256'], ('Protected waveform changed', row['id'])
         assert x.ndim == 1 and len(x) and np.isfinite(x).all()
         frames = math.ceil(len(x) / sr * FPS)
         envelope = [round(float(np.sqrt(np.mean(chunk * chunk))) if len(chunk) else 0, 5)
@@ -142,6 +179,8 @@ def main():
         item = dict(row, audio=name, spoken=spoken, kana=kana, durationInFrames=frames,
             envelope=envelope, voiceSettings=settings, audioSha256=sha(path), sampleRate=sr,
             durationSeconds=len(x)/sr, reusedFrom=reused_from)
+        if processing:
+            item.update(generatedAudio=generated_name, generatedAudioSha256=generated_hash, audioProcessing=processing)
         prepared.append(item)
         write_json(P / 'out/voice_progress.json', prepared)
         print('READY', len(prepared), len(rows), row['id'], round(len(x) / sr, 2), spoken, flush=True)

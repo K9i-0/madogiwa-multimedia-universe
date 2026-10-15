@@ -2,24 +2,36 @@ import {bundle} from '@remotion/bundler';
 import {renderStill,openBrowser} from '@remotion/renderer';
 import fs from 'node:fs';
 
-// Render one measured frame per view; --layout allows inspection before voice timing.
+// Default: the longest subtitle page of each view, using the measured timeline.
+// --layout works before voice timing. --view=roles --all-pages audits each page.
 const layout=process.argv.includes('--layout');
+const allPages=process.argv.includes('--all-pages');
+const viewFilter=process.argv.find(x=>x.startsWith('--view='))?.slice(7);
+const prefix=process.argv.find(x=>x.startsWith('--prefix='))?.slice(9)??(layout?'preview':'audit');
 const manifest=JSON.parse(fs.readFileSync('src/edit-manifest.json'));
 const lines=JSON.parse(fs.readFileSync('dialogue.json'));
-const chosen=new Map();
+const candidates=(layout?lines:manifest.dialogue).filter(d=>!viewFilter||d.view===viewFilter);
 const captionWeight=d=>Math.max(0,...(d.captionSegments??[{text:d.caption??d.text}]).map(s=>s.text.replace(/\n/g,'').length));
-for(const d of (layout?lines:manifest.dialogue)){if(!chosen.has(d.view)||(!layout&&captionWeight(d)>captionWeight(chosen.get(d.view))))chosen.set(d.view,d);}
+const chosen=new Map();
+for(const d of candidates){if(!chosen.has(d.view)||(!layout&&captionWeight(d)>captionWeight(chosen.get(d.view))))chosen.set(d.view,d);}
+const shots=[];
+for(const d of allPages?candidates:chosen.values()){
+ const row=layout?{...d,startFrame:0,durationInFrames:300,caption:d.text.slice(0,23)+'\n'+d.text.slice(23,46),envelope:Array(300).fill(.5)}:d;
+ const longest=(row.captionSegments??[]).reduce((max,s)=>s.text.length>(max?.text.length??-1)?s:max,undefined);
+ const pages=allPages?(row.captionSegments??[undefined]):[longest];
+ pages.forEach((segment,i)=>shots.push({
+  name:allPages?`${row.view}-${row.id}-${i+1}`:row.view,
+  frame:layout?45:row.startFrame+(segment?Math.floor((segment.startFrame+segment.endFrame)/2):Math.min(45,row.durationInFrames-1)),
+  inputProps:layout?{silentPreview:true,manifest:{composition:{width:1280,height:720,fps:30,durationInFrames:900},dialogue:[row]}}:{silentPreview:true},
+ }));
+}
 fs.mkdirSync('out',{recursive:true});
 const serveUrl=await bundle({entryPoint:'src/index.ts',publicDir:'public'});
 const browser=await openBrowser('chrome');
 try {
- const entries=[...chosen.entries()];
- for(let i=0;i<entries.length;i+=3)await Promise.all(entries.slice(i,i+3).map(async([view,d])=>{
-  const row=layout?{...d,startFrame:0,durationInFrames:300,caption:d.text.slice(0,23)+'\n'+d.text.slice(23,46),envelope:Array(300).fill(.5)}:d;
-  const inputProps=layout?{silentPreview:true,manifest:{composition:{width:1280,height:720,fps:30,durationInFrames:900},dialogue:[row]}}:{silentPreview:true};
-  const longest=(row.captionSegments??[]).reduce((max,s)=>s.text.length>(max?.text.length??-1)?s:max,undefined);
-  const frame=layout?45:row.startFrame+(longest?Math.floor((longest.startFrame+longest.endFrame)/2):Math.min(45,row.durationInFrames-1));
-  await renderStill({serveUrl,composition:{id:'Explainer',width:1280,height:720,fps:30,durationInFrames:layout?900:manifest.composition.durationInFrames,props:inputProps,defaultProps:{}},inputProps,output:`out/${layout?'preview':'audit'}-${view}.png`,frame,puppeteerInstance:browser,logLevel:'error'});
-  console.log(`${view}: ${frame}`);
+ for(let i=0;i<shots.length;i+=3)await Promise.all(shots.slice(i,i+3).map(async({name,frame,inputProps})=>{
+  await renderStill({serveUrl,composition:{id:'Explainer',width:1280,height:720,fps:30,durationInFrames:layout?900:manifest.composition.durationInFrames,props:inputProps,defaultProps:{}},inputProps,output:`out/${prefix}-${name}.png`,frame,puppeteerInstance:browser,logLevel:'error'});
+  console.log(`${name}: ${frame}`);
  }));
 }finally{await browser.close({silent:true});}
+fs.writeFileSync(`out/${prefix}-frames.json`,JSON.stringify(shots.map(({name,frame})=>({name,frame})),null,2));

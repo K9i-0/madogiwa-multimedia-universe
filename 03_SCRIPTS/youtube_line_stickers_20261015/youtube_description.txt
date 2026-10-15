@@ -11,15 +11,15 @@ https://store.line.me/stickershop/product/37292753/ja
 
 チャプター
 00:00 スタンプで島流し
-00:53 挨拶・今回作ったスタンプ
-01:28 Codexに何を頼むのか
-02:26 まず静止画を決める
-03:30 連続原画を作る
-04:57 再生順と動いたあとの間
-06:07 文字・服・泡を守る透過
-07:32 APNGと申請用画像
-08:56 制作記録とスキル
-10:03 おわりに
+00:50 挨拶・今回作ったスタンプ
+01:26 Codexに何を頼むのか
+02:29 まず静止画を決める
+03:33 連続原画を作る
+05:01 再生順と動いたあとの間
+06:10 文字・服・泡を守る透過
+07:33 APNGと申請用画像
+08:57 制作記録とスキル
+10:05 おわりに
 
 制作リポジトリ
 https://github.com/K9i-0/madogiwa-multimedia-universe
@@ -33,10 +33,13 @@ https://creator.line.me/ja/guideline/animationsticker/
 https://creator.line.me/ja/guideline/animationsticker/detail/
 OpenAI公式：スキル
 https://learn.chatgpt.com/docs/build-skills
+OpenAI公式：Codexの画像生成と利用枠
+https://learn.chatgpt.com/docs/image-generation
+https://learn.chatgpt.com/docs/pricing#image-generation-usage-limits
 
 第一弾では複数のアニメーション方式を併用しています。そば屋は採用4原画を往復・休止させた13フレーム、よーたんは6原画、たこさん・とーくん・福ギュン・やめ太郎は原画と補間、おかやまんは全体拡大、ゆめみんは本体と木槌の回転を使用しました。
 動画内のスタンプは動作説明のため繰り返し再生しています。元APNGの再生回数とは区別しています。
-画像生成が利用できるCodexの制作環境を使った実例です。素材の参照、生成結果の選択、完成後の確認を人が行い、画像の加工・検査をコードで実行しています。
+CodexのImagegenからOpenAIの画像生成モデルを利用した制作例です。ChatGPTの対応プランでは、プランに含まれるCodexの利用枠で画像を生成できます。APIキーで利用する場合はAPI料金が適用されます。素材の参照、生成結果の選択、完成後の確認を人が行い、Codexに画像生成から加工・書き出し・検査まで続けて依頼しています。
 冒頭のトーク・Outlookメールは、窓際族物語の架空のやり取りを再現した演出です。
 
 出演・立ち絵：窓際族物語／やめ太郎、たこさん

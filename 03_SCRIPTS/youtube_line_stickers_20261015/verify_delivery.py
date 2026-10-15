@@ -20,6 +20,7 @@ def timecode(frame, fps):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--video', default='final_remotion_line_stickers.mp4')
+    parser.add_argument('--section-excerpt', help='Optional filename for the Imagegen explanation excerpt')
     args = parser.parse_args()
     video = P / args.video
     manifest = json.loads((P / 'remotion/src/edit-manifest.json').read_text())
@@ -62,6 +63,19 @@ def main():
         row = by_id[id]
         frame = row['startFrame'] + min(35, row['durationInFrames'] // 2)
         samples.append((id, frame))
+    if args.section_excerpt:
+        for id in ['flow-04', 'flow-05', 'flow-06', 'flow-07']:
+            row = by_id[id]
+            for index, page in enumerate(row['captionSegments']):
+                frame = row['startFrame'] + (page['startFrame'] + page['endFrame']) // 2
+                samples.append((f'{id}-page-{index+1}', frame))
+        cleanup = P / 'remotion/voice_cleanup.json'
+        if cleanup.exists():
+            for cut in json.loads(cleanup.read_text())['cuts']:
+                row = by_id[cut['id']]
+                end = row['startFrame'] + row['durationInFrames']
+                samples.extend([(f'voice-cut-{cut["id"]}-end', end - 1),
+                    (f'voice-cut-{cut["id"]}-after', end + 2)])
     last = by_id['intro-13']
     samples.append(('title', last['startFrame'] + last['durationInFrames'] + 40))
     samples.append(('final', comp['durationInFrames'] - 1))
@@ -90,6 +104,13 @@ def main():
         'note': 'Machine checks do not constitute a subjective listening pass. Visual review is recorded separately in review.md.'
     }
     (P / 'delivery.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    if args.section_excerpt:
+        section = P / args.section_excerpt
+        start = by_id['flow-04']['startFrame']
+        end = by_id['flow-08']['startFrame']
+        run(['ffmpeg', '-v', 'error', '-y', '-ss', str(start / fps), '-i', str(video), '-t', str((end - start) / fps), '-map', '0:v:0', '-map', '0:a:0', '-c:v', 'libx264', '-crf', '18', '-preset', 'fast', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', str(section)])
+        report['sectionExcerpt'] = {'file': section.name, 'startFrame': start, 'endFrame': end, 'durationSeconds': (end - start) / fps}
+        (P / 'delivery.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({k: report[k] for k in ['video', 'durationSeconds', 'bytes', 'fullDecode', 'introExcerpt']}, ensure_ascii=False))
 
 

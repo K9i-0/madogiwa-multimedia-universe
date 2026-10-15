@@ -66,7 +66,27 @@ export const VisualAid:React.FC<{view:string;frame:number;utterance?:Dialogue;ch
   const active=utterance?.id==='flow-03'?['ネタ','静止画','動きの原画','切り出し','最後に'].reduce((last,phrase,i)=>local>=cueStart(phrase)?i:last,0):typeof focus==='number'?focus:/ネタ|セリフ/.test(text)?0:/静止|顔|構図/.test(text)?1:/原画/.test(text)?2:/コード|切|つな|組/.test(text)?3:/透過|ファイル|規格/.test(text)?4:-1;
   return <><div style={header}>制作の流れ</div><Table rows={stages} active={active}/></>;
  }
- if(view==='roles')return <><div style={header}>何を作るかは、人が決める</div><Table rows={[["人","ネタ・絵・動きの採用判断"],["画像生成","静止画・連続した原画"],["Codex","指示づくり・加工コード・検証"]]} active={/画像/.test(text)?1:/Codex|コード/.test(text)?2:0}/></>;
+ if(view==='roles'){
+  const talkingPlan=utterance?.id==='flow-05'&&local>=cueStart('ChatGPT');
+  const talkingHuman=utterance?.id==='flow-07'&&local>=cueStart('人は');
+  const talkingCode=utterance?.id==='flow-07'&&!talkingHuman;
+  const talkingImage=utterance?.id==='flow-05'&&!talkingPlan;
+  const box=(active:boolean):React.CSSProperties=>({border:`3px solid ${active?theme.blue:'#d8e0db'}`,background:active?theme.yellow:'#fff',boxSizing:'border-box'});
+  return <><div style={header}>原画づくりから、Codexで進める</div>
+   <div style={{display:'flex',alignItems:'center',width:720,gap:14}}>
+    <div style={{...box(talkingHuman),width:195,padding:'25px 10px',fontSize:23,lineHeight:1.8,flexShrink:0}}><div style={{fontSize:30,fontWeight:750,marginBottom:10}}>人</div>ネタ・使う場面<br/>仕上がりの判断</div>
+    <div style={{fontSize:37,color:theme.blue}}>→</div>
+    <div style={{border:`3px solid ${theme.blue}`,flex:1,textAlign:'left',background:'#fff'}}>
+     <div style={{padding:'9px 18px',background:theme.blue,color:'white',fontSize:30,fontWeight:750}}>Codex</div>
+     <div style={{padding:13,display:'flex',flexDirection:'column',gap:10}}>
+      <div style={{...box(talkingImage),padding:'12px 17px'}}><div style={{fontSize:27,fontWeight:750,color:theme.blue}}>Imagegen</div><div style={{fontSize:24,marginTop:5}}>OpenAIのモデルで原画生成</div></div>
+      <div style={{...box(talkingCode),padding:'12px 17px'}}><div style={{fontSize:27,fontWeight:750,color:theme.blue}}>コード</div><div style={{fontSize:24,marginTop:5}}>加工・書き出し・検証</div></div>
+     </div>
+    </div>
+   </div>
+   <div style={{fontSize:21,lineHeight:1.6,marginTop:20,padding:'5px 10px',background:talkingPlan?theme.yellow:'transparent',color:talkingPlan?theme.blue:theme.muted,fontWeight:talkingPlan?700:500}}>ChatGPT対応プランに含まれるCodexの利用枠を使用</div>
+  </>;
+ }
  if(view==='reference'||view==='reference-sheet')return <><div style={header}>人物の特徴と、絵柄をそろえる</div><div style={{display:'flex',alignItems:'center',gap:20}}><Source src={manifests.sources.sobayaCanonicalSheet} width={425} height={310}/><div style={{fontSize:32,color:theme.blue}}>→</div><Sticker id="sobaya" frame={frame} still width={225} height={250}/></div><div style={small}>参照画像の役割を伝える：人物同一性 ／ イラストのタッチ</div></>;
  if(view==='sobaya-still'&&utterance?.id?.startsWith('main-'))view='sobaya';
  if(view==='sobaya-still'||view==='sobaya')return <><div style={header}>止まった絵でも、気持ちが伝わる</div><Sticker id="sobaya" frame={frame} still={view==='sobaya-still'} width={400} height={338}/></>;

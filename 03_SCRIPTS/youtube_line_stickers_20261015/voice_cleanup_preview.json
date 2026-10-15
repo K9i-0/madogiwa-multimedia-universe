@@ -1,0 +1,192 @@
+{
+  "video": "preview_voice_cleanup.mp4",
+  "sha256": "cf7db6a26a4400feca48170e3116e92689f2035d2c1338ba5c3093d97bef1ea5",
+  "durationSeconds": 21.6,
+  "frames": 648,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "audioSampleRate": 48000,
+  "sourceCleanupRecord": "remotion/voice_cleanup.json",
+  "sourceCleanupSha256": "8add21503f2e8011c93eaa3a245c3a1551f955696f4ea419cb2d1e1241ca3f36",
+  "sourceAudioModified": false,
+  "subjectiveListening": false,
+  "normalization": "Within each pair, both use identical constant gain measured from the uncut original; no independent loudness normalization.",
+  "scope": "Review of 4 adopted cuts without BGM. Full explainer mix has its own recorded normalization.",
+  "pairs": [
+    {
+      "id": "intro-04",
+      "text": "よーたんからや。",
+      "classification": "excess_sustained_vowel",
+      "before": {
+        "file": "input/voice_uncut/voice_intro-04_yametaro_294d9b59.wav",
+        "sha256": "294d9b59bd9d9ba84535b69a961ee3b09f3db970147de2ab1f39ef04bd967f1e",
+        "duration": 3.08
+      },
+      "after": {
+        "file": "voice_intro-04_yametaro_3aa53d81.wav",
+        "sha256": "3aa53d818cbfa9c7fcadaec14e464c1c2128e22c6d3716341b0b73c1b7d8353d",
+        "duration": 1.5
+      },
+      "sharedGain": {
+        "originalIntegratedLUFS": -16.21,
+        "originalPeakDbfs": -0.6338304234293851,
+        "gainDb": -1.7899999999999991,
+        "policy": "One constant gain from original, applied identically to both versions; target -18 LUFS, peak ceiling -2 dBFS."
+      }
+    },
+    {
+      "id": "intro-07",
+      "text": "辞令？",
+      "classification": "excess_sustained_vowel",
+      "before": {
+        "file": "input/voice_uncut/voice_intro-07_yametaro_d9418949.wav",
+        "sha256": "d941894920cef3cb811d7b0886ba6f166697994c5727e9f0ac17384df35164de",
+        "duration": 1.84
+      },
+      "after": {
+        "file": "voice_intro-07_yametaro_15d95287.wav",
+        "sha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619",
+        "duration": 1.0
+      },
+      "sharedGain": {
+        "originalIntegratedLUFS": -15.72,
+        "originalPeakDbfs": -3.369428023808049,
+        "gainDb": -2.2799999999999994,
+        "policy": "One constant gain from original, applied identically to both versions; target -18 LUFS, peak ceiling -2 dBFS."
+      }
+    },
+    {
+      "id": "alpha-03",
+      "text": "まだあるんか。",
+      "classification": "post_utterance_nonlexical_island",
+      "before": {
+        "file": "input/voice_uncut/voice_alpha-03_yametaro_e0ee664d.wav",
+        "sha256": "e0ee664d8eebea6f6fda7cd6ea0e9e9e00a0c6bdb1aae35bed5ec60bd98c378d",
+        "duration": 3.12
+      },
+      "after": {
+        "file": "voice_alpha-03_yametaro_a593402a.wav",
+        "sha256": "a593402ad7a86d03cd286d0909cf3e13611b2d9fd4c747b46b8213c41f104571",
+        "duration": 1.28
+      },
+      "sharedGain": {
+        "originalIntegratedLUFS": -15.99,
+        "originalPeakDbfs": -0.010343977156814338,
+        "gainDb": -2.01,
+        "policy": "One constant gain from original, applied identically to both versions; target -18 LUFS, peak ceiling -2 dBFS."
+      }
+    },
+    {
+      "id": "end-03",
+      "text": "謝ってるけど、そこまで反省してない感じ。",
+      "classification": "post_utterance_burst",
+      "before": {
+        "file": "input/voice_uncut/voice_end-03_yametaro_a2f3fb9f.wav",
+        "sha256": "a2f3fb9f205bcf4f01b89606b2e091e1102a516bb4fe7956cb0b805dcd43cd4f",
+        "duration": 2.92
+      },
+      "after": {
+        "file": "voice_end-03_yametaro_91e9bbea.wav",
+        "sha256": "91e9bbea9aa8af9e607679da7ad7fb3c0c746a680737ed94a4e0c2a6126ce8fc",
+        "duration": 2.75
+      },
+      "sharedGain": {
+        "originalIntegratedLUFS": -15.26,
+        "originalPeakDbfs": 0.0,
+        "gainDb": -2.74,
+        "policy": "One constant gain from original, applied identically to both versions; target -18 LUFS, peak ceiling -2 dBFS."
+      }
+    }
+  ],
+  "segments": [
+    {
+      "id": "intro-04",
+      "version": "before",
+      "startFrame": 0,
+      "durationInFrames": 108,
+      "audioSeconds": 3.08,
+      "silenceSeconds": 0.52,
+      "card": "remotion/out/voice-cleanup-preview/card-01-before.png"
+    },
+    {
+      "id": "intro-04",
+      "version": "after",
+      "startFrame": 108,
+      "durationInFrames": 60,
+      "audioSeconds": 1.5,
+      "silenceSeconds": 0.5,
+      "card": "remotion/out/voice-cleanup-preview/card-01-after.png"
+    },
+    {
+      "id": "intro-07",
+      "version": "before",
+      "startFrame": 168,
+      "durationInFrames": 71,
+      "audioSeconds": 1.84,
+      "silenceSeconds": 0.5266666666666666,
+      "card": "remotion/out/voice-cleanup-preview/card-02-before.png"
+    },
+    {
+      "id": "intro-07",
+      "version": "after",
+      "startFrame": 239,
+      "durationInFrames": 45,
+      "audioSeconds": 1.0,
+      "silenceSeconds": 0.5,
+      "card": "remotion/out/voice-cleanup-preview/card-02-after.png"
+    },
+    {
+      "id": "alpha-03",
+      "version": "before",
+      "startFrame": 284,
+      "durationInFrames": 109,
+      "audioSeconds": 3.12,
+      "silenceSeconds": 0.5133333333333332,
+      "card": "remotion/out/voice-cleanup-preview/card-03-before.png"
+    },
+    {
+      "id": "alpha-03",
+      "version": "after",
+      "startFrame": 393,
+      "durationInFrames": 54,
+      "audioSeconds": 1.28,
+      "silenceSeconds": 0.52,
+      "card": "remotion/out/voice-cleanup-preview/card-03-after.png"
+    },
+    {
+      "id": "end-03",
+      "version": "before",
+      "startFrame": 447,
+      "durationInFrames": 103,
+      "audioSeconds": 2.92,
+      "silenceSeconds": 0.5133333333333332,
+      "card": "remotion/out/voice-cleanup-preview/card-04-before.png"
+    },
+    {
+      "id": "end-03",
+      "version": "after",
+      "startFrame": 550,
+      "durationInFrames": 98,
+      "audioSeconds": 2.75,
+      "silenceSeconds": 0.5166666666666666,
+      "card": "remotion/out/voice-cleanup-preview/card-04-after.png"
+    }
+  ],
+  "fullDecode": "passed",
+  "cardVisualReview": "passed",
+  "visualReview": {
+    "reviewer": "sticker_video_assets",
+    "method": "Visual inspection of four representative images extracted from the final four-cut MP4; one card per adopted cut.",
+    "frames": [
+      "remotion/out/voice-cleanup-preview/final-review-intro-04.png",
+      "remotion/out/voice-cleanup-preview/final-review-intro-07.png",
+      "remotion/out/voice-cleanup-preview/final-review-alpha-03.png",
+      "remotion/out/voice-cleanup-preview/final-review-end-03.png"
+    ],
+    "result": "All four cards show the correct 1/4–4/4 count, readable dialogue, before/after label, duration, and waveform without overlap or clipping.",
+    "subjectiveListening": false
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "version": 6,
+  "utteranceId": "intro-04",
+  "subtitleText": "よーたんからや！",
+  "adoptedCandidate": "C",
+  "adoptedPublicAudio": "voice_intro-04_08583445b191.wav",
+  "adoptedSha256": "d82f454c7ee9c2714900fa9ef854e65c353de8c47a91a0242d1173992c494f4c",
+  "subjectiveListening": false,
+  "asrModel": "openai/whisper-small",
+  "expectedTextPrompt": false,
+  "selectionBasis": "Cは1.88秒の短い発声を維持。ASRでは固有名詞が「妖単」となったが「からや」まで保持し、Bの長音化も避けた。末尾100ms RMSは−35.18dBFS。機械検証による選択で、自然さ・アクセントの聴感確認は未実施。",
+  "rawCandidatesPostprocessed": false,
+  "comparison": {
+    "audioPath": "remotion/out/v6_intro_candidates/comparison_v5_A_B_C.wav",
+    "htmlPath": "remotion/out/v6_intro_candidates/index.html",
+    "order": [
+      "v5",
+      "A",
+      "B",
+      "C"
+    ],
+    "normalization": "各音声を−18 LUFSへ統一、間に1秒の無音。原候補WAVには適用しない。"
+  },
+  "localRecords": {
+    "generation": "remotion/out/v6_intro_candidates/candidates.json",
+    "audit": "remotion/out/v6_intro_candidates/audit.json",
+    "recommendation": "remotion/out/v6_intro_candidates/recommendation.json",
+    "generator": "remotion/out/v6_intro_candidates/generate.py",
+    "auditor": "remotion/out/v6_intro_candidates/audit.py"
+  },
+  "storagePolicy": "候補音声・比較音声・監査の中間物はremotion/out内のローカル保持。採用Cだけ本番の採用音声として管理する。",
+  "candidates": [
+    {
+      "candidate": "v5",
+      "label": "前回版（v5）",
+      "audioPath": "remotion/out/v6_intro_candidates/v5_before.wav",
+      "sha256": "d65f8b9c4f4858561b7421bcc2d107db8fd8eaf35e8c928dc2701178f7b07409",
+      "voiceSettings": {
+        "model": "Aratako/Irodori-TTS-v4.1-Small",
+        "runtimeRevision": "8224dafb46d0aba89209a8f905f1cb7e3299d9c1",
+        "reference": "02_CHARACTERS/Yametaro_voice.wav",
+        "referenceSha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+        "seed": 7,
+        "caption": "知らせに気づいて、嬉しそうに弾む。",
+        "cfgScaleText": 5,
+        "cfgScaleSpeaker": 5,
+        "numSteps": 40,
+        "durationScale": 0.55,
+        "trimTail": false,
+        "postTrim": false,
+        "text": "よーたんからや！"
+      },
+      "asrTranscript": "用単からや",
+      "durationSeconds": 1.88,
+      "sampleRate": 48000,
+      "comparisonStartSeconds": 0,
+      "comparisonEndSeconds": 1.88
+    },
+    {
+      "candidate": "A",
+      "label": "自然に通知へ気づく",
+      "audioPath": "remotion/out/v6_intro_candidates/A_intro_04_3b837c91b558.wav",
+      "sha256": "d96b9fd586d17f1847e3cf0d306be8f4fb76a2b83e871b6231d13fa1fbc959b9",
+      "voiceSettings": {
+        "model": "Aratako/Irodori-TTS-v4.1-Small",
+        "runtimeRevision": "8224dafb46d0aba89209a8f905f1cb7e3299d9c1",
+        "reference": "02_CHARACTERS/Yametaro_voice.wav",
+        "referenceSha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+        "seed": 7,
+        "caption": "通知に気づき、普段の声で短くつぶやく。",
+        "cfgScaleText": 5,
+        "cfgScaleSpeaker": 5,
+        "numSteps": 40,
+        "durationScale": 0.55,
+        "trimTail": false,
+        "postTrim": false,
+        "text": "よーたんからや。"
+      },
+      "asrTranscript": "与党からや",
+      "durationSeconds": 1.8,
+      "sampleRate": 48000,
+      "comparisonStartSeconds": 2.88,
+      "comparisonEndSeconds": 4.68
+    },
+    {
+      "candidate": "B",
+      "label": "演技指定なしの通常会話",
+      "audioPath": "remotion/out/v6_intro_candidates/B_intro_04_d0a672d9824a.wav",
+      "sha256": "863de3f8e5a14d042f273dbbd0e4c0ad398a15cbe5a788440606085e6b1f1484",
+      "voiceSettings": {
+        "model": "Aratako/Irodori-TTS-v4.1-Small",
+        "runtimeRevision": "8224dafb46d0aba89209a8f905f1cb7e3299d9c1",
+        "reference": "02_CHARACTERS/Yametaro_voice.wav",
+        "referenceSha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+        "seed": 7,
+        "caption": null,
+        "cfgScaleText": 5,
+        "cfgScaleSpeaker": 5,
+        "numSteps": 40,
+        "durationScale": 0.55,
+        "trimTail": false,
+        "postTrim": false,
+        "text": "よーたんからや。"
+      },
+      "asrTranscript": "よーたーんからやー",
+      "durationSeconds": 2.44,
+      "sampleRate": 48000,
+      "comparisonStartSeconds": 5.68,
+      "comparisonEndSeconds": 8.12
+    },
+    {
+      "candidate": "C",
+      "label": "相手へ軽く知らせる",
+      "audioPath": "remotion/out/v6_intro_candidates/C_intro_04_08583445b191.wav",
+      "sha256": "d82f454c7ee9c2714900fa9ef854e65c353de8c47a91a0242d1173992c494f4c",
+      "voiceSettings": {
+        "model": "Aratako/Irodori-TTS-v4.1-Small",
+        "runtimeRevision": "8224dafb46d0aba89209a8f905f1cb7e3299d9c1",
+        "reference": "02_CHARACTERS/Yametaro_voice.wav",
+        "referenceSha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+        "seed": 19,
+        "caption": "ふと通知に気づいて、軽く相手に知らせる。",
+        "cfgScaleText": 5,
+        "cfgScaleSpeaker": 5,
+        "numSteps": 40,
+        "durationScale": 0.6,
+        "trimTail": false,
+        "postTrim": false,
+        "text": "よーたんからや。"
+      },
+      "asrTranscript": "妖単からや",
+      "durationSeconds": 1.88,
+      "sampleRate": 48000,
+      "comparisonStartSeconds": 9.12,
+      "comparisonEndSeconds": 11.0
+    }
+  ]
+}

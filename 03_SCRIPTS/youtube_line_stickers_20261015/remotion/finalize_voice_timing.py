@@ -78,6 +78,23 @@ def split(text):
     return [text[:i]] + split(text[i:])
 
 
+
+def srt_time(frame, fps):
+    milliseconds = round(frame * 1000 / fps)
+    return f'{milliseconds // 3600000:02}:{milliseconds // 60000 % 60:02}:{milliseconds // 1000 % 60:02},{milliseconds % 1000:03}'
+
+
+def export_srt(manifest):
+    entries = []
+    fps = manifest['composition']['fps']
+    for row in manifest['dialogue']:
+        for page in row['captionSegments']:
+            start = srt_time(row['startFrame'] + page['startFrame'], fps)
+            end = srt_time(row['startFrame'] + page['endFrame'], fps)
+            entries.append(f'{len(entries)+1}\n{start} --> {end}\n{page["text"]}\n')
+    (P.parent / 'subtitles_ja.srt').write_text('\n'.join(entries))
+
+
 def main():
     m = json.loads((P / 'src/edit-manifest.json').read_text())
     overrides_file = P / 'caption_layout.json'
@@ -94,6 +111,7 @@ def main():
         assert all(len(segment['text'].splitlines()) <= 2 for segment in segments)
         row.update(captionSegments=segments, caption=segments[0]['text'], captionFontSize=29)
     write_json(P / 'src/edit-manifest.json', m)
+    export_srt(m)
     write_json(cachefile, cache)
     chapters = []
     for row in m['dialogue']:

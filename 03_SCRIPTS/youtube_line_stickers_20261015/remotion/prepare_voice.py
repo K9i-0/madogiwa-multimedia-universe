@@ -60,6 +60,8 @@ def link_or_copy(source, destination):
 
 
 replacements = {
+    'GPT 6 Astra': 'ジーピーティーシックスアストラ',
+    'effort': 'エフォート', 'Light': 'ライト', 'Ultra': 'ウルトラ', '案出し': 'あんだし',
     'Claude Code': 'クロードコード', 'Codex': 'コーデックス',
     'Imagegen': 'イメージジェン', 'Pets': 'ペッツ', 'OpenCV': 'オープンシーブイ', 'ImageMagick': 'イメージマジック', 'OpenAI': 'オープンエーアイ', 'ChatGPT': 'チャットジーピーティー',
     'Python': 'パイソン', 'Outlook': 'アウトルック', 'LINE': 'ライン',

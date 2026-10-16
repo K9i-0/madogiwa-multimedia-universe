@@ -1,4 +1,4 @@
-"""Mix canonical narration, quiet adopted music, and original message/title cues."""
+"""Mix canonical narration, quiet adopted music, and an original message cue."""
 from pathlib import Path
 import json
 import math
@@ -135,11 +135,14 @@ def main():
     if len(voice) < n:
         voice = np.pad(voice, ((0, n-len(voice)), (0, 0)))
     bgm = np.zeros((n, 2), np.float32)
-    main_start = m['mainStartFrame'] * SAMPLES_PER_FRAME
+    final_intro = next((row for row in reversed(m['dialogue']) if row['id'].startswith('intro-')), None)
+    # Switch music at the full-screen white point, before the spoken greeting.
+    transition_frame = final_intro['startFrame'] + final_intro['durationInFrames'] + 18 if final_intro else m['mainStartFrame']
+    main_start = transition_frame * SAMPLES_PER_FRAME
     intro = decode(P / 'public/intro.mp3', 'loudnorm=I=-34:TP=-3:LRA=11')
     bgm[:main_start] = fade(loop_to(intro, main_start), SR//2, SR)
     main = decode(P / 'public/main.wav', 'loudnorm=I=-34:TP=-3:LRA=11')
-    bgm[main_start:] = fade(loop_to(main, n-main_start), round(.6*SR), 4*SR)
+    bgm[main_start:] = fade(loop_to(main, n-main_start), round(.6*SR), 2*SR)
     effects = np.zeros((n, 2), np.float32)
     sound_events = []
     cue_config = json.loads((P / 'sound_cues.json').read_text()) if (P / 'sound_cues.json').exists() else {}
@@ -152,15 +155,6 @@ def main():
         effects[start:start+len(cue)] += cue
         save(P / 'public/notification.wav', cue)
         sound_events.append({'name': 'original short plucked message notification', 'startFrame': start_frame, 'durationInFrames': 18, 'source': 'procedural synthesis in mix_audio.py; LINE-like message context, not a recording of the official LINE sound'})
-    final_intro = next((row for row in reversed(m['dialogue']) if row['id'].startswith('intro-')), None)
-    if final_intro:
-        start_frame = final_intro['startFrame'] + final_intro['durationInFrames'] + 24
-        start = start_frame * SAMPLES_PER_FRAME
-        cue = tones([(0, 523.25, .65, .03), (.18, 659.25, .7, .028), (.36, 783.99, 1.1, .026)], 2)
-        effects[start:start+len(cue)] += cue
-        bgm[start:start+len(cue)] *= .2
-        save(P / 'public/title_jingle.wav', cue)
-        sound_events.append({'name': 'original soft major triad title cue', 'startFrame': start_frame, 'durationInFrames': 60})
     mixed = voice + bgm + effects
     peak = float(np.max(np.abs(mixed)))
     master_gain = min(1, .95/peak)
@@ -169,7 +163,8 @@ def main():
     write_json(P.parent / 'mix_record.json', {'sampleRate': SR, 'frames': m['composition']['durationInFrames'],
         'voiceTargetLUFS': -18, 'perUtteranceNormalization': True, 'bgmTargetLUFS': -34,
         'endingTrack': 'ほのぼのワルツ【リコーダー】', 'endingTargetLUFS': -34,
-        'endingLiftAfterDialogue': False, 'endingTrackChange': False, 'endingFadeOutSeconds': 4,
+        'endingLiftAfterDialogue': False, 'endingTrackChange': False, 'endingFadeOutSeconds': 2,
+        'mainMusicStartFrame': transition_frame, 'introTransition': 'whole-screen white fade; no title jingle',
         'premasterPeak': peak, 'masterGain': master_gain, 'soundEvents': sound_events,
         'musicInputs': sources, 'mixedSha256': sha(P / 'public/mixed.wav'),
         'subjectiveListening': False})

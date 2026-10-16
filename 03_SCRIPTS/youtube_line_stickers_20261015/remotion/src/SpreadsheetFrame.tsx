@@ -1,7 +1,7 @@
 import React from 'react';
 const GREEN='#176B47';
 export const tabs=['はじめに','制作の流れ','静止画','連続原画','動きの組立','透過','LINE用画像','制作記録','おわりに'];
-export const tipsTabs=['今回のコツ','8個で案出し','候補から選ぶ','描き直す','Petsの手法','動きの雰囲気','白と黒で確認','道具を使い分ける','おわりに'];
+export const tipsTabs=['今回のコツ','8個で案出し','候補から選ぶ','描き直す','Petsの手法','動きの雰囲気','白と黒で確認','ツールを使い分ける','おわりに'];
 export const SpreadsheetFrame:React.FC<{chapter?:number|string;variant?:'original'|'tips';children:React.ReactNode}>=({chapter,variant='original',children})=>{
  const labels=variant==='tips'?tipsTabs:tabs;
  const n=typeof chapter==='number'?chapter:Number(chapter?.split('.')[0]??1);

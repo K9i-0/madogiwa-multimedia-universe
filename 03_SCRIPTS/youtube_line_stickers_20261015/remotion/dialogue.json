@@ -30,12 +30,13 @@
     "view": "line-chat",
     "text": "よーたんからや！",
     "pause": 2.4,
-    "reading": "よーたんからや！",
+    "reading": "よーたんからや。",
     "moods": {
-      "yametaro": "happy"
+      "yametaro": "normal"
     },
-    "durationScale": 0.55,
-    "voiceCaption": "知らせに気づいて、嬉しそうに弾む。"
+    "durationScale": 0.6,
+    "voiceCaption": "ふと通知に気づいて、軽く相手に知らせる。",
+    "seed": 19
   },
   {
     "id": "intro-05",
@@ -69,11 +70,12 @@
     "who": "yametaro",
     "chapter": 0,
     "view": "outlook",
-    "text": "ガチの島流しやないか！",
+    "text": "ガチの島流しやないか！ワイ明日から廃村ゆめみ村に移動らしいわ…",
     "pause": 0.5,
     "moods": {
       "yametaro": "surprised"
-    }
+    },
+    "reading": "ガチの島流しやないか！ワイ明日から、はいそんゆめみむらに移動らしいわ。"
   },
   {
     "id": "intro-09",
@@ -90,7 +92,7 @@
     "chapter": 0,
     "view": "outlook",
     "text": "Pythonエンジニアみたいに言うな！",
-    "pause": 3.6,
+    "pause": 1.4,
     "reading": "パイソンエンジニアみたいに言うな！",
     "moods": {
       "yametaro": "angry"
@@ -194,6 +196,22 @@
     "pause": 0.3
   },
   {
+    "id": "tips-plan-01",
+    "who": "yametaro",
+    "chapter": 1,
+    "view": "plan-teaser",
+    "text": "ChatGPTのプランの選び方も知りたいな。",
+    "pause": 0.3
+  },
+  {
+    "id": "tips-plan-02",
+    "who": "takosan",
+    "chapter": 1,
+    "view": "plan-teaser",
+    "text": "コンテンツ制作目的でのChatGPTプランの選び方についても、動画化したいですね。",
+    "pause": 0.3
+  },
+  {
     "id": "ideas-01",
     "who": "yametaro",
     "chapter": 2,
@@ -207,7 +225,8 @@
     "chapter": 2,
     "view": "idea-grid",
     "text": "最初の案出しは、八個まとめて一枚に出してもらうと早かったです。",
-    "pause": 0.3
+    "pause": 0.3,
+    "reading": "最初のあんだしは、八個まとめて一枚に出してもらうと早かったです。"
   },
   {
     "id": "ideas-03",
@@ -231,6 +250,31 @@
     "chapter": 2,
     "view": "idea-grid",
     "text": "一覧になると、セット全体を見渡せます。似たポーズばかりになっていないか、セリフの雰囲気に合っているかを、一度に比べられます。",
+    "pause": 0.3
+  },
+  {
+    "id": "ideas-speed-01",
+    "who": "takosan",
+    "chapter": 2,
+    "view": "idea-speed",
+    "text": "一枚にまとめれば、Imagegenの呼び出し回数も減らせます。案を見て選ぶまでが早いんです。",
+    "pause": 0.3
+  },
+  {
+    "id": "ideas-speed-02",
+    "who": "yametaro",
+    "chapter": 2,
+    "view": "idea-speed",
+    "text": "案出しは、こっちも画面の前で待っとるもんな。",
+    "pause": 0.3,
+    "reading": "あんだしは、こっちも画面の前で待っとるもんな。"
+  },
+  {
+    "id": "ideas-speed-03",
+    "who": "takosan",
+    "chapter": 2,
+    "view": "idea-speed",
+    "text": "はい。人が付きっきりになる段階は速度を優先。方向が決まったあとの仕上げは、任せて待てるので品質を優先します。",
     "pause": 0.3
   },
   {
@@ -264,6 +308,48 @@
     "view": "idea-grid",
     "text": "この段階では、細かな仕上げより「どの方向で作りたいか」を選びます。",
     "pause": 0.8
+  },
+  {
+    "id": "settings-01",
+    "who": "yametaro",
+    "chapter": 2,
+    "view": "codex-settings",
+    "text": "Codexの設定も、段階で変えてるん？",
+    "pause": 0.3
+  },
+  {
+    "id": "settings-02",
+    "who": "takosan",
+    "chapter": 2,
+    "view": "codex-settings",
+    "text": "投稿者は、案出しではGPT 6 AstraのeffortをLightにしています。",
+    "pause": 0.3,
+    "reading": "投稿者は、あんだしではジーピーティーシックスアストラのエフォートをライトにしています。"
+  },
+  {
+    "id": "settings-03",
+    "who": "takosan",
+    "chapter": 2,
+    "view": "codex-settings",
+    "text": "仕上げは、同じモデルのeffortをUltraに切り替えています。",
+    "pause": 0.3,
+    "reading": "仕上げは、同じモデルのエフォートをウルトラに切り替えています。"
+  },
+  {
+    "id": "settings-04",
+    "who": "yametaro",
+    "chapter": 2,
+    "view": "codex-settings",
+    "text": "相談中はテンポよく、あとはじっくり頼むわけやな。",
+    "pause": 0.3
+  },
+  {
+    "id": "settings-05",
+    "who": "takosan",
+    "chapter": 2,
+    "view": "codex-settings",
+    "text": "はい。これは投稿者の使い分けなので、好みで変えて大丈夫です。",
+    "pause": 0.3
   },
   {
     "id": "options-01",
@@ -532,6 +618,23 @@
     "pause": 0.3
   },
   {
+    "id": "acting-06b",
+    "who": "yametaro",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "さっきからそば屋さんの扱い、ちょっとひどいな。",
+    "pause": 0.3,
+    "voiceCaption": "苦笑いしながら、軽くツッコむ。"
+  },
+  {
+    "id": "acting-06c",
+    "who": "takosan",
+    "chapter": 6,
+    "view": "acting-work",
+    "text": "そば屋だから仕方ないですね。",
+    "pause": 0.3
+  },
+  {
     "id": "acting-07",
     "who": "takosan",
     "chapter": 6,
@@ -686,7 +789,7 @@
     "who": "yametaro",
     "chapter": 8,
     "view": "tools-beforeafter",
-    "text": "絵を描くAIとは別の道具？",
+    "text": "絵を描くAIとは別のツール？",
     "pause": 0.3
   },
   {
@@ -694,7 +797,7 @@
     "who": "takosan",
     "chapter": 8,
     "view": "tools-beforeafter",
-    "text": "はい。画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするための道具です。",
+    "text": "はい。画像の中から特定の領域を取り出したり、切り抜いたり、透明にしたりするためのツールです。",
     "pause": 0.3
   },
   {
@@ -762,7 +865,7 @@
     "who": "takosan",
     "chapter": 8,
     "view": "tools-choice",
-    "text": "使う道具を知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
+    "text": "使うツールを知っていると、絵を変えたいのか、今の絵を整えたいのかを伝え分けられます。",
     "pause": 0.8
   },
   {
@@ -802,15 +905,7 @@
     "who": "takosan",
     "chapter": 9,
     "view": "ending",
-    "text": "反省の薄さで、三段階ですね。",
-    "pause": 0.3
-  },
-  {
-    "id": "close-06",
-    "who": "yametaro",
-    "chapter": 9,
-    "view": "ending",
-    "text": "そこを比較させるな。",
-    "pause": 3.0
+    "text": "やっぱやめさんも窓際族ですね",
+    "pause": 0.6
   }
 ]

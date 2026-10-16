@@ -1,6 +1,6 @@
 {
   "sampleRate": 48000,
-  "frames": 18608,
+  "frames": 20282,
   "voiceTargetLUFS": -18,
   "perUtteranceNormalization": true,
   "bgmTargetLUFS": -34,
@@ -8,8 +8,10 @@
   "endingTargetLUFS": -34,
   "endingLiftAfterDialogue": false,
   "endingTrackChange": false,
-  "endingFadeOutSeconds": 4,
-  "premasterPeak": 0.6297038793563843,
+  "endingFadeOutSeconds": 2,
+  "mainMusicStartFrame": 1186,
+  "introTransition": "whole-screen white fade; no title jingle",
+  "premasterPeak": 0.6209825873374939,
   "masterGain": 1,
   "soundEvents": [
     {
@@ -17,11 +19,6 @@
       "startFrame": 464,
       "durationInFrames": 18,
       "source": "procedural synthesis in mix_audio.py; LINE-like message context, not a recording of the official LINE sound"
-    },
-    {
-      "name": "original soft major triad title cue",
-      "startFrame": 1128,
-      "durationInFrames": 60
     }
   ],
   "musicInputs": {
@@ -52,6 +49,6 @@
       "provenanceRecord": "03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json"
     }
   },
-  "mixedSha256": "438f3d8efbd643a9f9fc02435d5d57d3b375a166fd4f935af0ad874cefd7ad9b",
+  "mixedSha256": "aa01bb21b39a86de50a385f050c16ea636dc07a7983dc1a5284ec9f0fe4a4d59",
   "subjectiveListening": false
 }

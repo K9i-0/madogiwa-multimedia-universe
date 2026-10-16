@@ -16,7 +16,7 @@ export const Route = createFileRoute("/episodes/$slug")({
     const path = `/episodes/${loaderData.episode.slug}`;
     return {
       meta: socialMeta({ title, description, path, image: episodePoster(loaderData), type: "video.episode" }),
-      links: [{ rel: "canonical", href: absoluteUrl(path) }],
+      links: [{ rel: "canonical", href: absoluteUrl(path) }, ...(loaderData.guide ? [{ rel: "alternate", type: "text/markdown", title: "AIに渡す解説資料", href: absoluteUrl(`${path}/guide.md`) }] : [])],
     };
   },
   component: EpisodeRoute,

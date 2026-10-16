@@ -331,3 +331,11 @@ YouTube標準プレイヤーを使用する。旧HTML videoのローカル音量
 - YouTubeのstart/endで該当範囲を再生。本編ダイアログは先頭から再生する。シーク位置はYouTubeの仕様により厳密なフレーム単位ではない。今後本編の版を更新した場合はクリップのstartSeconds/secondsも再確認する。
 - MP4保存・ファイル共有は廃止。YouTubeリンクとページURLコピーで共有する。
 - `catalog.json` の既存サムネイル画像は継続使用。旧R2 MP4は配信しない。旧素材対応表は切り戻し用に保持。`tools/publish-clips.mjs --upload` による動画登録は廃止。
+
+## 技術解説をAIへ渡す資料
+
+対象動画の制作ページには「この解説をAIに渡す」を表示し、Markdown全文・AI用URL・相談用依頼文をコピーできます。本文は初期HTMLにも含まれ、`/episodes/<slug>/guide.md` は認証やJavaScript不要の `text/markdown` を返します。コピー拒否時は手動コピー欄へフォールバックします。
+
+資料正本は `src/content/explainers/*.md`。採用台本の要点、発話、画面内プロンプト、動画制作時点の条件、旧概要欄の補足とクレジットをレビューして保存します。新規追加は `src/lib/explainer-catalog.ts` のslug/YouTube IDと `src/server/explainer-guides.ts` のMarkdownを対応づけます。動画差し替え時は資料の対象版を確認してIDを更新してください。
+
+公開中の対応動画が存在する場合のみ提供し、制作ノートの公開とは独立させています。非公開の生成メモや入力素材を自動で書き出しません。本文はD1キャッシュの外で添付するため、資料の更新はデプロイ直後に反映します。YouTube概要欄は紹介・資料ページ・公式サイト・必要なクレジットへ絞り、手動チャプターや詳しい制作説明は置きません。

@@ -1,76 +1,20 @@
-Codex・Claude Code × Wan 3.0｜いつものコーディングAIから始める動画制作【窓際族物語】
+いつものコーディングAIから、Wan 3.0で動画制作へ。
+台本・映像生成・音声修復・Remotion編集の流れを紹介します。
 
-CodexやClaude CodeでWebサイト・アプリなどを作っている人へ。
-いつものAIとのものづくりを、動画制作にも広げる方法を、やめ太郎とたこさんが解説します。
+解説資料・AIへの渡し方（Markdownコピー対応）
+https://madogiwa.work/episodes/coding-ai-wan-video-workflow
 
-第53話の架空ニュースを軸に、Wan 3.0での生成、キャラクターシートの情報設計、Irodori-TTSによる音声の部分修復、Remotionでの編集を紹介。生成料金と解像度の考え方に加え、制作中の失敗や比較結果をスキルと実行コードへ残し、次の作品へ生かす過程も扱います。
-制作の操作はCodex・Claude CodeからAPI・コード・コマンドで実行しています。参照資料や実行環境をリポジトリへ用意したうえで、人間が内容と採用結果を判断しています。
+窓際族物語 公式サイト
+https://madogiwa.work/
 
-チャプター
-00:00 いつものCodexで、動画も作れる？
-02:09 動画のモデルと、使うためのツール
-04:54 プロンプトを書くAIも大事
-06:03 同じキャラクターを、次の一本にも
-07:12 惜しい一言は、音声だけ直す
-09:31 編集も「ここ直して」で進める
-11:05 かかるお金と、解像度の選び方
-13:44 一本作るたび、スキルも育てる
-16:28 最初の一本と、次回予告
+制作・キャラクター：窓際族物語
+音声：VOICEVOX:中国うさぎ／Irodori-TTS
+https://voicevox.hiroshiba.jp/
+https://github.com/Aratako/Irodori-TTS
 
-制作リポジトリ
-https://github.com/K9i-0/madogiwa-multimedia-universe
-今後紹介予定のMiniMax H3の制作手法（同僚のリポジトリ）
-https://github.com/sobaya-0141/Seedance_Madogiwa
-
-料金出典：Qwen Cloud / wan3.0-video（2026-10-13確認）
-https://www.qwencloud.com/models/wan3.0-video
-通常表示価格：480p $0.05/秒、720p $0.10/秒、1080p $0.20/秒。
-説明用の固定換算1ドル160円で、30秒あたり通常価格は約240円／480円／960円。
-確認時点では30%引きの表示があり、割引価格は480p $0.035/秒、720p $0.07/秒、1080p $0.14/秒。同じ換算で30秒あたり約168円／336円／672円です。
-適用条件・最新料金は利用時に確認してください。実際の請求額は為替・割引・決済条件等で変わります。
-窓際族物語の制作実績では、30秒の完成動画1本に平均約300円、作り直しを含む生成量は約60秒分が目安です。厳密な料金表の試算とは別の概算実績で、スキルの改善や必要部分だけの再生成で費用を抑えています。
-本編の金額は動画生成分のみ。AIツールの利用料、機材、ローカル処理などは含みません。
-低解像度から試す進め方は制作の選択肢として紹介しており、再生成で同一の演技や画面が保証されるものではありません。
-MiniMax H3を使う手法の費用差・所要時間の具体的な比較は今後の紹介を予定しています。
-
-制作過程の資料
-第53話「そば屋・替え玉出社事件」：冒頭「速報です」の音声修復、参照音声の長さ制限に関する失敗記録、現在の送信前検証。
-https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v6.md
-https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/03_SCRIPTS/53_sobaya_proxy_worker_news/wan_generation_log_v4.md
-
-第72話「東京マドギワランド」：動画内の声を参照し、一文から「公式サイトでも」の1.2秒を切り出した比較実験。
-この比較は完成本編とは別の検証で、当時のIrodori Smallを使用しています。後日、おかやまんで行った別の比較を受け、既存動画のセリフ修正にはLargeを使う運用へ更新しました。
-https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/03_SCRIPTS/72_tokyo_madogiwa_park/voice_patch_experiment.md
-https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/03_SCRIPTS/72_tokyo_madogiwa_park/okayaman_large_patch.md
-
-再現用の編集コード・素材の出典
-https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/03_SCRIPTS/youtube_ai_video_workflow_20261013
-
-出演・立ち絵：窓際族物語／やめ太郎、たこさん
-やめ太郎音声：Irodori-TTS v4.1-Small（正典音声を参照）
-たこさん音声：VOICEVOX:中国うさぎ（ノーマル、速度1.1倍、音高0）
 BGM：昼下がり気分 / KK
 https://opentracks.com/bgm/detail/4695
 BGM：ほのぼのワルツ【リコーダー】 / エクシエ
 https://commons.nicovideo.jp/works/nc116360
 Music: TheFatRat - Unity
 Watch the official music video: https://www.youtube.com/watch?v=n8X9_MgEdCg
-
-使用映像：窓際族物語 第76話（焼きそば）・第64話（宇宙CM）の無音作例、第53話「そば屋・替え玉出社事件」、第72話「東京マドギワランド」と同話の部分修復比較実験。いずれもフィクションです。
-
-台本構成の参考：無職やめ太郎さんの会話形式の記事
-https://qiita.com/Yametaro/items/a40ffcd65d77ed8b29a0
-https://qiita.com/Yametaro/items/21b8772e6c0d1d77e176
-https://qiita.com/Yametaro/items/255eea3124e769ce845c
-
-完成稿v11／Excel風画面v12。たこさんは中国うさぎ・ノーマルです。
-
-モデル・サービスの出典
-Seedance / ByteDance: https://seed.bytedance.com/en/blog/seedance-2-0-official-launch
-Wan / Alibaba: https://home.alibabagroup.com/en-US/ai-governance/wan
-MiniMax H3: https://www.minimax.io/news/minimax-h3-open-source
-Higgsfieldのプラン: https://higgsfield.ai/creator-hub/help-center/plans/how-do-higgsfield-plans-work
-Remotionの仕組み: https://www.remotion.dev/docs/idea
-
-Irodori-TTS（音声生成モデル）
-https://github.com/Aratako/Irodori-TTS

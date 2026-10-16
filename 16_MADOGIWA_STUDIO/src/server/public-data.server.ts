@@ -1,3 +1,4 @@
+import { getExplainerGuide } from "./explainer-guides";
 import { env } from "cloudflare:workers";
 import type { EpisodeSummary } from "@/lib/api";
 import type { CharacterData, HomeData, PublicEpisodeDetail, PublicProduction, PublicVideo } from "@/lib/public-data";
@@ -25,7 +26,7 @@ export async function loadPublicEpisodes(): Promise<EpisodeSummary[]> {
 }
 
 export function loadPublicEpisode(slug: string): Promise<PublicEpisodeDetail | null> {
-  return cachedPublicData(env.DB, `episode:${slug}`, () => queryPublicEpisode(slug));
+  return cachedPublicData(env.DB, `episode:${slug}`, () => queryPublicEpisode(slug)).then((detail) => detail ? { ...detail, guide: getExplainerGuide(slug, detail.videos.map((video) => video.youtube_id)) } : null);
 }
 
 async function queryPublicEpisode(slug: string): Promise<PublicEpisodeDetail | null> {

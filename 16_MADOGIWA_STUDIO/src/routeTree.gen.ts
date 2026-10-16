@@ -24,6 +24,7 @@ import { Route as EpisodesIndexRouteImport } from './routes/episodes/index'
 import { Route as EpisodesSlugRouteImport } from './routes/episodes/$slug'
 import { Route as GalleryIndexRouteImport } from './routes/gallery/index'
 import { Route as GallerySlugRouteImport } from './routes/gallery/$slug'
+import { Route as EpisodesSlugGuideDotmdRouteImport } from './routes/episodes/$slug_/guide[.]md'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -100,6 +101,11 @@ const GallerySlugRoute = GallerySlugRouteImport.update({
   path: '/gallery/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EpisodesSlugGuideDotmdRoute = EpisodesSlugGuideDotmdRouteImport.update({
+  id: '/episodes/$slug_/guide.md',
+  path: '/episodes/$slug/guide.md',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -117,6 +123,7 @@ export interface FileRoutesByFullPath {
   '/clips/': typeof ClipsIndexRoute
   '/episodes/': typeof EpisodesIndexRoute
   '/gallery/': typeof GalleryIndexRoute
+  '/episodes/$slug/guide.md': typeof EpisodesSlugGuideDotmdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -134,6 +141,7 @@ export interface FileRoutesByTo {
   '/clips': typeof ClipsIndexRoute
   '/episodes': typeof EpisodesIndexRoute
   '/gallery': typeof GalleryIndexRoute
+  '/episodes/$slug/guide.md': typeof EpisodesSlugGuideDotmdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -152,6 +160,7 @@ export interface FileRoutesById {
   '/clips/': typeof ClipsIndexRoute
   '/episodes/': typeof EpisodesIndexRoute
   '/gallery/': typeof GalleryIndexRoute
+  '/episodes/$slug_/guide.md': typeof EpisodesSlugGuideDotmdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -171,6 +180,7 @@ export interface FileRouteTypes {
     | '/clips/'
     | '/episodes/'
     | '/gallery/'
+    | '/episodes/$slug/guide.md'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -188,6 +198,7 @@ export interface FileRouteTypes {
     | '/clips'
     | '/episodes'
     | '/gallery'
+    | '/episodes/$slug/guide.md'
   id:
     | '__root__'
     | '/'
@@ -205,6 +216,7 @@ export interface FileRouteTypes {
     | '/clips/'
     | '/episodes/'
     | '/gallery/'
+    | '/episodes/$slug_/guide.md'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -223,6 +235,7 @@ export interface RootRouteChildren {
   ClipsIndexRoute: typeof ClipsIndexRoute
   EpisodesIndexRoute: typeof EpisodesIndexRoute
   GalleryIndexRoute: typeof GalleryIndexRoute
+  EpisodesSlugGuideDotmdRoute: typeof EpisodesSlugGuideDotmdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -332,6 +345,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GallerySlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/episodes/$slug_/guide.md': {
+      id: '/episodes/$slug_/guide.md'
+      path: '/episodes/$slug/guide.md'
+      fullPath: '/episodes/$slug/guide.md'
+      preLoaderRoute: typeof EpisodesSlugGuideDotmdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -351,6 +371,7 @@ const rootRouteChildren: RootRouteChildren = {
   ClipsIndexRoute: ClipsIndexRoute,
   EpisodesIndexRoute: EpisodesIndexRoute,
   GalleryIndexRoute: GalleryIndexRoute,
+  EpisodesSlugGuideDotmdRoute: EpisodesSlugGuideDotmdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

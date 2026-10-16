@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ImageIcon, Music2, Paperclip } from "lucide-react";
+import { ExplainerGuide } from "@/components/explainer-guide";
 import { DeferredVideo } from "@/components/deferred-video";
 import { DocumentPreview } from "@/components/document-preview";
 import { ZoomableImage } from "@/components/image-lightbox";
@@ -30,6 +31,7 @@ export function EpisodePage({ detail }: { detail: PublicEpisodeDetail }) {
     {productions.some((p) => !videos.some((v) => v.generation_id === p.generation_id)) && <label className="production-select">制作記録<select value={recordOnly ?? ""} onChange={(event) => setRecordOnly(event.target.value || null)}><option value="">公開動画の制作記録</option>{productions.filter((p) => !videos.some((v) => v.generation_id === p.generation_id)).map((p) => <option key={p.generation_id} value={p.generation_id}>v{p.version} · {p.label}（動画なし）</option>)}</select></label>}
     {!video && <p className="production-help">このバージョンは制作記録のみ保存しています。</p>}
     {video && <section className="production-video"><DeferredVideo key={video.id} src={`/media/${video.id}`} youtubeId={video.youtube_id} poster={video.poster_url ?? episodePoster(detail)} label={video.label || episode.title} /></section>}
+    {detail.guide && <ExplainerGuide slug={episode.slug} markdown={detail.guide.markdown} />}
     {production ? <div id={`making-${video?.id ?? production.generation_id}`} className="production-content">
       {production.model_name && <section className="production-model"><h2>使用モデル</h2><p>{production.model_name || "未登録"}<small>生成 v{production.version} · {production.label}</small></p></section>}
       {production.notes && <section><h2>制作メモ</h2><p style={{whiteSpace:"pre-wrap"}}>{production.notes}</p></section>}

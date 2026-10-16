@@ -1,61 +1,17 @@
-Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ
+Codexで動くLINEスタンプを作るコツを、第一弾・第二弾の実例で紹介。
+案出しから動きづけ、透過の失敗を防ぐ仕上げまで。
 
-やめ太郎に届いた、よーたんの「お前島流し！」スタンプ。
-Outlookの辞令メールを開くと、赴任先はゆめみ村（廃村）でした。
+解説資料・AIへの渡し方（Markdownコピー対応）
+https://madogiwa.work/episodes/codex-animated-line-stickers
 
-「窓際族LINEスタンプ第一弾」と、そば屋だけの第二弾。両方を作る中で分かった、頼み方・選び方・仕上げのコツを紹介します。第一弾で実際に起きた透過の失敗と、白黒チェックへ改善した経緯も取り上げます。第二弾は動画制作時点で審査中です。
+窓際族物語 公式サイト
+https://madogiwa.work/
 
-・最初の案出しは1枚に8種類まとめ、Imagegenの呼び出し回数を減らす
-・案出しは速度、仕上げは品質を優先。投稿者のCodex設定も紹介
-・しっくりこない構図は複数案を見比べる
-・方向が決まったら一枚ずつきれいに描き直す
-・Codex Pets用スキルの連続原画・切り出し手法を応用する
-・アニメーションは雰囲気とゴールを伝え、動く候補から選ぶ
-・白と黒の両背景で消し残しや欠けを確認する
-・Imagegenと、OpenCV・ImageMagickによる画像処理を使い分ける
-
-窓際族スタンプ第一弾（申請担当：そば屋さん）
+LINEスタンプ第一弾
 https://store.line.me/stickershop/product/37292753/ja
 
-チャプター
-00:00 スタンプで島流し
-00:40 挨拶・第一弾と第二弾
-01:54 1枚8個の案出し・Codex設定
-03:43 候補を並べて選ぶ
-04:40 構図が決まったら描き直す
-05:22 Codex Petsの手法を応用
-06:32 動きは雰囲気・ゴールで伝える
-08:10 第一弾の失敗と白黒チェック
-09:16 OpenCVとImageMagickで仕上げ
-10:43 おわりに
-
-制作リポジトリ
-https://github.com/K9i-0/madogiwa-multimedia-universe
-第一弾の原画・制作記録
-https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/27_LINE_STICKERS/sets/01
-第二弾の制作記録
-https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/27_LINE_STICKERS/sets/02
-LINEスタンプ制作スキル
-https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/.claude/skills/line-stickers
-
-OpenAI公式：Codex Pets / Create a custom pet
-https://learn.chatgpt.com/docs/pets#create-a-custom-pet
-OpenAI公式：Codexの画像生成と利用枠
-https://learn.chatgpt.com/docs/image-generation
-https://learn.chatgpt.com/docs/pricing#image-generation-usage-limits
-OpenAI公式：スキル
-https://learn.chatgpt.com/docs/build-skills
-
-Pets用スキルから、連続した姿勢を一枚に生成して切り出す考え方をLINEスタンプへ応用しています。OpenAI公式のLINEスタンプ制作手順という意味ではありません。実際の第一弾では、原画の再生や補間、全体の拡大・回転など複数の方法を併用しています。
-動画内のスタンプは説明のため繰り返し再生しています。元APNGの再生回数とは区別しています。
-Imagegenは、ChatGPTの対応プランに含まれるCodexの利用枠で利用できます。APIキーで利用する場合はAPI料金が適用されます。
-Codexの設定は投稿者個人の使い分けです。GPT 6 Astraで、案出しはeffort Light、仕上げはeffort Ultraを使っています。好みや待てる時間に合わせて変えてかまいません。Ultraは複数のエージェントで作業を分担し、並列に進めるモードです。Codex側の設定であり、Imagegenの画質を直接指定する設定ではありません。
-公式説明：https://learn.chatgpt.com/docs/models#know-when-to-use-max-or-ultra
-冒頭のトークとOutlookメールは架空のやり取りを再現した演出です。
-
-出演・立ち絵：窓際族物語／やめ太郎、たこさん
-やめ太郎音声：Irodori-TTS v4.1-Small（正典音声を参照）
-たこさん音声：VOICEVOX:中国うさぎ（ノーマル、速度1.1倍、音高0）
+制作・キャラクター：窓際族物語
+音声：VOICEVOX:中国うさぎ／Irodori-TTS
 https://voicevox.hiroshiba.jp/
 https://github.com/Aratako/Irodori-TTS
 
@@ -63,4 +19,3 @@ BGM：昼下がり気分 / KK
 https://opentracks.com/bgm/detail/4695
 BGM：ほのぼのワルツ【リコーダー】 / エクシエ
 https://commons.nicovideo.jp/works/nc116360
-通知音：本動画用に合成。

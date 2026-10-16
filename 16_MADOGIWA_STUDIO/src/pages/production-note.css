@@ -27,3 +27,18 @@
 .production-prompt pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#fff; border:1px solid #d9ddd7; border-radius:6px; padding:24px; font-size:14px; line-height:1.9; margin-top:16px; }
 .production-back-bottom { margin-top:32px; }
 @media(max-width:600px) { .production-note { padding:20px 18px 40px; } .production-input-grid { grid-template-columns:1fr; } .production-prompt pre { padding:16px; font-size:13px; } }
+
+.explainer-guide { margin: 28px 0; padding: clamp(18px, 4vw, 32px); border: 1px solid #b9c8b5; border-radius: 12px; background: #f4f7ef; color: #273222; }
+.explainer-guide h2 { margin: 4px 0 12px; font-size: clamp(22px, 4vw, 28px); }
+.explainer-guide p { line-height: 1.8; }
+.explainer-guide-eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+.explainer-guide-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 20px; }
+.explainer-guide-actions button, .explainer-guide-actions a { padding: 10px 14px; border: 1px solid #627557; border-radius: 6px; font: inherit; font-size: 14px; background: #fff; color: #273222; cursor: pointer; text-decoration: none; }
+.explainer-guide-actions button:first-child { background: #344d2e; color: #fff; }
+.explainer-guide-actions :focus-visible, .explainer-guide summary:focus-visible { outline: 3px solid #567cba; outline-offset: 3px; }
+.explainer-guide details { margin-top: 18px; border-top: 1px solid #c6d1bf; padding-top: 18px; }
+.explainer-guide summary { cursor: pointer; font-weight: 700; }
+.explainer-guide .document-markdown { margin-top: 20px; overflow-wrap: anywhere; }
+.explainer-guide pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.explainer-guide-fallback { display: block; width: 100%; min-height: 180px; padding: 12px; font-size: 14px; }
+@media (max-width: 480px) { .explainer-guide-actions { flex-direction: column; align-items: stretch; } .explainer-guide-actions a { text-align: center; } }

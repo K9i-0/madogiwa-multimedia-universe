@@ -1,3 +1,4 @@
+import { hasExplainerGuide } from "@/lib/explainer-catalog";
 import { fallbackYouTubeThumbnail } from "@/lib/youtube-thumbnail";
 import { YouTubePlayer } from "../components/youtube-player";
 import { ClipsEntry } from "../features/clips/clips-entry";
@@ -1126,10 +1127,10 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
                 if (nextEpisode) setPlaying(nextEpisode);
               }} hasNext={!!nextEpisode}>
                 <p className="j-video-description">{episodeCopy(playing)}</p>
-                {playing.production_notes_enabled !== 0 && <a className="j-making-link" href={`/episodes/${playing.slug}#making-${playing.primary_video_id}`} onClick={() => {
+                {(playing.production_notes_enabled !== 0 || hasExplainerGuide(playing.slug, playing.primary_youtube_id)) && <a className="j-making-link" href={`/episodes/${playing.slug}${hasExplainerGuide(playing.slug, playing.primary_youtube_id) ? "#ai-guide" : `#making-${playing.primary_video_id}`}`} onClick={() => {
                   try { sessionStorage.setItem("madogiwa-production-return", JSON.stringify({ slug: playing.slug, href: location.pathname + location.search, route, scroll: window.scrollY, episodeId: playing.id, restore: true })); } catch { /* Navigation still works without storage. */ }
                 }}>
-                  <span><b>制作ノート</b><small>台本・素材・制作の記録</small></span><ArrowUpRight size={20} />
+                  <span><b>{hasExplainerGuide(playing.slug, playing.primary_youtube_id) ? "解説資料・AIに渡す" : "制作ノート"}</b><small>{hasExplainerGuide(playing.slug, playing.primary_youtube_id) ? "手順・プロンプト・Markdownコピー" : "台本・素材・制作の記録"}</small></span><ArrowUpRight size={20} />
                 </a>}
                 <div className="j-video-cast">
                   <span>出演</span>

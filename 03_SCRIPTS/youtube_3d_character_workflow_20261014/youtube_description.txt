@@ -1,108 +1,22 @@
 画像から3Dキャラクターを作り、Web・動画・AR・ゲームで使うまで。
-たこさん＆やめ太郎が、窓際族物語で実際に使ったTripoとCodex・Blenderの制作手順を紹介します。
+Tripo・Codex・Blenderを使った実例を紹介します。
 
-今回のTripoの使い方やリグの作り方には、自己流の部分もあります。おすすめの方法や工夫があれば、ぜひコメントで教えてください！
+解説資料・AIへの渡し方（Markdownコピー対応）
+https://madogiwa.work/episodes/codex-tripo-3d-character-workflow
 
-■ チャプター
-00:00 この一体を、動かして使う
-01:10 3Dの前に、回転動画
-03:26 四方向を選んで、Tripoへ
-04:56 料金と、道具の使い分け
-06:51 生成したあとが、本人らしさ
-08:00 形に、骨と動作を付ける
-09:08 Web・動画・AR・ゲームへ
-10:49 まず一体、使ってみる
+窓際族物語 公式サイト
+https://madogiwa.work/
 
-■ 公式サイトで3Dモデルを触る
-そば屋のページの「3Dで見る」から回転・拡大・キャラクター切替を試せます。
-https://madogiwa.work/characters/sobaya
-公式サイト：https://madogiwa.work/
-ARカメラ（対応するiPhone／Safari）：https://madogiwa.work/camera/sobaya
-
-■ 公開済み：Wanを使ったAI動画制作の解説
-https://www.youtube.com/watch?v=RMWefLVS9vQ
-
-■ 制作リポジトリ：Madogiwa Multimedia Universe
-https://github.com/K9i-0/madogiwa-multimedia-universe
-本動画の台本・編集コード：
-https://github.com/K9i-0/madogiwa-multimedia-universe/tree/main/03_SCRIPTS/youtube_3d_character_workflow_20261014
-元プロジェクト（そば屋さん）：https://github.com/sobaya-0141/Seedance_Madogiwa
-
-■ Codexへ渡す制作資料と依頼例
-動画の生成、四方向画像の切り出し、Tripoでの3D生成と保存まで、Codexにまとめて依頼しています。次のリポジトリと制作手順のリンクを、自分のキャラクターシートと一緒に渡すと進め方を伝えやすくなります。
-リポジトリ：
-https://github.com/K9i-0/madogiwa-multimedia-universe
-そば屋の制作手順・実例：
-https://github.com/K9i-0/madogiwa-multimedia-universe/blob/main/04_GAME_ASSETS/3d/SOBAYA_V3_LESSONS.md
-
-依頼例：
-「このリポジトリの3D制作手順を参考に、添付のキャラクターシートから3Dモデルを作って。回転動画は縦長・1080pで。動画の生成、実際の向きを見た四方向画像の切り出し、Tripoでの3D生成とモデルの保存まで進めて。」
-
-制作資料にある720Pは当時の実績です。新しく回転素材を作る場合の1080p指定は、依頼文にも添えてください。WanとTripoそれぞれのAPIキー・支払い設定は必要です。できた画像とモデルが意図した姿か、人が確認します。
-
-■ Tripo
-Studio料金：https://www.tripo3d.ai/pricing
-API料金：https://developers.tripo3d.ai/en/pricing
-Codex・Claude Code・Cursorからの利用案内：https://developers.tripo3d.ai/en
-StudioとAPIの契約・クレジットは別です。
-
-■ 費用の読み方（1080pで作る場合）
-説明用に1ドル160円で固定換算しています。通常料金での試算（2026年10月15日確認）：
-・Wan 3.0（wan3.0-video）1080P・8秒：$0.20/秒×8秒＝$1.60＝256円。
-・Tripo：そば屋の採用生成で消費した120クレジットを、1 credit=$0.01で換算。$1.20＝192円。
-・合計：$2.80＝448円。会話では「約450円」と丸めています。
-WanはSingapore／International、参照画像1枚・入力動画なしの条件。音声の有無による単価差はありません。これは1080pを選んだ場合の試算であり、1080pで実際に生成した請求記録ではありません。入力画像の制作、試行錯誤・再生成、Codex等の利用料、編集作業は含みません。Tripoの必要クレジットはモデルや設定によって変わります。
-確認時はWan 3.0に30%割引も表示されていました（1080Pは$0.14/秒）。適用される場合はWan $1.12＋Tripo $1.20＝$2.32、同じ換算で371.2円。動画本編は割引前の通常料金に統一しています。最新の料金・条件は公式ページをご確認ください。
-Wan公式料金：https://www.qwencloud.com/models/wan3.0-video
-Alibaba Cloud料金表：https://www.alibabacloud.com/help/en/model-studio/model-pricing
-Tripo API料金：https://developers.tripo3d.ai/en/pricing
-
-紹介している実際のそば屋回転動画は、2026年9月制作の720P設定（832×1108、8秒）。当時の制作記録は推定$0.56で保持しています。現在の推奨設定・試算とは区別しています。3Dの入力に使う回転素材は、顔や服の細部を残すため、Wan 3.0で選べる最高設定の1080Pを投稿者の制作上のおすすめとして紹介しています。本解説動画自体の書き出し解像度は720pです。
-
-■ 制作について
-冒頭の「やめ太郎がCodexで作った」は劇中設定で、Blender版そば屋には既存の動画用画像を使っています。冒頭で横に置く比較用画像は現在の標準キャラクターシートで、当時の生成入力そのものとは区別しています。
-そば屋は回転動画からの四方向入力、たこさんはシートからの正面・背面入力で制作しました。回転動画も画像の完全な一貫性を保証するものではありません。たこさんは手2本＋足6本＝計8本。生成時は足だけで8本あったため、余分な2本を手直ししました。
-3D実演は採用モデルをThree.jsとRemotionで描画。Web紹介は公式サイトの実操作録画、ARは公式サイトの入口、ゲームは2026年9月7日の開発実録を使用しています。ゲーム録画にはモデル更新前の姿が含まれます。Unityは一般的なゲームエンジンの例として紹介し、本動画のゲーム実録はFlutter Scene製です。投稿者がFlutterエンジニアのため、Flutterでも3Dを活用しています。
-
-■ 公式ページ引用・サービスロゴ（2026年10月14日取得）
-Tripo Studio料金画面は月払い・USDを選択した実ページです。APIとは別契約・別クレジットです。最新の料金・条件は各公式ページでご確認ください。
-Tripo Studio 料金：https://www.tripo3d.ai/pricing
-Tripo API 料金：https://developers.tripo3d.ai/en/pricing
-Tripo Studio/APIの課金は別：https://docs.tripo3d.ai/other/support-faq.html
-Codex：https://chatgpt.com/codex/
-OpenAI ブランド：https://openai.com/brand/
-Claude Code：https://claude.com/product/claude-code
-Cursor ブランド：https://cursor.com/brand
-Wan：https://wan.video/
-MiniMax H3：https://www.minimax.io/blog/minimax-h3
-Blender ロゴ：https://www.blender.org/about/logo/
-Three.js：https://threejs.org/
-Remotion：https://www.remotion.dev/
-Unity 商標：https://unity.com/legal/branding-trademarks
-Flutter ブランド：https://flutter.dev/brand
-サービスを識別するために公式サイト・公式配布のロゴを使用。CodexにはOpenAIのマークを使用しています。料金画面は可読性のために切り抜いています。
-本動画はUnity Technologiesまたはその関連会社の後援を受けておらず、提携関係もありません。UnityはUnity Technologiesまたはその関連会社の米国その他の国における商標または登録商標です。
-
-■ 音声
-VOICEVOX:中国うさぎ（たこさん）
-やめ太郎：Irodori-TTS v4.1-Small、正典参照音声
+制作・キャラクター：窓際族物語
+音声：VOICEVOX:中国うさぎ／Irodori-TTS
 https://voicevox.hiroshiba.jp/
 https://github.com/Aratako/Irodori-TTS
 
-■ BGM
-昼下がり気分／KK
+BGM：昼下がり気分 / KK
 https://opentracks.com/bgm/detail/4695
-ほのぼのワルツ【リコーダー】／エクシエ
+BGM：ほのぼのワルツ【リコーダー】 / エクシエ
 https://commons.nicovideo.jp/works/nc116360
 Music: TheFatRat - Unity
 Watch the official music video: https://www.youtube.com/watch?v=n8X9_MgEdCg
-https://www.thefatrat.com/copyright
 
-■ モデル・動作
-モデル：窓際族物語のTripo生成・Blender修正版。
-そば屋の動作には既存ライブラリのリターゲットと独自調整を含みます。Mixamo由来の動作を含むため、モデル・動作一式をCC0として配布するものではありません。
-Mesh2Motion／Quaternius由来の動作素材：CC0 1.0
-https://mesh2motion.org/
-https://quaternius.com/
-
-#Tripo #Codex #3Dモデル #Blender #Threejs #Remotion #窓際族物語
+本動画はUnity Technologiesまたはその関連会社の後援を受けておらず、提携関係もありません。UnityはUnity Technologiesまたはその関連会社の米国その他の国における商標または登録商標です。

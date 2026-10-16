@@ -1,30 +1,41 @@
 {
-  "frameCount": 49040,
-  "seconds": 1634.6666666666667,
+  "frameCount": 61389,
+  "seconds": 2046.3,
   "voiceClips": 488,
-  "captions": 491,
+  "captions": 492,
   "shots": 60,
   "nameOccurrences": 1,
-  "revealFrame": 33668,
-  "afterRevealSpeechFrames": 60,
-  "audioNotTruncated": true,
-  "errors": [],
-  "manualListening": "not performed; only automated transcript/level screening",
-  "music": "same reference extracted and separated; original track unconfirmed",
+  "revealFrame": 41663,
+  "characterAudio": [
+    {
+      "from": 41678,
+      "duration": 37,
+      "file": "sobaya_beer.wav",
+      "text": "ビール……",
+      "speaker": "sobaya"
+    }
+  ],
+  "narrator": "VOICEVOX:青山龍星",
+  "speedScale": 1.0,
+  "pitchScale": 0.0,
+  "narrationOverlap": false,
+  "manualListening": "not performed; automated screening only",
+  "music": "same separated reference; original track unconfirmed",
   "video": "review_remotion_horror.mp4",
-  "bytes": 175026941,
-  "sha256": "6d55e8164791df1214bde31f48d195067ccd247338d3b20b6385862a1599ef19",
+  "bytes": 200820759,
+  "sha256": "5d6b6fc0061091aeeb97a60cb3b1b2679adcff932ca92e075b152fb5ff78ed10",
   "resolution": [
     1280,
     720
   ],
   "fps": "30/1",
-  "decodedFrames": 49040,
+  "decodedFrames": 61389,
   "audioStreams": 1,
   "audioSampleRate": 48000,
   "fullDecode": "passed; no reported errors",
-  "visualReview": "12 representative Remotion frames inspected; character-only silhouettes, caption wrapping, reveal boundary, resolution, ending",
-  "integratedLUFS": -17.04,
-  "truePeakDbTP": -1.08,
-  "loudnessRangeLU": 3.6
+  "visualReview": "layout unchanged except Sobaya quote; v2 reveal and opening checked separately",
+  "integratedLUFS": -16.29,
+  "truePeakDbTP": -1.37,
+  "loudnessRangeLU": 4.4,
+  "deliveryAlias": "review_remotion_horror_aoyama_v2.mp4"
 }

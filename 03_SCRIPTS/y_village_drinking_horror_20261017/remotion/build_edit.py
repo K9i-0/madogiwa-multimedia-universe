@@ -1,9 +1,12 @@
 """Build the sole frame timeline from measured, un-stretched VOICEVOX clips."""
-import json, math, re
+import json, math, re, wave
 from pathlib import Path
 P=Path(__file__).resolve().parent
 FPS=30
 rows=json.loads((P/'voice-manifest.json').read_text())['rows']
+with wave.open(str(P.parent/'sobaya_beer.wav')) as w:
+    growl_seconds=w.getnframes()/w.getframerate()
+growl_frames=math.ceil(growl_seconds*FPS)
 cursor=90
 clips=[];captions=[];chapters=[]
 def lines(text):
@@ -15,7 +18,7 @@ def lines(text):
     return text[:cut]+'\n'+lines(text[cut:])
 for i,r in enumerate(rows):
     if i==0 or r['chapter']!=rows[i-1]['chapter']:
-        if i:cursor+=45
+        if i:cursor+=60
         chapters.append({'chapter':r['chapter'],'from':cursor})
     duration=math.ceil(r['seconds']*FPS)
     c={**r,'from':cursor,'duration':duration}
@@ -25,13 +28,19 @@ for i,r in enumerate(rows):
     at=cursor;total=sum(len(b.replace('\n','')) for b in blocks)
     for k,b in enumerate(blocks):
         end=cursor+duration if k==len(blocks)-1 else at+round(duration*len(b.replace('\n',''))/total)
-        captions.append({'from':at,'to':end,'text':b,'lineId':r['id']});at=end
-    pause=14 if r['text'].endswith(('。','」')) else 9
+        captions.append({'from':at,'to':end,'text':b,'lineId':r['id'],'speaker':'narrator'});at=end
+    pause=27 if r['text'].endswith(('。','」')) else 15
     if r['text'] in ['私にも見えました。','ごちそうさまでした','「ごちそうさまでした」','その夜の記憶は、そこまでです。']:pause=60
+    if r['id']=='n0317':pause=60+15+growl_frames+36
     cursor+=duration+pause
 duration=cursor+120
 byid={r['id']:r for r in clips}
 def frame(id):return byid[f'n{id:04}']['from']
+reveal=frame(317)+byid['n0317']['duration']+60
+growl={'from':reveal+15,'duration':growl_frames,'file':'sobaya_beer.wav','text':'ビール……','speaker':'sobaya'}
+captions.append({'from':growl['from'],'to':growl['from']+growl_frames,'text':'「ビール……」','lineId':'sobaya_beer','speaker':'sobaya'})
+captions.sort(key=lambda c:c['from'])
+def shotframe(n):return reveal if n==318 else frame(n)
 # Authored shots are tied to exact spoken lines, never change randomly with captions.
 keys=[
  (0,'office',None),(3,'office','m_photo'),(5,'office','y_guitar'),(9,'village',None),
@@ -56,15 +65,14 @@ keys=[(n,'village' if n in (79,87) else bg,person) for n,bg,person in keys]
 keys=[(n,'temple' if person=='f_photo' else bg,person) for n,bg,person in keys]
 shots=[]
 for i,(n,bg,person) in enumerate(keys):
-    start=0 if i==0 else frame(n)
-    end=frame(keys[i+1][0]) if i+1<len(keys) else duration
+    start=0 if i==0 else shotframe(n)
+    end=shotframe(keys[i+1][0]) if i+1<len(keys) else duration
     shots.append({'from':start,'to':end,'background':bg,'person':person,'crop':i%3})
-reveal=frame(318)
 events=[]
 for phrase,kind,delay in [('一度目で屋根が割れました。','wood',1),('二度目で扉が外れました。','wood',1),('それから、向かいの空席へ缶を差し出しました。','can',0),('四つのジョッキが当たりました。','glass',1),('空になったジョッキが、机に当たりました。','glass',1),('冷蔵庫が鳴りました。','hum',0),('どこかで、窓枠がきしみました。','creak',0)]:
     c=next(c for c in clips if c['text']==phrase)
     events.append({'frame':c['from']+round(delay*FPS),'kind':kind})
-manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'sfx':events,'revealFrame':reveal,'audio':'mix.wav'}
+manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'sfx':events,'characterAudio':[growl],'revealFrame':reveal,'audio':'mix.wav'}
 (P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 def srt_time(frame):
     ms=round(frame/FPS*1000);h,ms=divmod(ms,3600000);mi,ms=divmod(ms,60000);s,ms=divmod(ms,1000)

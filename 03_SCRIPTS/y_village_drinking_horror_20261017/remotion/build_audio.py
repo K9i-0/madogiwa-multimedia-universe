@@ -31,6 +31,16 @@ reveal=m['revealFrame'];a=round((reveal/fps-3)*sr);b=round((reveal/fps+6)*sr)
 music[a:b]*=np.concatenate([np.linspace(1,0,sr),np.zeros(max(0,b-a-2*sr)),np.linspace(0,1,sr)])[:,None]
 music[-6*sr:]*=np.linspace(1,0,6*sr)[:,None]
 mix=music+voice[:,None]
+for event in m.get('characterAudio',[]):
+    z,rate=sf.read(P.parent/event['file'],dtype='float32')
+    if z.ndim>1:z=z.mean(axis=1)
+    z=resample_poly(z,sr,rate).astype(np.float32)
+    # Canonical monster processing is already applied. Match the scene level only.
+    active=z[np.abs(z)>.003]
+    rms=float(np.sqrt(np.mean(active*active))) if len(active) else 1
+    z*=min(.11/max(rms,1e-8),.65/max(float(np.max(np.abs(z))),1e-8))
+    at=round(event['from']/fps*sr)
+    mix[at:at+len(z)]+=z[:,None]
 rng=np.random.default_rng(171026)
 for e in m['sfx']:
     kind=e['kind'];duration={'wood':.55,'glass':1.1,'can':.5,'hum':1.8,'creak':1.2}[kind]
@@ -47,5 +57,5 @@ for e in m['sfx']:
     at=round(e['frame']/fps*sr);mix[at:at+len(z)]+=z[:,None]
 sf.write(P/'out/premix.wav',mix,sr,subtype='PCM_24')
 subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/premix.wav'),'-af','alimiter=limit=0.89:level=false','-ar','48000',str(P/'public/mix.wav')],check=True)
-(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic procedural synthesis; seed171026','voice':'VOICEVOX:玄野武宏 style11; normalized -19 LUFS'},ensure_ascii=False,indent=2))
+(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic procedural synthesis; seed171026','voice':'VOICEVOX:青山龍星 style13 speed1.0; normalized -19 LUFS','sobaya':'canonical Irodori v4 Large + sobaya_monsterize; gain only in mix'},ensure_ascii=False,indent=2))
 print('Audio complete',n/sr,float(np.max(np.abs(mix))))

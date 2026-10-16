@@ -16,20 +16,20 @@ def post(endpoint,params,data=None):
  req=urllib.request.Request(BASE+'/'+endpoint+'?'+urllib.parse.urlencode(params),data=json.dumps(data).encode() if data else b'',headers={'Content-Type':'application/json'})
  return urllib.request.urlopen(req,timeout=180).read()
 version=json.load(urllib.request.urlopen(BASE+'/version'))
-settings={'speaker':11,'speedScale':0.96,'pitchScale':-0.025,'intonationScale':0.85,'volumeScale':1.0,'prePhonemeLength':0.06,'postPhonemeLength':0.12,'outputSamplingRate':24000,'outputStereo':False}
+settings={'speaker':13,'speedScale':1.0,'pitchScale':0.0,'intonationScale':0.85,'volumeScale':1.0,'prePhonemeLength':0.15,'postPhonemeLength':0.35,'outputSamplingRate':24000,'outputStereo':False}
 def gen(r):
- dest=P/'public/voice'/f"{r['id']}.wav"; meta=dest.with_suffix('.json')
+ dest=P/'public/voice_aoyama'/f"{r['id']}.wav"; dest.parent.mkdir(parents=True,exist_ok=True); meta=dest.with_suffix('.json')
  sig=hashlib.sha256(json.dumps([r['speech'],settings,version],ensure_ascii=False,sort_keys=True).encode()).hexdigest()
  if not(dest.exists() and meta.exists() and json.loads(meta.read_text()).get('key')==sig):
-  q=json.loads(post('audio_query',{'speaker':11,'text':r['speech']}));q.update({k:v for k,v in settings.items() if k!='speaker'})
-  dest.write_bytes(post('synthesis',{'speaker':11},q));meta.write_text(json.dumps({'key':sig,'engine':version,'settings':settings,'kana':q['kana'],'speech':r['speech']},ensure_ascii=False,indent=2))
+  q=json.loads(post('audio_query',{'speaker':settings['speaker'],'text':r['speech']}));q.update({k:v for k,v in settings.items() if k!='speaker'})
+  dest.write_bytes(post('synthesis',{'speaker':settings['speaker']},q));meta.write_text(json.dumps({'key':sig,'engine':version,'settings':settings,'kana':q['kana'],'speech':r['speech']},ensure_ascii=False,indent=2))
  with wave.open(str(dest)) as w: seconds=w.getnframes()/w.getframerate()
- return {**r,'file':f"voice/{r['id']}.wav",'seconds':seconds}
+ return {**r,'file':f"voice_aoyama/{r['id']}.wav",'seconds':seconds}
 print('Generating',len(rows),'segments',flush=True)
 res={}
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
  for i,r in enumerate(ex.map(gen,rows)):
   res[r['id']]=r
   if i%20==0: print(i+1,'/',len(rows),flush=True)
-(P/'voice-manifest.json').write_text(json.dumps({'engine':version,'speaker':'VOICEVOX:玄野武宏','settings':settings,'rows':[res[x['id']] for x in rows]},ensure_ascii=False,indent=2))
+(P/'voice-manifest.json').write_text(json.dumps({'engine':version,'speaker':'VOICEVOX:青山龍星','settings':settings,'rows':[res[x['id']] for x in rows]},ensure_ascii=False,indent=2))
 print('DONE speech seconds',sum(x['seconds'] for x in res.values()),flush=True)

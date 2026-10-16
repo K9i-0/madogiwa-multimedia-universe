@@ -21,7 +21,7 @@ const Film:React.FC=()=>{
   <AbsoluteFill style={{background:'radial-gradient(ellipse at 50% 38%,transparent 35%,rgba(0,0,0,.45) 100%)'}}/>
   <AbsoluteFill style={{background:'linear-gradient(transparent 57%,rgba(0,0,0,.8) 80%,#050606 100%)'}}/>
   {f<90&&<div style={{position:'absolute',top:250,width:'100%',textAlign:'center',color:'#eee9dd',fontSize:46,letterSpacing:12,opacity:interpolate(f,[0,18,65,89],[0,1,1,0],clamp)}}>廃村Y村の飲み会</div>}
-  {cap&&<div style={{position:'absolute',left:90,right:90,bottom:60,minHeight:96,display:'flex',justifyContent:'center',alignItems:'center',textAlign:'center',whiteSpace:'pre-line',fontFamily:'Hiragino Kaku Gothic ProN, sans-serif',fontSize:32,lineHeight:1.5,fontWeight:500,letterSpacing:.3,color:'#f2f0e9',textShadow:'0 2px 4px #000, 0 0 10px #000',opacity:interpolate(f,[cap.from,cap.from+3],[.4,1],clamp)}}>{cap.text}</div>}
+  {cap&&<div style={{position:'absolute',left:90,right:90,bottom:60,minHeight:96,display:'flex',justifyContent:'center',alignItems:'center',textAlign:'center',whiteSpace:'pre-line',fontFamily:'Hiragino Kaku Gothic ProN, sans-serif',fontSize:32,lineHeight:1.5,fontWeight:500,letterSpacing:.3,color:'#f2f0e9',WebkitTextStroke:('speaker' in cap && cap.speaker==='sobaya')?'2px #D93646':'0px',paintOrder:'stroke fill',textShadow:'0 2px 4px #000, 0 0 10px #000',opacity:interpolate(f,[cap.from,cap.from+3],[.4,1],clamp)}}>{cap.text}</div>}
   <AbsoluteFill style={{background:'#000',opacity:ending}}/>
   <Audio src={staticFile(edit.audio)}/>
  </AbsoluteFill>;

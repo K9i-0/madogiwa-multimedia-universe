@@ -1,0 +1,16 @@
+{
+  "text": "ビール……。",
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "reference": "02_CHARACTERS/Sobaya_voice.wav",
+  "referenceSha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+  "seed": 42,
+  "caption": "喉の奥で低く唸り、ゆっくり短くつぶやく。",
+  "cfgScaleText": 5,
+  "durationScale": 1,
+  "uncut": true,
+  "postprocess": "tools/sobaya_monsterize.sh (pitch -5 semitones, 70Hz tremolo, canonical tempo compensation)",
+  "seconds": 1.2033958333333334,
+  "sha256": "6721d8dcf6c340669f5e069ddf0e56f0a1606ce53c70574cbfca6d09b226ea52",
+  "placement": "first full reveal, cursed narrator POV; never in family recording",
+  "audition": "raw ASR: ビール; monsterized ASR: ビーデー. Human audition not performed; processing can obscure ASR phonemes."
+}

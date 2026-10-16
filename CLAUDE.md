@@ -46,7 +46,7 @@ Gitでは、Seedanceの再生成と同じ声の継続利用に必要な最小限
 - **ミーム改変動画** (`meme-video`): 元動画・URLを参照した人物置換、ミームの別キャラ版、元音声版とキャラクター音声版の制作で使用する。元ネタの構図・演技・間と人物同一性を分けて設計し、生成の詳細は`wan-video`、音声編集は`remotion-video`へ委ねる。詳細: `.claude/skills/meme-video/SKILL.md`
 - **Three.js舞台動画制作** (`threejs-video`): 既存GLB、共有演技・犬モーション、画像背景壁、React UIを用いて台本から完成動画まで制作する。詳細: `.claude/skills/threejs-video/SKILL.md`
 - **VOICEVOX解説動画** (`voicevox-explainer`): ずんだもん・四国めたんの解説動画を、チャットでの台本検討、シーン別資料、VOICEVOX音声、静かなBGMとエンディングまで制作する。実装・レンダー・監査は`remotion-video`へ委譲。詳細: `.claude/skills/voicevox-explainer/SKILL.md`
-- **Shorts加工** (`shorts-video`): ローカル制作の1分未満の採用済み動画を縦9:16へ編集し、統一タイトル・メンバー色字幕・週5本の投稿待ち一覧を準備する。詳細: `.claude/skills/shorts-video/SKILL.md`
+- **Shorts加工** (`shorts-video`): 採用済み動画の縦9:16編集と、解説等の長めの動画からの本編誘導用ショート制作に使う。切り出し候補をユーザーに選んでもらい、縦向けの解説画面・立ち絵再配置、終了案内、依頼された予約投稿を扱う。詳細: `.claude/skills/shorts-video/SKILL.md`
 - **Remotion動画編集** (`remotion-video`): Wan・Seedance等の生成済み動画へ、正確な字幕、ニューステロップ、局ロゴ、ティッカー、音声差し替え、UI、効果音を再現可能なReactコードで合成し、レンダリング・監査するときに使用する。詳細: `.claude/skills/remotion-video/SKILL.md`
 - **画面差し替え** (`screen-replacement`): ユーザーが明示した場合に、モニター・テレビ・スマホ等の表示面をOpenCVで追跡し、画像・動画を透視合成する。グリーン画面生成、通常画面追跡、揺れ抑制、緑残り除去、Remotion統合を扱う。画面が映るだけでは自動適用しない。詳細: `.claude/skills/screen-replacement/SKILL.md`
 - **映画ポスター制作** (`create-movie-poster`): 映画ポスターの新規制作・改修・シリーズ統一では、独立した初回3案から方向性を選び、縦2:3正本、正確な日本語文字、キャラクター同一性を管理する。実写のよーたん、福ギュン、とーくん、おかやまんは正典写真へ顔を厳密に一致させる。SNS安全域はユーザー指定時だけ調整し、生成画像への反復編集を避ける。詳細: `.claude/skills/create-movie-poster/SKILL.md`

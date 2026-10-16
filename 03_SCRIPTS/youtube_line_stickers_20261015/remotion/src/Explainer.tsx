@@ -1,5 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, staticFile, useCurrentFrame, interpolate} from 'remotion';
+import shorts from '../../shorts-manifest.json';
+import {memberCaptionStyle} from '../../../00_TEMPLATES/subtitles/member-colors';
 import rawManifest from './edit-manifest.json';
 import {DuoSprite} from './DuoSprite';
 import {captionColors,theme} from './theme';
@@ -38,7 +40,7 @@ const moodFor=(who:Who,d:Manifest['dialogue'][number]|undefined):Mood=>{
  return specific[id]?.[who==='yametaro'?0:1]??'normal';
 };
 
-export const Explainer:React.FC<{manifest?:Manifest;audioSrc?:string;hideCaptions?:boolean;silentPreview?:boolean}>=({manifest,audioSrc,hideCaptions=false,silentPreview=false})=>{
+export const Explainer:React.FC<{manifest?:Manifest;audioSrc?:string;hideCaptions?:boolean;silentPreview?:boolean;portrait?:boolean}>=({manifest,audioSrc,hideCaptions=false,silentPreview=false,portrait=false})=>{
  const m=manifest??rawManifest as Manifest;const f=useCurrentFrame();
  const active=m.dialogue.find(d=>f>=d.startFrame&&f<d.startFrame+d.durationInFrames);
  const previous=m.dialogue.reduce((last,d)=>f>=d.startFrame?d:last,m.dialogue[0]);
@@ -62,6 +64,26 @@ export const Explainer:React.FC<{manifest?:Manifest;audioSrc?:string;hideCaption
  const previousIndex=m.dialogue.indexOf(previous);let viewIndex=previousIndex;
  while(viewIndex>0&&m.dialogue[viewIndex-1].view===view)viewIndex--;
  const viewStart=m.dialogue[viewIndex]?.startFrame;
+ if(portrait){
+  const c=shorts.captions.find(c=>f>=c.startFrame&&f<c.endFrame);
+  const lines=shorts.titleCues.reduce((lines,cue)=>f>=cue.from?cue.titleLines:lines,shorts.titleLines);
+  return <AbsoluteFill style={{background:'#102c24',fontFamily:'"Hiragino Sans",sans-serif',color:'#fff',overflow:'hidden'}}>
+   <AbsoluteFill style={{background:'radial-gradient(ellipse at 50% 50%,#2c5948,#102c24 80%)'}}/>
+   <div style={{position:'absolute',top:76,left:24,right:24,textAlign:'center',fontWeight:700}}><div style={{fontSize:29,marginBottom:14}}>{lines[0]}</div><div style={{fontSize:56,color:'#fff2d4'}}>{lines[1]}</div></div>
+   <div style={{position:'absolute',left:0,top:240,width:720,height:455,background:'#fff',overflow:'hidden'}}>
+    <div style={{position:'absolute',left:18,top:9,width:760,height:485,transform:'scale(.9)',transformOrigin:'top left',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',textAlign:'center',color:theme.ink}}>
+     {tips?<TipsVisualAid view={view} frame={f} utterance={previous} viewStart={viewStart}/>:<VisualAid view={view} frame={f} utterance={visualTurn} chatStart={chatStart}/>}
+    </div>
+   </div>
+   {(['yametaro','takosan'] as Who[]).map(who=>{
+    const local=active?f-active.startFrame:0;const speaking=active?.who===who;
+    const peak=Math.max(...(active?.envelope??[0]));const level=active?.envelope?.[Math.floor(local/2)*2]??0;
+    return <DuoSprite key={who} who={who} speaking={speaking} open={speaking&&level>Math.max(.0025,peak*.15)} mood={moodFor(who,visualTurn)} local={local} portrait/>;
+   })}
+   {c&&<div style={{position:'absolute',top:1030,left:30,right:30,textAlign:'center',fontWeight:700}}><div style={{fontSize:26,marginBottom:10}}>{c.speaker}</div><div style={{fontSize:36,lineHeight:1.45,whiteSpace:'pre-line',...memberCaptionStyle(c.speaker)}}>{c.text}</div></div>}
+   <AbsoluteFill style={{pointerEvents:'none',background:'#fff',opacity:transitionOpacity}}/>
+  </AbsoluteFill>;
+ }
  return <AbsoluteFill style={{background:'#fff',fontFamily:'"Hiragino Sans",sans-serif',color:theme.ink}}>
   {!silentPreview&&<Audio src={staticFile(audioSrc??m.audioSrc??'mixed.wav')}/>}
   <SpreadsheetFrame chapter={visualTurn?.chapter} variant={tips?'tips':'original'}>

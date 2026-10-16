@@ -1,0 +1,17 @@
+{
+  "slug": "buyobuyo-puzzle-arrival",
+  "generationId": "d2082898-9302-4a9d-a9c4-39fad6393b88",
+  "generationVersion": 1,
+  "videoId": "d36b8ae2-722a-4105-87d3-283d3f6e6d94",
+  "r2Key": "episodes/711b80d6-0c6e-4665-8330-8b5c4370e88e/generations/d2082898-9302-4a9d-a9c4-39fad6393b88/videos/d36b8ae2-722a-4105-87d3-283d3f6e6d94/final_draft.mp4",
+  "youtubeId": "Wa5B8afq1i0",
+  "youtubeDuration": "PT27S",
+  "probe": {
+    "fps": 24.0,
+    "frames": 625,
+    "width": 1344,
+    "height": 768,
+    "duration": 26.117
+  },
+  "notes": "17k+5フレームグリッド24fpsで6チャプター生成（計625フレーム=26.04秒）。ch3・ch4・ch6がR2V（添付wavをそのまま鳴らすリップシンク）、ch1・ch2・ch5がI2V。ch4は福ちゃん・やめ太郎・たこさん・ゆめみんの4人が同時に発話するが、H3のR2Vは音声3本までのため、リップシンクする3人をH3スロットに割り当て、ゆめみんの0.49秒の非言語の鳴き声「きゅー！」だけを結合時にffmpegでミックスした（差分解析で載っていることを確認済み）。話速は候補ゲートでユーザーが選定（福ちゃん・やめ太郎1.5x、他1.0x）。ch6プロンプトの記載どおり、日本語オーバーレイとVOICEVOXクレジットはCapCutで後載せする前提のため、生成物にテキストは含めていない。"
+}

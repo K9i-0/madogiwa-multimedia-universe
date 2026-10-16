@@ -1,0 +1,36 @@
+{
+  "slug": "sobaya-desert-mega-beer",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-desert-mega-beer/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 579,
+  "outputFrames": 579,
+  "durationSeconds": 24.170667,
+  "sourceAudioBitstreamHash": "SHA256=6d37161e2183159f7d2e8573a3e50077f409b08ac08b2ab9ff456e3eafe2519c",
+  "outputAudioBitstreamHash": "SHA256=6d37161e2183159f7d2e8573a3e50077f409b08ac08b2ab9ff456e3eafe2519c",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 3,
+  "sampleFrames": [
+    0,
+    138,
+    144,
+    248,
+    289,
+    434,
+    490,
+    578
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-desert-mega-beer/qa/contact-1.jpg"
+  ],
+  "outputSha256": "5c69dfa3965548539dbc39a574db8a60fd5d65e953dcfcadd5a6fc9ae18de636",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "visualReviewNotes": "Final contact sheet inspected: first/last, representative shots, all three caption midpoints; no cut-off text, duplicate subtitles, or facial crop. Dialogue timing tied to original reference waveform/spectral matches.",
+  "manifestSha256": "58e31f8a98f06ebddf303fc6ebb6c981e553da0e55c5924cbcd2ff7a6a911a7e"
+}

@@ -1,0 +1,176 @@
+# PHP: Papa's Hilarious Prompt
+
+## Format
+
+- Target length: approximately 12 seconds
+- Aspect ratio: 9:16 vertical
+- Genre: warm family comedy / office slice of life
+- Setting: the bright window-side lounge at Accidenchur Inc., with Tokyo Tower visible through the window
+- Canon adaptation: Yumemin cannot speak words. She communicates the requested question by pointing to a laptop while making a short chirp; the exact question is added as a CapCut text overlay.
+
+## Local animatic preview
+
+- Preview file: `php_prompt_pun_animatic.mp4`
+- This 12-second H.264/AAC preview uses crossfades between the approved keyframes, the final local dialogue wav files, the exact question overlay, and the required VOICEVOX on-screen credit.
+- It is an edit/timing preview, not the final Seedance motion render. Use the CapCut inputs and generation protocol below for the final animated version.
+- Overlay source files: `question_overlay.png`, `credit_overlay.png`
+
+## Prop state ledger
+
+| Prop | C1 start | C1 end = C2 start | C2 end |
+|---|---|---|---|
+| Laptop | OPEN on the low table, screen facing Yametaro, clean dark-blue screen with an empty centered area reserved for a CapCut text overlay | Same position and screen state | Same position and screen state |
+| Yumemin's wooden mallet | Resting safely on the sofa beside Yumemin | Same position | Same position |
+
+Logical check: no prop changes state in this video. The laptop and mallet remain visible and stationary, so no unexplained transition occurs.
+
+## Dialogue audio (all voices pre-generated locally — Seedance must NOT generate any voice)
+
+| File | Clip | Character | Voice (engine) | Line (ja) | Duration |
+|---|---:|---|---|---|---:|
+| `clip1_line1_yumemin.wav` | 1 | Yumemin | VOICEVOX: Zundamon, style 3 | きゅー？ | 0.84s |
+| `clip2_line1_yametaro.wav` | 2 | Yametaro | Irodori-TTS (ref: `Yametaro_voice.wav`, seed 7) | もちろん書けるで！ | 3.04s |
+| `clip2_line2_yametaro.wav` | 2 | Yametaro | Irodori-TTS (ref: `Yametaro_voice.wav`, seed 7) | パワ・ハラ・プロンプトのことやろ？ | 3.12s |
+
+## Edit overlay
+
+- Add this exact text with CapCut's text tool during Clip 1: `パパ、PHPって書ける？`
+- Place it inside the laptop screen area, large and legible, from 0.8 seconds until the end of Clip 1.
+- Use a clean white Japanese sans-serif font with no typing animation.
+- Do NOT ask Seedance or the keyframe generator to render this text.
+
+## Clip 1 — Yumemin asks with a laptop (5 seconds)
+
+### First frame
+
+Medium-wide vertical composition in the sunny window-side lounge. Yametaro sits on the right side of a small sofa, wearing his canonical purple dress shirt and round glasses. Yumemin, the small round blue flying tapir-like mascot with tiny ears, black dot eyes, a flexible left-side trunk, and a white rear body patch, hovers on the left. An open laptop sits on a low table between them, facing Yametaro. Its dark-blue screen has a clean empty centered area for later text. Yumemin's wooden mallet rests safely on the sofa. Both characters' mouths are closed. The mood is warm, playful, and safe.
+
+### Last frame
+
+The exact same composition, lighting, characters, laptop position, and props. Yumemin now points her flexible trunk toward the laptop screen and tilts forward inquisitively; her tiny mouth is closed after the chirp. Yametaro leans closer to read the screen, mouth closed, eyebrows raised with cheerful confidence. The laptop screen still contains only the clean empty area for the CapCut overlay. The wooden mallet remains untouched on the sofa.
+
+### Prop states
+
+- Laptop: OPEN and stationary throughout; the screen stays dark blue with an empty centered overlay area.
+- Yumemin's wooden mallet: stationary on the sofa; nobody touches it.
+
+### CapCut inputs (Clip 1)
+
+- Start frame (Frame A): `clip1_start.png`
+- End frame (Frame B): `clip1_end.png`
+- Reference images (identity lock): `Yumemin.jpg` as @Image3, `Yametaro.jpg` as @Image4. These are identity/design references, not composition references.
+- Audio (attach to Seedance as input): `clip1_line1_yumemin.wav` as @Audio1 — Yumemin's short nonverbal chirp; use AS-IS.
+- Duration: 5s
+- Aspect: 9:16
+- Motion prompt:
+
+```text
+Animate a warm, playful office-family moment between the exact first and last frames. Yumemin (@Image3), the small round blue flying tapir-like mascot with black dot eyes, tiny ears, a flexible left-side trunk and a white rear patch, gently bobs in the air and gives the short nonverbal chirp in @Audio1, then points her trunk toward the OPEN laptop. Yametaro (@Image4), the middle-aged caricature man in the canonical purple dress shirt and round glasses, notices the laptop and leans closer to read it with cheerful curiosity. ONLY Yumemin makes the nonverbal chirp, synchronized to @Audio1; Yumemin does not speak any words. Yametaro does NOT speak in this clip — his mouth stays CLOSED and he only reacts. Keep the laptop OPEN and stationary with its clean dark-blue screen area blank; no generated letters, captions, symbols, UI, or gibberish. Keep the wooden mallet resting safely on the sofa; nobody touches or swings it. Preserve both characters' exact canonical designs, scale, colors, and facial features. Gentle natural body motion, subtle camera push-in, sunny soft light, upbeat comedy, no aggression, no harassment, no extra characters. Use the attached audio file AS-IS and lip-sync only the tiny chirp; do NOT generate any voice — no synthesized speech, no narration, and no audio other than @Audio1.
+```
+
+## Clip 2 — Yametaro confidently misunderstands PHP (7 seconds)
+
+### First frame
+
+Use `clip1_end.png` unchanged. Yumemin points her trunk toward the open laptop, mouth closed. Yametaro leans toward the screen, mouth closed, eyebrows raised. The laptop remains open and stationary; its dark-blue screen has a clean empty centered area. The wooden mallet remains untouched on the sofa.
+
+### Last frame
+
+The same lounge, lighting, framing, laptop, and props. Yametaro sits upright and points proudly to himself with one thumb, laughing at his own confident misunderstanding; his mouth is open mid-speech. Yumemin hovers beside the laptop with her mouth closed and gives a gentle puzzled head tilt. No one looks upset. The laptop and mallet remain unchanged.
+
+### Prop states
+
+- Laptop: OPEN and stationary throughout; no generated text or UI appears.
+- Yumemin's wooden mallet: stationary on the sofa; nobody touches it.
+
+### CapCut inputs (Clip 2)
+
+- Start frame (Frame A): `clip1_end.png` (shared unchanged as the continuity frame)
+- End frame (Frame B): `clip2_end.png`
+- Reference images (identity lock): `Yumemin.jpg` as @Image3, `Yametaro.jpg` as @Image4. These are identity/design references, not composition references.
+- Audio (attach to Seedance as input): `clip2_line1_yametaro.wav` as @Audio1 — spoken by Yametaro; use AS-IS.
+- Audio (attach to Seedance as input): `clip2_line2_yametaro.wav` as @Audio2 — spoken by Yametaro after a short comic beat; use AS-IS.
+- Duration: 7s
+- Aspect: 9:16
+- Motion prompt:
+
+```text
+Continue seamlessly from the shared first frame. ONLY Yametaro (@Image4), the middle-aged caricature man in the canonical purple dress shirt and round glasses, speaks. First he brightens, sits upright and confidently says "もちろん書けるで！" while lip-syncing to @Audio1. After a short comic beat, he proudly points one thumb toward himself and says "パワ・ハラ・プロンプトのことやろ？" while lip-syncing to @Audio2, splitting the first three words with playful rhythmic emphasis. Yumemin (@Image3), the small round blue flying tapir-like mascot with black dot eyes, tiny ears, a flexible left-side trunk and a white rear patch, does NOT speak or chirp — her mouth stays CLOSED; she only gives a gentle puzzled head tilt. The misunderstanding is a harmless wordplay joke about the initials PHP; no power harassment occurs, is depicted, or is endorsed. Keep both characters smiling and safe. Keep the laptop OPEN and stationary with its clean dark-blue screen area blank; no generated letters, captions, symbols, UI, or gibberish. Keep the wooden mallet resting safely on the sofa; nobody touches or swings it. Preserve exact canonical character designs, colors, scale, and facial features. Stable vertical framing with a slight comedic push-in on Yametaro, warm sunny light, no extra characters. Use @Audio1 and @Audio2 AS-IS in that order with no overlap and lip-sync ONLY Yametaro to them; do NOT generate any voice — no synthesized speech, no narration, and no audio other than the attached files.
+```
+
+## Keyframe generation prompts
+
+### `clip1_start.png`
+
+```text
+Use case: illustration-story
+Asset type: first-frame still for a 9:16 vertical animated short
+Input images: Image 1 is Yumemin's identity reference; Image 2 is Yametaro's identity reference. Preserve both designs exactly.
+Scene/backdrop: bright, friendly window-side lounge at a fictional Tokyo IT company, soft daytime sun, Tokyo Tower visible through the large window, cozy sofa and low table
+Subject: Yumemin hovers on the left, Yametaro sits on the right, and an OPEN laptop rests between them facing Yametaro
+Composition/framing: medium-wide vertical two-shot, both characters fully readable, laptop screen visible with a large clean empty centered area reserved for later CapCut text
+Style/medium: polished comedic anime illustration, clean shapes, faithful to the supplied character references
+Lighting/mood: warm, wholesome, playful
+Constraints: Yumemin has the canonical round blue body, black dot eyes, tiny ears, flexible left-side trunk, and white rear patch; Yametaro has the canonical purple dress shirt and round glasses; both mouths closed; wooden mallet resting safely on the sofa; laptop screen dark blue and completely blank
+Avoid: any generated text, letters, captions, symbols, UI, watermark, harassment, aggression, extra people, altered character design
+```
+
+### `clip1_end.png`
+
+```text
+Use case: identity-preserve
+Asset type: last-frame still for Clip 1 and shared first frame for Clip 2
+Input images: Image 1 is the edit target `clip1_start.png`; Image 2 is Yumemin's identity reference; Image 3 is Yametaro's identity reference
+Primary request: preserve the exact framing, location, lighting, character identity, laptop, sofa, low table and all prop positions; change only the poses
+Pose change: Yumemin points her flexible trunk toward the laptop and tilts forward inquisitively, mouth closed after chirping; Yametaro leans closer to read, mouth closed, eyebrows raised with cheerful confidence
+Constraints: laptop remains OPEN and stationary with a dark-blue screen and a large clean empty centered area; wooden mallet remains untouched on the sofa; canonical character designs unchanged
+Avoid: any generated text, letters, captions, symbols, UI, watermark, open mouths, aggression, extra people, prop changes
+```
+
+### `clip2_end.png`
+
+```text
+Use case: identity-preserve
+Asset type: last-frame still for Clip 2
+Input images: Image 1 is the edit target `clip1_end.png`; Image 2 is Yumemin's identity reference; Image 3 is Yametaro's identity reference
+Primary request: preserve the exact framing, location, lighting, character identity, laptop, sofa, low table and all prop positions; change only the poses
+Pose change: Yametaro sits upright, points proudly to himself with one thumb, smiles, and has his mouth open mid-speech; Yumemin remains beside the laptop with her mouth closed and gives a gentle puzzled head tilt
+Constraints: laptop remains OPEN and stationary with a dark-blue screen and a large clean empty centered area; wooden mallet remains untouched on the sofa; canonical character designs unchanged; harmless upbeat comedy
+Avoid: any generated text, letters, captions, symbols, UI, watermark, Yumemin speaking, aggression, harassment, extra people, prop changes
+```
+
+## Generation & assembly protocol (REQUIRED — read before generating anything in CapCut)
+
+### Step 1 — Pilot clip first (batch generation is FORBIDDEN until the pilot passes)
+Generate ONLY Clip 1, then verify ALL of the following before touching any other clip:
+- [ ] The dialogue audio in the output is the attached wav AS-IS (no synthesized voice, no doubled voices)
+- [ ] The CORRECT character lip-syncs to each line (the speaker named in the prompt moves their mouth; every non-speaker's mouth stays closed)
+- [ ] Motion, poses and prop states match the Motion prompt and the Prop state ledger
+- [ ] The clip duration equals the Duration specified in the CapCut inputs table (NOT the ~8s default)
+If any check fails, fix the inputs/prompt and regenerate Clip 1 until all pass.
+Only then generate the remaining clips, and re-run at least the audio + duration checks on every clip.
+
+### Step 2 — Prompts are verbatim
+Paste each clip's Motion prompt into CapCut EXACTLY as written in this file.
+Do NOT summarize, shorten, or paraphrase it. If it seems too long, do not compress it —
+go back to the script and split the clip instead.
+
+### Step 3 — Final audio track (assembly)
+The audio embedded in the generated clips is NOT the final audio, even when the wav was
+attached at generation time. When assembling the final video on the CapCut timeline:
+1. Mute (or delete) the audio embedded in every generated clip.
+2. Lay the original wav files from the Dialogue audio table onto the timeline as the
+   final dialogue track, aligned to each character's lip movements.
+3. Play back the full timeline before export and confirm every line sounds exactly like
+   the local VOICEVOX / Irodori-TTS takes (the source wavs are the single source of truth).
+
+### Step 4 — Final CapCut text
+
+1. Add `パパ、PHPって書ける？` to the laptop screen during Clip 1 exactly as specified in the Edit overlay section.
+2. Add the required VOICEVOX credit below with CapCut's text tool.
+3. Do NOT render either text element with Seedance or the keyframe generator.
+
+## Credits
+
+- On-screen credit (add in CapCut as end-card or final-clip overlay text): `VOICEVOX:ずんだもん`
+- Add this with CapCut's text tool — do NOT render it via Seedance or keyframe images.

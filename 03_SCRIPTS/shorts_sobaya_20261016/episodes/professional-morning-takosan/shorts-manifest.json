@@ -1,0 +1,67 @@
+{
+  "slug": "professional-morning-takosan",
+  "title": "プロフェッショナルの朝は、遅い。",
+  "titleLines": [
+    "プロフェッショナルの",
+    "朝は、遅い。"
+  ],
+  "fps": 30.0,
+  "durationInFrames": 450,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/professional-morning-takosan/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/professional-morning-takosan/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 0,
+      "endFrame": 60,
+      "speaker": "ナレーション",
+      "text": "プロフェッショナルの\n朝は、遅い。"
+    },
+    {
+      "startFrame": 60,
+      "endFrame": 150,
+      "speaker": "やめ太郎",
+      "text": "この時間だと、窓際の席、\n空いてないんやないですか？"
+    },
+    {
+      "startFrame": 150,
+      "endFrame": 210,
+      "speaker": "たこさん",
+      "text": "僕がいる場所が、\n窓際なので。"
+    },
+    {
+      "startFrame": 210,
+      "endFrame": 270,
+      "speaker": "たこさん",
+      "text": "ターミナルを開きます。"
+    },
+    {
+      "startFrame": 270,
+      "endFrame": 300,
+      "speaker": "やめ太郎",
+      "text": "そこから作業を？"
+    },
+    {
+      "startFrame": 300,
+      "endFrame": 360,
+      "speaker": "たこさん",
+      "text": "いえ。閉じます。"
+    },
+    {
+      "startFrame": 360,
+      "endFrame": 393,
+      "speaker": "ナレーション",
+      "text": "開いて、閉じる。"
+    }
+  ],
+  "captionEvidence": {
+    "method": "Studio dialogue prompt matched with unprompted source ASR; actual spoken lines and actual sequence take precedence over the unused three-clip timing plan",
+    "omittedUncertainSpeech": [
+      {
+        "startSeconds": 13.1,
+        "endSeconds": 15,
+        "reason": "Additional narrator phrase absent from Studio prompt; two ASR runs disagree on final word. Original audio retained; uncertain text not invented."
+      }
+    ],
+    "fullPlaybackListening": false
+  }
+}

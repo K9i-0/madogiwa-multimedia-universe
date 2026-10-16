@@ -1,0 +1,64 @@
+{
+  "slug": "sobaya-beer-battery",
+  "title": "そば屋ビールバッテリー",
+  "titleLines": [
+    "そば屋",
+    "ビールバッテリー"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24,
+  "durationInFrames": 722,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-beer-battery/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-beer-battery/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 12,
+      "endFrame": 116,
+      "speaker": "福ギュン",
+      "text": "そば屋、最近人が変わったように\nよく働くなー"
+    },
+    {
+      "startFrame": 196,
+      "endFrame": 254,
+      "speaker": "福ギュン",
+      "text": "え、そば屋？\nどうしたギュン？"
+    },
+    {
+      "startFrame": 371,
+      "endFrame": 397,
+      "speaker": "よーたん",
+      "text": "あ、切れちゃったか"
+    },
+    {
+      "startFrame": 402,
+      "endFrame": 414,
+      "speaker": "福ギュン",
+      "text": "え？"
+    },
+    {
+      "startFrame": 626,
+      "endFrame": 649,
+      "speaker": "福ギュン",
+      "text": "おお！"
+    },
+    {
+      "startFrame": 661,
+      "endFrame": 722,
+      "speaker": "福ギュン",
+      "text": "エンジニアってすごいわね！"
+    }
+  ],
+  "audioSource": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-beer-battery/source.mp4",
+  "sourceSelection": {
+    "studioId": "MS-7K9Q2F",
+    "generationId": "20000000-0000-4000-8000-000000000040",
+    "youtubeId": "UXW76ZTLthM",
+    "r2Key": "episodes/00000000-0000-4000-8000-000000000040/40000000-0000-4000-8000-000000000040/final_video.mp4",
+    "notes": "Current published generation final; whole adopted source retained, no credit-only tail identified."
+  },
+  "captionEvidence": {
+    "text": "Actual source Whisper transcript corroborates local original script_approach2_rich_30s.md. Canonical display name 福ギュン; supplied later Studio prompt cast differs and was not used to invent source dialogue.",
+    "timing": "Whisper segment windows refined with source silencedetect -30dB d0.12; first speech .509s, second 8.18s, Yotan 15.44s, short response 16.74s, exclamation 26.1s, final line 27.56s.",
+    "asr": "../../group-b-critical-asr.json"
+  }
+}

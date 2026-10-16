@@ -1,0 +1,91 @@
+{
+  "slug": "droidkaigi-iosdc-after-monitor-game",
+  "title": "アフターイベント — モニターゲーム",
+  "titleLines": [
+    "アフターイベント",
+    "モニターゲーム"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 827,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/droidkaigi-iosdc-after-monitor-game/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/droidkaigi-iosdc-after-monitor-game/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 21,
+      "endFrame": 83,
+      "speaker": "おかやまん",
+      "text": "おかやまん！\n今日はお越しいただき\nありがとうございます！",
+      "sourceReference": "clip1_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 107,
+      "endFrame": 193,
+      "speaker": "おかやまん",
+      "text": "おかやまん！ここは\n窓際族の聖地！\n君も窓際を目指そう！",
+      "sourceReference": "clip2_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 203,
+      "endFrame": 298,
+      "speaker": "福ギュン",
+      "text": "違うわよ！今日はDroidKaigiと\niOSDCのアフターイベントよ！",
+      "sourceReference": "clip3_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 324,
+      "endFrame": 380,
+      "speaker": "福ギュン",
+      "text": "みんなで\nギュンギュンしちゃおう",
+      "sourceReference": "clip4_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 406,
+      "endFrame": 458,
+      "speaker": "やめ太郎",
+      "text": "ギュンギュンするって\nなんやねん",
+      "sourceReference": "clip5_line1_yametaro_h3pad.wav"
+    },
+    {
+      "startFrame": 473,
+      "endFrame": 532,
+      "speaker": "やめ太郎",
+      "text": "みんなでビール飲んで\n楽しめばいいんや",
+      "sourceReference": "clip6_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 571,
+      "endFrame": 592,
+      "speaker": "そば屋",
+      "text": "ビール！？",
+      "sourceReference": "clip7_line1_sobaya_h3pad.wav",
+      "timingEvidence": "source ASR window22s + silence detection -30dB 0.1sec"
+    },
+    {
+      "startFrame": 618,
+      "endFrame": 678,
+      "speaker": "そば屋",
+      "text": "ビールをよこせー！！！",
+      "sourceReference": "clip8_line1_sobaya_h3pad.wav",
+      "timingEvidence": "source ASR window22s + silence detection -30dB 0.1sec"
+    },
+    {
+      "startFrame": 715,
+      "endFrame": 779,
+      "speaker": "そば屋",
+      "text": "今日はみなさんに\nデスゲームをしてもらいます。",
+      "sourceReference": "clip9_line1_sobaya.wav",
+      "timingEvidence": "source ASR window22s + silence detection -30dB 0.1sec"
+    },
+    {
+      "startFrame": 792,
+      "endFrame": 824,
+      "speaker": "そば屋",
+      "text": "楽しんで帰ってください",
+      "sourceReference": "clip9_line1_sobaya.wav",
+      "timingEvidence": "source ASR window22s + silence detection -30dB 0.1sec"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "5319a1fa-289d-4dc8-af16-c2d508977a71"
+}

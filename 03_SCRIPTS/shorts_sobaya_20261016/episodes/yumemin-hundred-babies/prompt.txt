@@ -1,0 +1,257 @@
+# Seedance: Yumemin and One Hundred Babies
+
+Total duration: 23 seconds (4 clips)
+Aspect ratio: 16:9
+Genre: magical family-comedy slice of life
+Setting: Takosan and Yumemin's cozy, sunlit living room, converted into a cheerful nursery
+
+## Character references
+
+- Takosan: `Takosan_sheet.png` (bundled physical file; required for all clips)
+- Yumemin: `Yumemin_sheet.png` (bundled physical file; required for all clips and used as the design basis for every baby)
+- Relative scale: `height_lineup.png` (bundled physical file; required for all clips)
+
+## Story safety and visual rule
+
+Yumemin's delivery is a completely non-anatomical cartoon miracle: warm blue light, soft star-shaped sparkles, and harmless cottony puffs reveal the babies already resting safely in padded baskets. There is no anatomy, bodily fluid, pain, medical distress, nudity, or graphic imagery. The one hundred babies are miniature Yumemins: each keeps the blue round body, black dot eyes, flexible tapir-like nose, and white rear. No baby carries a mallet.
+
+## Dialogue audio
+
+There is no spoken dialogue or vocalization in this run. Attach `silence.wav` as the only audio input to every Seedance generation so that Seedance does not invent voices or narration. Add gentle instrumental music and soft nonverbal nursery ambience only during final CapCut assembly.
+
+## Prop state ledger
+
+| Prop / population | C1 start | C1 end = C2 start | C2 end = C3 start | C3 end = C4 start | C4 end |
+|---|---|---|---|---|---|
+| Adult Yumemin | Floating beside Takosan, relaxed, NO mallet | Curled comfortably on the center rug, glowing softly, NO mallet | Resting happily at center, healthy and calm, NO mallet | Hovering at center of the busy nursery, helping, NO mallet | Floating beside Takosan at the front of the family portrait, NO mallet |
+| Baby Yumemins | ZERO present | ZERO present | EXACTLY 100 safely revealed: ten padded round baskets, exactly ten babies in each basket | The SAME 100 babies spread among the ten baskets and a fenced play rug; none vanish or multiply | The SAME 100 babies gathered behind the adults in ten neat color-coded groups of ten |
+| Nursery baskets | Ten empty padded round baskets stacked neatly along the back wall | Ten empty baskets arranged in two rows of five around the rug | Same ten baskets, each containing exactly ten babies | Same ten baskets remain; several babies float between baskets and play rug | Same ten empty baskets arranged along the back wall after all babies gather for the portrait |
+| Baby supplies | One small folded blanket and two tiny bottles on a low shelf | Unchanged | Unchanged, still on shelf | Many additional blankets and bottles are visibly brought in and organized during Clip 3 | Organized on shelves; no loose clutter in front of the portrait |
+| Wooden mallets | None | None | None | None | None |
+
+Logical check: the baby population changes only once, on screen in Clip 2, through the explicitly shown harmless magical reveal. From that point onward the population remains exactly one hundred, organized as ten groups of ten. The number is reinforced with a CapCut text overlay rather than asking Seedance to render text. No baby is dropped, crushed, hidden in danger, or injured. Supply growth happens visibly in Clip 3 as Takosan and Yumemin carry items into the existing nursery.
+
+## Fixture layout
+
+No moving architectural fixtures appear. Keep doors, opening windows, drawers, cabinet handles, switches, and other moving fixtures out of frame in every keyframe and generated clip.
+
+## Clip 1 — A peaceful morning
+
+Duration: 5 seconds
+Speaker: none
+
+### First frame
+
+Wide locked shot of a cozy sunlit living room with warm wood, a round blue rug, low shelves, houseplants, and no visible doors or moving fixtures. Takosan — the small expressionless alien-like creature in a black hooded robe, with a flat white face, two black dot eyes, two human arms and six octopus tentacles instead of legs — sits at a low table, carefully pouring tea from a small teapot into one cup. Yumemin — the small knee-height floating blue tapir-like mascot with black dot eyes, a flexible trunk-like nose and a white rear, never speaking — floats peacefully beside the table, NO wooden mallet. Ten empty padded round nursery baskets are stacked neatly along the back wall. One folded blanket and two tiny bottles sit on a low shelf. Both characters are calm and their mouths are closed.
+
+### Last frame
+
+Same room, framing, lighting, identities, and supplies. The tea cup is full and the teapot rests upright on the table. Yumemin has floated down and curled comfortably at the center of the round rug, glowing with a faint warm blue halo. Takosan has turned toward Yumemin with quiet curiosity, still expressionless. The ten empty baskets are now arranged in two orderly rows of five around the rug. No babies are present yet.
+
+### Prop states
+
+- Tea: teapot held upright above empty cup → tea visibly poured until the cup is full; teapot returned upright to table.
+- Yumemin: floating peacefully, NO mallet → curled on rug, faint warm glow, NO mallet.
+- Nursery baskets: ten empty baskets stacked → the same ten empty baskets arranged as two rows of five.
+- Baby population: zero → zero.
+
+### CapCut inputs (Clip 1)
+
+- Start frame (Frame A): `clip1_start.png`
+- End frame (Frame B): `clip1_end.png`
+- Reference images:
+  - @Image1 = `Takosan_sheet.png` → Takosan — the small expressionless alien-like creature in a black hooded robe, with a flat white face, two black dot eyes, two human arms and six octopus tentacles instead of legs. Identity/design reference only, NOT composition.
+  - @Image2 = `Yumemin_sheet.png` → Yumemin — the small knee-height floating blue tapir-like mascot with black dot eyes, a flexible trunk-like nose and a white rear, never speaking, sometimes holding a small wooden mallet. Identity/design reference only, NOT composition; NO mallet in this story.
+  - @Image3 = `height_lineup.png` → relative body scale only, NOT composition.
+- Audio: `silence.wav` — attach as the only audio input; do not generate sound.
+- Duration: 5s / Aspect: 16:9
+- Motion prompt:
+
+```text
+Required attached reference files: @Image1 = Takosan_sheet.png — Takosan's character model sheet, identity/design reference only, NOT a composition reference; @Image2 = Yumemin_sheet.png — Yumemin's character model sheet and the design basis for the babies, identity/design reference only, NOT a composition reference; @Image3 = height_lineup.png — relative height/scale reference only, NOT a composition reference. These reference attachments are REQUIRED inputs and must remain attached for this generation.
+Create a gentle Japanese family-comedy shot moving exactly from Frame A to Frame B in the identical cozy sunlit living room. Takosan (@Image1, Takosan — the small expressionless alien-like creature in a black hooded robe, with a flat white face, two black dot eyes, two human arms and six octopus tentacles instead of legs) uses exactly two human arms to tilt the teapot, visibly pours tea into the EMPTY cup until it is FULL, returns the teapot upright to the low table, and then turns toward Yumemin. Keep exactly two human arms and exactly six octopus tentacles; the robe, flat white face, and dot eyes do not change. Yumemin (@Image2, Yumemin — the small knee-height floating blue tapir-like mascot with black dot eyes, a flexible trunk-like nose and a white rear, never speaking, sometimes holding a small wooden mallet) has NO mallet, bobs peacefully, floats down to the center rug, curls comfortably, and begins glowing with a faint warm blue halo. During the same visible motion, Takosan gently slides the same ten EMPTY padded baskets from the stack into two orderly rows of five around the rug; no basket appears or disappears. ZERO babies are present throughout this clip. The folded blanket and two tiny bottles remain on the shelf unchanged. No one speaks; mouths stay CLOSED. Use silence.wav AS-IS and do NOT generate any voice, narration, dialogue, music, or sound effect. @Image3 controls relative scale only. Preserve all required character designs. The reference sheets' labels must NOT appear. No subtitles, text, logos, watermark, extra characters, extra limbs, baby, pregnancy anatomy, pain, distress, injury, dark mood, or moving architectural fixture.
+```
+
+## Clip 2 — The magical arrival of one hundred babies
+
+Duration: 6 seconds
+Speaker: none
+
+### First frame
+
+Use `clip1_end.png` unchanged. Yumemin rests at the center of the rug with a faint warm blue halo. Takosan watches nearby. Ten empty padded baskets form two rows of five. There are zero babies.
+
+### Last frame
+
+Same room, camera, lighting, identities, and basket positions. A harmless burst of soft blue light and cottony star-shaped puffs has cleared. Adult Yumemin rests happily and safely at center with no mallet and no distress. Exactly one hundred miniature baby Yumemins are safely nested in the same ten baskets, exactly ten babies per basket. Each baby has a tiny blue round body, black dot eyes, a flexible tapir-like nose, and a white rear; no mallets. Takosan raises both human hands in silent astonishment while all six tentacles remain visible and grounded.
+
+### Prop states
+
+- Adult Yumemin: faint glow, calm → glow fades, healthy and happy, no pain or injury.
+- Baby population: zero → exactly 100, revealed safely as ten babies in each of ten baskets.
+- Baskets: ten empty baskets → same ten baskets, each holding exactly ten babies.
+- Supplies: unchanged on shelf → unchanged on shelf.
+
+### CapCut inputs (Clip 2)
+
+- Start frame (Frame A): `clip1_end.png` (shared boundary; do not regenerate)
+- End frame (Frame B): `clip2_end.png`
+- Reference images:
+  - @Image1 = `Takosan_sheet.png` → Takosan identity/design reference only, NOT composition.
+  - @Image2 = `Yumemin_sheet.png` → adult Yumemin and every baby Yumemin identity/design reference only, NOT composition; NO mallets.
+  - @Image3 = `height_lineup.png` → adult relative scale only, NOT composition; each baby is approximately one-third adult Yumemin's size.
+- Audio: `silence.wav` — attach as the only audio input; do not generate sound.
+- Duration: 6s / Aspect: 16:9
+- CapCut overlay (add after generation, not inside Seedance): `赤ちゃんゆめみん 100匹誕生！`
+- Motion prompt:
+
+```text
+Required attached reference files: @Image1 = Takosan_sheet.png — Takosan's character model sheet, identity/design reference only, NOT a composition reference; @Image2 = Yumemin_sheet.png — adult Yumemin's character model sheet and the mandatory identity/design basis for every baby Yumemin, NOT a composition reference; @Image3 = height_lineup.png — adult relative height/scale reference only, NOT a composition reference. These reference attachments are REQUIRED inputs and must remain attached for this generation.
+Continue seamlessly from Frame A to Frame B in the identical cozy living room. Stage a completely non-anatomical cartoon miracle. Adult Yumemin (@Image2, Yumemin — the small knee-height floating blue tapir-like mascot with black dot eyes, a flexible trunk-like nose and a white rear, never speaking, sometimes holding a small wooden mallet) remains safely curled on the center rug with NO mallet. The faint halo brightens into warm blue light; soft cottony star-shaped puffs swirl above the ten EMPTY padded baskets. One by one in a quick cheerful rhythm, miniature baby Yumemins are revealed already resting safely inside the baskets. End with EXACTLY ONE HUNDRED babies organized as ten baskets with exactly ten babies in each basket. Every baby is approximately one-third the adult's size and preserves the blue round body, two black dot eyes, one flexible tapir-like nose, and white rear from @Image2; no baby has a mallet, duplicated face, extra nose, extra eye, or malformed body. The adult remains healthy, calm, smiling through body language, and entirely unhurt. Takosan (@Image1, Takosan — the small expressionless alien-like creature in a black hooded robe, with a flat white face, two black dot eyes, two human arms and six octopus tentacles instead of legs) watches, then raises exactly two human hands in silent astonishment while exactly six tentacles remain grounded. This is magical emergence only: NO pregnancy anatomy, labor, medical procedure, nudity, bodily fluid, pain, crying, panic, distress, injury, or graphic imagery. No one speaks; mouths stay CLOSED. Use silence.wav AS-IS and do NOT generate any voice, narration, dialogue, music, or sound effect. Do not render the number or any text; the “100 babies” title will be added later in CapCut. The reference sheets' labels must NOT appear. No subtitles, text, logos, watermark, extra adult characters, dark mood, or moving architectural fixture.
+```
+
+## Clip 3 — The happiest hectic nursery
+
+Duration: 6 seconds
+Speaker: none
+
+### First frame
+
+Use `clip2_end.png` unchanged. The same one hundred babies fill ten baskets in ten groups of ten. Adult Yumemin rests at center. Takosan holds both hands up. Supplies remain sparse on the shelf.
+
+### Last frame
+
+Same room and identities, now cheerfully busy. The same one hundred babies are distributed between the ten color-coded baskets and a soft fenced play rug; none have vanished or multiplied. Several float gently at different heights while others nap or play. Takosan uses exactly two human arms and six tentacles to organize folded blankets, line up bottles, rock two baskets, and catch one gently floating baby without changing anatomy. Adult Yumemin hovers at center, using the flexible nose to tuck a tiny blanket around one baby. Shelves are now fully stocked and organized.
+
+### Prop states
+
+- Baby population: same exact 100 in baskets → same exact 100 across baskets and fenced rug; none appear or disappear.
+- Baskets: ten filled baskets → same ten baskets, several rocking gently, all stable.
+- Supplies: one blanket and two bottles → many blankets and bottles visibly carried in and organized.
+- Adult Yumemin: resting → hovering and gently tucking a blanket with the nose.
+
+### CapCut inputs (Clip 3)
+
+- Start frame (Frame A): `clip2_end.png` (shared boundary; do not regenerate)
+- End frame (Frame B): `clip3_end.png`
+- Reference images:
+  - @Image1 = `Takosan_sheet.png` → Takosan identity/design reference only, NOT composition.
+  - @Image2 = `Yumemin_sheet.png` → adult and baby Yumemin identity/design reference only, NOT composition; NO mallets.
+  - @Image3 = `height_lineup.png` → adult relative scale only, NOT composition.
+- Audio: `silence.wav` — attach as the only audio input; do not generate sound.
+- Duration: 6s / Aspect: 16:9
+- Motion prompt:
+
+```text
+Required attached reference files: @Image1 = Takosan_sheet.png — Takosan's character model sheet, identity/design reference only, NOT a composition reference; @Image2 = Yumemin_sheet.png — adult Yumemin's character model sheet and the mandatory identity/design basis for every baby Yumemin, NOT a composition reference; @Image3 = height_lineup.png — adult relative height/scale reference only, NOT a composition reference. These reference attachments are REQUIRED inputs and must remain attached for this generation.
+Continue seamlessly from Frame A to Frame B as a fast, warm nursery-comedy montage within one locked wide shot. Preserve the SAME EXACT ONE HUNDRED baby Yumemins from Frame A; none appear, vanish, merge, split, or change identity. The babies move gently from the ten padded baskets onto a soft fenced play rug while remaining visually organized as ten color-coded groups of ten. Some bob a few centimeters, some nap, and some play nose-to-nose; every baby retains one tiny blue round body, two black dot eyes, one flexible tapir-like nose, and one white rear from @Image2, with NO mallet. Takosan (@Image1, Takosan — the small expressionless alien-like creature in a black hooded robe, with a flat white face, two black dot eyes, two human arms and six octopus tentacles instead of legs) visibly carries additional folded blankets and bottles into frame, then uses exactly two human arms and exactly six tentacles to organize supplies, gently rock two stable baskets, and safely catch one slowly floating baby. No extra arms or tentacles appear. Adult Yumemin (@Image2, Yumemin — the small knee-height floating blue tapir-like mascot with black dot eyes, a flexible trunk-like nose and a white rear, never speaking, sometimes holding a small wooden mallet) has NO mallet, hovers at center, and uses the flexible nose to tuck a tiny blanket around one baby. The workload is comically large but everyone remains delighted, affectionate, safe, and energetic. No one speaks; mouths stay CLOSED. Use silence.wav AS-IS and do NOT generate any voice, narration, dialogue, music, or sound effect. The reference sheets' labels must NOT appear. No subtitles, text, logos, watermark, extra adults, duplicated anatomy, dropped baby, rough handling, crying, fear, pain, injury, dark mood, or moving architectural fixture.
+```
+
+## Clip 4 — One big happy family
+
+Duration: 6 seconds
+Speaker: none
+
+### First frame
+
+Use `clip3_end.png` unchanged. The nursery is happily busy, with the same one hundred babies in ten color-coded groups, organized supplies, adult Yumemin helping, and Takosan multitasking safely.
+
+### Last frame
+
+Same room transformed into a tidy family portrait. Takosan and adult Yumemin float side by side at the front, touching one human hand and the flexible nose in a gentle family gesture. Behind them, the same one hundred baby Yumemins form ten neat color-coded groups of ten on the round rug, all safe and cheerful. The ten empty baskets line the back wall and the supplies are organized on shelves. Warm sunset light and tiny paper decorations make the room festive. Everyone is clearly happy together.
+
+### Prop states
+
+- Baby population: same exact 100 in nursery activity → same exact 100 in ten neat groups of ten.
+- Baskets: same ten in use → same ten empty baskets arranged along back wall after babies visibly gather.
+- Supplies: fully stocked, organized → unchanged on shelves.
+- Adult Yumemin and Takosan: caring for babies → side by side at front of portrait.
+
+### CapCut inputs (Clip 4)
+
+- Start frame (Frame A): `clip3_end.png` (shared boundary; do not regenerate)
+- End frame (Frame B): `clip4_end.png`
+- Reference images:
+  - @Image1 = `Takosan_sheet.png` → Takosan identity/design reference only, NOT composition.
+  - @Image2 = `Yumemin_sheet.png` → adult and baby Yumemin identity/design reference only, NOT composition; NO mallets.
+  - @Image3 = `height_lineup.png` → adult relative scale only, NOT composition.
+- Audio: `silence.wav` — attach as the only audio input; do not generate sound.
+- Duration: 6s / Aspect: 16:9
+- CapCut overlay (final two seconds): `たいへんだけど、しあわせ100倍。`
+- Motion prompt:
+
+```text
+Required attached reference files: @Image1 = Takosan_sheet.png — Takosan's character model sheet, identity/design reference only, NOT a composition reference; @Image2 = Yumemin_sheet.png — adult Yumemin's character model sheet and the mandatory identity/design basis for every baby Yumemin, NOT a composition reference; @Image3 = height_lineup.png — adult relative height/scale reference only, NOT a composition reference. These reference attachments are REQUIRED inputs and must remain attached for this generation.
+Continue in the identical cozy nursery from Frame A to Frame B. Preserve the SAME EXACT ONE HUNDRED baby Yumemins; none appear, vanish, merge, split, or change identity. In a cheerful coordinated motion, the babies gently bob from the ten baskets and fenced play area toward the round rug, settling into ten neat color-coded groups of exactly ten. Every baby preserves one tiny blue round body, two black dot eyes, one flexible tapir-like nose, and one white rear from @Image2; NO baby carries a mallet. The same ten baskets become empty only because every baby visibly leaves them, and Takosan slides the empty baskets into one tidy row along the back wall. Takosan (@Image1, Takosan — the small expressionless alien-like creature in a black hooded robe, with a flat white face, two black dot eyes, two human arms and six octopus tentacles instead of legs) moves to the front using exactly two human arms and exactly six tentacles. Adult Yumemin (@Image2, Yumemin — the small knee-height floating blue tapir-like mascot with black dot eyes, a flexible trunk-like nose and a white rear, never speaking, sometimes holding a small wooden mallet) has NO mallet and floats beside Takosan. At Frame B, Takosan gently touches one human hand to Yumemin's flexible nose in an affectionate family gesture while the ten groups of ten babies pose behind them. Warm sunset light fills the room and simple paper decorations sway slightly. Everyone is delighted and safe. No one speaks; mouths stay CLOSED. Use silence.wav AS-IS and do NOT generate any voice, narration, dialogue, music, or sound effect. Do not render caption text; the closing line will be added later with CapCut's text tool. The reference sheets' labels must NOT appear. No subtitles, text, logos, watermark, extra adults, duplicated anatomy, missing baby, crying, fear, pain, injury, dark mood, or moving architectural fixture.
+```
+
+## Keyframe generation prompts
+
+### `clip1_start.png`
+
+```text
+Required input images: Image 1 = Takosan_sheet.png — Takosan identity/design reference only; Image 2 = Yumemin_sheet.png — Yumemin identity/design reference only; Image 3 = height_lineup.png — relative adult scale only. Create the FIRST-FRAME still of a 16:9 warm Japanese anime family comedy in a cozy sunlit living room with warm wood, a round blue rug, low shelves, houseplants, and NO visible door, moving window, drawer, handle, or switch. Takosan from Image 1 sits at a low table and uses exactly two human arms to hold a small teapot upright above one EMPTY cup; preserve the black hooded robe, flat white face, two dot eyes, and exactly six octopus tentacles. Yumemin from Image 2 floats peacefully beside the table with NO wooden mallet; preserve the round blue body, black dot eyes, one flexible tapir-like nose, and white rear. Ten EMPTY padded round nursery baskets are stacked neatly along the back wall. One folded blanket and exactly two tiny bottles sit on a low shelf. ZERO babies are present. Both mouths CLOSED. Polished expressive anime illustration, warm morning light, no text, labels, logo, subtitle, or watermark.
+```
+
+### `clip1_end.png` (also Clip 2 Frame A)
+
+```text
+Required input images: Image 1 = clip1_start.png — previous frame and composition lock; Image 2 = Takosan_sheet.png — Takosan identity/design reference only; Image 3 = Yumemin_sheet.png — Yumemin identity/design reference only; Image 4 = height_lineup.png — relative adult scale only. Create the LAST-FRAME still of the SAME shot. Preserve Image 1's exact room, framing, art style, lighting, identities, shelf supplies and all objects. The cup is now FULL and the teapot rests upright on the table. Yumemin, with NO mallet, is curled comfortably at the center of the round rug and glows with a faint warm blue halo. Takosan has turned toward Yumemin with both hands lowered, exactly two human arms and exactly six tentacles visible. The same ten EMPTY baskets are arranged in two orderly rows of five around the rug. ZERO babies are present. Both mouths CLOSED. No text, labels, logo, subtitle, watermark, pain, distress, anatomy, or extra character.
+```
+
+### `clip2_end.png` (also Clip 3 Frame A)
+
+```text
+Required input images: Image 1 = clip1_end.png — previous frame and composition lock; Image 2 = Takosan_sheet.png — Takosan identity/design reference only; Image 3 = Yumemin_sheet.png — adult and baby Yumemin identity/design reference only; Image 4 = height_lineup.png — relative adult scale only. Create the LAST-FRAME still of the SAME room after a harmless magical cartoon reveal. Preserve exact framing, lighting, furniture, ten basket positions, Takosan, and adult Yumemin. Soft blue light and a few cottony star-shaped puffs fade in the air. Adult Yumemin rests happily and safely at center with NO mallet, no pain, and no injury. Show EXACTLY ONE HUNDRED miniature baby Yumemins safely nested as exactly ten babies in each of the ten baskets. Every baby is one-third adult Yumemin's size and preserves a tiny round blue body, two black dot eyes, one flexible tapir-like nose, and one white rear; NO mallets, no malformed or merged bodies. Takosan raises exactly two human hands in silent astonishment; exactly six tentacles remain visible and grounded. Completely non-anatomical magic: no pregnancy anatomy, labor, medical scene, nudity, bodily fluid, pain, or distress. No text, number, labels, logo, subtitle, or watermark.
+```
+
+### `clip3_end.png` (also Clip 4 Frame A)
+
+```text
+Required input images: Image 1 = clip2_end.png — previous frame and composition lock; Image 2 = Takosan_sheet.png — Takosan identity/design reference only; Image 3 = Yumemin_sheet.png — adult and baby Yumemin identity/design reference only; Image 4 = height_lineup.png — relative adult scale only. Create the LAST-FRAME still of the SAME cozy room, framing, art style, and character identities, now a cheerful busy nursery. Preserve the SAME ONE HUNDRED babies from Image 1, arranged visibly as ten color-coded groups of ten between the same ten padded baskets and a soft fenced play rug. Some gently float, some nap, some play nose-to-nose; all have the correct miniature blue body, two dot eyes, single flexible nose, white rear, and NO mallet. Takosan keeps exactly two human arms and exactly six tentacles while organizing folded blankets and lined-up bottles, rocking two stable baskets, and safely supporting one slowly floating baby. Adult Yumemin, NO mallet, hovers at center and tucks one tiny blanket with the flexible nose. Shelves are fully stocked and orderly. Everyone looks delighted and safe. No dropped baby, extra limbs, tears, distress, text, labels, logo, subtitle, or watermark.
+```
+
+### `clip4_end.png`
+
+```text
+Required input images: Image 1 = clip3_end.png — previous frame and composition lock; Image 2 = Takosan_sheet.png — Takosan identity/design reference only; Image 3 = Yumemin_sheet.png — adult and baby Yumemin identity/design reference only; Image 4 = height_lineup.png — relative adult scale only. Create the LAST-FRAME still of the SAME room as a tidy warm family portrait at sunset. Preserve all identities and the SAME EXACT ONE HUNDRED babies, now organized clearly as ten neat color-coded groups of exactly ten on the round rug behind the adults. Every baby has one tiny blue round body, two black dot eyes, one flexible tapir-like nose, one white rear, and NO mallet. The same ten EMPTY baskets line the back wall; organized supplies remain on shelves. Takosan stands at front with exactly two human arms and exactly six tentacles, gently touching one hand to adult Yumemin's flexible nose. Adult Yumemin floats beside Takosan with NO mallet. Simple paper decorations and warm sunset light create a festive, affectionate family-comedy ending. Everyone is happy and safe. No missing or extra baby, duplicated anatomy, crying, fear, text, labels, logo, subtitle, or watermark.
+```
+
+## Population-count verification note
+
+Generative video models may not preserve an exact count of one hundred small characters across every intermediate frame. The production truth is always **100 babies**, organized as ten groups of ten at the end-state keyframes. During CapCut assembly, add the exact overlay `赤ちゃんゆめみん 100匹誕生！` after Clip 2 and reject any generated clip that visibly depicts a much smaller crowd, a changing population, merged bodies, or babies that do not match Yumemin's design. If Seedance cannot maintain the crowd, keep the wide crowd portions short and cover transitions with close inserts of the color-coded groups; do not change the canonical count.
+
+## Generation & assembly protocol (REQUIRED — read before generating anything in CapCut)
+
+### Step 1 — Pilot clip first (batch generation is FORBIDDEN until the pilot passes)
+Generate ONLY Clip 1, then verify ALL of the following before touching any other clip:
+- [ ] The dialogue audio in the output is the attached wav AS-IS (no synthesized voice, no doubled voices)
+- [ ] The CORRECT character lip-syncs to each line (the speaker named in the prompt moves their mouth; every non-speaker's mouth stays closed)
+- [ ] Mouth motion starts and ends WITH the audio: the speaker's mouth starts moving when the line starts and stays CLOSED after the line ends (no lip-flap during silence)
+- [ ] Motion, poses and prop states match the Motion prompt and the Prop state ledger
+- [ ] Hinges, handles and other fixture hardware stay on the edges given in the Fixture layout table in EVERY frame (handles never disappear, jump to the hinge side, or duplicate — especially when a door finishes closing)
+- [ ] The clip duration equals the Duration specified in the CapCut inputs table (NOT the ~8s default)
+If any check fails, fix the inputs/prompt and regenerate Clip 1 until all pass.
+Only then generate the remaining clips, and re-run at least the audio + duration checks on every clip.
+
+### Step 2 — Prompts are verbatim
+Paste each clip's Motion prompt into CapCut EXACTLY as written in this file.
+Do NOT summarize, shorten, or paraphrase it. If it seems too long, do not compress it —
+go back to the script and split the clip instead.
+
+### Step 3 — Final audio track (assembly)
+The audio embedded in the generated clips is NOT the final audio, even when the wav was
+attached at generation time. When assembling the final video on the CapCut timeline:
+1. Mute (or delete) the audio embedded in every generated clip.
+2. Lay the original wav files from the Dialogue audio table onto the timeline as the
+   final dialogue track. Align each wav to the VIDEO's mouth movement, NOT to the clip
+   boundary: nudge the wav until the speech onset lands on the frame where the speaker's
+   mouth starts moving.
+3. Play back the full timeline before export and confirm every line sounds exactly like
+   the local VOICEVOX / Irodori-TTS takes (the source wavs are the single source of truth).
+
+For this silent run, mute all generated clip audio, keep `silence.wav` only as the generation constraint, and add the final instrumental music/soft nursery ambience manually in CapCut. Do not add spoken narration.
+
+## Credits
+
+No VOICEVOX voice is used in this run, so no VOICEVOX on-screen credit is required. Add music and sound-effect credits in CapCut if the chosen final audio assets require attribution.

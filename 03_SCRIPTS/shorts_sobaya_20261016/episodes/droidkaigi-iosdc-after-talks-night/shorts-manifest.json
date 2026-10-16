@@ -1,0 +1,103 @@
+{
+  "slug": "droidkaigi-iosdc-after-talks-night",
+  "title": "DroidKaigi & iOSDC アフタートークナイト",
+  "titleLines": [
+    "DroidKaigi & iOSDC",
+    "アフタートークナイト"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 1267,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/droidkaigi-iosdc-after-talks-night/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/droidkaigi-iosdc-after-talks-night/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 5,
+      "endFrame": 209,
+      "speaker": "福ギュン",
+      "text": "DroidKaigi & iOSDC\nAfter Talks Night 2026に\nお越し頂きありがギュン",
+      "sourceReference": "clip1_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 229,
+      "endFrame": 310,
+      "speaker": "やめ太郎",
+      "text": "モバイル開発者が集まる機会\n減ってきてるから\n嬉しいやで〜",
+      "sourceReference": "clip2_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 343,
+      "endFrame": 455,
+      "speaker": "福ギュン",
+      "text": "ねぇねぇやめちゃん、うちの\n会社って今モバイル系の\n採用しているの？",
+      "sourceReference": "clip3_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 476,
+      "endFrame": 541,
+      "speaker": "やめ太郎",
+      "text": "わいもモバイルじゃないから\n分からないやで〜",
+      "sourceReference": "clip4_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 588,
+      "endFrame": 620,
+      "speaker": "福ギュン",
+      "text": "それもそうね",
+      "sourceReference": "clip5_line1_fukuchan_h3pad.wav"
+    },
+    {
+      "startFrame": 673,
+      "endFrame": 722,
+      "speaker": "福ギュン",
+      "text": "窓際王、どうなの？",
+      "sourceReference": "clip6_line1_fukuchan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 742,
+      "endFrame": 814,
+      "speaker": "おかやまん",
+      "text": "おかやまん！本日はお越し頂き\n大変驚いております！",
+      "sourceReference": "clip7_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 839,
+      "endFrame": 925,
+      "speaker": "おかやまん",
+      "text": "おかやまん！弊社でも\nモバイル系の採用はしているので\n大変驚いております！",
+      "sourceReference": "clip8_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 932,
+      "endFrame": 993,
+      "speaker": "やめ太郎",
+      "text": "募集してるらしいやで〜",
+      "sourceReference": "clip9_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 1019,
+      "endFrame": 1079,
+      "speaker": "福ギュン",
+      "text": "じゃあ、AIを用意して\n応募するギュン",
+      "sourceReference": "clip10_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 1111,
+      "endFrame": 1173,
+      "speaker": "やめ太郎",
+      "text": "本人が受けてくれやで〜",
+      "sourceReference": "clip11_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 1206,
+      "endFrame": 1264,
+      "speaker": "よーたん",
+      "text": "AIじゃなくて本人が\n応募してくれよな！",
+      "sourceReference": "clip12_line1_yotan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "71c81d24-7c45-4f4c-9d05-48c5aa90879f"
+}

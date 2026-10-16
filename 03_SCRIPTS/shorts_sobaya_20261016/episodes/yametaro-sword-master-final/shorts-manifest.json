@@ -1,0 +1,76 @@
+{
+  "slug": "yametaro-sword-master-final",
+  "title": "剣聖やめ太郎 — 最終話",
+  "titleLines": [
+    "剣聖やめ太郎",
+    "最終話"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 1121,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-sword-master-final/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-sword-master-final/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 168,
+      "endFrame": 194,
+      "speaker": "とーくん",
+      "text": "窓際の面汚しよ！",
+      "sourceReference": "clip2_line1_tokun_h3pad.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 208,
+      "endFrame": 315,
+      "speaker": "よーたん",
+      "text": "やつは窓際十人衆\n（Windows 10）の中でも\n最弱……",
+      "sourceReference": "clip3_line1_yotan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 465,
+      "endFrame": 549,
+      "speaker": "やめ太郎",
+      "text": "よし！\nあとはおかやまんだけや！",
+      "sourceReference": "clip5_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 590,
+      "endFrame": 661,
+      "speaker": "おかやまん",
+      "text": "残りのメンバーは承認待ちで\n戦えないぞー！",
+      "sourceReference": "clip6_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 683,
+      "endFrame": 763,
+      "speaker": "やめ太郎",
+      "text": "そうか！ならお前だけやな！",
+      "sourceReference": "clip7_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 813,
+      "endFrame": 876,
+      "speaker": "やめ太郎",
+      "text": "うおおお！炎上案剣！！",
+      "sourceReference": "clip8_line1_yametaro.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 929,
+      "endFrame": 978,
+      "speaker": "おかやまん",
+      "text": "大変驚いておりますー！！",
+      "sourceReference": "clip9_line1_okayaman_h3pad.wav"
+    },
+    {
+      "startFrame": 1000,
+      "endFrame": 1084,
+      "speaker": "やめ太郎",
+      "text": "勝った……！ワイらの勝利や！",
+      "sourceReference": "clip10_line1_yametaro.wav"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "2e1cc059-2a4b-41c5-904e-4c4eb5ec94e3"
+}

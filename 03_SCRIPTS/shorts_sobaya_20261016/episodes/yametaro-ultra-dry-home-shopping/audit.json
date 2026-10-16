@@ -1,0 +1,49 @@
+{
+  "manifestSha256": "caaf8ffb33c69ebd639fdec127f77613f76135f4082655e0f51706fad9da7d62",
+  "slug": "yametaro-ultra-dry-home-shopping",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-ultra-dry-home-shopping/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 2191,
+  "outputFrames": 2191,
+  "durationSeconds": 91.344,
+  "sourceAudioBitstreamHash": "SHA256=0b33d4c2ee136d921fdb22621e7b19fe7ddf3584cff10475a7b117e798e615e6",
+  "outputAudioBitstreamHash": "SHA256=0b33d4c2ee136d921fdb22621e7b19fe7ddf3584cff10475a7b117e798e615e6",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 15,
+  "sampleFrames": [
+    0,
+    45,
+    248,
+    329,
+    375,
+    458,
+    547,
+    957,
+    1061,
+    1095,
+    1116,
+    1190,
+    1246,
+    1643,
+    1792,
+    1916,
+    1988,
+    2079,
+    2124,
+    2190
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-ultra-dry-home-shopping/qa/contact-1.jpg",
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-ultra-dry-home-shopping/qa/contact-2.jpg"
+  ],
+  "outputSha256": "67cbf6d10bb176611f373b0e968f919ebee28f6353bce3a45046db272b97309f",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "visualReviewNotes": "All 15 caption midpoint frames plus representative/boundary frames visually inspected across two contact sheets. Product name wraps within three lines, historical spoken name preserved, 6-can/1500-yen offer legible, final product shot retained. All 2191 frames and original audio preserved. Approximate chapter11/12 subphrase timings documented in manifest."
+}

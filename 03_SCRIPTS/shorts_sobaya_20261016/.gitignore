@@ -1,0 +1,12 @@
+# Downloaded source media, reference-only matching inputs, and render caches.
+episodes/*/reference_audio/
+remotion/node_modules
+remotion/out/
+*.log
+episodes/*/*.jpg
+episodes/*/asr*.json
+episodes/*/audit-asr*.json
+episodes/*/review-*.json
+episodes/*/qa_frames/
+group-b-critical-asr.json
+youtube_uploads/

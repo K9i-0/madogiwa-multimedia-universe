@@ -1,0 +1,17 @@
+{
+  "slug": "sobaya-bungee-app",
+  "generationId": "f636d72c-9000-4c41-8bc6-1ec86fb44fc3",
+  "generationVersion": 1,
+  "videoId": "c305cf1d-b231-42a9-be10-694e677d9488",
+  "r2Key": "episodes/1ab48e99-e32f-406d-ba45-870a35a1b4da/generations/f636d72c-9000-4c41-8bc6-1ec86fb44fc3/videos/c305cf1d-b231-42a9-be10-694e677d9488/105_sobaya_android_bungee_app_final.mp4",
+  "youtubeId": "eb-Z8WXi_a4",
+  "youtubeDuration": "PT29S",
+  "probe": {
+    "fps": 24.0,
+    "frames": 671,
+    "width": 1344,
+    "height": 768,
+    "duration": 28.010667
+  },
+  "notes": "/no-image-video ワークフロー。キーフレームは一切生成せず、キャラクターシート＋セリフ音声だけをR2Vへ渡した5チャプター（141/124/124/158/124フレーム、合計671f＝27.96秒、1344x768・24fps）。そば屋はこの回だけのALT DESIGN v3シートを使用（マゼンタの五芒星＋紫の涙、逆立った紫ハイライトのたてがみ、トランプ4枚の扇。正典のNG変更＝白い仮面・大ジョッキ・グレーの肌・白T＋黒ジーンズ＋白スニーカーは維持）。両キャラとも3Dデザインのため、画風は実写ライブアクションではなくシネマティック3D CGで統一した。height_lineup.pngは正典デザインの平面イラストで画風が衝突するため同梱せず、身長差は文章で担保。セリフ音声はIrodori-TTS v4-Largeの等速テイク（そば屋はsobaya_monsterize.shでモンスター加工）。最終結合はffmpeg concatではなくRemotionで、会話字幕を焼き込み（そば屋の話者名は画面上「ヒソバ」、セリフ末尾にトランプのスート Ch1=♠ / Ch4=♥）。H3の埋め込み音声をそのまま使用。VOICEVOX不使用のためクレジット義務なし。"
+}

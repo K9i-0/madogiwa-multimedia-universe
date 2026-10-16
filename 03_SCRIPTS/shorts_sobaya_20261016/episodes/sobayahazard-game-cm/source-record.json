@@ -1,0 +1,17 @@
+{
+  "slug": "sobayahazard-game-cm",
+  "generationId": "7cd701e0-a973-4cb0-9954-8391d5cf7e2e",
+  "generationVersion": 1,
+  "videoId": "5122c3a9-665d-4e63-9ad4-b7717e88dce3",
+  "r2Key": "episodes/ccf73d98-8577-4682-af29-a950456d7029/generations/7cd701e0-a973-4cb0-9954-8391d5cf7e2e/videos/5122c3a9-665d-4e63-9ad4-b7717e88dce3/final.mp4",
+  "youtubeId": "rCCLSWKwQu0",
+  "youtubeDuration": "PT18S",
+  "probe": {
+    "fps": 24.0,
+    "frames": 408,
+    "width": 1344,
+    "height": 768,
+    "duration": 17.032
+  },
+  "notes": "24fpsで4チャプター各90フレーム（3.75秒）を生成し、合計15.0秒。ch1とch4がR2V（福ちゃんのセリフをwav駆動でリップシンク）、ch2とch3がI2V（環境音のみ）。結合時に`package_keyart.png`へタイトル「SOBAYAHAZARD」「近日発売」「ビールを注げ。こぼしたら、逃げろ。」をPILで焼き込んだ2秒のパッケージ広告カードを末尾に追加し、最終17.03秒とした（ffmpegのdrawtextフィルタが当該ビルドに無かったためPILで代替。カードの無音トラックはH3チャプターと同じ32kHzに合わせ、-c copy結合での音ズレを回避した）。ビール残量の台帳（満タン→約55%→約35%）と仮面の色遷移（白→こぼした瞬間に赤）を全チャプターで固定し、流血・残酷描写・捕獲は排している。"
+}

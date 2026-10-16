@@ -1,0 +1,25 @@
+{
+  "outputSha256": "c28c92c01ab374c452ae46a64aa24adf06dfe92071cd345328981b95881a8b30",
+  "manifestSha256": "7178880e34cbc452d62ae5f500101709983715eb8783f3fa7f9cf204f54d685f",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "frameCount": 700,
+  "expectedFrameCount": 700,
+  "fullDecodePassed": true,
+  "decodeWarnings": "",
+  "sourceAudioStreamHash": "SHA256=a4d3457abb53dacee12dbdc5930c4a6b0f0919bbc77ef3e3513d287784268d88",
+  "outputAudioStreamHash": "SHA256=a4d3457abb53dacee12dbdc5930c4a6b0f0919bbc77ef3e3513d287784268d88",
+  "audioBitstreamPreserved": true,
+  "sampledFrames": [
+    0,
+    175,
+    350,
+    525,
+    699
+  ],
+  "visualReview": "Passed: first, quarter, midpoint, three-quarter, final frames inspected; no dialogue by prompt; all source framing retained, no clipping or end credits.",
+  "listeningReview": "Not a full human listening pass; captions checked against Studio prompt, referenced adopted WAV, numerical audio alignment and targeted ASR."
+}

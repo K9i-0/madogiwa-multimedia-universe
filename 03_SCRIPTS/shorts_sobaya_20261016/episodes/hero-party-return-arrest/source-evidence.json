@@ -1,0 +1,115 @@
+{
+  "episode": {
+    "id": "a293fd0e-92dc-4a91-99df-adad500e9708",
+    "slug": "hero-party-return-arrest",
+    "episode_number": null,
+    "title": "勇者一行の帰還",
+    "summary": "窓王（まおう）を倒した勇者一行が、青空の王都へ帰ってくる約78秒のコメディ。そば屋、福ギュン、やめ太郎、たこさんが旅を振り返るうち、やめ太郎の「ところでワイらなんで魔王おかやまんと戦ったんだっけ？」に福ギュンが「そば屋が酔って暴れただけギュン」と即答。直後にパトカーが到着し、そば屋はジョッキを持ったまま素直に連行されていく。暴力も陰惨さもない穏やかなオチとして描いた。キーフレーム画像を一切作らず、キャラクターシートとセリフ音声だけをMiniMax H3のR2Vへ渡す「画像なし」方式で13チャプターを生成。そば屋は今回だけツインテール・尖り耳版のシートを正典に使った。セリフはIrodori-TTSのボイスクローン（そば屋はモンスターボイス加工）とVOICEVOX、ナレーション・字幕・クレジットはRemotionで後載せしている。",
+    "status": "published",
+    "created_at": "2026-10-06T23:05:01.221Z",
+    "updated_at": "2026-10-06T23:10:01.139Z",
+    "published_at": "2026-10-06T23:05:01.221Z",
+    "studio_id": "MS-FX6T9EPQ",
+    "display_order": -1,
+    "representative_video_id": null,
+    "content_kind": "story",
+    "production_notes_enabled": 1
+  },
+  "generation": {
+    "id": "e8a76cd8-222b-4722-a97e-d21a365a5699",
+    "version": 1,
+    "label": "v1 完成版（13チャプター・画像なしR2V）",
+    "notes": "`/no-image-video`スキルで制作。キーフレーム画像を作らず、キャラクターシートとセリフ音声だけをMiniMax H3のR2Vへ渡して13チャプター（計1867フレーム・24fps・1344x768・77.8秒）を生成した。生成はGoogle Colab（L4 + SageAttention・8stepのTurbo LoRA）。\n\nそば屋の正典シートは今回だけ`Sobaya_twintail_pointed_ears_sheet.png`（ツインテール・尖り耳版）。警察官2人はラン専用のモブシートで見た目を固定した。\n\n音声: 全セリフを等速テイクで確定。H3の埋め込み音声は実測で高域が増えて歪んでいたため（ch4は8kHz以上が3.5%→18.6%）、対話章ではH3の音声を捨てて元のwavを口の動きに合わせて載せ直し、全章の話声を-19dBへ揃えた。無音章はH3の環境音をそのまま使用。\n\nナレーション・字幕・VOICEVOXクレジットはH3に描かせず、Remotionで後載せした。\n\n既知の課題: ch9・ch12・ch13の背景が欧州風の城ではなく日本の城として生成された（否定形での指定が逆効果だったとみている）。パトカー車体にも崩れた文字が残る。ch12の乗車動作は3回生成し、動作をドア板のオクルージョンで隠す版を採用した。"
+  },
+  "video": {
+    "id": "456ea337-95cc-4f9c-b033-bd2d9d176eee",
+    "episode_id": "a293fd0e-92dc-4a91-99df-adad500e9708",
+    "r2_key": "episodes/a293fd0e-92dc-4a91-99df-adad500e9708/generations/e8a76cd8-222b-4722-a97e-d21a365a5699/videos/456ea337-95cc-4f9c-b033-bd2d9d176eee/hero_party_return_arrest_final.mp4",
+    "filename": "hero_party_return_arrest_final.mp4",
+    "label": "完成版 77.8秒（13チャプター結合＋字幕・ナレーション・クレジット）",
+    "content_type": "video/mp4",
+    "size_bytes": 47609164,
+    "status": "published",
+    "is_primary": 1,
+    "created_at": "2026-10-06T23:15:49.924Z",
+    "updated_at": "2026-10-06T23:16:08.024Z",
+    "generation_id": "e8a76cd8-222b-4722-a97e-d21a365a5699",
+    "is_featured": 0,
+    "poster_r2_key": "episodes/a293fd0e-92dc-4a91-99df-adad500e9708/generations/e8a76cd8-222b-4722-a97e-d21a365a5699/videos/456ea337-95cc-4f9c-b033-bd2d9d176eee/poster.jpg",
+    "display_order": -1
+  },
+  "youtubeId": "-FIaeY8IElg",
+  "youtube": {
+    "kind": "youtube#video",
+    "etag": "Ne-kbUYy89hmMiYhiBu7S3fM-Kk",
+    "id": "-FIaeY8IElg",
+    "snippet": {
+      "publishedAt": "2026-10-07T00:53:16Z",
+      "channelId": "UCyQtPu94OaiGxFdd2A6bXdw",
+      "title": "泥酔のそばーヤン",
+      "description": "窓王（まおう）を倒した勇者一行が、青空の王都へ帰ってくる約78秒のコメディ。そば屋、福ギュン、やめ太郎、たこさんが旅を振り返るうち、やめ太郎の「ところでワイらなんで魔王おかやまんと戦ったんだっけ？」に福ギュンが「そば屋が酔って暴れただけギュン」と即答。直後にパトカーが到着し、そば屋はジョッキを持ったまま素直に連行されていく。暴力も陰惨さもない穏やかなオチとして描いた。キーフレーム画像を一切作らず、キャラクターシートとセリフ音声だけをMiniMax H3のR2Vへ渡す「画像なし」方式で13チャプターを生成。そば屋は今回だけツインテール・尖り耳版のシートを正典に使った。セリフはIrodori-TTSのボイスクローン（そば屋はモンスターボイス加工）とVOICEVOX、ナレーション・字幕・クレジットはRemotionで後載せしている。\n\n──────────────\n▼ この動画の作り方\n使用モデル・プロンプト・入力素材は、公式サイトの制作ノートで公開しています。\nhttps://madogiwa.work/episodes/hero-party-return-arrest\n\n▼ 窓際族物語 公式サイト\nhttps://madogiwa.work\n\n#窓際族物語 #AI動画 #生成AI",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/-FIaeY8IElg/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/-FIaeY8IElg/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/-FIaeY8IElg/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/-FIaeY8IElg/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/-FIaeY8IElg/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "窓際族物語",
+      "tags": [
+        "AI動画",
+        "コメディ",
+        "ショートアニメ",
+        "生成AI",
+        "窓際族物語"
+      ],
+      "categoryId": "23",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "泥酔のそばーヤン",
+        "description": "窓王（まおう）を倒した勇者一行が、青空の王都へ帰ってくる約78秒のコメディ。そば屋、福ギュン、やめ太郎、たこさんが旅を振り返るうち、やめ太郎の「ところでワイらなんで魔王おかやまんと戦ったんだっけ？」に福ギュンが「そば屋が酔って暴れただけギュン」と即答。直後にパトカーが到着し、そば屋はジョッキを持ったまま素直に連行されていく。暴力も陰惨さもない穏やかなオチとして描いた。キーフレーム画像を一切作らず、キャラクターシートとセリフ音声だけをMiniMax H3のR2Vへ渡す「画像なし」方式で13チャプターを生成。そば屋は今回だけツインテール・尖り耳版のシートを正典に使った。セリフはIrodori-TTSのボイスクローン（そば屋はモンスターボイス加工）とVOICEVOX、ナレーション・字幕・クレジットはRemotionで後載せしている。\n\n──────────────\n▼ この動画の作り方\n使用モデル・プロンプト・入力素材は、公式サイトの制作ノートで公開しています。\nhttps://madogiwa.work/episodes/hero-party-return-arrest\n\n▼ 窓際族物語 公式サイト\nhttps://madogiwa.work\n\n#窓際族物語 #AI動画 #生成AI"
+      },
+      "defaultAudioLanguage": "en-US"
+    },
+    "contentDetails": {
+      "duration": "PT1M18S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "professional-morning-takosan",
+  "passed": true,
+  "checks": {
+    "resolution": true,
+    "sourceAtMost101": true,
+    "outputAtMost101": true,
+    "fps": true,
+    "frames": true,
+    "audio": true,
+    "decode": true,
+    "captions": true
+  },
+  "sha256": "89af8ddbb7676fc0086becc5c64d2fe2c86fa8e433d251db2c74a6074890baab",
+  "sourceSha256": "03a842569ad4d7a0db64bee0c7768f1ead57185c9d50bd922defb0931d1a3533",
+  "manifestSha256": "4312b251a0650a4aed3d95eac2d005ecca0dac38428c40256a35b0cae1e51611",
+  "duration": 15.0,
+  "sourceDuration": 15.0,
+  "width": 720,
+  "height": 1280,
+  "fps": "30/1",
+  "frames": 450,
+  "audioCodec": "aac",
+  "audioStreamSha256": "0d473761bacd829ae92425536b0f36c9b68ace05fa8784b0956db946b7646540",
+  "adoptedAudioStreamSha256": "0d473761bacd829ae92425536b0f36c9b68ace05fa8784b0956db946b7646540",
+  "audioUnchanged": true,
+  "bytes": 2695547,
+  "decodeErrors": "",
+  "captionCount": 7
+}

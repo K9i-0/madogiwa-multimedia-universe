@@ -1,0 +1,102 @@
+{
+  "slug": "sobaya-mug-mystery",
+  "title": "探偵よーたん：消えたジョッキ",
+  "titleLines": [
+    "探偵よーたん",
+    "消えたジョッキ"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 1075,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-mug-mystery/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-mug-mystery/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 5,
+      "endFrame": 97,
+      "speaker": "よーたん",
+      "text": "最近、女性社員の\nマイジョッキが\n次々なくなってるんだ！",
+      "sourceReference": "clip1_line1_yotan.wav"
+    },
+    {
+      "startFrame": 176,
+      "endFrame": 205,
+      "speaker": "そば屋",
+      "text": "そこまでは言ってない",
+      "sourceReference": "clip2_line1_sobaya_h3pad.wav"
+    },
+    {
+      "startFrame": 219,
+      "endFrame": 284,
+      "speaker": "よーたん",
+      "text": "犯人にも、\n何か事情があるんですよ",
+      "sourceReference": "clip3_line1_yotan.wav"
+    },
+    {
+      "startFrame": 366,
+      "endFrame": 400,
+      "speaker": "そば屋",
+      "text": "洗われたくなかったとか",
+      "sourceReference": "clip4_line1_sobaya_h3pad.wav"
+    },
+    {
+      "startFrame": 445,
+      "endFrame": 464,
+      "speaker": "よーたん",
+      "text": "例えば？",
+      "sourceReference": "clip5_line1_yotan_h3pad.wav"
+    },
+    {
+      "startFrame": 528,
+      "endFrame": 588,
+      "speaker": "そば屋",
+      "text": "待ってください！\n一本ずつ説明できます！",
+      "sourceReference": "clip6_line1_sobaya.wav"
+    },
+    {
+      "startFrame": 617,
+      "endFrame": 645,
+      "speaker": "よーたん",
+      "text": "お前じゃねえか！",
+      "sourceReference": "clip7_line1_yotan_h3pad.wav"
+    },
+    {
+      "startFrame": 694,
+      "endFrame": 719,
+      "speaker": "よーたん",
+      "text": "この変態！",
+      "sourceReference": "clip8_line1_yotan_h3pad.wav"
+    },
+    {
+      "startFrame": 769,
+      "endFrame": 804,
+      "speaker": "よーたん",
+      "text": "たこさん、こいつです",
+      "sourceReference": "clip9_line1_yotan.wav"
+    },
+    {
+      "startFrame": 813,
+      "endFrame": 885,
+      "speaker": "福ギュン",
+      "text": "ジョッキ、全部\n洗っときました！",
+      "sourceReference": "clip10_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 914,
+      "endFrame": 986,
+      "speaker": "福ギュン",
+      "text": "ギュギュンです！",
+      "sourceReference": "clip10_line2_fukuchan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1028,
+      "endFrame": 1073,
+      "speaker": "そば屋",
+      "text": "余計なことをー！！",
+      "sourceReference": "clip11_line1_sobaya.wav"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "cc143eb6-1bc2-40b5-bf60-feb88a31b6c2"
+}

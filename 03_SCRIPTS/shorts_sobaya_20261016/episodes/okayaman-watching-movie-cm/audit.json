@@ -1,0 +1,38 @@
+{
+  "slug": "okayaman-watching-movie-cm",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/okayaman-watching-movie-cm/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 945,
+  "outputFrames": 945,
+  "durationSeconds": 39.413969,
+  "sourceAudioBitstreamHash": "SHA256=961617ba0c8ea036f4ca09bda78926b474c61c2e1a561437187df1cf4e0b7a12",
+  "outputAudioBitstreamHash": "SHA256=961617ba0c8ea036f4ca09bda78926b474c61c2e1a561437187df1cf4e0b7a12",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 5,
+  "sampleFrames": [
+    0,
+    170,
+    218,
+    236,
+    412,
+    472,
+    708,
+    823,
+    921,
+    944
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/okayaman-watching-movie-cm/qa/contact-1.jpg"
+  ],
+  "outputSha256": "ce4df35399ebc570f5db7737895303ef009da50039f701748860033924fde3cc",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "manifestSha256": "d812ac94855d23d7404cf02761ef02875ef371809a8ee7ca21ce55efb0f5f8fe",
+  "visualReviewNotes": "All five caption midpoints and representative frames visually inspected. Fixed filter reinitialization preserves all 945 frames, including final promotional poster and narration. Full composition, no caption clipping."
+}

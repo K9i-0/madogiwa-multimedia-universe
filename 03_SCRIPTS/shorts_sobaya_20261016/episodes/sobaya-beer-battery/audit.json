@@ -1,0 +1,39 @@
+{
+  "manifestSha256": "bd7f75858022e296bc54017fba9879ac12c75aabae3590c43214ecec7e17badd",
+  "slug": "sobaya-beer-battery",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-beer-battery/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 722,
+  "outputFrames": 722,
+  "durationSeconds": 30.161224,
+  "sourceAudioBitstreamHash": "SHA256=9399ba47c6b62abc46062b981e02d3ba0436f7879e6aa46e2ee35b47f105ab8b",
+  "outputAudioBitstreamHash": "SHA256=9399ba47c6b62abc46062b981e02d3ba0436f7879e6aa46e2ee35b47f105ab8b",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 6,
+  "sampleFrames": [
+    0,
+    64,
+    180,
+    225,
+    361,
+    384,
+    408,
+    541,
+    637,
+    691,
+    721
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-beer-battery/qa/contact-1.jpg"
+  ],
+  "outputSha256": "0716f6687704261aa704da0b283362af212e9b7f04cb1140c7a485061b9f5c40",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "visualReviewNotes": "All six caption midpoints plus representative/boundary frames visually inspected. Actual adopted Fukuchan/Yotan cast matches source visuals and local approach2 script; title and captions fit. Source audio retained without replacement."
+}

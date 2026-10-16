@@ -1,0 +1,47 @@
+{
+  "slug": "beer-only-engine-press-conference",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/beer-only-engine-press-conference/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 1435,
+  "outputFrames": 1435,
+  "durationSeconds": 59.824031,
+  "sourceAudioBitstreamHash": "SHA256=fe98dd077f402705074788cf7b09d71586c851b315c5de260af3b4b460bfd7e3",
+  "outputAudioBitstreamHash": "SHA256=fe98dd077f402705074788cf7b09d71586c851b315c5de260af3b4b460bfd7e3",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 13,
+  "sampleFrames": [
+    0,
+    37,
+    241,
+    336,
+    358,
+    556,
+    618,
+    717,
+    749,
+    825,
+    916,
+    972,
+    1030,
+    1076,
+    1091,
+    1346,
+    1395,
+    1434
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/beer-only-engine-press-conference/qa/contact-1.jpg",
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/beer-only-engine-press-conference/qa/contact-2.jpg"
+  ],
+  "outputSha256": "56b3249d96fa43a3958f3c8ccd8fbe50a647f135e231bcc9de96ee6c2dc62986",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "manifestSha256": "6469dcf78f807063a6c8a574e973ad72eec512d5ffb53e79f0df91cb242b3549",
+  "visualReviewNotes": "All 14 caption midpoints plus representative/boundary frames visually inspected across two contact sheets. Long dialogue split into readable cards, maximum three lines, source preserved. No duplicate captions or clipping."
+}

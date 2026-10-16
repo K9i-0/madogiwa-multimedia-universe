@@ -1,0 +1,49 @@
+{
+  "slug": "fukuchan-yametaro-estimates",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukuchan-yametaro-estimates/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 1384,
+  "outputFrames": 1384,
+  "durationSeconds": 57.699,
+  "sourceAudioBitstreamHash": "SHA256=c3ed91a4ffa580eb10aed9fa7ea604819bdb1c5035314ea1bea387155d252be5",
+  "outputAudioBitstreamHash": "SHA256=c3ed91a4ffa580eb10aed9fa7ea604819bdb1c5035314ea1bea387155d252be5",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 15,
+  "sampleFrames": [
+    0,
+    29,
+    108,
+    249,
+    299,
+    346,
+    428,
+    469,
+    567,
+    662,
+    692,
+    785,
+    837,
+    962,
+    1030,
+    1038,
+    1140,
+    1231,
+    1324,
+    1383
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukuchan-yametaro-estimates/qa/contact-1.jpg",
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukuchan-yametaro-estimates/qa/contact-2.jpg"
+  ],
+  "outputSha256": "7ac218eb5d1830f27e9e27719226dafd422a67f41d67494a502d32935ce03442",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "manifestSha256": "47eaba764bdc553325bce748b12daa74641a315b346367dfeabf118f8a5bdbca",
+  "visualReviewNotes": "All 15 caption midpoint frames plus source representative and boundary frames visually inspected across both contact sheets; readable Japanese wrapping, full composition, no duplicate subtitle or clipping."
+}

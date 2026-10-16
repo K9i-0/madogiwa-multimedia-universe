@@ -1,0 +1,107 @@
+{
+  "episode": {
+    "id": "74da2290-9a5d-442c-b49b-691d8bc58f6c",
+    "slug": "fukugyun-birth-employment-contract",
+    "episode_number": null,
+    "title": "福ギュン誕生 — 窓際王との雇用契約",
+    "summary": "福ギュンが怪しい扉の前に立つ。ドアハンドルへ手を伸ばすと、やめ太郎の顔をした真鍮のノッカーが「ノックもしないのかい？無礼な子だね。」と喋り出し、驚いた福ギュンは両手をグーにして頬へ当ててしまう。「まあいい、入んな」で開いた扉の奥は真っ暗な直線の廊下で、体が浮き上がると猛スピードで奥へ引かれ、途中の扉が5枚自動で開く。辿り着いた窓際会議室では、窓際王おかやまんが大型スクリーン越しに「窓際に仕事なんてないんだよ」「黙れ小僧！お前に窓の何が分かる！」と断るが、「ここで働かせてください」を3度繰り返した福ギュンに根負けし、プリンターから雇用契約書を出す。「福ちゃん」と署名した紙から名前がふわりと浮き上がって空中で形を変え、紙へ戻ると「福ギュン」になっている。「今日からお前は福ギュンだ！いいね福ギュン！」「はい！わたしは今日から福ギュンです」",
+    "status": "published",
+    "created_at": "2026-10-07T05:16:49.916Z",
+    "updated_at": "2026-10-07T05:27:01.071Z",
+    "published_at": "2026-10-07T05:16:49.916Z",
+    "studio_id": "MS-SBZMT3KS",
+    "display_order": -1,
+    "representative_video_id": null,
+    "content_kind": "story",
+    "production_notes_enabled": 1
+  },
+  "generation": {
+    "id": "3fd7d6f3-0b8b-4d13-ab25-6d10c1603f58",
+    "version": 1,
+    "label": "v1 — 画像なし制作（全19章R2V）",
+    "notes": "/no-image-video（画像なし動画制作）で制作。キーフレームは1枚も作らず、キャラクターシート・扉のセット参照・セリフwav・プロンプトだけをMiniMax H3のR2Vへ渡している。全19チャプター / 2116フレーム / 24fps / 1344x768 / 88.2秒。生成はGoogle Colab（L4 + sage）。\n\nセリフ音声13本はIrodori-TTS v4-Largeのゼロショットボイスクローン（福ギュン・やめ太郎・おかやまんそれぞれ本人の参照音声）。H3へ添付し、動画の埋め込み音声をそのまま採用している。\n\nH3は画面内の日本語を描けないため、契約書の文字はH3に一切生成させず、ランごとのRemotionプロジェクトで合成した。ch15の署名「福ちゃん」と、ch17の「福ちゃん」→「福ギュン」の変形アニメーションがそれ。H3が白紙指定の紙に勝手に書いた文字（欧文の署名と崩れた漢字）は、同じ紙の別の場所をクローンして貼るマスクで消している。\n\n制作上の注意点として、おかやまんはキャラクター設定のNG変更により実体では登場させず、大型スクリーン越しのリモート出演を維持した（契約書はスクリーン横のプリンターが出力し、福ギュンが自分で取る）。「黙れ小僧！」も「常に穏やかな笑顔」を守って微笑みのまま発話している。\n\n作り直した章: ch1（台本にないノック音をトリムで除去）、ch2（手がノッカーに触れていた）、ch3（扉に背を向けていたため切り返しへ）、ch4（ノッカーが2個に増え巨大化。扉の写真に既にノッカーが写っているため、ノッカー単体のターンアラウンドの添付をやめて解決。冒頭の不要なドア音は音声差し替えで除去）、ch6（飛行中の表情を驚き顔で固定）。"
+  },
+  "video": {
+    "id": "9250750a-3e98-459e-9e72-47f03deab3cf",
+    "episode_id": "74da2290-9a5d-442c-b49b-691d8bc58f6c",
+    "r2_key": "episodes/74da2290-9a5d-442c-b49b-691d8bc58f6c/generations/3fd7d6f3-0b8b-4d13-ab25-6d10c1603f58/videos/9250750a-3e98-459e-9e72-47f03deab3cf/103_fukugyun_hiring_door.mp4",
+    "filename": "103_fukugyun_hiring_door.mp4",
+    "label": "完成版 88.2秒（19チャプター結合＋Remotionで契約書の文字を合成）",
+    "content_type": "video/mp4",
+    "size_bytes": 35217886,
+    "status": "published",
+    "is_primary": 1,
+    "created_at": "2026-10-07T05:19:29.365Z",
+    "updated_at": "2026-10-07T05:41:16.950Z",
+    "generation_id": "3fd7d6f3-0b8b-4d13-ab25-6d10c1603f58",
+    "is_featured": 1,
+    "poster_r2_key": "episodes/74da2290-9a5d-442c-b49b-691d8bc58f6c/generations/3fd7d6f3-0b8b-4d13-ab25-6d10c1603f58/videos/9250750a-3e98-459e-9e72-47f03deab3cf/poster.jpg",
+    "display_order": -1
+  },
+  "youtubeId": "a8jkNsLvB7E",
+  "youtube": {
+    "kind": "youtube#video",
+    "etag": "vXm2Dwjwx16mJ1MVDUEpuNXp5Z4",
+    "id": "a8jkNsLvB7E",
+    "snippet": {
+      "publishedAt": "2026-10-07T05:39:55Z",
+      "channelId": "UCyQtPu94OaiGxFdd2A6bXdw",
+      "title": "福ギュン改名秘話",
+      "description": "https://madogiwa.work/episodes/fukugyun-birth-employment-contract",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/a8jkNsLvB7E/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/a8jkNsLvB7E/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/a8jkNsLvB7E/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/a8jkNsLvB7E/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/a8jkNsLvB7E/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "窓際族物語",
+      "categoryId": "23",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "福ギュン改名秘話",
+        "description": "https://madogiwa.work/episodes/fukugyun-birth-employment-contract"
+      }
+    },
+    "contentDetails": {
+      "duration": "PT1M29S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  }
+}

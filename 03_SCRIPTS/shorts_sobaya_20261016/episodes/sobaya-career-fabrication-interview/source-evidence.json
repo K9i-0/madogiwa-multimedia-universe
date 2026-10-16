@@ -1,0 +1,115 @@
+{
+  "episode": {
+    "id": "d4ab515b-55a8-4d49-93d2-7bc2717bac39",
+    "slug": "sobaya-career-fabrication-interview",
+    "episode_number": null,
+    "title": "そば屋の経歴詐称面談",
+    "summary": "そば屋がよーたんの会社へ面談に来る。案内役が会議室へ通し、ジョッキに「窓際スーパーつらい」を注いで退室。経歴紹介を求められたそば屋は「17歳」「Java 53年」「php 300年」「Android 1000年」と盛りまくり、「社長に詐称しろと言われた」と悪びれず白状する。感心しかけたよーたんが最後にツッコみ、そば屋は「てへっ」。キーフレーム画像を一切作らず、キャラクターシートとセリフ音声だけでMiniMax H3のR2Vに生成させた13チャプター構成。",
+    "status": "published",
+    "created_at": "2026-10-05T05:59:02.772Z",
+    "updated_at": "2026-10-05T06:02:31.689Z",
+    "published_at": "2026-10-05T05:59:02.772Z",
+    "studio_id": "MS-FGF4FFFM",
+    "display_order": -1,
+    "representative_video_id": null,
+    "content_kind": "story",
+    "production_notes_enabled": 1
+  },
+  "generation": {
+    "id": "eab2d852-d3bc-4df3-85ca-8ea6bb67e5ca",
+    "version": 1,
+    "label": "v1 — キーフレームなしR2V（13チャプター）",
+    "notes": "/no-image-video スキルで制作。チャプター毎のキーフレーム画像を一切作らず、キャラクターシート（Sobaya/Yotan/ラン専用の案内役シート）とローカル生成のセリフ音声だけをH3のR2Vに渡した。全13チャプター・2326フレーム・96.9秒（24fps / 1344x768 / 16:9）。音声はIrodori-TTS v4-Large。そば屋=Sobaya_voice.wav seed42＋モンスター加工、よーたん=Yotan_voice.wav seed100（ch12のみseed101）、案内役=参照音声なしのVoiceDesign（--no-ref ＋ caption指定、seed42）。VOICEVOXは不使用のためクレジット表示なし。結合はローカルffmpeg（H3の埋め込み音声をそのまま使用）。瓶ビール「窓際スーパーつらい」は添付画像ではなくプロンプトの文章で再現している。"
+  },
+  "video": {
+    "id": "d7618f36-f055-4c24-a757-9867dac2badf",
+    "episode_id": "d4ab515b-55a8-4d49-93d2-7bc2717bac39",
+    "r2_key": "episodes/d4ab515b-55a8-4d49-93d2-7bc2717bac39/generations/eab2d852-d3bc-4df3-85ca-8ea6bb67e5ca/videos/d7618f36-f055-4c24-a757-9867dac2badf/sobaya-career-fabrication-interview-v1.mp4",
+    "filename": "sobaya-career-fabrication-interview-v1.mp4",
+    "label": "完成版 v1（13チャプター結合・96.9秒）",
+    "content_type": "video/mp4",
+    "size_bytes": 31348961,
+    "status": "ready",
+    "is_primary": 1,
+    "created_at": "2026-10-05T06:05:34.020Z",
+    "updated_at": "2026-10-05T06:05:46.810Z",
+    "generation_id": "eab2d852-d3bc-4df3-85ca-8ea6bb67e5ca",
+    "is_featured": 0,
+    "poster_r2_key": "episodes/d4ab515b-55a8-4d49-93d2-7bc2717bac39/generations/eab2d852-d3bc-4df3-85ca-8ea6bb67e5ca/videos/d7618f36-f055-4c24-a757-9867dac2badf/poster.jpg",
+    "display_order": -1
+  },
+  "youtubeId": "EMNCNGZQIic",
+  "youtube": {
+    "kind": "youtube#video",
+    "etag": "sEFiOPCaCVT330h_zyLazZwqE_c",
+    "id": "EMNCNGZQIic",
+    "snippet": {
+      "publishedAt": "2026-10-07T00:53:09Z",
+      "channelId": "UCyQtPu94OaiGxFdd2A6bXdw",
+      "title": "そば屋の経歴詐称面談",
+      "description": "そば屋がよーたんの会社へ面談に来る。案内役が会議室へ通し、ジョッキに「窓際スーパーつらい」を注いで退室。経歴紹介を求められたそば屋は「17歳」「Java 53年」「php 300年」「Android 1000年」と盛りまくり、「社長に詐称しろと言われた」と悪びれず白状する。感心しかけたよーたんが最後にツッコみ、そば屋は「てへっ」。キーフレーム画像を一切作らず、キャラクターシートとセリフ音声だけでMiniMax H3のR2Vに生成させた13チャプター構成。\n\n──────────────\n▼ この動画の作り方\n使用モデル・プロンプト・入力素材は、公式サイトの制作ノートで公開しています。\nhttps://madogiwa.work/episodes/sobaya-career-fabrication-interview\n\n▼ 窓際族物語 公式サイト\nhttps://madogiwa.work\n\n#窓際族物語 #AI動画 #生成AI",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/EMNCNGZQIic/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/EMNCNGZQIic/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/EMNCNGZQIic/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/EMNCNGZQIic/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/EMNCNGZQIic/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "窓際族物語",
+      "tags": [
+        "AI動画",
+        "コメディ",
+        "ショートアニメ",
+        "生成AI",
+        "窓際族物語"
+      ],
+      "categoryId": "23",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ja",
+      "localized": {
+        "title": "そば屋の経歴詐称面談",
+        "description": "そば屋がよーたんの会社へ面談に来る。案内役が会議室へ通し、ジョッキに「窓際スーパーつらい」を注いで退室。経歴紹介を求められたそば屋は「17歳」「Java 53年」「php 300年」「Android 1000年」と盛りまくり、「社長に詐称しろと言われた」と悪びれず白状する。感心しかけたよーたんが最後にツッコみ、そば屋は「てへっ」。キーフレーム画像を一切作らず、キャラクターシートとセリフ音声だけでMiniMax H3のR2Vに生成させた13チャプター構成。\n\n──────────────\n▼ この動画の作り方\n使用モデル・プロンプト・入力素材は、公式サイトの制作ノートで公開しています。\nhttps://madogiwa.work/episodes/sobaya-career-fabrication-interview\n\n▼ 窓際族物語 公式サイト\nhttps://madogiwa.work\n\n#窓際族物語 #AI動画 #生成AI"
+      },
+      "defaultAudioLanguage": "en-US"
+    },
+    "contentDetails": {
+      "duration": "PT1M37S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": false
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
+  }
+}

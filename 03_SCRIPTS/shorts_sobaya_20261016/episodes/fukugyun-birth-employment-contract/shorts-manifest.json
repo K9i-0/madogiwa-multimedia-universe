@@ -1,0 +1,111 @@
+{
+  "slug": "fukugyun-birth-employment-contract",
+  "title": "福ギュン誕生 — 窓際王との雇用契約",
+  "titleLines": [
+    "福ギュン誕生",
+    "窓際王との雇用契約"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 2116,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukugyun-birth-employment-contract/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukugyun-birth-employment-contract/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 125,
+      "endFrame": 184,
+      "speaker": "やめ太郎",
+      "text": "ノックもしないのかい？\n無礼な子だね。",
+      "sourceReference": "ch2_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 308,
+      "endFrame": 349,
+      "speaker": "やめ太郎",
+      "text": "まあいい、入んな",
+      "sourceReference": "ch4_line1_yametaro.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 739,
+      "endFrame": 789,
+      "speaker": "おかやまん",
+      "text": "おかやまん。なんだい？\n人間かい？",
+      "sourceReference": "ch7_line1_okayaman.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 813,
+      "endFrame": 888,
+      "speaker": "福ギュン",
+      "text": "ここで働かせてください！",
+      "sourceReference": "ch8_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 935,
+      "endFrame": 984,
+      "speaker": "おかやまん",
+      "text": "窓際に仕事なんてないんだよ",
+      "sourceReference": "ch9_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 1014,
+      "endFrame": 1078,
+      "speaker": "福ギュン",
+      "text": "ここで働かせてください",
+      "sourceReference": "ch10_line1_fukuchan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1116,
+      "endFrame": 1190,
+      "speaker": "おかやまん",
+      "text": "黙れ小僧！\nお前に窓の何が分かる！",
+      "sourceReference": "ch11_line1_okayaman.wav"
+    },
+    {
+      "startFrame": 1230,
+      "endFrame": 1301,
+      "speaker": "福ギュン",
+      "text": "ここで働かせてください",
+      "sourceReference": "ch12_line1_fukuchan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1451,
+      "endFrame": 1497,
+      "speaker": "おかやまん",
+      "text": "名前を書きな雇用契約書だ",
+      "sourceReference": "ch13_line2_okayaman.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1726,
+      "endFrame": 1780,
+      "speaker": "おかやまん",
+      "text": "福ちゃん？贅沢な名だね",
+      "sourceReference": "ch16_line1_okayaman.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1929,
+      "endFrame": 2004,
+      "speaker": "おかやまん",
+      "text": "今日からお前は福ギュンだ！\nいいね福ギュン！",
+      "sourceReference": "ch18_line1_okayaman.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 2058,
+      "endFrame": 2116,
+      "speaker": "福ギュン",
+      "text": "はい！わたしは今日から\n福ギュンです",
+      "sourceReference": "ch19_line1_fukuchan.wav"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "3fd7d6f3-0b8b-4d13-ab25-6d10c1603f58",
+  "captionReviewNotes": [
+    "The prompt includes はぁ・・・仕方ないね, but source ASR did not confirm it and spectral correspondence remained weak. Do not caption that unverified utterance; the original audio is unchanged."
+  ]
+}

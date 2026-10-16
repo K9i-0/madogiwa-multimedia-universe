@@ -1,0 +1,33 @@
+{
+  "manifestSha256": "a32591c358dbedc8f75b9c4c7ee12df7fb122531ca934da76c06c9ccf8d6b6e7",
+  "slug": "sobaya-yametaro-dismissal-notice",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-yametaro-dismissal-notice/final_remotion_shorts_9x16.mp4",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": "24/1",
+  "sourceFrames": 832,
+  "outputFrames": 832,
+  "durationSeconds": 34.667,
+  "sourceAudioBitstreamHash": "SHA256=33ff0112e9c341c7ad008e6474ef6455b22cbd4fe6331b96e6f215538cce663e",
+  "outputAudioBitstreamHash": "SHA256=33ff0112e9c341c7ad008e6474ef6455b22cbd4fe6331b96e6f215538cce663e",
+  "audioBitstreamIdentical": true,
+  "fullDecodeExitCode": 0,
+  "decodeStderr": "",
+  "captionCount": 0,
+  "sampleFrames": [
+    0,
+    208,
+    416,
+    624,
+    831
+  ],
+  "contactSheets": [
+    "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-yametaro-dismissal-notice/qa/contact-1.jpg"
+  ],
+  "outputSha256": "e6e40f82199ea2687054267c006ad407cebe584b4112d0cc852626dd5773946c",
+  "visualReview": "passed",
+  "reviewMethod": "Source representative frames; prompt and reference audio alignment; final caption midpoint/representative image inspection. No full human listening claim.",
+  "visualReviewNotes": "First/last and quarter-point frames visually inspected. Original dramatic title graphic retained, no full-frame crop or new duplicate captions. No dialogue subtitle was fabricated from incoherent ASR. All 832 frames preserved."
+}

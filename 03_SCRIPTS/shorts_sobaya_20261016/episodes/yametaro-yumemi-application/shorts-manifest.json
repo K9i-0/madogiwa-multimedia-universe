@@ -1,0 +1,119 @@
+{
+  "slug": "yametaro-yumemi-application",
+  "title": "やめ太郎と、ゆめみ村の応募方法",
+  "titleLines": [
+    "やめ太郎と",
+    "ゆめみ村の応募方法"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 1267,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-yumemi-application/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/yametaro-yumemi-application/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 22,
+      "endFrame": 86,
+      "speaker": "学生",
+      "text": "アクセンチュア内の\nゆめみ村に応募したいです！",
+      "sourceReference": "ch1_line1_student.wav"
+    },
+    {
+      "startFrame": 107,
+      "endFrame": 133,
+      "speaker": "やめ太郎",
+      "text": "了解やで",
+      "sourceReference": "clip2_line1_yametaro_h3pad.wav"
+    },
+    {
+      "startFrame": 167,
+      "endFrame": 229,
+      "speaker": "やめ太郎",
+      "text": "応募方法がちょっと特殊でな",
+      "sourceReference": "clip3_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 256,
+      "endFrame": 392,
+      "speaker": "やめ太郎",
+      "text": "まずAIT 1階の\nタリーズコーヒーで\nステーキ定食を注文するんや",
+      "sourceReference": "clip4_line1_yametaro.wav"
+    },
+    {
+      "startFrame": 417,
+      "endFrame": 482,
+      "speaker": "やめ太郎",
+      "text": "そして店員さんから\n『炎上具合は？』と聞かれたら",
+      "sourceReference": "clip5_line1_yametaro.wav",
+      "timingEvidence": "Prompt clause boundary mapped to silent interval in adopted reference waveform"
+    },
+    {
+      "startFrame": 482,
+      "endFrame": 579,
+      "speaker": "やめ太郎",
+      "text": "『弱火でじっくり』と答えると、",
+      "sourceReference": "clip5_line1_yametaro.wav",
+      "timingEvidence": "Prompt clause boundary mapped to silent interval in adopted reference waveform"
+    },
+    {
+      "startFrame": 579,
+      "endFrame": 627,
+      "speaker": "やめ太郎",
+      "text": "面接室に通してもらえるんや",
+      "sourceReference": "clip5_line1_yametaro.wav",
+      "timingEvidence": "Prompt clause boundary mapped to silent interval in adopted reference waveform"
+    },
+    {
+      "startFrame": 687,
+      "endFrame": 723,
+      "speaker": "学生",
+      "text": "ステーキ定食をください",
+      "sourceReference": "ch6_line1_student.wav"
+    },
+    {
+      "startFrame": 747,
+      "endFrame": 800,
+      "speaker": "店員",
+      "text": "はいよ！炎上具合は？",
+      "sourceReference": "ch7_line1_shopkeeper.wav"
+    },
+    {
+      "startFrame": 807,
+      "endFrame": 841,
+      "speaker": "学生",
+      "text": "弱火でじっくり",
+      "sourceReference": "ch8_line1_student.wav"
+    },
+    {
+      "startFrame": 898,
+      "endFrame": 917,
+      "speaker": "店員",
+      "text": "ついてきな",
+      "sourceReference": "ch9_line1_shopkeeper.wav"
+    },
+    {
+      "startFrame": 1064,
+      "endFrame": 1091,
+      "speaker": "そば屋",
+      "text": "君は合格",
+      "sourceReference": "clip10_line1_sobaya_h3pad.wav"
+    },
+    {
+      "startFrame": 1132,
+      "endFrame": 1166,
+      "speaker": "学生",
+      "text": "あ、あなたは？",
+      "sourceReference": "ch11_line1_student.wav"
+    },
+    {
+      "startFrame": 1207,
+      "endFrame": 1222,
+      "speaker": "そば屋",
+      "text": "ボクはヒソバ",
+      "sourceReference": "clip12_line1_sobaya_h3pad.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "538c5dfa-bb60-49d4-9937-fc47d68fe16f"
+}

@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-16T07:10:18.075982+00:00",
+  "passed": true,
+  "allPassed": true,
+  "fullPlaybackListening": false,
+  "videos": [
+    {
+      "slug": "professional-morning-takosan",
+      "passed": true,
+      "checks": {
+        "resolution": true,
+        "sourceAtMost101": true,
+        "outputAtMost101": true,
+        "fps": true,
+        "frames": true,
+        "audio": true,
+        "decode": true,
+        "captions": true
+      },
+      "sha256": "89af8ddbb7676fc0086becc5c64d2fe2c86fa8e433d251db2c74a6074890baab",
+      "sourceSha256": "03a842569ad4d7a0db64bee0c7768f1ead57185c9d50bd922defb0931d1a3533",
+      "manifestSha256": "4312b251a0650a4aed3d95eac2d005ecca0dac38428c40256a35b0cae1e51611",
+      "duration": 15.0,
+      "sourceDuration": 15.0,
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "frames": 450,
+      "audioCodec": "aac",
+      "audioStreamSha256": "0d473761bacd829ae92425536b0f36c9b68ace05fa8784b0956db946b7646540",
+      "adoptedAudioStreamSha256": "0d473761bacd829ae92425536b0f36c9b68ace05fa8784b0956db946b7646540",
+      "audioUnchanged": true,
+      "bytes": 2695547,
+      "decodeErrors": "",
+      "captionCount": 7
+    },
+    {
+      "slug": "fukuchan-yametaro-engineer-stereotypes",
+      "passed": true,
+      "checks": {
+        "resolution": true,
+        "sourceAtMost101": true,
+        "outputAtMost101": true,
+        "fps": true,
+        "frames": true,
+        "audio": true,
+        "decode": true,
+        "captions": true
+      },
+      "sha256": "d65dce90b8cc1a7c726242943ffdfc8572f83637d9a975b518d69f42d2cd90a4",
+      "sourceSha256": "e9589882996d67840a083596e6b313b373a92578c486aced67e45b385d0f6811",
+      "manifestSha256": "7600683475b64a45cc94f5926b679095d36cff45921d6b680423d087d14ddca9",
+      "duration": 93.657688,
+      "sourceDuration": 93.657688,
+      "width": 720,
+      "height": 1280,
+      "fps": "24/1",
+      "frames": 2247,
+      "audioCodec": "aac",
+      "audioStreamSha256": "f9298356e5fb35b2101fd33e98bdcc9eb35ad24e3d219201fa977a0080d9d7a1",
+      "adoptedAudioStreamSha256": "f9298356e5fb35b2101fd33e98bdcc9eb35ad24e3d219201fa977a0080d9d7a1",
+      "audioUnchanged": true,
+      "bytes": 11653173,
+      "decodeErrors": "",
+      "captionCount": 29
+    }
+  ]
+}

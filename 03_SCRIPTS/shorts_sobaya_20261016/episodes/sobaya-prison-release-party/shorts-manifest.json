@@ -1,0 +1,79 @@
+{
+  "slug": "sobaya-prison-release-party",
+  "title": "そば屋の出所祝い",
+  "titleLines": [
+    "そば屋の",
+    "出所祝い"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 1945,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-prison-release-party/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/sobaya-prison-release-party/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 176,
+      "endFrame": 213,
+      "speaker": "刑務官",
+      "text": "もう戻ってくるなよ",
+      "sourceReference": "ch2_line1_guard_h3pad.wav"
+    },
+    {
+      "startFrame": 273,
+      "endFrame": 300,
+      "speaker": "そば屋",
+      "text": "うるせービールよこせ",
+      "sourceReference": "ch3_line1_sobaya_h3pad.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 506,
+      "endFrame": 553,
+      "speaker": "福ギュン",
+      "text": "早く乗るギュン",
+      "sourceReference": "ch5_line1_fukuchan.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1031,
+      "endFrame": 1112,
+      "speaker": "司会",
+      "text": "そば屋さん本日は\n出所おめでとうございます。",
+      "sourceReference": "ch9_line1_narrator.wav",
+      "timingEvidence": "Prompt clause boundary mapped to silent interval in adopted reference waveform"
+    },
+    {
+      "startFrame": 1112,
+      "endFrame": 1187,
+      "speaker": "司会",
+      "text": "お祝いに世界中の\nクラフトビールを集めました",
+      "sourceReference": "ch9_line1_narrator.wav",
+      "timingEvidence": "Prompt clause boundary mapped to silent interval in adopted reference waveform"
+    },
+    {
+      "startFrame": 1227,
+      "endFrame": 1276,
+      "speaker": "そば屋",
+      "text": "え？スーパードライは？",
+      "sourceReference": "ch10_line1_sobaya.wav"
+    },
+    {
+      "startFrame": 1276,
+      "endFrame": 1360,
+      "speaker": "司会",
+      "text": "いや、今日は良いビールを\n集めようかと思い…",
+      "sourceReference": "ch11_line1_narrator.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    },
+    {
+      "startFrame": 1445,
+      "endFrame": 1505,
+      "speaker": "そば屋",
+      "text": "最高のビールは\nスーパードライだろうが！！！",
+      "sourceReference": "ch12_line1_sobaya.wav",
+      "timingEvidence": "reference WAV spectral matching including time-scale search; alignment-warp.json"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "6167fba6-7b86-4e97-a028-cddf9e81417e"
+}

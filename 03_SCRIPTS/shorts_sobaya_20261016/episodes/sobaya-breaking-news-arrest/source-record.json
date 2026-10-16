@@ -1,0 +1,17 @@
+{
+  "slug": "sobaya-breaking-news-arrest",
+  "generationId": "5ae4aff2-6df9-4e7d-b3f2-434bd0ceee10",
+  "generationVersion": 1,
+  "videoId": "ac55bab3-9a75-45b6-bf62-89175c2e3200",
+  "r2Key": "episodes/b2231655-236e-49e7-811a-41c55abf8d7a/generations/5ae4aff2-6df9-4e7d-b3f2-434bd0ceee10/videos/ac55bab3-9a75-45b6-bf62-89175c2e3200/final_tight.mp4",
+  "youtubeId": "z-SeAvj3pgQ",
+  "youtubeDuration": "PT24S",
+  "probe": {
+    "fps": 24.0,
+    "frames": 555,
+    "width": 1344,
+    "height": 768,
+    "duration": 23.151
+  },
+  "notes": "17k+5フレームグリッド24fpsで6チャプター生成（合計744フレーム=31.000秒）。ch1とch6はR2V（添付wavをそのまま使うリップシンク）、ch2〜ch5はI2V（環境音のみ生成）。ch2〜ch5のナレーション4本はH3に渡さず、結合後のタイムラインへローカルでミックスした。キーフレームはdraw-things-cli、音声はIrodori-TTSボイスクローン（VOICEVOX不使用のためクレジット焼き込み不要）。採用版final_tight.mp4は、無音の間を詰めるため各チャプター尾部と冒頭をトリムして23.15秒に再編集したもの。ヘッドライン・テロップ・局ロゴはCapCutで後載せする前提で、生成物にはテキストを含めていない。"
+}

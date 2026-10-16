@@ -1,0 +1,52 @@
+{
+  "slug": "fukuchan-rejection-officer",
+  "title": "福ギュン、お祈り担当になる",
+  "titleLines": [
+    "福ギュン",
+    "お祈り担当になる"
+  ],
+  "accent": "#fff2d4",
+  "fps": 24.0,
+  "durationInFrames": 1177,
+  "source": "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukuchan-rejection-officer/source.mp4",
+  "output": "03_SCRIPTS/shorts_sobaya_20261016/episodes/fukuchan-rejection-officer/final_remotion_shorts_9x16.mp4",
+  "captions": [
+    {
+      "startFrame": 2,
+      "endFrame": 80,
+      "speaker": "福ギュン",
+      "text": "あたし、とうとう\n不採用担当に任命されたわよ〜",
+      "sourceReference": "clip1_line1_fukuchan.wav"
+    },
+    {
+      "startFrame": 260,
+      "endFrame": 293,
+      "speaker": "課長",
+      "text": "とうとう届いたか・・・",
+      "sourceReference": "ch3_line1_moba.wav"
+    },
+    {
+      "startFrame": 608,
+      "endFrame": 661,
+      "speaker": "課長",
+      "text": "これだけでは安心できない",
+      "sourceReference": "ch7_line1_moba.wav"
+    },
+    {
+      "startFrame": 986,
+      "endFrame": 1087,
+      "speaker": "課長",
+      "text": "ここまでやれば大丈夫だろう、\n福ちゃん、君はクビだ",
+      "sourceReference": "ch10_line1_moba.wav"
+    },
+    {
+      "startFrame": 1092,
+      "endFrame": 1145,
+      "speaker": "福ギュン",
+      "text": "また不採用だったぎゅーん",
+      "sourceReference": "clip11_line1_fukuchan.wav"
+    }
+  ],
+  "captionTimingMethod": "Studio prompt and matching adopted reference WAV; waveform cross-correlation, spectral correlation with time-scale search for H3 retiming, RMS speech bounds and clause pauses; missing references checked with targeted source ASR.",
+  "sourceGenerationId": "600e95ef-8b71-4597-9d49-f7e4d490d448"
+}

@@ -1,26 +1,27 @@
 {
-  "checkedAt": "2026-10-16T03:33:04.079959+00:00",
+  "checkedAt": "2026-10-16T03:55:04.999843+00:00",
   "output": "final_remotion_shorts_9x16.mp4",
-  "sha256": "15da0a45762875578c36009bf715bf8b4f80a99d0c3ae31ec3254fb70a4bf478",
-  "bytes": 2895824,
-  "source": "03_SCRIPTS/youtube_line_stickers_20261015/final_remotion_line_stickers_v7.mp4",
-  "sourceSha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
-  "manifestSha256": "d6af74d455c5c48e475b606a2f478a13fa8b07f4d86db06f63f0f491be3d135b",
+  "sha256": "399700064152c6f9ef686467cdae8b3f5618b66c1e9865c78a61903b5a835c88",
+  "bytes": 5107784,
+  "source": "03_SCRIPTS/youtube_line_stickers_20261015/final_remotion_line_stickers_v8.mp4",
+  "sourceSha256": "40c510b4a2a83a9a653d5fdda36112b37c9ad12599ef9729e93aa77f8e9bfc3c",
+  "manifestSha256": "fa7732bed080ab7418a9c8bbdd573586d3a49d2b2c7c3eed4fa1f24f3601a3aa",
   "width": 720,
   "height": 1280,
   "fps": 30,
-  "frames": 1186,
-  "durationSeconds": 39.53333333333333,
-  "audioDurationSeconds": 39.53,
+  "frames": 1963,
+  "durationSeconds": 65.43333333333334,
+  "audioDurationSeconds": 65.433,
   "codec": "h264",
   "audioCodec": "aac",
   "sampleRate": 48000,
-  "audioPolicy": "AAC stream copy of the exact approved v7 prefix; no TTS, re-encoding, gain, speed or speech changes.",
-  "sourceTrimmedAACSha256": "67633cc282d9f72c39b88e081d200f4661475a1a988a9e2f82df24db4be43294",
-  "finalAACSha256": "67633cc282d9f72c39b88e081d200f4661475a1a988a9e2f82df24db4be43294",
-  "audioPayloadIdentical": true,
+  "audioPolicy": "Original v8 decoded speech PCM preserved exactly through frame 1903; only the following pause fades, then silence under the end card. AAC encoded at 192 kbps.",
+  "sourceTrimmedAACSha256": "273094a062c1b1a39b730c67517b56ab5919df16d48191d8f54b234f92eb3c6b",
+  "finalAACSha256": "773727547ec73eea4cc6e7256d87d0079e4537373085b79ff08dd9cb8328f049",
+  "audioPayloadIdentical": false,
+  "speechPcmIdentical": true,
   "fullDecodePassed": true,
-  "captionCards": 11,
+  "captionCards": 16,
   "maximumCaptionLines": 3,
   "noCaptionSource": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/shorts_intro_no_captions.mp4",
   "noCaptionLayer": true,
@@ -36,8 +37,8 @@
     },
     {
       "label": "last",
-      "frame": 1185,
-      "file": "remotion/out/shorts-audit/last-1185.png"
+      "frame": 1962,
+      "file": "remotion/out/shorts-audit/last-1962.png"
     },
     {
       "label": "caption-01",
@@ -117,6 +118,41 @@
       "file": "remotion/out/shorts-audit/caption-11-1133.png"
     },
     {
+      "label": "caption-12",
+      "frame": 1245,
+      "text": "どうも、\n無職やめ太郎です。",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-12-1245.png"
+    },
+    {
+      "label": "caption-13",
+      "frame": 1321,
+      "text": "どうも、たこさんです。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-13-1321.png"
+    },
+    {
+      "label": "caption-14",
+      "frame": 1469,
+      "text": "今回は、こちらの動く\nLINEスタンプを、Codexで\nどう作ったのか解説します。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-14-1469.png"
+    },
+    {
+      "label": "caption-15",
+      "frame": 1667,
+      "text": "第一弾に続いて、\n第二弾も販売に向けて\n準備中です。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-15-1667.png"
+    },
+    {
+      "label": "caption-16",
+      "frame": 1826,
+      "text": "今回は、その二つを作る中で\n分かったコツを紹介します。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-16-1826.png"
+    },
+    {
       "label": "line-chat-hold",
       "frame": 570,
       "file": "remotion/out/shorts-audit/line-chat-hold-0570.png"
@@ -127,9 +163,19 @@
       "file": "remotion/out/shorts-audit/mail-before-reaction-0835.png"
     },
     {
-      "label": "cta-change",
-      "frame": 1102,
-      "file": "remotion/out/shorts-audit/cta-change-1102.png"
+      "label": "title-change",
+      "frame": 1215,
+      "file": "remotion/out/shorts-audit/title-change-1215.png"
+    },
+    {
+      "label": "end-card-start",
+      "frame": 1911,
+      "file": "remotion/out/shorts-audit/end-card-start-1911.png"
+    },
+    {
+      "label": "end-card-hold",
+      "frame": 1933,
+      "file": "remotion/out/shorts-audit/end-card-hold-1933.png"
     }
   ],
   "duplicateCheck": {
@@ -140,5 +186,5 @@
     ],
     "existingEntryFoundBeforeCreation": false
   },
-  "visualReviewNote": "Caption correction 異動 visually checked at frame 952. Layout, all other caption cards and ending CTA inherited unchanged from d49cbdab; audio and full decode revalidated."
+  "visualReviewScope": "追加5字幕カードと最終CTAを静止画確認。既存11カードは前版で確認済み。通し試聴・動画再生の主観監査は未実施。"
 }

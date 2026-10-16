@@ -9,9 +9,9 @@
 字幕訂正版の本編v8と誘導用ショートを公式YouTubeへアップロードし、両方の処理完了を確認した。本編には採用タイトル・緑Aサムネ・チャプターとクレジット入り概要欄を設定。公開時刻は両方とも `2026-10-16T10:00:00Z`。その時刻までは `private`、プレミア公開なし。ユーザーの指定どおり同時公開を予約し、公開時の登録者通知を有効にした。
 
 - 本編：[YouTube](https://www.youtube.com/watch?v=PJ3ak1m-Itg) / [投稿設定](youtube_metadata.json) / [投稿・処理・非公開予約の確認記録](youtube_upload.json)
-- 誘導用ショート：[YouTube](https://www.youtube.com/shorts/8NbzZ3oSyVY) / [完成MP4](final_remotion_shorts_9x16.mp4) / [編集マニフェスト](shorts-manifest.json) / [概要欄](shorts_description.txt) / [検査記録](shorts-audit.json) / [投稿・予約の確認記録](youtube_shorts_upload.json)
+- 誘導用ショート：[YouTube](https://www.youtube.com/shorts/bWQUZsLBpVM) / [完成MP4](final_remotion_shorts_9x16.mp4) / [編集マニフェスト](shorts-manifest.json) / [概要欄](shorts_description.txt) / [検査記録](shorts-audit.json) / [投稿・予約の確認記録](youtube_shorts_upload.json)
 
-ショートは冒頭から「Pythonエンジニアみたいに言うな！」と余韻までの39.53秒。共通の720×1280レイアウトで、元の字幕だけを非表示にして下へ移動。LINEトーク・Outlookメール等の画面内文字は保つ。採用v7のAAC音声を先頭からストリームコピーし、声・間・音量・効果音を変更しない。最後のツッコミ中に、上部を「作り方はチャンネルの本編へ／動くLINEスタンプ」に切り替える。
+ショートは冒頭の茶番から挨拶・制作の紹介まで63.43秒を収録し、最後に「続きは本編で」を2秒表示する計65.43秒。720×1280、字幕16カード。元の発話は保ち、最後の間のみBGMをフェードして終了。検証は `shorts-audit.json`。
 
 再レンダーは `python3 03_SCRIPTS/youtube_line_stickers_20261015/build_shorts.py`。共有Shortsレンダーを使い、通常キューには追加しない。投稿は専用の `youtube_shorts_metadata.json` と記録で管理し、週次バッチとの重複を防ぐ。
 
@@ -22,10 +22,10 @@ Shortsの「関連動画」は公開または限定公開の本編が必要な�
 2026-10-16。「ワイ明日から廃村ゆめみ村に異動らしいわ…」へ字幕を訂正。本編・ショート・X用へ反映し、声とタイミングは維持した。
 
 - [本編v8](final_remotion_line_stickers_v8.mp4)：11分21.33秒、1280×720。
-- [X用横動画](final_remotion_x_opening_16x9.mp4)：ショートと同じ39.53秒、1280×720。[投稿文案](x_post.txt) / [本編URL入りの返信文](x_reply.txt)。Xへの投稿操作は行っていない。
+- [X用横動画](final_remotion_x_opening_16x9.mp4)：冒頭の茶番39.53秒（延長前ショートと同じ範囲）、1280×720。[投稿文案](x_post.txt) / [本編URL入りの返信文](x_reply.txt)。Xへの投稿操作は行っていない。
 - [字幕訂正・出力監査](caption_fix_v8.json) / [制作記録](review_v8.md)。
 
-本編URLは `https://www.youtube.com/watch?v=PJ3ak1m-Itg`、ショートは `https://www.youtube.com/shorts/8NbzZ3oSyVY`。旧ID `TJ8UNr3CenM` と `lsuziGFfhn4` は予約を解除し、非公開で退避。旧予約の解除はAPI更新直後の返却値だけで判定せず、再取得した状態で確認した。旧記録は `youtube_upload_v7_superseded.json` / `youtube_shorts_upload_v1_superseded.json`。
+本編URLは `https://www.youtube.com/watch?v=PJ3ak1m-Itg`、ショートは `https://www.youtube.com/shorts/bWQUZsLBpVM`。旧ID `TJ8UNr3CenM` と `lsuziGFfhn4` は予約を解除し、非公開で退避。旧予約の解除はAPI更新直後の返却値だけで判定せず、再取得した状態で確認した。旧記録は `youtube_upload_v7_superseded.json` / `youtube_shorts_upload_v1_superseded.json`。
 
 字幕修正の再現は元v7を保持して `python3 03_SCRIPTS/youtube_line_stickers_20261015/build_caption_fix_v8.py main`、X版は末尾を `x` にする。縦版は `build_shorts.py --skip-clean-render`。検証は `verify_caption_fix_v8.py` と `verify_shorts.py`。すべてエピソードディレクトリ内のスクリプト。v7は実生成音声・AACの保存元として保持する。
 
@@ -113,3 +113,5 @@ python3 render.py ../final_remotion_line_stickers_v7.mp4
 - 声の調査・検証：`voice_candidate_research.json` / `voice_candidate_delivery.json`。`VOICE_CAST.md` の正典は変更していない。
 - 初稿：`final_remotion_line_stickers.mp4`。v2：`final_remotion_line_stickers_v2.mp4`（10分26.3秒、正本Git `a09eabbf`）。
 - v3と復帰時の監査：`review.md` / `voice_audit_v3.json`。旧版の監査を現行v6の合格判定として流用しない。
+
+ショート延長版への差し替え: 旧ショート `8NbzZ3oSyVY` は予約を解除して非公開で保持。記録は `youtube_shorts_upload_v2_superseded.json`。新ショート `bWQUZsLBpVM` は処理完了・非公開・19:00 JST予約を再取得で確認。本編の予約とURLは維持。

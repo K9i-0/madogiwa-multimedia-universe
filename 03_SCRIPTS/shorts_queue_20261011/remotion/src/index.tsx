@@ -1,14 +1,16 @@
 import React from 'react';
-import {AbsoluteFill,Composition,OffthreadVideo,Sequence,registerRoot,staticFile,useCurrentFrame} from 'remotion';
+import {AbsoluteFill,Composition,Freeze,OffthreadVideo,Sequence,interpolate,registerRoot,staticFile,useCurrentFrame} from 'remotion';
 import {memberCaptionStyle} from '../../../00_TEMPLATES/subtitles/member-colors';
-export type Clip={file:string;from:number;duration:number;trimBefore?:number;width:number;height:number;crop?:{x:number;y:number;width:number;height:number}};
-export type Manifest={slug:string;title:string;titleLines:string[];titleCues?:{from:number;titleLines:string[]}[];accent:string;fps:number;durationInFrames:number;clips:Clip[];captions:{startFrame:number;endFrame:number;speaker:string;text:string}[]};
+export type Clip={file:string;from:number;duration:number;trimBefore?:number;freezeAt?:number;width:number;height:number;crop?:{x:number;y:number;width:number;height:number}};
+export type Manifest={slug:string;title:string;titleLines:string[];titleCues?:{from:number;titleLines:string[]}[];endCard?:{from:number;text:string};accent:string;fps:number;durationInFrames:number;clips:Clip[];captions:{startFrame:number;endFrame:number;speaker:string;text:string}[]};
 const placeholder:Manifest={slug:'preview',title:'',titleLines:['',''],accent:'#fff2d4',fps:30,durationInFrames:30,clips:[],captions:[]};
 const Footage:React.FC<{clip:Clip;blur?:boolean}>=({clip,blur=false})=>{
+ const f=useCurrentFrame();
  const crop=clip.crop??{x:0,y:0,width:clip.width,height:clip.height};
  const scale=blur?Math.max(720/crop.width,1280/crop.height):Math.min(720/crop.width,480/crop.height);
  const w=crop.width*scale,h=crop.height*scale;
- return <div style={{position:'absolute',left:(720-w)/2,top:((blur?1280:480)-h)/2,width:w,height:h,overflow:'hidden'}}><OffthreadVideo src={staticFile(clip.file)} startFrom={clip.trimBefore??0} muted style={{position:'absolute',width:clip.width*scale,height:clip.height*scale,maxWidth:'none',left:-crop.x*scale,top:-crop.y*scale}}/></div>;
+ const video=<OffthreadVideo src={staticFile(clip.file)} startFrom={clip.trimBefore??0} muted style={{position:'absolute',width:clip.width*scale,height:clip.height*scale,maxWidth:'none',left:-crop.x*scale,top:-crop.y*scale}}/>;
+ return <div style={{position:'absolute',left:(720-w)/2,top:((blur?1280:480)-h)/2,width:w,height:h,overflow:'hidden'}}>{clip.freezeAt===undefined?video:<Freeze frame={Math.min(f,clip.freezeAt)}>{video}</Freeze>}</div>;
 };
 const Film:React.FC<Manifest>=(m)=>{
  const f=useCurrentFrame(),c=m.captions.find(c=>f>=c.startFrame&&f<c.endFrame);
@@ -25,6 +27,7 @@ const Film:React.FC<Manifest>=(m)=>{
  {c&&<div style={{position:'absolute',top:876,left:40,right:88,textAlign:'center'}}>
  {c.speaker&&<div style={{display:'inline-block',fontSize:28,fontWeight:700,color:'#fff',padding:'2px 0',marginBottom:12,letterSpacing:1,textShadow:'0 2px 5px #0009'}}>{c.speaker}</div>}
  <div style={{fontSize:38,lineHeight:1.5,whiteSpace:'pre-line',...memberCaptionStyle(c.speaker)}}>{c.text}</div></div>}
+ {m.endCard&&f>=m.endCard.from&&<div style={{position:'absolute',top:930,left:40,right:40,textAlign:'center',fontSize:62,color:m.accent,textShadow:'0 4px 12px #0008',opacity:interpolate(f,[m.endCard.from,m.endCard.from+6],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}}>{m.endCard.text}</div>}
  </AbsoluteFill>;
 };
 registerRoot(()=> <Composition id="Shorts" component={Film} width={720} height={1280} fps={30} durationInFrames={30} defaultProps={placeholder} calculateMetadata={({props})=>({fps:props.fps,durationInFrames:props.durationInFrames})}/>);

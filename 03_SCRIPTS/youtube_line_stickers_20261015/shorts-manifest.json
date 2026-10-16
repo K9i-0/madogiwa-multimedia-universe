@@ -7,25 +7,26 @@
   ],
   "titleCues": [
     {
-      "from": 1098,
+      "from": 1210,
       "titleLines": [
-        "作り方はチャンネルの本編へ",
+        "Codexで作る",
         "動くLINEスタンプ"
       ]
     }
   ],
   "accent": "#fff2d4",
   "fps": 30,
-  "durationInFrames": 1186,
+  "durationInFrames": 1963,
   "clips": [
     {
       "file": "youtube_line_stickers_20261015_intro_no_captions.mp4",
       "source": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/shorts_intro_no_captions.mp4",
       "from": 0,
-      "duration": 1186,
+      "duration": 1963,
       "trimBefore": 0,
       "width": 1280,
-      "height": 720
+      "height": 720,
+      "freezeAt": 1902
     }
   ],
   "captions": [
@@ -105,16 +106,56 @@
       "speaker": "やめ太郎",
       "text": "Pythonエンジニア\nみたいに言うな！",
       "sourceUtterance": "intro-10"
+    },
+    {
+      "startFrame": 1210,
+      "endFrame": 1280,
+      "speaker": "やめ太郎",
+      "text": "どうも、\n無職やめ太郎です。",
+      "sourceUtterance": "main-01"
+    },
+    {
+      "startFrame": 1289,
+      "endFrame": 1353,
+      "speaker": "たこさん",
+      "text": "どうも、たこさんです。",
+      "sourceUtterance": "main-02"
+    },
+    {
+      "startFrame": 1362,
+      "endFrame": 1576,
+      "speaker": "たこさん",
+      "text": "今回は、こちらの動く\nLINEスタンプを、Codexで\nどう作ったのか解説します。",
+      "sourceUtterance": "main-03"
+    },
+    {
+      "startFrame": 1585,
+      "endFrame": 1750,
+      "speaker": "たこさん",
+      "text": "第一弾に続いて、\n第二弾も販売に向けて\n準備中です。",
+      "sourceUtterance": "tips-01"
+    },
+    {
+      "startFrame": 1750,
+      "endFrame": 1903,
+      "speaker": "たこさん",
+      "text": "今回は、その二つを作る中で\n分かったコツを紹介します。",
+      "sourceUtterance": "tips-01"
     }
   ],
-  "audioSource": "03_SCRIPTS/youtube_line_stickers_20261015/final_remotion_line_stickers_v7.mp4",
-  "audioTrimEndFrame": 1186,
-  "sourceSha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
+  "audioSource": "03_SCRIPTS/youtube_line_stickers_20261015/final_remotion_line_stickers_v8.mp4",
+  "audioTrimEndFrame": 1911,
+  "sourceSha256": "40c510b4a2a83a9a653d5fdda36112b37c9ad12599ef9729e93aa77f8e9bfc3c",
   "sourceRange": {
     "startFrame": 0,
-    "endFrameExclusive": 1186
+    "endFrameExclusive": 1903
   },
-  "captionPolicy": "Approved v7 dialogue and timing, reflowed to at most three lines. Original dialogue layer hidden at render time. LINE chat, Outlook email, and all narrative UI remain intact.",
-  "endingPolicy": "The Python punchline ends at frame 1168. Hold and original white dip finish the clip before the main greeting or second music track. No new speech, no credit tail.",
-  "ctaPolicy": "Only the existing small title line changes during the final punchline; no additional screen, speech, or duration."
+  "captionPolicy": "Approved v8 dialogue and integer timing; reflow only. Original dialogue layer hidden, other narrative UI preserved.",
+  "endingPolicy": "Keep original video through tips-01 at 63.433s; freeze its final frame for 2s and show 続きは本編で. Audio fades only in the subsequent pause, before the next speaker.",
+  "ctaPolicy": "Final two-second end card in the lower caption area, with no new speech.",
+  "endCard": {
+    "from": 1903,
+    "text": "続きは本編で"
+  },
+  "audioFadeOutStartFrame": 1903
 }

@@ -2,7 +2,7 @@
 
 第一弾・第二弾を作った実例から、人が使える頼み方・選び方・仕上げ方を紹介する掛け合い動画。やめ太郎は普段のIrodori、たこさんはVOICEVOX中国うさぎ。
 
-2026-10-16、完成動画v6はユーザー承認済み。公開タイトルは「Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ」を採用。サムネイルは実際のLINEスタンプ画像とImagegenで生成した文字・装飾を組み合わせた[3案](thumbnails/README.md)から選定中。
+2026-10-16、完成動画v6はユーザー承認済み。公開タイトルは「Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ」を採用。サムネイルは実際のLINEスタンプ画像とImagegenで生成した文字・装飾を組み合わせた緑のA案を採用。[投稿用JPEG](thumbnails/thumbnail_youtube.jpg) / [PNG](thumbnails/thumbnail_youtube.png) / [制作記録](thumbnails/README.md)。
 
 ## 現行：設定・速度と品質・掛け合いを反映した v6
 

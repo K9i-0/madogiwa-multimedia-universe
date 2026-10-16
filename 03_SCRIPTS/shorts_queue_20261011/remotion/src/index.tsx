@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill,Composition,OffthreadVideo,Sequence,registerRoot,staticFile,useCurrentFrame} from 'remotion';
 import {memberCaptionStyle} from '../../../00_TEMPLATES/subtitles/member-colors';
 export type Clip={file:string;from:number;duration:number;trimBefore?:number;width:number;height:number;crop?:{x:number;y:number;width:number;height:number}};
-export type Manifest={slug:string;title:string;titleLines:string[];accent:string;fps:number;durationInFrames:number;clips:Clip[];captions:{startFrame:number;endFrame:number;speaker:string;text:string}[]};
+export type Manifest={slug:string;title:string;titleLines:string[];titleCues?:{from:number;titleLines:string[]}[];accent:string;fps:number;durationInFrames:number;clips:Clip[];captions:{startFrame:number;endFrame:number;speaker:string;text:string}[]};
 const placeholder:Manifest={slug:'preview',title:'',titleLines:['',''],accent:'#fff2d4',fps:30,durationInFrames:30,clips:[],captions:[]};
 const Footage:React.FC<{clip:Clip;blur?:boolean}>=({clip,blur=false})=>{
  const crop=clip.crop??{x:0,y:0,width:clip.width,height:clip.height};
@@ -12,7 +12,8 @@ const Footage:React.FC<{clip:Clip;blur?:boolean}>=({clip,blur=false})=>{
 };
 const Film:React.FC<Manifest>=(m)=>{
  const f=useCurrentFrame(),c=m.captions.find(c=>f>=c.startFrame&&f<c.endFrame);
- const main=m.titleLines[m.titleLines.length-1],small=m.titleLines.length>1?m.titleLines[0]:'';
+ const titleLines=m.titleCues?.reduce((lines,cue)=>f>=cue.from?cue.titleLines:lines,m.titleLines)??m.titleLines;
+ const main=titleLines[titleLines.length-1],small=titleLines.length>1?titleLines[0]:'';
  const titleSize=main.length>15?40:main.length>10?46:62;
  return <AbsoluteFill style={{background:'#111820',color:'#fff',fontFamily:'"Hiragino Sans",sans-serif',fontWeight:700,overflow:'hidden'}}>
  <AbsoluteFill style={{filter:'blur(34px)',transform:'scale(1.13)',opacity:.47}}>{m.clips.map((clip,i)=><Sequence key={i} from={clip.from} durationInFrames={clip.duration}><Footage clip={clip} blur/></Sequence>)}</AbsoluteFill>

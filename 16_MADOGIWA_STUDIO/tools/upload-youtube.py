@@ -30,6 +30,7 @@ def main():
     parser.add_argument('video', type=Path)
     parser.add_argument('--metadata', type=Path, required=True)
     parser.add_argument('--record', type=Path, required=True, help='Non-secret result JSON (video ID and SHA256)')
+    parser.add_argument('--notify-subscribers', action='store_true', help='Enable subscriber notifications for this upload (default: disabled for bulk uploads)')
     args = parser.parse_args()
     video = args.video.resolve()
     size = video.stat().st_size
@@ -66,9 +67,10 @@ def main():
     if session_file.exists():
         session = json.loads(session_file.read_text())
     else:
-        _, headers, _ = call('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status&notifySubscribers=false', json.dumps(metadata).encode(), 'POST', {
+        notify = 'true' if args.notify_subscribers else 'false'
+        _, headers, _ = call('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status&notifySubscribers=' + notify, json.dumps(metadata).encode(), 'POST', {
             'Content-Type': 'application/json; charset=UTF-8', 'X-Upload-Content-Length': str(size), 'X-Upload-Content-Type': 'video/mp4'})
-        session = {'url': headers['Location'], 'sha256': digest, 'file': str(video)}
+        session = {'url': headers['Location'], 'sha256': digest, 'file': str(video), 'notifySubscribers': args.notify_subscribers}
         save_private(session_file, session)
     # Query status even after a previous process lost its final response.
     status, headers, body = call(session['url'], b'', 'PUT', {'Content-Length': '0', 'Content-Range': f'bytes */{size}'})
@@ -84,7 +86,7 @@ def main():
     if status not in (200, 201):
         raise SystemExit('Upload incomplete. Rerun to resume.')
     result = json.loads(body)
-    record = {'video_id': result['id'], 'url': 'https://www.youtube.com/watch?v=' + result['id'], 'sha256': digest, 'file': video.name, 'status': result.get('status')}
+    record = {'video_id': result['id'], 'url': 'https://www.youtube.com/watch?v=' + result['id'], 'sha256': digest, 'file': video.name, 'status': result.get('status'), 'notifySubscribers': session.get('notifySubscribers', False)}
     args.record.parent.mkdir(parents=True, exist_ok=True)
     args.record.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(record, ensure_ascii=False))

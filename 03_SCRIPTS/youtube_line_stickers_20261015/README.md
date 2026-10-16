@@ -4,6 +4,19 @@
 
 2026-10-16、完成動画v6はユーザー承認済み。公開タイトルは「Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ」を採用。サムネイルは実際のLINEスタンプ画像とImagegenで生成した文字・装飾を組み合わせた緑のA案を採用。[投稿用JPEG](thumbnails/thumbnail_youtube.jpg) / [PNG](thumbnails/thumbnail_youtube.png) / [制作記録](thumbnails/README.md)。
 
+## 2026-10-16 19:00（日本時間）の公開予約
+
+本編v7と誘導用ショートを公式YouTubeへアップロードし、両方の処理完了を確認した。本編には採用タイトル・緑Aサムネ・チャプターとクレジット入り概要欄を設定。公開時刻は両方とも `2026-10-16T10:00:00Z`。その時刻までは `private`、プレミア公開なし。ユーザーの指定どおり同時公開を予約し、公開時の登録者通知を有効にした。
+
+- 本編：[YouTube](https://www.youtube.com/watch?v=TJ8UNr3CenM) / [投稿設定](youtube_metadata.json) / [投稿・処理・非公開予約の確認記録](youtube_upload.json)
+- 誘導用ショート：[YouTube](https://www.youtube.com/shorts/lsuziGFfhn4) / [完成MP4](final_remotion_shorts_9x16.mp4) / [編集マニフェスト](shorts-manifest.json) / [概要欄](shorts_description.txt) / [検査記録](shorts-audit.json) / [投稿・予約の確認記録](youtube_shorts_upload.json)
+
+ショートは冒頭から「Pythonエンジニアみたいに言うな！」と余韻までの39.53秒。共通の720×1280レイアウトで、元の字幕だけを非表示にして下へ移動。LINEトーク・Outlookメール等の画面内文字は保つ。採用v7のAAC音声を先頭からストリームコピーし、声・間・音量・効果音を変更しない。最後のツッコミ中に、上部を「作り方はチャンネルの本編へ／動くLINEスタンプ」に切り替える。
+
+再レンダーは `python3 03_SCRIPTS/youtube_line_stickers_20261015/build_shorts.py`。共有Shortsレンダーを使い、通常キューには追加しない。投稿は専用の `youtube_shorts_metadata.json` と記録で管理し、週次バッチとの重複を防ぐ。
+
+Shortsの「関連動画」は公開または限定公開の本編が必要なため、公開後にYouTube Studioで追加する。予約中の本編を限定公開へ変更しない。現時点では動画内の案内と概要欄に本編への誘導を用意。Madogiwa Studioへの登録・公式サイト掲載は今回の投稿作業では行わない。
+
 ## 現行：第二弾の販売準備とUltraの並列分担を補足した v7
 
 2026-10-16。承認済みv6を基に、たこさんの説明2か所を差し替え。残る105音声はv6の波形と設定を維持。
@@ -32,7 +45,7 @@
 
 第一弾の透過失敗は、当時の不良出力APNGと登録時の報告スクショを引き続き使用。同じ不良画像を白背景→黒背景で見せ、画像処理で修正した実物と比較する。
 
-MP4と確認画像はローカル成果物。YouTubeやMadogiwa Studioへの公開・アップロードは行っていない。
+v6完成時点では、MP4と確認画像をローカル成果物として保持し、外部へのアップロードは行っていなかった。現在のv7の投稿状況は上記の公開予約記録を参照。
 
 ## 正本と出典
 

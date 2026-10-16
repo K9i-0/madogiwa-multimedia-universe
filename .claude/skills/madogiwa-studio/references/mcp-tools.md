@@ -86,6 +86,10 @@ Set audience and synthetic-content disclosures according to the actual work. Pre
 
 The CLI reuses a private resumable session keyed by the video SHA256. Repeat the same command after interruption. A lost final response is recovered by querying the session. Expired sessions require checking the channel before starting another upload. Once an ID exists, register it immediately so Cloudflare can continue checking readiness independently.
 
+For an explicitly requested scheduled release, set `status.privacyStatus` to `private` and `status.publishAt` to the future ISO 8601 timestamp with its time zone (for example, `2026-10-16T19:00:00+09:00`). This keeps the video private until YouTube publishes it; do not switch to unlisted or create a Premiere. Verify the returned privacy and schedule with `videos.list`, as well as successful processing. The CLI suppresses subscriber notifications by default for bulk uploads; add `--notify-subscribers` for a normal release that should notify subscribers when published. The result record preserves the setting used when the resumable upload began.
+
+Set an approved custom thumbnail after upload with the authenticated `thumbnails.set` endpoint. Shorts related-video links must target a public or unlisted video and currently require YouTube Studio; do not make a scheduled private master unlisted just to attach it early. Add the related-video link after publication and keep an in-video channel CTA available in the meantime. Sources: [scheduling](https://support.google.com/youtube/answer/1270709), [publishAt](https://developers.google.com/youtube/v3/docs/videos#status.publishAt), [Shorts related videos](https://support.google.com/youtube/answer/14075157).
+
 ## Input / gallery binary PUT
 
 Only images, reference audio and documents are uploaded to Studio. Issue a ticket with create_input_upload or create_gallery_image_upload, then immediately PUT the selected file with its actual Content-Type. Keep the returned URL out of output and saved records. Verify ready with get_episode, or the gallery image_url.

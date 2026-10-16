@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-10-16T03:16:39.182780+00:00",
+  "output": "final_remotion_shorts_9x16.mp4",
+  "sha256": "065975a3a0dca452c73b3e26a9f79b8aab25e083f520a947ed155cd9a05039f6",
+  "bytes": 2895799,
+  "source": "03_SCRIPTS/youtube_line_stickers_20261015/final_remotion_line_stickers_v7.mp4",
+  "sourceSha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
+  "manifestSha256": "322ec1b339f0f70a09490f23eb2a675120f47397c7ca5769b18613143f160268",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "frames": 1186,
+  "durationSeconds": 39.53333333333333,
+  "audioDurationSeconds": 39.53,
+  "codec": "h264",
+  "audioCodec": "aac",
+  "sampleRate": 48000,
+  "audioPolicy": "AAC stream copy of the exact approved v7 prefix; no TTS, re-encoding, gain, speed or speech changes.",
+  "sourceTrimmedAACSha256": "67633cc282d9f72c39b88e081d200f4661475a1a988a9e2f82df24db4be43294",
+  "finalAACSha256": "67633cc282d9f72c39b88e081d200f4661475a1a988a9e2f82df24db4be43294",
+  "audioPayloadIdentical": true,
+  "fullDecodePassed": true,
+  "captionCards": 11,
+  "maximumCaptionLines": 3,
+  "noCaptionSource": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/shorts_intro_no_captions.mp4",
+  "noCaptionLayer": true,
+  "originalTimelinePreserved": true,
+  "subjectiveListening": false,
+  "fullMotionPlayback": false,
+  "visualReview": "passed",
+  "samples": [
+    {
+      "label": "first",
+      "frame": 0,
+      "file": "remotion/out/shorts-audit/first-0000.png"
+    },
+    {
+      "label": "last",
+      "frame": 1185,
+      "file": "remotion/out/shorts-audit/last-1185.png"
+    },
+    {
+      "label": "caption-01",
+      "frame": 115,
+      "text": "窓際族のスタンプ、\nよう出来てるけど、\n使いどころ難しくない？",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-01-0115.png"
+    },
+    {
+      "label": "caption-02",
+      "frame": 240,
+      "text": "「ごめんやで」とか、\n使いやすそうですよ。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-02-0240.png"
+    },
+    {
+      "label": "caption-03",
+      "frame": 377,
+      "text": "ワイだけ使用頻度が高そうやな。\nでも、この「お前島流し！」は、\nいつ使うねん。",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-03-0377.png"
+    },
+    {
+      "label": "caption-04",
+      "frame": 504,
+      "text": "よーたんからや！",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-04-0504.png"
+    },
+    {
+      "label": "caption-05",
+      "frame": 646,
+      "text": "ちょうど来たわ。\nこういう冗談に使うんやな。",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-05-0646.png"
+    },
+    {
+      "label": "caption-06",
+      "frame": 730,
+      "text": "辞令って書いて\nありますけど。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-06-0730.png"
+    },
+    {
+      "label": "caption-07",
+      "frame": 788,
+      "text": "辞令？",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-07-0788.png"
+    },
+    {
+      "label": "caption-08",
+      "frame": 888,
+      "text": "ガチの島流しやないか！",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-08-0888.png"
+    },
+    {
+      "label": "caption-09",
+      "frame": 952,
+      "text": "ワイ明日から廃村ゆめみ村に\n移動らしいわ…",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-09-0952.png"
+    },
+    {
+      "label": "caption-10",
+      "frame": 1049,
+      "text": "明日から廃村（ハイソン）\nエンジニアですね。",
+      "speaker": "たこさん",
+      "file": "remotion/out/shorts-audit/caption-10-1049.png"
+    },
+    {
+      "label": "caption-11",
+      "frame": 1133,
+      "text": "Pythonエンジニア\nみたいに言うな！",
+      "speaker": "やめ太郎",
+      "file": "remotion/out/shorts-audit/caption-11-1133.png"
+    },
+    {
+      "label": "line-chat-hold",
+      "frame": 570,
+      "file": "remotion/out/shorts-audit/line-chat-hold-0570.png"
+    },
+    {
+      "label": "mail-before-reaction",
+      "frame": 835,
+      "file": "remotion/out/shorts-audit/mail-before-reaction-0835.png"
+    },
+    {
+      "label": "cta-change",
+      "frame": 1102,
+      "file": "remotion/out/shorts-audit/cta-change-1102.png"
+    }
+  ],
+  "duplicateCheck": {
+    "paths": [
+      "03_SCRIPTS/shorts_pilot_20261011/delivery.json",
+      "03_SCRIPTS/shorts_pilot_20261011/youtube_uploads",
+      "03_SCRIPTS/shorts_queue_20261011/queue.json"
+    ],
+    "existingEntryFoundBeforeCreation": false
+  },
+  "visualReviewNotes": [
+    "Reviewed contact sheets for first/last, all 11 caption cards, chat/mail holds, and CTA cue. No double dialogue captions, overflow, or cropped characters. Narrative UI retained.",
+    "Final CTA changed to 作り方はチャンネルの本編へ / 動くLINEスタンプ and checked at native 720x1280.",
+    "Original v7 timing and all ten cold-open utterances retained. No greeting included.",
+    "AAC is cut on the last complete packet before the video end, ending 2.67 ms before picture; all retained packet payloads equal the approved v7 prefix."
+  ],
+  "contactSheets": [
+    "remotion/out/shorts-audit/contact-1.jpg",
+    "remotion/out/shorts-audit/contact-2.jpg"
+  ],
+  "contactSheetNote": "Initial contact sheets cover all captions; final CTA replacement was rechecked in caption-11-1133.png and cta-change-1102.png after final render."
+}

@@ -1,0 +1,150 @@
+{
+  "title": "Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ",
+  "status": "candidates-awaiting-user-selection",
+  "generation": {
+    "tool": "built-in image_gen",
+    "mode": "new typography/background plates",
+    "prompts": "thumbnails/prompts/{a,b,c}_v1.txt"
+  },
+  "composition": "ImageMagick: layout and Lanczos resizing of existing transparent PNGs; no character redraw or deformation",
+  "canvas": {
+    "width": 1280,
+    "height": 720
+  },
+  "sources": {
+    "sobaya": {
+      "path": "27_LINE_STICKERS/sets/01/stickers/sobaya/still.png",
+      "sha256": "3566112660ecd12b6b02583154fa2e5f4635771794ff8932e6a085e9f5a12e12"
+    },
+    "yametaro": {
+      "path": "27_LINE_STICKERS/sets/01/stickers/yametaro/still.png",
+      "sha256": "99bd36e39ab267fccdb7809af093d5293269bb96a3447d4ff7cd8c1e3305652b"
+    },
+    "yotan": {
+      "path": "27_LINE_STICKERS/sets/01/stickers/yotan/still.png",
+      "sha256": "098a6d5665bb4cf87abfdcd925dc9c6ce4957a075e1cd4e7f09bece9f2c88ac3"
+    }
+  },
+  "variants": {
+    "a": {
+      "name": "制作テーマを大きく",
+      "layers": [
+        {
+          "character": "yametaro",
+          "x": 700,
+          "y": 35,
+          "size": 270
+        },
+        {
+          "character": "yotan",
+          "x": 990,
+          "y": 40,
+          "size": 260
+        },
+        {
+          "character": "sobaya",
+          "x": 820,
+          "y": 325,
+          "size": 380
+        }
+      ],
+      "plate": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/plate_a.png",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "sha256": "7087d5cbaf95f9a5ac653bcd2fa6474fe598bbea45dfb85a1d5a2198f4151950"
+      },
+      "png": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/thumbnail_a.png",
+        "sha256": "cda583fb1794686ef23993b400c39acb392261a7694db61b9cac50fd4477c126"
+      },
+      "jpg": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/thumbnail_a.jpg",
+        "sha256": "f71feaa9cceb42906c9cce8bb188b04902a02f86fe2205623fc6a9c02892dba8",
+        "bytes": 344920
+      }
+    },
+    "b": {
+      "name": "失敗から学ぶコツ",
+      "layers": [
+        {
+          "character": "yotan",
+          "x": 5,
+          "y": 45,
+          "size": 240
+        },
+        {
+          "character": "sobaya",
+          "x": 250,
+          "y": 35,
+          "size": 280
+        },
+        {
+          "character": "yametaro",
+          "x": 80,
+          "y": 320,
+          "size": 380
+        }
+      ],
+      "plate": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/plate_b.png",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "sha256": "102414f96e32bf13f09b2fb7d41d3637818dbc92766bf6751e17e8c1e56108e5"
+      },
+      "png": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/thumbnail_b.png",
+        "sha256": "ca106b78d431226ebb7e4f52e1207e2c533c20e31279b7ec3238ba0a706007b2"
+      },
+      "jpg": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/thumbnail_b.jpg",
+        "sha256": "c6eff087fd72a4ccb4c79bbf205f5bd5954e0ed11d988713c06d2f8a65dbe181",
+        "bytes": 393306
+      }
+    },
+    "c": {
+      "name": "完成スタンプを紹介",
+      "layers": [
+        {
+          "character": "sobaya",
+          "x": 70,
+          "y": 350,
+          "size": 350
+        },
+        {
+          "character": "yametaro",
+          "x": 465,
+          "y": 350,
+          "size": 350
+        },
+        {
+          "character": "yotan",
+          "x": 860,
+          "y": 350,
+          "size": 350
+        }
+      ],
+      "plate": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/plate_c.png",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "sha256": "9e14fb104452578bd83061c2e6a1b0ce6b2edc942de6c7e993bb196df86a11a5"
+      },
+      "png": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/thumbnail_c.png",
+        "sha256": "89eabec582345fc29eb9beb17341a1a25d1a4d7dd2f75d10e2fa31a5abc88982"
+      },
+      "jpg": {
+        "path": "03_SCRIPTS/youtube_line_stickers_20261015/remotion/out/thumbnails_v1/thumbnail_c.jpg",
+        "sha256": "46d6ab8ee06b1d866541b2c2ae90a7bfc710de23ec975e083cf1ee253334edb3",
+        "bytes": 362822
+      }
+    }
+  }
+}

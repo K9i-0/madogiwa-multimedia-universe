@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-16T03:16:39.182780+00:00",
+  "checkedAt": "2026-10-16T03:33:04.079959+00:00",
   "output": "final_remotion_shorts_9x16.mp4",
-  "sha256": "065975a3a0dca452c73b3e26a9f79b8aab25e083f520a947ed155cd9a05039f6",
-  "bytes": 2895799,
+  "sha256": "15da0a45762875578c36009bf715bf8b4f80a99d0c3ae31ec3254fb70a4bf478",
+  "bytes": 2895824,
   "source": "03_SCRIPTS/youtube_line_stickers_20261015/final_remotion_line_stickers_v7.mp4",
   "sourceSha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
-  "manifestSha256": "322ec1b339f0f70a09490f23eb2a675120f47397c7ca5769b18613143f160268",
+  "manifestSha256": "d6af74d455c5c48e475b606a2f478a13fa8b07f4d86db06f63f0f491be3d135b",
   "width": 720,
   "height": 1280,
   "fps": 30,
@@ -98,7 +98,7 @@
     {
       "label": "caption-09",
       "frame": 952,
-      "text": "ワイ明日から廃村ゆめみ村に\n移動らしいわ…",
+      "text": "ワイ明日から廃村ゆめみ村に\n異動らしいわ…",
       "speaker": "やめ太郎",
       "file": "remotion/out/shorts-audit/caption-09-0952.png"
     },
@@ -140,15 +140,5 @@
     ],
     "existingEntryFoundBeforeCreation": false
   },
-  "visualReviewNotes": [
-    "Reviewed contact sheets for first/last, all 11 caption cards, chat/mail holds, and CTA cue. No double dialogue captions, overflow, or cropped characters. Narrative UI retained.",
-    "Final CTA changed to 作り方はチャンネルの本編へ / 動くLINEスタンプ and checked at native 720x1280.",
-    "Original v7 timing and all ten cold-open utterances retained. No greeting included.",
-    "AAC is cut on the last complete packet before the video end, ending 2.67 ms before picture; all retained packet payloads equal the approved v7 prefix."
-  ],
-  "contactSheets": [
-    "remotion/out/shorts-audit/contact-1.jpg",
-    "remotion/out/shorts-audit/contact-2.jpg"
-  ],
-  "contactSheetNote": "Initial contact sheets cover all captions; final CTA replacement was rechecked in caption-11-1133.png and cta-change-1102.png after final render."
+  "visualReviewNote": "Caption correction 異動 visually checked at frame 952. Layout, all other caption cards and ending CTA inherited unchanged from d49cbdab; audio and full decode revalidated."
 }

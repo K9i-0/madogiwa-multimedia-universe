@@ -1,14 +1,13 @@
 {
-  "version": 7,
-  "baselineCommit": "0a3e1f3f",
+  "version": 8,
+  "baselineCommit": "d49cbdab",
   "utterances": 107,
   "subtitlePages": 135,
   "durationInFrames": 20440,
   "durationSeconds": 681.3333333333334,
   "dialogueAndCaptionIntegrity": "passed",
   "changedDialogueIds": [
-    "settings-03",
-    "tips-01"
+    "intro-08"
   ],
   "voiceAudit": {
     "baselineCommit": "0a3e1f3f",
@@ -558,12 +557,6 @@
     ],
     "adoptedAudioHashes": "passed"
   },
-  "newVoiceMachineScreening": {
-    "record": "voice_audit_v7.json",
-    "sha256": "1e8d97adbbb5ea913059af7e6e40ed6d89a9583d88f95eb2f2ea8e7c2265e3d5",
-    "utterances": 2,
-    "subjectiveListening": false
-  },
   "historicalAlphaEvidence": {
     "gitSources": [
       {
@@ -737,11 +730,11 @@
     }
   ],
   "mixedSha256": "1eb0397d6d9f5eb8b16e66b2ab6540e1ec2b9bbd2d3715b90d640e2bc683298a",
-  "plannedReviewFrames": 61,
+  "plannedReviewFrames": 3,
   "subjectiveListening": false,
-  "video": "final_remotion_line_stickers_v7.mp4",
-  "sha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
-  "bytes": 42623827,
+  "video": "final_remotion_line_stickers_v8.mp4",
+  "sha256": "40c510b4a2a83a9a653d5fdda36112b37c9ad12599ef9729e93aa77f8e9bfc3c",
+  "bytes": 42620716,
   "resolution": [
     1280,
     720
@@ -755,343 +748,39 @@
   "fullDecode": "passed",
   "excerpts": [
     {
-      "file": "preview_second_set_v7.mp4",
-      "startFrame": 1585,
-      "endFrame": 2196,
-      "durationSeconds": 20.366666666666667
+      "file": "final_remotion_x_opening_16x9.mp4",
+      "sha256": "828751391b3a06714da645e5ec16371f7cfcea67c8b313e23ee3e0fdea2b2eaa",
+      "startFrame": 0,
+      "endFrameExclusive": 1186,
+      "durationSeconds": 39.53333333333333
     },
     {
-      "file": "preview_settings_v7.mp4",
-      "startFrame": 5825,
-      "endFrame": 6702,
-      "durationSeconds": 29.233333333333334
+      "file": "final_remotion_shorts_9x16.mp4",
+      "sha256": "15da0a45762875578c36009bf715bf8b4f80a99d0c3ae31ec3254fb70a4bf478",
+      "startFrame": 0,
+      "endFrameExclusive": 1186,
+      "durationSeconds": 39.53333333333333
     }
   ],
-  "contactSheets": [
-    "remotion/out/final-audit-v7/contact-01.jpg",
-    "remotion/out/final-audit-v7/contact-02.jpg",
-    "remotion/out/final-audit-v7/contact-03.jpg",
-    "remotion/out/final-audit-v7/contact-04.jpg"
-  ],
+  "contactSheets": [],
   "reviewFrames": [
     {
-      "id": "opening-first",
-      "frame": 30,
-      "path": "remotion/out/final-audit-v7/opening-first.png"
+      "path": "remotion/out/caption-fix-v8-audit/final_remotion_line_stickers_v8-00952.png"
     },
     {
-      "id": "transition-hold",
-      "frame": 1173,
-      "path": "remotion/out/final-audit-v7/transition-hold.png"
+      "path": "remotion/out/caption-fix-v8-audit/final_remotion_line_stickers_v8-01210.png"
     },
     {
-      "id": "transition-fade-out",
-      "frame": 1180,
-      "path": "remotion/out/final-audit-v7/transition-fade-out.png"
-    },
-    {
-      "id": "transition-white",
-      "frame": 1186,
-      "path": "remotion/out/final-audit-v7/transition-white.png"
-    },
-    {
-      "id": "transition-fade-in",
-      "frame": 1192,
-      "path": "remotion/out/final-audit-v7/transition-fade-in.png"
-    },
-    {
-      "id": "transition-greeting",
-      "frame": 1198,
-      "path": "remotion/out/final-audit-v7/transition-greeting.png"
-    },
-    {
-      "id": "final-line-hold",
-      "frame": 20380,
-      "path": "remotion/out/final-audit-v7/final-line-hold.png"
-    },
-    {
-      "id": "final",
-      "frame": 20439,
-      "path": "remotion/out/final-audit-v7/final.png"
-    },
-    {
-      "id": "view-opening-grid",
-      "frame": 115,
-      "path": "remotion/out/final-audit-v7/view-opening-grid.png"
-    },
-    {
-      "id": "view-line-chat",
-      "frame": 504,
-      "path": "remotion/out/final-audit-v7/view-line-chat.png"
-    },
-    {
-      "id": "view-outlook",
-      "frame": 930,
-      "path": "remotion/out/final-audit-v7/view-outlook.png"
-    },
-    {
-      "id": "view-greeting",
-      "frame": 1245,
-      "path": "remotion/out/final-audit-v7/view-greeting.png"
-    },
-    {
-      "id": "view-tip-intro",
-      "frame": 1744,
-      "path": "remotion/out/final-audit-v7/view-tip-intro.png"
-    },
-    {
-      "id": "view-second-grid",
-      "frame": 1956,
-      "path": "remotion/out/final-audit-v7/view-second-grid.png"
-    },
-    {
-      "id": "view-plan-teaser",
-      "frame": 3149,
-      "path": "remotion/out/final-audit-v7/view-plan-teaser.png"
-    },
-    {
-      "id": "view-idea-grid",
-      "frame": 3474,
-      "path": "remotion/out/final-audit-v7/view-idea-grid.png"
-    },
-    {
-      "id": "view-idea-prompt",
-      "frame": 3847,
-      "path": "remotion/out/final-audit-v7/view-idea-prompt.png"
-    },
-    {
-      "id": "view-idea-speed",
-      "frame": 4484,
-      "path": "remotion/out/final-audit-v7/view-idea-speed.png"
-    },
-    {
-      "id": "view-codex-settings",
-      "frame": 5865,
-      "path": "remotion/out/final-audit-v7/view-codex-settings.png"
-    },
-    {
-      "id": "view-option-compare",
-      "frame": 6751,
-      "path": "remotion/out/final-audit-v7/view-option-compare.png"
-    },
-    {
-      "id": "view-option-reuse",
-      "frame": 8041,
-      "path": "remotion/out/final-audit-v7/view-option-reuse.png"
-    },
-    {
-      "id": "view-redraw-compare",
-      "frame": 8459,
-      "path": "remotion/out/final-audit-v7/view-redraw-compare.png"
-    },
-    {
-      "id": "view-redraw-prompt",
-      "frame": 8982,
-      "path": "remotion/out/final-audit-v7/view-redraw-prompt.png"
-    },
-    {
-      "id": "view-pets-sheet",
-      "frame": 9708,
-      "path": "remotion/out/final-audit-v7/view-pets-sheet.png"
-    },
-    {
-      "id": "view-pets-process",
-      "frame": 10370,
-      "path": "remotion/out/final-audit-v7/view-pets-process.png"
-    },
-    {
-      "id": "view-pets-prompt",
-      "frame": 11207,
-      "path": "remotion/out/final-audit-v7/view-pets-prompt.png"
-    },
-    {
-      "id": "view-acting-sobaya",
-      "frame": 11830,
-      "path": "remotion/out/final-audit-v7/view-acting-sobaya.png"
-    },
-    {
-      "id": "view-acting-work",
-      "frame": 12438,
-      "path": "remotion/out/final-audit-v7/view-acting-work.png"
-    },
-    {
-      "id": "view-acting-prompt",
-      "frame": 13642,
-      "path": "remotion/out/final-audit-v7/view-acting-prompt.png"
-    },
-    {
-      "id": "view-acting-options",
-      "frame": 13929,
-      "path": "remotion/out/final-audit-v7/view-acting-options.png"
-    },
-    {
-      "id": "view-inspect-history-white",
-      "frame": 14761,
-      "path": "remotion/out/final-audit-v7/view-inspect-history-white.png"
-    },
-    {
-      "id": "view-inspect-history-black",
-      "frame": 15192,
-      "path": "remotion/out/final-audit-v7/view-inspect-history-black.png"
-    },
-    {
-      "id": "view-inspect-history-report",
-      "frame": 15776,
-      "path": "remotion/out/final-audit-v7/view-inspect-history-report.png"
-    },
-    {
-      "id": "view-inspect-details",
-      "frame": 16077,
-      "path": "remotion/out/final-audit-v7/view-inspect-details.png"
-    },
-    {
-      "id": "view-inspect-prompt",
-      "frame": 16506,
-      "path": "remotion/out/final-audit-v7/view-inspect-prompt.png"
-    },
-    {
-      "id": "view-tools-beforeafter",
-      "frame": 16756,
-      "path": "remotion/out/final-audit-v7/view-tools-beforeafter.png"
-    },
-    {
-      "id": "view-tools-choice",
-      "frame": 17583,
-      "path": "remotion/out/final-audit-v7/view-tools-choice.png"
-    },
-    {
-      "id": "view-tools-prompt",
-      "frame": 18772,
-      "path": "remotion/out/final-audit-v7/view-tools-prompt.png"
-    },
-    {
-      "id": "view-closing-flow",
-      "frame": 19384,
-      "path": "remotion/out/final-audit-v7/view-closing-flow.png"
-    },
-    {
-      "id": "view-ending",
-      "frame": 20221,
-      "path": "remotion/out/final-audit-v7/view-ending.png"
-    },
-    {
-      "id": "settings-03-page-1",
-      "frame": 6169,
-      "path": "remotion/out/final-audit-v7/settings-03-page-1.png"
-    },
-    {
-      "id": "settings-03-page-2",
-      "frame": 6301,
-      "path": "remotion/out/final-audit-v7/settings-03-page-2.png"
-    },
-    {
-      "id": "settings-03-page-2-before",
-      "frame": 6222,
-      "path": "remotion/out/final-audit-v7/settings-03-page-2-before.png"
-    },
-    {
-      "id": "settings-03-page-2-start",
-      "frame": 6223,
-      "path": "remotion/out/final-audit-v7/settings-03-page-2-start.png"
-    },
-    {
-      "id": "settings-03-end",
-      "frame": 6379,
-      "path": "remotion/out/final-audit-v7/settings-03-end.png"
-    },
-    {
-      "id": "tips-01-page-1",
-      "frame": 1667,
-      "path": "remotion/out/final-audit-v7/tips-01-page-1.png"
-    },
-    {
-      "id": "tips-01-page-2",
-      "frame": 1826,
-      "path": "remotion/out/final-audit-v7/tips-01-page-2.png"
-    },
-    {
-      "id": "tips-01-page-2-before",
-      "frame": 1749,
-      "path": "remotion/out/final-audit-v7/tips-01-page-2-before.png"
-    },
-    {
-      "id": "tips-01-page-2-start",
-      "frame": 1750,
-      "path": "remotion/out/final-audit-v7/tips-01-page-2-start.png"
-    },
-    {
-      "id": "tips-01-end",
-      "frame": 1902,
-      "path": "remotion/out/final-audit-v7/tips-01-end.png"
-    },
-    {
-      "id": "cut-tips-01-before",
-      "frame": 1584,
-      "path": "remotion/out/final-audit-v7/cut-tips-01-before.png"
-    },
-    {
-      "id": "cut-tips-01-after",
-      "frame": 1586,
-      "path": "remotion/out/final-audit-v7/cut-tips-01-after.png"
-    },
-    {
-      "id": "cut-tips-second-01-before",
-      "frame": 1911,
-      "path": "remotion/out/final-audit-v7/cut-tips-second-01-before.png"
-    },
-    {
-      "id": "cut-tips-second-01-after",
-      "frame": 1913,
-      "path": "remotion/out/final-audit-v7/cut-tips-second-01-after.png"
-    },
-    {
-      "id": "cut-settings-01-before",
-      "frame": 5824,
-      "path": "remotion/out/final-audit-v7/cut-settings-01-before.png"
-    },
-    {
-      "id": "cut-settings-01-after",
-      "frame": 5826,
-      "path": "remotion/out/final-audit-v7/cut-settings-01-after.png"
-    },
-    {
-      "id": "cut-settings-04-before",
-      "frame": 6388,
-      "path": "remotion/out/final-audit-v7/cut-settings-04-before.png"
-    },
-    {
-      "id": "cut-settings-04-after",
-      "frame": 6390,
-      "path": "remotion/out/final-audit-v7/cut-settings-04-after.png"
-    },
-    {
-      "id": "cut-options-01-before",
-      "frame": 6692,
-      "path": "remotion/out/final-audit-v7/cut-options-01-before.png"
-    },
-    {
-      "id": "cut-options-01-after",
-      "frame": 6694,
-      "path": "remotion/out/final-audit-v7/cut-options-01-after.png"
-    },
-    {
-      "id": "close-05-page-1",
-      "frame": 20335,
-      "path": "remotion/out/final-audit-v7/close-05-page-1.png"
+      "path": "remotion/out/caption-fix-v8-audit/final_remotion_line_stickers_v8-20439.png"
     }
   ],
   "note": "Automated source, waveform and timing checks are separate from subjective listening and visual review.",
   "visualReview": {
     "status": "passed",
-    "contactSheetsReviewed": 4,
-    "extractedFramesRepresented": 61,
-    "fullResolutionFramesReviewed": 23,
-    "detailRecord": "remotion/out/visual_review_v7.json",
-    "detailRecordSha256": "ac21b0416777e44c7747cfd754d4ed39d45e033a99e300e87c1e021c765c2e99",
-    "continuousPlaybackReviewed": false,
-    "findings": "All layouts sampled; revised sale-preparation/review status and Ultra captions, their boundaries, and final punchline visibly legible with no observed clipping or overlap."
+    "record": "caption_fix_v8.json",
+    "scope": "Corrected caption visually checked in all three outputs; horizontal first frame, Python punchline and ending fade inspected. Remaining original layout/timing is unchanged by deep manifest comparison."
   },
-  "verificationRecord": "review_v7.md",
+  "verificationRecord": "review_v8.md",
   "factCheck": {
     "record": "fact_check_effort_ultra.md",
     "officialSources": [
@@ -1100,8 +789,17 @@
     ]
   },
   "previousVersion": {
-    "video": "final_remotion_line_stickers_v6.mp4",
-    "status": "user-approved retained baseline",
-    "baselineCommit": "0a3e1f3f"
+    "video": "final_remotion_line_stickers_v7.mp4",
+    "sha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
+    "baselineCommit": "d49cbdab"
+  },
+  "changedAudioIds": [],
+  "displayOnlyChange": true,
+  "voiceAuditInheritedFromVersion7": true,
+  "inheritedVoiceMachineScreening": {
+    "record": "voice_audit_v7.json",
+    "sha256": "1e8d97adbbb5ea913059af7e6e40ed6d89a9583d88f95eb2f2ea8e7c2265e3d5",
+    "utterances": 2,
+    "subjectiveListening": false
   }
 }

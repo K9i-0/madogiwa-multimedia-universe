@@ -6,10 +6,10 @@
 
 ## 2026-10-16 19:00（日本時間）の公開予約
 
-本編v7と誘導用ショートを公式YouTubeへアップロードし、両方の処理完了を確認した。本編には採用タイトル・緑Aサムネ・チャプターとクレジット入り概要欄を設定。公開時刻は両方とも `2026-10-16T10:00:00Z`。その時刻までは `private`、プレミア公開なし。ユーザーの指定どおり同時公開を予約し、公開時の登録者通知を有効にした。
+字幕訂正版の本編v8と誘導用ショートを公式YouTubeへアップロードし、両方の処理完了を確認した。本編には採用タイトル・緑Aサムネ・チャプターとクレジット入り概要欄を設定。公開時刻は両方とも `2026-10-16T10:00:00Z`。その時刻までは `private`、プレミア公開なし。ユーザーの指定どおり同時公開を予約し、公開時の登録者通知を有効にした。
 
-- 本編：[YouTube](https://www.youtube.com/watch?v=TJ8UNr3CenM) / [投稿設定](youtube_metadata.json) / [投稿・処理・非公開予約の確認記録](youtube_upload.json)
-- 誘導用ショート：[YouTube](https://www.youtube.com/shorts/lsuziGFfhn4) / [完成MP4](final_remotion_shorts_9x16.mp4) / [編集マニフェスト](shorts-manifest.json) / [概要欄](shorts_description.txt) / [検査記録](shorts-audit.json) / [投稿・予約の確認記録](youtube_shorts_upload.json)
+- 本編：[YouTube](https://www.youtube.com/watch?v=PJ3ak1m-Itg) / [投稿設定](youtube_metadata.json) / [投稿・処理・非公開予約の確認記録](youtube_upload.json)
+- 誘導用ショート：[YouTube](https://www.youtube.com/shorts/8NbzZ3oSyVY) / [完成MP4](final_remotion_shorts_9x16.mp4) / [編集マニフェスト](shorts-manifest.json) / [概要欄](shorts_description.txt) / [検査記録](shorts-audit.json) / [投稿・予約の確認記録](youtube_shorts_upload.json)
 
 ショートは冒頭から「Pythonエンジニアみたいに言うな！」と余韻までの39.53秒。共通の720×1280レイアウトで、元の字幕だけを非表示にして下へ移動。LINEトーク・Outlookメール等の画面内文字は保つ。採用v7のAAC音声を先頭からストリームコピーし、声・間・音量・効果音を変更しない。最後のツッコミ中に、上部を「作り方はチャンネルの本編へ／動くLINEスタンプ」に切り替える。
 
@@ -17,7 +17,19 @@
 
 Shortsの「関連動画」は公開または限定公開の本編が必要なため、公開後にYouTube Studioで追加する。予約中の本編を限定公開へ変更しない。現時点では動画内の案内と概要欄に本編への誘導を用意。Madogiwa Studioへの登録・公式サイト掲載は今回の投稿作業では行わない。
 
-## 現行：第二弾の販売準備とUltraの並列分担を補足した v7
+## 現行：字幕訂正とX用横動画 v8
+
+2026-10-16。「ワイ明日から廃村ゆめみ村に異動らしいわ…」へ字幕を訂正。本編・ショート・X用へ反映し、声とタイミングは維持した。
+
+- [本編v8](final_remotion_line_stickers_v8.mp4)：11分21.33秒、1280×720。
+- [X用横動画](final_remotion_x_opening_16x9.mp4)：ショートと同じ39.53秒、1280×720。[投稿文案](x_post.txt) / [本編URL入りの返信文](x_reply.txt)。Xへの投稿操作は行っていない。
+- [字幕訂正・出力監査](caption_fix_v8.json) / [制作記録](review_v8.md)。
+
+本編URLは `https://www.youtube.com/watch?v=PJ3ak1m-Itg`、ショートは `https://www.youtube.com/shorts/8NbzZ3oSyVY`。旧ID `TJ8UNr3CenM` と `lsuziGFfhn4` は予約を解除し、非公開で退避。旧予約の解除はAPI更新直後の返却値だけで判定せず、再取得した状態で確認した。旧記録は `youtube_upload_v7_superseded.json` / `youtube_shorts_upload_v1_superseded.json`。
+
+字幕修正の再現は元v7を保持して `python3 03_SCRIPTS/youtube_line_stickers_20261015/build_caption_fix_v8.py main`、X版は末尾を `x` にする。縦版は `build_shorts.py --skip-clean-render`。検証は `verify_caption_fix_v8.py` と `verify_shorts.py`。すべてエピソードディレクトリ内のスクリプト。v7は実生成音声・AACの保存元として保持する。
+
+## 前版：第二弾の販売準備とUltraの並列分担を補足した v7
 
 2026-10-16。承認済みv6を基に、たこさんの説明2か所を差し替え。残る105音声はv6の波形と設定を維持。
 
@@ -66,7 +78,9 @@ v6完成時点では、MP4と確認画像をローカル成果物として保持
 
 第一弾の申請担当はそば屋さん。第二弾の候補を第一弾の制作記録と混同しない。肘の動き3候補は全不採用。OpenAIのPets用スキルを参考にしたもので、OpenAI公式のLINEスタンプ制作法とは説明しない。修正後の均一な細い文字白フチは可読性のための意図した装飾。消し残しとは区別する。説明用ループと元APNGの再生回数も区別する。
 
-## 再現
+## 素材・音声まで含むベース版の再現
+
+v8の字幕訂正だけを再現する場合は上記の専用コマンドを使う。以下はベース版の素材・音声から作り直すための履歴。
 
 リポジトリ直下で実行。Pythonは既存の `.local/Irodori-TTS/.venv`（音声）と `27_LINE_STICKERS/sets/02/.venv`（画像）。VOICEVOX Engineは `127.0.0.1:50021`。正典声は `02_CHARACTERS/VOICE_CAST.md`、Irodori手順は `tools/IRODORI_TTS.md`。
 

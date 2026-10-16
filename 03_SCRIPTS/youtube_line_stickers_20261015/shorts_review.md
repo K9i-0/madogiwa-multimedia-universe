@@ -1,10 +1,10 @@
 # 本編誘導用 Shorts（2026-10-16）
 
-採用 v7 の冒頭を `0–1185` フレーム（39.533 秒）で切り出し。スタンプの使い所から LINE 通知、Outlook の辞令、廃村／Python のオチまでを含み、挨拶は含まない。
+字幕の「移動」を「異動」に訂正した版。採用 v7 の冒頭を `0–1185` フレーム（39.533 秒）で切り出し。スタンプの使い所から LINE 通知、Outlook の辞令、廃村／Python のオチまでを含み、挨拶は含まない。
 
 - 完成版: `final_remotion_shorts_9x16.mp4`、720×1280、30 fps、1186 フレーム、H.264 + AAC 48 kHz stereo。
-- SHA-256: `065975a3a0dca452c73b3e26a9f79b8aab25e083f520a947ed155cd9a05039f6`
-- 元動画: `final_remotion_line_stickers_v7.mp4`。本編ファイルと台本・採用音声は変更していない。
+- SHA-256: `15da0a45762875578c36009bf715bf8b4f80a99d0c3ae31ec3254fb70a4bf478`
+- 元動画: `final_remotion_line_stickers_v7.mp4`。採用音声と原本v7は変更していない。台本と本編v8には同じ字幕訂正を反映。
 - レイアウトは `03_SCRIPTS/shorts_queue_20261011/remotion/src/index.tsx` を再利用。共有コードへ任意の `titleCues` だけ追加し、従来キューの既定表示は維持。
 - 元映像の会話字幕は `Explainer` の `hideCaptions` で外して再レンダー。LINE トークと Outlook メールなど演出の文字は残す。
 - 会話字幕は原稿と整数フレームを保ち、下余白に 11 カードで再配置。名前 28 px、セリフ 38 px、やめ太郎は紫、たこさんはピンク。最長 3 行。

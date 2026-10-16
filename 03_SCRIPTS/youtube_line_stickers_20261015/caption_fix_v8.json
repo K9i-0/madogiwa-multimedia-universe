@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-16T03:39:50.811852+00:00",
+  "baselineCommit": "d49cbdab",
+  "change": "intro-08 display text: 移動 → 異動",
+  "displayOnlyDifferencePassed": true,
+  "voiceAndTimingUnchanged": true,
+  "visualReview": "passed",
+  "subjectiveListening": false,
+  "outputs": [
+    {
+      "file": "final_remotion_line_stickers_v8.mp4",
+      "sha256": "40c510b4a2a83a9a653d5fdda36112b37c9ad12599ef9729e93aa77f8e9bfc3c",
+      "bytes": 42620716,
+      "frames": 20440,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "durationSeconds": 681.3333333333334,
+      "fullDecodePassed": true,
+      "audioSha256": "81b96b374385b0442392694e3e5b2fa0348f4e3caa8092eb9359639e5b1a979b",
+      "audioMatches": "final_remotion_line_stickers_v7.mp4",
+      "samples": [
+        "remotion/out/caption-fix-v8-audit/final_remotion_line_stickers_v8-00952.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_line_stickers_v8-01210.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_line_stickers_v8-20439.png"
+      ]
+    },
+    {
+      "file": "final_remotion_x_opening_16x9.mp4",
+      "sha256": "828751391b3a06714da645e5ec16371f7cfcea67c8b313e23ee3e0fdea2b2eaa",
+      "bytes": 2677987,
+      "frames": 1186,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "durationSeconds": 39.53333333333333,
+      "fullDecodePassed": true,
+      "audioSha256": "67633cc282d9f72c39b88e081d200f4661475a1a988a9e2f82df24db4be43294",
+      "audioMatches": "final_remotion_shorts_9x16.mp4",
+      "samples": [
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-00000.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-00910.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-00911.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-00952.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-00993.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-00994.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-01133.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_x_opening_16x9-01185.png"
+      ]
+    },
+    {
+      "file": "final_remotion_shorts_9x16.mp4",
+      "sha256": "15da0a45762875578c36009bf715bf8b4f80a99d0c3ae31ec3254fb70a4bf478",
+      "bytes": 2895824,
+      "frames": 1186,
+      "width": 720,
+      "height": 1280,
+      "fps": 30,
+      "durationSeconds": 39.53333333333333,
+      "fullDecodePassed": true,
+      "audioSha256": "67633cc282d9f72c39b88e081d200f4661475a1a988a9e2f82df24db4be43294",
+      "audioMatches": null,
+      "samples": [
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-00000.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-00910.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-00911.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-00952.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-00993.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-00994.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-01133.png",
+        "remotion/out/caption-fix-v8-audit/final_remotion_shorts_9x16-01185.png"
+      ]
+    }
+  ],
+  "visualReviewScope": "Corrected caption visually checked in all three outputs; horizontal first frame, Python punchline and ending fade inspected. Remaining original layout/timing is unchanged by deep manifest comparison."
+}

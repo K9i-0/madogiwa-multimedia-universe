@@ -44,7 +44,8 @@ def post(endpoint, params, data=None):
     req = urllib.request.Request(BASE + '/' + endpoint + '?' + urllib.parse.urlencode(params),
         data=b'' if data is None else json.dumps(data).encode(),
         headers={'Content-Type': 'application/json'}, method='POST')
-    return urllib.request.urlopen(req, timeout=120).read()
+    # Local synthesis can be slow while the shared workstation is under load.
+    return urllib.request.urlopen(req, timeout=600).read()
 
 
 def link_or_copy(source, destination):
@@ -116,7 +117,7 @@ def main():
         kana = None
         if protected:
             previous = previous_lines[row['id']]
-            for field in ['who', 'text', 'reading', 'voicevoxReading', 'seed', 'durationScale']:
+            for field in ['who', 'text', 'reading', 'voicevoxReading', 'seed', 'durationScale', 'voiceCaption']:
                 assert row.get(field) == previous.get(field), ('Protected line changed', row['id'], field)
             settings = previous['voiceSettings']
             spoken = previous['spoken']
@@ -133,7 +134,7 @@ def main():
             assert row['who'] == 'yametaro', row
             settings = {'model': 'Aratako/Irodori-TTS-v4.1-Small', 'runtimeRevision': revision,
                 'reference': str(ref.relative_to(R)), 'referenceSha256': ref_hash,
-                'seed': row.get('seed', 7), 'caption': None, 'cfgScaleText': 5,
+                'seed': row.get('seed', 7), 'caption': row.get('voiceCaption'), 'cfgScaleText': 5,
                 'cfgScaleSpeaker': 5, 'numSteps': 40, 'durationScale': row.get('durationScale', .70),
                 'trimTail': False, 'postTrim': False, 'text': spoken}
         key = identity(settings)
@@ -161,7 +162,7 @@ def main():
                 if runtime is None:
                     runtime = InferenceRuntime.from_key(RuntimeKey(checkpoint=download_hf_checkpoint(settings['model']), model_device='mps', codec_device='mps'))
                 result = runtime.synthesize(SamplingRequest(text=spoken, ref_wav=str(ref), seed=settings['seed'],
-                    caption=None, cfg_scale_text=5, duration_scale=settings['durationScale'], trim_tail=False), log_fn=None)
+                    caption=settings['caption'], cfg_scale_text=5, duration_scale=settings['durationScale'], trim_tail=False), log_fn=None)
                 save_wav(str(path), result.audio, result.sample_rate)
                 write_json(P / 'out' / (name + '.json'), {'settings': settings, 'messages': result.messages, 'timings': result.stage_timings})
         generated_name, generated_hash = name, sha(path)

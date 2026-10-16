@@ -1,4 +1,4 @@
-"""Mix canonical narration, quiet adopted music, and two original tonal cues."""
+"""Mix canonical narration, quiet adopted music, and original message/title cues."""
 from pathlib import Path
 import json
 import math
@@ -82,6 +82,22 @@ def tones(notes, duration):
     return np.stack([mono, mono], axis=1)
 
 
+def message_notification():
+    """A short, friendly plucked message cue, authored for this video."""
+    mono = np.zeros(round(.6 * SR), np.float32)
+    # Two light wooden/plucked strikes with a brief rising tail. Avoid the long
+    # bell sustain of v3; let the spoken reaction start after the clear transient.
+    for start, hz, level in [(0, 1318.51, .043), (.115, 1567.98, .036), (.215, 2093.0, .019)]:
+        t = np.arange(round(.31 * SR)) / SR
+        attack = np.minimum(1, t / .002)
+        tone = (np.sin(2*math.pi*hz*t)*np.exp(-25*t)
+                + .22*np.sin(2*math.pi*hz*2.76*t)*np.exp(-48*t)
+                + .08*np.sin(2*math.pi*hz*5.4*t)*np.exp(-80*t))
+        index = round(start * SR)
+        mono[index:index+len(t)] += level * attack * tone
+    return np.stack([mono, mono], axis=1)
+
+
 def music_inputs():
     """Restore stable working inputs directly from locally retained distribution originals."""
     sources = {}
@@ -131,12 +147,12 @@ def main():
     notification_line = next((row for row in m['dialogue'] if row['id'] == notification_id), None)
     if notification_line:
         start_frame = max(0, notification_line['startFrame'] - 12)
-        cue = tones([(0, 880, .5, .045), (.14, 1174.66, .6, .04)], .8)
+        cue = message_notification()
         start = start_frame * SAMPLES_PER_FRAME
         effects[start:start+len(cue)] += cue
         save(P / 'public/notification.wav', cue)
-        sound_events.append({'name': 'original two-tone notification', 'startFrame': start_frame, 'durationInFrames': 24})
-    final_intro = next((row for row in m['dialogue'] if row['id'] == 'intro-13'), None)
+        sound_events.append({'name': 'original short plucked message notification', 'startFrame': start_frame, 'durationInFrames': 18, 'source': 'procedural synthesis in mix_audio.py; LINE-like message context, not a recording of the official LINE sound'})
+    final_intro = next((row for row in reversed(m['dialogue']) if row['id'].startswith('intro-')), None)
     if final_intro:
         start_frame = final_intro['startFrame'] + final_intro['durationInFrames'] + 24
         start = start_frame * SAMPLES_PER_FRAME

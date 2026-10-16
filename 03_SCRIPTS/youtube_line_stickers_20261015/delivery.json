@@ -1,9 +1,660 @@
 {
-  "video": "final_remotion_line_stickers_v3.mp4",
-  "sha256": "37936d9410666e0b39ce336bde0a1487fa13a7c512502b45432e3badc7103b4a",
-  "bytes": 37843983,
-  "durationInFrames": 17891,
-  "durationSeconds": 596.3666666666667,
+  "version": 5,
+  "utterances": 96,
+  "subtitlePages": 119,
+  "durationInFrames": 18608,
+  "durationSeconds": 620.2666666666667,
+  "dialogueAndCaptionIntegrity": "passed",
+  "coldOpenEndsAt": "intro-10",
+  "adoptedFeedbackLines": "passed",
+  "voiceAudit": {
+    "baselineCommit": "61f44365",
+    "castCounts": {
+      "yametaro": 47,
+      "takosan": 49
+    },
+    "unchangedAudio": [
+      {
+        "id": "intro-01",
+        "baselineSha256": "11f686d328d54f40aa12fb97546752d7281a405ea9aaec0c33069aa27a33b7a1",
+        "audioSha256": "11f686d328d54f40aa12fb97546752d7281a405ea9aaec0c33069aa27a33b7a1"
+      },
+      {
+        "id": "intro-02",
+        "baselineSha256": "b787a78785fc383d99aae566b609e2a9fac8737a9127c3bbebe9bb0071815da7",
+        "audioSha256": "b787a78785fc383d99aae566b609e2a9fac8737a9127c3bbebe9bb0071815da7"
+      },
+      {
+        "id": "intro-03",
+        "baselineSha256": "91f915c7472e665e53b057a93c6618d9c9e0edf2cae04a1fa2fd8b8f0df4884d",
+        "audioSha256": "91f915c7472e665e53b057a93c6618d9c9e0edf2cae04a1fa2fd8b8f0df4884d"
+      },
+      {
+        "id": "intro-05",
+        "baselineSha256": "32a53cee3f0d83f07f882ff4914a10a69a7c0139055127413d9019e8b51d94a7",
+        "audioSha256": "32a53cee3f0d83f07f882ff4914a10a69a7c0139055127413d9019e8b51d94a7"
+      },
+      {
+        "id": "intro-06",
+        "baselineSha256": "9c680d359f44500a79f883cf49c9afebddb1bd49893890bc110f32de5ef8b0d9",
+        "audioSha256": "9c680d359f44500a79f883cf49c9afebddb1bd49893890bc110f32de5ef8b0d9"
+      },
+      {
+        "id": "intro-07",
+        "baselineSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619",
+        "audioSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619"
+      },
+      {
+        "id": "intro-08",
+        "baselineSha256": "b39f27658988a0695995458373cd68f8a97126bd58a5ee415e1c3f7aef5b24a9",
+        "audioSha256": "b39f27658988a0695995458373cd68f8a97126bd58a5ee415e1c3f7aef5b24a9"
+      },
+      {
+        "id": "intro-09",
+        "baselineSha256": "f8228d3880f3cecd98a06b65fd82318ce7c8134ea53009e1d6e68f8c4ed9b507",
+        "audioSha256": "f8228d3880f3cecd98a06b65fd82318ce7c8134ea53009e1d6e68f8c4ed9b507"
+      },
+      {
+        "id": "intro-10",
+        "baselineSha256": "e2dd981c3ca7919f63ad8b1c2ab03f50846a9e0773a2cde55cee3b68a587f1c6",
+        "audioSha256": "e2dd981c3ca7919f63ad8b1c2ab03f50846a9e0773a2cde55cee3b68a587f1c6"
+      },
+      {
+        "id": "main-01",
+        "baselineSha256": "296943c211af0f1f219d2e9a6d8f6d3040f47849360b6be2c2266fcac6c837e2",
+        "audioSha256": "296943c211af0f1f219d2e9a6d8f6d3040f47849360b6be2c2266fcac6c837e2"
+      },
+      {
+        "id": "main-02",
+        "baselineSha256": "83f6c357e127595e7775a132a3ef02bec0d64fcd5724bce1a0a776a65326f11a",
+        "audioSha256": "83f6c357e127595e7775a132a3ef02bec0d64fcd5724bce1a0a776a65326f11a"
+      },
+      {
+        "id": "main-03",
+        "baselineSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005",
+        "audioSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005"
+      },
+      {
+        "id": "tips-02",
+        "baselineSha256": "5d1bb9ddeab5504c577b9ba8519450191c8d580e956c6a72df2201a4fbac6bde",
+        "audioSha256": "5d1bb9ddeab5504c577b9ba8519450191c8d580e956c6a72df2201a4fbac6bde"
+      },
+      {
+        "id": "tips-03",
+        "baselineSha256": "fc760e8257fbcf3583ecdf18374a5edd79c5ee5e7df68a90211531f6a04ff8d7",
+        "audioSha256": "fc760e8257fbcf3583ecdf18374a5edd79c5ee5e7df68a90211531f6a04ff8d7"
+      },
+      {
+        "id": "tips-04",
+        "baselineSha256": "127a41b6783a505c274c22d095776bcdc752dc736f48242b95bdb2cd2b7cd10f",
+        "audioSha256": "127a41b6783a505c274c22d095776bcdc752dc736f48242b95bdb2cd2b7cd10f"
+      },
+      {
+        "id": "tips-05",
+        "baselineSha256": "10549df504c1a99ebee232a31a277cb6d7dc668ddb25ffae5ed0d31d2d2abfd8",
+        "audioSha256": "10549df504c1a99ebee232a31a277cb6d7dc668ddb25ffae5ed0d31d2d2abfd8"
+      },
+      {
+        "id": "ideas-01",
+        "baselineSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c",
+        "audioSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c"
+      },
+      {
+        "id": "ideas-02",
+        "baselineSha256": "dd7fe507f29314b8585423f8df859bb4210ffbcdafef7ab123e285bfb08b5ec0",
+        "audioSha256": "dd7fe507f29314b8585423f8df859bb4210ffbcdafef7ab123e285bfb08b5ec0"
+      },
+      {
+        "id": "ideas-03",
+        "baselineSha256": "e0d8d5f832a8dfbd9e9c9e11da6ba580505dabc6fae1eaba4603c973898da346",
+        "audioSha256": "e0d8d5f832a8dfbd9e9c9e11da6ba580505dabc6fae1eaba4603c973898da346"
+      },
+      {
+        "id": "ideas-04",
+        "baselineSha256": "63a73090f73e77698fd42ea4d2c303377233c5f94def5a490bacd53f506495c9",
+        "audioSha256": "63a73090f73e77698fd42ea4d2c303377233c5f94def5a490bacd53f506495c9"
+      },
+      {
+        "id": "ideas-05",
+        "baselineSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2",
+        "audioSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2"
+      },
+      {
+        "id": "ideas-06",
+        "baselineSha256": "5a9725dc20eee5ce0474f6b6e88f8f41967245c4034147347d60365e3caddb16",
+        "audioSha256": "5a9725dc20eee5ce0474f6b6e88f8f41967245c4034147347d60365e3caddb16"
+      },
+      {
+        "id": "ideas-07",
+        "baselineSha256": "ecf58fdeb577a7dfdc5ee383259cfd4f256aee8c7fdfb329896448cce23b5497",
+        "audioSha256": "ecf58fdeb577a7dfdc5ee383259cfd4f256aee8c7fdfb329896448cce23b5497"
+      },
+      {
+        "id": "ideas-08",
+        "baselineSha256": "b0775ccdcc9a52199bd70ab1b3a548feb6d3f5e14518f20f0e18c1911dd63925",
+        "audioSha256": "b0775ccdcc9a52199bd70ab1b3a548feb6d3f5e14518f20f0e18c1911dd63925"
+      },
+      {
+        "id": "ideas-09",
+        "baselineSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb",
+        "audioSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb"
+      },
+      {
+        "id": "options-01",
+        "baselineSha256": "d034f8d5b710354bcc167a54f4f32eac06a5978884201393f15777c8679bf224",
+        "audioSha256": "d034f8d5b710354bcc167a54f4f32eac06a5978884201393f15777c8679bf224"
+      },
+      {
+        "id": "options-02",
+        "baselineSha256": "868f69d22e8c2b80fb81e580daf4a143bc191b060bcb0fa06de7304bb040e160",
+        "audioSha256": "868f69d22e8c2b80fb81e580daf4a143bc191b060bcb0fa06de7304bb040e160"
+      },
+      {
+        "id": "options-03",
+        "baselineSha256": "cfea0319baf7fe0adc59fae2acb64102df41b918bb459ff2b863d3de11eed78f",
+        "audioSha256": "cfea0319baf7fe0adc59fae2acb64102df41b918bb459ff2b863d3de11eed78f"
+      },
+      {
+        "id": "options-04",
+        "baselineSha256": "e8cfc02e48930bf1e18bf7f552199508e093302f42a281e5d4d4b28a41b6c389",
+        "audioSha256": "e8cfc02e48930bf1e18bf7f552199508e093302f42a281e5d4d4b28a41b6c389"
+      },
+      {
+        "id": "redraw-01",
+        "baselineSha256": "502c00c4f310756813ff202cbbf91d013ea245d1af095c4f935f3ee11013a5fb",
+        "audioSha256": "502c00c4f310756813ff202cbbf91d013ea245d1af095c4f935f3ee11013a5fb"
+      },
+      {
+        "id": "redraw-02",
+        "baselineSha256": "9380831e588df8228f8299c0d3e8e04e223d1492f8eab07341e12a1b73c8d803",
+        "audioSha256": "9380831e588df8228f8299c0d3e8e04e223d1492f8eab07341e12a1b73c8d803"
+      },
+      {
+        "id": "redraw-03",
+        "baselineSha256": "19fdeea18f04e66b426d994911c013281642d885f903f07c6712f8e88e99f05f",
+        "audioSha256": "19fdeea18f04e66b426d994911c013281642d885f903f07c6712f8e88e99f05f"
+      },
+      {
+        "id": "redraw-04",
+        "baselineSha256": "51681539fb9800678c6b5cfa87b2c03f46a1e2fe0989821d5995fd9afb00e432",
+        "audioSha256": "51681539fb9800678c6b5cfa87b2c03f46a1e2fe0989821d5995fd9afb00e432"
+      },
+      {
+        "id": "redraw-05",
+        "baselineSha256": "6bf5fee51e82a64bf8b12ce442e248e91135e5bbbea542b63b95e2c76122f8e6",
+        "audioSha256": "6bf5fee51e82a64bf8b12ce442e248e91135e5bbbea542b63b95e2c76122f8e6"
+      },
+      {
+        "id": "redraw-06",
+        "baselineSha256": "c20a4ba503353ef200667cbb45f48bd2d765ded619e84103fe56f2741e3e72e6",
+        "audioSha256": "c20a4ba503353ef200667cbb45f48bd2d765ded619e84103fe56f2741e3e72e6"
+      },
+      {
+        "id": "pets-01",
+        "baselineSha256": "f61c488c0b54d704d9372360f7c2487a2e306ff7ac5ef6068095f2041cef22db",
+        "audioSha256": "f61c488c0b54d704d9372360f7c2487a2e306ff7ac5ef6068095f2041cef22db"
+      },
+      {
+        "id": "pets-02",
+        "baselineSha256": "1d92b6a569e85d742e0e60976af98f47cc7ad5a46835d3e58d2ca2cbfe451037",
+        "audioSha256": "1d92b6a569e85d742e0e60976af98f47cc7ad5a46835d3e58d2ca2cbfe451037"
+      },
+      {
+        "id": "pets-03",
+        "baselineSha256": "42976c8c3e10ba729008795acefe8a98c753d718c948d3faea58cd6a161c8b8f",
+        "audioSha256": "42976c8c3e10ba729008795acefe8a98c753d718c948d3faea58cd6a161c8b8f"
+      },
+      {
+        "id": "pets-04",
+        "baselineSha256": "c53f575a8a8b7f6e6603b1aa2815e42bd96d62b9f61061aefe3b04a9868bee4c",
+        "audioSha256": "c53f575a8a8b7f6e6603b1aa2815e42bd96d62b9f61061aefe3b04a9868bee4c"
+      },
+      {
+        "id": "pets-05",
+        "baselineSha256": "af8021d189d2a82c319e9543467516a6f8db7a64f4f89955e01e92b0456c344c",
+        "audioSha256": "af8021d189d2a82c319e9543467516a6f8db7a64f4f89955e01e92b0456c344c"
+      },
+      {
+        "id": "pets-06",
+        "baselineSha256": "0d94263c1b09200c2ea23360faa9fa8ea6d89c5881fdc253a3d581f713f72c3c",
+        "audioSha256": "0d94263c1b09200c2ea23360faa9fa8ea6d89c5881fdc253a3d581f713f72c3c"
+      },
+      {
+        "id": "pets-07",
+        "baselineSha256": "3616f0c95410e17a8d92c6299dd1fcc5c36eaf575a06b0f1ba6a4268626cbc02",
+        "audioSha256": "3616f0c95410e17a8d92c6299dd1fcc5c36eaf575a06b0f1ba6a4268626cbc02"
+      },
+      {
+        "id": "pets-08",
+        "baselineSha256": "500af79dee2a85825d6b3440195e3a6cdfc57cf8d3e532a2e2bc5fc368681b1b",
+        "audioSha256": "500af79dee2a85825d6b3440195e3a6cdfc57cf8d3e532a2e2bc5fc368681b1b"
+      },
+      {
+        "id": "pets-09",
+        "baselineSha256": "a952748eeb8ae00577265fd24190458a80bf5638a5ed09613604b859998a7d04",
+        "audioSha256": "a952748eeb8ae00577265fd24190458a80bf5638a5ed09613604b859998a7d04"
+      },
+      {
+        "id": "acting-01",
+        "baselineSha256": "530a2b30af72fb0448c01294518371c9b5dc4eb106dc6ce228f68a3fbaae38dc",
+        "audioSha256": "530a2b30af72fb0448c01294518371c9b5dc4eb106dc6ce228f68a3fbaae38dc"
+      },
+      {
+        "id": "acting-02",
+        "baselineSha256": "6ae11fa70e85187fa0fcf1e0cc09cf2f701a966b9e78edc28eb9b1521a64387d",
+        "audioSha256": "6ae11fa70e85187fa0fcf1e0cc09cf2f701a966b9e78edc28eb9b1521a64387d"
+      },
+      {
+        "id": "acting-03",
+        "baselineSha256": "557ec698918c998dfa709f1d9860e1ab7490b0b19295771f8c33cd796d1ea3b6",
+        "audioSha256": "557ec698918c998dfa709f1d9860e1ab7490b0b19295771f8c33cd796d1ea3b6"
+      },
+      {
+        "id": "acting-04",
+        "baselineSha256": "35c2c9ad91ccfd9e44d6750819b99247d6a5ffb0f45ea35f73ee58be9d7ef1cf",
+        "audioSha256": "35c2c9ad91ccfd9e44d6750819b99247d6a5ffb0f45ea35f73ee58be9d7ef1cf"
+      },
+      {
+        "id": "acting-05",
+        "baselineSha256": "7cdb875b4d94d118193f1424b2b08ddccb1ecd4413a28348db346e3d0e31c650",
+        "audioSha256": "7cdb875b4d94d118193f1424b2b08ddccb1ecd4413a28348db346e3d0e31c650"
+      },
+      {
+        "id": "acting-06",
+        "baselineSha256": "1cac7104621f06bfae5738d1044b74f9f89fd40a532e36c708d7c11f7cdcd83d",
+        "audioSha256": "1cac7104621f06bfae5738d1044b74f9f89fd40a532e36c708d7c11f7cdcd83d"
+      },
+      {
+        "id": "acting-07",
+        "baselineSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4",
+        "audioSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4"
+      },
+      {
+        "id": "acting-08",
+        "baselineSha256": "9c5ce9a1e4a039633e4281cba5db22fccbc8a80457504c49612f2c1681f3a009",
+        "audioSha256": "9c5ce9a1e4a039633e4281cba5db22fccbc8a80457504c49612f2c1681f3a009"
+      },
+      {
+        "id": "acting-09",
+        "baselineSha256": "3bb66f673cdab736e2a9f2204f30dd295db885521ea02b896d46d23f879db63a",
+        "audioSha256": "3bb66f673cdab736e2a9f2204f30dd295db885521ea02b896d46d23f879db63a"
+      },
+      {
+        "id": "acting-10",
+        "baselineSha256": "c22b1442034d41c89da517e341e5a6ed808e310956937ff0c13c223492822f16",
+        "audioSha256": "c22b1442034d41c89da517e341e5a6ed808e310956937ff0c13c223492822f16"
+      },
+      {
+        "id": "acting-11",
+        "baselineSha256": "d559ca97b4abf73e8f2f89f1bc672cefdcdc8c31671c793833eb2446486b7d44",
+        "audioSha256": "d559ca97b4abf73e8f2f89f1bc672cefdcdc8c31671c793833eb2446486b7d44"
+      },
+      {
+        "id": "acting-12",
+        "baselineSha256": "6729b4fb3c195697d73b10a8f471303ab36ad0e6e0f4be8d0036f9ebca90ad6e",
+        "audioSha256": "6729b4fb3c195697d73b10a8f471303ab36ad0e6e0f4be8d0036f9ebca90ad6e"
+      },
+      {
+        "id": "acting-13",
+        "baselineSha256": "e4df986e3729e815bd96e7b572092d3bb2d11494e64171c988889d1c65f880b5",
+        "audioSha256": "e4df986e3729e815bd96e7b572092d3bb2d11494e64171c988889d1c65f880b5"
+      },
+      {
+        "id": "inspect-01",
+        "baselineSha256": "5dae87b7343c21fc435a7646dd673eab6911e0fb3d397b62a13eb91b55458562",
+        "audioSha256": "5dae87b7343c21fc435a7646dd673eab6911e0fb3d397b62a13eb91b55458562"
+      },
+      {
+        "id": "inspect-06",
+        "baselineSha256": "141f62f38eb549fe2c6b9a8ebb6c99ee6d9c203ea56102aada0905d49868345b",
+        "audioSha256": "141f62f38eb549fe2c6b9a8ebb6c99ee6d9c203ea56102aada0905d49868345b"
+      },
+      {
+        "id": "inspect-07",
+        "baselineSha256": "5f007a2433c1e0f28ed7187d2986d789cc7a73e13214df1e3677d9dfd98c9e24",
+        "audioSha256": "5f007a2433c1e0f28ed7187d2986d789cc7a73e13214df1e3677d9dfd98c9e24"
+      },
+      {
+        "id": "tools-01",
+        "baselineSha256": "62f8c444aafcc06bbc781fbb1de2fac2365177967820ca6e88004e60005e4004",
+        "audioSha256": "62f8c444aafcc06bbc781fbb1de2fac2365177967820ca6e88004e60005e4004"
+      },
+      {
+        "id": "tools-03",
+        "baselineSha256": "0556cf7b08195401c8ba29313adaf5d0779c9d4c0faf6c605a22c78b15c1c613",
+        "audioSha256": "0556cf7b08195401c8ba29313adaf5d0779c9d4c0faf6c605a22c78b15c1c613"
+      },
+      {
+        "id": "tools-04",
+        "baselineSha256": "895238be946d8e43d08f323b52a16d46794919e855de2dc728f41f32e7aca6eb",
+        "audioSha256": "895238be946d8e43d08f323b52a16d46794919e855de2dc728f41f32e7aca6eb"
+      },
+      {
+        "id": "tools-05",
+        "baselineSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440",
+        "audioSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440"
+      },
+      {
+        "id": "tools-06",
+        "baselineSha256": "c0ce3e5fb2191aeb1b18a1f0be00e5dfc65dae6279757512e76ab5fb46c39c8d",
+        "audioSha256": "c0ce3e5fb2191aeb1b18a1f0be00e5dfc65dae6279757512e76ab5fb46c39c8d"
+      },
+      {
+        "id": "tools-08",
+        "baselineSha256": "f499c7451c9b43c6e8907dd4c709c280acd3a934fc90fb9e11c5afd253e34c2f",
+        "audioSha256": "f499c7451c9b43c6e8907dd4c709c280acd3a934fc90fb9e11c5afd253e34c2f"
+      },
+      {
+        "id": "tools-09",
+        "baselineSha256": "354fb72afd6a73eeabe362e93969138a1f9da90f6686338a2739dbfaed054f58",
+        "audioSha256": "354fb72afd6a73eeabe362e93969138a1f9da90f6686338a2739dbfaed054f58"
+      },
+      {
+        "id": "tools-10",
+        "baselineSha256": "769904002abd62a821d37148487c50e0f47283f3454160bf9c8868ed70244790",
+        "audioSha256": "769904002abd62a821d37148487c50e0f47283f3454160bf9c8868ed70244790"
+      },
+      {
+        "id": "close-01",
+        "baselineSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7",
+        "audioSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7"
+      },
+      {
+        "id": "close-02",
+        "baselineSha256": "9c7cf733b44df80657e79311750454f50869352ade26ca0f6c99c31dcd5db3cd",
+        "audioSha256": "9c7cf733b44df80657e79311750454f50869352ade26ca0f6c99c31dcd5db3cd"
+      },
+      {
+        "id": "close-03",
+        "baselineSha256": "7729f9cde3831b693b67cf62e33d0faae65d3daacb0aae523eb8ba8c141a658b",
+        "audioSha256": "7729f9cde3831b693b67cf62e33d0faae65d3daacb0aae523eb8ba8c141a658b"
+      },
+      {
+        "id": "close-04",
+        "baselineSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8",
+        "audioSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8"
+      },
+      {
+        "id": "close-05",
+        "baselineSha256": "45e63a519a3dd86faf51b2f67601e0c5625bf3aded9afda47e8c31fa5b298999",
+        "audioSha256": "45e63a519a3dd86faf51b2f67601e0c5625bf3aded9afda47e8c31fa5b298999"
+      },
+      {
+        "id": "close-06",
+        "baselineSha256": "40caeea2d867c89e78eb9c25d395d0a3e577a6a273813b9c11f9346e8a2555df",
+        "audioSha256": "40caeea2d867c89e78eb9c25d395d0a3e577a6a273813b9c11f9346e8a2555df"
+      }
+    ],
+    "intentionallyRegeneratedSameText": [],
+    "newOrRewrittenLines": [
+      {
+        "id": "intro-04",
+        "audioSha256": "d65f8b9c4f4858561b7421bcc2d107db8fd8eaf35e8c928dc2701178f7b07409",
+        "newId": false
+      },
+      {
+        "id": "tips-01",
+        "audioSha256": "1565153d81e9d7b033e0d0d321f891169ce8f1cbf69b663f06926393d9ea23ec",
+        "newId": false
+      },
+      {
+        "id": "tips-second-01",
+        "audioSha256": "27c350b0611fa60bec9716a9df0a47557ea3ea905c174cbc6ef3831a61c83570",
+        "newId": true
+      },
+      {
+        "id": "tips-second-02",
+        "audioSha256": "9343624d6ccf20924e2c77e3710d35289ec3ff546cd6a44f696d5f34c8619b83",
+        "newId": true
+      },
+      {
+        "id": "tips-second-03",
+        "audioSha256": "2271a2a6d038101560f5257a2a60d2d82ecaba19ac96a33328c6f20845625ed6",
+        "newId": true
+      },
+      {
+        "id": "options-05",
+        "audioSha256": "a15dd156eb0d915ecf874955fadfc625f0f9193ca6ed922581529dc633a6f3ba",
+        "newId": false
+      },
+      {
+        "id": "options-06",
+        "audioSha256": "4051bec9466c9de49c9dcb5d595bee4ade699dcd526c88765aa69f0cdff98a9b",
+        "newId": false
+      },
+      {
+        "id": "options-06b",
+        "audioSha256": "631c9c0dc72a368fa9f32eb02bb47ced1cc87413280db19be67e59c60f116952",
+        "newId": true
+      },
+      {
+        "id": "options-07",
+        "audioSha256": "395cf410787183660e88517ec2259b34d4ae1c7e94af76629082e1dfc1cbc065",
+        "newId": false
+      },
+      {
+        "id": "options-08",
+        "audioSha256": "ed61922f1e52cf1fbba26ac544ebc33a66d7eabb09841a2ad4f2727994ea90f6",
+        "newId": false
+      },
+      {
+        "id": "options-09",
+        "audioSha256": "b4935540cb9e9ee63f1ac79aaf91a6f23a5d82bcbfc7a78bff686b0c2500ebfa",
+        "newId": true
+      },
+      {
+        "id": "options-10",
+        "audioSha256": "d6c96db91afe2a1341a3c743c0c39bdb5eaff095975d94cdfe3ae74b4ef3a609",
+        "newId": true
+      },
+      {
+        "id": "inspect-02",
+        "audioSha256": "6784bf4c2a49f16c0db0d0b487ab71db2a21ed5158102187a1814e56ad6cdc8b",
+        "newId": false
+      },
+      {
+        "id": "inspect-03",
+        "audioSha256": "ae5cbd5761879ff8ff0d2d84e1412b550fa832b43a27de8e228814ed0c6c56f6",
+        "newId": false
+      },
+      {
+        "id": "inspect-04",
+        "audioSha256": "ce7fb3f1d2807a2ba28f232b84e1bca40206a4257e267b306f8fdc99dd1241e7",
+        "newId": false
+      },
+      {
+        "id": "inspect-04b",
+        "audioSha256": "c90a3ccd7ae2071b0a937e5553853ea42d953fa22517fc8cd83b8a6485aee2e3",
+        "newId": true
+      },
+      {
+        "id": "inspect-report",
+        "audioSha256": "4879349ff9efed78029b116865cee43b4be35c3d976f12c2f60717a70e973bd2",
+        "newId": true
+      },
+      {
+        "id": "inspect-05",
+        "audioSha256": "d25058042049d1ea9c473add58d7554f9fcb8a2ed744df76bbb4ee3643e6e79c",
+        "newId": false
+      },
+      {
+        "id": "tools-02",
+        "audioSha256": "ae120c0b215038a2e5c49336f8a2ba2f41a7e439dd07097ae42ba8cab8d87470",
+        "newId": false
+      },
+      {
+        "id": "tools-07",
+        "audioSha256": "4a66ca440a0e9e3617121819ff09e89c16e4ed354d46f0a98340e8284ee23cee",
+        "newId": false
+      },
+      {
+        "id": "tools-07b",
+        "audioSha256": "42efaaa027107c28584a4315b0043319b289a2c058827ef78f084fb0df48d9b4",
+        "newId": true
+      },
+      {
+        "id": "tools-07c",
+        "audioSha256": "f11094b94c9bb1ab91cd32dc9bcab939786b0c96b03c40a4f3c67d00db549061",
+        "newId": true
+      }
+    ],
+    "adoptedAudioHashes": "passed"
+  },
+  "historicalAlphaEvidence": {
+    "gitSources": [
+      {
+        "stage": "before",
+        "commit": "1bcd3478d9fba7f0b319a3b9a976e9ed1fcd17a2",
+        "path": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+        "sha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+        "note": "実際の修正前納品APNG。e7e51591の本体と同一。",
+        "verifiedSha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e"
+      },
+      {
+        "stage": "first_alpha_fix",
+        "commit": "4151d63c5137a1b111b82f4ed53a3cc67467b9f4",
+        "date": "2026-10-14",
+        "path": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+        "sha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+        "note": "OpenCVによる文字・人物別の透過処理、RGBA APNG、初回黒背景チェック。",
+        "verifiedSha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259"
+      },
+      {
+        "stage": "paired_white_black_qa",
+        "commit": "a38b2d81d4fbca848f4741f8a95ad4aca3f8dff8",
+        "date": "2026-10-14",
+        "path": "27_LINE_STICKERS/sets/01/tools/preview-black.mjs",
+        "note": "納品APNGをデコードし、白黒を同じ配置・寸法・経過時間で比較。",
+        "verifiedSha256": "227d5dd2ed121b24fb599428ef5ce334bd27c4e77c150c575edd10fee19e4af0"
+      }
+    ],
+    "localEvidenceHashes": [
+      {
+        "file": "remotion/out/alpha-history-research/sessions/original_user_report_20261014.png",
+        "sha256": "095bf2d59b46e23ecce15d030571d4994fc4e4edafc9fd62929bcb26a408608e"
+      },
+      {
+        "file": "remotion/out/alpha-history-research/git/sobaya-comparison.png",
+        "sha256": "556ceef4d6d81e4c8a369c90f0241ab356f901f9724dd88df65a02ea6f0a4e7d"
+      },
+      {
+        "file": "remotion/out/alpha-history-research/git/1bcd3478-white.png",
+        "sha256": "6967e4078d2ddcb63e3beebe18bbc58397f6da04c368789086db76d9036d41f6"
+      },
+      {
+        "file": "remotion/out/alpha-history-research/git/1bcd3478-black.png",
+        "sha256": "64bf4831093cedc62390dba8703447173188d451c960bcc14cfd09b8a2fb6778"
+      },
+      {
+        "file": "remotion/out/alpha-history-research/git/4151d63c-black.png",
+        "sha256": "553d443fdbd09aaa3d8386df5fa84249a623bd58d60e1fe204376aa4e28b1068"
+      },
+      {
+        "file": "remotion/out/alpha-history-research/git/yametaro-caption-comparison.png",
+        "sha256": "21cd8b1cd7418f19ea9efb76ac6d7da7320dd6db0c551306ce50b2a33883b346"
+      }
+    ],
+    "renderedAssetEvidence": [
+      {
+        "key": "historySobayaBefore",
+        "path": "tips/history/historySobayaBefore.png",
+        "sha256": "421f83df884636e1508b884de8921a8cdeb64e116c798e7972b1c66b086f837d",
+        "pixelExact": true
+      },
+      {
+        "key": "historyHairBefore",
+        "path": "tips/history/historyHairBefore.png",
+        "sha256": "c179459412300d0b0db47bab78c35ad6063f8e3e01ee9ff4258adde36d1927c1",
+        "pixelExact": true
+      },
+      {
+        "key": "historyShirtBefore",
+        "path": "tips/history/historyShirtBefore.png",
+        "sha256": "09f33ddd7feb66d65161d3669153e283f9963b8e1b9d0fa81920e53e9a448e54",
+        "pixelExact": true
+      },
+      {
+        "key": "historyCaptionBefore",
+        "path": "tips/history/historyCaptionBefore.png",
+        "sha256": "854e72a948d694f9074af66e5711b5020a24f76adeb62de738e17ba95df7dca2",
+        "pixelExact": true
+      },
+      {
+        "key": "historyYametaroBefore",
+        "path": "tips/history/historyYametaroBefore.png",
+        "sha256": "9be1abfbba3826a555834bca6009fc0b7132c6f87365aaf00dea2dd2f4f18cd4",
+        "pixelExact": true
+      },
+      {
+        "key": "historyLetterBefore",
+        "path": "tips/history/historyLetterBefore.png",
+        "sha256": "e258813f401044c7c11bfdda985a35182cde8defb81d2abc0f424b3df6e5719c",
+        "pixelExact": true
+      },
+      {
+        "key": "historySobayaAfter",
+        "path": "tips/history/historySobayaAfter.png",
+        "sha256": "bb2c430059e85b7cdfbd572befa1002687bcd340da52a08a72a12dbd5cd7765b",
+        "pixelExact": true
+      },
+      {
+        "key": "historyHairAfter",
+        "path": "tips/history/historyHairAfter.png",
+        "sha256": "32482cef1299f0538e1278b76f95d95980032d76fe0cdbb42dc10d15da8ef0e1",
+        "pixelExact": true
+      },
+      {
+        "key": "historyShirtAfter",
+        "path": "tips/history/historyShirtAfter.png",
+        "sha256": "2c85b4b42833e1c1243169278fdd158b9481e93b65102279d79aafb9e1398731",
+        "pixelExact": true
+      },
+      {
+        "key": "historyCaptionAfter",
+        "path": "tips/history/historyCaptionAfter.png",
+        "sha256": "fe589a315dbde861a01d50c68558260a63a4cc6c8be34f170fb82169a6067aaf",
+        "pixelExact": true
+      },
+      {
+        "key": "historyYametaroAfter",
+        "path": "tips/history/historyYametaroAfter.png",
+        "sha256": "b8388ef4afaed6c4147220c677c972a9134eb7b243fcacab0176ababdbfd5d12",
+        "pixelExact": true
+      },
+      {
+        "key": "historyLetterAfter",
+        "path": "tips/history/historyLetterAfter.png",
+        "sha256": "79b296636a9e90b9f6d8eec5694cf7d310eed7f2051be6bc49b8f7012b2499be",
+        "pixelExact": true
+      },
+      {
+        "key": "historyReport",
+        "path": "tips/history/historyReport.png",
+        "sha256": "7871e2696a12f1daf0c7ad66d993c67b7bd590c62a88d52ed0768de6e6884958",
+        "pixelExact": true
+      }
+    ],
+    "intentionalOutlineIsNotFailure": true,
+    "sourceAuthenticity": {
+      "reportedScreenshot": "2026-10-14の当時ユーザーが添付した画像。元temporaryファイルは消失していたためセッションの埋め込み画像データから無加工復元。",
+      "comparison": "Gitの実際のAPNGを抽出し、同じ第0フレームを白/黒背景へ合成。sobaya-comparison.pngは左=修正前白、中=同じ修正前黒、右=修正直後黒。各2倍nearest-neighbor表示。",
+      "noGeneratedOrArtificialDamage": true
+    },
+    "evidenceLimit": "動く版の確認は白背景中心で、当時の助手も暗い背景の確認不足を認めている。一方、静止版には淡色背景プレビューも存在するため、全工程で白背景しか確認していないとは断定しない。"
+  },
+  "newVoiceMachineScreening": {
+    "record": "voice_audit_v5.json",
+    "sha256": "1c155cfd5e02b58b109122cd4f5da73a893cb8947ec7e8f525c697a92bc5b202",
+    "utterances": 22,
+    "waveformHashesMatched": true,
+    "subjectiveListening": false
+  },
+  "mixedSha256": "438f3d8efbd643a9f9fc02435d5d57d3b375a166fd4f935af0ad874cefd7ad9b",
+  "subjectiveListening": false,
+  "plannedReviewFrames": 153,
+  "video": "final_remotion_line_stickers_v5.mp4",
+  "sha256": "c0ee7bdc61bf358247394445aeec7693ed28bc617b789c833680cdca29d3eb2f",
+  "bytes": 39079867,
   "resolution": [
     1280,
     720
@@ -14,254 +665,835 @@
     "sampleRate": 48000,
     "channels": 2
   },
-  "utterances": 89,
-  "subtitlePages": 111,
   "fullDecode": "passed",
-  "dialogueAndCaptionIntegrity": "passed",
-  "preservedOpening": {
-    "reference": "intro_reference_v2.json",
-    "utterances": 16,
-    "audioHashesAndTimingAndCaptions": "passed"
-  },
-  "adoptedAudioHashes": "passed",
-  "techniqueExcerpt": {
-    "file": "preview_tips_v3.mp4",
-    "startFrame": 3128,
-    "endFrame": 6466,
-    "durationSeconds": 111.26666666666667
-  },
+  "excerpts": [
+    {
+      "file": "preview_opening_v5.mp4",
+      "startFrame": 0,
+      "endFrame": 2159,
+      "durationSeconds": 71.96666666666667
+    },
+    {
+      "file": "preview_tips_v5.mp4",
+      "startFrame": 3066,
+      "endFrame": 6509,
+      "durationSeconds": 114.76666666666667
+    },
+    {
+      "file": "preview_alpha_v5.mp4",
+      "startFrame": 12665,
+      "endFrame": 17242,
+      "durationSeconds": 152.56666666666666
+    }
+  ],
+  "contactSheets": [
+    "remotion/out/final-audit-v5/contact-01.jpg",
+    "remotion/out/final-audit-v5/contact-02.jpg",
+    "remotion/out/final-audit-v5/contact-03.jpg",
+    "remotion/out/final-audit-v5/contact-04.jpg",
+    "remotion/out/final-audit-v5/contact-05.jpg",
+    "remotion/out/final-audit-v5/contact-06.jpg",
+    "remotion/out/final-audit-v5/contact-07.jpg",
+    "remotion/out/final-audit-v5/contact-08.jpg",
+    "remotion/out/final-audit-v5/contact-09.jpg",
+    "remotion/out/final-audit-v5/contact-10.jpg"
+  ],
   "reviewFrames": [
     {
-      "id": "intro-04",
-      "frame": 498,
-      "path": "remotion/out/final-audit-v3/intro-04.png"
-    },
-    {
-      "id": "intro-08",
-      "frame": 913,
-      "path": "remotion/out/final-audit-v3/intro-08.png"
-    },
-    {
-      "id": "intro-09",
-      "frame": 995,
-      "path": "remotion/out/final-audit-v3/intro-09.png"
-    },
-    {
-      "id": "intro-10",
-      "frame": 1084,
-      "path": "remotion/out/final-audit-v3/intro-10.png"
-    },
-    {
-      "id": "main-01",
-      "frame": 1552,
-      "path": "remotion/out/final-audit-v3/main-01.png"
-    },
-    {
-      "id": "main-03",
-      "frame": 1704,
-      "path": "remotion/out/final-audit-v3/main-03.png"
-    },
-    {
-      "id": "ideas-07",
-      "frame": 4249,
-      "path": "remotion/out/final-audit-v3/ideas-07.png"
-    },
-    {
-      "id": "options-04",
-      "frame": 5284,
-      "path": "remotion/out/final-audit-v3/options-04.png"
-    },
-    {
-      "id": "options-08",
-      "frame": 6170,
-      "path": "remotion/out/final-audit-v3/options-08.png"
-    },
-    {
-      "id": "redraw-05",
-      "frame": 7266,
-      "path": "remotion/out/final-audit-v3/redraw-05.png"
-    },
-    {
-      "id": "pets-04",
-      "frame": 8234,
-      "path": "remotion/out/final-audit-v3/pets-04.png"
-    },
-    {
-      "id": "acting-05",
-      "frame": 10694,
-      "path": "remotion/out/final-audit-v3/acting-05.png"
-    },
-    {
-      "id": "acting-13",
-      "frame": 12323,
-      "path": "remotion/out/final-audit-v3/acting-13.png"
-    },
-    {
-      "id": "inspect-03",
-      "frame": 13004,
-      "path": "remotion/out/final-audit-v3/inspect-03.png"
-    },
-    {
-      "id": "tools-06",
-      "frame": 15050,
-      "path": "remotion/out/final-audit-v3/tools-06.png"
-    },
-    {
-      "id": "close-05",
-      "frame": 17553,
-      "path": "remotion/out/final-audit-v3/close-05.png"
-    },
-    {
-      "id": "close-06",
-      "frame": 17663,
-      "path": "remotion/out/final-audit-v3/close-06.png"
-    },
-    {
-      "id": "view-tip-intro",
-      "frame": 2047,
-      "path": "remotion/out/final-audit-v3/view-tip-intro.png"
-    },
-    {
-      "id": "view-idea-grid",
-      "frame": 3163,
-      "path": "remotion/out/final-audit-v3/view-idea-grid.png"
-    },
-    {
-      "id": "view-idea-prompt",
-      "frame": 3544,
-      "path": "remotion/out/final-audit-v3/view-idea-prompt.png"
-    },
-    {
-      "id": "prompt-hold-ideas-04",
-      "frame": 3656,
-      "path": "remotion/out/final-audit-v3/prompt-hold-ideas-04.png"
-    },
-    {
-      "id": "view-option-compare",
-      "frame": 4916,
-      "path": "remotion/out/final-audit-v3/view-option-compare.png"
-    },
-    {
-      "id": "view-redraw-compare",
-      "frame": 6519,
-      "path": "remotion/out/final-audit-v3/view-redraw-compare.png"
-    },
-    {
-      "id": "view-redraw-prompt",
-      "frame": 7042,
-      "path": "remotion/out/final-audit-v3/view-redraw-prompt.png"
-    },
-    {
-      "id": "prompt-hold-redraw-04",
-      "frame": 7171,
-      "path": "remotion/out/final-audit-v3/prompt-hold-redraw-04.png"
-    },
-    {
-      "id": "view-pets-sheet",
-      "frame": 7768,
-      "path": "remotion/out/final-audit-v3/view-pets-sheet.png"
-    },
-    {
-      "id": "view-pets-process",
-      "frame": 8430,
-      "path": "remotion/out/final-audit-v3/view-pets-process.png"
-    },
-    {
-      "id": "view-pets-prompt",
-      "frame": 9267,
-      "path": "remotion/out/final-audit-v3/view-pets-prompt.png"
-    },
-    {
-      "id": "prompt-hold-pets-08",
-      "frame": 9490,
-      "path": "remotion/out/final-audit-v3/prompt-hold-pets-08.png"
-    },
-    {
-      "id": "view-acting-sobaya",
-      "frame": 9890,
-      "path": "remotion/out/final-audit-v3/view-acting-sobaya.png"
-    },
-    {
-      "id": "view-acting-work",
-      "frame": 10498,
-      "path": "remotion/out/final-audit-v3/view-acting-work.png"
-    },
-    {
-      "id": "view-acting-prompt",
-      "frame": 11540,
-      "path": "remotion/out/final-audit-v3/view-acting-prompt.png"
-    },
-    {
-      "id": "prompt-hold-acting-09",
-      "frame": 11729,
-      "path": "remotion/out/final-audit-v3/prompt-hold-acting-09.png"
-    },
-    {
-      "id": "view-acting-options",
-      "frame": 11827,
-      "path": "remotion/out/final-audit-v3/view-acting-options.png"
-    },
-    {
-      "id": "view-inspect-whiteblack",
-      "frame": 12659,
-      "path": "remotion/out/final-audit-v3/view-inspect-whiteblack.png"
-    },
-    {
-      "id": "view-inspect-details",
-      "frame": 13532,
-      "path": "remotion/out/final-audit-v3/view-inspect-details.png"
-    },
-    {
-      "id": "view-inspect-prompt",
-      "frame": 13918,
-      "path": "remotion/out/final-audit-v3/view-inspect-prompt.png"
-    },
-    {
-      "id": "prompt-hold-inspect-07",
-      "frame": 14058,
-      "path": "remotion/out/final-audit-v3/prompt-hold-inspect-07.png"
-    },
-    {
-      "id": "view-tools-beforeafter",
-      "frame": 14168,
-      "path": "remotion/out/final-audit-v3/view-tools-beforeafter.png"
-    },
-    {
-      "id": "view-tools-choice",
-      "frame": 14959,
-      "path": "remotion/out/final-audit-v3/view-tools-choice.png"
-    },
-    {
-      "id": "view-tools-prompt",
-      "frame": 15998,
-      "path": "remotion/out/final-audit-v3/view-tools-prompt.png"
-    },
-    {
-      "id": "prompt-hold-tools-09",
-      "frame": 16087,
-      "path": "remotion/out/final-audit-v3/prompt-hold-tools-09.png"
-    },
-    {
-      "id": "view-closing-flow",
-      "frame": 16608,
-      "path": "remotion/out/final-audit-v3/view-closing-flow.png"
-    },
-    {
-      "id": "view-ending",
-      "frame": 17445,
-      "path": "remotion/out/final-audit-v3/view-ending.png"
+      "id": "opening-first",
+      "frame": 30,
+      "path": "remotion/out/final-audit-v5/opening-first.png"
     },
     {
       "id": "title",
-      "frame": 1449,
-      "path": "remotion/out/final-audit-v3/title.png"
+      "frame": 1144,
+      "path": "remotion/out/final-audit-v5/title.png"
     },
     {
       "id": "final",
-      "frame": 17890,
-      "path": "remotion/out/final-audit-v3/final.png"
+      "frame": 18607,
+      "path": "remotion/out/final-audit-v5/final.png"
+    },
+    {
+      "id": "view-opening-grid",
+      "frame": 115,
+      "path": "remotion/out/final-audit-v5/view-opening-grid.png"
+    },
+    {
+      "id": "intro-01-page-1",
+      "frame": 115,
+      "path": "remotion/out/final-audit-v5/intro-01-page-1.png"
+    },
+    {
+      "id": "intro-02-page-1",
+      "frame": 240,
+      "path": "remotion/out/final-audit-v5/intro-02-page-1.png"
+    },
+    {
+      "id": "intro-03-page-1",
+      "frame": 377,
+      "path": "remotion/out/final-audit-v5/intro-03-page-1.png"
+    },
+    {
+      "id": "view-line-chat",
+      "frame": 504,
+      "path": "remotion/out/final-audit-v5/view-line-chat.png"
+    },
+    {
+      "id": "intro-04-page-1",
+      "frame": 504,
+      "path": "remotion/out/final-audit-v5/intro-04-page-1.png"
+    },
+    {
+      "id": "cut-intro-04-before",
+      "frame": 475,
+      "path": "remotion/out/final-audit-v5/cut-intro-04-before.png"
+    },
+    {
+      "id": "cut-intro-04-after",
+      "frame": 478,
+      "path": "remotion/out/final-audit-v5/cut-intro-04-after.png"
+    },
+    {
+      "id": "intro-05-page-1",
+      "frame": 646,
+      "path": "remotion/out/final-audit-v5/intro-05-page-1.png"
+    },
+    {
+      "id": "intro-06-page-1",
+      "frame": 730,
+      "path": "remotion/out/final-audit-v5/intro-06-page-1.png"
+    },
+    {
+      "id": "intro-07-page-1",
+      "frame": 788,
+      "path": "remotion/out/final-audit-v5/intro-07-page-1.png"
+    },
+    {
+      "id": "view-outlook",
+      "frame": 898,
+      "path": "remotion/out/final-audit-v5/view-outlook.png"
+    },
+    {
+      "id": "intro-08-page-1",
+      "frame": 898,
+      "path": "remotion/out/final-audit-v5/intro-08-page-1.png"
+    },
+    {
+      "id": "cut-intro-08-before",
+      "frame": 865,
+      "path": "remotion/out/final-audit-v5/cut-intro-08-before.png"
+    },
+    {
+      "id": "cut-intro-08-after",
+      "frame": 868,
+      "path": "remotion/out/final-audit-v5/cut-intro-08-after.png"
+    },
+    {
+      "id": "intro-09-page-1",
+      "frame": 985,
+      "path": "remotion/out/final-audit-v5/intro-09-page-1.png"
+    },
+    {
+      "id": "intro-10-page-1",
+      "frame": 1069,
+      "path": "remotion/out/final-audit-v5/intro-10-page-1.png"
+    },
+    {
+      "id": "view-greeting",
+      "frame": 1247,
+      "path": "remotion/out/final-audit-v5/view-greeting.png"
+    },
+    {
+      "id": "cut-main-01-before",
+      "frame": 1211,
+      "path": "remotion/out/final-audit-v5/cut-main-01-before.png"
+    },
+    {
+      "id": "cut-main-01-after",
+      "frame": 1214,
+      "path": "remotion/out/final-audit-v5/cut-main-01-after.png"
+    },
+    {
+      "id": "cut-main-03-before",
+      "frame": 1363,
+      "path": "remotion/out/final-audit-v5/cut-main-03-before.png"
+    },
+    {
+      "id": "cut-main-03-after",
+      "frame": 1366,
+      "path": "remotion/out/final-audit-v5/cut-main-03-after.png"
+    },
+    {
+      "id": "view-tip-intro",
+      "frame": 1726,
+      "path": "remotion/out/final-audit-v5/view-tip-intro.png"
+    },
+    {
+      "id": "cut-tips-01-before",
+      "frame": 1586,
+      "path": "remotion/out/final-audit-v5/cut-tips-01-before.png"
+    },
+    {
+      "id": "cut-tips-01-after",
+      "frame": 1589,
+      "path": "remotion/out/final-audit-v5/cut-tips-01-after.png"
+    },
+    {
+      "id": "view-second-grid",
+      "frame": 1919,
+      "path": "remotion/out/final-audit-v5/view-second-grid.png"
+    },
+    {
+      "id": "cut-tips-second-01-before",
+      "frame": 1874,
+      "path": "remotion/out/final-audit-v5/cut-tips-second-01-before.png"
+    },
+    {
+      "id": "cut-tips-second-01-after",
+      "frame": 1877,
+      "path": "remotion/out/final-audit-v5/cut-tips-second-01-after.png"
+    },
+    {
+      "id": "tips-second-02-page-1",
+      "frame": 2012,
+      "path": "remotion/out/final-audit-v5/tips-second-02-page-1.png"
+    },
+    {
+      "id": "cut-tips-02-before",
+      "frame": 2149,
+      "path": "remotion/out/final-audit-v5/cut-tips-02-before.png"
+    },
+    {
+      "id": "cut-tips-02-after",
+      "frame": 2152,
+      "path": "remotion/out/final-audit-v5/cut-tips-02-after.png"
+    },
+    {
+      "id": "view-idea-grid",
+      "frame": 3101,
+      "path": "remotion/out/final-audit-v5/view-idea-grid.png"
+    },
+    {
+      "id": "cut-ideas-01-before",
+      "frame": 3065,
+      "path": "remotion/out/final-audit-v5/cut-ideas-01-before.png"
+    },
+    {
+      "id": "cut-ideas-01-after",
+      "frame": 3068,
+      "path": "remotion/out/final-audit-v5/cut-ideas-01-after.png"
+    },
+    {
+      "id": "view-idea-prompt",
+      "frame": 3482,
+      "path": "remotion/out/final-audit-v5/view-idea-prompt.png"
+    },
+    {
+      "id": "cut-ideas-04-before",
+      "frame": 3400,
+      "path": "remotion/out/final-audit-v5/cut-ideas-04-before.png"
+    },
+    {
+      "id": "cut-ideas-04-after",
+      "frame": 3403,
+      "path": "remotion/out/final-audit-v5/cut-ideas-04-after.png"
+    },
+    {
+      "id": "prompt-hold-ideas-04",
+      "frame": 3594,
+      "path": "remotion/out/final-audit-v5/prompt-hold-ideas-04.png"
+    },
+    {
+      "id": "cut-ideas-05-before",
+      "frame": 3653,
+      "path": "remotion/out/final-audit-v5/cut-ideas-05-before.png"
+    },
+    {
+      "id": "cut-ideas-05-after",
+      "frame": 3656,
+      "path": "remotion/out/final-audit-v5/cut-ideas-05-after.png"
+    },
+    {
+      "id": "view-option-compare",
+      "frame": 4854,
+      "path": "remotion/out/final-audit-v5/view-option-compare.png"
+    },
+    {
+      "id": "options-01-page-1",
+      "frame": 4854,
+      "path": "remotion/out/final-audit-v5/options-01-page-1.png"
+    },
+    {
+      "id": "cut-options-01-before",
+      "frame": 4795,
+      "path": "remotion/out/final-audit-v5/cut-options-01-before.png"
+    },
+    {
+      "id": "cut-options-01-after",
+      "frame": 4798,
+      "path": "remotion/out/final-audit-v5/cut-options-01-after.png"
+    },
+    {
+      "id": "options-02-page-1",
+      "frame": 5009,
+      "path": "remotion/out/final-audit-v5/options-02-page-1.png"
+    },
+    {
+      "id": "options-03-page-1",
+      "frame": 5142,
+      "path": "remotion/out/final-audit-v5/options-03-page-1.png"
+    },
+    {
+      "id": "options-04-page-1",
+      "frame": 5242,
+      "path": "remotion/out/final-audit-v5/options-04-page-1.png"
+    },
+    {
+      "id": "options-04-page-2",
+      "frame": 5413,
+      "path": "remotion/out/final-audit-v5/options-04-page-2.png"
+    },
+    {
+      "id": "options-04-page-3",
+      "frame": 5577,
+      "path": "remotion/out/final-audit-v5/options-04-page-3.png"
+    },
+    {
+      "id": "options-05-page-1",
+      "frame": 5673,
+      "path": "remotion/out/final-audit-v5/options-05-page-1.png"
+    },
+    {
+      "id": "options-06-page-1",
+      "frame": 5787,
+      "path": "remotion/out/final-audit-v5/options-06-page-1.png"
+    },
+    {
+      "id": "options-06b-page-1",
+      "frame": 5893,
+      "path": "remotion/out/final-audit-v5/options-06b-page-1.png"
+    },
+    {
+      "id": "options-07-page-1",
+      "frame": 5987,
+      "path": "remotion/out/final-audit-v5/options-07-page-1.png"
+    },
+    {
+      "id": "view-option-reuse",
+      "frame": 6144,
+      "path": "remotion/out/final-audit-v5/view-option-reuse.png"
+    },
+    {
+      "id": "cut-options-08-before",
+      "frame": 6039,
+      "path": "remotion/out/final-audit-v5/cut-options-08-before.png"
+    },
+    {
+      "id": "cut-options-08-after",
+      "frame": 6042,
+      "path": "remotion/out/final-audit-v5/cut-options-08-after.png"
+    },
+    {
+      "id": "options-09-page-1",
+      "frame": 6306,
+      "path": "remotion/out/final-audit-v5/options-09-page-1.png"
+    },
+    {
+      "id": "view-redraw-compare",
+      "frame": 6562,
+      "path": "remotion/out/final-audit-v5/view-redraw-compare.png"
+    },
+    {
+      "id": "redraw-01-page-1",
+      "frame": 6562,
+      "path": "remotion/out/final-audit-v5/redraw-01-page-1.png"
+    },
+    {
+      "id": "cut-redraw-01-before",
+      "frame": 6508,
+      "path": "remotion/out/final-audit-v5/cut-redraw-01-before.png"
+    },
+    {
+      "id": "cut-redraw-01-after",
+      "frame": 6511,
+      "path": "remotion/out/final-audit-v5/cut-redraw-01-after.png"
+    },
+    {
+      "id": "redraw-02-page-1",
+      "frame": 6759,
+      "path": "remotion/out/final-audit-v5/redraw-02-page-1.png"
+    },
+    {
+      "id": "redraw-03-page-1",
+      "frame": 6941,
+      "path": "remotion/out/final-audit-v5/redraw-03-page-1.png"
+    },
+    {
+      "id": "view-redraw-prompt",
+      "frame": 7085,
+      "path": "remotion/out/final-audit-v5/view-redraw-prompt.png"
+    },
+    {
+      "id": "cut-redraw-04-before",
+      "frame": 6986,
+      "path": "remotion/out/final-audit-v5/cut-redraw-04-before.png"
+    },
+    {
+      "id": "cut-redraw-04-after",
+      "frame": 6989,
+      "path": "remotion/out/final-audit-v5/cut-redraw-04-after.png"
+    },
+    {
+      "id": "prompt-hold-redraw-04",
+      "frame": 7214,
+      "path": "remotion/out/final-audit-v5/prompt-hold-redraw-04.png"
+    },
+    {
+      "id": "redraw-05-page-1",
+      "frame": 7352,
+      "path": "remotion/out/final-audit-v5/redraw-05-page-1.png"
+    },
+    {
+      "id": "redraw-05-page-2",
+      "frame": 7528,
+      "path": "remotion/out/final-audit-v5/redraw-05-page-2.png"
+    },
+    {
+      "id": "cut-redraw-05-before",
+      "frame": 7273,
+      "path": "remotion/out/final-audit-v5/cut-redraw-05-before.png"
+    },
+    {
+      "id": "cut-redraw-05-after",
+      "frame": 7276,
+      "path": "remotion/out/final-audit-v5/cut-redraw-05-after.png"
+    },
+    {
+      "id": "redraw-06-page-1",
+      "frame": 7689,
+      "path": "remotion/out/final-audit-v5/redraw-06-page-1.png"
+    },
+    {
+      "id": "view-pets-sheet",
+      "frame": 7811,
+      "path": "remotion/out/final-audit-v5/view-pets-sheet.png"
+    },
+    {
+      "id": "cut-pets-01-before",
+      "frame": 7765,
+      "path": "remotion/out/final-audit-v5/cut-pets-01-before.png"
+    },
+    {
+      "id": "cut-pets-01-after",
+      "frame": 7768,
+      "path": "remotion/out/final-audit-v5/cut-pets-01-after.png"
+    },
+    {
+      "id": "view-pets-process",
+      "frame": 8473,
+      "path": "remotion/out/final-audit-v5/view-pets-process.png"
+    },
+    {
+      "id": "cut-pets-04-before",
+      "frame": 8241,
+      "path": "remotion/out/final-audit-v5/cut-pets-04-before.png"
+    },
+    {
+      "id": "cut-pets-04-after",
+      "frame": 8244,
+      "path": "remotion/out/final-audit-v5/cut-pets-04-after.png"
+    },
+    {
+      "id": "cut-pets-06-before",
+      "frame": 8812,
+      "path": "remotion/out/final-audit-v5/cut-pets-06-before.png"
+    },
+    {
+      "id": "cut-pets-06-after",
+      "frame": 8815,
+      "path": "remotion/out/final-audit-v5/cut-pets-06-after.png"
+    },
+    {
+      "id": "view-pets-prompt",
+      "frame": 9310,
+      "path": "remotion/out/final-audit-v5/view-pets-prompt.png"
+    },
+    {
+      "id": "cut-pets-08-before",
+      "frame": 9117,
+      "path": "remotion/out/final-audit-v5/cut-pets-08-before.png"
+    },
+    {
+      "id": "cut-pets-08-after",
+      "frame": 9120,
+      "path": "remotion/out/final-audit-v5/cut-pets-08-after.png"
+    },
+    {
+      "id": "prompt-hold-pets-08",
+      "frame": 9533,
+      "path": "remotion/out/final-audit-v5/prompt-hold-pets-08.png"
+    },
+    {
+      "id": "cut-pets-09-before",
+      "frame": 9592,
+      "path": "remotion/out/final-audit-v5/cut-pets-09-before.png"
+    },
+    {
+      "id": "cut-pets-09-after",
+      "frame": 9595,
+      "path": "remotion/out/final-audit-v5/cut-pets-09-after.png"
+    },
+    {
+      "id": "view-acting-sobaya",
+      "frame": 9933,
+      "path": "remotion/out/final-audit-v5/view-acting-sobaya.png"
+    },
+    {
+      "id": "cut-acting-01-before",
+      "frame": 9880,
+      "path": "remotion/out/final-audit-v5/cut-acting-01-before.png"
+    },
+    {
+      "id": "cut-acting-01-after",
+      "frame": 9883,
+      "path": "remotion/out/final-audit-v5/cut-acting-01-after.png"
+    },
+    {
+      "id": "view-acting-work",
+      "frame": 10541,
+      "path": "remotion/out/final-audit-v5/view-acting-work.png"
+    },
+    {
+      "id": "cut-acting-04-before",
+      "frame": 10388,
+      "path": "remotion/out/final-audit-v5/cut-acting-04-before.png"
+    },
+    {
+      "id": "cut-acting-04-after",
+      "frame": 10391,
+      "path": "remotion/out/final-audit-v5/cut-acting-04-after.png"
+    },
+    {
+      "id": "acting-05-page-1",
+      "frame": 10819,
+      "path": "remotion/out/final-audit-v5/acting-05-page-1.png"
+    },
+    {
+      "id": "view-acting-prompt",
+      "frame": 11583,
+      "path": "remotion/out/final-audit-v5/view-acting-prompt.png"
+    },
+    {
+      "id": "cut-acting-09-before",
+      "frame": 11423,
+      "path": "remotion/out/final-audit-v5/cut-acting-09-before.png"
+    },
+    {
+      "id": "cut-acting-09-after",
+      "frame": 11426,
+      "path": "remotion/out/final-audit-v5/cut-acting-09-after.png"
+    },
+    {
+      "id": "prompt-hold-acting-09",
+      "frame": 11772,
+      "path": "remotion/out/final-audit-v5/prompt-hold-acting-09.png"
+    },
+    {
+      "id": "view-acting-options",
+      "frame": 11870,
+      "path": "remotion/out/final-audit-v5/view-acting-options.png"
+    },
+    {
+      "id": "cut-acting-10-before",
+      "frame": 11831,
+      "path": "remotion/out/final-audit-v5/cut-acting-10-before.png"
+    },
+    {
+      "id": "cut-acting-10-after",
+      "frame": 11834,
+      "path": "remotion/out/final-audit-v5/cut-acting-10-after.png"
+    },
+    {
+      "id": "view-inspect-history-white",
+      "frame": 12702,
+      "path": "remotion/out/final-audit-v5/view-inspect-history-white.png"
+    },
+    {
+      "id": "inspect-01-page-1",
+      "frame": 12702,
+      "path": "remotion/out/final-audit-v5/inspect-01-page-1.png"
+    },
+    {
+      "id": "cut-inspect-01-before",
+      "frame": 12664,
+      "path": "remotion/out/final-audit-v5/cut-inspect-01-before.png"
+    },
+    {
+      "id": "cut-inspect-01-after",
+      "frame": 12667,
+      "path": "remotion/out/final-audit-v5/cut-inspect-01-after.png"
+    },
+    {
+      "id": "inspect-02-page-1",
+      "frame": 12803,
+      "path": "remotion/out/final-audit-v5/inspect-02-page-1.png"
+    },
+    {
+      "id": "inspect-02-page-2",
+      "frame": 12972,
+      "path": "remotion/out/final-audit-v5/inspect-02-page-2.png"
+    },
+    {
+      "id": "view-inspect-history-black",
+      "frame": 13133,
+      "path": "remotion/out/final-audit-v5/view-inspect-history-black.png"
+    },
+    {
+      "id": "inspect-03-page-1",
+      "frame": 13133,
+      "path": "remotion/out/final-audit-v5/inspect-03-page-1.png"
+    },
+    {
+      "id": "cut-inspect-03-before",
+      "frame": 13094,
+      "path": "remotion/out/final-audit-v5/cut-inspect-03-before.png"
+    },
+    {
+      "id": "cut-inspect-03-after",
+      "frame": 13097,
+      "path": "remotion/out/final-audit-v5/cut-inspect-03-after.png"
+    },
+    {
+      "id": "inspect-04-page-1",
+      "frame": 13259,
+      "path": "remotion/out/final-audit-v5/inspect-04-page-1.png"
+    },
+    {
+      "id": "inspect-04-page-2",
+      "frame": 13420,
+      "path": "remotion/out/final-audit-v5/inspect-04-page-2.png"
+    },
+    {
+      "id": "inspect-04b-page-1",
+      "frame": 13563,
+      "path": "remotion/out/final-audit-v5/inspect-04b-page-1.png"
+    },
+    {
+      "id": "view-inspect-history-report",
+      "frame": 13717,
+      "path": "remotion/out/final-audit-v5/view-inspect-history-report.png"
+    },
+    {
+      "id": "inspect-report-page-1",
+      "frame": 13717,
+      "path": "remotion/out/final-audit-v5/inspect-report-page-1.png"
+    },
+    {
+      "id": "cut-inspect-report-before",
+      "frame": 13618,
+      "path": "remotion/out/final-audit-v5/cut-inspect-report-before.png"
+    },
+    {
+      "id": "cut-inspect-report-after",
+      "frame": 13621,
+      "path": "remotion/out/final-audit-v5/cut-inspect-report-after.png"
+    },
+    {
+      "id": "view-inspect-details",
+      "frame": 14018,
+      "path": "remotion/out/final-audit-v5/view-inspect-details.png"
+    },
+    {
+      "id": "inspect-05-page-1",
+      "frame": 13895,
+      "path": "remotion/out/final-audit-v5/inspect-05-page-1.png"
+    },
+    {
+      "id": "inspect-05-page-2",
+      "frame": 14040,
+      "path": "remotion/out/final-audit-v5/inspect-05-page-2.png"
+    },
+    {
+      "id": "inspect-05-page-3",
+      "frame": 14162,
+      "path": "remotion/out/final-audit-v5/inspect-05-page-3.png"
+    },
+    {
+      "id": "cut-inspect-05-before",
+      "frame": 13823,
+      "path": "remotion/out/final-audit-v5/cut-inspect-05-before.png"
+    },
+    {
+      "id": "cut-inspect-05-after",
+      "frame": 13826,
+      "path": "remotion/out/final-audit-v5/cut-inspect-05-after.png"
+    },
+    {
+      "id": "inspect-06-page-1",
+      "frame": 14275,
+      "path": "remotion/out/final-audit-v5/inspect-06-page-1.png"
+    },
+    {
+      "id": "view-inspect-prompt",
+      "frame": 14447,
+      "path": "remotion/out/final-audit-v5/view-inspect-prompt.png"
+    },
+    {
+      "id": "inspect-07-page-1",
+      "frame": 14447,
+      "path": "remotion/out/final-audit-v5/inspect-07-page-1.png"
+    },
+    {
+      "id": "cut-inspect-07-before",
+      "frame": 14337,
+      "path": "remotion/out/final-audit-v5/cut-inspect-07-before.png"
+    },
+    {
+      "id": "cut-inspect-07-after",
+      "frame": 14340,
+      "path": "remotion/out/final-audit-v5/cut-inspect-07-after.png"
+    },
+    {
+      "id": "prompt-hold-inspect-07",
+      "frame": 14587,
+      "path": "remotion/out/final-audit-v5/prompt-hold-inspect-07.png"
+    },
+    {
+      "id": "view-tools-beforeafter",
+      "frame": 14697,
+      "path": "remotion/out/final-audit-v5/view-tools-beforeafter.png"
+    },
+    {
+      "id": "cut-tools-01-before",
+      "frame": 14646,
+      "path": "remotion/out/final-audit-v5/cut-tools-01-before.png"
+    },
+    {
+      "id": "cut-tools-01-after",
+      "frame": 14649,
+      "path": "remotion/out/final-audit-v5/cut-tools-01-after.png"
+    },
+    {
+      "id": "tools-02-page-1",
+      "frame": 14850,
+      "path": "remotion/out/final-audit-v5/tools-02-page-1.png"
+    },
+    {
+      "id": "tools-02-page-2",
+      "frame": 15022,
+      "path": "remotion/out/final-audit-v5/tools-02-page-2.png"
+    },
+    {
+      "id": "view-tools-choice",
+      "frame": 15526,
+      "path": "remotion/out/final-audit-v5/view-tools-choice.png"
+    },
+    {
+      "id": "cut-tools-05-before",
+      "frame": 15479,
+      "path": "remotion/out/final-audit-v5/cut-tools-05-before.png"
+    },
+    {
+      "id": "cut-tools-05-after",
+      "frame": 15482,
+      "path": "remotion/out/final-audit-v5/cut-tools-05-after.png"
+    },
+    {
+      "id": "tools-07b-page-1",
+      "frame": 16258,
+      "path": "remotion/out/final-audit-v5/tools-07b-page-1.png"
+    },
+    {
+      "id": "view-tools-prompt",
+      "frame": 16715,
+      "path": "remotion/out/final-audit-v5/view-tools-prompt.png"
+    },
+    {
+      "id": "cut-tools-09-before",
+      "frame": 16656,
+      "path": "remotion/out/final-audit-v5/cut-tools-09-before.png"
+    },
+    {
+      "id": "cut-tools-09-after",
+      "frame": 16659,
+      "path": "remotion/out/final-audit-v5/cut-tools-09-after.png"
+    },
+    {
+      "id": "prompt-hold-tools-09",
+      "frame": 16804,
+      "path": "remotion/out/final-audit-v5/prompt-hold-tools-09.png"
+    },
+    {
+      "id": "cut-tools-10-before",
+      "frame": 16998,
+      "path": "remotion/out/final-audit-v5/cut-tools-10-before.png"
+    },
+    {
+      "id": "cut-tools-10-after",
+      "frame": 17001,
+      "path": "remotion/out/final-audit-v5/cut-tools-10-after.png"
+    },
+    {
+      "id": "view-closing-flow",
+      "frame": 17325,
+      "path": "remotion/out/final-audit-v5/view-closing-flow.png"
+    },
+    {
+      "id": "cut-close-01-before",
+      "frame": 17247,
+      "path": "remotion/out/final-audit-v5/cut-close-01-before.png"
+    },
+    {
+      "id": "cut-close-01-after",
+      "frame": 17250,
+      "path": "remotion/out/final-audit-v5/cut-close-01-after.png"
+    },
+    {
+      "id": "view-ending",
+      "frame": 18162,
+      "path": "remotion/out/final-audit-v5/view-ending.png"
+    },
+    {
+      "id": "cut-close-04-before",
+      "frame": 18097,
+      "path": "remotion/out/final-audit-v5/cut-close-04-before.png"
+    },
+    {
+      "id": "cut-close-04-after",
+      "frame": 18100,
+      "path": "remotion/out/final-audit-v5/cut-close-04-after.png"
     }
   ],
-  "subjectiveListening": false,
-  "note": "Automated checks and extracted frames are separate from subjective listening/continuous visual review."
+  "note": "Automated integrity/source checks and extracted frames are separate from subjective listening and visual review.",
+  "visualQA": {
+    "status": "passed_sampled_frame_review",
+    "sourceVideoSha256": "c0ee7bdc61bf358247394445aeec7693ed28bc617b789c833680cdca29d3eb2f",
+    "record": "remotion/out/final-audit-v5/visual-review.json",
+    "extractedFrames": 153,
+    "contactSheetsReviewed": 10,
+    "visualAgentFullResolutionFramesReviewed": 20,
+    "parentFullResolutionFramesReviewed": 9,
+    "parentContactSheetsReviewed": [
+      "contact-07.jpg"
+    ],
+    "blockingFindings": [],
+    "observations": [
+      "Opening title matches requested 窓際族LINEスタンプ第一弾.",
+      "Outlook letter and LINE-like message readable; title break and greeting present after Python joke.",
+      "Full second-set grid contains eight adopted Sobaya animations, with separate first-set introduction.",
+      "Candidate B selection and C-chair reuse match dialogue; Yametaro proud pose in options-09.",
+      "Real historical before export is identical in white and dark panels; actual report screenshot and three defect close-ups are shown.",
+      "Finished white-black checks return after defect close-ups; intentional caption outline explicitly distinguished from accidental white residue.",
+      "tools-02 semantic caption pages keep all annotations visible; no overlap or clipping.",
+      "tools-07b white-clothes protection diagram and bored Yametaro expression support approved joke.",
+      "All 10 contact sheets checked; no missing asset, unintended face crop, wrong source view, visible text overlap, or blank frame outside intended final fade.",
+      "Additional final extracts: inspect-05 three caption pages clearly show finished white grid → historical three-defect close-ups → finished black grid. inspect-06 retains completed animation grid; inspect-07 prompt and captions fit. No overlap."
+    ],
+    "continuousPlaybackReviewed": false,
+    "subjectiveListening": false,
+    "limitations": [
+      "Static sampled-frame review and source mapping; does not establish continuous motion or subjective audio quality."
+    ]
+  }
 }

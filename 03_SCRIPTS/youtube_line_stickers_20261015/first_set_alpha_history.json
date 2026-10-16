@@ -1,6 +1,6 @@
 {
   "researchedAt": "2026-10-16",
-  "status": "verified_historical_example_not_yet_applied_to_video",
+  "status": "adopted_in_v5_rewrite",
   "subject": "第一弾の書き出し済みスタンプの透過不良と白黒背景チェックの導入",
   "videoBaseline": "final_remotion_line_stickers_v3.mp4",
   "historicalArtifacts": [
@@ -114,5 +114,7 @@
   },
   "suggestedNarration": "第一弾では白背景で目立たなかった消し残しが、登録後に暗い背景で発覚した。画像処理を修正し、完成品を白黒両方で確認するよう改善した。",
   "evidenceLimit": "動く版の確認は白背景中心で、当時の助手も暗い背景の確認不足を認めている。一方、静止版には淡色背景プレビューも存在するため、全工程で白背景しか確認していないとは断定しない。",
-  "nextEdit": "既存動画のraw白背景入力によるbefore例を、この実際の不良出力と失敗報告スクショへ置き換える案。台本・動画はまだ変更していない。"
+  "nextEdit": "v5に採用。白背景から黒背景へ同じ修正前フレームを切り替え、当時の報告スクショと画像処理後の出力を見せる。",
+  "appliedVisualSourceRecord": "asset_sources_v5.json",
+  "adoptedInputDirectory": "input/alpha-history"
 }

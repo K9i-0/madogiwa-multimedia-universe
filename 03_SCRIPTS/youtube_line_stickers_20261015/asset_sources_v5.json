@@ -1,0 +1,297 @@
+{
+  "generator": "prepare_history_assets.py",
+  "preparedOn": "2026-10-16",
+  "records": [
+    {
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "commit": "1bcd3478d9fba7f0b319a3b9a976e9ed1fcd17a2",
+      "gitPath": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+      "sha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+      "operation": "byte-exact git blob extraction"
+    },
+    {
+      "key": "historySobayaBefore",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "sourceSha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+      "output": "tips/history/historySobayaBefore.png",
+      "outputSha256": "421f83df884636e1508b884de8921a8cdeb64e116c798e7972b1c66b086f837d",
+      "frame": 0,
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。Before。"
+    },
+    {
+      "key": "historyHairBefore",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "sourceSha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+      "output": "tips/history/historyHairBefore.png",
+      "outputSha256": "c179459412300d0b0db47bab78c35ad6063f8e3e01ee9ff4258adde36d1927c1",
+      "frame": 0,
+      "crop": [
+        132,
+        61,
+        250,
+        161
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "人物輪郭の白混入の比較。髪・顔周辺の同一範囲。"
+    },
+    {
+      "key": "historyShirtBefore",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "sourceSha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+      "output": "tips/history/historyShirtBefore.png",
+      "outputSha256": "09f33ddd7feb66d65161d3669153e283f9963b8e1b9d0fa81920e53e9a448e54",
+      "frame": 0,
+      "crop": [
+        175,
+        190,
+        282,
+        266
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "右下の白Tシャツが欠けた箇所の同一範囲。"
+    },
+    {
+      "key": "historyCaptionBefore",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "sourceSha256": "68c3281b857848483a10c2cdc934b757dcf7d1495c4a8207456d7548cc18852e",
+      "output": "tips/history/historyCaptionBefore.png",
+      "outputSha256": "854e72a948d694f9074af66e5711b5020a24f76adeb62de738e17ba95df7dca2",
+      "frame": 0,
+      "crop": [
+        45,
+        5,
+        277,
+        66
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "完成出力の文字を比較。修正後の均一な細い白フチは可読性のため意図的に追加。"
+    },
+    {
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-before.png",
+      "commit": "1bcd3478d9fba7f0b319a3b9a976e9ed1fcd17a2",
+      "gitPath": "27_LINE_STICKERS/sets/01/stickers/yametaro/sticker.png",
+      "sha256": "a2abeeb892637659586d1497148ace30059bf8302557774c0490867c16235e68",
+      "operation": "byte-exact git blob extraction"
+    },
+    {
+      "key": "historyYametaroBefore",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-before.png",
+      "sourceSha256": "a2abeeb892637659586d1497148ace30059bf8302557774c0490867c16235e68",
+      "output": "tips/history/historyYametaroBefore.png",
+      "outputSha256": "9be1abfbba3826a555834bca6009fc0b7132c6f87365aaf00dea2dd2f4f18cd4",
+      "frame": 0,
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。Before。"
+    },
+    {
+      "key": "historyLetterBefore",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-before.png",
+      "sourceSha256": "a2abeeb892637659586d1497148ace30059bf8302557774c0490867c16235e68",
+      "output": "tips/history/historyLetterBefore.png",
+      "outputSha256": "e258813f401044c7c11bfdda985a35182cde8defb81d2abc0f424b3df6e5719c",
+      "frame": 0,
+      "crop": [
+        90,
+        15,
+        165,
+        80
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "ごめんやでの『め』内部に不透明の白が残る実例。同一範囲。"
+    },
+    {
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "commit": "4151d63c5137a1b111b82f4ed53a3cc67467b9f4",
+      "gitPath": "27_LINE_STICKERS/sets/01/stickers/sobaya/sticker.png",
+      "sha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+      "operation": "byte-exact git blob extraction"
+    },
+    {
+      "key": "historySobayaAfter",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "sourceSha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+      "output": "tips/history/historySobayaAfter.png",
+      "outputSha256": "bb2c430059e85b7cdfbd572befa1002687bcd340da52a08a72a12dbd5cd7765b",
+      "frame": 0,
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。After。"
+    },
+    {
+      "key": "historyHairAfter",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "sourceSha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+      "output": "tips/history/historyHairAfter.png",
+      "outputSha256": "32482cef1299f0538e1278b76f95d95980032d76fe0cdbb42dc10d15da8ef0e1",
+      "frame": 0,
+      "crop": [
+        132,
+        61,
+        250,
+        161
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "人物輪郭の白混入の比較。髪・顔周辺の同一範囲。"
+    },
+    {
+      "key": "historyShirtAfter",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "sourceSha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+      "output": "tips/history/historyShirtAfter.png",
+      "outputSha256": "2c85b4b42833e1c1243169278fdd158b9481e93b65102279d79aafb9e1398731",
+      "frame": 0,
+      "crop": [
+        175,
+        190,
+        282,
+        266
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "右下の白Tシャツが欠けた箇所の同一範囲。"
+    },
+    {
+      "key": "historyCaptionAfter",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "sourceSha256": "082525c3031e176fda0b02780f35d9f8ca88d2e5198221b8f0a044e023409259",
+      "output": "tips/history/historyCaptionAfter.png",
+      "outputSha256": "fe589a315dbde861a01d50c68558260a63a4cc6c8be34f170fb82169a6067aaf",
+      "frame": 0,
+      "crop": [
+        45,
+        5,
+        277,
+        66
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "完成出力の文字を比較。修正後の均一な細い白フチは可読性のため意図的に追加。"
+    },
+    {
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-after.png",
+      "commit": "4151d63c5137a1b111b82f4ed53a3cc67467b9f4",
+      "gitPath": "27_LINE_STICKERS/sets/01/stickers/yametaro/sticker.png",
+      "sha256": "b996572e63cc564d8080abab45ba5f9454767088f050b0859401faa43dabfdc9",
+      "operation": "byte-exact git blob extraction"
+    },
+    {
+      "key": "historyYametaroAfter",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-after.png",
+      "sourceSha256": "b996572e63cc564d8080abab45ba5f9454767088f050b0859401faa43dabfdc9",
+      "output": "tips/history/historyYametaroAfter.png",
+      "outputSha256": "b8388ef4afaed6c4147220c677c972a9134eb7b243fcacab0176ababdbfd5d12",
+      "frame": 0,
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。After。"
+    },
+    {
+      "key": "historyLetterAfter",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-after.png",
+      "sourceSha256": "b996572e63cc564d8080abab45ba5f9454767088f050b0859401faa43dabfdc9",
+      "output": "tips/history/historyLetterAfter.png",
+      "outputSha256": "79b296636a9e90b9f6d8eec5694cf7d310eed7f2051be6bc49b8f7012b2499be",
+      "frame": 0,
+      "crop": [
+        90,
+        15,
+        165,
+        80
+      ],
+      "operation": "lossless RGBA decode and exact crop",
+      "note": "ごめんやでの『め』内部に不透明の白が残る実例。同一範囲。"
+    },
+    {
+      "adoptedInput": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/original_user_report_20261014.png",
+      "sha256": "095bf2d59b46e23ecce15d030571d4994fc4e4edafc9fd62929bcb26a408608e",
+      "origin": "2026-10-14 16:00:30 JST user-reported registration screenshot",
+      "operation": "unchanged copy of recovered original attachment"
+    },
+    {
+      "key": "historyReport",
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/original_user_report_20261014.png",
+      "sourceSha256": "095bf2d59b46e23ecce15d030571d4994fc4e4edafc9fd62929bcb26a408608e",
+      "output": "tips/history/historyReport.png",
+      "outputSha256": "7871e2696a12f1daf0c7ad66d993c67b7bd590c62a88d52ed0768de6e6884958",
+      "frame": 0,
+      "crop": null,
+      "operation": "lossless RGBA decode",
+      "note": "2026年10月14日、実際の登録後に届いた当時の不具合報告画像。無加工。"
+    },
+    {
+      "key": "second_01_ohayo",
+      "source": "27_LINE_STICKERS/sets/02/stickers/01_ohayo/sticker.png",
+      "sourceSha256": "0edbc666d84857ee13e3e20fa72a9ce735d1e2aaae7e6227a48ffdb6d78efdf4",
+      "outputDirectory": "tips/animations/second_01_ohayo",
+      "frames": 8,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_02_hataraiteruka",
+      "source": "27_LINE_STICKERS/sets/02/stickers/02_hataraiteruka/sticker.png",
+      "sourceSha256": "26f9a0843289a68634369f4f3106bc0021cc12dea2976c98a2e999263bf89bee",
+      "outputDirectory": "tips/animations/second_02_hataraiteruka",
+      "frames": 5,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_03_hieteru",
+      "source": "27_LINE_STICKERS/sets/02/stickers/03_hieteru/sticker.png",
+      "sourceSha256": "dd73b1a6f2481ab30dcf774e355e4aebe23d8669e8bc3c6b2e502b8b34667943",
+      "outputDirectory": "tips/animations/second_03_hieteru",
+      "frames": 12,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_04_niryu",
+      "source": "27_LINE_STICKERS/sets/02/stickers/04_niryu/sticker.png",
+      "sourceSha256": "7081e0f526d77459d068981f0269044936b4260482656c08cddf0b96e6c0baac",
+      "outputDirectory": "tips/animations/second_04_niryu",
+      "frames": 6,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_05_ichiryu",
+      "source": "27_LINE_STICKERS/sets/02/stickers/05_ichiryu/sticker.png",
+      "sourceSha256": "2bcdf82a97e7dd0de64b517d58654cbb68b69cbe28faaefdb73642b565ea0187",
+      "outputDirectory": "tips/animations/second_05_ichiryu",
+      "frames": 12,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_06_futsukayoi",
+      "source": "27_LINE_STICKERS/sets/02/stickers/06_futsukayoi/sticker.png",
+      "sourceSha256": "de0fbb20d16886874d4fd3e972b2ef6040e88879df1ed3d3a7444f9ec326125e",
+      "outputDirectory": "tips/animations/second_06_futsukayoi",
+      "frames": 6,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_07_nomini",
+      "source": "27_LINE_STICKERS/sets/02/stickers/07_nomini/sticker.png",
+      "sourceSha256": "8fbb8c6f8e845d3bac041b803408bf30e9a0cdf8e7b6ab3d415ca09be10fe94f",
+      "outputDirectory": "tips/animations/second_07_nomini",
+      "frames": 6,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    },
+    {
+      "key": "second_08_kinshu",
+      "source": "27_LINE_STICKERS/sets/02/stickers/08_kinshu/sticker.png",
+      "sourceSha256": "8eaa9694c065a6e368655648b8eeb9f9a7faf8fed458eef50c3f1e4c1b7731f5",
+      "outputDirectory": "tips/animations/second_08_kinshu",
+      "frames": 6,
+      "operation": "Pillow full composited APNG frames; original durations retained"
+    }
+  ],
+  "imageEdits": "No Imagegen calls, no artificial defects. Exact Git extraction, unchanged retained attachment, lossless decode and crop only.",
+  "sourceResearch": "first_set_alpha_history.json",
+  "limitations": [
+    "第一弾と第二弾の両方を制作した時点の知見を紹介。8個入り案と候補比較は第二弾。",
+    "elbowA/B/Cは全不採用。workAdoptedが採用された動き。",
+    "v5の透過失敗例はGitから復元した当時の納品APNG。白背景入力や人工的な不良画像ではない。",
+    "当時の不具合報告スクリーンショットも無加工で保存。",
+    "白い服・仮面・泡、可読性のための細い均一な文字白フチは残す。輪郭の背景混入と区別。",
+    "art-generated再描画は元構図に沿うが形や顔の微差がある。完全一致とは称さない。"
+  ]
+}

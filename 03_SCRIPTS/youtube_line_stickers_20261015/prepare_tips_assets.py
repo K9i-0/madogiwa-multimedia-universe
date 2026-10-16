@@ -150,6 +150,10 @@ def main() -> None:
                {"source": rel(SET1 / "tools/build.mjs"), "sha256": sha(SET1 / "tools/build.mjs"), "purpose": "ImageMagick crop/resize/composite, floodfill, connected components, APNG/GIF assembly"}],
                "limitations": manifest["historicalNotes"]})
     print(json.dumps({"images": len(images), "animations": len(animations), "decodedFrames": sum(a["frameCount"] for a in animations.values()), "manifest": str(OUT / "manifest.json")}, ensure_ascii=False))
+    # v5 retains the older examples, then adds actual failed exported APNGs and
+    # the full adopted second set. Keep both stages reproducible in one command.
+    from prepare_history_assets import main as prepare_history_assets
+    prepare_history_assets()
 
 
 if __name__ == "__main__":

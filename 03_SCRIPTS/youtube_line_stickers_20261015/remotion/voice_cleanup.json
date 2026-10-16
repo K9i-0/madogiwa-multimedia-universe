@@ -1,24 +1,9 @@
 {
   "version": 1,
-  "authorization": "2026-10-15 user requested cutting filler-like noises. Retain the two adopted opening repairs unchanged in the v3 restructured video; retired v2 body cuts are archived with v2 records.",
+  "authorization": "v5 retains adopted intro-07 cleanup; intro-04 is newly generated, previous recipe archived in remotion/out/v3_before_v5.",
   "algorithm": "keep PCM16 samples, then linear amplitude tail fade; no speech rate or pitch alteration",
   "subjectiveListening": false,
   "cuts": [
-    {
-      "id": "intro-04",
-      "source": "input/voice_uncut/voice_intro-04_yametaro_294d9b59.wav",
-      "sourceSha256": "294d9b59bd9d9ba84535b69a961ee3b09f3db970147de2ab1f39ef04bd967f1e",
-      "generationSettingsSha256": "9da5495df41b2e1154f3712b18559cce802a4f7cd59b3f4dd3507509cfa2a37a",
-      "sampleRate": 48000,
-      "keepStartSample": 0,
-      "keepEndSample": 72000,
-      "tailFadeSamples": 3360,
-      "classification": "excess_sustained_vowel",
-      "reason": "Shorten an abnormally sustained final voiced sound, preserving the final や; not classified as a separate noise event.",
-      "expectedOutputSha256": "3aa53d818cbfa9c7fcadaec14e464c1c2128e22c6d3716341b0b73c1b7d8353d",
-      "expectedText": "よーたんからや。",
-      "candidateASR": "両端からや"
-    },
     {
       "id": "intro-07",
       "source": "input/voice_uncut/voice_intro-07_yametaro_d9418949.wav",

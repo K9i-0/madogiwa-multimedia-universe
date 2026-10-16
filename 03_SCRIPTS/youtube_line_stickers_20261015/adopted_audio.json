@@ -24,9 +24,9 @@
     },
     {
       "id": "intro-04",
-      "file": "voice_intro-04_yametaro_3aa53d81.wav",
-      "publicAudio": "clean_intro-04_14f940c1fd49.wav",
-      "sha256": "3aa53d818cbfa9c7fcadaec14e464c1c2128e22c6d3716341b0b73c1b7d8353d",
+      "file": "voice_intro-04_yametaro_d65f8b9c.wav",
+      "publicAudio": "voice_intro-04_2c833a1676df.wav",
+      "sha256": "d65f8b9c4f4858561b7421bcc2d107db8fd8eaf35e8c928dc2701178f7b07409",
       "who": "yametaro"
     },
     {
@@ -72,27 +72,6 @@
       "who": "yametaro"
     },
     {
-      "id": "intro-11",
-      "file": "voice_intro-11_yametaro_479e74fc.wav",
-      "publicAudio": "voice_intro-11_edbc0fa3a9a7.wav",
-      "sha256": "479e74fc2741a396f0879e9e1d546d0292db896d6dbe0eaca058d8518b8efdee",
-      "who": "yametaro"
-    },
-    {
-      "id": "intro-12",
-      "file": "voice_intro-12_takosan_be49a91b.wav",
-      "publicAudio": "voice_intro-12_d2253c8fbaba.wav",
-      "sha256": "be49a91b26a4ad85761411fec2b53590a1c852ea4f593c66e5d65364ae1b8700",
-      "who": "takosan"
-    },
-    {
-      "id": "intro-13",
-      "file": "voice_intro-13_yametaro_df4d20a0.wav",
-      "publicAudio": "voice_intro-13_47aabcbf0c7d.wav",
-      "sha256": "df4d20a0abbd82b6871b5a55aa03d5caccc356e6816454b376baa594289d75bd",
-      "who": "yametaro"
-    },
-    {
       "id": "main-01",
       "file": "voice_main-01_yametaro_296943c2.wav",
       "publicAudio": "voice_main-01_087eeb88aa9b.wav",
@@ -115,10 +94,31 @@
     },
     {
       "id": "tips-01",
-      "file": "voice_tips-01_takosan_5773013a.wav",
-      "publicAudio": "voice_tips-01_9bdbb361c680.wav",
-      "sha256": "5773013a4c942f26f2480283ef643de115e065d7efd85a3dbc7768e10a62c0a2",
+      "file": "voice_tips-01_takosan_1565153d.wav",
+      "publicAudio": "voice_tips-01_d0eb483ac7fb.wav",
+      "sha256": "1565153d81e9d7b033e0d0d321f891169ce8f1cbf69b663f06926393d9ea23ec",
       "who": "takosan"
+    },
+    {
+      "id": "tips-second-01",
+      "file": "voice_tips-second-01_yametaro_27c350b0.wav",
+      "publicAudio": "voice_tips-second-01_69c87de81af8.wav",
+      "sha256": "27c350b0611fa60bec9716a9df0a47557ea3ea905c174cbc6ef3831a61c83570",
+      "who": "yametaro"
+    },
+    {
+      "id": "tips-second-02",
+      "file": "voice_tips-second-02_takosan_9343624d.wav",
+      "publicAudio": "voice_tips-second-02_d65cba7a33a6.wav",
+      "sha256": "9343624d6ccf20924e2c77e3710d35289ec3ff546cd6a44f696d5f34c8619b83",
+      "who": "takosan"
+    },
+    {
+      "id": "tips-second-03",
+      "file": "voice_tips-second-03_yametaro_2271a2a6.wav",
+      "publicAudio": "voice_tips-second-03_d18c8ccc3698.wav",
+      "sha256": "2271a2a6d038101560f5257a2a60d2d82ecaba19ac96a33328c6f20845625ed6",
+      "who": "yametaro"
     },
     {
       "id": "tips-02",
@@ -241,30 +241,51 @@
     },
     {
       "id": "options-05",
-      "file": "voice_options-05_yametaro_4c9716a0.wav",
-      "publicAudio": "voice_options-05_47fff045bcba.wav",
-      "sha256": "4c9716a06c3c2fd89274ab18e28e5d8b0347f3fed1da350f350bbfb70ecb7c52",
+      "file": "voice_options-05_yametaro_a15dd156.wav",
+      "publicAudio": "voice_options-05_4f20fcd1efe4.wav",
+      "sha256": "a15dd156eb0d915ecf874955fadfc625f0f9193ca6ed922581529dc633a6f3ba",
       "who": "yametaro"
     },
     {
       "id": "options-06",
-      "file": "voice_options-06_takosan_86ea3542.wav",
-      "publicAudio": "voice_options-06_cdb0786cc8b6.wav",
-      "sha256": "86ea35424c47a696548fb8f7117267aa42e0344bcba4d54765bad3c6daf45702",
+      "file": "voice_options-06_takosan_4051bec9.wav",
+      "publicAudio": "voice_options-06_6193c5d8f3a1.wav",
+      "sha256": "4051bec9466c9de49c9dcb5d595bee4ade699dcd526c88765aa69f0cdff98a9b",
       "who": "takosan"
     },
     {
+      "id": "options-06b",
+      "file": "voice_options-06b_yametaro_631c9c0d.wav",
+      "publicAudio": "voice_options-06b_274e805bf676.wav",
+      "sha256": "631c9c0dc72a368fa9f32eb02bb47ced1cc87413280db19be67e59c60f116952",
+      "who": "yametaro"
+    },
+    {
       "id": "options-07",
-      "file": "voice_options-07_yametaro_23f27df4.wav",
-      "publicAudio": "voice_options-07_83188d936806.wav",
-      "sha256": "23f27df48fbd3e532df2e0202b49f44d0fab21e07bd719aed14572401ae0d923",
+      "file": "voice_options-07_yametaro_395cf410.wav",
+      "publicAudio": "voice_options-07_8150dff0e986.wav",
+      "sha256": "395cf410787183660e88517ec2259b34d4ae1c7e94af76629082e1dfc1cbc065",
       "who": "yametaro"
     },
     {
       "id": "options-08",
-      "file": "voice_options-08_takosan_2447bea5.wav",
-      "publicAudio": "voice_options-08_e4e4d9fdcac5.wav",
-      "sha256": "2447bea5ccadcea5ecb43a76d7409376a80c10ccde818799a0c3057e059bae24",
+      "file": "voice_options-08_takosan_ed61922f.wav",
+      "publicAudio": "voice_options-08_bcf1aec85173.wav",
+      "sha256": "ed61922f1e52cf1fbba26ac544ebc33a66d7eabb09841a2ad4f2727994ea90f6",
+      "who": "takosan"
+    },
+    {
+      "id": "options-09",
+      "file": "voice_options-09_yametaro_b4935540.wav",
+      "publicAudio": "voice_options-09_5ded4d47ecfc.wav",
+      "sha256": "b4935540cb9e9ee63f1ac79aaf91a6f23a5d82bcbfc7a78bff686b0c2500ebfa",
+      "who": "yametaro"
+    },
+    {
+      "id": "options-10",
+      "file": "voice_options-10_takosan_d6c96db9.wav",
+      "publicAudio": "voice_options-10_a3d3d73258a5.wav",
+      "sha256": "d6c96db91afe2a1341a3c743c0c39bdb5eaff095975d94cdfe3ae74b4ef3a609",
       "who": "takosan"
     },
     {
@@ -472,30 +493,44 @@
     },
     {
       "id": "inspect-02",
-      "file": "voice_inspect-02_takosan_139acd1b.wav",
-      "publicAudio": "voice_inspect-02_1f07d42f3c18.wav",
-      "sha256": "139acd1b6498d086dc7ef93e7d3a223b691ef28c9f276869dbea07f12ad6ed1f",
+      "file": "voice_inspect-02_takosan_6784bf4c.wav",
+      "publicAudio": "voice_inspect-02_0356dbc69c51.wav",
+      "sha256": "6784bf4c2a49f16c0db0d0b487ab71db2a21ed5158102187a1814e56ad6cdc8b",
       "who": "takosan"
     },
     {
       "id": "inspect-03",
-      "file": "voice_inspect-03_yametaro_cf0d1b3d.wav",
-      "publicAudio": "voice_inspect-03_f2a8017192d1.wav",
-      "sha256": "cf0d1b3db2e13c1b19fdee9fb27610f0dc2f69ecf1479e7161b21b97cdd710dd",
+      "file": "voice_inspect-03_yametaro_ae5cbd57.wav",
+      "publicAudio": "voice_inspect-03_f88181429766.wav",
+      "sha256": "ae5cbd5761879ff8ff0d2d84e1412b550fa832b43a27de8e228814ed0c6c56f6",
       "who": "yametaro"
     },
     {
       "id": "inspect-04",
-      "file": "voice_inspect-04_takosan_6e555d94.wav",
-      "publicAudio": "voice_inspect-04_3ef91287555d.wav",
-      "sha256": "6e555d940d40ae79635a7d1026d4b90815f0db5997734cfde005b7c5362d43be",
+      "file": "voice_inspect-04_takosan_ce7fb3f1.wav",
+      "publicAudio": "voice_inspect-04_217b5eeabfad.wav",
+      "sha256": "ce7fb3f1d2807a2ba28f232b84e1bca40206a4257e267b306f8fdc99dd1241e7",
+      "who": "takosan"
+    },
+    {
+      "id": "inspect-04b",
+      "file": "voice_inspect-04b_yametaro_c90a3ccd.wav",
+      "publicAudio": "voice_inspect-04b_89dec0fd2cb5.wav",
+      "sha256": "c90a3ccd7ae2071b0a937e5553853ea42d953fa22517fc8cd83b8a6485aee2e3",
+      "who": "yametaro"
+    },
+    {
+      "id": "inspect-report",
+      "file": "voice_inspect-report_takosan_4879349f.wav",
+      "publicAudio": "voice_inspect-report_648e3b7506d8.wav",
+      "sha256": "4879349ff9efed78029b116865cee43b4be35c3d976f12c2f60717a70e973bd2",
       "who": "takosan"
     },
     {
       "id": "inspect-05",
-      "file": "voice_inspect-05_takosan_0e8c7a30.wav",
-      "publicAudio": "voice_inspect-05_68fb68dc79f5.wav",
-      "sha256": "0e8c7a30a24cfc323301cd7da51f845462e7e24e6e1318b27c398e1062741502",
+      "file": "voice_inspect-05_takosan_d2505804.wav",
+      "publicAudio": "voice_inspect-05_c645a99ffbc7.wav",
+      "sha256": "d25058042049d1ea9c473add58d7554f9fcb8a2ed744df76bbb4ee3643e6e79c",
       "who": "takosan"
     },
     {
@@ -521,9 +556,9 @@
     },
     {
       "id": "tools-02",
-      "file": "voice_tools-02_takosan_57407ea1.wav",
-      "publicAudio": "voice_tools-02_109a64e477cb.wav",
-      "sha256": "57407ea15db18d5c521d1d1dcf4e62306cc04d087bbb244716b612043ac25cd8",
+      "file": "voice_tools-02_takosan_ae120c0b.wav",
+      "publicAudio": "voice_tools-02_d816131c0274.wav",
+      "sha256": "ae120c0b215038a2e5c49336f8a2ba2f41a7e439dd07097ae42ba8cab8d87470",
       "who": "takosan"
     },
     {
@@ -556,9 +591,23 @@
     },
     {
       "id": "tools-07",
-      "file": "voice_tools-07_takosan_17994696.wav",
-      "publicAudio": "voice_tools-07_70bcdac46f6c.wav",
-      "sha256": "179946961108cee51ed5605414ac9a6ed4f67eee441508e2fbf1b0b6267ceaff",
+      "file": "voice_tools-07_takosan_4a66ca44.wav",
+      "publicAudio": "voice_tools-07_78c3dfe19177.wav",
+      "sha256": "4a66ca440a0e9e3617121819ff09e89c16e4ed354d46f0a98340e8284ee23cee",
+      "who": "takosan"
+    },
+    {
+      "id": "tools-07b",
+      "file": "voice_tools-07b_yametaro_42efaaa0.wav",
+      "publicAudio": "voice_tools-07b_f6068ce8524b.wav",
+      "sha256": "42efaaa027107c28584a4315b0043319b289a2c058827ef78f084fb0df48d9b4",
+      "who": "yametaro"
+    },
+    {
+      "id": "tools-07c",
+      "file": "voice_tools-07c_takosan_f11094b9.wav",
+      "publicAudio": "voice_tools-07c_692afb7a90b8.wav",
+      "sha256": "f11094b94c9bb1ab91cd32dc9bcab939786b0c96b03c40a4f3c67d00db549061",
       "who": "takosan"
     },
     {

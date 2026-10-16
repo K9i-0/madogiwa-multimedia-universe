@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 5,
   "images": {
     "ideasA": {
       "path": "tips/images/ideasA.png",
@@ -161,6 +161,97 @@
       "height": 210,
       "source": "27_LINE_STICKERS/sets/01/source/sobaya/poses/03.png",
       "note": "第一弾そば屋の実際の4採用原画。12原画sheetを再構成したものではない。"
+    },
+    "historySobayaBefore": {
+      "path": "tips/history/historySobayaBefore.png",
+      "width": 320,
+      "height": 270,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。Before。"
+    },
+    "historyHairBefore": {
+      "path": "tips/history/historyHairBefore.png",
+      "width": 118,
+      "height": 100,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "note": "人物輪郭の白混入の比較。髪・顔周辺の同一範囲。"
+    },
+    "historyShirtBefore": {
+      "path": "tips/history/historyShirtBefore.png",
+      "width": 107,
+      "height": 76,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "note": "右下の白Tシャツが欠けた箇所の同一範囲。"
+    },
+    "historyCaptionBefore": {
+      "path": "tips/history/historyCaptionBefore.png",
+      "width": 232,
+      "height": 61,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-before.png",
+      "note": "完成出力の文字を比較。修正後の均一な細い白フチは可読性のため意図的に追加。"
+    },
+    "historyYametaroBefore": {
+      "path": "tips/history/historyYametaroBefore.png",
+      "width": 320,
+      "height": 270,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-before.png",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。Before。"
+    },
+    "historyLetterBefore": {
+      "path": "tips/history/historyLetterBefore.png",
+      "width": 75,
+      "height": 65,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-before.png",
+      "note": "ごめんやでの『め』内部に不透明の白が残る実例。同一範囲。"
+    },
+    "historySobayaAfter": {
+      "path": "tips/history/historySobayaAfter.png",
+      "width": 320,
+      "height": 270,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。After。"
+    },
+    "historyHairAfter": {
+      "path": "tips/history/historyHairAfter.png",
+      "width": 118,
+      "height": 100,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "note": "人物輪郭の白混入の比較。髪・顔周辺の同一範囲。"
+    },
+    "historyShirtAfter": {
+      "path": "tips/history/historyShirtAfter.png",
+      "width": 107,
+      "height": 76,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "note": "右下の白Tシャツが欠けた箇所の同一範囲。"
+    },
+    "historyCaptionAfter": {
+      "path": "tips/history/historyCaptionAfter.png",
+      "width": 232,
+      "height": 61,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/sobaya-after.png",
+      "note": "完成出力の文字を比較。修正後の均一な細い白フチは可読性のため意図的に追加。"
+    },
+    "historyYametaroAfter": {
+      "path": "tips/history/historyYametaroAfter.png",
+      "width": 320,
+      "height": 270,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-after.png",
+      "note": "第一弾の実際の書き出し済みAPNG・先頭フレーム。After。"
+    },
+    "historyLetterAfter": {
+      "path": "tips/history/historyLetterAfter.png",
+      "width": 75,
+      "height": 65,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/yametaro-after.png",
+      "note": "ごめんやでの『め』内部に不透明の白が残る実例。同一範囲。"
+    },
+    "historyReport": {
+      "path": "tips/history/historyReport.png",
+      "width": 643,
+      "height": 488,
+      "source": "03_SCRIPTS/youtube_line_stickers_20261015/input/alpha-history/original_user_report_20261014.png",
+      "note": "2026年10月14日、実際の登録後に届いた当時の不具合報告画像。無加工。"
     }
   },
   "animations": {
@@ -709,6 +800,468 @@
       "originalLoop": 0,
       "source": "27_LINE_STICKERS/sets/01/all-members-black-preview.gif",
       "note": "実際の第一弾8個の確認用GIF。白黒に新たな欠陥を追加していない。"
+    },
+    "second_01_ohayo": {
+      "id": "second_01_ohayo",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 8,
+      "frames": [
+        {
+          "path": "tips/animations/second_01_ohayo/frame-000.png",
+          "durationMs": 360.0,
+          "startMs": 0.0,
+          "endMs": 360.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-001.png",
+          "durationMs": 180.0,
+          "startMs": 360.0,
+          "endMs": 540.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-002.png",
+          "durationMs": 180.0,
+          "startMs": 540.0,
+          "endMs": 720.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-003.png",
+          "durationMs": 180.0,
+          "startMs": 720.0,
+          "endMs": 900.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-004.png",
+          "durationMs": 180.0,
+          "startMs": 900.0,
+          "endMs": 1080.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-005.png",
+          "durationMs": 120.0,
+          "startMs": 1080.0,
+          "endMs": 1200.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-006.png",
+          "durationMs": 120.0,
+          "startMs": 1200.0,
+          "endMs": 1320.0
+        },
+        {
+          "path": "tips/animations/second_01_ohayo/frame-007.png",
+          "durationMs": 1680.0,
+          "startMs": 1320.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/01_ohayo/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_02_hataraiteruka": {
+      "id": "second_02_hataraiteruka",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 5,
+      "frames": [
+        {
+          "path": "tips/animations/second_02_hataraiteruka/frame-000.png",
+          "durationMs": 450.0,
+          "startMs": 0.0,
+          "endMs": 450.0
+        },
+        {
+          "path": "tips/animations/second_02_hataraiteruka/frame-001.png",
+          "durationMs": 150.0,
+          "startMs": 450.0,
+          "endMs": 600.0
+        },
+        {
+          "path": "tips/animations/second_02_hataraiteruka/frame-002.png",
+          "durationMs": 170.0,
+          "startMs": 600.0,
+          "endMs": 770.0
+        },
+        {
+          "path": "tips/animations/second_02_hataraiteruka/frame-003.png",
+          "durationMs": 200.0,
+          "startMs": 770.0,
+          "endMs": 970.0
+        },
+        {
+          "path": "tips/animations/second_02_hataraiteruka/frame-004.png",
+          "durationMs": 2030.0,
+          "startMs": 970.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/02_hataraiteruka/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_03_hieteru": {
+      "id": "second_03_hieteru",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 12,
+      "frames": [
+        {
+          "path": "tips/animations/second_03_hieteru/frame-000.png",
+          "durationMs": 160.0,
+          "startMs": 0.0,
+          "endMs": 160.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-001.png",
+          "durationMs": 160.0,
+          "startMs": 160.0,
+          "endMs": 320.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-002.png",
+          "durationMs": 160.0,
+          "startMs": 320.0,
+          "endMs": 480.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-003.png",
+          "durationMs": 160.0,
+          "startMs": 480.0,
+          "endMs": 640.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-004.png",
+          "durationMs": 160.0,
+          "startMs": 640.0,
+          "endMs": 800.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-005.png",
+          "durationMs": 160.0,
+          "startMs": 800.0,
+          "endMs": 960.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-006.png",
+          "durationMs": 160.0,
+          "startMs": 960.0,
+          "endMs": 1120.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-007.png",
+          "durationMs": 160.0,
+          "startMs": 1120.0,
+          "endMs": 1280.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-008.png",
+          "durationMs": 160.0,
+          "startMs": 1280.0,
+          "endMs": 1440.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-009.png",
+          "durationMs": 160.0,
+          "startMs": 1440.0,
+          "endMs": 1600.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-010.png",
+          "durationMs": 160.0,
+          "startMs": 1600.0,
+          "endMs": 1760.0
+        },
+        {
+          "path": "tips/animations/second_03_hieteru/frame-011.png",
+          "durationMs": 1240.0,
+          "startMs": 1760.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/03_hieteru/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_04_niryu": {
+      "id": "second_04_niryu",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/second_04_niryu/frame-000.png",
+          "durationMs": 420.0,
+          "startMs": 0.0,
+          "endMs": 420.0
+        },
+        {
+          "path": "tips/animations/second_04_niryu/frame-001.png",
+          "durationMs": 180.0,
+          "startMs": 420.0,
+          "endMs": 600.0
+        },
+        {
+          "path": "tips/animations/second_04_niryu/frame-002.png",
+          "durationMs": 240.0,
+          "startMs": 600.0,
+          "endMs": 840.0
+        },
+        {
+          "path": "tips/animations/second_04_niryu/frame-003.png",
+          "durationMs": 220.0,
+          "startMs": 840.0,
+          "endMs": 1060.0
+        },
+        {
+          "path": "tips/animations/second_04_niryu/frame-004.png",
+          "durationMs": 220.0,
+          "startMs": 1060.0,
+          "endMs": 1280.0
+        },
+        {
+          "path": "tips/animations/second_04_niryu/frame-005.png",
+          "durationMs": 1720.0,
+          "startMs": 1280.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/04_niryu/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_05_ichiryu": {
+      "id": "second_05_ichiryu",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 12,
+      "frames": [
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-000.png",
+          "durationMs": 300.0,
+          "startMs": 0.0,
+          "endMs": 300.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-001.png",
+          "durationMs": 160.0,
+          "startMs": 300.0,
+          "endMs": 460.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-002.png",
+          "durationMs": 130.0,
+          "startMs": 460.0,
+          "endMs": 590.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-003.png",
+          "durationMs": 130.0,
+          "startMs": 590.0,
+          "endMs": 720.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-004.png",
+          "durationMs": 130.0,
+          "startMs": 720.0,
+          "endMs": 850.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-005.png",
+          "durationMs": 130.0,
+          "startMs": 850.0,
+          "endMs": 980.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-006.png",
+          "durationMs": 180.0,
+          "startMs": 980.0,
+          "endMs": 1160.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-007.png",
+          "durationMs": 160.0,
+          "startMs": 1160.0,
+          "endMs": 1320.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-008.png",
+          "durationMs": 160.0,
+          "startMs": 1320.0,
+          "endMs": 1480.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-009.png",
+          "durationMs": 160.0,
+          "startMs": 1480.0,
+          "endMs": 1640.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-010.png",
+          "durationMs": 160.0,
+          "startMs": 1640.0,
+          "endMs": 1800.0
+        },
+        {
+          "path": "tips/animations/second_05_ichiryu/frame-011.png",
+          "durationMs": 1200.0,
+          "startMs": 1800.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/05_ichiryu/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_06_futsukayoi": {
+      "id": "second_06_futsukayoi",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/second_06_futsukayoi/frame-000.png",
+          "durationMs": 300.0,
+          "startMs": 0.0,
+          "endMs": 300.0
+        },
+        {
+          "path": "tips/animations/second_06_futsukayoi/frame-001.png",
+          "durationMs": 320.0,
+          "startMs": 300.0,
+          "endMs": 620.0
+        },
+        {
+          "path": "tips/animations/second_06_futsukayoi/frame-002.png",
+          "durationMs": 280.0,
+          "startMs": 620.0,
+          "endMs": 900.0
+        },
+        {
+          "path": "tips/animations/second_06_futsukayoi/frame-003.png",
+          "durationMs": 240.0,
+          "startMs": 900.0,
+          "endMs": 1140.0
+        },
+        {
+          "path": "tips/animations/second_06_futsukayoi/frame-004.png",
+          "durationMs": 240.0,
+          "startMs": 1140.0,
+          "endMs": 1380.0
+        },
+        {
+          "path": "tips/animations/second_06_futsukayoi/frame-005.png",
+          "durationMs": 1620.0,
+          "startMs": 1380.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/06_futsukayoi/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_07_nomini": {
+      "id": "second_07_nomini",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/second_07_nomini/frame-000.png",
+          "durationMs": 300.0,
+          "startMs": 0.0,
+          "endMs": 300.0
+        },
+        {
+          "path": "tips/animations/second_07_nomini/frame-001.png",
+          "durationMs": 160.0,
+          "startMs": 300.0,
+          "endMs": 460.0
+        },
+        {
+          "path": "tips/animations/second_07_nomini/frame-002.png",
+          "durationMs": 180.0,
+          "startMs": 460.0,
+          "endMs": 640.0
+        },
+        {
+          "path": "tips/animations/second_07_nomini/frame-003.png",
+          "durationMs": 180.0,
+          "startMs": 640.0,
+          "endMs": 820.0
+        },
+        {
+          "path": "tips/animations/second_07_nomini/frame-004.png",
+          "durationMs": 200.0,
+          "startMs": 820.0,
+          "endMs": 1020.0
+        },
+        {
+          "path": "tips/animations/second_07_nomini/frame-005.png",
+          "durationMs": 1980.0,
+          "startMs": 1020.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/07_nomini/sticker.png",
+      "note": "第二弾の最終採用APNG。"
+    },
+    "second_08_kinshu": {
+      "id": "second_08_kinshu",
+      "width": 320,
+      "height": 270,
+      "durationMs": 3000.0,
+      "frameCount": 6,
+      "frames": [
+        {
+          "path": "tips/animations/second_08_kinshu/frame-000.png",
+          "durationMs": 360.0,
+          "startMs": 0.0,
+          "endMs": 360.0
+        },
+        {
+          "path": "tips/animations/second_08_kinshu/frame-001.png",
+          "durationMs": 180.0,
+          "startMs": 360.0,
+          "endMs": 540.0
+        },
+        {
+          "path": "tips/animations/second_08_kinshu/frame-002.png",
+          "durationMs": 180.0,
+          "startMs": 540.0,
+          "endMs": 720.0
+        },
+        {
+          "path": "tips/animations/second_08_kinshu/frame-003.png",
+          "durationMs": 180.0,
+          "startMs": 720.0,
+          "endMs": 900.0
+        },
+        {
+          "path": "tips/animations/second_08_kinshu/frame-004.png",
+          "durationMs": 180.0,
+          "startMs": 900.0,
+          "endMs": 1080.0
+        },
+        {
+          "path": "tips/animations/second_08_kinshu/frame-005.png",
+          "durationMs": 1920.0,
+          "startMs": 1080.0,
+          "endMs": 3000.0
+        }
+      ],
+      "originalLoop": 1,
+      "source": "27_LINE_STICKERS/sets/02/stickers/08_kinshu/sticker.png",
+      "note": "第二弾の最終採用APNG。"
     }
   },
   "playback": {
@@ -717,9 +1270,21 @@
     "repeatForReview": true
   },
   "historicalNotes": [
-    "8個入り案・候補画像は第2弾。第一弾の完成品と工程例へ補足として使う。",
-    "elbowA/B/Cは全不採用。workAdoptedだけが採用された動き。",
-    "matteCaptionBeforeは元の白背景付き入力。故意に汚れを足した失敗版ではない。",
+    "第一弾と第二弾の両方を制作した時点の知見を紹介。8個入り案と候補比較は第二弾。",
+    "elbowA/B/Cは全不採用。workAdoptedが採用された動き。",
+    "v5の透過失敗例はGitから復元した当時の納品APNG。白背景入力や人工的な不良画像ではない。",
+    "当時の不具合報告スクリーンショットも無加工で保存。",
+    "白い服・仮面・泡、可読性のための細い均一な文字白フチは残す。輪郭の背景混入と区別。",
     "art-generated再描画は元構図に沿うが形や顔の微差がある。完全一致とは称さない。"
+  ],
+  "secondSet": [
+    "second_01_ohayo",
+    "second_02_hataraiteruka",
+    "second_03_hieteru",
+    "second_04_niryu",
+    "second_05_ichiryu",
+    "second_06_futsukayoi",
+    "second_07_nomini",
+    "second_08_kinshu"
   ]
 }

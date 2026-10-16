@@ -28,8 +28,14 @@
     "who": "yametaro",
     "chapter": 0,
     "view": "line-chat",
-    "text": "よーたんからや。",
-    "pause": 3.3
+    "text": "よーたんからや！",
+    "pause": 2.4,
+    "reading": "よーたんからや！",
+    "moods": {
+      "yametaro": "happy"
+    },
+    "durationScale": 0.55,
+    "voiceCaption": "知らせに気づいて、嬉しそうに弾む。"
   },
   {
     "id": "intro-05",
@@ -84,40 +90,10 @@
     "chapter": 0,
     "view": "outlook",
     "text": "Pythonエンジニアみたいに言うな！",
-    "pause": 0.6,
+    "pause": 3.6,
     "reading": "パイソンエンジニアみたいに言うな！",
     "moods": {
       "yametaro": "angry"
-    }
-  },
-  {
-    "id": "intro-11",
-    "who": "yametaro",
-    "chapter": 0,
-    "view": "opening-chat",
-    "text": "人の人生決める連絡を、こんな軽快な動きで送ってくんなや！",
-    "pause": 0.3,
-    "moods": {
-      "yametaro": "angry"
-    }
-  },
-  {
-    "id": "intro-12",
-    "who": "takosan",
-    "chapter": 0,
-    "view": "opening-chat",
-    "text": "使いどころ、ありましたね。",
-    "pause": 0.3
-  },
-  {
-    "id": "intro-13",
-    "who": "yametaro",
-    "chapter": 0,
-    "view": "opening-chat",
-    "text": "実例いらんねん！",
-    "pause": 3.6,
-    "moods": {
-      "yametaro": "surprised"
     }
   },
   {
@@ -152,8 +128,38 @@
     "who": "takosan",
     "chapter": 1,
     "view": "tip-intro",
-    "text": "題材はこちらの「窓際族スタンプ第一弾」。続編づくりで分かったことも交えて、作るときのコツを紹介します。",
+    "text": "第一弾に続いて、第二弾も作りました。今回は、その二つを作る中で分かったコツを紹介します。",
     "pause": 0.3
+  },
+  {
+    "id": "tips-second-01",
+    "who": "yametaro",
+    "chapter": 1,
+    "view": "second-grid",
+    "text": "第二弾、そば屋だけかい！誰が買うねん！",
+    "pause": 0.3,
+    "moods": {
+      "yametaro": "surprised"
+    }
+  },
+  {
+    "id": "tips-second-02",
+    "who": "takosan",
+    "chapter": 1,
+    "view": "second-grid",
+    "text": "いるんですよ、そば屋マニアが。",
+    "pause": 0.3
+  },
+  {
+    "id": "tips-second-03",
+    "who": "yametaro",
+    "chapter": 1,
+    "view": "second-grid",
+    "text": "そんなジャンルあるんか。",
+    "pause": 0.3,
+    "moods": {
+      "yametaro": "bored"
+    }
   },
   {
     "id": "tips-02",
@@ -296,32 +302,66 @@
     "who": "yametaro",
     "chapter": 3,
     "view": "option-compare",
-    "text": "どれも働いてなさそうやな。",
-    "pause": 0.5
+    "text": "全部違うけど、全部ウザい先輩やな。",
+    "pause": 0.45,
+    "moods": {
+      "yametaro": "bored"
+    }
   },
   {
     "id": "options-06",
     "who": "takosan",
     "chapter": 3,
     "view": "option-compare",
-    "text": "並べて見ると、「欲しかったのは、この馴れ馴れしさだ」と選びやすくなります。",
-    "pause": 0.3
+    "text": "この中から、馴れ馴れしかったものを選びました。",
+    "pause": 0.2
+  },
+  {
+    "id": "options-06b",
+    "who": "yametaro",
+    "chapter": 3,
+    "view": "option-compare",
+    "text": "どういう選定基準やねん。",
+    "pause": 0.3,
+    "moods": {
+      "yametaro": "surprised"
+    }
   },
   {
     "id": "options-07",
     "who": "yametaro",
     "chapter": 3,
     "view": "option-compare",
-    "text": "最初から正解の説明文を考えんでも、絵を見て好みを伝えられるんや。",
+    "text": "でも、並べたら「欲しかったのはこれや」って分かるな。",
     "pause": 0.3
   },
   {
     "id": "options-08",
     "who": "takosan",
     "chapter": 3,
-    "view": "option-compare",
-    "text": "はい。採用しなかった椅子の案は、別のスタンプに使いました。候補は残しておくと、あとで役立つこともあります。",
-    "pause": 0.8
+    "view": "option-reuse",
+    "text": "採用しなかった椅子の案は、「窓際に追い込まれているうちは二流」に使いました。",
+    "pause": 0.25
+  },
+  {
+    "id": "options-09",
+    "who": "yametaro",
+    "chapter": 3,
+    "view": "option-reuse",
+    "text": "スタンプでも、窓際に異動してるんやな。さすがそば屋さんや！",
+    "pause": 0.3,
+    "moods": {
+      "yametaro": "smug"
+    },
+    "voiceCaption": "感心して、誇らしげに話す。"
+  },
+  {
+    "id": "options-10",
+    "who": "takosan",
+    "chapter": 3,
+    "view": "option-reuse",
+    "text": "候補は残しておくと、あとで役立つこともあります。",
+    "pause": 0.3
   },
   {
     "id": "redraw-01",
@@ -551,7 +591,7 @@
     "id": "inspect-01",
     "who": "yametaro",
     "chapter": 7,
-    "view": "inspect-whiteblack",
+    "view": "inspect-history-white",
     "text": "動きは決まった。ここから何を見るん？",
     "pause": 0.3
   },
@@ -559,24 +599,46 @@
     "id": "inspect-02",
     "who": "takosan",
     "chapter": 7,
-    "view": "inspect-whiteblack",
-    "text": "同じスタンプを、白と黒、両方の背景に載せます。これは、すぐ試せて役立ちました。",
+    "view": "inspect-history-white",
+    "text": "ここで、第一弾の失敗例です。これは当時、完成として書き出したスタンプ。白背景だと、きれいに見えますよね。",
     "pause": 0.3
   },
   {
     "id": "inspect-03",
     "who": "yametaro",
     "chapter": 7,
-    "view": "inspect-whiteblack",
-    "text": "黒にしたら、周りの白い残りが見えるな。",
-    "pause": 0.3
+    "view": "inspect-history-black",
+    "text": "うわ、黒にしたら白いの残りまくってるやん！",
+    "pause": 0.45,
+    "moods": {
+      "yametaro": "surprised"
+    }
   },
   {
     "id": "inspect-04",
     "who": "takosan",
     "chapter": 7,
-    "view": "inspect-whiteblack",
-    "text": "白い背景だけでは、背景の消し残しに気づきにくいんです。逆に、白い服が欠けていても分かりにくいことがあります。",
+    "view": "inspect-history-black",
+    "text": "文字の穴や輪郭に、背景の白が残っていました。明るい背景では見落として、暗い背景での確認が足りなかったんです。",
+    "pause": 0.3
+  },
+  {
+    "id": "inspect-04b",
+    "who": "yametaro",
+    "chapter": 7,
+    "view": "inspect-history-black",
+    "text": "白い背景で白い消し残し探してたんか。",
+    "pause": 0.3,
+    "moods": {
+      "yametaro": "bored"
+    }
+  },
+  {
+    "id": "inspect-report",
+    "who": "takosan",
+    "chapter": 7,
+    "view": "inspect-history-report",
+    "text": "実際に登録して、透過が甘いと気づいたときのスクリーンショットも残っています。",
     "pause": 0.3
   },
   {
@@ -584,7 +646,7 @@
     "who": "takosan",
     "chapter": 7,
     "view": "inspect-details",
-    "text": "文字の穴に白が残っていないか。服や顔まで透けていないか。輪郭がちらつかないか。背景を切り替えながら見ます。",
+    "text": "それからは、白黒両方で確認するようにしました。文字の穴、服や顔の欠け、輪郭のちらつき。完成品を背景を替えて確認します。",
     "pause": 0.3
   },
   {
@@ -616,7 +678,7 @@
     "who": "takosan",
     "chapter": 8,
     "view": "tools-beforeafter",
-    "text": "こういう細かい消し残しには、通常の画像処理も使えます。今回使ったのは、OpenCVとImageMagickです。",
+    "text": "この失敗を直すときに使ったのが、OpenCVとImageMagickです。キャラクターを描き直さず、画像処理で背景を整えました。",
     "pause": 0.3
   },
   {
@@ -656,7 +718,27 @@
     "who": "takosan",
     "chapter": 8,
     "view": "tools-choice",
-    "text": "たとえば、そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。残す場所を分けて、背景や文字の穴を処理しました。",
+    "text": "そば屋さんは服も背景も白いので、白を全部消すと服まで消えてしまいます。",
+    "pause": 0.25
+  },
+  {
+    "id": "tools-07b",
+    "who": "yametaro",
+    "chapter": 8,
+    "view": "tools-choice",
+    "text": "そば屋さんが脱ぐとか誰得って感じやしな。",
+    "pause": 0.3,
+    "moods": {
+      "yametaro": "bored"
+    },
+    "voiceCaption": "ぼそっと呆れてつぶやく。"
+  },
+  {
+    "id": "tools-07c",
+    "who": "takosan",
+    "chapter": 8,
+    "view": "tools-choice",
+    "text": "なので、白い服や顔、ビールの泡は残して、背景や文字の穴だけを処理しました。",
     "pause": 0.3
   },
   {

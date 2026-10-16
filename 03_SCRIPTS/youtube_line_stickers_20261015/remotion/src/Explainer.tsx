@@ -25,14 +25,14 @@ const moodFor=(who:Who,d:Manifest['dialogue'][number]|undefined):Mood=>{
   'alpha-06':['surprise','normal'],'alpha-07':['sad','normal'],'alpha-11':['bored','normal'],
   'export-03':['surprise','normal'],'export-06':['worry','normal'],'record-05':['normal','happy'],
   'end-01':['smug','normal'],'end-02':['smug','normal'],'end-03':['smug','normal'],'end-04':['smug','happy'],'end-05':['bored','normal'],
-  'tips-02':['happy','normal'],'tips-04':['surprise','normal'],
+  'tips-02':['happy','normal'],'tips-04':['surprise','normal'],'tips-second-02':['surprise','normal'],
   'ideas-01':['smug','normal'],'ideas-03':['surprise','normal'],'ideas-06':['bored','normal'],'ideas-08':['worry','normal'],
-  'options-01':['worry','normal'],'options-03':['surprise','normal'],'options-05':['bored','normal'],'options-07':['happy','normal'],
+  'options-01':['worry','normal'],'options-03':['surprise','normal'],'options-05':['bored','normal'],'options-06b':['angry','normal'],'options-07':['happy','normal'],'options-09':['smug','normal'],
   'redraw-01':['worry','normal'],'redraw-03':['worry','normal'],'redraw-06':['happy','normal'],
   'pets-01':['surprise','normal'],'pets-05':['bored','happy'],'pets-07':['happy','normal'],
   'acting-01':['worry','normal'],'acting-03':['happy','normal'],'acting-06':['bored','normal'],'acting-08':['surprise','normal'],'acting-10':['happy','normal'],'acting-12':['worry','normal'],
-  'inspect-03':['surprise','normal'],'inspect-06':['worry','normal'],
-  'tools-01':['normal','normal'],'tools-03':['surprise','normal'],'tools-05':['surprise','normal'],'tools-08':['happy','normal'],
+  'inspect-03':['surprise','normal'],'inspect-04b':['bored','normal'],'inspect-06':['worry','normal'],
+  'tools-01':['normal','normal'],'tools-03':['surprise','normal'],'tools-05':['surprise','normal'],'tools-07b':['bored','normal'],'tools-08':['happy','normal'],
   'close-01':['happy','normal'],'close-02':['happy','happy'],'close-04':['smug','normal'],'close-05':['smug','happy'],'close-06':['bored','happy'],
  };
  return specific[id]?.[who==='yametaro'?0:1]??'normal';
@@ -42,7 +42,7 @@ export const Explainer:React.FC<{manifest?:Manifest;audioSrc?:string;hideCaption
  const m=manifest??rawManifest as Manifest;const f=useCurrentFrame();
  const active=m.dialogue.find(d=>f>=d.startFrame&&f<d.startFrame+d.durationInFrames);
  const previous=m.dialogue.reduce((last,d)=>f>=d.startFrame?d:last,m.dialogue[0]);
- const introLast=m.dialogue.find(d=>d.id==='intro-13');
+ const introLast=[...m.dialogue].reverse().find(d=>d.id.startsWith('intro-'));
  const titleStart=introLast?introLast.startFrame+introLast.durationInFrames+24:-999;
  const titleScene=m.scenes?.find(s=>f>=s.startFrame&&f<s.startFrame+s.durationInFrames);
  const title=titleScene?.view==='title'||(f>=titleStart&&f<titleStart+60);

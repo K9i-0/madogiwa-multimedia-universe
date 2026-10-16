@@ -1,33 +1,17 @@
 {
-  "version": 6,
+  "version": 7,
+  "baselineCommit": "0a3e1f3f",
   "utterances": 107,
-  "subtitlePages": 134,
-  "durationInFrames": 20282,
-  "durationSeconds": 676.0666666666667,
+  "subtitlePages": 135,
+  "durationInFrames": 20440,
+  "durationSeconds": 681.3333333333334,
   "dialogueAndCaptionIntegrity": "passed",
-  "coldOpenEndsAt": "intro-10",
-  "adoptedFeedbackLines": "passed",
-  "finalSpokenLine": "やっぱやめさんも窓際族ですね",
-  "transition": {
-    "kind": "whole-screen white dip",
-    "pythonEndFrame": 1168,
-    "fadeOutFrames": [
-      1174,
-      1186
-    ],
-    "fadeInFrames": [
-      1186,
-      1198
-    ],
-    "greetingStartFrame": 1210,
-    "encodedWhiteMidpointChannelFractions": [
-      1.0,
-      1.0,
-      1.0
-    ]
-  },
+  "changedDialogueIds": [
+    "settings-03",
+    "tips-01"
+  ],
   "voiceAudit": {
-    "baselineCommit": "bc765980",
+    "baselineCommit": "0a3e1f3f",
     "castCounts": {
       "yametaro": 51,
       "takosan": 56
@@ -49,6 +33,11 @@
         "audioSha256": "91f915c7472e665e53b057a93c6618d9c9e0edf2cae04a1fa2fd8b8f0df4884d"
       },
       {
+        "id": "intro-04",
+        "baselineSha256": "d82f454c7ee9c2714900fa9ef854e65c353de8c47a91a0242d1173992c494f4c",
+        "audioSha256": "d82f454c7ee9c2714900fa9ef854e65c353de8c47a91a0242d1173992c494f4c"
+      },
+      {
         "id": "intro-05",
         "baselineSha256": "32a53cee3f0d83f07f882ff4914a10a69a7c0139055127413d9019e8b51d94a7",
         "audioSha256": "32a53cee3f0d83f07f882ff4914a10a69a7c0139055127413d9019e8b51d94a7"
@@ -62,6 +51,11 @@
         "id": "intro-07",
         "baselineSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619",
         "audioSha256": "15d95287def0a30dca434d0535d7b842b62142c49b58e41cfa635490f0c58619"
+      },
+      {
+        "id": "intro-08",
+        "baselineSha256": "0823ce2feb3bedf27bb6e86d545ce3d4e69d1049422e56bc9cfb19b33fc29aa7",
+        "audioSha256": "0823ce2feb3bedf27bb6e86d545ce3d4e69d1049422e56bc9cfb19b33fc29aa7"
       },
       {
         "id": "intro-09",
@@ -87,11 +81,6 @@
         "id": "main-03",
         "baselineSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005",
         "audioSha256": "d4d38aec683161597377bd313b25120b3c328d36f40a91761f8acfe21ce5f005"
-      },
-      {
-        "id": "tips-01",
-        "baselineSha256": "1565153d81e9d7b033e0d0d321f891169ce8f1cbf69b663f06926393d9ea23ec",
-        "audioSha256": "1565153d81e9d7b033e0d0d321f891169ce8f1cbf69b663f06926393d9ea23ec"
       },
       {
         "id": "tips-second-01",
@@ -129,9 +118,24 @@
         "audioSha256": "10549df504c1a99ebee232a31a277cb6d7dc668ddb25ffae5ed0d31d2d2abfd8"
       },
       {
+        "id": "tips-plan-01",
+        "baselineSha256": "163280d91a5d0e0a9436a7fd8120532bf2be015b84bcdbce5a1eef25806f3683",
+        "audioSha256": "163280d91a5d0e0a9436a7fd8120532bf2be015b84bcdbce5a1eef25806f3683"
+      },
+      {
+        "id": "tips-plan-02",
+        "baselineSha256": "71d2d27d1bc86b6e5312962b032e0825e00f677a44a74d16edff7a8dc158962c",
+        "audioSha256": "71d2d27d1bc86b6e5312962b032e0825e00f677a44a74d16edff7a8dc158962c"
+      },
+      {
         "id": "ideas-01",
         "baselineSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c",
         "audioSha256": "9fdc93b2ef8887abe90a8e3e19d4e7f8b3ac5057754a05fea5ecc3726d832b2c"
+      },
+      {
+        "id": "ideas-02",
+        "baselineSha256": "9d3d1e4c770a6cf503be34f2879fe8b632f70eedd85269ebb51961a2f35a9bc8",
+        "audioSha256": "9d3d1e4c770a6cf503be34f2879fe8b632f70eedd85269ebb51961a2f35a9bc8"
       },
       {
         "id": "ideas-03",
@@ -147,6 +151,21 @@
         "id": "ideas-05",
         "baselineSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2",
         "audioSha256": "dcceb647970499503e6ad259c155ea2e02ce2f83b3766a0328cfb64ea7a23de2"
+      },
+      {
+        "id": "ideas-speed-01",
+        "baselineSha256": "eb0a45a606c51b2068a82ea3cb26d0a2347ba98d1773d7a33188df566a73e269",
+        "audioSha256": "eb0a45a606c51b2068a82ea3cb26d0a2347ba98d1773d7a33188df566a73e269"
+      },
+      {
+        "id": "ideas-speed-02",
+        "baselineSha256": "1edcce0d775c9392982db96b5b4c5ad6de3d439ef19d7df3d8a01903488fe015",
+        "audioSha256": "1edcce0d775c9392982db96b5b4c5ad6de3d439ef19d7df3d8a01903488fe015"
+      },
+      {
+        "id": "ideas-speed-03",
+        "baselineSha256": "e5d689c69d14b4533b529c618529981737870fff89536fbec3f12a956463bb7e",
+        "audioSha256": "e5d689c69d14b4533b529c618529981737870fff89536fbec3f12a956463bb7e"
       },
       {
         "id": "ideas-06",
@@ -167,6 +186,26 @@
         "id": "ideas-09",
         "baselineSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb",
         "audioSha256": "3ae6e388e0e1108c34a8bbdf1e16c256d758948865e4d0353918142dc5247bcb"
+      },
+      {
+        "id": "settings-01",
+        "baselineSha256": "a5a53d646a614cbe7a8c77ca3dd2c14c57a535154dd4ff6f3618d73b708265f0",
+        "audioSha256": "a5a53d646a614cbe7a8c77ca3dd2c14c57a535154dd4ff6f3618d73b708265f0"
+      },
+      {
+        "id": "settings-02",
+        "baselineSha256": "38781d0cf1e2d6cfaa2883a7a2c79dc97cd603f63986d84143e534b1d370fd64",
+        "audioSha256": "38781d0cf1e2d6cfaa2883a7a2c79dc97cd603f63986d84143e534b1d370fd64"
+      },
+      {
+        "id": "settings-04",
+        "baselineSha256": "686ddf0b921b498e813e8c2160c7cc76d45f49eaad75ce6cf43f86f756108244",
+        "audioSha256": "686ddf0b921b498e813e8c2160c7cc76d45f49eaad75ce6cf43f86f756108244"
+      },
+      {
+        "id": "settings-05",
+        "baselineSha256": "b09708db66f70888f5e0e3f7913d3936ac74cc0ef926c2412d3bc33302e62918",
+        "audioSha256": "b09708db66f70888f5e0e3f7913d3936ac74cc0ef926c2412d3bc33302e62918"
       },
       {
         "id": "options-01",
@@ -329,6 +368,16 @@
         "audioSha256": "1cac7104621f06bfae5738d1044b74f9f89fd40a532e36c708d7c11f7cdcd83d"
       },
       {
+        "id": "acting-06b",
+        "baselineSha256": "fc8cd347fdca6157880a00e062aacb750b0c64ba14a1440e64462e02d4ac4bae",
+        "audioSha256": "fc8cd347fdca6157880a00e062aacb750b0c64ba14a1440e64462e02d4ac4bae"
+      },
+      {
+        "id": "acting-06c",
+        "baselineSha256": "e210006fb2549788e6460e503a288e3a477e477c635828adf8290358ed659a80",
+        "audioSha256": "e210006fb2549788e6460e503a288e3a477e477c635828adf8290358ed659a80"
+      },
+      {
         "id": "acting-07",
         "baselineSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4",
         "audioSha256": "1fabdec1871191a9b0842e426945e6616b0a0b7bdf61a8d9f6a5408fcf6f99b4"
@@ -419,6 +468,16 @@
         "audioSha256": "ae120c0b215038a2e5c49336f8a2ba2f41a7e439dd07097ae42ba8cab8d87470"
       },
       {
+        "id": "tools-03",
+        "baselineSha256": "0cbbf8f4360ffc2d05579bf3cd3ab533668223aa854caaa161949ddaba44975f",
+        "audioSha256": "0cbbf8f4360ffc2d05579bf3cd3ab533668223aa854caaa161949ddaba44975f"
+      },
+      {
+        "id": "tools-04",
+        "baselineSha256": "7bdfc0ae2c1f9a6d050e93295063b6999be5c804701ab76d4d6c36ed1e6bb0e3",
+        "audioSha256": "7bdfc0ae2c1f9a6d050e93295063b6999be5c804701ab76d4d6c36ed1e6bb0e3"
+      },
+      {
         "id": "tools-05",
         "baselineSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440",
         "audioSha256": "8ce1608fb120b85cb45e8ae2ff7a711d6c1f9e09dafc5fd4873bcb90520e9440"
@@ -454,6 +513,11 @@
         "audioSha256": "354fb72afd6a73eeabe362e93969138a1f9da90f6686338a2739dbfaed054f58"
       },
       {
+        "id": "tools-10",
+        "baselineSha256": "f60135235f2c8ddf80f31966b78a8694166786dd7126d15a9d7ca9280a41179a",
+        "audioSha256": "f60135235f2c8ddf80f31966b78a8694166786dd7126d15a9d7ca9280a41179a"
+      },
+      {
         "id": "close-01",
         "baselineSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7",
         "audioSha256": "4bd583ee0aebd74efe888f3556613721a2b4354e6ea5c8687e69fedd23b260d7"
@@ -472,107 +536,33 @@
         "id": "close-04",
         "baselineSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8",
         "audioSha256": "83a860e7735dc6fd82d94ab9b211655e71367eccd3de0c91b583d07810f8eac8"
+      },
+      {
+        "id": "close-05",
+        "baselineSha256": "9e92644a6a2a17d50208a2a178ccd39e704b03af82b8d6b2add6983457c54eec",
+        "audioSha256": "9e92644a6a2a17d50208a2a178ccd39e704b03af82b8d6b2add6983457c54eec"
       }
     ],
     "intentionallyRegeneratedSameText": [],
     "newOrRewrittenLines": [
       {
-        "id": "intro-04",
-        "audioSha256": "d82f454c7ee9c2714900fa9ef854e65c353de8c47a91a0242d1173992c494f4c",
+        "id": "tips-01",
+        "audioSha256": "3f63d807465ab5bd77bbef72e02e43af55852a28d80d6a0f13c9a81b1c61c417",
         "newId": false
-      },
-      {
-        "id": "intro-08",
-        "audioSha256": "0823ce2feb3bedf27bb6e86d545ce3d4e69d1049422e56bc9cfb19b33fc29aa7",
-        "newId": false
-      },
-      {
-        "id": "tips-plan-01",
-        "audioSha256": "163280d91a5d0e0a9436a7fd8120532bf2be015b84bcdbce5a1eef25806f3683",
-        "newId": true
-      },
-      {
-        "id": "tips-plan-02",
-        "audioSha256": "71d2d27d1bc86b6e5312962b032e0825e00f677a44a74d16edff7a8dc158962c",
-        "newId": true
-      },
-      {
-        "id": "ideas-02",
-        "audioSha256": "9d3d1e4c770a6cf503be34f2879fe8b632f70eedd85269ebb51961a2f35a9bc8",
-        "newId": false
-      },
-      {
-        "id": "ideas-speed-01",
-        "audioSha256": "eb0a45a606c51b2068a82ea3cb26d0a2347ba98d1773d7a33188df566a73e269",
-        "newId": true
-      },
-      {
-        "id": "ideas-speed-02",
-        "audioSha256": "1edcce0d775c9392982db96b5b4c5ad6de3d439ef19d7df3d8a01903488fe015",
-        "newId": true
-      },
-      {
-        "id": "ideas-speed-03",
-        "audioSha256": "e5d689c69d14b4533b529c618529981737870fff89536fbec3f12a956463bb7e",
-        "newId": true
-      },
-      {
-        "id": "settings-01",
-        "audioSha256": "a5a53d646a614cbe7a8c77ca3dd2c14c57a535154dd4ff6f3618d73b708265f0",
-        "newId": true
-      },
-      {
-        "id": "settings-02",
-        "audioSha256": "38781d0cf1e2d6cfaa2883a7a2c79dc97cd603f63986d84143e534b1d370fd64",
-        "newId": true
       },
       {
         "id": "settings-03",
-        "audioSha256": "56bc41b57cb732afeac11ccff7657a70fc2f72eda59f57cb96825a00fbca6007",
-        "newId": true
-      },
-      {
-        "id": "settings-04",
-        "audioSha256": "686ddf0b921b498e813e8c2160c7cc76d45f49eaad75ce6cf43f86f756108244",
-        "newId": true
-      },
-      {
-        "id": "settings-05",
-        "audioSha256": "b09708db66f70888f5e0e3f7913d3936ac74cc0ef926c2412d3bc33302e62918",
-        "newId": true
-      },
-      {
-        "id": "acting-06b",
-        "audioSha256": "fc8cd347fdca6157880a00e062aacb750b0c64ba14a1440e64462e02d4ac4bae",
-        "newId": true
-      },
-      {
-        "id": "acting-06c",
-        "audioSha256": "e210006fb2549788e6460e503a288e3a477e477c635828adf8290358ed659a80",
-        "newId": true
-      },
-      {
-        "id": "tools-03",
-        "audioSha256": "0cbbf8f4360ffc2d05579bf3cd3ab533668223aa854caaa161949ddaba44975f",
-        "newId": false
-      },
-      {
-        "id": "tools-04",
-        "audioSha256": "7bdfc0ae2c1f9a6d050e93295063b6999be5c804701ab76d4d6c36ed1e6bb0e3",
-        "newId": false
-      },
-      {
-        "id": "tools-10",
-        "audioSha256": "f60135235f2c8ddf80f31966b78a8694166786dd7126d15a9d7ca9280a41179a",
-        "newId": false
-      },
-      {
-        "id": "close-05",
-        "audioSha256": "9e92644a6a2a17d50208a2a178ccd39e704b03af82b8d6b2add6983457c54eec",
+        "audioSha256": "8e8e99028478231b82585c5c237563fc78d5f81ca7e5917221c6ffc07d359153",
         "newId": false
       }
     ],
     "adoptedAudioHashes": "passed"
+  },
+  "newVoiceMachineScreening": {
+    "record": "voice_audit_v7.json",
+    "sha256": "1e8d97adbbb5ea913059af7e6e40ed6d89a9583d88f95eb2f2ea8e7c2265e3d5",
+    "utterances": 2,
+    "subjectiveListening": false
   },
   "historicalAlphaEvidence": {
     "gitSources": [
@@ -716,19 +706,42 @@
     },
     "evidenceLimit": "動く版の確認は白背景中心で、当時の助手も暗い背景の確認不足を認めている。一方、静止版には淡色背景プレビューも存在するため、全工程で白背景しか確認していないとは断定しない。"
   },
-  "newVoiceMachineScreening": {
-    "record": "voice_audit_v6.json",
-    "sha256": "db0de85f060780a8beb925bb6fbbeca7bd0b0b74e28b0eaf7f7c2c15f5a97861",
-    "utterances": 19,
-    "waveformHashesMatched": true,
-    "subjectiveListening": false
-  },
-  "mixedSha256": "aa01bb21b39a86de50a385f050c16ea636dc07a7983dc1a5284ec9f0fe4a4d59",
+  "retainedV6AndThumbnail": [
+    {
+      "file": "final_remotion_line_stickers_v6.mp4",
+      "sha256": "09a9375a0ad9fa458442104d0d3e68572bac8db7a497f6351caba134048712d1"
+    },
+    {
+      "file": "voice_audit_v6.json",
+      "sha256": "db0de85f060780a8beb925bb6fbbeca7bd0b0b74e28b0eaf7f7c2c15f5a97861"
+    },
+    {
+      "file": "verify_delivery_v6.py",
+      "sha256": "dc394e947456fb4559e5819c3e6cf9a915c1bfea8fb255cb4014dadde82757af"
+    },
+    {
+      "file": "remotion/audit_voice_v6.py",
+      "sha256": "8deefca12961fa7787b503cf142f5f7ee70ee0566b5e41c98cb1beeb1d912e49"
+    },
+    {
+      "file": "thumbnails/thumbnail_youtube.jpg",
+      "sha256": "f71feaa9cceb42906c9cce8bb188b04902a02f86fe2205623fc6a9c02892dba8"
+    },
+    {
+      "file": "thumbnails/thumbnail_youtube.png",
+      "sha256": "cda583fb1794686ef23993b400c39acb392261a7694db61b9cac50fd4477c126"
+    },
+    {
+      "file": "thumbnails/selected_thumbnail.json",
+      "sha256": "a7869ed6f6b260303c0c29d6df868bf767a1d7dbf7964a6c5b3d880eb723eb9a"
+    }
+  ],
+  "mixedSha256": "1eb0397d6d9f5eb8b16e66b2ab6540e1ec2b9bbd2d3715b90d640e2bc683298a",
+  "plannedReviewFrames": 61,
   "subjectiveListening": false,
-  "plannedReviewFrames": 186,
-  "video": "final_remotion_line_stickers_v6.mp4",
-  "sha256": "09a9375a0ad9fa458442104d0d3e68572bac8db7a497f6351caba134048712d1",
-  "bytes": 42345720,
+  "video": "final_remotion_line_stickers_v7.mp4",
+  "sha256": "7d9be5e4b37384300578140e3d58a55a5b061d6eb9e95dd895f93341cdfa6ab9",
+  "bytes": 42623827,
   "resolution": [
     1280,
     720
@@ -742,1009 +755,353 @@
   "fullDecode": "passed",
   "excerpts": [
     {
-      "file": "preview_opening_v6.mp4",
-      "startFrame": 0,
-      "endFrame": 2157,
-      "durationSeconds": 71.9
+      "file": "preview_second_set_v7.mp4",
+      "startFrame": 1585,
+      "endFrame": 2196,
+      "durationSeconds": 20.366666666666667
     },
     {
-      "file": "preview_settings_v6.mp4",
-      "startFrame": 5786,
-      "endFrame": 6544,
-      "durationSeconds": 25.266666666666666
-    },
-    {
-      "file": "preview_ending_v6.mp4",
-      "startFrame": 19999,
-      "endFrame": 20282,
-      "durationSeconds": 9.433333333333334
+      "file": "preview_settings_v7.mp4",
+      "startFrame": 5825,
+      "endFrame": 6702,
+      "durationSeconds": 29.233333333333334
     }
   ],
   "contactSheets": [
-    "remotion/out/final-audit-v6/contact-01.jpg",
-    "remotion/out/final-audit-v6/contact-02.jpg",
-    "remotion/out/final-audit-v6/contact-03.jpg",
-    "remotion/out/final-audit-v6/contact-04.jpg",
-    "remotion/out/final-audit-v6/contact-05.jpg",
-    "remotion/out/final-audit-v6/contact-06.jpg",
-    "remotion/out/final-audit-v6/contact-07.jpg",
-    "remotion/out/final-audit-v6/contact-08.jpg",
-    "remotion/out/final-audit-v6/contact-09.jpg",
-    "remotion/out/final-audit-v6/contact-10.jpg",
-    "remotion/out/final-audit-v6/contact-11.jpg",
-    "remotion/out/final-audit-v6/contact-12.jpg"
+    "remotion/out/final-audit-v7/contact-01.jpg",
+    "remotion/out/final-audit-v7/contact-02.jpg",
+    "remotion/out/final-audit-v7/contact-03.jpg",
+    "remotion/out/final-audit-v7/contact-04.jpg"
   ],
   "reviewFrames": [
     {
       "id": "opening-first",
       "frame": 30,
-      "path": "remotion/out/final-audit-v6/opening-first.png"
+      "path": "remotion/out/final-audit-v7/opening-first.png"
     },
     {
       "id": "transition-hold",
       "frame": 1173,
-      "path": "remotion/out/final-audit-v6/transition-hold.png"
+      "path": "remotion/out/final-audit-v7/transition-hold.png"
     },
     {
       "id": "transition-fade-out",
       "frame": 1180,
-      "path": "remotion/out/final-audit-v6/transition-fade-out.png"
+      "path": "remotion/out/final-audit-v7/transition-fade-out.png"
     },
     {
       "id": "transition-white",
       "frame": 1186,
-      "path": "remotion/out/final-audit-v6/transition-white.png"
+      "path": "remotion/out/final-audit-v7/transition-white.png"
     },
     {
       "id": "transition-fade-in",
       "frame": 1192,
-      "path": "remotion/out/final-audit-v6/transition-fade-in.png"
+      "path": "remotion/out/final-audit-v7/transition-fade-in.png"
     },
     {
       "id": "transition-greeting",
       "frame": 1198,
-      "path": "remotion/out/final-audit-v6/transition-greeting.png"
+      "path": "remotion/out/final-audit-v7/transition-greeting.png"
     },
     {
       "id": "final-line-hold",
-      "frame": 20222,
-      "path": "remotion/out/final-audit-v6/final-line-hold.png"
+      "frame": 20380,
+      "path": "remotion/out/final-audit-v7/final-line-hold.png"
     },
     {
       "id": "final",
-      "frame": 20281,
-      "path": "remotion/out/final-audit-v6/final.png"
+      "frame": 20439,
+      "path": "remotion/out/final-audit-v7/final.png"
     },
     {
       "id": "view-opening-grid",
       "frame": 115,
-      "path": "remotion/out/final-audit-v6/view-opening-grid.png"
-    },
-    {
-      "id": "intro-01-page-1",
-      "frame": 115,
-      "path": "remotion/out/final-audit-v6/intro-01-page-1.png"
-    },
-    {
-      "id": "intro-02-page-1",
-      "frame": 240,
-      "path": "remotion/out/final-audit-v6/intro-02-page-1.png"
-    },
-    {
-      "id": "intro-03-page-1",
-      "frame": 377,
-      "path": "remotion/out/final-audit-v6/intro-03-page-1.png"
+      "path": "remotion/out/final-audit-v7/view-opening-grid.png"
     },
     {
       "id": "view-line-chat",
       "frame": 504,
-      "path": "remotion/out/final-audit-v6/view-line-chat.png"
-    },
-    {
-      "id": "intro-04-page-1",
-      "frame": 504,
-      "path": "remotion/out/final-audit-v6/intro-04-page-1.png"
-    },
-    {
-      "id": "cut-intro-04-before",
-      "frame": 475,
-      "path": "remotion/out/final-audit-v6/cut-intro-04-before.png"
-    },
-    {
-      "id": "cut-intro-04-after",
-      "frame": 478,
-      "path": "remotion/out/final-audit-v6/cut-intro-04-after.png"
-    },
-    {
-      "id": "intro-05-page-1",
-      "frame": 646,
-      "path": "remotion/out/final-audit-v6/intro-05-page-1.png"
-    },
-    {
-      "id": "intro-06-page-1",
-      "frame": 730,
-      "path": "remotion/out/final-audit-v6/intro-06-page-1.png"
-    },
-    {
-      "id": "intro-07-page-1",
-      "frame": 788,
-      "path": "remotion/out/final-audit-v6/intro-07-page-1.png"
+      "path": "remotion/out/final-audit-v7/view-line-chat.png"
     },
     {
       "id": "view-outlook",
       "frame": 930,
-      "path": "remotion/out/final-audit-v6/view-outlook.png"
-    },
-    {
-      "id": "intro-08-page-1",
-      "frame": 888,
-      "path": "remotion/out/final-audit-v6/intro-08-page-1.png"
-    },
-    {
-      "id": "intro-08-page-2",
-      "frame": 952,
-      "path": "remotion/out/final-audit-v6/intro-08-page-2.png"
-    },
-    {
-      "id": "cut-intro-08-before",
-      "frame": 865,
-      "path": "remotion/out/final-audit-v6/cut-intro-08-before.png"
-    },
-    {
-      "id": "cut-intro-08-after",
-      "frame": 868,
-      "path": "remotion/out/final-audit-v6/cut-intro-08-after.png"
-    },
-    {
-      "id": "intro-09-page-1",
-      "frame": 1049,
-      "path": "remotion/out/final-audit-v6/intro-09-page-1.png"
-    },
-    {
-      "id": "intro-10-page-1",
-      "frame": 1133,
-      "path": "remotion/out/final-audit-v6/intro-10-page-1.png"
+      "path": "remotion/out/final-audit-v7/view-outlook.png"
     },
     {
       "id": "view-greeting",
       "frame": 1245,
-      "path": "remotion/out/final-audit-v6/view-greeting.png"
-    },
-    {
-      "id": "cut-main-01-before",
-      "frame": 1209,
-      "path": "remotion/out/final-audit-v6/cut-main-01-before.png"
-    },
-    {
-      "id": "cut-main-01-after",
-      "frame": 1212,
-      "path": "remotion/out/final-audit-v6/cut-main-01-after.png"
-    },
-    {
-      "id": "cut-main-03-before",
-      "frame": 1361,
-      "path": "remotion/out/final-audit-v6/cut-main-03-before.png"
-    },
-    {
-      "id": "cut-main-03-after",
-      "frame": 1364,
-      "path": "remotion/out/final-audit-v6/cut-main-03-after.png"
+      "path": "remotion/out/final-audit-v7/view-greeting.png"
     },
     {
       "id": "view-tip-intro",
-      "frame": 1724,
-      "path": "remotion/out/final-audit-v6/view-tip-intro.png"
+      "frame": 1744,
+      "path": "remotion/out/final-audit-v7/view-tip-intro.png"
+    },
+    {
+      "id": "view-second-grid",
+      "frame": 1956,
+      "path": "remotion/out/final-audit-v7/view-second-grid.png"
+    },
+    {
+      "id": "view-plan-teaser",
+      "frame": 3149,
+      "path": "remotion/out/final-audit-v7/view-plan-teaser.png"
+    },
+    {
+      "id": "view-idea-grid",
+      "frame": 3474,
+      "path": "remotion/out/final-audit-v7/view-idea-grid.png"
+    },
+    {
+      "id": "view-idea-prompt",
+      "frame": 3847,
+      "path": "remotion/out/final-audit-v7/view-idea-prompt.png"
+    },
+    {
+      "id": "view-idea-speed",
+      "frame": 4484,
+      "path": "remotion/out/final-audit-v7/view-idea-speed.png"
+    },
+    {
+      "id": "view-codex-settings",
+      "frame": 5865,
+      "path": "remotion/out/final-audit-v7/view-codex-settings.png"
+    },
+    {
+      "id": "view-option-compare",
+      "frame": 6751,
+      "path": "remotion/out/final-audit-v7/view-option-compare.png"
+    },
+    {
+      "id": "view-option-reuse",
+      "frame": 8041,
+      "path": "remotion/out/final-audit-v7/view-option-reuse.png"
+    },
+    {
+      "id": "view-redraw-compare",
+      "frame": 8459,
+      "path": "remotion/out/final-audit-v7/view-redraw-compare.png"
+    },
+    {
+      "id": "view-redraw-prompt",
+      "frame": 8982,
+      "path": "remotion/out/final-audit-v7/view-redraw-prompt.png"
+    },
+    {
+      "id": "view-pets-sheet",
+      "frame": 9708,
+      "path": "remotion/out/final-audit-v7/view-pets-sheet.png"
+    },
+    {
+      "id": "view-pets-process",
+      "frame": 10370,
+      "path": "remotion/out/final-audit-v7/view-pets-process.png"
+    },
+    {
+      "id": "view-pets-prompt",
+      "frame": 11207,
+      "path": "remotion/out/final-audit-v7/view-pets-prompt.png"
+    },
+    {
+      "id": "view-acting-sobaya",
+      "frame": 11830,
+      "path": "remotion/out/final-audit-v7/view-acting-sobaya.png"
+    },
+    {
+      "id": "view-acting-work",
+      "frame": 12438,
+      "path": "remotion/out/final-audit-v7/view-acting-work.png"
+    },
+    {
+      "id": "view-acting-prompt",
+      "frame": 13642,
+      "path": "remotion/out/final-audit-v7/view-acting-prompt.png"
+    },
+    {
+      "id": "view-acting-options",
+      "frame": 13929,
+      "path": "remotion/out/final-audit-v7/view-acting-options.png"
+    },
+    {
+      "id": "view-inspect-history-white",
+      "frame": 14761,
+      "path": "remotion/out/final-audit-v7/view-inspect-history-white.png"
+    },
+    {
+      "id": "view-inspect-history-black",
+      "frame": 15192,
+      "path": "remotion/out/final-audit-v7/view-inspect-history-black.png"
+    },
+    {
+      "id": "view-inspect-history-report",
+      "frame": 15776,
+      "path": "remotion/out/final-audit-v7/view-inspect-history-report.png"
+    },
+    {
+      "id": "view-inspect-details",
+      "frame": 16077,
+      "path": "remotion/out/final-audit-v7/view-inspect-details.png"
+    },
+    {
+      "id": "view-inspect-prompt",
+      "frame": 16506,
+      "path": "remotion/out/final-audit-v7/view-inspect-prompt.png"
+    },
+    {
+      "id": "view-tools-beforeafter",
+      "frame": 16756,
+      "path": "remotion/out/final-audit-v7/view-tools-beforeafter.png"
+    },
+    {
+      "id": "view-tools-choice",
+      "frame": 17583,
+      "path": "remotion/out/final-audit-v7/view-tools-choice.png"
+    },
+    {
+      "id": "view-tools-prompt",
+      "frame": 18772,
+      "path": "remotion/out/final-audit-v7/view-tools-prompt.png"
+    },
+    {
+      "id": "view-closing-flow",
+      "frame": 19384,
+      "path": "remotion/out/final-audit-v7/view-closing-flow.png"
+    },
+    {
+      "id": "view-ending",
+      "frame": 20221,
+      "path": "remotion/out/final-audit-v7/view-ending.png"
+    },
+    {
+      "id": "settings-03-page-1",
+      "frame": 6169,
+      "path": "remotion/out/final-audit-v7/settings-03-page-1.png"
+    },
+    {
+      "id": "settings-03-page-2",
+      "frame": 6301,
+      "path": "remotion/out/final-audit-v7/settings-03-page-2.png"
+    },
+    {
+      "id": "settings-03-page-2-before",
+      "frame": 6222,
+      "path": "remotion/out/final-audit-v7/settings-03-page-2-before.png"
+    },
+    {
+      "id": "settings-03-page-2-start",
+      "frame": 6223,
+      "path": "remotion/out/final-audit-v7/settings-03-page-2-start.png"
+    },
+    {
+      "id": "settings-03-end",
+      "frame": 6379,
+      "path": "remotion/out/final-audit-v7/settings-03-end.png"
+    },
+    {
+      "id": "tips-01-page-1",
+      "frame": 1667,
+      "path": "remotion/out/final-audit-v7/tips-01-page-1.png"
+    },
+    {
+      "id": "tips-01-page-2",
+      "frame": 1826,
+      "path": "remotion/out/final-audit-v7/tips-01-page-2.png"
+    },
+    {
+      "id": "tips-01-page-2-before",
+      "frame": 1749,
+      "path": "remotion/out/final-audit-v7/tips-01-page-2-before.png"
+    },
+    {
+      "id": "tips-01-page-2-start",
+      "frame": 1750,
+      "path": "remotion/out/final-audit-v7/tips-01-page-2-start.png"
+    },
+    {
+      "id": "tips-01-end",
+      "frame": 1902,
+      "path": "remotion/out/final-audit-v7/tips-01-end.png"
     },
     {
       "id": "cut-tips-01-before",
       "frame": 1584,
-      "path": "remotion/out/final-audit-v6/cut-tips-01-before.png"
+      "path": "remotion/out/final-audit-v7/cut-tips-01-before.png"
     },
     {
       "id": "cut-tips-01-after",
-      "frame": 1587,
-      "path": "remotion/out/final-audit-v6/cut-tips-01-after.png"
-    },
-    {
-      "id": "view-second-grid",
-      "frame": 1917,
-      "path": "remotion/out/final-audit-v6/view-second-grid.png"
+      "frame": 1586,
+      "path": "remotion/out/final-audit-v7/cut-tips-01-after.png"
     },
     {
       "id": "cut-tips-second-01-before",
-      "frame": 1872,
-      "path": "remotion/out/final-audit-v6/cut-tips-second-01-before.png"
+      "frame": 1911,
+      "path": "remotion/out/final-audit-v7/cut-tips-second-01-before.png"
     },
     {
       "id": "cut-tips-second-01-after",
-      "frame": 1875,
-      "path": "remotion/out/final-audit-v6/cut-tips-second-01-after.png"
-    },
-    {
-      "id": "tips-second-02-page-1",
-      "frame": 2010,
-      "path": "remotion/out/final-audit-v6/tips-second-02-page-1.png"
-    },
-    {
-      "id": "cut-tips-02-before",
-      "frame": 2147,
-      "path": "remotion/out/final-audit-v6/cut-tips-02-before.png"
-    },
-    {
-      "id": "cut-tips-02-after",
-      "frame": 2150,
-      "path": "remotion/out/final-audit-v6/cut-tips-02-after.png"
-    },
-    {
-      "id": "view-plan-teaser",
-      "frame": 3110,
-      "path": "remotion/out/final-audit-v6/view-plan-teaser.png"
-    },
-    {
-      "id": "tips-plan-01-page-1",
-      "frame": 3110,
-      "path": "remotion/out/final-audit-v6/tips-plan-01-page-1.png"
-    },
-    {
-      "id": "cut-tips-plan-01-before",
-      "frame": 3063,
-      "path": "remotion/out/final-audit-v6/cut-tips-plan-01-before.png"
-    },
-    {
-      "id": "cut-tips-plan-01-after",
-      "frame": 3066,
-      "path": "remotion/out/final-audit-v6/cut-tips-plan-01-after.png"
-    },
-    {
-      "id": "tips-plan-02-page-1",
-      "frame": 3278,
-      "path": "remotion/out/final-audit-v6/tips-plan-02-page-1.png"
-    },
-    {
-      "id": "view-idea-grid",
-      "frame": 3435,
-      "path": "remotion/out/final-audit-v6/view-idea-grid.png"
-    },
-    {
-      "id": "cut-ideas-01-before",
-      "frame": 3399,
-      "path": "remotion/out/final-audit-v6/cut-ideas-01-before.png"
-    },
-    {
-      "id": "cut-ideas-01-after",
-      "frame": 3402,
-      "path": "remotion/out/final-audit-v6/cut-ideas-01-after.png"
-    },
-    {
-      "id": "view-idea-prompt",
-      "frame": 3808,
-      "path": "remotion/out/final-audit-v6/view-idea-prompt.png"
-    },
-    {
-      "id": "cut-ideas-04-before",
-      "frame": 3726,
-      "path": "remotion/out/final-audit-v6/cut-ideas-04-before.png"
-    },
-    {
-      "id": "cut-ideas-04-after",
-      "frame": 3729,
-      "path": "remotion/out/final-audit-v6/cut-ideas-04-after.png"
-    },
-    {
-      "id": "prompt-hold-ideas-04",
-      "frame": 3920,
-      "path": "remotion/out/final-audit-v6/prompt-hold-ideas-04.png"
-    },
-    {
-      "id": "cut-ideas-05-before",
-      "frame": 3979,
-      "path": "remotion/out/final-audit-v6/cut-ideas-05-before.png"
-    },
-    {
-      "id": "cut-ideas-05-after",
-      "frame": 3982,
-      "path": "remotion/out/final-audit-v6/cut-ideas-05-after.png"
-    },
-    {
-      "id": "view-idea-speed",
-      "frame": 4445,
-      "path": "remotion/out/final-audit-v6/view-idea-speed.png"
-    },
-    {
-      "id": "ideas-speed-01-page-1",
-      "frame": 4408,
-      "path": "remotion/out/final-audit-v6/ideas-speed-01-page-1.png"
-    },
-    {
-      "id": "ideas-speed-01-page-2",
-      "frame": 4526,
-      "path": "remotion/out/final-audit-v6/ideas-speed-01-page-2.png"
-    },
-    {
-      "id": "cut-ideas-speed-01-before",
-      "frame": 4326,
-      "path": "remotion/out/final-audit-v6/cut-ideas-speed-01-before.png"
-    },
-    {
-      "id": "cut-ideas-speed-01-after",
-      "frame": 4329,
-      "path": "remotion/out/final-audit-v6/cut-ideas-speed-01-after.png"
-    },
-    {
-      "id": "ideas-speed-02-page-1",
-      "frame": 4614,
-      "path": "remotion/out/final-audit-v6/ideas-speed-02-page-1.png"
-    },
-    {
-      "id": "ideas-speed-03-page-1",
-      "frame": 4735,
-      "path": "remotion/out/final-audit-v6/ideas-speed-03-page-1.png"
-    },
-    {
-      "id": "ideas-speed-03-page-2",
-      "frame": 4894,
-      "path": "remotion/out/final-audit-v6/ideas-speed-03-page-2.png"
-    },
-    {
-      "id": "cut-ideas-06-before",
-      "frame": 4990,
-      "path": "remotion/out/final-audit-v6/cut-ideas-06-before.png"
-    },
-    {
-      "id": "cut-ideas-06-after",
-      "frame": 4993,
-      "path": "remotion/out/final-audit-v6/cut-ideas-06-after.png"
-    },
-    {
-      "id": "view-codex-settings",
-      "frame": 5826,
-      "path": "remotion/out/final-audit-v6/view-codex-settings.png"
-    },
-    {
-      "id": "settings-01-page-1",
-      "frame": 5826,
-      "path": "remotion/out/final-audit-v6/settings-01-page-1.png"
+      "frame": 1913,
+      "path": "remotion/out/final-audit-v7/cut-tips-second-01-after.png"
     },
     {
       "id": "cut-settings-01-before",
-      "frame": 5785,
-      "path": "remotion/out/final-audit-v6/cut-settings-01-before.png"
+      "frame": 5824,
+      "path": "remotion/out/final-audit-v7/cut-settings-01-before.png"
     },
     {
       "id": "cut-settings-01-after",
-      "frame": 5788,
-      "path": "remotion/out/final-audit-v6/cut-settings-01-after.png"
+      "frame": 5826,
+      "path": "remotion/out/final-audit-v7/cut-settings-01-after.png"
     },
     {
-      "id": "settings-02-page-1",
-      "frame": 5909,
-      "path": "remotion/out/final-audit-v6/settings-02-page-1.png"
+      "id": "cut-settings-04-before",
+      "frame": 6388,
+      "path": "remotion/out/final-audit-v7/cut-settings-04-before.png"
     },
     {
-      "id": "settings-02-page-2",
-      "frame": 6005,
-      "path": "remotion/out/final-audit-v6/settings-02-page-2.png"
-    },
-    {
-      "id": "settings-03-page-1",
-      "frame": 6149,
-      "path": "remotion/out/final-audit-v6/settings-03-page-1.png"
-    },
-    {
-      "id": "settings-04-page-1",
-      "frame": 6282,
-      "path": "remotion/out/final-audit-v6/settings-04-page-1.png"
-    },
-    {
-      "id": "settings-05-page-1",
-      "frame": 6434,
-      "path": "remotion/out/final-audit-v6/settings-05-page-1.png"
-    },
-    {
-      "id": "view-option-compare",
-      "frame": 6593,
-      "path": "remotion/out/final-audit-v6/view-option-compare.png"
-    },
-    {
-      "id": "options-01-page-1",
-      "frame": 6593,
-      "path": "remotion/out/final-audit-v6/options-01-page-1.png"
+      "id": "cut-settings-04-after",
+      "frame": 6390,
+      "path": "remotion/out/final-audit-v7/cut-settings-04-after.png"
     },
     {
       "id": "cut-options-01-before",
-      "frame": 6534,
-      "path": "remotion/out/final-audit-v6/cut-options-01-before.png"
+      "frame": 6692,
+      "path": "remotion/out/final-audit-v7/cut-options-01-before.png"
     },
     {
       "id": "cut-options-01-after",
-      "frame": 6537,
-      "path": "remotion/out/final-audit-v6/cut-options-01-after.png"
-    },
-    {
-      "id": "options-02-page-1",
-      "frame": 6748,
-      "path": "remotion/out/final-audit-v6/options-02-page-1.png"
-    },
-    {
-      "id": "options-03-page-1",
-      "frame": 6881,
-      "path": "remotion/out/final-audit-v6/options-03-page-1.png"
-    },
-    {
-      "id": "options-04-page-1",
-      "frame": 6981,
-      "path": "remotion/out/final-audit-v6/options-04-page-1.png"
-    },
-    {
-      "id": "options-04-page-2",
-      "frame": 7152,
-      "path": "remotion/out/final-audit-v6/options-04-page-2.png"
-    },
-    {
-      "id": "options-04-page-3",
-      "frame": 7316,
-      "path": "remotion/out/final-audit-v6/options-04-page-3.png"
-    },
-    {
-      "id": "options-05-page-1",
-      "frame": 7412,
-      "path": "remotion/out/final-audit-v6/options-05-page-1.png"
-    },
-    {
-      "id": "options-06-page-1",
-      "frame": 7526,
-      "path": "remotion/out/final-audit-v6/options-06-page-1.png"
-    },
-    {
-      "id": "options-06b-page-1",
-      "frame": 7632,
-      "path": "remotion/out/final-audit-v6/options-06b-page-1.png"
-    },
-    {
-      "id": "options-07-page-1",
-      "frame": 7726,
-      "path": "remotion/out/final-audit-v6/options-07-page-1.png"
-    },
-    {
-      "id": "view-option-reuse",
-      "frame": 7883,
-      "path": "remotion/out/final-audit-v6/view-option-reuse.png"
-    },
-    {
-      "id": "cut-options-08-before",
-      "frame": 7778,
-      "path": "remotion/out/final-audit-v6/cut-options-08-before.png"
-    },
-    {
-      "id": "cut-options-08-after",
-      "frame": 7781,
-      "path": "remotion/out/final-audit-v6/cut-options-08-after.png"
-    },
-    {
-      "id": "options-09-page-1",
-      "frame": 8045,
-      "path": "remotion/out/final-audit-v6/options-09-page-1.png"
-    },
-    {
-      "id": "view-redraw-compare",
-      "frame": 8301,
-      "path": "remotion/out/final-audit-v6/view-redraw-compare.png"
-    },
-    {
-      "id": "redraw-01-page-1",
-      "frame": 8301,
-      "path": "remotion/out/final-audit-v6/redraw-01-page-1.png"
-    },
-    {
-      "id": "cut-redraw-01-before",
-      "frame": 8247,
-      "path": "remotion/out/final-audit-v6/cut-redraw-01-before.png"
-    },
-    {
-      "id": "cut-redraw-01-after",
-      "frame": 8250,
-      "path": "remotion/out/final-audit-v6/cut-redraw-01-after.png"
-    },
-    {
-      "id": "redraw-02-page-1",
-      "frame": 8498,
-      "path": "remotion/out/final-audit-v6/redraw-02-page-1.png"
-    },
-    {
-      "id": "redraw-03-page-1",
-      "frame": 8680,
-      "path": "remotion/out/final-audit-v6/redraw-03-page-1.png"
-    },
-    {
-      "id": "view-redraw-prompt",
-      "frame": 8824,
-      "path": "remotion/out/final-audit-v6/view-redraw-prompt.png"
-    },
-    {
-      "id": "cut-redraw-04-before",
-      "frame": 8725,
-      "path": "remotion/out/final-audit-v6/cut-redraw-04-before.png"
-    },
-    {
-      "id": "cut-redraw-04-after",
-      "frame": 8728,
-      "path": "remotion/out/final-audit-v6/cut-redraw-04-after.png"
-    },
-    {
-      "id": "prompt-hold-redraw-04",
-      "frame": 8953,
-      "path": "remotion/out/final-audit-v6/prompt-hold-redraw-04.png"
-    },
-    {
-      "id": "redraw-05-page-1",
-      "frame": 9091,
-      "path": "remotion/out/final-audit-v6/redraw-05-page-1.png"
-    },
-    {
-      "id": "redraw-05-page-2",
-      "frame": 9267,
-      "path": "remotion/out/final-audit-v6/redraw-05-page-2.png"
-    },
-    {
-      "id": "cut-redraw-05-before",
-      "frame": 9012,
-      "path": "remotion/out/final-audit-v6/cut-redraw-05-before.png"
-    },
-    {
-      "id": "cut-redraw-05-after",
-      "frame": 9015,
-      "path": "remotion/out/final-audit-v6/cut-redraw-05-after.png"
-    },
-    {
-      "id": "redraw-06-page-1",
-      "frame": 9428,
-      "path": "remotion/out/final-audit-v6/redraw-06-page-1.png"
-    },
-    {
-      "id": "view-pets-sheet",
-      "frame": 9550,
-      "path": "remotion/out/final-audit-v6/view-pets-sheet.png"
-    },
-    {
-      "id": "cut-pets-01-before",
-      "frame": 9504,
-      "path": "remotion/out/final-audit-v6/cut-pets-01-before.png"
-    },
-    {
-      "id": "cut-pets-01-after",
-      "frame": 9507,
-      "path": "remotion/out/final-audit-v6/cut-pets-01-after.png"
-    },
-    {
-      "id": "view-pets-process",
-      "frame": 10212,
-      "path": "remotion/out/final-audit-v6/view-pets-process.png"
-    },
-    {
-      "id": "cut-pets-04-before",
-      "frame": 9980,
-      "path": "remotion/out/final-audit-v6/cut-pets-04-before.png"
-    },
-    {
-      "id": "cut-pets-04-after",
-      "frame": 9983,
-      "path": "remotion/out/final-audit-v6/cut-pets-04-after.png"
-    },
-    {
-      "id": "cut-pets-06-before",
-      "frame": 10551,
-      "path": "remotion/out/final-audit-v6/cut-pets-06-before.png"
-    },
-    {
-      "id": "cut-pets-06-after",
-      "frame": 10554,
-      "path": "remotion/out/final-audit-v6/cut-pets-06-after.png"
-    },
-    {
-      "id": "view-pets-prompt",
-      "frame": 11049,
-      "path": "remotion/out/final-audit-v6/view-pets-prompt.png"
-    },
-    {
-      "id": "cut-pets-08-before",
-      "frame": 10856,
-      "path": "remotion/out/final-audit-v6/cut-pets-08-before.png"
-    },
-    {
-      "id": "cut-pets-08-after",
-      "frame": 10859,
-      "path": "remotion/out/final-audit-v6/cut-pets-08-after.png"
-    },
-    {
-      "id": "prompt-hold-pets-08",
-      "frame": 11272,
-      "path": "remotion/out/final-audit-v6/prompt-hold-pets-08.png"
-    },
-    {
-      "id": "cut-pets-09-before",
-      "frame": 11331,
-      "path": "remotion/out/final-audit-v6/cut-pets-09-before.png"
-    },
-    {
-      "id": "cut-pets-09-after",
-      "frame": 11334,
-      "path": "remotion/out/final-audit-v6/cut-pets-09-after.png"
-    },
-    {
-      "id": "view-acting-sobaya",
-      "frame": 11672,
-      "path": "remotion/out/final-audit-v6/view-acting-sobaya.png"
-    },
-    {
-      "id": "cut-acting-01-before",
-      "frame": 11619,
-      "path": "remotion/out/final-audit-v6/cut-acting-01-before.png"
-    },
-    {
-      "id": "cut-acting-01-after",
-      "frame": 11622,
-      "path": "remotion/out/final-audit-v6/cut-acting-01-after.png"
-    },
-    {
-      "id": "view-acting-work",
-      "frame": 12280,
-      "path": "remotion/out/final-audit-v6/view-acting-work.png"
-    },
-    {
-      "id": "cut-acting-04-before",
-      "frame": 12127,
-      "path": "remotion/out/final-audit-v6/cut-acting-04-before.png"
-    },
-    {
-      "id": "cut-acting-04-after",
-      "frame": 12130,
-      "path": "remotion/out/final-audit-v6/cut-acting-04-after.png"
-    },
-    {
-      "id": "acting-05-page-1",
-      "frame": 12558,
-      "path": "remotion/out/final-audit-v6/acting-05-page-1.png"
-    },
-    {
-      "id": "acting-06b-page-1",
-      "frame": 12834,
-      "path": "remotion/out/final-audit-v6/acting-06b-page-1.png"
-    },
-    {
-      "id": "acting-06c-page-1",
-      "frame": 12915,
-      "path": "remotion/out/final-audit-v6/acting-06c-page-1.png"
-    },
-    {
-      "id": "view-acting-prompt",
-      "frame": 13484,
-      "path": "remotion/out/final-audit-v6/view-acting-prompt.png"
-    },
-    {
-      "id": "cut-acting-09-before",
-      "frame": 13324,
-      "path": "remotion/out/final-audit-v6/cut-acting-09-before.png"
-    },
-    {
-      "id": "cut-acting-09-after",
-      "frame": 13327,
-      "path": "remotion/out/final-audit-v6/cut-acting-09-after.png"
-    },
-    {
-      "id": "prompt-hold-acting-09",
-      "frame": 13673,
-      "path": "remotion/out/final-audit-v6/prompt-hold-acting-09.png"
-    },
-    {
-      "id": "view-acting-options",
-      "frame": 13771,
-      "path": "remotion/out/final-audit-v6/view-acting-options.png"
-    },
-    {
-      "id": "cut-acting-10-before",
-      "frame": 13732,
-      "path": "remotion/out/final-audit-v6/cut-acting-10-before.png"
-    },
-    {
-      "id": "cut-acting-10-after",
-      "frame": 13735,
-      "path": "remotion/out/final-audit-v6/cut-acting-10-after.png"
-    },
-    {
-      "id": "view-inspect-history-white",
-      "frame": 14603,
-      "path": "remotion/out/final-audit-v6/view-inspect-history-white.png"
-    },
-    {
-      "id": "inspect-01-page-1",
-      "frame": 14603,
-      "path": "remotion/out/final-audit-v6/inspect-01-page-1.png"
-    },
-    {
-      "id": "cut-inspect-01-before",
-      "frame": 14565,
-      "path": "remotion/out/final-audit-v6/cut-inspect-01-before.png"
-    },
-    {
-      "id": "cut-inspect-01-after",
-      "frame": 14568,
-      "path": "remotion/out/final-audit-v6/cut-inspect-01-after.png"
-    },
-    {
-      "id": "inspect-02-page-1",
-      "frame": 14704,
-      "path": "remotion/out/final-audit-v6/inspect-02-page-1.png"
-    },
-    {
-      "id": "inspect-02-page-2",
-      "frame": 14873,
-      "path": "remotion/out/final-audit-v6/inspect-02-page-2.png"
-    },
-    {
-      "id": "view-inspect-history-black",
-      "frame": 15034,
-      "path": "remotion/out/final-audit-v6/view-inspect-history-black.png"
-    },
-    {
-      "id": "inspect-03-page-1",
-      "frame": 15034,
-      "path": "remotion/out/final-audit-v6/inspect-03-page-1.png"
-    },
-    {
-      "id": "cut-inspect-03-before",
-      "frame": 14995,
-      "path": "remotion/out/final-audit-v6/cut-inspect-03-before.png"
-    },
-    {
-      "id": "cut-inspect-03-after",
-      "frame": 14998,
-      "path": "remotion/out/final-audit-v6/cut-inspect-03-after.png"
-    },
-    {
-      "id": "inspect-04-page-1",
-      "frame": 15160,
-      "path": "remotion/out/final-audit-v6/inspect-04-page-1.png"
-    },
-    {
-      "id": "inspect-04-page-2",
-      "frame": 15321,
-      "path": "remotion/out/final-audit-v6/inspect-04-page-2.png"
-    },
-    {
-      "id": "inspect-04b-page-1",
-      "frame": 15464,
-      "path": "remotion/out/final-audit-v6/inspect-04b-page-1.png"
-    },
-    {
-      "id": "view-inspect-history-report",
-      "frame": 15618,
-      "path": "remotion/out/final-audit-v6/view-inspect-history-report.png"
-    },
-    {
-      "id": "inspect-report-page-1",
-      "frame": 15618,
-      "path": "remotion/out/final-audit-v6/inspect-report-page-1.png"
-    },
-    {
-      "id": "cut-inspect-report-before",
-      "frame": 15519,
-      "path": "remotion/out/final-audit-v6/cut-inspect-report-before.png"
-    },
-    {
-      "id": "cut-inspect-report-after",
-      "frame": 15522,
-      "path": "remotion/out/final-audit-v6/cut-inspect-report-after.png"
-    },
-    {
-      "id": "view-inspect-details",
-      "frame": 15919,
-      "path": "remotion/out/final-audit-v6/view-inspect-details.png"
-    },
-    {
-      "id": "inspect-05-page-1",
-      "frame": 15796,
-      "path": "remotion/out/final-audit-v6/inspect-05-page-1.png"
-    },
-    {
-      "id": "inspect-05-page-2",
-      "frame": 15941,
-      "path": "remotion/out/final-audit-v6/inspect-05-page-2.png"
-    },
-    {
-      "id": "inspect-05-page-3",
-      "frame": 16063,
-      "path": "remotion/out/final-audit-v6/inspect-05-page-3.png"
-    },
-    {
-      "id": "cut-inspect-05-before",
-      "frame": 15724,
-      "path": "remotion/out/final-audit-v6/cut-inspect-05-before.png"
-    },
-    {
-      "id": "cut-inspect-05-after",
-      "frame": 15727,
-      "path": "remotion/out/final-audit-v6/cut-inspect-05-after.png"
-    },
-    {
-      "id": "inspect-06-page-1",
-      "frame": 16176,
-      "path": "remotion/out/final-audit-v6/inspect-06-page-1.png"
-    },
-    {
-      "id": "view-inspect-prompt",
-      "frame": 16348,
-      "path": "remotion/out/final-audit-v6/view-inspect-prompt.png"
-    },
-    {
-      "id": "inspect-07-page-1",
-      "frame": 16348,
-      "path": "remotion/out/final-audit-v6/inspect-07-page-1.png"
-    },
-    {
-      "id": "cut-inspect-07-before",
-      "frame": 16238,
-      "path": "remotion/out/final-audit-v6/cut-inspect-07-before.png"
-    },
-    {
-      "id": "cut-inspect-07-after",
-      "frame": 16241,
-      "path": "remotion/out/final-audit-v6/cut-inspect-07-after.png"
-    },
-    {
-      "id": "prompt-hold-inspect-07",
-      "frame": 16488,
-      "path": "remotion/out/final-audit-v6/prompt-hold-inspect-07.png"
-    },
-    {
-      "id": "view-tools-beforeafter",
-      "frame": 16598,
-      "path": "remotion/out/final-audit-v6/view-tools-beforeafter.png"
-    },
-    {
-      "id": "cut-tools-01-before",
-      "frame": 16547,
-      "path": "remotion/out/final-audit-v6/cut-tools-01-before.png"
-    },
-    {
-      "id": "cut-tools-01-after",
-      "frame": 16550,
-      "path": "remotion/out/final-audit-v6/cut-tools-01-after.png"
-    },
-    {
-      "id": "tools-02-page-1",
-      "frame": 16751,
-      "path": "remotion/out/final-audit-v6/tools-02-page-1.png"
-    },
-    {
-      "id": "tools-02-page-2",
-      "frame": 16923,
-      "path": "remotion/out/final-audit-v6/tools-02-page-2.png"
-    },
-    {
-      "id": "view-tools-choice",
-      "frame": 17425,
-      "path": "remotion/out/final-audit-v6/view-tools-choice.png"
-    },
-    {
-      "id": "cut-tools-05-before",
-      "frame": 17378,
-      "path": "remotion/out/final-audit-v6/cut-tools-05-before.png"
-    },
-    {
-      "id": "cut-tools-05-after",
-      "frame": 17381,
-      "path": "remotion/out/final-audit-v6/cut-tools-05-after.png"
-    },
-    {
-      "id": "tools-07b-page-1",
-      "frame": 18157,
-      "path": "remotion/out/final-audit-v6/tools-07b-page-1.png"
-    },
-    {
-      "id": "view-tools-prompt",
-      "frame": 18614,
-      "path": "remotion/out/final-audit-v6/view-tools-prompt.png"
-    },
-    {
-      "id": "cut-tools-09-before",
-      "frame": 18555,
-      "path": "remotion/out/final-audit-v6/cut-tools-09-before.png"
-    },
-    {
-      "id": "cut-tools-09-after",
-      "frame": 18558,
-      "path": "remotion/out/final-audit-v6/cut-tools-09-after.png"
-    },
-    {
-      "id": "prompt-hold-tools-09",
-      "frame": 18703,
-      "path": "remotion/out/final-audit-v6/prompt-hold-tools-09.png"
-    },
-    {
-      "id": "cut-tools-10-before",
-      "frame": 18897,
-      "path": "remotion/out/final-audit-v6/cut-tools-10-before.png"
-    },
-    {
-      "id": "cut-tools-10-after",
-      "frame": 18900,
-      "path": "remotion/out/final-audit-v6/cut-tools-10-after.png"
-    },
-    {
-      "id": "view-closing-flow",
-      "frame": 19226,
-      "path": "remotion/out/final-audit-v6/view-closing-flow.png"
-    },
-    {
-      "id": "cut-close-01-before",
-      "frame": 19148,
-      "path": "remotion/out/final-audit-v6/cut-close-01-before.png"
-    },
-    {
-      "id": "cut-close-01-after",
-      "frame": 19151,
-      "path": "remotion/out/final-audit-v6/cut-close-01-after.png"
-    },
-    {
-      "id": "view-ending",
-      "frame": 20063,
-      "path": "remotion/out/final-audit-v6/view-ending.png"
-    },
-    {
-      "id": "cut-close-04-before",
-      "frame": 19998,
-      "path": "remotion/out/final-audit-v6/cut-close-04-before.png"
-    },
-    {
-      "id": "cut-close-04-after",
-      "frame": 20001,
-      "path": "remotion/out/final-audit-v6/cut-close-04-after.png"
+      "frame": 6694,
+      "path": "remotion/out/final-audit-v7/cut-options-01-after.png"
     },
     {
       "id": "close-05-page-1",
-      "frame": 20177,
-      "path": "remotion/out/final-audit-v6/close-05-page-1.png"
+      "frame": 20335,
+      "path": "remotion/out/final-audit-v7/close-05-page-1.png"
     }
   ],
-  "note": "Automated integrity/source checks and extracted frames are separate from subjective listening and visual review.",
+  "note": "Automated source, waveform and timing checks are separate from subjective listening and visual review.",
   "visualReview": {
     "status": "passed",
-    "contactSheetsReviewed": 12,
-    "extractedFramesRepresented": 186,
-    "fullResolutionFramesReviewed": 27,
-    "detailRecord": "remotion/out/visual_review_v6.json",
-    "detailRecordSha256": "bcc61ad61a100db34ff12925e459f2d0c4a25ff5de7320a09b17d99f11214b60",
+    "contactSheetsReviewed": 4,
+    "extractedFramesRepresented": 61,
+    "fullResolutionFramesReviewed": 23,
+    "detailRecord": "remotion/out/visual_review_v7.json",
+    "detailRecordSha256": "ac21b0416777e44c7747cfd754d4ed39d45e033a99e300e87c1e021c765c2e99",
     "continuousPlaybackReviewed": false,
-    "findings": "No observed cropped/overlapping captions or unsuitable expressions. New settings/speed/plan views, full-screen white fade, final punchline and ending checked in encoded MP4."
+    "findings": "All layouts sampled; revised sale-preparation/review status and Ultra captions, their boundaries, and final punchline visibly legible with no observed clipping or overlap."
   },
-  "audioMeasurement": {
-    "integratedLUFS": -17.91,
-    "truePeakDbTP": -4.1,
-    "loudnessRangeLU": 3.4,
-    "method": "FFmpeg loudnorm input measurements, no extra processing",
-    "log": "remotion/out/mixed_loudness_v6.log"
+  "verificationRecord": "review_v7.md",
+  "factCheck": {
+    "record": "fact_check_effort_ultra.md",
+    "officialSources": [
+      "https://learn.chatgpt.com/docs/models#know-when-to-use-max-or-ultra",
+      "https://learn.chatgpt.com/docs/agent-configuration/subagents"
+    ]
   },
-  "mixSpeechScreening": {
-    "record": "remotion/out/mixed_voice_v6.json",
-    "ids": [
-      "intro-04",
-      "settings-02",
-      "close-05"
-    ],
-    "subjectiveListening": false
-  },
-  "introVoiceComparison": {
-    "record": "intro_voice_candidates_v6.json",
-    "selected": "C",
-    "audio": "remotion/out/v6_intro_candidates/comparison_v5_A_B_C.wav",
-    "page": "remotion/out/v6_intro_candidates/index.html",
-    "order": [
-      "v5",
-      "A",
-      "B",
-      "C"
-    ],
-    "subjectiveListening": false
-  },
-  "verificationRecord": "review_v6.md"
+  "previousVersion": {
+    "video": "final_remotion_line_stickers_v6.mp4",
+    "status": "user-approved retained baseline",
+    "baselineCommit": "0a3e1f3f"
+  }
 }

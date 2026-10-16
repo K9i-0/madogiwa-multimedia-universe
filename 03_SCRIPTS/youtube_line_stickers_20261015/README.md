@@ -1,10 +1,22 @@
 # Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ
 
-第一弾・第二弾を作った実例から、人が使える頼み方・選び方・仕上げ方を紹介する掛け合い動画。やめ太郎は普段のIrodori、たこさんはVOICEVOX中国うさぎ。
+第一弾と、販売準備中の第二弾を作った実例から、人が使える頼み方・選び方・仕上げ方を紹介する掛け合い動画。やめ太郎は普段のIrodori、たこさんはVOICEVOX中国うさぎ。
 
 2026-10-16、完成動画v6はユーザー承認済み。公開タイトルは「Codexで動くLINEスタンプを作ってみた！失敗から学んだ制作のコツ」を採用。サムネイルは実際のLINEスタンプ画像とImagegenで生成した文字・装飾を組み合わせた緑のA案を採用。[投稿用JPEG](thumbnails/thumbnail_youtube.jpg) / [PNG](thumbnails/thumbnail_youtube.png) / [制作記録](thumbnails/README.md)。
 
-## 現行：設定・速度と品質・掛け合いを反映した v6
+## 現行：第二弾の販売準備とUltraの並列分担を補足した v7
+
+2026-10-16。承認済みv6を基に、たこさんの説明2か所を差し替え。残る105音声はv6の波形と設定を維持。
+
+- [完成動画](final_remotion_line_stickers_v7.mp4)：11分21.33秒、1280×720、30fps
+- 確認用抜粋：[第二弾の紹介](preview_second_set_v7.mp4) / [Ultraの説明](preview_settings_v7.mp4)
+- [台本](script.md) / [字幕](subtitles_ja.srt) / [概要欄](youtube_description.txt) / [検査記録](review_v7.md)
+
+第二弾は「販売に向けて準備中です」と紹介し、8個を並べる画面に「動画制作時点で審査中」と表示。第一弾の販売案内と既存の掛け合いを保つ。Ultraは複数エージェントが作業を分担し、並列に進められると短く補足。[公式確認記録](fact_check_effort_ultra.md)に根拠と説明範囲を記録し、常に速いことや他のeffortで分担できないことは主張しない。
+
+字幕・資料の表示時間・チャプターは新音声の実測尺へ更新。全107発話、135字幕ページ。サムネはユーザー承認済みの緑Aを維持。v6の完成MP4と監査記録も保持し、改稿前の入力と差し替え前の2音声は `remotion/out/v6_before_v7/` に退避。
+
+## 前版：承認済み v6
 
 2026-10-16。普段のIrodoriを使うv5へ、ユーザーの追加FBを反映。
 
@@ -28,6 +40,7 @@ MP4と確認画像はローカル成果物。YouTubeやMadogiwa Studioへの公�
 - `remotion/src/edit-manifest.json`：実測音声から作る整数フレームの時刻、字幕ページ、口パク波形。
 - `voice_record.json` / `adopted_audio.json`：採用音声の生成条件・SHA・実測尺。直下の `voice_*.wav` が現行採用音声。
 - `voice_audit_v6.json`：差し替え音声のASR/VADと、未変更音声の保全検証。主観的な試聴と区別する。
+- `voice_audit_v7.json`：現行2音声のASR/VAD・VOICEVOXモーラ検証と、承認v6からの105音声保全。主観的な試聴とは区別する。
 - `intro_voice_candidates_v6.json`：通知への反応3候補と採用Cの設定・SHA・検証範囲。未採用WAVはGit追跡しない。
 - `remotion/voice_cleanup.json`：現行で維持するintro-07の採用済みカット。旧intro-04の原音・設定はv3アーカイブへ保全。
 - `remotion/voice_overrides.json`：生成時の個別条件。`caption_layout.json`：意味の切れ目を優先した字幕。
@@ -54,14 +67,16 @@ python3 03_SCRIPTS/youtube_line_stickers_20261015/prepare_assets.py
 cd 03_SCRIPTS/youtube_line_stickers_20261015/remotion
 npm ci
 npm run typecheck
-python3 render.py ../final_remotion_line_stickers_v6.mp4
+python3 render.py ../final_remotion_line_stickers_v7.mp4
 ```
 
-完成検証はリポジトリ直下で `.local/Irodori-TTS/.venv/bin/python 03_SCRIPTS/youtube_line_stickers_20261015/verify_delivery_v6.py`。素材SHA・実画素・字幕・音声の保全・フレーム数・全デコードを確認し、抜粋と監査画像を作る。
+完成検証はリポジトリ直下で `.local/Irodori-TTS/.venv/bin/python 03_SCRIPTS/youtube_line_stickers_20261015/verify_delivery_v7.py`。素材SHA・実画素・字幕・音声の保全・フレーム数・全デコードを確認し、抜粋と監査画像を作る。変更音声の監査は `remotion/audit_voice_v7.py`。
 
 `remotion/public/` は参照素材・デコードフレーム・音声、`remotion/out/` は監査・中間出力でGit管理しない。完成MP4もローカル保持。採用入力、コード、設定、台詞、採用音声、出典台帳を追跡する。
 
 ## 旧版と声の比較
+
+- v6：`final_remotion_line_stickers_v6.mp4`、11分16.07秒、ユーザー承認済み。音声・編集の基準Git `8fea93aa`。v7比較基準はサムネ採用後の `0a3e1f3f`。
 
 - v5：`final_remotion_line_stickers_v5.mp4`、10分20.27秒。正本Git `bc765980`。透過失敗の実例・採用ツッコミを反映。v6改稿前の入力と退避音声は `remotion/out/v5_before_v6/`。
 

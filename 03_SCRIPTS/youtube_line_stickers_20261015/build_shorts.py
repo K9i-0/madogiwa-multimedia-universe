@@ -27,9 +27,14 @@ def sha256(path):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--legacy-layout', action='store_true', help='Render the superseded horizontal-in-portrait layout')
     parser.add_argument('--skip-clean-render', action='store_true')
     parser.add_argument('--still', type=int)
     args = parser.parse_args()
+    if not args.legacy_layout:
+        run(['python3', EPISODE / 'build_portrait_trial.py'])
+        shutil.copy2(OUT / 'shorts_portrait_trial.mp4', EPISODE / 'final_remotion_shorts_9x16.mp4')
+        return
     m = json.loads(MANIFEST.read_text())
     source = REPO / m['audioSource']
     frames, fps = m['durationInFrames'], m['fps']

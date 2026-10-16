@@ -1,0 +1,116 @@
+{
+  "horror_image_prompts": [
+    [
+      "village",
+      "Create a wide 16:9 cinematic still photograph for a Japanese slow-burn ghost story. An abandoned rural Japanese mountain village, narrow empty lane, shuttered weathered wooden houses, weeds, damp asphalt, wooded hills, late overcast autumn afternoon. Nobody and no supernatural figure. Restrained desaturated earthy colors, documentary realism, quietly unnerving ordinary setting, fine film grain, readable detail in shadows. No text, no logos, no collage. Landscape full bleed."
+    ],
+    [
+      "home",
+      "Create a wide 16:9 cinematic still photograph for a Japanese ghost story. First-person seated view across a modest Japanese apartment dining table toward ONE empty wooden dining chair at midnight. A dark suit jacket neatly draped over its back. Six plain silver empty beer cans loosely clustered in foreground LEFT, no logos, one cold ceiling light overhead, kitchen refrigerator visible rear left, closed dark curtains behind chair. Absolutely no people, no faces, no reflections of people, no ghost. Eerie documentary realism, subdued blue-green shadows, detailed real wood and metal, full bleed no text. Chair upper center and table lower half."
+    ],
+    [
+      "shrine",
+      "Create a wide 16:9 cinematic still photograph for a Japanese horror narration. Small waist-high weathered wooden roadside hokora shrine in an abandoned forest village, mossy stone pedestal, closed small wooden double doors, old straw rope, in front sits a large thick carved wooden drinking bowl. Dusk, damp fallen leaves, mountain forest. No people, no statue, no masks or ghosts. Subtle ominous realistic photography, soft moon blue and dim amber, grain, fully readable details, no text no collage."
+    ]
+  ],
+  "horror_image_prompts2": [
+    [
+      "f_silhouette",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/reference_f_sensei_costume.png"
+        ],
+        "transparent_background": true,
+        "prompt": "Extract ONLY the central front man in the ceremonial outfit as a full body seated seiza silhouette for a Japanese horror narration. Preserve exact head/hair outline of this man, broad hanging kimono sleeves and wide hakama hem in the same seated pose. Entire person solid nearly black silhouette, absolutely no visible facial features, name badge text or costume text, no other people or shrine or background. Actual transparent background, clean precise edges, isolated centered silhouette, generous margin. The distinctive outline of his hairstyle and broad ceremonial sleeves must remain. No white rim, no floor shadow."
+      }
+    ],
+    [
+      "y_silhouette",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_yotan_basic_sheet.png"
+        ],
+        "transparent_background": true,
+        "prompt": "Create ONE full-body standing silhouette of the exact man in this reference, holding his electric guitar naturally at waist level, all completely solid black except transparent cutouts. Preserve this person's distinctive long layered hairstyle, nose and chin profile, slender proportions, guitar and strap. Use the face closeup to complete the head above the front body in reference. 3/4 angle facing slightly left. Do not reproduce reference sheet, labels, multiple views or facial features. Genuine transparent background. Clean silhouette asset for horror narration, margin around whole body and guitar."
+      }
+    ],
+    [
+      "office",
+      {
+        "transparent_background": false,
+        "prompt": "Wide 16:9 cinematic documentary still for Japanese psychological horror. Empty aging Japanese office at twilight, fluorescent tubes, unused desks by windows, a copy machine near wall, empty rolling chair in foreground right, modest realistic office, no people no ghost no readable text no logos. Cold desaturated fluorescent green, low contrast, quietly lonely, readable shadow detail, fine film grain. Composition with empty center space for silhouetted characters to be added later, full bleed."
+      }
+    ]
+  ],
+  "horror_image_prompts3": [
+    [
+      "reveal",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Use case: identity-preserve. Create a wide 16:9 cinematic horror still with this EXACT Sobaya character, matching the white mask with red markings and black eye holes, black short hair, huge muscular stocky physique and neutral gray skin on all exposed arms/neck/hands. He sits facing viewer across a worn wooden meeting table in a dim abandoned Japanese village community hall at midnight, dusty dark curtains, aged wood walls and old fluorescent fixture. Medium shot waist up, his full mask and shoulders clearly readable in upper central half. His forearms on table and ONE oversized glass beer mug full of amber beer and foam in front of him. He is completely still, politely waiting, eerie normal social situation, NOT jumping at camera. White fitted T-shirt with natural muscle shape and cloth folds, NO nipple bumps or point highlights or local chest dots. Mask remains properly worn. Exact reference identity, no redesign, no sheet layout or text. Realistic cinematic rendering, muted green/amber shadows, no other people, no extra faces, no captions."
+      }
+    ],
+    [
+      "hall",
+      {
+        "transparent_background": false,
+        "prompt": "Wide 16:9 cinematic realistic still of an EMPTY old Japanese village community meeting hall at night, from a seated visitor's eye level looking across a long worn wood table toward one empty chair centered against dark curtains. Four identical oversized clear glass beer mugs full of amber beer arranged on table: three near viewer along front edge and one by the far empty chair. All four mugs fully visible above lower 20 percent subtitle margin, no people no ghost no face. Weathered walls, dim fluorescent ceiling light, quiet restrained psychological horror, desaturated green amber, realistic grain, no text or logos. Landscape full bleed."
+      }
+    ]
+  ],
+  "horror_image_prompts4": [
+    [
+      "morning",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/remotion/public/art/home.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Edit this exact apartment photograph into the peaceful morning AFTER a haunting is resolved. Preserve room architecture, table, empty chair and composition exactly. Remove ALL beer cans and remove jacket from chair. Put ONLY one simple glass half full of water near the camera on the table. Soft natural morning light through partly open curtains instead of midnight, overhead lamp off. Realistic quiet everyday morning, no people, no ghost, no text. Wide 16:9."
+      }
+    ],
+    [
+      "broken",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/remotion/public/art/shrine.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Edit this exact shrine photograph after it was struck twice by a guitar. Same camera, location, forest, lighting and photography. Small wooden shrine roof is visibly broken, front door knocked down leaning on pedestal. The large wooden bowl in foreground is split apart in several thick pieces. No guitar or people needed. Preserve everything else. No ghost, faces, blood, text or fire. Wide 16:9 cinematic realistic documentary."
+      }
+    ]
+  ],
+  "horror_image_prompts5": [
+    [
+      "asleep",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/remotion/public/art/reveal.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Edit this exact Sobaya image to the end of the drinking ritual. Same character identity, same physique, hair, gray skin, white T-shirt, room and camera. He has peacefully slumped forward asleep with head resting on folded thick forearms on the table. White mask remains correctly worn and the red markings remain partly visible from the side; NEVER remove it or show a human face. The large glass beer mug sits EMPTY beside his arm, no beer remains. Quiet relieved exhaustion, no smile or comedy, no extra people or text. Preserve photographic style and 16:9."
+      }
+    ],
+    [
+      "hall_morning",
+      {
+        "referenced_image_paths": [
+          "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/remotion/public/art/hall.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Edit this exact empty Japanese community hall at the morning AFTER the ritual. Same table and camera, same four glass mugs in exactly their positions but ALL FOUR mugs now EMPTY, with only traces of foam on glass. Soft pale dawn light from windows. Far chair empty. No person or ghost or additional objects, no text. Realistic peaceful but worn room, muted natural colors. 16:9."
+      }
+    ]
+  ],
+  "horror_product_prompt": {
+    "referenced_image_paths": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/remotion/public/art/home.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/props/product_super_try.png"
+    ],
+    "transparent_background": false,
+    "prompt": "Edit image 1 preserving its exact camera, empty chair, jacket, kitchen and eerie midnight lighting. Replace the plain silver cans with EXACTLY SIX open empty cans using the precise product design of reference image 2. Arrange SIX cans in two loose rows of three at foreground left, all individually countable. Silver can, black 労働 at top, red スーパー and big red つらい, black cursive Madogiwa, small black 生, red 窓際スーパーつらい bottom. NO 辛口, NO 350ml, no TRY. Preserve the branded layout accurately and match dim light/material perspective. No person, no ghost. 16:9 landscape. These are normal small beverage cans, not oversized."
+  }
+}

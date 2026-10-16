@@ -1048,6 +1048,17 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
                   <small>スタンプの一覧・ご購入はLINE STOREへ。</small>
                 </div>
               </div>
+              <div className="j-goods-item">
+                <a className="j-goods-image j-goods-image-stickers" href="https://store.line.me/stickershop/product/37339358/ja" target="_blank" rel="noreferrer" aria-label="窓際族スタンプ第二弾（そば屋）をLINE STOREで見る（新しいタブ）">
+                  <img src="/site/goods/madogiwa-line-stickers-02-preview.png" alt="窓際族スタンプ第二弾（そば屋）の全8枚。そば屋の挨拶や仕事、お酒にまつわるスタンプ一覧" width="1280" height="540" loading="lazy" />
+                </a>
+                <div className="j-goods-copy">
+                  <h3>窓際族スタンプ第二弾（そば屋）</h3>
+                  <p>そば屋のひと言を、いつものトークに。<br />動くLINEスタンプ第二弾、販売中。</p>
+                  <a className="j-goods-link" href="https://store.line.me/stickershop/product/37339358/ja" target="_blank" rel="noreferrer">LINE STOREで見る <ArrowUpRight size={16} /></a>
+                  <small>スタンプの一覧・ご購入はLINE STOREへ。</small>
+                </div>
+              </div>
             </div>
           </section>
         )}

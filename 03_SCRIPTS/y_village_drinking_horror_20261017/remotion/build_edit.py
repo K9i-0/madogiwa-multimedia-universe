@@ -7,6 +7,8 @@ rows=json.loads((P/'voice-manifest.json').read_text())['rows']
 with wave.open(str(P.parent/'sobaya_beer.wav')) as w:
     growl_seconds=w.getnframes()/w.getframerate()
 growl_frames=math.ceil(growl_seconds*FPS)
+with wave.open(str(P.parent/'sobaya_early_murmur.wav')) as w:
+    early_frames=math.ceil(w.getnframes()/w.getframerate()*FPS)
 cursor=90
 clips=[];captions=[];chapters=[]
 def lines(text):
@@ -32,13 +34,16 @@ for i,r in enumerate(rows):
     pause=27 if r['text'].endswith(('。','」')) else 15
     if r['text'] in ['私にも見えました。','ごちそうさまでした','「ごちそうさまでした」','その夜の記憶は、そこまでです。']:pause=60
     if r['id']=='n0317':pause=60+15+growl_frames+36
+    if r['id']=='n0073':pause=15+early_frames+24
     cursor+=duration+pause
 duration=cursor+120
 byid={r['id']:r for r in clips}
-def frame(id):return byid[f'n{id:04}']['from']
+def frame(id):
+    return next(r['from'] for r in clips if int(r['id'][1:])>=id)
 reveal=frame(317)+byid['n0317']['duration']+60
 growl={'from':reveal+15,'duration':growl_frames,'file':'sobaya_beer.wav','text':'ビール……','speaker':'sobaya'}
 captions.append({'from':growl['from'],'to':growl['from']+growl_frames,'text':'「ビール……」','lineId':'sobaya_beer','speaker':'sobaya'})
+early={'from':frame(73)+byid['n0073']['duration']+15,'duration':early_frames,'file':'sobaya_early_murmur.wav','speaker':'sobaya','intelligible':False,'gain':0.7}
 captions.sort(key=lambda c:c['from'])
 def shotframe(n):return reveal if n==318 else frame(n)
 # Authored shots are tied to exact spoken lines, never change randomly with captions.
@@ -67,18 +72,19 @@ shots=[]
 for i,(n,bg,person) in enumerate(keys):
     start=0 if i==0 else shotframe(n)
     end=shotframe(keys[i+1][0]) if i+1<len(keys) else duration
+    if end<=start:continue
     shots.append({'from':start,'to':end,'background':bg,'person':person,'crop':i%3})
 events=[]
 for phrase,kind,delay in [('一度目で屋根が割れました。','wood',1),('二度目で扉が外れました。','wood',1),('それから、向かいの空席へ缶を差し出しました。','can',0),('四つのジョッキが当たりました。','glass',1),('空になったジョッキが、机に当たりました。','glass',1),('冷蔵庫が鳴りました。','hum',0),('どこかで、窓枠がきしみました。','creak',0)]:
     c=next(c for c in clips if c['text']==phrase)
     events.append({'frame':c['from']+round(delay*FPS),'kind':kind})
-manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'sfx':events,'characterAudio':[growl],'revealFrame':reveal,'audio':'mix.wav'}
+manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'sfx':events,'characterAudio':[growl,early],'revealFrame':reveal,'audio':'mix.wav'}
 (P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 def srt_time(frame):
     ms=round(frame/FPS*1000);h,ms=divmod(ms,3600000);mi,ms=divmod(ms,60000);s,ms=divmod(ms,1000)
     return f'{h:02}:{mi:02}:{s:02},{ms:03}'
 (P.parent/'subtitles_ja.srt').write_text('\n\n'.join(f"{i+1}\n{srt_time(c['from'])} --> {srt_time(c['to'])}\n{c['text']}" for i,c in enumerate(captions))+'\n')
-assert sum('中口' in c['text'] for c in clips)==1
+assert sum('中口' in c['text'] for c in clips)==2
 assert all(s['background'] not in ('reveal','asleep') for s in shots if s['from']<reveal)
 assert all(len(c['text'].splitlines())<=2 for c in captions)
 assert all(captions[i]['to']<=captions[i+1]['from'] for i in range(len(captions)-1))

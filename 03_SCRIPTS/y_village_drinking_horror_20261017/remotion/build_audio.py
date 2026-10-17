@@ -26,6 +26,24 @@ fade=4*sr;win=np.ones(len(y),np.float32);win[:fade]=np.linspace(0,1,fade);win[-f
 music=np.zeros((n,2),np.float32)
 for start in range(0,n,len(y)-fade):
     length=min(len(y),n-start);music[start:start+length]+=y[:length]*win[:length,None]
+# Encounter bed: reversed, lowered and filtered source; crossfade back at morning.
+dark,rate=sf.read(P/'out/encounter_music.wav',dtype='float32',always_2d=True)
+assert rate==sr
+dark*=.014/max(float(np.sqrt(np.mean(dark*dark))),1e-8)
+darkwin=np.ones(len(dark),np.float32);darkwin[:fade]=np.linspace(0,1,fade);darkwin[-fade:]=np.linspace(1,0,fade)
+darkbed=np.zeros_like(music)
+for start in range(0,n,len(dark)-fade):
+    length=min(len(dark),n-start);darkbed[start:start+length]+=dark[:length]*darkwin[:length,None]
+env=np.zeros(n,np.float32)
+def dark_region(start,end,crossfade):
+    a=max(0,round(start*sr));b=min(n,round(end*sr));f=min(round(crossfade*sr),(b-a)//2)
+    env[a:b]=1
+    env[a:a+f]=np.linspace(0,1,f);env[b-f:b]=np.linspace(1,0,f)
+early=next(e for e in m['characterAudio'] if e.get('intelligible') is False)
+dark_region(early['from']/fps-2,early['from']/fps+14,2)
+morning=next(r['from']/fps for r in m['narration'] if r['id']=='n0430')
+dark_region(m['revealFrame']/fps-2,morning+4,4)
+music=music*(1-env[:,None])+darkbed*env[:,None]
 # Silence at the first appearance; do not cover the pause with a sting.
 reveal=m['revealFrame'];a=round((reveal/fps-3)*sr);b=round((reveal/fps+6)*sr)
 music[a:b]*=np.concatenate([np.linspace(1,0,sr),np.zeros(max(0,b-a-2*sr)),np.linspace(0,1,sr)])[:,None]
@@ -39,6 +57,7 @@ for event in m.get('characterAudio',[]):
     active=z[np.abs(z)>.003]
     rms=float(np.sqrt(np.mean(active*active))) if len(active) else 1
     z*=min(.11/max(rms,1e-8),.65/max(float(np.max(np.abs(z))),1e-8))
+    z*=event.get('gain',1.0)
     at=round(event['from']/fps*sr)
     mix[at:at+len(z)]+=z[:,None]
 rng=np.random.default_rng(171026)
@@ -57,5 +76,5 @@ for e in m['sfx']:
     at=round(e['frame']/fps*sr);mix[at:at+len(z)]+=z[:,None]
 sf.write(P/'out/premix.wav',mix,sr,subtype='PCM_24')
 subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/premix.wav'),'-af','alimiter=limit=0.89:level=false','-ar','48000',str(P/'public/mix.wav')],check=True)
-(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic procedural synthesis; seed171026','voice':'VOICEVOX:青山龍星 style13 speed1.0; normalized -19 LUFS','sobaya':'canonical Irodori v4 Large + sobaya_monsterize; gain only in mix'},ensure_ascii=False,indent=2))
+(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic procedural synthesis; seed171026','voice':'VOICEVOX:青山龍星 style13 speed1.0; normalized -19 LUFS','sobaya':'canonical Irodori v4 Large; main growl + heavily processed early murmur; see sound-processing-v3.json','encounterMusic':'reversed/pitched/filtered source; 4-second crossfade; morning restoration'},ensure_ascii=False,indent=2))
 print('Audio complete',n/sr,float(np.max(np.abs(mix))))

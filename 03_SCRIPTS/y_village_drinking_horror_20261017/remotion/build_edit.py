@@ -34,7 +34,8 @@ for i,r in enumerate(rows):
     pause=27 if r['text'].endswith(('。','」')) else 15
     if r['text'] in ['私にも見えました。','ごちそうさまでした','「ごちそうさまでした」','その夜の記憶は、そこまでです。']:pause=60
     if r['id']=='n0317':pause=60+15+growl_frames+36
-    if r['id']=='n0073':pause=15+early_frames+24
+    if r['id']=='n0073':pause=15+early_frames+36
+    if r['id'] in ('n0143','n0179','n0202','n0238','n0243','n0332','n0375','n0417','n0486'):pause=max(pause,42)
     cursor+=duration+pause
 duration=cursor+120
 byid={r['id']:r for r in clips}
@@ -64,7 +65,7 @@ keys=[
  (370,'reveal',None),(382,'reveal','m_photo'),(390,'reveal',None),
  (398,'reveal','y_photo'),(408,'reveal',None),(425,'asleep',None),
  (430,'hall_morning',None),(449,'shrine',None),(452,'morning',None),
- (468,'morning',None),(473,'office','f_photo'),(480,'morning',None)]
+ (468,'morning',None),(471,'office',None),(473,'office','f_photo'),(480,'morning',None)]
 # Before the ritual, avoid showing four mugs, which are a later discovery.
 keys=[(n,'village' if n in (79,87) else bg,person) for n,bg,person in keys]
 keys=[(n,'temple' if person=='f_photo' else bg,person) for n,bg,person in keys]
@@ -74,11 +75,76 @@ for i,(n,bg,person) in enumerate(keys):
     end=shotframe(keys[i+1][0]) if i+1<len(keys) else duration
     if end<=start:continue
     shots.append({'from':start,'to':end,'background':bg,'person':person,'crop':i%3})
+# Meaningful reframings: evidence, empty chairs, hands, and a changed point of view.
+# Each inherits the current authored scene, never a newly invented entity sighting.
+focuses={
+ 'n0013':(1.06,50,50,'plain'), 'n0036v5a0':(1.07,50,45,'plain'),
+ 'n0039':(1.06,50,45,'plain'), 'n0061':(1.12,50,48,'plain'),
+ 'n0091':(1.07,50,50,'plain'),
+ 'n0109':(1.20,42,80,'plain'), 'n0114':(1.05,50,50,'plain'),
+ 'n0126v5a0':(1.07,50,45,'plain'), 'n0128':(1.12,50,42,'plain'),
+ 'n0133':(1.14,50,42,'plain'), 'n0145':(1.12,50,44,'recording'),
+ 'n0141':(1.20,50,42,'plain'), 'n0163':(1.07,50,44,'plain'),
+ 'n0167a':(1.04,50,50,'plain'), 'n0168':(1.08,50,50,'plain'),
+ 'n0189':(1.04,50,50,'plain'), 'n0192':(1.13,50,43,'plain'),
+ 'n0155':(1.08,50,50,'plain'), 'n0196':(1.06,50,44,'recording'),
+ 'n0202':(1.16,50,44,'recording'), 'n0207':(1.05,50,50,'plain'),
+ 'n0222':(1.08,50,45,'plain'), 'n0251':(1.13,50,45,'plain'),
+ 'n0237':(1.12,50,40,'plain'), 'n0255v5a1':(1.07,50,50,'plain'),
+ 'n0255v5a7':(1.14,50,45,'plain'), 'n0272':(1.08,50,48,'recording'),
+ 'n0273':(1.05,50,50,'plain'), 'n0309':(1.04,50,50,'plain'),
+ 'n0312':(1.11,50,42,'plain'), 'n0320':(1.13,50,42,'plain'),
+ 'n0325':(1.05,50,42,'plain'),
+ 'n0331':(1.30,50,72,'plain'), 'n0341':(1.12,50,42,'plain'),
+ 'n0352':(1.22,50,35,'plain'), 'n0367':(1.14,50,65,'plain'),
+ 'n0373':(1.24,50,70,'plain'), 'n0385':(1.10,50,45,'plain'),
+ 'n0392':(1.19,50,34,'plain'), 'n0411':(1.25,50,72,'plain'),
+ 'n0415':(1.18,50,35,'plain'), 'n0438':(1.12,50,42,'plain'),
+ 'n0444':(1.07,50,40,'plain'), 'n0460':(1.10,45,70,'plain'),
+ 'n0486':(1.10,50,45,'plain'),
+}
+authored=list(shots)
+for id,(zoom,x,y,view) in focuses.items():
+    at=byid[id]['from']
+    base=next(s for s in authored if s['from']<=at<s['to'])
+    extra={**base,'from':at,'zoom':zoom,'focusX':x,'focusY':y,'view':view}
+    if id=='n0272':extra.update(background='broken',person=None)
+    if id=='n0202':extra.update(person=None)
+    if id in ('n0163','n0192'):extra.update(background='home_product',person=None)
+    if id=='n0167a':extra.update(background='office',person='m_photo')
+    if id=='n0189':extra.update(background='home_product',person='m_photo')
+    if id=='n0168':extra.update(background='office',person=None)
+    if id=='n0039':extra.update(person='m_photo')
+    if id=='n0325':extra.update(background='hall',person='f_photo')
+    shots.append(extra)
+shots=list({s['from']:s for s in shots}.values());shots.sort(key=lambda s:s['from'])
+for i,s in enumerate(shots):
+    s['to']=shots[i+1]['from'] if i+1<len(shots) else duration
+    for k,v in {'zoom':1.02,'focusX':50,'focusY':50,'view':'plain'}.items():s.setdefault(k,v)
+inserts=[]
+def insert(kind,first,last):
+    inserts.append({'kind':kind,'from':byid[first]['from'],'to':byid[last]['from']+byid[last]['duration']+12,
+                    'changeFrame':byid[last]['from']})
+insert('excel','n0002v5a1','n0002v5a2')
+insert('bad-ui','n0004v5a0','n0004v5a1')
+insert('password','n0006v5a0','n0006v5a1')
+insert('bug-report','n0007v5a0','n0007v5a2')
+inserts[-1]['changeFrame']=byid['n0007v5a1']['from']+45
+insert('excel-village','n0024bv5a0','n0024bv5a1')
+insert('inspection','n0096av5a0','n0096av5a1')
+insert('drinking-record','n0162v5a0','n0162v5a1')
+insert('excel-return','n0471v5a0','n0471v5a2')
+inserts[-1]['changeFrame']=byid['n0471v5a1']['from']
+environmental=[{'from':byid['n0048a']['from']+18,'duration':300,'file':'sfx/howler_monkey_v5.wav','rms':0.042,'kind':'real-monkey','overlapNarration':True}]
+quiet=[]
+for id in ['n0073','n0143','n0179','n0202','n0238','n0243','n0332','n0369','n0373','n0415','n0422','n0486']:
+    r=byid[id];quiet.append({'from':max(0,r['from']-12),'to':r['from']+r['duration']+30,'level':0.12})
 events=[]
 for phrase,kind,delay in [('一度目で屋根が割れました。','wood',1),('二度目で扉が外れました。','wood',1),('それから、向かいの空席へ缶を差し出しました。','can',0),('四つのジョッキが当たりました。','glass',1),('空になったジョッキが、机に当たりました。','glass',1),('冷蔵庫が鳴りました。','hum',0),('どこかで、窓枠がきしみました。','creak',0)]:
     c=next(c for c in clips if c['text']==phrase)
     events.append({'frame':c['from']+round(delay*FPS),'kind':kind})
-manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'sfx':events,'characterAudio':[growl,early],'revealFrame':reveal,'audio':'mix.wav'}
+events.extend([{'frame':byid['n0411']['from']+30,'kind':'glass'},{'frame':byid['n0367']['from']+30,'kind':'clap'}])
+manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'inserts':inserts,'quietRegions':quiet,'environmentalAudio':environmental,'sfx':events,'characterAudio':[growl,early],'revealFrame':reveal,'audio':'mix.wav'}
 (P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 def srt_time(frame):
     ms=round(frame/FPS*1000);h,ms=divmod(ms,3600000);mi,ms=divmod(ms,60000);s,ms=divmod(ms,1000)

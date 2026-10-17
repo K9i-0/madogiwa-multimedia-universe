@@ -10,6 +10,9 @@ for line in body.splitlines():
  if not line or line.startswith('［'):continue
  text=line
  speech=text.replace('Y村','ワイむら').replace('Mさん','エムさん').replace('Yさん','ワイさん').replace('F先生','エフ先生').replace('中口','なかぐち').replace('祠','ほこら').replace('空席','くうせき').replace('空き缶','あきかん').replace('管理人','カンリニン').replace('住む人','住むひと').replace('来る方','来るカタ').replace('空の','カラの').replace('空にな','カラにな').replace('空でした','カラでした')
+ # Keep subtitle spelling intact while disambiguating human/count/empty readings.
+ for written,spoken in [('あの人か','あのヒトか'),('人を紹介','ヒトを紹介'),('人から休む','ヒトから休む'),('頼んだ人が','頼んだヒトが'),('今年の分','今年のブン'),('日の行','日のギョウ'),('何やこれ','ナンヤこれ'),('弦','ゲン'),('客の杯','客のサカズキ'),('12345','イチ、ニ、サン、ヨン、ゴ'),('1234','イチ、ニ、サン、ヨン'),('IT企業','アイティー企業')]:
+  speech=speech.replace(written,spoken)
  anchor=source[len(rows)]
  assert anchor['text']==text and anchor['chapter']==chapter
  rows.append({**anchor,'speech':speech})
@@ -27,6 +30,8 @@ def gen(r):
   dest=P/'public/voice_aoyama_v3'/f"{r['id']}.wav";meta=dest.with_suffix('.json')
  if not(meta.exists() and json.loads(meta.read_text()).get('key')==sig):
   dest=P/'public/voice_aoyama_v4'/f"{r['id']}.wav";meta=dest.with_suffix('.json')
+ if not(meta.exists() and json.loads(meta.read_text()).get('key')==sig):
+  dest=P/'public/voice_aoyama_v5'/f"{r['id']}.wav";meta=dest.with_suffix('.json')
  dest.parent.mkdir(parents=True,exist_ok=True)
  if not(dest.exists() and meta.exists() and json.loads(meta.read_text()).get('key')==sig):
   q=json.loads(post('audio_query',{'speaker':settings['speaker'],'text':r['speech']}));q.update({k:v for k,v in settings.items() if k!='speaker'})

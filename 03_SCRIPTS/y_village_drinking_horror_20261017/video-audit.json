@@ -1,21 +1,21 @@
 {
-  "frameCount": 49714,
-  "seconds": 1657.1333333333334,
-  "voiceClips": 381,
-  "captions": 383,
-  "shots": 62,
+  "frameCount": 58784,
+  "seconds": 1959.4666666666667,
+  "voiceClips": 434,
+  "captions": 437,
+  "shots": 105,
   "nameOccurrences": 2,
-  "revealFrame": 34062,
+  "revealFrame": 42645,
   "characterAudio": [
     {
-      "from": 34077,
+      "from": 42660,
       "duration": 37,
       "file": "sobaya_beer.wav",
       "text": "ビール……",
       "speaker": "sobaya"
     },
     {
-      "from": 9955,
+      "from": 13582,
       "duration": 46,
       "file": "sobaya_early_murmur_v4.wav",
       "speaker": "sobaya",
@@ -29,20 +29,94 @@
   "narrationOverlap": false,
   "manualListening": "not performed; automated screening only",
   "music": "same separated reference; encounter-only reversed/pitched/filtered variant; original track unconfirmed",
-  "video": "review_remotion_horror_aoyama_v4.mp4",
-  "bytes": 173287342,
-  "sha256": "7bce55198ab4a72226ee03d2e1591c2cbdc54a9c4077368bff01dcebdec68944",
+  "video": "review_remotion_horror_aoyama_v5.mp4",
+  "bytes": 200389829,
+  "sha256": "deb9344f65537a07fc20707189c2b371ae4f6e0d4ff486f523f15ebc2df4cb87",
   "resolution": [
     1280,
     720
   ],
   "fps": "30/1",
-  "decodedFrames": 49714,
+  "decodedFrames": 58784,
   "audioStreams": 1,
   "audioSampleRate": 48000,
   "fullDecode": "passed; no reported errors",
-  "visualReview": "v4 pronunciation, realistic silhouette and costume insert checked separately",
-  "integratedLUFS": -16.31,
-  "truePeakDbTP": -1.4,
-  "loudnessRangeLU": 4.5
+  "visualReview": "v5 UI inserts, empty-chair views, silhouette, costume and reveal checked separately; see review-v5.md",
+  "integratedLUFS": -16.28,
+  "truePeakDbTP": -1.07,
+  "loudnessRangeLU": 4.5,
+  "environmentalAudio": [
+    {
+      "from": 9358,
+      "duration": 300,
+      "file": "sfx/howler_monkey_v5.wav",
+      "rms": 0.042,
+      "kind": "real-monkey",
+      "overlapNarration": true
+    }
+  ],
+  "rhythm": {
+    "scriptMatchesVoiceRows": true,
+    "nameCalls": 2,
+    "oldJacketSubplotRemoved": true,
+    "entityHiddenInRecordings": true,
+    "graySkin": true,
+    "narratorSpeed": 1.0,
+    "voiceSpeakerId": 13,
+    "shotsCoverFullTimeline": true,
+    "visualOrAudioBeatCount": 143,
+    "longestVisualOrAudioBeatGapSeconds": 37.333333333333336,
+    "averageVisualOrAudioBeatGapSeconds": 13.607407407407408,
+    "note": "Beats include meaningful cuts, inserts and music silences; these are not all jokes. Horror sections intentionally retain quiet spans."
+  },
+  "workInserts": [
+    {
+      "kind": "excel",
+      "from": 805,
+      "to": 1063,
+      "changeFrame": 926
+    },
+    {
+      "kind": "bad-ui",
+      "from": 1335,
+      "to": 1690,
+      "changeFrame": 1535
+    },
+    {
+      "kind": "password",
+      "from": 1945,
+      "to": 2493,
+      "changeFrame": 2224
+    },
+    {
+      "kind": "bug-report",
+      "from": 2629,
+      "to": 3022,
+      "changeFrame": 2820
+    },
+    {
+      "kind": "excel-village",
+      "from": 5274,
+      "to": 5506,
+      "changeFrame": 5398
+    },
+    {
+      "kind": "inspection",
+      "from": 16351,
+      "to": 16633,
+      "changeFrame": 16501
+    },
+    {
+      "kind": "drinking-record",
+      "from": 23290,
+      "to": 23543,
+      "changeFrame": 23393
+    },
+    {
+      "kind": "excel-return",
+      "from": 56702,
+      "to": 57039,
+      "changeFrame": 56829
+    }
+  ]
 }

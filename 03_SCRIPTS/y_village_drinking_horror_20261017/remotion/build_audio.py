@@ -47,8 +47,19 @@ music=music*(1-env[:,None])+darkbed*env[:,None]
 # Silence at the first appearance; do not cover the pause with a sting.
 reveal=m['revealFrame'];a=round((reveal/fps-3)*sr);b=round((reveal/fps+6)*sr)
 music[a:b]*=np.concatenate([np.linspace(1,0,sr),np.zeros(max(0,b-a-2*sr)),np.linspace(0,1,sr)])[:,None]
+for region in m.get('quietRegions',[]):
+    a=round(region['from']/fps*sr);b=min(n,round(region['to']/fps*sr));edge=min(round(.3*sr),(b-a)//2)
+    dip=np.full(b-a,region['level'],np.float32)
+    dip[:edge]=np.linspace(1,region['level'],edge);dip[-edge:]=np.linspace(region['level'],1,edge)
+    music[a:b]*=dip[:,None]
 music[-6*sr:]*=np.linspace(1,0,6*sr)[:,None]
 mix=music+voice[:,None]
+for event in m.get('environmentalAudio',[]):
+    z,rate=sf.read(P/'public'/event['file'],dtype='float32')
+    z=resample_poly(z,sr,rate).astype(np.float32)
+    z*=min(event['rms']/max(float(np.sqrt(np.mean(z*z))),1e-8),.22/max(float(np.max(np.abs(z))),1e-8))
+    at=round(event['from']/fps*sr);z=z[:round(event['duration']/fps*sr)]
+    mix[at:at+len(z)]+=z[:,None]
 for event in m.get('characterAudio',[]):
     z,rate=sf.read(P.parent/event['file'],dtype='float32')
     if z.ndim>1:z=z.mean(axis=1)
@@ -62,7 +73,7 @@ for event in m.get('characterAudio',[]):
     mix[at:at+len(z)]+=z[:,None]
 rng=np.random.default_rng(171026)
 for e in m['sfx']:
-    kind=e['kind'];duration={'wood':.55,'glass':1.1,'can':.5,'hum':1.8,'creak':1.2}[kind]
+    kind=e['kind'];duration={'wood':.55,'glass':1.1,'can':.5,'hum':1.8,'creak':1.2,'clap':1.0}[kind]
     t=np.arange(round(duration*sr))/sr
     if kind=='glass':
         z=sum(np.sin(2*np.pi*h*t)*np.exp(-t*d) for h,d in [(1300,6),(2113,9),(3317,13)])*.025
@@ -70,11 +81,14 @@ for e in m['sfx']:
         z=sosfilt(butter(2,1800,fs=sr,output='sos'),rng.normal(size=len(t)))*np.exp(-t*16)*.11+np.sin(2*np.pi*85*t)*np.exp(-t*20)*.05
     elif kind=='can':z=rng.normal(size=len(t))*np.exp(-t*15)*.035
     elif kind=='hum':z=(np.sin(2*np.pi*100*t)+.3*np.sin(2*np.pi*200*t))*.009*np.sin(np.pi*t/duration)**2
+    elif kind=='clap':
+        noise=sosfilt(butter(2,[400,2800],btype='bandpass',fs=sr,output='sos'),rng.normal(size=len(t)))
+        z=noise*(np.exp(-t*35)+np.where(t>=.45,np.exp(-np.maximum(0,t-.45)*35),0))*.09
     else:z=np.sin(2*np.pi*(180*t+65*t*t))*.018*np.sin(np.pi*t/duration)**2
     z[:120]*=np.linspace(0,1,120);z[-240:]*=np.linspace(1,0,240)
     sf.write(P/'public/sfx'/f'{kind}.wav',z,sr,subtype='PCM_16')
     at=round(e['frame']/fps*sr);mix[at:at+len(z)]+=z[:,None]
 sf.write(P/'out/premix.wav',mix,sr,subtype='PCM_24')
 subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/premix.wav'),'-af','alimiter=limit=0.89:level=false','-ar','48000',str(P/'public/mix.wav')],check=True)
-(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic procedural synthesis; seed171026','voice':'VOICEVOX:青山龍星 style13 speed1.0; normalized -19 LUFS','sobaya':'canonical Irodori v4 Large; main growl + partially intelligible early murmur; see sound-processing-v4.json','encounterMusic':'reversed/pitched/filtered source; 4-second crossfade; morning restoration'},ensure_ascii=False,indent=2))
+(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic procedural synthesis; seed171026; real howler excerpt credited in monkey-audio-source.json','environmentalAudio':m.get('environmentalAudio',[]),'quietRegions':m.get('quietRegions',[]),'voice':'VOICEVOX:青山龍星 style13 speed1.0; normalized -19 LUFS','sobaya':'canonical Irodori v4 Large; main growl + partially intelligible early murmur; see sound-processing-v4.json','encounterMusic':'reversed/pitched/filtered source; 4-second crossfade; morning restoration'},ensure_ascii=False,indent=2))
 print('Audio complete',n/sr,float(np.max(np.abs(mix))))

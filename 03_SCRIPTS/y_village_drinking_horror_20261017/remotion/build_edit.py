@@ -1,157 +1,271 @@
-"""Build the sole frame timeline from measured, un-stretched VOICEVOX clips."""
+"""v6: speech measured at native speed; authored pauses, POV and sound states."""
 import json, math, re, wave
 from pathlib import Path
 P=Path(__file__).resolve().parent
 FPS=30
 rows=json.loads((P/'voice-manifest.json').read_text())['rows']
-with wave.open(str(P.parent/'sobaya_beer.wav')) as w:
-    growl_seconds=w.getnframes()/w.getframerate()
-growl_frames=math.ceil(growl_seconds*FPS)
-with wave.open(str(P.parent/'sobaya_early_murmur_v4.wav')) as w:
-    early_frames=math.ceil(w.getnframes()/w.getframerate()*FPS)
-cursor=90
-clips=[];captions=[];chapters=[]
-def lines(text):
-    # Meaning-oriented line breaking, never start with closing punctuation.
-    if len(text)<=30:return text
-    candidates=[m.end() for m in re.finditer('[、。？！]',text) if 12<=m.end()<=30]
-    cut=candidates[-1] if candidates else 28
-    while cut<len(text) and text[cut] in '、。？！）」』':cut+=1
-    return text[:cut]+'\n'+lines(text[cut:])
-for i,r in enumerate(rows):
-    if i==0 or r['chapter']!=rows[i-1]['chapter']:
-        if i:cursor+=60
-        chapters.append({'chapter':r['chapter'],'from':cursor})
-    duration=math.ceil(r['seconds']*FPS)
-    c={**r,'from':cursor,'duration':duration}
-    clips.append(c)
-    wrapped=lines(r['text']).split('\n')
-    blocks=['\n'.join(wrapped[j:j+2]) for j in range(0,len(wrapped),2)]
-    at=cursor;total=sum(len(b.replace('\n','')) for b in blocks)
-    for k,b in enumerate(blocks):
-        end=cursor+duration if k==len(blocks)-1 else at+round(duration*len(b.replace('\n',''))/total)
-        captions.append({'from':at,'to':end,'text':b,'lineId':r['id'],'speaker':'narrator'});at=end
-    pause=27 if r['text'].endswith(('。','」')) else 15
-    if r['text'] in ['私にも見えました。','ごちそうさまでした','「ごちそうさまでした」','その夜の記憶は、そこまでです。']:pause=60
-    if r['id']=='n0317':pause=60+15+growl_frames+36
-    if r['id']=='n0073':pause=15+early_frames+36
-    if r['id'] in ('n0143','n0179','n0202','n0238','n0243','n0332','n0375','n0417','n0486'):pause=max(pause,42)
-    cursor+=duration+pause
-duration=cursor+120
-byid={r['id']:r for r in clips}
-def frame(id):
-    return next(r['from'] for r in clips if int(r['id'][1:5])>=id)
-reveal=frame(317)+byid['n0317']['duration']+60
-growl={'from':reveal+15,'duration':growl_frames,'file':'sobaya_beer.wav','text':'ビール……','speaker':'sobaya'}
-captions.append({'from':growl['from'],'to':growl['from']+growl_frames,'text':'「ビール……」','lineId':'sobaya_beer','speaker':'sobaya'})
-early={'from':frame(73)+byid['n0073']['duration']+15,'duration':early_frames,'file':'sobaya_early_murmur_v4.wav','speaker':'sobaya','intelligible':'partly','gain':0.85}
-captions.sort(key=lambda c:c['from'])
-def shotframe(n):return reveal if n==318 else frame(n)
-# Authored shots are tied to exact spoken lines, never change randomly with captions.
-keys=[
- (0,'office',None),(3,'office','m_photo'),(5,'office','y_guitar'),(9,'village',None),
- (14,'office','m_photo'),(19,'village',None),(27,'shrine',None),(31,'village',None),
- (37,'village','duo'),(47,'village','duo'),(50,'shrine',None),(54,'shrine','y_guitar'),
- (59,'broken',None),(66,'broken','m_photo'),(70,'broken',None),
- (79,'hall',None),(82,'broken',None),(87,'hall',None),(97,'office',None),
- (102,'morning',None),(108,'home_product',None),(117,'morning',None),(122,'home_product',None),(131,'home_product',None),
- (160,'office',None),(173,'office','y_photo'),(183,'office','m_photo'),
- (196,'home_product',None),(200,'home_product','m_photo'),(207,'office','y_photo'),(214,'office','sobaya_shadow_v4'),
- (220,'office','f_photo'),(226,'f_hakama',None),(230,'temple','f_photo'),(256,'shrine',None),(262,'shrine','note'),(268,'office','f_photo'),
- (275,'home_product',None),(280,'office','f_photo'),(289,'office','f_photo'),
- (295,'hall',None),(302,'village',None),(304,'hall',None),
- (318,'reveal',None),(339,'reveal',None),(346,'hall',None),(349,'reveal',None),
- (356,'reveal','y_photo'),(360,'reveal','m_photo'),(366,'reveal',None),
- (370,'reveal',None),(382,'reveal','m_photo'),(390,'reveal',None),
- (398,'reveal','y_photo'),(408,'reveal',None),(425,'asleep',None),
- (430,'hall_morning',None),(449,'shrine',None),(452,'morning',None),
- (468,'morning',None),(471,'office',None),(473,'office','f_photo'),(480,'morning',None)]
-# Before the ritual, avoid showing four mugs, which are a later discovery.
-keys=[(n,'village' if n in (79,87) else bg,person) for n,bg,person in keys]
-keys=[(n,'temple' if person=='f_photo' else bg,person) for n,bg,person in keys]
-shots=[]
-for i,(n,bg,person) in enumerate(keys):
-    start=0 if i==0 else shotframe(n)
-    end=shotframe(keys[i+1][0]) if i+1<len(keys) else duration
-    if end<=start:continue
-    shots.append({'from':start,'to':end,'background':bg,'person':person,'crop':i%3})
-# Meaningful reframings: evidence, empty chairs, hands, and a changed point of view.
-# Each inherits the current authored scene, never a newly invented entity sighting.
-focuses={
- 'n0013':(1.06,50,50,'plain'), 'n0036v5a0':(1.07,50,45,'plain'),
- 'n0039':(1.06,50,45,'plain'), 'n0061':(1.12,50,48,'plain'),
- 'n0091':(1.07,50,50,'plain'),
- 'n0109':(1.20,42,80,'plain'), 'n0114':(1.05,50,50,'plain'),
- 'n0126v5a0':(1.07,50,45,'plain'), 'n0128':(1.12,50,42,'plain'),
- 'n0133':(1.14,50,42,'plain'), 'n0145':(1.12,50,44,'recording'),
- 'n0141':(1.20,50,42,'plain'), 'n0163':(1.07,50,44,'plain'),
- 'n0167a':(1.04,50,50,'plain'), 'n0168':(1.08,50,50,'plain'),
- 'n0189':(1.04,50,50,'plain'), 'n0192':(1.13,50,43,'plain'),
- 'n0155':(1.08,50,50,'plain'), 'n0196':(1.06,50,44,'recording'),
- 'n0202':(1.16,50,44,'recording'), 'n0207':(1.05,50,50,'plain'),
- 'n0222':(1.08,50,45,'plain'), 'n0251':(1.13,50,45,'plain'),
- 'n0237':(1.12,50,40,'plain'), 'n0255v5a1':(1.07,50,50,'plain'),
- 'n0255v5a7':(1.14,50,45,'plain'), 'n0272':(1.08,50,48,'recording'),
- 'n0273':(1.05,50,50,'plain'), 'n0309':(1.04,50,50,'plain'),
- 'n0312':(1.11,50,42,'plain'), 'n0320':(1.13,50,42,'plain'),
- 'n0325':(1.05,50,42,'plain'),
- 'n0331':(1.30,50,72,'plain'), 'n0341':(1.12,50,42,'plain'),
- 'n0352':(1.22,50,35,'plain'), 'n0367':(1.14,50,65,'plain'),
- 'n0373':(1.24,50,70,'plain'), 'n0385':(1.10,50,45,'plain'),
- 'n0392':(1.19,50,34,'plain'), 'n0411':(1.25,50,72,'plain'),
- 'n0415':(1.18,50,35,'plain'), 'n0438':(1.12,50,42,'plain'),
- 'n0444':(1.07,50,40,'plain'), 'n0460':(1.10,45,70,'plain'),
- 'n0486':(1.10,50,45,'plain'),
+def wav_frames(path):
+    with wave.open(str(path)) as w:return math.ceil(w.getnframes()/w.getframerate()*FPS)
+growl_frames=wav_frames(P.parent/'sobaya_beer.wav')
+early_frames=wav_frames(P.parent/'sobaya_early_murmur_v4.wav')
+# Added silence is separate from the .15/.35 seconds already inside each WAV.
+# Only discoveries, unanswered questions and deliberate visual inspection wait.
+pauses={
+ 'n0010':24,'n0013b':21,'n0027':21,'n0044':24,
+ 'n0053v5a0':18,'n0062':21,
+ 'n0073':15+early_frames+24,'n0073v5a0':24,'n0076':30,'n0078':42,
+ 'n0086':30,'n0093':42,'n0101':30,'n0110':27,'n0117':27,'n0121':36,'n0126':30,
+ 'n0134':48,'n0135':36,'n0143':48,'n0150':36,'n0153':42,'n0155v6a0':30,
+ 'n0166v6a0':27,'n0179':42,'n0192':36,'n0194':30,
+ 'n0202':66,'n0203':27,'n0219':30,
+ 'n0219v6a3':30,'n0219v6a4':30,'n0219v6a5':36,'n0219v6a6':48,'n0219v6a7':15,'n0219v6a8':42,
+ 'n0255v5a3':18,'n0237':24,'n0238':48,'n0243':24,'n0245':30,'n0248':36,'n0248v6a0':36,
+ 'n0265':30,'n0280':24,'n0288v6a0':36,
+ 'n0307':36,'n0311':24,'n0312':30,'n0313':30,'n0314':36,'n0316':42,
+ 'n0317':54+15+growl_frames+30,'n0324':42,'n0328':30,
+ 'n0332':36,'n0333':48,'n0338':30,
+ 'n0344':30,'n0359':36,'n0366':30,'n0367':18,'n0368':36,
+ 'n0375':42,'n0380':24,'n0385v6a0':30,'n0393':42,'n0396':30,
+ 'n0408':36,'n0411':30,'n0415':42,'n0417':30,'n0417v6a0':36,
+ 'n0421':30,'n0422':45,'n0424':42,'n0427':36,'n0429':48,
+ 'n0437':27,'n0438':42,'n0441':27,'n0456':30,'n0457':36,'n0464':30,
+ 'n0479':42,'n0486':48,'n0487':60,
 }
-authored=list(shots)
-for id,(zoom,x,y,view) in focuses.items():
-    at=byid[id]['from']
-    base=next(s for s in authored if s['from']<=at<s['to'])
-    extra={**base,'from':at,'zoom':zoom,'focusX':x,'focusY':y,'view':view}
-    if id=='n0272':extra.update(background='broken',person=None)
-    if id=='n0202':extra.update(person=None)
-    if id in ('n0163','n0192'):extra.update(background='home_product',person=None)
-    if id=='n0167a':extra.update(background='office',person='m_photo')
-    if id=='n0189':extra.update(background='home_product',person='m_photo')
-    if id=='n0168':extra.update(background='office',person=None)
-    if id=='n0039':extra.update(person='m_photo')
-    if id=='n0325':extra.update(background='hall',person='f_photo')
-    shots.append(extra)
-shots=list({s['from']:s for s in shots}.values());shots.sort(key=lambda s:s['from'])
-for i,s in enumerate(shots):
-    s['to']=shots[i+1]['from'] if i+1<len(shots) else duration
-    for k,v in {'zoom':1.02,'focusX':50,'focusY':50,'view':'plain'}.items():s.setdefault(k,v)
-inserts=[]
-def insert(kind,first,last):
-    inserts.append({'kind':kind,'from':byid[first]['from'],'to':byid[last]['from']+byid[last]['duration']+12,
-                    'changeFrame':byid[last]['from']})
-insert('excel','n0002v5a1','n0002v5a2')
-insert('bad-ui','n0004v5a0','n0004v5a1')
-insert('password','n0006v5a0','n0006v5a1')
-insert('bug-report','n0007v5a0','n0007v5a2')
-inserts[-1]['changeFrame']=byid['n0007v5a1']['from']+45
-insert('excel-village','n0024bv5a0','n0024bv5a1')
-insert('inspection','n0096av5a0','n0096av5a1')
-insert('drinking-record','n0162v5a0','n0162v5a1')
-insert('excel-return','n0471v5a0','n0471v5a2')
-inserts[-1]['changeFrame']=byid['n0471v5a1']['from']
-environmental=[{'from':byid['n0048a']['from']+18,'duration':300,'file':'sfx/howler_monkey_v5.wav','rms':0.042,'kind':'real-monkey','overlapNarration':True}]
-quiet=[]
-for id in ['n0073','n0143','n0179','n0202','n0238','n0243','n0332','n0369','n0373','n0415','n0422','n0486']:
-    r=byid[id];quiet.append({'from':max(0,r['from']-12),'to':r['from']+r['duration']+30,'level':0.12})
+recorded={'n0134','n0143','n0153','n0273','n0274'}
+clips=[];captions=[];chapters=[];cursor=90
+def wrap(text):
+    if len(text)<=30:return [text]
+    choices=[m.end() for m in re.finditer('[、。？！]',text) if 12<=m.end()<=30]
+    cut=choices[-1] if choices else 28
+    while cut<len(text) and text[cut] in '、。？！）」』':cut+=1
+    return [text[:cut]]+wrap(text[cut:])
+for i,r in enumerate(rows):
+    newchapter=i==0 or r['chapter']!=rows[i-1]['chapter']
+    if newchapter:
+        if i:cursor+=30 if r['chapter'] not in (5,9,11,16,17) else 42
+        chapters.append({'chapter':r['chapter'],'from':cursor})
+    dur=math.ceil(r['seconds']*FPS)
+    c={**r,'from':cursor,'duration':dur,'audioStyle':'recording' if r['id'] in recorded else 'narration'}
+    clips.append(c)
+    lines=wrap(r['text']);blocks=['\n'.join(lines[j:j+2]) for j in range(0,len(lines),2)]
+    at=cursor+3;total=sum(len(b.replace('\n','')) for b in blocks)
+    for j,b in enumerate(blocks):
+        end=cursor+dur-3 if j==len(blocks)-1 else at+round((dur-6)*len(b.replace('\n',''))/total)
+        captions.append({'from':at,'to':end,'text':b,'lineId':r['id'],'speaker':'narrator'});at=end
+    pause=pauses.get(r['id'],9 if r['text'].endswith(('、','。','」')) else 6)
+    cursor+=dur+pause
+end=cursor+120
+by={r['id']:r for r in clips}
+def at(id):return by[id]['from']
+def after(id):return at(id)+by[id]['duration']
+reveal=after('n0317')+54
+growl={'from':reveal+15,'duration':growl_frames,'file':'sobaya_beer.wav','text':'ビール……','speaker':'sobaya','gain':.9}
+early={'from':after('n0073')+15,'duration':early_frames,'file':'sobaya_early_murmur_v4.wav','speaker':'sobaya','intelligible':'partly','gain':.85}
+captions.append({'from':growl['from'],'to':growl['from']+growl_frames,'text':'「ビール……」','lineId':'sobaya_beer','speaker':'sobaya'})
+captions.sort(key=lambda c:c['from'])
+# Every cut is attached to a surviving exact anchor; reordered F dialogue is safe.
+shots=[]
+def shot(id,bg,person=None,zoom=1.02,x=50,y=50,view='plain',move=0,brightness=.69):
+    f=id if isinstance(id,int) else at(id)
+    shots.append({'from':f,'background':bg,'person':person,'zoom':zoom,'focusX':x,'focusY':y,'view':view,'move':move,'brightness':brightness})
+shot(0,'office',move=.015)
+shot('n0003','office','m_photo',brightness=.78)
+shot('n0005','office','y_guitar',brightness=.78)
+shot('n0009','village',move=.018,brightness=.74)
+shot('n0013','village','duo',brightness=.78)
+shot('n0019','village',zoom=1.12,x=45,y=50,brightness=.77)
+shot('n0024a','village','duo',brightness=.78)
+shot('n0025','shrine',brightness=.76)
+shot('n0027','shrine',zoom=1.14,x=65,y=65,move=.012,brightness=.74)
+shot('n0032','village',brightness=.73)
+shot('n0037','village','duo',brightness=.70)
+shot('n0038','village','m_photo',brightness=.70)
+shot('n0047','village','duo',brightness=.49)
+shot('n0050','shrine',brightness=.67)
+shot('n0052','shrine',zoom=1.65,x=71,y=74,brightness=.73)
+shot('n0054','shrine','y_guitar',brightness=.70)
+shot('n0056a','shrine',zoom=1.06,brightness=.64)
+shot('n0059','broken',zoom=1.08,brightness=.67)
+shot('n0060','broken','duo',brightness=.65)
+shot('n0062','broken',zoom=1.40,x=58,y=74,brightness=.70)
+shot('n0064','broken','m_photo',brightness=.67)
+shot('n0069','broken','y_guitar',brightness=.67)
+shot('n0073','broken',zoom=1.16,x=42,y=46,brightness=.48)
+shot('n0076','broken',zoom=1.12,view='recording',brightness=.57)
+shot('n0079','village',brightness=.77)
+shot('n0084','broken',brightness=.73)
+shot('n0086','shrine',zoom=1.15,x=65,y=64,brightness=.66)
+shot('n0088','village',brightness=.47)
+shot('n0091','broken',zoom=1.25,x=53,y=68,brightness=.70)
+shot('n0096','office',brightness=.72)
+shot('n0102','morning',brightness=.72)
+shot('n0105','home_product',zoom=1.10,x=50,y=40,brightness=.56)
+shot('n0109','home_product',zoom=1.55,x=12,y=76,brightness=.72)
+shot('n0111','home_product',zoom=1.05,x=50,y=44,brightness=.66)
+shot('n0118','morning',zoom=1.12,x=35,y=70,brightness=.60)
+shot('n0121','home_product',zoom=1.5,x=13,y=30,brightness=.48)
+shot('n0122','home_product',brightness=.65)
+shot('n0127','home_empty_v6',zoom=1.03,view='recording',brightness=.67)
+shot('n0133','home_toast_v6',zoom=1.03,view='recording',brightness=.71)
+shot('n0136','home_empty_v6',zoom=1.03,view='recording',brightness=.67)
+shot('n0147','home_empty_v6',zoom=1.12,x=55,y=40,view='recording',brightness=.67)
+shot('n0153','home_empty_v6',zoom=1.12,x=55,y=40,view='recording',brightness=.67)
+shot('n0155','home_empty_v6',zoom=1.08,brightness=.59)
+shot('n0160','office',brightness=.61)
+shot('n0163','home_product',zoom=1.1,brightness=.55)
+shot('n0167','office','m_photo',brightness=.72)
+shot('n0168','office',brightness=.65)
+shot('n0173','office','y_photo',brightness=.65)
+shot('n0179','office','y_photo',zoom=1.12,brightness=.60)
+shot('n0180','office','m_photo',brightness=.63)
+shot('n0189','home_product',zoom=1.12,view='witness',brightness=.58)
+shot('n0192','home_product',zoom=1.42,x=55,y=40,view='witness',brightness=.65)
+shot('n0196','home_product',zoom=1.12,view='recording',brightness=.66)
+shot('n0200','home_product','m_photo',view='recording',brightness=.66)
+shot('n0202','home_product',zoom=1.42,x=55,y=40,view='recording',brightness=.69)
+shot('n0204','office','m_photo',brightness=.65)
+shot('n0207','office','y_photo',brightness=.63)
+shot('n0214','office','sobaya_shadow_v4',brightness=.53)
+shot('n0219v6a0','home_empty_v6',zoom=1.12,x=55,y=40,brightness=.59)
+shot('n0219v6a4','hand_can_sealed_v6',zoom=1,brightness=.72)
+shot(after('n0219v6a5')+6,'hand_can_open_v6',zoom=1,brightness=.72)
+shot('n0219v6a9','morning',zoom=1.07,brightness=.64)
+shot('n0220','temple','f_photo',brightness=.73)
+shot('n0226','f_hakama',zoom=1,brightness=.95)
+shot('n0230','temple','f_photo',brightness=.73)
+shot('n0255v5a6','temple','y_photo',brightness=.70)
+shot('n0233','temple','f_photo',brightness=.71)
+shot('n0237','temple','f_photo',brightness=.63)
+shot('n0245','temple','f_photo',zoom=1.08,x=40,y=55,brightness=.63)
+shot('n0248v6a0','temple','f_photo',brightness=.61)
+shot('n0251','shrine',zoom=1.15,x=63,y=60,brightness=.64)
+shot('n0255','temple','f_photo',brightness=.65)
+shot('n0256','shrine',brightness=.71)
+shot('n0264','shrine','note',brightness=.67)
+shot('n0271','temple','f_photo',brightness=.67)
+shot('n0272','broken',zoom=1.12,view='recording',brightness=.64)
+shot('n0275','temple','f_photo',brightness=.65)
+shot('n0278','home_toast_v6',zoom=1.03,view='recording',brightness=.71)
+shot('n0280','temple','f_photo',brightness=.65)
+shot('n0296','hall',brightness=.72)
+shot('n0298','hall',zoom=1.28,x=50,y=61,brightness=.70)
+shot('n0301','shrine',brightness=.64)
+shot('n0303','village',brightness=.49)
+shot('n0305','hall',brightness=.67)
+shot('n0307','hall',zoom=1.28,x=50,y=48,brightness=.69)
+shot('n0308','hall','f_photo',brightness=.67)
+shot('n0311','hall',zoom=1.14,x=50,y=51,brightness=.64)
+shot('n0312','hall',zoom=1.05,x=50,y=42,brightness=.61)
+shot(reveal,'reveal',zoom=1.05,x=50,y=40,brightness=.70)
+shot('n0320','reveal',zoom=1.65,x=43,y=72,brightness=.72)
+shot('n0322','reveal',zoom=1.34,x=50,y=35,brightness=.68)
+shot('n0325','hall','f_photo',brightness=.65)
+shot('n0331','reveal',zoom=2.12,x=49,y=76,brightness=.73)
+shot('n0339','hall',zoom=1.35,x=50,y=80,brightness=.70)
+shot('n0341','reveal',zoom=1.08,x=50,y=42,brightness=.69)
+shot('n0346','hall',zoom=1.1,x=50,y=45,view='f-perspective',brightness=.63)
+shot('n0349','hall',zoom=1.50,x=25,y=88,brightness=.66)
+shot('n0352','reveal',zoom=1.46,x=50,y=34,brightness=.66)
+shot('n0356','hall','y_photo',brightness=.68)
+shot('n0359','reveal',zoom=1.30,x=52,y=35,brightness=.66)
+shot('n0360','hall','m_photo',brightness=.68)
+shot('n0366','reveal',zoom=1.08,x=50,y=40,brightness=.68)
+shot('n0367','sobaya_clap_v6',zoom=1,brightness=.70)
+shot('n0368','hall','m_photo',brightness=.67)
+shot('n0370','hall',zoom=1.12,x=50,y=49,brightness=.60)
+shot('n0371','hall','m_photo',brightness=.65)
+shot('n0373','sobaya_mug_v6',zoom=1,brightness=.70)
+shot('n0376','hall','m_photo',brightness=.66)
+shot('n0377','hall','f_photo',brightness=.64)
+shot('n0381','hall','m_photo',brightness=.65)
+shot('n0385','reveal',zoom=1.74,x=65,y=74,brightness=.70)
+shot('n0385v6a0','hall','m_photo',brightness=.63)
+shot('n0390','hall',zoom=1.50,x=25,y=85,brightness=.63)
+shot('n0392','reveal',zoom=1.4,x=50,y=35,brightness=.67)
+shot('n0393','hall','f_photo',brightness=.62)
+shot('n0395','hall',zoom=1.17,x=18,y=48,brightness=.62)
+shot('n0405','hall','y_photo',brightness=.65)
+shot('n0408','hall',zoom=1.18,x=50,y=80,brightness=.61)
+shot('n0408v6a0','hall','f_photo',brightness=.60)
+shot('n0408v6a1','reveal',zoom=2.12,x=49,y=76,brightness=.70)
+shot('n0409','reveal',zoom=1.03,x=50,y=42,brightness=.64)
+shot('n0411','reveal',zoom=2.12,x=49,y=76,brightness=.69)
+shot('n0415','reveal',zoom=1.34,x=50,y=34,brightness=.65)
+shot('n0417v6a0','reveal',zoom=2.12,x=49,y=76,brightness=.70)
+shot('n0419','reveal',zoom=1.06,x=50,y=42,brightness=.65)
+shot('n0421','hall_morning',zoom=2.18,x=49,y=85,brightness=.30)
+shot('n0424','asleep',zoom=1.04,x=50,y=55,brightness=.68)
+shot('n0430','hall_morning',brightness=.84)
+shot('n0438','hall_morning',zoom=1.25,x=50,y=37,brightness=.80)
+shot('n0448','shrine',brightness=.75)
+shot('n0451','morning',zoom=1.08,brightness=.64)
+shot('n0456','morning',brightness=.92)
+shot('n0459','morning',zoom=1.35,x=24,y=79,brightness=.92)
+shot('n0468','office',brightness=.79)
+shot('n0473','temple','f_photo',brightness=.68)
+shot('n0481','morning',brightness=.77)
+shot('n0483v6a1','home_empty_v6',zoom=1.12,x=55,y=40,view='memory',brightness=.63)
+shots.sort(key=lambda s:s['from'])
+assert len({s['from'] for s in shots})==len(shots)
+for i,s in enumerate(shots):s['to']=shots[i+1]['from'] if i+1<len(shots) else end
+inserts=[{'kind':'excel','from':at('n0002v5a1'),'to':after('n0002v5a2')+9,'changeFrame':at('n0002v5a2')},
+         {'kind':'excel-return','from':at('n0471v6a0'),'to':after('n0471v6a0')+9,'changeFrame':at('n0471v6a0')+65}]
+# Music is absent for evidence scenes; a room tone keeps the space real.
+sound_regions=[]
+def sound(first,last,music=0,ambient=.004,silence=False,fade=12):
+    a=first if isinstance(first,int) else at(first)
+    b=last if isinstance(last,int) else after(last)+pauses.get(last,9)
+    sound_regions.append({'from':a,'to':b,'music':music,'ambient':ambient,'silence':silence,'fade':fade})
+sound('n0073','n0078',0,.002)
+sound('n0109','n0110',.25,.003)
+sound('n0127','n0155v6a0',0,.004)
+sound('n0177','n0195',.18,.002)
+sound('n0196','n0203',0,.004)
+sound('n0219v6a0','n0219v6a9',0,.004)
+sound('n0237','n0248v6a1',0,.002)
+sound('n0272','n0274',0,.003)
+sound('n0278','n0279',0,.004)
+sound('n0304','n0338',0,.003)
+sound('n0371','n0380',0,.003)
+sound('n0392','n0394',0,.002)
+sound('n0408','n0429',.15,.002)
+sound('n0456','n0464',.2,.003)
+sound('n0483v6a1',end,0,.002)
+# Short true silences are reserved, not a constant effect.
+sound(after('n0143'),at('n0147'),0,0,True,3)
+sound(after('n0202'),at('n0203'),0,0,True,3)
+sound(after('n0219v6a6'),at('n0219v6a7'),0,0,True,3)
+sound(reveal-24,reveal+15,0,0,True,3)
+sound(after('n0487'),end,0,0,True,12)
+# Events follow the action or a cue; no horror sting at every cut.
 events=[]
-for phrase,kind,delay in [('一度目で屋根が割れました。','wood',1),('二度目で扉が外れました。','wood',1),('それから、向かいの空席へ缶を差し出しました。','can',0),('四つのジョッキが当たりました。','glass',1),('空になったジョッキが、机に当たりました。','glass',1),('冷蔵庫が鳴りました。','hum',0),('どこかで、窓枠がきしみました。','creak',0)]:
-    c=next(c for c in clips if c['text']==phrase)
-    events.append({'frame':c['from']+round(delay*FPS),'kind':kind})
-events.extend([{'frame':byid['n0411']['from']+30,'kind':'glass'},{'frame':byid['n0367']['from']+30,'kind':'clap'}])
-manifest={'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':duration},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'inserts':inserts,'quietRegions':quiet,'environmentalAudio':environmental,'sfx':events,'characterAudio':[growl,early],'revealFrame':reveal,'audio':'mix.wav'}
-(P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
-def srt_time(frame):
-    ms=round(frame/FPS*1000);h,ms=divmod(ms,3600000);mi,ms=divmod(ms,60000);s,ms=divmod(ms,1000)
-    return f'{h:02}:{mi:02}:{s:02},{ms:03}'
-(P.parent/'subtitles_ja.srt').write_text('\n\n'.join(f"{i+1}\n{srt_time(c['from'])} --> {srt_time(c['to'])}\n{c['text']}" for i,c in enumerate(captions))+'\n')
+def effect(id,kind,offset=0,gain=1):events.append({'frame':at(id)+offset,'kind':kind,'gain':gain})
+effect('n0059','wood',30,.8);effect('n0061','wood',32,1)
+effect('n0062','wood',70,.6)
+effect('n0151','can',12,.65)
+effect('n0219v6a5','can',by['n0219v6a5']['duration']+6,.9)
+effect('n0245','chair',by['n0245']['duration']-12,.65)
+effect('n0313','hum',by['n0313']['duration']+6,.85)
+effect('n0314','creak',by['n0314']['duration']+4,.75)
+effect('n0340','glass',by['n0340']['duration']-12,.8)
+effect('n0367','clap',max(0,by['n0367']['duration']-18),.8)
+effect('n0375','mug-drag',by['n0375']['duration']-15,.75)
+effect('n0411','glass',35,.6)
+effect('n0421','mug-set',by['n0421']['duration']-12,.75)
+environmental=[{'from':at('n0048a')+12,'duration':180,'file':'sfx/howler_monkey_v5.wav','rms':.035,'kind':'real-monkey','overlapNarration':True}]
+manifest={'version':6,'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':end},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'inserts':inserts,'soundRegions':sound_regions,'environmentalAudio':environmental,'sfx':events,'characterAudio':[growl,early],'revealFrame':reveal,'audio':'mix.wav'}
+(P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+def stamp(f):
+    ms=round(f/FPS*1000);h,ms=divmod(ms,3600000);mi,ms=divmod(ms,60000);sec,ms=divmod(ms,1000)
+    return f'{h:02}:{mi:02}:{sec:02},{ms:03}'
+(P.parent/'subtitles_ja.srt').write_text('\n\n'.join(f"{i+1}\n{stamp(c['from'])} --> {stamp(c['to'])}\n{c['text']}" for i,c in enumerate(captions))+'\n')
 assert sum('中口' in c['text'] for c in clips)==2
-assert all(s['background'] not in ('reveal','asleep') for s in shots if s['from']<reveal)
+entity_backgrounds=('reveal','asleep','sobaya_clap_v6','sobaya_mug_v6')
+assert all(s['background'] not in entity_backgrounds for s in shots if s['from']<reveal)
+assert all(s['person']!='sobaya_shadow_v4' for s in shots if s['from']>=reveal)
+assert all(s['background'] not in entity_backgrounds and s['person']!='sobaya_shadow_v4' for s in shots if s['view']=='recording')
 assert all(len(c['text'].splitlines())<=2 for c in captions)
-assert all(captions[i]['to']<=captions[i+1]['from'] for i in range(len(captions)-1))
-print(json.dumps({'frames':duration,'seconds':duration/FPS,'revealSeconds':reveal/FPS,'clips':len(clips),'captions':len(captions),'shots':len(shots)}))
+assert all(a['to']<=b['from'] for a,b in zip(captions,captions[1:]))
+assert all(by[r['id']]['duration']/FPS>=r['seconds'] for r in clips)
+assert all(not any(e['from']<c['from']+c['duration'] and e['from']+e['duration']>c['from'] for c in clips) for e in [early,growl])
+print(json.dumps({'frames':end,'seconds':end/FPS,'revealSeconds':reveal/FPS,'clips':len(clips),'captions':len(captions),'shots':len(shots)},ensure_ascii=False))

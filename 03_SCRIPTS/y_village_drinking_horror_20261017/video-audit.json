@@ -1,21 +1,22 @@
 {
-  "frameCount": 58784,
-  "seconds": 1959.4666666666667,
-  "voiceClips": 434,
-  "captions": 437,
-  "shots": 105,
+  "frameCount": 44185,
+  "seconds": 1472.8333333333333,
+  "voiceClips": 371,
+  "captions": 372,
+  "shots": 137,
   "nameOccurrences": 2,
-  "revealFrame": 42645,
+  "revealFrame": 31581,
   "characterAudio": [
     {
-      "from": 42660,
+      "from": 31596,
       "duration": 37,
       "file": "sobaya_beer.wav",
       "text": "ビール……",
-      "speaker": "sobaya"
+      "speaker": "sobaya",
+      "gain": 0.9
     },
     {
-      "from": 13582,
+      "from": 8637,
       "duration": 46,
       "file": "sobaya_early_murmur_v4.wav",
       "speaker": "sobaya",
@@ -28,95 +29,243 @@
   "pitchScale": 0.0,
   "narrationOverlap": false,
   "manualListening": "not performed; automated screening only",
-  "music": "same separated reference; encounter-only reversed/pitched/filtered variant; original track unconfirmed",
-  "video": "review_remotion_horror_aoyama_v5.mp4",
-  "bytes": 200389829,
-  "sha256": "deb9344f65537a07fc20707189c2b371ae4f6e0d4ff486f523f15ebc2df4cb87",
+  "music": "same separated reference; encounter variant and deliberately music-free evidence scenes; original track unconfirmed",
+  "video": "review_remotion_horror_aoyama_v6.mp4",
+  "bytes": 82100508,
+  "sha256": "5f5123fde70461fa381b63461a8e0fb6aafb50591f1fb0dfa12137249221ec9a",
   "resolution": [
     1280,
     720
   ],
   "fps": "30/1",
-  "decodedFrames": 58784,
+  "decodedFrames": 44185,
   "audioStreams": 1,
   "audioSampleRate": 48000,
   "fullDecode": "passed; no reported errors",
-  "visualReview": "v5 UI inserts, empty-chair views, silhouette, costume and reveal checked separately; see review-v5.md",
-  "integratedLUFS": -16.28,
-  "truePeakDbTP": -1.07,
-  "loudnessRangeLU": 4.5,
+  "visualReview": "62 exact frames extracted from delivered MP4 and visually inspected: 35 representative scenes and 27 boundaries/longest-caption frames; see review-v6.md",
+  "integratedLUFS": -16.3,
+  "truePeakDbTP": -1.64,
+  "loudnessRangeLU": 4.2,
   "environmentalAudio": [
     {
-      "from": 9358,
-      "duration": 300,
+      "from": 5318,
+      "duration": 180,
       "file": "sfx/howler_monkey_v5.wav",
-      "rms": 0.042,
+      "rms": 0.035,
       "kind": "real-monkey",
       "overlapNarration": true
     }
   ],
   "rhythm": {
-    "scriptMatchesVoiceRows": true,
-    "nameCalls": 2,
-    "oldJacketSubplotRemoved": true,
-    "entityHiddenInRecordings": true,
-    "graySkin": true,
-    "narratorSpeed": 1.0,
-    "voiceSpeakerId": 13,
-    "shotsCoverFullTimeline": true,
-    "visualOrAudioBeatCount": 143,
-    "longestVisualOrAudioBeatGapSeconds": 37.333333333333336,
-    "averageVisualOrAudioBeatGapSeconds": 13.607407407407408,
-    "note": "Beats include meaningful cuts, inserts and music silences; these are not all jokes. Horror sections intentionally retain quiet spans."
+    "status": "passed",
+    "durationSeconds": 1472.8333333333333,
+    "voice": "青山龍星 style13 speed1 pitch0",
+    "voiceClipCount": 371,
+    "captions": 372,
+    "shots": 137,
+    "additionalGapSeconds": 204.26666666666668,
+    "medianAdditionalGapSeconds": 0.3,
+    "fullFaceExposureSeconds": 64.33333333333333,
+    "characterAudioNoNarrationOverlap": true,
+    "witnessesNeverShowEntity": true,
+    "recordingsNeverContainMonsterAudio": true,
+    "sealedCanOpensAtSound": true,
+    "identityNameCalls": 2,
+    "fourMugsFDoesNotDrink": true,
+    "comedyBeforeAuthorityTurn": true,
+    "bodyAgencyAdded": true,
+    "explicitBenevolentInterpretationDeferred": true,
+    "readingChecks": "VOICEVOX kana checked for 人/方/空/杯/中口/管理人; 専用の杯 and あなた方 corrected",
+    "subjectiveReview": "script and rendered images reviewed; full human listening unavailable",
+    "anchors": {
+      "n0019": 70.8,
+      "n0073": 283.7,
+      "n0134": 460.6,
+      "n0179": 595.8,
+      "n0219v6a0": 698.633,
+      "n0237": 811.733,
+      "n0317": 1048.667,
+      "n0367": 1171.9,
+      "n0457": 1387.233,
+      "n0486": 1460.767
+    }
   },
   "workInserts": [
     {
       "kind": "excel",
-      "from": 805,
-      "to": 1063,
-      "changeFrame": 926
-    },
-    {
-      "kind": "bad-ui",
-      "from": 1335,
-      "to": 1690,
-      "changeFrame": 1535
-    },
-    {
-      "kind": "password",
-      "from": 1945,
-      "to": 2493,
-      "changeFrame": 2224
-    },
-    {
-      "kind": "bug-report",
-      "from": 2629,
-      "to": 3022,
-      "changeFrame": 2820
-    },
-    {
-      "kind": "excel-village",
-      "from": 5274,
-      "to": 5506,
-      "changeFrame": 5398
-    },
-    {
-      "kind": "inspection",
-      "from": 16351,
-      "to": 16633,
-      "changeFrame": 16501
-    },
-    {
-      "kind": "drinking-record",
-      "from": 23290,
-      "to": 23543,
-      "changeFrame": 23393
+      "from": 602,
+      "to": 839,
+      "changeFrame": 705
     },
     {
       "kind": "excel-return",
-      "from": 56702,
-      "to": 57039,
-      "changeFrame": 56829
+      "from": 42560,
+      "to": 42654,
+      "changeFrame": 42625
     }
-  ]
+  ],
+  "soundRegions": [
+    {
+      "from": 8511,
+      "to": 9313,
+      "music": 0,
+      "ambient": 0.002,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 11733,
+      "to": 11905,
+      "music": 0.25,
+      "ambient": 0.003,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 13296,
+      "to": 15474,
+      "music": 0,
+      "ambient": 0.004,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 17637,
+      "to": 19205,
+      "music": 0.18,
+      "ambient": 0.002,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 19235,
+      "to": 19979,
+      "music": 0,
+      "ambient": 0.004,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 20959,
+      "to": 22133,
+      "music": 0,
+      "ambient": 0.004,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 24352,
+      "to": 25811,
+      "music": 0,
+      "ambient": 0.002,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 27336,
+      "to": 27581,
+      "music": 0,
+      "ambient": 0.003,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 27934,
+      "to": 28162,
+      "music": 0,
+      "ambient": 0.004,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 30022,
+      "to": 33124,
+      "music": 0,
+      "ambient": 0.003,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 35556,
+      "to": 36344,
+      "music": 0,
+      "ambient": 0.003,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 37169,
+      "to": 37546,
+      "music": 0,
+      "ambient": 0.002,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 38194,
+      "to": 40180,
+      "music": 0.15,
+      "ambient": 0.002,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 41543,
+      "to": 42149,
+      "music": 0.2,
+      "ambient": 0.003,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 43684,
+      "to": 44185,
+      "music": 0,
+      "ambient": 0.002,
+      "silence": false,
+      "fade": 12
+    },
+    {
+      "from": 14618,
+      "to": 14666,
+      "music": 0,
+      "ambient": 0,
+      "silence": true,
+      "fade": 3
+    },
+    {
+      "from": 19791,
+      "to": 19857,
+      "music": 0,
+      "ambient": 0,
+      "silence": true,
+      "fade": 3
+    },
+    {
+      "from": 21705,
+      "to": 21753,
+      "music": 0,
+      "ambient": 0,
+      "silence": true,
+      "fade": 3
+    },
+    {
+      "from": 31557,
+      "to": 31596,
+      "music": 0,
+      "ambient": 0,
+      "silence": true,
+      "fade": 3
+    },
+    {
+      "from": 44005,
+      "to": 44185,
+      "music": 0,
+      "ambient": 0,
+      "silence": true,
+      "fade": 12
+    }
+  ],
+  "visualReviewedFrameCount": 62,
+  "reviewPasses": 2
 }

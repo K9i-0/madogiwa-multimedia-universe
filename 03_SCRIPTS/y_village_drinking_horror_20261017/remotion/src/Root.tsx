@@ -13,7 +13,7 @@ const Film:React.FC = () => {
  const ending = interpolate(f,[edit.composition.durationInFrames-90,edit.composition.durationInFrames-1],[0,1],clamp);
  const insert = edit.inserts.find(i => f >= i.from && f < i.to);
  const silhouette = !insert && shot.person && shot.person !== 'note';
- const entity = ['reveal','asleep','sobaya_clap_v6','sobaya_mug_v6'].includes(shot.background);
+ const entity = ['reveal','asleep','sobaya_clap_v6','sobaya_mug_v6','sobaya_moonlit_v7'].includes(shot.background);
  const humanHand = ['hand_can_sealed_v6','hand_can_open_v6','home_toast_v6'].includes(shot.background);
  const scale = shot.zoom + p * shot.move;
  const record = shot.view === 'recording';
@@ -21,7 +21,7 @@ const Film:React.FC = () => {
  // The image appears after the line and its pause, with no flash or zoom sting.
  const titleOpacity = interpolate(f,[0,18,65,89],[0,1,1,0],clamp);
  return <AbsoluteFill style={{background:'#08090a',fontFamily:'Hiragino Mincho ProN, serif'}}>
-  <Img src={art(shot.background)} style={{position:'absolute',width:'100%',height:'100%',objectFit:'cover',transformOrigin:`${shot.focusX}% ${shot.focusY}%`,transform:`scale(${scale})`,filter:`saturate(${shot.background==='f_hakama'?.8:humanHand?.5:entity?.38:shot.background==='morning'?.40:.16}) brightness(${shot.brightness})`}}/>
+  <Img src={art(shot.background)} style={{position:'absolute',width:'100%',height:'100%',objectFit:'cover',transformOrigin:`${shot.focusX}% ${shot.focusY}%`,transform:`scale(${scale})`,filter:`saturate(${shot.background==='f_hakama'?.8:shot.background==='sobaya_moonlit_v7'?.65:humanHand?.5:entity?.38:shot.background==='morning'?.40:.16}) brightness(${shot.brightness})`}}/>
   {silhouette && <AbsoluteFill style={{background:shot.person==='sobaya_shadow_v4'?'linear-gradient(90deg,#9c9d9666,#77786b11)':'linear-gradient(90deg,rgba(200,200,192,.58),rgba(185,185,178,.12) 80%)'}}/>}
   {silhouette && shot.person === 'duo' && <>
    <Img src={art('m_photo')} style={{position:'absolute',height:450,left:185,bottom:130}}/>

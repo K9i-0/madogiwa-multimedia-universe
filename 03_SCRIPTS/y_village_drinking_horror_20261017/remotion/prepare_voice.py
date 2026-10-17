@@ -34,6 +34,8 @@ def gen(r):
   dest=P/'public/voice_aoyama_v5'/f"{r['id']}.wav";meta=dest.with_suffix('.json')
  if not(meta.exists() and json.loads(meta.read_text()).get('key')==sig):
   dest=P/'public/voice_aoyama_v6'/f"{r['id']}.wav";meta=dest.with_suffix('.json')
+ if not(meta.exists() and json.loads(meta.read_text()).get('key')==sig):
+  dest=P/'public/voice_aoyama_v7'/f"{r['id']}.wav";meta=dest.with_suffix('.json')
  dest.parent.mkdir(parents=True,exist_ok=True)
  if not(dest.exists() and meta.exists() and json.loads(meta.read_text()).get('key')==sig):
   q=json.loads(post('audio_query',{'speaker':settings['speaker'],'text':r['speech']}));q.update({k:v for k,v in settings.items() if k!='speaker'})

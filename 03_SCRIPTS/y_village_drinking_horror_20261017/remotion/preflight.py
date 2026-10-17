@@ -12,13 +12,21 @@ assert by['n0255v5a6']['from']<by['n0237']['from']
 assert 'n0255v5a8' not in by and 'n0369' not in by and 'n0387' not in by
 assert by['n0297']['text'].count('四つ')==1
 assert by['n0298v6a0']['text']=='F先生の分は、ありません。'
-entity={'reveal','asleep','sobaya_clap_v6','sobaya_mug_v6'}
+entity={'reveal','asleep','sobaya_clap_v6','sobaya_mug_v6','sobaya_moonlit_v7'}
+assert m['glimpseFrame']==by['n0075v7a0']['from']<by['n0208']['from']<m['revealFrame']
+assert '妻が「誰と話してるの」と聞きました。'==by['n0141']['text']
+assert '休んでいたそうです' in by['n0167a']['text']
 for s in m['shots']:
  assert (P/'public/art'/f"{s['background']}.png").is_file()
- if s['from']<m['revealFrame']:assert s['background'] not in entity
- else:assert s['person']!='sobaya_shadow_v4'
+ if s['from']<m['glimpseFrame']:assert s['background'] not in entity
+ if s['from']<m['revealFrame'] and s['background'] in entity:assert s['background']=='sobaya_moonlit_v7'
+ if s['from']>=m['glimpseFrame']:assert s['person'] not in ('sobaya_shadow','sobaya_shadow_v4','sobaya')
  if s['view'] in ('recording','witness','f-perspective','memory'):
   assert s['background'] not in entity and s['person']!='sobaya_shadow_v4'
+for e in m['environmentalAudio']:
+ assert e['kind']=='performed-monkey-imitation'
+ assert e['from']+e['duration']<by['n0050']['from']
+ assert (P/'public'/e['file']).is_file()
 assert m['shots'][0]['from']==0 and m['shots'][-1]['to']==m['composition']['durationInFrames']
 assert all(a['to']==b['from'] for a,b in zip(m['shots'],m['shots'][1:]))
 assert all(a['to']<=b['from'] for a,b in zip(m['captions'],m['captions'][1:]))
@@ -46,10 +54,12 @@ checks={
  'fullFaceExposureSeconds':sum(s['to']-s['from'] for s in m['shots'] if s['background']=='reveal' and s['zoom']<1.65)/30,
  'characterAudioNoNarrationOverlap':True,'witnessesNeverShowEntity':True,'recordingsNeverContainMonsterAudio':True,
  'sealedCanOpensAtSound':True,'identityNameCalls':2,'fourMugsFDoesNotDrink':True,
+ 'moonlitGlimpseBeforeAppearanceDialogue':True,'glimpseSeconds':m['glimpseFrame']/30,
+ 'wifeQuestionExplicit':True,'mAbsenceIndirectlyLearned':True,'monkeyCallResponse':3,
  'comedyBeforeAuthorityTurn':True,'bodyAgencyAdded':True,'explicitBenevolentInterpretationDeferred':True,
  'readingChecks':'VOICEVOX kana checked for 人/方/空/杯/中口/管理人; 専用の杯 and あなた方 corrected',
  'subjectiveReview':'script and rendered images reviewed; full human listening unavailable',
- 'anchors':{k:round(by[k]['from']/30,3) for k in ['n0019','n0073','n0134','n0179','n0219v6a0','n0237','n0317','n0367','n0457','n0486']}
+ 'anchors':{k:round(by[k]['from']/30,3) for k in ['n0019','n0048a','n0073','n0075v7a0','n0134','n0141','n0167a','n0179','n0219v6a0','n0237','n0317','n0367','n0457','n0486']}
 }
-(P.parent/'preflight-v6.json').write_text(json.dumps(checks,ensure_ascii=False,indent=2)+'\n')
+(P.parent/'preflight-v7.json').write_text(json.dumps(checks,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(checks,ensure_ascii=False,indent=2))

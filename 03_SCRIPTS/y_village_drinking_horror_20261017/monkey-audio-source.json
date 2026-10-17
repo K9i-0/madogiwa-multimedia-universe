@@ -1,13 +1,50 @@
 {
-  "title": "Howler monkey",
-  "author": "David O'Hara",
-  "source": "https://commons.wikimedia.org/wiki/File:Howler_monkey.ogg",
-  "download": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Howler_monkey.ogg",
-  "license": "CC BY 3.0",
-  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
-  "sourceSha256": "72036080efe697f14bef6739710c99f51b14652fddf69b7d91eac181c99f73a0",
-  "adoptedFile": "remotion/public/sfx/howler_monkey_v5.wav",
-  "edits": "4–14 s excerpt; 100–6500 Hz filter; fades; 24 kHz mono; mix gain; unchanged pitch and speed",
-  "outputSha256": "353f6108cf6786304fe3c186c0be8e24be0c821a6b1731bcd15593db80c3c924",
-  "use": "real jungle monkey cries over the three characters imitating monkeys; not claimed to have been recorded in Y village"
+  "version": 7,
+  "sources": [
+    {
+      "title": "Monkey noise (imitation)",
+      "author": "wilika2",
+      "source": "https://freesound.org/people/wilika2/sounds/588623/",
+      "download": "https://cdn.freesound.org/previews/588/588623_5661246-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceSha256": "4d399b04fd2b55e1fe4e290fcf3775147e629ac31cf616d9f0c346d7fea67517",
+      "adoptedFile": "remotion/public/sfx/monkey_call_y_v7.wav",
+      "edits": "Full performance; 110–7500 Hz filtering, onset fade, 24 kHz mono. Native pitch and speed. Mix applies short fades, gentle stereo position and gain.",
+      "outputSha256": "59bf214a5d2a3a8504d358559ba1f54d8b15dfe9fe39b16a69141686f23f0f47"
+    },
+    {
+      "title": "Monkey noise (imitation) 2",
+      "author": "wilika2",
+      "source": "https://freesound.org/people/wilika2/sounds/588624/",
+      "download": "https://cdn.freesound.org/previews/588/588624_5661246-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceSha256": "d23438ca7cf8f21e360652aa7533693a3354d8e18faa49082692d2b38054cde9",
+      "adoptedFile": "remotion/public/sfx/monkey_call_m_v7.wav",
+      "edits": "Full performance; 110–7500 Hz filtering, onset fade, 24 kHz mono. Native pitch and speed. Mix applies short fades, gentle stereo position and gain.",
+      "outputSha256": "53a57ae5ca93f2fa1b1f96aba0c4f83f7477dc7292875eb044b7f2651598f6f8"
+    },
+    {
+      "title": "Monkey noise (imitation) 3",
+      "author": "wilika2",
+      "source": "https://freesound.org/people/wilika2/sounds/588625/",
+      "download": "https://cdn.freesound.org/previews/588/588625_5661246-hq.mp3",
+      "license": "CC0 1.0",
+      "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceSha256": "cc7dc072a23cdeec6910fbb62ddee7813c6b8a2f3295424a8e418e698cb963d4",
+      "adoptedFile": "remotion/public/sfx/monkey_call_n_v7.wav",
+      "edits": "Full performance; 110–7500 Hz filtering, onset fade, 24 kHz mono. Native pitch and speed. Mix applies short fades, gentle stereo position and gain.",
+      "outputSha256": "ca82d030a45d38b74e5c7ff7106860fd88105c3a7e930a254b4379fdd69cd7bc"
+    }
+  ],
+  "reference": {
+    "url": "https://youtu.be/41NGxtJgNlM",
+    "title": "【フリーな音響素材】ジャングルの動物の鳴き声 Jungle Animal Sounds 3 Sound Effect",
+    "uploader": "音楽素材.net",
+    "descriptionLink": "http://xn--9qv61c515a0jz.net/videoblocks/",
+    "sameTitleCatalog": "https://www.storyblocks.com/audio/stock/jungle-animal-sounds-3-rxegaht2lpbk0wxxue9",
+    "status": "Reference only; no license for reuse verified. The final edit uses the CC0 sources above, not this video audio."
+  },
+  "use": "Three distinct human monkey imitations, timed to Y, M and the narrator; no claim of a real animal recording."
 }

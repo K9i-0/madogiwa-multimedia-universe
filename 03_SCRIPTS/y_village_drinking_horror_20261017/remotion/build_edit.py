@@ -1,4 +1,4 @@
-"""v6: speech measured at native speed; authored pauses, POV and sound states."""
+"""v7: two-stage entity reveal and three intentionally silly monkey calls."""
 import json, math, re, wave
 from pathlib import Path
 P=Path(__file__).resolve().parent
@@ -13,7 +13,7 @@ early_frames=wav_frames(P.parent/'sobaya_early_murmur_v4.wav')
 pauses={
  'n0010':24,'n0013b':21,'n0027':21,'n0044':24,
  'n0053v5a0':18,'n0062':21,
- 'n0073':15+early_frames+24,'n0073v5a0':24,'n0076':30,'n0078':42,
+ 'n0073':15+early_frames+24,'n0073v5a0':24,'n0075v7a0':36,'n0076':30,'n0078':42,
  'n0086':30,'n0093':42,'n0101':30,'n0110':27,'n0117':27,'n0121':36,'n0126':30,
  'n0134':48,'n0135':36,'n0143':48,'n0150':36,'n0153':42,'n0155v6a0':30,
  'n0166v6a0':27,'n0179':42,'n0192':36,'n0194':30,
@@ -59,6 +59,7 @@ by={r['id']:r for r in clips}
 def at(id):return by[id]['from']
 def after(id):return at(id)+by[id]['duration']
 reveal=after('n0317')+54
+glimpse=at('n0075v7a0')
 growl={'from':reveal+15,'duration':growl_frames,'file':'sobaya_beer.wav','text':'ビール……','speaker':'sobaya','gain':.9}
 early={'from':after('n0073')+15,'duration':early_frames,'file':'sobaya_early_murmur_v4.wav','speaker':'sobaya','intelligible':'partly','gain':.85}
 captions.append({'from':growl['from'],'to':growl['from']+growl_frames,'text':'「ビール……」','lineId':'sobaya_beer','speaker':'sobaya'})
@@ -91,6 +92,7 @@ shot('n0062','broken',zoom=1.40,x=58,y=74,brightness=.70)
 shot('n0064','broken','m_photo',brightness=.67)
 shot('n0069','broken','y_guitar',brightness=.67)
 shot('n0073','broken',zoom=1.16,x=42,y=46,brightness=.48)
+shot(glimpse,'sobaya_moonlit_v7',zoom=1,view='cursed-pov',brightness=.93)
 shot('n0076','broken',zoom=1.12,view='recording',brightness=.57)
 shot('n0079','village',brightness=.77)
 shot('n0084','broken',brightness=.73)
@@ -125,7 +127,7 @@ shot('n0200','home_product','m_photo',view='recording',brightness=.66)
 shot('n0202','home_product',zoom=1.42,x=55,y=40,view='recording',brightness=.69)
 shot('n0204','office','m_photo',brightness=.65)
 shot('n0207','office','y_photo',brightness=.63)
-shot('n0214','office','sobaya_shadow_v4',brightness=.53)
+shot('n0214','sobaya_moonlit_v7',zoom=1,view='cursed-memory',brightness=.93)
 shot('n0219v6a0','home_empty_v6',zoom=1.12,x=55,y=40,brightness=.59)
 shot('n0219v6a4','hand_can_sealed_v6',zoom=1,brightness=.72)
 shot(after('n0219v6a5')+6,'hand_can_open_v6',zoom=1,brightness=.72)
@@ -252,17 +254,22 @@ effect('n0367','clap',max(0,by['n0367']['duration']-18),.8)
 effect('n0375','mug-drag',by['n0375']['duration']-15,.75)
 effect('n0411','glass',35,.6)
 effect('n0421','mug-set',by['n0421']['duration']-12,.75)
-environmental=[{'from':at('n0048a')+12,'duration':180,'file':'sfx/howler_monkey_v5.wav','rms':.035,'kind':'real-monkey','overlapNarration':True}]
-manifest={'version':6,'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':end},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'inserts':inserts,'soundRegions':sound_regions,'environmentalAudio':environmental,'sfx':events,'characterAudio':[growl,early],'revealFrame':reveal,'audio':'mix.wav'}
+environmental=[]
+for first,offset,sound_file,pan,role in [('n0048a',39,'monkey_call_y_v7.wav',.35,'Y'),('n0048a',90,'monkey_call_m_v7.wav',-.35,'M'),('n0048b',9,'monkey_call_n_v7.wav',0,'narrator')]:
+ file='sfx/'+sound_file
+ environmental.append({'from':at(first)+offset,'duration':wav_frames(P/'public'/file),'file':file,'rms':.055,'peakLimit':.23,'fadeFrames':2,'pan':pan,'kind':'performed-monkey-imitation','role':role,'overlapNarration':True})
+manifest={'version':7,'composition':{'id':'YVillage','width':1280,'height':720,'fps':FPS,'durationInFrames':end},'narration':clips,'captions':captions,'chapters':chapters,'shots':shots,'inserts':inserts,'soundRegions':sound_regions,'environmentalAudio':environmental,'sfx':events,'characterAudio':[growl,early],'glimpseFrame':glimpse,'revealFrame':reveal,'audio':'mix.wav'}
 (P/'src/edit-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 def stamp(f):
     ms=round(f/FPS*1000);h,ms=divmod(ms,3600000);mi,ms=divmod(ms,60000);sec,ms=divmod(ms,1000)
     return f'{h:02}:{mi:02}:{sec:02},{ms:03}'
 (P.parent/'subtitles_ja.srt').write_text('\n\n'.join(f"{i+1}\n{stamp(c['from'])} --> {stamp(c['to'])}\n{c['text']}" for i,c in enumerate(captions))+'\n')
 assert sum('中口' in c['text'] for c in clips)==2
-entity_backgrounds=('reveal','asleep','sobaya_clap_v6','sobaya_mug_v6')
-assert all(s['background'] not in entity_backgrounds for s in shots if s['from']<reveal)
-assert all(s['person']!='sobaya_shadow_v4' for s in shots if s['from']>=reveal)
+entity_backgrounds=('reveal','asleep','sobaya_clap_v6','sobaya_mug_v6','sobaya_moonlit_v7')
+assert glimpse<at('n0208')<reveal
+assert all(s['background'] not in entity_backgrounds for s in shots if s['from']<glimpse)
+assert all(s['background']=='sobaya_moonlit_v7' for s in shots if s['from']<reveal and s['background'] in entity_backgrounds)
+assert all(s['person']!='sobaya_shadow_v4' for s in shots if s['from']>=glimpse)
 assert all(s['background'] not in entity_backgrounds and s['person']!='sobaya_shadow_v4' for s in shots if s['view']=='recording')
 assert all(len(c['text'].splitlines())<=2 for c in captions)
 assert all(a['to']<=b['from'] for a,b in zip(captions,captions[1:]))

@@ -1,14 +1,14 @@
 {
-  "frameCount": 44185,
-  "seconds": 1472.8333333333333,
-  "voiceClips": 371,
-  "captions": 372,
-  "shots": 137,
+  "frameCount": 44492,
+  "seconds": 1483.0666666666666,
+  "voiceClips": 372,
+  "captions": 373,
+  "shots": 138,
   "nameOccurrences": 2,
-  "revealFrame": 31581,
+  "revealFrame": 31888,
   "characterAudio": [
     {
-      "from": 31596,
+      "from": 31903,
       "duration": 37,
       "file": "sobaya_beer.wav",
       "text": "ビール……",
@@ -30,40 +30,76 @@
   "narrationOverlap": false,
   "manualListening": "not performed; automated screening only",
   "music": "same separated reference; encounter variant and deliberately music-free evidence scenes; original track unconfirmed",
-  "video": "review_remotion_horror_aoyama_v6.mp4",
-  "bytes": 82100508,
-  "sha256": "5f5123fde70461fa381b63461a8e0fb6aafb50591f1fb0dfa12137249221ec9a",
+  "video": "review_remotion_horror_aoyama_v7.mp4",
+  "bytes": 82685152,
+  "sha256": "f2094438da9fc2141e8f3cca8ce4eabf54d500ca936b6ffb8eb8c9310bf8ab0c",
   "resolution": [
     1280,
     720
   ],
   "fps": "30/1",
-  "decodedFrames": 44185,
+  "decodedFrames": 44492,
   "audioStreams": 1,
   "audioSampleRate": 48000,
   "fullDecode": "passed; no reported errors",
-  "visualReview": "62 exact frames extracted from delivered MP4 and visually inspected: 35 representative scenes and 27 boundaries/longest-caption frames; see review-v6.md",
-  "integratedLUFS": -16.3,
-  "truePeakDbTP": -1.64,
-  "loudnessRangeLU": 4.2,
+  "visualReview": {
+    "status": "reviewed",
+    "representativeFrames": 38,
+    "boundaryAndCaptionFrames": 35,
+    "totalExtractedFrames": 73,
+    "frameIndex": "remotion/out/final-stills-v7/frames.json",
+    "notes": "Mask and gray skin remain legible after final compression. Subjective glimpse ends before REC shot; entity absent in objective views. No clipping/overlay conflict in sampled frames. Not a frame-by-frame motion or auditory review."
+  },
+  "integratedLUFS": -16.31,
+  "truePeakDbTP": -1.86,
+  "loudnessRangeLU": 4.3,
+  "glimpseFrame": 9042,
   "environmentalAudio": [
     {
-      "from": 5318,
-      "duration": 180,
-      "file": "sfx/howler_monkey_v5.wav",
-      "rms": 0.035,
-      "kind": "real-monkey",
+      "from": 5345,
+      "duration": 50,
+      "file": "sfx/monkey_call_y_v7.wav",
+      "rms": 0.055,
+      "peakLimit": 0.23,
+      "fadeFrames": 2,
+      "pan": 0.35,
+      "kind": "performed-monkey-imitation",
+      "role": "Y",
+      "overlapNarration": true
+    },
+    {
+      "from": 5396,
+      "duration": 79,
+      "file": "sfx/monkey_call_m_v7.wav",
+      "rms": 0.055,
+      "peakLimit": 0.23,
+      "fadeFrames": 2,
+      "pan": -0.35,
+      "kind": "performed-monkey-imitation",
+      "role": "M",
+      "overlapNarration": true
+    },
+    {
+      "from": 5487,
+      "duration": 112,
+      "file": "sfx/monkey_call_n_v7.wav",
+      "rms": 0.055,
+      "peakLimit": 0.23,
+      "fadeFrames": 2,
+      "pan": 0,
+      "kind": "performed-monkey-imitation",
+      "role": "narrator",
       "overlapNarration": true
     }
   ],
   "rhythm": {
     "status": "passed",
-    "durationSeconds": 1472.8333333333333,
+    "durationSeconds": 1483.0666666666666,
     "voice": "青山龍星 style13 speed1 pitch0",
-    "voiceClipCount": 371,
-    "captions": 372,
-    "shots": 137,
-    "additionalGapSeconds": 204.26666666666668,
+    "voiceClipCount": 372,
+    "captions": 373,
+    "shots": 138,
+    "additionalGapSeconds": 205.46666666666667,
     "medianAdditionalGapSeconds": 0.3,
     "fullFaceExposureSeconds": 64.33333333333333,
     "characterAudioNoNarrationOverlap": true,
@@ -72,6 +108,11 @@
     "sealedCanOpensAtSound": true,
     "identityNameCalls": 2,
     "fourMugsFDoesNotDrink": true,
+    "moonlitGlimpseBeforeAppearanceDialogue": true,
+    "glimpseSeconds": 301.4,
+    "wifeQuestionExplicit": true,
+    "mAbsenceIndirectlyLearned": true,
+    "monkeyCallResponse": 3,
     "comedyBeforeAuthorityTurn": true,
     "bodyAgencyAdded": true,
     "explicitBenevolentInterpretationDeferred": true,
@@ -79,15 +120,19 @@
     "subjectiveReview": "script and rendered images reviewed; full human listening unavailable",
     "anchors": {
       "n0019": 70.8,
+      "n0048a": 176.867,
       "n0073": 283.7,
-      "n0134": 460.6,
-      "n0179": 595.8,
-      "n0219v6a0": 698.633,
-      "n0237": 811.733,
-      "n0317": 1048.667,
-      "n0367": 1171.9,
-      "n0457": 1387.233,
-      "n0486": 1460.767
+      "n0075v7a0": 301.4,
+      "n0134": 465.5,
+      "n0141": 486.433,
+      "n0167a": 552.667,
+      "n0179": 603.4,
+      "n0219v6a0": 708.6,
+      "n0237": 821.7,
+      "n0317": 1058.633,
+      "n0367": 1182.133,
+      "n0457": 1397.467,
+      "n0486": 1471.0
     }
   },
   "workInserts": [
@@ -99,173 +144,177 @@
     },
     {
       "kind": "excel-return",
-      "from": 42560,
-      "to": 42654,
-      "changeFrame": 42625
+      "from": 42867,
+      "to": 42961,
+      "changeFrame": 42932
     }
   ],
   "soundRegions": [
     {
       "from": 8511,
-      "to": 9313,
+      "to": 9460,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 11733,
-      "to": 11905,
+      "from": 11880,
+      "to": 12052,
       "music": 0.25,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 13296,
-      "to": 15474,
+      "from": 13443,
+      "to": 15681,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 17637,
-      "to": 19205,
+      "from": 17865,
+      "to": 19433,
       "music": 0.18,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 19235,
-      "to": 19979,
+      "from": 19463,
+      "to": 20207,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 20959,
-      "to": 22133,
+      "from": 21258,
+      "to": 22432,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 24352,
-      "to": 25811,
+      "from": 24651,
+      "to": 26110,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 27336,
-      "to": 27581,
+      "from": 27635,
+      "to": 27880,
       "music": 0,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 27934,
-      "to": 28162,
+      "from": 28233,
+      "to": 28461,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 30022,
-      "to": 33124,
+      "from": 30321,
+      "to": 33431,
       "music": 0,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 35556,
-      "to": 36344,
+      "from": 35863,
+      "to": 36651,
       "music": 0,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 37169,
-      "to": 37546,
+      "from": 37476,
+      "to": 37853,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 38194,
-      "to": 40180,
+      "from": 38501,
+      "to": 40487,
       "music": 0.15,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 41543,
-      "to": 42149,
+      "from": 41850,
+      "to": 42456,
       "music": 0.2,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 43684,
-      "to": 44185,
+      "from": 43991,
+      "to": 44492,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 14618,
-      "to": 14666,
+      "from": 14825,
+      "to": 14873,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 19791,
-      "to": 19857,
+      "from": 20019,
+      "to": 20085,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 21705,
-      "to": 21753,
+      "from": 22004,
+      "to": 22052,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 31557,
-      "to": 31596,
+      "from": 31864,
+      "to": 31903,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 44005,
-      "to": 44185,
+      "from": 44312,
+      "to": 44492,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 12
     }
   ],
-  "visualReviewedFrameCount": 62,
-  "reviewPasses": 2
+  "feedbackPreview": {
+    "file": "review_feedback_v7.mp4",
+    "seconds": 78.388,
+    "bytes": 4028592,
+    "fullDecode": "passed"
+  }
 }

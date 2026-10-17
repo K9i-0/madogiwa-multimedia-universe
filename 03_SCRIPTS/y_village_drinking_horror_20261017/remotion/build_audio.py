@@ -1,4 +1,4 @@
-"""v6 mix: native narration, recorded testimony, room tone, reserved silence."""
+"""v7 mix: native narration, recorded testimony, room tone and monkey call-response."""
 import json, subprocess
 from pathlib import Path
 import numpy as np
@@ -68,9 +68,10 @@ mix+=room[:,None]*roomgain[:,None];del room,roomgain
 for event in m.get('environmentalAudio',[]):
     z,rate=sf.read(P/'public'/event['file'],dtype='float32');z=resample_poly(z,sr,rate).astype(np.float32)
     z=z[:round(event['duration']/fps*sr)]
-    z*=min(event['rms']/max(float(np.sqrt(np.mean(z*z))),1e-8),.18/max(float(np.max(np.abs(z))),1e-8))
-    edge=min(sr//3,len(z)//2);z[:edge]*=np.linspace(0,1,edge);z[-edge:]*=np.linspace(1,0,edge)
-    at=round(event['from']/fps*sr);mix[at:at+len(z)]+=z[:,None]
+    z*=min(event['rms']/max(float(np.sqrt(np.mean(z*z))),1e-8),event.get('peakLimit',.18)/max(float(np.max(np.abs(z))),1e-8))
+    edge=min(round(event.get('fadeFrames',10)/fps*sr),len(z)//2);z[:edge]*=np.linspace(0,1,edge);z[-edge:]*=np.linspace(1,0,edge)
+    pan=event.get('pan',0);channels=np.array([min(1,1-pan),min(1,1+pan)],np.float32)
+    at=round(event['from']/fps*sr);mix[at:at+len(z)]+=z[:,None]*channels[None,:]
 for event in m.get('characterAudio',[]):
     z,rate=sf.read(P.parent/event['file'],dtype='float32')
     if z.ndim>1:z=z.mean(axis=1)
@@ -101,5 +102,5 @@ for e in m['sfx']:
     at=round(e['frame']/fps*sr);mix[at:at+len(z)]+=z[:,None]
 sf.write(P/'out/premix.wav',mix,sr,subtype='PCM_24')
 subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/premix.wav'),'-af','alimiter=limit=0.85:level=false','-ar','48000',str(P/'public/mix.wav')],check=True)
-(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic synthesis; real howler from credited adopted source','environmentalAudio':m['environmentalAudio'],'soundRegions':m['soundRegions'],'voice':'VOICEVOX:青山龍星 style13 speed1.0; no time stretch; normalized -19 LUFS','recordedDialogue':[r['id'] for r in m['narration'] if r['audioStyle']=='recording'],'sobaya':'canonical Irodori v4 Large; v4 processing preserved; two growls','encounterMusic':'reversed/pitched/filtered original reference; distinct room-only scenes'},ensure_ascii=False,indent=2))
+(P/'out/audio-build.json').write_text(json.dumps({'seconds':n/sr,'preLimiterPeak':float(np.max(np.abs(mix))),'musicSource':str(musicpath.relative_to(ROOT)),'musicStatus':'reference extraction; title/master unconfirmed','sfx':'original deterministic synthesis; CC0 performed monkey calls from wilika2, timed as three replies','environmentalAudio':m['environmentalAudio'],'soundRegions':m['soundRegions'],'voice':'VOICEVOX:青山龍星 style13 speed1.0; no time stretch; normalized -19 LUFS','recordedDialogue':[r['id'] for r in m['narration'] if r['audioStyle']=='recording'],'sobaya':'canonical Irodori v4 Large; v4 processing preserved; two growls','encounterMusic':'reversed/pitched/filtered original reference; distinct room-only scenes'},ensure_ascii=False,indent=2))
 print('Audio complete',n/sr,float(np.max(np.abs(mix))))

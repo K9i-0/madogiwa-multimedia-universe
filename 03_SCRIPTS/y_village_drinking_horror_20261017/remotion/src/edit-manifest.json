@@ -1,11 +1,11 @@
 {
-  "version": 6,
+  "version": 7,
   "composition": {
     "id": "YVillage",
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 44185
+    "durationInFrames": 44492
   },
   "narration": [
     {
@@ -812,13 +812,24 @@
       "audioStyle": "narration"
     },
     {
+      "id": "n0075v7a0",
+      "chapter": 3,
+      "text": "祠の奥に、白い顔のようなものが見えました。",
+      "speech": "ほこらの奥に、白い顔のようなものが見えました。",
+      "file": "voice_aoyama_v7/n0075v7a0.wav",
+      "seconds": 3.68,
+      "from": 9042,
+      "duration": 111,
+      "audioStyle": "narration"
+    },
+    {
       "id": "n0076",
       "chapter": 3,
       "text": "録画には、三人の声しか入っていませんでした。",
       "speech": "録画には、三人の声しか入っていませんでした。",
       "file": "voice_aoyama/n0076.wav",
       "seconds": 3.7546666666666666,
-      "from": 9042,
+      "from": 9189,
       "duration": 113,
       "audioStyle": "narration"
     },
@@ -829,7 +840,7 @@
       "speech": "その夜の記憶は、そこまでです。",
       "file": "voice_aoyama/n0078.wav",
       "seconds": 2.848,
-      "from": 9185,
+      "from": 9332,
       "duration": 86,
       "audioStyle": "narration"
     },
@@ -840,7 +851,7 @@
       "speech": "目が覚めると、集会所の机に突っ伏していました。",
       "file": "voice_aoyama/n0079.wav",
       "seconds": 3.808,
-      "from": 9343,
+      "from": 9490,
       "duration": 115,
       "audioStyle": "narration"
     },
@@ -851,7 +862,7 @@
       "speech": "ほこらを見に行くと、壊れたままでした。",
       "file": "voice_aoyama/n0084.wav",
       "seconds": 3.1253333333333333,
-      "from": 9467,
+      "from": 9614,
       "duration": 94,
       "audioStyle": "narration"
     },
@@ -862,7 +873,7 @@
       "speech": "カンリニンへ電話して、「私は止めたんですが、二人がどうしても」と謝りました。",
       "file": "voice_aoyama_v5/n0085v5r2.wav",
       "seconds": 6.282666666666667,
-      "from": 9570,
+      "from": 9717,
       "duration": 189,
       "audioStyle": "narration"
     },
@@ -873,7 +884,7 @@
       "speech": "向こうはしばらく黙っていました。",
       "file": "voice_aoyama/n0086.wav",
       "seconds": 2.272,
-      "from": 9768,
+      "from": 9915,
       "duration": 69,
       "audioStyle": "narration"
     },
@@ -884,7 +895,7 @@
       "speech": "何を壊したのかではなく、器はどうなったか、と聞かれました。",
       "file": "voice_aoyama_v6/n0087.wav",
       "seconds": 4.842666666666666,
-      "from": 9867,
+      "from": 10014,
       "duration": 146,
       "audioStyle": "narration"
     },
@@ -895,7 +906,7 @@
       "speech": "割れていると答えると、「三人とも、今日は飲まないでください」と言われました。",
       "file": "voice_aoyama_v6/n0087v6a0.wav",
       "seconds": 5.664,
-      "from": 10022,
+      "from": 10169,
       "duration": 170,
       "audioStyle": "narration"
     },
@@ -906,7 +917,7 @@
       "speech": "その晩は、三人とも飲みませんでした。",
       "file": "voice_aoyama/n0088.wav",
       "seconds": 3.2213333333333334,
-      "from": 10201,
+      "from": 10348,
       "duration": 97,
       "audioStyle": "narration"
     },
@@ -917,7 +928,7 @@
       "speech": "私は九時前に寝ました。",
       "file": "voice_aoyama/n0090.wav",
       "seconds": 2.016,
-      "from": 10307,
+      "from": 10454,
       "duration": 61,
       "audioStyle": "narration"
     },
@@ -928,7 +939,7 @@
       "speech": "翌朝、また机で目を覚ましました。",
       "file": "voice_aoyama/n0091.wav",
       "seconds": 3.1893333333333334,
-      "from": 10377,
+      "from": 10524,
       "duration": 96,
       "audioStyle": "narration"
     },
@@ -939,7 +950,7 @@
       "speech": "目の前には、カラの缶が三本ありました。",
       "file": "voice_aoyama_v4/n0092.wav",
       "seconds": 3.4133333333333336,
-      "from": 10482,
+      "from": 10629,
       "duration": 103,
       "audioStyle": "narration"
     },
@@ -950,7 +961,7 @@
       "speech": "片づけ忘れたものだと思いましたが、缶の口が濡れていました。",
       "file": "voice_aoyama/n0093.wav",
       "seconds": 4.48,
-      "from": 10594,
+      "from": 10741,
       "duration": 135,
       "audioStyle": "narration"
     },
@@ -961,7 +972,7 @@
       "speech": "カンリニンの連絡を受けて、会社が私たちを引き揚げさせました。",
       "file": "voice_aoyama_v6/n0096.wav",
       "seconds": 4.757333333333333,
-      "from": 10771,
+      "from": 10918,
       "duration": 143,
       "audioStyle": "narration"
     },
@@ -972,7 +983,7 @@
       "speech": "上司には、「なかぐち、しばらく酒を控えろ」と言われました。",
       "file": "voice_aoyama_v3/n0099.wav",
       "seconds": 5.141333333333334,
-      "from": 10923,
+      "from": 11070,
       "duration": 155,
       "audioStyle": "narration"
     },
@@ -983,7 +994,7 @@
       "speech": "村を離れたときは、ほっとしました。",
       "file": "voice_aoyama/n0101.wav",
       "seconds": 2.88,
-      "from": 11087,
+      "from": 11234,
       "duration": 87,
       "audioStyle": "narration"
     },
@@ -994,7 +1005,7 @@
       "speech": "帰宅した日は風呂に入り、妻の作った夕飯を食べました。",
       "file": "voice_aoyama/n0102.wav",
       "seconds": 4.426666666666667,
-      "from": 11246,
+      "from": 11393,
       "duration": 133,
       "audioStyle": "narration"
     },
@@ -1005,7 +1016,7 @@
       "speech": "酒は断りました。",
       "file": "voice_aoyama/n0103.wav",
       "seconds": 1.792,
-      "from": 11388,
+      "from": 11535,
       "duration": 54,
       "audioStyle": "narration"
     },
@@ -1016,7 +1027,7 @@
       "speech": "十時前には寝たはずです。",
       "file": "voice_aoyama/n0105.wav",
       "seconds": 2.08,
-      "from": 11451,
+      "from": 11598,
       "duration": 63,
       "audioStyle": "narration"
     },
@@ -1027,7 +1038,7 @@
       "speech": "翌朝、ひどい頭痛で目が覚めました。",
       "file": "voice_aoyama/n0106.wav",
       "seconds": 3.082666666666667,
-      "from": 11523,
+      "from": 11670,
       "duration": 93,
       "audioStyle": "narration"
     },
@@ -1038,7 +1049,7 @@
       "speech": "体を起こしただけで、吐きそうになりました。",
       "file": "voice_aoyama/n0107.wav",
       "seconds": 3.2746666666666666,
-      "from": 11625,
+      "from": 11772,
       "duration": 99,
       "audioStyle": "narration"
     },
@@ -1049,7 +1060,7 @@
       "speech": "食卓に、カラのビール缶がありました。",
       "file": "voice_aoyama_v4/n0109.wav",
       "seconds": 3.1466666666666665,
-      "from": 11733,
+      "from": 11880,
       "duration": 95,
       "audioStyle": "narration"
     },
@@ -1060,7 +1071,7 @@
       "speech": "六本でした。",
       "file": "voice_aoyama/n0110.wav",
       "seconds": 1.3653333333333333,
-      "from": 11837,
+      "from": 11984,
       "duration": 41,
       "audioStyle": "narration"
     },
@@ -1071,7 +1082,7 @@
       "speech": "妻に聞くと、変な顔をされました。",
       "file": "voice_aoyama/n0111.wav",
       "seconds": 2.9546666666666668,
-      "from": 11905,
+      "from": 12052,
       "duration": 89,
       "audioStyle": "narration"
     },
@@ -1082,7 +1093,7 @@
       "speech": "「自分で飲んだんでしょ」",
       "file": "voice_aoyama/n0112.wav",
       "seconds": 1.7493333333333334,
-      "from": 12003,
+      "from": 12150,
       "duration": 53,
       "audioStyle": "narration"
     },
@@ -1093,7 +1104,7 @@
       "speech": "飲んでいないと言うと、妻は少し怒りました。",
       "file": "voice_aoyama/n0113.wav",
       "seconds": 3.488,
-      "from": 12065,
+      "from": 12212,
       "duration": 105,
       "audioStyle": "narration"
     },
@@ -1104,7 +1115,7 @@
       "speech": "「昨日、起きてきて飲んでたじゃない。調子悪いって言ってたのに」",
       "file": "voice_aoyama/n0114.wav",
       "seconds": 4.458666666666667,
-      "from": 12179,
+      "from": 12326,
       "duration": 134,
       "audioStyle": "narration"
     },
@@ -1115,7 +1126,7 @@
       "speech": "記憶がありませんでした。",
       "file": "voice_aoyama/n0117.wav",
       "seconds": 1.92,
-      "from": 12322,
+      "from": 12469,
       "duration": 58,
       "audioStyle": "narration"
     },
@@ -1126,7 +1137,7 @@
       "speech": "妻に頼んで、家にあったビールを片づけてもらいました。",
       "file": "voice_aoyama_v6/n0118.wav",
       "seconds": 4.010666666666666,
-      "from": 12407,
+      "from": 12554,
       "duration": 121,
       "audioStyle": "narration"
     },
@@ -1137,7 +1148,7 @@
       "speech": "翌朝、あきかんはありませんでした。",
       "file": "voice_aoyama/n0119.wav",
       "seconds": 2.9546666666666668,
-      "from": 12537,
+      "from": 12684,
       "duration": 89,
       "audioStyle": "narration"
     },
@@ -1148,7 +1159,7 @@
       "speech": "それでも、頭痛はありました。",
       "file": "voice_aoyama_v5/n0119v5a0.wav",
       "seconds": 2.5493333333333332,
-      "from": 12635,
+      "from": 12782,
       "duration": 77,
       "audioStyle": "narration"
     },
@@ -1159,7 +1170,7 @@
       "speech": "ただ、妻に言われました。",
       "file": "voice_aoyama/n0120.wav",
       "seconds": 2.304,
-      "from": 12721,
+      "from": 12868,
       "duration": 70,
       "audioStyle": "narration"
     },
@@ -1170,7 +1181,7 @@
       "speech": "「夜中、冷蔵庫を何回も開けてたよ」",
       "file": "voice_aoyama/n0121.wav",
       "seconds": 3.2106666666666666,
-      "from": 12800,
+      "from": 12947,
       "duration": 97,
       "audioStyle": "narration"
     },
@@ -1181,7 +1192,7 @@
       "speech": "数日後、冷蔵庫にビールが入っていました。",
       "file": "voice_aoyama/n0122.wav",
       "seconds": 3.477333333333333,
-      "from": 12963,
+      "from": 13110,
       "duration": 105,
       "audioStyle": "narration"
     },
@@ -1192,7 +1203,7 @@
       "speech": "財布のレシートで、自分が買ったと分かりました。",
       "file": "voice_aoyama_v3/n0124.wav",
       "seconds": 3.7226666666666666,
-      "from": 13077,
+      "from": 13224,
       "duration": 112,
       "audioStyle": "narration"
     },
@@ -1203,7 +1214,7 @@
       "speech": "買った記憶がありませんでした。",
       "file": "voice_aoyama/n0126.wav",
       "seconds": 2.2506666666666666,
-      "from": 13198,
+      "from": 13345,
       "duration": 68,
       "audioStyle": "narration"
     },
@@ -1214,7 +1225,7 @@
       "speech": "翌朝、妻が撮った動画を見せられました。",
       "file": "voice_aoyama_v6/n0127.wav",
       "seconds": 3.445333333333333,
-      "from": 13296,
+      "from": 13443,
       "duration": 104,
       "audioStyle": "narration"
     },
@@ -1225,7 +1236,7 @@
       "speech": "零時過ぎ、寝室から出てきた私が映っていました。",
       "file": "voice_aoyama_v6/n0128.wav",
       "seconds": 3.968,
-      "from": 13409,
+      "from": 13556,
       "duration": 120,
       "audioStyle": "narration"
     },
@@ -1236,7 +1247,7 @@
       "speech": "普通に歩き、冷蔵庫からビールを出し、食卓に座りました。",
       "file": "voice_aoyama/n0129.wav",
       "seconds": 5.077333333333334,
-      "from": 13538,
+      "from": 13685,
       "duration": 153,
       "audioStyle": "narration"
     },
@@ -1247,7 +1258,7 @@
       "speech": "それから、向かいのくうせきへ缶を差し出しました。",
       "file": "voice_aoyama/n0133.wav",
       "seconds": 3.6053333333333333,
-      "from": 13700,
+      "from": 13847,
       "duration": 109,
       "audioStyle": "narration"
     },
@@ -1258,7 +1269,7 @@
       "speech": "「じゃあ、お疲れさまです」",
       "file": "voice_aoyama/n0134.wav",
       "seconds": 2.485333333333333,
-      "from": 13818,
+      "from": 13965,
       "duration": 75,
       "audioStyle": "recording"
     },
@@ -1269,7 +1280,7 @@
       "speech": "何もないところで缶を止める。",
       "file": "voice_aoyama/n0135.wav",
       "seconds": 2.1546666666666665,
-      "from": 13941,
+      "from": 14088,
       "duration": 65,
       "audioStyle": "narration"
     },
@@ -1280,7 +1291,7 @@
       "speech": "少し待ってから戻し、飲む。",
       "file": "voice_aoyama/n0136.wav",
       "seconds": 2.7413333333333334,
-      "from": 14042,
+      "from": 14189,
       "duration": 83,
       "audioStyle": "narration"
     },
@@ -1291,7 +1302,7 @@
       "speech": "誰かの話を聞くように黙り、うなずき、急に笑う。",
       "file": "voice_aoyama_v6/n0137.wav",
       "seconds": 4.458666666666667,
-      "from": 14134,
+      "from": 14281,
       "duration": 134,
       "audioStyle": "narration"
     },
@@ -1302,7 +1313,7 @@
       "speech": "通話ではありませんでした。",
       "file": "voice_aoyama_v6/n0138.wav",
       "seconds": 2.0906666666666665,
-      "from": 14277,
+      "from": 14424,
       "duration": 63,
       "audioStyle": "narration"
     },
@@ -1313,19 +1324,19 @@
       "speech": "スマホは寝室で充電したままでした。",
       "file": "voice_aoyama_v6/n0139.wav",
       "seconds": 2.9013333333333335,
-      "from": 14349,
+      "from": 14496,
       "duration": 88,
       "audioStyle": "narration"
     },
     {
       "id": "n0141",
       "chapter": 6,
-      "text": "「誰と話してるの」",
-      "speech": "「誰と話してるの」",
-      "file": "voice_aoyama/n0141.wav",
-      "seconds": 1.5573333333333332,
-      "from": 14446,
-      "duration": 47,
+      "text": "妻が「誰と話してるの」と聞きました。",
+      "speech": "妻が「誰と話してるの」と聞きました。",
+      "file": "voice_aoyama_v7/n0141.wav",
+      "seconds": 3.552,
+      "from": 14593,
+      "duration": 107,
       "audioStyle": "narration"
     },
     {
@@ -1335,7 +1346,7 @@
       "speech": "私はくうせきを指しました。",
       "file": "voice_aoyama_v6/n0142.wav",
       "seconds": 2.24,
-      "from": 14502,
+      "from": 14709,
       "duration": 68,
       "audioStyle": "narration"
     },
@@ -1346,7 +1357,7 @@
       "speech": "「失礼だろ」",
       "file": "voice_aoyama/n0143.wav",
       "seconds": 1.2693333333333334,
-      "from": 14579,
+      "from": 14786,
       "duration": 39,
       "audioStyle": "recording"
     },
@@ -1357,7 +1368,7 @@
       "speech": "途中、相手にもう一本、缶を差し出していました。",
       "file": "voice_aoyama_v6/n0147.wav",
       "seconds": 4.32,
-      "from": 14666,
+      "from": 14873,
       "duration": 130,
       "audioStyle": "narration"
     },
@@ -1368,7 +1379,7 @@
       "speech": "受け取ってもらえず、困ったように笑う。",
       "file": "voice_aoyama_v3/n0150.wav",
       "seconds": 3.1146666666666665,
-      "from": 14805,
+      "from": 15012,
       "duration": 94,
       "audioStyle": "narration"
     },
@@ -1379,7 +1390,7 @@
       "speech": "それを自分で開け、飲む。",
       "file": "voice_aoyama/n0151.wav",
       "seconds": 2.624,
-      "from": 14935,
+      "from": 15142,
       "duration": 79,
       "audioStyle": "narration"
     },
@@ -1390,7 +1401,7 @@
       "speech": "「まだ帰らなくていいですよ」",
       "file": "voice_aoyama/n0153.wav",
       "seconds": 1.952,
-      "from": 15023,
+      "from": 15230,
       "duration": 59,
       "audioStyle": "recording"
     },
@@ -1401,7 +1412,7 @@
       "speech": "妻は「もう、声をかけられなかった」と言いました。",
       "file": "voice_aoyama_v6/n0155.wav",
       "seconds": 4.64,
-      "from": 15124,
+      "from": 15331,
       "duration": 140,
       "audioStyle": "narration"
     },
@@ -1412,7 +1423,7 @@
       "speech": "画面の私は、妻が部屋を出たことにも気づかず、椅子へ笑いかけていました。",
       "file": "voice_aoyama_v6/n0155v6a0.wav",
       "seconds": 5.696,
-      "from": 15273,
+      "from": 15480,
       "duration": 171,
       "audioStyle": "narration"
     },
@@ -1423,7 +1434,7 @@
       "speech": "病院にも行きました。",
       "file": "voice_aoyama/n0160.wav",
       "seconds": 1.824,
-      "from": 15504,
+      "from": 15711,
       "duration": 55,
       "audioStyle": "narration"
     },
@@ -1434,7 +1445,7 @@
       "speech": "診察で勧められた記録には、妻が夜の様子を書いてくれました。",
       "file": "voice_aoyama_v6/n0162.wav",
       "seconds": 4.8,
-      "from": 15568,
+      "from": 15775,
       "duration": 144,
       "audioStyle": "narration"
     },
@@ -1445,7 +1456,7 @@
       "speech": "やめてと言うと、夜の私は妻をにらむそうです。",
       "file": "voice_aoyama_v6/n0163.wav",
       "seconds": 3.9146666666666667,
-      "from": 15721,
+      "from": 15928,
       "duration": 118,
       "audioStyle": "narration"
     },
@@ -1456,7 +1467,7 @@
       "speech": "昼の私は、酒の匂いだけで気分が悪くなりました。",
       "file": "voice_aoyama/n0165.wav",
       "seconds": 4.085333333333334,
-      "from": 15848,
+      "from": 16055,
       "duration": 123,
       "audioStyle": "narration"
     },
@@ -1467,7 +1478,7 @@
       "speech": "夜の私は、楽しそうに飲んでいました。",
       "file": "voice_aoyama/n0166.wav",
       "seconds": 3.2746666666666666,
-      "from": 15980,
+      "from": 16187,
       "duration": 99,
       "audioStyle": "narration"
     },
@@ -1478,7 +1489,7 @@
       "speech": "昼の私がいくら頼んでも、夜になると、話が通じなくなるんです。",
       "file": "voice_aoyama_v6/n0166v6a0.wav",
       "seconds": 5.429333333333333,
-      "from": 16088,
+      "from": 16295,
       "duration": 163,
       "audioStyle": "narration"
     },
@@ -1489,19 +1500,19 @@
       "speech": "何日か、仕事を休みました。",
       "file": "voice_aoyama/n0167.wav",
       "seconds": 2.8373333333333335,
-      "from": 16278,
+      "from": 16485,
       "duration": 86,
       "audioStyle": "narration"
     },
     {
       "id": "n0167a",
       "chapter": 7,
-      "text": "Mさんも休んでいましたが、最初はまた勝手に連休を作ったのかと思いました。",
-      "speech": "エムさんも休んでいましたが、最初はまた勝手に連休を作ったのかと思いました。",
-      "file": "voice_aoyama_v6/n0167a.wav",
-      "seconds": 5.610666666666667,
-      "from": 16373,
-      "duration": 169,
+      "text": "Mさんも休んでいたそうです。最初は、また勝手に連休を作ったのかと思いました。",
+      "speech": "エムさんも休んでいたそうです。最初は、また勝手に連休を作ったのかと思いました。",
+      "file": "voice_aoyama_v7/n0167a.wav",
+      "seconds": 6.314666666666667,
+      "from": 16580,
+      "duration": 190,
       "audioStyle": "narration"
     },
     {
@@ -1511,7 +1522,7 @@
       "speech": "上司も同じことを言っていました。",
       "file": "voice_aoyama_v4/n0167b.wav",
       "seconds": 2.304,
-      "from": 16551,
+      "from": 16779,
       "duration": 70,
       "audioStyle": "narration"
     },
@@ -1522,7 +1533,7 @@
       "speech": "久しぶりに出社した日、コピー機の前で立っていられなくなりました。",
       "file": "voice_aoyama/n0168.wav",
       "seconds": 4.64,
-      "from": 16630,
+      "from": 16858,
       "duration": 140,
       "audioStyle": "narration"
     },
@@ -1533,7 +1544,7 @@
       "speech": "壁に手をついていると、別の部署の同僚が足を止めました。",
       "file": "voice_aoyama/n0169.wav",
       "seconds": 4.341333333333333,
-      "from": 16779,
+      "from": 17007,
       "duration": 131,
       "audioStyle": "narration"
     },
@@ -1544,7 +1555,7 @@
       "speech": "「なかぐちさん、大丈夫ですか？」",
       "file": "voice_aoyama/n0170.wav",
       "seconds": 2.997333333333333,
-      "from": 16919,
+      "from": 17147,
       "duration": 90,
       "audioStyle": "narration"
     },
@@ -1555,7 +1566,7 @@
       "speech": "同僚に「座って休んでください」と言われました。",
       "file": "voice_aoyama_v5/n0172v5a0.wav",
       "seconds": 4.16,
-      "from": 17018,
+      "from": 17246,
       "duration": 125,
       "audioStyle": "narration"
     },
@@ -1566,7 +1577,7 @@
       "speech": "ヒトから休むように勧められたのは、入社して初めてでした。",
       "file": "voice_aoyama_v5/n0172v5a1.wav",
       "seconds": 4.448,
-      "from": 17152,
+      "from": 17380,
       "duration": 134,
       "audioStyle": "narration"
     },
@@ -1577,7 +1588,7 @@
       "speech": "座ったところで、ワイさんが通りかかりました。",
       "file": "voice_aoyama/n0173.wav",
       "seconds": 3.456,
-      "from": 17295,
+      "from": 17523,
       "duration": 104,
       "audioStyle": "narration"
     },
@@ -1588,7 +1599,7 @@
       "speech": "顔が痩せ、目の下に濃い隈がありました。",
       "file": "voice_aoyama/n0174.wav",
       "seconds": 3.477333333333333,
-      "from": 17408,
+      "from": 17636,
       "duration": 105,
       "audioStyle": "narration"
     },
@@ -1599,7 +1610,7 @@
       "speech": "寝ても疲れが取れない、とワイさんは言いました。",
       "file": "voice_aoyama_v3/n0176.wav",
       "seconds": 3.530666666666667,
-      "from": 17522,
+      "from": 17750,
       "duration": 106,
       "audioStyle": "narration"
     },
@@ -1610,7 +1621,7 @@
       "speech": "飲んだ覚えがないのに、毎朝二日酔いになる。そう話すと、",
       "file": "voice_aoyama_v6/n0177.wav",
       "seconds": 4.789333333333333,
-      "from": 17637,
+      "from": 17865,
       "duration": 144,
       "audioStyle": "narration"
     },
@@ -1621,7 +1632,7 @@
       "speech": "ワイさんが、こちらを見ました。",
       "file": "voice_aoyama/n0178.wav",
       "seconds": 2.485333333333333,
-      "from": 17790,
+      "from": 18018,
       "duration": 75,
       "audioStyle": "narration"
     },
@@ -1632,7 +1643,7 @@
       "speech": "「……缶、ある？」",
       "file": "voice_aoyama/n0179.wav",
       "seconds": 1.9626666666666666,
-      "from": 17874,
+      "from": 18102,
       "duration": 59,
       "audioStyle": "narration"
     },
@@ -1643,7 +1654,7 @@
       "speech": "すぐ、エムさんへ電話しました。",
       "file": "voice_aoyama/n0180.wav",
       "seconds": 2.912,
-      "from": 17975,
+      "from": 18203,
       "duration": 88,
       "audioStyle": "narration"
     },
@@ -1654,7 +1665,7 @@
       "speech": "同じでした。",
       "file": "voice_aoyama/n0182.wav",
       "seconds": 1.2266666666666666,
-      "from": 18072,
+      "from": 18300,
       "duration": 37,
       "audioStyle": "narration"
     },
@@ -1665,7 +1676,7 @@
       "speech": "飲まずに寝たはずなのに、朝になるとあきかんがある。",
       "file": "voice_aoyama/n0183.wav",
       "seconds": 3.68,
-      "from": 18118,
+      "from": 18346,
       "duration": 111,
       "audioStyle": "narration"
     },
@@ -1676,7 +1687,7 @@
       "speech": "隣人から苦情も来ていました。",
       "file": "voice_aoyama/n0184.wav",
       "seconds": 2.2826666666666666,
-      "from": 18238,
+      "from": 18466,
       "duration": 69,
       "audioStyle": "narration"
     },
@@ -1687,7 +1698,7 @@
       "speech": "毎晩、誰かと騒ぐのをやめてほしい、と。",
       "file": "voice_aoyama/n0185.wav",
       "seconds": 4.426666666666667,
-      "from": 18316,
+      "from": 18544,
       "duration": 133,
       "audioStyle": "narration"
     },
@@ -1698,7 +1709,7 @@
       "speech": "「一人やって言うたんよ」",
       "file": "voice_aoyama/n0186.wav",
       "seconds": 1.8346666666666667,
-      "from": 18458,
+      "from": 18686,
       "duration": 56,
       "audioStyle": "narration"
     },
@@ -1709,7 +1720,7 @@
       "speech": "「そしたら、気持ち悪いこと言わんといてくださいって」",
       "file": "voice_aoyama/n0188.wav",
       "seconds": 3.584,
-      "from": 18523,
+      "from": 18751,
       "duration": 108,
       "audioStyle": "narration"
     },
@@ -1720,7 +1731,7 @@
       "speech": "隣人が玄関まで来ると、エムさんはドアを開け、謝ったそうです。",
       "file": "voice_aoyama_v3/n0189.wav",
       "seconds": 5.354666666666667,
-      "from": 18640,
+      "from": 18868,
       "duration": 161,
       "audioStyle": "narration"
     },
@@ -1731,7 +1742,7 @@
       "speech": "開いたドアの向こうには、",
       "file": "voice_aoyama_v3/n0190.wav",
       "seconds": 1.9306666666666668,
-      "from": 18810,
+      "from": 19038,
       "duration": 58,
       "audioStyle": "narration"
     },
@@ -1742,7 +1753,7 @@
       "speech": "誰もいなかった。",
       "file": "voice_aoyama/n0192.wav",
       "seconds": 1.504,
-      "from": 18877,
+      "from": 19105,
       "duration": 46,
       "audioStyle": "narration"
     },
@@ -1753,7 +1764,7 @@
       "speech": "でもエムさんは、カラの部屋へ振り向いて、",
       "file": "voice_aoyama_v4/n0193.wav",
       "seconds": 3.232,
-      "from": 18959,
+      "from": 19187,
       "duration": 97,
       "audioStyle": "narration"
     },
@@ -1764,7 +1775,7 @@
       "speech": "「ちょっと静かにしましょう」",
       "file": "voice_aoyama/n0194.wav",
       "seconds": 1.8346666666666667,
-      "from": 19065,
+      "from": 19293,
       "duration": 56,
       "audioStyle": "narration"
     },
@@ -1775,7 +1786,7 @@
       "speech": "と言ったそうです。",
       "file": "voice_aoyama/n0195.wav",
       "seconds": 1.4826666666666666,
-      "from": 19151,
+      "from": 19379,
       "duration": 45,
       "audioStyle": "narration"
     },
@@ -1786,7 +1797,7 @@
       "speech": "三人で、自宅の夜の様子を撮った動画を見比べました。",
       "file": "voice_aoyama_v3/n0196.wav",
       "seconds": 4.32,
-      "from": 19235,
+      "from": 19463,
       "duration": 130,
       "audioStyle": "narration"
     },
@@ -1797,7 +1808,7 @@
       "speech": "誰もいない席へ話しかけるところは同じでした。",
       "file": "voice_aoyama_v6/n0199.wav",
       "seconds": 3.264,
-      "from": 19374,
+      "from": 19602,
       "duration": 98,
       "audioStyle": "narration"
     },
@@ -1808,7 +1819,7 @@
       "speech": "エムさんは歌っていました。",
       "file": "voice_aoyama/n0200.wav",
       "seconds": 1.9093333333333333,
-      "from": 19481,
+      "from": 19709,
       "duration": 58,
       "audioStyle": "narration"
     },
@@ -1819,7 +1830,7 @@
       "speech": "音楽も伴奏もない部屋で、一曲、最後まで。",
       "file": "voice_aoyama/n0201.wav",
       "seconds": 4.288,
-      "from": 19548,
+      "from": 19776,
       "duration": 129,
       "audioStyle": "narration"
     },
@@ -1830,7 +1841,7 @@
       "speech": "歌い終わると、黙ってくうせきを見ていました。",
       "file": "voice_aoyama/n0202.wav",
       "seconds": 3.498666666666667,
-      "from": 19686,
+      "from": 19914,
       "duration": 105,
       "audioStyle": "narration"
     },
@@ -1841,7 +1852,7 @@
       "speech": "それから、照れたように頭を下げました。",
       "file": "voice_aoyama/n0203.wav",
       "seconds": 3.136,
-      "from": 19857,
+      "from": 20085,
       "duration": 95,
       "audioStyle": "narration"
     },
@@ -1852,7 +1863,7 @@
       "speech": "「昼はもう、声出えへんのに」",
       "file": "voice_aoyama_v6/n0204.wav",
       "seconds": 2.528,
-      "from": 19979,
+      "from": 20207,
       "duration": 76,
       "audioStyle": "narration"
     },
@@ -1863,7 +1874,7 @@
       "speech": "エムさんは画面を止めました。",
       "file": "voice_aoyama/n0205.wav",
       "seconds": 2.1546666666666665,
-      "from": 20064,
+      "from": 20292,
       "duration": 65,
       "audioStyle": "narration"
     },
@@ -1874,7 +1885,7 @@
       "speech": "ワイさんが、夢だと思っていた話をしました。",
       "file": "voice_aoyama/n0207.wav",
       "seconds": 3.584,
-      "from": 20138,
+      "from": 20366,
       "duration": 108,
       "audioStyle": "narration"
     },
@@ -1885,7 +1896,7 @@
       "speech": "白い仮面を着けた男と飲む夢を見る。",
       "file": "voice_aoyama/n0208.wav",
       "seconds": 2.997333333333333,
-      "from": 20255,
+      "from": 20483,
       "duration": 90,
       "audioStyle": "narration"
     },
@@ -1896,7 +1907,7 @@
       "speech": "体が大きく、肩幅が広い。",
       "file": "voice_aoyama/n0209.wav",
       "seconds": 2.933333333333333,
-      "from": 20354,
+      "from": 20582,
       "duration": 88,
       "audioStyle": "narration"
     },
@@ -1907,7 +1918,7 @@
       "speech": "いつも、隣か向かいに座っている。",
       "file": "voice_aoyama/n0210.wav",
       "seconds": 2.9226666666666667,
-      "from": 20451,
+      "from": 20679,
       "duration": 88,
       "audioStyle": "narration"
     },
@@ -1918,7 +1929,7 @@
       "speech": "「肌、灰色やろ」",
       "file": "voice_aoyama_v5/n0212.wav",
       "seconds": 2.026666666666667,
-      "from": 20548,
+      "from": 20776,
       "duration": 61,
       "audioStyle": "narration"
     },
@@ -1929,7 +1940,7 @@
       "speech": "ワイさんがうなずきました。",
       "file": "voice_aoyama/n0213.wav",
       "seconds": 1.856,
-      "from": 20618,
+      "from": 20846,
       "duration": 56,
       "audioStyle": "narration"
     },
@@ -1940,7 +1951,7 @@
       "speech": "私は何も言えませんでした。",
       "file": "voice_aoyama/n0214.wav",
       "seconds": 2.272,
-      "from": 20683,
+      "from": 20911,
       "duration": 69,
       "audioStyle": "narration"
     },
@@ -1951,19 +1962,19 @@
       "speech": "説明されるほど、知っている気がしたんです。",
       "file": "voice_aoyama/n0215.wav",
       "seconds": 3.3386666666666667,
-      "from": 20761,
+      "from": 20989,
       "duration": 101,
       "audioStyle": "narration"
     },
     {
       "id": "n0219",
       "chapter": 8,
-      "text": "会った覚えはないのに。",
-      "speech": "会った覚えはないのに。",
-      "file": "voice_aoyama/n0219.wav",
-      "seconds": 1.9093333333333333,
-      "from": 20871,
-      "duration": 58,
+      "text": "あの晩、祠の奥に立っていたものを、思い出しました。",
+      "speech": "あの晩、ほこらの奥に立っていたものを、思い出しました。",
+      "file": "voice_aoyama_v7/n0219.wav",
+      "seconds": 4.288,
+      "from": 21099,
+      "duration": 129,
       "audioStyle": "narration"
     },
     {
@@ -1973,7 +1984,7 @@
       "speech": "一度だけ、夜中に意識が戻ったことがあります。",
       "file": "voice_aoyama_v6/n0219v6a0.wav",
       "seconds": 3.7653333333333334,
-      "from": 20959,
+      "from": 21258,
       "duration": 113,
       "audioStyle": "narration"
     },
@@ -1984,7 +1995,7 @@
       "speech": "寝たはずなのに、食卓に座っていました。",
       "file": "voice_aoyama_v6/n0219v6a1.wav",
       "seconds": 3.2,
-      "from": 21081,
+      "from": 21380,
       "duration": 96,
       "audioStyle": "narration"
     },
@@ -1995,7 +2006,7 @@
       "speech": "目の前に、口を開けていない缶がありました。",
       "file": "voice_aoyama_v6/n0219v6a2.wav",
       "seconds": 3.392,
-      "from": 21186,
+      "from": 21485,
       "duration": 102,
       "audioStyle": "narration"
     },
@@ -2006,7 +2017,7 @@
       "speech": "飲みたくありませんでした。もう寝たいと思いました。",
       "file": "voice_aoyama_v6/n0219v6a3.wav",
       "seconds": 3.7013333333333334,
-      "from": 21297,
+      "from": 21596,
       "duration": 112,
       "audioStyle": "narration"
     },
@@ -2017,7 +2028,7 @@
       "speech": "すると、自分の手が缶を取りました。",
       "file": "voice_aoyama_v6/n0219v6a4.wav",
       "seconds": 3.018666666666667,
-      "from": 21439,
+      "from": 21738,
       "duration": 91,
       "audioStyle": "narration"
     },
@@ -2028,7 +2039,7 @@
       "speech": "開ける音がして、",
       "file": "voice_aoyama_v6/n0219v6a5.wav",
       "seconds": 1.4933333333333334,
-      "from": 21560,
+      "from": 21859,
       "duration": 45,
       "audioStyle": "narration"
     },
@@ -2039,7 +2050,7 @@
       "speech": "私は、笑いました。",
       "file": "voice_aoyama_v6/n0219v6a6.wav",
       "seconds": 2.1333333333333333,
-      "from": 21641,
+      "from": 21940,
       "duration": 64,
       "audioStyle": "narration"
     },
@@ -2050,7 +2061,7 @@
       "speech": "妻を呼ぼうとしたのに、口から出たのは、",
       "file": "voice_aoyama_v6/n0219v6a7.wav",
       "seconds": 3.1466666666666665,
-      "from": 21753,
+      "from": 22052,
       "duration": 95,
       "audioStyle": "narration"
     },
@@ -2061,7 +2072,7 @@
       "speech": "「もう一本、いきますか」",
       "file": "voice_aoyama_v6/n0219v6a8.wav",
       "seconds": 2.3893333333333335,
-      "from": 21863,
+      "from": 22162,
       "duration": 72,
       "audioStyle": "narration"
     },
@@ -2072,7 +2083,7 @@
       "speech": "次に分かったのは、朝、妻が肩を揺すっていることでした。",
       "file": "voice_aoyama_v6/n0219v6a9.wav",
       "seconds": 4.8853333333333335,
-      "from": 21977,
+      "from": 22276,
       "duration": 147,
       "audioStyle": "narration"
     },
@@ -2083,7 +2094,7 @@
       "speech": "エムさんの親戚に相談して、ヒトを紹介されました。",
       "file": "voice_aoyama_v5/n0220.wav",
       "seconds": 4.010666666666666,
-      "from": 22175,
+      "from": 22474,
       "duration": 121,
       "audioStyle": "narration"
     },
@@ -2094,7 +2105,7 @@
       "speech": "ここでは、エフ先生とします。",
       "file": "voice_aoyama/n0221.wav",
       "seconds": 2.6986666666666665,
-      "from": 22305,
+      "from": 22604,
       "duration": 81,
       "audioStyle": "narration"
     },
@@ -2105,7 +2116,7 @@
       "speech": "遠方からも相談者が来るカタで、普段なら何週間も待つそうです。",
       "file": "voice_aoyama_v6/n0222.wav",
       "seconds": 4.992,
-      "from": 22395,
+      "from": 22694,
       "duration": 150,
       "audioStyle": "narration"
     },
@@ -2116,7 +2127,7 @@
       "speech": "ところが、親戚が動画を送ると、その日のうちに返事が来ました。",
       "file": "voice_aoyama_v3/n0223.wav",
       "seconds": 4.981333333333334,
-      "from": 22554,
+      "from": 22853,
       "duration": 150,
       "audioStyle": "narration"
     },
@@ -2127,7 +2138,7 @@
       "speech": "三人そろって来てください、と。",
       "file": "voice_aoyama/n0225.wav",
       "seconds": 2.88,
-      "from": 22713,
+      "from": 23012,
       "duration": 87,
       "audioStyle": "narration"
     },
@@ -2138,7 +2149,7 @@
       "speech": "エフ先生は、大きな袖の白い装束に、濃い紫の袴でした。",
       "file": "voice_aoyama_v3/n0226.wav",
       "seconds": 5.397333333333333,
-      "from": 22809,
+      "from": 23108,
       "duration": 162,
       "audioStyle": "narration"
     },
@@ -2149,7 +2160,7 @@
       "speech": "胸から袖まで同じ言葉が、黒と金で、何度も書かれていました。",
       "file": "voice_aoyama_v3/n0228.wav",
       "seconds": 5.066666666666666,
-      "from": 22980,
+      "from": 23279,
       "duration": 152,
       "audioStyle": "narration"
     },
@@ -2160,7 +2171,7 @@
       "speech": "正直、来るところを間違えたかと思いました。",
       "file": "voice_aoyama/n0230.wav",
       "seconds": 3.584,
-      "from": 23141,
+      "from": 23440,
       "duration": 108,
       "audioStyle": "narration"
     },
@@ -2171,7 +2182,7 @@
       "speech": "先生は、私たちを順に見ました。",
       "file": "voice_aoyama_v5/n0255v5a0.wav",
       "seconds": 3.1146666666666665,
-      "from": 23258,
+      "from": 23557,
       "duration": 94,
       "audioStyle": "narration"
     },
@@ -2182,7 +2193,7 @@
       "speech": "「失礼ですが、三人とも窓際族ですか？」",
       "file": "voice_aoyama_v5/n0255v5a1.wav",
       "seconds": 3.7013333333333334,
-      "from": 23361,
+      "from": 23660,
       "duration": 112,
       "audioStyle": "narration"
     },
@@ -2193,7 +2204,7 @@
       "speech": "「なぜ分かったんですか？」",
       "file": "voice_aoyama_v5/n0255v5a2.wav",
       "seconds": 1.9413333333333334,
-      "from": 23482,
+      "from": 23781,
       "duration": 59,
       "audioStyle": "narration"
     },
@@ -2204,7 +2215,7 @@
       "speech": "「オーラで分かります」",
       "file": "voice_aoyama_v5/n0255v5a3.wav",
       "seconds": 1.6,
-      "from": 23550,
+      "from": 23849,
       "duration": 48,
       "audioStyle": "narration"
     },
@@ -2215,7 +2226,7 @@
       "speech": "「以前にも、窓際族のカタから相談がありました。飲まずに寝たはずなのに、毎朝二日酔いになると」",
       "file": "voice_aoyama_v6/n0255v5a4.wav",
       "seconds": 7.445333333333333,
-      "from": 23616,
+      "from": 23915,
       "duration": 224,
       "audioStyle": "narration"
     },
@@ -2226,7 +2237,7 @@
       "speech": "「仕事中は、釣りをしていたそうです」",
       "file": "voice_aoyama_v5/n0255v5a5.wav",
       "seconds": 3.082666666666667,
-      "from": 23849,
+      "from": 24148,
       "duration": 93,
       "audioStyle": "narration"
     },
@@ -2237,7 +2248,7 @@
       "speech": "ワイさんが「仲良くなれそうだ」と言いました。",
       "file": "voice_aoyama_v5/n0255v5a6.wav",
       "seconds": 3.68,
-      "from": 23951,
+      "from": 24250,
       "duration": 111,
       "audioStyle": "narration"
     },
@@ -2248,7 +2259,7 @@
       "speech": "「立っていなくていいです。どうぞ、座ってください」",
       "file": "voice_aoyama/n0233.wav",
       "seconds": 4.074666666666666,
-      "from": 24071,
+      "from": 24370,
       "duration": 123,
       "audioStyle": "narration"
     },
@@ -2259,7 +2270,7 @@
       "speech": "話を急がせず、一人ずつ、最後まで聞いてくれました。",
       "file": "voice_aoyama/n0235.wav",
       "seconds": 4.661333333333333,
-      "from": 24203,
+      "from": 24502,
       "duration": 140,
       "audioStyle": "narration"
     },
@@ -2270,7 +2281,7 @@
       "speech": "そのとき、先生の目が、私の肩の向こうで止まりました。",
       "file": "voice_aoyama_v6/n0237.wav",
       "seconds": 4.672,
-      "from": 24352,
+      "from": 24651,
       "duration": 141,
       "audioStyle": "narration"
     },
@@ -2281,7 +2292,7 @@
       "speech": "「今、後ろを振り向かないでください」",
       "file": "voice_aoyama_v5/n0238.wav",
       "seconds": 2.997333333333333,
-      "from": 24517,
+      "from": 24816,
       "duration": 90,
       "audioStyle": "narration"
     },
@@ -2292,7 +2303,7 @@
       "speech": "「……顔に、白いものを着けていますか」",
       "file": "voice_aoyama/n0240.wav",
       "seconds": 2.88,
-      "from": 24655,
+      "from": 24954,
       "duration": 87,
       "audioStyle": "narration"
     },
@@ -2303,7 +2314,7 @@
       "speech": "まだ、仮面のことは話していませんでした。",
       "file": "voice_aoyama/n0241.wav",
       "seconds": 3.2533333333333334,
-      "from": 24751,
+      "from": 25050,
       "duration": 98,
       "audioStyle": "narration"
     },
@@ -2314,7 +2325,7 @@
       "speech": "ワイさんが、はい、と答えました。",
       "file": "voice_aoyama/n0242.wav",
       "seconds": 3.2533333333333334,
-      "from": 24858,
+      "from": 25157,
       "duration": 98,
       "audioStyle": "narration"
     },
@@ -2325,7 +2336,7 @@
       "speech": "「見えている肌は、灰色ですね」",
       "file": "voice_aoyama_v5/n0243.wav",
       "seconds": 2.72,
-      "from": 24965,
+      "from": 25264,
       "duration": 82,
       "audioStyle": "narration"
     },
@@ -2336,7 +2347,7 @@
       "speech": "エムさんがうなずきました。",
       "file": "voice_aoyama/n0244.wav",
       "seconds": 1.856,
-      "from": 25071,
+      "from": 25370,
       "duration": 56,
       "audioStyle": "narration"
     },
@@ -2347,7 +2358,7 @@
       "speech": "先生は机に置いた手を引きました。椅子が、床をこすりました。",
       "file": "voice_aoyama_v6/n0245.wav",
       "seconds": 5.045333333333334,
-      "from": 25136,
+      "from": 25435,
       "duration": 152,
       "audioStyle": "narration"
     },
@@ -2358,7 +2369,7 @@
       "speech": "「今、そこにいるんですか」",
       "file": "voice_aoyama/n0246.wav",
       "seconds": 2.3253333333333335,
-      "from": 25318,
+      "from": 25617,
       "duration": 70,
       "audioStyle": "narration"
     },
@@ -2369,7 +2380,7 @@
       "speech": "「ずっと見えるわけではありません。今は肩と、顔の一部だけです」",
       "file": "voice_aoyama/n0248.wav",
       "seconds": 4.928,
-      "from": 25397,
+      "from": 25696,
       "duration": 148,
       "audioStyle": "narration"
     },
@@ -2380,7 +2391,7 @@
       "speech": "「今は、もう見えません」",
       "file": "voice_aoyama_v6/n0248v6a0.wav",
       "seconds": 2.2186666666666666,
-      "from": 25581,
+      "from": 25880,
       "duration": 67,
       "audioStyle": "narration"
     },
@@ -2391,7 +2402,7 @@
       "speech": "先生は、さっき手を置いていた場所を見たままでした。",
       "file": "voice_aoyama_v6/n0248v6a1.wav",
       "seconds": 3.904,
-      "from": 25684,
+      "from": 25983,
       "duration": 118,
       "audioStyle": "narration"
     },
@@ -2402,7 +2413,7 @@
       "speech": "「そばや、というものの話を聞いたことがあります」",
       "file": "voice_aoyama/n0251.wav",
       "seconds": 3.776,
-      "from": 25811,
+      "from": 26110,
       "duration": 114,
       "audioStyle": "narration"
     },
@@ -2413,7 +2424,7 @@
       "speech": "「そう呼ばれていたものと、同じかもしれません」",
       "file": "voice_aoyama_v6/n0253.wav",
       "seconds": 3.3066666666666666,
-      "from": 25934,
+      "from": 26233,
       "duration": 100,
       "audioStyle": "narration"
     },
@@ -2424,7 +2435,7 @@
       "speech": "「あれは、たちが悪い。こちらが弱っていても、やめないんです」",
       "file": "voice_aoyama_v6/n0255.wav",
       "seconds": 5.109333333333334,
-      "from": 26043,
+      "from": 26342,
       "duration": 154,
       "audioStyle": "narration"
     },
@@ -2435,7 +2446,7 @@
       "speech": "「そばやは、窓際族を好むそうです。相手を選んで、夜ごと飲ませる」",
       "file": "voice_aoyama_v6/n0255v5a7.wav",
       "seconds": 5.866666666666666,
-      "from": 26206,
+      "from": 26505,
       "duration": 176,
       "audioStyle": "narration"
     },
@@ -2446,7 +2457,7 @@
       "speech": "エフ先生はカンリニンと連絡を取りました。",
       "file": "voice_aoyama_v3/n0256.wav",
       "seconds": 3.072,
-      "from": 26421,
+      "from": 26720,
       "duration": 93,
       "audioStyle": "narration"
     },
@@ -2457,7 +2468,7 @@
       "speech": "二日後、前任者から引き継いだ写真と手帳を見せられました。",
       "file": "voice_aoyama_v6/n0258.wav",
       "seconds": 4.522666666666667,
-      "from": 26523,
+      "from": 26822,
       "duration": 136,
       "audioStyle": "narration"
     },
@@ -2468,7 +2479,7 @@
       "speech": "写真のほこらには、私たちが壊した器があり、中に酒が入っていました。",
       "file": "voice_aoyama_v3/n0262.wav",
       "seconds": 5.9093333333333335,
-      "from": 26668,
+      "from": 26967,
       "duration": 178,
       "audioStyle": "narration"
     },
@@ -2479,7 +2490,7 @@
       "speech": "手帳には、同じ注意が何度もありました。",
       "file": "voice_aoyama_v3/n0264.wav",
       "seconds": 3.36,
-      "from": 26855,
+      "from": 27154,
       "duration": 101,
       "audioStyle": "narration"
     },
@@ -2490,7 +2501,7 @@
       "speech": "客のサカズキを、欠かさないこと。",
       "file": "voice_aoyama_v5/n0265.wav",
       "seconds": 2.784,
-      "from": 26965,
+      "from": 27264,
       "duration": 84,
       "audioStyle": "narration"
     },
@@ -2501,7 +2512,7 @@
       "speech": "カンリニンは、供え物の決まりだと思って守っていたそうです。",
       "file": "voice_aoyama_v3/n0266.wav",
       "seconds": 4.426666666666667,
-      "from": 27079,
+      "from": 27378,
       "duration": 133,
       "audioStyle": "narration"
     },
@@ -2512,7 +2523,7 @@
       "speech": "「ほこらを壊したあと、何か話しかけましたか」",
       "file": "voice_aoyama/n0271.wav",
       "seconds": 3.52,
-      "from": 27221,
+      "from": 27520,
       "duration": 106,
       "audioStyle": "narration"
     },
@@ -2523,7 +2534,7 @@
       "speech": "ほこらの録画を、最初から見てもらいました。",
       "file": "voice_aoyama_v6/n0272.wav",
       "seconds": 3.2533333333333334,
-      "from": 27336,
+      "from": 27635,
       "duration": 98,
       "audioStyle": "narration"
     },
@@ -2534,7 +2545,7 @@
       "speech": "一緒に飲もうや。",
       "file": "voice_aoyama/n0273.wav",
       "seconds": 1.5786666666666667,
-      "from": 27443,
+      "from": 27742,
       "duration": 48,
       "audioStyle": "recording"
     },
@@ -2545,7 +2556,7 @@
       "speech": "今日は潰れるまで付き合いますよ。",
       "file": "voice_aoyama/n0274.wav",
       "seconds": 2.368,
-      "from": 27500,
+      "from": 27799,
       "duration": 72,
       "audioStyle": "recording"
     },
@@ -2556,7 +2567,7 @@
       "speech": "先生は、そこで止めました。",
       "file": "voice_aoyama/n0275.wav",
       "seconds": 2.528,
-      "from": 27581,
+      "from": 27880,
       "duration": 76,
       "audioStyle": "narration"
     },
@@ -2567,7 +2578,7 @@
       "speech": "「器を壊したあとで、客として誘ったんですね」",
       "file": "voice_aoyama_v6/n0276.wav",
       "seconds": 3.6586666666666665,
-      "from": 27666,
+      "from": 27965,
       "duration": 110,
       "audioStyle": "narration"
     },
@@ -2578,7 +2589,7 @@
       "speech": "私は、毎晩飲んでいるのに、なぜ終わらないのか聞きました。",
       "file": "voice_aoyama/n0277.wav",
       "seconds": 4.650666666666667,
-      "from": 27785,
+      "from": 28084,
       "duration": 140,
       "audioStyle": "narration"
     },
@@ -2589,7 +2600,7 @@
       "speech": "先生は、妻が撮った動画を再生しました。",
       "file": "voice_aoyama/n0278.wav",
       "seconds": 3.648,
-      "from": 27934,
+      "from": 28233,
       "duration": 110,
       "audioStyle": "narration"
     },
@@ -2600,7 +2611,7 @@
       "speech": "私がくうせきへ缶を差し出しているところでした。",
       "file": "voice_aoyama/n0279.wav",
       "seconds": 3.3173333333333335,
-      "from": 28053,
+      "from": 28352,
       "duration": 100,
       "audioStyle": "narration"
     },
@@ -2611,7 +2622,7 @@
       "speech": "「受け取ってもらえていませんね」",
       "file": "voice_aoyama/n0280.wav",
       "seconds": 2.1013333333333333,
-      "from": 28162,
+      "from": 28461,
       "duration": 64,
       "audioStyle": "narration"
     },
@@ -2622,7 +2633,7 @@
       "speech": "「あちらの器がない。アナタガタだけが潰れるので、宴会が終わらないんでしょう」",
       "file": "voice_aoyama_v6/n0283.wav",
       "seconds": 5.866666666666666,
-      "from": 28250,
+      "from": 28549,
       "duration": 176,
       "audioStyle": "narration"
     },
@@ -2633,7 +2644,7 @@
       "speech": "「飲んでもろうたら、終わるんですか」",
       "file": "voice_aoyama/n0285.wav",
       "seconds": 2.7413333333333334,
-      "from": 28435,
+      "from": 28734,
       "duration": 83,
       "audioStyle": "narration"
     },
@@ -2644,7 +2655,7 @@
       "speech": "「前の相談者は、専用のサカズキを用意して、最後まで付き合った。それで来なくなりました」",
       "file": "voice_aoyama_v6/n0286.wav",
       "seconds": 6.944,
-      "from": 28527,
+      "from": 28826,
       "duration": 209,
       "audioStyle": "narration"
     },
@@ -2655,7 +2666,7 @@
       "speech": "「ただ、帰ったかどうかは、私だけでは判断できません」",
       "file": "voice_aoyama_v6/n0288.wav",
       "seconds": 4.608,
-      "from": 28745,
+      "from": 29044,
       "duration": 139,
       "audioStyle": "narration"
     },
@@ -2666,7 +2677,7 @@
       "speech": "「見えるアナタガタが、最後まで確かめる必要があります」",
       "file": "voice_aoyama_v6/n0288v6a0.wav",
       "seconds": 4.064,
-      "from": 28893,
+      "from": 29192,
       "duration": 122,
       "audioStyle": "narration"
     },
@@ -2677,7 +2688,7 @@
       "speech": "エムさんが、お祓いだけでは駄目なのかと聞きました。",
       "file": "voice_aoyama/n0292.wav",
       "seconds": 3.68,
-      "from": 29093,
+      "from": 29392,
       "duration": 111,
       "audioStyle": "narration"
     },
@@ -2688,7 +2699,7 @@
       "speech": "「離しても、また呼びに来ます。今度は、終わらせないと」",
       "file": "voice_aoyama_v6/n0293.wav",
       "seconds": 4.864,
-      "from": 29213,
+      "from": 29512,
       "duration": 146,
       "audioStyle": "narration"
     },
@@ -2699,7 +2710,7 @@
       "speech": "用意したのは、大きなメガジョッキでした。",
       "file": "voice_aoyama/n0296.wav",
       "seconds": 3.168,
-      "from": 29368,
+      "from": 29667,
       "duration": 96,
       "audioStyle": "narration"
     },
@@ -2710,7 +2721,7 @@
       "speech": "壊した器に近い大きさのものを、四つそろえました。",
       "file": "voice_aoyama_v6/n0297.wav",
       "seconds": 4.266666666666667,
-      "from": 29473,
+      "from": 29772,
       "duration": 128,
       "audioStyle": "narration"
     },
@@ -2721,7 +2732,7 @@
       "speech": "三人分と、そばやの分。",
       "file": "voice_aoyama/n0298.wav",
       "seconds": 2.656,
-      "from": 29610,
+      "from": 29909,
       "duration": 80,
       "audioStyle": "narration"
     },
@@ -2732,7 +2743,7 @@
       "speech": "エフ先生の分は、ありません。",
       "file": "voice_aoyama_v6/n0298v6a0.wav",
       "seconds": 2.752,
-      "from": 29699,
+      "from": 29998,
       "duration": 83,
       "audioStyle": "narration"
     },
@@ -2743,7 +2754,7 @@
       "speech": "修理の済んだほこらと集会所を使わせてもらうことになりました。",
       "file": "voice_aoyama/n0301.wav",
       "seconds": 4.245333333333333,
-      "from": 29791,
+      "from": 30090,
       "duration": 128,
       "audioStyle": "narration"
     },
@@ -2754,7 +2765,7 @@
       "speech": "村へ戻ったのは、夕方でした。",
       "file": "voice_aoyama/n0303.wav",
       "seconds": 2.816,
-      "from": 29928,
+      "from": 30227,
       "duration": 85,
       "audioStyle": "narration"
     },
@@ -2765,7 +2776,7 @@
       "speech": "カンリニンが鍵を置いて帰ると、急に静かになりました。",
       "file": "voice_aoyama_v3/n0304.wav",
       "seconds": 4.074666666666666,
-      "from": 30022,
+      "from": 30321,
       "duration": 123,
       "audioStyle": "narration"
     },
@@ -2776,7 +2787,7 @@
       "speech": "机の片側に私たち三人。",
       "file": "voice_aoyama/n0305.wav",
       "seconds": 2.570666666666667,
-      "from": 30154,
+      "from": 30453,
       "duration": 78,
       "audioStyle": "narration"
     },
@@ -2787,7 +2798,7 @@
       "speech": "向かいに一席。",
       "file": "voice_aoyama/n0306.wav",
       "seconds": 1.4293333333333333,
-      "from": 30241,
+      "from": 30540,
       "duration": 43,
       "audioStyle": "narration"
     },
@@ -2798,7 +2809,7 @@
       "speech": "四つ目のジョッキを、そこへ置きました。",
       "file": "voice_aoyama/n0307.wav",
       "seconds": 3.072,
-      "from": 30293,
+      "from": 30592,
       "duration": 93,
       "audioStyle": "narration"
     },
@@ -2809,7 +2820,7 @@
       "speech": "エフ先生は壁際に座りました。",
       "file": "voice_aoyama/n0308.wav",
       "seconds": 2.6346666666666665,
-      "from": 30422,
+      "from": 30721,
       "duration": 80,
       "audioStyle": "narration"
     },
@@ -2820,7 +2831,7 @@
       "speech": "「私に見えないときは、教えてください。まだ座っているのか、何をしているのか」",
       "file": "voice_aoyama_v6/n0309.wav",
       "seconds": 6.272,
-      "from": 30511,
+      "from": 30810,
       "duration": 189,
       "audioStyle": "narration"
     },
@@ -2831,7 +2842,7 @@
       "speech": "私たちは、四つのジョッキにビールを注ぎました。",
       "file": "voice_aoyama/n0311.wav",
       "seconds": 3.712,
-      "from": 30709,
+      "from": 31008,
       "duration": 112,
       "audioStyle": "narration"
     },
@@ -2842,7 +2853,7 @@
       "speech": "しばらく、何も起きませんでした。",
       "file": "voice_aoyama/n0312.wav",
       "seconds": 2.944,
-      "from": 30875,
+      "from": 31174,
       "duration": 89,
       "audioStyle": "narration"
     },
@@ -2853,7 +2864,7 @@
       "speech": "冷蔵庫が鳴りました。",
       "file": "voice_aoyama/n0313.wav",
       "seconds": 1.8133333333333332,
-      "from": 30994,
+      "from": 31293,
       "duration": 55,
       "audioStyle": "narration"
     },
@@ -2864,7 +2875,7 @@
       "speech": "どこかで、窓枠がきしみました。",
       "file": "voice_aoyama/n0314.wav",
       "seconds": 2.7733333333333334,
-      "from": 31079,
+      "from": 31378,
       "duration": 84,
       "audioStyle": "narration"
     },
@@ -2875,7 +2886,7 @@
       "speech": "ワイさんがくうせきを見たまま動かなくなりました。",
       "file": "voice_aoyama/n0315.wav",
       "seconds": 3.1573333333333333,
-      "from": 31199,
+      "from": 31498,
       "duration": 95,
       "audioStyle": "narration"
     },
@@ -2886,19 +2897,19 @@
       "speech": "エムさんが、机の下で私の膝をつかみました。",
       "file": "voice_aoyama/n0316.wav",
       "seconds": 3.8186666666666667,
-      "from": 31303,
+      "from": 31602,
       "duration": 115,
       "audioStyle": "narration"
     },
     {
       "id": "n0317",
       "chapter": 12,
-      "text": "私にも、見えました。",
-      "speech": "私にも、見えました。",
-      "file": "voice_aoyama_v6/n0317.wav",
-      "seconds": 2.2186666666666666,
-      "from": 31460,
-      "duration": 67,
+      "text": "今度は、はっきり見えました。",
+      "speech": "今度は、はっきり見えました。",
+      "file": "voice_aoyama_v7/n0317.wav",
+      "seconds": 2.496,
+      "from": 31759,
+      "duration": 75,
       "audioStyle": "narration"
     },
     {
@@ -2908,7 +2919,7 @@
       "speech": "いつからいたのか分かりません。",
       "file": "voice_aoyama/n0318.wav",
       "seconds": 2.0906666666666665,
-      "from": 31663,
+      "from": 31970,
       "duration": 63,
       "audioStyle": "narration"
     },
@@ -2919,7 +2930,7 @@
       "speech": "白い半袖の服。太い腕も、首も、肌は灰色でした。",
       "file": "voice_aoyama_v6/n0320.wav",
       "seconds": 5.248,
-      "from": 31735,
+      "from": 32042,
       "duration": 158,
       "audioStyle": "narration"
     },
@@ -2930,7 +2941,7 @@
       "speech": "見た途端、思い出しました。",
       "file": "voice_aoyama/n0322.wav",
       "seconds": 2.453333333333333,
-      "from": 31902,
+      "from": 32209,
       "duration": 74,
       "audioStyle": "narration"
     },
@@ -2941,7 +2952,7 @@
       "speech": "家でも、この姿を見ていました。毎晩です。",
       "file": "voice_aoyama_v6/n0323.wav",
       "seconds": 3.936,
-      "from": 31985,
+      "from": 32292,
       "duration": 119,
       "audioStyle": "narration"
     },
@@ -2952,7 +2963,7 @@
       "speech": "待たせたら悪い。そう思って、寝室から出ていたんです。",
       "file": "voice_aoyama_v6/n0324.wav",
       "seconds": 4.693333333333333,
-      "from": 32113,
+      "from": 32420,
       "duration": 141,
       "audioStyle": "narration"
     },
@@ -2963,7 +2974,7 @@
       "speech": "「来ましたか」",
       "file": "voice_aoyama/n0325.wav",
       "seconds": 1.1626666666666667,
-      "from": 32296,
+      "from": 32603,
       "duration": 35,
       "audioStyle": "narration"
     },
@@ -2974,7 +2985,7 @@
       "speech": "「どこにいますか」",
       "file": "voice_aoyama_v6/n0328.wav",
       "seconds": 1.3973333333333333,
-      "from": 32340,
+      "from": 32647,
       "duration": 42,
       "audioStyle": "narration"
     },
@@ -2985,7 +2996,7 @@
       "speech": "ワイさんが正面を指しました。",
       "file": "voice_aoyama/n0329.wav",
       "seconds": 2.2933333333333334,
-      "from": 32412,
+      "from": 32719,
       "duration": 69,
       "audioStyle": "narration"
     },
@@ -2996,7 +3007,7 @@
       "speech": "そばやが、四つ目のジョッキに触れました。",
       "file": "voice_aoyama/n0331.wav",
       "seconds": 3.2,
-      "from": 32490,
+      "from": 32797,
       "duration": 96,
       "audioStyle": "narration"
     },
@@ -3007,7 +3018,7 @@
       "speech": "すぐには持ちませんでした。",
       "file": "voice_aoyama/n0332.wav",
       "seconds": 2.005333333333333,
-      "from": 32595,
+      "from": 32902,
       "duration": 61,
       "audioStyle": "narration"
     },
@@ -3018,7 +3029,7 @@
       "speech": "私たちも、動けませんでした。",
       "file": "voice_aoyama_v6/n0332v6a0.wav",
       "seconds": 2.6666666666666665,
-      "from": 32692,
+      "from": 32999,
       "duration": 80,
       "audioStyle": "narration"
     },
@@ -3029,7 +3040,7 @@
       "speech": "指が取っ手を、一周、なぞりました。",
       "file": "voice_aoyama_v6/n0333.wav",
       "seconds": 3.509333333333333,
-      "from": 32781,
+      "from": 33088,
       "duration": 106,
       "audioStyle": "narration"
     },
@@ -3040,7 +3051,7 @@
       "speech": "今度は、指が取っ手に掛かりました。",
       "file": "voice_aoyama/n0337.wav",
       "seconds": 2.976,
-      "from": 32935,
+      "from": 33242,
       "duration": 90,
       "audioStyle": "narration"
     },
@@ -3051,7 +3062,7 @@
       "speech": "ジョッキが持ち上がりました。",
       "file": "voice_aoyama/n0338.wav",
       "seconds": 1.9733333333333334,
-      "from": 33034,
+      "from": 33341,
       "duration": 60,
       "audioStyle": "narration"
     },
@@ -3062,7 +3073,7 @@
       "speech": "私たちも持ちました。",
       "file": "voice_aoyama/n0339.wav",
       "seconds": 1.76,
-      "from": 33154,
+      "from": 33461,
       "duration": 53,
       "audioStyle": "narration"
     },
@@ -3073,7 +3084,7 @@
       "speech": "四つのジョッキが当たりました。",
       "file": "voice_aoyama/n0340.wav",
       "seconds": 2.176,
-      "from": 33216,
+      "from": 33523,
       "duration": 66,
       "audioStyle": "narration"
     },
@@ -3084,7 +3095,7 @@
       "speech": "仮面を着けたまま、ジョッキを傾けました。",
       "file": "voice_aoyama_v6/n0341.wav",
       "seconds": 3.2533333333333334,
-      "from": 33291,
+      "from": 33598,
       "duration": 98,
       "audioStyle": "narration"
     },
@@ -3095,7 +3106,7 @@
       "speech": "中身が減っていました。",
       "file": "voice_aoyama/n0344.wav",
       "seconds": 1.7706666666666666,
-      "from": 33398,
+      "from": 33705,
       "duration": 54,
       "audioStyle": "narration"
     },
@@ -3106,7 +3117,7 @@
       "speech": "エフ先生の位置からは、そばやの姿は見えていなかったそうです。",
       "file": "voice_aoyama/n0346.wav",
       "seconds": 4.64,
-      "from": 33482,
+      "from": 33789,
       "duration": 140,
       "audioStyle": "narration"
     },
@@ -3117,7 +3128,7 @@
       "speech": "カラの席でジョッキだけが傾くのを、見ていたそうです。",
       "file": "voice_aoyama_v6/n0347.wav",
       "seconds": 4.053333333333334,
-      "from": 33631,
+      "from": 33938,
       "duration": 122,
       "audioStyle": "narration"
     },
@@ -3128,7 +3139,7 @@
       "speech": "最初は、怖くて味が分かりませんでした。",
       "file": "voice_aoyama/n0349.wav",
       "seconds": 3.392,
-      "from": 33762,
+      "from": 34069,
       "duration": 102,
       "audioStyle": "narration"
     },
@@ -3139,7 +3150,7 @@
       "speech": "誰かが自分の分を注ぐときには、そばやの分も注ぐ。",
       "file": "voice_aoyama/n0351.wav",
       "seconds": 4.362666666666667,
-      "from": 33873,
+      "from": 34180,
       "duration": 131,
       "audioStyle": "narration"
     },
@@ -3150,7 +3161,7 @@
       "speech": "途中から、そばやが笑い始めました。低く、喉の奥で空気が震える声でした。",
       "file": "voice_aoyama_v6/n0352.wav",
       "seconds": 6.442666666666667,
-      "from": 34013,
+      "from": 34320,
       "duration": 194,
       "audioStyle": "narration"
     },
@@ -3161,7 +3172,7 @@
       "speech": "妻の動画には、入っていなかった声です。",
       "file": "voice_aoyama_v6/n0355.wav",
       "seconds": 3.3493333333333335,
-      "from": 34216,
+      "from": 34523,
       "duration": 101,
       "audioStyle": "narration"
     },
@@ -3172,7 +3183,7 @@
       "speech": "そばやがワイさんを見ました。",
       "file": "voice_aoyama/n0356.wav",
       "seconds": 2.1226666666666665,
-      "from": 34326,
+      "from": 34633,
       "duration": 64,
       "audioStyle": "narration"
     },
@@ -3183,7 +3194,7 @@
       "speech": "ワイさんは首を振りました。",
       "file": "voice_aoyama/n0357.wav",
       "seconds": 2.048,
-      "from": 34399,
+      "from": 34706,
       "duration": 62,
       "audioStyle": "narration"
     },
@@ -3194,7 +3205,7 @@
       "speech": "「今日は、ギターないんです」",
       "file": "voice_aoyama/n0358.wav",
       "seconds": 2.336,
-      "from": 34470,
+      "from": 34777,
       "duration": 71,
       "audioStyle": "narration"
     },
@@ -3205,7 +3216,7 @@
       "speech": "白い仮面が、しばらくワイさんへ向いていました。",
       "file": "voice_aoyama/n0359.wav",
       "seconds": 3.68,
-      "from": 34550,
+      "from": 34857,
       "duration": 111,
       "audioStyle": "narration"
     },
@@ -3216,7 +3227,7 @@
       "speech": "やがて、隣のエムさんへ向きました。",
       "file": "voice_aoyama/n0360.wav",
       "seconds": 3.029333333333333,
-      "from": 34697,
+      "from": 35004,
       "duration": 91,
       "audioStyle": "narration"
     },
@@ -3227,7 +3238,7 @@
       "speech": "エムさんが歌い始めました。",
       "file": "voice_aoyama_v6/n0362.wav",
       "seconds": 2.058666666666667,
-      "from": 34797,
+      "from": 35104,
       "duration": 62,
       "audioStyle": "narration"
     },
@@ -3238,7 +3249,7 @@
       "speech": "声がかすれ、何度か途中で切れました。",
       "file": "voice_aoyama/n0364.wav",
       "seconds": 3.1466666666666665,
-      "from": 34868,
+      "from": 35175,
       "duration": 95,
       "audioStyle": "narration"
     },
@@ -3249,7 +3260,7 @@
       "speech": "それでも、うまかった。",
       "file": "voice_aoyama/n0365.wav",
       "seconds": 2.1866666666666665,
-      "from": 34972,
+      "from": 35279,
       "duration": 66,
       "audioStyle": "narration"
     },
@@ -3260,7 +3271,7 @@
       "speech": "そばやは、じっと聞いていました。",
       "file": "voice_aoyama/n0366.wav",
       "seconds": 2.6666666666666665,
-      "from": 35047,
+      "from": 35354,
       "duration": 80,
       "audioStyle": "narration"
     },
@@ -3271,7 +3282,7 @@
       "speech": "歌い終わると、太い手を打ち合わせました。",
       "file": "voice_aoyama/n0367.wav",
       "seconds": 3.2426666666666666,
-      "from": 35157,
+      "from": 35464,
       "duration": 98,
       "audioStyle": "narration"
     },
@@ -3282,7 +3293,7 @@
       "speech": "エムさんは、あの動画と同じ間を置いて、頭を下げました。",
       "file": "voice_aoyama_v6/n0368.wav",
       "seconds": 4.736,
-      "from": 35273,
+      "from": 35580,
       "duration": 143,
       "audioStyle": "narration"
     },
@@ -3293,7 +3304,7 @@
       "speech": "時間が分からなくなりました。",
       "file": "voice_aoyama/n0370.wav",
       "seconds": 2.1546666666666665,
-      "from": 35482,
+      "from": 35789,
       "duration": 65,
       "audioStyle": "narration"
     },
@@ -3304,7 +3315,7 @@
       "speech": "エムさんが「電話が来た」と言って立ちました。",
       "file": "voice_aoyama_v5/n0371.wav",
       "seconds": 3.7013333333333334,
-      "from": 35556,
+      "from": 35863,
       "duration": 112,
       "audioStyle": "narration"
     },
@@ -3315,7 +3326,7 @@
       "speech": "スマホは、私の前に置いたままでした。",
       "file": "voice_aoyama_v5/n0371v5r1.wav",
       "seconds": 3.2213333333333334,
-      "from": 35677,
+      "from": 35984,
       "duration": 97,
       "audioStyle": "narration"
     },
@@ -3326,7 +3337,7 @@
       "speech": "そばやが手を伸ばしました。",
       "file": "voice_aoyama/n0373.wav",
       "seconds": 2.016,
-      "from": 35783,
+      "from": 36090,
       "duration": 61,
       "audioStyle": "narration"
     },
@@ -3337,7 +3348,7 @@
       "speech": "エムさんのジョッキを、少しだけ手前へ寄せました。",
       "file": "voice_aoyama/n0375.wav",
       "seconds": 3.509333333333333,
-      "from": 35853,
+      "from": 36160,
       "duration": 106,
       "audioStyle": "narration"
     },
@@ -3348,7 +3359,7 @@
       "speech": "エムさんが座り直しました。",
       "file": "voice_aoyama/n0376.wav",
       "seconds": 2.112,
-      "from": 36001,
+      "from": 36308,
       "duration": 64,
       "audioStyle": "narration"
     },
@@ -3359,7 +3370,7 @@
       "speech": "「今、何をされましたか」と、先生が聞きました。",
       "file": "voice_aoyama_v6/n0377.wav",
       "seconds": 4.533333333333333,
-      "from": 36074,
+      "from": 36381,
       "duration": 136,
       "audioStyle": "narration"
     },
@@ -3370,7 +3381,7 @@
       "speech": "先生には、その手が見えていませんでした。",
       "file": "voice_aoyama/n0380.wav",
       "seconds": 3.36,
-      "from": 36219,
+      "from": 36526,
       "duration": 101,
       "audioStyle": "narration"
     },
@@ -3381,7 +3392,7 @@
       "speech": "エムさんが泣き始めました。",
       "file": "voice_aoyama/n0381.wav",
       "seconds": 2.026666666666667,
-      "from": 36344,
+      "from": 36651,
       "duration": 61,
       "audioStyle": "narration"
     },
@@ -3392,7 +3403,7 @@
       "speech": "「もう、しんどいんよ」",
       "file": "voice_aoyama/n0382.wav",
       "seconds": 2.1013333333333333,
-      "from": 36414,
+      "from": 36721,
       "duration": 64,
       "audioStyle": "narration"
     },
@@ -3403,7 +3414,7 @@
       "speech": "「仕事も行かれへんし。家でも寝られへんし」",
       "file": "voice_aoyama/n0384.wav",
       "seconds": 3.509333333333333,
-      "from": 36487,
+      "from": 36794,
       "duration": 106,
       "audioStyle": "narration"
     },
@@ -3414,7 +3425,7 @@
       "speech": "太い手が、エムさんの肩を二度、叩きました。",
       "file": "voice_aoyama_v6/n0385.wav",
       "seconds": 3.8186666666666667,
-      "from": 36602,
+      "from": 36909,
       "duration": 115,
       "audioStyle": "narration"
     },
@@ -3425,7 +3436,7 @@
       "speech": "エムさんは、泣きながら笑いました。私には、その顔を見ていられませんでした。",
       "file": "voice_aoyama_v6/n0385v6a0.wav",
       "seconds": 5.952,
-      "from": 36726,
+      "from": 37033,
       "duration": 179,
       "audioStyle": "narration"
     },
@@ -3436,7 +3447,7 @@
       "speech": "エムさんはジョッキを戻すと、そのまま突っ伏しました。",
       "file": "voice_aoyama_v3/n0390.wav",
       "seconds": 3.7333333333333334,
-      "from": 36935,
+      "from": 37242,
       "duration": 112,
       "audioStyle": "narration"
     },
@@ -3447,7 +3458,7 @@
       "speech": "先生が近づいて、様子を確かめました。",
       "file": "voice_aoyama/n0391.wav",
       "seconds": 3.456,
-      "from": 37056,
+      "from": 37363,
       "duration": 104,
       "audioStyle": "narration"
     },
@@ -3458,7 +3469,7 @@
       "speech": "そばやが先生を見ました。",
       "file": "voice_aoyama/n0392.wav",
       "seconds": 2.1546666666666665,
-      "from": 37169,
+      "from": 37476,
       "duration": 65,
       "audioStyle": "narration"
     },
@@ -3469,7 +3480,7 @@
       "speech": "先生の動きが、一瞬止まりました。",
       "file": "voice_aoyama/n0393.wav",
       "seconds": 3.2,
-      "from": 37243,
+      "from": 37550,
       "duration": 96,
       "audioStyle": "narration"
     },
@@ -3480,7 +3491,7 @@
       "speech": "後から聞くと、その瞬間だけ、先生にも仮面が見えたそうです。",
       "file": "voice_aoyama_v6/n0394.wav",
       "seconds": 5.184,
-      "from": 37381,
+      "from": 37688,
       "duration": 156,
       "audioStyle": "narration"
     },
@@ -3491,7 +3502,7 @@
       "speech": "先生はエムさんを支えて、横の布団へ寝かせました。",
       "file": "voice_aoyama/n0395.wav",
       "seconds": 4.181333333333333,
-      "from": 37546,
+      "from": 37853,
       "duration": 126,
       "audioStyle": "narration"
     },
@@ -3502,7 +3513,7 @@
       "speech": "今度は、そばやは止めませんでした。",
       "file": "voice_aoyama/n0396.wav",
       "seconds": 2.965333333333333,
-      "from": 37681,
+      "from": 37988,
       "duration": 89,
       "audioStyle": "narration"
     },
@@ -3513,7 +3524,7 @@
       "speech": "ワイさんは何度も「すみません」と繰り返していました。",
       "file": "voice_aoyama_v6/n0405.wav",
       "seconds": 4.298666666666667,
-      "from": 37830,
+      "from": 38137,
       "duration": 129,
       "audioStyle": "narration"
     },
@@ -3524,7 +3535,7 @@
       "speech": "その声が途切れ、椅子にもたれました。",
       "file": "voice_aoyama_v6/n0406.wav",
       "seconds": 3.082666666666667,
-      "from": 37968,
+      "from": 38275,
       "duration": 93,
       "audioStyle": "narration"
     },
@@ -3535,7 +3546,7 @@
       "speech": "先生が支え、エムさんの隣へ寝かせました。",
       "file": "voice_aoyama/n0407.wav",
       "seconds": 3.8293333333333335,
-      "from": 38070,
+      "from": 38377,
       "duration": 115,
       "audioStyle": "narration"
     },
@@ -3546,7 +3557,7 @@
       "speech": "私だけになりました。",
       "file": "voice_aoyama/n0408.wav",
       "seconds": 1.728,
-      "from": 38194,
+      "from": 38501,
       "duration": 52,
       "audioStyle": "narration"
     },
@@ -3557,7 +3568,7 @@
       "speech": "先生に、今どんな様子ですか、と聞かれました。",
       "file": "voice_aoyama_v6/n0408v6a0.wav",
       "seconds": 4.117333333333334,
-      "from": 38282,
+      "from": 38589,
       "duration": 124,
       "audioStyle": "narration"
     },
@@ -3568,7 +3579,7 @@
       "speech": "返事をする前に、そばやがジョッキを私の方へ寄せました。",
       "file": "voice_aoyama_v6/n0408v6a1.wav",
       "seconds": 4.405333333333333,
-      "from": 38415,
+      "from": 38722,
       "duration": 133,
       "audioStyle": "narration"
     },
@@ -3579,7 +3590,7 @@
       "speech": "そばやも、肩を落とし、仮面が少し前へ傾いていました。",
       "file": "voice_aoyama_v6/n0409.wav",
       "seconds": 4.874666666666666,
-      "from": 38557,
+      "from": 38864,
       "duration": 147,
       "audioStyle": "narration"
     },
@@ -3590,7 +3601,7 @@
       "speech": "ジョッキを置こうとして、一度、机の縁にぶつけました。",
       "file": "voice_aoyama/n0411.wav",
       "seconds": 4.330666666666667,
-      "from": 38713,
+      "from": 39020,
       "duration": 130,
       "audioStyle": "narration"
     },
@@ -3601,7 +3612,7 @@
       "speech": "「家には、来ないでください」",
       "file": "voice_aoyama/n0415.wav",
       "seconds": 2.2826666666666666,
-      "from": 38873,
+      "from": 39180,
       "duration": 69,
       "audioStyle": "narration"
     },
@@ -3612,7 +3623,7 @@
       "speech": "白い仮面が、こちらを向きました。",
       "file": "voice_aoyama/n0416.wav",
       "seconds": 2.9013333333333335,
-      "from": 38984,
+      "from": 39291,
       "duration": 88,
       "audioStyle": "narration"
     },
@@ -3623,7 +3634,7 @@
       "speech": "「妻が怖がるんです」",
       "file": "voice_aoyama/n0417.wav",
       "seconds": 1.8026666666666666,
-      "from": 39081,
+      "from": 39388,
       "duration": 55,
       "audioStyle": "narration"
     },
@@ -3634,7 +3645,7 @@
       "speech": "返事はありませんでした。取っ手を持つ指が、少し緩んだだけでした。",
       "file": "voice_aoyama_v6/n0417v6a0.wav",
       "seconds": 5.0986666666666665,
-      "from": 39166,
+      "from": 39473,
       "duration": 153,
       "audioStyle": "narration"
     },
@@ -3645,7 +3656,7 @@
       "speech": "そばやが、残ったビールを飲みました。",
       "file": "voice_aoyama_v6/n0419.wav",
       "seconds": 2.9546666666666668,
-      "from": 39355,
+      "from": 39662,
       "duration": 89,
       "audioStyle": "narration"
     },
@@ -3656,7 +3667,7 @@
       "speech": "カラになったジョッキが、机に当たりました。",
       "file": "voice_aoyama_v4/n0421.wav",
       "seconds": 3.2,
-      "from": 39453,
+      "from": 39760,
       "duration": 96,
       "audioStyle": "narration"
     },
@@ -3667,7 +3678,7 @@
       "speech": "「ごちそうさまでした」",
       "file": "voice_aoyama/n0422.wav",
       "seconds": 1.6213333333333333,
-      "from": 39579,
+      "from": 39886,
       "duration": 49,
       "audioStyle": "narration"
     },
@@ -3678,7 +3689,7 @@
       "speech": "そばやは太い腕を机に置き、その上へ、ゆっくり頭を伏せました。",
       "file": "voice_aoyama/n0424.wav",
       "seconds": 5.8133333333333335,
-      "from": 39673,
+      "from": 39980,
       "duration": 175,
       "audioStyle": "narration"
     },
@@ -3689,7 +3700,7 @@
       "speech": "私は先生を見ました。",
       "file": "voice_aoyama/n0425.wav",
       "seconds": 2.0906666666666665,
-      "from": 39890,
+      "from": 40197,
       "duration": 63,
       "audioStyle": "narration"
     },
@@ -3700,7 +3711,7 @@
       "speech": "「……寝ました」",
       "file": "voice_aoyama/n0427.wav",
       "seconds": 1.088,
-      "from": 39962,
+      "from": 40269,
       "duration": 33,
       "audioStyle": "narration"
     },
@@ -3711,7 +3722,7 @@
       "speech": "それきり、私も起きていられませんでした。",
       "file": "voice_aoyama_v6/n0429.wav",
       "seconds": 3.3493333333333335,
-      "from": 40031,
+      "from": 40338,
       "duration": 101,
       "audioStyle": "narration"
     },
@@ -3722,7 +3733,7 @@
       "speech": "目が覚めると、畳の上でした。",
       "file": "voice_aoyama/n0430.wav",
       "seconds": 2.784,
-      "from": 40222,
+      "from": 40529,
       "duration": 84,
       "audioStyle": "narration"
     },
@@ -3733,7 +3744,7 @@
       "speech": "頭が痛く、吐き気がしました。",
       "file": "voice_aoyama/n0432.wav",
       "seconds": 2.6666666666666665,
-      "from": 40315,
+      "from": 40622,
       "duration": 80,
       "audioStyle": "narration"
     },
@@ -3744,7 +3755,7 @@
       "speech": "先生が水を持ってきてくれました。",
       "file": "voice_aoyama/n0435.wav",
       "seconds": 2.570666666666667,
-      "from": 40404,
+      "from": 40711,
       "duration": 78,
       "audioStyle": "narration"
     },
@@ -3755,7 +3766,7 @@
       "speech": "机の上に、四つのジョッキがありました。",
       "file": "voice_aoyama/n0436.wav",
       "seconds": 3.2853333333333334,
-      "from": 40491,
+      "from": 40798,
       "duration": 99,
       "audioStyle": "narration"
     },
@@ -3766,7 +3777,7 @@
       "speech": "全部、カラでした。",
       "file": "voice_aoyama_v4/n0437.wav",
       "seconds": 2.1226666666666665,
-      "from": 40599,
+      "from": 40906,
       "duration": 64,
       "audioStyle": "narration"
     },
@@ -3777,7 +3788,7 @@
       "speech": "向かいの椅子には、誰もいませんでした。",
       "file": "voice_aoyama/n0438.wav",
       "seconds": 3.1253333333333333,
-      "from": 40690,
+      "from": 40997,
       "duration": 94,
       "audioStyle": "narration"
     },
@@ -3788,7 +3799,7 @@
       "speech": "「終わったんですか」",
       "file": "voice_aoyama/n0439.wav",
       "seconds": 1.4506666666666668,
-      "from": 40826,
+      "from": 41133,
       "duration": 44,
       "audioStyle": "narration"
     },
@@ -3799,7 +3810,7 @@
       "speech": "「帰ったと思います。今夜まで、様子を見ましょう」",
       "file": "voice_aoyama_v6/n0441.wav",
       "seconds": 4.298666666666667,
-      "from": 40879,
+      "from": 41186,
       "duration": 129,
       "audioStyle": "narration"
     },
@@ -3810,7 +3821,7 @@
       "speech": "私たちは、そばやのジョッキをほこらへ納めました。",
       "file": "voice_aoyama/n0448.wav",
       "seconds": 3.7866666666666666,
-      "from": 41035,
+      "from": 41342,
       "duration": 114,
       "audioStyle": "narration"
     },
@@ -3821,7 +3832,7 @@
       "speech": "以前の器の代わりに、カンリニンが引き継いでくれることになりました。",
       "file": "voice_aoyama_v3/n0449.wav",
       "seconds": 4.672,
-      "from": 41158,
+      "from": 41465,
       "duration": 141,
       "audioStyle": "narration"
     },
@@ -3832,7 +3843,7 @@
       "speech": "その夜、私は自宅で寝ました。",
       "file": "voice_aoyama/n0451.wav",
       "seconds": 2.912,
-      "from": 41308,
+      "from": 41615,
       "duration": 88,
       "audioStyle": "narration"
     },
@@ -3843,7 +3854,7 @@
       "speech": "妻が寝室の入り口に椅子を置き、座っていてくれました。",
       "file": "voice_aoyama_v6/n0452.wav",
       "seconds": 4.298666666666667,
-      "from": 41405,
+      "from": 41712,
       "duration": 129,
       "audioStyle": "narration"
     },
@@ -3854,7 +3865,7 @@
       "speech": "朝になりました。",
       "file": "voice_aoyama/n0456.wav",
       "seconds": 1.4613333333333334,
-      "from": 41543,
+      "from": 41850,
       "duration": 44,
       "audioStyle": "narration"
     },
@@ -3865,7 +3876,7 @@
       "speech": "頭が痛くありませんでした。",
       "file": "voice_aoyama/n0457.wav",
       "seconds": 2.1866666666666665,
-      "from": 41617,
+      "from": 41924,
       "duration": 66,
       "audioStyle": "narration"
     },
@@ -3876,7 +3887,7 @@
       "speech": "食卓にはコップが一つありました。",
       "file": "voice_aoyama/n0459.wav",
       "seconds": 2.6346666666666665,
-      "from": 41719,
+      "from": 42026,
       "duration": 80,
       "audioStyle": "narration"
     },
@@ -3887,7 +3898,7 @@
       "speech": "昨夜、自分で水を飲んだコップでした。",
       "file": "voice_aoyama/n0460.wav",
       "seconds": 3.4026666666666667,
-      "from": 41808,
+      "from": 42115,
       "duration": 103,
       "audioStyle": "narration"
     },
@@ -3898,7 +3909,7 @@
       "speech": "あきかんはありませんでした。",
       "file": "voice_aoyama/n0461.wav",
       "seconds": 2.026666666666667,
-      "from": 41920,
+      "from": 42227,
       "duration": 61,
       "audioStyle": "narration"
     },
@@ -3909,7 +3920,7 @@
       "speech": "「昨日は、ずっと寝てたよ」と、妻が言いました。",
       "file": "voice_aoyama_v6/n0464.wav",
       "seconds": 4.277333333333333,
-      "from": 41990,
+      "from": 42297,
       "duration": 129,
       "audioStyle": "narration"
     },
@@ -3920,7 +3931,7 @@
       "speech": "エムさんとワイさんも、同じでした。",
       "file": "voice_aoyama/n0468.wav",
       "seconds": 2.7306666666666666,
-      "from": 42191,
+      "from": 42498,
       "duration": 82,
       "audioStyle": "narration"
     },
@@ -3931,7 +3942,7 @@
       "speech": "夜中に起きて飲むことはなくなりました。",
       "file": "voice_aoyama/n0469.wav",
       "seconds": 2.624,
-      "from": 42282,
+      "from": 42589,
       "duration": 79,
       "audioStyle": "narration"
     },
@@ -3942,7 +3953,7 @@
       "speech": "あれから数か月になります。",
       "file": "voice_aoyama/n0470.wav",
       "seconds": 2.144,
-      "from": 42370,
+      "from": 42677,
       "duration": 65,
       "audioStyle": "narration"
     },
@@ -3953,7 +3964,7 @@
       "speech": "体調も戻り、三人とも仕事に出ています。",
       "file": "voice_aoyama/n0471.wav",
       "seconds": 3.552,
-      "from": 42444,
+      "from": 42751,
       "duration": 107,
       "audioStyle": "narration"
     },
@@ -3964,7 +3975,7 @@
       "speech": "またエクセルを開いたり閉じたりしています。",
       "file": "voice_aoyama_v6/n0471v6a0.wav",
       "seconds": 2.8266666666666667,
-      "from": 42560,
+      "from": 42867,
       "duration": 85,
       "audioStyle": "narration"
     },
@@ -3975,7 +3986,7 @@
       "speech": "一度、私は聞きました。",
       "file": "voice_aoyama/n0473.wav",
       "seconds": 2.496,
-      "from": 42654,
+      "from": 42961,
       "duration": 75,
       "audioStyle": "narration"
     },
@@ -3986,7 +3997,7 @@
       "speech": "「あれは、私たちを恨んでいたんでしょうか」",
       "file": "voice_aoyama/n0474.wav",
       "seconds": 3.328,
-      "from": 42738,
+      "from": 43045,
       "duration": 100,
       "audioStyle": "narration"
     },
@@ -3997,7 +4008,7 @@
       "speech": "「恨んでいたかは、分かりません。こちらが苦しんでいることも、分かっていなかったのかもしれません」",
       "file": "voice_aoyama_v6/n0476.wav",
       "seconds": 6.8373333333333335,
-      "from": 42847,
+      "from": 43154,
       "duration": 206,
       "audioStyle": "narration"
     },
@@ -4008,7 +4019,7 @@
       "speech": "「楽しかったんでしょうね」",
       "file": "voice_aoyama/n0479.wav",
       "seconds": 1.888,
-      "from": 43062,
+      "from": 43369,
       "duration": 57,
       "audioStyle": "narration"
     },
@@ -4019,7 +4030,7 @@
       "speech": "私は、今でもその言葉が嫌です。",
       "file": "voice_aoyama/n0481.wav",
       "seconds": 3.104,
-      "from": 43161,
+      "from": 43468,
       "duration": 94,
       "audioStyle": "narration"
     },
@@ -4030,7 +4041,7 @@
       "speech": "毎朝吐いて、仕事へ行けなくなって、妻に怖がられていたあいだ。",
       "file": "voice_aoyama/n0482.wav",
       "seconds": 5.077333333333334,
-      "from": 43264,
+      "from": 43571,
       "duration": 153,
       "audioStyle": "narration"
     },
@@ -4041,7 +4052,7 @@
       "speech": "向こうは、楽しく飲んでいた。私も、楽しそうにしていた。",
       "file": "voice_aoyama_v6/n0483.wav",
       "seconds": 5.141333333333334,
-      "from": 43426,
+      "from": 43733,
       "duration": 155,
       "audioStyle": "narration"
     },
@@ -4052,7 +4063,7 @@
       "speech": "妻に頼んで、動画は消しました。",
       "file": "voice_aoyama_v6/n0483v6a0.wav",
       "seconds": 2.8266666666666667,
-      "from": 43590,
+      "from": 43897,
       "duration": 85,
       "audioStyle": "narration"
     },
@@ -4063,7 +4074,7 @@
       "speech": "最後に、自分が言っていたことだけは、覚えています。",
       "file": "voice_aoyama_v6/n0483v6a1.wav",
       "seconds": 4.32,
-      "from": 43684,
+      "from": 43991,
       "duration": 130,
       "audioStyle": "narration"
     },
@@ -4074,7 +4085,7 @@
       "speech": "まだ帰らなくていいですよ。",
       "file": "voice_aoyama/n0486.wav",
       "seconds": 1.952,
-      "from": 43823,
+      "from": 44130,
       "duration": 59,
       "audioStyle": "narration"
     },
@@ -4085,7 +4096,7 @@
       "speech": "あれは、私の声でした。",
       "file": "voice_aoyama_v6/n0487.wav",
       "seconds": 2.485333333333333,
-      "from": 43930,
+      "from": 44237,
       "duration": 75,
       "audioStyle": "narration"
     }
@@ -4604,2093 +4615,2100 @@
     },
     {
       "from": 9045,
-      "to": 9152,
+      "to": 9150,
+      "text": "祠の奥に、白い顔のようなものが見えました。",
+      "lineId": "n0075v7a0",
+      "speaker": "narrator"
+    },
+    {
+      "from": 9192,
+      "to": 9299,
       "text": "録画には、三人の声しか入っていませんでした。",
       "lineId": "n0076",
       "speaker": "narrator"
     },
     {
-      "from": 9188,
-      "to": 9268,
+      "from": 9335,
+      "to": 9415,
       "text": "その夜の記憶は、そこまでです。",
       "lineId": "n0078",
       "speaker": "narrator"
     },
     {
-      "from": 9346,
-      "to": 9455,
+      "from": 9493,
+      "to": 9602,
       "text": "目が覚めると、集会所の机に突っ伏していました。",
       "lineId": "n0079",
       "speaker": "narrator"
     },
     {
-      "from": 9470,
-      "to": 9558,
+      "from": 9617,
+      "to": 9705,
       "text": "祠を見に行くと、壊れたままでした。",
       "lineId": "n0084",
       "speaker": "narrator"
     },
     {
-      "from": 9573,
-      "to": 9756,
+      "from": 9720,
+      "to": 9903,
       "text": "管理人へ電話して、「私は止めたんですが、\n二人がどうしても」と謝りました。",
       "lineId": "n0085v5r2",
       "speaker": "narrator"
     },
     {
-      "from": 9771,
-      "to": 9834,
+      "from": 9918,
+      "to": 9981,
       "text": "向こうはしばらく黙っていました。",
       "lineId": "n0086",
       "speaker": "narrator"
     },
     {
-      "from": 9870,
-      "to": 10010,
+      "from": 10017,
+      "to": 10157,
       "text": "何を壊したのかではなく、器はどうなったか、と聞かれました。",
       "lineId": "n0087",
       "speaker": "narrator"
     },
     {
-      "from": 10025,
-      "to": 10189,
+      "from": 10172,
+      "to": 10336,
       "text": "割れていると答えると、「三人とも、\n今日は飲まないでください」と言われました。",
       "lineId": "n0087v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 10204,
-      "to": 10295,
+      "from": 10351,
+      "to": 10442,
       "text": "その晩は、三人とも飲みませんでした。",
       "lineId": "n0088",
       "speaker": "narrator"
     },
     {
-      "from": 10310,
-      "to": 10365,
+      "from": 10457,
+      "to": 10512,
       "text": "私は九時前に寝ました。",
       "lineId": "n0090",
       "speaker": "narrator"
     },
     {
-      "from": 10380,
-      "to": 10470,
+      "from": 10527,
+      "to": 10617,
       "text": "翌朝、また机で目を覚ましました。",
       "lineId": "n0091",
       "speaker": "narrator"
     },
     {
-      "from": 10485,
-      "to": 10582,
+      "from": 10632,
+      "to": 10729,
       "text": "目の前には、空の缶が三本ありました。",
       "lineId": "n0092",
       "speaker": "narrator"
     },
     {
-      "from": 10597,
-      "to": 10726,
+      "from": 10744,
+      "to": 10873,
       "text": "片づけ忘れたものだと思いましたが、缶の口が濡れていました。",
       "lineId": "n0093",
       "speaker": "narrator"
     },
     {
-      "from": 10774,
-      "to": 10911,
+      "from": 10921,
+      "to": 11058,
       "text": "管理人の連絡を受けて、会社が私たちを引き揚げさせました。",
       "lineId": "n0096",
       "speaker": "narrator"
     },
     {
-      "from": 10926,
-      "to": 11075,
+      "from": 11073,
+      "to": 11222,
       "text": "上司には、「中口、しばらく酒を控えろ」と言われました。",
       "lineId": "n0099",
       "speaker": "narrator"
     },
     {
-      "from": 11090,
-      "to": 11171,
+      "from": 11237,
+      "to": 11318,
       "text": "村を離れたときは、ほっとしました。",
       "lineId": "n0101",
       "speaker": "narrator"
     },
     {
-      "from": 11249,
-      "to": 11376,
+      "from": 11396,
+      "to": 11523,
       "text": "帰宅した日は風呂に入り、妻の作った夕飯を食べました。",
       "lineId": "n0102",
       "speaker": "narrator"
     },
     {
-      "from": 11391,
-      "to": 11439,
+      "from": 11538,
+      "to": 11586,
       "text": "酒は断りました。",
       "lineId": "n0103",
       "speaker": "narrator"
     },
     {
-      "from": 11454,
-      "to": 11511,
+      "from": 11601,
+      "to": 11658,
       "text": "十時前には寝たはずです。",
       "lineId": "n0105",
       "speaker": "narrator"
     },
     {
-      "from": 11526,
-      "to": 11613,
+      "from": 11673,
+      "to": 11760,
       "text": "翌朝、ひどい頭痛で目が覚めました。",
       "lineId": "n0106",
       "speaker": "narrator"
     },
     {
-      "from": 11628,
-      "to": 11721,
+      "from": 11775,
+      "to": 11868,
       "text": "体を起こしただけで、吐きそうになりました。",
       "lineId": "n0107",
       "speaker": "narrator"
     },
     {
-      "from": 11736,
-      "to": 11825,
+      "from": 11883,
+      "to": 11972,
       "text": "食卓に、空のビール缶がありました。",
       "lineId": "n0109",
       "speaker": "narrator"
     },
     {
-      "from": 11840,
-      "to": 11875,
+      "from": 11987,
+      "to": 12022,
       "text": "六本でした。",
       "lineId": "n0110",
       "speaker": "narrator"
     },
     {
-      "from": 11908,
-      "to": 11991,
+      "from": 12055,
+      "to": 12138,
       "text": "妻に聞くと、変な顔をされました。",
       "lineId": "n0111",
       "speaker": "narrator"
     },
     {
-      "from": 12006,
-      "to": 12053,
+      "from": 12153,
+      "to": 12200,
       "text": "「自分で飲んだんでしょ」",
       "lineId": "n0112",
       "speaker": "narrator"
     },
     {
-      "from": 12068,
-      "to": 12167,
+      "from": 12215,
+      "to": 12314,
       "text": "飲んでいないと言うと、妻は少し怒りました。",
       "lineId": "n0113",
       "speaker": "narrator"
     },
     {
-      "from": 12182,
-      "to": 12310,
+      "from": 12329,
+      "to": 12457,
       "text": "「昨日、起きてきて飲んでたじゃない。\n調子悪いって言ってたのに」",
       "lineId": "n0114",
       "speaker": "narrator"
     },
     {
-      "from": 12325,
-      "to": 12377,
+      "from": 12472,
+      "to": 12524,
       "text": "記憶がありませんでした。",
       "lineId": "n0117",
       "speaker": "narrator"
     },
     {
-      "from": 12410,
-      "to": 12525,
+      "from": 12557,
+      "to": 12672,
       "text": "妻に頼んで、家にあったビールを片づけてもらいました。",
       "lineId": "n0118",
       "speaker": "narrator"
     },
     {
-      "from": 12540,
-      "to": 12623,
+      "from": 12687,
+      "to": 12770,
       "text": "翌朝、空き缶はありませんでした。",
       "lineId": "n0119",
       "speaker": "narrator"
     },
     {
-      "from": 12638,
-      "to": 12709,
+      "from": 12785,
+      "to": 12856,
       "text": "それでも、頭痛はありました。",
       "lineId": "n0119v5a0",
       "speaker": "narrator"
     },
     {
-      "from": 12724,
-      "to": 12788,
+      "from": 12871,
+      "to": 12935,
       "text": "ただ、妻に言われました。",
       "lineId": "n0120",
       "speaker": "narrator"
     },
     {
-      "from": 12803,
-      "to": 12894,
+      "from": 12950,
+      "to": 13041,
       "text": "「夜中、冷蔵庫を何回も開けてたよ」",
       "lineId": "n0121",
       "speaker": "narrator"
     },
     {
-      "from": 12966,
-      "to": 13065,
+      "from": 13113,
+      "to": 13212,
       "text": "数日後、冷蔵庫にビールが入っていました。",
       "lineId": "n0122",
       "speaker": "narrator"
     },
     {
-      "from": 13080,
-      "to": 13186,
+      "from": 13227,
+      "to": 13333,
       "text": "財布のレシートで、自分が買ったと分かりました。",
       "lineId": "n0124",
       "speaker": "narrator"
     },
     {
-      "from": 13201,
-      "to": 13263,
+      "from": 13348,
+      "to": 13410,
       "text": "買った記憶がありませんでした。",
       "lineId": "n0126",
       "speaker": "narrator"
     },
     {
-      "from": 13299,
-      "to": 13397,
+      "from": 13446,
+      "to": 13544,
       "text": "翌朝、妻が撮った動画を見せられました。",
       "lineId": "n0127",
       "speaker": "narrator"
     },
     {
-      "from": 13412,
-      "to": 13526,
+      "from": 13559,
+      "to": 13673,
       "text": "零時過ぎ、寝室から出てきた私が映っていました。",
       "lineId": "n0128",
       "speaker": "narrator"
     },
     {
-      "from": 13541,
-      "to": 13688,
+      "from": 13688,
+      "to": 13835,
       "text": "普通に歩き、冷蔵庫からビールを出し、食卓に座りました。",
       "lineId": "n0129",
       "speaker": "narrator"
     },
     {
-      "from": 13703,
-      "to": 13806,
+      "from": 13850,
+      "to": 13953,
       "text": "それから、向かいの空席へ缶を差し出しました。",
       "lineId": "n0133",
       "speaker": "narrator"
     },
     {
-      "from": 13821,
-      "to": 13890,
+      "from": 13968,
+      "to": 14037,
       "text": "「じゃあ、お疲れさまです」",
       "lineId": "n0134",
       "speaker": "narrator"
     },
     {
-      "from": 13944,
-      "to": 14003,
+      "from": 14091,
+      "to": 14150,
       "text": "何もないところで缶を止める。",
       "lineId": "n0135",
       "speaker": "narrator"
     },
     {
-      "from": 14045,
-      "to": 14122,
+      "from": 14192,
+      "to": 14269,
       "text": "少し待ってから戻し、飲む。",
       "lineId": "n0136",
       "speaker": "narrator"
     },
     {
-      "from": 14137,
-      "to": 14265,
+      "from": 14284,
+      "to": 14412,
       "text": "誰かの話を聞くように黙り、うなずき、急に笑う。",
       "lineId": "n0137",
       "speaker": "narrator"
     },
     {
-      "from": 14280,
-      "to": 14337,
+      "from": 14427,
+      "to": 14484,
       "text": "通話ではありませんでした。",
       "lineId": "n0138",
       "speaker": "narrator"
     },
     {
-      "from": 14352,
-      "to": 14434,
+      "from": 14499,
+      "to": 14581,
       "text": "スマホは寝室で充電したままでした。",
       "lineId": "n0139",
       "speaker": "narrator"
     },
     {
-      "from": 14449,
-      "to": 14490,
-      "text": "「誰と話してるの」",
+      "from": 14596,
+      "to": 14697,
+      "text": "妻が「誰と話してるの」と聞きました。",
       "lineId": "n0141",
       "speaker": "narrator"
     },
     {
-      "from": 14505,
-      "to": 14567,
+      "from": 14712,
+      "to": 14774,
       "text": "私は空席を指しました。",
       "lineId": "n0142",
       "speaker": "narrator"
     },
     {
-      "from": 14582,
-      "to": 14615,
+      "from": 14789,
+      "to": 14822,
       "text": "「失礼だろ」",
       "lineId": "n0143",
       "speaker": "narrator"
     },
     {
-      "from": 14669,
-      "to": 14793,
+      "from": 14876,
+      "to": 15000,
       "text": "途中、相手にもう一本、缶を差し出していました。",
       "lineId": "n0147",
       "speaker": "narrator"
     },
     {
-      "from": 14808,
-      "to": 14896,
+      "from": 15015,
+      "to": 15103,
       "text": "受け取ってもらえず、困ったように笑う。",
       "lineId": "n0150",
       "speaker": "narrator"
     },
     {
-      "from": 14938,
-      "to": 15011,
+      "from": 15145,
+      "to": 15218,
       "text": "それを自分で開け、飲む。",
       "lineId": "n0151",
       "speaker": "narrator"
     },
     {
-      "from": 15026,
-      "to": 15079,
+      "from": 15233,
+      "to": 15286,
       "text": "「まだ帰らなくていいですよ」",
       "lineId": "n0153",
       "speaker": "narrator"
     },
     {
-      "from": 15127,
-      "to": 15261,
+      "from": 15334,
+      "to": 15468,
       "text": "妻は「もう、声をかけられなかった」と言いました。",
       "lineId": "n0155",
       "speaker": "narrator"
     },
     {
-      "from": 15276,
-      "to": 15441,
+      "from": 15483,
+      "to": 15648,
       "text": "画面の私は、妻が部屋を出たことにも気づかず、\n椅子へ笑いかけていました。",
       "lineId": "n0155v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 15507,
-      "to": 15556,
+      "from": 15714,
+      "to": 15763,
       "text": "病院にも行きました。",
       "lineId": "n0160",
       "speaker": "narrator"
     },
     {
-      "from": 15571,
-      "to": 15709,
+      "from": 15778,
+      "to": 15916,
       "text": "診察で勧められた記録には、妻が夜の様子を書いてくれました。",
       "lineId": "n0162",
       "speaker": "narrator"
     },
     {
-      "from": 15724,
-      "to": 15836,
+      "from": 15931,
+      "to": 16043,
       "text": "やめてと言うと、夜の私は妻をにらむそうです。",
       "lineId": "n0163",
       "speaker": "narrator"
     },
     {
-      "from": 15851,
-      "to": 15968,
+      "from": 16058,
+      "to": 16175,
       "text": "昼の私は、酒の匂いだけで気分が悪くなりました。",
       "lineId": "n0165",
       "speaker": "narrator"
     },
     {
-      "from": 15983,
-      "to": 16076,
+      "from": 16190,
+      "to": 16283,
       "text": "夜の私は、楽しそうに飲んでいました。",
       "lineId": "n0166",
       "speaker": "narrator"
     },
     {
-      "from": 16091,
-      "to": 16248,
+      "from": 16298,
+      "to": 16455,
       "text": "昼の私がいくら頼んでも、夜になると、話が通じなくなるんです。",
       "lineId": "n0166v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 16281,
-      "to": 16361,
+      "from": 16488,
+      "to": 16568,
       "text": "何日か、仕事を休みました。",
       "lineId": "n0167",
       "speaker": "narrator"
     },
     {
-      "from": 16376,
-      "to": 16539,
-      "text": "Mさんも休んでいましたが、\n最初はまた勝手に連休を作ったのかと思いました。",
+      "from": 16583,
+      "to": 16767,
+      "text": "Mさんも休んでいたそうです。最初は、\nまた勝手に連休を作ったのかと思いました。",
       "lineId": "n0167a",
       "speaker": "narrator"
     },
     {
-      "from": 16554,
-      "to": 16618,
+      "from": 16782,
+      "to": 16846,
       "text": "上司も同じことを言っていました。",
       "lineId": "n0167b",
       "speaker": "narrator"
     },
     {
-      "from": 16633,
-      "to": 16767,
+      "from": 16861,
+      "to": 16995,
       "text": "久しぶりに出社した日、コピー機の前で立っていられなくなり\nました。",
       "lineId": "n0168",
       "speaker": "narrator"
     },
     {
-      "from": 16782,
-      "to": 16907,
+      "from": 17010,
+      "to": 17135,
       "text": "壁に手をついていると、別の部署の同僚が足を止めました。",
       "lineId": "n0169",
       "speaker": "narrator"
     },
     {
-      "from": 16922,
-      "to": 17006,
+      "from": 17150,
+      "to": 17234,
       "text": "「中口さん、大丈夫ですか？」",
       "lineId": "n0170",
       "speaker": "narrator"
     },
     {
-      "from": 17021,
-      "to": 17140,
+      "from": 17249,
+      "to": 17368,
       "text": "同僚に「座って休んでください」と言われました。",
       "lineId": "n0172v5a0",
       "speaker": "narrator"
     },
     {
-      "from": 17155,
-      "to": 17283,
+      "from": 17383,
+      "to": 17511,
       "text": "人から休むように勧められたのは、入社して初めてでした。",
       "lineId": "n0172v5a1",
       "speaker": "narrator"
     },
     {
-      "from": 17298,
-      "to": 17396,
+      "from": 17526,
+      "to": 17624,
       "text": "座ったところで、Yさんが通りかかりました。",
       "lineId": "n0173",
       "speaker": "narrator"
     },
     {
-      "from": 17411,
-      "to": 17510,
+      "from": 17639,
+      "to": 17738,
       "text": "顔が痩せ、目の下に濃い隈がありました。",
       "lineId": "n0174",
       "speaker": "narrator"
     },
     {
-      "from": 17525,
-      "to": 17625,
+      "from": 17753,
+      "to": 17853,
       "text": "寝ても疲れが取れない、とYさんは言いました。",
       "lineId": "n0176",
       "speaker": "narrator"
     },
     {
-      "from": 17640,
-      "to": 17778,
+      "from": 17868,
+      "to": 18006,
       "text": "飲んだ覚えがないのに、毎朝二日酔いになる。そう話すと、",
       "lineId": "n0177",
       "speaker": "narrator"
     },
     {
-      "from": 17793,
-      "to": 17862,
+      "from": 18021,
+      "to": 18090,
       "text": "Yさんが、こちらを見ました。",
       "lineId": "n0178",
       "speaker": "narrator"
     },
     {
-      "from": 17877,
-      "to": 17930,
+      "from": 18105,
+      "to": 18158,
       "text": "「……缶、ある？」",
       "lineId": "n0179",
       "speaker": "narrator"
     },
     {
-      "from": 17978,
-      "to": 18060,
+      "from": 18206,
+      "to": 18288,
       "text": "すぐ、Mさんへ電話しました。",
       "lineId": "n0180",
       "speaker": "narrator"
     },
     {
-      "from": 18075,
-      "to": 18106,
+      "from": 18303,
+      "to": 18334,
       "text": "同じでした。",
       "lineId": "n0182",
       "speaker": "narrator"
     },
     {
-      "from": 18121,
-      "to": 18226,
+      "from": 18349,
+      "to": 18454,
       "text": "飲まずに寝たはずなのに、朝になると空き缶がある。",
       "lineId": "n0183",
       "speaker": "narrator"
     },
     {
-      "from": 18241,
-      "to": 18304,
+      "from": 18469,
+      "to": 18532,
       "text": "隣人から苦情も来ていました。",
       "lineId": "n0184",
       "speaker": "narrator"
     },
     {
-      "from": 18319,
-      "to": 18446,
+      "from": 18547,
+      "to": 18674,
       "text": "毎晩、誰かと騒ぐのをやめてほしい、と。",
       "lineId": "n0185",
       "speaker": "narrator"
     },
     {
-      "from": 18461,
-      "to": 18511,
+      "from": 18689,
+      "to": 18739,
       "text": "「一人やって言うたんよ」",
       "lineId": "n0186",
       "speaker": "narrator"
     },
     {
-      "from": 18526,
-      "to": 18628,
+      "from": 18754,
+      "to": 18856,
       "text": "「そしたら、気持ち悪いこと言わんといてくださいって」",
       "lineId": "n0188",
       "speaker": "narrator"
     },
     {
-      "from": 18643,
-      "to": 18798,
+      "from": 18871,
+      "to": 19026,
       "text": "隣人が玄関まで来ると、Mさんはドアを開け、謝ったそうです。",
       "lineId": "n0189",
       "speaker": "narrator"
     },
     {
-      "from": 18813,
-      "to": 18865,
+      "from": 19041,
+      "to": 19093,
       "text": "開いたドアの向こうには、",
       "lineId": "n0190",
       "speaker": "narrator"
     },
     {
-      "from": 18880,
-      "to": 18920,
+      "from": 19108,
+      "to": 19148,
       "text": "誰もいなかった。",
       "lineId": "n0192",
       "speaker": "narrator"
     },
     {
-      "from": 18962,
-      "to": 19053,
+      "from": 19190,
+      "to": 19281,
       "text": "でもMさんは、空の部屋へ振り向いて、",
       "lineId": "n0193",
       "speaker": "narrator"
     },
     {
-      "from": 19068,
-      "to": 19118,
+      "from": 19296,
+      "to": 19346,
       "text": "「ちょっと静かにしましょう」",
       "lineId": "n0194",
       "speaker": "narrator"
     },
     {
-      "from": 19154,
-      "to": 19193,
+      "from": 19382,
+      "to": 19421,
       "text": "と言ったそうです。",
       "lineId": "n0195",
       "speaker": "narrator"
     },
     {
-      "from": 19238,
-      "to": 19362,
+      "from": 19466,
+      "to": 19590,
       "text": "三人で、自宅の夜の様子を撮った動画を見比べました。",
       "lineId": "n0196",
       "speaker": "narrator"
     },
     {
-      "from": 19377,
-      "to": 19469,
+      "from": 19605,
+      "to": 19697,
       "text": "誰もいない席へ話しかけるところは同じでした。",
       "lineId": "n0199",
       "speaker": "narrator"
     },
     {
-      "from": 19484,
-      "to": 19536,
+      "from": 19712,
+      "to": 19764,
       "text": "Mさんは歌っていました。",
       "lineId": "n0200",
       "speaker": "narrator"
     },
     {
-      "from": 19551,
-      "to": 19674,
+      "from": 19779,
+      "to": 19902,
       "text": "音楽も伴奏もない部屋で、一曲、最後まで。",
       "lineId": "n0201",
       "speaker": "narrator"
     },
     {
-      "from": 19689,
-      "to": 19788,
+      "from": 19917,
+      "to": 20016,
       "text": "歌い終わると、黙って空席を見ていました。",
       "lineId": "n0202",
       "speaker": "narrator"
     },
     {
-      "from": 19860,
-      "to": 19949,
+      "from": 20088,
+      "to": 20177,
       "text": "それから、照れたように頭を下げました。",
       "lineId": "n0203",
       "speaker": "narrator"
     },
     {
-      "from": 19982,
-      "to": 20052,
+      "from": 20210,
+      "to": 20280,
       "text": "「昼はもう、声出えへんのに」",
       "lineId": "n0204",
       "speaker": "narrator"
     },
     {
-      "from": 20067,
-      "to": 20126,
+      "from": 20295,
+      "to": 20354,
       "text": "Mさんは画面を止めました。",
       "lineId": "n0205",
       "speaker": "narrator"
     },
     {
-      "from": 20141,
-      "to": 20243,
+      "from": 20369,
+      "to": 20471,
       "text": "Yさんが、夢だと思っていた話をしました。",
       "lineId": "n0207",
       "speaker": "narrator"
     },
     {
-      "from": 20258,
-      "to": 20342,
+      "from": 20486,
+      "to": 20570,
       "text": "白い仮面を着けた男と飲む夢を見る。",
       "lineId": "n0208",
       "speaker": "narrator"
     },
     {
-      "from": 20357,
-      "to": 20439,
+      "from": 20585,
+      "to": 20667,
       "text": "体が大きく、肩幅が広い。",
       "lineId": "n0209",
       "speaker": "narrator"
     },
     {
-      "from": 20454,
-      "to": 20536,
+      "from": 20682,
+      "to": 20764,
       "text": "いつも、隣か向かいに座っている。",
       "lineId": "n0210",
       "speaker": "narrator"
     },
     {
-      "from": 20551,
-      "to": 20606,
+      "from": 20779,
+      "to": 20834,
       "text": "「肌、灰色やろ」",
       "lineId": "n0212",
       "speaker": "narrator"
     },
     {
-      "from": 20621,
-      "to": 20671,
+      "from": 20849,
+      "to": 20899,
       "text": "Yさんがうなずきました。",
       "lineId": "n0213",
       "speaker": "narrator"
     },
     {
-      "from": 20686,
-      "to": 20749,
+      "from": 20914,
+      "to": 20977,
       "text": "私は何も言えませんでした。",
       "lineId": "n0214",
       "speaker": "narrator"
     },
     {
-      "from": 20764,
-      "to": 20859,
+      "from": 20992,
+      "to": 21087,
       "text": "説明されるほど、知っている気がしたんです。",
       "lineId": "n0215",
       "speaker": "narrator"
     },
     {
-      "from": 20874,
-      "to": 20926,
-      "text": "会った覚えはないのに。",
+      "from": 21102,
+      "to": 21225,
+      "text": "あの晩、祠の奥に立っていたものを、思い出しました。",
       "lineId": "n0219",
       "speaker": "narrator"
     },
     {
-      "from": 20962,
-      "to": 21069,
+      "from": 21261,
+      "to": 21368,
       "text": "一度だけ、夜中に意識が戻ったことがあります。",
       "lineId": "n0219v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 21084,
-      "to": 21174,
+      "from": 21383,
+      "to": 21473,
       "text": "寝たはずなのに、食卓に座っていました。",
       "lineId": "n0219v6a1",
       "speaker": "narrator"
     },
     {
-      "from": 21189,
-      "to": 21285,
+      "from": 21488,
+      "to": 21584,
       "text": "目の前に、口を開けていない缶がありました。",
       "lineId": "n0219v6a2",
       "speaker": "narrator"
     },
     {
-      "from": 21300,
-      "to": 21406,
+      "from": 21599,
+      "to": 21705,
       "text": "飲みたくありませんでした。もう寝たいと思いました。",
       "lineId": "n0219v6a3",
       "speaker": "narrator"
     },
     {
-      "from": 21442,
-      "to": 21527,
+      "from": 21741,
+      "to": 21826,
       "text": "すると、自分の手が缶を取りました。",
       "lineId": "n0219v6a4",
       "speaker": "narrator"
     },
     {
-      "from": 21563,
-      "to": 21602,
+      "from": 21862,
+      "to": 21901,
       "text": "開ける音がして、",
       "lineId": "n0219v6a5",
       "speaker": "narrator"
     },
     {
-      "from": 21644,
-      "to": 21702,
+      "from": 21943,
+      "to": 22001,
       "text": "私は、笑いました。",
       "lineId": "n0219v6a6",
       "speaker": "narrator"
     },
     {
-      "from": 21756,
-      "to": 21845,
+      "from": 22055,
+      "to": 22144,
       "text": "妻を呼ぼうとしたのに、口から出たのは、",
       "lineId": "n0219v6a7",
       "speaker": "narrator"
     },
     {
-      "from": 21866,
-      "to": 21932,
+      "from": 22165,
+      "to": 22231,
       "text": "「もう一本、いきますか」",
       "lineId": "n0219v6a8",
       "speaker": "narrator"
     },
     {
-      "from": 21980,
-      "to": 22121,
+      "from": 22279,
+      "to": 22420,
       "text": "次に分かったのは、朝、妻が肩を揺すっていることでした。",
       "lineId": "n0219v6a9",
       "speaker": "narrator"
     },
     {
-      "from": 22178,
-      "to": 22293,
+      "from": 22477,
+      "to": 22592,
       "text": "Mさんの親戚に相談して、人を紹介されました。",
       "lineId": "n0220",
       "speaker": "narrator"
     },
     {
-      "from": 22308,
-      "to": 22383,
+      "from": 22607,
+      "to": 22682,
       "text": "ここでは、F先生とします。",
       "lineId": "n0221",
       "speaker": "narrator"
     },
     {
-      "from": 22398,
-      "to": 22542,
+      "from": 22697,
+      "to": 22841,
       "text": "遠方からも相談者が来る方で、普段なら何週間も待つそうです。",
       "lineId": "n0222",
       "speaker": "narrator"
     },
     {
-      "from": 22557,
-      "to": 22701,
+      "from": 22856,
+      "to": 23000,
       "text": "ところが、親戚が動画を送ると、その日のうちに返事が来ました。",
       "lineId": "n0223",
       "speaker": "narrator"
     },
     {
-      "from": 22716,
-      "to": 22797,
+      "from": 23015,
+      "to": 23096,
       "text": "三人そろって来てください、と。",
       "lineId": "n0225",
       "speaker": "narrator"
     },
     {
-      "from": 22812,
-      "to": 22968,
+      "from": 23111,
+      "to": 23267,
       "text": "F先生は、大きな袖の白い装束に、濃い紫の袴でした。",
       "lineId": "n0226",
       "speaker": "narrator"
     },
     {
-      "from": 22983,
-      "to": 23129,
+      "from": 23282,
+      "to": 23428,
       "text": "胸から袖まで同じ言葉が、黒と金で、何度も書かれていました。",
       "lineId": "n0228",
       "speaker": "narrator"
     },
     {
-      "from": 23144,
-      "to": 23246,
+      "from": 23443,
+      "to": 23545,
       "text": "正直、来るところを間違えたかと思いました。",
       "lineId": "n0230",
       "speaker": "narrator"
     },
     {
-      "from": 23261,
-      "to": 23349,
+      "from": 23560,
+      "to": 23648,
       "text": "先生は、私たちを順に見ました。",
       "lineId": "n0255v5a0",
       "speaker": "narrator"
     },
     {
-      "from": 23364,
-      "to": 23470,
+      "from": 23663,
+      "to": 23769,
       "text": "「失礼ですが、三人とも窓際族ですか？」",
       "lineId": "n0255v5a1",
       "speaker": "narrator"
     },
     {
-      "from": 23485,
-      "to": 23538,
+      "from": 23784,
+      "to": 23837,
       "text": "「なぜ分かったんですか？」",
       "lineId": "n0255v5a2",
       "speaker": "narrator"
     },
     {
-      "from": 23553,
-      "to": 23595,
+      "from": 23852,
+      "to": 23894,
       "text": "「オーラで分かります」",
       "lineId": "n0255v5a3",
       "speaker": "narrator"
     },
     {
-      "from": 23619,
-      "to": 23837,
+      "from": 23918,
+      "to": 24136,
       "text": "「以前にも、窓際族の方から相談がありました。\n飲まずに寝たはずなのに、毎朝二日酔いになると」",
       "lineId": "n0255v5a4",
       "speaker": "narrator"
     },
     {
-      "from": 23852,
-      "to": 23939,
+      "from": 24151,
+      "to": 24238,
       "text": "「仕事中は、釣りをしていたそうです」",
       "lineId": "n0255v5a5",
       "speaker": "narrator"
     },
     {
-      "from": 23954,
-      "to": 24059,
+      "from": 24253,
+      "to": 24358,
       "text": "Yさんが「仲良くなれそうだ」と言いました。",
       "lineId": "n0255v5a6",
       "speaker": "narrator"
     },
     {
-      "from": 24074,
-      "to": 24191,
+      "from": 24373,
+      "to": 24490,
       "text": "「立っていなくていいです。どうぞ、座ってください」",
       "lineId": "n0233",
       "speaker": "narrator"
     },
     {
-      "from": 24206,
-      "to": 24340,
+      "from": 24505,
+      "to": 24639,
       "text": "話を急がせず、一人ずつ、最後まで聞いてくれました。",
       "lineId": "n0235",
       "speaker": "narrator"
     },
     {
-      "from": 24355,
-      "to": 24490,
+      "from": 24654,
+      "to": 24789,
       "text": "そのとき、先生の目が、私の肩の向こうで止まりました。",
       "lineId": "n0237",
       "speaker": "narrator"
     },
     {
-      "from": 24520,
-      "to": 24604,
+      "from": 24819,
+      "to": 24903,
       "text": "「今、後ろを振り向かないでください」",
       "lineId": "n0238",
       "speaker": "narrator"
     },
     {
-      "from": 24658,
-      "to": 24739,
+      "from": 24957,
+      "to": 25038,
       "text": "「……顔に、白いものを着けていますか」",
       "lineId": "n0240",
       "speaker": "narrator"
     },
     {
-      "from": 24754,
-      "to": 24846,
+      "from": 25053,
+      "to": 25145,
       "text": "まだ、仮面のことは話していませんでした。",
       "lineId": "n0241",
       "speaker": "narrator"
     },
     {
-      "from": 24861,
-      "to": 24953,
+      "from": 25160,
+      "to": 25252,
       "text": "Yさんが、はい、と答えました。",
       "lineId": "n0242",
       "speaker": "narrator"
     },
     {
-      "from": 24968,
-      "to": 25044,
+      "from": 25267,
+      "to": 25343,
       "text": "「見えている肌は、灰色ですね」",
       "lineId": "n0243",
       "speaker": "narrator"
     },
     {
-      "from": 25074,
-      "to": 25124,
+      "from": 25373,
+      "to": 25423,
       "text": "Mさんがうなずきました。",
       "lineId": "n0244",
       "speaker": "narrator"
     },
     {
-      "from": 25139,
-      "to": 25285,
+      "from": 25438,
+      "to": 25584,
       "text": "先生は机に置いた手を引きました。椅子が、床をこすりました。",
       "lineId": "n0245",
       "speaker": "narrator"
     },
     {
-      "from": 25321,
-      "to": 25385,
+      "from": 25620,
+      "to": 25684,
       "text": "「今、そこにいるんですか」",
       "lineId": "n0246",
       "speaker": "narrator"
     },
     {
-      "from": 25400,
-      "to": 25542,
+      "from": 25699,
+      "to": 25841,
       "text": "「ずっと見えるわけではありません。今は肩と、\n顔の一部だけです」",
       "lineId": "n0248",
       "speaker": "narrator"
     },
     {
-      "from": 25584,
-      "to": 25645,
+      "from": 25883,
+      "to": 25944,
       "text": "「今は、もう見えません」",
       "lineId": "n0248v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 25687,
-      "to": 25799,
+      "from": 25986,
+      "to": 26098,
       "text": "先生は、さっき手を置いていた場所を見たままでした。",
       "lineId": "n0248v6a1",
       "speaker": "narrator"
     },
     {
-      "from": 25814,
-      "to": 25922,
+      "from": 26113,
+      "to": 26221,
       "text": "「そばや、というものの話を聞いたことがあります」",
       "lineId": "n0251",
       "speaker": "narrator"
     },
     {
-      "from": 25937,
-      "to": 26031,
+      "from": 26236,
+      "to": 26330,
       "text": "「そう呼ばれていたものと、同じかもしれません」",
       "lineId": "n0253",
       "speaker": "narrator"
     },
     {
-      "from": 26046,
-      "to": 26194,
+      "from": 26345,
+      "to": 26493,
       "text": "「あれは、たちが悪い。こちらが弱っていても、やめないんです」",
       "lineId": "n0255",
       "speaker": "narrator"
     },
     {
-      "from": 26209,
-      "to": 26379,
+      "from": 26508,
+      "to": 26678,
       "text": "「そばやは、窓際族を好むそうです。相手を選んで、\n夜ごと飲ませる」",
       "lineId": "n0255v5a7",
       "speaker": "narrator"
     },
     {
-      "from": 26424,
-      "to": 26511,
+      "from": 26723,
+      "to": 26810,
       "text": "F先生は管理人と連絡を取りました。",
       "lineId": "n0256",
       "speaker": "narrator"
     },
     {
-      "from": 26526,
-      "to": 26656,
+      "from": 26825,
+      "to": 26955,
       "text": "二日後、前任者から引き継いだ写真と手帳を見せられました。",
       "lineId": "n0258",
       "speaker": "narrator"
     },
     {
-      "from": 26671,
-      "to": 26843,
+      "from": 26970,
+      "to": 27142,
       "text": "写真の祠には、私たちが壊した器があり、\n中に酒が入っていました。",
       "lineId": "n0262",
       "speaker": "narrator"
     },
     {
-      "from": 26858,
-      "to": 26953,
+      "from": 27157,
+      "to": 27252,
       "text": "手帳には、同じ注意が何度もありました。",
       "lineId": "n0264",
       "speaker": "narrator"
     },
     {
-      "from": 26968,
-      "to": 27046,
+      "from": 27267,
+      "to": 27345,
       "text": "客の杯を、欠かさないこと。",
       "lineId": "n0265",
       "speaker": "narrator"
     },
     {
-      "from": 27082,
-      "to": 27209,
+      "from": 27381,
+      "to": 27508,
       "text": "管理人は、供え物の決まりだと思って守っていたそうです。",
       "lineId": "n0266",
       "speaker": "narrator"
     },
     {
-      "from": 27224,
-      "to": 27324,
+      "from": 27523,
+      "to": 27623,
       "text": "「祠を壊したあと、何か話しかけましたか」",
       "lineId": "n0271",
       "speaker": "narrator"
     },
     {
-      "from": 27339,
-      "to": 27431,
+      "from": 27638,
+      "to": 27730,
       "text": "祠の録画を、最初から見てもらいました。",
       "lineId": "n0272",
       "speaker": "narrator"
     },
     {
-      "from": 27446,
-      "to": 27488,
+      "from": 27745,
+      "to": 27787,
       "text": "一緒に飲もうや。",
       "lineId": "n0273",
       "speaker": "narrator"
     },
     {
-      "from": 27503,
-      "to": 27569,
+      "from": 27802,
+      "to": 27868,
       "text": "今日は潰れるまで付き合いますよ。",
       "lineId": "n0274",
       "speaker": "narrator"
     },
     {
-      "from": 27584,
-      "to": 27654,
+      "from": 27883,
+      "to": 27953,
       "text": "先生は、そこで止めました。",
       "lineId": "n0275",
       "speaker": "narrator"
     },
     {
-      "from": 27669,
-      "to": 27773,
+      "from": 27968,
+      "to": 28072,
       "text": "「器を壊したあとで、客として誘ったんですね」",
       "lineId": "n0276",
       "speaker": "narrator"
     },
     {
-      "from": 27788,
-      "to": 27922,
+      "from": 28087,
+      "to": 28221,
       "text": "私は、毎晩飲んでいるのに、なぜ終わらないのか聞きました。",
       "lineId": "n0277",
       "speaker": "narrator"
     },
     {
-      "from": 27937,
-      "to": 28041,
+      "from": 28236,
+      "to": 28340,
       "text": "先生は、妻が撮った動画を再生しました。",
       "lineId": "n0278",
       "speaker": "narrator"
     },
     {
-      "from": 28056,
-      "to": 28150,
+      "from": 28355,
+      "to": 28449,
       "text": "私が空席へ缶を差し出しているところでした。",
       "lineId": "n0279",
       "speaker": "narrator"
     },
     {
-      "from": 28165,
-      "to": 28223,
+      "from": 28464,
+      "to": 28522,
       "text": "「受け取ってもらえていませんね」",
       "lineId": "n0280",
       "speaker": "narrator"
     },
     {
-      "from": 28253,
-      "to": 28423,
+      "from": 28552,
+      "to": 28722,
       "text": "「あちらの器がない。あなた方だけが潰れるので、\n宴会が終わらないんでしょう」",
       "lineId": "n0283",
       "speaker": "narrator"
     },
     {
-      "from": 28438,
-      "to": 28515,
+      "from": 28737,
+      "to": 28814,
       "text": "「飲んでもろうたら、終わるんですか」",
       "lineId": "n0285",
       "speaker": "narrator"
     },
     {
-      "from": 28530,
-      "to": 28733,
+      "from": 28829,
+      "to": 29032,
       "text": "「前の相談者は、専用の杯を用意して、最後まで付き合った。\nそれで来なくなりました」",
       "lineId": "n0286",
       "speaker": "narrator"
     },
     {
-      "from": 28748,
-      "to": 28881,
+      "from": 29047,
+      "to": 29180,
       "text": "「ただ、帰ったかどうかは、私だけでは判断できません」",
       "lineId": "n0288",
       "speaker": "narrator"
     },
     {
-      "from": 28896,
-      "to": 29012,
+      "from": 29195,
+      "to": 29311,
       "text": "「見えるあなた方が、最後まで確かめる必要があります」",
       "lineId": "n0288v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 29096,
-      "to": 29201,
+      "from": 29395,
+      "to": 29500,
       "text": "Mさんが、お祓いだけでは駄目なのかと聞きました。",
       "lineId": "n0292",
       "speaker": "narrator"
     },
     {
-      "from": 29216,
-      "to": 29356,
+      "from": 29515,
+      "to": 29655,
       "text": "「離しても、また呼びに来ます。今度は、終わらせないと」",
       "lineId": "n0293",
       "speaker": "narrator"
     },
     {
-      "from": 29371,
-      "to": 29461,
+      "from": 29670,
+      "to": 29760,
       "text": "用意したのは、大きなメガジョッキでした。",
       "lineId": "n0296",
       "speaker": "narrator"
     },
     {
-      "from": 29476,
-      "to": 29598,
+      "from": 29775,
+      "to": 29897,
       "text": "壊した器に近い大きさのものを、四つそろえました。",
       "lineId": "n0297",
       "speaker": "narrator"
     },
     {
-      "from": 29613,
-      "to": 29687,
+      "from": 29912,
+      "to": 29986,
       "text": "三人分と、そばやの分。",
       "lineId": "n0298",
       "speaker": "narrator"
     },
     {
-      "from": 29702,
-      "to": 29779,
+      "from": 30001,
+      "to": 30078,
       "text": "F先生の分は、ありません。",
       "lineId": "n0298v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 29794,
-      "to": 29916,
+      "from": 30093,
+      "to": 30215,
       "text": "修理の済んだ祠と集会所を使わせてもらうことになりました。",
       "lineId": "n0301",
       "speaker": "narrator"
     },
     {
-      "from": 29931,
-      "to": 30010,
+      "from": 30230,
+      "to": 30309,
       "text": "村へ戻ったのは、夕方でした。",
       "lineId": "n0303",
       "speaker": "narrator"
     },
     {
-      "from": 30025,
-      "to": 30142,
+      "from": 30324,
+      "to": 30441,
       "text": "管理人が鍵を置いて帰ると、急に静かになりました。",
       "lineId": "n0304",
       "speaker": "narrator"
     },
     {
-      "from": 30157,
-      "to": 30229,
+      "from": 30456,
+      "to": 30528,
       "text": "机の片側に私たち三人。",
       "lineId": "n0305",
       "speaker": "narrator"
     },
     {
-      "from": 30244,
-      "to": 30281,
+      "from": 30543,
+      "to": 30580,
       "text": "向かいに一席。",
       "lineId": "n0306",
       "speaker": "narrator"
     },
     {
-      "from": 30296,
-      "to": 30383,
+      "from": 30595,
+      "to": 30682,
       "text": "四つ目のジョッキを、そこへ置きました。",
       "lineId": "n0307",
       "speaker": "narrator"
     },
     {
-      "from": 30425,
-      "to": 30499,
+      "from": 30724,
+      "to": 30798,
       "text": "F先生は壁際に座りました。",
       "lineId": "n0308",
       "speaker": "narrator"
     },
     {
-      "from": 30514,
-      "to": 30697,
+      "from": 30813,
+      "to": 30996,
       "text": "「私に見えないときは、教えてください。まだ座っているのか、\n何をしているのか」",
       "lineId": "n0309",
       "speaker": "narrator"
     },
     {
-      "from": 30712,
-      "to": 30818,
+      "from": 31011,
+      "to": 31117,
       "text": "私たちは、四つのジョッキにビールを注ぎました。",
       "lineId": "n0311",
       "speaker": "narrator"
     },
     {
-      "from": 30878,
-      "to": 30961,
+      "from": 31177,
+      "to": 31260,
       "text": "しばらく、何も起きませんでした。",
       "lineId": "n0312",
       "speaker": "narrator"
     },
     {
-      "from": 30997,
-      "to": 31046,
+      "from": 31296,
+      "to": 31345,
       "text": "冷蔵庫が鳴りました。",
       "lineId": "n0313",
       "speaker": "narrator"
     },
     {
-      "from": 31082,
-      "to": 31160,
+      "from": 31381,
+      "to": 31459,
       "text": "どこかで、窓枠がきしみました。",
       "lineId": "n0314",
       "speaker": "narrator"
     },
     {
-      "from": 31202,
-      "to": 31291,
+      "from": 31501,
+      "to": 31590,
       "text": "Yさんが空席を見たまま動かなくなりました。",
       "lineId": "n0315",
       "speaker": "narrator"
     },
     {
-      "from": 31306,
-      "to": 31415,
+      "from": 31605,
+      "to": 31714,
       "text": "Mさんが、机の下で私の膝をつかみました。",
       "lineId": "n0316",
       "speaker": "narrator"
     },
     {
-      "from": 31463,
-      "to": 31524,
-      "text": "私にも、見えました。",
+      "from": 31762,
+      "to": 31831,
+      "text": "今度は、はっきり見えました。",
       "lineId": "n0317",
       "speaker": "narrator"
     },
     {
-      "from": 31596,
-      "to": 31633,
+      "from": 31903,
+      "to": 31940,
       "text": "「ビール……」",
       "lineId": "sobaya_beer",
       "speaker": "sobaya"
     },
     {
-      "from": 31666,
-      "to": 31723,
+      "from": 31973,
+      "to": 32030,
       "text": "いつからいたのか分かりません。",
       "lineId": "n0318",
       "speaker": "narrator"
     },
     {
-      "from": 31738,
-      "to": 31890,
+      "from": 32045,
+      "to": 32197,
       "text": "白い半袖の服。太い腕も、首も、肌は灰色でした。",
       "lineId": "n0320",
       "speaker": "narrator"
     },
     {
-      "from": 31905,
-      "to": 31973,
+      "from": 32212,
+      "to": 32280,
       "text": "見た途端、思い出しました。",
       "lineId": "n0322",
       "speaker": "narrator"
     },
     {
-      "from": 31988,
-      "to": 32101,
+      "from": 32295,
+      "to": 32408,
       "text": "家でも、この姿を見ていました。毎晩です。",
       "lineId": "n0323",
       "speaker": "narrator"
     },
     {
-      "from": 32116,
-      "to": 32251,
+      "from": 32423,
+      "to": 32558,
       "text": "待たせたら悪い。そう思って、寝室から出ていたんです。",
       "lineId": "n0324",
       "speaker": "narrator"
     },
     {
-      "from": 32299,
-      "to": 32328,
+      "from": 32606,
+      "to": 32635,
       "text": "「来ましたか」",
       "lineId": "n0325",
       "speaker": "narrator"
     },
     {
-      "from": 32343,
-      "to": 32379,
+      "from": 32650,
+      "to": 32686,
       "text": "「どこにいますか」",
       "lineId": "n0328",
       "speaker": "narrator"
     },
     {
-      "from": 32415,
-      "to": 32478,
+      "from": 32722,
+      "to": 32785,
       "text": "Yさんが正面を指しました。",
       "lineId": "n0329",
       "speaker": "narrator"
     },
     {
-      "from": 32493,
-      "to": 32583,
+      "from": 32800,
+      "to": 32890,
       "text": "そばやが、四つ目のジョッキに触れました。",
       "lineId": "n0331",
       "speaker": "narrator"
     },
     {
-      "from": 32598,
-      "to": 32653,
+      "from": 32905,
+      "to": 32960,
       "text": "すぐには持ちませんでした。",
       "lineId": "n0332",
       "speaker": "narrator"
     },
     {
-      "from": 32695,
-      "to": 32769,
+      "from": 33002,
+      "to": 33076,
       "text": "私たちも、動けませんでした。",
       "lineId": "n0332v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 32784,
-      "to": 32884,
+      "from": 33091,
+      "to": 33191,
       "text": "指が取っ手を、一周、なぞりました。",
       "lineId": "n0333",
       "speaker": "narrator"
     },
     {
-      "from": 32938,
-      "to": 33022,
+      "from": 33245,
+      "to": 33329,
       "text": "今度は、指が取っ手に掛かりました。",
       "lineId": "n0337",
       "speaker": "narrator"
     },
     {
-      "from": 33037,
-      "to": 33091,
+      "from": 33344,
+      "to": 33398,
       "text": "ジョッキが持ち上がりました。",
       "lineId": "n0338",
       "speaker": "narrator"
     },
     {
-      "from": 33157,
-      "to": 33204,
+      "from": 33464,
+      "to": 33511,
       "text": "私たちも持ちました。",
       "lineId": "n0339",
       "speaker": "narrator"
     },
     {
-      "from": 33219,
-      "to": 33279,
+      "from": 33526,
+      "to": 33586,
       "text": "四つのジョッキが当たりました。",
       "lineId": "n0340",
       "speaker": "narrator"
     },
     {
-      "from": 33294,
-      "to": 33386,
+      "from": 33601,
+      "to": 33693,
       "text": "仮面を着けたまま、ジョッキを傾けました。",
       "lineId": "n0341",
       "speaker": "narrator"
     },
     {
-      "from": 33401,
-      "to": 33449,
+      "from": 33708,
+      "to": 33756,
       "text": "中身が減っていました。",
       "lineId": "n0344",
       "speaker": "narrator"
     },
     {
-      "from": 33485,
-      "to": 33619,
+      "from": 33792,
+      "to": 33926,
       "text": "F先生の位置からは、そばやの姿は見えていなかったそうです。",
       "lineId": "n0346",
       "speaker": "narrator"
     },
     {
-      "from": 33634,
-      "to": 33750,
+      "from": 33941,
+      "to": 34057,
       "text": "空の席でジョッキだけが傾くのを、見ていたそうです。",
       "lineId": "n0347",
       "speaker": "narrator"
     },
     {
-      "from": 33765,
-      "to": 33861,
+      "from": 34072,
+      "to": 34168,
       "text": "最初は、怖くて味が分かりませんでした。",
       "lineId": "n0349",
       "speaker": "narrator"
     },
     {
-      "from": 33876,
-      "to": 34001,
+      "from": 34183,
+      "to": 34308,
       "text": "誰かが自分の分を注ぐときには、そばやの分も注ぐ。",
       "lineId": "n0351",
       "speaker": "narrator"
     },
     {
-      "from": 34016,
-      "to": 34204,
+      "from": 34323,
+      "to": 34511,
       "text": "途中から、そばやが笑い始めました。低く、\n喉の奥で空気が震える声でした。",
       "lineId": "n0352",
       "speaker": "narrator"
     },
     {
-      "from": 34219,
-      "to": 34314,
+      "from": 34526,
+      "to": 34621,
       "text": "妻の動画には、入っていなかった声です。",
       "lineId": "n0355",
       "speaker": "narrator"
     },
     {
-      "from": 34329,
-      "to": 34387,
+      "from": 34636,
+      "to": 34694,
       "text": "そばやがYさんを見ました。",
       "lineId": "n0356",
       "speaker": "narrator"
     },
     {
-      "from": 34402,
-      "to": 34458,
+      "from": 34709,
+      "to": 34765,
       "text": "Yさんは首を振りました。",
       "lineId": "n0357",
       "speaker": "narrator"
     },
     {
-      "from": 34473,
-      "to": 34538,
+      "from": 34780,
+      "to": 34845,
       "text": "「今日は、ギターないんです」",
       "lineId": "n0358",
       "speaker": "narrator"
     },
     {
-      "from": 34553,
-      "to": 34658,
+      "from": 34860,
+      "to": 34965,
       "text": "白い仮面が、しばらくYさんへ向いていました。",
       "lineId": "n0359",
       "speaker": "narrator"
     },
     {
-      "from": 34700,
-      "to": 34785,
+      "from": 35007,
+      "to": 35092,
       "text": "やがて、隣のMさんへ向きました。",
       "lineId": "n0360",
       "speaker": "narrator"
     },
     {
-      "from": 34800,
-      "to": 34856,
+      "from": 35107,
+      "to": 35163,
       "text": "Mさんが歌い始めました。",
       "lineId": "n0362",
       "speaker": "narrator"
     },
     {
-      "from": 34871,
-      "to": 34960,
+      "from": 35178,
+      "to": 35267,
       "text": "声がかすれ、何度か途中で切れました。",
       "lineId": "n0364",
       "speaker": "narrator"
     },
     {
-      "from": 34975,
-      "to": 35035,
+      "from": 35282,
+      "to": 35342,
       "text": "それでも、うまかった。",
       "lineId": "n0365",
       "speaker": "narrator"
     },
     {
-      "from": 35050,
-      "to": 35124,
+      "from": 35357,
+      "to": 35431,
       "text": "そばやは、じっと聞いていました。",
       "lineId": "n0366",
       "speaker": "narrator"
     },
     {
-      "from": 35160,
-      "to": 35252,
+      "from": 35467,
+      "to": 35559,
       "text": "歌い終わると、太い手を打ち合わせました。",
       "lineId": "n0367",
       "speaker": "narrator"
     },
     {
-      "from": 35276,
-      "to": 35413,
+      "from": 35583,
+      "to": 35720,
       "text": "Mさんは、あの動画と同じ間を置いて、頭を下げました。",
       "lineId": "n0368",
       "speaker": "narrator"
     },
     {
-      "from": 35485,
-      "to": 35544,
+      "from": 35792,
+      "to": 35851,
       "text": "時間が分からなくなりました。",
       "lineId": "n0370",
       "speaker": "narrator"
     },
     {
-      "from": 35559,
-      "to": 35665,
+      "from": 35866,
+      "to": 35972,
       "text": "Mさんが「電話が来た」と言って立ちました。",
       "lineId": "n0371",
       "speaker": "narrator"
     },
     {
-      "from": 35680,
-      "to": 35771,
+      "from": 35987,
+      "to": 36078,
       "text": "スマホは、私の前に置いたままでした。",
       "lineId": "n0371v5r1",
       "speaker": "narrator"
     },
     {
-      "from": 35786,
-      "to": 35841,
+      "from": 36093,
+      "to": 36148,
       "text": "そばやが手を伸ばしました。",
       "lineId": "n0373",
       "speaker": "narrator"
     },
     {
-      "from": 35856,
-      "to": 35956,
+      "from": 36163,
+      "to": 36263,
       "text": "Mさんのジョッキを、少しだけ手前へ寄せました。",
       "lineId": "n0375",
       "speaker": "narrator"
     },
     {
-      "from": 36004,
-      "to": 36062,
+      "from": 36311,
+      "to": 36369,
       "text": "Mさんが座り直しました。",
       "lineId": "n0376",
       "speaker": "narrator"
     },
     {
-      "from": 36077,
-      "to": 36207,
+      "from": 36384,
+      "to": 36514,
       "text": "「今、何をされましたか」と、先生が聞きました。",
       "lineId": "n0377",
       "speaker": "narrator"
     },
     {
-      "from": 36222,
-      "to": 36317,
+      "from": 36529,
+      "to": 36624,
       "text": "先生には、その手が見えていませんでした。",
       "lineId": "n0380",
       "speaker": "narrator"
     },
     {
-      "from": 36347,
-      "to": 36402,
+      "from": 36654,
+      "to": 36709,
       "text": "Mさんが泣き始めました。",
       "lineId": "n0381",
       "speaker": "narrator"
     },
     {
-      "from": 36417,
-      "to": 36475,
+      "from": 36724,
+      "to": 36782,
       "text": "「もう、しんどいんよ」",
       "lineId": "n0382",
       "speaker": "narrator"
     },
     {
-      "from": 36490,
-      "to": 36590,
+      "from": 36797,
+      "to": 36897,
       "text": "「仕事も行かれへんし。家でも寝られへんし」",
       "lineId": "n0384",
       "speaker": "narrator"
     },
     {
-      "from": 36605,
-      "to": 36714,
+      "from": 36912,
+      "to": 37021,
       "text": "太い手が、Mさんの肩を二度、叩きました。",
       "lineId": "n0385",
       "speaker": "narrator"
     },
     {
-      "from": 36729,
-      "to": 36902,
+      "from": 37036,
+      "to": 37209,
       "text": "Mさんは、泣きながら笑いました。私には、\nその顔を見ていられませんでした。",
       "lineId": "n0385v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 36938,
-      "to": 37044,
+      "from": 37245,
+      "to": 37351,
       "text": "Mさんはジョッキを戻すと、そのまま突っ伏しました。",
       "lineId": "n0390",
       "speaker": "narrator"
     },
     {
-      "from": 37059,
-      "to": 37157,
+      "from": 37366,
+      "to": 37464,
       "text": "先生が近づいて、様子を確かめました。",
       "lineId": "n0391",
       "speaker": "narrator"
     },
     {
-      "from": 37172,
-      "to": 37231,
+      "from": 37479,
+      "to": 37538,
       "text": "そばやが先生を見ました。",
       "lineId": "n0392",
       "speaker": "narrator"
     },
     {
-      "from": 37246,
-      "to": 37336,
+      "from": 37553,
+      "to": 37643,
       "text": "先生の動きが、一瞬止まりました。",
       "lineId": "n0393",
       "speaker": "narrator"
     },
     {
-      "from": 37384,
-      "to": 37534,
+      "from": 37691,
+      "to": 37841,
       "text": "後から聞くと、その瞬間だけ、先生にも仮面が見えたそうです。",
       "lineId": "n0394",
       "speaker": "narrator"
     },
     {
-      "from": 37549,
-      "to": 37669,
+      "from": 37856,
+      "to": 37976,
       "text": "先生はMさんを支えて、横の布団へ寝かせました。",
       "lineId": "n0395",
       "speaker": "narrator"
     },
     {
-      "from": 37684,
-      "to": 37767,
+      "from": 37991,
+      "to": 38074,
       "text": "今度は、そばやは止めませんでした。",
       "lineId": "n0396",
       "speaker": "narrator"
     },
     {
-      "from": 37833,
-      "to": 37956,
+      "from": 38140,
+      "to": 38263,
       "text": "Yさんは何度も「すみません」と繰り返していました。",
       "lineId": "n0405",
       "speaker": "narrator"
     },
     {
-      "from": 37971,
-      "to": 38058,
+      "from": 38278,
+      "to": 38365,
       "text": "その声が途切れ、椅子にもたれました。",
       "lineId": "n0406",
       "speaker": "narrator"
     },
     {
-      "from": 38073,
-      "to": 38182,
+      "from": 38380,
+      "to": 38489,
       "text": "先生が支え、Mさんの隣へ寝かせました。",
       "lineId": "n0407",
       "speaker": "narrator"
     },
     {
-      "from": 38197,
-      "to": 38243,
+      "from": 38504,
+      "to": 38550,
       "text": "私だけになりました。",
       "lineId": "n0408",
       "speaker": "narrator"
     },
     {
-      "from": 38285,
-      "to": 38403,
+      "from": 38592,
+      "to": 38710,
       "text": "先生に、今どんな様子ですか、と聞かれました。",
       "lineId": "n0408v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 38418,
-      "to": 38545,
+      "from": 38725,
+      "to": 38852,
       "text": "返事をする前に、そばやがジョッキを私の方へ寄せました。",
       "lineId": "n0408v6a1",
       "speaker": "narrator"
     },
     {
-      "from": 38560,
-      "to": 38701,
+      "from": 38867,
+      "to": 39008,
       "text": "そばやも、肩を落とし、仮面が少し前へ傾いていました。",
       "lineId": "n0409",
       "speaker": "narrator"
     },
     {
-      "from": 38716,
-      "to": 38840,
+      "from": 39023,
+      "to": 39147,
       "text": "ジョッキを置こうとして、一度、机の縁にぶつけました。",
       "lineId": "n0411",
       "speaker": "narrator"
     },
     {
-      "from": 38876,
-      "to": 38939,
+      "from": 39183,
+      "to": 39246,
       "text": "「家には、来ないでください」",
       "lineId": "n0415",
       "speaker": "narrator"
     },
     {
-      "from": 38987,
-      "to": 39069,
+      "from": 39294,
+      "to": 39376,
       "text": "白い仮面が、こちらを向きました。",
       "lineId": "n0416",
       "speaker": "narrator"
     },
     {
-      "from": 39084,
-      "to": 39133,
+      "from": 39391,
+      "to": 39440,
       "text": "「妻が怖がるんです」",
       "lineId": "n0417",
       "speaker": "narrator"
     },
     {
-      "from": 39169,
-      "to": 39316,
+      "from": 39476,
+      "to": 39623,
       "text": "返事はありませんでした。取っ手を持つ指が、\n少し緩んだだけでした。",
       "lineId": "n0417v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 39358,
-      "to": 39441,
+      "from": 39665,
+      "to": 39748,
       "text": "そばやが、残ったビールを飲みました。",
       "lineId": "n0419",
       "speaker": "narrator"
     },
     {
-      "from": 39456,
-      "to": 39546,
+      "from": 39763,
+      "to": 39853,
       "text": "空になったジョッキが、机に当たりました。",
       "lineId": "n0421",
       "speaker": "narrator"
     },
     {
-      "from": 39582,
-      "to": 39625,
+      "from": 39889,
+      "to": 39932,
       "text": "「ごちそうさまでした」",
       "lineId": "n0422",
       "speaker": "narrator"
     },
     {
-      "from": 39676,
-      "to": 39845,
+      "from": 39983,
+      "to": 40152,
       "text": "そばやは太い腕を机に置き、その上へ、ゆっくり頭を伏せました。",
       "lineId": "n0424",
       "speaker": "narrator"
     },
     {
-      "from": 39893,
-      "to": 39950,
+      "from": 40200,
+      "to": 40257,
       "text": "私は先生を見ました。",
       "lineId": "n0425",
       "speaker": "narrator"
     },
     {
-      "from": 39965,
-      "to": 39992,
+      "from": 40272,
+      "to": 40299,
       "text": "「……寝ました」",
       "lineId": "n0427",
       "speaker": "narrator"
     },
     {
-      "from": 40034,
-      "to": 40129,
+      "from": 40341,
+      "to": 40436,
       "text": "それきり、私も起きていられませんでした。",
       "lineId": "n0429",
       "speaker": "narrator"
     },
     {
-      "from": 40225,
-      "to": 40303,
+      "from": 40532,
+      "to": 40610,
       "text": "目が覚めると、畳の上でした。",
       "lineId": "n0430",
       "speaker": "narrator"
     },
     {
-      "from": 40318,
-      "to": 40392,
+      "from": 40625,
+      "to": 40699,
       "text": "頭が痛く、吐き気がしました。",
       "lineId": "n0432",
       "speaker": "narrator"
     },
     {
-      "from": 40407,
-      "to": 40479,
+      "from": 40714,
+      "to": 40786,
       "text": "先生が水を持ってきてくれました。",
       "lineId": "n0435",
       "speaker": "narrator"
     },
     {
-      "from": 40494,
-      "to": 40587,
+      "from": 40801,
+      "to": 40894,
       "text": "机の上に、四つのジョッキがありました。",
       "lineId": "n0436",
       "speaker": "narrator"
     },
     {
-      "from": 40602,
-      "to": 40660,
+      "from": 40909,
+      "to": 40967,
       "text": "全部、空でした。",
       "lineId": "n0437",
       "speaker": "narrator"
     },
     {
-      "from": 40693,
-      "to": 40781,
+      "from": 41000,
+      "to": 41088,
       "text": "向かいの椅子には、誰もいませんでした。",
       "lineId": "n0438",
       "speaker": "narrator"
     },
     {
-      "from": 40829,
-      "to": 40867,
+      "from": 41136,
+      "to": 41174,
       "text": "「終わったんですか」",
       "lineId": "n0439",
       "speaker": "narrator"
     },
     {
-      "from": 40882,
-      "to": 41005,
+      "from": 41189,
+      "to": 41312,
       "text": "「帰ったと思います。今夜まで、様子を見ましょう」",
       "lineId": "n0441",
       "speaker": "narrator"
     },
     {
-      "from": 41038,
-      "to": 41146,
+      "from": 41345,
+      "to": 41453,
       "text": "私たちは、そばやのジョッキを祠へ納めました。",
       "lineId": "n0448",
       "speaker": "narrator"
     },
     {
-      "from": 41161,
-      "to": 41296,
+      "from": 41468,
+      "to": 41603,
       "text": "以前の器の代わりに、管理人が引き継いでくれることになりま\nした。",
       "lineId": "n0449",
       "speaker": "narrator"
     },
     {
-      "from": 41311,
-      "to": 41393,
+      "from": 41618,
+      "to": 41700,
       "text": "その夜、私は自宅で寝ました。",
       "lineId": "n0451",
       "speaker": "narrator"
     },
     {
-      "from": 41408,
-      "to": 41531,
+      "from": 41715,
+      "to": 41838,
       "text": "妻が寝室の入り口に椅子を置き、座っていてくれました。",
       "lineId": "n0452",
       "speaker": "narrator"
     },
     {
-      "from": 41546,
-      "to": 41584,
+      "from": 41853,
+      "to": 41891,
       "text": "朝になりました。",
       "lineId": "n0456",
       "speaker": "narrator"
     },
     {
-      "from": 41620,
-      "to": 41680,
+      "from": 41927,
+      "to": 41987,
       "text": "頭が痛くありませんでした。",
       "lineId": "n0457",
       "speaker": "narrator"
     },
     {
-      "from": 41722,
-      "to": 41796,
+      "from": 42029,
+      "to": 42103,
       "text": "食卓にはコップが一つありました。",
       "lineId": "n0459",
       "speaker": "narrator"
     },
     {
-      "from": 41811,
-      "to": 41908,
+      "from": 42118,
+      "to": 42215,
       "text": "昨夜、自分で水を飲んだコップでした。",
       "lineId": "n0460",
       "speaker": "narrator"
     },
     {
-      "from": 41923,
-      "to": 41978,
+      "from": 42230,
+      "to": 42285,
       "text": "空き缶はありませんでした。",
       "lineId": "n0461",
       "speaker": "narrator"
     },
     {
-      "from": 41993,
-      "to": 42116,
+      "from": 42300,
+      "to": 42423,
       "text": "「昨日は、ずっと寝てたよ」と、妻が言いました。",
       "lineId": "n0464",
       "speaker": "narrator"
     },
     {
-      "from": 42194,
-      "to": 42270,
+      "from": 42501,
+      "to": 42577,
       "text": "MさんとYさんも、同じでした。",
       "lineId": "n0468",
       "speaker": "narrator"
     },
     {
-      "from": 42285,
-      "to": 42358,
+      "from": 42592,
+      "to": 42665,
       "text": "夜中に起きて飲むことはなくなりました。",
       "lineId": "n0469",
       "speaker": "narrator"
     },
     {
-      "from": 42373,
-      "to": 42432,
+      "from": 42680,
+      "to": 42739,
       "text": "あれから数か月になります。",
       "lineId": "n0470",
       "speaker": "narrator"
     },
     {
-      "from": 42447,
-      "to": 42548,
+      "from": 42754,
+      "to": 42855,
       "text": "体調も戻り、三人とも仕事に出ています。",
       "lineId": "n0471",
       "speaker": "narrator"
     },
     {
-      "from": 42563,
-      "to": 42642,
+      "from": 42870,
+      "to": 42949,
       "text": "またエクセルを開いたり閉じたりしています。",
       "lineId": "n0471v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 42657,
-      "to": 42726,
+      "from": 42964,
+      "to": 43033,
       "text": "一度、私は聞きました。",
       "lineId": "n0473",
       "speaker": "narrator"
     },
     {
-      "from": 42741,
-      "to": 42835,
+      "from": 43048,
+      "to": 43142,
       "text": "「あれは、私たちを恨んでいたんでしょうか」",
       "lineId": "n0474",
       "speaker": "narrator"
     },
     {
-      "from": 42850,
-      "to": 43050,
+      "from": 43157,
+      "to": 43357,
       "text": "「恨んでいたかは、分かりません。こちらが苦しんでいることも、\n分かっていなかったのかもしれません」",
       "lineId": "n0476",
       "speaker": "narrator"
     },
     {
-      "from": 43065,
-      "to": 43116,
+      "from": 43372,
+      "to": 43423,
       "text": "「楽しかったんでしょうね」",
       "lineId": "n0479",
       "speaker": "narrator"
     },
     {
-      "from": 43164,
-      "to": 43252,
+      "from": 43471,
+      "to": 43559,
       "text": "私は、今でもその言葉が嫌です。",
       "lineId": "n0481",
       "speaker": "narrator"
     },
     {
-      "from": 43267,
-      "to": 43414,
+      "from": 43574,
+      "to": 43721,
       "text": "毎朝吐いて、仕事へ行けなくなって、妻に怖がられていたあいだ。",
       "lineId": "n0482",
       "speaker": "narrator"
     },
     {
-      "from": 43429,
-      "to": 43578,
+      "from": 43736,
+      "to": 43885,
       "text": "向こうは、楽しく飲んでいた。私も、楽しそうにしていた。",
       "lineId": "n0483",
       "speaker": "narrator"
     },
     {
-      "from": 43593,
-      "to": 43672,
+      "from": 43900,
+      "to": 43979,
       "text": "妻に頼んで、動画は消しました。",
       "lineId": "n0483v6a0",
       "speaker": "narrator"
     },
     {
-      "from": 43687,
-      "to": 43811,
+      "from": 43994,
+      "to": 44118,
       "text": "最後に、自分が言っていたことだけは、覚えています。",
       "lineId": "n0483v6a1",
       "speaker": "narrator"
     },
     {
-      "from": 43826,
-      "to": 43879,
+      "from": 44133,
+      "to": 44186,
       "text": "まだ帰らなくていいですよ。",
       "lineId": "n0486",
       "speaker": "narrator"
     },
     {
-      "from": 43933,
-      "to": 44002,
+      "from": 44240,
+      "to": 44309,
       "text": "あれは、私の声でした。",
       "lineId": "n0487",
       "speaker": "narrator"
@@ -6711,59 +6729,59 @@
     },
     {
       "chapter": 4,
-      "from": 9343
+      "from": 9490
     },
     {
       "chapter": 5,
-      "from": 11246
+      "from": 11393
     },
     {
       "chapter": 6,
-      "from": 12963
+      "from": 13110
     },
     {
       "chapter": 7,
-      "from": 15504
+      "from": 15711
     },
     {
       "chapter": 8,
-      "from": 19235
+      "from": 19463
     },
     {
       "chapter": 9,
-      "from": 22175
+      "from": 22474
     },
     {
       "chapter": 10,
-      "from": 26421
+      "from": 26720
     },
     {
       "chapter": 11,
-      "from": 29093
+      "from": 29392
     },
     {
       "chapter": 12,
-      "from": 30875
+      "from": 31174
     },
     {
       "chapter": 13,
-      "from": 33154
+      "from": 33461
     },
     {
       "chapter": 14,
-      "from": 35482
+      "from": 35789
     },
     {
       "chapter": 15,
-      "from": 37830
+      "from": 38137
     },
     {
       "chapter": 16,
-      "from": 40222
+      "from": 40529
     },
     {
       "chapter": 17,
-      "from": 42191
+      "from": 42498
     }
   ],
   "shots": [
@@ -7045,6 +7063,18 @@
     },
     {
       "from": 9042,
+      "background": "sobaya_moonlit_v7",
+      "person": null,
+      "zoom": 1,
+      "focusX": 50,
+      "focusY": 50,
+      "view": "cursed-pov",
+      "move": 0,
+      "brightness": 0.93,
+      "to": 9189
+    },
+    {
+      "from": 9189,
       "background": "broken",
       "person": null,
       "zoom": 1.12,
@@ -7053,10 +7083,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.57,
-      "to": 9343
+      "to": 9490
     },
     {
-      "from": 9343,
+      "from": 9490,
       "background": "village",
       "person": null,
       "zoom": 1.02,
@@ -7065,10 +7095,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.77,
-      "to": 9467
+      "to": 9614
     },
     {
-      "from": 9467,
+      "from": 9614,
       "background": "broken",
       "person": null,
       "zoom": 1.02,
@@ -7077,10 +7107,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.73,
-      "to": 9768
+      "to": 9915
     },
     {
-      "from": 9768,
+      "from": 9915,
       "background": "shrine",
       "person": null,
       "zoom": 1.15,
@@ -7089,10 +7119,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.66,
-      "to": 10201
+      "to": 10348
     },
     {
-      "from": 10201,
+      "from": 10348,
       "background": "village",
       "person": null,
       "zoom": 1.02,
@@ -7101,10 +7131,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.47,
-      "to": 10377
+      "to": 10524
     },
     {
-      "from": 10377,
+      "from": 10524,
       "background": "broken",
       "person": null,
       "zoom": 1.25,
@@ -7113,10 +7143,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 10771
+      "to": 10918
     },
     {
-      "from": 10771,
+      "from": 10918,
       "background": "office",
       "person": null,
       "zoom": 1.02,
@@ -7125,10 +7155,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 11246
+      "to": 11393
     },
     {
-      "from": 11246,
+      "from": 11393,
       "background": "morning",
       "person": null,
       "zoom": 1.02,
@@ -7137,10 +7167,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 11451
+      "to": 11598
     },
     {
-      "from": 11451,
+      "from": 11598,
       "background": "home_product",
       "person": null,
       "zoom": 1.1,
@@ -7149,10 +7179,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.56,
-      "to": 11733
+      "to": 11880
     },
     {
-      "from": 11733,
+      "from": 11880,
       "background": "home_product",
       "person": null,
       "zoom": 1.55,
@@ -7161,10 +7191,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 11905
+      "to": 12052
     },
     {
-      "from": 11905,
+      "from": 12052,
       "background": "home_product",
       "person": null,
       "zoom": 1.05,
@@ -7173,10 +7203,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.66,
-      "to": 12407
+      "to": 12554
     },
     {
-      "from": 12407,
+      "from": 12554,
       "background": "morning",
       "person": null,
       "zoom": 1.12,
@@ -7185,10 +7215,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.6,
-      "to": 12800
+      "to": 12947
     },
     {
-      "from": 12800,
+      "from": 12947,
       "background": "home_product",
       "person": null,
       "zoom": 1.5,
@@ -7197,10 +7227,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.48,
-      "to": 12963
+      "to": 13110
     },
     {
-      "from": 12963,
+      "from": 13110,
       "background": "home_product",
       "person": null,
       "zoom": 1.02,
@@ -7209,10 +7239,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 13296
+      "to": 13443
     },
     {
-      "from": 13296,
+      "from": 13443,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.03,
@@ -7221,10 +7251,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.67,
-      "to": 13700
+      "to": 13847
     },
     {
-      "from": 13700,
+      "from": 13847,
       "background": "home_toast_v6",
       "person": null,
       "zoom": 1.03,
@@ -7233,10 +7263,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.71,
-      "to": 14042
+      "to": 14189
     },
     {
-      "from": 14042,
+      "from": 14189,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.03,
@@ -7245,10 +7275,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.67,
-      "to": 14666
+      "to": 14873
     },
     {
-      "from": 14666,
+      "from": 14873,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.12,
@@ -7257,10 +7287,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.67,
-      "to": 15023
+      "to": 15230
     },
     {
-      "from": 15023,
+      "from": 15230,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.12,
@@ -7269,10 +7299,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.67,
-      "to": 15124
+      "to": 15331
     },
     {
-      "from": 15124,
+      "from": 15331,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.08,
@@ -7281,10 +7311,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.59,
-      "to": 15504
+      "to": 15711
     },
     {
-      "from": 15504,
+      "from": 15711,
       "background": "office",
       "person": null,
       "zoom": 1.02,
@@ -7293,10 +7323,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.61,
-      "to": 15721
+      "to": 15928
     },
     {
-      "from": 15721,
+      "from": 15928,
       "background": "home_product",
       "person": null,
       "zoom": 1.1,
@@ -7305,10 +7335,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.55,
-      "to": 16278
+      "to": 16485
     },
     {
-      "from": 16278,
+      "from": 16485,
       "background": "office",
       "person": "m_photo",
       "zoom": 1.02,
@@ -7317,10 +7347,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 16630
+      "to": 16858
     },
     {
-      "from": 16630,
+      "from": 16858,
       "background": "office",
       "person": null,
       "zoom": 1.02,
@@ -7329,10 +7359,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 17295
+      "to": 17523
     },
     {
-      "from": 17295,
+      "from": 17523,
       "background": "office",
       "person": "y_photo",
       "zoom": 1.02,
@@ -7341,10 +7371,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 17874
+      "to": 18102
     },
     {
-      "from": 17874,
+      "from": 18102,
       "background": "office",
       "person": "y_photo",
       "zoom": 1.12,
@@ -7353,10 +7383,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.6,
-      "to": 17975
+      "to": 18203
     },
     {
-      "from": 17975,
+      "from": 18203,
       "background": "office",
       "person": "m_photo",
       "zoom": 1.02,
@@ -7365,10 +7395,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.63,
-      "to": 18640
+      "to": 18868
     },
     {
-      "from": 18640,
+      "from": 18868,
       "background": "home_product",
       "person": null,
       "zoom": 1.12,
@@ -7377,10 +7407,10 @@
       "view": "witness",
       "move": 0,
       "brightness": 0.58,
-      "to": 18877
+      "to": 19105
     },
     {
-      "from": 18877,
+      "from": 19105,
       "background": "home_product",
       "person": null,
       "zoom": 1.42,
@@ -7389,10 +7419,10 @@
       "view": "witness",
       "move": 0,
       "brightness": 0.65,
-      "to": 19235
+      "to": 19463
     },
     {
-      "from": 19235,
+      "from": 19463,
       "background": "home_product",
       "person": null,
       "zoom": 1.12,
@@ -7401,10 +7431,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.66,
-      "to": 19481
+      "to": 19709
     },
     {
-      "from": 19481,
+      "from": 19709,
       "background": "home_product",
       "person": "m_photo",
       "zoom": 1.02,
@@ -7413,10 +7443,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.66,
-      "to": 19686
+      "to": 19914
     },
     {
-      "from": 19686,
+      "from": 19914,
       "background": "home_product",
       "person": null,
       "zoom": 1.42,
@@ -7425,10 +7455,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.69,
-      "to": 19979
+      "to": 20207
     },
     {
-      "from": 19979,
+      "from": 20207,
       "background": "office",
       "person": "m_photo",
       "zoom": 1.02,
@@ -7437,10 +7467,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 20138
+      "to": 20366
     },
     {
-      "from": 20138,
+      "from": 20366,
       "background": "office",
       "person": "y_photo",
       "zoom": 1.02,
@@ -7449,22 +7479,22 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.63,
-      "to": 20683
+      "to": 20911
     },
     {
-      "from": 20683,
-      "background": "office",
-      "person": "sobaya_shadow_v4",
-      "zoom": 1.02,
+      "from": 20911,
+      "background": "sobaya_moonlit_v7",
+      "person": null,
+      "zoom": 1,
       "focusX": 50,
       "focusY": 50,
-      "view": "plain",
+      "view": "cursed-memory",
       "move": 0,
-      "brightness": 0.53,
-      "to": 20959
+      "brightness": 0.93,
+      "to": 21258
     },
     {
-      "from": 20959,
+      "from": 21258,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.12,
@@ -7473,10 +7503,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.59,
-      "to": 21439
+      "to": 21738
     },
     {
-      "from": 21439,
+      "from": 21738,
       "background": "hand_can_sealed_v6",
       "person": null,
       "zoom": 1,
@@ -7485,10 +7515,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 21611
+      "to": 21910
     },
     {
-      "from": 21611,
+      "from": 21910,
       "background": "hand_can_open_v6",
       "person": null,
       "zoom": 1,
@@ -7497,10 +7527,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 21977
+      "to": 22276
     },
     {
-      "from": 21977,
+      "from": 22276,
       "background": "morning",
       "person": null,
       "zoom": 1.07,
@@ -7509,10 +7539,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 22175
+      "to": 22474
     },
     {
-      "from": 22175,
+      "from": 22474,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7521,10 +7551,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.73,
-      "to": 22809
+      "to": 23108
     },
     {
-      "from": 22809,
+      "from": 23108,
       "background": "f_hakama",
       "person": null,
       "zoom": 1,
@@ -7533,10 +7563,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.95,
-      "to": 23141
+      "to": 23440
     },
     {
-      "from": 23141,
+      "from": 23440,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7545,10 +7575,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.73,
-      "to": 23951
+      "to": 24250
     },
     {
-      "from": 23951,
+      "from": 24250,
       "background": "temple",
       "person": "y_photo",
       "zoom": 1.02,
@@ -7557,10 +7587,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 24071
+      "to": 24370
     },
     {
-      "from": 24071,
+      "from": 24370,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7569,10 +7599,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.71,
-      "to": 24352
+      "to": 24651
     },
     {
-      "from": 24352,
+      "from": 24651,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7581,10 +7611,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.63,
-      "to": 25136
+      "to": 25435
     },
     {
-      "from": 25136,
+      "from": 25435,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.08,
@@ -7593,10 +7623,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.63,
-      "to": 25581
+      "to": 25880
     },
     {
-      "from": 25581,
+      "from": 25880,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7605,10 +7635,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.61,
-      "to": 25811
+      "to": 26110
     },
     {
-      "from": 25811,
+      "from": 26110,
       "background": "shrine",
       "person": null,
       "zoom": 1.15,
@@ -7617,10 +7647,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 26043
+      "to": 26342
     },
     {
-      "from": 26043,
+      "from": 26342,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7629,10 +7659,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 26421
+      "to": 26720
     },
     {
-      "from": 26421,
+      "from": 26720,
       "background": "shrine",
       "person": null,
       "zoom": 1.02,
@@ -7641,10 +7671,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.71,
-      "to": 26855
+      "to": 27154
     },
     {
-      "from": 26855,
+      "from": 27154,
       "background": "shrine",
       "person": "note",
       "zoom": 1.02,
@@ -7653,10 +7683,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.67,
-      "to": 27221
+      "to": 27520
     },
     {
-      "from": 27221,
+      "from": 27520,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7665,10 +7695,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.67,
-      "to": 27336
+      "to": 27635
     },
     {
-      "from": 27336,
+      "from": 27635,
       "background": "broken",
       "person": null,
       "zoom": 1.12,
@@ -7677,10 +7707,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.64,
-      "to": 27581
+      "to": 27880
     },
     {
-      "from": 27581,
+      "from": 27880,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7689,10 +7719,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 27934
+      "to": 28233
     },
     {
-      "from": 27934,
+      "from": 28233,
       "background": "home_toast_v6",
       "person": null,
       "zoom": 1.03,
@@ -7701,10 +7731,10 @@
       "view": "recording",
       "move": 0,
       "brightness": 0.71,
-      "to": 28162
+      "to": 28461
     },
     {
-      "from": 28162,
+      "from": 28461,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7713,10 +7743,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 29368
+      "to": 29667
     },
     {
-      "from": 29368,
+      "from": 29667,
       "background": "hall",
       "person": null,
       "zoom": 1.02,
@@ -7725,10 +7755,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 29610
+      "to": 29909
     },
     {
-      "from": 29610,
+      "from": 29909,
       "background": "hall",
       "person": null,
       "zoom": 1.28,
@@ -7737,10 +7767,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 29791
+      "to": 30090
     },
     {
-      "from": 29791,
+      "from": 30090,
       "background": "shrine",
       "person": null,
       "zoom": 1.02,
@@ -7749,10 +7779,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 29928
+      "to": 30227
     },
     {
-      "from": 29928,
+      "from": 30227,
       "background": "village",
       "person": null,
       "zoom": 1.02,
@@ -7761,10 +7791,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.49,
-      "to": 30154
+      "to": 30453
     },
     {
-      "from": 30154,
+      "from": 30453,
       "background": "hall",
       "person": null,
       "zoom": 1.02,
@@ -7773,10 +7803,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.67,
-      "to": 30293
+      "to": 30592
     },
     {
-      "from": 30293,
+      "from": 30592,
       "background": "hall",
       "person": null,
       "zoom": 1.28,
@@ -7785,10 +7815,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.69,
-      "to": 30422
+      "to": 30721
     },
     {
-      "from": 30422,
+      "from": 30721,
       "background": "hall",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7797,10 +7827,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.67,
-      "to": 30709
+      "to": 31008
     },
     {
-      "from": 30709,
+      "from": 31008,
       "background": "hall",
       "person": null,
       "zoom": 1.14,
@@ -7809,10 +7839,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 30875
+      "to": 31174
     },
     {
-      "from": 30875,
+      "from": 31174,
       "background": "hall",
       "person": null,
       "zoom": 1.05,
@@ -7821,10 +7851,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.61,
-      "to": 31581
+      "to": 31888
     },
     {
-      "from": 31581,
+      "from": 31888,
       "background": "reveal",
       "person": null,
       "zoom": 1.05,
@@ -7833,10 +7863,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 31735
+      "to": 32042
     },
     {
-      "from": 31735,
+      "from": 32042,
       "background": "reveal",
       "person": null,
       "zoom": 1.65,
@@ -7845,10 +7875,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.72,
-      "to": 31902
+      "to": 32209
     },
     {
-      "from": 31902,
+      "from": 32209,
       "background": "reveal",
       "person": null,
       "zoom": 1.34,
@@ -7857,10 +7887,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.68,
-      "to": 32296
+      "to": 32603
     },
     {
-      "from": 32296,
+      "from": 32603,
       "background": "hall",
       "person": "f_photo",
       "zoom": 1.02,
@@ -7869,10 +7899,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 32490
+      "to": 32797
     },
     {
-      "from": 32490,
+      "from": 32797,
       "background": "reveal",
       "person": null,
       "zoom": 2.12,
@@ -7881,10 +7911,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.73,
-      "to": 33154
+      "to": 33461
     },
     {
-      "from": 33154,
+      "from": 33461,
       "background": "hall",
       "person": null,
       "zoom": 1.35,
@@ -7893,10 +7923,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 33291
+      "to": 33598
     },
     {
-      "from": 33291,
+      "from": 33598,
       "background": "reveal",
       "person": null,
       "zoom": 1.08,
@@ -7905,10 +7935,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.69,
-      "to": 33482
+      "to": 33789
     },
     {
-      "from": 33482,
+      "from": 33789,
       "background": "hall",
       "person": null,
       "zoom": 1.1,
@@ -7917,10 +7947,10 @@
       "view": "f-perspective",
       "move": 0,
       "brightness": 0.63,
-      "to": 33762
+      "to": 34069
     },
     {
-      "from": 33762,
+      "from": 34069,
       "background": "hall",
       "person": null,
       "zoom": 1.5,
@@ -7929,10 +7959,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.66,
-      "to": 34013
+      "to": 34320
     },
     {
-      "from": 34013,
+      "from": 34320,
       "background": "reveal",
       "person": null,
       "zoom": 1.46,
@@ -7941,10 +7971,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.66,
-      "to": 34326
+      "to": 34633
     },
     {
-      "from": 34326,
+      "from": 34633,
       "background": "hall",
       "person": "y_photo",
       "zoom": 1.02,
@@ -7953,10 +7983,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.68,
-      "to": 34550
+      "to": 34857
     },
     {
-      "from": 34550,
+      "from": 34857,
       "background": "reveal",
       "person": null,
       "zoom": 1.3,
@@ -7965,10 +7995,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.66,
-      "to": 34697
+      "to": 35004
     },
     {
-      "from": 34697,
+      "from": 35004,
       "background": "hall",
       "person": "m_photo",
       "zoom": 1.02,
@@ -7977,10 +8007,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.68,
-      "to": 35047
+      "to": 35354
     },
     {
-      "from": 35047,
+      "from": 35354,
       "background": "reveal",
       "person": null,
       "zoom": 1.08,
@@ -7989,10 +8019,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.68,
-      "to": 35157
+      "to": 35464
     },
     {
-      "from": 35157,
+      "from": 35464,
       "background": "sobaya_clap_v6",
       "person": null,
       "zoom": 1,
@@ -8001,10 +8031,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 35273
+      "to": 35580
     },
     {
-      "from": 35273,
+      "from": 35580,
       "background": "hall",
       "person": "m_photo",
       "zoom": 1.02,
@@ -8013,10 +8043,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.67,
-      "to": 35482
+      "to": 35789
     },
     {
-      "from": 35482,
+      "from": 35789,
       "background": "hall",
       "person": null,
       "zoom": 1.12,
@@ -8025,10 +8055,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.6,
-      "to": 35556
+      "to": 35863
     },
     {
-      "from": 35556,
+      "from": 35863,
       "background": "hall",
       "person": "m_photo",
       "zoom": 1.02,
@@ -8037,10 +8067,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 35783
+      "to": 36090
     },
     {
-      "from": 35783,
+      "from": 36090,
       "background": "sobaya_mug_v6",
       "person": null,
       "zoom": 1,
@@ -8049,10 +8079,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 36001
+      "to": 36308
     },
     {
-      "from": 36001,
+      "from": 36308,
       "background": "hall",
       "person": "m_photo",
       "zoom": 1.02,
@@ -8061,10 +8091,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.66,
-      "to": 36074
+      "to": 36381
     },
     {
-      "from": 36074,
+      "from": 36381,
       "background": "hall",
       "person": "f_photo",
       "zoom": 1.02,
@@ -8073,10 +8103,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 36344
+      "to": 36651
     },
     {
-      "from": 36344,
+      "from": 36651,
       "background": "hall",
       "person": "m_photo",
       "zoom": 1.02,
@@ -8085,10 +8115,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 36602
+      "to": 36909
     },
     {
-      "from": 36602,
+      "from": 36909,
       "background": "reveal",
       "person": null,
       "zoom": 1.74,
@@ -8097,10 +8127,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 36726
+      "to": 37033
     },
     {
-      "from": 36726,
+      "from": 37033,
       "background": "hall",
       "person": "m_photo",
       "zoom": 1.02,
@@ -8109,10 +8139,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.63,
-      "to": 36935
+      "to": 37242
     },
     {
-      "from": 36935,
+      "from": 37242,
       "background": "hall",
       "person": null,
       "zoom": 1.5,
@@ -8121,10 +8151,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.63,
-      "to": 37169
+      "to": 37476
     },
     {
-      "from": 37169,
+      "from": 37476,
       "background": "reveal",
       "person": null,
       "zoom": 1.4,
@@ -8133,10 +8163,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.67,
-      "to": 37243
+      "to": 37550
     },
     {
-      "from": 37243,
+      "from": 37550,
       "background": "hall",
       "person": "f_photo",
       "zoom": 1.02,
@@ -8145,10 +8175,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.62,
-      "to": 37546
+      "to": 37853
     },
     {
-      "from": 37546,
+      "from": 37853,
       "background": "hall",
       "person": null,
       "zoom": 1.17,
@@ -8157,10 +8187,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.62,
-      "to": 37830
+      "to": 38137
     },
     {
-      "from": 37830,
+      "from": 38137,
       "background": "hall",
       "person": "y_photo",
       "zoom": 1.02,
@@ -8169,10 +8199,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 38194
+      "to": 38501
     },
     {
-      "from": 38194,
+      "from": 38501,
       "background": "hall",
       "person": null,
       "zoom": 1.18,
@@ -8181,10 +8211,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.61,
-      "to": 38282
+      "to": 38589
     },
     {
-      "from": 38282,
+      "from": 38589,
       "background": "hall",
       "person": "f_photo",
       "zoom": 1.02,
@@ -8193,10 +8223,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.6,
-      "to": 38415
+      "to": 38722
     },
     {
-      "from": 38415,
+      "from": 38722,
       "background": "reveal",
       "person": null,
       "zoom": 2.12,
@@ -8205,10 +8235,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 38557
+      "to": 38864
     },
     {
-      "from": 38557,
+      "from": 38864,
       "background": "reveal",
       "person": null,
       "zoom": 1.03,
@@ -8217,10 +8247,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 38713
+      "to": 39020
     },
     {
-      "from": 38713,
+      "from": 39020,
       "background": "reveal",
       "person": null,
       "zoom": 2.12,
@@ -8229,10 +8259,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.69,
-      "to": 38873
+      "to": 39180
     },
     {
-      "from": 38873,
+      "from": 39180,
       "background": "reveal",
       "person": null,
       "zoom": 1.34,
@@ -8241,10 +8271,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 39166
+      "to": 39473
     },
     {
-      "from": 39166,
+      "from": 39473,
       "background": "reveal",
       "person": null,
       "zoom": 2.12,
@@ -8253,10 +8283,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.7,
-      "to": 39355
+      "to": 39662
     },
     {
-      "from": 39355,
+      "from": 39662,
       "background": "reveal",
       "person": null,
       "zoom": 1.06,
@@ -8265,10 +8295,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.65,
-      "to": 39453
+      "to": 39760
     },
     {
-      "from": 39453,
+      "from": 39760,
       "background": "hall_morning",
       "person": null,
       "zoom": 2.18,
@@ -8277,10 +8307,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.3,
-      "to": 39673
+      "to": 39980
     },
     {
-      "from": 39673,
+      "from": 39980,
       "background": "asleep",
       "person": null,
       "zoom": 1.04,
@@ -8289,10 +8319,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.68,
-      "to": 40222
+      "to": 40529
     },
     {
-      "from": 40222,
+      "from": 40529,
       "background": "hall_morning",
       "person": null,
       "zoom": 1.02,
@@ -8301,10 +8331,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.84,
-      "to": 40690
+      "to": 40997
     },
     {
-      "from": 40690,
+      "from": 40997,
       "background": "hall_morning",
       "person": null,
       "zoom": 1.25,
@@ -8313,10 +8343,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.8,
-      "to": 41035
+      "to": 41342
     },
     {
-      "from": 41035,
+      "from": 41342,
       "background": "shrine",
       "person": null,
       "zoom": 1.02,
@@ -8325,10 +8355,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.75,
-      "to": 41308
+      "to": 41615
     },
     {
-      "from": 41308,
+      "from": 41615,
       "background": "morning",
       "person": null,
       "zoom": 1.08,
@@ -8337,10 +8367,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.64,
-      "to": 41543
+      "to": 41850
     },
     {
-      "from": 41543,
+      "from": 41850,
       "background": "morning",
       "person": null,
       "zoom": 1.02,
@@ -8349,10 +8379,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.92,
-      "to": 41719
+      "to": 42026
     },
     {
-      "from": 41719,
+      "from": 42026,
       "background": "morning",
       "person": null,
       "zoom": 1.35,
@@ -8361,10 +8391,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.92,
-      "to": 42191
+      "to": 42498
     },
     {
-      "from": 42191,
+      "from": 42498,
       "background": "office",
       "person": null,
       "zoom": 1.02,
@@ -8373,10 +8403,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.79,
-      "to": 42654
+      "to": 42961
     },
     {
-      "from": 42654,
+      "from": 42961,
       "background": "temple",
       "person": "f_photo",
       "zoom": 1.02,
@@ -8385,10 +8415,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.68,
-      "to": 43161
+      "to": 43468
     },
     {
-      "from": 43161,
+      "from": 43468,
       "background": "morning",
       "person": null,
       "zoom": 1.02,
@@ -8397,10 +8427,10 @@
       "view": "plain",
       "move": 0,
       "brightness": 0.77,
-      "to": 43684
+      "to": 43991
     },
     {
-      "from": 43684,
+      "from": 43991,
       "background": "home_empty_v6",
       "person": null,
       "zoom": 1.12,
@@ -8409,7 +8439,7 @@
       "view": "memory",
       "move": 0,
       "brightness": 0.63,
-      "to": 44185
+      "to": 44492
     }
   ],
   "inserts": [
@@ -8421,167 +8451,167 @@
     },
     {
       "kind": "excel-return",
-      "from": 42560,
-      "to": 42654,
-      "changeFrame": 42625
+      "from": 42867,
+      "to": 42961,
+      "changeFrame": 42932
     }
   ],
   "soundRegions": [
     {
       "from": 8511,
-      "to": 9313,
+      "to": 9460,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 11733,
-      "to": 11905,
+      "from": 11880,
+      "to": 12052,
       "music": 0.25,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 13296,
-      "to": 15474,
+      "from": 13443,
+      "to": 15681,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 17637,
-      "to": 19205,
+      "from": 17865,
+      "to": 19433,
       "music": 0.18,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 19235,
-      "to": 19979,
+      "from": 19463,
+      "to": 20207,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 20959,
-      "to": 22133,
+      "from": 21258,
+      "to": 22432,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 24352,
-      "to": 25811,
+      "from": 24651,
+      "to": 26110,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 27336,
-      "to": 27581,
+      "from": 27635,
+      "to": 27880,
       "music": 0,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 27934,
-      "to": 28162,
+      "from": 28233,
+      "to": 28461,
       "music": 0,
       "ambient": 0.004,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 30022,
-      "to": 33124,
+      "from": 30321,
+      "to": 33431,
       "music": 0,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 35556,
-      "to": 36344,
+      "from": 35863,
+      "to": 36651,
       "music": 0,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 37169,
-      "to": 37546,
+      "from": 37476,
+      "to": 37853,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 38194,
-      "to": 40180,
+      "from": 38501,
+      "to": 40487,
       "music": 0.15,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 41543,
-      "to": 42149,
+      "from": 41850,
+      "to": 42456,
       "music": 0.2,
       "ambient": 0.003,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 43684,
-      "to": 44185,
+      "from": 43991,
+      "to": 44492,
       "music": 0,
       "ambient": 0.002,
       "silence": false,
       "fade": 12
     },
     {
-      "from": 14618,
-      "to": 14666,
+      "from": 14825,
+      "to": 14873,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 19791,
-      "to": 19857,
+      "from": 20019,
+      "to": 20085,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 21705,
-      "to": 21753,
+      "from": 22004,
+      "to": 22052,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 31557,
-      "to": 31596,
+      "from": 31864,
+      "to": 31903,
       "music": 0,
       "ambient": 0,
       "silence": true,
       "fade": 3
     },
     {
-      "from": 44005,
-      "to": 44185,
+      "from": 44312,
+      "to": 44492,
       "music": 0,
       "ambient": 0,
       "silence": true,
@@ -8590,11 +8620,39 @@
   ],
   "environmentalAudio": [
     {
-      "from": 5318,
-      "duration": 180,
-      "file": "sfx/howler_monkey_v5.wav",
-      "rms": 0.035,
-      "kind": "real-monkey",
+      "from": 5345,
+      "duration": 50,
+      "file": "sfx/monkey_call_y_v7.wav",
+      "rms": 0.055,
+      "peakLimit": 0.23,
+      "fadeFrames": 2,
+      "pan": 0.35,
+      "kind": "performed-monkey-imitation",
+      "role": "Y",
+      "overlapNarration": true
+    },
+    {
+      "from": 5396,
+      "duration": 79,
+      "file": "sfx/monkey_call_m_v7.wav",
+      "rms": 0.055,
+      "peakLimit": 0.23,
+      "fadeFrames": 2,
+      "pan": -0.35,
+      "kind": "performed-monkey-imitation",
+      "role": "M",
+      "overlapNarration": true
+    },
+    {
+      "from": 5487,
+      "duration": 112,
+      "file": "sfx/monkey_call_n_v7.wav",
+      "rms": 0.055,
+      "peakLimit": 0.23,
+      "fadeFrames": 2,
+      "pan": 0,
+      "kind": "performed-monkey-imitation",
+      "role": "narrator",
       "overlapNarration": true
     }
   ],
@@ -8615,59 +8673,59 @@
       "gain": 0.6
     },
     {
-      "frame": 14947,
+      "frame": 15154,
       "kind": "can",
       "gain": 0.65
     },
     {
-      "frame": 21611,
+      "frame": 21910,
       "kind": "can",
       "gain": 0.9
     },
     {
-      "frame": 25276,
+      "frame": 25575,
       "kind": "chair",
       "gain": 0.65
     },
     {
-      "frame": 31055,
+      "frame": 31354,
       "kind": "hum",
       "gain": 0.85
     },
     {
-      "frame": 31167,
+      "frame": 31466,
       "kind": "creak",
       "gain": 0.75
     },
     {
-      "frame": 33270,
+      "frame": 33577,
       "kind": "glass",
       "gain": 0.8
     },
     {
-      "frame": 35237,
+      "frame": 35544,
       "kind": "clap",
       "gain": 0.8
     },
     {
-      "frame": 35944,
+      "frame": 36251,
       "kind": "mug-drag",
       "gain": 0.75
     },
     {
-      "frame": 38748,
+      "frame": 39055,
       "kind": "glass",
       "gain": 0.6
     },
     {
-      "frame": 39537,
+      "frame": 39844,
       "kind": "mug-set",
       "gain": 0.75
     }
   ],
   "characterAudio": [
     {
-      "from": 31596,
+      "from": 31903,
       "duration": 37,
       "file": "sobaya_beer.wav",
       "text": "ビール……",
@@ -8683,6 +8741,7 @@
       "gain": 0.85
     }
   ],
-  "revealFrame": 31581,
+  "glimpseFrame": 9042,
+  "revealFrame": 31888,
   "audio": "mix.wav"
 }

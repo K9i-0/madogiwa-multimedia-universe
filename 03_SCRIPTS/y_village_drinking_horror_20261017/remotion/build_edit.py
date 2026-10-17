@@ -7,7 +7,7 @@ rows=json.loads((P/'voice-manifest.json').read_text())['rows']
 with wave.open(str(P.parent/'sobaya_beer.wav')) as w:
     growl_seconds=w.getnframes()/w.getframerate()
 growl_frames=math.ceil(growl_seconds*FPS)
-with wave.open(str(P.parent/'sobaya_early_murmur.wav')) as w:
+with wave.open(str(P.parent/'sobaya_early_murmur_v4.wav')) as w:
     early_frames=math.ceil(w.getnframes()/w.getframerate()*FPS)
 cursor=90
 clips=[];captions=[];chapters=[]
@@ -39,11 +39,11 @@ for i,r in enumerate(rows):
 duration=cursor+120
 byid={r['id']:r for r in clips}
 def frame(id):
-    return next(r['from'] for r in clips if int(r['id'][1:])>=id)
+    return next(r['from'] for r in clips if int(r['id'][1:5])>=id)
 reveal=frame(317)+byid['n0317']['duration']+60
 growl={'from':reveal+15,'duration':growl_frames,'file':'sobaya_beer.wav','text':'ビール……','speaker':'sobaya'}
 captions.append({'from':growl['from'],'to':growl['from']+growl_frames,'text':'「ビール……」','lineId':'sobaya_beer','speaker':'sobaya'})
-early={'from':frame(73)+byid['n0073']['duration']+15,'duration':early_frames,'file':'sobaya_early_murmur.wav','speaker':'sobaya','intelligible':False,'gain':0.7}
+early={'from':frame(73)+byid['n0073']['duration']+15,'duration':early_frames,'file':'sobaya_early_murmur_v4.wav','speaker':'sobaya','intelligible':'partly','gain':0.85}
 captions.sort(key=lambda c:c['from'])
 def shotframe(n):return reveal if n==318 else frame(n)
 # Authored shots are tied to exact spoken lines, never change randomly with captions.
@@ -55,8 +55,8 @@ keys=[
  (79,'hall',None),(82,'broken',None),(87,'hall',None),(97,'office',None),
  (102,'morning',None),(108,'home_product',None),(117,'morning',None),(122,'home_product',None),(131,'home_product',None),
  (160,'office',None),(173,'office','y_photo'),(183,'office','m_photo'),
- (196,'home_product',None),(200,'home_product','m_photo'),(207,'office','y_photo'),(214,'office','sobaya_shadow'),
- (220,'office','f_photo'),(256,'shrine',None),(262,'shrine','note'),(268,'office','f_photo'),
+ (196,'home_product',None),(200,'home_product','m_photo'),(207,'office','y_photo'),(214,'office','sobaya_shadow_v4'),
+ (220,'office','f_photo'),(226,'f_hakama',None),(230,'temple','f_photo'),(256,'shrine',None),(262,'shrine','note'),(268,'office','f_photo'),
  (275,'home_product',None),(280,'office','f_photo'),(289,'office','f_photo'),
  (295,'hall',None),(302,'village',None),(304,'hall',None),
  (318,'reveal',None),(339,'reveal',None),(346,'hall',None),(349,'reveal',None),

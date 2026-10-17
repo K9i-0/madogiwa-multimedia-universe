@@ -1,0 +1,16 @@
+{
+  "earlyVoice": {
+    "source": "sobaya_beer.wav",
+    "sourceSha256": "6721d8dcf6c340669f5e069ddf0e56f0a1606ce53c70574cbfca6d09b226ea52",
+    "processing": "forward playback; original speed; 80–3400 Hz bandpass; 80% dry canonical voice + 20% soft 37 Hz modulation; faint 130/290 ms echoes; 50/100 ms fades",
+    "output": "sobaya_early_murmur_v4.wav",
+    "seconds": 1.5234166666666666,
+    "subtitle": null
+  },
+  "encounterMusic": {
+    "source": ".local/y-village-horror/separated/htdemucs/music_sample/no_vocals.wav",
+    "processing": "reverse; playback ratio 0.75; 45–1500 Hz bandpass; 430/910 ms echoes",
+    "output": "remotion/out/encounter_music.wav",
+    "status": "processed provisional reference extraction; original title/master unconfirmed"
+  }
+}

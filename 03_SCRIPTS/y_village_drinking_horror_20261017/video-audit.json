@@ -1,26 +1,26 @@
 {
-  "frameCount": 47489,
-  "seconds": 1582.9666666666667,
-  "voiceClips": 366,
-  "captions": 368,
-  "shots": 60,
+  "frameCount": 49714,
+  "seconds": 1657.1333333333334,
+  "voiceClips": 381,
+  "captions": 383,
+  "shots": 62,
   "nameOccurrences": 2,
-  "revealFrame": 31833,
+  "revealFrame": 34062,
   "characterAudio": [
     {
-      "from": 31848,
+      "from": 34077,
       "duration": 37,
       "file": "sobaya_beer.wav",
       "text": "ビール……",
       "speaker": "sobaya"
     },
     {
-      "from": 8108,
-      "duration": 70,
-      "file": "sobaya_early_murmur.wav",
+      "from": 9955,
+      "duration": 46,
+      "file": "sobaya_early_murmur_v4.wav",
       "speaker": "sobaya",
-      "intelligible": false,
-      "gain": 0.7
+      "intelligible": "partly",
+      "gain": 0.85
     }
   ],
   "narrator": "VOICEVOX:青山龍星",
@@ -29,20 +29,20 @@
   "narrationOverlap": false,
   "manualListening": "not performed; automated screening only",
   "music": "same separated reference; encounter-only reversed/pitched/filtered variant; original track unconfirmed",
-  "video": "review_remotion_horror_aoyama_v3.mp4",
-  "bytes": 163851531,
-  "sha256": "38cad15ac06eb904d4cc101a02d37d03f1a62cb6860f378f4993457a3d2a94d9",
+  "video": "review_remotion_horror_aoyama_v4.mp4",
+  "bytes": 173287342,
+  "sha256": "7bce55198ab4a72226ee03d2e1591c2cbdc54a9c4077368bff01dcebdec68944",
   "resolution": [
     1280,
     720
   ],
   "fps": "30/1",
-  "decodedFrames": 47489,
+  "decodedFrames": 49714,
   "audioStreams": 1,
   "audioSampleRate": 48000,
   "fullDecode": "passed; no reported errors",
-  "visualReview": "v3 corrected lines, early voice, reveal and ending inspected separately",
-  "integratedLUFS": -16.32,
+  "visualReview": "v4 pronunciation, realistic silhouette and costume insert checked separately",
+  "integratedLUFS": -16.31,
   "truePeakDbTP": -1.4,
   "loudnessRangeLU": 4.5
 }

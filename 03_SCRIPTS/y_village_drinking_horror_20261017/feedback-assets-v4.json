@@ -1,0 +1,24 @@
+{
+  "sobaya": {
+    "source": "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+    "crop": [
+      0,
+      110,
+      400,
+      910
+    ],
+    "output": "art/sobaya_shadow_v4.png",
+    "method": "original full-body crop; u2net_human_seg mask; solid silhouette; proportions unchanged"
+  },
+  "costume": {
+    "source": "03_SCRIPTS/31_debug_prayer_news/scene_02b_gyungyun_pose_start_production.png",
+    "crop": [
+      672,
+      535,
+      965,
+      930
+    ],
+    "output": "art/f_hakama.png",
+    "method": "original lower-body crop; no head, name badge, attendants or deity; no generated replacement"
+  }
+}

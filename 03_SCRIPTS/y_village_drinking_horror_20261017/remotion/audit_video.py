@@ -1,7 +1,7 @@
 """Technical delivery audit; not a substitute for human listening."""
 from pathlib import Path
 import subprocess,json,hashlib,wave
-P=Path(__file__).resolve().parent;video=P.parent/'review_remotion_horror_aoyama_v3.mp4'
+P=Path(__file__).resolve().parent;video=P.parent/'review_remotion_horror_aoyama_v4.mp4'
 m=json.loads((P/'src/edit-manifest.json').read_text())
 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(video)]))
 vs=next(s for s in probe['streams'] if s['codec_type']=='video');aus=[s for s in probe['streams'] if s['codec_type']=='audio']
@@ -26,9 +26,11 @@ for row in m['narration']:
 for a,b in zip(m['narration'],m['narration'][1:]):
  assert a['from']+a['duration']<=b['from']
 report={'frameCount':m['composition']['durationInFrames'],'seconds':m['composition']['durationInFrames']/30,'voiceClips':len(m['narration']),'captions':len(m['captions']),'shots':len(m['shots']),'nameOccurrences':sum(r['text'].count('中口') for r in m['narration']),'revealFrame':m['revealFrame'],'characterAudio':m['characterAudio'],'narrator':'VOICEVOX:青山龍星','speedScale':1.0,'pitchScale':0.0,'narrationOverlap':False,'manualListening':'not performed; automated screening only','music':'same separated reference; encounter-only reversed/pitched/filtered variant; original track unconfirmed'}
-report.update({'video':video.name,'bytes':video.stat().st_size,'sha256':hashlib.file_digest(video.open('rb'),'sha256').hexdigest(),'resolution':[vs['width'],vs['height']],'fps':vs['r_frame_rate'],'decodedFrames':int(vs['nb_read_frames']),'audioStreams':len(aus),'audioSampleRate':48000,'fullDecode':'passed; no reported errors','visualReview':'v3 corrected lines, early voice, reveal and ending inspected separately','integratedLUFS':float(loud['input_i']),'truePeakDbTP':float(loud['input_tp']),'loudnessRangeLU':float(loud['input_lra'])})
+report.update({'video':video.name,'bytes':video.stat().st_size,'sha256':hashlib.file_digest(video.open('rb'),'sha256').hexdigest(),'resolution':[vs['width'],vs['height']],'fps':vs['r_frame_rate'],'decodedFrames':int(vs['nb_read_frames']),'audioStreams':len(aus),'audioSampleRate':48000,'fullDecode':'passed; no reported errors','visualReview':'v4 pronunciation, realistic silhouette and costume insert checked separately','integratedLUFS':float(loud['input_i']),'truePeakDbTP':float(loud['input_tp']),'loudnessRangeLU':float(loud['input_lra'])})
 (P.parent/'video-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 (P/'out/ffprobe.json').write_text(json.dumps(probe,ensure_ascii=False,indent=2))
-for name,ss,duration in [('opening',0,40),('reveal',m['revealFrame']/30-8,28),('ending',m['composition']['durationInFrames']/30-35,35)]:
+byid={r['id']:r for r in m['narration']}
+extra=[('murmur_v4',m['characterAudio'][1]['from']/30-6,22),('costume_v4',byid['n0222']['from']/30-1,38),('comedy_v4',byid['n0047']['from']/30,(byid['n0061']['from']+byid['n0061']['duration']-byid['n0047']['from'])/30+1)]
+for name,ss,duration in [('opening',0,40),('reveal',m['revealFrame']/30-8,28),('ending',m['composition']['durationInFrames']/30-35,35)]+extra:
  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(ss),'-i',str(video),'-t',str(duration),'-c:v','libx264','-preset','fast','-crf','21','-c:a','aac','-b:a','160k','-movflags','+faststart',str(P/'out'/f'preview_{name}.mp4')],check=True)
 print(json.dumps(report,ensure_ascii=False),flush=True)

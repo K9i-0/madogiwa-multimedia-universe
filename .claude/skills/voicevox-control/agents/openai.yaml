@@ -1,0 +1,4 @@
+interface:
+  display_name: "VOICEVOX音声制御"
+  short_description: "VOICEVOXの音声生成・誤読修正・共通読み辞書とクエリを管理する"
+  default_prompt: "$voicevox-control を使って、字幕を変えずに読み間違いを直し、採用済みの声と速度で音声を生成してください。"

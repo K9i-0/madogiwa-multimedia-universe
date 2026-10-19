@@ -15,7 +15,7 @@ const Duo:React.FC<{ids:string[],title:string,accounts?:boolean}>=({ids,title,ac
 export const Center:React.FC<{view:string}>=({view})=>{
  if(names[view])return <Person id={view}/>;
  if(/^manga[1-4]$/.test(view))return <><Picture src={view+'.png'} h={470}/><div style={{fontSize:18,color:muted,marginTop:8}}>原作漫画「窓際族物語」第{view.slice(-1)}話</div></>;
- if(['site','manga_site','videos_site','prompt_site'].includes(view))return <><Title>{view==='prompt_site'?'動画を見たら、プロンプトも。':view==='manga_site'?'漫画から始まった物語':view==='videos_site'?'気になった一本から':'公式サイトから、窓際族の世界へ'}</Title><Picture src={view+'.png'} h={380}/><div style={{fontSize:20,color:'#25726f',marginTop:10}}>madogiwa.work{view==='prompt_site'?' ／ 動画の制作ノート':''}</div></>;
+ if(['site','manga_site','videos_site','prompt_site'].includes(view))return <><Title>{view==='prompt_site'?'プロンプトと参照素材を公開。':view==='manga_site'?'漫画から始まった物語':view==='videos_site'?'気になった一本から':'公式サイトから、窓際族の世界へ'}</Title><Picture src={view+'.png'} h={380}/><div style={{fontSize:20,color:'#25726f',marginTop:10}}>madogiwa.work{view==='prompt_site'?' ／ 動画の制作ノート':''}</div></>;
  if(view==='commute'||view==='commute_callback')return <Video src="commute_intro" duration={420} label="出社インポッシブル篇"/>;
  if(view==='team')return <Team/>;
  if(view==='ending')return <><Team title="窓際族物語"/><div style={{fontSize:29,color:'#25726f',marginTop:16}}>madogiwa.work</div></>;

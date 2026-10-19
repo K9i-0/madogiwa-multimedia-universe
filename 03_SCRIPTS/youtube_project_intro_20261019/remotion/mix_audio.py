@@ -31,11 +31,6 @@ main[:cross]*=np.linspace(0,1,cross)[:,None];main[-cross:]*=np.linspace(1,0,cros
 bgm[cut:ending+cross]+=main
 ending_music=loop_to(decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11'),n-ending,sr)
 ending_music[:cross]*=np.linspace(0,1,cross)[:,None];ending_music[-4*sr:]*=np.linspace(1,0,4*sr)[:,None];bgm[ending:]+=ending_music
-source=decode(P/'public/commute.mp4')
-montage=np.concatenate([source[a*sr:b*sr] for a,b in [(0,5),(12,16),(21,26)]])
-save(P/'out/intro_source.wav',montage)
-source=loop_to(decode(P/'out/intro_source.wav','loudnorm=I=-38:TP=-6:LRA=11'),cut)
-source[-sr:]*=np.linspace(1,0,sr)[:,None];bgm[:cut]+=source
 for c in m['clips']:
  if not c.get('audible'):continue
  start=c['startFrame']*1600;length=c['durationInFrames']*1600;source=c['sourceStartFrame']*1600
@@ -46,5 +41,5 @@ for c in m['clips']:
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=True,introBgm=True,introSourceTargetLUFS=-38,introSourceCutsSeconds=[[0,5],[12,16],[21,26]],introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
+(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

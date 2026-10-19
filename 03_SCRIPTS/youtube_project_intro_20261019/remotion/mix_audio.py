@@ -14,11 +14,28 @@ for d in m['dialogue']:
  a=decode(P.parent/d['audio']);start=d['startFrame']*1600;voice[start:start+len(a)]+=a
 save(P/'out/voice_unmixed.wav',voice);voice=decode(P/'out/voice_unmixed.wav','loudnorm=I=-18:TP=-2:LRA=11')[:n]
 if len(voice)<n:voice=np.pad(voice,((0,n-len(voice)),(0,0)))
-bgm=np.zeros((n,2),np.float32);cut=m['mainStartFrame']*1600
-main=decode(P/'public/main.wav','loudnorm=I=-34:TP=-3:LRA=11');loop=main.copy();cross=sr
-while len(loop)<n-cut:
- overlap=loop[-cross:]*np.linspace(1,0,cross)[:,None]+main[:cross]*np.linspace(0,1,cross)[:,None];loop=np.concatenate([loop[:-cross],overlap,main[cross:]])
-bgm[cut:]=loop[:n-cut];bgm[cut:cut+sr]*=np.linspace(0,1,sr)[:,None];bgm[-4*sr:]*=np.linspace(1,0,4*sr)[:,None]
+def loop_to(a,length,cross=0):
+ loop=a.copy()
+ while len(loop)<length:
+  if cross:
+   overlap=loop[-cross:]*np.linspace(1,0,cross)[:,None]+a[:cross]*np.linspace(0,1,cross)[:,None]
+   loop=np.concatenate([loop[:-cross],overlap,a[cross:]])
+  else:loop=np.concatenate([loop,a])
+ return loop[:length]
+cut=m['mainStartFrame']*1600;ending=m['endingStartFrame']*1600;cross=2*sr
+bgm=np.zeros((n,2),np.float32)
+intro=decode(P/'public/intro.mp3','loudnorm=I=-34:TP=-3:LRA=11')
+bgm[:cut+cross]=loop_to(intro,cut+cross,sr);bgm[cut:cut+cross]*=np.linspace(1,0,cross)[:,None]
+main=loop_to(decode(P/'public/main.wav','loudnorm=I=-34:TP=-3:LRA=11'),ending+cross-cut,sr)
+main[:cross]*=np.linspace(0,1,cross)[:,None];main[-cross:]*=np.linspace(1,0,cross)[:,None]
+bgm[cut:ending+cross]+=main
+ending_music=loop_to(decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11'),n-ending,sr)
+ending_music[:cross]*=np.linspace(0,1,cross)[:,None];ending_music[-4*sr:]*=np.linspace(1,0,4*sr)[:,None];bgm[ending:]+=ending_music
+source=decode(P/'public/commute.mp4')
+montage=np.concatenate([source[a*sr:b*sr] for a,b in [(0,5),(12,16),(21,26)]])
+save(P/'out/intro_source.wav',montage)
+source=loop_to(decode(P/'out/intro_source.wav','loudnorm=I=-38:TP=-6:LRA=11'),cut)
+source[-sr:]*=np.linspace(1,0,sr)[:,None];bgm[:cut]+=source
 for c in m['clips']:
  if not c.get('audible'):continue
  start=c['startFrame']*1600;length=c['durationInFrames']*1600;source=c['sourceStartFrame']*1600
@@ -29,5 +46,5 @@ for c in m['clips']:
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=False,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
+(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=True,introBgm=True,introSourceTargetLUFS=-38,introSourceCutsSeconds=[[0,5],[12,16],[21,26]],introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

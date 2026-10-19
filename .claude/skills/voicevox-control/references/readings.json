@@ -18,6 +18,7 @@
     "tech-video": "03_SCRIPTS/youtube_3d_character_workflow_20261014/remotion/prepare_voice_v6.py：技術語の採用読み"
   },
   "replacements": [
+    {"id": "common.oomajime", "surface": "大まじめ", "reading": "オオマジメ", "source": "project-intro", "note": "2026-10-19ユーザーFB。大単独へ適用しない。"},
     {"id": "mmu.tachinomi-dokoro", "surface": "立ち飲み処", "reading": "タチノミドコロ", "scope": "mmu", "source": "project-intro", "note": "VOICEVOX 0.25.1でタチノミショと解析されたため、店の呼称をどころへ補正。"},
     {"id": "common.kakuwa", "surface": "各話", "reading": "カクワ", "match": "kanji_word", "source": "project-intro", "note": "各話1枚の話数表現。カクハナシと解析されたため補正。"},
 

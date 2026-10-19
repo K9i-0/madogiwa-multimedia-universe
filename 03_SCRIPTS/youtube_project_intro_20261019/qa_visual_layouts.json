@@ -46,7 +46,7 @@
     "yotan",
     "yumemin"
   ],
-  "method": "All 45 layout types rendered as PNG; contact sheets and selected full-resolution frames visually inspected.",
+  "method": "45 Remotion stills, three contact sheets plus enlarged member views; static visual inspection only",
   "fixes": [
     "Video label layout uses Loop layout=none",
     "Site screenshot heading moved within safe area",
@@ -54,5 +54,10 @@
     "Games use actual running games and card concept art"
   ],
   "sourceFrameDirectory": "remotion/out/audit",
-  "continuousPlayback": false
+  "continuousPlayback": false,
+  "revision": "v2",
+  "reviewed": true,
+  "memberOrder": "official site order",
+  "name": "無職やめ太郎",
+  "role": "象徴社長"
 }

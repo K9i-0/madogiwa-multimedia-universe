@@ -53,6 +53,7 @@ class ReadingTests(unittest.TestCase):
                 self.assertTrue(result["reading_report"]["review"])
 
     def test_project_intro_readings(self):
+        self.assertEqual(self.prepare("大まじめな映像。大きな会社。") ["speech"], "オオマジメな映像。大きな会社。")
         self.assertEqual(self.prepare("立ち飲み処は各話に登場。", scopes=["mmu"])["speech"], "タチノミドコロはカクワに登場。")
         self.assertEqual(self.prepare("各話数の比較。") ["speech"], "各話数の比較。")
         self.assertEqual(self.prepare("立ち飲み処。") ["speech"], "立ち飲み処。")

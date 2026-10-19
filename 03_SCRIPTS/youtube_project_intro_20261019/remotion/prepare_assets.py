@@ -8,6 +8,7 @@ def link(src,name):
 for who in ['zunda','metan']:
  for f in T.glob(who+'_*.png'):link(f,f.name)
 for name in ['main.wav','chair.png','takosan.png','sobaya.jpg','fukugyun.jpg','tokun.jpg','yotan.jpg','yametaro.jpg','okayaman.jpg','yumemin.jpg']:link(T/name,name)
+for name in ['intro.mp3','unity.mp3']:link(S/'youtube_aeron_chua_explainer_20261008/remotion/public'/name,name)
 for n in [1,2,3,4]:link(R/f'01_WORLD/story_timeline/episode_{n:02}.png',f'manga{n}.png')
 vids={'commute.mp4':'63_madogiwa_super_try_commute/final_remotion_cm.mp4','proxy.mp4':'53_sobaya_proxy_worker_news/final_remotion_news.mp4','space.mp4':'64_madogiwa_super_try_space/final_remotion_cm.mp4','runway.mp4':'78_madogiwa_tshirt_runway/final_remotion_runway.mp4','coexist.mp4':'58_sobaya_takosan_fukuchan_mimic_chain/final_remotion_mimic_chain.mp4','workflow.mp4':'youtube_ai_video_workflow_20261013/final_remotion_ai_video_workflow_v12.mp4','tripo.mp4':'youtube_3d_character_workflow_20261014/final_remotion_tripo_workflow_v6.mp4','stickers_tutorial.mp4':'youtube_line_stickers_20261015/final_remotion_line_stickers_v8.mp4'}
 for dst,src in vids.items():link(S/src,dst)
@@ -23,4 +24,4 @@ subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'public/commute.mp4'),'-fi
 subprocess.run(['ffmpeg','-v','error','-y','-i',str(R/'27_LINE_STICKERS/sets/01/all-members-white-preview.gif'),'-vf','scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=30','-an','-c:v','libx264','-pix_fmt','yuv420p',str(P/'public/stickers.mp4')],check=True)
 for name,sec in [('workflow',95),('tripo',80),('stickers_tutorial',95),('runway',10),('proxy',8),('space',8)]:
  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(sec),'-i',str(P/'public'/f'{name}.mp4'),'-frames:v','1',str(P/'public'/f'{name}.jpg')],check=True)
-(P.parent/'asset_sources.json').write_text(json.dumps(dict(assets=records,openingCutsSeconds=[[0,5],[12,16],[21,26]],websiteCapturedAt='2026-10-19',portraitSourceRecord='03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json',music='ほのぼのワルツ【リコーダー】／エクシエ',musicSource='https://commons.nicovideo.jp/works/nc116360'),ensure_ascii=False,indent=2))
+(P.parent/'asset_sources.json').write_text(json.dumps(dict(assets=records,openingCutsSeconds=[[0,5],[12,16],[21,26]],websiteCapturedAt='2026-10-19',portraitSourceRecord='03_SCRIPTS/youtube_explainer_pilot_20261008/asset_sources.json',music='ほのぼのワルツ【リコーダー】／エクシエ',musicSource='https://commons.nicovideo.jp/works/nc116360',additionalMusic=[dict(name='昼下がり気分／KK',url='https://opentracks.com/bgm/detail/4695'),dict(name='TheFatRat - Unity',url='https://www.youtube.com/watch?v=n8X9_MgEdCg',terms='https://www.thefatrat.com/terms-and-conditions',usage='User-requested local revision; not published.')]),ensure_ascii=False,indent=2))

@@ -52,6 +52,11 @@ class ReadingTests(unittest.TestCase):
                 self.assertEqual(result["speech"], text)
                 self.assertTrue(result["reading_report"]["review"])
 
+    def test_project_intro_readings(self):
+        self.assertEqual(self.prepare("立ち飲み処は各話に登場。", scopes=["mmu"])["speech"], "タチノミドコロはカクワに登場。")
+        self.assertEqual(self.prepare("各話数の比較。") ["speech"], "各話数の比較。")
+        self.assertEqual(self.prepare("立ち飲み処。") ["speech"], "立ち飲み処。")
+
     def test_compound_kanji_are_not_partially_replaced(self):
         result = self.prepare("祠と祠堂。中口さんと田中口調。", scopes=["mmu"])
         self.assertEqual(result["speech"], "ホコラと祠堂。ナカグチさんと田中口調。")

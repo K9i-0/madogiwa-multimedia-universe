@@ -1,0 +1,12 @@
+{
+  "method": "Whisper-small local automatic screening plus all 126 AudioQuery kana inspected. Not subjective listening.",
+  "fullMixBeforeFinalOneLineReadingFix": "remotion/out/full_audio_asr.json",
+  "chunkRetries": "remotion/out/selected_audio_asr.json",
+  "repairedLine": "remotion/out/repaired_line_asr.json",
+  "notes": [
+    "Whisper omitted most of 250s and 600s chunks; independent 13-second chunks confirmed the omitted narration.",
+    "Proper names and X handles show ASR spelling errors; checked against kana and source script.",
+    "Line 070 changed kan to ma with explicit speech; final query and isolated audio ASR retained."
+  ],
+  "subjectiveListening": false
+}

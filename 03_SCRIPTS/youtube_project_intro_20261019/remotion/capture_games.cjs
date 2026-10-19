@@ -1,0 +1,4 @@
+const {chromium}=require(process.cwd()+'/03_SCRIPTS/youtube_3d_character_workflow_20261014/remotion/node_modules/playwright');
+(async()=>{const b=await chromium.launch({headless:true,channel:'chrome'});const p=await b.newPage({viewport:{width:1280,height:800}});
+await p.goto('http://localhost:8892',{waitUntil:'networkidle'});await p.getByRole('button',{name:/1F \/ 定時退社で退社/}).click();await p.waitForTimeout(1200);await p.screenshot({path:'03_SCRIPTS/youtube_project_intro_20261019/remotion/public/escape.png'});
+await p.goto('http://localhost:8891',{waitUntil:'networkidle'});await p.getByRole('button',{name:'▶ 冒険をはじめる'}).click();await p.waitForTimeout(700);await p.locator('video.cutscene-video').click();await p.waitForTimeout(1000);await p.screenshot({path:'03_SCRIPTS/youtube_project_intro_20261019/remotion/public/quest.png'});await b.close()})();

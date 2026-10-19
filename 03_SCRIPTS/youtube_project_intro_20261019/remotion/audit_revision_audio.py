@@ -3,7 +3,7 @@ import json, subprocess, numpy as np, torch
 from transformers import WhisperProcessor, WhisperForConditionalGeneration
 P=Path(__file__).resolve().parent;R=P.parents[2];torch.set_num_threads(2)
 m=json.loads((P/'src/edit-manifest.json').read_text())
-old=json.loads(subprocess.check_output(['git','show','f632fbce:03_SCRIPTS/youtube_project_intro_20261019/remotion/src/edit-manifest.json'],cwd=R));used={d['audio'] for d in old['dialogue']}
+old=json.loads(subprocess.check_output(['git','show','64b5cbcc:03_SCRIPTS/youtube_project_intro_20261019/remotion/src/edit-manifest.json'],cwd=R));used={d['audio'] for d in old['dialogue']}
 p=WhisperProcessor.from_pretrained('openai/whisper-small',cache_dir=R/'.local/hazard_voice/asr-cache',local_files_only=True)
 model=WhisperForConditionalGeneration.from_pretrained('openai/whisper-small',cache_dir=R/'.local/hazard_voice/asr-cache',use_safetensors=True,local_files_only=True).to('cpu');rows=[]
 for d in m['dialogue']:

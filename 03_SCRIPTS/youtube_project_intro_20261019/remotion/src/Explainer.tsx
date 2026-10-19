@@ -25,6 +25,7 @@ export const Center:React.FC<{view:string}>=({view})=>{
  if(view==='illustrated')return <Team ids={['sobaya','takosan','yametaro','yumemin']} title="キャラクターの姿で、同じ世界へ"/>;
  if(view==='coexist')return <><Picture src="manga4.png" h={450}/><Note>実写とキャラクターが、同じ店の仲間に。</Note></>;
  if(view==='videos')return <><Title>主力コンテンツは、動画。</Title><div style={{display:'flex',gap:18}}><div><Picture src="proxy.jpg" w={355} h={210}/><Note>ニュース風</Note></div><div><Picture src="runway.jpg" w={355} h={210}/><Note>CM・コント</Note></div></div><div style={{fontSize:30,lineHeight:1.8,marginTop:24}}>日常から、ホラー、アクションまで。</div></>;
+ if(view==='proxy_cast')return <Duo ids={['sobaya','fukugyun']} title="替え玉出社に登場した二人"/>;
  if(view==='proxy')return <Video src="proxy" duration={870} label="替え玉出社"/>;
  if(view==='prayer')return <><Picture src="prayer.png"/><Note>デバッグ祈願 ／ 制作時の参照画像</Note></>;
  if(view==='space')return <Video src="space" duration={780} label="窓際スーパーつらい ／ 宇宙篇"/>;

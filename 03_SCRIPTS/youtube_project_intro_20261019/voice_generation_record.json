@@ -1238,8 +1238,8 @@
   },
   {
     "id": "039",
-    "text": "リモートワークが導入されてる会社なのだ。",
-    "speech": "リモートワークが導入されてる会社なのだ。",
+    "text": "この人はリモート勤務なのだ。",
+    "speech": "この人はリモート勤務なのだ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -1249,17 +1249,30 @@
       ],
       "dictionary_sha256": "12a81ccac09bd10b214eb25932c86c052d5679bfa07f28708179fb7207829811",
       "applied": [],
-      "review": []
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 2,
+          "end": 3,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
     },
     "who": "zunda",
     "scene": "members",
     "view": "okayaman",
     "startFrame": 5646,
-    "durationInFrames": 86,
-    "audio": "voice_69a2ff877e29169e.wav",
+    "durationInFrames": 63,
+    "audio": "voice_7149ba06cc8bd7d4.wav",
     "speaker": 3,
-    "kana": "リモオトワ'アクガ/ドオニュウ'/サレテ'ル/カイシャナ'/ノダ'",
-    "queryFile": "voice_queries/query_69a2ff877e29169e.json"
+    "kana": "コノ'/_ヒトワ'/リモオトキ'ンムナ/ノダ'",
+    "queryFile": "voice_queries/query_7149ba06cc8bd7d4.json"
   },
   {
     "id": "040",
@@ -1279,7 +1292,7 @@
     "who": "metan",
     "scene": "members",
     "view": "yumemin",
-    "startFrame": 5750,
+    "startFrame": 5727,
     "durationInFrames": 204,
     "audio": "voice_f6c9847ad35c42aa.wav",
     "speaker": 2,
@@ -1288,8 +1301,8 @@
   },
   {
     "id": "041",
-    "text": "かわいい顔でも、近づくときは油断できないのだ。",
-    "speech": "かわいい顔でも、近づくときは油断できないのだ。",
+    "text": "かわいいだけのマスコットじゃなかったのだ。",
+    "speech": "かわいいだけのマスコットじゃなかったのだ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -1304,12 +1317,12 @@
     "who": "zunda",
     "scene": "members",
     "view": "yumemin",
-    "startFrame": 5966,
-    "durationInFrames": 106,
-    "audio": "voice_7412bddfbf62c674.wav",
+    "startFrame": 5943,
+    "durationInFrames": 76,
+    "audio": "voice_0bb9a4ca9359c4a3.wav",
     "speaker": 3,
-    "kana": "カワイ'イ/カオデモ'、_チカズ'_ク/ト'キワ/ユダン'/デキ'ナイ/ノダ'",
-    "queryFile": "voice_queries/query_7412bddfbf62c674.json"
+    "kana": "カワイ'イダケノ/マ_スコ'ットジャナカッタ/ノダ'",
+    "queryFile": "voice_queries/query_0bb9a4ca9359c4a3.json"
   },
   {
     "id": "042",
@@ -1342,7 +1355,7 @@
     "who": "metan",
     "scene": "members",
     "view": "team",
-    "startFrame": 6090,
+    "startFrame": 6037,
     "durationInFrames": 190,
     "audio": "voice_2e12c55d60dfc943.wav",
     "speaker": 2,
@@ -1367,7 +1380,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "team",
-    "startFrame": 6292,
+    "startFrame": 6239,
     "durationInFrames": 86,
     "audio": "voice_dbda654dbb481af9.wav",
     "speaker": 3,
@@ -1405,7 +1418,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "team",
-    "startFrame": 6396,
+    "startFrame": 6343,
     "durationInFrames": 246,
     "audio": "voice_2bde2eb456b1bd9f.wav",
     "speaker": 2,
@@ -1452,7 +1465,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "makers",
-    "startFrame": 6654,
+    "startFrame": 6601,
     "durationInFrames": 180,
     "audio": "voice_1c001e00fedde03a.wav",
     "speaker": 2,
@@ -1486,7 +1499,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "advisors",
-    "startFrame": 6846,
+    "startFrame": 6793,
     "durationInFrames": 130,
     "audio": "voice_ab77d69934ea7360.wav",
     "speaker": 2,
@@ -1524,7 +1537,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "makers",
-    "startFrame": 6988,
+    "startFrame": 6935,
     "durationInFrames": 109,
     "audio": "voice_d27115668b81d43d.wav",
     "speaker": 3,
@@ -1549,7 +1562,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "makers",
-    "startFrame": 7115,
+    "startFrame": 7062,
     "durationInFrames": 146,
     "audio": "voice_cd4f4ba911de0920.wav",
     "speaker": 2,
@@ -1583,7 +1596,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "makers",
-    "startFrame": 7273,
+    "startFrame": 7220,
     "durationInFrames": 95,
     "audio": "voice_58ef1848cafd4e69.wav",
     "speaker": 3,
@@ -1621,7 +1634,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "accounts",
-    "startFrame": 7386,
+    "startFrame": 7333,
     "durationInFrames": 58,
     "audio": "voice_b83e12f59af91120.wav",
     "speaker": 2,
@@ -1659,7 +1672,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "accounts",
-    "startFrame": 7456,
+    "startFrame": 7403,
     "durationInFrames": 154,
     "audio": "voice_7d61da0f6ccb8ccc.wav",
     "speaker": 3,
@@ -1697,7 +1710,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "sobaya",
-    "startFrame": 7628,
+    "startFrame": 7575,
     "durationInFrames": 125,
     "audio": "voice_e329799175fce0d4.wav",
     "speaker": 3,
@@ -1735,7 +1748,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "identity",
-    "startFrame": 7771,
+    "startFrame": 7718,
     "durationInFrames": 222,
     "audio": "voice_afaffb28fd319d84.wav",
     "speaker": 2,
@@ -1760,7 +1773,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "identity",
-    "startFrame": 8005,
+    "startFrame": 7952,
     "durationInFrames": 36,
     "audio": "voice_49ea269eb2bcdaa1.wav",
     "speaker": 3,
@@ -1794,7 +1807,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "realteam",
-    "startFrame": 8059,
+    "startFrame": 8006,
     "durationInFrames": 170,
     "audio": "voice_a6e38b52694651d6.wav",
     "speaker": 2,
@@ -1828,7 +1841,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "illustrated",
-    "startFrame": 8241,
+    "startFrame": 8188,
     "durationInFrames": 148,
     "audio": "voice_4913c82adead7e8f.wav",
     "speaker": 2,
@@ -1853,7 +1866,7 @@
     "who": "zunda",
     "scene": "identity",
     "view": "coexist",
-    "startFrame": 8401,
+    "startFrame": 8348,
     "durationInFrames": 171,
     "audio": "voice_7a06fb9a2e3ad298.wav",
     "speaker": 3,
@@ -1878,7 +1891,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "coexist",
-    "startFrame": 8590,
+    "startFrame": 8537,
     "durationInFrames": 158,
     "audio": "voice_b3a9123598f93d9a.wav",
     "speaker": 2,
@@ -1928,7 +1941,7 @@
     "who": "metan",
     "scene": "identity",
     "view": "team",
-    "startFrame": 8760,
+    "startFrame": 8707,
     "durationInFrames": 160,
     "audio": "voice_5177df0b59f52d7e.wav",
     "speaker": 2,
@@ -1953,7 +1966,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "videos",
-    "startFrame": 8932,
+    "startFrame": 8879,
     "durationInFrames": 80,
     "audio": "voice_17563841309e47cd.wav",
     "speaker": 2,
@@ -1978,7 +1991,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "videos",
-    "startFrame": 9024,
+    "startFrame": 8971,
     "durationInFrames": 225,
     "audio": "voice_23fc8a062d41a5e3.wav",
     "speaker": 2,
@@ -2003,7 +2016,7 @@
     "who": "zunda",
     "scene": "videos",
     "view": "videos",
-    "startFrame": 9261,
+    "startFrame": 9208,
     "durationInFrames": 76,
     "audio": "voice_8a1e6d8dda59dd66.wav",
     "speaker": 3,
@@ -2028,7 +2041,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "videos",
-    "startFrame": 9355,
+    "startFrame": 9302,
     "durationInFrames": 72,
     "audio": "voice_e23fab3f97f50aab.wav",
     "speaker": 2,
@@ -2053,7 +2066,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "proxy",
-    "startFrame": 9439,
+    "startFrame": 9386,
     "durationInFrames": 98,
     "audio": "voice_701309b4857bbeea.wav",
     "speaker": 2,
@@ -2062,6 +2075,48 @@
   },
   {
     "id": "065",
+    "text": "そば屋と福ギュンが出ていたのだ。",
+    "speech": "ソバヤとフクギュンが出ていたのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "12a81ccac09bd10b214eb25932c86c052d5679bfa07f28708179fb7207829811",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "id": "mmu.fukugyun",
+          "surface": "福ギュン",
+          "reading": "フクギュン",
+          "scope": "mmu",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "videos",
+    "view": "proxy_cast",
+    "startFrame": 10414,
+    "durationInFrames": 64,
+    "audio": "voice_876cdb1d009ab3a2.wav",
+    "speaker": 3,
+    "kana": "ソ'バ/ヤ'ト/フ'ク/ギュ'/ンガ'/デテ'/イタ'/ノダ'",
+    "queryFile": "voice_queries/query_876cdb1d009ab3a2.json"
+  },
+  {
+    "id": "066",
     "text": "あるいは、バグをお祓いする「デバッグ祈願」。",
     "speech": "あるいは、バグをお祓いする「デバッグ祈願」。",
     "reading_report": {
@@ -2078,7 +2133,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "prayer",
-    "startFrame": 10467,
+    "startFrame": 10496,
     "durationInFrames": 93,
     "audio": "voice_2b93a5974ef7fcdf.wav",
     "speaker": 2,
@@ -2086,9 +2141,9 @@
     "queryFile": "voice_queries/query_2b93a5974ef7fcdf.json"
   },
   {
-    "id": "066",
-    "text": "バグの原因を調べる前に、神様へ問い合わせているのだ。",
-    "speech": "バグの原因を調べる前に、神様へ問い合わせているのだ。",
+    "id": "067",
+    "text": "バグの原因を調べるんじゃなくて、神頼みしてるのだ。",
+    "speech": "バグの原因を調べるんじゃなくて、神頼みしてるのだ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -2103,15 +2158,15 @@
     "who": "zunda",
     "scene": "videos",
     "view": "prayer",
-    "startFrame": 10572,
-    "durationInFrames": 130,
-    "audio": "voice_4fea4fb4b6249740.wav",
+    "startFrame": 10601,
+    "durationInFrames": 114,
+    "audio": "voice_ad780a92770daa8f.wav",
     "speaker": 3,
-    "kana": "バ'グノ/ゲンインオ'/シラベ'ル/マ'エニ、カ'ミサマエ/トイアワセ'テ/イル'/ノダ'",
-    "queryFile": "voice_queries/query_4fea4fb4b6249740.json"
+    "kana": "バ'グノ/ゲンインオ'/シラベ'ル/ン'ジャナ_クテ、カミダ'ノミ/_シテ'ル/ノダ'",
+    "queryFile": "voice_queries/query_ad780a92770daa8f.json"
   },
   {
-    "id": "067",
+    "id": "068",
     "text": "こんなふうに、変な出来事を大まじめな映像にする作品もあるわ。",
     "speech": "こんなふうに、変な出来事をオオマジメな映像にする作品もあるわ。",
     "reading_report": {
@@ -2137,7 +2192,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "prayer",
-    "startFrame": 10720,
+    "startFrame": 10733,
     "durationInFrames": 129,
     "audio": "voice_3d4c66f9c9fb2355.wav",
     "speaker": 2,
@@ -2145,7 +2200,7 @@
     "queryFile": "voice_queries/query_3d4c66f9c9fb2355.json"
   },
   {
-    "id": "068",
+    "id": "069",
     "text": "映像がちゃんとしているほど、やっていることのおかしさが増すのだ。",
     "speech": "映像がちゃんとしているほど、やっていることのおかしさが増すのだ。",
     "reading_report": {
@@ -2162,7 +2217,7 @@
     "who": "zunda",
     "scene": "videos",
     "view": "prayer",
-    "startFrame": 10861,
+    "startFrame": 10874,
     "durationInFrames": 130,
     "audio": "voice_14d52a8dfccf8e56.wav",
     "speaker": 3,
@@ -2170,7 +2225,7 @@
     "queryFile": "voice_queries/query_14d52a8dfccf8e56.json"
   },
   {
-    "id": "069",
+    "id": "070",
     "text": "架空のビール「窓際スーパーつらい」のCMがあったり、そば屋がファッションショーへ登場したり。",
     "speech": "架空のビール「窓際スーパーつらい」のCMがあったり、ソバヤがファッションショーへ登場したり。",
     "reading_report": {
@@ -2210,7 +2265,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "space",
-    "startFrame": 11009,
+    "startFrame": 11022,
     "durationInFrames": 183,
     "audio": "voice_7bb664cee908ff94.wav",
     "speaker": 2,
@@ -2218,7 +2273,7 @@
     "queryFile": "voice_queries/query_7bb664cee908ff94.json"
   },
   {
-    "id": "070",
+    "id": "071",
     "text": "同じメンバーでも、作品ごとに舞台や役割が大きく変わるの。",
     "speech": "同じメンバーでも、作品ごとに舞台や役割が大きく変わるの。",
     "reading_report": {
@@ -2235,7 +2290,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "runway",
-    "startFrame": 11204,
+    "startFrame": 11217,
     "durationInFrames": 120,
     "audio": "voice_5f85adecabb9251b.wav",
     "speaker": 2,
@@ -2243,7 +2298,7 @@
     "queryFile": "voice_queries/query_5f85adecabb9251b.json"
   },
   {
-    "id": "071",
+    "id": "072",
     "text": "今日は会社員、明日はモデル。その次は何になっているか分からないのだ。",
     "speech": "今日は会社員、明日はモデル。その次は何になっているか分からないのだ。",
     "reading_report": {
@@ -2273,7 +2328,7 @@
     "who": "zunda",
     "scene": "videos",
     "view": "runway",
-    "startFrame": 11336,
+    "startFrame": 11349,
     "durationInFrames": 165,
     "audio": "voice_c8550aa782f8d221.wav",
     "speaker": 3,
@@ -2281,7 +2336,7 @@
     "queryFile": "voice_queries/query_c8550aa782f8d221.json"
   },
   {
-    "id": "072",
+    "id": "073",
     "text": "全部を順番に覚えてから見る必要はないわ。まずは気になった一本から。",
     "speech": "全部を順番に覚えてから見る必要はないわ。まずは気になった一本から。",
     "reading_report": {
@@ -2298,7 +2353,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "videos_site",
-    "startFrame": 11519,
+    "startFrame": 11532,
     "durationInFrames": 135,
     "audio": "voice_17cd7f41ddc35003.wav",
     "speaker": 2,
@@ -2306,7 +2361,7 @@
     "queryFile": "voice_queries/query_17cd7f41ddc35003.json"
   },
   {
-    "id": "073",
+    "id": "074",
     "text": "好きなキャラクターができたら、その人が出る別の動画も見てもらえると嬉しいわね。",
     "speech": "好きなキャラクターができたら、その人が出る別の動画も見てもらえると嬉しいわね。",
     "reading_report": {
@@ -2336,7 +2391,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "videos_site",
-    "startFrame": 11666,
+    "startFrame": 11679,
     "durationInFrames": 142,
     "audio": "voice_e3e0994926d5f552.wav",
     "speaker": 2,
@@ -2344,7 +2399,7 @@
     "queryFile": "voice_queries/query_e3e0994926d5f552.json"
   },
   {
-    "id": "074",
+    "id": "075",
     "text": "入口が「この仮面の人、何してるの？」でもいいのだな。",
     "speech": "入口が「この仮面の人、何してるの？」でもいいのだな。",
     "reading_report": {
@@ -2374,7 +2429,7 @@
     "who": "zunda",
     "scene": "videos",
     "view": "sobaya",
-    "startFrame": 11820,
+    "startFrame": 11833,
     "durationInFrames": 137,
     "audio": "voice_4da9624c0261fe16.wav",
     "speaker": 3,
@@ -2382,7 +2437,7 @@
     "queryFile": "voice_queries/query_4da9624c0261fe16.json"
   },
   {
-    "id": "075",
+    "id": "076",
     "text": "十分よ。そして、動画を見たあとに、「これ、どうやって作ったの？」と思った人にも、続きがあるの。",
     "speech": "十分よ。そして、動画を見たあとに、「これ、どうやって作ったの？」と思った人にも、続きがあるの。",
     "reading_report": {
@@ -2424,7 +2479,7 @@
     "who": "metan",
     "scene": "videos",
     "view": "prompt_site",
-    "startFrame": 11975,
+    "startFrame": 11988,
     "durationInFrames": 206,
     "audio": "voice_f10ca0ec55729f3f.wav",
     "speaker": 2,
@@ -2432,7 +2487,7 @@
     "queryFile": "voice_queries/query_f10ca0ec55729f3f.json"
   },
   {
-    "id": "076",
+    "id": "077",
     "text": "ここでAIの話につながるのだ？",
     "speech": "ここでエーアイの話につながるのだ？",
     "reading_report": {
@@ -2458,7 +2513,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 12193,
+    "startFrame": 12206,
     "durationInFrames": 76,
     "audio": "voice_76fe8f5f9bf6218d.wav",
     "speaker": 3,
@@ -2466,7 +2521,7 @@
     "queryFile": "voice_queries/query_76fe8f5f9bf6218d.json"
   },
   {
-    "id": "077",
+    "id": "078",
     "text": "そう。窓際族物語は、AIを使った制作そのものもテーマにしているの。",
     "speech": "そう。窓際族物語は、エーアイを使った制作そのものもテーマにしているの。",
     "reading_report": {
@@ -2492,7 +2547,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 12287,
+    "startFrame": 12300,
     "durationInFrames": 164,
     "audio": "voice_15fc9413e2f13a36.wav",
     "speaker": 2,
@@ -2500,7 +2555,7 @@
     "queryFile": "voice_queries/query_15fc9413e2f13a36.json"
   },
   {
-    "id": "078",
+    "id": "079",
     "text": "公式サイトでは、動画を作るときに使ったプロンプトや参照素材を公開しているの。",
     "speech": "公式サイトでは、動画を作るときに使ったプロンプトや参照素材を公開しているの。",
     "reading_report": {
@@ -2517,7 +2572,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 12463,
+    "startFrame": 12476,
     "durationInFrames": 156,
     "audio": "voice_9b24ccce7038b76d.wav",
     "speaker": 2,
@@ -2525,7 +2580,7 @@
     "queryFile": "voice_queries/query_9b24ccce7038b76d.json"
   },
   {
-    "id": "079",
+    "id": "080",
     "text": "プロンプトって、AIに渡す指示のことなのだ？",
     "speech": "プロンプトって、エーアイに渡す指示のことなのだ？",
     "reading_report": {
@@ -2551,7 +2606,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 12631,
+    "startFrame": 12644,
     "durationInFrames": 110,
     "audio": "voice_360cdfdaede2d2fa.wav",
     "speaker": 3,
@@ -2559,7 +2614,7 @@
     "queryFile": "voice_queries/query_360cdfdaede2d2fa.json"
   },
   {
-    "id": "080",
+    "id": "081",
     "text": "そう。誰が登場して、どこで、どんな動きをするのか。",
     "speech": "そう。誰が登場して、どこで、どんな動きをするのか。",
     "reading_report": {
@@ -2576,7 +2631,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 12759,
+    "startFrame": 12772,
     "durationInFrames": 119,
     "audio": "voice_f2886725078742d2.wav",
     "speaker": 2,
@@ -2584,7 +2639,7 @@
     "queryFile": "voice_queries/query_f2886725078742d2.json"
   },
   {
-    "id": "081",
+    "id": "082",
     "text": "気に入った動画を見たあとに、それをどう指示したのか、どんな画像などを参考にしたのかも見られるの。",
     "speech": "気に入った動画を見たあとに、それをどう指示したのか、どんな画像などを参考にしたのかも見られるの。",
     "reading_report": {
@@ -2601,7 +2656,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 12890,
+    "startFrame": 12903,
     "durationInFrames": 178,
     "audio": "voice_bafa665a0718ae37.wav",
     "speaker": 2,
@@ -2609,7 +2664,7 @@
     "queryFile": "voice_queries/query_bafa665a0718ae37.json"
   },
   {
-    "id": "082",
+    "id": "083",
     "text": "完成した映像と、注文の仕方を見比べられるのだな。",
     "speech": "完成した映像と、注文の仕方を見比べられるのだな。",
     "reading_report": {
@@ -2640,7 +2695,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 13080,
+    "startFrame": 13093,
     "durationInFrames": 123,
     "audio": "voice_edbb9dce6bd307a4.wav",
     "speaker": 3,
@@ -2648,7 +2703,7 @@
     "queryFile": "voice_queries/query_edbb9dce6bd307a4.json"
   },
   {
-    "id": "083",
+    "id": "084",
     "text": "例えば、「この動画を、自分のキャラクターで作ってみたい」と思ったら、",
     "speech": "例えば、「この動画を、自分のキャラクターで作ってみたい」と思ったら、",
     "reading_report": {
@@ -2678,7 +2733,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "remix",
-    "startFrame": 13221,
+    "startFrame": 13234,
     "durationInFrames": 134,
     "audio": "voice_5bdcdadfe8ee7c0b.wav",
     "speaker": 2,
@@ -2686,7 +2741,7 @@
     "queryFile": "voice_queries/query_5bdcdadfe8ee7c0b.json"
   },
   {
-    "id": "084",
+    "id": "085",
     "text": "公開されているプロンプトを参考に、登場人物や舞台を変えてみることもできるわ。",
     "speech": "公開されているプロンプトを参考に、登場人物や舞台を変えてみることもできるわ。",
     "reading_report": {
@@ -2716,7 +2771,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "remix",
-    "startFrame": 13367,
+    "startFrame": 13380,
     "durationInFrames": 155,
     "audio": "voice_f3183e52b8d0fe05.wav",
     "speaker": 2,
@@ -2724,7 +2779,7 @@
     "queryFile": "voice_queries/query_f3183e52b8d0fe05.json"
   },
   {
-    "id": "085",
+    "id": "086",
     "text": "そば屋が出ているところを、ぼくに置き換えるのだ？",
     "speech": "ソバヤが出ているところを、ぼくに置き換えるのだ？",
     "reading_report": {
@@ -2750,7 +2805,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "remix",
-    "startFrame": 13534,
+    "startFrame": 13547,
     "durationInFrames": 100,
     "audio": "voice_a54c0b185a5668de.wav",
     "speaker": 3,
@@ -2758,7 +2813,7 @@
     "queryFile": "voice_queries/query_a54c0b185a5668de.json"
   },
   {
-    "id": "086",
+    "id": "087",
     "text": "そういう楽しみ方ね。キャラクターの画像も用意して、見た目や動きの指示を、そのキャラクターに合わせて調整するの。",
     "speech": "そういう楽しみ方ね。キャラクターの画像も用意して、見た目や動きの指示を、そのキャラクターに合わせて調整するの。",
     "reading_report": {
@@ -2789,7 +2844,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "remix",
-    "startFrame": 13652,
+    "startFrame": 13665,
     "durationInFrames": 216,
     "audio": "voice_60955c0b698787a3.wav",
     "speaker": 2,
@@ -2797,7 +2852,7 @@
     "queryFile": "voice_queries/query_60955c0b698787a3.json"
   },
   {
-    "id": "087",
+    "id": "088",
     "text": "ぼくも壁を登らされる流れなのだ。",
     "speech": "ぼくも壁を登らされる流れなのだ。",
     "reading_report": {
@@ -2814,7 +2869,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "commute_callback",
-    "startFrame": 13880,
+    "startFrame": 13893,
     "durationInFrames": 74,
     "audio": "voice_d8b0fd9359878474.wav",
     "speaker": 3,
@@ -2822,7 +2877,7 @@
     "queryFile": "voice_queries/query_d8b0fd9359878474.json"
   },
   {
-    "id": "088",
+    "id": "089",
     "text": "普通に出社する動画に変えてもいいのよ。",
     "speech": "普通に出社する動画に変えてもいいのよ。",
     "reading_report": {
@@ -2839,7 +2894,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "commute_callback",
-    "startFrame": 13972,
+    "startFrame": 13985,
     "durationInFrames": 74,
     "audio": "voice_94643b0af800ad72.wav",
     "speaker": 2,
@@ -2847,7 +2902,7 @@
     "queryFile": "voice_queries/query_94643b0af800ad72.json"
   },
   {
-    "id": "089",
+    "id": "090",
     "text": "ここで、ようやく普通の出社が選択肢に入ったのだ。",
     "speech": "ここで、ようやく普通の出社が選択肢に入ったのだ。",
     "reading_report": {
@@ -2864,7 +2919,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "commute_callback",
-    "startFrame": 14058,
+    "startFrame": 14071,
     "durationInFrames": 113,
     "audio": "voice_666273cc125e7db5.wav",
     "speaker": 3,
@@ -2872,7 +2927,7 @@
     "queryFile": "voice_queries/query_666273cc125e7db5.json"
   },
   {
-    "id": "090",
+    "id": "091",
     "text": "作品を楽しむだけでなく、気に入った演出や指示の書き方を、自分の制作にも取り入れられる。",
     "speech": "作品を楽しむだけでなく、気に入った演出や指示の書き方を、自分の制作にも取り入れられる。",
     "reading_report": {
@@ -2915,7 +2970,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 14189,
+    "startFrame": 14202,
     "durationInFrames": 177,
     "audio": "voice_d5657a172ac75956.wav",
     "speaker": 2,
@@ -2923,7 +2978,7 @@
     "queryFile": "voice_queries/query_d5657a172ac75956.json"
   },
   {
-    "id": "091",
+    "id": "092",
     "text": "作ったものと、その作り方を一緒に紹介しているのね。",
     "speech": "作ったものと、その作り方を一緒に紹介しているのね。",
     "reading_report": {
@@ -2954,7 +3009,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "prompt_site",
-    "startFrame": 14378,
+    "startFrame": 14391,
     "durationInFrames": 106,
     "audio": "voice_6e6f885f9137493f.wav",
     "speaker": 2,
@@ -2962,7 +3017,7 @@
     "queryFile": "voice_queries/query_6e6f885f9137493f.json"
   },
   {
-    "id": "092",
+    "id": "093",
     "text": "何もないところから考えるより、「この動画みたいに作りたい」から始められるのは、うれしいのだ。",
     "speech": "何もないところから考えるより、「この動画みたいに作りたい」から始められるのは、うれしいのだ。",
     "reading_report": {
@@ -2979,7 +3034,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "remix",
-    "startFrame": 14496,
+    "startFrame": 14509,
     "durationInFrames": 212,
     "audio": "voice_6432c15c5ae56056.wav",
     "speaker": 3,
@@ -2987,7 +3042,7 @@
     "queryFile": "voice_queries/query_6432c15c5ae56056.json"
   },
   {
-    "id": "093",
+    "id": "094",
     "text": "制作では、画像や映像、音声を作るだけでなく、台本の相談や、編集・ゲーム開発のコードを書くところにもAIを活用しているわ。",
     "speech": "制作では、画像や映像、音声を作るだけでなく、台本の相談や、編集・ゲーム開発のコードを書くところにもエーアイを活用しているわ。",
     "reading_report": {
@@ -3013,7 +3068,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "process",
-    "startFrame": 14726,
+    "startFrame": 14739,
     "durationInFrames": 292,
     "audio": "voice_bfb445cb156afed5.wav",
     "speaker": 2,
@@ -3021,7 +3076,7 @@
     "queryFile": "voice_queries/query_bfb445cb156afed5.json"
   },
   {
-    "id": "094",
+    "id": "095",
     "text": "「動画を作って」って言えば、完成するのだ？",
     "speech": "「動画を作って」って言えば、完成するのだ？",
     "reading_report": {
@@ -3038,7 +3093,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "process",
-    "startFrame": 15030,
+    "startFrame": 15043,
     "durationInFrames": 112,
     "audio": "voice_1b35fe7aaeee757b.wav",
     "speaker": 3,
@@ -3046,7 +3101,7 @@
     "queryFile": "voice_queries/query_1b35fe7aaeee757b.json"
   },
   {
-    "id": "095",
+    "id": "096",
     "text": "実際には、誰が何をするのかを考えて、参考になる画像を用意して、できたものを確認して直す。その積み重ねね。",
     "speech": "実際には、誰が何をするのかを考えて、参考になる画像を用意して、できたものを確認して直す。その積み重ねね。",
     "reading_report": {
@@ -3063,7 +3118,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "process",
-    "startFrame": 15160,
+    "startFrame": 15173,
     "durationInFrames": 239,
     "audio": "voice_8255d2f8ccd93fad.wav",
     "speaker": 2,
@@ -3071,7 +3126,7 @@
     "queryFile": "voice_queries/query_8255d2f8ccd93fad.json"
   },
   {
-    "id": "096",
+    "id": "097",
     "text": "勝手に別人になっていたら、続き物として困るのだ。",
     "speech": "勝手に別人になっていたら、続き物として困るのだ。",
     "reading_report": {
@@ -3101,7 +3156,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "reference",
-    "startFrame": 15411,
+    "startFrame": 15424,
     "durationInFrames": 117,
     "audio": "voice_d213b7fd4a588309.wav",
     "speaker": 3,
@@ -3109,7 +3164,7 @@
     "queryFile": "voice_queries/query_d213b7fd4a588309.json"
   },
   {
-    "id": "097",
+    "id": "098",
     "text": "そうなの。顔や体の特徴を保つこと。セリフがきちんと伝わること。動きや間がネタに合っていること。",
     "speech_override": "そうなの。顔や体の特徴を保つこと。セリフがきちんと伝わること。動きやマがネタに合っていること。",
     "speech": "そうなの。顔や体の特徴を保つこと。セリフがきちんと伝わること。動きやマがネタに合っていること。",
@@ -3127,7 +3182,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "reference",
-    "startFrame": 15546,
+    "startFrame": 15559,
     "durationInFrames": 203,
     "audio": "voice_713696413e47e14a.wav",
     "speaker": 2,
@@ -3135,7 +3190,7 @@
     "queryFile": "voice_queries/query_713696413e47e14a.json"
   },
   {
-    "id": "098",
+    "id": "099",
     "text": "そういう部分を確かめながら作っているわ。",
     "speech": "そういう部分を確かめながら作っているわ。",
     "reading_report": {
@@ -3165,7 +3220,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "reference",
-    "startFrame": 15761,
+    "startFrame": 15774,
     "durationInFrames": 75,
     "audio": "voice_9b3aa31a6f10b16e.wav",
     "speaker": 2,
@@ -3173,7 +3228,7 @@
     "queryFile": "voice_queries/query_9b3aa31a6f10b16e.json"
   },
   {
-    "id": "099",
+    "id": "100",
     "text": "AIが映像を作るだけでは、まだ完成じゃないのだな。",
     "speech": "エーアイが映像を作るだけでは、まだ完成じゃないのだな。",
     "reading_report": {
@@ -3199,7 +3254,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "process",
-    "startFrame": 15848,
+    "startFrame": 15861,
     "durationInFrames": 122,
     "audio": "voice_beb8731c1e0bc3a0.wav",
     "speaker": 3,
@@ -3207,7 +3262,7 @@
     "queryFile": "voice_queries/query_beb8731c1e0bc3a0.json"
   },
   {
-    "id": "100",
+    "id": "101",
     "text": "その試行錯誤を、技術解説として紹介しているのも特徴よ。",
     "speech": "その試行錯誤を、技術解説として紹介しているのも特徴よ。",
     "reading_report": {
@@ -3236,7 +3291,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "tutorials",
-    "startFrame": 15988,
+    "startFrame": 16001,
     "durationInFrames": 124,
     "audio": "voice_fa1f44d165278799.wav",
     "speaker": 2,
@@ -3244,7 +3299,7 @@
     "queryFile": "voice_queries/query_fa1f44d165278799.json"
   },
   {
-    "id": "101",
+    "id": "102",
     "text": "例えば、AIを使った動画制作、キャラクターの3Dモデル化、動くLINEスタンプの作り方。",
     "speech": "例えば、エーアイを使った動画制作、キャラクターのスリーディーモデル化、動くLINEスタンプの作り方。",
     "reading_report": {
@@ -3292,7 +3347,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "tutorials",
-    "startFrame": 16124,
+    "startFrame": 16137,
     "durationInFrames": 199,
     "audio": "voice_f3abbec4cb83c356.wav",
     "speaker": 2,
@@ -3300,7 +3355,7 @@
     "queryFile": "voice_queries/query_f3abbec4cb83c356.json"
   },
   {
-    "id": "102",
+    "id": "103",
     "text": "さっきまでふざけていた人たちが、急に制作講座を始めるのだ。",
     "speech": "さっきまでふざけていた人たちが、急に制作講座を始めるのだ。",
     "reading_report": {
@@ -3330,7 +3385,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "tutorials",
-    "startFrame": 16335,
+    "startFrame": 16348,
     "durationInFrames": 139,
     "audio": "voice_e6998d0c9b89f1c6.wav",
     "speaker": 3,
@@ -3338,7 +3393,7 @@
     "queryFile": "voice_queries/query_e6998d0c9b89f1c6.json"
   },
   {
-    "id": "103",
+    "id": "104",
     "text": "作品を楽しむ入口と、自分でも作ってみたい人の入口が、両方あるのよ。",
     "speech": "作品を楽しむ入口と、自分でも作ってみたい人の入口が、両方あるのよ。",
     "reading_report": {
@@ -3393,7 +3448,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "workflow",
-    "startFrame": 16492,
+    "startFrame": 16505,
     "durationInFrames": 159,
     "audio": "voice_f95fafa089a9789f.wav",
     "speaker": 2,
@@ -3401,7 +3456,7 @@
     "queryFile": "voice_queries/query_f95fafa089a9789f.json"
   },
   {
-    "id": "104",
+    "id": "105",
     "text": "制作例を見ながら、どんな素材を用意したのか、どこで失敗して、どう直したのかを紹介しているわ。",
     "speech": "制作例を見ながら、どんな素材を用意したのか、どこで失敗して、どう直したのかを紹介しているわ。",
     "reading_report": {
@@ -3418,7 +3473,7 @@
     "who": "metan",
     "scene": "ai",
     "view": "tripo",
-    "startFrame": 16663,
+    "startFrame": 16676,
     "durationInFrames": 196,
     "audio": "voice_f1b63a1a2997a708.wav",
     "speaker": 2,
@@ -3426,7 +3481,7 @@
     "queryFile": "voice_queries/query_f1b63a1a2997a708.json"
   },
   {
-    "id": "105",
+    "id": "106",
     "text": "完成品だけ見るより、自分が頼むときのイメージが湧きそうなのだ。",
     "speech": "完成品だけ見るより、自分が頼むときのイメージが湧きそうなのだ。",
     "reading_report": {
@@ -3456,7 +3511,7 @@
     "who": "zunda",
     "scene": "ai",
     "view": "stickers_tutorial",
-    "startFrame": 16871,
+    "startFrame": 16884,
     "durationInFrames": 141,
     "audio": "voice_6ca4e27ed7647a7d.wav",
     "speaker": 3,
@@ -3464,7 +3519,7 @@
     "queryFile": "voice_queries/query_6ca4e27ed7647a7d.json"
   },
   {
-    "id": "106",
+    "id": "107",
     "text": "ゲームも試作していて、会社から脱出するものや、ビールを届けるRPGなどがあるわ。",
     "speech": "ゲームも試作していて、会社から脱出するものや、ビールを届けるRPGなどがあるわ。",
     "reading_report": {
@@ -3481,7 +3536,7 @@
     "who": "metan",
     "scene": "games",
     "view": "games",
-    "startFrame": 17030,
+    "startFrame": 17043,
     "durationInFrames": 173,
     "audio": "voice_c09238bc4ec85365.wav",
     "speaker": 2,
@@ -3489,7 +3544,7 @@
     "queryFile": "voice_queries/query_c09238bc4ec85365.json"
   },
   {
-    "id": "107",
+    "id": "108",
     "text": "スマホを傾けてビールを注ぐゲームもあるの。",
     "speech": "スマホを傾けてビールを注ぐゲームもあるの。",
     "reading_report": {
@@ -3506,7 +3561,7 @@
     "who": "metan",
     "scene": "games",
     "view": "ippai",
-    "startFrame": 17215,
+    "startFrame": 17228,
     "durationInFrames": 80,
     "audio": "voice_18e0c2574fff193a.wav",
     "speaker": 2,
@@ -3514,9 +3569,9 @@
     "queryFile": "voice_queries/query_18e0c2574fff193a.json"
   },
   {
-    "id": "108",
-    "text": "操作方法が変わっても、ビールの需要は安定しているのだ。",
-    "speech": "操作方法が変わっても、ビールの需要は安定しているのだ。",
+    "id": "109",
+    "text": "操作方法が変わっても、ビールの出番は安定しているのだ。",
+    "speech": "操作方法が変わっても、ビールの出番は安定しているのだ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -3545,15 +3600,15 @@
     "who": "zunda",
     "scene": "games",
     "view": "ippai",
-    "startFrame": 17307,
-    "durationInFrames": 127,
-    "audio": "voice_e0571742f2e1c38e.wav",
+    "startFrame": 17320,
+    "durationInFrames": 128,
+    "audio": "voice_0b252ecd94ac6549.wav",
     "speaker": 3,
-    "kana": "ソオサホ'オホオガ/カワッテモ'、ビ'イルノ/ジュヨオワ'/アンテエ'/_シテ'/イル'/ノダ'",
-    "queryFile": "voice_queries/query_e0571742f2e1c38e.json"
+    "kana": "ソオサホ'オホオガ/カワッテモ'、ビ'イルノ/デバ'ンワ/アンテエ'/_シテ'/イル'/ノダ'",
+    "queryFile": "voice_queries/query_0b252ecd94ac6549.json"
   },
   {
-    "id": "109",
+    "id": "110",
     "text": "グッズには、窓際族TシャツとLINEスタンプがあるわ。",
     "speech": "グッズには、窓際族TシャツとLINEスタンプがあるわ。",
     "reading_report": {
@@ -3570,7 +3625,7 @@
     "who": "metan",
     "scene": "goods",
     "view": "goods",
-    "startFrame": 17452,
+    "startFrame": 17466,
     "durationInFrames": 102,
     "audio": "voice_0c4f3e7b95795282.wav",
     "speaker": 2,
@@ -3578,7 +3633,7 @@
     "queryFile": "voice_queries/query_0c4f3e7b95795282.json"
   },
   {
-    "id": "110",
+    "id": "111",
     "text": "画面の中だけでは収まらなくなったのだ。",
     "speech": "画面の中だけでは収まらなくなったのだ。",
     "reading_report": {
@@ -3595,7 +3650,7 @@
     "who": "zunda",
     "scene": "goods",
     "view": "goods",
-    "startFrame": 17566,
+    "startFrame": 17580,
     "durationInFrames": 83,
     "audio": "voice_51d29d9e4a303f0c.wav",
     "speaker": 3,
@@ -3603,7 +3658,7 @@
     "queryFile": "voice_queries/query_51d29d9e4a303f0c.json"
   },
   {
-    "id": "111",
+    "id": "112",
     "text": "Tシャツは、窓際族の仲間たちを身に着けて楽しめるアイテム。",
     "speech": "Tシャツは、窓際族の仲間たちを身に着けて楽しめるアイテム。",
     "reading_report": {
@@ -3633,7 +3688,7 @@
     "who": "metan",
     "scene": "goods",
     "view": "tshirt",
-    "startFrame": 17667,
+    "startFrame": 17681,
     "durationInFrames": 120,
     "audio": "voice_20d2ed016cc18861.wav",
     "speaker": 2,
@@ -3641,7 +3696,7 @@
     "queryFile": "voice_queries/query_20d2ed016cc18861.json"
   },
   {
-    "id": "112",
+    "id": "113",
     "text": "LINEスタンプなら、会話の中に窓際族を登場させられるわ。",
     "speech": "LINEスタンプなら、会話の中に窓際族を登場させられるわ。",
     "reading_report": {
@@ -3658,7 +3713,7 @@
     "who": "metan",
     "scene": "goods",
     "view": "stickers",
-    "startFrame": 17799,
+    "startFrame": 17813,
     "durationInFrames": 120,
     "audio": "voice_549121fbbfeb52f9.wav",
     "speaker": 2,
@@ -3666,7 +3721,7 @@
     "queryFile": "voice_queries/query_549121fbbfeb52f9.json"
   },
   {
-    "id": "113",
+    "id": "114",
     "text": "会話の中に窓際族を登場させたいことってあるのだ？",
     "speech": "会話の中に窓際族を登場させたいことってあるのだ？",
     "reading_report": {
@@ -3683,7 +3738,7 @@
     "who": "zunda",
     "scene": "goods",
     "view": "stickers",
-    "startFrame": 17931,
+    "startFrame": 17945,
     "durationInFrames": 122,
     "audio": "voice_e1c7c1f552160677.wav",
     "speaker": 3,
@@ -3691,7 +3746,7 @@
     "queryFile": "voice_queries/query_e1c7c1f552160677.json"
   },
   {
-    "id": "114",
+    "id": "115",
     "text": "あるかもしれないでしょ。気に入った表情から使ってみてね。",
     "speech": "あるかもしれないでしょ。気に入った表情から使ってみてね。",
     "reading_report": {
@@ -3708,7 +3763,7 @@
     "who": "metan",
     "scene": "goods",
     "view": "stickers",
-    "startFrame": 18071,
+    "startFrame": 18085,
     "durationInFrames": 106,
     "audio": "voice_bede88a508b3a512.wav",
     "speaker": 2,
@@ -3716,7 +3771,7 @@
     "queryFile": "voice_queries/query_bede88a508b3a512.json"
   },
   {
-    "id": "115",
+    "id": "116",
     "text": "動くスタンプについては、実際に作った手順も技術解説になっているの。",
     "speech": "動くスタンプについては、実際に作った手順も技術解説になっているの。",
     "reading_report": {
@@ -3733,7 +3788,7 @@
     "who": "metan",
     "scene": "goods",
     "view": "stickers_tutorial",
-    "startFrame": 18189,
+    "startFrame": 18203,
     "durationInFrames": 135,
     "audio": "voice_df00b13b7f710a55.wav",
     "speaker": 2,
@@ -3741,7 +3796,7 @@
     "queryFile": "voice_queries/query_df00b13b7f710a55.json"
   },
   {
-    "id": "116",
+    "id": "117",
     "text": "見る、使う、作ってみる。全部つながっているのだ。",
     "speech": "見る、使う、作ってみる。全部つながっているのだ。",
     "reading_report": {
@@ -3758,7 +3813,7 @@
     "who": "zunda",
     "scene": "goods",
     "view": "goods",
-    "startFrame": 18336,
+    "startFrame": 18350,
     "durationInFrames": 130,
     "audio": "voice_659fc7c0a6702533.wav",
     "speaker": 3,
@@ -3766,7 +3821,7 @@
     "queryFile": "voice_queries/query_659fc7c0a6702533.json"
   },
   {
-    "id": "117",
+    "id": "118",
     "text": "ここまで紹介してきた窓際族物語の入口は、公式サイト「madogiwa.work」。",
     "speech_override": "ここまで紹介してきた窓際族物語の入口は、公式サイト「まどぎわドットワーク」。",
     "speech": "ここまで紹介してきた窓際族物語の入口は、公式サイト「まどぎわドットワーク」。",
@@ -3784,7 +3839,7 @@
     "who": "metan",
     "scene": "ending",
     "view": "site",
-    "startFrame": 18484,
+    "startFrame": 18498,
     "durationInFrames": 175,
     "audio": "voice_2d9db1da27752841.wav",
     "speaker": 2,
@@ -3792,7 +3847,7 @@
     "queryFile": "voice_queries/query_2d9db1da27752841.json"
   },
   {
-    "id": "118",
+    "id": "119",
     "text": "漫画で始まりを読むのも、気になる動画を見るのも、グッズを眺めるのもいいわ。",
     "speech": "漫画で始まりを読むのも、気になる動画を見るのも、グッズを眺めるのもいいわ。",
     "reading_report": {
@@ -3809,7 +3864,7 @@
     "who": "metan",
     "scene": "ending",
     "view": "site",
-    "startFrame": 18671,
+    "startFrame": 18685,
     "durationInFrames": 145,
     "audio": "voice_4aa8d6e702c22370.wav",
     "speaker": 2,
@@ -3817,7 +3872,7 @@
     "queryFile": "voice_queries/query_4aa8d6e702c22370.json"
   },
   {
-    "id": "119",
+    "id": "120",
     "text": "AIに詳しくなくても、気になった動画から見ればいいのだな。",
     "speech": "エーアイに詳しくなくても、気になった動画から見ればいいのだな。",
     "reading_report": {
@@ -3843,7 +3898,7 @@
     "who": "zunda",
     "scene": "ending",
     "view": "videos_site",
-    "startFrame": 18828,
+    "startFrame": 18842,
     "durationInFrames": 128,
     "audio": "voice_9f7c0bdad4c6392f.wav",
     "speaker": 3,
@@ -3851,7 +3906,7 @@
     "queryFile": "voice_queries/query_9f7c0bdad4c6392f.json"
   },
   {
-    "id": "120",
+    "id": "121",
     "text": "ええ。AIで何か作ってみたい人は、技術解説や、動画ページのプロンプトものぞいてみてね。",
     "speech": "ええ。エーアイで何か作ってみたい人は、技術解説や、動画ページのプロンプトものぞいてみてね。",
     "reading_report": {
@@ -3890,7 +3945,7 @@
     "who": "metan",
     "scene": "ending",
     "view": "prompt_site",
-    "startFrame": 18974,
+    "startFrame": 18988,
     "durationInFrames": 204,
     "audio": "voice_34bd7e595413cf9d.wav",
     "speaker": 2,
@@ -3898,7 +3953,7 @@
     "queryFile": "voice_queries/query_34bd7e595413cf9d.json"
   },
   {
-    "id": "121",
+    "id": "122",
     "text": "見るだけでも、自分のキャラクターで挑戦してみても楽しめるのだな！",
     "speech": "見るだけでも、自分のキャラクターで挑戦してみても楽しめるのだな！",
     "reading_report": {
@@ -3928,7 +3983,7 @@
     "who": "zunda",
     "scene": "ending",
     "view": "ending",
-    "startFrame": 19190,
+    "startFrame": 19204,
     "durationInFrames": 137,
     "audio": "voice_1dcebeda438d8036.wav",
     "speaker": 3,
@@ -3936,7 +3991,7 @@
     "queryFile": "voice_queries/query_1dcebeda438d8036.json"
   },
   {
-    "id": "122",
+    "id": "123",
     "text": "漫画から始まって、動画、ゲーム、Tシャツ、スタンプ。窓際なのに、活動範囲が広いのだ。",
     "speech": "漫画から始まって、動画、ゲーム、Tシャツ、スタンプ。窓際なのに、活動範囲が広いのだ。",
     "reading_report": {
@@ -3953,7 +4008,7 @@
     "who": "zunda",
     "scene": "ending",
     "view": "ending",
-    "startFrame": 19345,
+    "startFrame": 19359,
     "durationInFrames": 238,
     "audio": "voice_29e83cf6dac5158a.wav",
     "speaker": 3,
@@ -3961,7 +4016,7 @@
     "queryFile": "voice_queries/query_29e83cf6dac5158a.json"
   },
   {
-    "id": "123",
+    "id": "124",
     "text": "次は、どんな作品になるのかしらね。",
     "speech": "次は、どんな作品になるのかしらね。",
     "reading_report": {
@@ -3978,7 +4033,7 @@
     "who": "metan",
     "scene": "ending",
     "view": "ending",
-    "startFrame": 19601,
+    "startFrame": 19615,
     "durationInFrames": 74,
     "audio": "voice_facd63f9823ccc6f.wav",
     "speaker": 2,
@@ -3986,7 +4041,7 @@
     "queryFile": "voice_queries/query_facd63f9823ccc6f.json"
   },
   {
-    "id": "124",
+    "id": "125",
     "text": "まずは一本、気になる動画を見に行くのだ！",
     "speech": "まずは一本、気になる動画を見に行くのだ！",
     "reading_report": {
@@ -4015,7 +4070,7 @@
     "who": "zunda",
     "scene": "ending",
     "view": "ending",
-    "startFrame": 19687,
+    "startFrame": 19701,
     "durationInFrames": 95,
     "audio": "voice_58de8ccafac1ec8e.wav",
     "speaker": 3,

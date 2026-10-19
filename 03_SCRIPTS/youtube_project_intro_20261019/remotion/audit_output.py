@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,json,wave
 import numpy as np
-P=Path(__file__).resolve().parent;E=P.parent;m=json.loads((P/'src/edit-manifest.json').read_text());movie=E/'final_remotion_project_intro_v4.mp4'
+P=Path(__file__).resolve().parent;E=P.parent;m=json.loads((P/'src/edit-manifest.json').read_text());movie=E/'final_remotion_project_intro_v5.mp4'
 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(movie)]));v=next(s for s in probe['streams'] if s['codec_type']=='video');a=next(s for s in probe['streams'] if s['codec_type']=='audio');errors=[]
 if int(v['nb_read_frames'])!=m['composition']['durationInFrames']:errors.append('frame count')
 if (v['width'],v['height'],v['r_frame_rate'])!=(1280,720,'30/1'):errors.append('video format')
@@ -19,7 +19,7 @@ if np.max(np.abs(x))>=.999:errors.append('clipping')
 (P/'out/final-audit').mkdir(exist_ok=True)
 frames={}
 for d in m['dialogue']:frames.setdefault(d['view'],d['startFrame']+min(35,d['durationInFrames']-1))
-revision=json.loads((E/'revision_v4.json').read_text())
+revision=json.loads((E/'revision_v5.json').read_text())
 changed={d['id'] for d in revision['changedDialogue']}
 for d in m['dialogue']:
  if d['id'] in changed:frames['changed-'+d['id']]=d['startFrame']+min(35,d['durationInFrames']-1)

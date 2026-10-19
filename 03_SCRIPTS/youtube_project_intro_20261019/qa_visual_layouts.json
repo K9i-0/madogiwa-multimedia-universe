@@ -24,6 +24,7 @@
     "process",
     "prompt_site",
     "proxy",
+    "proxy_cast",
     "realteam",
     "reference",
     "remix",
@@ -46,7 +47,7 @@
     "yotan",
     "yumemin"
   ],
-  "method": "Changed views yumemin, makers, accounts, identity and site inspected as Remotion stills. All 45 layouts retain the v3 baseline; encoded final samples are in qa_final.json.",
+  "method": "New proxy_cast view inspected as a Remotion still; other views retain prior layout checks. Final encoded samples are in qa_final.json.",
   "fixes": [
     "Video label layout uses Loop layout=none",
     "Site screenshot heading moved within safe area",
@@ -55,14 +56,12 @@
   ],
   "sourceFrameDirectory": "remotion/out/audit",
   "continuousPlayback": false,
-  "revision": "v4",
+  "revision": "v5",
   "reviewed": true,
   "memberOrder": "official site order",
   "name": "無職やめ太郎",
   "role": "象徴社長",
   "changes": [
-    "Yumemin attacks with wooden mallet",
-    "Makers and X moved directly after real-model introduction",
-    "Closing transition updated"
+    "Added Sobaya and Fukugyun portraits for reaction after proxy clip"
   ]
 }

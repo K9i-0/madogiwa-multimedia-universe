@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill,Img,OffthreadVideo,Sequence,Loop,staticFile,useCurrentFrame,interpolate} from 'remotion';
 import manifest from './edit-manifest.json';
 const names:Record<string,string>={sobaya:'そば屋',yametaro:'無職やめ太郎',takosan:'たこさん',fukugyun:'福ギュン',tokun:'とーくん',yotan:'よーたん',okayaman:'窓際王おかやまん',yumemin:'ゆめみん'};
-const notes:Record<string,string>={sobaya:'白い仮面と、大きなジョッキ。',takosan:'黒いフードの、得体の知れない存在。',tokun:'ウクレレを奏でる、陽気な象徴社長。',yotan:'ロックを愛するCTO。',fukugyun:'笑顔で、ギュンギュン。',yametaro:'ぼやいて、逃げて、また騒動へ。',okayaman:'「大変驚いております」',yumemin:'青くて丸い、木槌の持ち主。'};
+const notes:Record<string,string>={sobaya:'白い仮面と、大きなジョッキ。',takosan:'黒いフードの、得体の知れない存在。',tokun:'ウクレレを奏でる、陽気な象徴社長。',yotan:'ロックを愛するCTO。',fukugyun:'笑顔で、ギュンギュン。',yametaro:'ぼやいて、逃げて、また騒動へ。',okayaman:'「大変驚いております」',yumemin:'かわいい顔で、木槌で殴ってくる。'};
 const portraits=(id:string)=>id+(id==='takosan'?'.png':'.jpg');
 const ink='#263b3c',muted='#697773';
 const Picture:React.FC<{src:string,w?:number,h?:number}>=({src,w=744,h=430})=><Img src={staticFile(src)} style={{width:w,height:h,objectFit:'contain'}}/>;

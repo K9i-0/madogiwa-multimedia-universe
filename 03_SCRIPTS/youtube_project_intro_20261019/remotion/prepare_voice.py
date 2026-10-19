@@ -6,23 +6,7 @@ from prepare_readings import load_dictionary,prepare_row
 (P/'voice_queries').mkdir(exist_ok=True)
 D=load_dictionary();version=requests.get('http://127.0.0.1:50021/version').json()
 rows=[];chapter=[];clips=[];cursor=180;scene='intro'
-def captions(text,frames):
- parts=re.findall(r'[^。！？]+[。！？]*',text);pages=[]
- for part in parts:
-  while len(part)>56:
-   cuts=[i+1 for i,c in enumerate(part[:51]) if c=='、' and i>=18];cut=cuts[-1] if cuts else 28
-   pages.append(part[:cut]);part=part[cut:]
-  if part:pages.append(part)
- result=[];offset=0;total=sum(map(len,pages))
- for i,page in enumerate(pages):
-  raw=page
-  if len(page)>28:
-   choices=[j for j in range(max(1,len(page)-28),min(28,len(page)-1)+1) if page[j] not in '、。？！）」』' and page[j-1] not in '（「『']
-   preferred=[j for j in choices if page[j-1] in '、。？！']
-   cut=min(preferred or choices,key=lambda j:abs(j-len(page)/2));page=page[:cut]+'\n'+page[cut:]
-  end=frames if i==len(pages)-1 else offset+round(frames*len(raw)/total)
-  result.append(dict(fromFrame=offset,toFrame=end,text=page));offset=end
- return result
+from subtitle_layout import captions
 for line in (P/'dialogue.txt').read_text().splitlines():
  if line.startswith('# '):scene=line[2:];chapter.append(dict(id=scene,startFrame=0 if scene=='intro' else cursor));continue
  if line.startswith('@'):
@@ -32,7 +16,7 @@ for line in (P/'dialogue.txt').read_text().splitlines():
  row=dict(id=f'{len(rows):03}',text=text)
  if '動きや間が' in text:row['speech_override']=text.replace('動きや間が','動きやマが')
  if '@sobaya15' in text:row['speech_override']='エックスでは、そば屋が、アットマーク、そばや、いちごー。たこさんが、アットマーク、ケーナインアイ、アンダーバー、アップス。画面と概要欄にリンクを載せておくわ。'
- if 'madogiwa.work' in text:row['speech_override']='窓際族物語の入口は、公式サイト、まどぎわドットワーク。'
+ if 'madogiwa.work' in text:row['speech_override']=text.replace('madogiwa.work','まどぎわドットワーク')
  prepared=prepare_row(row,D,scopes=['mmu','tech']);spoken=prepared['speech']
  requestkey=hashlib.sha256(json.dumps([version,speaker,spoken],ensure_ascii=False).encode()).hexdigest()[:16]
  rq=P/'out'/f'request_{requestkey}.json'

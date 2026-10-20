@@ -3,6 +3,7 @@ import { fallbackYouTubeThumbnail } from "@/lib/youtube-thumbnail";
 import { YouTubePlayer } from "../components/youtube-player";
 import { ClipsEntry } from "../features/clips/clips-entry";
 import { useEffect, useRef, useState } from "react";
+import { CharacterLinks } from "./character-links";
 import { Character3D, CharacterCameraLink } from "./character-3d";
 import { useMediaViewport } from "./use-media-viewport";
 import { useVideoPreferences } from "../components/use-video-preferences";
@@ -735,6 +736,7 @@ export default function Journal({ episodes: publicEpisodes, galleryItems, initia
                 <h1>{current.name}</h1>
                 <p className="j-profile-line">{current.line}</p>
                 <p>{current.bio}</p>
+                <CharacterLinks character={current.id} />
                 <div className="j-profile-buttons">
                   <button
                     className={`j-button ${saved.includes(current.id) ? "saved" : ""}`}

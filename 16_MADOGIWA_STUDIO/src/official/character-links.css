@@ -1,0 +1,25 @@
+.j-character-links { width: 100%; min-width: 0; margin-top: 24px; --link-accent: #934333; --link-border: #c5ad89; --link-paper: #fff7e6; --link-muted: #72604e; color: #403629; }
+.journal .j-character-social { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--link-border); background: var(--link-paper); color: var(--link-accent); font-size: 12px; font-weight: 600; }
+.j-character-links svg { width: 19px; height: 19px; flex-shrink: 0; }
+.j-character-links svg:last-child { width: 15px; height: 15px; }
+.j-character-link-sheet { margin-top: 14px; border: 1px solid var(--link-border); background: var(--link-paper); }
+.j-character-link-sheet h2 { margin: 0; padding: 8px 13px; font: 600 11px/1.6 var(--j-serif); letter-spacing: .12em; color: var(--link-accent); border-bottom: 1px solid var(--link-border); }
+.journal .j-character-link-sheet a { display: flex; align-items: center; gap: 11px; padding: 13px; min-height: 64px; color: inherit; }
+.j-character-link-sheet a + a { border-top: 1px solid var(--link-border); }
+.j-character-link-sheet a > span { flex: 1; min-width: 0; }
+.j-character-link-sheet strong { display: block; font-size: 12px; line-height: 1.7; }
+.j-character-link-sheet small { display: block; margin-top: 3px; color: var(--link-muted); font-size: 10px; line-height: 1.6; overflow-wrap: anywhere; }
+.j-character-links a:hover { background-color: #eadcc2; }
+.j-character-links a:focus-visible { outline: 2px solid var(--link-accent); outline-offset: 3px; }
+[data-theme="sakaba"] .j-character-link-sheet { background: #fff7e6 url('/themes/sakaba/washi.webp') center / 650px; box-shadow: 2px 3px 0 #78563920; }
+[data-theme="sakaba"] .j-character-link-sheet h2 { font-family: "Sakaba Brush", var(--j-serif); font-size: 15px; }
+[data-theme="sakaba"] .j-character-link-sheet a + a { border-top-style: dashed; }
+[data-theme="excel"] .j-character-links { --link-accent: #185c37; --link-border: #b8c8bd; --link-paper: #fff; --link-muted: #526458; color: #243c2d; }
+[data-theme="excel"] .j-character-link-sheet h2 { background: #217346; color: white; font-family: inherit; letter-spacing: .03em; }
+[data-theme="excel"] .j-character-link-sheet strong { color: #185c37; text-decoration: underline; text-underline-offset: 3px; }
+[data-theme="excel"] .j-character-links a:hover { background-color: #e7f1e9; }
+[data-theme="underground"] .j-character-links { --link-accent: #6e4921; --link-border: #a39679; --link-paper: #eee5ce; --link-muted: #665c48; color: #383b34; }
+[data-theme="underground"] .j-character-link-sheet { border-style: dashed; box-shadow: 2px 3px 0 #30322b20; }
+[data-theme="underground"] .j-character-link-sheet h2 { background: #304050; color: #f8eacc; border-bottom: 3px double #b19a6f; }
+[data-theme="underground"] .j-character-link-sheet a + a { border-top-style: dashed; }
+[data-theme="underground"] .j-character-links a:hover { background-color: #dfd2b5; }

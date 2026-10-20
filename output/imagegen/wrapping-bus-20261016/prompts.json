@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "key": "01_classic",
+      "refs": [
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Fukuchan.jpg",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Yotan.jpg",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Tokun.jpg",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Yumemin.jpg"
+      ],
+      "prompt": "Use case: product-mockup. Generate one photorealistic landscape advertising photograph of a full-size Japanese passenger bus with a professionally designed vinyl wrap for 窓際族物語. Entire bus visible, front three-quarter angle with very broad side facing camera, realistic wheels, doors, glass windows, panel seams and printed vinyl. Bus fills most of frame, legible beautiful Japanese typography. This is a bus wrap concept, not a flat poster or collage. Theme: classic official ensemble promotional wrapping bus, bright sky blue, white and yellow accents, cheerful polished campaign. Daylight Tokyo office district. On side, large printed portraits of Sobaya (image 1), Fukugyun (image 2), Yotan (image 3), Tokun (image 4), with Yumemin mascot (image 5); Fukugyun skin follows his original photo. Keep photo-real people in print. Design portraits around intact upper passenger windows. Large dominant title exactly 「窓際族物語」 across the lower side in bold friendly Japanese lettering. Tasteful graphic office window motifs and dynamic colored curves. No extra slogans. Preserve the exact identities of the reference people. Fukugyun skin and apparent age match canonical sheet: clean even cared-for complexion, natural subtle eye wrinkles, smile lines and nasolabial folds. No added spots, rough pores, de-aging, reshaped face or waxy skin. Sobaya wears his exact white red-marked mask, gray exposed skin, muscular silhouette; white shirt has natural chest volume and fabric folds but absolutely no nipple protrusions, outlines or pinpoint shadows."
+    },
+    {
+      "key": "02_host_fukugyun",
+      "refs": [
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Fukuchan.jpg",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Yotan.jpg",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Tokun.jpg",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_fukuchan_basic_sheet.png",
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png"
+      ],
+      "prompt": "Use case: product-mockup. Generate one photorealistic landscape advertising photograph of a full-size Japanese passenger bus with a professionally designed vinyl wrap for 窓際族物語. Entire bus visible, front three-quarter angle with very broad side facing camera, realistic wheels, doors, glass windows, panel seams and printed vinyl. Bus fills most of frame, legible beautiful Japanese typography. This is a bus wrap concept, not a flat poster or collage. Theme: extravagant Japanese host-club ad-truck graphic aesthetics applied to a PASSENGER BUS, intact upper row of windows. Black lacquer wrap, gold ornate typography, champagne glitter, deep burgundy and luxurious jewel highlights. Tokyo nightlife at blue hour, cinematic reflections, advertisement brightly visible. Gigantic central printed portrait of Fukugyun from reference 1, largest face by far, exact same man and smile, hands near cheeks, luxurious black satin suit with gold details. Smaller portraits of Yotan reference 2 and Tokun reference 3 on either side, fashionable host suits, preserve faces. Reference 4 is Fukugyun skin standard. Typography exactly 「窓際族物語」 above portraits and very large 「福ギュン」 below central portrait, smaller English 'FUKUGYUN'. Central portrait looks directly at camera, premium playful over-the-top host advertising. Preserve the exact identities of the reference people. Fukugyun skin and apparent age match canonical sheet: clean even cared-for complexion, natural subtle eye wrinkles, smile lines and nasolabial folds. No added spots, rough pores, de-aging, reshaped face or waxy skin. Sobaya wears his exact white red-marked mask, gray exposed skin, muscular silhouette; white shirt has natural chest volume and fabric folds but absolutely no nipple protrusions, outlines or pinpoint shadows. Image 5 is the mandatory exact Sobaya mask reference if Sobaya appears: oval white mask with round BLACK eye holes, four RED elongated vertical markings around eyes and a black forehead dot. Never a fox mask. Prefer only the three requested human portraits and omit Sobaya entirely. No other people."
+    },
+    {
+      "key": "03_yumemin",
+      "refs": [
+        "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/02_CHARACTERS/Yumemin.jpg"
+      ],
+      "prompt": "Use case: product-mockup. Generate one photorealistic landscape advertising photograph of a full-size Japanese passenger bus with a professionally designed vinyl wrap for 窓際族物語. Entire bus visible, front three-quarter angle with very broad side facing camera, realistic wheels, doors, glass windows, panel seams and printed vinyl. Bus fills most of frame, legible beautiful Japanese typography. This is a bus wrap concept, not a flat poster or collage. Theme: playful highly memorable mascot bus. Use reference image as exact identity of Yumemin: round blue tapir-like body, white rear, tiny ears, black dot eyes, short downward trunk on left of face, no hands or arms. Huge single adorable Yumemin printed across the bus side and smaller repeated mascot silhouettes along lower panels. Sky blue and cream white wrap, black crisp outlines, graphic soft clouds, imaginative sophisticated cute Japanese character merchandise design. Front bus nose incorporates printed mascot dot eyes and trunk motif without altering vehicle structure. Clear passenger windows. Bright seaside boulevard on sunny day, clean joyful photography. Large accurately written title 「窓際族物語」 and smaller 「ゆめみん」 on the side. No other characters. No giant physical mascot sculpture, all graphics are printed vinyl."
+    }
+  ]
+}

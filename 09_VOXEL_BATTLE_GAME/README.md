@@ -27,6 +27,8 @@ npm run build      # tsc --noEmit && vite build → dist/
 
 ## オンライン対戦のセットアップ（Firebase）
 
+現在は接続設定を削除しており、ローカル対戦を利用できます。オンライン対戦を利用する場合は、以下の設定が必要です。
+
 オンライン対戦には Firebase プロジェクトが必要です。アカウント作成・コンソール操作は開発者自身で行ってください（数分で完了します）。
 
 1. [Firebase コンソール](https://console.firebase.google.com/) で **プロジェクトを作成**。
@@ -36,7 +38,7 @@ npm run build      # tsc --noEmit && vite build → dist/
 5. `src/firebase.ts` の `firebaseConfig` を、コピーした値で置き換える。`databaseURL` が含まれていることを確認（例: `https://<project>-default-rtdb.firebaseio.com`）。
 6. 再ビルド／再起動すると、ロビーで「オンライン対戦」が選べるようになる。
 
-> **`apiKey` はコミットして大丈夫です。** Firebase Web の `apiKey` 等はプロジェクトを識別する**公開前提の値**で、秘密情報ではありません。アクセス制御は下記のセキュリティルールで行います。
+> **`apiKey` の公開には API 制限を確認してください。** Firebase Web の `apiKey` 等はプロジェクトを識別する**公開前提の値**で、Firebase 用 API に利用を制限したうえで公開できます。アクセス制御は下記のセキュリティルールで行います。
 
 ### セキュリティルール（`firebase.rules.json`）
 

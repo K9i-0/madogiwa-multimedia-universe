@@ -6,21 +6,20 @@ import { getDatabase, type Database } from "firebase/database";
 // セットアップ」を参照）。
 //
 // ⚠️ ここに入る apiKey / appId などは Firebase Web では「公開前提の識別子」であり、
-//    秘密情報ではありません。public リポジトリにコミットして問題ありません。
+//    Firebase用APIへの利用制限を設定したうえで公開できます。
 //    実際のアクセス制御は Realtime Database の「セキュリティルール」で行います
 //    （README.md にルール例を記載）。
 //
 // 未設定のままでも「ローカル対戦（同じPCの2タブ）」は動作します。
 // ────────────────────────────────────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey: "AIzaSyArC5IKG6cLy3Q9zileABwK12mwKXcA3d4",
-  authDomain: "madogiwa-tachinomi.firebaseapp.com",
-  databaseURL: "https://madogiwa-tachinomi-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "madogiwa-tachinomi",
-  storageBucket: "madogiwa-tachinomi.firebasestorage.app",
-  messagingSenderId: "102813032641",
-  appId: "1:102813032641:web:7ebd068d309d4aa8bd7440",
-  measurementId: "G-NCGNT8ETC3"
+  apiKey: "PASTE_API_KEY",
+  authDomain: "PASTE_AUTH_DOMAIN",
+  databaseURL: "PASTE_DATABASE_URL",
+  projectId: "PASTE_PROJECT_ID",
+  storageBucket: "PASTE_STORAGE_BUCKET",
+  messagingSenderId: "PASTE_MESSAGING_SENDER_ID",
+  appId: "PASTE_APP_ID",
 };
 
 /** 設定がプレースホルダのままかどうかを判定する。 */

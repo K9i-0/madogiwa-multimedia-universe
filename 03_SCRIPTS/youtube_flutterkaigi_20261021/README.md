@@ -1,4 +1,4 @@
-# ゆめみ採用試験 技術解説 改訂v5
+# ゆめみ採用試験 技術解説 改訂v6
 
 ずんだもん＆四国めたん。参考は窓際族物語紹介v5。
 
@@ -71,3 +71,18 @@ iPhone Duo Simulatorのdisplay 3を `simctl io recordVideo --display=3` で収�
 - 再ミックス・レンダー：`python mix_audio.py` → `python render.py --no-mix`（共有venv）。音声を変更して`prepare_voice.py`を使った場合、その後に`prepare_edit_v5.py`で編集タイミングを生成する。
 - 実ゲームの追加取得結果は`inspection_v5.json`。撮影は6652753、シミュレーターdebug。性能の数値は従来の4f3ffba実機記録。
 - 映像演出の確認：`audit_frames.cjs`（全45画面）、`audit_beats_v5.cjs`（茶番・段階表示などの中間/終端）。完成MP4は`audit_output.py`。
+
+## 改訂v6（スライドの情報整理）
+
+- 出力：`final_remotion_flutterkaigi_v6.mp4`。10分36.6秒、1280×720、30fps。
+- 台詞・字幕・音声・タイムラインはv5を維持。`VisualsV5.tsx`を`VisualsV6.tsx`へ移行。
+- ゲーム映像下の長い注記、スライドでの台詞の二重表示、制作事情のフッターを削除。見出しを短くし、図のラベル・比較値・操作手順を中心にする。
+- 茶番はゲーム映像を使用。人物紹介とリポジトリの重複説明、登壇日時・会場表示も整理。
+- 整理した内容は`editing_v6.md`。撮影条件・出典は従来の素材台帳・QA・概要欄に保持。
+- `node audit_frames_v6.cjs`で全画面確認、`python audit_output.py`で完成ファイル監査。
+
+## iPhone 18 Pro 横画面への差し替え
+
+v6のゲーム映像・選択画面・inspect画像・MCP操作実演はiPhone 18 Pro（A4EB7AA4-DDDC-4B36-9E79-8FF7579F5162、iOS 27.0）で再取得。アプリは横画面固定、論理874×402。ゲームrevisionは6652753。端末の横長比率を保持し、図のUI枠も配置を修正。
+
+通常3本は撮影用入力、アップは4.5倍・character中心で正面から収録。素材化は`remotion/prepare_media_v6.py`。元録画は`remotion/out/*_v6_raw.mov`。過去版の素材は保持。

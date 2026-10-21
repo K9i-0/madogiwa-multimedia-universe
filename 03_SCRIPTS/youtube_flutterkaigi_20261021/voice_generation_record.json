@@ -1,0 +1,3219 @@
+[
+  {
+    "id": "000",
+    "text": "高層ビルの間で、パーマの男性がちくわを拾っているのだ。……これは何なのだ？",
+    "speech": "高層ビルの間で、パーマの男性がちくわを拾っているのだ。……これは何なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 5,
+          "end": 6,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 180,
+    "durationInFrames": 173,
+    "audio": "voice_a8a3cbaff8b8855d.wav",
+    "speaker": 3,
+    "kana": "コオソオ'ビルノ/アイダデ'、パ'アマノ/ダンセエガ'/_チクワオ'/ヒロッテ'/イル'/ノダ'、コレワ'/ナ'ニナ/ノダ'？",
+    "queryFile": "voice_queries/query_a8a3cbaff8b8855d.json"
+  },
+  {
+    "id": "001",
+    "text": "あら、ずんだもん。ゆめみ採用試験に興味を持ったのね。",
+    "speech": "あら、ずんだもん。ゆめみ採用試験に興味を持ったのね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 371,
+    "durationInFrames": 127,
+    "audio": "voice_0a853274d9b466ac.wav",
+    "speaker": 2,
+    "kana": "アラ'、ズ'ンダモン、ユメミサイヨオ_シケ'ンニ/キョ'オミオ/モ'ッタノネ",
+    "queryFile": "voice_queries/query_0a853274d9b466ac.json"
+  },
+  {
+    "id": "002",
+    "text": "採用試験？　これで何を試されているのだ？",
+    "speech": "採用試験？　これで何を試されているのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 510,
+    "durationInFrames": 102,
+    "audio": "voice_2fc2d8d52315dfb0.wav",
+    "speaker": 3,
+    "kana": "サイヨオ_シケ'ン？、コレデ'/ナ'ニオ/タメ'サレテ/イル'/ノダ'？",
+    "queryFile": "voice_queries/query_2fc2d8d52315dfb0.json"
+  },
+  {
+    "id": "003",
+    "text": "FlutterKaigi 2026のゆめみブースで展示した、Flutter製のゲームよ。",
+    "speech": "フラッターカイギ、ニセンニジュウロクのゆめみブースで展示した、フラッター製のゲームよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.0",
+          "surface": "FlutterKaigi 2026",
+          "reading": "フラッターカイギ、ニセンニジュウロク",
+          "scope": "common",
+          "start": 0,
+          "end": 17
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 30,
+          "end": 37
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 630,
+    "durationInFrames": 159,
+    "audio": "voice_a9715c991feaf978.wav",
+    "speaker": 2,
+    "kana": "フラッタアカイ'ギ、ニセンニジュウ'ロクノ/ユメミブ'ウスデ/テンジ'/_シタ'、フラッタアセエノ'/ゲ'エムヨ",
+    "queryFile": "voice_queries/query_a9715c991feaf978.json"
+  },
+  {
+    "id": "004",
+    "text": "Flutterでこれを作ったのだ？",
+    "speech": "フラッターでこれを作ったのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 801,
+    "durationInFrames": 65,
+    "audio": "voice_3d817d73a9daa337.wav",
+    "speaker": 3,
+    "kana": "フラ'ッタアデ/コレオ'/_ツク'ッタ/ノダ'？",
+    "queryFile": "voice_queries/query_3d817d73a9daa337.json"
+  },
+  {
+    "id": "005",
+    "text": "ええ。コードだけでなく、画像や3Dモデルの制作にもAIを使っているの。",
+    "speech": "ええ。コードだけでなく、画像やスリーディーモデルの制作にもエーアイを使っているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 25,
+          "end": 27
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 884,
+    "durationInFrames": 160,
+    "audio": "voice_ba80da1748e85590.wav",
+    "speaker": 2,
+    "kana": "エ'エ、コオドダケデナク'、ガゾオヤ'/ス'リイディイモデルノ/セエサクニモ'/エエア'イオ/_ツカッテ'/イル'ノ",
+    "queryFile": "voice_queries/query_ba80da1748e85590.json"
+  },
+  {
+    "id": "006",
+    "text": "どうやって作ったのか、ちょっと気になるのだ。",
+    "speech": "どうやって作ったのか、ちょっと気になるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "intro",
+    "view": "game_odatetsu",
+    "startFrame": 1056,
+    "durationInFrames": 92,
+    "audio": "voice_4a4f5b391ef53062.wav",
+    "speaker": 3,
+    "kana": "ド'オ/ヤ'ッテ/_ツク'ッタ/ノカ'、チョ'ット/キニ'/ナ'ル/ノダ'",
+    "queryFile": "voice_queries/query_4a4f5b391ef53062.json"
+  },
+  {
+    "id": "007",
+    "text": "なら今日は、『ゆめみ採用試験』を題材に、FlutterとAIで3Dゲームを作る方法を解説するわ。",
+    "speech": "なら今日は、『ゆめみ採用試験』を題材に、フラッターとエーアイでスリーディーゲームを作る方法を解説するわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 20,
+          "end": 27
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 28,
+          "end": 30
+        },
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 39,
+          "end": 40,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "title",
+    "startFrame": 1166,
+    "durationInFrames": 215,
+    "audio": "voice_81f692827924232c.wav",
+    "speaker": 2,
+    "kana": "ナ'ラ/キョ'オワ、ユメミサイヨオ_シケ'ン、オ'/ダイザイニ'、フラ'ッタアト/エエア'イデ/ス'リイディイゲエムオ/_ツク'ル/ホオホオオ'/カイセ_ツ'/スル'ワ",
+    "queryFile": "voice_queries/query_81f692827924232c.json"
+  },
+  {
+    "id": "008",
+    "text": "そういえば、会社紹介とかしないのだ？",
+    "speech": "そういえば、会社紹介とかしないのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "intro",
+    "view": "title",
+    "startFrame": 1393,
+    "durationInFrames": 93,
+    "audio": "voice_46b8f1b78f75d263.wav",
+    "speaker": 3,
+    "kana": "ソオ'/イ'エバ、カイシャショ'オカイトカ/シナイ'/ノダ'？",
+    "queryFile": "voice_queries/query_46b8f1b78f75d263.json"
+  },
+  {
+    "id": "009",
+    "text": "そんなものはないわ。",
+    "speech": "そんなものはないわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "title",
+    "startFrame": 1504,
+    "durationInFrames": 37,
+    "audio": "voice_0694b93de6c459ab.wav",
+    "speaker": 2,
+    "kana": "ソンナ'/モノ'ワ/ナ'イワ",
+    "queryFile": "voice_queries/query_0694b93de6c459ab.json"
+  },
+  {
+    "id": "010",
+    "text": "もしかして、ずんだもん、会社紹介に興味があるの？",
+    "speech": "もしかして、ずんだもん、会社紹介に興味があるの？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "title",
+    "startFrame": 1571,
+    "durationInFrames": 115,
+    "audio": "voice_6cc229d8136c9e42.wav",
+    "speaker": 2,
+    "kana": "モ'_シカ_シテ、ズ'ンダモン、カイシャショ'オカイニ/キョ'オミガ/ア'ルノ？",
+    "queryFile": "voice_queries/query_6cc229d8136c9e42.json"
+  },
+  {
+    "id": "011",
+    "text": "いや、興味ねーのだ。",
+    "speech": "いや、興味ねーのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "intro",
+    "view": "title",
+    "startFrame": 1698,
+    "durationInFrames": 57,
+    "audio": "voice_9897f7970955278f.wav",
+    "speaker": 3,
+    "kana": "イヤ'、キョ'オミネエ/ノダ'",
+    "queryFile": "voice_queries/query_9897f7970955278f.json"
+  },
+  {
+    "id": "012",
+    "text": "そうよね！",
+    "speech": "そうよね！",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "title",
+    "startFrame": 1785,
+    "durationInFrames": 22,
+    "audio": "voice_0c4d8667323ea1db.wav",
+    "speaker": 2,
+    "kana": "ソオヨネ'",
+    "queryFile": "voice_queries/query_0c4d8667323ea1db.json"
+  },
+  {
+    "id": "013",
+    "text": "それじゃあ、まずは実際に遊んでみましょう。",
+    "speech": "それじゃあ、まずは実際に遊んでみましょう。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "intro",
+    "view": "selection",
+    "startFrame": 1837,
+    "durationInFrames": 83,
+    "audio": "voice_d7493cb9b3a70a9a.wav",
+    "speaker": 2,
+    "kana": "ソレジャ'ア、マ'ズワ/ジッサイニ'/アソンデ'/ミマショ'オ",
+    "queryFile": "voice_queries/query_d7493cb9b3a70a9a.json"
+  },
+  {
+    "id": "014",
+    "text": "端末を傾けて鉄骨の上を左右に移動して、落ちてくる当たりを集めるの。制限時間は20秒よ。",
+    "speech": "端末を傾けて鉄骨の上を左右に移動して、落ちてくる当たりを集めるの。制限時間は20秒よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 36,
+          "end": 37,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "game_odatetsu",
+    "startFrame": 1932,
+    "durationInFrames": 202,
+    "audio": "voice_6d9dd3d876b5f160.wav",
+    "speaker": 2,
+    "kana": "タンマツオ'/カタムケ'テ/テッコツノ'/ウエオ'/サ'ユウニ/イドオ'/_シテ'、オチ'テ/ク'ル/アタリオ'/アツメ'ルノ、セエゲ'ン/ジカンワ'/ニジュウ'ビョオヨ",
+    "queryFile": "voice_queries/query_6d9dd3d876b5f160.json"
+  },
+  {
+    "id": "015",
+    "text": "足場が採用試験とは思えないのだ。",
+    "speech": "足場が採用試験とは思えないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "game",
+    "view": "game_odatetsu",
+    "startFrame": 2146,
+    "durationInFrames": 80,
+    "audio": "voice_4c44845756bd1c64.wav",
+    "speaker": 3,
+    "kana": "アシバ'ガ/サイヨオ_シケ'ントワ/オモエ'ナイ/ノダ'",
+    "queryFile": "voice_queries/query_4c44845756bd1c64.json"
+  },
+  {
+    "id": "016",
+    "text": "スワイプするとカメラを回せるわ。落ちてくるものを、別の角度から確認できるの。",
+    "speech": "スワイプするとカメラを回せるわ。落ちてくるものを、別の角度から確認できるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "game_odatetsu",
+    "startFrame": 2244,
+    "durationInFrames": 153,
+    "audio": "voice_8c9c3bfb3f563317.wav",
+    "speaker": 2,
+    "kana": "スワ'イ_プ/スルト'/カ'メラオ/マワセル'ワ、オチ'テ/ク'ル/モノ'オ、ベツノ'/カ'クドカラ/カクニン'/デキ'ルノ",
+    "queryFile": "voice_queries/query_8c9c3bfb3f563317.json"
+  },
+  {
+    "id": "017",
+    "text": "ところで、この人たちは誰なのだ？",
+    "speech": "ところで、この人たちは誰なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 7,
+          "end": 8,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "game",
+    "view": "selection",
+    "startFrame": 2409,
+    "durationInFrames": 80,
+    "audio": "voice_d5d927c8d2af4033.wav",
+    "speaker": 3,
+    "kana": "トコロ'デ、コノ'/_ヒト'タチワ/ダ'レナ/ノダ'？",
+    "queryFile": "voice_queries/query_d5d927c8d2af4033.json"
+  },
+  {
+    "id": "018",
+    "text": "ゆめプロの福ギュン、そば屋、そしてCTOおだてつよ。",
+    "speech": "ユメプロのフクギュン、ソバヤ、そしてシーティーオーオダテツよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.21",
+          "surface": "ゆめプロ",
+          "reading": "ユメプロ",
+          "scope": "common",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "id": "mmu.fukugyun",
+          "surface": "福ギュン",
+          "reading": "フクギュン",
+          "scope": "mmu",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "id": "tech.cto",
+          "surface": "CTO",
+          "reading": "シーティーオー",
+          "scope": "tech",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "id": "game.20",
+          "surface": "おだてつ",
+          "reading": "オダテツ",
+          "scope": "common",
+          "start": 20,
+          "end": 24
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "members",
+    "startFrame": 2507,
+    "durationInFrames": 116,
+    "audio": "voice_5e0474563ce31bf7.wav",
+    "speaker": 2,
+    "kana": "ユメ'プロノ/フ'ク/ギュ'/ン'、ソ'バヤ、ソ_シテ'/シ'イティイオオオダテツヨ",
+    "queryFile": "voice_queries/query_5e0474563ce31bf7.json"
+  },
+  {
+    "id": "019",
+    "text": "さっきちくわを拾っていた、パーマの男性なのだ。",
+    "speech": "さっきちくわを拾っていた、パーマの男性なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "game",
+    "view": "odatetsu",
+    "startFrame": 2635,
+    "durationInFrames": 106,
+    "audio": "voice_792b1ccd4cf62882.wav",
+    "speaker": 3,
+    "kana": "サ'ッ_キ/チクワオ'/ヒロッテ'/イタ'、パ'アマノ/ダンセエナ'/ノダ'",
+    "queryFile": "voice_queries/query_792b1ccd4cf62882.json"
+  },
+  {
+    "id": "020",
+    "text": "ええ。おだてつは若手社員なの。今回のゆめみのスポンサーセッションにも登壇しているわ。",
+    "speech": "ええ。オダテツは若手社員なの。今回のゆめみのスポンサーセッションにも登壇しているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.20",
+          "surface": "おだてつ",
+          "reading": "オダテツ",
+          "scope": "common",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "odatetsu",
+    "startFrame": 2759,
+    "durationInFrames": 171,
+    "audio": "voice_011dbd82711fb15d.wav",
+    "speaker": 2,
+    "kana": "エ'エ、オダ'/テ'ツワ/ワカテシャ'インナノ、コ'ンカイノ/ユメ'ミノ/_スポンサアセ'ッションニモ/トオダン'/_シテ'/イル'ワ",
+    "queryFile": "voice_queries/query_011dbd82711fb15d.json"
+  },
+  {
+    "id": "021",
+    "text": "テーマは『作って、売って、閉じるまで』。Flutterアプリの課金機能について、ライフサイクル全体を扱うセッションよ。",
+    "speech": "テーマは『作って、売って、閉じるまで』。フラッターアプリの課金機能について、ライフサイクル全体を扱うセッションよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 20,
+          "end": 27
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "session",
+    "startFrame": 2942,
+    "durationInFrames": 241,
+    "audio": "voice_1b9ac12539dfbf21.wav",
+    "speaker": 2,
+    "kana": "テ'エマワ、_ツク'ッテ、ウッテ'、トジ'ルマデ、フラッタアア'プリノ/カキンキ'ノオニ/ツ'イテ、ライ_フサ'イクル/ゼンタイオ'/ア_ツカウ'/セ'ッションヨ",
+    "queryFile": "voice_queries/query_1b9ac12539dfbf21.json"
+  },
+  {
+    "id": "022",
+    "text": "そっちはちゃんとFlutterの話なのだ。",
+    "speech": "そっちはちゃんとフラッターの話なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 8,
+          "end": 15
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "game",
+    "view": "session",
+    "startFrame": 3195,
+    "durationInFrames": 77,
+    "audio": "voice_624584eff73d1986.wav",
+    "speaker": 3,
+    "kana": "ソッチ'ワ/チャント'/フラ'ッタアノ/ハナシ'ナ/ノダ'",
+    "queryFile": "voice_queries/query_624584eff73d1986.json"
+  },
+  {
+    "id": "023",
+    "text": "こっちもFlutterの話よ。",
+    "speech": "こっちもフラッターの話よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 4,
+          "end": 11
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "session",
+    "startFrame": 3290,
+    "durationInFrames": 53,
+    "audio": "voice_0d785c269b690109.wav",
+    "speaker": 2,
+    "kana": "コッチ'モ/フラ'ッタアノ/ハナシ'ヨ",
+    "queryFile": "voice_queries/query_0d785c269b690109.json"
+  },
+  {
+    "id": "024",
+    "text": "ゲームでは、福ギュンはゆめみん、おだてつはちくわ、そば屋はビールを集めるの。キャラクターによって難易度も違うわ。",
+    "speech": "ゲームでは、フクギュンはゆめみん、オダテツはちくわ、ソバヤはビールを集めるの。キャラクターによって難易度も違うわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "mmu.fukugyun",
+          "surface": "福ギュン",
+          "reading": "フクギュン",
+          "scope": "mmu",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "id": "game.20",
+          "surface": "おだてつ",
+          "reading": "オダテツ",
+          "scope": "common",
+          "start": 16,
+          "end": 20
+        },
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 25,
+          "end": 28
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "rules",
+    "startFrame": 3355,
+    "durationInFrames": 220,
+    "audio": "voice_f69684ce76204eea.wav",
+    "speaker": 2,
+    "kana": "ゲ'エムデワ、フ'ク/ギュ'/ンワ'/ユメミ'ン、オダ'/テ'ツワ/_チクワ'、ソ'バヤワ/ビ'イルオ/アツメ'ルノ、キャラ_クタアニ'/ヨッテ'/ナンイ'ドモ/チガウ'ワ",
+    "queryFile": "voice_queries/query_f69684ce76204eea.json"
+  },
+  {
+    "id": "025",
+    "text": "そば屋だけ目的がはっきりしているのだ。",
+    "speech": "ソバヤだけ目的がはっきりしているのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "game",
+    "view": "game_sobaya",
+    "startFrame": 3587,
+    "durationInFrames": 79,
+    "audio": "voice_ce9b5441d71821a0.wav",
+    "speaker": 3,
+    "kana": "ソバヤダケ'/モ_クテキガ'/ハッキ'リ/_シテ'/イル'/ノダ'",
+    "queryFile": "voice_queries/query_ce9b5441d71821a0.json"
+  },
+  {
+    "id": "026",
+    "text": "このキャラクターたちが登場する『窓際族物語』は、ゆめプロから派生したプロジェクトなの。",
+    "speech": "このキャラクターたちが登場する『窓際族物語』は、ユメプロから派生したプロジェクトなの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.21",
+          "surface": "ゆめプロ",
+          "reading": "ユメプロ",
+          "scope": "common",
+          "start": 24,
+          "end": 28
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "project",
+    "startFrame": 3684,
+    "durationInFrames": 192,
+    "audio": "voice_96e23750ceb6a0d2.wav",
+    "speaker": 2,
+    "kana": "コノ'/キャラ_クタア'タチガ/トオジョオ'/スル'、マドギワ'ゾク/モノガ'タリ、ワ'、ユメ'プロカラ/ハセエ'/_シタ'/プロ'ジェ_クトナノ",
+    "queryFile": "voice_queries/query_96e23750ceb6a0d2.json"
+  },
+  {
+    "id": "027",
+    "text": "動画や3Dモデルなど、そこで作ってきたものが、今回のゲームにもつながっているわ。",
+    "speech": "動画やスリーディーモデルなど、そこで作ってきたものが、今回のゲームにもつながっているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "game",
+    "view": "project",
+    "startFrame": 3888,
+    "durationInFrames": 160,
+    "audio": "voice_28c3d4cb5750e376.wav",
+    "speaker": 2,
+    "kana": "ドオガヤ'/ス'リイディイモデルナド、ソコデ'/_ツク'ッテ/キ'タ/モノ'ガ、コ'ンカイノ/ゲ'エムニモ/ツナガッテ'/イル'ワ",
+    "queryFile": "voice_queries/query_28c3d4cb5750e376.json"
+  },
+  {
+    "id": "028",
+    "text": "この20秒のためだけに、全部作ったわけじゃないのだな。",
+    "speech": "この20秒のためだけに、全部作ったわけじゃないのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "game",
+    "view": "project",
+    "startFrame": 4060,
+    "durationInFrames": 123,
+    "audio": "voice_761e20612134193f.wav",
+    "speaker": 3,
+    "kana": "コノ'/ニジュウ'ビョオノ/タメダケニ'、ゼ'ンブ/_ツク'ッタ/ワ'ケジャナイ/ノダ'ナ",
+    "queryFile": "voice_queries/query_761e20612134193f.json"
+  },
+  {
+    "id": "029",
+    "text": "あ、これ知ってるのだ。UnityをFlutterに埋め込めるって聞いたことがあるのだ。",
+    "speech": "あ、これ知ってるのだ。Unityをフラッターに埋め込めるって聞いたことがあるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 17,
+          "end": 24
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "scene",
+    "view": "game_night",
+    "startFrame": 4201,
+    "durationInFrames": 165,
+    "audio": "voice_9cd312ed66f5a727.wav",
+    "speaker": 3,
+    "kana": "ア'、コレ'/シッテ'ル/ノダ'、ユ'ニティオ/フラ'ッタアニ/ウメコメ'ルッテ/キイタ'/コト'ガ/ア'ル/ノダ'",
+    "queryFile": "voice_queries/query_9cd312ed66f5a727.json"
+  },
+  {
+    "id": "030",
+    "text": "いいえ、これはFlutter Sceneというパッケージを使っているの。",
+    "speech": "いいえ、これはフラッターシーンというパッケージを使っているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.2",
+          "surface": "Flutter Scene",
+          "reading": "フラッターシーン",
+          "scope": "common",
+          "start": 7,
+          "end": 20
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "scene",
+    "startFrame": 4384,
+    "durationInFrames": 113,
+    "audio": "voice_713a3488f48b718d.wav",
+    "speaker": 2,
+    "kana": "イイエ'、コレワ'/フラッタアシ'イント/イウ'/パ'ッケエジオ/_ツカッテ'/イル'ノ",
+    "queryFile": "voice_queries/query_713a3488f48b718d.json"
+  },
+  {
+    "id": "031",
+    "text": "何なのだ、それ？",
+    "speech": "何なのだ、それ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "scene",
+    "view": "scene",
+    "startFrame": 4509,
+    "durationInFrames": 50,
+    "audio": "voice_f51fdba0ae58dc97.wav",
+    "speaker": 3,
+    "kana": "ナ'ニナ/ノダ'、ソレ'？",
+    "queryFile": "voice_queries/query_f51fdba0ae58dc97.json"
+  },
+  {
+    "id": "032",
+    "text": "まず、その土台にFlutter GPUがあるわ。DartからGPUのバッファやシェーダー、描画処理を扱える、低レベルのグラフィックスAPIよ。",
+    "speech": "まず、その土台にフラッタージーピーユーがあるわ。ダートからジーピーユーのバッファやシェーダー、描画処理を扱える、低レベルのグラフィックスエーピーアイよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.3",
+          "surface": "Flutter GPU",
+          "reading": "フラッタージーピーユー",
+          "scope": "common",
+          "start": 8,
+          "end": 19
+        },
+        {
+          "id": "game.7",
+          "surface": "Dart",
+          "reading": "ダート",
+          "scope": "common",
+          "start": 24,
+          "end": 28
+        },
+        {
+          "id": "game.6",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 30,
+          "end": 33
+        },
+        {
+          "id": "tech.api",
+          "surface": "API",
+          "reading": "エーピーアイ",
+          "scope": "tech",
+          "start": 66,
+          "end": 69
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "gpu",
+    "startFrame": 4577,
+    "durationInFrames": 281,
+    "audio": "voice_827f15410482ddc0.wav",
+    "speaker": 2,
+    "kana": "マ'ズ、ソノ'/ドダイニ'/フラ'ッ/タ'アジイピイユウガ/ア'ルワ、ダ'アトカラ/ジイ'/ピ'イ/ユ'ウノ/バ'ッファヤ/シェ'エダア、ビョオガ'ショリオ/ア_ツカエ'ル、テエレ'ベルノ/グラフィ'ッ_ク/ス'エエピイアイヨ",
+    "queryFile": "voice_queries/query_827f15410482ddc0.json"
+  },
+  {
+    "id": "033",
+    "text": "自分で頂点を渡して、描画するところから書けるのだ？",
+    "speech": "自分で頂点を渡して、描画するところから書けるのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 1,
+          "end": 2,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "scene",
+    "view": "gpu",
+    "startFrame": 4870,
+    "durationInFrames": 121,
+    "audio": "voice_4f60c4e635b79e4a.wav",
+    "speaker": 3,
+    "kana": "ジブンデ'/チョ'オテンオ/ワタ_シテ'、ビョオガ'/スル'/トコロカラ'/カケ'ル/ノダ'？",
+    "queryFile": "voice_queries/query_4f60c4e635b79e4a.json"
+  },
+  {
+    "id": "034",
+    "text": "そう。でも、このゲームを作るために、3Dの描画処理を全部書いたわけではないの。",
+    "speech": "そう。でも、このゲームを作るために、スリーディーの描画処理を全部書いたわけではないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "gpu",
+    "startFrame": 5009,
+    "durationInFrames": 175,
+    "audio": "voice_8dbcb19e5bea15a6.wav",
+    "speaker": 2,
+    "kana": "ソオ'、デ'モ、コノ'/ゲ'エムオ/_ツク'ル/タメ'ニ、スリ'イディイノ/ビョオガ'ショリオ/ゼ'ンブ/カ'イタ/ワ'ケデワナイノ",
+    "queryFile": "voice_queries/query_8dbcb19e5bea15a6.json"
+  },
+  {
+    "id": "035",
+    "text": "Flutter Sceneを使うと、その上でモデルやカメラ、ライト、アニメーションを扱えるわ。",
+    "speech": "フラッターシーンを使うと、その上でモデルやカメラ、ライト、アニメーションを扱えるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.2",
+          "surface": "Flutter Scene",
+          "reading": "フラッターシーン",
+          "scope": "common",
+          "start": 0,
+          "end": 13
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "scene",
+    "startFrame": 5196,
+    "durationInFrames": 168,
+    "audio": "voice_883b92f9b0a304b7.wav",
+    "speaker": 2,
+    "kana": "フラッタアシ'インオ/_ツカウト'、ソノ'/ウエデ'/モ'デルヤ/カ'メラ、ラ'イト、アニメ'エションオ/ア_ツカエ'ルワ",
+    "queryFile": "voice_queries/query_883b92f9b0a304b7.json"
+  },
+  {
+    "id": "036",
+    "text": "3Dの部分も、Flutter側から組み立てているのだな。",
+    "speech": "スリーディーの部分も、フラッター側から組み立てているのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 7,
+          "end": 14
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 4,
+          "end": 5,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "scene",
+    "view": "stack",
+    "startFrame": 5376,
+    "durationInFrames": 122,
+    "audio": "voice_977849bf5a70a348.wav",
+    "speaker": 3,
+    "kana": "スリ'イディイノ/ブ'ブンモ、フラッタアガワカラ'/クミタテテ'/イル'/ノダ'ナ",
+    "queryFile": "voice_queries/query_977849bf5a70a348.json"
+  },
+  {
+    "id": "037",
+    "text": "そういうこと。ネイティブでは、Flutter Sceneの下にFlutter GPU、その下にImpellerがある、という関係ね。",
+    "speech": "そういうこと。ネイティブでは、フラッターシーンの下にフラッタージーピーユー、その下にインペラーがある、という関係ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.2",
+          "surface": "Flutter Scene",
+          "reading": "フラッターシーン",
+          "scope": "common",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "id": "game.3",
+          "surface": "Flutter GPU",
+          "reading": "フラッタージーピーユー",
+          "scope": "common",
+          "start": 31,
+          "end": 42
+        },
+        {
+          "id": "game.8",
+          "surface": "Impeller",
+          "reading": "インペラー",
+          "scope": "common",
+          "start": 47,
+          "end": 55
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "stack",
+    "startFrame": 5516,
+    "durationInFrames": 228,
+    "audio": "voice_8f17e6d5e2abb292.wav",
+    "speaker": 2,
+    "kana": "ソオユウ'/コト'、ネ'イティブデワ、フラッタアシ'インノ/_シタニ'/フラ'ッ/タ'アジイピイユウ、ソノ'/_シタニ'/イ'ンペラアガ/ア'ル、ト'/イウ'/カンケエネ'",
+    "queryFile": "voice_queries/query_8f17e6d5e2abb292.json"
+  },
+  {
+    "id": "038",
+    "text": "試すには、Flutterの開発版が必要なのだ？",
+    "speech": "試すには、フラッターの開発版が必要なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 5,
+          "end": 12
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "scene",
+    "view": "stable",
+    "startFrame": 5756,
+    "durationInFrames": 114,
+    "audio": "voice_45d48ca7bd123dfa.wav",
+    "speaker": 3,
+    "kana": "タメスニワ'、フラ'ッタアノ/カイハツ'バンガ/_ヒツヨオナ'/ノダ'？",
+    "queryFile": "voice_queries/query_45d48ca7bd123dfa.json"
+  },
+  {
+    "id": "039",
+    "text": "今は最新のStable版で使えるわ。このゲームはFlutter 3.47.2で開発しているの。",
+    "speech": "今は最新のステーブル版で使えるわ。このゲームはフラッター、サンテンヨンジュウナナテンニで開発しているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.9",
+          "surface": "Stable",
+          "reading": "ステーブル",
+          "scope": "common",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "id": "game.4",
+          "surface": "Flutter 3.47.2",
+          "reading": "フラッター、サンテンヨンジュウナナテンニ",
+          "scope": "common",
+          "start": 24,
+          "end": 38
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "stable",
+    "startFrame": 5888,
+    "durationInFrames": 194,
+    "audio": "voice_2a7af9f6761bcbab.wav",
+    "speaker": 2,
+    "kana": "イ'マワ/サイシンノ'/_ステエブル'バンデ/_ツカエ'ルワ、コノ'/ゲ'エムワ/フラ'ッタア、サンテンヨン'ジュウ/ナナテン'ニデ/カイハツ'/_シテ'/イル'ノ",
+    "queryFile": "voice_queries/query_2a7af9f6761bcbab.json"
+  },
+  {
+    "id": "040",
+    "text": "ただし、ネイティブではFlutter GPUを有効にする設定が必要よ。Stable版で使えることと、APIの安定性は別の話ね。",
+    "speech": "ただし、ネイティブではフラッタージーピーユーを有効にする設定が必要よ。ステーブル版で使えることと、エーピーアイの、アンテイセイは別の話ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.3",
+          "surface": "Flutter GPU",
+          "reading": "フラッタージーピーユー",
+          "scope": "common",
+          "start": 11,
+          "end": 22
+        },
+        {
+          "id": "game.9",
+          "surface": "Stable",
+          "reading": "ステーブル",
+          "scope": "common",
+          "start": 35,
+          "end": 41
+        },
+        {
+          "id": "game.api-stability",
+          "surface": "APIの安定性",
+          "reading": "エーピーアイの、アンテイセイ",
+          "scope": "common",
+          "start": 50,
+          "end": 57
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "scene",
+    "view": "stable",
+    "startFrame": 6094,
+    "durationInFrames": 285,
+    "audio": "voice_d2fd3fbc54200088.wav",
+    "speaker": 2,
+    "kana": "タ'ダシ、ネ'イティブデワ/フラ'ッ/タ'アジイピイユウオ/ユウコオニ'/スル'/セッテエガ'/_ヒツヨオヨ'、_ステエブル'バンデ/_ツカエ'ル/コト'ト、エエピイ'アイノ、アン'テイ/セ'イワ/ベツノ'/ハナシ'ネ",
+    "queryFile": "voice_queries/query_d2fd3fbc54200088.json"
+  },
+  {
+    "id": "041",
+    "text": "じゃあ、いつものWidgetはどこにいるのだ？",
+    "speech": "じゃあ、いつものウィジェットはどこにいるのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.10",
+          "surface": "Widget",
+          "reading": "ウィジェット",
+          "scope": "common",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "implementation",
+    "view": "ui",
+    "startFrame": 6391,
+    "durationInFrames": 102,
+    "audio": "voice_cbb6f785b56c73e8.wav",
+    "speaker": 3,
+    "kana": "ジャ'ア、イ'ツモノ/ウィジェ'ットワ/ド'コニ/イル'/ノダ'？",
+    "queryFile": "voice_queries/query_cbb6f785b56c73e8.json"
+  },
+  {
+    "id": "042",
+    "text": "キャラクター選択や、得点、残り時間、設定画面はFlutterのUIよ。3Dの描画と組み合わせているの。",
+    "speech": "キャラクター選択や、得点、残り時間、設定画面はフラッターのUIよ。スリーディーの描画と組み合わせているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 23,
+          "end": 30
+        },
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 35,
+          "end": 37
+        }
+      ],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 16,
+          "end": 17,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "implementation",
+    "view": "ui",
+    "startFrame": 6511,
+    "durationInFrames": 231,
+    "audio": "voice_52a9417aef16a808.wav",
+    "speaker": 2,
+    "kana": "キャラ_クタアセ'ンタクヤ、ト_クテン'、ノコリ'/ジカン'、セッテエガ'メンワ/フラ'ッタアノ/ユウア'イヨ、スリ'イディイノ/ビョオガト'/クミアワセテ'/イル'ノ",
+    "queryFile": "voice_queries/query_52a9417aef16a808.json"
+  },
+  {
+    "id": "043",
+    "text": "設定画面まで3Dで作る必要はないのだな。",
+    "speech": "設定画面までスリーディーで作る必要はないのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "implementation",
+    "view": "ui",
+    "startFrame": 6754,
+    "durationInFrames": 106,
+    "audio": "voice_3f7c5a0a7e64b91c.wav",
+    "speaker": 3,
+    "kana": "セッテエガ'メンマデ/ス'リイディイデ/_ツク'ル/_ヒツヨオワ'/ナ'イ/ノダ'ナ",
+    "queryFile": "voice_queries/query_3f7c5a0a7e64b91c.json"
+  },
+  {
+    "id": "044",
+    "text": "ゲームのルールもDartで書いているわ。端末の傾きを移動入力にして、キャラクターを動かす。落下物との位置関係を見て、キャッチしたら得点を更新するの。",
+    "speech": "ゲームのルールもダートで書いているわ。端末の傾きを移動入力にして、キャラクターを動かす。落下物との位置関係を見て、キャッチしたら得点を更新するの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.7",
+          "surface": "Dart",
+          "reading": "ダート",
+          "scope": "common",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "implementation",
+    "view": "logic",
+    "startFrame": 6878,
+    "durationInFrames": 303,
+    "audio": "voice_7691c1a7be37b6c1.wav",
+    "speaker": 2,
+    "kana": "ゲ'エムノ/ル'ウルモ/ダ'アトデ/カ'イテ/イル'ワ、タンマツノ'/カタムキオ'/イドオニュ'ウリョクニ/_シテ'、キャラ_クタアオ'/ウゴカ'ス、ラッカブ_ツトノ'/イ_チカ'ンケエオ/ミ'テ、キャ'ッチ/_シタ'ラ/ト_クテンオ'/コオシン'/スル'ノ",
+    "queryFile": "voice_queries/query_7691c1a7be37b6c1.json"
+  },
+  {
+    "id": "045",
+    "text": "缶やちくわを落とすのは、物理エンジンなのだ？",
+    "speech": "缶やちくわを落とすのは、物理エンジンなのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "implementation",
+    "view": "logic",
+    "startFrame": 7193,
+    "durationInFrames": 104,
+    "audio": "voice_fbb20990f092d2d0.wav",
+    "speaker": 3,
+    "kana": "カ'ンヤ/_チクワオ'/オト'ス/ノワ'、ブツリエ'ンジンナ/ノダ'？",
+    "queryFile": "voice_queries/query_fbb20990f092d2d0.json"
+  },
+  {
+    "id": "046",
+    "text": "このゲームでは、落ちる軌道とキャッチ判定をゲーム側で計算しているわ。缶同士がぶつかって跳ね返るような、剛体シミュレーションはしていないの。",
+    "speech": "このゲームでは、落ちる軌道とキャッチ判定をゲーム側で計算しているわ。缶同士がぶつかって跳ね返るような、剛体シミュレーションはしていないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "implementation",
+    "view": "logic",
+    "startFrame": 7315,
+    "durationInFrames": 260,
+    "audio": "voice_14c89230dcb52ac3.wav",
+    "speaker": 2,
+    "kana": "コノ'/ゲ'エムデワ、オチ'ル/キドオト'/キャッ_チハ'ンテエオ/ゲエムガワデ'/ケエサン'/_シテ'/イル'ワ、カンド'オシガ/ブ_ツカッテ'/ハネカ'エル/ヨ'オナ、ゴオタイシミュレ'エションワ/_シテ'/イナイ'ノ",
+    "queryFile": "voice_queries/query_14c89230dcb52ac3.json"
+  },
+  {
+    "id": "047",
+    "text": "必要なルールに絞っているのだな。",
+    "speech": "必要なルールに絞っているのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "implementation",
+    "view": "logic",
+    "startFrame": 7587,
+    "durationInFrames": 69,
+    "audio": "voice_268cb45c9be42ef5.wav",
+    "speaker": 3,
+    "kana": "_ヒツヨオナ'/ル'ウルニ/シボ'ッテ/イル'/ノダ'ナ",
+    "queryFile": "voice_queries/query_268cb45c9be42ef5.json"
+  },
+  {
+    "id": "048",
+    "text": "それから、カメラを回して裏側から見ても、操作する左右が画面と合うように変換しているの。",
+    "speech": "それから、カメラを回して裏側から見ても、操作する左右が画面と合うように変換しているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "implementation",
+    "view": "game_odatetsu",
+    "startFrame": 7674,
+    "durationInFrames": 173,
+    "audio": "voice_7bd35026be1ac863.wav",
+    "speaker": 2,
+    "kana": "ソレカラ'、カ'メラオ/マワ_シテ'/ウラガワカラ'/ミ'テモ、ソ'オサ/スル'/サ'ユウガ/ガメント'/ア'ウ/ヨ'オニ/ヘンカン'/_シテ'/イル'ノ",
+    "queryFile": "voice_queries/query_7bd35026be1ac863.json"
+  },
+  {
+    "id": "049",
+    "text": "見た目はちくわ拾いでも、作ると気になるところがいろいろあるのだ。",
+    "speech": "見た目はちくわ拾いでも、作ると気になるところがいろいろあるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "implementation",
+    "view": "game_odatetsu",
+    "startFrame": 7859,
+    "durationInFrames": 130,
+    "audio": "voice_7aabc24ed082d1b2.wav",
+    "speaker": 3,
+    "kana": "ミタメワ'/_チクワ'/ヒロイデモ'、_ツク'ルト/キニ'/ナ'ル/トコロガ'/イロイロ'/ア'ル/ノダ'",
+    "queryFile": "voice_queries/query_7aabc24ed082d1b2.json"
+  },
+  {
+    "id": "050",
+    "text": "コードの話は分かったけど、この人たちの3Dモデルはどうしたのだ？",
+    "speech": "コードの話は分かったけど、この人たちのスリーディーモデルはどうしたのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 6,
+          "end": 7,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        },
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 15,
+          "end": 16,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "models",
+    "view": "members",
+    "startFrame": 8007,
+    "durationInFrames": 148,
+    "audio": "voice_87bc71a31dc42fc2.wav",
+    "speaker": 3,
+    "kana": "コ'オドノ/ハナシ'ワ/ワカ'ッタケド、コノ'/_ヒト'タチノ/ス'リイディイモデルワ/ド'オ/_シタ'/ノダ'？",
+    "queryFile": "voice_queries/query_87bc71a31dc42fc2.json"
+  },
+  {
+    "id": "051",
+    "text": "人物のような複雑なモデルは、Tripoで原型を作って、形を直したり、動かすための骨組みを整えたりしているわ。",
+    "speech": "人物のような複雑なモデルは、Tripoで原型を作って、形を直したり、動かすための骨組みを整えたりしているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 0,
+          "end": 1,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "models",
+    "view": "model_flow",
+    "startFrame": 8173,
+    "durationInFrames": 232,
+    "audio": "voice_47db7b35bca1e392.wav",
+    "speaker": 2,
+    "kana": "ジ'ンブツノ/ヨ'オナ/_フクザツナ'/モ'デルワ、ト'リポデ/ゲンケエオ'/_ツク'ッテ、カタチオ'/ナオ_シタ'リ、ウゴカ'_ス/タメ'ノ/ホネグミオ'/トトノエタ'リ/_シテ'/イル'ワ",
+    "queryFile": "voice_queries/query_47db7b35bca1e392.json"
+  },
+  {
+    "id": "052",
+    "text": "画像から3Dにするやつなのだ。",
+    "speech": "画像からスリーディーにするやつなのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "models",
+    "view": "model_flow",
+    "startFrame": 8417,
+    "durationInFrames": 73,
+    "audio": "voice_aeb6a5d3200f762c.wav",
+    "speaker": 3,
+    "kana": "ガゾオカラ'/ス'リイディイニ/スル'/ヤ'ツナ/ノダ'",
+    "queryFile": "voice_queries/query_aeb6a5d3200f762c.json"
+  },
+  {
+    "id": "053",
+    "text": "詳しい作り方は、以前の動画で紹介しているの。参照画像を用意するところから、Tripoで立体にして、修正して動かすところまで見られるわ。",
+    "speech": "詳しい作り方は、以前の動画で紹介しているの。参照画像を用意するところから、Tripoで立体にして、修正して動かすところまで見られるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 5,
+          "end": 6,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "models",
+    "view": "tripo",
+    "startFrame": 8508,
+    "durationInFrames": 277,
+    "audio": "voice_70210ba7cc39534b.wav",
+    "speaker": 2,
+    "kana": "クワシ'イ/_ツクリカ'タワ、イ'ゼンノ/ドオガデ'/ショオカイ'/_シテ'/イル'ノ、サンショオガ'ゾオオ/ヨ'オイ/スル'/トコロカラ'、ト'リポデ/リッタイニ'/_シテ'、シュウセエ'/_シテ'/ウゴカ'_ス/トコロマ'デ/ミラレ'ルワ",
+    "queryFile": "voice_queries/query_70210ba7cc39534b.json"
+  },
+  {
+    "id": "054",
+    "text": "では、このちくわもTripoなのだ？",
+    "speech": "では、このちくわもTripoなのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "models",
+    "view": "chikuwa",
+    "startFrame": 8797,
+    "durationInFrames": 78,
+    "audio": "voice_7a37661aa29c0322.wav",
+    "speaker": 3,
+    "kana": "デ'ワ、コノ'/_チクワモ'/ト'リポナ/ノダ'？",
+    "queryFile": "voice_queries/query_7a37661aa29c0322.json"
+  },
+  {
+    "id": "055",
+    "text": "ちくわはCodexに、Blenderの生成コードを書いてもらって作っているわ。",
+    "speech": "ちくわはコーデックスに、ブレンダーの生成コードを書いてもらって作っているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.codex",
+          "surface": "Codex",
+          "reading": "コーデックス",
+          "scope": "tech",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "id": "tech.blender",
+          "surface": "Blender",
+          "reading": "ブレンダー",
+          "scope": "tech",
+          "start": 11,
+          "end": 18
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "models",
+    "view": "chikuwa_code",
+    "startFrame": 8893,
+    "durationInFrames": 139,
+    "audio": "voice_33cbc1f36a7022ad.wav",
+    "speaker": 2,
+    "kana": "_チクワワ'/コオデ'ッ_クスニ、ブレ'ンダアノ/セエセエコ'オドオ/カ'イテ/モラッテ'/_ツク'ッテ/イル'ワ",
+    "queryFile": "voice_queries/query_33cbc1f36a7022ad.json"
+  },
+  {
+    "id": "056",
+    "text": "ちくわには、ちくわの作り方があるのだ。",
+    "speech": "ちくわには、ちくわの作り方があるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 12,
+          "end": 13,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "models",
+    "view": "chikuwa",
+    "startFrame": 9044,
+    "durationInFrames": 89,
+    "audio": "voice_17898afbbc9a6812.wav",
+    "speaker": 3,
+    "kana": "_チクワニワ'、_チクワノ'/_ツクリカ'タガ/ア'ル/ノダ'",
+    "queryFile": "voice_queries/query_17898afbbc9a6812.json"
+  },
+  {
+    "id": "057",
+    "text": "人物の顔や体形と、筒状の小道具では、作りやすい方法が違うの。シンプルな形は、コードで形や寸法を調整する方法も使えるわ。",
+    "speech": "人物の顔や体形と、筒状の小道具では、作りやすい方法が違うの。シンプルな形は、コードで形や寸法を調整する方法も使えるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 0,
+          "end": 1,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        },
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 23,
+          "end": 24,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        },
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 51,
+          "end": 52,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "models",
+    "view": "model_compare",
+    "startFrame": 9151,
+    "durationInFrames": 292,
+    "audio": "voice_202dcab363efe2ba.wav",
+    "speaker": 2,
+    "kana": "ジ'ンブツノ/カオヤ'/タイケエト'、_ツツジョオノ'/コド'オグデワ、_ツクリヤス'イ/ホオホオガ'/チガウ'ノ、シ'ンプルナ/カタチワ'、コ'オドデ/カタチヤ'/スンポオオ'/チョオセエ'/スル'/ホオホオモ'/_ツカエ'ルワ",
+    "queryFile": "voice_queries/query_202dcab363efe2ba.json"
+  },
+  {
+    "id": "058",
+    "text": "さっきからCodexが出てくるけど、ゲームのコードもAIと書いたのだ？",
+    "speech": "さっきからコーデックスが出てくるけど、ゲームのコードもエーアイと書いたのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.codex",
+          "surface": "Codex",
+          "reading": "コーデックス",
+          "scope": "tech",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 26,
+          "end": 28
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "ai",
+    "view": "ai",
+    "startFrame": 9455,
+    "durationInFrames": 151,
+    "audio": "voice_f224b15a190ce13a.wav",
+    "speaker": 3,
+    "kana": "サ'ッ_キカラ/コオデ'ッ_クスガ/デテ'/ク'ルケド、ゲ'エムノ/コ'オドモ/エエア'イト/カ'イタ/ノダ'？",
+    "queryFile": "voice_queries/query_f224b15a190ce13a.json"
+  },
+  {
+    "id": "059",
+    "text": "ええ。主に使ったのはCodexとClaude Codeよ。",
+    "speech": "ええ。主に使ったのはコーデックスとクロードコードよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.codex",
+          "surface": "Codex",
+          "reading": "コーデックス",
+          "scope": "tech",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "id": "tech.claude-code",
+          "surface": "Claude Code",
+          "reading": "クロードコード",
+          "scope": "tech",
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "ai",
+    "startFrame": 9624,
+    "durationInFrames": 103,
+    "audio": "voice_993ea47ba650e308.wav",
+    "speaker": 2,
+    "kana": "エ'エ、オ'モニ/_ツカッタ'/ノワ'/コオデ'ッ_クスト/クロオドコ'オドヨ",
+    "queryFile": "voice_queries/query_993ea47ba650e308.json"
+  },
+  {
+    "id": "060",
+    "text": "普段の機能開発はCodexを中心に進めて、画像素材や、ちくわのようなシンプルな3Dモデルの制作も頼んでいるわ。",
+    "speech": "普段の機能開発はコーデックスを中心に進めて、画像素材や、ちくわのようなシンプルなスリーディーモデルの制作も頼んでいるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.codex",
+          "surface": "Codex",
+          "reading": "コーデックス",
+          "scope": "tech",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 39,
+          "end": 41
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "codex",
+    "startFrame": 9739,
+    "durationInFrames": 243,
+    "audio": "voice_d7b2aa355494e9f5.wav",
+    "speaker": 2,
+    "kana": "フ'ダンノ/キノオカ'イハツワ/コオデ'ッ_クスオ/チュウシンニ'/ススメテ'、ガゾオソ'ザイヤ、_チクワノ'/ヨ'オナ/シ'ンプルナ/ス'リイディイモデルノ/セエサクモ'/タノ'ンデ/イル'ワ",
+    "queryFile": "voice_queries/query_d7b2aa355494e9f5.json"
+  },
+  {
+    "id": "061",
+    "text": "アプリの中身だけじゃなくて、素材を作るところまでなのだな。",
+    "speech": "アプリの中身だけじゃなくて、素材を作るところまでなのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "ai",
+    "view": "codex",
+    "startFrame": 9994,
+    "durationInFrames": 122,
+    "audio": "voice_05f87564beb13c9d.wav",
+    "speaker": 3,
+    "kana": "ア'プリノ/ナカミダケジャナ_クテ'、ソザイオ'/_ツク'ル/トコロマ'デナ/ノダ'ナ",
+    "queryFile": "voice_queries/query_05f87564beb13c9d.json"
+  },
+  {
+    "id": "062",
+    "text": "そして、パフォーマンスの調査や改善ではClaude Codeも使っているの。",
+    "speech": "そして、パフォーマンスの調査や改善ではクロードコードも使っているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.claude-code",
+          "surface": "Claude Code",
+          "reading": "クロードコード",
+          "scope": "tech",
+          "start": 19,
+          "end": 30
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "claude",
+    "startFrame": 10134,
+    "durationInFrames": 125,
+    "audio": "voice_e96aaaa74e59ab7c.wav",
+    "speaker": 2,
+    "kana": "ソ_シテ'、パフォ'オマンスノ/チョ'オサヤ/カイゼンデワ'/クロオドコ'オドモ/_ツカッテ'/イル'ノ",
+    "queryFile": "voice_queries/query_e96aaaa74e59ab7c.json"
+  },
+  {
+    "id": "063",
+    "text": "どこを担当したか、あとから分かるのだ？",
+    "speech": "どこを担当したか、あとから分かるのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 13,
+          "end": 14,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "ai",
+    "view": "commits",
+    "startFrame": 10271,
+    "durationInFrames": 90,
+    "audio": "voice_456c6b0092cfa322.wav",
+    "speaker": 3,
+    "kana": "ド'コオ/タントオ'/_シタ'カ、ア'トカラ/ワカ'ル/ノダ'？",
+    "queryFile": "voice_queries/query_456c6b0092cfa322.json"
+  },
+  {
+    "id": "064",
+    "text": "Claudeが関わった変更は、コミットの共同著者表記から追えるわ。今回は、その履歴と変更内容を見ながら紹介しているの。",
+    "speech": "Claudeが関わった変更は、コミットの共同著者表記から追えるわ。今回は、その履歴と変更内容を見ながら紹介しているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "commits",
+    "startFrame": 10379,
+    "durationInFrames": 241,
+    "audio": "voice_1b50a712bc5c8fb8.wav",
+    "speaker": 2,
+    "kana": "クロ'オドガ/カカワ'ッタ/ヘンコオワ'、コミ'ットノ/キョオドオチョシャヒョ'オ_キカラ/オエル'ワ、コ'ンカイワ、ソノ'/リレ_キト'/ヘンコオナ'イヨオオ/ミナ'ガラ/ショオカイ'/_シテ'/イル'ノ",
+    "queryFile": "voice_queries/query_1b50a712bc5c8fb8.json"
+  },
+  {
+    "id": "065",
+    "text": "AIの使い分けにも、実例があるわけなのだ。",
+    "speech": "エーアイの使い分けにも、実例があるわけなのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 5,
+          "end": 6,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "ai",
+    "view": "commits",
+    "startFrame": 10632,
+    "durationInFrames": 107,
+    "audio": "voice_a20a70f4091bf291.wav",
+    "speaker": 3,
+    "kana": "エエア'イノ/_ツカイワケニモ'、ジツレエガ'/ア'ル/ワ'ケナ/ノダ'",
+    "queryFile": "voice_queries/query_a20a70f4091bf291.json"
+  },
+  {
+    "id": "066",
+    "text": "ただ、きっちり役割を分けていたわけではないの。Codexでも軽量化をしているし、Claude Codeでも画面や機能を直しているわ。",
+    "speech": "ただ、きっちり役割を分けていたわけではないの。コーデックスでも軽量化をしているし、クロードコードでも画面や機能を直しているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.codex",
+          "surface": "Codex",
+          "reading": "コーデックス",
+          "scope": "tech",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "id": "tech.claude-code",
+          "surface": "Claude Code",
+          "reading": "クロードコード",
+          "scope": "tech",
+          "start": 40,
+          "end": 51
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 10,
+          "end": 11,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "ai",
+    "startFrame": 10757,
+    "durationInFrames": 241,
+    "audio": "voice_e1ecf90167d01e37.wav",
+    "speaker": 2,
+    "kana": "タ'ダ、キッチ'リ/ヤクワリオ'/ワケ'テ/イタ'/ワ'ケデワナイノ、コオデ'ッ_クスデモ/ケエリョオカオ'/_シテ'/イルシ'、クロオドコ'オドデモ/ガメンヤ'/キ'ノオオ/ナオシ'テ/イル'ワ",
+    "queryFile": "voice_queries/query_e1ecf90167d01e37.json"
+  },
+  {
+    "id": "067",
+    "text": "今回は、ざっくりそういう使い方だった、という話ね。",
+    "speech": "今回は、ざっくりそういう使い方だった、という話ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 14,
+          "end": 15,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "ai",
+    "startFrame": 11010,
+    "durationInFrames": 114,
+    "audio": "voice_2d7fb7e917988b14.wav",
+    "speaker": 2,
+    "kana": "コ'ンカイワ、ザック'リ/ソオユウ'/_ツカイカタダッタ'、ト'/イウ'/ハナシ'ネ",
+    "queryFile": "voice_queries/query_2d7fb7e917988b14.json"
+  },
+  {
+    "id": "068",
+    "text": "AIに作ってもらって、動いたら完成なのだ？",
+    "speech": "エーアイに作ってもらって、動いたら完成なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "performance",
+    "view": "game_night",
+    "startFrame": 11136,
+    "durationInFrames": 112,
+    "audio": "voice_397b02a8b941a315.wav",
+    "speaker": 3,
+    "kana": "エエア'イニ/_ツク'ッテ/モラッテ'、ウゴ'イタラ/カンセエナ'/ノダ'？",
+    "queryFile": "voice_queries/query_397b02a8b941a315.json"
+  },
+  {
+    "id": "069",
+    "text": "実機で気持ちよく動くところまでが大事ね。今回も、描画の待ち時間とメモリ使用量を改善しているわ。",
+    "speech": "実機で気持ちよく動くところまでが大事ね。今回も、描画の待ち時間とメモリ使用量を改善しているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 30,
+          "end": 31,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "performance",
+    "startFrame": 11266,
+    "durationInFrames": 200,
+    "audio": "voice_4a0f7bb96416f521.wav",
+    "speaker": 2,
+    "kana": "ジ'ッキデ/キモチヨ'クウゴ_ク/トコロマ'デガ/ダイジネ'、コ'ンカイモ、ビョオガノ'/マチジ'カント/メモリシヨオ'リョウオ/カイゼン'/_シテ'/イル'ワ",
+    "queryFile": "voice_queries/query_4a0f7bb96416f521.json"
+  },
+  {
+    "id": "070",
+    "text": "3Dだから、ポリゴンを減らしたのだ？",
+    "speech": "スリーディーだから、ポリゴンを減らしたのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "performance",
+    "view": "performance",
+    "startFrame": 11478,
+    "durationInFrames": 87,
+    "audio": "voice_2bb8c7879d4557a4.wav",
+    "speaker": 3,
+    "kana": "ス'リイディイダカラ、ポ'リゴンオ/ヘラ_シタ'/ノダ'？",
+    "queryFile": "voice_queries/query_2bb8c7879d4557a4.json"
+  },
+  {
+    "id": "071",
+    "text": "それだけではないの。Androidでは、変わっていないライトのデータまで毎フレームGPUへ送る処理が、待ち時間につながっていたの。",
+    "speech": "それだけではないの。Androidでは、変わっていないライトのデータまで毎フレームジーピーユーへ送る処理が、待ち時間につながっていたの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.6",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 41,
+          "end": 44
+        }
+      ],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 54,
+          "end": 55,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "lights",
+    "startFrame": 11583,
+    "durationInFrames": 237,
+    "audio": "voice_05216c53a872db6b.wav",
+    "speaker": 2,
+    "kana": "ソレダケデ'ワナイノ、アンドロ'イドデワ、カワッテ'/イナイ'/ラ'イトノ/デ'エタマデ/マイフレエムジイピイユウエ'/オクル'/ショ'リガ、マチジ'カンニ/ツナガッテ'/イタ'ノ",
+    "queryFile": "voice_queries/query_05216c53a872db6b.json"
+  },
+  {
+    "id": "072",
+    "text": "そこを改善する上流の修正を取り込んだコミットには、Pixel 7aで約30fpsから約60fpsになった記録があるわ。",
+    "speech": "そこを改善する上流の修正を取り込んだコミットには、ピクセル、セブンエーでヤク、サンジュウ、エフピーエスからヤク、ロクジュウ、エフピーエスになった記録があるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.11",
+          "surface": "Pixel 7a",
+          "reading": "ピクセル、セブンエー",
+          "scope": "common",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "id": "game.fps30",
+          "surface": "約30fps",
+          "reading": "ヤク、サンジュウ、エフピーエス",
+          "scope": "common",
+          "start": 34,
+          "end": 40
+        },
+        {
+          "id": "game.fps60",
+          "surface": "約60fps",
+          "reading": "ヤク、ロクジュウ、エフピーエス",
+          "scope": "common",
+          "start": 42,
+          "end": 48
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "fps",
+    "startFrame": 11832,
+    "durationInFrames": 320,
+    "audio": "voice_bb428ed6fb9f4b97.wav",
+    "speaker": 2,
+    "kana": "ソコオ'/カイゼン'/スル'/ジョオリュウノ'/シュウセエオ'/トリコ'ンダ/コミ'ットニワ、ピ'_クセル、セ'ブンエエデ/ヤ'ク、サン'ジュウ、エ'_フ/ピ'イ/エ'_スカラ/ヤ'ク、ロク'ジュウ、エ'_フ/ピ'イ/エ'スニ/ナ'ッタ/キロクガ'/ア'ルワ",
+    "queryFile": "voice_queries/query_bb428ed6fb9f4b97.json"
+  },
+  {
+    "id": "073",
+    "text": "見た目を削る前に、余計な更新を減らせたのだな。",
+    "speech": "見た目を削る前に、余計な更新を減らせたのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "performance",
+    "view": "fps",
+    "startFrame": 12164,
+    "durationInFrames": 114,
+    "audio": "voice_736505810ac6aa61.wav",
+    "speaker": 3,
+    "kana": "ミタメオ'/ケズル'/マ'エニ、ヨケエナ'/コオシンオ'/ヘラセタ'/ノダ'ナ",
+    "queryFile": "voice_queries/query_736505810ac6aa61.json"
+  },
+  {
+    "id": "074",
+    "text": "iPhoneでは、キャラクターの4096四方のテクスチャを、ゲーム用に最大2048へ縮小したわ。",
+    "speech": "アイフォーンでは、キャラクターのヨンセンキュウジュウロク、シホウのテクスチャを、ゲーム用に最大ニセンヨンジュウハチへ縮小したわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.15",
+          "surface": "iPhone",
+          "reading": "アイフォーン",
+          "scope": "common",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "id": "game.16",
+          "surface": "4096四方",
+          "reading": "ヨンセンキュウジュウロク、シホウ",
+          "scope": "common",
+          "start": 16,
+          "end": 22
+        },
+        {
+          "id": "game.17",
+          "surface": "2048",
+          "reading": "ニセンヨンジュウハチ",
+          "scope": "common",
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "textures",
+    "startFrame": 12296,
+    "durationInFrames": 223,
+    "audio": "voice_f5d7cbf13aefd4ae.wav",
+    "speaker": 2,
+    "kana": "アイフォ'オンデワ、キャラ_クタアノ'/ヨンセンキュウジュウ'ロク、_シホウノ'/テ'_クスチャオ、ゲエム'ヨオニ/サイダイニ'セン/ヨンジュウ'ハチエ/_シュクショオ'/_シタ'ワ",
+    "queryFile": "voice_queries/query_f5d7cbf13aefd4ae.json"
+  },
+  {
+    "id": "075",
+    "text": "コミットの記録では、iPhone 14のロード時のピークメモリが、約1.9GBから約0.74GBに下がっているの。",
+    "speech": "コミットの記録では、アイフォーン、ジュウヨンのロード時のピークメモリが、約イッテンキュウ、ギガバイトから約レイテンナナヨン、ギガバイトに下がっているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.14",
+          "surface": "iPhone 14",
+          "reading": "アイフォーン、ジュウヨン",
+          "scope": "common",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "id": "game.18",
+          "surface": "1.9GB",
+          "reading": "イッテンキュウ、ギガバイト",
+          "scope": "common",
+          "start": 34,
+          "end": 39
+        },
+        {
+          "id": "game.19",
+          "surface": "0.74GB",
+          "reading": "レイテンナナヨン、ギガバイト",
+          "scope": "common",
+          "start": 42,
+          "end": 48
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "memory",
+    "startFrame": 12531,
+    "durationInFrames": 278,
+    "audio": "voice_d8fc77ea59619f1f.wav",
+    "speaker": 2,
+    "kana": "コミ'ットノ/キロクデワ'、アイフォ'オン、ジュ'ウヨンノ/ロオド'ジノ/ピイクメ'モリガ、ヤクイッ'テン/キュ'ウ、ギガバ'イトカラ/ヤクレイ'テン/ナ'ナヨン、ギガバ'イトニ/サガ'ッテ/イル'ノ",
+    "queryFile": "voice_queries/query_d8fc77ea59619f1f.json"
+  },
+  {
+    "id": "076",
+    "text": "画面の中では小さく見える人に、大きなテクスチャを持たせていたのだ。",
+    "speech": "画面の中では小さく見える人に、大きなテクスチャを持たせていたのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 12,
+          "end": 13,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "performance",
+    "view": "textures",
+    "startFrame": 12821,
+    "durationInFrames": 141,
+    "audio": "voice_d6ff96c363f0642b.wav",
+    "speaker": 3,
+    "kana": "ガメンノ'/ナ'カデワ/チイサ'クミエル/_ヒトニ'、オ'オキナ/テ'_クスチャオ/モ'タセテ/イタ'/ノダ'",
+    "queryFile": "voice_queries/query_d6ff96c363f0642b.json"
+  },
+  {
+    "id": "077",
+    "text": "元の制作素材をそのまま使うのではなく、ゲームでの見え方に合わせた素材を用意するのも大切ね。",
+    "speech": "元の制作素材をそのまま使うのではなく、ゲームでの見え方に合わせた素材を用意するのも大切ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 26,
+          "end": 27,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "textures",
+    "startFrame": 12980,
+    "durationInFrames": 189,
+    "audio": "voice_5134c927b517221c.wav",
+    "speaker": 2,
+    "kana": "モト'ノ/セエサ_クソ'ザイオ/ソノ'/ママ'/_ツカウ'/ノデ'ワナク、ゲ'エムデノ/ミエ'カタニ/アワセ'タ/ソザイオ'/ヨ'オイ/スル'/ノモ'/タイセツネ'",
+    "queryFile": "voice_queries/query_5134c927b517221c.json"
+  },
+  {
+    "id": "078",
+    "text": "Flutterのコードだけ見ていても、終わらないのだな。",
+    "speech": "フラッターのコードだけ見ていても、終わらないのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "performance",
+    "view": "performance",
+    "startFrame": 13181,
+    "durationInFrames": 103,
+    "audio": "voice_c70cb9e813a2934f.wav",
+    "speaker": 3,
+    "kana": "フラ'ッタアノ/コオドダケ'/ミ'テ/イテモ'、オワラナイ'/ノダ'ナ",
+    "queryFile": "voice_queries/query_c70cb9e813a2934f.json"
+  },
+  {
+    "id": "079",
+    "text": "Dartの処理、描画ライブラリ、3D素材。どこが原因なのかを測って、必要なところを直していくの。",
+    "speech": "ダートの処理、描画ライブラリ、スリーディー素材。どこが原因なのかを測って、必要なところを直していくの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.7",
+          "surface": "Dart",
+          "reading": "ダート",
+          "scope": "common",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "performance",
+    "view": "performance",
+    "startFrame": 13302,
+    "durationInFrames": 212,
+    "audio": "voice_1b4cf4e500bb97fc.wav",
+    "speaker": 2,
+    "kana": "ダ'アトノ/ショ'リ、ビョオガラ'イブラリ、スリイディイソ'ザイ、ド'コガ/ゲンインナ'/ノカオ'/ハカ'ッテ、_ヒツヨオナ'/トコロオ'/ナオシ'テ/イク'ノ",
+    "queryFile": "voice_queries/query_1b4cf4e500bb97fc.json"
+  },
+  {
+    "id": "080",
+    "text": "最初は何を見せられているのかと思ったけど、中身はちゃんとFlutterの開発だったのだ。",
+    "speech": "最初は何を見せられているのかと思ったけど、中身はちゃんとフラッターの開発だったのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 28,
+          "end": 35
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "ending",
+    "view": "game_odatetsu",
+    "startFrame": 13526,
+    "durationInFrames": 180,
+    "audio": "voice_a4a594a4624e9d22.wav",
+    "speaker": 3,
+    "kana": "サイショワ'/ナ'ニオ/ミセ'ラレテ/イル'/ノカト'/オモ'ッタケド、ナカ'ミワ/チャント'/フラ'ッタアノ/カイハツダッタ'/ノダ'",
+    "queryFile": "voice_queries/query_a4a594a4624e9d22.json"
+  },
+  {
+    "id": "081",
+    "text": "Flutter Sceneで3Dを描いて、いつものFlutterでUIを作る。AIとコードや素材を作って、実機で調べながら仕上げたゲームよ。",
+    "speech": "フラッターシーンでスリーディーを描いて、いつものフラッターでUIを作る。エーアイとコードや素材を作って、実機で調べながら仕上げたゲームよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.2",
+          "surface": "Flutter Scene",
+          "reading": "フラッターシーン",
+          "scope": "common",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 25,
+          "end": 32
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 39,
+          "end": 41
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "ending",
+    "view": "summary",
+    "startFrame": 13724,
+    "durationInFrames": 267,
+    "audio": "voice_6a0859c7c32dd8af.wav",
+    "speaker": 2,
+    "kana": "フラッタアシ'インデ/スリ'イディイオ/エガ'イテ、イ'ツモノ/フラ'ッタアデ/ユウア'イオ/_ツク'ル、エエア'イト/コ'オドヤ/ソザイオ'/_ツク'ッテ、ジ'ッキデ/シラベナ'ガラ/シアゲタ'/ゲ'エムヨ",
+    "queryFile": "voice_queries/query_6a0859c7c32dd8af.json"
+  },
+  {
+    "id": "082",
+    "text": "コードも見られるのだ？",
+    "speech": "コードも見られるのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "ending",
+    "view": "repository",
+    "startFrame": 14003,
+    "durationInFrames": 48,
+    "audio": "voice_32aae5a6c6855e0b.wav",
+    "speaker": 3,
+    "kana": "コ'オドモ/ミラレ'ル/ノダ'？",
+    "queryFile": "voice_queries/query_32aae5a6c6855e0b.json"
+  },
+  {
+    "id": "083",
+    "text": "flutterkaigi2026のリポジトリを公開しているわ。モデルの作り方は、さっき紹介したTripoの動画も見てね。",
+    "speech": "フラッターカイギ、ニセンニジュウロクのリポジトリを公開しているわ。モデルの作り方は、さっき紹介したTripoの動画も見てね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.1",
+          "surface": "flutterkaigi2026",
+          "reading": "フラッターカイギ、ニセンニジュウロク",
+          "scope": "common",
+          "start": 0,
+          "end": 16
+        }
+      ],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 37,
+          "end": 38,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "ending",
+    "view": "repository",
+    "startFrame": 14069,
+    "durationInFrames": 225,
+    "audio": "voice_aff5c308fa33f6e5.wav",
+    "speaker": 2,
+    "kana": "フラッタアカイ'ギ、ニセンニジュウ'ロクノ/リポ'ジトリオ/コオカイ'/_シテ'/イル'ワ、モ'デルノ/_ツクリカ'タワ、サ'ッ_キ/ショオカイ'/_シタ'/ト'リポノ/ドオガモ'/ミ'テネ",
+    "queryFile": "voice_queries/query_aff5c308fa33f6e5.json"
+  },
+  {
+    "id": "084",
+    "text": "よし。それじゃあ採用試験に挑戦するのだ。",
+    "speech": "よし。それじゃあ採用試験に挑戦するのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "ending",
+    "view": "game_odatetsu",
+    "startFrame": 14306,
+    "durationInFrames": 98,
+    "audio": "voice_449b0e79a296783b.wav",
+    "speaker": 3,
+    "kana": "ヨ'シ、ソレジャ'ア/サイヨオ_シケ'ンニ/チョオセン'/スル'/ノダ'",
+    "queryFile": "voice_queries/query_449b0e79a296783b.json"
+  },
+  {
+    "id": "085",
+    "text": "ちくわと毒ちくわを、よく見分けてね。",
+    "speech": "ちくわとドクチクワを、よく見分けてね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [
+        {
+          "id": "game.22",
+          "surface": "毒ちくわ",
+          "reading": "ドクチクワ",
+          "scope": "common",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 13,
+          "end": 14,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "ending",
+    "view": "game_odatetsu",
+    "startFrame": 14422,
+    "durationInFrames": 74,
+    "audio": "voice_97fe2b6c1bbb4e1b.wav",
+    "speaker": 2,
+    "kana": "_チクワト'/ド_クチ'クワオ、ヨ'ク/ミワケ'テネ",
+    "queryFile": "voice_queries/query_97fe2b6c1bbb4e1b.json"
+  },
+  {
+    "id": "086",
+    "text": "やっぱり何の適性なのだ。",
+    "speech": "やっぱり何の適性なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "ending",
+    "view": "game_odatetsu",
+    "startFrame": 14508,
+    "durationInFrames": 60,
+    "audio": "voice_76268368598b6892.wav",
+    "speaker": 3,
+    "kana": "ヤッパ'リ/ナ'ニノ/テ_キセエナ'/ノダ'",
+    "queryFile": "voice_queries/query_76268368598b6892.json"
+  }
+]

@@ -7,6 +7,7 @@
     "y-village": "廃村Y村の怪談だけで使う略称・儀式用語"
   },
   "sources": {
+    "flutterkaigi-explainer": "03_SCRIPTS/youtube_flutterkaigi_20261021/voice_generation_record.json: AudioQuery 040の安定性誤読修正",
     "project-intro": "03_SCRIPTS/youtube_project_intro_20261019/script.md：立ち飲み処・各話の読み修正（VOICEVOX 0.25.1）",
     "horror": "03_SCRIPTS/y_village_drinking_horror_20261017/review.md および review-v4.md / review-v5.md：人・方・空・管理人等の誤読修正",
     "horror-v6": "03_SCRIPTS/y_village_drinking_horror_20261017/review-v6.md：専用の杯、あなた方の誤読修正",
@@ -62,7 +63,8 @@
     {"id": "y-village.f", "surface": "F先生", "reading": "エフ先生", "scope": "y-village", "match": "ascii_token", "source": "horror-voice", "note": "この作品の匿名人物"},
     {"id": "y-village.special-cup", "surface": "専用の杯", "reading": "専用のサカズキ", "scope": "y-village", "source": "horror-v6", "note": "儀式の器。杯単独や一杯は変換しない"},
     {"id": "y-village.guest-cup", "surface": "客の杯", "reading": "客のサカズキ", "scope": "y-village", "source": "horror-voice", "note": "儀式の器"},
-    {"id": "y-village.guitar-string", "surface": "ギターの弦", "reading": "ギターのゲン", "scope": "y-village", "source": "horror-voice", "note": "この作品では弦は楽器のげん。弓のつるには適用しない"}
+    {"id": "y-village.guitar-string", "surface": "ギターの弦", "reading": "ギターのゲン", "scope": "y-village", "source": "horror-voice", "note": "この作品では弦は楽器のげん。弓のつるには適用しない"},
+    {"id": "tech.api-stability", "surface": "APIの安定性", "reading": "エーピーアイの、アンテイセイ", "scope": "tech", "source": "flutterkaigi-explainer", "note": "VOICEVOX 0.25.1/めたん2でAPIの安定性がヤステイセイと解析された。修正後のモーラ確認済み、主観試聴は未実施。"}
   ],
   "context_checks": [
     {"id": "context.person", "surface": "人", "readings": ["ヒト：あの人、人を紹介する", "ニン：三人、管理人", "ジン：日本人"], "source": "horror", "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"},

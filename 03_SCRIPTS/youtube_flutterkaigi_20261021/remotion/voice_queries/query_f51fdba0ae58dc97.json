@@ -1,0 +1,99 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.06697727739810944,
+          "vowel": "a",
+          "vowel_length": 0.09587520360946655,
+          "pitch": 5.754861354827881
+        },
+        {
+          "text": "ニ",
+          "consonant": "n",
+          "consonant_length": 0.05986279249191284,
+          "vowel": "i",
+          "vowel_length": 0.08468157798051834,
+          "pitch": 6.074498653411865
+        },
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.057553939521312714,
+          "vowel": "a",
+          "vowel_length": 0.08716811239719391,
+          "pitch": 6.018777847290039
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.05521711707115173,
+          "vowel": "o",
+          "vowel_length": 0.08228524774312973,
+          "pitch": 5.790170192718506
+        },
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.048526402562856674,
+          "vowel": "a",
+          "vowel_length": 0.15863898396492004,
+          "pitch": 5.590102672576904
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.27191564440727234,
+        "pitch": 0.0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ソ",
+          "consonant": "s",
+          "consonant_length": 0.12359420210123062,
+          "vowel": "o",
+          "vowel_length": 0.07777358591556549,
+          "pitch": 5.662932395935059
+        },
+        {
+          "text": "レ",
+          "consonant": "r",
+          "consonant_length": 0.047349028289318085,
+          "vowel": "e",
+          "vowel_length": 0.21121102571487427,
+          "pitch": 5.8158278465271
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": true
+    }
+  ],
+  "speedScale": 1.15,
+  "pitchScale": 0.0,
+  "intonationScale": 1.0,
+  "volumeScale": 1.0,
+  "prePhonemeLength": 0.09,
+  "postPhonemeLength": 0.12,
+  "pauseLength": null,
+  "pauseLengthScale": 1.0,
+  "outputSamplingRate": 24000,
+  "outputStereo": false,
+  "kana": "ナ'ニナ/ノダ'、ソレ'？"
+}

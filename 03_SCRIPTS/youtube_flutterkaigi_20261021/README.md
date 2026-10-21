@@ -1,4 +1,4 @@
-# ゆめみ採用試験 技術解説 初稿v1
+# ゆめみ採用試験 技術解説 改訂v2
 
 ずんだもん＆四国めたん。参考は窓際族物語紹介v5。
 
@@ -29,3 +29,13 @@ iPhone Duo Simulatorのdisplay 3を `simctl io recordVideo --display=3` で収�
 
 制作時点では開催前だが、ユーザー指定どおり展示後に使う語りとしている。
 主観的な通し試聴は未実施。自動音声認識・音量・映像監査の記録は `qa_report.md` を参照。
+
+## 改訂v2（2026-10-21 フィードバック反映）
+
+- 最新出力: `final_remotion_flutterkaigi_v2.mp4`、10分33.7秒、1280×720、30fps。
+- AI利用の一般論を縮め、Dart MCP、Marionette MCP、mobile MCPの仕組みと実プロジェクトの検証方法を追加。
+- 新しい資料画面は `remotion/src/WorkflowViews.tsx`。専用拡張とdebug/profileの使い分けまで説明。
+- Flutter公式配布ロゴ、OpenAI公式アプリ同梱のCodexアイコンを無改変で使用。取得元・hashは `asset_sources.json`。
+- `script.md`、`guide.md`、SRT、概要欄をv2に同期。v1の完成MP4は保持。
+- MCP部分の確認用抜粋: `preview_mcp_v2.mp4`。
+- 最終生成は101発話・150字幕ページ。v1採用音声は保持し、変更のない発話を再利用。

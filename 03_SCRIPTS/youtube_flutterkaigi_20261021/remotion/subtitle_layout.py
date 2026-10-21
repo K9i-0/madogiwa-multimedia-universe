@@ -3,7 +3,7 @@ import re
 import budoux
 PARSER=budoux.load_default_japanese_parser()
 OPEN='「『（【';CLOSE='」』）】';END='。！？';NO_START='、。？！）」』】'
-TERMS=['Flutter Scene','Flutter GPU','FlutterKaigi 2026','Claude Code','Pixel 7a','iPhone 14','窓際族物語','毎フレーム','テクスチャ','共同著者表記','ライフサイクル','パフォーマンス','キャラクター','シミュレーション']
+TERMS=['Dart MCP','Marionette MCP','mobile MCP','Dart Tooling Daemon','Dart VM Service','WebDriverAgent','hot reload','Widgetツリー','Flutter Scene','Flutter GPU','FlutterKaigi 2026','Claude Code','Pixel 7a','iPhone 14','窓際族物語','毎フレーム','テクスチャ','共同著者表記','ライフサイクル','パフォーマンス','キャラクター','シミュレーション']
 def width(s):return sum(.56 if ord(c)<128 else 1 for c in s)
 def legal(s,i):
  if i<=0 or i>=len(s):return False

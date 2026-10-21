@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill,Img,OffthreadVideo,Sequence,Loop,staticFile,useCurrentFrame,interpolate} from 'remotion';
 import manifest from './edit-manifest.json';
+import {WorkflowView,workflowViews} from './WorkflowViews';
 const ink='#263b3c',muted='#697773',green='#25726f',blue='#167cb5';
 const Picture:React.FC<{src:string,w?:number,h?:number}>=({src,w=744,h=430})=><Img src={staticFile(src)} style={{width:w,height:h,objectFit:'contain'}}/>;
 const Title:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:33,fontWeight:700,marginBottom:20,lineHeight:1.4}}>{children}</div>;
@@ -12,9 +13,10 @@ const Video:React.FC<{src:string,duration?:number,label?:string}>=({src,duration
 const Team=()=> <><Title>ゲームに登場する3人</Title><Row>{[['fukugyun.jpg','福ギュン'],['sobaya.jpg','そば屋'],['odatetsu_photo.jpg','CTOおだてつ']].map(([src,name])=><div key={name}><Picture src={src} w={230} h={325}/><div style={{fontSize:28,fontWeight:700,marginTop:14}}>{name}</div></div>)}</Row></>;
 const Metric:React.FC<{title:string,before:string,after:string,detail:string,unit:string}>=({title,before,after,detail,unit})=><><Title>{title}</Title><Row><Cell title="改善前" color={muted}><span style={{fontSize:62}}>{before}</span><br/>{unit}</Cell><Arrow/><Cell title="改善後"><span style={{fontSize:62}}>{after}</span><br/>{unit}</Cell></Row><Note>{detail}</Note><div style={{fontSize:16,color:muted,marginTop:18}}>出典：flutterkaigi2026 / 4f3ffba ・2026-10-21の実機profile記録</div></>;
 export const Center:React.FC<{view:string}>=({view})=>{
+ if(workflowViews.includes(view))return <WorkflowView view={view}/>;
  if(view.startsWith('game_'))return <Video src={view} label="ゲーム実画面 ／ iOSシミュレーター・撮影用自動入力（性能測定映像ではありません）"/>;
  if(view==='selection')return <><Title>ゆめみ採用試験</Title><Picture src="selection.png" h={435}/></>;
- if(view==='title')return <><div style={{fontSize:25,color:green,marginBottom:25}}>FlutterKaigi 2026 ゆめみブース展示ゲーム</div><div style={{fontSize:55,fontWeight:700,lineHeight:1.5}}>ゆめみ採用試験</div><div style={{fontSize:36,lineHeight:1.7,marginTop:22}}>FlutterとAIで<br/>3Dゲームを作る</div><Note>ずんだもん ＆ 四国めたん</Note></>;
+ if(view==='title')return <><div style={{fontSize:25,color:green,marginBottom:25}}>FlutterKaigi 2026 ゆめみブース展示ゲーム</div><div style={{fontSize:55,fontWeight:700,lineHeight:1.5}}>ゆめみ採用試験</div><div style={{fontSize:36,lineHeight:1.7,marginTop:22}}>Flutterで3Dを描く<br/>MCPで開発と検証をつなぐ</div><Note>ずんだもん ＆ 四国めたん</Note></>;
  if(view==='members')return <Team/>;
  if(view==='odatetsu')return <Row><Picture src="odatetsu_photo.jpg" w={340} h={450}/><div style={{width:360,textAlign:'left'}}><div style={{fontSize:42,fontWeight:700}}>CTOおだてつ</div><Note>ゆめみの若手社員<br/>FlutterKaigi 2026<br/>スポンサーセッション登壇</Note></div></Row>;
  if(view==='session')return <><Title>おだてつのスポンサーセッション</Title><Row><Picture src="odatetsu_photo.jpg" w={210} h={300}/><div style={{textAlign:'left',width:500}}><div style={{fontSize:34,fontWeight:700,lineHeight:1.5}}>作って、売って、閉じるまで</div><div style={{fontSize:27,lineHeight:1.65,marginTop:14}}>〜Flutterアプリ課金機能の<br/>ライフサイクル全ガイド〜</div><Note>10月30日（金）13:15–13:45<br/>JTCCホール</Note></div></Row><div style={{fontSize:16,color:muted,marginTop:15}}>出典：FlutterKaigi 2026 / ゆめみ登壇告知</div></>;
@@ -38,7 +40,7 @@ export const Center:React.FC<{view:string}>=({view})=>{
  if(view==='fps')return <Metric title="Pixel 7a：描画待ちの改善" before="約30" after="約60" unit="fps" detail="標準画質 ／ 同じ端末での改善記録"/>;
  if(view==='textures')return <><Title>画面での見え方に合わせた素材へ</Title><Row><Cell title="制作素材" color={muted}><div style={{fontSize:40}}>4096 × 4096</div><div style={{width:150,height:150,background:'#8cb5a2',margin:'16px auto'}}/></Cell><Arrow/><Cell title="ゲーム用"><div style={{fontSize:40}}>最大2048</div><div style={{width:75,height:75,background:green,margin:'54px auto 37px'}}/></Cell></Row><Note>正方形の画素数は1/4 ／ ゲーム用の派生素材を用意</Note></>;
  if(view==='memory')return <Metric title="iPhone 14：ロード時ピークメモリ" before="約1.9" after="約0.74" unit="GB / RSS" detail="キャラクターテクスチャの上限を2048へ"/>;
- if(view==='summary')return <><Title>FlutterとAIで、3Dゲームを作る。</Title><div style={{fontSize:31,lineHeight:2,textAlign:'left'}}>Flutter Sceneで3Dを描く<br/>FlutterのWidgetでUIを作る<br/>AIとコード・素材を作る<br/>実機で測って、改善する</div></>;
+ if(view==='summary')return <><Title>FlutterとAIで、3Dゲームを作る。</Title><div style={{fontSize:31,lineHeight:2,textAlign:'left'}}>Flutter Sceneで3Dを描く<br/>FlutterのWidgetでUIを作る<br/>MCPで操作・状態確認をつなぐ<br/>実機で測って、改善する</div></>;
  if(view==='repository')return <><Title>コードと、モデルの作り方</Title><div style={{background:'#fff',padding:25,width:685,fontSize:30,color:green}}>github.com/K9i-0/flutterkaigi2026</div><Row><Picture src="tripo.jpg" w={365} h={220}/><div style={{fontSize:25,lineHeight:1.7}}>Tripoでキャラクターを<br/>3Dモデルにする<br/><span style={{color:muted}}>概要欄から</span></div></Row></>;
  throw new Error('Unknown view '+view);
 };
@@ -47,6 +49,8 @@ export const Explainer:React.FC=()=>{
  const fade=interpolate(f,[manifest.composition.durationInFrames-30,manifest.composition.durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
  let start=0;if(previous){const index=manifest.dialogue.indexOf(previous);for(let i=index;i>=0;i--){if(manifest.dialogue[i].view!==previous.view)break;start=manifest.dialogue[i].startFrame;}if(start===manifest.dialogue[0].startFrame)start=0;}
  return <AbsoluteFill style={{background:'#f4f2eb',fontFamily:'"Hiragino Sans", "Noto Sans JP", sans-serif',color:ink}}><AbsoluteFill style={{opacity:fade}}>
+ {['title','scene','gpu','stack','stable','ui','logic','dart_mcp','dart_bridge','reload_loop','summary'].includes(previous?.view??'')&&<Img src={staticFile('flutter-logo.svg')} style={{position:'absolute',left:35,top:45,width:180,height:60,objectFit:'contain'}}/>}
+ {['ai','codex','chikuwa_code','commits'].includes(previous?.view??'')&&<div style={{position:'absolute',left:60,top:40,textAlign:'center'}}><Img src={staticFile('codex-icon.png')} style={{width:125,height:125,objectFit:'contain'}}/><div style={{fontSize:24,marginTop:4}}>Codex</div></div>}
  <Sequence from={start}><div data-center style={{position:'absolute',left:262,top:26,width:756,height:526,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center'}}><Center view={previous?.view??'game_odatetsu'}/></div></Sequence>
  {(['zunda','metan'] as const).map((who,i)=>{const speaking=active?.who===who;const j=active?f-active.startFrame:0;const open=speaking&&(active?.envelope[j]??0)>.023;const blink=(f+(i?61:0))%151<4;const surprise=speaking&&/何なの|採用試験？|どうやって|興味ねー|そっちは|適性|そんなもの|そうよね/.test(active?.text??'');const mood=blink?'blink':surprise?'surprise':'normal';return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?1030:0,bottom:0,width:250,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;})}
  {active&&<div style={{position:'absolute',left:64,right:64,bottom:30,height:112,display:'flex',alignItems:'center',justifyContent:'center'}}><div data-caption style={{fontSize:31,fontWeight:700,lineHeight:1.6,textAlign:'center',whiteSpace:'pre-line',color:active.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'5px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0002'}}>{active.captions.find(c=>f-active.startFrame>=c.fromFrame&&f-active.startFrame<c.toFrame)?.text}</div></div>}

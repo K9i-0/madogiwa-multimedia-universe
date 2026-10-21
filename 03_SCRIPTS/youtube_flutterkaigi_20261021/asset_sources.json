@@ -145,6 +145,19 @@
       "file": "zunda_surprise_1.png",
       "source": "03_SCRIPTS/youtube_project_intro_20261019/remotion/public/zunda_surprise_1.png",
       "sha256": "1d3ed0dbae9100c32345d6051bffbacca54cf4df668a108848805983558540a9"
+    },
+    {
+      "file": "flutter-logo.svg",
+      "source": "https://flutter.dev/assets/lockup_flutter_horizontal.549a1b7dd82615e8e9c95c1ade8cee42.svg",
+      "official": "https://flutter.dev/brand",
+      "sha256": "214a592579d9d37475a89d79176c55534e278f3ccd6541c1a45e1287815dbd6a"
+    },
+    {
+      "file": "codex-icon.png",
+      "source": "/Applications/ChatGPT.app/Contents/Resources/icon-codex-light.png",
+      "official": "OpenAI配布アプリに同梱されたCodex公式アイコン。無改変。",
+      "guidelines": "https://openai.com/brand/",
+      "sha256": "de7d43f3386105ab20952958c2c25beb0d903e2aeb6e1aef57c49a648c0d1c07"
     }
   ],
   "references": [
@@ -167,10 +180,27 @@
     {
       "title": "Tripo解説",
       "url": "https://www.youtube.com/watch?v=hCWMw1nB43A"
+    },
+    {
+      "title": "Dart and Flutter MCP tools",
+      "url": "https://docs.flutter.dev/ai/tools"
+    },
+    {
+      "title": "Marionette official source and setup",
+      "url": "https://github.com/leancodepl/marionette_mcp"
+    },
+    {
+      "title": "Mobile MCP official source",
+      "url": "https://github.com/mobile-next/mobile-mcp"
+    },
+    {
+      "title": "Project MCP wiring",
+      "file": "../flutterkaigi2026/.mcp.json / .codex/config.toml / app/lib/main.dart"
     }
   ],
   "gameRecording": "iOS simulator debug, automation demo, not real tilt sensor recording or performance measurement",
   "sessionPoster": "ユーザー添付の一時パスは消失。公式登壇者写真と正確な文字でセッション資料を構成。",
   "referenceStyle": "project_intro v5; user reference overrides spreadsheet template",
-  "gameRevision": "4f3ffba1edc84f571723822d583f2c4b44f4a31d"
+  "gameRevision": "4f3ffba1edc84f571723822d583f2c4b44f4a31d",
+  "revision": "v2: official logos and MCP development workflow"
 }

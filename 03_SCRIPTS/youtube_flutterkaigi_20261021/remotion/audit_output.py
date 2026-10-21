@@ -2,15 +2,15 @@ from pathlib import Path
 import subprocess,json
 from PIL import Image,ImageDraw
 P=Path(__file__).resolve().parent
-video=P.parent/'final_remotion_flutterkaigi_v1.mp4'
-out=P/'out/final_audit';out.mkdir(parents=True,exist_ok=True)
+video=P.parent/'final_remotion_flutterkaigi_v2.mp4'
+out=P/'out/final_audit_v2';out.mkdir(parents=True,exist_ok=True)
 m=json.loads((P/'src/edit-manifest.json').read_text())
 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)]))
 v=next(s for s in probe['streams'] if s['codec_type']=='video');a=next(s for s in probe['streams'] if s['codec_type']=='audio')
-assert (v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1280,720,'30/1',14706)
+assert (v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1280,720,'30/1',m['composition']['durationInFrames'])
 assert a['sample_rate']=='48000' and a['channels']==2
 subprocess.run(['ffmpeg','-v','error','-i',str(video),'-f','null','-'],check=True)
-frames={0,14705}; mids=[]
+frames={0,m['composition']['durationInFrames']-1}; mids=[]
 for d in m['dialogue']:
  for c in d['captions']:
   start=d['startFrame']+c['fromFrame'];end=d['startFrame']+c['toFrame']

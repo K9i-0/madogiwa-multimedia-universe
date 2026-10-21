@@ -10,7 +10,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -48,7 +48,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
@@ -73,7 +73,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
@@ -98,7 +98,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.0",
@@ -140,7 +140,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -165,8 +165,8 @@
   },
   {
     "id": "005",
-    "text": "ええ。コードだけでなく、画像や3Dモデルの制作にもAIを使っているの。",
-    "speech": "ええ。コードだけでなく、画像やスリーディーモデルの制作にもエーアイを使っているの。",
+    "text": "ええ。3Dを描くだけでなく、Flutterの開発ツールをAIにつないで、アプリを動かしながら作っているの。",
+    "speech": "ええ。スリーディーを描くだけでなく、フラッターの開発ツールをエーアイにつないで、アプリを動かしながら作っているの。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -174,23 +174,31 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.3d",
           "surface": "3D",
           "reading": "スリーディー",
           "scope": "tech",
-          "start": 15,
-          "end": 17
+          "start": 3,
+          "end": 5
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 14,
+          "end": 21
         },
         {
           "id": "tech.ai",
           "surface": "AI",
           "reading": "エーアイ",
           "scope": "tech",
-          "start": 25,
-          "end": 27
+          "start": 28,
+          "end": 30
         }
       ],
       "review": []
@@ -199,11 +207,11 @@
     "scene": "intro",
     "view": "game_odatetsu",
     "startFrame": 884,
-    "durationInFrames": 160,
-    "audio": "voice_ba80da1748e85590.wav",
+    "durationInFrames": 225,
+    "audio": "voice_f5cec4a052b29191.wav",
     "speaker": 2,
-    "kana": "エ'エ、コオドダケデナク'、ガゾオヤ'/ス'リイディイモデルノ/セエサクニモ'/エエア'イオ/_ツカッテ'/イル'ノ",
-    "queryFile": "voice_queries/query_ba80da1748e85590.json"
+    "kana": "エ'エ、スリ'イディイオ/エガクダケデ'ナク、フラ'ッタアノ/カイハ_ツツ'ウルオ/エエア'イニ/ツナイデ'、ア'プリオ/ウゴカシナ'ガラ/_ツク'ッテ/イル'ノ",
+    "queryFile": "voice_queries/query_f5cec4a052b29191.json"
   },
   {
     "id": "006",
@@ -216,14 +224,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "intro",
     "view": "game_odatetsu",
-    "startFrame": 1056,
+    "startFrame": 1121,
     "durationInFrames": 92,
     "audio": "voice_4a4f5b391ef53062.wav",
     "speaker": 3,
@@ -232,8 +240,8 @@
   },
   {
     "id": "007",
-    "text": "なら今日は、『ゆめみ採用試験』を題材に、FlutterとAIで3Dゲームを作る方法を解説するわ。",
-    "speech": "なら今日は、『ゆめみ採用試験』を題材に、フラッターとエーアイでスリーディーゲームを作る方法を解説するわ。",
+    "text": "なら今日は、『ゆめみ採用試験』を題材に、Flutterで3Dゲームを作る仕組みと、AIがアプリを動かして検証する開発方法を解説するわ。",
+    "speech": "なら今日は、『ゆめみ採用試験』を題材に、フラッターでスリーディーゲームを作る仕組みと、エーアイがアプリを動かして検証する開発方法を解説するわ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -241,7 +249,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -252,28 +260,28 @@
           "end": 27
         },
         {
-          "id": "tech.ai",
-          "surface": "AI",
-          "reading": "エーアイ",
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
           "scope": "tech",
           "start": 28,
           "end": 30
         },
         {
-          "id": "tech.3d",
-          "surface": "3D",
-          "reading": "スリーディー",
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
           "scope": "tech",
-          "start": 31,
-          "end": 33
+          "start": 41,
+          "end": 43
         }
       ],
       "review": [
         {
           "id": "context.kata-hou",
           "surface": "方",
-          "start": 39,
-          "end": 40,
+          "start": 58,
+          "end": 59,
           "readings": [
             "カタ：相談に来る方（人物）",
             "ホウ：明日来る方がいい（比較）",
@@ -287,12 +295,12 @@
     "who": "metan",
     "scene": "intro",
     "view": "title",
-    "startFrame": 1166,
-    "durationInFrames": 215,
-    "audio": "voice_81f692827924232c.wav",
+    "startFrame": 1231,
+    "durationInFrames": 301,
+    "audio": "voice_d406a48cc7c186cd.wav",
     "speaker": 2,
-    "kana": "ナ'ラ/キョ'オワ、ユメミサイヨオ_シケ'ン、オ'/ダイザイニ'、フラ'ッタアト/エエア'イデ/ス'リイディイゲエムオ/_ツク'ル/ホオホオオ'/カイセ_ツ'/スル'ワ",
-    "queryFile": "voice_queries/query_81f692827924232c.json"
+    "kana": "ナ'ラ/キョ'オワ、ユメミサイヨオ_シケ'ン、オ'/ダイザイニ'、フラ'ッタアデ/ス'リイディイゲエムオ/_ツク'ル/_シクミト'、エエア'イガ/ア'プリオ/ウゴカ'_シテ/ケンショオ'/スル'/カイハ_ツホ'オホオオ/カイセ_ツ'/スル'ワ",
+    "queryFile": "voice_queries/query_d406a48cc7c186cd.json"
   },
   {
     "id": "008",
@@ -305,14 +313,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "intro",
     "view": "title",
-    "startFrame": 1393,
+    "startFrame": 1544,
     "durationInFrames": 93,
     "audio": "voice_46b8f1b78f75d263.wav",
     "speaker": 3,
@@ -330,14 +338,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "intro",
     "view": "title",
-    "startFrame": 1504,
+    "startFrame": 1655,
     "durationInFrames": 37,
     "audio": "voice_0694b93de6c459ab.wav",
     "speaker": 2,
@@ -355,14 +363,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "intro",
     "view": "title",
-    "startFrame": 1571,
+    "startFrame": 1722,
     "durationInFrames": 115,
     "audio": "voice_6cc229d8136c9e42.wav",
     "speaker": 2,
@@ -380,14 +388,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "intro",
     "view": "title",
-    "startFrame": 1698,
+    "startFrame": 1849,
     "durationInFrames": 57,
     "audio": "voice_9897f7970955278f.wav",
     "speaker": 3,
@@ -405,14 +413,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "intro",
     "view": "title",
-    "startFrame": 1785,
+    "startFrame": 1936,
     "durationInFrames": 22,
     "audio": "voice_0c4d8667323ea1db.wav",
     "speaker": 2,
@@ -430,14 +438,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "intro",
     "view": "selection",
-    "startFrame": 1837,
+    "startFrame": 1988,
     "durationInFrames": 83,
     "audio": "voice_d7493cb9b3a70a9a.wav",
     "speaker": 2,
@@ -455,7 +463,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -475,7 +483,7 @@
     "who": "metan",
     "scene": "game",
     "view": "game_odatetsu",
-    "startFrame": 1932,
+    "startFrame": 2083,
     "durationInFrames": 202,
     "audio": "voice_6d9dd3d876b5f160.wav",
     "speaker": 2,
@@ -493,14 +501,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "game",
     "view": "game_odatetsu",
-    "startFrame": 2146,
+    "startFrame": 2297,
     "durationInFrames": 80,
     "audio": "voice_4c44845756bd1c64.wav",
     "speaker": 3,
@@ -518,14 +526,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "game",
     "view": "game_odatetsu",
-    "startFrame": 2244,
+    "startFrame": 2395,
     "durationInFrames": 153,
     "audio": "voice_8c9c3bfb3f563317.wav",
     "speaker": 2,
@@ -543,7 +551,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -563,7 +571,7 @@
     "who": "zunda",
     "scene": "game",
     "view": "selection",
-    "startFrame": 2409,
+    "startFrame": 2560,
     "durationInFrames": 80,
     "audio": "voice_d5d927c8d2af4033.wav",
     "speaker": 3,
@@ -581,7 +589,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.21",
@@ -629,7 +637,7 @@
     "who": "metan",
     "scene": "game",
     "view": "members",
-    "startFrame": 2507,
+    "startFrame": 2658,
     "durationInFrames": 116,
     "audio": "voice_5e0474563ce31bf7.wav",
     "speaker": 2,
@@ -647,14 +655,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "game",
     "view": "odatetsu",
-    "startFrame": 2635,
+    "startFrame": 2786,
     "durationInFrames": 106,
     "audio": "voice_792b1ccd4cf62882.wav",
     "speaker": 3,
@@ -672,7 +680,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.20",
@@ -688,7 +696,7 @@
     "who": "metan",
     "scene": "game",
     "view": "odatetsu",
-    "startFrame": 2759,
+    "startFrame": 2910,
     "durationInFrames": 171,
     "audio": "voice_011dbd82711fb15d.wav",
     "speaker": 2,
@@ -706,7 +714,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -722,7 +730,7 @@
     "who": "metan",
     "scene": "game",
     "view": "session",
-    "startFrame": 2942,
+    "startFrame": 3093,
     "durationInFrames": 241,
     "audio": "voice_1b9ac12539dfbf21.wav",
     "speaker": 2,
@@ -740,7 +748,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -756,7 +764,7 @@
     "who": "zunda",
     "scene": "game",
     "view": "session",
-    "startFrame": 3195,
+    "startFrame": 3346,
     "durationInFrames": 77,
     "audio": "voice_624584eff73d1986.wav",
     "speaker": 3,
@@ -774,7 +782,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -790,7 +798,7 @@
     "who": "metan",
     "scene": "game",
     "view": "session",
-    "startFrame": 3290,
+    "startFrame": 3441,
     "durationInFrames": 53,
     "audio": "voice_0d785c269b690109.wav",
     "speaker": 2,
@@ -808,7 +816,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "mmu.fukugyun",
@@ -840,7 +848,7 @@
     "who": "metan",
     "scene": "game",
     "view": "rules",
-    "startFrame": 3355,
+    "startFrame": 3506,
     "durationInFrames": 220,
     "audio": "voice_f69684ce76204eea.wav",
     "speaker": 2,
@@ -858,7 +866,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "mmu.sobaya",
@@ -874,7 +882,7 @@
     "who": "zunda",
     "scene": "game",
     "view": "game_sobaya",
-    "startFrame": 3587,
+    "startFrame": 3738,
     "durationInFrames": 79,
     "audio": "voice_ce9b5441d71821a0.wav",
     "speaker": 3,
@@ -892,7 +900,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.21",
@@ -908,7 +916,7 @@
     "who": "metan",
     "scene": "game",
     "view": "project",
-    "startFrame": 3684,
+    "startFrame": 3835,
     "durationInFrames": 192,
     "audio": "voice_96e23750ceb6a0d2.wav",
     "speaker": 2,
@@ -926,7 +934,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.3d",
@@ -942,7 +950,7 @@
     "who": "metan",
     "scene": "game",
     "view": "project",
-    "startFrame": 3888,
+    "startFrame": 4039,
     "durationInFrames": 160,
     "audio": "voice_28c3d4cb5750e376.wav",
     "speaker": 2,
@@ -960,14 +968,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "game",
     "view": "project",
-    "startFrame": 4060,
+    "startFrame": 4211,
     "durationInFrames": 123,
     "audio": "voice_761e20612134193f.wav",
     "speaker": 3,
@@ -985,7 +993,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -1001,7 +1009,7 @@
     "who": "zunda",
     "scene": "scene",
     "view": "game_night",
-    "startFrame": 4201,
+    "startFrame": 4352,
     "durationInFrames": 165,
     "audio": "voice_9cd312ed66f5a727.wav",
     "speaker": 3,
@@ -1019,7 +1027,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.2",
@@ -1035,7 +1043,7 @@
     "who": "metan",
     "scene": "scene",
     "view": "scene",
-    "startFrame": 4384,
+    "startFrame": 4535,
     "durationInFrames": 113,
     "audio": "voice_713a3488f48b718d.wav",
     "speaker": 2,
@@ -1053,14 +1061,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "scene",
     "view": "scene",
-    "startFrame": 4509,
+    "startFrame": 4660,
     "durationInFrames": 50,
     "audio": "voice_f51fdba0ae58dc97.wav",
     "speaker": 3,
@@ -1078,7 +1086,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.3",
@@ -1118,7 +1126,7 @@
     "who": "metan",
     "scene": "scene",
     "view": "gpu",
-    "startFrame": 4577,
+    "startFrame": 4728,
     "durationInFrames": 281,
     "audio": "voice_827f15410482ddc0.wav",
     "speaker": 2,
@@ -1136,7 +1144,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -1156,7 +1164,7 @@
     "who": "zunda",
     "scene": "scene",
     "view": "gpu",
-    "startFrame": 4870,
+    "startFrame": 5021,
     "durationInFrames": 121,
     "audio": "voice_4f60c4e635b79e4a.wav",
     "speaker": 3,
@@ -1165,40 +1173,6 @@
   },
   {
     "id": "034",
-    "text": "そう。でも、このゲームを作るために、3Dの描画処理を全部書いたわけではないの。",
-    "speech": "そう。でも、このゲームを作るために、スリーディーの描画処理を全部書いたわけではないの。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
-        {
-          "id": "tech.3d",
-          "surface": "3D",
-          "reading": "スリーディー",
-          "scope": "tech",
-          "start": 18,
-          "end": 20
-        }
-      ],
-      "review": []
-    },
-    "who": "metan",
-    "scene": "scene",
-    "view": "gpu",
-    "startFrame": 5009,
-    "durationInFrames": 175,
-    "audio": "voice_8dbcb19e5bea15a6.wav",
-    "speaker": 2,
-    "kana": "ソオ'、デ'モ、コノ'/ゲ'エムオ/_ツク'ル/タメ'ニ、スリ'イディイノ/ビョオガ'ショリオ/ゼ'ンブ/カ'イタ/ワ'ケデワナイノ",
-    "queryFile": "voice_queries/query_8dbcb19e5bea15a6.json"
-  },
-  {
-    "id": "035",
     "text": "Flutter Sceneを使うと、その上でモデルやカメラ、ライト、アニメーションを扱えるわ。",
     "speech": "フラッターシーンを使うと、その上でモデルやカメラ、ライト、アニメーションを扱えるわ。",
     "reading_report": {
@@ -1208,7 +1182,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.2",
@@ -1224,7 +1198,7 @@
     "who": "metan",
     "scene": "scene",
     "view": "scene",
-    "startFrame": 5196,
+    "startFrame": 5160,
     "durationInFrames": 168,
     "audio": "voice_883b92f9b0a304b7.wav",
     "speaker": 2,
@@ -1232,7 +1206,7 @@
     "queryFile": "voice_queries/query_883b92f9b0a304b7.json"
   },
   {
-    "id": "036",
+    "id": "035",
     "text": "3Dの部分も、Flutter側から組み立てているのだな。",
     "speech": "スリーディーの部分も、フラッター側から組み立てているのだな。",
     "reading_report": {
@@ -1242,7 +1216,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.3d",
@@ -1279,7 +1253,7 @@
     "who": "zunda",
     "scene": "scene",
     "view": "stack",
-    "startFrame": 5376,
+    "startFrame": 5340,
     "durationInFrames": 122,
     "audio": "voice_977849bf5a70a348.wav",
     "speaker": 3,
@@ -1287,7 +1261,7 @@
     "queryFile": "voice_queries/query_977849bf5a70a348.json"
   },
   {
-    "id": "037",
+    "id": "036",
     "text": "そういうこと。ネイティブでは、Flutter Sceneの下にFlutter GPU、その下にImpellerがある、という関係ね。",
     "speech": "そういうこと。ネイティブでは、フラッターシーンの下にフラッタージーピーユー、その下にインペラーがある、という関係ね。",
     "reading_report": {
@@ -1297,7 +1271,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.2",
@@ -1329,7 +1303,7 @@
     "who": "metan",
     "scene": "scene",
     "view": "stack",
-    "startFrame": 5516,
+    "startFrame": 5480,
     "durationInFrames": 228,
     "audio": "voice_8f17e6d5e2abb292.wav",
     "speaker": 2,
@@ -1337,7 +1311,7 @@
     "queryFile": "voice_queries/query_8f17e6d5e2abb292.json"
   },
   {
-    "id": "038",
+    "id": "037",
     "text": "試すには、Flutterの開発版が必要なのだ？",
     "speech": "試すには、フラッターの開発版が必要なのだ？",
     "reading_report": {
@@ -1347,7 +1321,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -1363,7 +1337,7 @@
     "who": "zunda",
     "scene": "scene",
     "view": "stable",
-    "startFrame": 5756,
+    "startFrame": 5720,
     "durationInFrames": 114,
     "audio": "voice_45d48ca7bd123dfa.wav",
     "speaker": 3,
@@ -1371,7 +1345,7 @@
     "queryFile": "voice_queries/query_45d48ca7bd123dfa.json"
   },
   {
-    "id": "039",
+    "id": "038",
     "text": "今は最新のStable版で使えるわ。このゲームはFlutter 3.47.2で開発しているの。",
     "speech": "今は最新のステーブル版で使えるわ。このゲームはフラッター、サンテンヨンジュウナナテンニで開発しているの。",
     "reading_report": {
@@ -1381,7 +1355,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.9",
@@ -1405,7 +1379,7 @@
     "who": "metan",
     "scene": "scene",
     "view": "stable",
-    "startFrame": 5888,
+    "startFrame": 5852,
     "durationInFrames": 194,
     "audio": "voice_2a7af9f6761bcbab.wav",
     "speaker": 2,
@@ -1413,7 +1387,7 @@
     "queryFile": "voice_queries/query_2a7af9f6761bcbab.json"
   },
   {
-    "id": "040",
+    "id": "039",
     "text": "ただし、ネイティブではFlutter GPUを有効にする設定が必要よ。Stable版で使えることと、APIの安定性は別の話ね。",
     "speech": "ただし、ネイティブではフラッタージーピーユーを有効にする設定が必要よ。ステーブル版で使えることと、エーピーアイの、アンテイセイは別の話ね。",
     "reading_report": {
@@ -1423,7 +1397,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.3",
@@ -1455,7 +1429,7 @@
     "who": "metan",
     "scene": "scene",
     "view": "stable",
-    "startFrame": 6094,
+    "startFrame": 6058,
     "durationInFrames": 285,
     "audio": "voice_d2fd3fbc54200088.wav",
     "speaker": 2,
@@ -1463,7 +1437,7 @@
     "queryFile": "voice_queries/query_d2fd3fbc54200088.json"
   },
   {
-    "id": "041",
+    "id": "040",
     "text": "じゃあ、いつものWidgetはどこにいるのだ？",
     "speech": "じゃあ、いつものウィジェットはどこにいるのだ？",
     "reading_report": {
@@ -1473,7 +1447,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.10",
@@ -1489,7 +1463,7 @@
     "who": "zunda",
     "scene": "implementation",
     "view": "ui",
-    "startFrame": 6391,
+    "startFrame": 6355,
     "durationInFrames": 102,
     "audio": "voice_cbb6f785b56c73e8.wav",
     "speaker": 3,
@@ -1497,7 +1471,7 @@
     "queryFile": "voice_queries/query_cbb6f785b56c73e8.json"
   },
   {
-    "id": "042",
+    "id": "041",
     "text": "キャラクター選択や、得点、残り時間、設定画面はFlutterのUIよ。3Dの描画と組み合わせているの。",
     "speech": "キャラクター選択や、得点、残り時間、設定画面はフラッターのUIよ。スリーディーの描画と組み合わせているの。",
     "reading_report": {
@@ -1507,7 +1481,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -1544,7 +1518,7 @@
     "who": "metan",
     "scene": "implementation",
     "view": "ui",
-    "startFrame": 6511,
+    "startFrame": 6475,
     "durationInFrames": 231,
     "audio": "voice_52a9417aef16a808.wav",
     "speaker": 2,
@@ -1552,41 +1526,7 @@
     "queryFile": "voice_queries/query_52a9417aef16a808.json"
   },
   {
-    "id": "043",
-    "text": "設定画面まで3Dで作る必要はないのだな。",
-    "speech": "設定画面までスリーディーで作る必要はないのだな。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
-        {
-          "id": "tech.3d",
-          "surface": "3D",
-          "reading": "スリーディー",
-          "scope": "tech",
-          "start": 6,
-          "end": 8
-        }
-      ],
-      "review": []
-    },
-    "who": "zunda",
-    "scene": "implementation",
-    "view": "ui",
-    "startFrame": 6754,
-    "durationInFrames": 106,
-    "audio": "voice_3f7c5a0a7e64b91c.wav",
-    "speaker": 3,
-    "kana": "セッテエガ'メンマデ/ス'リイディイデ/_ツク'ル/_ヒツヨオワ'/ナ'イ/ノダ'ナ",
-    "queryFile": "voice_queries/query_3f7c5a0a7e64b91c.json"
-  },
-  {
-    "id": "044",
+    "id": "042",
     "text": "ゲームのルールもDartで書いているわ。端末の傾きを移動入力にして、キャラクターを動かす。落下物との位置関係を見て、キャッチしたら得点を更新するの。",
     "speech": "ゲームのルールもダートで書いているわ。端末の傾きを移動入力にして、キャラクターを動かす。落下物との位置関係を見て、キャッチしたら得点を更新するの。",
     "reading_report": {
@@ -1596,7 +1536,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.7",
@@ -1612,7 +1552,7 @@
     "who": "metan",
     "scene": "implementation",
     "view": "logic",
-    "startFrame": 6878,
+    "startFrame": 6718,
     "durationInFrames": 303,
     "audio": "voice_7691c1a7be37b6c1.wav",
     "speaker": 2,
@@ -1620,7 +1560,7 @@
     "queryFile": "voice_queries/query_7691c1a7be37b6c1.json"
   },
   {
-    "id": "045",
+    "id": "043",
     "text": "缶やちくわを落とすのは、物理エンジンなのだ？",
     "speech": "缶やちくわを落とすのは、物理エンジンなのだ？",
     "reading_report": {
@@ -1630,14 +1570,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "implementation",
     "view": "logic",
-    "startFrame": 7193,
+    "startFrame": 7033,
     "durationInFrames": 104,
     "audio": "voice_fbb20990f092d2d0.wav",
     "speaker": 3,
@@ -1645,9 +1585,9 @@
     "queryFile": "voice_queries/query_fbb20990f092d2d0.json"
   },
   {
-    "id": "046",
-    "text": "このゲームでは、落ちる軌道とキャッチ判定をゲーム側で計算しているわ。缶同士がぶつかって跳ね返るような、剛体シミュレーションはしていないの。",
-    "speech": "このゲームでは、落ちる軌道とキャッチ判定をゲーム側で計算しているわ。缶同士がぶつかって跳ね返るような、剛体シミュレーションはしていないの。",
+    "id": "044",
+    "text": "落下は軌道計算で、キャッチ判定もゲーム側に書いているの。剛体シミュレーションはしていないわ。",
+    "speech": "落下は軌道計算で、キャッチ判定もゲーム側に書いているの。剛体シミュレーションはしていないわ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -1655,47 +1595,22 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "implementation",
     "view": "logic",
-    "startFrame": 7315,
-    "durationInFrames": 260,
-    "audio": "voice_14c89230dcb52ac3.wav",
+    "startFrame": 7155,
+    "durationInFrames": 183,
+    "audio": "voice_68f7ce35e1495be6.wav",
     "speaker": 2,
-    "kana": "コノ'/ゲ'エムデワ、オチ'ル/キドオト'/キャッ_チハ'ンテエオ/ゲエムガワデ'/ケエサン'/_シテ'/イル'ワ、カンド'オシガ/ブ_ツカッテ'/ハネカ'エル/ヨ'オナ、ゴオタイシミュレ'エションワ/_シテ'/イナイ'ノ",
-    "queryFile": "voice_queries/query_14c89230dcb52ac3.json"
+    "kana": "ラッカワ'/キドオケ'エサンデ、キャッ_チハ'ンテエモ/ゲエムガワニ'/カ'イテ/イル'ノ、ゴオタイシミュレ'エションワ/_シテ'/イナイ'ワ",
+    "queryFile": "voice_queries/query_68f7ce35e1495be6.json"
   },
   {
-    "id": "047",
-    "text": "必要なルールに絞っているのだな。",
-    "speech": "必要なルールに絞っているのだな。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [],
-      "review": []
-    },
-    "who": "zunda",
-    "scene": "implementation",
-    "view": "logic",
-    "startFrame": 7587,
-    "durationInFrames": 69,
-    "audio": "voice_268cb45c9be42ef5.wav",
-    "speaker": 3,
-    "kana": "_ヒツヨオナ'/ル'ウルニ/シボ'ッテ/イル'/ノダ'ナ",
-    "queryFile": "voice_queries/query_268cb45c9be42ef5.json"
-  },
-  {
-    "id": "048",
+    "id": "045",
     "text": "それから、カメラを回して裏側から見ても、操作する左右が画面と合うように変換しているの。",
     "speech": "それから、カメラを回して裏側から見ても、操作する左右が画面と合うように変換しているの。",
     "reading_report": {
@@ -1705,14 +1620,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "metan",
     "scene": "implementation",
     "view": "game_odatetsu",
-    "startFrame": 7674,
+    "startFrame": 7350,
     "durationInFrames": 173,
     "audio": "voice_7bd35026be1ac863.wav",
     "speaker": 2,
@@ -1720,32 +1635,7 @@
     "queryFile": "voice_queries/query_7bd35026be1ac863.json"
   },
   {
-    "id": "049",
-    "text": "見た目はちくわ拾いでも、作ると気になるところがいろいろあるのだ。",
-    "speech": "見た目はちくわ拾いでも、作ると気になるところがいろいろあるのだ。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [],
-      "review": []
-    },
-    "who": "zunda",
-    "scene": "implementation",
-    "view": "game_odatetsu",
-    "startFrame": 7859,
-    "durationInFrames": 130,
-    "audio": "voice_7aabc24ed082d1b2.wav",
-    "speaker": 3,
-    "kana": "ミタメワ'/_チクワ'/ヒロイデモ'、_ツク'ルト/キニ'/ナ'ル/トコロガ'/イロイロ'/ア'ル/ノダ'",
-    "queryFile": "voice_queries/query_7aabc24ed082d1b2.json"
-  },
-  {
-    "id": "050",
+    "id": "046",
     "text": "コードの話は分かったけど、この人たちの3Dモデルはどうしたのだ？",
     "speech": "コードの話は分かったけど、この人たちのスリーディーモデルはどうしたのだ？",
     "reading_report": {
@@ -1755,7 +1645,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.3d",
@@ -1796,7 +1686,7 @@
     "who": "zunda",
     "scene": "models",
     "view": "members",
-    "startFrame": 8007,
+    "startFrame": 7535,
     "durationInFrames": 148,
     "audio": "voice_87bc71a31dc42fc2.wav",
     "speaker": 3,
@@ -1804,7 +1694,7 @@
     "queryFile": "voice_queries/query_87bc71a31dc42fc2.json"
   },
   {
-    "id": "051",
+    "id": "047",
     "text": "人物のような複雑なモデルは、Tripoで原型を作って、形を直したり、動かすための骨組みを整えたりしているわ。",
     "speech": "人物のような複雑なモデルは、Tripoで原型を作って、形を直したり、動かすための骨組みを整えたりしているわ。",
     "reading_report": {
@@ -1814,7 +1704,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -1834,7 +1724,7 @@
     "who": "metan",
     "scene": "models",
     "view": "model_flow",
-    "startFrame": 8173,
+    "startFrame": 7701,
     "durationInFrames": 232,
     "audio": "voice_47db7b35bca1e392.wav",
     "speaker": 2,
@@ -1842,41 +1732,7 @@
     "queryFile": "voice_queries/query_47db7b35bca1e392.json"
   },
   {
-    "id": "052",
-    "text": "画像から3Dにするやつなのだ。",
-    "speech": "画像からスリーディーにするやつなのだ。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
-        {
-          "id": "tech.3d",
-          "surface": "3D",
-          "reading": "スリーディー",
-          "scope": "tech",
-          "start": 4,
-          "end": 6
-        }
-      ],
-      "review": []
-    },
-    "who": "zunda",
-    "scene": "models",
-    "view": "model_flow",
-    "startFrame": 8417,
-    "durationInFrames": 73,
-    "audio": "voice_aeb6a5d3200f762c.wav",
-    "speaker": 3,
-    "kana": "ガゾオカラ'/ス'リイディイニ/スル'/ヤ'ツナ/ノダ'",
-    "queryFile": "voice_queries/query_aeb6a5d3200f762c.json"
-  },
-  {
-    "id": "053",
+    "id": "048",
     "text": "詳しい作り方は、以前の動画で紹介しているの。参照画像を用意するところから、Tripoで立体にして、修正して動かすところまで見られるわ。",
     "speech": "詳しい作り方は、以前の動画で紹介しているの。参照画像を用意するところから、Tripoで立体にして、修正して動かすところまで見られるわ。",
     "reading_report": {
@@ -1886,7 +1742,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -1907,7 +1763,7 @@
     "who": "metan",
     "scene": "models",
     "view": "tripo",
-    "startFrame": 8508,
+    "startFrame": 7945,
     "durationInFrames": 277,
     "audio": "voice_70210ba7cc39534b.wav",
     "speaker": 2,
@@ -1915,7 +1771,7 @@
     "queryFile": "voice_queries/query_70210ba7cc39534b.json"
   },
   {
-    "id": "054",
+    "id": "049",
     "text": "では、このちくわもTripoなのだ？",
     "speech": "では、このちくわもTripoなのだ？",
     "reading_report": {
@@ -1925,14 +1781,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "models",
     "view": "chikuwa",
-    "startFrame": 8797,
+    "startFrame": 8234,
     "durationInFrames": 78,
     "audio": "voice_7a37661aa29c0322.wav",
     "speaker": 3,
@@ -1940,7 +1796,7 @@
     "queryFile": "voice_queries/query_7a37661aa29c0322.json"
   },
   {
-    "id": "055",
+    "id": "050",
     "text": "ちくわはCodexに、Blenderの生成コードを書いてもらって作っているわ。",
     "speech": "ちくわはコーデックスに、ブレンダーの生成コードを書いてもらって作っているわ。",
     "reading_report": {
@@ -1950,7 +1806,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.codex",
@@ -1974,7 +1830,7 @@
     "who": "metan",
     "scene": "models",
     "view": "chikuwa_code",
-    "startFrame": 8893,
+    "startFrame": 8330,
     "durationInFrames": 139,
     "audio": "voice_33cbc1f36a7022ad.wav",
     "speaker": 2,
@@ -1982,7 +1838,7 @@
     "queryFile": "voice_queries/query_33cbc1f36a7022ad.json"
   },
   {
-    "id": "056",
+    "id": "051",
     "text": "ちくわには、ちくわの作り方があるのだ。",
     "speech": "ちくわには、ちくわの作り方があるのだ。",
     "reading_report": {
@@ -1992,7 +1848,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -2013,7 +1869,7 @@
     "who": "zunda",
     "scene": "models",
     "view": "chikuwa",
-    "startFrame": 9044,
+    "startFrame": 8481,
     "durationInFrames": 89,
     "audio": "voice_17898afbbc9a6812.wav",
     "speaker": 3,
@@ -2021,7 +1877,7 @@
     "queryFile": "voice_queries/query_17898afbbc9a6812.json"
   },
   {
-    "id": "057",
+    "id": "052",
     "text": "人物の顔や体形と、筒状の小道具では、作りやすい方法が違うの。シンプルな形は、コードで形や寸法を調整する方法も使えるわ。",
     "speech": "人物の顔や体形と、筒状の小道具では、作りやすい方法が違うの。シンプルな形は、コードで形や寸法を調整する方法も使えるわ。",
     "reading_report": {
@@ -2031,7 +1887,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -2077,7 +1933,7 @@
     "who": "metan",
     "scene": "models",
     "view": "model_compare",
-    "startFrame": 9151,
+    "startFrame": 8588,
     "durationInFrames": 292,
     "audio": "voice_202dcab363efe2ba.wav",
     "speaker": 2,
@@ -2085,9 +1941,9 @@
     "queryFile": "voice_queries/query_202dcab363efe2ba.json"
   },
   {
-    "id": "058",
-    "text": "さっきからCodexが出てくるけど、ゲームのコードもAIと書いたのだ？",
-    "speech": "さっきからコーデックスが出てくるけど、ゲームのコードもエーアイと書いたのだ？",
+    "id": "053",
+    "text": "コードを書くのにAIを使うのは、もう普通になってきたのだ。Flutterならではの話はあるのだ？",
+    "speech": "コードを書くのにエーアイを使うのは、もう普通になってきたのだ。フラッターならではの話はあるのだ？",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -2095,23 +1951,23 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
-          "id": "tech.codex",
-          "surface": "Codex",
-          "reading": "コーデックス",
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
           "scope": "tech",
-          "start": 5,
+          "start": 8,
           "end": 10
         },
         {
-          "id": "tech.ai",
-          "surface": "AI",
-          "reading": "エーアイ",
-          "scope": "tech",
-          "start": 26,
-          "end": 28
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 29,
+          "end": 36
         }
       ],
       "review": []
@@ -2119,17 +1975,17 @@
     "who": "zunda",
     "scene": "ai",
     "view": "ai",
-    "startFrame": 9455,
-    "durationInFrames": 151,
-    "audio": "voice_f224b15a190ce13a.wav",
+    "startFrame": 8892,
+    "durationInFrames": 205,
+    "audio": "voice_f2afe2ad3f480184.wav",
     "speaker": 3,
-    "kana": "サ'ッ_キカラ/コオデ'ッ_クスガ/デテ'/ク'ルケド、ゲ'エムノ/コ'オドモ/エエア'イト/カ'イタ/ノダ'？",
-    "queryFile": "voice_queries/query_f224b15a190ce13a.json"
+    "kana": "コ'オドオ/カ'ク/ノニ'/エエア'イオ/_ツカウ'/ノワ'、モ'オ/_フツウニ'/ナ'ッテ/キ'タ/ノダ'、フラッタアナ'ラデワノ/ハナシ'ワ/ア'ル/ノダ'？",
+    "queryFile": "voice_queries/query_f2afe2ad3f480184.json"
   },
   {
-    "id": "059",
-    "text": "ええ。主に使ったのはCodexとClaude Codeよ。",
-    "speech": "ええ。主に使ったのはコーデックスとクロードコードよ。",
+    "id": "054",
+    "text": "あるわ。Codexを中心に機能と素材を作り、Claude Codeでも性能を改善したけれど、大事なのは実行中のFlutterアプリとつながることよ。",
+    "speech": "あるわ。コーデックスを中心に機能と素材を作り、クロードコードでも性能を改善したけれど、大事なのは実行中のフラッターアプリとつながることよ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -2137,322 +1993,176 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.codex",
           "surface": "Codex",
           "reading": "コーデックス",
           "scope": "tech",
-          "start": 10,
+          "start": 4,
+          "end": 9
+        },
+        {
+          "id": "tech.claude-code",
+          "surface": "Claude Code",
+          "reading": "クロードコード",
+          "scope": "tech",
+          "start": 22,
+          "end": 33
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 55,
+          "end": 62
+        }
+      ],
+      "review": [
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 52,
+          "end": 53,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "ai",
+    "startFrame": 9115,
+    "durationInFrames": 281,
+    "audio": "voice_2628b08f29c15ffe.wav",
+    "speaker": 2,
+    "kana": "ア'ルワ、コオデ'ッ_クスオ/チュウシンニ'/キ'ノオト/ソザイオ'/_ツクリ'、クロオドコ'オドデモ/セエノオオ'/カイゼン'/_シタ'ケレド、ダイジナ'/ノワ'/ジッコオチュウノ'/フラッタアア'プリト/ツナガル'/コト'ヨ",
+    "queryFile": "voice_queries/query_2628b08f29c15ffe.json"
+  },
+  {
+    "id": "055",
+    "text": "Claudeの共同著者表記は履歴から追えるわ。ただ、役割は固定していないし、表記のないコミットを全部Codexとは決めつけられないの。",
+    "speech": "Claudeの共同著者表記は履歴から追えるわ。ただ、役割は固定していないし、表記のないコミットを全部コーデックスとは決めつけられないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "tech.codex",
+          "surface": "Codex",
+          "reading": "コーデックス",
+          "scope": "tech",
+          "start": 50,
+          "end": 55
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "ai",
+    "view": "commits",
+    "startFrame": 9408,
+    "durationInFrames": 259,
+    "audio": "voice_6f44bb56e3458d9f.wav",
+    "speaker": 2,
+    "kana": "クロ'オドノ/キョオドオチョシャヒョ'オキワ/リレ_キカラ'/オエル'ワ、タ'ダ、ヤクワリワ'/コテエ'/_シテ'/イナイシ'、ヒョ'オキノ/ナ'イ/コミ'ットオ/ゼ'ンブ/コオデ'ッ_クストワ/キメ_ツケラレ'ナイノ",
+    "queryFile": "voice_queries/query_6f44bb56e3458d9f.json"
+  },
+  {
+    "id": "056",
+    "text": "コードを読ませる以外に、何をつなぐのだ？",
+    "speech": "コードを読ませる以外に、何をつなぐのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "mcp_overview",
+    "startFrame": 9679,
+    "durationInFrames": 96,
+    "audio": "voice_e81d1d8b5c70885a.wav",
+    "speaker": 3,
+    "kana": "コ'オドオ/ヨマセ'ル/イ'ガイニ、ナ'ニオ/ツナグ'/ノダ'？",
+    "queryFile": "voice_queries/query_e81d1d8b5c70885a.json"
+  },
+  {
+    "id": "057",
+    "text": "この開発では、Dart MCP、Marionette MCP、mobile MCPを使っているわ。MCPは、AIが外部のツールを呼び出すための共通の接続方式ね。",
+    "speech": "この開発では、ダート、エムシーピー、マリオネット、エムシーピー、モバイル、エムシーピーを使っているわ。エムシーピーは、エーアイが外部のツールを呼び出すための共通の接続方式ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.0",
+          "surface": "Dart MCP",
+          "reading": "ダート、エムシーピー",
+          "scope": "common",
+          "start": 7,
           "end": 15
         },
         {
-          "id": "tech.claude-code",
-          "surface": "Claude Code",
-          "reading": "クロードコード",
-          "scope": "tech",
+          "id": "workflow.1",
+          "surface": "Marionette MCP",
+          "reading": "マリオネット、エムシーピー",
+          "scope": "common",
           "start": 16,
-          "end": 27
-        }
-      ],
-      "review": []
-    },
-    "who": "metan",
-    "scene": "ai",
-    "view": "ai",
-    "startFrame": 9624,
-    "durationInFrames": 103,
-    "audio": "voice_993ea47ba650e308.wav",
-    "speaker": 2,
-    "kana": "エ'エ、オ'モニ/_ツカッタ'/ノワ'/コオデ'ッ_クスト/クロオドコ'オドヨ",
-    "queryFile": "voice_queries/query_993ea47ba650e308.json"
-  },
-  {
-    "id": "060",
-    "text": "普段の機能開発はCodexを中心に進めて、画像素材や、ちくわのようなシンプルな3Dモデルの制作も頼んでいるわ。",
-    "speech": "普段の機能開発はコーデックスを中心に進めて、画像素材や、ちくわのようなシンプルなスリーディーモデルの制作も頼んでいるわ。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
-        {
-          "id": "tech.codex",
-          "surface": "Codex",
-          "reading": "コーデックス",
-          "scope": "tech",
-          "start": 8,
-          "end": 13
+          "end": 30
         },
         {
-          "id": "tech.3d",
-          "surface": "3D",
-          "reading": "スリーディー",
-          "scope": "tech",
-          "start": 39,
+          "id": "workflow.2",
+          "surface": "mobile MCP",
+          "reading": "モバイル、エムシーピー",
+          "scope": "common",
+          "start": 31,
           "end": 41
-        }
-      ],
-      "review": []
-    },
-    "who": "metan",
-    "scene": "ai",
-    "view": "codex",
-    "startFrame": 9739,
-    "durationInFrames": 243,
-    "audio": "voice_d7b2aa355494e9f5.wav",
-    "speaker": 2,
-    "kana": "フ'ダンノ/キノオカ'イハツワ/コオデ'ッ_クスオ/チュウシンニ'/ススメテ'、ガゾオソ'ザイヤ、_チクワノ'/ヨ'オナ/シ'ンプルナ/ス'リイディイモデルノ/セエサクモ'/タノ'ンデ/イル'ワ",
-    "queryFile": "voice_queries/query_d7b2aa355494e9f5.json"
-  },
-  {
-    "id": "061",
-    "text": "アプリの中身だけじゃなくて、素材を作るところまでなのだな。",
-    "speech": "アプリの中身だけじゃなくて、素材を作るところまでなのだな。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [],
-      "review": []
-    },
-    "who": "zunda",
-    "scene": "ai",
-    "view": "codex",
-    "startFrame": 9994,
-    "durationInFrames": 122,
-    "audio": "voice_05f87564beb13c9d.wav",
-    "speaker": 3,
-    "kana": "ア'プリノ/ナカミダケジャナ_クテ'、ソザイオ'/_ツク'ル/トコロマ'デナ/ノダ'ナ",
-    "queryFile": "voice_queries/query_05f87564beb13c9d.json"
-  },
-  {
-    "id": "062",
-    "text": "そして、パフォーマンスの調査や改善ではClaude Codeも使っているの。",
-    "speech": "そして、パフォーマンスの調査や改善ではクロードコードも使っているの。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
+        },
         {
-          "id": "tech.claude-code",
-          "surface": "Claude Code",
-          "reading": "クロードコード",
-          "scope": "tech",
-          "start": 19,
-          "end": 30
-        }
-      ],
-      "review": []
-    },
-    "who": "metan",
-    "scene": "ai",
-    "view": "claude",
-    "startFrame": 10134,
-    "durationInFrames": 125,
-    "audio": "voice_e96aaaa74e59ab7c.wav",
-    "speaker": 2,
-    "kana": "ソ_シテ'、パフォ'オマンスノ/チョ'オサヤ/カイゼンデワ'/クロオドコ'オドモ/_ツカッテ'/イル'ノ",
-    "queryFile": "voice_queries/query_e96aaaa74e59ab7c.json"
-  },
-  {
-    "id": "063",
-    "text": "どこを担当したか、あとから分かるのだ？",
-    "speech": "どこを担当したか、あとから分かるのだ？",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [],
-      "review": [
-        {
-          "id": "context.bun-fun",
-          "surface": "分",
-          "start": 13,
-          "end": 14,
-          "readings": [
-            "ブン：今年の分、その分",
-            "フン／プン：時間の単位",
-            "ワ：分ける"
-          ],
-          "note": "取り分・時間・動詞を区別する"
-        }
-      ]
-    },
-    "who": "zunda",
-    "scene": "ai",
-    "view": "commits",
-    "startFrame": 10271,
-    "durationInFrames": 90,
-    "audio": "voice_456c6b0092cfa322.wav",
-    "speaker": 3,
-    "kana": "ド'コオ/タントオ'/_シタ'カ、ア'トカラ/ワカ'ル/ノダ'？",
-    "queryFile": "voice_queries/query_456c6b0092cfa322.json"
-  },
-  {
-    "id": "064",
-    "text": "Claudeが関わった変更は、コミットの共同著者表記から追えるわ。今回は、その履歴と変更内容を見ながら紹介しているの。",
-    "speech": "Claudeが関わった変更は、コミットの共同著者表記から追えるわ。今回は、その履歴と変更内容を見ながら紹介しているの。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [],
-      "review": []
-    },
-    "who": "metan",
-    "scene": "ai",
-    "view": "commits",
-    "startFrame": 10379,
-    "durationInFrames": 241,
-    "audio": "voice_1b50a712bc5c8fb8.wav",
-    "speaker": 2,
-    "kana": "クロ'オドガ/カカワ'ッタ/ヘンコオワ'、コミ'ットノ/キョオドオチョシャヒョ'オ_キカラ/オエル'ワ、コ'ンカイワ、ソノ'/リレ_キト'/ヘンコオナ'イヨオオ/ミナ'ガラ/ショオカイ'/_シテ'/イル'ノ",
-    "queryFile": "voice_queries/query_1b50a712bc5c8fb8.json"
-  },
-  {
-    "id": "065",
-    "text": "AIの使い分けにも、実例があるわけなのだ。",
-    "speech": "エーアイの使い分けにも、実例があるわけなのだ。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
+          "id": "workflow.9",
+          "surface": "MCP",
+          "reading": "エムシーピー",
+          "scope": "common",
+          "start": 49,
+          "end": 52
+        },
         {
           "id": "tech.ai",
           "surface": "AI",
           "reading": "エーアイ",
           "scope": "tech",
-          "start": 0,
-          "end": 2
+          "start": 54,
+          "end": 56
         }
       ],
-      "review": [
-        {
-          "id": "context.bun-fun",
-          "surface": "分",
-          "start": 5,
-          "end": 6,
-          "readings": [
-            "ブン：今年の分、その分",
-            "フン／プン：時間の単位",
-            "ワ：分ける"
-          ],
-          "note": "取り分・時間・動詞を区別する"
-        }
-      ]
-    },
-    "who": "zunda",
-    "scene": "ai",
-    "view": "commits",
-    "startFrame": 10632,
-    "durationInFrames": 107,
-    "audio": "voice_a20a70f4091bf291.wav",
-    "speaker": 3,
-    "kana": "エエア'イノ/_ツカイワケニモ'、ジツレエガ'/ア'ル/ワ'ケナ/ノダ'",
-    "queryFile": "voice_queries/query_a20a70f4091bf291.json"
-  },
-  {
-    "id": "066",
-    "text": "ただ、きっちり役割を分けていたわけではないの。Codexでも軽量化をしているし、Claude Codeでも画面や機能を直しているわ。",
-    "speech": "ただ、きっちり役割を分けていたわけではないの。コーデックスでも軽量化をしているし、クロードコードでも画面や機能を直しているわ。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [
-        {
-          "id": "tech.codex",
-          "surface": "Codex",
-          "reading": "コーデックス",
-          "scope": "tech",
-          "start": 23,
-          "end": 28
-        },
-        {
-          "id": "tech.claude-code",
-          "surface": "Claude Code",
-          "reading": "クロードコード",
-          "scope": "tech",
-          "start": 40,
-          "end": 51
-        }
-      ],
-      "review": [
-        {
-          "id": "context.bun-fun",
-          "surface": "分",
-          "start": 10,
-          "end": 11,
-          "readings": [
-            "ブン：今年の分、その分",
-            "フン／プン：時間の単位",
-            "ワ：分ける"
-          ],
-          "note": "取り分・時間・動詞を区別する"
-        }
-      ]
-    },
-    "who": "metan",
-    "scene": "ai",
-    "view": "ai",
-    "startFrame": 10757,
-    "durationInFrames": 241,
-    "audio": "voice_e1ecf90167d01e37.wav",
-    "speaker": 2,
-    "kana": "タ'ダ、キッチ'リ/ヤクワリオ'/ワケ'テ/イタ'/ワ'ケデワナイノ、コオデ'ッ_クスデモ/ケエリョオカオ'/_シテ'/イルシ'、クロオドコ'オドデモ/ガメンヤ'/キ'ノオオ/ナオシ'テ/イル'ワ",
-    "queryFile": "voice_queries/query_e1ecf90167d01e37.json"
-  },
-  {
-    "id": "067",
-    "text": "今回は、ざっくりそういう使い方だった、という話ね。",
-    "speech": "今回は、ざっくりそういう使い方だった、という話ね。",
-    "reading_report": {
-      "method": "dictionary",
-      "scopes": [
-        "common",
-        "mmu",
-        "tech"
-      ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
-      "applied": [],
       "review": [
         {
           "id": "context.kata-hou",
           "surface": "方",
-          "start": 14,
-          "end": 15,
+          "start": 76,
+          "end": 77,
           "readings": [
             "カタ：相談に来る方（人物）",
             "ホウ：明日来る方がいい（比較）",
@@ -2464,19 +2174,19 @@
       ]
     },
     "who": "metan",
-    "scene": "ai",
-    "view": "ai",
-    "startFrame": 11010,
-    "durationInFrames": 114,
-    "audio": "voice_2d7fb7e917988b14.wav",
+    "scene": "mcp",
+    "view": "mcp_overview",
+    "startFrame": 9793,
+    "durationInFrames": 385,
+    "audio": "voice_5fd72bb60a965536.wav",
     "speaker": 2,
-    "kana": "コ'ンカイワ、ザック'リ/ソオユウ'/_ツカイカタダッタ'、ト'/イウ'/ハナシ'ネ",
-    "queryFile": "voice_queries/query_2d7fb7e917988b14.json"
+    "kana": "コノ'/カイハツデワ'、ダ'アト、エム'シイピイ、マ'リオネット、エム'シイピイ、モバ'イル、エム'シイピイオ/_ツカッテ'/イル'ワ、エム'シイピイワ、エエア'イガ/ガ'イブノ/ツ'ウルオ/ヨビダ'_ス/タメ'ノ/キョオツウノ'/セツゾ_クホ'オ_シキネ",
+    "queryFile": "voice_queries/query_5fd72bb60a965536.json"
   },
   {
-    "id": "068",
-    "text": "AIに作ってもらって、動いたら完成なのだ？",
-    "speech": "エーアイに作ってもらって、動いたら完成なのだ？",
+    "id": "058",
+    "text": "まずDart MCP。DartとFlutterの公式の開発ツールを、AIから呼び出せるようにするサーバーよ。",
+    "speech": "まずダート、エムシーピー。ダートとフラッターの公式の開発ツールを、エーアイから呼び出せるようにするサーバーよ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -2484,33 +2194,57 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
+        {
+          "id": "workflow.0",
+          "surface": "Dart MCP",
+          "reading": "ダート、エムシーピー",
+          "scope": "common",
+          "start": 2,
+          "end": 10
+        },
+        {
+          "id": "game.7",
+          "surface": "Dart",
+          "reading": "ダート",
+          "scope": "common",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 16,
+          "end": 23
+        },
         {
           "id": "tech.ai",
           "surface": "AI",
           "reading": "エーアイ",
           "scope": "tech",
-          "start": 0,
-          "end": 2
+          "start": 34,
+          "end": 36
         }
       ],
       "review": []
     },
-    "who": "zunda",
-    "scene": "performance",
-    "view": "game_night",
-    "startFrame": 11136,
-    "durationInFrames": 112,
-    "audio": "voice_397b02a8b941a315.wav",
-    "speaker": 3,
-    "kana": "エエア'イニ/_ツク'ッテ/モラッテ'、ウゴ'イタラ/カンセエナ'/ノダ'？",
-    "queryFile": "voice_queries/query_397b02a8b941a315.json"
+    "who": "metan",
+    "scene": "mcp",
+    "view": "dart_mcp",
+    "startFrame": 10190,
+    "durationInFrames": 222,
+    "audio": "voice_8afcb90742c7843e.wav",
+    "speaker": 2,
+    "kana": "マ'ズ/ダ'アト、エム'シイピイ、ダ'アトト/フラ'ッタアノ/コオ_シキノ'/カイハ_ツツ'ウルオ、エエア'イカラ/ヨビダセ'ル/ヨ'オニ/スル'/サ'アバアヨ",
+    "queryFile": "voice_queries/query_8afcb90742c7843e.json"
   },
   {
-    "id": "069",
-    "text": "実機で気持ちよく動くところまでが大事ね。今回も、描画の待ち時間とメモリ使用量を改善しているわ。",
-    "speech": "実機で気持ちよく動くところまでが大事ね。今回も、描画の待ち時間とメモリ使用量を改善しているわ。",
+    "id": "059",
+    "text": "普段、IDEで押しているボタンを、AIも押せる感じなのだ？",
+    "speech": "普段、アイディーイーで押しているボタンを、エーアイも押せる感じなのだ？",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -2518,14 +2252,978 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.12",
+          "surface": "IDE",
+          "reading": "アイディーイー",
+          "scope": "common",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "dart_mcp",
+    "startFrame": 10424,
+    "durationInFrames": 150,
+    "audio": "voice_eed68b152adbbfce.wav",
+    "speaker": 3,
+    "kana": "フ'ダン、ア'イディイイイデ/オ_シテ'/イル'/ボタンオ'、エエア'イモ/オセル'/カンジナ'/ノダ'？",
+    "queryFile": "voice_queries/query_eed68b152adbbfce.json"
+  },
+  {
+    "id": "060",
+    "text": "ええ。このリポジトリでは、アプリの起動、hot reload、Widgetの調査、実行時エラーの取得などを有効にしているわ。",
+    "speech": "ええ。このリポジトリでは、アプリの起動、ホットリロード、ウィジェットの調査、実行時エラーの取得などを有効にしているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.13",
+          "surface": "hot reload",
+          "reading": "ホットリロード",
+          "scope": "common",
+          "start": 20,
+          "end": 30
+        },
+        {
+          "id": "game.10",
+          "surface": "Widget",
+          "reading": "ウィジェット",
+          "scope": "common",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "review": [
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 42,
+          "end": 43,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "dart_mcp",
+    "startFrame": 10592,
+    "durationInFrames": 245,
+    "audio": "voice_75d95a1b3e10bbec.wav",
+    "speaker": 2,
+    "kana": "エ'エ、コノ'/リポ'ジトリデワ、ア'プリノ/キドオ'、ホ'ッ/トリロ'オド、ウィジェ'ットノ/チョ'オサ、ジッコオ'ジ/エ'ラアノ/_シュトクナ'ドオ/ユウコオニ'/_シテ'/イル'ワ",
+    "queryFile": "voice_queries/query_75d95a1b3e10bbec.json"
+  },
+  {
+    "id": "061",
+    "text": "実行中のアプリとは、Dart Tooling Daemonなどの開発用の接続を使ってやり取りするの。返ってきた情報を、次の修正に使えるわ。",
+    "speech": "実行中のアプリとは、ダート、ツーリング、デーモンなどの開発用の接続を使ってやり取りするの。返ってきた情報を、次の修正に使えるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.3",
+          "surface": "Dart Tooling Daemon",
+          "reading": "ダート、ツーリング、デーモン",
+          "scope": "common",
+          "start": 10,
+          "end": 29
+        }
+      ],
+      "review": [
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 1,
+          "end": 2,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "dart_bridge",
+    "startFrame": 10849,
+    "durationInFrames": 297,
+    "audio": "voice_ba084b5ecf68d722.wav",
+    "speaker": 2,
+    "kana": "ジッコオチュウノ'/ア'プリトワ、ダ'アト、ツウリング'、デ'エモンナドノ/カイハツ'ヨオノ/セツゾクオ'/_ツカッテ'/ヤリ'トリ/スル'ノ、カエ'ッテ/キ'タ/ジョオホオオ'、ツギ'ノ/シュウセエニ'/_ツカエ'ルワ",
+    "queryFile": "voice_queries/query_ba084b5ecf68d722.json"
+  },
+  {
+    "id": "062",
+    "text": "毎回ぼくが起動して、エラーをコピペしなくてもいいのだな。",
+    "speech": "毎回ぼくが起動して、エラーをコピペしなくてもいいのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "reload_loop",
+    "startFrame": 11158,
+    "durationInFrames": 122,
+    "audio": "voice_e9ef07251d67df3d.wav",
+    "speaker": 3,
+    "kana": "マイカイ'/ボ'クガ/キドオ'/_シテ'、エ'ラアオ/コ_ピペ'/シナ_クテモ'/イ'イ/ノダ'ナ",
+    "queryFile": "voice_queries/query_e9ef07251d67df3d.json"
+  },
+  {
+    "id": "063",
+    "text": "コードを直して、hot reloadして、結果を確かめる。このFlutterの短い反復を、AIの作業にも組み込めるの。",
+    "speech": "コードを直して、ホットリロードして、結果を確かめる。このフラッターの短い反復を、エーアイの作業にも組み込めるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.13",
+          "surface": "hot reload",
+          "reading": "ホットリロード",
+          "scope": "common",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 31,
+          "end": 38
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 45,
+          "end": 47
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "reload_loop",
+    "startFrame": 11298,
+    "durationInFrames": 231,
+    "audio": "voice_5dacde76243b68ce.wav",
+    "speaker": 2,
+    "kana": "コ'オドオ/ナオシ'テ、ホ'ッ/トリロ'オド/_シテ'、ケッカオ'/タ_シカメ'ル、コノ'/フラ'ッタアノ/ミジカ'イ/ハン_プクオ'、エエア'イノ/サ'ギョオニモ/クミコメ'ルノ",
+    "queryFile": "voice_queries/query_5dacde76243b68ce.json"
+  },
+  {
+    "id": "064",
+    "text": "でも、起動しただけでは、ゲームが動くか分からないのだ。",
+    "speech": "でも、起動しただけでは、ゲームが動くか分からないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 19,
+          "end": 20,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "marionette",
+    "startFrame": 11541,
+    "durationInFrames": 126,
+    "audio": "voice_b6a41c37b20ab1db.wav",
+    "speaker": 3,
+    "kana": "デ'モ、キドオ'/_シタ'ダケデワ、ゲ'エムガ/ウゴ'_クカ/ワカラ'ナイ/ノダ'",
+    "queryFile": "voice_queries/query_b6a41c37b20ab1db.json"
+  },
+  {
+    "id": "065",
+    "text": "そこでMarionette MCPよ。アプリ側に専用のBindingを入れて、Dart VM Service経由で接続するわ。",
+    "speech": "そこでマリオネット、エムシーピーよ。アプリ側に専用のバインディングを入れて、ダート、ブイエム、サービス経由で接続するわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.1",
+          "surface": "Marionette MCP",
+          "reading": "マリオネット、エムシーピー",
+          "scope": "common",
+          "start": 3,
+          "end": 17
+        },
+        {
+          "id": "workflow.7",
+          "surface": "Binding",
+          "reading": "バインディング",
+          "scope": "common",
+          "start": 27,
+          "end": 34
+        },
+        {
+          "id": "workflow.4",
+          "surface": "Dart VM Service",
+          "reading": "ダート、ブイエム、サービス",
+          "scope": "common",
+          "start": 39,
+          "end": 54
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "marionette",
+    "startFrame": 11685,
+    "durationInFrames": 258,
+    "audio": "voice_dc9383ff5f6518fe.wav",
+    "speaker": 2,
+    "kana": "ソコデ'/マリオネ'ット、エム'シイピイヨ、アプリガワニ'/センヨオノ'/バ'インディングオ/イレテ'、ダ'アト、ブイエ'ム、サアビ_スケ'エユデ/セツゾ_ク'/スル'ワ",
+    "queryFile": "voice_queries/query_dc9383ff5f6518fe.json"
+  },
+  {
+    "id": "066",
+    "text": "Widgetの情報を調べ、文字やキーを手がかりにタップや入力ができるの。画面の画像やログも確認できるわ。",
+    "speech": "ウィジェットの情報を調べ、文字やキーを手がかりにタップや入力ができるの。画面の画像やログも確認できるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "game.10",
+          "surface": "Widget",
+          "reading": "ウィジェット",
+          "scope": "common",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "widget_actions",
+    "startFrame": 11955,
+    "durationInFrames": 206,
+    "audio": "voice_5338404528f48ea7.wav",
+    "speaker": 2,
+    "kana": "ウィジェ'ットノ/ジョオホオオ'/シラベ'、モ'ジヤ/キ'イオ/テガ'カリニ/タ'ップヤ/ニュウリョクガ'/デキ'ルノ、ガメンノ'/ガゾオヤ'/ロ'グモ/カクニン'/デキ'ルワ",
+    "queryFile": "voice_queries/query_5338404528f48ea7.json"
+  },
+  {
+    "id": "067",
+    "text": "では、落ちてくるちくわも、Widgetを探せば見つかるのだ？",
+    "speech": "では、落ちてくるちくわも、ウィジェットを探せば見つかるのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "game.10",
+          "surface": "Widget",
+          "reading": "ウィジェット",
+          "scope": "common",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "game_inspect",
+    "startFrame": 12173,
+    "durationInFrames": 135,
+    "audio": "voice_778b23fa38458e81.wav",
+    "speaker": 3,
+    "kana": "デ'ワ、オチ'テ/ク'ル/_チクワモ'、ウィジェ'ットオ/サガセ'バ/ミ_ツカル'/ノダ'？",
+    "queryFile": "voice_queries/query_778b23fa38458e81.json"
+  },
+  {
+    "id": "068",
+    "text": "そこが3Dゲームの工夫どころよ。ちくわは3Dシーンの中にあって、一個ずつWidgetになっているわけではないの。",
+    "speech": "そこがスリーディーゲームの工夫どころよ。ちくわはスリーディーシーンの中にあって、一個ずつウィジェットになっているわけではないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "id": "tech.3d",
+          "surface": "3D",
+          "reading": "スリーディー",
+          "scope": "tech",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "id": "game.10",
+          "surface": "Widget",
+          "reading": "ウィジェット",
+          "scope": "common",
+          "start": 36,
+          "end": 42
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "game_inspect",
+    "startFrame": 12326,
+    "durationInFrames": 221,
+    "audio": "voice_6c429e344baf1bed.wav",
+    "speaker": 2,
+    "kana": "ソコガ'/ス'リイディイゲエムノ/_クフウ'ドコロヨ、_チクワワ'/ス'リイディイシインノ/ナ'カニ/ア'ッテ、イッコズ'ツ/ウィジェ'ットニ/ナ'ッテ/イル'/ワ'ケデワナイノ",
+    "queryFile": "voice_queries/query_6c429e344baf1bed.json"
+  },
+  {
+    "id": "069",
+    "text": "だから、このゲーム専用の拡張を登録したわ。得点や座標、落下物の状態を、構造化したデータとして取り出せるの。",
+    "speech": "だから、このゲーム専用の拡張を登録したわ。得点や座標、落下物の状態を、構造化したデータとして取り出せるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "custom_extension",
+    "startFrame": 12559,
+    "durationInFrames": 238,
+    "audio": "voice_17b339586526a276.wav",
+    "speaker": 2,
+    "kana": "ダ'カラ、コノ'/ゲエムセ'ンヨオノ/カ_クチョオオ'/トオロク'/_シタ'ワ、ト_クテンヤ'/ザヒョオ'、ラッカブツノ'/ジョオタイオ'、コオゾオカ'/_シタ'/デ'エタト/_シテ'/トリダセ'ルノ",
+    "queryFile": "voice_queries/query_17b339586526a276.json"
+  },
+  {
+    "id": "070",
+    "text": "見た目だけで、取れたはずだ、と推測しなくていいのだな。",
+    "speech": "見た目だけで、取れたはずだ、と推測しなくていいのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "custom_extension",
+    "startFrame": 12809,
+    "durationInFrames": 120,
+    "audio": "voice_1df18238e31416ae.wav",
+    "speaker": 3,
+    "kana": "ミタメダケデ'、トレ'タ/ハズダ'、ト'/スイソ_ク'/シナ_クテイイ'/ノダ'ナ",
+    "queryFile": "voice_queries/query_1df18238e31416ae.json"
+  },
+  {
+    "id": "071",
+    "text": "操作用の拡張では、乱数の条件をそろえ、入力を渡して一定時間だけ進められるわ。同じ条件で、キャッチ判定やカメラの向きを調べられるの。",
+    "speech": "操作用の拡張では、乱数の条件をそろえ、入力を渡して一定時間だけ進められるわ。同じ条件で、キャッチ判定やカメラの向きを調べられるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
           "id": "context.interval",
           "surface": "間",
-          "start": 30,
-          "end": 31,
+          "start": 28,
+          "end": 29,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "deterministic",
+    "startFrame": 12947,
+    "durationInFrames": 301,
+    "audio": "voice_6029a39defcc4595.wav",
+    "speaker": 2,
+    "kana": "ソオサ'ヨオノ/カ_クチョオデワ'、ランス'ウノ/ジョオケ'ンオ/ソロエ'、ニュウリョクオ'/ワタ_シテ'/イッテエ'/ジカンダケ'/ススメラレル'ワ、オナジ'/ジョオケ'ンデ、キャッ_チハ'ンテエヤ/カ'メラノ/ム'キオ/シラベラレ'ルノ",
+    "queryFile": "voice_queries/query_6029a39defcc4595.json"
+  },
+  {
+    "id": "072",
+    "text": "ちくわの再現実験なのだ。",
+    "speech": "ちくわの再現実験なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "deterministic",
+    "startFrame": 13260,
+    "durationInFrames": 62,
+    "audio": "voice_d739ce841ba81c42.wav",
+    "speaker": 3,
+    "kana": "_チクワノ'/サイゲンジ'ッケンナ/ノダ'",
+    "queryFile": "voice_queries/query_d739ce841ba81c42.json"
+  },
+  {
+    "id": "073",
+    "text": "このアプリのMarionette連携はdebug限定よ。開発中の状態確認と、実機のprofileビルドでの性能測定は分けているわ。",
+    "speech": "このアプリのマリオネット連携はデバッグ限定よ。開発中の状態確認と、実機のプロファイルビルドでの性能測定は分けているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.6",
+          "surface": "Marionette",
+          "reading": "マリオネット",
+          "scope": "common",
+          "start": 6,
+          "end": 16
+        },
+        {
+          "id": "workflow.10",
+          "surface": "debug",
+          "reading": "デバッグ",
+          "scope": "common",
+          "start": 19,
+          "end": 24
+        },
+        {
+          "id": "workflow.11",
+          "surface": "profile",
+          "reading": "プロファイル",
+          "scope": "common",
+          "start": 41,
+          "end": 48
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 58,
+          "end": 59,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "debug_profile",
+    "startFrame": 13340,
+    "durationInFrames": 252,
+    "audio": "voice_b1622b760fd508b2.wav",
+    "speaker": 2,
+    "kana": "コノ'/ア'プリノ/マリオネットレ'ンケエワ/デバッグゲ'ンテエヨ、カイハ_ツチュウノ'/ジョオタイカ'クニント、ジ'ッキノ/プロファイルビ'ルドデノ/セエノオソ'_クテエワ/ワケ'テ/イル'ワ",
+    "queryFile": "voice_queries/query_b1622b760fd508b2.json"
+  },
+  {
+    "id": "074",
+    "text": "実機では、どう操作するのだ？",
+    "speech": "実機では、どう操作するのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "mobile_mcp",
+    "startFrame": 13604,
+    "durationInFrames": 72,
+    "audio": "voice_9b733e2fb1ea2f6f.wav",
+    "speaker": 3,
+    "kana": "ジ'ッキデワ、ド'オ/ソ'オサ/スル'/ノダ'？",
+    "queryFile": "voice_queries/query_9b733e2fb1ea2f6f.json"
+  },
+  {
+    "id": "075",
+    "text": "mobile MCPを使うわ。こちらはFlutterアプリの内部ではなく、端末側の仕組みを使って、タップやスワイプ、画面取得を行うの。",
+    "speech": "モバイル、エムシーピーを使うわ。こちらはフラッターアプリの内部ではなく、端末側の仕組みを使って、タップやスワイプ、画面取得を行うの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.2",
+          "surface": "mobile MCP",
+          "reading": "モバイル、エムシーピー",
+          "scope": "common",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 19,
+          "end": 26
+        }
+      ],
+      "review": [
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 63,
+          "end": 64,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "mobile_mcp",
+    "startFrame": 13694,
+    "durationInFrames": 282,
+    "audio": "voice_3342fc35305c147b.wav",
+    "speaker": 2,
+    "kana": "モバ'イル、エム'シイピイオ/_ツカウ'ワ、コチラワ'/フラッタアア'プリノ/ナ'イブデワナク、タンマツガワノ'/_シクミオ'/_ツカッテ'、タ'ップヤ/スワ'イプ、ガメンシュ'トクオ/オコナウ'ノ",
+    "queryFile": "voice_queries/query_3342fc35305c147b.json"
+  },
+  {
+    "id": "076",
+    "text": "AndroidではADB、iPhoneではWebDriverAgentなどを介して端末につなぐわ。画面要素の情報やスクリーンショットを手がかりに操作するの。",
+    "speech": "Androidではエーディービー、アイフォーンではウェブ、ドライバー、エージェントなどを介して端末につなぐわ。画面要素の情報やスクリーンショットを手がかりに操作するの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.8",
+          "surface": "ADB",
+          "reading": "エーディービー",
+          "scope": "common",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "id": "game.15",
+          "surface": "iPhone",
+          "reading": "アイフォーン",
+          "scope": "common",
+          "start": 13,
+          "end": 19
+        },
+        {
+          "id": "workflow.5",
+          "surface": "WebDriverAgent",
+          "reading": "ウェブ、ドライバー、エージェント",
+          "scope": "common",
+          "start": 21,
+          "end": 35
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "mobile_bridge",
+    "startFrame": 13988,
+    "durationInFrames": 300,
+    "audio": "voice_9a31c525e4bc049a.wav",
+    "speaker": 2,
+    "kana": "アンドロ'イドデワ/エエディ'イ/ビ'イ、アイフォ'オンデワ/ウェ'ブ、ドライバア'、エ'エジェントナドオ/カ'イ_シテ/タンマツニ'/ツナグ'ワ、ガメンヨ'オソノ/ジョオホオヤ'/_スクリインショ'ットオ/テガ'カリニ/ソ'オサ/スル'ノ",
+    "queryFile": "voice_queries/query_9a31c525e4bc049a.json"
+  },
+  {
+    "id": "077",
+    "text": "Flutter以外のアプリにも使える仕組みなのだな。",
+    "speech": "フラッター以外のアプリにも使える仕組みなのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "mobile_bridge",
+    "startFrame": 14300,
+    "durationInFrames": 95,
+    "audio": "voice_7d5a3ca9d5dc85b0.wav",
+    "speaker": 3,
+    "kana": "フラッタアイ'ガイノ/ア'プリニモ/_ツカエ'ル/_シクミナ'/ノダ'ナ",
+    "queryFile": "voice_queries/query_7d5a3ca9d5dc85b0.json"
+  },
+  {
+    "id": "078",
+    "text": "そう。今回もPixel 7aとiPhone 14で、実際の表示や動作を確認しているわ。ただし、mobile MCPだけでGPU性能やメモリまで測れるわけではないの。",
+    "speech": "そう。今回もピクセル、セブンエーとアイフォーン、ジュウヨンで、実際の表示や動作を確認しているわ。ただし、モバイル、エムシーピーだけでジーピーユー性能やメモリまで測れるわけではないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "game.11",
+          "surface": "Pixel 7a",
+          "reading": "ピクセル、セブンエー",
+          "scope": "common",
+          "start": 6,
+          "end": 14
+        },
+        {
+          "id": "game.14",
+          "surface": "iPhone 14",
+          "reading": "アイフォーン、ジュウヨン",
+          "scope": "common",
+          "start": 15,
+          "end": 24
+        },
+        {
+          "id": "workflow.2",
+          "surface": "mobile MCP",
+          "reading": "モバイル、エムシーピー",
+          "scope": "common",
+          "start": 47,
+          "end": 57
+        },
+        {
+          "id": "game.6",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 60,
+          "end": 63
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "device_checks",
+    "startFrame": 14413,
+    "durationInFrames": 381,
+    "audio": "voice_cf0fcc2ba026e802.wav",
+    "speaker": 2,
+    "kana": "ソオ'、コ'ンカイモ/ピ'_クセル、セ'ブンエエト/アイフォ'オン、ジュ'ウヨンデ、ジッサイノ'/ヒョオジヤ'/ド'オサオ/カクニン'/_シテ'/イル'ワ、タ'ダシ、モバ'イル、エム'シイピイダケデ/ジイ'/ピ'イ/ユウセ'エノオヤ/メモリマ'デ/ハカレ'ル/ワ'ケデワナイノ",
+    "queryFile": "voice_queries/query_cf0fcc2ba026e802.json"
+  },
+  {
+    "id": "079",
+    "text": "性能はprofileビルドと計測ログで確認する。端末を傾けたときの手触りは、人が実際に遊んで確かめる必要もあるわ。",
+    "speech": "性能はプロファイルビルドと計測ログで確認する。端末を傾けたときの手触りは、人が実際に遊んで確かめる必要もあるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "workflow.11",
+          "surface": "profile",
+          "reading": "プロファイル",
+          "scope": "common",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 38,
+          "end": 39,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "device_checks",
+    "startFrame": 14806,
+    "durationInFrames": 248,
+    "audio": "voice_42cfb5180b03e55b.wav",
+    "speaker": 2,
+    "kana": "セエノオワ'/プロファイルビ'ルドト/ケエソクロ'グデ/カクニン'/スル'、タンマツオ'/カタムケ'タ/ト'キノ/テザ'ワリワ、_ヒトガ'/ジッサイニ'/アソンデ'/タ_シカメ'ル/_ヒツヨオモ'/ア'ルワ",
+    "queryFile": "voice_queries/query_42cfb5180b03e55b.json"
+  },
+  {
+    "id": "080",
+    "text": "アプリの中を調べる道具と、端末を操作する道具を使い分けるのだな。",
+    "speech": "アプリの中を調べる道具と、端末を操作する道具を使い分けるのだな。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 25,
+          "end": 26,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "who": "zunda",
+    "scene": "mcp",
+    "view": "tool_summary",
+    "startFrame": 15066,
+    "durationInFrames": 157,
+    "audio": "voice_48bf1241d365e62b.wav",
+    "speaker": 3,
+    "kana": "ア'プリノ/ナ'カオ/シラベ'ル/ドオグ'ト、タンマツオ'/ソ'オサ/スル'/ドオグ'オ/_ツカイワケ'ル/ノダ'ナ",
+    "queryFile": "voice_queries/query_48bf1241d365e62b.json"
+  },
+  {
+    "id": "081",
+    "text": "ええ。コードを書くだけでなく、動かして、状態を見て、直す。その往復をFlutterの開発環境につないでいるの。",
+    "speech": "ええ。コードを書くだけでなく、動かして、状態を見て、直す。その往復をフラッターの開発環境につないでいるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [
+        {
+          "id": "game.5",
+          "surface": "Flutter",
+          "reading": "フラッター",
+          "scope": "common",
+          "start": 34,
+          "end": 41
+        }
+      ],
+      "review": []
+    },
+    "who": "metan",
+    "scene": "mcp",
+    "view": "tool_summary",
+    "startFrame": 15241,
+    "durationInFrames": 238,
+    "audio": "voice_b72e307c2a13d4ea.wav",
+    "speaker": 2,
+    "kana": "エ'エ、コ'オドオ/カクダケデ'ナク、ウゴカ'_シテ、ジョオタイオ'/ミ'テ、ナオ'ス、ソノ'/オオ_フクオ'/フラ'ッタアノ/カイハ_ツカ'ンキョオニ/ツナイデ'/イル'ノ",
+    "queryFile": "voice_queries/query_b72e307c2a13d4ea.json"
+  },
+  {
+    "id": "082",
+    "text": "その実機検証で、何が見つかったのだ？",
+    "speech": "その実機検証で、何が見つかったのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": []
+    },
+    "who": "zunda",
+    "scene": "performance",
+    "view": "game_night",
+    "startFrame": 15491,
+    "durationInFrames": 94,
+    "audio": "voice_c72f5872dea8f074.wav",
+    "speaker": 3,
+    "kana": "ソノ'/ジッ_キケ'ンショオデ、ナ'ニガ/ミ_ツカッタ'/ノダ'？",
+    "queryFile": "voice_queries/query_c72f5872dea8f074.json"
+  },
+  {
+    "id": "083",
+    "text": "描画の待ち時間とメモリ使用量に問題が見つかって、改善したわ。",
+    "speech": "描画の待ち時間とメモリ使用量に問題が見つかって、改善したわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 6,
+          "end": 7,
           "readings": [
             "アイダ：その間ずっと",
             "マ：間を置く",
@@ -2538,15 +3236,15 @@
     "who": "metan",
     "scene": "performance",
     "view": "performance",
-    "startFrame": 11266,
-    "durationInFrames": 200,
-    "audio": "voice_4a0f7bb96416f521.wav",
+    "startFrame": 15603,
+    "durationInFrames": 132,
+    "audio": "voice_c481f1ebd6bcb3da.wav",
     "speaker": 2,
-    "kana": "ジ'ッキデ/キモチヨ'クウゴ_ク/トコロマ'デガ/ダイジネ'、コ'ンカイモ、ビョオガノ'/マチジ'カント/メモリシヨオ'リョウオ/カイゼン'/_シテ'/イル'ワ",
-    "queryFile": "voice_queries/query_4a0f7bb96416f521.json"
+    "kana": "ビョオガノ'/マチジ'カント/メモリシヨオ'リョウニ/モンダイガ'/ミ_ツカッテ'、カイゼン'/_シタ'ワ",
+    "queryFile": "voice_queries/query_c481f1ebd6bcb3da.json"
   },
   {
-    "id": "070",
+    "id": "084",
     "text": "3Dだから、ポリゴンを減らしたのだ？",
     "speech": "スリーディーだから、ポリゴンを減らしたのだ？",
     "reading_report": {
@@ -2556,7 +3254,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "tech.3d",
@@ -2572,7 +3270,7 @@
     "who": "zunda",
     "scene": "performance",
     "view": "performance",
-    "startFrame": 11478,
+    "startFrame": 15747,
     "durationInFrames": 87,
     "audio": "voice_2bb8c7879d4557a4.wav",
     "speaker": 3,
@@ -2580,7 +3278,7 @@
     "queryFile": "voice_queries/query_2bb8c7879d4557a4.json"
   },
   {
-    "id": "071",
+    "id": "085",
     "text": "それだけではないの。Androidでは、変わっていないライトのデータまで毎フレームGPUへ送る処理が、待ち時間につながっていたの。",
     "speech": "それだけではないの。Androidでは、変わっていないライトのデータまで毎フレームジーピーユーへ送る処理が、待ち時間につながっていたの。",
     "reading_report": {
@@ -2590,7 +3288,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.6",
@@ -2619,7 +3317,7 @@
     "who": "metan",
     "scene": "performance",
     "view": "lights",
-    "startFrame": 11583,
+    "startFrame": 15852,
     "durationInFrames": 237,
     "audio": "voice_05216c53a872db6b.wav",
     "speaker": 2,
@@ -2627,7 +3325,7 @@
     "queryFile": "voice_queries/query_05216c53a872db6b.json"
   },
   {
-    "id": "072",
+    "id": "086",
     "text": "そこを改善する上流の修正を取り込んだコミットには、Pixel 7aで約30fpsから約60fpsになった記録があるわ。",
     "speech": "そこを改善する上流の修正を取り込んだコミットには、ピクセル、セブンエーでヤク、サンジュウ、エフピーエスからヤク、ロクジュウ、エフピーエスになった記録があるわ。",
     "reading_report": {
@@ -2637,7 +3335,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.11",
@@ -2669,7 +3367,7 @@
     "who": "metan",
     "scene": "performance",
     "view": "fps",
-    "startFrame": 11832,
+    "startFrame": 16101,
     "durationInFrames": 320,
     "audio": "voice_bb428ed6fb9f4b97.wav",
     "speaker": 2,
@@ -2677,7 +3375,7 @@
     "queryFile": "voice_queries/query_bb428ed6fb9f4b97.json"
   },
   {
-    "id": "073",
+    "id": "087",
     "text": "見た目を削る前に、余計な更新を減らせたのだな。",
     "speech": "見た目を削る前に、余計な更新を減らせたのだな。",
     "reading_report": {
@@ -2687,14 +3385,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "performance",
     "view": "fps",
-    "startFrame": 12164,
+    "startFrame": 16433,
     "durationInFrames": 114,
     "audio": "voice_736505810ac6aa61.wav",
     "speaker": 3,
@@ -2702,7 +3400,7 @@
     "queryFile": "voice_queries/query_736505810ac6aa61.json"
   },
   {
-    "id": "074",
+    "id": "088",
     "text": "iPhoneでは、キャラクターの4096四方のテクスチャを、ゲーム用に最大2048へ縮小したわ。",
     "speech": "アイフォーンでは、キャラクターのヨンセンキュウジュウロク、シホウのテクスチャを、ゲーム用に最大ニセンヨンジュウハチへ縮小したわ。",
     "reading_report": {
@@ -2712,7 +3410,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.15",
@@ -2744,7 +3442,7 @@
     "who": "metan",
     "scene": "performance",
     "view": "textures",
-    "startFrame": 12296,
+    "startFrame": 16565,
     "durationInFrames": 223,
     "audio": "voice_f5d7cbf13aefd4ae.wav",
     "speaker": 2,
@@ -2752,7 +3450,7 @@
     "queryFile": "voice_queries/query_f5d7cbf13aefd4ae.json"
   },
   {
-    "id": "075",
+    "id": "089",
     "text": "コミットの記録では、iPhone 14のロード時のピークメモリが、約1.9GBから約0.74GBに下がっているの。",
     "speech": "コミットの記録では、アイフォーン、ジュウヨンのロード時のピークメモリが、約イッテンキュウ、ギガバイトから約レイテンナナヨン、ギガバイトに下がっているの。",
     "reading_report": {
@@ -2762,7 +3460,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.14",
@@ -2794,7 +3492,7 @@
     "who": "metan",
     "scene": "performance",
     "view": "memory",
-    "startFrame": 12531,
+    "startFrame": 16800,
     "durationInFrames": 278,
     "audio": "voice_d8fc77ea59619f1f.wav",
     "speaker": 2,
@@ -2802,7 +3500,7 @@
     "queryFile": "voice_queries/query_d8fc77ea59619f1f.json"
   },
   {
-    "id": "076",
+    "id": "090",
     "text": "画面の中では小さく見える人に、大きなテクスチャを持たせていたのだ。",
     "speech": "画面の中では小さく見える人に、大きなテクスチャを持たせていたのだ。",
     "reading_report": {
@@ -2812,7 +3510,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -2832,7 +3530,7 @@
     "who": "zunda",
     "scene": "performance",
     "view": "textures",
-    "startFrame": 12821,
+    "startFrame": 17090,
     "durationInFrames": 141,
     "audio": "voice_d6ff96c363f0642b.wav",
     "speaker": 3,
@@ -2840,7 +3538,7 @@
     "queryFile": "voice_queries/query_d6ff96c363f0642b.json"
   },
   {
-    "id": "077",
+    "id": "091",
     "text": "元の制作素材をそのまま使うのではなく、ゲームでの見え方に合わせた素材を用意するのも大切ね。",
     "speech": "元の制作素材をそのまま使うのではなく、ゲームでの見え方に合わせた素材を用意するのも大切ね。",
     "reading_report": {
@@ -2850,7 +3548,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": [
         {
@@ -2871,7 +3569,7 @@
     "who": "metan",
     "scene": "performance",
     "view": "textures",
-    "startFrame": 12980,
+    "startFrame": 17249,
     "durationInFrames": 189,
     "audio": "voice_5134c927b517221c.wav",
     "speaker": 2,
@@ -2879,7 +3577,7 @@
     "queryFile": "voice_queries/query_5134c927b517221c.json"
   },
   {
-    "id": "078",
+    "id": "092",
     "text": "Flutterのコードだけ見ていても、終わらないのだな。",
     "speech": "フラッターのコードだけ見ていても、終わらないのだな。",
     "reading_report": {
@@ -2889,7 +3587,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -2905,7 +3603,7 @@
     "who": "zunda",
     "scene": "performance",
     "view": "performance",
-    "startFrame": 13181,
+    "startFrame": 17450,
     "durationInFrames": 103,
     "audio": "voice_c70cb9e813a2934f.wav",
     "speaker": 3,
@@ -2913,7 +3611,7 @@
     "queryFile": "voice_queries/query_c70cb9e813a2934f.json"
   },
   {
-    "id": "079",
+    "id": "093",
     "text": "Dartの処理、描画ライブラリ、3D素材。どこが原因なのかを測って、必要なところを直していくの。",
     "speech": "ダートの処理、描画ライブラリ、スリーディー素材。どこが原因なのかを測って、必要なところを直していくの。",
     "reading_report": {
@@ -2923,7 +3621,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.7",
@@ -2947,7 +3645,7 @@
     "who": "metan",
     "scene": "performance",
     "view": "performance",
-    "startFrame": 13302,
+    "startFrame": 17571,
     "durationInFrames": 212,
     "audio": "voice_1b4cf4e500bb97fc.wav",
     "speaker": 2,
@@ -2955,7 +3653,7 @@
     "queryFile": "voice_queries/query_1b4cf4e500bb97fc.json"
   },
   {
-    "id": "080",
+    "id": "094",
     "text": "最初は何を見せられているのかと思ったけど、中身はちゃんとFlutterの開発だったのだ。",
     "speech": "最初は何を見せられているのかと思ったけど、中身はちゃんとフラッターの開発だったのだ。",
     "reading_report": {
@@ -2965,7 +3663,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.5",
@@ -2981,7 +3679,7 @@
     "who": "zunda",
     "scene": "ending",
     "view": "game_odatetsu",
-    "startFrame": 13526,
+    "startFrame": 17795,
     "durationInFrames": 180,
     "audio": "voice_a4a594a4624e9d22.wav",
     "speaker": 3,
@@ -2989,9 +3687,9 @@
     "queryFile": "voice_queries/query_a4a594a4624e9d22.json"
   },
   {
-    "id": "081",
-    "text": "Flutter Sceneで3Dを描いて、いつものFlutterでUIを作る。AIとコードや素材を作って、実機で調べながら仕上げたゲームよ。",
-    "speech": "フラッターシーンでスリーディーを描いて、いつものフラッターでUIを作る。エーアイとコードや素材を作って、実機で調べながら仕上げたゲームよ。",
+    "id": "095",
+    "text": "Flutter Sceneで3D、WidgetでUI。そしてMCPでAIを開発環境につなぐ。動作と状態を確かめ、実機で測りながら仕上げたゲームよ。",
+    "speech": "フラッターシーンでスリーディー、ウィジェットでUI。そしてエムシーピーでエーアイを開発環境につなぐ。動作と状態を確かめ、実機で測りながら仕上げたゲームよ。",
     "reading_report": {
       "method": "dictionary",
       "scopes": [
@@ -2999,7 +3697,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.2",
@@ -3018,20 +3716,28 @@
           "end": 16
         },
         {
-          "id": "game.5",
-          "surface": "Flutter",
-          "reading": "フラッター",
+          "id": "game.10",
+          "surface": "Widget",
+          "reading": "ウィジェット",
           "scope": "common",
-          "start": 25,
-          "end": 32
+          "start": 17,
+          "end": 23
+        },
+        {
+          "id": "workflow.9",
+          "surface": "MCP",
+          "reading": "エムシーピー",
+          "scope": "common",
+          "start": 30,
+          "end": 33
         },
         {
           "id": "tech.ai",
           "surface": "AI",
           "reading": "エーアイ",
           "scope": "tech",
-          "start": 39,
-          "end": 41
+          "start": 34,
+          "end": 36
         }
       ],
       "review": []
@@ -3039,15 +3745,15 @@
     "who": "metan",
     "scene": "ending",
     "view": "summary",
-    "startFrame": 13724,
-    "durationInFrames": 267,
-    "audio": "voice_6a0859c7c32dd8af.wav",
+    "startFrame": 17993,
+    "durationInFrames": 304,
+    "audio": "voice_adc87d40a499b13f.wav",
     "speaker": 2,
-    "kana": "フラッタアシ'インデ/スリ'イディイオ/エガ'イテ、イ'ツモノ/フラ'ッタアデ/ユウア'イオ/_ツク'ル、エエア'イト/コ'オドヤ/ソザイオ'/_ツク'ッテ、ジ'ッキデ/シラベナ'ガラ/シアゲタ'/ゲ'エムヨ",
-    "queryFile": "voice_queries/query_6a0859c7c32dd8af.json"
+    "kana": "フラッタアシ'インデ/スリ'イディイ、ウィジェ'ットデ/ユウア'イ、ソ_シテ'/エム'シイピイデ/エエア'イオ/カイハ_ツカ'ンキョオニ/ツナグ'、ド'オサト/ジョオタイオ'/タ_シカメ'、ジ'ッキデ/ハカリナ'ガラ/シアゲタ'/ゲ'エムヨ",
+    "queryFile": "voice_queries/query_adc87d40a499b13f.json"
   },
   {
-    "id": "082",
+    "id": "096",
     "text": "コードも見られるのだ？",
     "speech": "コードも見られるのだ？",
     "reading_report": {
@@ -3057,14 +3763,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "ending",
     "view": "repository",
-    "startFrame": 14003,
+    "startFrame": 18309,
     "durationInFrames": 48,
     "audio": "voice_32aae5a6c6855e0b.wav",
     "speaker": 3,
@@ -3072,7 +3778,7 @@
     "queryFile": "voice_queries/query_32aae5a6c6855e0b.json"
   },
   {
-    "id": "083",
+    "id": "097",
     "text": "flutterkaigi2026のリポジトリを公開しているわ。モデルの作り方は、さっき紹介したTripoの動画も見てね。",
     "speech": "フラッターカイギ、ニセンニジュウロクのリポジトリを公開しているわ。モデルの作り方は、さっき紹介したTripoの動画も見てね。",
     "reading_report": {
@@ -3082,7 +3788,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.1",
@@ -3112,7 +3818,7 @@
     "who": "metan",
     "scene": "ending",
     "view": "repository",
-    "startFrame": 14069,
+    "startFrame": 18375,
     "durationInFrames": 225,
     "audio": "voice_aff5c308fa33f6e5.wav",
     "speaker": 2,
@@ -3120,7 +3826,7 @@
     "queryFile": "voice_queries/query_aff5c308fa33f6e5.json"
   },
   {
-    "id": "084",
+    "id": "098",
     "text": "よし。それじゃあ採用試験に挑戦するのだ。",
     "speech": "よし。それじゃあ採用試験に挑戦するのだ。",
     "reading_report": {
@@ -3130,14 +3836,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "ending",
     "view": "game_odatetsu",
-    "startFrame": 14306,
+    "startFrame": 18612,
     "durationInFrames": 98,
     "audio": "voice_449b0e79a296783b.wav",
     "speaker": 3,
@@ -3145,7 +3851,7 @@
     "queryFile": "voice_queries/query_449b0e79a296783b.json"
   },
   {
-    "id": "085",
+    "id": "099",
     "text": "ちくわと毒ちくわを、よく見分けてね。",
     "speech": "ちくわとドクチクワを、よく見分けてね。",
     "reading_report": {
@@ -3155,7 +3861,7 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [
         {
           "id": "game.22",
@@ -3184,7 +3890,7 @@
     "who": "metan",
     "scene": "ending",
     "view": "game_odatetsu",
-    "startFrame": 14422,
+    "startFrame": 18728,
     "durationInFrames": 74,
     "audio": "voice_97fe2b6c1bbb4e1b.wav",
     "speaker": 2,
@@ -3192,7 +3898,7 @@
     "queryFile": "voice_queries/query_97fe2b6c1bbb4e1b.json"
   },
   {
-    "id": "086",
+    "id": "100",
     "text": "やっぱり何の適性なのだ。",
     "speech": "やっぱり何の適性なのだ。",
     "reading_report": {
@@ -3202,14 +3908,14 @@
         "mmu",
         "tech"
       ],
-      "dictionary_sha256": "a3c0f9c9bcf90e36ea51e3890bf254f96d969359f2db093dd8a5e976c135335c",
+      "dictionary_sha256": "c0d862bab76dfcfb883cb0a552185570717ae0a70796c39a14e872b7e8f6c78d",
       "applied": [],
       "review": []
     },
     "who": "zunda",
     "scene": "ending",
     "view": "game_odatetsu",
-    "startFrame": 14508,
+    "startFrame": 18814,
     "durationInFrames": 60,
     "audio": "voice_76268368598b6892.wav",
     "speaker": 3,

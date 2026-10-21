@@ -4,9 +4,9 @@ M|game_odatetsu|あら、ずんだもん。ゆめみ採用試験に興味を持�
 Z|game_odatetsu|採用試験？　これで何を試されているのだ？
 M|game_odatetsu|FlutterKaigi 2026のゆめみブースで展示した、Flutter製のゲームよ。
 Z|game_odatetsu|Flutterでこれを作ったのだ？
-M|game_odatetsu|ええ。コードだけでなく、画像や3Dモデルの制作にもAIを使っているの。
+M|game_odatetsu|ええ。3Dを描くだけでなく、Flutterの開発ツールをAIにつないで、アプリを動かしながら作っているの。
 Z|game_odatetsu|どうやって作ったのか、ちょっと気になるのだ。
-M|title|なら今日は、『ゆめみ採用試験』を題材に、FlutterとAIで3Dゲームを作る方法を解説するわ。
+M|title|なら今日は、『ゆめみ採用試験』を題材に、Flutterで3Dゲームを作る仕組みと、AIがアプリを動かして検証する開発方法を解説するわ。
 Z|title|そういえば、会社紹介とかしないのだ？
 M|title|そんなものはないわ。
 M|title|もしかして、ずんだもん、会社紹介に興味があるの？
@@ -35,7 +35,6 @@ M|scene|いいえ、これはFlutter Sceneというパッケージを使って�
 Z|scene|何なのだ、それ？
 M|gpu|まず、その土台にFlutter GPUがあるわ。DartからGPUのバッファやシェーダー、描画処理を扱える、低レベルのグラフィックスAPIよ。
 Z|gpu|自分で頂点を渡して、描画するところから書けるのだ？
-M|gpu|そう。でも、このゲームを作るために、3Dの描画処理を全部書いたわけではないの。
 M|scene|Flutter Sceneを使うと、その上でモデルやカメラ、ライト、アニメーションを扱えるわ。
 Z|stack|3Dの部分も、Flutter側から組み立てているのだな。
 M|stack|そういうこと。ネイティブでは、Flutter Sceneの下にFlutter GPU、その下にImpellerがある、という関係ね。
@@ -45,36 +44,52 @@ M|stable|ただし、ネイティブではFlutter GPUを有効にする設定が
 # implementation
 Z|ui|じゃあ、いつものWidgetはどこにいるのだ？
 M|ui|キャラクター選択や、得点、残り時間、設定画面はFlutterのUIよ。3Dの描画と組み合わせているの。
-Z|ui|設定画面まで3Dで作る必要はないのだな。
 M|logic|ゲームのルールもDartで書いているわ。端末の傾きを移動入力にして、キャラクターを動かす。落下物との位置関係を見て、キャッチしたら得点を更新するの。
 Z|logic|缶やちくわを落とすのは、物理エンジンなのだ？
-M|logic|このゲームでは、落ちる軌道とキャッチ判定をゲーム側で計算しているわ。缶同士がぶつかって跳ね返るような、剛体シミュレーションはしていないの。
-Z|logic|必要なルールに絞っているのだな。
+M|logic|落下は軌道計算で、キャッチ判定もゲーム側に書いているの。剛体シミュレーションはしていないわ。
 M|game_odatetsu|それから、カメラを回して裏側から見ても、操作する左右が画面と合うように変換しているの。
-Z|game_odatetsu|見た目はちくわ拾いでも、作ると気になるところがいろいろあるのだ。
 # models
 Z|members|コードの話は分かったけど、この人たちの3Dモデルはどうしたのだ？
 M|model_flow|人物のような複雑なモデルは、Tripoで原型を作って、形を直したり、動かすための骨組みを整えたりしているわ。
-Z|model_flow|画像から3Dにするやつなのだ。
 M|tripo|詳しい作り方は、以前の動画で紹介しているの。参照画像を用意するところから、Tripoで立体にして、修正して動かすところまで見られるわ。
 Z|chikuwa|では、このちくわもTripoなのだ？
 M|chikuwa_code|ちくわはCodexに、Blenderの生成コードを書いてもらって作っているわ。
 Z|chikuwa|ちくわには、ちくわの作り方があるのだ。
 M|model_compare|人物の顔や体形と、筒状の小道具では、作りやすい方法が違うの。シンプルな形は、コードで形や寸法を調整する方法も使えるわ。
 # ai
-Z|ai|さっきからCodexが出てくるけど、ゲームのコードもAIと書いたのだ？
-M|ai|ええ。主に使ったのはCodexとClaude Codeよ。
-M|codex|普段の機能開発はCodexを中心に進めて、画像素材や、ちくわのようなシンプルな3Dモデルの制作も頼んでいるわ。
-Z|codex|アプリの中身だけじゃなくて、素材を作るところまでなのだな。
-M|claude|そして、パフォーマンスの調査や改善ではClaude Codeも使っているの。
-Z|commits|どこを担当したか、あとから分かるのだ？
-M|commits|Claudeが関わった変更は、コミットの共同著者表記から追えるわ。今回は、その履歴と変更内容を見ながら紹介しているの。
-Z|commits|AIの使い分けにも、実例があるわけなのだ。
-M|ai|ただ、きっちり役割を分けていたわけではないの。Codexでも軽量化をしているし、Claude Codeでも画面や機能を直しているわ。
-M|ai|今回は、ざっくりそういう使い方だった、という話ね。
+Z|ai|コードを書くのにAIを使うのは、もう普通になってきたのだ。Flutterならではの話はあるのだ？
+M|ai|あるわ。Codexを中心に機能と素材を作り、Claude Codeでも性能を改善したけれど、大事なのは実行中のFlutterアプリとつながることよ。
+M|commits|Claudeの共同著者表記は履歴から追えるわ。ただ、役割は固定していないし、表記のないコミットを全部Codexとは決めつけられないの。
+# mcp
+Z|mcp_overview|コードを読ませる以外に、何をつなぐのだ？
+M|mcp_overview|この開発では、Dart MCP、Marionette MCP、mobile MCPを使っているわ。MCPは、AIが外部のツールを呼び出すための共通の接続方式ね。
+M|dart_mcp|まずDart MCP。DartとFlutterの公式の開発ツールを、AIから呼び出せるようにするサーバーよ。
+Z|dart_mcp|普段、IDEで押しているボタンを、AIも押せる感じなのだ？
+M|dart_mcp|ええ。このリポジトリでは、アプリの起動、hot reload、Widgetの調査、実行時エラーの取得などを有効にしているわ。
+M|dart_bridge|実行中のアプリとは、Dart Tooling Daemonなどの開発用の接続を使ってやり取りするの。返ってきた情報を、次の修正に使えるわ。
+Z|reload_loop|毎回ぼくが起動して、エラーをコピペしなくてもいいのだな。
+M|reload_loop|コードを直して、hot reloadして、結果を確かめる。このFlutterの短い反復を、AIの作業にも組み込めるの。
+Z|marionette|でも、起動しただけでは、ゲームが動くか分からないのだ。
+M|marionette|そこでMarionette MCPよ。アプリ側に専用のBindingを入れて、Dart VM Service経由で接続するわ。
+M|widget_actions|Widgetの情報を調べ、文字やキーを手がかりにタップや入力ができるの。画面の画像やログも確認できるわ。
+Z|game_inspect|では、落ちてくるちくわも、Widgetを探せば見つかるのだ？
+M|game_inspect|そこが3Dゲームの工夫どころよ。ちくわは3Dシーンの中にあって、一個ずつWidgetになっているわけではないの。
+M|custom_extension|だから、このゲーム専用の拡張を登録したわ。得点や座標、落下物の状態を、構造化したデータとして取り出せるの。
+Z|custom_extension|見た目だけで、取れたはずだ、と推測しなくていいのだな。
+M|deterministic|操作用の拡張では、乱数の条件をそろえ、入力を渡して一定時間だけ進められるわ。同じ条件で、キャッチ判定やカメラの向きを調べられるの。
+Z|deterministic|ちくわの再現実験なのだ。
+M|debug_profile|このアプリのMarionette連携はdebug限定よ。開発中の状態確認と、実機のprofileビルドでの性能測定は分けているわ。
+Z|mobile_mcp|実機では、どう操作するのだ？
+M|mobile_mcp|mobile MCPを使うわ。こちらはFlutterアプリの内部ではなく、端末側の仕組みを使って、タップやスワイプ、画面取得を行うの。
+M|mobile_bridge|AndroidではADB、iPhoneではWebDriverAgentなどを介して端末につなぐわ。画面要素の情報やスクリーンショットを手がかりに操作するの。
+Z|mobile_bridge|Flutter以外のアプリにも使える仕組みなのだな。
+M|device_checks|そう。今回もPixel 7aとiPhone 14で、実際の表示や動作を確認しているわ。ただし、mobile MCPだけでGPU性能やメモリまで測れるわけではないの。
+M|device_checks|性能はprofileビルドと計測ログで確認する。端末を傾けたときの手触りは、人が実際に遊んで確かめる必要もあるわ。
+Z|tool_summary|アプリの中を調べる道具と、端末を操作する道具を使い分けるのだな。
+M|tool_summary|ええ。コードを書くだけでなく、動かして、状態を見て、直す。その往復をFlutterの開発環境につないでいるの。
 # performance
-Z|game_night|AIに作ってもらって、動いたら完成なのだ？
-M|performance|実機で気持ちよく動くところまでが大事ね。今回も、描画の待ち時間とメモリ使用量を改善しているわ。
+Z|game_night|その実機検証で、何が見つかったのだ？
+M|performance|描画の待ち時間とメモリ使用量に問題が見つかって、改善したわ。
 Z|performance|3Dだから、ポリゴンを減らしたのだ？
 M|lights|それだけではないの。Androidでは、変わっていないライトのデータまで毎フレームGPUへ送る処理が、待ち時間につながっていたの。
 M|fps|そこを改善する上流の修正を取り込んだコミットには、Pixel 7aで約30fpsから約60fpsになった記録があるわ。
@@ -87,7 +102,7 @@ Z|performance|Flutterのコードだけ見ていても、終わらないのだ�
 M|performance|Dartの処理、描画ライブラリ、3D素材。どこが原因なのかを測って、必要なところを直していくの。
 # ending
 Z|game_odatetsu|最初は何を見せられているのかと思ったけど、中身はちゃんとFlutterの開発だったのだ。
-M|summary|Flutter Sceneで3Dを描いて、いつものFlutterでUIを作る。AIとコードや素材を作って、実機で調べながら仕上げたゲームよ。
+M|summary|Flutter Sceneで3D、WidgetでUI。そしてMCPでAIを開発環境につなぐ。動作と状態を確かめ、実機で測りながら仕上げたゲームよ。
 Z|repository|コードも見られるのだ？
 M|repository|flutterkaigi2026のリポジトリを公開しているわ。モデルの作り方は、さっき紹介したTripoの動画も見てね。
 Z|game_odatetsu|よし。それじゃあ採用試験に挑戦するのだ。

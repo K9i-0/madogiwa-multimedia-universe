@@ -1,4 +1,4 @@
-# ゆめみ採用試験 技術解説 改訂v3
+# ゆめみ採用試験 技術解説 改訂v4
 
 ずんだもん＆四国めたん。参考は窓際族物語紹介v5。
 
@@ -21,10 +21,10 @@
 
 BGMと過去Tripo動画の抜粋は `prepare_assets.py` で既存ローカル作品から復元できる。
 ゲーム収録はGit管理外。`remotion/out/{odatetsu,sobaya,night}_raw.mov` と採用クリップはこのマシンに保持。
-対象は sibling `flutterkaigi2026/app`、revision `4f3ffba1edc84f571723822d583f2c4b44f4a31d`。
+旧収録の対象は sibling `flutterkaigi2026/app`、revision `4f3ffba1edc84f571723822d583f2c4b44f4a31d`。
 Marionette `madogiwa.catchAction` の `select` / `demo` で撮影用自動入力を使い、
 iPhone Duo Simulatorのdisplay 3を `simctl io recordVideo --display=3` で収録した。
-収録動画は性能評価用ではない。`prepare_media.py` は5秒地点から18秒を切り出す。
+収録動画は性能評価用ではない。v1〜v3では5秒地点から18秒を切り出した。
 新しいマシンではこの収録素材の移送または再収録が必要。
 
 制作時点では開催前だが、ユーザー指定どおり展示後に使う語りとしている。
@@ -49,3 +49,12 @@ iPhone Duo Simulatorのdisplay 3を `simctl io recordVideo --display=3` で収�
 - FlutterロゴはGPU説明の1区間のみ。Claude公式アプリ同梱アイコンを追加。概要欄の商標帰属文を更新。
 - `fact_check_v3.md`にSDK・固定依存版・MCP・性能記録・ブランド資料との照合結果を保存。
 - 104発話・161字幕ページ。VOICEVOX設定とBGM方針は継承。変更した台詞だけ再生成。
+
+## 改訂v4（最新版ゲームへの更新）
+
+- 最新出力：`final_remotion_flutterkaigi_v4.mp4`、11分14.0秒、1280×720、30fps。v1〜v3を保持。
+- ゲーム6652753をDart MCPで起動。Marionetteで選択・撮影用自動入力・キャラクター中心の5倍ズームを操作し再収録。
+- 原本は`remotion/out/{odatetsu,sobaya,night,closeup}_v4_raw.mov`。`prepare_media.py`で通常は3秒から18秒、アップは1秒から12秒を素材化。
+- 公開コードの紹介は「参考にしてみてね」。操作説明はカメラ基準入力とピンチズームへ更新。通常プレイが20秒であると明示。
+- 3Dモデル紹介はおだてつのアップ→過去のTripo解説の順。選択画面・ちくわ画像も更新。追加機能の網羅説明はしない。
+- `fact_check_v4.md`に変更根拠を記録。性能章の数値は従来どおり4f3ffbaの履歴。

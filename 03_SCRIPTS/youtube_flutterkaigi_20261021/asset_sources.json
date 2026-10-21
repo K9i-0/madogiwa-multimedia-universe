@@ -203,6 +203,31 @@
       "file": "selection_v4.png",
       "source": "flutterkaigi2026 665275362e1d545736f62a9205b809c99d658846 / Dart MCP起動・Marionette操作 / iPhone Duo Simulator display 3。通常映像はdemo、アップはstart/step/zoom(value=5,pivot=character)/resume。画像はMarionette取得・ちくわ部分クロップ。",
       "sha256": "8be0262a2d8ab04f28af2172630e22898e90a41bdcf0e88a5cdc3b345cae8cda"
+    },
+    {
+      "file": "inspect_v5.png",
+      "source": "flutterkaigi2026 6652753 / Dart MCP起動、Marionette start→step(seconds=6,x=0,y=0)→inspectCatchと同時取得。実データはremotion/inspection_v5.json。",
+      "sha256": "db7739302a6614283b0de310d2ec18417785599762a8b7716fc90309332e44ae"
+    },
+    {
+      "file": "odatetsu_texture_v5.png",
+      "source": "flutterkaigi2026/assets/3d/characters/cto_odatetsu/rig_v1_20261014/cto_odatetsu_rig.glb の埋込albedo。4096四方を資料用1024へLanczos縮小。原本はout/odatetsu_texture_source_v5.png。",
+      "sha256": "49f562b555466126d3bb36f92dfe8ad55569bdcc230601c830c657086fdab5ca"
+    },
+    {
+      "file": "widget_v5.mp4",
+      "source": "Marionette tap(key=start)の実操作。iPhone Duo Simulator display3をsimctlで収録。最初の8秒。原本out/widget_v5_raw.mov。",
+      "sha256": "4240aaed15c8bc19e54f18f91f19fccea69fcfe9b06b7fabaa711a04f1e685f2"
+    },
+    {
+      "file": "tripo_detail_v5.mp4",
+      "source": "採用済みtripo_excerpt.mp4から資料領域をcrop=1000:490:140:75で抜粋。",
+      "sha256": "988d890493b09ae1c4fc0edf16468478792e29d19d4d476e2672fda0dd2cf94b"
+    },
+    {
+      "file": "model_detail_v5.mp4",
+      "source": "採用済みgame_odatetsu_closeup_v4.mp4からcrop=450:560:415:40。顔・衣装を拡大。",
+      "sha256": "7dc616ba1920ab10718702897a4081ef3866d95095d1f4e31b73c05d4a294d13"
     }
   ],
   "references": [

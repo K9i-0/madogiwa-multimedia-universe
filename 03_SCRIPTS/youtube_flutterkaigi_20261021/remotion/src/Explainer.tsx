@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill,Img,OffthreadVideo,Sequence,Loop,staticFile,useCurrentFrame,interpolate} from 'remotion';
 import manifest from './edit-manifest.json';
 import {WorkflowView,workflowViews} from './WorkflowViews';
+import {VisualsV5,v5Views} from './VisualsV5';
 const ink='#263b3c',muted='#697773',green='#25726f',blue='#167cb5';
 const Picture:React.FC<{src:string,w?:number,h?:number}>=({src,w=744,h=430})=><Img src={staticFile(src)} style={{width:w,height:h,objectFit:'contain'}}/>;
 const Title:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:33,fontWeight:700,marginBottom:20,lineHeight:1.4}}>{children}</div>;
@@ -46,13 +47,16 @@ export const Center:React.FC<{view:string}>=({view})=>{
  throw new Error('Unknown view '+view);
 };
 export const Explainer:React.FC=()=>{
- const f=useCurrentFrame();const active=manifest.dialogue.find(d=>f>=d.startFrame&&f<d.startFrame+d.durationInFrames);const previous=[...manifest.dialogue].reverse().find(d=>f>=d.startFrame);
- const fade=interpolate(f,[manifest.composition.durationInFrames-30,manifest.composition.durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
- let start=0;if(previous){const index=manifest.dialogue.indexOf(previous);for(let i=index;i>=0;i--){if(manifest.dialogue[i].view!==previous.view)break;start=manifest.dialogue[i].startFrame;}if(start===manifest.dialogue[0].startFrame)start=0;}
+ const f=useCurrentFrame();const active=manifest.dialogue.find(d=>f>=d.startFrame&&f<d.startFrame+d.durationInFrames);const previous=[...manifest.dialogue].reverse().find(d=>f>=d.startFrame)??manifest.dialogue[0];
+ const fade=interpolate(f,[manifest.composition.durationInFrames-24,manifest.composition.durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+ let start=0;const index=manifest.dialogue.indexOf(previous);for(let i=index;i>=0;i--){if(manifest.dialogue[i].view!==previous.view)break;start=manifest.dialogue[i].startFrame;}if(start===manifest.dialogue[0].startFrame)start=0;
+ const joke=previous.view==='title'&&Number(previous.id)>=8;
+ const caption=active?.captions.find(c=>f-active.startFrame>=c.fromFrame&&f-active.startFrame<c.toFrame)?.text??(f>=previous.startFrame+previous.durationInFrames&&f<previous.startFrame+previous.durationInFrames+8?previous.captions[previous.captions.length-1]?.text:undefined);
  return <AbsoluteFill style={{background:'#f4f2eb',fontFamily:'"Hiragino Sans", "Noto Sans JP", sans-serif',color:ink}}><AbsoluteFill style={{opacity:fade}}>
- {previous?.view==='gpu'&&<div style={{position:'absolute',left:45,top:55,width:170,textAlign:'center'}}><Img src={staticFile('flutter-logo.svg')} style={{width:160,height:54,objectFit:'contain'}}/><div style={{fontSize:14,color:muted,marginTop:20}}>技術の紹介に使用<br/>Google非公式の動画です</div></div>}
- <Sequence from={start}><div data-center style={{position:'absolute',left:262,top:26,width:756,height:526,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center'}}><Center view={previous?.view??'game_odatetsu'}/></div></Sequence>
- {(['zunda','metan'] as const).map((who,i)=>{const speaking=active?.who===who;const j=active?f-active.startFrame:0;const open=speaking&&(active?.envelope[j]??0)>.023;const blink=(f+(i?61:0))%151<4;const surprise=speaking&&/何なの|採用試験？|どうやって|興味ねー|そっちは|適性|そんなもの|そうよね/.test(active?.text??'');const mood=blink?'blink':surprise?'surprise':'normal';return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?1030:0,bottom:0,width:250,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;})}
- {active&&<div style={{position:'absolute',left:64,right:64,bottom:30,height:112,display:'flex',alignItems:'center',justifyContent:'center'}}><div data-caption style={{fontSize:31,fontWeight:700,lineHeight:1.6,textAlign:'center',whiteSpace:'pre-line',color:active.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'5px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0002'}}>{active.captions.find(c=>f-active.startFrame>=c.fromFrame&&f-active.startFrame<c.toFrame)?.text}</div></div>}
+ <div data-center style={{position:'absolute',left:120,top:20,width:1040,height:540,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center'}}>
+ {v5Views.includes(previous.view)?<Sequence from={start} layout="none"><VisualsV5 view={previous.view} frame={f} d={previous} groupStart={start}/></Sequence>:<Sequence from={start} layout="none"><Center view={previous.view}/></Sequence>}
+ </div>
+ {(['zunda','metan'] as const).map((who,i)=>{const speaking=active?.who===who;const j=active?f-active.startFrame:0;const open=speaking&&(active?.envelope[j]??0)>.023;const blink=(f+(i?61:0))%151<4;const surprise=speaking&&/何なの|採用試験？|興味ねー|そっちは|適性|そんなもの|そうよね/.test(active?.text??'');const mood=blink?'blink':surprise?'surprise':'normal';const width=joke?205:165;return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?1280-width:0,bottom:0,width,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;})}
+ {caption&&<div style={{position:'absolute',left:195,right:195,bottom:23,height:112,display:'flex',alignItems:'center',justifyContent:'center'}}><div data-caption style={{fontSize:31,fontWeight:700,lineHeight:1.55,textAlign:'center',whiteSpace:'pre-line',color:previous.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'4px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0001'}}>{caption}</div></div>}
  </AbsoluteFill></AbsoluteFill>;
 };

@@ -11,7 +11,7 @@ def save(path,a):
  with wave.open(str(path),'wb') as w:w.setnchannels(2);w.setsampwidth(2);w.setframerate(sr);w.writeframes((np.clip(a,-1,1)*32767).astype('<i2').tobytes())
 voice=np.zeros((n,2),np.float32)
 for d in m['dialogue']:
- a=decode(P.parent/d['audio']);start=d['startFrame']*1600;voice[start:start+len(a)]+=a
+ a=decode(P.parent/d['audio']);rate=d.get('audioSourceRate',24000);a=a[round(d.get('audioTrimStartSample',0)/rate*sr):round(d.get('audioTrimEndSample',len(a)*rate/sr)/rate*sr)];start=d['startFrame']*1600;voice[start:start+len(a)]+=a
 save(P/'out/voice_unmixed.wav',voice);voice=decode(P/'out/voice_unmixed.wav','loudnorm=I=-18:TP=-2:LRA=11')[:n]
 if len(voice)<n:voice=np.pad(voice,((0,n-len(voice)),(0,0)))
 def loop_to(a,length,cross=0):

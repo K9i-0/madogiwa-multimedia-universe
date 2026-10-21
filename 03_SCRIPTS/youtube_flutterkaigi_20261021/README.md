@@ -1,4 +1,4 @@
-# ゆめみ採用試験 技術解説 改訂v4
+# ゆめみ採用試験 技術解説 改訂v5
 
 ずんだもん＆四国めたん。参考は窓際族物語紹介v5。
 
@@ -58,3 +58,16 @@ iPhone Duo Simulatorのdisplay 3を `simctl io recordVideo --display=3` で収�
 - 公開コードの紹介は「参考にしてみてね」。操作説明はカメラ基準入力とピンチズームへ更新。通常プレイが20秒であると明示。
 - 3Dモデル紹介はおだてつのアップ→過去のTripo解説の順。選択画面・ちくわ画像も更新。追加機能の網羅説明はしない。
 - `fact_check_v4.md`に変更根拠を記録。性能章の数値は従来どおり4f3ffbaの履歴。
+
+## 改訂v5（図解・テンポ・字幕の全編再編集）
+
+- 最新出力：`final_remotion_flutterkaigi_v5.mp4`、10分36.6秒、1280×720、30fps。過去v1〜v4を保持。
+- 台詞を削らず104発話を維持。採用WAVは再生成せず、前後の低振幅区間だけをトリム。速度変更なし。
+- `remotion/src/VisualsV5.tsx`：描画階層、MCP接続経路、発声に同期した強調、ゲームの模式図、実取得状態、尺度を共有する比較グラフ、実テクスチャの面積比。
+- 中央1040px・立ち絵165pxを基本に、茶番のみ立ち絵205px。字幕は中央890px、話者色を維持。
+- `prepare_edit_v5.py`：元の採用WAV/AudioQuery/voice_generation_recordからv5タイムラインを再生成。字幕境界と強調語は元クエリのモーラ長を用いる。prefixの読みはVOICEVOXで解析して対応を確認。再生成時はVOICEVOX起動が必要。
+- `edit_timing_v5.json`：各発話の元音声トリム、文脈別の間、語句cue。最終フレーム正本はsrc/edit-manifest.json。
+- `prepare_media_v5.py`：既存素材の資料抜粋・アップ、追加実操作収録から素材化。
+- 再ミックス・レンダー：`python mix_audio.py` → `python render.py --no-mix`（共有venv）。音声を変更して`prepare_voice.py`を使った場合、その後に`prepare_edit_v5.py`で編集タイミングを生成する。
+- 実ゲームの追加取得結果は`inspection_v5.json`。撮影は6652753、シミュレーターdebug。性能の数値は従来の4f3ffba実機記録。
+- 映像演出の確認：`audit_frames.cjs`（全45画面）、`audit_beats_v5.cjs`（茶番・段階表示などの中間/終端）。完成MP4は`audit_output.py`。

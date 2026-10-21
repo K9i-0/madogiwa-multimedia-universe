@@ -29,17 +29,17 @@ def captions(text,frames):
  if part:parts.append(part)
  pages=[]
  for s in parts:
-  while width(s)>62:
-   options=[i for i in cuts(s) if 21<=width(s[:i])<=52]
-   if not options:options=[i for i in range(1,len(s)) if legal(s,i) and width(s[:i])<=52]
+  while width(s)>54:
+   options=[i for i in cuts(s) if 21<=width(s[:i])<=46]
+   if not options:options=[i for i in range(1,len(s)) if legal(s,i) and width(s[:i])<=46]
    i=max(options,key=lambda x:(s[x-1] in '、。！？',width(s[:x])))
    pages.append(s[:i]);s=s[i:]
   if s:pages.append(s)
  out=[];offset=0;total=sum(map(len,pages))
  for n,s in enumerate(pages):
   raw=s
-  if width(s)>31:
-   options=[i for i in cuts(s) if width(s[:i])<=33 and width(s[i:])<=33]
+  if width(s)>27:
+   options=[i for i in cuts(s) if width(s[:i])<=28 and width(s[i:])<=28]
    if not options:options=[i for i in range(1,len(s)) if legal(s,i)]
    i=min(options,key=lambda i:abs(width(s[:i])-width(s[i:]))-(3 if s[i-1] in '、。！？'+CLOSE else 0))
    s=s[:i]+'\n'+s[i:]

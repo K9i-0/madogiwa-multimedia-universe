@@ -2,8 +2,8 @@ from pathlib import Path
 import subprocess,json
 from PIL import Image,ImageDraw
 P=Path(__file__).resolve().parent
-video=P.parent/'final_remotion_flutterkaigi_v6.mp4'
-out=P/'out/final_audit_v6';out.mkdir(parents=True,exist_ok=True)
+video=P.parent/'final_remotion_flutterkaigi_v7.mp4'
+out=P/'out/final_audit_v7';out.mkdir(parents=True,exist_ok=True)
 m=json.loads((P/'src/edit-manifest.json').read_text())
 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)]))
 v=next(s for s in probe['streams'] if s['codec_type']=='video');a=next(s for s in probe['streams'] if s['codec_type']=='audio')

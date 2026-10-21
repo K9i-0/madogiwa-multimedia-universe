@@ -21,9 +21,8 @@ M|game_odatetsu|スワイプするとカメラを回せるわ。別の角度か�
 Z|selection|ところで、この人たちは誰なのだ？
 M|members|ゆめプロの福ギュン、そば屋、そしてCTOおだてつよ。ゆめプロは、ゆめみで広報を担っているタレント社員の集まりなの。
 Z|odatetsu|さっきちくわを拾っていた、パーマの男性なのだ。
-M|odatetsu|ええ。若手社員のおだてつよ。CTOはChief Ticket Officerの略。タスク管理がめちゃくちゃ上手いので、こう呼ばれているの。
-Z|odatetsu|チケットをさばく達人なのだな。
-M|session|今回のゆめみのスポンサーセッションにも登壇しているわ。
+M|odatetsu|ええ。若手社員のおだてつよ。CTOはChief Ticket Officerの略。
+M|session|今年のゆめみのスポンサーセッションに登壇しているわ。
 M|session|テーマは『作って、売って、閉じるまで』。Flutterアプリの課金機能について、ライフサイクル全体を扱うセッションよ。
 Z|session|そっちはちゃんとFlutterの話なのだ。
 M|session|こっちもFlutterの話よ。
@@ -37,7 +36,17 @@ Z|game_night|その3Dモデルは、Flutterでどう動かしているのだ？�
 M|scene|いいえ、これはFlutter Sceneというパッケージを使っているの。
 Z|scene|何なのだ、それ？
 M|gpu|まず、その土台にFlutter GPUがあるわ。DartからGPUのバッファやシェーダー、描画処理を扱える、低レベルのグラフィックスAPIよ。
-Z|gpu|自分で頂点を渡して、描画するところから書けるのだ？
+Z|layout_pipeline|いつものRowやColumnで配置するのとは、どう違うのだ？
+M|layout_pipeline|普通のUIでは、Widgetの構成から作られるRenderObjectがレイアウトを担当するわ。ボックスのレイアウトなら、親から制約を渡し、子からサイズを返して、親が位置を決めるの。
+Z|layout_boxes|いつもの、制約は下に、サイズは上に、なのだな。
+M|layout_boxes|ええ。例えば親が幅300までと伝え、子が幅100を選ぶ。親が中央に配置すれば、左端は100になる。こうして、画面上の大きさと位置を決めるのよ。
+M|layout_pipeline|その後にペイントして、描画の命令をエンジンへ渡す。普通のFlutter UIも、最終的にはGPUで描画されるわ。
+Z|gpu_pipeline|じゃあ、Flutter GPUは何を自分で決めるのだ？
+M|gpu_pipeline|頂点データをバッファに入れて、シェーダーを用意し、描画先や描画命令を組み立てるの。RowやColumnの配置ルールが、そのまま3D空間に適用されるわけではないわ。
+M|gpu_triangle|例えば三角形なら、頂点シェーダーで座標を変換し、ラスタライズで画面上の領域に変える。フラグメントシェーダーでは、色などを計算するの。
+Z|gpu_triangle|箱をどこに置くかと、頂点からどう絵を描くかでは、扱う層が違うのだな。
+M|gpu_compare|そうね。UIの配置はRenderObjectのレイアウト、独自の描画処理はFlutter GPU。その上に、3Dに必要な仕組みをまとめたものがFlutter Sceneなの。
+Z|gpu_compare|モデルを表示するたびに、バッファやシェーダーを全部自分で組む必要はないのだ？
 M|scene|Flutter Sceneを使うと、その上でモデルやカメラ、ライト、アニメーションを扱えるわ。
 Z|stack|3Dの部分も、Flutter側から組み立てているのだな。
 M|stack|そういうこと。ネイティブでは、Flutter Sceneの下にFlutter GPU、その下にImpellerがある、という関係ね。

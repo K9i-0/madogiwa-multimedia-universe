@@ -1,4 +1,4 @@
-# ゆめみ採用試験 技術解説 改訂v6
+# ゆめみ採用試験 技術解説 改訂v7
 
 ずんだもん＆四国めたん。参考は窓際族物語紹介v5。
 
@@ -86,3 +86,11 @@ iPhone Duo Simulatorのdisplay 3を `simctl io recordVideo --display=3` で収�
 v6のゲーム映像・選択画面・inspect画像・MCP操作実演はiPhone 18 Pro（A4EB7AA4-DDDC-4B36-9E79-8FF7579F5162、iOS 27.0）で再取得。アプリは横画面固定、論理874×402。ゲームrevisionは6652753。端末の横長比率を保持し、図のUI枠も配置を修正。
 
 通常3本は撮影用入力、アップは4.5倍・character中心で正面から収録。素材化は`remotion/prepare_media_v6.py`。元録画は`remotion/out/*_v6_raw.mov`。過去版の素材は保持。
+
+## 改訂v7
+
+- 最新出力：`final_remotion_flutterkaigi_v7.mp4`、11分54秒、1280×720、30fps。
+- タスク管理とチケットをさばく達人の台詞を削除。登壇紹介を「今年のゆめみのスポンサーセッションに登壇しているわ。」へ変更。
+- UIのレイアウト、具体的な中央配置、GPUリソース、三角形の描画、Flutter Sceneとの関係を5種類の図で説明。
+- 変更していない発話音声とiPhone 18 Pro横向き映像は再利用。
+- 音声改稿時は `prepare_voice.py` → `prepare_edit_v5.py` → `render.py` の順で実行。

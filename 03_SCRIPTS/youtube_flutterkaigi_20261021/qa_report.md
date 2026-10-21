@@ -1,3 +1,22 @@
+# 改訂v7 検証記録 — 2026-10-21
+
+- 人物紹介のタスク管理説明・ずんだもんの達人評を削除。Chief Ticket Officerの愛称と若手社員の説明は保持。登壇台詞をユーザー指定文言へ変更。
+- UIのレイアウトからGPU描画への流れ、数値付き中央配置、GPUリソース、三角形の描画、Flutter Sceneとの関係を5図で追加。通常UIもGPUを使うと明示。出典はfact_check_v7.md。
+- 113発話・180字幕ページ。既存100発話のWAV一致、13発話の変更・追加を確認。全字幕の原文一致、時間範囲、音声の無音部分のみのトリム、発話の非重複を検証。
+- VOICEVOX AudioQueryのモーラを確認。Row/Column/RenderObject、300/100、頂点シェーダー、ラスタライズ、フラグメントの読みを確認。
+- 全50種類のレイアウト＋茶番1画面を実フレームで目視。追加5図は720p等倍で確認し、Widget→Elementの文字サイズを修正。
+- iPhone 18 Pro横向きのv6ゲーム素材を継続使用。Flutterロゴの表示回数は増やさず、概要欄の商標・非公式表記を維持。
+- 主観的な通し試聴は未実施。機械的検証とは区別する。
+- 証跡：remotion/out/audit_v7/、out/timing_validation_v7.json。
+
+- 完成：`final_remotion_flutterkaigi_v7.mp4`、714.000秒、56,924,854 bytes。H.264 1280×720 / 30fps / 21,420フレーム、AAC 48kHz stereo。
+- 全編デコード合格。字幕開始・終了・中間を含む542フレームを抽出し、全180ページの中間フレームを9枚のシートで目視確認。追加図のラベル修正も完成版で確認。
+- 変更区間（92–106秒・170–259秒）のWhisper-small自動認識を確認。未変更100発話は既存の検証を継承。認識結果の表記揺れとAudioQueryの発音を区別。peak −1.6dBFS / mean −22.0dBFS。
+- `npm run typecheck`、`git diff --check`合格。投稿は未実施。
+- 完成証跡：`remotion/out/final_audit_v7/`、`out/changed_audio_asr_v7.json`。
+
+---
+
 # 改訂v6 検証記録 — 2026-10-21
 
 - スライド情報の削減。制作・撮影事情や説明の繰り返しとなる23個のフッターブロックを整理。性能グラフのみ実機profile記録とcommitを1行で表示。

@@ -12,25 +12,28 @@ M|title|そんなものはないわ。
 M|title|もしかして、ずんだもん、会社紹介に興味があるの？
 Z|title|いや、興味ねーのだ。
 M|title|そうよね！
-M|selection|それじゃあ、まずは実際に遊んでみましょう。
+M|repo_intro|ゲームのコードはGitHubで公開しているわ。概要欄から見られるので、実装も一緒に追ってみてね。
+M|selection|それじゃあ、まずは遊び方から。
 # game
 M|game_odatetsu|端末を傾けて鉄骨の上を左右に移動して、落ちてくる当たりを集めるの。制限時間は20秒よ。
 Z|game_odatetsu|足場が採用試験とは思えないのだ。
 M|game_odatetsu|スワイプするとカメラを回せるわ。落ちてくるものを、別の角度から確認できるの。
 Z|selection|ところで、この人たちは誰なのだ？
-M|members|ゆめプロの福ギュン、そば屋、そしてCTOおだてつよ。
+M|members|ゆめプロの福ギュン、そば屋、そしてCTOおだてつよ。ゆめプロは、ゆめみで広報を担っているタレント社員の集まりなの。
 Z|odatetsu|さっきちくわを拾っていた、パーマの男性なのだ。
-M|odatetsu|ええ。おだてつは若手社員なの。今回のゆめみのスポンサーセッションにも登壇しているわ。
+M|odatetsu|ええ。若手社員のおだてつよ。CTOはChief Ticket Officerの略。タスク管理がめちゃくちゃ上手いので、こう呼ばれているの。
+Z|odatetsu|チケットをさばく達人なのだな。
+M|session|今回のゆめみのスポンサーセッションにも登壇しているわ。
 M|session|テーマは『作って、売って、閉じるまで』。Flutterアプリの課金機能について、ライフサイクル全体を扱うセッションよ。
 Z|session|そっちはちゃんとFlutterの話なのだ。
 M|session|こっちもFlutterの話よ。
 M|rules|ゲームでは、福ギュンはゆめみん、おだてつはちくわ、そば屋はビールを集めるの。キャラクターによって難易度も違うわ。
 Z|game_sobaya|そば屋だけ目的がはっきりしているのだ。
-M|project|このキャラクターたちが登場する『窓際族物語』は、ゆめプロから派生したプロジェクトなの。
-M|project|動画や3Dモデルなど、そこで作ってきたものが、今回のゲームにもつながっているわ。
-Z|project|この20秒のためだけに、全部作ったわけじゃないのだな。
+M|project|ゆめプロから派生したのが、『窓際族物語』。YouTubeでも動画を公開していて、福ギュンとそば屋は、こちらでは窓際族なの。
+Z|project|この二人には、CTOおだてつの爪の垢を煎じて飲ませるべきなのだ。
+M|project|まずはちくわを拾うところからね。そこで作ったキャラクターや3D素材が、今回のゲームにもつながっているわ。
 # scene
-Z|game_night|あ、これ知ってるのだ。UnityをFlutterに埋め込めるって聞いたことがあるのだ。
+Z|game_night|その3Dモデルは、Flutterでどう動かしているのだ？　Unityを埋め込んでいるのだ？
 M|scene|いいえ、これはFlutter Sceneというパッケージを使っているの。
 Z|scene|何なのだ、それ？
 M|gpu|まず、その土台にFlutter GPUがあるわ。DartからGPUのバッファやシェーダー、描画処理を扱える、低レベルのグラフィックスAPIよ。
@@ -39,8 +42,8 @@ M|scene|Flutter Sceneを使うと、その上でモデルやカメラ、ライ�
 Z|stack|3Dの部分も、Flutter側から組み立てているのだな。
 M|stack|そういうこと。ネイティブでは、Flutter Sceneの下にFlutter GPU、その下にImpellerがある、という関係ね。
 Z|stable|試すには、Flutterの開発版が必要なのだ？
-M|stable|今は最新のStable版で使えるわ。このゲームはFlutter 3.47.2で開発しているの。
-M|stable|ただし、ネイティブではFlutter GPUを有効にする設定が必要よ。Stable版で使えることと、APIの安定性は別の話ね。
+M|stable|Stable版で使えるわ。このゲームはFlutter 3.47.2。Flutter Sceneの現在の案内では、3.47以降が対象よ。
+M|stable|ただし、ネイティブではImpellerとFlutter GPUの有効化が必要よ。SDKがStable版でも、Flutter GPUのAPIの安定性まで保証されるわけではないの。
 # implementation
 Z|ui|じゃあ、いつものWidgetはどこにいるのだ？
 M|ui|キャラクター選択や、得点、残り時間、設定画面はFlutterのUIよ。3Dの描画と組み合わせているの。
@@ -95,7 +98,7 @@ M|lights|それだけではないの。Androidでは、変わっていないラ�
 M|fps|そこを改善する上流の修正を取り込んだコミットには、Pixel 7aで約30fpsから約60fpsになった記録があるわ。
 Z|fps|見た目を削る前に、余計な更新を減らせたのだな。
 M|textures|iPhoneでは、キャラクターの4096四方のテクスチャを、ゲーム用に最大2048へ縮小したわ。
-M|memory|コミットの記録では、iPhone 14のロード時のピークメモリが、約1.9GBから約0.74GBに下がっているの。
+M|memory|ライブラリの更新と素材の縮小を含む改善後は、iPhone 14のロード時ピークメモリが、約1.9GBから約0.74GBに下がった記録があるわ。
 Z|textures|画面の中では小さく見える人に、大きなテクスチャを持たせていたのだ。
 M|textures|元の制作素材をそのまま使うのではなく、ゲームでの見え方に合わせた素材を用意するのも大切ね。
 Z|performance|Flutterのコードだけ見ていても、終わらないのだな。
@@ -103,8 +106,8 @@ M|performance|Dartの処理、描画ライブラリ、3D素材。どこが原因
 # ending
 Z|game_odatetsu|最初は何を見せられているのかと思ったけど、中身はちゃんとFlutterの開発だったのだ。
 M|summary|Flutter Sceneで3D、WidgetでUI。そしてMCPでAIを開発環境につなぐ。動作と状態を確かめ、実機で測りながら仕上げたゲームよ。
-Z|repository|コードも見られるのだ？
-M|repository|flutterkaigi2026のリポジトリを公開しているわ。モデルの作り方は、さっき紹介したTripoの動画も見てね。
+Z|repository|自分でも動かして、中身を確かめたくなったのだ。
+M|repository|最初に紹介した公開リポジトリを見てね。モデル制作はTripoの解説動画から。どちらも概要欄にあるわ。
 Z|game_odatetsu|よし。それじゃあ採用試験に挑戦するのだ。
 M|game_odatetsu|ちくわと毒ちくわを、よく見分けてね。
 Z|game_odatetsu|やっぱり何の適性なのだ。

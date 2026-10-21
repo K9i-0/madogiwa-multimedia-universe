@@ -158,6 +158,16 @@
       "official": "OpenAI配布アプリに同梱されたCodex公式アイコン。無改変。",
       "guidelines": "https://openai.com/brand/",
       "sha256": "de7d43f3386105ab20952958c2c25beb0d903e2aeb6e1aef57c49a648c0d1c07"
+    },
+    {
+      "file": "claude-icon.png",
+      "source": "/Applications/Claude.app/Contents/Resources/ion-dist/images/claude_app_icon.png",
+      "sha256": "c7b5642f810adfba78781592d9dec18d7eb376c7ebf403c4d882fb9d39f65408"
+    },
+    {
+      "file": "youtube-channel.png",
+      "source": "https://www.youtube.com/channel/UCyQtPu94OaiGxFdd2A6bXdw (public channel crop captured with Chrome)",
+      "sha256": "f2d46ea472751b615410d065913a436b85c31d8424a4cf83ca61b595b10f42bc"
     }
   ],
   "references": [
@@ -202,5 +212,5 @@
   "sessionPoster": "ユーザー添付の一時パスは消失。公式登壇者写真と正確な文字でセッション資料を構成。",
   "referenceStyle": "project_intro v5; user reference overrides spreadsheet template",
   "gameRevision": "4f3ffba1edc84f571723822d583f2c4b44f4a31d",
-  "revision": "v2: official logos and MCP development workflow"
+  "revision": "v3: narrative revision, verified technical claims, limited Flutter logo, Claude and channel visuals"
 }

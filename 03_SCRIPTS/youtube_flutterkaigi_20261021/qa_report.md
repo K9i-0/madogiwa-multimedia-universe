@@ -1,3 +1,19 @@
+# 改訂v3 検証記録 — 2026-10-21
+
+- 完成：`final_remotion_flutterkaigi_v3.mp4`、50,593,793 bytes、667.5秒（11分7.5秒）。H.264 1280×720 / 30fps / 20,025フレーム、AAC 48kHz stereo。
+- FFmpegで映像・音声とも終端までデコードしてエラーなし。完成AACのsample peak −1.5dBFS、mean −22.2dBFS。
+- 104発話・161字幕ページ。45種類の使用画面を実フレームで確認し、福ギュンの丸型アイコンの顔切れを修正してから本レンダー。
+- 完成MP4から字幕開始・終了・中間と先頭・末尾の計485フレームを抽出。全161字幕ページの中間フレーム、先頭・末尾を目視確認。2行以内、時間の正値、全音声ファイルの存在も検証。
+- 1:06.27で公開リポジトリを紹介。Flutterロゴは3:02.4から約14秒のGPU解説のみ。タイトル・締めにロゴなし。ClaudeとCodexは比較・接続図に併記。
+- 技術の裏どりは`fact_check_v3.md`。SDK実出力、固定Scene fork、実アプリのMCP設定・拡張、性能改善commitと計測条件を照合。人物の訂正はユーザー指定を正本とする。
+- 全編ミックスをWhisper-smallで自動認識。575秒付近だけ認識の反復が発生したため、571秒から32秒の音声単独区間で再認識し、台詞の流れを確認。1.9GB / 0.74GBなどの数値と追加固有名詞はAudioQueryのモーラも確認。
+- `npm run typecheck`、`git diff --check`合格。台本・SRT・解説資料・概要欄をv3へ同期。
+- **主観的な通し試聴は未実施。** ASR・モーラ・音量検証は、聴感やアクセントの最終確認とは区別する。
+- 証跡：`remotion/out/final_audit_v3/`、`out/full_audio_asr_v3.json`、`out/recheck_audio_asr_v3.json`、`out/audit/`（Git管理外）。
+- 概要欄原稿にFlutterの商標帰属・非提携文、Claudeアイコン出典を追加。YouTubeへの投稿・概要欄更新は未実施。
+
+---
+
 # 改訂v2 検証記録 — 2026-10-21
 
 - 完成ファイル: `final_remotion_flutterkaigi_v2.mp4`、48,876,535 bytes。

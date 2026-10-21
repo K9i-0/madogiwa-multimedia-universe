@@ -15,6 +15,15 @@ updates:
           - minor
           - patch
     open-pull-requests-limit: 5
+    ignore:
+      # typescript-eslint 8.72.0 supports TypeScript <6.1.0 (checked 2026-10-21).
+      # Remove when typescript-eslint supports TypeScript 7.
+      - dependency-name: typescript
+        versions: ["7.x"]
+      # @cloudflare/vitest-pool-workers 0.23.0 requires Vitest ^4.1.0.
+      # Remove when the Workers test pool supports Vitest 5.
+      - dependency-name: vitest
+        versions: ["5.x"]
 
   - package-ecosystem: github-actions
     directory: /

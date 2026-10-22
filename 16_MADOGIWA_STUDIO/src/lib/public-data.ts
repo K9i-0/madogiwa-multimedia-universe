@@ -68,7 +68,7 @@ export type PublicProduction = {
 };
 
 export type PublicEpisodeDetail = {
-  guide?: { youtubeId: string; markdown: string };
+  guide?: { youtubeId: string; markdown: string; workflow?: string };
   episode: Episode;
   members: Member[];
   videos: PublicVideo[];

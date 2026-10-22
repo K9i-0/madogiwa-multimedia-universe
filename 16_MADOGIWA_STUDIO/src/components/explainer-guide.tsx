@@ -2,12 +2,14 @@ import { useState } from "react";
 import DocumentContent from "./document-content";
 import { absoluteUrl } from "@/lib/public-data";
 
-export function ExplainerGuide({ slug, markdown }: { slug: string; markdown: string }) {
+export function ExplainerGuide({ slug, markdown, workflow }: { slug: string; markdown: string; workflow?: string }) {
   const [status, setStatus] = useState("");
   const [fallback, setFallback] = useState("");
   const path = `/episodes/${slug}/guide.md`;
   const url = absoluteUrl(path);
-  const request = `次の解説資料を読んで、動画で紹介した制作手順・注意点・プロンプト例を理解してください。\n${url}\n\nその内容を参考に、［ここに作りたいもの・相談したいことを書く］。\nURLを取得できない場合は、その旨を教えてください。Markdown全文を貼り付けます。`;
+  const request = workflow
+    ? `添付のキャラクターを、以下の指示書に従って3Dモデルにしてください。まず利用可能な環境と不足を確認し、必須工程を別方式へ独断で置き換えないでください。\n\n${workflow}`
+    : `以下は動画の解説資料です。私が作りたいものと利用環境を確認し、この資料から実行手順を整理してください。必須のツールが不足している場合はその旨と再開方法を示し、別方式へ独断で変更しないでください。動画当時の設定・価格を現在の仕様と区別してください。\n資料URL: ${url}\n\n${markdown}`;
   async function copy(value: string, label: string) {
     try {
       await navigator.clipboard.writeText(value);
@@ -18,17 +20,15 @@ export function ExplainerGuide({ slug, markdown }: { slug: string; markdown: str
   }
   return <section className="explainer-guide" id="ai-guide" aria-labelledby="ai-guide-title">
     <p className="explainer-guide-eyebrow">動画の内容を、次の制作へ</p>
-    <h2 id="ai-guide-title">この解説をAIに渡す</h2>
-    <p>解説の要点・手順・プロンプト例・台本をまとめました。Markdownを貼り付けるか、URLを読めるAIに渡して相談できます。</p>
+    <h2 id="ai-guide-title">{workflow ? "この方法で作る" : "この解説をAIに渡す"}</h2>
+    <p>コピーした指示を、作りたいものや参照画像と一緒にAIへ貼り付けてください。</p>
     <div className="explainer-guide-actions">
-      <button type="button" onClick={() => void copy(markdown, "Markdown")}>Markdownをコピー</button>
-      <button type="button" onClick={() => void copy(url, "AI用URL")}>AI用URLをコピー</button>
-      <button type="button" onClick={() => void copy(request, "依頼文")}>依頼文をコピー</button>
-      <a href={path}>Markdownを開く</a>
+      <button type="button" onClick={() => void copy(request, "AIへの指示")}>AIへの指示をコピー</button>
     </div>
     <p className="episode-copy-status" role="status" aria-live="polite">{status}</p>
     {fallback && <textarea className="explainer-guide-fallback" aria-label="手動コピー用テキスト" readOnly value={fallback} onFocus={(event) => event.currentTarget.select()} />}
-    <p className="production-help">動画制作時点の情報を含みます。実行に必要な画像やAPI設定は、ご自身の環境で用意してください。</p>
-    <details><summary>解説資料を読む</summary><DocumentContent text={markdown} format="markdown" /></details>
+    <p className="production-help">使えるツールを確認してから進めます。必須ツールが使えない場合は、設定方法を案内します。</p>
+    {workflow && <details><summary>制作手順を読む</summary><p><a href={`/episodes/${slug}/workflow.md`}>実行用Markdown</a></p><DocumentContent text={workflow} format="markdown" /></details>}
+    <details><summary>動画の解説資料を読む</summary><p><a href={path}>動画資料のMarkdown</a></p><DocumentContent text={markdown} format="markdown" /></details>
   </section>;
 }

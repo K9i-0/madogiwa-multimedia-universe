@@ -16,9 +16,12 @@ it("only attaches reviewed guides to the corresponding public video", () => {
   const guide = getExplainerGuide("codex-tripo-3d-character-workflow", ["hCWMw1nB43A"])!;
   expect(guide.markdown).toContain("720p");
   expect(guide.markdown).toContain("1080p");
-  const html = renderToStaticMarkup(<ExplainerGuide slug="codex-tripo-3d-character-workflow" markdown={guide.markdown} />);
-  expect(html).toContain("Markdownをコピー");
-  expect(html).toContain("AI用URLをコピー");
+  const html = renderToStaticMarkup(<ExplainerGuide slug="codex-tripo-3d-character-workflow" markdown={guide.markdown} workflow={guide.workflow} />);
+  expect(html).toContain("AIへの指示をコピー");
+  expect(html.match(/<button/g)).toHaveLength(1);
+  expect(guide.workflow).toContain("Tripoによる3D生成は必須");
+  expect(guide.workflow).toContain("回転動画はWanに限定しません");
+  expect(html).not.toContain("AI用URLをコピー");
   expect(html).toContain("リグとウェイト");
   expect(html).toContain("/episodes/codex-tripo-3d-character-workflow/guide.md");
 });
@@ -45,3 +48,24 @@ it("serves identical Markdown and SSR content, keeps private notes private, and 
   expect((await SELF.fetch(url)).status).toBe(404);
   expect((await SELF.fetch("http://localhost/episodes/missing/guide.md")).status).toBe(404);
 }, 20000);
+
+
+it("only serves execution instructions for a matching public Tripo video", async () => {
+  const slug = "codex-tripo-3d-character-workflow";
+  const url = `http://localhost/episodes/${slug}/workflow.md`;
+  expect((await SELF.fetch(url)).status).toBe(404);
+  const episode = await createEpisode(env.DB, { slug, title: "Tripo workflow" }, "test");
+  const row = await registerYouTube(env.DB, youtubeRegistrationSchema.parse({ episodeId: episode.id, youtubeId: "hCWMw1nB43A", contentKind: "explainer", productionNotes: false }), "test");
+  expect((await SELF.fetch(url)).status).toBe(404);
+  await applyYouTubeStatus(env.DB, row, readyVideo(row.youtube_id));
+  const response = await SELF.fetch(url);
+  expect(response.headers.get("content-type")).toBe("text/markdown; charset=utf-8");
+  const detail = await loadPublicEpisode(slug);
+  expect(await response.text()).toBe(detail?.guide?.workflow);
+  const html = await (await SELF.fetch(`http://localhost/episodes/${slug}`)).text();
+  expect(html).toContain("この方法で作る");
+  expect(html).toContain("別の3D生成器へ独断で変更しない");
+  await updateEpisode(env.DB, episode.id, { status: "archived" });
+  expect((await SELF.fetch(url)).status).toBe(404);
+  expect((await SELF.fetch("http://localhost/episodes/missing/workflow.md")).status).toBe(404);
+});

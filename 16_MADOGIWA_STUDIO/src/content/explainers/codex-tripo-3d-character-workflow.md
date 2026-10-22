@@ -4,7 +4,13 @@
 - 制作ページ：https://madogiwa.work/episodes/codex-tripo-3d-character-workflow
 - 解説資料：https://madogiwa.work/episodes/codex-tripo-3d-character-workflow/guide.md
 - 対象版：v6（2026-10-15）
-- 資料更新日：2026-10-17
+- 資料更新日：2026-10-22
+
+## この方法で制作するには
+
+[AIに渡す実行指示書](https://madogiwa.work/episodes/codex-tripo-3d-character-workflow/workflow.md)を使ってください。必要な環境、参照コード、工程ごとの品質確認をまとめています。回転動画モデルは条件を満たせば代替できますが、Tripoが使えない場合は別方式へ独断で切り替えず、その工程で停止します。
+
+以下は動画内容の記録です。過去の依頼例・台本は実行指示書と区別してください。
 
 ## この資料について
 

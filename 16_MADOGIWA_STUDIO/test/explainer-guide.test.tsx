@@ -18,7 +18,9 @@ it("only attaches reviewed guides to the corresponding public video", () => {
   expect(guide.markdown).toContain("1080p");
   const html = renderToStaticMarkup(<ExplainerGuide slug="codex-tripo-3d-character-workflow" markdown={guide.markdown} workflow={guide.workflow} />);
   expect(html).toContain("AIへの指示をコピー");
-  expect(html.match(/<button/g)).toHaveLength(1);
+  expect(html).toContain("AIへの指示のMarkdown原文");
+  expect(html).toContain("動画資料のMarkdown原文");
+  expect(html).not.toContain('class="document-markdown"');
   expect(guide.workflow).toContain("Tripoによる3D生成は必須");
   expect(guide.workflow).toContain("回転動画はWanに限定しません");
   expect(html).not.toContain("AI用URLをコピー");

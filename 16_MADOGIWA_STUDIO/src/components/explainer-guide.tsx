@@ -1,5 +1,4 @@
 import { useState } from "react";
-import DocumentContent from "./document-content";
 import { absoluteUrl } from "@/lib/public-data";
 
 export function ExplainerGuide({ slug, markdown, workflow }: { slug: string; markdown: string; workflow?: string }) {
@@ -28,7 +27,21 @@ export function ExplainerGuide({ slug, markdown, workflow }: { slug: string; mar
     <p className="episode-copy-status" role="status" aria-live="polite">{status}</p>
     {fallback && <textarea className="explainer-guide-fallback" aria-label="手動コピー用テキスト" readOnly value={fallback} onFocus={(event) => event.currentTarget.select()} />}
     <p className="production-help">使えるツールを確認してから進めます。必須ツールが使えない場合は、設定方法を案内します。</p>
-    {workflow && <details><summary>制作手順を読む</summary><p><a href={`/episodes/${slug}/workflow.md`}>実行用Markdown</a></p><DocumentContent text={workflow} format="markdown" /></details>}
-    <details><summary>動画の解説資料を読む</summary><p><a href={path}>動画資料のMarkdown</a></p><DocumentContent text={markdown} format="markdown" /></details>
+    {workflow && <details>
+      <summary>コピーされる指示を確認</summary>
+      <div className="explainer-source-toolbar">
+        <a href={`/episodes/${slug}/workflow.md`}>workflow.md</a>
+        <button type="button" onClick={() => void copy(request, "AIへの指示")}>指示をコピー</button>
+      </div>
+      <textarea className="explainer-source" aria-label="AIへの指示のMarkdown原文" readOnly rows={20} value={request} spellCheck={false} />
+    </details>}
+    <details>
+      <summary>動画の解説資料を読む</summary>
+      <div className="explainer-source-toolbar">
+        <a href={path}>guide.md</a>
+        <button type="button" onClick={() => void copy(markdown, "動画資料")}>資料をコピー</button>
+      </div>
+      <textarea className="explainer-source" aria-label="動画資料のMarkdown原文" readOnly rows={20} value={markdown} spellCheck={false} />
+    </details>
   </section>;
 }

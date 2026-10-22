@@ -334,7 +334,7 @@ YouTube標準プレイヤーを使用する。旧HTML videoのローカル音量
 
 ## 技術解説をAIへ渡す資料
 
-対象動画の制作ページは「AIへの指示をコピー」の1操作に統一。Tripo回は「この方法で作る」から依頼文と実行指示書全文をコピーし、他の回は依頼文と動画資料をコピーします。Tripoの `/episodes/<slug>/workflow.md` は独立した実行指示書で、動画資料からリンクします。本文は初期HTMLにも含まれ、`/episodes/<slug>/guide.md` は認証やJavaScript不要の `text/markdown` を返します。コピー拒否時は手動コピー欄へフォールバックします。
+対象動画の制作ページは「AIへの指示をコピー」の1操作に統一。Tripo・Wan・LINEスタンプの3回とも「この方法で作る」から依頼文と実行指示書全文をコピーします。各回の `/episodes/<slug>/workflow.md` は独立した実行指示書で、動画資料からリンクします。本文は初期HTMLにも含まれ、`/episodes/<slug>/guide.md` は認証やJavaScript不要の `text/markdown` を返します。コピー拒否時は手動コピー欄へフォールバックします。
 
 資料正本は `src/content/explainers/*.md`。採用台本の要点、発話、画面内プロンプト、動画制作時点の条件、旧概要欄の補足とクレジットをレビューして保存します。新規追加は `src/lib/explainer-catalog.ts` のslug/YouTube IDと `src/server/explainer-guides.ts` のMarkdownを対応づけます。動画差し替え時は資料の対象版を確認してIDを更新してください。
 

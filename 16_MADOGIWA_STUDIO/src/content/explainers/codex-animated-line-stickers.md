@@ -4,7 +4,13 @@
 - 制作ページ：https://madogiwa.work/episodes/codex-animated-line-stickers
 - 解説資料：https://madogiwa.work/episodes/codex-animated-line-stickers/guide.md
 - 対象版：v8（2026-10-16）
-- 資料更新日：2026-10-17
+- 資料更新日：2026-10-22
+
+## この方法で制作するには
+
+[AIに渡す実行指示書](https://madogiwa.work/episodes/codex-animated-line-stickers/workflow.md)を使ってください。環境確認、必須の機能と代替条件、具体的な参照コード、工程ごとの品質確認をまとめています。必須機能が使えない場合は、独断で別方式へ変更せず不足と再開方法を示します。
+
+以下は動画内容の記録です。過去の依頼例・台本・設定と、新しい制作の実行指示を区別してください。
 
 ## この資料について
 

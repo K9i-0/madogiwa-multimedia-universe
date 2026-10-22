@@ -8,7 +8,7 @@ export function ExplainerGuide({ slug, markdown, workflow }: { slug: string; mar
   const path = `/episodes/${slug}/guide.md`;
   const url = absoluteUrl(path);
   const request = workflow
-    ? `添付のキャラクターを、以下の指示書に従って3Dモデルにしてください。まず利用可能な環境と不足を確認し、必須工程を別方式へ独断で置き換えないでください。\n\n${workflow}`
+    ? `以下の実行指示書に従って、私の指定内容と添付素材から制作を進めてください。まず利用可能な環境と不足を確認し、必須工程を別方式へ独断で置き換えないでください。\n\n${workflow}`
     : `以下は動画の解説資料です。私が作りたいものと利用環境を確認し、この資料から実行手順を整理してください。必須のツールが不足している場合はその旨と再開方法を示し、別方式へ独断で変更しないでください。動画当時の設定・価格を現在の仕様と区別してください。\n資料URL: ${url}\n\n${markdown}`;
   async function copy(value: string, label: string) {
     try {

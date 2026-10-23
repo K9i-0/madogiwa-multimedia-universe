@@ -1,0 +1,159 @@
+{
+  "model": "openai/whisper-large-v3-turbo",
+  "method": "automatic text corroboration, not listening",
+  "results": [
+    {
+      "file": "line04_anchor.wav",
+      "result": {
+        "text": "こうした危機感からアクシデンチュアが育成に乗り出したのが、新たな人材MDEです。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              6.32
+            ],
+            "text": "こうした危機感からアクシデンチュアが育成に乗り出したのが、新たな人材MDEです。"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line05_sobaya.wav",
+      "result": {
+        "text": "これまでは、仕事から外れた結果、窓際にいた。僕たちは違います。最初から窓際にデプロイされているんです。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              3.5
+            ],
+            "text": "これまでは、仕事から外れた結果、窓際にいた。"
+          },
+          {
+            "timestamp": [
+              4.44,
+              8.68
+            ],
+            "text": "僕たちは違います。最初から窓際にデプロイされているんです。"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line06_anchor.wav",
+      "result": {
+        "text": "左線ではなく戦略的配置その違いはどこにあるのでしょうか",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              2.68
+            ],
+            "text": "左線ではなく戦略的配置"
+          },
+          {
+            "timestamp": [
+              2.68,
+              6.02
+            ],
+            "text": "その違いはどこにあるのでしょうか"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line07_anchor.wav",
+      "result": {
+        "text": "実際の技術業界で注目されるFDE、フォワードデプロイドエンジニアは、顧客の現場に入り、課題に合わせてソフトウェアなどの実装を担う技術者です。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              12.32
+            ],
+            "text": "実際の技術業界で注目されるFDE、フォワードデプロイドエンジニアは、顧客の現場に入り、課題に合わせてソフトウェアなどの実装を担う技術者です。"
+          }
+        ]
+      }
+    },
+    {
+      "file": "wan3_result_seed510030_480p.mp4",
+      "result": {
+        "text": "快適です",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              5.0
+            ],
+            "text": "快適です"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line24_sobaya.wav",
+      "result": {
+        "text": "AIは僕の仕事を代わりにやってくれます。でも、僕の代わりに出社して、僕の体重でこの椅子に座ることはできない。最後に席を埋めるのは人間なんです。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              12.22
+            ],
+            "text": "AIは僕の仕事を代わりにやってくれます。でも、僕の代わりに出社して、僕の体重でこの椅子に座ることはできない。最後に席を埋めるのは人間なんです。"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line26_sobaya.wav",
+      "result": {
+        "text": "ええ、何もしなくていい状態は、何もしないだけでは作れませんから。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              5.0
+            ],
+            "text": "ええ、何もしなくていい状態は、何もしないだけでは作れませんから。"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line16_anchor.wav",
+      "result": {
+        "text": "設計を担当する陽炭氏、組み立てに加わる副議員氏、そして最終的な付加試験を担う蕎林、専門の異なる人材が一つの課題に向き合います。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              12.94
+            ],
+            "text": "設計を担当する陽炭氏、組み立てに加わる副議員氏、そして最終的な付加試験を担う蕎林、専門の異なる人材が一つの課題に向き合います。"
+          }
+        ]
+      }
+    },
+    {
+      "file": "line31_sobaya.wav",
+      "result": {
+        "text": "はい。今窓が足りないので、そこが次の経営課題です。",
+        "chunks": [
+          {
+            "timestamp": [
+              0.0,
+              4.7
+            ],
+            "text": "はい。今窓が足りないので、そこが次の経営課題です。"
+          }
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "Proper-name ASR spelling varies for よーたん and 福ギュン; captions retain the authored names.",
+    "The phrases 危機感, デプロイ, FDE, 席を埋める, 作れませんから, 経営課題 were corroborated by the secondary model."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "file": "final_remotion_mde_v2_16x9.mp4",
+  "sha256": "36710903e4ddeaceb7973809bc6ad16e68aa5ecfd063cb1ce9ece7ea8c65060d",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "7883"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "r_frame_rate": "0/0",
+        "nb_read_frames": "12318"
+      }
+    ],
+    "format": {
+      "duration": "262.800000",
+      "size": "72275928"
+    }
+  },
+  "expectedFrames": 7883,
+  "fullDecode": "passed",
+  "loudness": {
+    "input_i": "-17.96",
+    "input_tp": "-1.95",
+    "input_lra": "3.20",
+    "input_thresh": "-29.05",
+    "output_i": "-18.18",
+    "output_tp": "-2.00",
+    "output_lra": "3.30",
+    "output_thresh": "-29.18",
+    "normalization_type": "dynamic",
+    "target_offset": "0.18"
+  },
+  "captionSource": "approved dialogue; ASR phrase timing + text alignment",
+  "visualReview": "Inspected all 41 scene midpoints and final MP4 samples: window interview, fallen balcony, station narration, ending; no clipping or identity/geography issues observed",
+  "audioListening": "not performed; ASR and objective loudness/decode checks only",
+  "lipSync": "not claimed; interview uses still with camera move, archive masked character footage with new voice",
+  "originalAudio": "chair.mp4 25.0–28.5 seconds only; other B-roll muted",
+  "music": "original procedural underscore",
+  "newAdoptedStillImages": 18
+}

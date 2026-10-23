@@ -1,0 +1,18 @@
+{
+  "input": "remotion/out/raw-v2.mp4",
+  "output": "final_remotion_mde_v2_16x9.mp4",
+  "before": {
+    "input_i": "-17.86",
+    "input_tp": "0.21",
+    "input_lra": "3.20",
+    "input_thresh": "-28.96",
+    "output_i": "-18.07",
+    "output_tp": "-2.00",
+    "output_lra": "3.20",
+    "output_thresh": "-29.08",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "filter": "loudnorm=I=-18:TP=-2:LRA=7:measured_I=-17.86:measured_TP=0.21:measured_LRA=3.20:measured_thresh=-28.96:offset=0.07:linear=true",
+  "video": "stream copied, no re-encoding"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "madogiwa-crosstech-mde",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts MDECrosstech out/raw-v2.mp4 --codec=h264 --crf=18 --concurrency=2 && python3 ../finalize_audio.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "remotion": "4.0.538",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/react": "19.2.7"
+  }
+}

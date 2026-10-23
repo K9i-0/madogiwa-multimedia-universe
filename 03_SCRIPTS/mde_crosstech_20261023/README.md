@@ -60,7 +60,7 @@ ASRは台詞照合と字幕時刻の補助であり、声質・自然さ・音�
 
 - 本編：https://www.youtube.com/watch?v=TRf4LlHUNrc （public / processing succeeded、最初のタイトル案とヘッダー画像のサムネを採用。表記は最新指定の「新人罪」）
 - Studio：mde-crosstech / MS-FGYYX22B。YouTube ready / active、制作ノート非掲載。
-- ショート：`final_remotion_shorts_9x16.mp4`。720×1280、30fps、1421フレーム、47.3667秒。未投稿。
+- ショート：`final_remotion_shorts_9x16.mp4`。720×1280、30fps、1421フレーム、47.3667秒。YouTube公開：https://www.youtube.com/shorts/5QWz-ph1qUs
 - 採用範囲：本編フレーム90〜1451未満（3秒〜48.3667秒）。「エクセルを開く」から「最初から、窓際にデプロイされているんです」まで。末尾2秒に本編案内。
 - 再生成：`cd remotion && npm run render:short`。字幕と資料画面を縦に再配置し、音声は採用本編からフレーム単位で抽出。発話後の無音部で0.3秒フェード、案内2秒は無音。
 - 監査：全1421フレームのデコード成功、全字幕14カード中間・冒頭末尾の画像確認。AAC再エンコード前後の音声相関0.99986。通し聴取は未実施。

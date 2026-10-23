@@ -11,7 +11,7 @@ const Shot=({kind}:{kind:string})=>{const f=useCurrentFrame();return <AbsoluteFi
 {kind==='forest'&&<><Img src={staticFile('forest_v2.png')} style={{width:'100%',height:'100%',objectFit:'cover',transform:`scale(${interpolate(f,[0,timings.forest-1],[1,1.012],{extrapolateRight:'clamp'})})`}}/><Audio src={staticFile('voice_forest.wav')}/><ForestGraphic/></>}
 {kind==='comparison'&&<><ComparisonGraphic/><Audio src={staticFile('voice_comparison.wav')}/></>}
 {kind==='interruption'&&<><AbsoluteFill style={{background:'linear-gradient(125deg,#102b4c,#244867)',alignItems:'center',justifyContent:'center',color:white}}><div style={{width:700,borderTop:'2px solid #90a4ba',borderBottom:'2px solid #90a4ba',textAlign:'center',padding:'42px 0'}}><div style={{fontSize:44,fontWeight:700,letterSpacing:3}}>中継を中断しています</div><div style={{fontSize:24,marginTop:20,color:'#d7e1eb'}}>しばらくお待ちください</div></div></AbsoluteFill><Sequence from={8}><Audio src={staticFile('voice_interruption.wav')}/></Sequence></>}
-{kind==='expert'&&<><Img src={staticFile('okayaman_expert_clean.png')} style={{width:'100%',height:'100%'}}/><Band label="窓際大学大学院 農学研究科　准教授" title="おかやまん" sub="専門：森林生物資源学"/></>}
+{kind==='expert'&&<><Img src={staticFile('okayaman_expert_clean.png')} style={{width:'100%',height:'100%'}}/><Band label="窓際大学大学院 農学研究科　准教授" title="おかやまん" sub="専門：ちくわ生物学"/></>}
 {kind!=='comparison'&&kind!=='forest'&&<Bug/>}</AbsoluteFill>};
 const order=['intro','forest','comparison','interruption'] as const;
 const Parts=()=>{let start=0;return <AbsoluteFill>{order.map(k=>{const at=start;start+=timings[k];return <Sequence key={k} from={at} durationInFrames={timings[k]}><Shot kind={k}/></Sequence>})}</AbsoluteFill>};

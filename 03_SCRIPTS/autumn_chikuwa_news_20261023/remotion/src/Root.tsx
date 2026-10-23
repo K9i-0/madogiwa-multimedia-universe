@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill,Audio,Composition,Img,OffthreadVideo,Sequence,staticFile,useCurrentFrame,interpolate} from 'remotion';
 import timings from './edit-manifest.json';
+import {FinalNews, finalSpec} from './FinalNews';
 import {ForestGraphic,ComparisonGraphic} from './NewsGraphics';
 const navy='#183a62',white='#fcfcff';
 const font='"Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
@@ -15,4 +16,4 @@ const Shot=({kind}:{kind:string})=>{const f=useCurrentFrame();return <AbsoluteFi
 {kind!=='comparison'&&kind!=='forest'&&<Bug/>}</AbsoluteFill>};
 const order=['intro','forest','comparison','interruption'] as const;
 const Parts=()=>{let start=0;return <AbsoluteFill>{order.map(k=>{const at=start;start+=timings[k];return <Sequence key={k} from={at} durationInFrames={timings[k]}><Shot kind={k}/></Sequence>})}</AbsoluteFill>};
-export const Root=()=> <>{order.map(k=><Composition key={k} id={k} component={()=> <Shot kind={k}/>} durationInFrames={timings[k]} fps={30} width={1280} height={720}/>)}<Composition id="Parts" component={Parts} durationInFrames={order.reduce((s,k)=>s+timings[k],0)} fps={30} width={1280} height={720}/><Composition id="ExpertCard" component={()=> <Shot kind="expert"/>} durationInFrames={90} fps={30} width={1280} height={720}/></>;
+export const Root=()=> <><Composition id="FinalNews" component={FinalNews} durationInFrames={finalSpec.composition.durationInFrames} fps={30} width={1280} height={720}/>{order.map(k=><Composition key={k} id={k} component={()=> <Shot kind={k}/>} durationInFrames={timings[k]} fps={30} width={1280} height={720}/>)}<Composition id="Parts" component={Parts} durationInFrames={order.reduce((s,k)=>s+timings[k],0)} fps={30} width={1280} height={720}/><Composition id="ExpertCard" component={()=> <Shot kind="expert"/>} durationInFrames={90} fps={30} width={1280} height={720}/></>;

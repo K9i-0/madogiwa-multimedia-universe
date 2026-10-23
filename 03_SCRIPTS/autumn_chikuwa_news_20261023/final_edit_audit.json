@@ -1,0 +1,22 @@
+{
+  "output": "final_remotion_news.mp4",
+  "sha256": "4916fa61757fa16f17c2fc22c1f7e453f393a4d06ddd29f0baf23a029e01e9d7",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": "30/1",
+  "videoFrames": 946,
+  "videoDuration": 31.533333,
+  "audioSampleRate": 48000,
+  "fullDecode": "pass",
+  "blackSegments": [],
+  "loudness": "Summary:\n\n  Integrated loudness:\n    I:         -16.0 LUFS\n    Threshold: -27.2 LUFS\n\n  Loudness range:\n    LRA:         4.4 LU\n    Threshold: -37.3 LUFS\n    LRA low:   -19.9 LUFS\n    LRA high:  -15.5 LUFS\n\n  True peak:\n    Peak:       -2.0 dBFS",
+  "newGenerationRequests": 0,
+  "visualAudit": "Cut boundaries, text, props and dense action contact sheets inspected.",
+  "audioAudit": "Full-program ASR matches intended dialogue phonetically. Loudness, source boundaries and decode checked. No auditory listening or real-time lip-sync approval claimed.",
+  "limitations": [
+    "Original generated action retained; editing cannot reconstruct the physical bite or character acting.",
+    "Studio return uses a 12-frame still from the existing anchor recording."
+  ]
+}

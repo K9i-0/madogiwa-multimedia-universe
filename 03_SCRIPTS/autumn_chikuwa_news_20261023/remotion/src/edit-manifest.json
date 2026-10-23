@@ -2,5 +2,176 @@
   "intro": 72,
   "forest": 138,
   "comparison": 143,
-  "interruption": 102
+  "interruption": 102,
+  "final": {
+    "composition": {
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "durationInFrames": 946
+    },
+    "clock": "19:00",
+    "sequences": [
+      {
+        "id": "intro",
+        "from": 0,
+        "duration": 72
+      },
+      {
+        "id": "forest",
+        "from": 72,
+        "duration": 66
+      },
+      {
+        "id": "harvest_broll",
+        "from": 138,
+        "duration": 66
+      },
+      {
+        "id": "yotan",
+        "from": 204,
+        "duration": 132
+      },
+      {
+        "id": "fukugyun",
+        "from": 336,
+        "duration": 48
+      },
+      {
+        "id": "expert",
+        "from": 384,
+        "duration": 81
+      },
+      {
+        "id": "comparison",
+        "from": 465,
+        "duration": 141
+      },
+      {
+        "id": "theft",
+        "from": 606,
+        "duration": 235
+      },
+      {
+        "id": "studio_return",
+        "from": 841,
+        "duration": 12
+      },
+      {
+        "id": "standby",
+        "from": 853,
+        "duration": 93
+      }
+    ],
+    "sourceEdits": {
+      "harvest_broll": {
+        "file": "wan3_harvest_480p.mp4",
+        "start": 0,
+        "end": 132,
+        "frames": 66,
+        "audio": false
+      },
+      "yotan": {
+        "file": "wan3_harvest_480p.mp4",
+        "start": 147,
+        "end": 279,
+        "frames": 132,
+        "audio": true
+      },
+      "fukugyun": {
+        "file": "wan3_harvest_480p.mp4",
+        "start": 294,
+        "end": 342,
+        "frames": 48,
+        "audio": true
+      },
+      "expert": {
+        "file": "wan3_expert_480p.mp4",
+        "start": 27,
+        "end": 108,
+        "frames": 81,
+        "audio": true
+      }
+    },
+    "theftSourceEdits": [
+      {
+        "start": 0,
+        "end": 102,
+        "frames": 102
+      },
+      {
+        "start": 102,
+        "end": 204,
+        "frames": 34
+      },
+      {
+        "start": 204,
+        "end": 240,
+        "frames": 9
+      },
+      {
+        "start": 240,
+        "end": 366,
+        "frames": 42
+      },
+      {
+        "start": 366,
+        "end": 402,
+        "frames": 18
+      },
+      {
+        "start": 402,
+        "end": 534,
+        "frames": 30,
+        "audioEnd": 480
+      }
+    ],
+    "captions": [
+      {
+        "shot": "yotan",
+        "from": 2,
+        "to": 57,
+        "speaker": "よーたん",
+        "text": "今年は肉厚ですね"
+      },
+      {
+        "shot": "yotan",
+        "from": 69,
+        "to": 128,
+        "speaker": "よーたん",
+        "text": "焼き目もきれいについてます"
+      },
+      {
+        "shot": "fukugyun",
+        "from": 2,
+        "to": 46,
+        "speaker": "福ギュン",
+        "text": "今夜はおでんギュン"
+      },
+      {
+        "shot": "theft",
+        "from": 0,
+        "to": 102,
+        "speaker": "福ギュン",
+        "text": "こちらも、おいしそうなのが採れたわよー"
+      }
+    ],
+    "reaction": {
+      "from": 207,
+      "sourceStart": 494,
+      "sourceEnd": 518
+    },
+    "audioGainDb": {
+      "intro": 6.3,
+      "forest": -2.4,
+      "yotan": -6.8,
+      "fukugyun": -6.2,
+      "expert": -4.2,
+      "comparison": -2.2,
+      "theft": -9.7,
+      "theftAction": -2,
+      "reaction": -3.6,
+      "interruption": -2.7
+    }
+  }
 }

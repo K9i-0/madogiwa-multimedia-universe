@@ -1,0 +1,61 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "wan_generated_lip_sync",
+  "reference_audio_usage": "voice_timbre_only",
+  "project_duration": 49,
+  "generation_mode": "segmented_over_30",
+  "prompt_file": "prompt_wan3_theft.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_fukuchan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "scene_theft.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "sobaya_quadruped_front.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "sobaya_quadruped_rear.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "sobaya_fallen_rear.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "comparison_harvest.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "forest_v2.png"
+    },
+    {
+      "type": "reference_audio",
+      "path": "voice_ref_fukuchan.wav"
+    },
+    {
+      "type": "reference_audio",
+      "path": "voice_ref_yotan.wav"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 18,
+    "audio": true,
+    "seed": 1023003,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_theft_480p.mp4"
+}

@@ -4,11 +4,11 @@
 
 ## 完成済みパート
 
-`completed_nonvideo_parts.mp4` は完成パートだけを順に並べた確認用コンピレーション。本編完成版ではなく、収穫・専門家の可視発話・そば屋の転倒を省略している。1280×720、30fps、503フレーム、約16.77秒。
+`completed_nonvideo_parts.mp4` は完成パートだけを順に並べた確認用コンピレーション。本編完成版ではなく、収穫・専門家の可視発話・そば屋の転倒を省略している。1280×720、30fps、455フレーム、約15.17秒。
 
 |ファイル|内容|フレーム数|
 |---|---|---:|
-|part_01_intro.mp4|25話から「続いて、季節の話題です」の映像・音声を流用|120|
+|part_01_intro.mp4|25話から「続いて、季節の話題です」の映像・音声を流用|72|
 |part_02_forest.mp4|imagegenの群生画像＋緩やかな寄り＋正典アナウンス|138|
 |part_03_comparison.mp4|食用と88話の毒ちくわ比較＋おかやまんの正典音声|143|
 |part_04_interruption.mp4|Remotionの中断画面＋正典アナウンス|102|
@@ -46,3 +46,7 @@ TypeScript型チェック成功。720p/30fps/H.264/AAC、全編デコード成�
 Remotion 4.0.538（2026-10-23 npm view確認）。個別の再レンダーはcomposition intro / forest / comparison / interruption。肩書き画像は`npx remotion still src/index.ts ExpertCard out/expert_card.png`。
 
 画像は内蔵imagegen使用。入力プロンプトはprompt_imagegen_*.txt。生成画像のデフォルト保存元はCodex generated_images、正本は本フォルダへコピー済み。
+
+## 冒頭の水揚げ混入修正
+
+元映像の実カットは2.416667秒。台本上の4秒を流用区間としたため港が混入していた。実映像を確認し冒頭を72フレーム（2.4秒）へ短縮。アナウンサーの発話後に山へ直接切り替え、流用素材・連結版・個別パートすべてを更新。

@@ -6,7 +6,7 @@ public=p/'remotion/public';public.mkdir(parents=True,exist_ok=True)
 for pattern in ['*.png','voice_*.wav']:
  for f in p.glob(pattern):shutil.copy2(f,public/f.name)
 source=p.parent/'25_chikuwa_landing_news/chikuwa_hamamatsu_news_seedance2.mp4'
-subprocess.run(['ffmpeg','-y','-v','error','-i',str(source),'-t','4','-c:v','libx264','-crf','18','-c:a','aac',str(public/'anchor_intro.mp4')],check=True)
+subprocess.run(['ffmpeg','-y','-v','error','-i',str(source),'-t',str(json.loads((p/'remotion/src/edit-manifest.json').read_text())['intro']/30),'-c:v','libx264','-crf','18','-c:a','aac',str(public/'anchor_intro.mp4')],check=True)
 master=p/'completed_nonvideo_parts.mp4'
 if master.exists():
  t=json.loads((p/'remotion/src/edit-manifest.json').read_text());start=0

@@ -1,0 +1,1 @@
+{"name":"autumn-chikuwa-news","private":true,"scripts":{"typecheck":"tsc --noEmit","render":"remotion render src/index.ts Parts ../completed_nonvideo_parts.mp4 --codec h264 --crf 18"},"dependencies":{"@remotion/cli":"4.0.538","remotion":"4.0.538","react":"19.2.3","react-dom":"19.2.3"},"devDependencies":{"@types/react":"19.2.7","typescript":"5.9.3"}}

@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": false,
+  "assets": [
+    {
+      "file": "forest.png",
+      "sha256": "6b1651b0c3066da3eb15f3c5e338ab30092f0e99d12bd259329247117cff31d7",
+      "references": []
+    },
+    {
+      "file": "comparison.png",
+      "sha256": "a3636ca4c0a7b1d80b0d9e3e034145c1b7c6e9588122ff5ba7cc2ce030a89046",
+      "references": [
+        "03_SCRIPTS/88_doku_chikuwa/oden_toxic_c_reference.png"
+      ]
+    },
+    {
+      "file": "okayaman_expert_clean.png",
+      "sha256": "5d4bf6e7fef79be4fd2909435ddab71019cbacf772c95ac09c52fd87851895a0",
+      "references": [
+        "02_CHARACTERS/Okayaman.jpg"
+      ]
+    }
+  ]
+}

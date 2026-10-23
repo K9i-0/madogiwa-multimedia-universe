@@ -1,0 +1,20 @@
+{
+  "note": "Automated transcript screening only; not listening approval.",
+  "clips": [
+    {
+      "file": "voice_comparison.wav",
+      "recognized": "食用と非常によく似ていますので見た目だけで判断しないでください",
+      "sha256": "e52983767baad2c9aa16ac51e4f1075be52bf386e3d249c45e597505fa62646b"
+    },
+    {
+      "file": "voice_forest.wav",
+      "recognized": "秋の味覚、ちくわがりが再生期を迎えています。",
+      "sha256": "0b306f636bb7270f445b70c4908848a37458f0ed49660dce580d7c3ac5380760"
+    },
+    {
+      "file": "voice_interruption.wav",
+      "recognized": "中継を一旦失礼します。",
+      "sha256": "8efb2a253bdd32f68dc5e6596b5a4a9092176ee234c9e160be42030bc164f57b"
+    }
+  ]
+}

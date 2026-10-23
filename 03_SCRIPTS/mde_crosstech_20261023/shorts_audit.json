@@ -1,0 +1,23 @@
+{
+  "source": "final_remotion_mde_v2_16x9.mp4",
+  "sourceFrames": [
+    90,
+    1451
+  ],
+  "output": "final_remotion_shorts_9x16.mp4",
+  "resolution": [
+    720,
+    1280
+  ],
+  "frames": 1421,
+  "fps": 30,
+  "duration": 47.36666666666667,
+  "decode": "passed",
+  "sourceAudioPcmSha256": "c60a2dbb17055bfff0515bf5cc1503234ae3e4045f6df4ba28c78a0c307f1ace",
+  "outputAudioPcmSha256": "d7f7e112bf405342251cebb35448384b20dfff545f7a6ba06ac1ed504fd07ec8",
+  "audioCorrelationBeforeFade": 0.9998597805488827,
+  "audioProcessing": "Adopted master exact frame cut; AAC re-encode; final 0.3s fade within dialogue gap; 2s silent CTA hold. Hashes differ due to AAC re-encode.",
+  "visualAudit": "All 14 caption midpoints, first and last frames reviewed; no double subtitles or clipping. Sheet footer corrected and rechecked.",
+  "listening": "Not performed; waveform correlation and existing source ASR checked.",
+  "publication": "Short prepared, not uploaded."
+}

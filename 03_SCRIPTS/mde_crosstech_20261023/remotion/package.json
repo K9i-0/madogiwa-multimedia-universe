@@ -5,7 +5,8 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts MDECrosstech out/raw-v2.mp4 --codec=h264 --crf=18 --concurrency=2 && python3 ../finalize_audio.py"
+    "render": "remotion render src/index.ts MDECrosstech out/raw-v2.mp4 --codec=h264 --crf=18 --concurrency=2 && python3 ../finalize_audio.py",
+    "render:short": "remotion render src/index.ts MDEShort out/short-silent.mp4 --codec=h264 --crf=18 --concurrency=2 && python3 ../finalize_short.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.538",

@@ -55,3 +55,13 @@ ASRは台詞照合と字幕時刻の補助であり、声質・自然さ・音�
 最終追加FB：二軒目の取材後、アナウンサーの締めを駅ホームのベンチで酔いつぶれたそば屋へ重ねる。末尾の企業スローガンは削除し、同カットの余韻で終了。仮面は装着したまま。
 
 完成確認：7883フレーム、4分22.77秒。全編デコードと音量検証済み（-17.96 LUFS、-1.95 dBTP）。`npm run render` はRemotionのraw出力後に `finalize_audio.py` で音声のみ整音し、映像をストリームコピーする。音声の通し試聴は未実施。詳細は `qa_report.json`。
+
+## 2026-10-23 YouTube公開・本編誘導ショート
+
+- 本編：https://www.youtube.com/watch?v=TRf4LlHUNrc （public / processing succeeded、最初のタイトル案とヘッダー画像のサムネを採用。表記は最新指定の「新人罪」）
+- Studio：mde-crosstech / MS-FGYYX22B。YouTube ready / active、制作ノート非掲載。
+- ショート：`final_remotion_shorts_9x16.mp4`。720×1280、30fps、1421フレーム、47.3667秒。未投稿。
+- 採用範囲：本編フレーム90〜1451未満（3秒〜48.3667秒）。「エクセルを開く」から「最初から、窓際にデプロイされているんです」まで。末尾2秒に本編案内。
+- 再生成：`cd remotion && npm run render:short`。字幕と資料画面を縦に再配置し、音声は採用本編からフレーム単位で抽出。発話後の無音部で0.3秒フェード、案内2秒は無音。
+- 監査：全1421フレームのデコード成功、全字幕14カード中間・冒頭末尾の画像確認。AAC再エンコード前後の音声相関0.99986。通し聴取は未実施。
+- 公開記録は `youtube_upload.json` / `youtube_verified.json` / `youtube_thumbnail_record.json`。ショート仕様は `remotion/src/shorts-manifest.json`、監査は `shorts_audit.json`。

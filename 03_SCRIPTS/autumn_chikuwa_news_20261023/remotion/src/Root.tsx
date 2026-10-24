@@ -5,7 +5,7 @@ import {FinalNews, finalSpec} from './FinalNews';
 import {ForestGraphic,ComparisonGraphic} from './NewsGraphics';
 const navy='#183a62',white='#fcfcff';
 const font='"Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
-const Bug=()=> <><div style={{position:'absolute',top:25,left:30,background:navy,color:white,padding:'5px 18px',fontSize:32,fontWeight:700}}>19:00</div><div style={{position:'absolute',top:18,right:22,width:190,height:64,background:navy,color:'white',display:'flex',alignItems:'center',justifyContent:'center',fontSize:34,fontWeight:800}}>ゆめテレ</div></>;
+const Bug=()=> <><div style={{position:'absolute',top:25,left:30,background:navy,color:white,padding:'5px 18px',fontSize:32,fontWeight:700}}>{timings.final.clock}</div><div style={{position:'absolute',top:18,right:22,width:190,height:64,background:navy,color:'white',display:'flex',alignItems:'center',justifyContent:'center',fontSize:34,fontWeight:800}}>ゆめテレ</div></>;
 const Band=({label,title,sub}:{label:string,title:string,sub?:string})=><div style={{position:'absolute',bottom:22,left:32,right:32,boxShadow:'0 4px 14px #0004'}}><div style={{background:navy,color:'white',display:'inline-block',padding:'7px 18px',fontSize:23,fontWeight:700}}>{label}</div><div style={{background:'#fcfdff',borderLeft:'8px solid #c58a35',padding:'13px 22px',color:navy}}><div style={{fontSize:40,fontWeight:700}}>{title}</div>{sub&&<div style={{fontSize:23,marginTop:5}}>{sub}</div>}</div></div>;
 const Shot=({kind}:{kind:string})=>{const f=useCurrentFrame();return <AbsoluteFill style={{background:'#e9ecee',fontFamily:font}}>
 {kind==='intro'&&<><OffthreadVideo src={staticFile('anchor_intro.mp4')} style={{width:'100%',height:'100%',objectFit:'cover'}}/><Band label="季節の話題" title="秋の味覚　ちくわ狩り最盛期"/></>}

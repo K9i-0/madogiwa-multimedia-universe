@@ -10,7 +10,7 @@
       "fps": 30,
       "durationInFrames": 1771
     },
-    "clock": "19:00",
+    "clock": "15:00",
     "sequences": [
       {
         "id": "intro",
@@ -196,6 +196,26 @@
       "interruptionAudioFrom": 12,
       "expertInsetSource": "expert_inset.mp4",
       "expertInsetLastFrame": 359
+    },
+    "chaseCamera": {
+      "frames": [
+        102,
+        116,
+        187,
+        205,
+        241
+      ],
+      "strength": [
+        0,
+        1,
+        1,
+        0.5,
+        0.2
+      ],
+      "translationX": 7,
+      "translationY": 5,
+      "rotationDegrees": 0.3,
+      "overscan": 0.045
     }
   }
 }

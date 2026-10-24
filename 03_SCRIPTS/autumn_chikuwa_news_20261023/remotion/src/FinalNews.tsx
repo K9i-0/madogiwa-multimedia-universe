@@ -12,9 +12,20 @@ const font = '"Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif';
 const full: React.CSSProperties = {width:'100%', height:'100%', objectFit:'cover'};
 const fade = (f:number) => interpolate(f,[0,5],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
 
+// Deterministic handheld pursuit: move only the camera image, never broadcast graphics.
+const chaseStyle = (f:number):React.CSSProperties => {
+  const c=finalSpec.chaseCamera;
+  const a=interpolate(f,c.frames,c.strength,{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+  const t=f-c.frames[0];
+  const x=a*c.translationX*(0.65*Math.sin(t*0.83)+0.35*Math.sin(t*1.71+0.4));
+  const y=a*c.translationY*(0.7*Math.sin(t*1.11+0.8)+0.3*Math.sin(t*2.03));
+  const r=a*c.rotationDegrees*(0.7*Math.sin(t*0.51)+0.3*Math.sin(t*1.43));
+  return {...full,transform:`translate(${x}px,${y}px) rotate(${r}deg) scale(${1+a*c.overscan})`};
+};
+
 const Header = ({live=false, studio=false, document=false}:{live?:boolean;studio?:boolean;document?:boolean}) => <>
   {!document&&<div style={{position:'absolute',inset:0,background:'linear-gradient(#0005,transparent 23%,transparent 78%,#0003)',pointerEvents:'none'}}/>}
-  <div style={{position:'absolute',left:50,top:25,color:document?ink:'white',fontSize:38,fontWeight:700,fontFamily:'Arial',textShadow:document?'none':'0 1px 4px #0009'}}>19:00</div>
+  <div style={{position:'absolute',left:50,top:25,color:document?ink:'white',fontSize:38,fontWeight:700,fontFamily:'Arial',textShadow:document?'none':'0 1px 4px #0009'}}>{finalSpec.clock}</div>
   <div style={{position:'absolute',right:0,top:0,width:278,height:92,background:studio?ink:'transparent',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',color:document?ink:'white',textShadow:studio||document?'none':'0 1px 4px #0009'}}>
     <div style={{fontSize:30,fontWeight:600,letterSpacing:2}}>ゆめテレ <span style={{fontSize:15,letterSpacing:1}}>NEWS</span></div>
     <div style={{fontSize:17,marginTop:4,letterSpacing:1}}>秋の味覚　ちくわ狩り</div>
@@ -59,10 +70,10 @@ const Caption = ({speaker,text}:{speaker:string;text:string}) => {
 const Shot = ({id}:{id:string}) => {
   const f=useCurrentFrame();
   const video = ['harvest_broll','yotan','fukugyun','expert','theft'].includes(id);
-  return <AbsoluteFill>
+  return <AbsoluteFill style={{overflow:'hidden'}}>
     {id==='intro' && <><OffthreadVideo src={staticFile('anchor_intro.mp4')} volume={gain('intro')} style={full}/><Header studio/><Headline/></>}
     {id==='forest' && <><Img src={staticFile('forest_v2.png')} style={full}/><Header/><div style={{position:'absolute',bottom:46,left:50,color:'white',textShadow:'0 2px 5px #000',opacity:fade(f)}}><div style={{fontSize:19,marginBottom:9,letterSpacing:2}}>秋の味覚</div><div style={{fontSize:39,fontWeight:600}}>天然ちくわ　収穫の季節</div></div></>}
-    {video && <><OffthreadVideo src={staticFile(`edit_${id}.mp4`)} volume={(frame)=>clipVolume(id,frame)} style={full}/><Header live={id!=='expert'}/></>}
+    {video && <><OffthreadVideo src={staticFile(`edit_${id}.mp4`)} volume={(frame)=>clipVolume(id,frame)} style={id==='theft'?chaseStyle(f):full}/><Header live={id!=='expert'}/></>}
     {id==='expert' && <ExpertName/>}
     {id==='bridge_expert' && <Bridge expert/>}
     {id==='bridge_field' && <Bridge expert={false}/>}

@@ -83,3 +83,7 @@ if 'reaction' in M:
     ff(['-i', P/'wan3_theft_480p.mp4', '-vn', '-af',
         f'atrim=start={reaction["sourceStart"]/30}:end={reaction["sourceEnd"]/30},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,afade=t=out:st=0.76:d=0.04',
         '-ar', '48000', '-c:a', 'pcm_s16le', PUBLIC/'reaction_yotan.wav'])
+
+if "coherentExpert" in M:
+    for name in ["voice_anchor_expert_intro.wav", "voice_expert_beer_continuation.wav"]:
+        shutil.copy2(P/name,PUBLIC/name)

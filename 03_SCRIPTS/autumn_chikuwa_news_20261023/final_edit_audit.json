@@ -1,20 +1,20 @@
 {
   "output": "final_remotion_news.mp4",
-  "sha256": "79fd722fece946a62d7f04ba6302091297705b862664f6537c8e9e3937630920",
+  "sha256": "5188cde576b9050eeb9c7f0d318023d07681ce24b584037a4aa7ad0048155515",
   "resolution": [
     1280,
     720
   ],
   "fps": "30/1",
-  "videoFrames": 1558,
-  "videoDuration": 51.933333,
+  "videoFrames": 1771,
+  "videoDuration": 59.033333,
   "audioSampleRate": 48000,
   "fullDecode": "pass",
   "blackSegments": [],
-  "loudness": "Summary:\n\n  Integrated loudness:\n    I:         -16.0 LUFS\n    Threshold: -27.1 LUFS\n\n  Loudness range:\n    LRA:         3.6 LU\n    Threshold: -37.1 LUFS\n    LRA low:   -19.2 LUFS\n    LRA high:  -15.5 LUFS\n\n  True peak:\n    Peak:       -2.1 dBFS",
+  "loudness": "Summary:\n\n  Integrated loudness:\n    I:         -16.0 LUFS\n    Threshold: -27.0 LUFS\n\n  Loudness range:\n    LRA:         3.3 LU\n    Threshold: -37.0 LUFS\n    LRA low:   -18.8 LUFS\n    LRA high:  -15.5 LUFS\n\n  True peak:\n    Peak:       -2.1 dBFS",
   "newVideoGenerationRequests": 0,
   "newImageGenerationRequests": 0,
-  "speechGenerationAttempts": 3,
+  "speechGenerationAttempts": 1,
   "visualAudit": "Cut boundaries, text, props and dense action contact sheets inspected.",
   "audioAudit": "Full-program and per-take ASR screened. Rare-word transcriptions differ across models. Loudness, source boundaries and decode checked. No auditory listening or real-time lip-sync approval claimed.",
   "limitations": [

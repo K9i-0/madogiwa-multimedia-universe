@@ -1,0 +1,73 @@
+{
+  "generationAttempts": 1,
+  "newVideoGenerationRequests": 0,
+  "newImageGenerationRequests": 0,
+  "model": "Aratako/Irodori-TTS-v4-Large",
+  "seed": 2026,
+  "reference": "voice_forest.wav",
+  "referenceSha256": "0b306f636bb7270f445b70c4908848a37458f0ed49660dce580d7c3ac5380760",
+  "text": "旬を迎えた天然のちくわですが、採る際には注意も必要です。ちくわ生物学が専門の、窓際大学のおかやまん准教授に伺います。",
+  "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+  "cfg": 5,
+  "durationScale": 1,
+  "uncut": true,
+  "rawSha256": "5c474e8f8ded41ed4ed2d8e0549bbbd5a0d25419d93d4409ec8239541e6a2359",
+  "adoptedSha256": "95185c0f7fa18531d4e99f923d591611000e556448245d948fe162c4c8d0c203",
+  "seconds": 11.12,
+  "gainDb": -2.3900000000000006,
+  "expertOriginal": "wan3_expert_480p.mp4 frames 27..108, original audio and video",
+  "expertContinuation": "voice_expert_beer.wav samples 38400..end; no resynthesis or speed change",
+  "compositionFrames": 1771,
+  "asr": {
+    "intro": {
+      "text": "旬を迎えた天然のちくわですが、とる際には注意も必要です。ちくわ生物学が専門の窓際大学の岡山淳教授に伺います。",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            4.88
+          ],
+          "text": "旬を迎えた天然のちくわですが、とる際には注意も必要です。"
+        },
+        {
+          "timestamp": [
+            5.58,
+            10.66
+          ],
+          "text": "ちくわ生物学が専門の窓際大学の岡山淳教授に伺います。"
+        }
+      ]
+    },
+    "expert_continuation": {
+      "text": "山にはドクチクワも自生しています見た目だけでは食用と区別がつきませんドクチクワ特有のビール臭が見分ける手がかりになります",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            2.64
+          ],
+          "text": "山にはドクチクワも自生しています"
+        },
+        {
+          "timestamp": [
+            2.64,
+            6.68
+          ],
+          "text": "見た目だけでは食用と区別がつきません"
+        },
+        {
+          "timestamp": [
+            6.68,
+            12.32
+          ],
+          "text": "ドクチクワ特有のビール臭が見分ける手がかりになります"
+        }
+      ]
+    }
+  },
+  "auditNotes": [
+    "Expert continuation PCM equals source from sample 38400 onward.",
+    "ASR transcribes the proper name/title as 岡山淳教授; exact pronunciation and voice quality require listening. No extra generation attempted.",
+    "No listening or real-time lip-sync approval claimed."
+  ]
+}

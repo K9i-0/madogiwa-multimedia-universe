@@ -8,7 +8,7 @@
       "width": 1280,
       "height": 720,
       "fps": 30,
-      "durationInFrames": 1558
+      "durationInFrames": 1771
     },
     "clock": "19:00",
     "sequences": [
@@ -39,32 +39,37 @@
       },
       {
         "id": "bridge_expert",
-        "duration": 196,
+        "duration": 352,
         "from": 384
       },
       {
+        "id": "expert",
+        "duration": 81,
+        "from": 736
+      },
+      {
         "id": "comparison",
-        "from": 580,
-        "duration": 400
+        "from": 817,
+        "duration": 376
       },
       {
         "id": "bridge_field",
         "duration": 231,
-        "from": 980
+        "from": 1193
       },
       {
         "id": "theft",
-        "from": 1211,
+        "from": 1424,
         "duration": 242
       },
       {
         "id": "studio_return",
-        "from": 1453,
+        "from": 1666,
         "duration": 12
       },
       {
         "id": "standby",
-        "from": 1465,
+        "from": 1678,
         "duration": 93
       }
     ],
@@ -181,8 +186,13 @@
     },
     "beerExplanation": {
       "generatedTakes": 3,
-      "beerClueFrom": 224,
+      "beerClueFrom": 200,
       "fieldStudioFrom": 132
+    },
+    "coherentExpert": {
+      "generatedTakes": 1,
+      "listeningFrom": 172,
+      "continuationTrimSamples": 38400
     }
   }
 }

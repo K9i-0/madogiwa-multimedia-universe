@@ -41,12 +41,12 @@ const Bridge = ({expert}:{expert:boolean}) => {
     <Sequence from={finalSpec.beerExplanation.fieldStudioFrom+cue}><Img src={staticFile('forest_v2.png')} style={full}/><Header/><div style={{position:'absolute',left:50,bottom:45,color:'white',fontSize:36,fontWeight:600,textShadow:'0 2px 5px #000'}}>秋のちくわ狩り</div></Sequence>
     <Audio src={staticFile('voice_anchor_comparison_reply.wav')}/>
   </AbsoluteFill>;
+  const listeningFrom=finalSpec.coherentExpert.listeningFrom;
   return <AbsoluteFill>
-    <Sequence durationInFrames={cue}><OffthreadVideo src={staticFile('anchor_bridge.mp4')} muted style={full}/><Header studio/><Headline title={expert?'ちくわ狩り　専門家に聞く':undefined}/></Sequence>
-    <Sequence from={cue}>
-      {expert?<><Freeze frame={Math.min(Math.max(0,f-cue),179)}><OffthreadVideo src={staticFile('expert_listening.mp4')} muted style={full}/></Freeze><Header/><ExpertName/></>:<><Img src={staticFile('forest_v2.png')} style={full}/><Header/><div style={{position:'absolute',left:50,bottom:45,color:'white',fontSize:36,fontWeight:600,textShadow:'0 2px 5px #000'}}>秋のちくわ狩り</div></>}
-      <Audio src={staticFile('voice_anchor_question.wav')}/>
-    </Sequence>
+    <Sequence durationInFrames={cue}><OffthreadVideo src={staticFile('anchor_bridge.mp4')} muted style={full}/><Header studio/><Headline title="ちくわ狩り　専門家に聞く"/></Sequence>
+    <Sequence from={cue} durationInFrames={listeningFrom-cue}><Img src={staticFile('forest_v2.png')} style={full}/><Header/><Headline title="天然のちくわ　採取には注意が必要"/></Sequence>
+    <Sequence from={listeningFrom}><Freeze frame={Math.min(Math.max(0,f-listeningFrom),179)}><OffthreadVideo src={staticFile('expert_listening.mp4')} muted style={full}/></Freeze><Header/><ExpertName/></Sequence>
+    <Sequence from={cue}><Audio src={staticFile('voice_anchor_expert_intro.wav')}/></Sequence>
   </AbsoluteFill>;
 };
 
@@ -68,7 +68,7 @@ const Shot = ({id}:{id:string}) => {
     {id==='expert' && <ExpertName/>}
     {id==='bridge_expert' && <Bridge expert/>}
     {id==='bridge_field' && <Bridge expert={false}/>}
-    {id==='comparison' && <><ComparisonGraphic showHeader={false} message={f>=finalSpec.beerExplanation.beerClueFrom?'beer':'appearance'}/><Header document/><Audio src={staticFile('voice_expert_beer.wav')}/></>}
+    {id==='comparison' && <><ComparisonGraphic expertPortrait showHeader={false} message={f>=finalSpec.beerExplanation.beerClueFrom?'beer':'appearance'}/><Header document/><Audio src={staticFile('voice_expert_beer_continuation.wav')}/></>}
     {id==='theft' && <Sequence from={finalSpec.feedback.sobayaFrom} durationInFrames={finalSpec.feedback.sobayaFrames}><Audio src={staticFile('voice_sobaya_poison.wav')}/></Sequence>}
     {id==='studio_return' && <><Img src={staticFile('anchor_return.png')} style={full}/><Header studio/><Headline returning/></>}
     {id==='standby' && <><Img src={staticFile('forest_v2.png')} style={full}/><AbsoluteFill style={{background:'#10243755'}}/><Header/><div style={{position:'absolute',left:0,right:0,top:284,padding:'25px 0',background:'rgba(248,250,252,.94)',color:ink,textAlign:'center',borderTop:'1px solid #e0e6eb',borderBottom:'1px solid #e0e6eb'}}><div style={{fontSize:37,fontWeight:600,letterSpacing:2}}>中継を中断しています</div><div style={{fontSize:22,marginTop:12,letterSpacing:2}}>しばらくお待ちください</div></div><Sequence from={0}><Audio src={staticFile('voice_interruption.wav')} volume={gain('interruption')}/></Sequence></>}

@@ -42,7 +42,7 @@ audit={'output':dest.name,'sha256':hashlib.sha256(dest.read_bytes()).hexdigest()
        'videoFrames':int(v['nb_read_frames']),'videoDuration':float(v['duration']),
        'audioSampleRate':int(a['sample_rate']),'fullDecode':'pass','blackSegments':black_segments,
        'loudness':summary,'newVideoGenerationRequests':0,'newImageGenerationRequests':0,
-       'speechGenerationAttempts':spec.get('beerExplanation',spec.get('feedback',{})).get('generatedTakes',0),
+       'speechGenerationAttempts':spec.get('coherentExpert',spec.get('beerExplanation',spec.get('feedback',{}))).get('generatedTakes',0),
        'visualAudit':'Cut boundaries, text, props and dense action contact sheets inspected.',
        'audioAudit':'Full-program and per-take ASR screened. Rare-word transcriptions differ across models. Loudness, source boundaries and decode checked. No auditory listening or real-time lip-sync approval claimed.',
        'limitations':['Original generated action retained; editing cannot reconstruct the physical bite or character acting.',

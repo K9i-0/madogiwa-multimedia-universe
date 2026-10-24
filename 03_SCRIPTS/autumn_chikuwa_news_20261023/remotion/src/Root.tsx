@@ -3,6 +3,7 @@ import {AbsoluteFill,Audio,Composition,Img,OffthreadVideo,Sequence,staticFile,us
 import timings from './edit-manifest.json';
 import {FinalNews, finalSpec} from './FinalNews';
 import {ForestGraphic,ComparisonGraphic} from './NewsGraphics';
+const CleanNews=()=> <FinalNews showCaptions={false}/>;
 const navy='#183a62',white='#fcfcff';
 const font='"Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
 const Bug=()=> <><div style={{position:'absolute',top:25,left:30,background:navy,color:white,padding:'5px 18px',fontSize:32,fontWeight:700}}>{timings.final.clock}</div><div style={{position:'absolute',top:18,right:22,width:190,height:64,background:navy,color:'white',display:'flex',alignItems:'center',justifyContent:'center',fontSize:34,fontWeight:800}}>ゆめテレ</div></>;
@@ -16,4 +17,4 @@ const Shot=({kind}:{kind:string})=>{const f=useCurrentFrame();return <AbsoluteFi
 {kind!=='comparison'&&kind!=='forest'&&<Bug/>}</AbsoluteFill>};
 const order=['intro','forest','comparison','interruption'] as const;
 const Parts=()=>{let start=0;return <AbsoluteFill>{order.map(k=>{const at=start;start+=timings[k];return <Sequence key={k} from={at} durationInFrames={timings[k]}><Shot kind={k}/></Sequence>})}</AbsoluteFill>};
-export const Root=()=> <><Composition id="FinalNews" component={FinalNews} durationInFrames={finalSpec.composition.durationInFrames} fps={30} width={1280} height={720}/>{order.map(k=><Composition key={k} id={k} component={()=> <Shot kind={k}/>} durationInFrames={timings[k]} fps={30} width={1280} height={720}/>)}<Composition id="Parts" component={Parts} durationInFrames={order.reduce((s,k)=>s+timings[k],0)} fps={30} width={1280} height={720}/><Composition id="ExpertCard" component={()=> <Shot kind="expert"/>} durationInFrames={90} fps={30} width={1280} height={720}/></>;
+export const Root=()=> <><Composition id="FinalNews" component={FinalNews} durationInFrames={finalSpec.composition.durationInFrames} fps={30} width={1280} height={720}/><Composition id="FinalNewsClean" component={CleanNews} durationInFrames={finalSpec.composition.durationInFrames} fps={30} width={1280} height={720}/>{order.map(k=><Composition key={k} id={k} component={()=> <Shot kind={k}/>} durationInFrames={timings[k]} fps={30} width={1280} height={720}/>)}<Composition id="Parts" component={Parts} durationInFrames={order.reduce((s,k)=>s+timings[k],0)} fps={30} width={1280} height={720}/><Composition id="ExpertCard" component={()=> <Shot kind="expert"/>} durationInFrames={90} fps={30} width={1280} height={720}/></>;

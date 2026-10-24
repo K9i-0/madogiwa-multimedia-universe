@@ -1,0 +1,21 @@
+// Uses the approved shared Shorts implementation, without changing the shared queue.
+import {createRequire} from 'node:module';
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+const episode=path.dirname(fileURLToPath(import.meta.url));
+const shared=path.resolve(episode,'../shorts_queue_20261011/remotion');
+const require=createRequire(path.join(shared,'package.json'));
+const {bundle}=require('@remotion/bundler');
+const {selectComposition,renderMedia}=require('@remotion/renderer');
+const publicDir=path.join(episode,'remotion/out/shorts_public');fs.mkdirSync(publicDir,{recursive:true});
+fs.copyFileSync(path.join(episode,'remotion/out/shorts_clean.mp4'),path.join(publicDir,'shorts_clean.mp4'));
+const props=JSON.parse(fs.readFileSync(path.join(episode,'shorts-manifest.json'),'utf8'));
+const serveUrl=await bundle({entryPoint:path.join(shared,'src/index.tsx'),publicDir});
+const composition=await selectComposition({serveUrl,id:'Shorts',inputProps:props});
+const silent=path.join(episode,'remotion/out/shorts_silent.mp4');
+let mark=0;
+await renderMedia({serveUrl,composition,inputProps:props,outputLocation:silent,codec:'h264',crf:18,concurrency:2,muted:true,onProgress:({progress})=>{const n=Math.floor(progress*10);if(n>mark){mark=n;console.log(n*10+'%');}}});
+execFileSync('ffmpeg',['-y','-v','error','-i',silent,'-i',path.join(episode,'final_remotion_news.mp4'),'-map','0:v:0','-map','1:a:0','-c','copy','-movflags','+faststart',path.join(episode,'final_remotion_shorts_9x16.mp4')]);
+console.log('Shorts rendered; approved master audio stream copied.');

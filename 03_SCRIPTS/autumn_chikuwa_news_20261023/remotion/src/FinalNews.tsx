@@ -67,7 +67,7 @@ const Caption = ({speaker,text}:{speaker:string;text:string}) => {
   </div>;
 };
 
-const Shot = ({id}:{id:string}) => {
+const Shot = ({id,showCaptions=true}:{id:string;showCaptions?:boolean}) => {
   const f=useCurrentFrame();
   const video = ['harvest_broll','yotan','fukugyun','expert','theft'].includes(id);
   return <AbsoluteFill style={{overflow:'hidden'}}>
@@ -80,12 +80,12 @@ const Shot = ({id}:{id:string}) => {
     {id==='comparison' && <><ComparisonGraphic expertPortrait expertMotion showHeader={false} message={f>=finalSpec.beerExplanation.beerClueFrom?'beer':'appearance'}/><Header document/><Audio src={staticFile('voice_expert_beer_continuation.wav')}/></>}
     {id==='theft' && <Sequence from={finalSpec.feedback.sobayaFrom} durationInFrames={finalSpec.feedback.sobayaFrames}><Audio src={staticFile('voice_sobaya_poison.wav')}/></Sequence>}
     {id==='standby' && <><Img src={staticFile('forest_v2.png')} style={full}/><AbsoluteFill style={{background:'#10243755'}}/><Header/><div style={{position:'absolute',left:0,right:0,top:284,padding:'25px 0',background:'rgba(248,250,252,.94)',color:ink,textAlign:'center',borderTop:'1px solid #e0e6eb',borderBottom:'1px solid #e0e6eb'}}><div style={{fontSize:37,fontWeight:600,letterSpacing:2}}>中継を中断しています</div><div style={{fontSize:22,marginTop:12,letterSpacing:2}}>しばらくお待ちください</div></div><Sequence from={finalSpec.smoothCuts.interruptionAudioFrom}><Audio src={staticFile('voice_interruption.wav')} volume={gain('interruption')}/></Sequence></>}
-    {finalSpec.captions.filter(c=>c.shot===id).map((c,i)=><Sequence key={i} from={c.from} durationInFrames={c.to-c.from}><Caption speaker={c.speaker} text={c.text}/></Sequence>)}
+    {showCaptions&&finalSpec.captions.filter(c=>c.shot===id).map((c,i)=><Sequence key={i} from={c.from} durationInFrames={c.to-c.from}><Caption speaker={c.speaker} text={c.text}/></Sequence>)}
   </AbsoluteFill>;
 };
 
-export const FinalNews = () => <AbsoluteFill style={{background:'#182d43',fontFamily:font,fontSynthesis:'none',WebkitFontSmoothing:'antialiased'}}>
-  {finalSpec.sequences.map(s=><Sequence key={s.id} from={s.from} durationInFrames={s.duration}><Shot id={s.id}/></Sequence>)}
+export const FinalNews = ({showCaptions=true}:{showCaptions?:boolean}) => <AbsoluteFill style={{background:'#182d43',fontFamily:font,fontSynthesis:'none',WebkitFontSmoothing:'antialiased'}}>
+  {finalSpec.sequences.map(s=><Sequence key={s.id} from={s.from} durationInFrames={s.duration}><Shot id={s.id} showCaptions={showCaptions}/></Sequence>)}
   <Sequence from={finalSpec.sequences.find(s=>s.id==='forest')!.from} durationInFrames={132}><Audio src={staticFile('voice_forest.wav')} volume={gain('forest')}/></Sequence>
   <Sequence from={finalSpec.sequences.find(s=>s.id==='harvest_broll')!.from} durationInFrames={66}><Audio src={staticFile('field_ambience.wav')} volume={0.5}/></Sequence>
 </AbsoluteFill>;

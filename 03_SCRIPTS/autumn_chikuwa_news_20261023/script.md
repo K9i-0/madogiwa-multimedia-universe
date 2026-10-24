@@ -1,4 +1,4 @@
-# 秋のちくわ狩りニュース
+# 秋のちくわ狩りが最盛期　専門家『見た目では判断できない』
 
 2026-10-24・昼の時刻と追走カメラ改訂。本編：`final_remotion_news.mp4`（1280×720、30fps、1771フレーム、59.033秒）。表示時刻を15:00へ統一し、そば屋の追走映像へ控えめな手ブレを追加。今回の生成なし。直前版は `remotion/out/daylight_chase_20261024/previous_final.mp4`。
 
@@ -219,3 +219,18 @@ python3 finish_final_edit.py
 速度・音声・全体尺は維持。画像・動画・音声の追加生成なし。タイミングと強度の正本は `final.chaseCamera`。
 
 検証：型チェック合格。時計15:00・追走と転倒の人物・固定テロップを完成フレームで確認。全242フレームの逆変換した画面四隅が素材範囲内に収まり、手ブレによる端の露出なし。修正前後のレンダー音声PCM完全一致。720p・1771フレーム・全編デコード成功・黒フレームなし。実時間再生による揺れの聴視覚評価は未実施。
+
+
+## 完成・公開とShorts（2026-10-24）
+
+ユーザーが最終版を完成採用し、推奨タイトルとショート制作・YouTube／Studio登録を承認。
+
+- 正式タイトル：秋のちくわ狩りが最盛期　専門家『見た目では判断できない』
+- 横版：https://www.youtube.com/watch?v=XYsvPRSpc0w
+- Shorts：https://www.youtube.com/shorts/rlZKmiuOdOI
+- 公式サイト：https://madogiwa.work/episodes/autumn-chikuwa-hunting-news
+- Studio ID：MS-3YY5DXSQ。story、制作ノート公開、採用素材30点ready。詳細はstudio_registration.json。
+- 今回の画像・動画・音声生成0件。Shortsは全1771フレーム・720×1280。共有採用テンプレートを使用し、FinalNewsCleanで会話字幕だけ除いた横版を中央へ収め、名前・メンバー色字幕を下へ移動。ニュース帯と時計15:00は保持。音声は完成横版からAAC stream copy、ストリームSHA-256一致。shorts_audit.jsonにフレーム・デコード・目視監査記録。
+- 横版は通常公開として通知あり、Shortsは通知なしでpublic。いずれも合成コンテンツ申告あり。Studioには横版のみを紐付け、Shorts用の重複エピソードは作らない。
+
+Shorts再現：remotionで `npx remotion render src/index.ts FinalNewsClean out/shorts_clean.mp4 --codec h264 --crf 17 --muted` → リポジトリルートで `node 03_SCRIPTS/autumn_chikuwa_news_20261023/render_shorts.mjs` → `python3 03_SCRIPTS/autumn_chikuwa_news_20261023/audit_shorts.py`。共有キュー全件の再レンダー・再投稿は行わない。

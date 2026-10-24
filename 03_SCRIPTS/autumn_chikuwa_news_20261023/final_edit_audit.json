@@ -1,6 +1,6 @@
 {
   "output": "final_remotion_news.mp4",
-  "sha256": "91b0e777dce651fdcae72136496070f88649c0e85ef283a98188328682758445",
+  "sha256": "4e7930cda49b0643d1b6cbc049efb42321114f6f8ac8324321dc8f091f24fa5d",
   "resolution": [
     1280,
     720
@@ -13,10 +13,10 @@
   "blackSegments": [],
   "loudness": "Summary:\n\n  Integrated loudness:\n    I:         -16.0 LUFS\n    Threshold: -27.0 LUFS\n\n  Loudness range:\n    LRA:         3.3 LU\n    Threshold: -37.0 LUFS\n    LRA low:   -18.8 LUFS\n    LRA high:  -15.5 LUFS\n\n  True peak:\n    Peak:       -2.1 dBFS",
   "newVideoGenerationRequests": 0,
-  "newImageGenerationRequests": 0,
+  "newImageGenerationRequests": 1,
   "speechGenerationAttempts": 0,
-  "visualAudit": "Cut boundaries, text, props and dense action contact sheets inspected.",
-  "audioAudit": "Decoded render audio is PCM-identical to the previous version. Previous ASR retained; no new speech generation. No auditory listening or real-time lip-sync approval claimed.",
+  "visualAudit": "Generated woodland image checked: four normal chikuwa and one purple poisonous chikuwa. Rendered expert inset, poison visibility and later harvested comparison transition inspected.",
+  "audioAudit": "Render audio PCM-identical to previous version. No speech regeneration. No new listening or precise lip-sync approval claimed.",
   "limitations": [
     "Original generated action retained; editing cannot reconstruct the physical bite or character acting.",
     "Expert comparison inset reuses existing muted footage; speech is not phoneme-synchronized."

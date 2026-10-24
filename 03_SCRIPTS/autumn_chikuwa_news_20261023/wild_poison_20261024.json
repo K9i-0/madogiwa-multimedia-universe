@@ -1,0 +1,15 @@
+{
+  "tool": "built-in imagegen",
+  "attempts": 1,
+  "images": 1,
+  "videoGenerations": 0,
+  "speechGenerations": 0,
+  "inputs": [
+    "forest_v2.png",
+    "comparison_harvest.png"
+  ],
+  "prompt": "prompt_imagegen_forest_poison.txt",
+  "output": "forest_poison.png",
+  "sha256": "3ec5e19406dc76f2d0a283c0face1688be4f0b0fa24558622dd8b91700481f5c",
+  "scope": "Expert inset explanation only. Later harvested comparison unchanged."
+}

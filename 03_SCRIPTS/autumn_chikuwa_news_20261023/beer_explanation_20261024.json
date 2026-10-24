@@ -1,0 +1,199 @@
+{
+  "authorization": "Approved three-line news exchange about wild poisonous chikuwa and beer odor.",
+  "generationAttempts": 3,
+  "videoGenerationRequests": 0,
+  "imageGenerationRequests": 0,
+  "voices": [
+    {
+      "key": "anchor_question",
+      "file": "voice_anchor_question.wav",
+      "text": "旬を迎えた天然のちくわですが、採る際には注意も必要なんですよね。",
+      "reference": "voice_forest.wav",
+      "referenceSha256": "0b306f636bb7270f445b70c4908848a37458f0ed49660dce580d7c3ac5380760",
+      "seed": 2026,
+      "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true,
+      "generationAttempts": 1,
+      "rawSha256": "c83f993e6077e0cca9f2f85370f63ffcdd899531bfe43cdf0478cf09850c9eb4",
+      "sha256": "4d56526b1d158aa1593c8a90125b37643d8cfa522df7e21a13f3eaa2dbfd6c9a",
+      "seconds": 5.92,
+      "frames": 178,
+      "gainDb": -2.1400000000000006,
+      "speedChange": false,
+      "removedSilenceFramesAt30fps": null
+    },
+    {
+      "key": "expert_explanation",
+      "file": "voice_expert_beer.wav",
+      "text": "はい。山には毒ちくわも自生しています。見た目だけでは食用と区別がつきません。毒ちくわ特有のビール臭が、見分ける手がかりになります。",
+      "reference": "voice_ref_okayaman_visible.wav",
+      "referenceSha256": "f4560821c899d9a1307d29af673cfcba8e64f9cb12955ef455a41c87f19f2f67",
+      "seed": 42,
+      "caption": "",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true,
+      "generationAttempts": 1,
+      "rawSha256": "76194aa6691b9bf7e10f0d5c522cb27c8d792b9ec69c2ec99b6d348b438778b8",
+      "sha256": "83c940fd083f99b9bd72f1660e0472cf0ac3f60d3711d307e506f2a761d78734",
+      "seconds": 13.12,
+      "frames": 394,
+      "gainDb": -1.6799999999999997,
+      "speedChange": false,
+      "removedSilenceFramesAt30fps": null
+    },
+    {
+      "key": "anchor_response",
+      "file": "voice_anchor_comparison_reply.wav",
+      "text": "こうして並べてみても、見た目ではまったく違いが分かりませんね。では、もう一度、現場に戻ります。",
+      "reference": "voice_forest.wav",
+      "referenceSha256": "0b306f636bb7270f445b70c4908848a37458f0ed49660dce580d7c3ac5380760",
+      "seed": 2026,
+      "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true,
+      "generationAttempts": 1,
+      "rawSha256": "2924a96dc5fd7b31ba22bdcf6b7d5a86efb8c7ef69332bc8a7972233e9eeb7b9",
+      "sha256": "0839112ce01894b1916f5b47e64b9cee48fde5899768bfdedbca7da1ffc22c1e",
+      "seconds": 7.493333,
+      "frames": 225,
+      "gainDb": -2.3599999999999994,
+      "speedChange": false,
+      "removedSilenceFramesAt30fps": [
+        135,
+        149
+      ]
+    }
+  ],
+  "setting": "山に自生する毒ちくわは独特のビール臭がする。そば屋が食いつく伏線。",
+  "compositionFrames": 1558,
+  "compositionSeconds": 51.93333333333333,
+  "listeningAudit": "Not claimed; ASR and frame inspection are separate.",
+  "asrRaw": {
+    "anchor_question": {
+      "text": "旬を迎えた天然のちくわですが取る際には注意も必要なんですよね",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            5.92
+          ],
+          "text": "旬を迎えた天然のちくわですが取る際には注意も必要なんですよね"
+        }
+      ]
+    },
+    "expert_explanation": {
+      "text": "はい、山には独畜羽も自生しています見た目だけでは食用と区別がつきません独畜羽特有のビール臭が見分ける手がかりになります",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            3.44
+          ],
+          "text": "はい、山には独畜羽も自生しています"
+        },
+        {
+          "timestamp": [
+            3.44,
+            7.48
+          ],
+          "text": "見た目だけでは食用と区別がつきません"
+        },
+        {
+          "timestamp": [
+            7.48,
+            13.12
+          ],
+          "text": "独畜羽特有のビール臭が見分ける手がかりになります"
+        }
+      ]
+    },
+    "anchor_response": {
+      "text": "こうして並べてみても見た目では全く違いがわかりませんね ではもう一度現場に戻ります",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            7.96
+          ],
+          "text": "こうして並べてみても見た目では全く違いがわかりませんね ではもう一度現場に戻ります"
+        }
+      ]
+    }
+  },
+  "timing": {
+    "generatedTakes": 3,
+    "beerClueFrom": 224,
+    "fieldStudioFrom": 132
+  },
+  "asrFinalSmall": {
+    "final": {
+      "text": "続いて季節の話題です 秋の味覚チクワガリが再生期を迎えています今年は肉圧ですね 焼き芽も綺麗についてます今夜はお電銀 春を迎えた天然のチクワですが取る際には注意も必要なんですよねはい山には毒チクワも自製しています 見た目だけでは食用と区別がつきません独地区は特有のビール集が見分ける手がかりになります こうして並べてみても見た目では全く違いが分かりませんねではもう一度現場に戻りますこちらもおいしそうなのが取れたわよどっどっ中継を一旦失礼します",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            6.68
+          ],
+          "text": "続いて季節の話題です 秋の味覚チクワガリが再生期を迎えています"
+        },
+        {
+          "timestamp": [
+            6.68,
+            11.16
+          ],
+          "text": "今年は肉圧ですね 焼き芽も綺麗についてます"
+        },
+        {
+          "timestamp": [
+            11.16,
+            19.2
+          ],
+          "text": "今夜はお電銀 春を迎えた天然のチクワですが取る際には注意も必要なんですよね"
+        },
+        {
+          "timestamp": [
+            19.2,
+            27.8
+          ],
+          "text": "はい山には毒チクワも自製しています 見た目だけでは食用と区別がつきません"
+        },
+        {
+          "timestamp": [
+            27.8,
+            40.4
+          ],
+          "text": "独地区は特有のビール集が見分ける手がかりになります こうして並べてみても見た目では全く違いが分かりませんねではもう一度現場に戻ります"
+        },
+        {
+          "timestamp": [
+            40.4,
+            45.2
+          ],
+          "text": "こちらもおいしそうなのが取れたわよ"
+        },
+        {
+          "timestamp": [
+            46.56,
+            49.0
+          ],
+          "text": "どっどっ"
+        },
+        {
+          "timestamp": [
+            49.0,
+            52.92
+          ],
+          "text": "中継を一旦失礼します"
+        }
+      ]
+    }
+  },
+  "auditNote": "新規3発話はLargeで全文照合。通しSmallでは旬→春、自生→自製、ビール臭→ビール集などの認識差あり。音声の実聴合格とはしない。"
+}

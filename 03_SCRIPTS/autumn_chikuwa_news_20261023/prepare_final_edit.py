@@ -67,6 +67,9 @@ if 'feedback' in M:
     shutil.copy2(P/'wan3_expert_listening_480p.mp4',PUBLIC/'expert_listening.mp4')
     for name in ['voice_anchor_to_expert.wav','voice_anchor_to_field.wav','voice_comparison_matched.wav','voice_sobaya_poison.wav']:
         shutil.copy2(P/name,PUBLIC/name)
+    if 'beerExplanation' in M:
+        for name in ['voice_anchor_question.wav','voice_expert_beer.wav','voice_anchor_comparison_reply.wav']:
+            shutil.copy2(P/name,PUBLIC/name)
 
 # Short environmental bed from an existing speech-free field recording.
 ff(['-ss', '0', '-t', '2.2', '-i', P/'wan3_harvest_480p.mp4', '-vn',

@@ -1,0 +1,244 @@
+{
+  "authorization": "User feedback 2026-10-24: two anchor bridges, comparison voice matching, Sobaya final utterance.",
+  "generationAttempts": 4,
+  "videoGenerationRequests": 0,
+  "imageGenerationRequests": 0,
+  "referenceExtraction": {
+    "file": "voice_ref_okayaman_visible.wav",
+    "source": "wan3_expert_480p.mp4",
+    "startSeconds": 0.95,
+    "endSeconds": 3.55,
+    "channels": 1,
+    "sampleRate": 48000
+  },
+  "voices": [
+    {
+      "key": "anchor_to_expert",
+      "file": "voice_anchor_to_expert.wav",
+      "text": "ちくわ生物学が専門のおかやまんさん、注意点は？",
+      "ttsText": "ちくわ生物学が専門のおかやまんさん、注意点は？",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "seed": 2026,
+      "reference": "voice_forest.wav",
+      "referenceSha256": "0b306f636bb7270f445b70c4908848a37458f0ed49660dce580d7c3ac5380760",
+      "rawSha256": "753dfc205c9d5fd8b8963e3da23969219307a7269327c406623e5444bc68b6d6",
+      "adoptedSha256": "4ebce1065f356faa8e2db2d0cd3d6cb7157ac2cbc4fb1de69fef149371c0088e",
+      "rawSeconds": 4.32,
+      "seconds": 3.959292,
+      "frames": 119,
+      "gainDb": -2.1500000000000004,
+      "generationAttempts": 1,
+      "postprocessing": "silence trim + constant gain",
+      "speedChange": false,
+      "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true
+    },
+    {
+      "key": "okayaman_comparison",
+      "file": "voice_comparison_matched.wav",
+      "text": "食用と非常によく似ていますので、見た目だけで判断しないでください。",
+      "ttsText": "食用と非常によく似ていますので、見た目だけで判断しないでください。",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "seed": 42,
+      "reference": "voice_ref_okayaman_visible.wav",
+      "referenceSha256": "f4560821c899d9a1307d29af673cfcba8e64f9cb12955ef455a41c87f19f2f67",
+      "rawSha256": "30501070627f2edb8c8da9a47220f0b347507f6eab25c57b543682c2710d7026",
+      "adoptedSha256": "25b87b9283456956d2e234a078023863c4376f4c0bd7038c68726a7830e424b4",
+      "rawSeconds": 5.92,
+      "seconds": 5.920042,
+      "frames": 178,
+      "gainDb": -1.55,
+      "generationAttempts": 1,
+      "postprocessing": "silence trim + constant gain",
+      "speedChange": false,
+      "caption": "",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true
+    },
+    {
+      "key": "anchor_to_field",
+      "file": "voice_anchor_to_field.wav",
+      "text": "では、もう一度、現場に戻ります。",
+      "ttsText": "では、もう一度、現場に戻ります。",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "seed": 2026,
+      "reference": "voice_forest.wav",
+      "referenceSha256": "0b306f636bb7270f445b70c4908848a37458f0ed49660dce580d7c3ac5380760",
+      "rawSha256": "85d41b35b1d723045c017fb65e12ce9e2deeb99e1b1503afa51e256083bb7ab5",
+      "adoptedSha256": "713aa7a366d3bfb4a34e1cc44e4f7bd05697e70b87f8903cd69f9c387b7a2e17",
+      "rawSeconds": 2.92,
+      "seconds": 2.601667,
+      "frames": 79,
+      "gainDb": -2.4299999999999997,
+      "generationAttempts": 1,
+      "postprocessing": "silence trim + constant gain",
+      "speedChange": false,
+      "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true
+    },
+    {
+      "key": "sobaya_poison",
+      "file": "voice_sobaya_poison.wav",
+      "text": "ど、毒……",
+      "ttsText": "ど、どく……。",
+      "model": "Aratako/Irodori-TTS-v4-Large",
+      "seed": 42,
+      "reference": "../../02_CHARACTERS/Sobaya_voice.wav",
+      "referenceSha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+      "rawSha256": "e4e1923098f10d1b9648256754c2c1a5f5b254891a80e7815a18820333f28033",
+      "adoptedSha256": "27247eeef80a607ad166b8052d007e8105425a32f2ace38a572e9a86b637ebd9",
+      "rawSeconds": 1.68,
+      "seconds": 1.625813,
+      "frames": 49,
+      "gainDb": -0.30000000000000004,
+      "generationAttempts": 1,
+      "postprocessing": "sobaya_monsterize + silence trim + constant gain",
+      "speedChange": false,
+      "caption": "息が詰まり、苦しげにかすれた声で途切れ途切れにつぶやく。",
+      "textCfg": 5,
+      "durationScale": 1,
+      "uncut": true
+    }
+  ],
+  "compositionFrames": 1230,
+  "compositionSeconds": 41.0,
+  "listeningAudit": "Not claimed; ASR and measured audio checks are separate from listening.",
+  "asrRawSmall": {
+    "anchor_to_expert": {
+      "text": "地下生物学が専門の岡山さん注意点は",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            5.8
+          ],
+          "text": "地下生物学が専門の岡山さん注意点は"
+        }
+      ]
+    },
+    "okayaman_comparison": {
+      "text": "食用と非常によく似ていますので、見た目だけで判断しないでください。",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            5.9
+          ],
+          "text": "食用と非常によく似ていますので、見た目だけで判断しないでください。"
+        }
+      ]
+    },
+    "anchor_to_field": {
+      "text": "では、もう一度現場に戻ります。",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            2.76
+          ],
+          "text": "では、もう一度現場に戻ります。"
+        }
+      ]
+    },
+    "sobaya_poison": {
+      "text": "ド…ドク!",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            1.6
+          ],
+          "text": "ド…ドク!"
+        }
+      ]
+    }
+  },
+  "asrAdoptedLarge": {
+    "voice_anchor_to_expert.wav": {
+      "text": "ちくわ生物学が専門の岡山さん注意点は?",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            2.68
+          ],
+          "text": "ちくわ生物学が専門の岡山さん"
+        },
+        {
+          "timestamp": [
+            2.68,
+            3.96
+          ],
+          "text": "注意点は?"
+        }
+      ]
+    },
+    "voice_sobaya_poison.wav": {
+      "text": "ど、毒。",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            1.62
+          ],
+          "text": "ど、毒。"
+        }
+      ]
+    }
+  },
+  "asrFinalSmall": {
+    "final": {
+      "text": "続いて季節の話題です 秋の味覚チクワガリが再生期を迎えています今年は肉圧ですね焼き芽も綺麗についてます 今夜はおでん群チクワ生物学が専門の岡山さん注意点は そうですね注意が必要です食用と非常によく似ていますので見た目だけで判断しないでください ではもう一度現場に戻りますこちらも美味しそうなのが取れたわよどっどくっ 中継を一旦失礼します",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            6.72
+          ],
+          "text": "続いて季節の話題です 秋の味覚チクワガリが再生期を迎えています"
+        },
+        {
+          "timestamp": [
+            6.72,
+            13.12
+          ],
+          "text": "今年は肉圧ですね焼き芽も綺麗についてます 今夜はおでん群"
+        },
+        {
+          "timestamp": [
+            13.12,
+            23.64
+          ],
+          "text": "チクワ生物学が専門の岡山さん注意点は そうですね注意が必要です食用と非常によく似ていますので"
+        },
+        {
+          "timestamp": [
+            23.64,
+            29.52
+          ],
+          "text": "見た目だけで判断しないでください ではもう一度現場に戻ります"
+        },
+        {
+          "timestamp": [
+            29.52,
+            34.44
+          ],
+          "text": "こちらも美味しそうなのが取れたわよ"
+        },
+        {
+          "timestamp": [
+            35.64,
+            41.88
+          ],
+          "text": "どっどくっ 中継を一旦失礼します"
+        }
+      ]
+    }
+  },
+  "auditNote": "Smallの単独認識では「地下生物学」、Largeと本編通しでは「ちくわ生物学」。固有名おかやまんは岡山と表記されるため、ASRだけで名前の発音・声質を合格とはしない。実聴未確認。"
+}

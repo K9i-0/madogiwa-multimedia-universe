@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
+import {AbsoluteFill, Audio, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate} from 'remotion';
 import manifest from './edit-manifest.json';
 import {ComparisonGraphic} from './NewsGraphics';
 import {memberColor} from '../../../00_TEMPLATES/subtitles/member-colors';
@@ -22,10 +22,27 @@ const Header = ({live=false, studio=false, document=false}:{live?:boolean;studio
   {live && <div style={{position:'absolute',top:84,left:50,color:'white',fontSize:18,letterSpacing:2,display:'flex'}}><span style={{background:'#a43443',padding:'4px 10px'}}>中継</span><span style={{background:'#132838d9',padding:'4px 12px'}}>ちくわ狩りの現場</span></div>}
 </>;
 
-const Headline = ({returning=false}:{returning?:boolean}) => <div style={{position:'absolute',left:0,right:0,bottom:0,height:142,background:'#f8fafc',borderTop:`4px solid ${ink}`,padding:'17px 50px',color:ink}}>
+const Headline = ({returning=false,title}:{returning?:boolean;title?:string}) => <div style={{position:'absolute',left:0,right:0,bottom:0,height:142,background:'#f8fafc',borderTop:`4px solid ${ink}`,padding:'17px 50px',color:ink}}>
   <div style={{fontSize:18,letterSpacing:2,color:'#80683c',marginBottom:8}}>{returning?'ゆめテレ NEWS':'季節の話題'}</div>
-  <div style={{fontSize:38,fontWeight:600,letterSpacing:1}}>{returning?'中継をいったん失礼します':'秋の味覚　ちくわ狩り最盛期'}</div>
+  <div style={{fontSize:38,fontWeight:600,letterSpacing:1}}>{title??(returning?'中継をいったん失礼します':'秋の味覚　ちくわ狩り最盛期')}</div>
 </div>;
+
+const ExpertName = () => <div style={{position:'absolute',left:50,bottom:40,padding:'13px 22px',color:ink,background:'rgba(250,252,254,.95)',borderLeft:`5px solid ${memberColor('おかやまん')}`}}>
+  <div style={{fontSize:20}}>窓際大学大学院 農学研究科　准教授</div>
+  <div style={{fontSize:35,fontWeight:600,marginTop:5}}>おかやまん<span style={{fontSize:19,fontWeight:500,marginLeft:24}}>専門：ちくわ生物学</span></div>
+</div>;
+
+const Bridge = ({expert}:{expert:boolean}) => {
+  const f=useCurrentFrame();
+  const cue=finalSpec.feedback.studioCueFrames;
+  return <AbsoluteFill>
+    <Sequence durationInFrames={cue}><OffthreadVideo src={staticFile('anchor_bridge.mp4')} muted style={full}/><Header studio/><Headline title={expert?'ちくわ狩り　専門家に聞く':undefined}/></Sequence>
+    <Sequence from={cue}>
+      {expert?<><Freeze frame={Math.min(Math.max(0,f-cue),179)}><OffthreadVideo src={staticFile('expert_listening.mp4')} muted style={full}/></Freeze><Header/><ExpertName/></>:<><Img src={staticFile('forest_v2.png')} style={full}/><Header/><div style={{position:'absolute',left:50,bottom:45,color:'white',fontSize:36,fontWeight:600,textShadow:'0 2px 5px #000'}}>秋のちくわ狩り</div></>}
+      <Audio src={staticFile(expert?'voice_anchor_to_expert.wav':'voice_anchor_to_field.wav')}/>
+    </Sequence>
+  </AbsoluteFill>;
+};
 
 const Caption = ({speaker,text}:{speaker:string;text:string}) => {
   const f=useCurrentFrame();
@@ -42,12 +59,11 @@ const Shot = ({id}:{id:string}) => {
     {id==='intro' && <><OffthreadVideo src={staticFile('anchor_intro.mp4')} volume={gain('intro')} style={full}/><Header studio/><Headline/></>}
     {id==='forest' && <><Img src={staticFile('forest_v2.png')} style={full}/><Header/><div style={{position:'absolute',bottom:46,left:50,color:'white',textShadow:'0 2px 5px #000',opacity:fade(f)}}><div style={{fontSize:19,marginBottom:9,letterSpacing:2}}>秋の味覚</div><div style={{fontSize:39,fontWeight:600}}>天然ちくわ　収穫の季節</div></div></>}
     {video && <><OffthreadVideo src={staticFile(`edit_${id}.mp4`)} volume={(frame)=>clipVolume(id,frame)} style={full}/><Header live={id!=='expert'}/></>}
-    {id==='expert' && <div style={{position:'absolute',left:50,bottom:40,padding:'13px 22px',color:ink,background:'rgba(250,252,254,.95)',borderLeft:`5px solid ${memberColor('おかやまん')}`,opacity:fade(f)}}>
-      <div style={{fontSize:20}}>窓際大学大学院 農学研究科　准教授</div>
-      <div style={{fontSize:35,fontWeight:600,marginTop:5}}>おかやまん<span style={{fontSize:19,fontWeight:500,marginLeft:24}}>専門：ちくわ生物学</span></div>
-    </div>}
-    {id==='comparison' && <><ComparisonGraphic showHeader={false}/><Header document/><Audio src={staticFile('voice_comparison.wav')} volume={gain('comparison')}/></>}
-    {id==='theft' && <Sequence from={finalSpec.reaction.from} durationInFrames={finalSpec.reaction.sourceEnd-finalSpec.reaction.sourceStart}><Audio src={staticFile('reaction_yotan.wav')} volume={gain('reaction')}/></Sequence>}
+    {id==='expert' && <ExpertName/>}
+    {id==='bridge_expert' && <Bridge expert/>}
+    {id==='bridge_field' && <Bridge expert={false}/>}
+    {id==='comparison' && <><ComparisonGraphic showHeader={false}/><Header document/><Audio src={staticFile('voice_comparison_matched.wav')}/></>}
+    {id==='theft' && <Sequence from={finalSpec.feedback.sobayaFrom} durationInFrames={finalSpec.feedback.sobayaFrames}><Audio src={staticFile('voice_sobaya_poison.wav')}/></Sequence>}
     {id==='studio_return' && <><Img src={staticFile('anchor_return.png')} style={full}/><Header studio/><Headline returning/></>}
     {id==='standby' && <><Img src={staticFile('forest_v2.png')} style={full}/><AbsoluteFill style={{background:'#10243755'}}/><Header/><div style={{position:'absolute',left:0,right:0,top:284,padding:'25px 0',background:'rgba(248,250,252,.94)',color:ink,textAlign:'center',borderTop:'1px solid #e0e6eb',borderBottom:'1px solid #e0e6eb'}}><div style={{fontSize:37,fontWeight:600,letterSpacing:2}}>中継を中断しています</div><div style={{fontSize:22,marginTop:12,letterSpacing:2}}>しばらくお待ちください</div></div><Sequence from={0}><Audio src={staticFile('voice_interruption.wav')} volume={gain('interruption')}/></Sequence></>}
     {finalSpec.captions.filter(c=>c.shot===id).map((c,i)=><Sequence key={i} from={c.from} durationInFrames={c.to-c.from}><Caption speaker={c.speaker} text={c.text}/></Sequence>)}

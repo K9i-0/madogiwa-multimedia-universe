@@ -8,7 +8,7 @@
       "width": 1280,
       "height": 720,
       "fps": 30,
-      "durationInFrames": 946
+      "durationInFrames": 1230
     },
     "clock": "19:00",
     "sequences": [
@@ -38,28 +38,38 @@
         "duration": 48
       },
       {
+        "id": "bridge_expert",
+        "duration": 137,
+        "from": 384
+      },
+      {
         "id": "expert",
-        "from": 384,
+        "from": 521,
         "duration": 81
       },
       {
         "id": "comparison",
-        "from": 465,
-        "duration": 141
+        "from": 602,
+        "duration": 184
+      },
+      {
+        "id": "bridge_field",
+        "duration": 97,
+        "from": 786
       },
       {
         "id": "theft",
-        "from": 606,
-        "duration": 235
+        "from": 883,
+        "duration": 242
       },
       {
         "id": "studio_return",
-        "from": 841,
+        "from": 1125,
         "duration": 12
       },
       {
         "id": "standby",
-        "from": 853,
+        "from": 1137,
         "duration": 93
       }
     ],
@@ -122,7 +132,7 @@
       {
         "start": 402,
         "end": 534,
-        "frames": 30,
+        "frames": 37,
         "audioEnd": 480
       }
     ],
@@ -156,11 +166,6 @@
         "text": "こちらも、おいしそうなのが採れたわよー"
       }
     ],
-    "reaction": {
-      "from": 207,
-      "sourceStart": 494,
-      "sourceEnd": 518
-    },
     "audioGainDb": {
       "intro": 6.3,
       "forest": -2.4,
@@ -170,8 +175,14 @@
       "comparison": -2.2,
       "theft": -9.7,
       "theftAction": -2,
-      "reaction": -3.6,
       "interruption": -2.7
+    },
+    "feedback": {
+      "date": "2026-10-24",
+      "studioCueFrames": 12,
+      "sobayaFrom": 187,
+      "sobayaFrames": 49,
+      "generatedTakes": 4
     }
   }
 }

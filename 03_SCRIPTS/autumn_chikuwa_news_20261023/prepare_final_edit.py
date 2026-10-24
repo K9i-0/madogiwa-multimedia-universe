@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import subprocess
+import shutil
 
 P = Path(__file__).resolve().parent
 PUBLIC = P / 'remotion/public'
@@ -60,6 +61,13 @@ ff([*inputs, '-filter_complex', ';'.join(filters), '-map', '[v]', '-map', '[a]',
 # Closed-mouth studio still from the existing 2.4-second intro, never from the harbour cut.
 ff(['-ss', '2.3', '-i', PUBLIC/'anchor_intro.mp4', '-frames:v', '1', PUBLIC/'anchor_return.png'])
 
+if 'feedback' in M:
+    ff(['-ss','2','-i',PUBLIC/'anchor_intro.mp4','-t',M['feedback']['studioCueFrames']/30,
+        '-an','-c:v','libx264','-crf','16',PUBLIC/'anchor_bridge.mp4'])
+    shutil.copy2(P/'wan3_expert_listening_480p.mp4',PUBLIC/'expert_listening.mp4')
+    for name in ['voice_anchor_to_expert.wav','voice_anchor_to_field.wav','voice_comparison_matched.wav','voice_sobaya_poison.wav']:
+        shutil.copy2(P/name,PUBLIC/name)
+
 # Short environmental bed from an existing speech-free field recording.
 ff(['-ss', '0', '-t', '2.2', '-i', P/'wan3_harvest_480p.mp4', '-vn',
     '-af', 'afade=t=in:d=0.08,afade=t=out:st=2.1:d=0.1', '-ar', '48000',
@@ -67,7 +75,8 @@ ff(['-ss', '0', '-t', '2.2', '-i', P/'wan3_harvest_480p.mp4', '-vn',
 print('Prepared existing-media edits; no generation requests.')
 
 # Preserve the off-camera reaction at its original pitch and speed after the fall.
-reaction = M['reaction']
-ff(['-i', P/'wan3_theft_480p.mp4', '-vn', '-af',
-    f'atrim=start={reaction["sourceStart"]/30}:end={reaction["sourceEnd"]/30},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,afade=t=out:st=0.76:d=0.04',
-    '-ar', '48000', '-c:a', 'pcm_s16le', PUBLIC/'reaction_yotan.wav'])
+if 'reaction' in M:
+    reaction = M['reaction']
+    ff(['-i', P/'wan3_theft_480p.mp4', '-vn', '-af',
+        f'atrim=start={reaction["sourceStart"]/30}:end={reaction["sourceEnd"]/30},asetpts=PTS-STARTPTS,afade=t=in:d=0.015,afade=t=out:st=0.76:d=0.04',
+        '-ar', '48000', '-c:a', 'pcm_s16le', PUBLIC/'reaction_yotan.wav'])

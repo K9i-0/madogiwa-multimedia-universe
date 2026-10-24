@@ -1,0 +1,5405 @@
+{
+  "composition": {
+    "id": "YVillageMask",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 16688
+  },
+  "title": "廃村Y村の怪異S",
+  "audio": "mix.wav",
+  "narration": [
+    {
+      "id": "n000",
+      "text": "Y村にある研修所へ異動になったのは、去年の秋でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ワイむらにある研修所へ異動になったのは、去年の秋でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.village",
+            "surface": "Y村",
+            "reading": "ワイむら",
+            "scope": "y-village",
+            "start": 0,
+            "end": 2
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n000_0c11c7e1a717.wav",
+      "seconds": 4.224,
+      "kana": "ワイ'ムラニ/ア'ル/ケンシュウショ'エ/イドオニ'/ナ'ッタ/ノワ'、キョ'ネンノ/ア'キデ_シタ",
+      "cacheHash": "0c11c7e1a717888a29b4ea5b4e952f9117d944f2feae1917d53dd77708e404cf",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 100,
+      "to": 227,
+      "duration": 127
+    },
+    {
+      "id": "n001",
+      "text": "村には、もう誰も住んでいませんでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "村には、もう誰も住んでいませんでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n001_deff3954f60e.wav",
+      "seconds": 2.9546666666666668,
+      "kana": "ムラ'ニワ、モ'オ/ダ'レモ/ス'ンデ/イマセ'ンデ_シタ",
+      "cacheHash": "deff3954f60e40bd6de025eb0a5ac5ff1f5cfaaf8fa66dfe4b4c6888ef1e5d43",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 241,
+      "to": 330,
+      "duration": 89
+    },
+    {
+      "id": "n002",
+      "text": "会社が買い取った建物を、再開に向けて片付ける。私と、同僚のMさん、Yさんの三人が担当でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "会社が買い取った建物を、再開に向けて片付ける。私と、同僚のエムさん、ワイさんの三人が担当でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 29,
+            "end": 32
+          },
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 33,
+            "end": 36
+          }
+        ],
+        "review": [
+          {
+            "id": "context.person",
+            "surface": "人",
+            "start": 38,
+            "end": 39,
+            "readings": [
+              "ヒト：あの人、人を紹介する",
+              "ニン：三人、管理人",
+              "ジン：日本人"
+            ],
+            "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+          }
+        ]
+      },
+      "file": "voice/n002_e5d074882a82.wav",
+      "seconds": 8.693333333333333,
+      "kana": "カイシャガ'/カイト'ッタ/タテ'モノオ、サイカイニ'/ムケテ'/カタズケ'ル、ワタ_シト'、ドオリョオノ'/エ'ムサン、ワ'イサンノ/サン'ニンガ/タントオデ_シタ'",
+      "cacheHash": "e5d074882a8223fa2b971a8cda54c16fc7e8210bc200503559c487bdbe0af7ed",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 344,
+      "to": 605,
+      "duration": 261
+    },
+    {
+      "id": "n003",
+      "text": "左遷だろうと思っていましたが、Yさんは「会社の金で田舎暮らしやな」と笑っていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "左遷だろうと思っていましたが、ワイさんは「会社のかねで田舎暮らしやな」と笑っていました。",
+      "speech": "左遷だろうと思っていましたが、ワイさんは「会社のかねで田舎暮らしやな」と笑っていました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "会社の金で",
+            "会社のかねで"
+          ]
+        ]
+      },
+      "file": "voice/n003_92dd6fd13c19.wav",
+      "seconds": 6.730666666666667,
+      "kana": "サセンダロオト'/オモ'ッテ/イマ'_シタガ、ワ'イサンワ、カイシャノ'/カネデ'/イナカク'ラシヤナ、ト'/ワラッテ'/イマ'_シタ",
+      "cacheHash": "92dd6fd13c1998f2582f8aafdc82817223d790650e5c5e8b240fca36f31eb159",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 619,
+      "to": 821,
+      "duration": 202
+    },
+    {
+      "id": "n004",
+      "text": "私も、最初は少し楽しみにしていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私も、最初は少し楽しみにしていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n004_74d4f6686a73.wav",
+      "seconds": 3.264,
+      "kana": "ワタシモ'、サイショワ'/_スコ'_シ/タノシ'ミニ/_シテ'/イマ'_シタ",
+      "cacheHash": "74d4f6686a73800e35c20eacd2fce9d4a34b198a696066d0d6d8bb5cc738b406",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 835,
+      "to": 933,
+      "duration": 98
+    },
+    {
+      "id": "n005",
+      "text": "鍵を渡してくれた管理人が、廊下の突き当たりを指さしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "鍵を渡してくれたカンリニンが、廊下の突き当たりを指さしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "common.kanrinin",
+            "surface": "管理人",
+            "reading": "カンリニン",
+            "scope": "common",
+            "start": 8,
+            "end": 11
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n005_6344f3e14b8f.wav",
+      "seconds": 4.512,
+      "kana": "カギ'オ/ワタ_シテ'/クレタ'/カンリ'ニンガ、ロオカノ'/_ツキアタリオ'/ユビサシマ'_シタ",
+      "cacheHash": "6344f3e14b8f59e4d9e7956a914d96e8eef6f82ecaff50d1aff5843cdfc16e1a",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 969,
+      "to": 1105,
+      "duration": 136
+    },
+    {
+      "id": "n006",
+      "text": "「奥の部屋には、絶対に入らないでください。掃除もしなくていいです」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「奥の部屋には、絶対に入らないでください。掃除もしなくていいです」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n006_5ad01f5af276.wav",
+      "seconds": 5.013333333333334,
+      "kana": "オ'クノ/ヘヤ'ニワ、ゼッタイニ'/ハ'イラナイデ/クダサ'イ、ソオジモ'/シナ_クテイイ'デ_ス",
+      "cacheHash": "5ad01f5af27670bc21a74380d8e1fbf8c33f1eb6ed38d90294864cd4d3b3d0c5",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1119,
+      "to": 1270,
+      "duration": 151
+    },
+    {
+      "id": "n007",
+      "text": "古い木の引き戸でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "古い木の引き戸でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n007_10a2c0d6d15a.wav",
+      "seconds": 1.6,
+      "kana": "フル'イ/キ'ノ/_ヒキ'ドデ_シタ",
+      "cacheHash": "10a2c0d6d15a5df11007ab58e80488e0d5d600297371dc4df2092e115005b86b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1284,
+      "to": 1332,
+      "duration": 48
+    },
+    {
+      "id": "n008",
+      "text": "仕事の説明は聞き流していたのに、その部屋の場所だけは、三人とも覚えていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "仕事の説明は聞き流していたのに、その部屋の場所だけは、三人とも覚えていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.person",
+            "surface": "人",
+            "start": 28,
+            "end": 29,
+            "readings": [
+              "ヒト：あの人、人を紹介する",
+              "ニン：三人、管理人",
+              "ジン：日本人"
+            ],
+            "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+          }
+        ]
+      },
+      "file": "voice/n008_dd90fb36780d.wav",
+      "seconds": 6.144,
+      "kana": "シゴトノ'/セツメエワ'/_キキナガ'_シテ/イタ'ノニ、ソノ'/ヘヤ'ノ/バショダケワ'、サン'ニントモ/オボエ'テ/イマ'_シタ",
+      "cacheHash": "dd90fb36780dca956b359116fee641feb1ddfa0e596ac225ff83e99b1760015a",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1346,
+      "to": 1531,
+      "duration": 185
+    },
+    {
+      "id": "n009",
+      "text": "二日目の午後、Yさんが戸を少し開けました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "二日目の午後、ワイさんが戸を少し開けました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 7,
+            "end": 10
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n009_0cc55dfbac76.wav",
+      "seconds": 3.3386666666666667,
+      "kana": "_フツカ'メノ/ゴ'ゴ、ワ'イサンガ/トオ'/_スコ'シ/アケマ'_シタ",
+      "cacheHash": "0cc55dfbac761ac3db429e5dbcdc470b0a13af8147736f226ccf5d273bd5537f",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1569,
+      "to": 1670,
+      "duration": 101
+    },
+    {
+      "id": "n010",
+      "text": "「見るだけやって」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「見るだけやって」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n010_faa26b299e69.wav",
+      "seconds": 1.2373333333333334,
+      "kana": "ミ'ルダケヤッテ",
+      "cacheHash": "faa26b299e6984f0429848450180184e771392743f2bed535ec4c12351aa5c57",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1684,
+      "to": 1722,
+      "duration": 38
+    },
+    {
+      "id": "n011",
+      "text": "私も、止めませんでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私も、止めませんでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n011_d7d00c865680.wav",
+      "seconds": 2.2933333333333334,
+      "kana": "ワタシモ'、トメマセ'ンデ_シタ",
+      "cacheHash": "d7d00c86568049d34ffb8206ef6f715d01c8d15a55bb8a3dc8e7394b371e0495",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1736,
+      "to": 1805,
+      "duration": 69
+    },
+    {
+      "id": "n012",
+      "text": "六畳ほどの部屋でした。家具はなく、奥の棚に木箱が一つ。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "ろくじょうほどの部屋でした。家具はなく、奥の棚に木箱がひとつ。",
+      "speech": "ろくじょうほどの部屋でした。家具はなく、奥の棚に木箱がひとつ。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "六畳",
+            "ろくじょう"
+          ],
+          [
+            "木箱が一つ",
+            "木箱がひとつ"
+          ]
+        ]
+      },
+      "file": "voice/n012_450598f33594.wav",
+      "seconds": 4.693333333333333,
+      "kana": "ロクジョオホドノ'/ヘヤ'デ_シタ、カ'グワナク、オ'クノ/タナニ'/キ'バコガ/_ヒト'ツ",
+      "cacheHash": "450598f335949d023d70e138c3bc2975a9f65e0b207043e159c4de680ae04741",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1829,
+      "to": 1970,
+      "duration": 141
+    },
+    {
+      "id": "n013",
+      "text": "中には、白い仮面が入っていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "中には、白い仮面が入っていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n013_851ecf393487.wav",
+      "seconds": 2.9546666666666668,
+      "kana": "ナ'カニワ、シロ'イ/カメンガ'/ハ'イッテ/イマ'_シタ",
+      "cacheHash": "851ecf39348786a4e4ad94c209da2e72528838233241f88b730d30d935feae73",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 1984,
+      "to": 2073,
+      "duration": 89
+    },
+    {
+      "id": "n014",
+      "text": "古い箱なのに、仮面だけは妙にきれいでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "古い箱なのに、仮面だけは妙にきれいでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n014_0a0891c2a920.wav",
+      "seconds": 3.498666666666667,
+      "kana": "フル'イ/ハコナ'ノニ、カメンダケワ'/ミョ'オニ/キ'レイデ_シタ",
+      "cacheHash": "0a0891c2a920882840ab183017b4243889cc1878e7ef3b22ff09173393abc813",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2087,
+      "to": 2192,
+      "duration": 105
+    },
+    {
+      "id": "n015",
+      "text": "目の穴の奥は、真っ黒でした。顔に当てても、ほとんど前が見えなさそうでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "目の穴の奥は、真っ黒でした。顔に当てても、ほとんど前が見えなさそうでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n015_8a7be6d91833.wav",
+      "seconds": 6.197333333333333,
+      "kana": "メ'ノ/アナ'ノ/オ'クワ、マック'ロデ_シタ、カオニ'/アテテモ'、ホト'ンド/マ'エガ/ミエ'/ナサ'ソオデ_シタ",
+      "cacheHash": "8a7be6d91833744b0c442c260007d6903f8f55abc6bc1f2f133fe069a6172620",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2206,
+      "to": 2392,
+      "duration": 186
+    },
+    {
+      "id": "n016",
+      "text": "Yさんが裏側を見ようと持ち上げました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ワイさんが裏側を見ようと持ち上げました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n016_db6e9f209123.wav",
+      "seconds": 2.752,
+      "kana": "ワ'イサンガ/ウラガワオ'/ミ'ヨオト/モチアゲマ'_シタ",
+      "cacheHash": "db6e9f2091233fe326699b405ad0606b77019ae48981d098d4c297b2048dffb4",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2422,
+      "to": 2505,
+      "duration": 83
+    },
+    {
+      "id": "n017",
+      "text": "「これ、何でできてるんやろ」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「これ、何でできてるんやろ」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n017_a88ccbbefb9b.wav",
+      "seconds": 2.304,
+      "kana": "コレ'、ナ'ンデ/デ_キテ'ル/ン'ヤロ",
+      "cacheHash": "a88ccbbefb9b5affd8d3605fd99ee9936fa333946fbcb44a548d98fb7991e629",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2519,
+      "to": 2589,
+      "duration": 70
+    },
+    {
+      "id": "n018",
+      "text": "私も端に触りました。ひどく冷たかったのを覚えています。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "私もはしに触りました。ひどく冷たかったのを覚えています。",
+      "speech": "私もはしに触りました。ひどく冷たかったのを覚えています。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "端に",
+            "はしに"
+          ]
+        ]
+      },
+      "file": "voice/n018_cd3d2ce05681.wav",
+      "seconds": 4.2026666666666666,
+      "kana": "ワタシモ'/ハ'シニ/サワリマ'_シタ、ヒ'ド_ク/ツメタ'カッタ/ノオ'/オボエ'テ/イマ'_ス",
+      "cacheHash": "cd3d2ce0568107357b3cf00ecac400cf4cd1a72169812b23fd9f79e794f61966",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2603,
+      "to": 2730,
+      "duration": 127
+    },
+    {
+      "id": "n019",
+      "text": "そのとき、Yさんの手から仮面が滑りました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "そのとき、ワイさんの手から仮面が滑りました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 5,
+            "end": 8
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n019_6f4e903243a3.wav",
+      "seconds": 3.3493333333333335,
+      "kana": "ソノ'/ト'キ、ワ'イサンノ/テ'カラ/カメンガ'/スベリマ'_シタ",
+      "cacheHash": "6f4e903243a38d8c3d8642c0d2fb0ae7e4f6906f1553c17a9c7d8ed843a266e1",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2751,
+      "to": 2852,
+      "duration": 101
+    },
+    {
+      "id": "n020",
+      "text": "受け止めようとして、私が下から弾いてしまいました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "受け止めようとして、私が下からはじいてしまいました。",
+      "speech": "受け止めようとして、私が下からはじいてしまいました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "弾いて",
+            "はじいて"
+          ]
+        ]
+      },
+      "file": "voice/n020_57b87b3ece5d.wav",
+      "seconds": 3.8293333333333335,
+      "kana": "ウケトメ'ヨオト/_シテ'、ワタシガ'/_シタカラ'/ハジイ'テ/シマイマ'_シタ",
+      "cacheHash": "57b87b3ece5d43591ef0c293b66ec9e972d4b90985897098a5b2f3803c67e974",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2866,
+      "to": 2981,
+      "duration": 115
+    },
+    {
+      "id": "n021",
+      "text": "畳の縁に落ちて、三つに割れました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "たたみのへりに落ちて、みっつに割れました。",
+      "speech": "たたみのへりに落ちて、みっつに割れました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "畳の縁",
+            "たたみのへり"
+          ],
+          [
+            "三つ",
+            "みっつ"
+          ]
+        ]
+      },
+      "file": "voice/n021_1e303ae6a25a.wav",
+      "seconds": 3.008,
+      "kana": "タタミノ'/ヘリニ'/オチ'テ、ミッツニ'/ワレマ'_シタ",
+      "cacheHash": "1e303ae6a25af4ab3f4f058d01f8172b40fa8220213984a74b67bf26d66c0fa3",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 2987,
+      "to": 3078,
+      "duration": 91
+    },
+    {
+      "id": "n022",
+      "text": "Mさんがしゃがみ、破片を拾いました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "エムさんがしゃがみ、破片を拾いました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n022_18f04a4f336f.wav",
+      "seconds": 2.933333333333333,
+      "kana": "エ'ムサンガ/シャガミ'、ハヘンオ'/ヒロイマ'_シタ",
+      "cacheHash": "18f04a4f336fe8171e22d9247abc3229ae7802f991b03b3e60be447c476cb48c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 3126,
+      "to": 3214,
+      "duration": 88
+    },
+    {
+      "id": "n023",
+      "text": "私も手伝いましたが、断面を合わせても、うまく元の形に戻りません。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私も手伝いましたが、断面を合わせても、うまく元の形に戻りません。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n023_30f4b3b0a266.wav",
+      "seconds": 5.429333333333333,
+      "kana": "ワタシモ'/テツダイマ'_シタガ、ダンメンオ'/アワセ'テモ、ウマ'ク/モト'ノ/カタチニ'/モドリマセ'ン",
+      "cacheHash": "30f4b3b0a266ea90279d7be3da97135d30bed49ee480baceddb2de3d1e1330cf",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 3228,
+      "to": 3391,
+      "duration": 163
+    },
+    {
+      "id": "n024",
+      "text": "ひとまず箱にしまいました。管理人には、あとで謝ろうと思っていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ひとまず箱にしまいました。カンリニンには、あとで謝ろうと思っていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "common.kanrinin",
+            "surface": "管理人",
+            "reading": "カンリニン",
+            "scope": "common",
+            "start": 13,
+            "end": 16
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n024_97d852146118.wav",
+      "seconds": 5.312,
+      "kana": "_ヒト'マズ/ハコニ'/シマイマ'_シタ、カンリ'ニンニワ、ア'トデ/アヤマ'ロオト/オモ'ッテ/イマ'_シタ",
+      "cacheHash": "97d852146118b82191f4ccb7b097f37548f67c2e58a2d9e980a649162537f1b1",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 3405,
+      "to": 3565,
+      "duration": 160
+    },
+    {
+      "id": "n025",
+      "text": "戸を閉めるとき、部屋の奥で、誰かが大きく息を吸いました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "戸を閉めるとき、部屋の奥で、誰かが大きく息を吸いました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n025_c80205e3df7a.wav",
+      "seconds": 4.8,
+      "kana": "トオ'/シメ'ル/ト'キ、ヘヤ'ノ/オ'クデ、ダ'レカガ/オ'オ_キク/イ'キオ/スイマ'_シタ",
+      "cacheHash": "c80205e3df7a131a0584b66b3a37a0cc3b627d792da8bb655fc4993155011eca",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 3586,
+      "to": 3730,
+      "duration": 144
+    },
+    {
+      "id": "n026",
+      "text": "振り返っても、誰もいませんでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "振り返っても、誰もいませんでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n026_b601230b9918.wav",
+      "seconds": 3.0613333333333332,
+      "kana": "フリカ'エッテモ、ダ'レモ/イマセ'ンデ_シタ",
+      "cacheHash": "b601230b991830d8109a549e0f87b83965e739104f3fd4198ca0cf126401bc1b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 3802,
+      "to": 3894,
+      "duration": 92
+    },
+    {
+      "id": "n027",
+      "text": "研修所に泊まったその夜、廊下を歩く音で目が覚めました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "研修所に泊まったその夜、廊下を歩く音で目が覚めました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n027_96d9434df045.wav",
+      "seconds": 4.298666666666667,
+      "kana": "ケンシュウショ'ニ/トマッタ'/ソノ'/ヨ'ル、ロオカオ'/アル'ク/オト'デ/メ'ガ/サメマ'_シタ",
+      "cacheHash": "96d9434df0455435186e95a12ebaa35c3d4ba324a12317a692fb776ed59bdf5f",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 3942,
+      "to": 4071,
+      "duration": 129
+    },
+    {
+      "id": "n028",
+      "text": "引き戸が、十センチほど開いていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "引き戸が、じゅっセンチほど開いていました。",
+      "speech": "引き戸が、じゅっセンチほど開いていました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "十センチ",
+            "じゅっセンチ"
+          ]
+        ]
+      },
+      "file": "voice/n028_04cf9ef683ed.wav",
+      "seconds": 2.997333333333333,
+      "kana": "_ヒキ'ドガ、ジュ'ッ/セン_チホド'/ヒラ'イテ/イマ'_シタ",
+      "cacheHash": "04cf9ef683edc265a924ac4cb5c599652ef2d352afc1128295fe405b901cdbb3",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4110,
+      "to": 4200,
+      "duration": 90
+    },
+    {
+      "id": "n029",
+      "text": "そこに、人が立っていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "そこに、ひとが立っていました。",
+      "speech": "そこに、ひとが立っていました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "人が",
+            "ひとが"
+          ]
+        ]
+      },
+      "file": "voice/n029_5f320c87116f.wav",
+      "seconds": 2.336,
+      "kana": "ソコニ'、_ヒトガ'/タ'ッテ/イマ'_シタ",
+      "cacheHash": "5f320c87116f1b45f8ce8bd887fc6d0cb7dc61e80e1cb4ddec272d5874ebdb02",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4239,
+      "to": 4310,
+      "duration": 71
+    },
+    {
+      "id": "n030",
+      "text": "月明かりに、白い仮面が見えました。右頬から口にかけて、斜めに割れています。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "月明かりに、白い仮面が見えました。みぎほおから口にかけて、斜めに割れています。",
+      "speech": "月明かりに、白い仮面が見えました。みぎほおから口にかけて、斜めに割れています。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "右頬",
+            "みぎほお"
+          ]
+        ]
+      },
+      "file": "voice/n030_6e34bfba15f3.wav",
+      "seconds": 6.176,
+      "kana": "_ツキア'カリニ、シロ'イ/カメンガ'/ミエマ'_シタ、ミギホ'オカラ/_クチニ'/カケ'テ、ナナ'メニ/ワレテ'/イマ'_ス",
+      "cacheHash": "6e34bfba15f3f576294e15bdb95711130a22dc74c8a7297ffee0ca1beed8dc53",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4364,
+      "to": 4550,
+      "duration": 186
+    },
+    {
+      "id": "n031",
+      "text": "戸よりも高い位置から、首を曲げて、こちらを見ていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "戸よりも高い位置から、首を曲げて、こちらを見ていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n031_9de23bb583ab.wav",
+      "seconds": 4.266666666666667,
+      "kana": "トヨ'リモ/タカ'イ/イ'_チカラ、クビオ'/マゲテ'、コチラオ'/ミ'テ/イマ'_シタ",
+      "cacheHash": "9de23bb583abb4884f25c6b3a9d3e15165ec2a50c43a58c1983bf8359e6efffc",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4564,
+      "to": 4692,
+      "duration": 128
+    },
+    {
+      "id": "n032",
+      "text": "白い半袖の下の腕は、灰色でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "白い半袖の下の腕は、灰色でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n032_4e1d5146b3aa.wav",
+      "seconds": 3.264,
+      "kana": "シロ'イ/ハンソデノ'/_シタノ'/ウデ'ワ、ハイイロデ_シタ'",
+      "cacheHash": "4e1d5146b3aa25217e86415d394df74e1bbf2a2692b9908cabec6c8662de8fa8",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4706,
+      "to": 4804,
+      "duration": 98
+    },
+    {
+      "id": "n033",
+      "text": "声を出そうとしても、口が動きません。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "声を出そうとしても、口が動きません。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n033_b456186d61a1.wav",
+      "seconds": 3.04,
+      "kana": "コ'エオ/ダ'ソオト/_シテモ'、_クチガ'/ウゴキマセ'ン",
+      "cacheHash": "b456186d61a131ecc1ba04b3178c6cb480a13ad20fbbde0ed879ceb76d7ff3ae",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4840,
+      "to": 4932,
+      "duration": 92
+    },
+    {
+      "id": "n034",
+      "text": "すると、その人が、灰色の指で自分の仮面を押さえました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "すると、そのひとが、灰色の指で自分の仮面を押さえました。",
+      "speech": "すると、そのひとが、灰色の指で自分の仮面を押さえました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "その人が",
+            "そのひとが"
+          ]
+        ]
+      },
+      "file": "voice/n034_9363e0b533e3.wav",
+      "seconds": 4.714666666666667,
+      "kana": "スルト'、ソノ'/_ヒトガ'、ハイイロノ'/ユビ'デ/ジブンノ'/カメンオ'/オサエマ'_シタ",
+      "cacheHash": "9363e0b533e30943bb8207d8b2ab9500e5dcc94b6c4d151af0fbbe128bd1fb1a",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 4959,
+      "to": 5101,
+      "duration": 142
+    },
+    {
+      "id": "n035",
+      "text": "私の頬も、同じ場所を押されました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私の頬も、同じ場所を押されました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n035_b45141d364d3.wav",
+      "seconds": 2.976,
+      "kana": "ワタシノ'/ホ'オモ、オナジ'/バショオ'/オサレマ'_シタ",
+      "cacheHash": "b45141d364d32fe4f839a9cd77c15760486ffbe9fb3bd099f5562f5b90384930",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5115,
+      "to": 5205,
+      "duration": 90
+    },
+    {
+      "id": "n036",
+      "text": "押される力が強くなったところで、体が動きました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "押される力が強くなったところで、体が動きました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n036_47fa366d07e7.wav",
+      "seconds": 3.872,
+      "kana": "オサレル'/_チカラ'ガ/ツヨ'クナッタ/トコロデ'、カラダガ'/ウゴキマ'_シタ",
+      "cacheHash": "47fa366d07e7afeded72f3bb3b475f2d40852f6cb742db62128b1d694ed951c9",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5256,
+      "to": 5373,
+      "duration": 117
+    },
+    {
+      "id": "n037",
+      "text": "戸は閉まっていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "戸は閉まっていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n037_613e26334eb9.wav",
+      "seconds": 1.4933333333333334,
+      "kana": "トワ'/シマ'ッテ/イマ'_シタ",
+      "cacheHash": "613e26334eb9e5a6b4d637b4af672ff0f039aaa5239acab6db79952a99f3f644",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5394,
+      "to": 5439,
+      "duration": 45
+    },
+    {
+      "id": "n038",
+      "text": "怖い夢だった。そう思うことにしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "怖い夢だった。そう思うことにしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n038_37c13f6761f1.wav",
+      "seconds": 3.1893333333333334,
+      "kana": "コワ'イ/ユメ'ダッタ、ソオ'/オモ'ウ/コト'ニ/シマ'_シタ",
+      "cacheHash": "37c13f6761f1db3bcbde02e84a177e70b10b89f637532519eda13438dc59cd7c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5469,
+      "to": 5565,
+      "duration": 96
+    },
+    {
+      "id": "n039",
+      "text": "週末、自宅へ戻りました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "週末、自宅へ戻りました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n039_4c2ba23e3444.wav",
+      "seconds": 2.592,
+      "kana": "シュウマツ'、ジタクエ'/モドリマ'_シタ",
+      "cacheHash": "4c2ba23e34445be34d6b2e307cd725be9f585b1bc3ffc88f8589e5e7188dc319",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5607,
+      "to": 5685,
+      "duration": 78
+    },
+    {
+      "id": "n040",
+      "text": "その夜も、同じことが起きました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "その夜も、同じことが起きました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n040_c5e739cedfb9.wav",
+      "seconds": 2.688,
+      "kana": "ソノ'/ヨ'ルモ、オナジ'/コト'ガ/オキマ'_シタ",
+      "cacheHash": "c5e739cedfb978ac64504f3ba2e9237deac6bbba9a0f330e878d27b88af1b47f",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5724,
+      "to": 5805,
+      "duration": 81
+    },
+    {
+      "id": "n041",
+      "text": "今度は寝室の入口に立っていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "今度は寝室の入口に立っていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n041_89b9ba3a98d9.wav",
+      "seconds": 2.6986666666666665,
+      "kana": "コ'ンドワ/シン_シツノ'/イリグチニ'/タ'ッテ/イマ'_シタ",
+      "cacheHash": "89b9ba3a98d9f2797bf4fa13f4ce093c78561f1a7fc9e2cc65a3155209de5eb7",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5841,
+      "to": 5922,
+      "duration": 81
+    },
+    {
+      "id": "n042",
+      "text": "私が布団を頭までかぶると、すぐ耳元で、息を吸う音がしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私が布団を頭までかぶると、すぐ耳元で、息を吸う音がしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n042_2e2d196d1a86.wav",
+      "seconds": 5.290666666666667,
+      "kana": "ワタシガ'/_フトンオ'/アタマ'マデ/カブ'ルト、ス'グ/ミミモトデ'、イ'キオ/スウ'/オト'ガ/シマ'_シタ",
+      "cacheHash": "2e2d196d1a86b2b89a1b39df08aa2ba7577db402d0551fd30c4d2ab468afe10a",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 5958,
+      "to": 6117,
+      "duration": 159
+    },
+    {
+      "id": "n043",
+      "text": "足音はしませんでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "足音はしませんでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n043_b9193d02c299.wav",
+      "seconds": 1.888,
+      "kana": "アシオ'トワ/シマセ'ンデ_シタ",
+      "cacheHash": "b9193d02c29992c9a6a5eb2894801c9ad318dc0f86d8ccbb4242013bfcabf6ce",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 6180,
+      "to": 6237,
+      "duration": 57
+    },
+    {
+      "id": "n044",
+      "text": "布団の上から、顔をつかまれました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "布団の上から、顔をつかまれました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n044_5b3da17dd1e6.wav",
+      "seconds": 2.8053333333333335,
+      "kana": "_フトンノ'/ウエカラ'、カオオ'/_ツカマレマ'_シタ",
+      "cacheHash": "5b3da17dd1e6db3aec13edf70b51c8b0aa6111f80fa5373bd6a3693047a05367",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 6267,
+      "to": 6352,
+      "duration": 85
+    },
+    {
+      "id": "n045",
+      "text": "「かえして」",
+      "engine": "irodori",
+      "speaker": "sobaya",
+      "speech": "「かえして」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/sobaya_return.wav",
+      "from": 6394,
+      "to": 6428,
+      "duration": 34,
+      "seconds": 1.1095
+    },
+    {
+      "id": "n046",
+      "text": "低い声でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "低い声でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n046_835b0d2730ca.wav",
+      "seconds": 1.3973333333333333,
+      "kana": "_ヒク'イ/コ'エデ_シタ",
+      "cacheHash": "835b0d2730ca6ff0094b0089a3a375d60ca47ecdaaedf527f1ff4c8ed2504586",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 6473,
+      "to": 6515,
+      "duration": 42
+    },
+    {
+      "id": "n047",
+      "text": "隣で寝ている妻を呼ぼうとしましたが、口が開きません。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "隣で寝ている妻を呼ぼうとしましたが、口があきません。",
+      "speech": "隣で寝ている妻を呼ぼうとしましたが、口があきません。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "口が開きません",
+            "口があきません"
+          ]
+        ]
+      },
+      "file": "voice/n047_ef71d2948302.wav",
+      "seconds": 3.936,
+      "kana": "トナリデ'/ネ'テ/イル'/ツ'マオ/ヨボオト'/シマ'_シタガ、_クチガ'/アキマセ'ン",
+      "cacheHash": "ef71d2948302bd7f35d3e018ae4f59fffd8f36a62c9e228e27f26bf4029f9b64",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 6529,
+      "to": 6648,
+      "duration": 119
+    },
+    {
+      "id": "n048",
+      "text": "翌朝、妻に「顔、どうしたの」と聞かれました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "翌朝、妻に「顔、どうしたの」と聞かれました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n048_b9a7f6e77258.wav",
+      "seconds": 4.949333333333334,
+      "kana": "ヨクアサ'、ツ'マニ、カオ'、ド'オ/_シタ'ノ、ト'/_キカレマ'_シタ",
+      "cacheHash": "b9a7f6e77258aabd3a96a4db2645076b252ffa2d6ae68fa9d363154d9495b6fb",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 6699,
+      "to": 6848,
+      "duration": 149
+    },
+    {
+      "id": "n049",
+      "text": "鏡を見ると、頬から口まで、細い赤い線がついていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "鏡を見ると、頬から口まで、細い赤い線がついていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n049_1b020583a436.wav",
+      "seconds": 4.704,
+      "kana": "カガミ'オ/ミ'ルト、ホ'オカラ/_クチマ'デ、ホソ'イアカイ/セ'ンガ/ツ'イテ/イマ'_シタ",
+      "cacheHash": "1b020583a436746ba9f492a1530d91592e3a92b6cc1b8ca24cf80a833c2f5aa9",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 6862,
+      "to": 7004,
+      "duration": 142
+    },
+    {
+      "id": "n050",
+      "text": "仮面の割れ目と、同じ形でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "仮面の割れ目と、同じ形でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n050_e819ef457b26.wav",
+      "seconds": 2.7306666666666666,
+      "kana": "カメンノ'/ワレメト'、オナジ'/カタチデ_シタ'",
+      "cacheHash": "e819ef457b26efa17494be5d29f265f5c34e6c5fd57ccaa94adf634b3873a1a9",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7018,
+      "to": 7100,
+      "duration": 82
+    },
+    {
+      "id": "n051",
+      "text": "妻に聞いても、寝室には誰も来ていないと言います。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "妻に聞いても、寝室には誰も来ていないと言います。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n051_52a04d313403.wav",
+      "seconds": 3.7866666666666666,
+      "kana": "ツ'マニ/キイテモ'、シン_シツニワ'/ダ'レモ/キ'テ/イナイト'/イイマ'_ス",
+      "cacheHash": "52a04d3134031217cd4b7b4c5ede5121ac6b70f108b8ef943c8f161e81afb0fd",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7139,
+      "to": 7253,
+      "duration": 114
+    },
+    {
+      "id": "n052",
+      "text": "ただ、私が夜中、何度も顔をこすっていたそうです。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ただ、私が夜中、何度も顔をこすっていたそうです。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n052_b03550dd978a.wav",
+      "seconds": 4.32,
+      "kana": "タ'ダ、ワタシガ'/ヨナカ'、ナン'ドモ/カオオ'/コス'ッテ/イタ'/ソオデ'_ス",
+      "cacheHash": "b03550dd978a6b95311aaaeffbbef907901f44d293f72f550f1baa945c2a2947",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7267,
+      "to": 7397,
+      "duration": 130
+    },
+    {
+      "id": "n053",
+      "text": "その日の昼、Yさんから電話が来ました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "その日の昼、ワイさんから電話が来ました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 6,
+            "end": 9
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n053_114ff8882e56.wav",
+      "seconds": 3.2,
+      "kana": "ソノ'/ヒノ'/ヒル'、ワ'イサンカラ/デンワガ'/キマ'_シタ",
+      "cacheHash": "114ff8882e56fae1fe864d1f4b3e045f67ea447d6c0e3dad9f5d80ca42a3a272",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7427,
+      "to": 7523,
+      "duration": 96
+    },
+    {
+      "id": "n054",
+      "text": "「変な夢、見てへん？」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「変な夢、見てへん？」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n054_396248d52b7e.wav",
+      "seconds": 2.4,
+      "kana": "ヘ'ンナ/ユメ'、ミ'テヘン？",
+      "cacheHash": "396248d52b7edab656cfe9c3606f6ca3df3cb2a15343fd274bb1f7f8445d11b7",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7537,
+      "to": 7609,
+      "duration": 72
+    },
+    {
+      "id": "n055",
+      "text": "私が仮面のことを話す前に、Yさんは言いました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私が仮面のことを話す前に、ワイさんは言いました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 13,
+            "end": 16
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n055_3dca313e2234.wav",
+      "seconds": 3.904,
+      "kana": "ワタシガ'/カメンノ'/コト'オ/ハナ'ス/マ'エニ、ワ'イサンワ/イイマ'_シタ",
+      "cacheHash": "3dca313e2234edc88140a72af5c7d10dc37a593b2a4094931dd42741637be233",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7633,
+      "to": 7751,
+      "duration": 118
+    },
+    {
+      "id": "n056",
+      "text": "「顔、押さえてくるやつ」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「顔、押さえてくるやつ」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n056_5e7274dbe21c.wav",
+      "seconds": 2.0906666666666665,
+      "kana": "カオ'、オサ'エテ/ク'ル/ヤ'ツ",
+      "cacheHash": "5e7274dbe21c780da6eff571682dacbf3c9c30f3a3180b8e8ae7f15502c13be4",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7765,
+      "to": 7828,
+      "duration": 63
+    },
+    {
+      "id": "n057",
+      "text": "Mさんにも電話しました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "エムさんにも電話しました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n057_93548723b919.wav",
+      "seconds": 1.856,
+      "kana": "エ'ムサンニモ/デンワ'/シマ'_シタ",
+      "cacheHash": "93548723b919bdfbf4d6cbbfabe86e42cf162f042748ce548ea6c0f2f5d5304f",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7858,
+      "to": 7914,
+      "duration": 56
+    },
+    {
+      "id": "n058",
+      "text": "同じでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "同じでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n058_6e1856e68c2e.wav",
+      "seconds": 1.088,
+      "kana": "オナジデ_シタ'",
+      "cacheHash": "6e1856e68c2e886f162b9d99307632e1b1b5424273e6c08c7c2fb7eb3fb2c249",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 7928,
+      "to": 7961,
+      "duration": 33
+    },
+    {
+      "id": "n059",
+      "text": "ただ、Mさんには、夢の中だけのことではなくなっていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ただ、エムさんには、夢の中だけのことではなくなっていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 3,
+            "end": 6
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n059_28ccba87705e.wav",
+      "seconds": 4.554666666666667,
+      "kana": "タ'ダ、エ'ムサンニワ、ユメ'ノ/ナカダケノ'/コト'デワ/ナクナッテ'/イマ'_シタ",
+      "cacheHash": "28ccba87705e63c01d9c6bb7a414da04e5c46c69a05f0deab3d3835528959ac1",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8012,
+      "to": 8149,
+      "duration": 137
+    },
+    {
+      "id": "n060",
+      "text": "洗面所で顔を拭いていたら、タオルの向こうから、もう一本、手が来たそうです。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "洗面所で顔を拭いていたら、タオルの向こうから、もういっぽん、手が来たそうです。",
+      "speech": "洗面所で顔を拭いていたら、タオルの向こうから、もういっぽん、手が来たそうです。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "もう一本",
+            "もういっぽん"
+          ]
+        ]
+      },
+      "file": "voice/n060_f00128c54ed3.wav",
+      "seconds": 6.208,
+      "kana": "センメンジョデ'/カオオ'/フイテ'/イタ'ラ、タ'オルノ/ムコ'オカラ、モ'オ/イッ'/ポ'ン、テ'ガ/キ'タ/ソオデ'_ス",
+      "cacheHash": "f00128c54ed32f1d0f4dada121d8ca57035967f4d1560ddc0f7e6dbd7a0d8cf8",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8163,
+      "to": 8350,
+      "duration": 187
+    },
+    {
+      "id": "n061",
+      "text": "「タオル離したのに、まだ押さえられてた」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「タオル離したのに、まだ押さえられてた」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n061_9981b750cace.wav",
+      "seconds": 2.7733333333333334,
+      "kana": "タ'オル/ハナ'_シタノニ、マ'ダ/オサ'エラレテタ",
+      "cacheHash": "9981b750cace13541e7f390bb66bb3a91a1322c2a4c4746772ed6935bd78426c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8377,
+      "to": 8461,
+      "duration": 84
+    },
+    {
+      "id": "n062",
+      "text": "管理人に電話して、部屋に入ったことも、仮面を割ったことも話しました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "カンリニンに電話して、部屋に入ったことも、仮面を割ったことも話しました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "common.kanrinin",
+            "surface": "管理人",
+            "reading": "カンリニン",
+            "scope": "common",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n062_55eecb5af900.wav",
+      "seconds": 5.365333333333333,
+      "kana": "カンリ'ニンニ/デンワ'/_シテ'、ヘヤ'ニ/ハ'イッタ/コト'モ、カメンオ'/ワッタ'/コト'モ/ハナシマ'_シタ",
+      "cacheHash": "55eecb5af90020981c34cf0b61682d7c00cec6140c38222479c1a743f41a8c1d",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8515,
+      "to": 8676,
+      "duration": 161
+    },
+    {
+      "id": "n063",
+      "text": "長い沈黙のあと、",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "長い沈黙のあと、",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n063_3424126ef09c.wav",
+      "seconds": 1.6,
+      "kana": "ナガ'イ/チンモクノ'/ア'ト",
+      "cacheHash": "3424126ef09ca6d9b7140142816cac6f0ff16db9297503a482cdc3edbd079b89",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8690,
+      "to": 8738,
+      "duration": 48
+    },
+    {
+      "id": "n064",
+      "text": "「三人とも、触ったんですね」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「三人とも、触ったんですね」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.person",
+            "surface": "人",
+            "start": 2,
+            "end": 3,
+            "readings": [
+              "ヒト：あの人、人を紹介する",
+              "ニン：三人、管理人",
+              "ジン：日本人"
+            ],
+            "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+          }
+        ]
+      },
+      "file": "voice/n064_da0ed16af06d.wav",
+      "seconds": 2.6453333333333333,
+      "kana": "サン'ニントモ、サワッタ'/ン'デ_スネ",
+      "cacheHash": "da0ed16af06d1f8d90133937470addda57d1dc9385b07806355382e0b0e8ed0f",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8810,
+      "to": 8890,
+      "duration": 80
+    },
+    {
+      "id": "n065",
+      "text": "とだけ聞かれました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "とだけ聞かれました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n065_8ac197018e05.wav",
+      "seconds": 1.408,
+      "kana": "トダケ'/_キカレマ'_シタ",
+      "cacheHash": "8ac197018e0557d03e79e3760b9a59ec01ae4e4dc58349de9d331d80ff9be6b8",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8920,
+      "to": 8963,
+      "duration": 43
+    },
+    {
+      "id": "n066",
+      "text": "管理人の紹介で、地元で祈祷をしているF先生に会いました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "カンリニンの紹介で、地元できとうをしているエフ先生に会いました。",
+      "speech": "カンリニンの紹介で、地元できとうをしているエフ先生に会いました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "祈祷",
+            "きとう"
+          ]
+        ]
+      },
+      "file": "voice/n066_a664a6282267.wav",
+      "seconds": 4.629333333333333,
+      "kana": "カンリ'ニンノ/ショオカイデ'、ジモトデ'/_キトオオ'/_シテ'/イル'/エ_フセンセ'エニ/アイマ'_シタ",
+      "cacheHash": "a664a6282267f3972067eab950c2f8aef5118849ae1d0c8ae96a97d7331b60a3",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 8999,
+      "to": 9138,
+      "duration": 139
+    },
+    {
+      "id": "n067",
+      "text": "「中口さん、顔をこちらに向けてください」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「ナカグチさん、顔をこちらに向けてください」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "mmu.nakaguchi",
+            "surface": "中口",
+            "reading": "ナカグチ",
+            "scope": "mmu",
+            "start": 1,
+            "end": 3
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n067_2c34e539ce22.wav",
+      "seconds": 3.1573333333333333,
+      "kana": "ナカ'グ_チサン、カオオ'/コチラニ'/ムケテ'/クダサ'イ",
+      "cacheHash": "2c34e539ce225112495b46ef7835195b77c2547aab36b3d7c043eae2b45d782c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 9152,
+      "to": 9247,
+      "duration": 95
+    },
+    {
+      "id": "n068",
+      "text": "先生の目は、私の顔の、ほんの少し手前を見ていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "先生の目は、私の顔の、ほんの少し手前を見ていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n068_645eff09d5e6.wav",
+      "seconds": 4.650666666666667,
+      "kana": "センセ'エノ/メ'ワ、ワタシノ'/カオノ'、ホンノ'/_スコ'_シ/テマエオ'/ミ'テ/イマ'_シタ",
+      "cacheHash": "645eff09d5e6272ff8a81e4df29e9f5fbb541428dba48a1a8cf9c2f5930a27ca",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 9261,
+      "to": 9401,
+      "duration": 140
+    },
+    {
+      "id": "n069",
+      "text": "それから、MさんとYさんにも同じことをしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "それから、エムさんとワイさんにも同じことをしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 5,
+            "end": 8
+          },
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 9,
+            "end": 12
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n069_258f79c8d606.wav",
+      "seconds": 3.648,
+      "kana": "ソレカラ'、エ'ムサント/ワ'イサンニモ/オナジ'/コト'オ/シマ'_シタ",
+      "cacheHash": "258f79c8d6069c0a0a0f63145e0f94aafbb169c21f2542fce86f1e39f874fb7c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 9425,
+      "to": 9535,
+      "duration": 110
+    },
+    {
+      "id": "n070",
+      "text": "「三人とも、同じものがついています」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「三人とも、同じものがついています」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.person",
+            "surface": "人",
+            "start": 2,
+            "end": 3,
+            "readings": [
+              "ヒト：あの人、人を紹介する",
+              "ニン：三人、管理人",
+              "ジン：日本人"
+            ],
+            "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+          }
+        ]
+      },
+      "file": "voice/n070_d8f49901ede4.wav",
+      "seconds": 2.88,
+      "kana": "サン'ニントモ、オナジ'/モノ'ガ/ツ'イテ/イマ'_ス",
+      "cacheHash": "d8f49901ede4078901c8b0b4986d73cc6c8ed4e4e7546f697c7ea59dd8cda95c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 9549,
+      "to": 9636,
+      "duration": 87
+    },
+    {
+      "id": "n071",
+      "text": "村では、それを『そばや』と呼ぶそうです。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "村では、それを『そばや』と呼ぶそうです。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n071_78151e136faa.wav",
+      "seconds": 3.957333333333333,
+      "kana": "ムラ'デワ、ソレオ'、ソ'バヤ、ト'/ヨブ'/ソオデ'_ス",
+      "cacheHash": "78151e136faab9a19c9ff306261c72f32fd1990fca7b1875c5fadde178149336",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 9672,
+      "to": 9791,
+      "duration": 119
+    },
+    {
+      "id": "n072",
+      "text": "「壊した面を、返さないといけません。今は、あなたたちの顔を代わりにしようとしています」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "「壊しためんを、返さないといけません。今は、あなたたちの顔を代わりにしようとしています」",
+      "speech": "「壊しためんを、返さないといけません。今は、あなたたちの顔を代わりにしようとしています」",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "壊した面を",
+            "壊しためんを"
+          ]
+        ]
+      },
+      "file": "voice/n072_982c186969d0.wav",
+      "seconds": 6.634666666666667,
+      "kana": "コワ'_シタ/メ'ンオ、カエサ'ナイト/イケマセ'ン、イ'マワ、アナタ'タチノ/カオオ'/カワリニ'/シヨオト'/_シテ'/イマ'_ス",
+      "cacheHash": "982c186969d0078e14a9c527d81a17e5182f7e678a17aa7ed67662c85b47d9c4",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 9812,
+      "to": 10012,
+      "duration": 200
+    },
+    {
+      "id": "n073",
+      "text": "Yさんが、自分の口元に手を当てました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ワイさんが、自分の口元に手を当てました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "review": [
+          {
+            "id": "context.bun-fun",
+            "surface": "分",
+            "start": 6,
+            "end": 7,
+            "readings": [
+              "ブン：今年の分、その分",
+              "フン／プン：時間の単位",
+              "ワ：分ける"
+            ],
+            "note": "取り分・時間・動詞を区別する"
+          }
+        ]
+      },
+      "file": "voice/n073_f444a10a4ae7.wav",
+      "seconds": 3.2213333333333334,
+      "kana": "ワ'イサンガ、ジブンノ'/_クチモトニ'/テ'オ/アテマ'_シタ",
+      "cacheHash": "f444a10a4ae7d7a3d72427ba572f1656e0b2aa8847b82fe1e00b0625e68202bc",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10048,
+      "to": 10145,
+      "duration": 97
+    },
+    {
+      "id": "n074",
+      "text": "「今も、いるんですか」",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "「今も、いるんですか」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n074_a3eaf3b7495e.wav",
+      "seconds": 2.026666666666667,
+      "kana": "イ'マモ、イル'/ン'デ_スカ",
+      "cacheHash": "a3eaf3b7495ece31b81c0c337761d83f047a98626a2d507777210d9fe616f665",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10159,
+      "to": 10220,
+      "duration": 61
+    },
+    {
+      "id": "n075",
+      "text": "先生は答えず、私たちの後ろにあった鏡を、壁の方へ向けました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "先生は答えず、私たちの後ろにあった鏡を、壁のほうへ向けました。",
+      "speech": "先生は答えず、私たちの後ろにあった鏡を、壁のほうへ向けました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "壁の方へ",
+            "壁のほうへ"
+          ]
+        ]
+      },
+      "file": "voice/n075_a953b40bcf16.wav",
+      "seconds": 5.610666666666667,
+      "kana": "センセ'エワ/コタエ'ズ、ワタシ'タチノ/ウシロニ'/ア'ッタ/カガミ'オ、カベノ'/ホ'オエ/ムケマ'_シタ",
+      "cacheHash": "a953b40bcf16c7bb69fdd568e7c6c2d8812429a5e912c1a5e09271a4cfbcf982",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10250,
+      "to": 10419,
+      "duration": 169
+    },
+    {
+      "id": "n076",
+      "text": "その日のうちに、四人でY村へ戻りました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "その日のうちに、よにんでワイむらへ戻りました。",
+      "speech": "その日のうちに、よにんでワイむらへ戻りました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "四人で",
+            "よにんで"
+          ]
+        ]
+      },
+      "file": "voice/n076_b2ea3cc70ee7.wav",
+      "seconds": 3.392,
+      "kana": "ソノ'/ヒノ'/ウチニ'、ヨニンデ'/ワイ'ムラエ/モドリマ'_シタ",
+      "cacheHash": "b2ea3cc70ee77612d561c7a69fa969fac9680eb5653072480986cb9af4e4d864",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10473,
+      "to": 10575,
+      "duration": 102
+    },
+    {
+      "id": "n077",
+      "text": "先生が箱を開け、割れた面を取り出しました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "先生が箱を開け、割れためんを取り出しました。",
+      "speech": "先生が箱を開け、割れためんを取り出しました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "割れた面を",
+            "割れためんを"
+          ]
+        ]
+      },
+      "file": "voice/n077_7d9652e5709b.wav",
+      "seconds": 3.52,
+      "kana": "センセ'エガ/ハコオ'/アケ'、ワレタ'/メ'ンオ/トリダシマ'_シタ",
+      "cacheHash": "7d9652e5709b18ccefa2e57b56b59bdda9528501a5e88b6debb674252e546125",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10611,
+      "to": 10717,
+      "duration": 106
+    },
+    {
+      "id": "n078",
+      "text": "三つの破片を合わせると、今度は、隙間なく合いました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "みっつの破片を合わせると、今度は、隙間なく合いました。",
+      "speech": "みっつの破片を合わせると、今度は、隙間なく合いました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "三つ",
+            "みっつ"
+          ]
+        ]
+      },
+      "file": "voice/n078_8938a706d3c4.wav",
+      "seconds": 4.32,
+      "kana": "ミ'ッツノ/ハヘンオ'/アワセ'ルト、コ'ンドワ、_スキマ'/ナクアイマ'_シタ",
+      "cacheHash": "8938a706d3c4b23b5e0810e1fda65362a3498103cf25624a6f4ce79412c820a4",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10731,
+      "to": 10861,
+      "duration": 130
+    },
+    {
+      "id": "n079",
+      "text": "先生は面を白い布で固定し、元の箱へ納めました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "先生はめんを白い布で固定し、元の箱へ納めました。",
+      "speech": "先生はめんを白い布で固定し、元の箱へ納めました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "先生は面を",
+            "先生はめんを"
+          ]
+        ]
+      },
+      "file": "voice/n079_8c725ddb6117.wav",
+      "seconds": 4.426666666666667,
+      "kana": "センセ'エワ/メ'ンオ/シロ'イ/ヌノデ'/コテエ'/シ'、モト'ノ/ハコエ'/オサメマ'_シタ",
+      "cacheHash": "8c725ddb6117a405078e20e0d979dcca53d9485fdac56c5398620582fee62d13",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 10897,
+      "to": 11030,
+      "duration": 133
+    },
+    {
+      "id": "n080",
+      "text": "私たちは、その前に並んで座りました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私たちは、その前に並んで座りました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n080_33e1d8f3d244.wav",
+      "seconds": 3.1893333333333334,
+      "kana": "ワタシ'タチワ、ソノ'/マ'エニ/ナランデ'/スワリマ'_シタ",
+      "cacheHash": "33e1d8f3d244d1c39b097b3d403ab62a590a1be31893a5cfa4f21a5e65353414",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 11054,
+      "to": 11150,
+      "duration": 96
+    },
+    {
+      "id": "n081",
+      "text": "「朝まで目を閉じていてください。途中で私の声がしても、開けないで」",
+      "engine": "irodori",
+      "speaker": "f",
+      "speech": "「朝まで目を閉じていてください。途中で私の声がしても、開けないで」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/f_warning.wav",
+      "from": 11186,
+      "to": 11355,
+      "duration": 169,
+      "seconds": 5.600042
+    },
+    {
+      "id": "n082",
+      "text": "窓の外は、もう暗くなっていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "窓の外は、もう暗くなっていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n082_3930c311a6d8.wav",
+      "seconds": 2.8053333333333335,
+      "kana": "マ'ドノ/ソ'トワ、モ'オ/クラクナッテ'/イマ'_シタ",
+      "cacheHash": "3930c311a6d884df233f6efa22f51cd6fa3854edd0123f0d711cdfea2ad6b732",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 11409,
+      "to": 11494,
+      "duration": 85
+    },
+    {
+      "id": "n083",
+      "text": "先生が、低い声で何かを唱え始めました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "先生が、低い声で何かを唱え始めました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n083_ecbfc5d6fd70.wav",
+      "seconds": 3.6053333333333333,
+      "kana": "センセ'エガ、_ヒク'イ/コ'エデ/ナ'ニカオ/トナエハジメマ'_シタ",
+      "cacheHash": "ecbfc5d6fd70013bc32714275cf9b75daed65ebe722d751c52571a74b154c97b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 11530,
+      "to": 11639,
+      "duration": 109
+    },
+    {
+      "id": "n084",
+      "text": "しばらくすると、後ろの戸が開きました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "しばらくすると、後ろの戸が開きました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n084_27e4689fb16a.wav",
+      "seconds": 3.1466666666666665,
+      "kana": "シバ'ラ_ク/スルト'、ウシロノ'/トガ'/ヒラキマ'_シタ",
+      "cacheHash": "27e4689fb16aa375a6a8f5d7b83649d323b9f6c5ad72ba7b213f9032833ba524",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 11720,
+      "to": 11815,
+      "duration": 95
+    },
+    {
+      "id": "n085",
+      "text": "ゆっくり、畳を踏む音がしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ゆっくり、畳を踏む音がしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n085_d46d2ec52379.wav",
+      "seconds": 2.944,
+      "kana": "ユック'リ、タタミオ'/フム'/オト'ガ/シマ'_シタ",
+      "cacheHash": "d46d2ec523796f1a0b76374faa07b2ec3cded4d0207b106a3350db8373161952",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 11872,
+      "to": 11961,
+      "duration": 89
+    },
+    {
+      "id": "n086",
+      "text": "右に座っているYさんが、短く息を吐きました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "右に座っているワイさんが、短く息を吐きました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 7,
+            "end": 10
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n086_bc42eacb3160.wav",
+      "seconds": 3.7973333333333334,
+      "kana": "ミギニ'/スワッテ'/イル'/ワ'イサンガ、ミジカ'ク/イ'キオ/ハキマ'_シタ",
+      "cacheHash": "bc42eacb3160e5b2612677bc082313a353d47d726b75399974c37936f38b86b8",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12045,
+      "to": 12159,
+      "duration": 114
+    },
+    {
+      "id": "n087",
+      "text": "次に、左のMさんが、何かをこらえるように鼻を鳴らしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "次に、左のエムさんが、何かをこらえるように鼻を鳴らしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 5,
+            "end": 8
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n087_982f8a2c73fc.wav",
+      "seconds": 4.8853333333333335,
+      "kana": "ツギ'ニ、ヒダリノ'/エ'ムサンガ、ナ'ニカオ/コラエ'ル/ヨ'オニ/ハナオ'/ナラシマ'_シタ",
+      "cacheHash": "982f8a2c73fc7f151e6d73ac02c7a55116102c84fa0326945a3f9a1ef86ed11d",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12189,
+      "to": 12336,
+      "duration": 147
+    },
+    {
+      "id": "n088",
+      "text": "それから、私の後ろで、音が止まりました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "それから、私の後ろで、音が止まりました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n088_3f55558286fc.wav",
+      "seconds": 3.6693333333333333,
+      "kana": "ソレカラ'、ワタシノ'/ウシロデ'、オト'ガ/トマリマ'_シタ",
+      "cacheHash": "3f55558286fc2d97b9971223c9520a76388b4f444c3cdb38b16a8d93564692ea",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12369,
+      "to": 12480,
+      "duration": 111
+    },
+    {
+      "id": "n089",
+      "text": "両頬に、冷たいものが触れました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "りょうほおに、冷たいものが触れました。",
+      "speech": "りょうほおに、冷たいものが触れました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "両頬",
+            "りょうほお"
+          ]
+        ]
+      },
+      "file": "voice/n089_82ec2dd9f705.wav",
+      "seconds": 2.7093333333333334,
+      "kana": "リョオホ'オニ、ツメタイ'/モノ'ガ/フレマ'_シタ",
+      "cacheHash": "82ec2dd9f705eff6c99e093c93f4b57515b68722fef4377871f6d89f2b0add23",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12564,
+      "to": 12646,
+      "duration": 82
+    },
+    {
+      "id": "n090",
+      "text": "指でした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "指でした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n090_d1254606bd81.wav",
+      "seconds": 1.056,
+      "kana": "ユビ'デ_シタ",
+      "cacheHash": "d1254606bd81a792f1bdd3c98b9f4be10bcbaa75cdcbad2c92017c52326cd77d",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12670,
+      "to": 12702,
+      "duration": 32
+    },
+    {
+      "id": "n091",
+      "text": "右の頬を持ち上げ、左を押し下げる。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "右の頬を持ち上げ、左を押し下げる。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n091_754b89c0b471.wav",
+      "seconds": 2.986666666666667,
+      "kana": "ミギノ'/ホ'オオ/モチアゲ'、ヒダリオ'/オ_シサゲ'ル",
+      "cacheHash": "754b89c0b4710165e31b8fcfa5bb09c98e4b784119bbd78e3408acca59b6535a",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12741,
+      "to": 12831,
+      "duration": 90
+    },
+    {
+      "id": "n092",
+      "text": "顔の形を、何かに合わせようとしていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "顔の形を、何かに合わせようとしていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n092_4921c4d3ffa7.wav",
+      "seconds": 3.498666666666667,
+      "kana": "カオノ'/カタチオ'、ナ'ニカニ/アワセ'ヨオト/_シテ'/イマ'_シタ",
+      "cacheHash": "4921c4d3ffa7f2167ef9101748b48708969d5991654ccf5f537071138e4b21cf",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 12873,
+      "to": 12978,
+      "duration": 105
+    },
+    {
+      "id": "n093",
+      "text": "目の前で、先生の声は続いていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "目の前で、先生の声は続いていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n093_f67c3da4ada8.wav",
+      "seconds": 3.2746666666666666,
+      "kana": "メノマ'エデ、センセ'エノ/コ'エワ/ツズイテ'/イマ'_シタ",
+      "cacheHash": "f67c3da4ada82bd6623a20405c11184285a461cf801c373823488441f6203d1b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 13017,
+      "to": 13116,
+      "duration": 99
+    },
+    {
+      "id": "n094",
+      "text": "そのとき、耳元でも、先生の声がしました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "そのとき、耳元でも、先生の声がしました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n094_5936643ac91a.wav",
+      "seconds": 3.904,
+      "kana": "ソノ'/ト'キ、ミミモトデモ'、センセ'エノ/コ'エガ/シマ'_シタ",
+      "cacheHash": "5936643ac91aa6cadfa439e16e2980c0cd5d13c696a202bd65ef3816f9200bf7",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 13164,
+      "to": 13282,
+      "duration": 118
+    },
+    {
+      "id": "n095",
+      "text": "「もう終わりました。目を開けてください」",
+      "engine": "irodori",
+      "speaker": "f",
+      "speech": "「もう終わりました。目を開けてください」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/f_false_release.wav",
+      "from": 13327,
+      "to": 13428,
+      "duration": 101,
+      "seconds": 3.360042
+    },
+    {
+      "id": "n096",
+      "text": "前からも、後ろからも、同じ声が聞こえていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "前からも、後ろからも、同じ声が聞こえていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n096_f465b139d375.wav",
+      "seconds": 4.1066666666666665,
+      "kana": "マ'エカラモ、ウシロカラモ'、オナジ'/コ'エガ/_キコエテ'/イマ'_シタ",
+      "cacheHash": "f465b139d375ede4423e17b0eaf5503f74379538e9426c7f6dfc12699afa0c5d",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 13500,
+      "to": 13624,
+      "duration": 124
+    },
+    {
+      "id": "n097",
+      "text": "私は、まぶたに力を入れました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私は、まぶたに力を入れました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n097_0a05e1ed162c.wav",
+      "seconds": 2.8053333333333335,
+      "kana": "ワタシワ'、マ'ブタニ/_チカラ'オ/イレマ'_シタ",
+      "cacheHash": "0a05e1ed162c122d2b8f496c767c09f77230e9ec9f906ad888bb1bbcd98b88a0",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 13672,
+      "to": 13757,
+      "duration": 85
+    },
+    {
+      "id": "n098",
+      "text": "すると、後ろの声が、低くなりました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "すると、後ろの声が、低くなりました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n098_f31d7c0d2630.wav",
+      "seconds": 3.466666666666667,
+      "kana": "スルト'、ウシロノ'/コ'エガ、_ヒククナリマ'_シタ",
+      "cacheHash": "f31d7c0d26306b167a3cf7cb2b346d607a31f34ef853e8cb3c9c3380b87de6ec",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 13802,
+      "to": 13906,
+      "duration": 104
+    },
+    {
+      "id": "n099",
+      "text": "「こっち、むいて」",
+      "engine": "irodori",
+      "speaker": "sobaya",
+      "speech": "「こっち、むいて」",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/sobaya_turn.wav",
+      "from": 13954,
+      "to": 14001,
+      "duration": 47,
+      "seconds": 1.535771
+    },
+    {
+      "id": "n100",
+      "text": "顎をつかまれて、少しずつ、首が後ろへ向きました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "あごをつかまれて、少しずつ、首が後ろへ向きました。",
+      "speech": "あごをつかまれて、少しずつ、首が後ろへ向きました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "顎を",
+            "あごを"
+          ]
+        ]
+      },
+      "file": "voice/n100_846f6d94ae15.wav",
+      "seconds": 4.245333333333333,
+      "kana": "アゴ'オ/_ツカ'マレテ、_スコ'シズツ、クビガ'/ウシロエ'/ムキマ'_シタ",
+      "cacheHash": "846f6d94ae151721e677f5256e6ccef40956f33af62885057c4fd624d3293d0b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14067,
+      "to": 14195,
+      "duration": 128
+    },
+    {
+      "id": "n101",
+      "text": "先生の声が、急に大きくなりました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "先生の声が、急に大きくなりました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n101_a361e6e9622a.wav",
+      "seconds": 3.2106666666666666,
+      "kana": "センセ'エノ/コ'エガ、キュウニ'/オオ_キクナリマ'_シタ",
+      "cacheHash": "a361e6e9622aa471468ffd65e0945415a9ada8c65b58a05278780591a5a37f33",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14240,
+      "to": 14337,
+      "duration": 97
+    },
+    {
+      "id": "n102",
+      "text": "顎から指が離れました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "あごから指が離れました。",
+      "speech": "あごから指が離れました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "顎から",
+            "あごから"
+          ]
+        ]
+      },
+      "file": "voice/n102_6323ef4c578b.wav",
+      "seconds": 1.8666666666666667,
+      "kana": "アゴ'カラ/ユビ'ガ/ハナレマ'_シタ",
+      "cacheHash": "6323ef4c578bc83f77f994b48d17c29ff5b0a20b4636ec966cabb454f6a50e6c",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14367,
+      "to": 14423,
+      "duration": 56
+    },
+    {
+      "id": "n103",
+      "text": "でも、頬に触れているものは、そのままでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "でも、頬に触れているものは、そのままでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n103_440d7f26534c.wav",
+      "seconds": 3.648,
+      "kana": "デ'モ、ホ'オニ/フレテ'/イル'/モノ'ワ、ソノ'/ママ'デ_シタ",
+      "cacheHash": "440d7f26534cc39d87091d20a7795f54941e797e14760ec4f516a2f1d9cac326",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14471,
+      "to": 14581,
+      "duration": 110
+    },
+    {
+      "id": "n104",
+      "text": "どのくらい、そうしていたのか分かりません。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "どのくらい、そうしていたのか分かりません。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.bun-fun",
+            "surface": "分",
+            "start": 14,
+            "end": 15,
+            "readings": [
+              "ブン：今年の分、その分",
+              "フン／プン：時間の単位",
+              "ワ：分ける"
+            ],
+            "note": "取り分・時間・動詞を区別する"
+          }
+        ]
+      },
+      "file": "voice/n104_cc3bbab487ac.wav",
+      "seconds": 2.997333333333333,
+      "kana": "ド'ノクライ、ソオ'/_シテ'/イタ'/ノカ'/ワカリマセ'ン",
+      "cacheHash": "cc3bbab487acd82eab5468562b9c720fbabe6be5593a5145699cc121811cb452",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14677,
+      "to": 14767,
+      "duration": 90
+    },
+    {
+      "id": "n105",
+      "text": "閉じたまぶたの向こうが、白くなってきました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "閉じたまぶたの向こうが、白くなってきました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n105_25c0fc5861d2.wav",
+      "seconds": 3.136,
+      "kana": "トジ'タ/マ'ブタノ/ムコ'オガ、シロ'クナッテ/キマ'_シタ",
+      "cacheHash": "25c0fc5861d2bda8d147cd2463776d543eaa4b8a49fa59b766aba7e4dc899693",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14824,
+      "to": 14919,
+      "duration": 95
+    },
+    {
+      "id": "n106",
+      "text": "外で、鳥が鳴きました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "外で、鳥が鳴きました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n106_23354d05762f.wav",
+      "seconds": 2.2186666666666666,
+      "kana": "ソ'トデ、トリガ'/ナキマ'_シタ",
+      "cacheHash": "23354d05762f2deed6e321c2d964973fa7d22923056d98b1674e0b2ab2e3c377",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 14976,
+      "to": 15043,
+      "duration": 67
+    },
+    {
+      "id": "n107",
+      "text": "頬の冷たさが消えていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "頬の冷たさが消えていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n107_9f3af5400e08.wav",
+      "seconds": 2.112,
+      "kana": "ホ'オノ/ツメタ'サガ/キエテ'/イマ'_シタ",
+      "cacheHash": "9f3af5400e089e55116ad0e1bf173063335dbddb024c2d279df9efb7cd2b38c4",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15079,
+      "to": 15143,
+      "duration": 64
+    },
+    {
+      "id": "n108",
+      "text": "目を開けると、先生が箱の蓋を閉めるところでした。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "目を開けると、先生が箱の蓋を閉めるところでした。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n108_95afce6fb787.wav",
+      "seconds": 3.712,
+      "kana": "メ'オ/アケルト'、センセ'エガ/ハコノ'/_フタオ'/シメ'ル/トコロデ_シタ'",
+      "cacheHash": "95afce6fb787a207674fac0f1ab180c3c4ec7150e4a83da8cb589a4c05bdbec2",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15197,
+      "to": 15309,
+      "duration": 112
+    },
+    {
+      "id": "n109",
+      "text": "YさんもMさんも、顔に赤い線が残っていました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ワイさんもエムさんも、顔に赤い線が残っていました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [
+          {
+            "id": "y-village.y",
+            "surface": "Yさん",
+            "reading": "ワイさん",
+            "scope": "y-village",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "id": "y-village.m",
+            "surface": "Mさん",
+            "reading": "エムさん",
+            "scope": "y-village",
+            "start": 4,
+            "end": 7
+          }
+        ],
+        "review": []
+      },
+      "file": "voice/n109_f56e72235d83.wav",
+      "seconds": 3.7973333333333334,
+      "kana": "ワ'イサンモ/エ'ムサンモ、カオニ'/アカイ'/セ'ンガ/ノコ'ッテ/イマ'_シタ",
+      "cacheHash": "f56e72235d83f06d9bf566d4ab215a6b4581fe6e772876a7bab5aee23755338d",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15345,
+      "to": 15459,
+      "duration": 114
+    },
+    {
+      "id": "n110",
+      "text": "私たちは、その部屋を出ました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "私たちは、その部屋を出ました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n110_f9da753c6f83.wav",
+      "seconds": 2.517333333333333,
+      "kana": "ワタシ'タチワ、ソノ'/ヘヤ'オ/デマ'_シタ",
+      "cacheHash": "f9da753c6f8327928451c6f158358fe8c22de4d3d431b114658b49371c3832df",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15480,
+      "to": 15556,
+      "duration": 76
+    },
+    {
+      "id": "n111",
+      "text": "管理人が、引き戸に新しい錠前をつけました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech_override": "カンリニンが、引き戸に新しいじょうまえをつけました。",
+      "speech": "カンリニンが、引き戸に新しいじょうまえをつけました。",
+      "reading_report": {
+        "method": "explicit",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [],
+        "context_fixes": [
+          [
+            "錠前",
+            "じょうまえ"
+          ]
+        ]
+      },
+      "file": "voice/n111_60c13222c699.wav",
+      "seconds": 3.6266666666666665,
+      "kana": "カンリ'ニンガ、_ヒキ'ドニ/アタラシ'イ/ジョオマエオ'/_ツケマ'_シタ",
+      "cacheHash": "60c13222c69921c5ecf26d5c41dacb56799434db68e8ab9e69bc08d9eec84297",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15580,
+      "to": 15689,
+      "duration": 109
+    },
+    {
+      "id": "n112",
+      "text": "それから、あの夢は見ていません。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "それから、あの夢は見ていません。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n112_519c9fa7891d.wav",
+      "seconds": 2.624,
+      "kana": "ソレカラ'、アノ'/ユメ'ワ/ミ'テ/イマセ'ン",
+      "cacheHash": "519c9fa7891d0bf7c2cce7b9daaef1b488ce0f522bb0174a9d50135c2225b5b2",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15731,
+      "to": 15810,
+      "duration": 79
+    },
+    {
+      "id": "n113",
+      "text": "三人とも異動を取り消してもらい、元の職場に戻りました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "三人とも異動を取り消してもらい、元の職場に戻りました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.person",
+            "surface": "人",
+            "start": 1,
+            "end": 2,
+            "readings": [
+              "ヒト：あの人、人を紹介する",
+              "ニン：三人、管理人",
+              "ジン：日本人"
+            ],
+            "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+          }
+        ]
+      },
+      "file": "voice/n113_5ba5cd4c129f.wav",
+      "seconds": 4.245333333333333,
+      "kana": "サン'ニントモ/イドオオ'/トリケ_シテ'/モライ'、モト'ノ/ショクバニ'/モドリマ'_シタ",
+      "cacheHash": "5ba5cd4c129faf25fa1f47f600e47449baf26ffa1f3e61de69194582b8e73f5b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15843,
+      "to": 15971,
+      "duration": 128
+    },
+    {
+      "id": "n114",
+      "text": "頬の線も、数日で消えました。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "頬の線も、数日で消えました。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n114_c00715245e4a.wav",
+      "seconds": 2.7306666666666666,
+      "kana": "ホ'オノ/セ'ンモ、スウ'ニチデ/キエマ'_シタ",
+      "cacheHash": "c00715245e4accf58ac9febeb321459189cf04e347659f095c944fc566c9f37b",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 15985,
+      "to": 16067,
+      "duration": 82
+    },
+    {
+      "id": "n115",
+      "text": "ただ、今でも眠りかけたとき、顔に何かが触ると、体が固まります。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "ただ、今でも眠りかけたとき、顔に何かが触ると、体が固まります。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": []
+      },
+      "file": "voice/n115_08d941a56d12.wav",
+      "seconds": 5.749333333333333,
+      "kana": "タ'ダ、イ'マデモ/ネムリカケタ'/ト'キ、カオニ'/ナ'ニカガ/サワルト'、カラダガ'/カタマリマ'_ス",
+      "cacheHash": "08d941a56d1266f8ab5a284e4fdec2a33ffbfe33f345cabd52c0983286c2efaa",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 16121,
+      "to": 16294,
+      "duration": 173
+    },
+    {
+      "id": "n116",
+      "text": "たいていは、自分の手です。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "たいていは、自分の手です。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.bun-fun",
+            "surface": "分",
+            "start": 7,
+            "end": 8,
+            "readings": [
+              "ブン：今年の分、その分",
+              "フン／プン：時間の単位",
+              "ワ：分ける"
+            ],
+            "note": "取り分・時間・動詞を区別する"
+          }
+        ]
+      },
+      "file": "voice/n116_8e586bf3b910.wav",
+      "seconds": 2.2826666666666666,
+      "kana": "タイテエワ'、ジブンノ'/テ'デ_ス",
+      "cacheHash": "8e586bf3b910008ab82e603a288e5e4118c45358974e931382db432a8e86d690",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 16336,
+      "to": 16405,
+      "duration": 69
+    },
+    {
+      "id": "n117",
+      "text": "そうだと分かるまで、目を開けられません。",
+      "engine": "voicevox",
+      "speaker": "narrator",
+      "speech": "そうだと分かるまで、目を開けられません。",
+      "reading_report": {
+        "method": "dictionary",
+        "scopes": [
+          "common",
+          "mmu",
+          "y-village"
+        ],
+        "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+        "applied": [],
+        "review": [
+          {
+            "id": "context.bun-fun",
+            "surface": "分",
+            "start": 4,
+            "end": 5,
+            "readings": [
+              "ブン：今年の分、その分",
+              "フン／プン：時間の単位",
+              "ワ：分ける"
+            ],
+            "note": "取り分・時間・動詞を区別する"
+          }
+        ]
+      },
+      "file": "voice/n117_cac00c0a5c84.wav",
+      "seconds": 2.9226666666666667,
+      "kana": "ソオダト'/ワカ'ルマデ、メ'オ/アケラレマセ'ン",
+      "cacheHash": "cac00c0a5c84c4fd39c11a246afdd157b59fe47c19411a17c1046333100f26de",
+      "engineVersion": "0.25.1",
+      "styleId": 13,
+      "from": 16450,
+      "to": 16538,
+      "duration": 88
+    }
+  ],
+  "captions": [
+    {
+      "id": "n000",
+      "from": 102,
+      "to": 235,
+      "text": "Y村にある研修所へ異動になったのは、去年の秋でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n001",
+      "from": 243,
+      "to": 338,
+      "text": "村には、もう誰も住んでいませんでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n002346",
+      "from": 346,
+      "to": 464,
+      "text": "会社が買い取った建物を、再開に向けて片付ける。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n002464",
+      "from": 464,
+      "to": 610,
+      "text": "私と、同僚のMさん、Yさんの三人が担当でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n003",
+      "from": 621,
+      "to": 829,
+      "text": "左遷だろうと思っていましたが、\nYさんは「会社の金で田舎暮らしやな」と笑っていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n004",
+      "from": 837,
+      "to": 941,
+      "text": "私も、最初は少し楽しみにしていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n005",
+      "from": 971,
+      "to": 1113,
+      "text": "鍵を渡してくれた管理人が、廊下の突き当たりを指さしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n006",
+      "from": 1121,
+      "to": 1278,
+      "text": "「奥の部屋には、絶対に入らないでください。\n掃除もしなくていいです」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n007",
+      "from": 1286,
+      "to": 1340,
+      "text": "古い木の引き戸でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n008",
+      "from": 1348,
+      "to": 1539,
+      "text": "仕事の説明は聞き流していたのに、\nその部屋の場所だけは、三人とも覚えていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n009",
+      "from": 1571,
+      "to": 1678,
+      "text": "二日目の午後、Yさんが戸を少し開けました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n010",
+      "from": 1686,
+      "to": 1730,
+      "text": "「見るだけやって」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n011",
+      "from": 1738,
+      "to": 1813,
+      "text": "私も、止めませんでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n012",
+      "from": 1831,
+      "to": 1978,
+      "text": "六畳ほどの部屋でした。家具はなく、奥の棚に木箱が一つ。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n013",
+      "from": 1986,
+      "to": 2081,
+      "text": "中には、白い仮面が入っていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n014",
+      "from": 2089,
+      "to": 2200,
+      "text": "古い箱なのに、仮面だけは妙にきれいでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n015",
+      "from": 2208,
+      "to": 2400,
+      "text": "目の穴の奥は、真っ黒でした。顔に当てても、\nほとんど前が見えなさそうでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n016",
+      "from": 2424,
+      "to": 2513,
+      "text": "Yさんが裏側を見ようと持ち上げました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n017",
+      "from": 2521,
+      "to": 2597,
+      "text": "「これ、何でできてるんやろ」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n018",
+      "from": 2605,
+      "to": 2738,
+      "text": "私も端に触りました。ひどく冷たかったのを覚えています。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n019",
+      "from": 2753,
+      "to": 2860,
+      "text": "そのとき、Yさんの手から仮面が滑りました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n020",
+      "from": 2868,
+      "to": 2986,
+      "text": "受け止めようとして、私が下から弾いてしまいました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n021",
+      "from": 2989,
+      "to": 3086,
+      "text": "畳の縁に落ちて、三つに割れました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n022",
+      "from": 3128,
+      "to": 3222,
+      "text": "Mさんがしゃがみ、破片を拾いました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n023",
+      "from": 3230,
+      "to": 3399,
+      "text": "私も手伝いましたが、断面を合わせても、うまく元の形に戻りません。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n024",
+      "from": 3407,
+      "to": 3573,
+      "text": "ひとまず箱にしまいました。管理人には、\nあとで謝ろうと思っていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n025",
+      "from": 3588,
+      "to": 3738,
+      "text": "戸を閉めるとき、部屋の奥で、誰かが大きく息を吸いました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n026",
+      "from": 3804,
+      "to": 3902,
+      "text": "振り返っても、誰もいませんでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n027",
+      "from": 3944,
+      "to": 4079,
+      "text": "研修所に泊まったその夜、廊下を歩く音で目が覚めました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n028",
+      "from": 4112,
+      "to": 4208,
+      "text": "引き戸が、十センチほど開いていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n029",
+      "from": 4241,
+      "to": 4318,
+      "text": "そこに、人が立っていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n030",
+      "from": 4366,
+      "to": 4558,
+      "text": "月明かりに、白い仮面が見えました。\n右頬から口にかけて、斜めに割れています。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n031",
+      "from": 4566,
+      "to": 4700,
+      "text": "戸よりも高い位置から、首を曲げて、こちらを見ていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n032",
+      "from": 4708,
+      "to": 4812,
+      "text": "白い半袖の下の腕は、灰色でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n033",
+      "from": 4842,
+      "to": 4940,
+      "text": "声を出そうとしても、口が動きません。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n034",
+      "from": 4961,
+      "to": 5109,
+      "text": "すると、その人が、灰色の指で自分の仮面を押さえました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n035",
+      "from": 5117,
+      "to": 5213,
+      "text": "私の頬も、同じ場所を押されました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n036",
+      "from": 5258,
+      "to": 5381,
+      "text": "押される力が強くなったところで、体が動きました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n037",
+      "from": 5396,
+      "to": 5447,
+      "text": "戸は閉まっていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n038",
+      "from": 5471,
+      "to": 5573,
+      "text": "怖い夢だった。そう思うことにしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n039",
+      "from": 5609,
+      "to": 5693,
+      "text": "週末、自宅へ戻りました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n040",
+      "from": 5726,
+      "to": 5813,
+      "text": "その夜も、同じことが起きました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n041",
+      "from": 5843,
+      "to": 5930,
+      "text": "今度は寝室の入口に立っていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n042",
+      "from": 5960,
+      "to": 6125,
+      "text": "私が布団を頭までかぶると、すぐ耳元で、息を吸う音がしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n043",
+      "from": 6182,
+      "to": 6245,
+      "text": "足音はしませんでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n044",
+      "from": 6269,
+      "to": 6360,
+      "text": "布団の上から、顔をつかまれました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n045",
+      "from": 6396,
+      "to": 6436,
+      "text": "「かえして」",
+      "speaker": "sobaya"
+    },
+    {
+      "id": "n046",
+      "from": 6475,
+      "to": 6523,
+      "text": "低い声でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n047",
+      "from": 6531,
+      "to": 6656,
+      "text": "隣で寝ている妻を呼ぼうとしましたが、口が開きません。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n048",
+      "from": 6701,
+      "to": 6856,
+      "text": "翌朝、妻に「顔、どうしたの」と聞かれました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n049",
+      "from": 6864,
+      "to": 7012,
+      "text": "鏡を見ると、頬から口まで、細い赤い線がついていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n050",
+      "from": 7020,
+      "to": 7108,
+      "text": "仮面の割れ目と、同じ形でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n051",
+      "from": 7141,
+      "to": 7261,
+      "text": "妻に聞いても、寝室には誰も来ていないと言います。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n052",
+      "from": 7269,
+      "to": 7405,
+      "text": "ただ、私が夜中、何度も顔をこすっていたそうです。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n053",
+      "from": 7429,
+      "to": 7531,
+      "text": "その日の昼、Yさんから電話が来ました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n054",
+      "from": 7539,
+      "to": 7617,
+      "text": "「変な夢、見てへん？」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n055",
+      "from": 7635,
+      "to": 7759,
+      "text": "私が仮面のことを話す前に、Yさんは言いました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n056",
+      "from": 7767,
+      "to": 7836,
+      "text": "「顔、押さえてくるやつ」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n057",
+      "from": 7860,
+      "to": 7922,
+      "text": "Mさんにも電話しました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n058",
+      "from": 7930,
+      "to": 7969,
+      "text": "同じでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n059",
+      "from": 8014,
+      "to": 8157,
+      "text": "ただ、Mさんには、夢の中だけのことではなくなっていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n060",
+      "from": 8165,
+      "to": 8358,
+      "text": "洗面所で顔を拭いていたら、タオルの向こうから、\nもう一本、手が来たそうです。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n061",
+      "from": 8379,
+      "to": 8469,
+      "text": "「タオル離したのに、まだ押さえられてた」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n062",
+      "from": 8517,
+      "to": 8684,
+      "text": "管理人に電話して、部屋に入ったことも、\n仮面を割ったことも話しました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n063",
+      "from": 8692,
+      "to": 8746,
+      "text": "長い沈黙のあと、",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n064",
+      "from": 8812,
+      "to": 8898,
+      "text": "「三人とも、触ったんですね」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n065",
+      "from": 8922,
+      "to": 8971,
+      "text": "とだけ聞かれました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n066",
+      "from": 9001,
+      "to": 9146,
+      "text": "管理人の紹介で、地元で祈祷をしているF先生に会いました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n067",
+      "from": 9154,
+      "to": 9255,
+      "text": "「中口さん、顔をこちらに向けてください」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n068",
+      "from": 9263,
+      "to": 9409,
+      "text": "先生の目は、私の顔の、ほんの少し手前を見ていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n069",
+      "from": 9427,
+      "to": 9543,
+      "text": "それから、MさんとYさんにも同じことをしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n070",
+      "from": 9551,
+      "to": 9644,
+      "text": "「三人とも、同じものがついています」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n071",
+      "from": 9674,
+      "to": 9799,
+      "text": "村では、それを『そばや』と呼ぶそうです。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n0729814",
+      "from": 9814,
+      "to": 9905,
+      "text": "「壊した面を、返さないといけません。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n0729905",
+      "from": 9905,
+      "to": 10017,
+      "text": "今は、あなたたちの顔を代わりにしようとしています」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n073",
+      "from": 10050,
+      "to": 10153,
+      "text": "Yさんが、自分の口元に手を当てました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n074",
+      "from": 10161,
+      "to": 10228,
+      "text": "「今も、いるんですか」",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n075",
+      "from": 10252,
+      "to": 10427,
+      "text": "先生は答えず、私たちの後ろにあった鏡を、壁の方へ向けました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n076",
+      "from": 10475,
+      "to": 10583,
+      "text": "その日のうちに、四人でY村へ戻りました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n077",
+      "from": 10613,
+      "to": 10725,
+      "text": "先生が箱を開け、割れた面を取り出しました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n078",
+      "from": 10733,
+      "to": 10869,
+      "text": "三つの破片を合わせると、今度は、隙間なく合いました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n079",
+      "from": 10899,
+      "to": 11038,
+      "text": "先生は面を白い布で固定し、元の箱へ納めました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n080",
+      "from": 11056,
+      "to": 11158,
+      "text": "私たちは、その前に並んで座りました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n081",
+      "from": 11188,
+      "to": 11363,
+      "text": "「朝まで目を閉じていてください。\n途中で私の声がしても、開けないで」",
+      "speaker": "f"
+    },
+    {
+      "id": "n082",
+      "from": 11411,
+      "to": 11502,
+      "text": "窓の外は、もう暗くなっていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n083",
+      "from": 11532,
+      "to": 11647,
+      "text": "先生が、低い声で何かを唱え始めました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n084",
+      "from": 11722,
+      "to": 11823,
+      "text": "しばらくすると、後ろの戸が開きました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n085",
+      "from": 11874,
+      "to": 11969,
+      "text": "ゆっくり、畳を踏む音がしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n086",
+      "from": 12047,
+      "to": 12167,
+      "text": "右に座っているYさんが、短く息を吐きました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n087",
+      "from": 12191,
+      "to": 12344,
+      "text": "次に、左のMさんが、何かをこらえるように鼻を鳴らしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n088",
+      "from": 12371,
+      "to": 12488,
+      "text": "それから、私の後ろで、音が止まりました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n089",
+      "from": 12566,
+      "to": 12654,
+      "text": "両頬に、冷たいものが触れました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n090",
+      "from": 12672,
+      "to": 12710,
+      "text": "指でした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n091",
+      "from": 12743,
+      "to": 12839,
+      "text": "右の頬を持ち上げ、左を押し下げる。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n092",
+      "from": 12875,
+      "to": 12986,
+      "text": "顔の形を、何かに合わせようとしていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n093",
+      "from": 13019,
+      "to": 13124,
+      "text": "目の前で、先生の声は続いていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n094",
+      "from": 13166,
+      "to": 13290,
+      "text": "そのとき、耳元でも、先生の声がしました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n095",
+      "from": 13329,
+      "to": 13436,
+      "text": "「もう終わりました。目を開けてください」",
+      "speaker": "f"
+    },
+    {
+      "id": "n096",
+      "from": 13502,
+      "to": 13632,
+      "text": "前からも、後ろからも、同じ声が聞こえていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n097",
+      "from": 13674,
+      "to": 13765,
+      "text": "私は、まぶたに力を入れました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n098",
+      "from": 13804,
+      "to": 13914,
+      "text": "すると、後ろの声が、低くなりました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n099",
+      "from": 13956,
+      "to": 14009,
+      "text": "「こっち、むいて」",
+      "speaker": "sobaya"
+    },
+    {
+      "id": "n100",
+      "from": 14069,
+      "to": 14203,
+      "text": "顎をつかまれて、少しずつ、首が後ろへ向きました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n101",
+      "from": 14242,
+      "to": 14345,
+      "text": "先生の声が、急に大きくなりました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n102",
+      "from": 14369,
+      "to": 14431,
+      "text": "顎から指が離れました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n103",
+      "from": 14473,
+      "to": 14589,
+      "text": "でも、頬に触れているものは、そのままでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n104",
+      "from": 14679,
+      "to": 14775,
+      "text": "どのくらい、そうしていたのか分かりません。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n105",
+      "from": 14826,
+      "to": 14927,
+      "text": "閉じたまぶたの向こうが、白くなってきました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n106",
+      "from": 14978,
+      "to": 15051,
+      "text": "外で、鳥が鳴きました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n107",
+      "from": 15081,
+      "to": 15151,
+      "text": "頬の冷たさが消えていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n108",
+      "from": 15199,
+      "to": 15317,
+      "text": "目を開けると、先生が箱の蓋を閉めるところでした。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n109",
+      "from": 15347,
+      "to": 15467,
+      "text": "YさんもMさんも、顔に赤い線が残っていました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n110",
+      "from": 15482,
+      "to": 15564,
+      "text": "私たちは、その部屋を出ました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n111",
+      "from": 15582,
+      "to": 15697,
+      "text": "管理人が、引き戸に新しい錠前をつけました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n112",
+      "from": 15733,
+      "to": 15818,
+      "text": "それから、あの夢は見ていません。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n113",
+      "from": 15845,
+      "to": 15979,
+      "text": "三人とも異動を取り消してもらい、元の職場に戻りました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n114",
+      "from": 15987,
+      "to": 16075,
+      "text": "頬の線も、数日で消えました。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n115",
+      "from": 16123,
+      "to": 16302,
+      "text": "ただ、今でも眠りかけたとき、顔に何かが触ると、体が固まります。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n116",
+      "from": 16338,
+      "to": 16413,
+      "text": "たいていは、自分の手です。",
+      "speaker": "narrator"
+    },
+    {
+      "id": "n117",
+      "from": 16452,
+      "to": 16546,
+      "text": "そうだと分かるまで、目を開けられません。",
+      "speaker": "narrator"
+    }
+  ],
+  "shots": [
+    {
+      "from": 0,
+      "to": 344,
+      "image": "village",
+      "zoom": 1.04,
+      "move": 0.035,
+      "focusX": 55,
+      "focusY": 38,
+      "brightness": 0.88,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 344,
+      "to": 619,
+      "image": "office",
+      "zoom": 1.01,
+      "move": 0.015,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 0.86,
+      "person": "duo",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 619,
+      "to": 969,
+      "image": "village",
+      "zoom": 1.12,
+      "move": 0.02,
+      "focusX": 65,
+      "focusY": 42,
+      "brightness": 0.91,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 969,
+      "to": 1569,
+      "image": "forbidden_corridor",
+      "zoom": 1,
+      "move": 0.045,
+      "focusX": 58,
+      "focusY": 44,
+      "brightness": 0.9,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 1569,
+      "to": 1829,
+      "image": "forbidden_corridor",
+      "zoom": 1.18,
+      "move": 0.03,
+      "focusX": 58,
+      "focusY": 44,
+      "brightness": 0.83,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 1829,
+      "to": 1984,
+      "image": "forbidden_room",
+      "zoom": 1,
+      "move": 0.025,
+      "focusX": 52,
+      "focusY": 40,
+      "brightness": 0.95,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 1984,
+      "to": 2422,
+      "image": "mask_intact",
+      "zoom": 1,
+      "move": 0.055,
+      "focusX": 50,
+      "focusY": 42,
+      "brightness": 0.83,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 2422,
+      "to": 2751,
+      "image": "mask_intact",
+      "zoom": 1.12,
+      "move": 0.025,
+      "focusX": 48,
+      "focusY": 44,
+      "brightness": 0.85,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 2751,
+      "to": 2987,
+      "image": "mask_intact",
+      "zoom": 1.08,
+      "move": 0.0,
+      "focusX": 50,
+      "focusY": 45,
+      "brightness": 0.8,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 2987,
+      "to": 3405,
+      "image": "mask_broken_v2",
+      "zoom": 1.0,
+      "move": 0.04,
+      "focusX": 45,
+      "focusY": 40,
+      "brightness": 0.82,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 3405,
+      "to": 3586,
+      "image": "forbidden_room",
+      "zoom": 1.12,
+      "move": 0.015,
+      "focusX": 52,
+      "focusY": 39,
+      "brightness": 0.74,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 3586,
+      "to": 3942,
+      "image": "forbidden_room",
+      "zoom": 1.12,
+      "move": 0,
+      "focusX": 52,
+      "focusY": 39,
+      "brightness": 0.61,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 3942,
+      "to": 4239,
+      "image": "lodge_door_empty",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 62,
+      "focusY": 33,
+      "brightness": 1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 4239,
+      "to": 4564,
+      "image": "lodge_door_entity_v2",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 62,
+      "focusY": 33,
+      "brightness": 1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 4564,
+      "to": 4959,
+      "image": "lodge_door_entity_v2",
+      "zoom": 1.17,
+      "move": 0.015,
+      "focusX": 62,
+      "focusY": 33,
+      "brightness": 1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 4959,
+      "to": 5256,
+      "image": "mask_press",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 61,
+      "focusY": 36,
+      "brightness": 0.96,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 5256,
+      "to": 5607,
+      "image": "lodge_door_empty",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 62,
+      "focusY": 33,
+      "brightness": 1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 5607,
+      "to": 5724,
+      "image": "home_empty",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 64,
+      "focusY": 38,
+      "brightness": 1.1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 5724,
+      "to": 5958,
+      "image": "home_door_entity_v2",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 64,
+      "focusY": 38,
+      "brightness": 1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 5958,
+      "to": 6394,
+      "image": "under_blanket",
+      "zoom": 1,
+      "move": 0.035,
+      "focusX": 59,
+      "focusY": 38,
+      "brightness": 0.84,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 6394,
+      "to": 6699,
+      "image": "under_blanket",
+      "zoom": 1.15,
+      "move": 0.0,
+      "focusX": 58,
+      "focusY": 40,
+      "brightness": 0.62,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 6699,
+      "to": 7018,
+      "image": "cheek_mark",
+      "zoom": 1,
+      "move": 0.025,
+      "focusX": 52,
+      "focusY": 45,
+      "brightness": 0.94,
+      "person": "",
+      "mode": "normal",
+      "fade": 10
+    },
+    {
+      "from": 7018,
+      "to": 7139,
+      "image": "mask_broken_v2",
+      "zoom": 1.35,
+      "move": 0,
+      "focusX": 45,
+      "focusY": 50,
+      "brightness": 0.7,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 7139,
+      "to": 7427,
+      "image": "home_empty",
+      "zoom": 1.07,
+      "move": 0.02,
+      "focusX": 62,
+      "focusY": 42,
+      "brightness": 1.1,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 7427,
+      "to": 7858,
+      "image": "home_empty",
+      "zoom": 1.0,
+      "move": 0.018,
+      "focusX": 56,
+      "focusY": 42,
+      "brightness": 1.15,
+      "person": "y_photo",
+      "mode": "phone",
+      "fade": 0
+    },
+    {
+      "from": 7858,
+      "to": 8163,
+      "image": "home_empty",
+      "zoom": 1.0,
+      "move": 0,
+      "focusX": 56,
+      "focusY": 42,
+      "brightness": 1.15,
+      "person": "m_photo",
+      "mode": "phone",
+      "fade": 0
+    },
+    {
+      "from": 8163,
+      "to": 8515,
+      "image": "towel_hand",
+      "zoom": 1,
+      "move": 0.02,
+      "focusX": 62,
+      "focusY": 35,
+      "brightness": 0.84,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 8515,
+      "to": 8999,
+      "image": "forbidden_corridor",
+      "zoom": 1.22,
+      "move": 0,
+      "focusX": 58,
+      "focusY": 43,
+      "brightness": 0.7,
+      "person": "",
+      "mode": "phone",
+      "fade": 0
+    },
+    {
+      "from": 8999,
+      "to": 9672,
+      "image": "consultation_room",
+      "zoom": 1.55,
+      "move": 0.015,
+      "focusX": 15,
+      "focusY": 40,
+      "brightness": 0.88,
+      "person": "f_photo",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 9672,
+      "to": 10048,
+      "image": "mask_press",
+      "zoom": 1.12,
+      "move": 0,
+      "focusX": 61,
+      "focusY": 36,
+      "brightness": 0.83,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 10048,
+      "to": 10250,
+      "image": "consultation_room",
+      "zoom": 1.55,
+      "move": 0.01,
+      "focusX": 15,
+      "focusY": 42,
+      "brightness": 0.88,
+      "person": "y_photo",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 10250,
+      "to": 10473,
+      "image": "consultation_room",
+      "zoom": 1.3,
+      "move": 0.045,
+      "focusX": 80,
+      "focusY": 42,
+      "brightness": 0.84,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 10473,
+      "to": 10611,
+      "image": "village",
+      "zoom": 1.12,
+      "move": 0.01,
+      "focusX": 58,
+      "focusY": 43,
+      "brightness": 0.7,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 10611,
+      "to": 10897,
+      "image": "mask_broken_v2",
+      "zoom": 1.07,
+      "move": 0.01,
+      "focusX": 50,
+      "focusY": 43,
+      "brightness": 0.65,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 10897,
+      "to": 11054,
+      "image": "mask_repaired",
+      "zoom": 1,
+      "move": 0.01,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 0.85,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 11054,
+      "to": 11530,
+      "image": "ritual_room",
+      "zoom": 1.0,
+      "move": 0,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 1.06,
+      "person": "f_photo",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 11530,
+      "to": 11720,
+      "image": "mask_repaired",
+      "zoom": 1.07,
+      "move": 0.012,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 0.83,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 11720,
+      "to": 12564,
+      "image": "ritual_room",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 0.8,
+      "person": "",
+      "mode": "eyes-closed",
+      "fade": 0
+    },
+    {
+      "from": 12564,
+      "to": 13017,
+      "image": "face_pressure",
+      "zoom": 1,
+      "move": 0.02,
+      "focusX": 50,
+      "focusY": 38,
+      "brightness": 0.72,
+      "person": "",
+      "mode": "pressure",
+      "fade": 8
+    },
+    {
+      "from": 13017,
+      "to": 13672,
+      "image": "mask_repaired",
+      "zoom": 1.1,
+      "move": 0,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 0.5,
+      "person": "",
+      "mode": "false-voice",
+      "fade": 0
+    },
+    {
+      "from": 13672,
+      "to": 14067,
+      "image": "face_pressure",
+      "zoom": 1.12,
+      "move": 0,
+      "focusX": 50,
+      "focusY": 38,
+      "brightness": 0.46,
+      "person": "",
+      "mode": "pressure",
+      "fade": 0
+    },
+    {
+      "from": 14067,
+      "to": 14471,
+      "image": "neck_grip",
+      "zoom": 1,
+      "move": 0.03,
+      "focusX": 55,
+      "focusY": 42,
+      "brightness": 0.72,
+      "person": "",
+      "mode": "turn",
+      "fade": 0
+    },
+    {
+      "from": 14471,
+      "to": 14677,
+      "image": "face_pressure",
+      "zoom": 1.05,
+      "move": 0,
+      "focusX": 50,
+      "focusY": 38,
+      "brightness": 0.42,
+      "person": "",
+      "mode": "pressure",
+      "fade": 0
+    },
+    {
+      "from": 14677,
+      "to": 15197,
+      "image": "forbidden_room",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 50,
+      "focusY": 40,
+      "brightness": 0.9,
+      "person": "",
+      "mode": "dawn",
+      "fade": 0
+    },
+    {
+      "from": 15197,
+      "to": 15480,
+      "image": "forbidden_room",
+      "zoom": 1.2,
+      "move": 0.0,
+      "focusX": 51,
+      "focusY": 37,
+      "brightness": 0.95,
+      "person": "",
+      "mode": "normal",
+      "fade": 18
+    },
+    {
+      "from": 15480,
+      "to": 15731,
+      "image": "door_locked",
+      "zoom": 1,
+      "move": 0.018,
+      "focusX": 65,
+      "focusY": 48,
+      "brightness": 0.95,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 15731,
+      "to": 16121,
+      "image": "office",
+      "zoom": 1.01,
+      "move": 0.02,
+      "focusX": 51,
+      "focusY": 41,
+      "brightness": 1.02,
+      "person": "",
+      "mode": "normal",
+      "fade": 0
+    },
+    {
+      "from": 16121,
+      "to": 16688,
+      "image": "home_empty",
+      "zoom": 1,
+      "move": 0,
+      "focusX": 63,
+      "focusY": 36,
+      "brightness": 1,
+      "person": "",
+      "mode": "ending",
+      "fade": 0
+    }
+  ],
+  "soundRegions": [
+    {
+      "from": 2751,
+      "to": 3405,
+      "music": 0.1,
+      "ambient": 0.002,
+      "fade": 5
+    },
+    {
+      "from": 3586,
+      "to": 3942,
+      "music": 0,
+      "ambient": 0.002,
+      "fade": 8
+    },
+    {
+      "from": 3942,
+      "to": 4239,
+      "music": 0.3,
+      "ambient": 0.0018,
+      "fade": 12
+    },
+    {
+      "from": 4239,
+      "to": 5607,
+      "music": 0.1,
+      "ambient": 0.0018,
+      "fade": 5
+    },
+    {
+      "from": 5724,
+      "to": 6699,
+      "music": 0,
+      "ambient": 0.0015,
+      "fade": 10
+    },
+    {
+      "from": 7018,
+      "to": 7139,
+      "music": 0.15,
+      "ambient": 0.0016,
+      "fade": 5
+    },
+    {
+      "from": 8163,
+      "to": 8515,
+      "music": 0,
+      "ambient": 0.0018,
+      "fade": 8
+    },
+    {
+      "from": 8690,
+      "to": 8999,
+      "music": 0.12,
+      "ambient": 0.0015,
+      "fade": 8
+    },
+    {
+      "from": 10250,
+      "to": 10473,
+      "music": 0.15,
+      "ambient": 0.0015,
+      "fade": 6
+    },
+    {
+      "from": 11186,
+      "to": 11720,
+      "music": 0.18,
+      "ambient": 0.002,
+      "fade": 12
+    },
+    {
+      "from": 11720,
+      "to": 15197,
+      "music": 0,
+      "ambient": 0.002,
+      "fade": 20
+    },
+    {
+      "from": 15197,
+      "to": 15731,
+      "music": 0.24,
+      "ambient": 0.002,
+      "fade": 30
+    },
+    {
+      "from": 16121,
+      "to": 16688,
+      "music": 0,
+      "ambient": 0.001,
+      "fade": 24
+    }
+  ],
+  "sfx": [
+    {
+      "kind": "slide",
+      "frame": 1577,
+      "gain": 0.5,
+      "pan": -0.25
+    },
+    {
+      "kind": "crack",
+      "frame": 3032,
+      "gain": 0.8,
+      "pan": 0
+    },
+    {
+      "kind": "breath",
+      "frame": 3734,
+      "gain": 0.3,
+      "pan": -0.45
+    },
+    {
+      "kind": "step",
+      "frame": 3962,
+      "gain": 0.5,
+      "pan": 0.1
+    },
+    {
+      "kind": "step",
+      "frame": 3999,
+      "gain": 0.6,
+      "pan": 0.15
+    },
+    {
+      "kind": "breath",
+      "frame": 4318,
+      "gain": 0.35,
+      "pan": 0.3
+    },
+    {
+      "kind": "fabric",
+      "frame": 5125,
+      "gain": 0.35,
+      "pan": 0
+    },
+    {
+      "kind": "breath",
+      "frame": 6120,
+      "gain": 1.2,
+      "pan": 0.65
+    },
+    {
+      "kind": "fabric",
+      "frame": 6262,
+      "gain": 0.5,
+      "pan": 0.3
+    },
+    {
+      "kind": "fabric",
+      "frame": 8278,
+      "gain": 0.25,
+      "pan": 0.3
+    },
+    {
+      "kind": "wood",
+      "frame": 10340,
+      "gain": 0.4,
+      "pan": 0.4
+    },
+    {
+      "kind": "cloth",
+      "frame": 10957,
+      "gain": 0.45,
+      "pan": 0
+    },
+    {
+      "kind": "slide",
+      "frame": 11818,
+      "gain": 0.7,
+      "pan": 0
+    },
+    {
+      "kind": "step",
+      "frame": 11882,
+      "gain": 0.35,
+      "pan": 0
+    },
+    {
+      "kind": "step",
+      "frame": 11933,
+      "gain": 0.45,
+      "pan": 0
+    },
+    {
+      "kind": "step",
+      "frame": 11988,
+      "gain": 0.58,
+      "pan": 0
+    },
+    {
+      "kind": "step",
+      "frame": 12043,
+      "gain": 0.7,
+      "pan": 0
+    },
+    {
+      "kind": "breath",
+      "frame": 12159,
+      "gain": 0.38,
+      "pan": 0.7
+    },
+    {
+      "kind": "cloth",
+      "frame": 12336,
+      "gain": 0.35,
+      "pan": -0.65
+    },
+    {
+      "kind": "fabric",
+      "frame": 12649,
+      "gain": 0.5,
+      "pan": 0
+    },
+    {
+      "kind": "fabric",
+      "frame": 12753,
+      "gain": 0.38,
+      "pan": -0.35
+    },
+    {
+      "kind": "fabric",
+      "frame": 12806,
+      "gain": 0.4,
+      "pan": 0.4
+    },
+    {
+      "kind": "breath",
+      "frame": 13287,
+      "gain": 0.5,
+      "pan": 0.85
+    },
+    {
+      "kind": "fabric",
+      "frame": 14085,
+      "gain": 0.5,
+      "pan": 0.6
+    },
+    {
+      "kind": "bird",
+      "frame": 14927,
+      "gain": 0.4,
+      "pan": -0.2
+    },
+    {
+      "kind": "bird",
+      "frame": 15048,
+      "gain": 0.3,
+      "pan": 0.35
+    },
+    {
+      "kind": "wood",
+      "frame": 15294,
+      "gain": 0.35,
+      "pan": 0
+    },
+    {
+      "kind": "lock",
+      "frame": 15625,
+      "gain": 0.4,
+      "pan": 0
+    },
+    {
+      "kind": "cloth",
+      "frame": 16221,
+      "gain": 0.23,
+      "pan": 0
+    }
+  ],
+  "ritual": {
+    "start": 11619,
+    "end": 14824,
+    "surge": 14240
+  },
+  "metadata": {
+    "version": "mask-v1",
+    "normalSpeed": true,
+    "referenceMusic": "KK — 不安、恐怖、戦慄",
+    "story": "forbidden room / broken mask / returning the face"
+  }
+}

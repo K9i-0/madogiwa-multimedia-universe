@@ -1,0 +1,52 @@
+{
+  "title": "不安、恐怖、戦慄",
+  "artist": "KK",
+  "trackPage": "https://opentracks.com/bgm/detail/11351",
+  "license": "https://opentracks.com/help/articles/license/",
+  "source": "https://www.youtube.com/watch?v=WvtIo0CnGRc",
+  "sourceType": "official composer/site-linked clean full track; not separated from narrated reference",
+  "referenceVideo": "https://youtu.be/xGBpa1njZPA",
+  "identityVerification": [
+    {
+      "mode": "side",
+      "sample_start_s": 5,
+      "official_start_s": 9.9878,
+      "correlation": 0.9447
+    },
+    {
+      "mode": "side",
+      "sample_start_s": 20,
+      "official_start_s": 24.9877,
+      "correlation": 0.977
+    },
+    {
+      "mode": "side",
+      "sample_start_s": 35,
+      "official_start_s": 39.9877,
+      "correlation": 0.9346
+    },
+    {
+      "mode": "mono",
+      "sample_start_s": 5,
+      "official_start_s": 9.9878,
+      "correlation": 0.1328
+    },
+    {
+      "mode": "mono",
+      "sample_start_s": 20,
+      "official_start_s": 24.9877,
+      "correlation": 0.2454
+    },
+    {
+      "mode": "mono",
+      "sample_start_s": 35,
+      "official_start_s": 39.9877,
+      "correlation": 0.1084
+    }
+  ],
+  "localSource": ".local/y-village-mask-horror-20261024/music/kk_fuan_kyofu_senritsu.wav",
+  "sourceSha256": "7d6e94d0d347e1563413af4cd3587713c168ddcab706596c18e686c34e167596",
+  "use": "background music, short crossfades and scene-dependent gain; credit in description",
+  "downloadNote": "Official site MP3 endpoint returned HTTP403; used its linked official track video audio.",
+  "sourceEncoding": "AAC format 140, official track; decoded without errors"
+}

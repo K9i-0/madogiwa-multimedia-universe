@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sobaya_return",
+    "text": "かえして。",
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "seed": 42,
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "processing": "canonical sobaya_monsterize.sh",
+    "file": "sobaya_return.wav"
+  },
+  {
+    "id": "sobaya_turn",
+    "text": "こっち、むいて。",
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "seed": 42,
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "processing": "canonical sobaya_monsterize.sh",
+    "file": "sobaya_turn.wav"
+  },
+  {
+    "id": "f_warning",
+    "text": "朝まで目を閉じていてください。途中で私の声がしても、開けないで。",
+    "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+    "seed": 100,
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "processing": "canonical trim only",
+    "file": "f_warning.wav"
+  },
+  {
+    "id": "f_false_release",
+    "text": "もう終わりました。目を開けてください。",
+    "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+    "seed": 100,
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "processing": "canonical trim only",
+    "file": "f_false_release.wav"
+  },
+  {
+    "id": "f_chant",
+    "text": "おん、あぼきゃ、べいろしゃのう。まかぼだら、まに、はんどま。",
+    "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+    "seed": 100,
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "processing": "canonical trim only",
+    "file": "f_chant.wav"
+  }
+]

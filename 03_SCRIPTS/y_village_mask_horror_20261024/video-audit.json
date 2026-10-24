@@ -1,0 +1,20 @@
+{
+  "file": "final_remotion_horror.mp4",
+  "sha256": "acca8e8a33073d1e14334ef4445f6636b83ba42c7bdbafc46bde3cd824af3d87",
+  "bytes": 66694288,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frames": 16688,
+    "duration": 556.266667
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": "48000",
+    "channels": 2
+  },
+  "decodePassed": true,
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -18.1 LUFS\n    Threshold: -29.6 LUFS\n\n  Loudness range:\n    LRA:         4.9 LU\n    Threshold: -39.6 LUFS\n    LRA low:   -22.6 LUFS\n    LRA high:  -17.6 LUFS\n\n  True peak:\n    Peak:       -1.5 dBFS\n[out#0/null @ 0x7cd1040300] video:6780KiB audio:104300KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=16688 fps=5274 q=-0.0 Lsize=N/A time=00:09:16.26 bitrate=N/A speed= 176x elapsed=0:00:03.16    \n",
+  "humanListening": "not performed; not inferred from ASR or decode"
+}

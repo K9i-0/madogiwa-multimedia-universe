@@ -1,0 +1,36 @@
+{
+  "method": "openai/whisper-small; no expected-text prompt",
+  "limitation": "ASR content screening only. Human listening and timbre/acting judgment not performed.",
+  "clips": [
+    {
+      "id": "sobaya_return",
+      "expected": "かえして。",
+      "recognized": "返して",
+      "sha256": "3f14a55558973b62bf4e76b8f8b3e4c091c31319034035b50cbe2e3d349ac45d"
+    },
+    {
+      "id": "sobaya_turn",
+      "expected": "こっち、むいて。",
+      "recognized": "こっち向いて",
+      "sha256": "2192f9e5522e616a7f8ff6b94e95d7f31404fc2954a52f02da950ecbff102998"
+    },
+    {
+      "id": "f_warning",
+      "expected": "朝まで目を閉じていてください。途中で私の声がしても、開けないで。",
+      "recognized": "朝まで目を閉じていてください途中で私の声がしても開けないで",
+      "sha256": "8270cc4e7ac49a4172de67a23cb3f8dd0fdb3569e1ca1ac9946bbedea6456c2d"
+    },
+    {
+      "id": "f_false_release",
+      "expected": "もう終わりました。目を開けてください。",
+      "recognized": "もう終わりました 目を開けてください",
+      "sha256": "eb5c2127f96f3727d21db7c8d0df19383c2c14a40570c1fbd114a1c55d215e18"
+    },
+    {
+      "id": "f_chant",
+      "expected": "おん、あぼきゃ、べいろしゃのう。まかぼだら、まに、はんどま。",
+      "recognized": "オンアボキャベイロシャノーマカボダラマニハンドマ",
+      "sha256": "d2f8241841ecf11d91489d6d865c5089c6fe181a9b034e324b2c22deeb6c79f9"
+    }
+  ]
+}

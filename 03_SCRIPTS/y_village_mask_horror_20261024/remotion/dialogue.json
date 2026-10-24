@@ -1,0 +1,2604 @@
+[
+  {
+    "id": "n000",
+    "text": "Y村にある研修所へ異動になったのは、去年の秋でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ワイむらにある研修所へ異動になったのは、去年の秋でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.village",
+          "surface": "Y村",
+          "reading": "ワイむら",
+          "scope": "y-village",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n001",
+    "text": "村には、もう誰も住んでいませんでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "村には、もう誰も住んでいませんでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n002",
+    "text": "会社が買い取った建物を、再開に向けて片付ける。私と、同僚のMさん、Yさんの三人が担当でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "会社が買い取った建物を、再開に向けて片付ける。私と、同僚のエムさん、ワイさんの三人が担当でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 33,
+          "end": 36
+        }
+      ],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 38,
+          "end": 39,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n003",
+    "text": "左遷だろうと思っていましたが、Yさんは「会社の金で田舎暮らしやな」と笑っていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "左遷だろうと思っていましたが、ワイさんは「会社のかねで田舎暮らしやな」と笑っていました。",
+    "speech": "左遷だろうと思っていましたが、ワイさんは「会社のかねで田舎暮らしやな」と笑っていました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "会社の金で",
+          "会社のかねで"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n004",
+    "text": "私も、最初は少し楽しみにしていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私も、最初は少し楽しみにしていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n005",
+    "text": "鍵を渡してくれた管理人が、廊下の突き当たりを指さしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "鍵を渡してくれたカンリニンが、廊下の突き当たりを指さしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "common.kanrinin",
+          "surface": "管理人",
+          "reading": "カンリニン",
+          "scope": "common",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n006",
+    "text": "「奥の部屋には、絶対に入らないでください。掃除もしなくていいです」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「奥の部屋には、絶対に入らないでください。掃除もしなくていいです」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n007",
+    "text": "古い木の引き戸でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "古い木の引き戸でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n008",
+    "text": "仕事の説明は聞き流していたのに、その部屋の場所だけは、三人とも覚えていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "仕事の説明は聞き流していたのに、その部屋の場所だけは、三人とも覚えていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 28,
+          "end": 29,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n009",
+    "text": "二日目の午後、Yさんが戸を少し開けました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "二日目の午後、ワイさんが戸を少し開けました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n010",
+    "text": "「見るだけやって」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「見るだけやって」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n011",
+    "text": "私も、止めませんでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私も、止めませんでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n012",
+    "text": "六畳ほどの部屋でした。家具はなく、奥の棚に木箱が一つ。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "ろくじょうほどの部屋でした。家具はなく、奥の棚に木箱がひとつ。",
+    "speech": "ろくじょうほどの部屋でした。家具はなく、奥の棚に木箱がひとつ。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "六畳",
+          "ろくじょう"
+        ],
+        [
+          "木箱が一つ",
+          "木箱がひとつ"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n013",
+    "text": "中には、白い仮面が入っていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "中には、白い仮面が入っていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n014",
+    "text": "古い箱なのに、仮面だけは妙にきれいでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "古い箱なのに、仮面だけは妙にきれいでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n015",
+    "text": "目の穴の奥は、真っ黒でした。顔に当てても、ほとんど前が見えなさそうでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "目の穴の奥は、真っ黒でした。顔に当てても、ほとんど前が見えなさそうでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n016",
+    "text": "Yさんが裏側を見ようと持ち上げました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ワイさんが裏側を見ようと持ち上げました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n017",
+    "text": "「これ、何でできてるんやろ」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「これ、何でできてるんやろ」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n018",
+    "text": "私も端に触りました。ひどく冷たかったのを覚えています。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "私もはしに触りました。ひどく冷たかったのを覚えています。",
+    "speech": "私もはしに触りました。ひどく冷たかったのを覚えています。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "端に",
+          "はしに"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n019",
+    "text": "そのとき、Yさんの手から仮面が滑りました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "そのとき、ワイさんの手から仮面が滑りました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n020",
+    "text": "受け止めようとして、私が下から弾いてしまいました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "受け止めようとして、私が下からはじいてしまいました。",
+    "speech": "受け止めようとして、私が下からはじいてしまいました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "弾いて",
+          "はじいて"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n021",
+    "text": "畳の縁に落ちて、三つに割れました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "たたみのへりに落ちて、みっつに割れました。",
+    "speech": "たたみのへりに落ちて、みっつに割れました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "畳の縁",
+          "たたみのへり"
+        ],
+        [
+          "三つ",
+          "みっつ"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n022",
+    "text": "Mさんがしゃがみ、破片を拾いました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "エムさんがしゃがみ、破片を拾いました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n023",
+    "text": "私も手伝いましたが、断面を合わせても、うまく元の形に戻りません。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私も手伝いましたが、断面を合わせても、うまく元の形に戻りません。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n024",
+    "text": "ひとまず箱にしまいました。管理人には、あとで謝ろうと思っていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ひとまず箱にしまいました。カンリニンには、あとで謝ろうと思っていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "common.kanrinin",
+          "surface": "管理人",
+          "reading": "カンリニン",
+          "scope": "common",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n025",
+    "text": "戸を閉めるとき、部屋の奥で、誰かが大きく息を吸いました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "戸を閉めるとき、部屋の奥で、誰かが大きく息を吸いました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n026",
+    "text": "振り返っても、誰もいませんでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "振り返っても、誰もいませんでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n027",
+    "text": "研修所に泊まったその夜、廊下を歩く音で目が覚めました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "研修所に泊まったその夜、廊下を歩く音で目が覚めました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n028",
+    "text": "引き戸が、十センチほど開いていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "引き戸が、じゅっセンチほど開いていました。",
+    "speech": "引き戸が、じゅっセンチほど開いていました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "十センチ",
+          "じゅっセンチ"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n029",
+    "text": "そこに、人が立っていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "そこに、ひとが立っていました。",
+    "speech": "そこに、ひとが立っていました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "人が",
+          "ひとが"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n030",
+    "text": "月明かりに、白い仮面が見えました。右頬から口にかけて、斜めに割れています。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "月明かりに、白い仮面が見えました。みぎほおから口にかけて、斜めに割れています。",
+    "speech": "月明かりに、白い仮面が見えました。みぎほおから口にかけて、斜めに割れています。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "右頬",
+          "みぎほお"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n031",
+    "text": "戸よりも高い位置から、首を曲げて、こちらを見ていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "戸よりも高い位置から、首を曲げて、こちらを見ていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n032",
+    "text": "白い半袖の下の腕は、灰色でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "白い半袖の下の腕は、灰色でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n033",
+    "text": "声を出そうとしても、口が動きません。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "声を出そうとしても、口が動きません。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n034",
+    "text": "すると、その人が、灰色の指で自分の仮面を押さえました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "すると、そのひとが、灰色の指で自分の仮面を押さえました。",
+    "speech": "すると、そのひとが、灰色の指で自分の仮面を押さえました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "その人が",
+          "そのひとが"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n035",
+    "text": "私の頬も、同じ場所を押されました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私の頬も、同じ場所を押されました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n036",
+    "text": "押される力が強くなったところで、体が動きました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "押される力が強くなったところで、体が動きました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n037",
+    "text": "戸は閉まっていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "戸は閉まっていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n038",
+    "text": "怖い夢だった。そう思うことにしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "怖い夢だった。そう思うことにしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n039",
+    "text": "週末、自宅へ戻りました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "週末、自宅へ戻りました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n040",
+    "text": "その夜も、同じことが起きました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "その夜も、同じことが起きました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n041",
+    "text": "今度は寝室の入口に立っていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "今度は寝室の入口に立っていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n042",
+    "text": "私が布団を頭までかぶると、すぐ耳元で、息を吸う音がしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私が布団を頭までかぶると、すぐ耳元で、息を吸う音がしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n043",
+    "text": "足音はしませんでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "足音はしませんでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n044",
+    "text": "布団の上から、顔をつかまれました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "布団の上から、顔をつかまれました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n045",
+    "text": "「かえして」",
+    "engine": "irodori",
+    "speaker": "sobaya",
+    "speech": "「かえして」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    },
+    "file": "../sobaya_return.wav"
+  },
+  {
+    "id": "n046",
+    "text": "低い声でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "低い声でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n047",
+    "text": "隣で寝ている妻を呼ぼうとしましたが、口が開きません。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "隣で寝ている妻を呼ぼうとしましたが、口があきません。",
+    "speech": "隣で寝ている妻を呼ぼうとしましたが、口があきません。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "口が開きません",
+          "口があきません"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n048",
+    "text": "翌朝、妻に「顔、どうしたの」と聞かれました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "翌朝、妻に「顔、どうしたの」と聞かれました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n049",
+    "text": "鏡を見ると、頬から口まで、細い赤い線がついていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "鏡を見ると、頬から口まで、細い赤い線がついていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n050",
+    "text": "仮面の割れ目と、同じ形でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "仮面の割れ目と、同じ形でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n051",
+    "text": "妻に聞いても、寝室には誰も来ていないと言います。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "妻に聞いても、寝室には誰も来ていないと言います。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n052",
+    "text": "ただ、私が夜中、何度も顔をこすっていたそうです。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ただ、私が夜中、何度も顔をこすっていたそうです。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n053",
+    "text": "その日の昼、Yさんから電話が来ました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "その日の昼、ワイさんから電話が来ました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n054",
+    "text": "「変な夢、見てへん？」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「変な夢、見てへん？」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n055",
+    "text": "私が仮面のことを話す前に、Yさんは言いました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私が仮面のことを話す前に、ワイさんは言いました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n056",
+    "text": "「顔、押さえてくるやつ」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「顔、押さえてくるやつ」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n057",
+    "text": "Mさんにも電話しました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "エムさんにも電話しました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n058",
+    "text": "同じでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "同じでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n059",
+    "text": "ただ、Mさんには、夢の中だけのことではなくなっていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ただ、エムさんには、夢の中だけのことではなくなっていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n060",
+    "text": "洗面所で顔を拭いていたら、タオルの向こうから、もう一本、手が来たそうです。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "洗面所で顔を拭いていたら、タオルの向こうから、もういっぽん、手が来たそうです。",
+    "speech": "洗面所で顔を拭いていたら、タオルの向こうから、もういっぽん、手が来たそうです。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "もう一本",
+          "もういっぽん"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n061",
+    "text": "「タオル離したのに、まだ押さえられてた」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「タオル離したのに、まだ押さえられてた」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n062",
+    "text": "管理人に電話して、部屋に入ったことも、仮面を割ったことも話しました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "カンリニンに電話して、部屋に入ったことも、仮面を割ったことも話しました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "common.kanrinin",
+          "surface": "管理人",
+          "reading": "カンリニン",
+          "scope": "common",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n063",
+    "text": "長い沈黙のあと、",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "長い沈黙のあと、",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n064",
+    "text": "「三人とも、触ったんですね」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「三人とも、触ったんですね」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 2,
+          "end": 3,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n065",
+    "text": "とだけ聞かれました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "とだけ聞かれました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n066",
+    "text": "管理人の紹介で、地元で祈祷をしているF先生に会いました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "カンリニンの紹介で、地元できとうをしているエフ先生に会いました。",
+    "speech": "カンリニンの紹介で、地元できとうをしているエフ先生に会いました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "祈祷",
+          "きとう"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n067",
+    "text": "「中口さん、顔をこちらに向けてください」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「ナカグチさん、顔をこちらに向けてください」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "mmu.nakaguchi",
+          "surface": "中口",
+          "reading": "ナカグチ",
+          "scope": "mmu",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n068",
+    "text": "先生の目は、私の顔の、ほんの少し手前を見ていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "先生の目は、私の顔の、ほんの少し手前を見ていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n069",
+    "text": "それから、MさんとYさんにも同じことをしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "それから、エムさんとワイさんにも同じことをしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n070",
+    "text": "「三人とも、同じものがついています」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「三人とも、同じものがついています」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 2,
+          "end": 3,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n071",
+    "text": "村では、それを『そばや』と呼ぶそうです。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "村では、それを『そばや』と呼ぶそうです。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n072",
+    "text": "「壊した面を、返さないといけません。今は、あなたたちの顔を代わりにしようとしています」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "「壊しためんを、返さないといけません。今は、あなたたちの顔を代わりにしようとしています」",
+    "speech": "「壊しためんを、返さないといけません。今は、あなたたちの顔を代わりにしようとしています」",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "壊した面を",
+          "壊しためんを"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n073",
+    "text": "Yさんが、自分の口元に手を当てました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ワイさんが、自分の口元に手を当てました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 6,
+          "end": 7,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n074",
+    "text": "「今も、いるんですか」",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "「今も、いるんですか」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n075",
+    "text": "先生は答えず、私たちの後ろにあった鏡を、壁の方へ向けました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "先生は答えず、私たちの後ろにあった鏡を、壁のほうへ向けました。",
+    "speech": "先生は答えず、私たちの後ろにあった鏡を、壁のほうへ向けました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "壁の方へ",
+          "壁のほうへ"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n076",
+    "text": "その日のうちに、四人でY村へ戻りました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "その日のうちに、よにんでワイむらへ戻りました。",
+    "speech": "その日のうちに、よにんでワイむらへ戻りました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "四人で",
+          "よにんで"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n077",
+    "text": "先生が箱を開け、割れた面を取り出しました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "先生が箱を開け、割れためんを取り出しました。",
+    "speech": "先生が箱を開け、割れためんを取り出しました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "割れた面を",
+          "割れためんを"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n078",
+    "text": "三つの破片を合わせると、今度は、隙間なく合いました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "みっつの破片を合わせると、今度は、隙間なく合いました。",
+    "speech": "みっつの破片を合わせると、今度は、隙間なく合いました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "三つ",
+          "みっつ"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n079",
+    "text": "先生は面を白い布で固定し、元の箱へ納めました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "先生はめんを白い布で固定し、元の箱へ納めました。",
+    "speech": "先生はめんを白い布で固定し、元の箱へ納めました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "先生は面を",
+          "先生はめんを"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n080",
+    "text": "私たちは、その前に並んで座りました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私たちは、その前に並んで座りました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n081",
+    "text": "「朝まで目を閉じていてください。途中で私の声がしても、開けないで」",
+    "engine": "irodori",
+    "speaker": "f",
+    "speech": "「朝まで目を閉じていてください。途中で私の声がしても、開けないで」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    },
+    "file": "../f_warning.wav"
+  },
+  {
+    "id": "n082",
+    "text": "窓の外は、もう暗くなっていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "窓の外は、もう暗くなっていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n083",
+    "text": "先生が、低い声で何かを唱え始めました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "先生が、低い声で何かを唱え始めました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n084",
+    "text": "しばらくすると、後ろの戸が開きました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "しばらくすると、後ろの戸が開きました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n085",
+    "text": "ゆっくり、畳を踏む音がしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ゆっくり、畳を踏む音がしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n086",
+    "text": "右に座っているYさんが、短く息を吐きました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "右に座っているワイさんが、短く息を吐きました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n087",
+    "text": "次に、左のMさんが、何かをこらえるように鼻を鳴らしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "次に、左のエムさんが、何かをこらえるように鼻を鳴らしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n088",
+    "text": "それから、私の後ろで、音が止まりました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "それから、私の後ろで、音が止まりました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n089",
+    "text": "両頬に、冷たいものが触れました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "りょうほおに、冷たいものが触れました。",
+    "speech": "りょうほおに、冷たいものが触れました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "両頬",
+          "りょうほお"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n090",
+    "text": "指でした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "指でした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n091",
+    "text": "右の頬を持ち上げ、左を押し下げる。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "右の頬を持ち上げ、左を押し下げる。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n092",
+    "text": "顔の形を、何かに合わせようとしていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "顔の形を、何かに合わせようとしていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n093",
+    "text": "目の前で、先生の声は続いていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "目の前で、先生の声は続いていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n094",
+    "text": "そのとき、耳元でも、先生の声がしました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "そのとき、耳元でも、先生の声がしました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n095",
+    "text": "「もう終わりました。目を開けてください」",
+    "engine": "irodori",
+    "speaker": "f",
+    "speech": "「もう終わりました。目を開けてください」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    },
+    "file": "../f_false_release.wav"
+  },
+  {
+    "id": "n096",
+    "text": "前からも、後ろからも、同じ声が聞こえていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "前からも、後ろからも、同じ声が聞こえていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n097",
+    "text": "私は、まぶたに力を入れました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私は、まぶたに力を入れました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n098",
+    "text": "すると、後ろの声が、低くなりました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "すると、後ろの声が、低くなりました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n099",
+    "text": "「こっち、むいて」",
+    "engine": "irodori",
+    "speaker": "sobaya",
+    "speech": "「こっち、むいて」",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    },
+    "file": "../sobaya_turn.wav"
+  },
+  {
+    "id": "n100",
+    "text": "顎をつかまれて、少しずつ、首が後ろへ向きました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "あごをつかまれて、少しずつ、首が後ろへ向きました。",
+    "speech": "あごをつかまれて、少しずつ、首が後ろへ向きました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "顎を",
+          "あごを"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n101",
+    "text": "先生の声が、急に大きくなりました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "先生の声が、急に大きくなりました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n102",
+    "text": "顎から指が離れました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "あごから指が離れました。",
+    "speech": "あごから指が離れました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "顎から",
+          "あごから"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n103",
+    "text": "でも、頬に触れているものは、そのままでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "でも、頬に触れているものは、そのままでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n104",
+    "text": "どのくらい、そうしていたのか分かりません。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "どのくらい、そうしていたのか分かりません。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 14,
+          "end": 15,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n105",
+    "text": "閉じたまぶたの向こうが、白くなってきました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "閉じたまぶたの向こうが、白くなってきました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n106",
+    "text": "外で、鳥が鳴きました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "外で、鳥が鳴きました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n107",
+    "text": "頬の冷たさが消えていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "頬の冷たさが消えていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n108",
+    "text": "目を開けると、先生が箱の蓋を閉めるところでした。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "目を開けると、先生が箱の蓋を閉めるところでした。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n109",
+    "text": "YさんもMさんも、顔に赤い線が残っていました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ワイさんもエムさんも、顔に赤い線が残っていました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [
+        {
+          "id": "y-village.y",
+          "surface": "Yさん",
+          "reading": "ワイさん",
+          "scope": "y-village",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "id": "y-village.m",
+          "surface": "Mさん",
+          "reading": "エムさん",
+          "scope": "y-village",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "review": []
+    }
+  },
+  {
+    "id": "n110",
+    "text": "私たちは、その部屋を出ました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "私たちは、その部屋を出ました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n111",
+    "text": "管理人が、引き戸に新しい錠前をつけました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech_override": "カンリニンが、引き戸に新しいじょうまえをつけました。",
+    "speech": "カンリニンが、引き戸に新しいじょうまえをつけました。",
+    "reading_report": {
+      "method": "explicit",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [],
+      "context_fixes": [
+        [
+          "錠前",
+          "じょうまえ"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "n112",
+    "text": "それから、あの夢は見ていません。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "それから、あの夢は見ていません。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n113",
+    "text": "三人とも異動を取り消してもらい、元の職場に戻りました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "三人とも異動を取り消してもらい、元の職場に戻りました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 1,
+          "end": 2,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n114",
+    "text": "頬の線も、数日で消えました。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "頬の線も、数日で消えました。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n115",
+    "text": "ただ、今でも眠りかけたとき、顔に何かが触ると、体が固まります。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "ただ、今でも眠りかけたとき、顔に何かが触ると、体が固まります。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": []
+    }
+  },
+  {
+    "id": "n116",
+    "text": "たいていは、自分の手です。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "たいていは、自分の手です。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 7,
+          "end": 8,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    }
+  },
+  {
+    "id": "n117",
+    "text": "そうだと分かるまで、目を開けられません。",
+    "engine": "voicevox",
+    "speaker": "narrator",
+    "speech": "そうだと分かるまで、目を開けられません。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "y-village"
+      ],
+      "dictionary_sha256": "856afe85175b23772860a432f9434e81760a9fa4b5cb549e52fdb1d65be79660",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 4,
+          "end": 5,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    }
+  }
+]

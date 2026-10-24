@@ -1,0 +1,174 @@
+[
+  {
+    "name": "forbidden_room",
+    "prompt": "Use case: photorealistic-natural. Create one cinematic 16:9 realistic Japanese horror film still, 1792x1024 or similar wide frame. The camera stands in the doorway of a very old empty six-tatami room in an abandoned Japanese mountain company training lodge. Plain weathered wooden sliding entrance door on left foreground partially open; tatami mats, faded plaster walls, a small wooden shelf at back center holding exactly one old rectangular closed wooden box about mask-sized, small paper window to the right admitting overcast autumn afternoon light. No other furniture, no people, no shrine, no beer, no masks visible, no objects with lettering. Main shelf and box above the lower quarter so subtitles will not cover them. Low contrast muted brown, gray and faded olive, deeply quiet and believable, photographic wood and tatami textures. Not a horror poster, no fantasy fog or supernatural lights, no text, no montage. Camera at standing height 35mm. A very specific everyday room made uncomfortable by stillness.",
+    "refs": [],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-f163b4c2-bcc9-4c8b-a48e-4c3fd17c3b50.png"
+  },
+  {
+    "name": "mask_intact",
+    "prompt": "Use case: photorealistic-natural. Create a cinematic 16:9 close photograph looking down into a single opened old rectangular wooden box on a low wooden shelf in a dusty Japanese tatami room, overcast afternoon light from the right. The box contains ONLY the detached white face mask of the character in reference1, on pale old cloth, no hair or face inside it. Copy its exact identity: long oval white mask, two perfectly round empty black eye openings, little black circular mark at forehead center, symmetrical narrow vertical deep red markings above and below both eyes, small narrow horizontal black mouth opening. It is pristine and strangely clean against the old wood. No cracks yet. Mask occupies center x48% y42%, 55% of image height, its entire oval visible, ample dark lower edge for later subtitles. Realistic natural material and subtle age of surrounding box, restrained Japanese ghost-story still, photorealistic, no stylization, no typography, no collage, no person, no beer.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-ce465a03-6da0-466e-82aa-dbdab656dcfd.png"
+  },
+  {
+    "name": "mask_broken",
+    "prompt": "Use case: photorealistic-natural. Make one realistic 16:9 film close-up of the detached mask of reference1 now BROKEN INTO EXACTLY THREE LARGE PIECES, lying face up on a worn tatami mat beside its hard dark cloth border in an old abandoned Japanese room. Keep the canonical long oval white mask with two perfectly round black eye holes, one small black circle on forehead center, matching vertical dark-red stripes above and below each eye, narrow horizontal black mouth slit. The three broken pieces are recognizably parts of a single mask, spaced 1–2cm apart, with no missing chips and no extra face. One fracture runs diagonally from the MASK WEARER'S RIGHT CHEEK (viewer left) toward its mouth; one other fracture separates the upper portion. Real ceramic-like fracture thickness, gray interior edges, clean white exterior. Overcast low afternoon light from right, muted brown/gray tatami, no people or hands. Box edge just visible at top right. Mask parts placed above bottom quarter, center left, occupy 50% frame. Subtle unsettling photorealism, no blood, no glowing eyes, no text, no montage.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-58f55830-f41d-4364-9b94-9d009edba496.png"
+  },
+  {
+    "name": "lodge_door_entity",
+    "prompt": "Use case: identity-preserve. Create one cinematic 16:9 photorealistic horror film still. Reference1 fixes Sobaya identity; reference2 is lighting realism only. From the low first-person viewpoint of someone lying on a futon in a dark old Japanese training lodge bedroom, look toward an old wooden sliding doorway, slightly right of center. The door is open ONLY A NARROW 10–15cm VERTICAL GAP. In the black hallway immediately outside, Sobaya stands far too still, bending his head sideways to look directly through this narrow opening. Show only partial mask and a thin slice of broad shoulder and gray forearm through the gap, not the full body outside it. His head appears unnaturally high relative to the lintel because the camera is near the floor. The white mask has exact round black eye holes, forehead black circular mark and deep red vertical markings of reference1. A thin diagonal crack crosses his right cheek toward the mouth. Short black hair, very broad muscular natural adult proportions, ALL skin ash-gray. Plain opaque white short-sleeved T-shirt, normal folds, no nipple outlines or dots. Moonlight from a side window catches part of the mask and exposed gray forearm through the slit, legible but mostly in black shadow. Dark tatami and edge of cream futon in lower foreground. Subject head at x64% y29%, important subject above bottom25%. No beer, no glow, no fog, no text, no others. The threat should be noticed gradually, not a bright horror portrait.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_drinking_horror_20261017/remotion/public/art/sobaya_moonlit_v7.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-6e9857ed-696a-47bb-b69a-c9ad69883efd.png"
+  },
+  {
+    "name": "mask_broken_v2",
+    "prompt": "Edit reference1, the broken-mask still. Reference2 is this same mask before it broke. Keep the tatami, viewpoint, box corner and canonical markings of reference1. IMPORTANT FIX: the mask must have EXACTLY THREE separate pieces. Currently there are too many. Merge the small bottom-left cheek wedge back seamlessly into the left eye/nose/chin fragment. Keep only the separated forehead piece, one left eye+nose+chin large piece, and one right eye+cheek large piece. They should be recognizably one mask. Make the white surfaces as clean and new-looking as reference2, with no dirt, patina or scratches added, because it broke only seconds ago. One diagonal fracture from mask wearer's right cheek (viewer left) toward mouth is still discernible as the seam between the two lower pieces; arrange the boundary as a single diagonal through the mouth dividing these two pieces rather than introducing an additional wedge. No fourth piece and no loose shards. Photorealistic widescreen 16:9, no text. Preserve all other details.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_broken.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_intact.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-3b00cf98-9935-4092-9d69-fe9f0404aedd.png"
+  },
+  {
+    "name": "lodge_door_empty",
+    "prompt": "Edit this reference image only. Remove the person completely and SLIDE THE SAME WOODEN DOOR CLOSED so there is no opening and no figure, no visible mask or body. Retain identical camera position, lens, room, cold moonlight, shadows, left window and foreground futon. This is the matching reverse of an apparently empty room after a nightmare. Photorealistic 16:9, no new objects, no text.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/lodge_door_entity.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-8ff52642-b554-4409-a65e-6237aa86d19b.png"
+  },
+  {
+    "name": "home_door_entity",
+    "prompt": "Create one cinematic photorealistic 16:9 Japanese horror still. Reference1 locks character identity, reference2 fixes low-key lighting and cracked-mask story context. From first-person pillow height inside a modest MODERN Japanese apartment bedroom at night: cream duvet lower foreground; ordinary pale wall, small unlit bedside lamp on left, door frame right of center leading to pitch black modern hallway. Sobaya is standing in this open doorway, only face, neck and one huge upper arm lit by very faint blue-gray moonlight. He is clearly the same white mask with round black eye openings, black forehead dot, deep red thin vertical markings, horizontal mouth slit, short black hair, broad muscular natural adult proportions. All skin including arms and neck ash gray. One thin diagonal dark fracture on mask's right cheek towards its mouth, match reference2. His plain white opaque T-shirt shows natural fabric folds and muscle mass, no nipple protrusions, outlines, dots. Body mostly disappears in black. His head at x65% y25%, high within doorway; foreground duvet soft out of focus. No second person, no beer, no glowing eyes or artificial fog. Keep lower quarter dark for subtitles. This must be clearly a different place from the old wooden lodge: plasterboard, modern door, ordinary home. Quiet terror not theatrical poster.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/lodge_door_entity.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-ef800c10-39fe-42ed-81c1-89fce217cfe7.png"
+  },
+  {
+    "name": "under_blanket",
+    "prompt": "Create one photorealistic cinematic 16:9 extreme first-person view from UNDER A DUVET pulled over the viewer's head in a dark ordinary bedroom. The viewer sees only the underside of off-white woven cotton a few centimeters from their eyes, enclosing the entire scene in a shallow cramped tent. A faint cool patch of moonlight filters through the upper-right, and the subtle shadow and depressions of FOUR LONG FINGERS and a thumb pressing down from the outside appear there, gently collapsing the fabric toward the camera. No face, no eyes, no monster head, no explicit body part underneath the fabric, no patterns or text. Left and bottom fall into deep black. Real cotton weave/folds, unsettling human-sized hand impression, restrained physical pressure not claws or gore. The fingers silhouette above center, keep bottom25% dark. Horror subjective image with natural darkness, not an illustration or abstract background.",
+    "refs": [],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-b2770a0a-332d-4ea5-9f95-5a79cb70e5c8.png"
+  },
+  {
+    "name": "forbidden_corridor",
+    "prompt": "Create one photorealistic 16:9 cinematic quiet horror establishing shot: a short empty old Japanese wooden corridor in a disused company training lodge in an abandoned mountain village. At the far end is one weathered closed wooden sliding door. Reference1 fixes the building materials and doorway style; this shows the corridor OUTSIDE that room with door CLOSED. Simple wood-plank floor, faded plaster upper walls, side window with overcast autumn daylight, no shrine symbols, no signs, no lettering, no lock yet, no humans or objects. Straight restrained central perspective, door at x58% y45% height, sober desaturated gray brown, fine real textures, bottom quarter clean and dark enough for subtitles. Everyday believable architecture, no ghost or fantasy fog, not a dramatic mansion.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/forbidden_room.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-89150d06-d41e-4f74-bd41-f5f60535425c.png"
+  },
+  {
+    "name": "mask_press",
+    "prompt": "Create one cinematic 16:9 photorealistic horror close-up. Reference1 is the exact canonical Sobaya character. Reference2 shows the broken prop mask; reference3 fixes the dark lodge doorway environment and tilted head position. Shot from inside the bedroom, tighter than reference3. The same muscular Sobaya is behind the narrow partly open sliding doorway. His white mask and ONE ash-gray right hand are visible near center-right of the frame. He presses his gray index and middle fingers against the mask's right cheek (viewer left). A CLEAR narrow diagonal dark crack runs from that cheek to the corner of the mouth and a small horizontal seam across forehead; copy pristine white material and red markings from refs. The crack is physical, not painted red. Keep round black eye holes, central black forehead mark and identical red vertical facial marks and short black hair. No actual human eyes or facial features visible beneath mask. Head remains tilted, one dull gray ear/neck visible. Very subtle moonlight reveals cheek seam and fingers, deep shadow hides almost all torso. Realistic adult muscular anatomy, no change to face identity, plain opaque white T-shirt edge only, no nipples, no extra fingers. Subject x61% y38%, entire mask and hand above bottom28%, rest dark old wood. No beer, no typography, no horror poster effects.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_broken_v2.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/lodge_door_entity.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-b8f24b28-77b6-4d5b-a04e-e31d5d2fbc70.png"
+  },
+  {
+    "name": "towel_hand",
+    "prompt": "Create one 16:9 photorealistic psychological horror film still in a small ordinary Japanese home washroom. Extreme first-person close view of a white terrycloth face towel, held in front of the viewer's face so it fills center of the frame. From the far side of the towel, ONE large ASH-GRAY human-like hand with anatomically correct five fingers curls over its upper-right edge toward the viewer, as if pushing the towel back onto the camera's face. This should look like the gray skin of the Sobaya reference, dry neutral gray, not a painted glove. Only this hand and a small part of the wrist visible. No human hands, no visible human, no face, no figure in mirror. Background out-of-focus neutral bathroom tile and metal tap, ordinary morning daylight. The eeriness is something present in broad daylight. Towel grain and matte hand very realistic. Hand above center in top60% of frame, lower quarter is the plain towel/foreground for subtitles. No blood, no claws, no jewelry, no writing.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-c8cd8a8b-2521-4125-98e0-55b0ed4dbc63.png"
+  },
+  {
+    "name": "mask_repaired",
+    "prompt": "Edit reference1, the intact mask inside its open wooden box. Reference2 shows the same mask broken, and reference3 the room containing its shelf. It is now NIGHT, lit by one unseen warm candle or small lamp at left with very faint cool window ambience. The same three fragments have been fitted back into a single face mask: preserve two faint fracture seams, one across upper forehead and one from cheek toward mouth. The restored white mask is securely bound by two narrow strips of plain WHITE CLOTH, tied around its top and lower chin without hiding its round eye holes or its central forehead mark. White cloth straps should plausibly hold the three fragments together, not festive ribbons. Keep mask's exact oval shape, round eyes, black forehead dot, red vertical markings, narrow black mouth. Open old wooden box, old cloth lining, same shelf and viewpoint. Surroundings near-black, small pool of amber light catches repaired mask and box, the whole mask above lower25%. No person, hands, lettering, beer, additional altar objects or magic effects. Natural restrained Japanese ghost-story film photography, 16:9.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_intact.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_broken_v2.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/forbidden_room.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-77a1d976-e4e3-48a7-aef5-8402bd83e536.png"
+  },
+  {
+    "name": "consultation_room",
+    "prompt": "Create one 16:9 photorealistic quiet Japanese horror film interior, no people. Modest old house room used by a local spiritual practitioner, afternoon. Faded cream plaster wall with wood pillars, tatami floor, a closed plain wooden chest at center-left against wall. At right a small old rectangular dressing mirror stands on a low wooden cabinet, but we see only its rough brown wooden BACK: the reflective surface has been turned toward the wall. Window at left soft diffuse light, center-left has a simple uncluttered plaster wall with enough visual separation to later composite one black human silhouette occupying x30% y25–70%. No statues, no religious text, no occult decoration, no scrolls, no candles, no person or photograph. The room is believable and quiet. Muted ivory/olive/gray brown, moderate brightness so black silhouette will read. Mirror back at x77% y45%, bottom quarter mostly empty tatami for subtitles. One film still only, no text or collage.",
+    "refs": [],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-37ad6a69-2df1-4df5-a8dc-a44ec7faad45.png"
+  },
+  {
+    "name": "cheek_mark",
+    "prompt": "Create one cinematic photorealistic 16:9 extreme detail shot of an ordinary middle-aged Japanese man's RIGHT LOWER CHEEK and closed mouth corner viewed via a bathroom mirror the next morning. The frame deliberately crops out BOTH EYES, nose bridge, hair, clothes and most of the face: only natural cheek skin, ear-edge far left, closed mouth corner at center-right and part of jaw are visible, so the man's identity is anonymous. A SINGLE thin red indentation runs diagonally across the right cheek toward the mouth corner, like a crease left by pressing a hard edge into skin. No bleeding or open wound. Ordinary neutral morning window light, shallow depth of field, background gray-green blur, mild natural skin imperfections. The line occupies x35–63% y34–48%, ample dark blur at bottom quarter for subtitles. Quiet physical proof of a nightmare, not body horror, no lettering or symbols.",
+    "refs": [],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-f6f39ee6-c972-4ecf-8aa3-7655e75ec6ad.png"
+  },
+  {
+    "name": "home_empty",
+    "prompt": "Edit this same photographic 16:9 bedroom still: remove Sobaya and close the same modern hinged wooden door completely. The room is empty. Keep every other object, exact pillow-height camera framing, gray-blue moonlight, cream duvet, bedside lamp and wall unchanged. No person, no mask, no hand or uncanny shadow. This is the ordinary home after the curse has ended, and the fear now comes only from memory. No text.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/home_door_entity.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-133eb884-9e25-44e5-9c03-e74e39f7e50c.png"
+  },
+  {
+    "name": "ritual_room",
+    "prompt": "Edit reference1 to NIGHT and ritual preparation. Preserve exactly the same empty six-tatami room, walls, small back shelf, old box on shelf, right window and partially open wooden sliding door at left foreground, camera position and wide 16:9 composition. It is now fully dark outside the right window; no daylight foliage visible. The small wooden box on the back shelf is OPEN, holding the restored white mask wrapped with cloth from reference2, naturally small at that distance. Place one simple lit candle on a small plain saucer next to the box. Warm dim candlelight pools on shelf and nearby tatami, rest of room falls into real black shadows, slight cold night ambience from window. Make the wall on left center just visible enough to later composite a seated black silhouette against it. No other people or things, no gods, no statues, no symbols or text. This is a subdued cinematic photo, not fantasy horror. Keep bottom quarter clear tatami for subtitles.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/forbidden_room.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_repaired.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-96edde00-ca64-4c23-ab1f-880f93b7d493.png"
+  },
+  {
+    "name": "door_locked",
+    "prompt": "Edit the reference corridor photo. Same door, walls, morning light, no people. Frame a closer medium view of the closed wooden sliding door at the corridor's far end, as if camera moved two meters forward. A newly installed small plain metal hasp with a new silver padlock now secures the handle side to the door frame. This is a normal functional modern padlock, not occult. Everything else still old, weathered, gray brown; door stays closed, peaceful dawn light, no figure or shadow. Important lock near x65% y48%, door and margins visible, lower quarter clear. Real photographic 16:9, no text.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/forbidden_corridor.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-4b3441e7-770e-4634-ac88-ca11550ce421.png"
+  },
+  {
+    "name": "lodge_door_entity_v2",
+    "prompt": "Edit reference1, preserve its entire composition exactly. Add ONLY a fine, clearly discernible dark fracture to the visible white mask cheek. Reference2 is the SAME character closer up; copy its diagonal crack from mask wearer's right cheek (viewer left) toward mouth. Do not add a hand: keep both arms as in reference1. Do not change the door, gap width, moonlight, hair, eyes, canonical red mask markings, gray skin, clothing, camera or background. Keep the same realistic 16:9 dark photograph. This fixes continuity of a cracked mask, not a new scene.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/lodge_door_entity.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_press.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-fb72af2f-1d6b-44aa-aff6-862253bcc984.png"
+  },
+  {
+    "name": "home_door_entity_v2",
+    "prompt": "Edit reference1, preserve its entire composition exactly. Add ONLY a thin dark fracture to the visible white mask's right cheek (viewer left) running diagonally toward mouth, matching the physical crack on reference2. It must be visible in the same faint moonlight. No fingers or hand on the mask. Keep the same Sobaya, head tilt, mask round eye holes, black forehead dot, red markings, gray skin, opaque white T-shirt with no nipple details, modern bedroom and doorway, duvet foreground. Do not brighten or rearrange anything else. 16:9 photo, no text.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/home_door_entity.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_press.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-ca1dff57-2456-43ce-87b5-1dd045f10d24.png"
+  },
+  {
+    "name": "face_pressure",
+    "prompt": "Create one photorealistic cinematic Japanese horror 16:9 close-up illustrating a face being pressed. Reference1 is the anonymous narrator's cheek skin and thin red indentation; reference2 is the ash-gray skin of the entity's hand, fingers anatomically human. Frame ONLY from below the nose to the jaw of the same middle-aged Japanese man, the two eyes, hair and all other identifying face details remain completely outside the frame. His mouth is firmly closed, no blood or injury. TWO matte ash-gray large hands reach in from the LEFT and RIGHT edge behind him: two fingers of one lift his right cheek, the other hand gently but relentlessly pushes his left cheek down. Only slight asymmetric pressure, no cartoon deformation or exaggerated pain. Exactly two hands with natural correct fingers. Warm dim candlelight catches one cheek ridge, nearly black background and lower quarter, realistic skin and subtle facial stubble from reference1. The thin diagonal red crease remains. Subject centered above lower quarter. Claustrophobic, restrained, no supernatural glow, no text. It is an illustrative close-up during eyes-closed ritual, so don't show anyone's eyes open.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/cheek_mark.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_press.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-548a837b-1f78-42c9-a42d-cfac369e5e75.png"
+  },
+  {
+    "name": "neck_grip",
+    "prompt": "Create one photorealistic cinematic Japanese horror 16:9 extreme close-up. Reference1 is the narrator's same anonymous cheek and jaw; reference2 shows the entity's ash-gray hand. Show only a side detail from the anonymous Japanese man's mouth down to upper neck, both eyes and entire hairline outside frame. One broad ash-gray hand from BEHIND grips underneath his chin, starting to turn his head toward his right shoulder. Natural anatomically correct five fingers, plausible gentle contact and rising tendons, not crushing, no blood. Warm candlelight barely picks out jaw contour and gray fingers, background completely dark. Closed mouth, thin red indentation on cheek toward mouth as reference1. Fill center 60% width and top60% height, lower quarter dark; the hand's contact is the focal point. Real skin textures, neutral ash-gray hand distinct from human warm skin. Restrained physical horror, no warped face, no open eyes, no text or symbolic effects.",
+    "refs": [
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/cheek_mark.png",
+      "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/y_village_mask_horror_20261024/remotion/public/art/mask_press.png"
+    ],
+    "generatedSource": "/Users/kotahayashi/.codex/generated_images/01a14695-ad85-7702-98eb-3f75d2d2d866/exec-0bbc977c-7e26-438f-9d75-48871d52faf1.png"
+  }
+]

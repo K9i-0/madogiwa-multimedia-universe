@@ -1,0 +1,28 @@
+[
+  {
+    "asset": "m_photo.png",
+    "source": "03_SCRIPTS/00_TEMPLATES/characters/commentary_duo_v1/yametaro_normal.png",
+    "crop": null,
+    "method": "original alpha",
+    "treatment": "solid nearly-black original-person pixels; transparent surroundings"
+  },
+  {
+    "asset": "y_photo.png",
+    "source": "02_CHARACTERS/Yotan.jpg",
+    "crop": null,
+    "method": "u2net_human_seg; threshold120; edge blur0.45",
+    "treatment": "solid nearly-black original-person pixels; transparent surroundings"
+  },
+  {
+    "asset": "f_photo.png",
+    "source": "03_SCRIPTS/y_village_drinking_horror_20261017/reference_f_sensei_costume.png",
+    "crop": [
+      540,
+      260,
+      970,
+      850
+    ],
+    "method": "u2net_human_seg; threshold120; edge blur0.45",
+    "treatment": "solid nearly-black original-person pixels; transparent surroundings"
+  }
+]

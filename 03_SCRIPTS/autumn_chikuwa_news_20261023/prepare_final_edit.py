@@ -87,3 +87,6 @@ if 'reaction' in M:
 if "coherentExpert" in M:
     for name in ["voice_anchor_expert_intro.wav", "voice_expert_beer_continuation.wav"]:
         shutil.copy2(P/name,PUBLIC/name)
+
+if "smoothCuts" in M:
+    shutil.copy2(P/"wan3_expert_480p.mp4",PUBLIC/M["smoothCuts"]["expertInsetSource"])

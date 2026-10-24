@@ -63,14 +63,9 @@
         "duration": 242
       },
       {
-        "id": "studio_return",
-        "from": 1666,
-        "duration": 12
-      },
-      {
         "id": "standby",
-        "from": 1678,
-        "duration": 93
+        "from": 1666,
+        "duration": 105
       }
     ],
     "sourceEdits": {
@@ -193,6 +188,14 @@
       "generatedTakes": 1,
       "listeningFrom": 172,
       "continuationTrimSamples": 38400
+    },
+    "smoothCuts": {
+      "generatedTakes": 0,
+      "introAudioFrom": 12,
+      "fieldFrom": 132,
+      "interruptionAudioFrom": 12,
+      "expertInsetSource": "expert_inset.mp4",
+      "expertInsetLastFrame": 359
     }
   }
 }

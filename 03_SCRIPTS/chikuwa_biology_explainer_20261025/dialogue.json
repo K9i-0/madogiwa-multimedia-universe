@@ -1,0 +1,958 @@
+[
+  {
+    "id": "line-001",
+    "who": "metan",
+    "text": "初夏の港で水揚げされ、秋には山で収穫される。私たちの食卓に身近な生き物、ちくわ。",
+    "scene": "intro",
+    "view": "title",
+    "pause": 12
+  },
+  {
+    "id": "line-002",
+    "who": "zunda",
+    "text": "おでんに磯辺揚げ。そのまま食べてもおいしいのだ。",
+    "scene": "intro",
+    "view": "title",
+    "pause": 15
+  },
+  {
+    "id": "line-003",
+    "who": "metan",
+    "text": "でも、その身体の仕組みや、海と山で暮らす種類の違いまで知っている人は、意外と少ないの。",
+    "scene": "intro",
+    "view": "title",
+    "pause": 12
+  },
+  {
+    "id": "line-004",
+    "who": "zunda",
+    "text": "ぼくも、食べられる種類と、採っちゃいけない種類がいるくらいしか知らないのだ。",
+    "scene": "intro",
+    "view": "title",
+    "pause": 15
+  },
+  {
+    "id": "line-005",
+    "who": "metan",
+    "text": "最近では、ちくわをかまぼこのような加工食品の一種だと思っている若い世代もいるそうよ。",
+    "scene": "intro",
+    "view": "artificial",
+    "pause": 12
+  },
+  {
+    "id": "line-006",
+    "who": "zunda",
+    "text": "人工ちくわしか見たことがなければ、そう思うのも無理はないのだ。",
+    "scene": "intro",
+    "view": "artificial",
+    "pause": 15
+  },
+  {
+    "id": "line-007",
+    "who": "metan",
+    "text": "今回は、そんなちくわの分類、身体の構造、生息環境、そして毒を持つ種類について解説していくわ。",
+    "scene": "intro",
+    "view": "roadmap",
+    "pause": 12
+  },
+  {
+    "id": "line-008",
+    "who": "zunda",
+    "text": "知っているようで知らない、ちくわの世界なのだ。",
+    "scene": "intro",
+    "view": "roadmap",
+    "pause": 15
+  },
+  {
+    "id": "line-009",
+    "who": "metan",
+    "text": "ちくわは、動物界、管状動物門、真管綱、チクワ目、チクワ科に分類される動物よ。",
+    "scene": "taxonomy",
+    "view": "ranks",
+    "pause": 12
+  },
+  {
+    "id": "line-010",
+    "who": "zunda",
+    "text": "けっこう独立した仲間なのだな。ミミズやナマコの一種ではないのだ？",
+    "scene": "taxonomy",
+    "view": "ranks",
+    "pause": 15
+  },
+  {
+    "id": "line-011",
+    "who": "metan",
+    "text": "ええ。細長い身体は似ているけれど、内部の構造や発生の仕方が違うの。",
+    "scene": "taxonomy",
+    "view": "ranks",
+    "pause": 12
+  },
+  {
+    "id": "line-012",
+    "who": "metan",
+    "text": "管状動物は、動物の進化の早い段階で、ほかの大きなグループから分かれた系統と考えられているわ。",
+    "scene": "taxonomy",
+    "view": "tree",
+    "pause": 12
+  },
+  {
+    "id": "line-013",
+    "who": "zunda",
+    "text": "昔の動物の特徴が残っているのだ？",
+    "scene": "taxonomy",
+    "view": "tree",
+    "pause": 15
+  },
+  {
+    "id": "line-014",
+    "who": "metan",
+    "text": "そうね。明瞭な頭部がなく、神経が身体全体に広がっていること。消化の仕組みが、小さな袋状の構造を基本としていることなどが挙げられるわ。",
+    "scene": "taxonomy",
+    "view": "primitive",
+    "pause": 12
+  },
+  {
+    "id": "line-015",
+    "who": "zunda",
+    "text": "では、ずっと進化していない生き物なのだ？",
+    "scene": "taxonomy",
+    "view": "primitive",
+    "pause": 15
+  },
+  {
+    "id": "line-016",
+    "who": "metan",
+    "text": "そういうわけではないの。ちくわも長い時間をかけて、環境に合わせた進化を続けてきたわ。",
+    "scene": "taxonomy",
+    "view": "primitive",
+    "pause": 12
+  },
+  {
+    "id": "line-017",
+    "who": "metan",
+    "text": "古い身体の特徴を残しながら、大型化したり、陸上へ進出したりしているのよ。",
+    "scene": "taxonomy",
+    "view": "primitive",
+    "pause": 12
+  },
+  {
+    "id": "line-018",
+    "who": "zunda",
+    "text": "基本のつくりを受け継ぎながら、いろいろな暮らし方をするようになったのだな。",
+    "scene": "taxonomy",
+    "view": "primitive",
+    "pause": 15
+  },
+  {
+    "id": "line-019",
+    "who": "metan",
+    "text": "代表的な海産種が、ウミチクワ。学名は、キクワ・マリナ。",
+    "scene": "taxonomy",
+    "view": "species_sea",
+    "pause": 12
+  },
+  {
+    "id": "line-020",
+    "who": "metan",
+    "text": "山に暮らすヤマチクワは、テラキクワ・フミコラという学名を持つわ。",
+    "scene": "taxonomy",
+    "view": "species_land",
+    "pause": 12
+  },
+  {
+    "id": "line-021",
+    "who": "zunda",
+    "text": "海のものと山のものでは、学名の最初も違うのだ。",
+    "scene": "taxonomy",
+    "view": "species_land",
+    "pause": 15
+  },
+  {
+    "id": "line-022",
+    "who": "metan",
+    "text": "最初の部分は属名よ。ウミチクワ属とヤマチクワ属。同じチクワ科でも、別の属に分けられているの。",
+    "scene": "taxonomy",
+    "view": "genera",
+    "pause": 12
+  },
+  {
+    "id": "line-023",
+    "who": "zunda",
+    "text": "「ちくわ」という一種類の生き物が、どこにでもいるわけではないのだな。",
+    "scene": "taxonomy",
+    "view": "genera",
+    "pause": 15
+  },
+  {
+    "id": "line-024",
+    "who": "metan",
+    "text": "ちくわの身体で、最も特徴的なのが中央の穴。この穴は、貫通水路と呼ばれるわ。",
+    "scene": "anatomy",
+    "view": "section",
+    "pause": 12
+  },
+  {
+    "id": "line-025",
+    "who": "zunda",
+    "text": "片方が口で、もう片方がお尻なのだ？",
+    "scene": "anatomy",
+    "view": "section",
+    "pause": 15
+  },
+  {
+    "id": "line-026",
+    "who": "metan",
+    "text": "そう見えるけれど、違うの。中央の穴は、水や細かな餌を通すための通路なのよ。",
+    "scene": "anatomy",
+    "view": "section",
+    "pause": 12
+  },
+  {
+    "id": "line-027",
+    "who": "metan",
+    "text": "内壁には、繊毛という細かな毛が生えているわ。その動きで流れをつくり、粘液で微生物や有機物の粒を捕らえるの。",
+    "scene": "anatomy",
+    "view": "feeding",
+    "pause": 12
+  },
+  {
+    "id": "line-028",
+    "who": "zunda",
+    "text": "穴の内側で、餌を集めているのだな。",
+    "scene": "anatomy",
+    "view": "feeding",
+    "pause": 15
+  },
+  {
+    "id": "line-029",
+    "who": "metan",
+    "text": "捕らえた餌は、壁に開いた小さな消化ポケットへ運ばれるわ。そこで消化して、必要な栄養を取り込むの。",
+    "scene": "anatomy",
+    "view": "feeding",
+    "pause": 12
+  },
+  {
+    "id": "line-030",
+    "who": "zunda",
+    "text": "大きな胃が一つあるのではなく、小さな消化器がたくさん並んでいるのだ。",
+    "scene": "anatomy",
+    "view": "feeding",
+    "pause": 15
+  },
+  {
+    "id": "line-031",
+    "who": "metan",
+    "text": "ええ。消化できなかったものは水路へ戻され、外へ流れていくわ。",
+    "scene": "anatomy",
+    "view": "feeding",
+    "pause": 12
+  },
+  {
+    "id": "line-032",
+    "who": "zunda",
+    "text": "ちくわの穴は、食事を支える大切な設備だったのだな。",
+    "scene": "anatomy",
+    "view": "feeding",
+    "pause": 15
+  },
+  {
+    "id": "line-033",
+    "who": "metan",
+    "text": "さらに、身体の内部には細かな水路が広がっていて、物質の交換を助けているの。",
+    "scene": "anatomy",
+    "view": "wall",
+    "pause": 12
+  },
+  {
+    "id": "line-034",
+    "who": "metan",
+    "text": "肉厚に見える部分も、全部が密な筋肉ではないわ。水分を多く含んだ弾性のある組織が、身体を支えているのよ。",
+    "scene": "anatomy",
+    "view": "wall",
+    "pause": 12
+  },
+  {
+    "id": "line-035",
+    "who": "zunda",
+    "text": "あの弾力にも、生き物としての理由があるのだ。",
+    "scene": "anatomy",
+    "view": "wall",
+    "pause": 15
+  },
+  {
+    "id": "line-036",
+    "who": "metan",
+    "text": "そして、身体の表面には、覆いと筋肉の役割を兼ねる上皮筋細胞が発達しているわ。",
+    "scene": "anatomy",
+    "view": "muscle",
+    "pause": 12
+  },
+  {
+    "id": "line-037",
+    "who": "metan",
+    "text": "縦に縮む動きと、周囲を締める動きを組み合わせることで、身体を曲げたり、短くしたりできるの。",
+    "scene": "anatomy",
+    "view": "muscle",
+    "pause": 12
+  },
+  {
+    "id": "line-038",
+    "who": "zunda",
+    "text": "顔も手足もないけれど、ちゃんと自分で動けるのだな。",
+    "scene": "anatomy",
+    "view": "muscle",
+    "pause": 15
+  },
+  {
+    "id": "line-039",
+    "who": "metan",
+    "text": "触れられた刺激は、網のように広がった神経を通して伝わるわ。釣り上げられたときに激しく暴れるのも、こうした逃避反応なの。",
+    "scene": "anatomy",
+    "view": "nerves",
+    "pause": 12
+  },
+  {
+    "id": "line-040",
+    "who": "metan",
+    "text": "ウミチクワが暮らすのは、主に沿岸の浅い海。普段は海底や海藻の周辺で、流れてくる細かな餌を集めているわ。",
+    "scene": "sea",
+    "view": "sea_habitat",
+    "pause": 12
+  },
+  {
+    "id": "line-041",
+    "who": "zunda",
+    "text": "いつも泳ぎ回っているわけではないのだ？",
+    "scene": "sea",
+    "view": "sea_habitat",
+    "pause": 15
+  },
+  {
+    "id": "line-042",
+    "who": "metan",
+    "text": "ええ。活発に泳ぎ続けるより、その場で流れを利用する時間のほうが長いの。",
+    "scene": "sea",
+    "view": "sea_habitat",
+    "pause": 12
+  },
+  {
+    "id": "line-043",
+    "who": "metan",
+    "text": "移動するときや危険から逃げるときには、身体を左右にしならせるわ。",
+    "scene": "sea",
+    "view": "swim",
+    "pause": 12
+  },
+  {
+    "id": "line-044",
+    "who": "zunda",
+    "text": "ひれがなくても、あの動きで進めるのだな。",
+    "scene": "sea",
+    "view": "swim",
+    "pause": 15
+  },
+  {
+    "id": "line-045",
+    "who": "metan",
+    "text": "浜松では、天然ちくわの水揚げが初夏の風物詩になっているわ。活動や分布の季節変化によって、漁獲しやすい時期があるのよ。",
+    "scene": "sea",
+    "view": "harbor",
+    "pause": 12
+  },
+  {
+    "id": "line-046",
+    "who": "zunda",
+    "text": "初夏に突然生まれて、すぐ大きくなるわけではないのだ。",
+    "scene": "sea",
+    "view": "harbor",
+    "pause": 15
+  },
+  {
+    "id": "line-047",
+    "who": "metan",
+    "text": "そうね。「旬」と「一生の長さ」は分けて考える必要があるわ。",
+    "scene": "sea",
+    "view": "harbor",
+    "pause": 12
+  },
+  {
+    "id": "line-048",
+    "who": "metan",
+    "text": "海産の仲間には、大型になるダイチクワもいるの。学名は、キクワ・ギガンテア。",
+    "scene": "sea",
+    "view": "giant",
+    "pause": 12
+  },
+  {
+    "id": "line-049",
+    "who": "zunda",
+    "text": "これは立派なのだ。両手でも持つのが大変そうなのだ。",
+    "scene": "sea",
+    "view": "giant",
+    "pause": 15
+  },
+  {
+    "id": "line-050",
+    "who": "metan",
+    "text": "記録されたこの個体は、全長およそ六十センチ。発達した収縮組織で、捕獲後も強く身体を曲げているわ。",
+    "scene": "sea",
+    "view": "giant",
+    "pause": 12,
+    "clipAfter": "escape"
+  },
+  {
+    "id": "line-051",
+    "who": "zunda",
+    "text": "帰ってしまったのだ。",
+    "scene": "sea",
+    "view": "giant",
+    "pause": 15
+  },
+  {
+    "id": "line-052",
+    "who": "metan",
+    "text": "大型個体の逃避反応は強力よ。ただし、こうした激しい運動を長時間続けられるわけではないの。",
+    "scene": "sea",
+    "view": "giant",
+    "pause": 12
+  },
+  {
+    "id": "line-053",
+    "who": "zunda",
+    "text": "捕まったときの、必死のひと跳ねだったのだな。",
+    "scene": "sea",
+    "view": "giant",
+    "pause": 15
+  },
+  {
+    "id": "line-054",
+    "who": "metan",
+    "text": "一方、ヤマチクワの祖先は、水辺の湿った環境を経て陸上へ進出したと考えられているわ。",
+    "scene": "land",
+    "view": "migration",
+    "pause": 12
+  },
+  {
+    "id": "line-055",
+    "who": "zunda",
+    "text": "海のちくわが、山まで歩いてきたのだ？",
+    "scene": "land",
+    "view": "migration",
+    "pause": 15
+  },
+  {
+    "id": "line-056",
+    "who": "metan",
+    "text": "一匹の移動の話ではないの。多くの世代を重ねるなかで、陸上で暮らせる集団が広がっていった、ということよ。",
+    "scene": "land",
+    "view": "migration",
+    "pause": 12
+  },
+  {
+    "id": "line-057",
+    "who": "zunda",
+    "text": "長い進化の話なのだな。",
+    "scene": "land",
+    "view": "migration",
+    "pause": 15
+  },
+  {
+    "id": "line-058",
+    "who": "metan",
+    "text": "陸上では、まず身体の乾燥を防ぐ必要があるわ。ヤマチクワは粘液で水分を保ち、穴の開口部を狭めて、内部が乾くのを抑えるの。",
+    "scene": "land",
+    "view": "moisture",
+    "pause": 12
+  },
+  {
+    "id": "line-059",
+    "who": "metan",
+    "text": "中央の水路は、湿った空気を取り込む場所としても働くようになったわ。",
+    "scene": "land",
+    "view": "moisture",
+    "pause": 12
+  },
+  {
+    "id": "line-060",
+    "who": "zunda",
+    "text": "同じ穴でも、海と山で使い方が変わっているのだ。",
+    "scene": "land",
+    "view": "moisture",
+    "pause": 15
+  },
+  {
+    "id": "line-061",
+    "who": "metan",
+    "text": "ただし、乾燥に強い動物ではないの。湿った落ち葉の下や、腐葉土の中が主な生活場所よ。",
+    "scene": "land",
+    "view": "forest",
+    "pause": 12
+  },
+  {
+    "id": "line-062",
+    "who": "metan",
+    "text": "そこで微生物や細かな有機物を利用して、森林の物質循環の一端を担っているわ。",
+    "scene": "land",
+    "view": "forest",
+    "pause": 12
+  },
+  {
+    "id": "line-063",
+    "who": "zunda",
+    "text": "こうして見ると、地面から生えているように見えるのだ。",
+    "scene": "land",
+    "view": "forest",
+    "pause": 15
+  },
+  {
+    "id": "line-064",
+    "who": "metan",
+    "text": "身体の一端を土に埋めて、採餌や休息をしている姿ね。根があるわけではないわ。",
+    "scene": "land",
+    "view": "buried",
+    "pause": 12
+  },
+  {
+    "id": "line-065",
+    "who": "zunda",
+    "text": "ちくわ狩りで引き抜けるのは、そういうことだったのだ。",
+    "scene": "land",
+    "view": "buried",
+    "pause": 15
+  },
+  {
+    "id": "line-066",
+    "who": "metan",
+    "text": "秋の湿潤な時期には地表で活動する個体が増えるの。それが、ちくわ狩りの季節につながっているわ。",
+    "scene": "land",
+    "view": "autumn",
+    "pause": 12
+  },
+  {
+    "id": "line-067",
+    "who": "zunda",
+    "text": "秋だけ存在するのではなく、普段は見つけにくいところにいるのだな。",
+    "scene": "land",
+    "view": "autumn",
+    "pause": 15
+  },
+  {
+    "id": "line-068",
+    "who": "metan",
+    "text": "繁殖にも違いがあるわ。海産種は水中へ配偶子を放出するけれど、陸生種は精子を受け渡し、保護された卵包の中で次の世代を育てるの。",
+    "scene": "land",
+    "view": "reproduction",
+    "pause": 12
+  },
+  {
+    "id": "line-069",
+    "who": "zunda",
+    "text": "大人だけでなく、卵も乾燥から守る必要があるのだ。",
+    "scene": "land",
+    "view": "reproduction",
+    "pause": 15
+  },
+  {
+    "id": "line-070",
+    "who": "metan",
+    "text": "そう。呼吸、保水、繁殖。その一式が変わって、初めて陸上で生活を完結できるのよ。",
+    "scene": "land",
+    "view": "reproduction",
+    "pause": 12,
+    "clipAfter": "grill"
+  },
+  {
+    "id": "line-071",
+    "who": "zunda",
+    "text": "きれいな焼き目なのだ。ところで、この模様には何か役割があるのだ？",
+    "scene": "markings",
+    "view": "markings",
+    "pause": 15
+  },
+  {
+    "id": "line-072",
+    "who": "metan",
+    "text": "普段は焼き目と呼ぶけれど、生物学では褐色斑帯と呼ばれるわ。表皮の色素と、局所的に厚くなった保護層による模様よ。",
+    "scene": "markings",
+    "view": "markings",
+    "pause": 12
+  },
+  {
+    "id": "line-073",
+    "who": "zunda",
+    "text": "もちろん、熱で焼けているわけではないのだな。",
+    "scene": "markings",
+    "view": "markings",
+    "pause": 15
+  },
+  {
+    "id": "line-074",
+    "who": "metan",
+    "text": "ええ。成長に伴って現れる身体の特徴なの。紫外線や摩耗からの保護に関係すると考えられているけれど、役割のすべてが分かっているわけではないの。",
+    "scene": "markings",
+    "view": "markings",
+    "pause": 12
+  },
+  {
+    "id": "line-075",
+    "who": "zunda",
+    "text": "身近な模様にも、まだ研究することが残っているのだ。",
+    "scene": "markings",
+    "view": "markings",
+    "pause": 15
+  },
+  {
+    "id": "line-076",
+    "who": "metan",
+    "text": "模様の濃さや肉厚さには、成長段階や生育環境による違いもあるわ。ただし、それだけで食用かどうかを判断することはできないの。",
+    "scene": "markings",
+    "view": "markings",
+    "pause": 12
+  },
+  {
+    "id": "line-077",
+    "who": "metan",
+    "text": "こちらが食用のヤマチクワ。そして、こちらが近縁種のドクチクワよ。",
+    "scene": "poison",
+    "view": "comparison",
+    "pause": 12
+  },
+  {
+    "id": "line-078",
+    "who": "zunda",
+    "text": "これは、全く区別がつかないのだ。",
+    "scene": "poison",
+    "view": "comparison",
+    "pause": 15
+  },
+  {
+    "id": "line-079",
+    "who": "metan",
+    "text": "そうなの。専門家でも、外見だけで判別することはできないわ。",
+    "scene": "poison",
+    "view": "comparison",
+    "pause": 12
+  },
+  {
+    "id": "line-080",
+    "who": "zunda",
+    "text": "隣に並べても分からないのに、山の中で見分けるのは無理なのだ。",
+    "scene": "poison",
+    "view": "comparison",
+    "pause": 15
+  },
+  {
+    "id": "line-081",
+    "who": "metan",
+    "text": "ドクチクワの学名は、テラキクワ・ウェネナタ。同じヤマチクワ属に含まれる、有毒の種よ。",
+    "scene": "poison",
+    "view": "poison_species",
+    "pause": 12
+  },
+  {
+    "id": "line-082",
+    "who": "metan",
+    "text": "食用種と同じような場所に生息し、混ざって見つかることもあるの。",
+    "scene": "poison",
+    "view": "forest_poison",
+    "pause": 12
+  },
+  {
+    "id": "line-083",
+    "who": "zunda",
+    "text": "この中にもいるのだ？",
+    "scene": "poison",
+    "view": "forest_poison",
+    "pause": 15
+  },
+  {
+    "id": "line-084",
+    "who": "metan",
+    "text": "ええ。一匹混ざっているわ。",
+    "scene": "poison",
+    "view": "forest_poison",
+    "pause": 12
+  },
+  {
+    "id": "line-085",
+    "who": "zunda",
+    "text": "全部持ち帰ってしまいそうなのだ。",
+    "scene": "poison",
+    "view": "forest_poison",
+    "pause": 15
+  },
+  {
+    "id": "line-086",
+    "who": "metan",
+    "text": "ちくわ生物学を専門とする、窓際大学のおかやまん准教授も、外見での判断はできないと説明しているわ。",
+    "scene": "poison",
+    "view": "expert",
+    "pause": 12,
+    "clipAfter": "expert"
+  },
+  {
+    "id": "line-087",
+    "who": "zunda",
+    "text": "見た目ではなく、においが手がかりになるのだな。",
+    "scene": "poison",
+    "view": "odor",
+    "pause": 15
+  },
+  {
+    "id": "line-088",
+    "who": "metan",
+    "text": "独特のビール臭は、体内の共生微生物などが生じさせる揮発性成分に由来すると考えられているの。",
+    "scene": "poison",
+    "view": "odor",
+    "pause": 12
+  },
+  {
+    "id": "line-089",
+    "who": "metan",
+    "text": "一方、毒性に関わる物質は、身体に蓄積される別の成分よ。においの強さと毒の量が、同じように増えるとは限らないわ。",
+    "scene": "poison",
+    "view": "toxin",
+    "pause": 12
+  },
+  {
+    "id": "line-090",
+    "who": "zunda",
+    "text": "においが弱いから大丈夫、とは言えないのだ。",
+    "scene": "poison",
+    "view": "toxin",
+    "pause": 15
+  },
+  {
+    "id": "line-091",
+    "who": "metan",
+    "text": "ええ。現地でも、毒ちくわを口にした直後に倒れる事故が記録されているわ。",
+    "scene": "poison",
+    "view": "toxin",
+    "pause": 12,
+    "clipAfter": "theft"
+  },
+  {
+    "id": "line-092",
+    "who": "zunda",
+    "text": "ほとんど間がなかったのだ。",
+    "scene": "poison",
+    "view": "toxin",
+    "pause": 15
+  },
+  {
+    "id": "line-093",
+    "who": "metan",
+    "text": "別の事例では、おでんを食べた直後に男性が倒れ、現場に残されたちくわを食べた人物も倒れているわ。",
+    "scene": "poison",
+    "view": "oden",
+    "pause": 12
+  },
+  {
+    "id": "line-094",
+    "who": "zunda",
+    "text": "料理になってしまうと、ますます見分けがつかないのだ。",
+    "scene": "poison",
+    "view": "oden",
+    "pause": 15
+  },
+  {
+    "id": "line-095",
+    "who": "metan",
+    "text": "この記録だけでは調理条件までは分からないけれど、「おでんに入っているから安全」とは言えないわね。",
+    "scene": "poison",
+    "view": "oden",
+    "pause": 12
+  },
+  {
+    "id": "line-096",
+    "who": "zunda",
+    "text": "採った段階で、確かな確認が必要なのだ。",
+    "scene": "poison",
+    "view": "oden",
+    "pause": 15
+  },
+  {
+    "id": "line-097",
+    "who": "metan",
+    "text": "こうした天然ちくわに対して、近年、流通を増やしているのが人工ちくわよ。",
+    "scene": "artificial",
+    "view": "artificial",
+    "pause": 12
+  },
+  {
+    "id": "line-098",
+    "who": "zunda",
+    "text": "魚のすり身から作るものなのだ。",
+    "scene": "artificial",
+    "view": "artificial",
+    "pause": 15
+  },
+  {
+    "id": "line-099",
+    "who": "metan",
+    "text": "すり身を筒状に成形し、加熱して仕上げるの。天然ちくわの形と食感を、食品加工によって再現しているわ。",
+    "scene": "artificial",
+    "view": "production",
+    "pause": 12
+  },
+  {
+    "id": "line-100",
+    "who": "zunda",
+    "text": "人工ちくわの焼き目は、本当に焼いて付けているのだな。",
+    "scene": "artificial",
+    "view": "production",
+    "pause": 15
+  },
+  {
+    "id": "line-101",
+    "who": "metan",
+    "text": "ええ。天然ものの褐色斑帯とは、できる仕組みが違うの。",
+    "scene": "artificial",
+    "view": "production",
+    "pause": 12
+  },
+  {
+    "id": "line-102",
+    "who": "zunda",
+    "text": "同じような形に見えても、成り立ちは全く違うのだ。",
+    "scene": "artificial",
+    "view": "production",
+    "pause": 15
+  },
+  {
+    "id": "line-103",
+    "who": "metan",
+    "text": "人工ちくわは、大きさや品質をそろえやすく、天然ものの漁獲や採集だけに頼らず供給できる。それが広まった背景にあるわ。",
+    "scene": "artificial",
+    "view": "supply",
+    "pause": 12
+  },
+  {
+    "id": "line-104",
+    "who": "zunda",
+    "text": "いつでも同じように買えるのは、便利なのだ。",
+    "scene": "artificial",
+    "view": "supply",
+    "pause": 15
+  },
+  {
+    "id": "line-105",
+    "who": "metan",
+    "text": "その一方で、加工された製品にしか接する機会がなく、ちくわを最初から加工食品だと思う人も増えているの。",
+    "scene": "artificial",
+    "view": "generation",
+    "pause": 12
+  },
+  {
+    "id": "line-106",
+    "who": "zunda",
+    "text": "かまぼこやはんぺんと同じ売り場に並んでいるから、そう覚えてしまうのだな。",
+    "scene": "artificial",
+    "view": "generation",
+    "pause": 15
+  },
+  {
+    "id": "line-107",
+    "who": "metan",
+    "text": "人工ちくわについては、製法としてその理解で合っているわ。ただ、その形のもとになった動物がいることが、知られにくくなっているのね。",
+    "scene": "artificial",
+    "view": "generation",
+    "pause": 12
+  },
+  {
+    "id": "line-108",
+    "who": "zunda",
+    "text": "便利になったことで、元の生き物との距離ができたのだ。",
+    "scene": "artificial",
+    "view": "generation",
+    "pause": 15
+  },
+  {
+    "id": "line-109",
+    "who": "metan",
+    "text": "ちなみに、天然ちくわを飼育して増やしたものは養殖ちくわ。魚のすり身から作る人工ちくわとは区別するわ。",
+    "scene": "artificial",
+    "view": "farmed",
+    "pause": 12
+  },
+  {
+    "id": "line-110",
+    "who": "zunda",
+    "text": "育てたものと、作ったものの違いなのだな。",
+    "scene": "artificial",
+    "view": "farmed",
+    "pause": 15
+  },
+  {
+    "id": "line-111",
+    "who": "metan",
+    "text": "ちくわは、古い動物の身体の特徴を残しながら、海と陸、それぞれの環境に適応してきた生き物なの。",
+    "scene": "ending",
+    "view": "summary",
+    "pause": 12
+  },
+  {
+    "id": "line-112",
+    "who": "zunda",
+    "text": "穴にも、弾力にも、山で生えているように見える姿にも、ちゃんと理由があったのだ。",
+    "scene": "ending",
+    "view": "summary",
+    "pause": 15
+  },
+  {
+    "id": "line-113",
+    "who": "metan",
+    "text": "そして、身近な食材だからといって、すべての種類をよく知っているわけではない。毒を持つ近縁種もいるわ。",
+    "scene": "ending",
+    "view": "summary",
+    "pause": 12
+  },
+  {
+    "id": "line-114",
+    "who": "zunda",
+    "text": "よく見るものほど、知っているつもりになってしまうのだな。",
+    "scene": "ending",
+    "view": "summary",
+    "pause": 15
+  },
+  {
+    "id": "line-115",
+    "who": "metan",
+    "text": "今度ちくわを見かけたら、どこで育ち、どんな暮らしをしてきたのか、少し思い出してみてちょうだい。",
+    "scene": "ending",
+    "view": "forest",
+    "pause": 12
+  },
+  {
+    "id": "line-116",
+    "who": "zunda",
+    "text": "パッケージも確認してみるのだ。天然なのか、養殖なのか、魚のすり身なのか。",
+    "scene": "ending",
+    "view": "forest",
+    "pause": 15
+  },
+  {
+    "id": "line-117",
+    "who": "zunda",
+    "text": "それにしても……最後まで、どちらが毒か分からなかったのだ。",
+    "scene": "ending",
+    "view": "comparison",
+    "pause": 15
+  },
+  {
+    "id": "line-118",
+    "who": "metan",
+    "text": "それが分かったことが、今日いちばん大切なことね。",
+    "scene": "ending",
+    "view": "comparison",
+    "pause": 12
+  },
+  {
+    "id": "line-119",
+    "who": "zunda",
+    "text": "見た目で判断しない。覚えたのだ。",
+    "scene": "ending",
+    "view": "comparison",
+    "pause": 15
+  }
+]

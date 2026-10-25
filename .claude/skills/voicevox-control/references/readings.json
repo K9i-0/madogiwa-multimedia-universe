@@ -7,6 +7,7 @@
     "y-village": "廃村Y村の怪談だけで使う略称・儀式用語"
   },
   "sources": {
+    "chikuwa-biology": "03_SCRIPTS/chikuwa_biology_explainer_20261025/reading_audit.json：開口部・准教授の音素読み修正",
     "flutterkaigi-explainer": "03_SCRIPTS/youtube_flutterkaigi_20261021/voice_generation_record.json: AudioQuery 040の安定性誤読修正",
     "project-intro": "03_SCRIPTS/youtube_project_intro_20261019/script.md：立ち飲み処・各話の読み修正（VOICEVOX 0.25.1）",
     "horror": "03_SCRIPTS/y_village_drinking_horror_20261017/review.md および review-v4.md / review-v5.md：人・方・空・管理人等の誤読修正",
@@ -19,6 +20,8 @@
     "tech-video": "03_SCRIPTS/youtube_3d_character_workflow_20261014/remotion/prepare_voice_v6.py：技術語の採用読み"
   },
   "replacements": [
+    {"id": "common.kaikoubu", "surface": "開口部", "reading": "カイコウブ", "source": "chikuwa-biology", "note": "VOICEVOX 0.25.1でひらきこうぶと解析。開口部の複合語だけ補正。"},
+    {"id": "common.junkyouju", "surface": "准教授", "reading": "ジュンキョウジュ", "source": "chikuwa-biology", "note": "VOICEVOX 0.25.1 四国めたんでなぞらえきょうじゅと解析。音素読みを修正、聴感未確認。"},
     {"id": "common.oomajime", "surface": "大まじめ", "reading": "オオマジメ", "source": "project-intro", "note": "2026-10-19ユーザーFB。大単独へ適用しない。"},
     {"id": "mmu.tachinomi-dokoro", "surface": "立ち飲み処", "reading": "タチノミドコロ", "scope": "mmu", "source": "project-intro", "note": "VOICEVOX 0.25.1でタチノミショと解析されたため、店の呼称をどころへ補正。"},
     {"id": "common.kakuwa", "surface": "各話", "reading": "カクワ", "match": "kanji_word", "source": "project-intro", "note": "各話1枚の話数表現。カクハナシと解析されたため補正。"},

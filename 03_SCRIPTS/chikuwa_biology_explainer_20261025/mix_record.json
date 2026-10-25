@@ -1,0 +1,44 @@
+{
+  "sampleRate": 48000,
+  "durationSeconds": 704.4666666666667,
+  "voiceLUFS": -18,
+  "bgmLUFS": -35,
+  "clipLUFS": -19,
+  "premasterPeak": 0.8286462426185608,
+  "endingMusic": "昼下がり気分／KK（導入曲の再提示、-2.5dB）",
+  "endingLift": false,
+  "clips": [
+    {
+      "src": "fishing.mp4",
+      "sourceStartFrame": 780,
+      "durationInFrames": 120,
+      "label": "資料映像：天然ちくわの一本釣りとそばシャークのビール",
+      "id": "escape",
+      "startFrame": 8766
+    },
+    {
+      "src": "autumn.mp4",
+      "sourceStartFrame": 204,
+      "durationInFrames": 132,
+      "label": "資料映像：秋のちくわ狩りが最盛期",
+      "id": "grill",
+      "startFrame": 12309
+    },
+    {
+      "src": "autumn.mp4",
+      "sourceStartFrame": 1017,
+      "durationInFrames": 176,
+      "label": "おかやまん准教授 ／ ちくわ生物学",
+      "id": "expert",
+      "startFrame": 15073
+    },
+    {
+      "src": "autumn.mp4",
+      "sourceStartFrame": 1424,
+      "durationInFrames": 242,
+      "label": "資料映像：秋のちくわ狩りが最盛期",
+      "id": "theft",
+      "startFrame": 16148
+    }
+  ]
+}

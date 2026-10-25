@@ -1,0 +1,41 @@
+{
+  "file": "final_remotion_chikuwa_biology.mp4",
+  "sha256": "4980ff7790eeca810fbf888e40ad17f47bb8204b5cf2867889f6c1be76c27d33",
+  "durationSeconds": 704.4666666666667,
+  "frames": "21134",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": "30/1",
+  "sampleRate": "48000",
+  "fullDecode": "passed",
+  "loudness": {
+    "input_i": "-18.00",
+    "input_tp": "-1.58",
+    "input_lra": "3.90",
+    "input_thresh": "-28.61",
+    "output_i": "-18.06",
+    "output_tp": "-1.65",
+    "output_lra": "3.80",
+    "output_thresh": "-28.65",
+    "normalization_type": "dynamic",
+    "target_offset": "0.06"
+  },
+  "captionTextExact": true,
+  "maxCaptionLines": 2,
+  "dialogueCount": 119,
+  "viewSegments": 40,
+  "sourceClips": 4,
+  "voiceClipOverlap": false,
+  "auditedFrameExtractionCount": 171,
+  "visualPreviewInspection": "all 40 view segments and 4 source clips; revised top clipping and video time origin",
+  "listeningVerified": false,
+  "limitations": [
+    "Human continuous listening and real-time lip-sync review not performed.",
+    "ASR contains homophone substitutions for fictional terminology; original captions preserved.",
+    "Long-utterance subtitle changes use text-length timing estimates."
+  ],
+  "finalFrameVisualInspection": "All 40 view segments and 4 original-audio clips inspected. Corrected proper-name caption inspected in final encoded MP4 at 496 seconds.",
+  "aacUnchangedDuringCaptionFix": true
+}

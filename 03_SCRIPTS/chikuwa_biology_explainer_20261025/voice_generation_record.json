@@ -1,0 +1,19 @@
+{
+  "version": "0.25.1",
+  "styles": {
+    "metan": 2,
+    "zunda": 3
+  },
+  "speedScale": {
+    "metan": 1.13,
+    "zunda": 1.15
+  },
+  "sampleRate": 24000,
+  "prePhonemeLength": 0.09,
+  "postPhonemeLength": 0.12,
+  "adoptedCount": 119,
+  "speechSeconds": 623.6333333333333,
+  "contextualCorrections": "reading_audit.json",
+  "cache": "SHA-256 of final query + speaker + engine version",
+  "listeningVerified": false
+}

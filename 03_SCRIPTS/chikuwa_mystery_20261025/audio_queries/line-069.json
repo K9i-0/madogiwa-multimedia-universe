@@ -1,0 +1,85 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ソ",
+          "consonant": "s",
+          "consonant_length": 0.07657985389232635,
+          "vowel": "o",
+          "vowel_length": 0.06868720054626465,
+          "pitch": 5.860786437988281
+        },
+        {
+          "text": "バ",
+          "consonant": "b",
+          "consonant_length": 0.054978761821985245,
+          "vowel": "a",
+          "vowel_length": 0.08787732571363449,
+          "pitch": 5.916293621063232
+        },
+        {
+          "text": "ヤ",
+          "consonant": "y",
+          "consonant_length": 0.05039065703749657,
+          "vowel": "a",
+          "vowel_length": 0.06771636009216309,
+          "pitch": 5.856818199157715
+        },
+        {
+          "text": "モ",
+          "consonant": "m",
+          "consonant_length": 0.051929209381341934,
+          "vowel": "o",
+          "vowel_length": 0.08532804995775223,
+          "pitch": 5.599359512329102
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "キ",
+          "consonant": "k",
+          "consonant_length": 0.05670544505119324,
+          "vowel": "i",
+          "vowel_length": 0.05418054386973381,
+          "pitch": 5.735873699188232
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.045857854187488556,
+          "vowel": "a",
+          "vowel_length": 0.08197544515132904,
+          "pitch": 5.702712059020996
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.059025295078754425,
+          "vowel": "a",
+          "vowel_length": 0.14322593808174133,
+          "pitch": 5.468699932098389
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ],
+  "speedScale": 1.13,
+  "pitchScale": 0.0,
+  "intonationScale": 1.0,
+  "volumeScale": 1.0,
+  "prePhonemeLength": 0.09,
+  "postPhonemeLength": 0.12,
+  "pauseLength": null,
+  "pauseLengthScale": 1.0,
+  "outputSamplingRate": 24000,
+  "outputStereo": false,
+  "kana": "ソ'バヤモ/キ'タワ"
+}

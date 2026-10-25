@@ -1,0 +1,61 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ア",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "a",
+          "vowel_length": 0.1820819228887558,
+          "pitch": 5.816986560821533
+        },
+        {
+          "text": "ル",
+          "consonant": "r",
+          "consonant_length": 0.030484983697533607,
+          "vowel": "u",
+          "vowel_length": 0.08089068531990051,
+          "pitch": 6.021231651306152
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.06218595802783966,
+          "vowel": "o",
+          "vowel_length": 0.09721031039953232,
+          "pitch": 5.846267223358154
+        },
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.05257079377770424,
+          "vowel": "a",
+          "vowel_length": 0.21200427412986755,
+          "pitch": 5.663876056671143
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": true
+    }
+  ],
+  "speedScale": 1.15,
+  "pitchScale": 0.0,
+  "intonationScale": 1.0,
+  "volumeScale": 1.0,
+  "prePhonemeLength": 0.09,
+  "postPhonemeLength": 0.12,
+  "pauseLength": null,
+  "pauseLengthScale": 1.0,
+  "outputSamplingRate": 24000,
+  "outputStereo": false,
+  "kana": "ア'ル/ノダ'？"
+}

@@ -1,0 +1,17 @@
+{
+  "engine": "VOICEVOX",
+  "version": "0.25.1",
+  "count": 115,
+  "speed": {
+    "metan": 1.13,
+    "zunda": 1.15
+  },
+  "prePhonemeLength": 0.09,
+  "postPhonemeLength": 0.12,
+  "sampleRate": 24000,
+  "scopes": [
+    "mmu"
+  ],
+  "dictionary": "readings.json + shared voicevox-control dictionary",
+  "humanListening": false
+}

@@ -7,6 +7,7 @@
     "y-village": "廃村Y村の怪談だけで使う略称・儀式用語"
   },
   "sources": {
+    "chikuwa-mystery": "03_SCRIPTS/chikuwa_mystery_20261025/reading_audit.json：種・抱いた・止まれるの文脈確認（音素確認、通し試聴未実施）",
     "chikuwa-biology": "03_SCRIPTS/chikuwa_biology_explainer_20261025/reading_audit.json：開口部・准教授の音素読み修正",
     "flutterkaigi-explainer": "03_SCRIPTS/youtube_flutterkaigi_20261021/voice_generation_record.json: AudioQuery 040の安定性誤読修正",
     "project-intro": "03_SCRIPTS/youtube_project_intro_20261019/script.md：立ち飲み処・各話の読み修正（VOICEVOX 0.25.1）",
@@ -70,6 +71,9 @@
     {"id": "tech.api-stability", "surface": "APIの安定性", "reading": "エーピーアイの、アンテイセイ", "scope": "tech", "source": "flutterkaigi-explainer", "note": "VOICEVOX 0.25.1/めたん2でAPIの安定性がヤステイセイと解析された。修正後のモーラ確認済み、主観試聴は未実施。"}
   ],
   "context_checks": [
+    {"id": "context.species-seed", "surface": "種", "readings": ["シュ：生物分類の種、別の種", "タネ：植物の種、話の種"], "source": "chikuwa-mystery", "note": "生物分類か種子かを確認。一律変換しない。"},
+    {"id": "context.idaku-daku", "surface": "抱いた", "readings": ["イダイタ：疑問を抱いた", "ダイタ：子供を抱いた"], "source": "chikuwa-mystery", "note": "抽象的な感情と物理的に抱く動作を区別。"},
+    {"id": "context.tomareru-yameru", "surface": "止まれる", "readings": ["トマレル：進行・行動を止められる"], "source": "chikuwa-mystery", "note": "VOICEVOX 0.25.1でヤマレルとなった例を確認。行の意味に応じて明示読み。"},
     {"id": "context.person", "surface": "人", "readings": ["ヒト：あの人、人を紹介する", "ニン：三人、管理人", "ジン：日本人"], "source": "horror", "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"},
     {"id": "context.kata-hou", "surface": "方", "readings": ["カタ：相談に来る方（人物）", "ホウ：明日来る方がいい（比較）", "ガタ：あなた方", "ホウ／ガタ：方法、夕方"], "source": "horror", "note": "来る方だけでは人物か比較か確定しない。行全体から判断"},
     {"id": "context.empty-sky", "surface": "空", "readings": ["カラ：空の缶、空になった容器", "ソラ：空の色", "アキ：空き缶", "クウ：空席、空気"], "source": "horror", "note": "空の／空になをまとめてカラにしない"},

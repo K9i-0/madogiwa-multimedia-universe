@@ -1,0 +1,37 @@
+{
+  "file": "final_remotion_chikuwa_mystery_v8.mp4",
+  "sha256": "35752c11a1dad8f3e13ab33374f20a9116abad18ea42607c5f7ee1a3e8e7316b",
+  "durationSeconds": 603.2333333333333,
+  "frames": "18097",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": "30/1",
+  "sampleRate": "48000",
+  "fullDecode": "passed",
+  "loudness": {
+    "input_i": "-18.02",
+    "input_tp": "-1.58",
+    "input_lra": "3.30",
+    "input_thresh": "-28.63",
+    "output_i": "-18.21",
+    "output_tp": "-1.77",
+    "output_lra": "3.00",
+    "output_thresh": "-28.81",
+    "normalization_type": "dynamic",
+    "target_offset": "0.21"
+  },
+  "captionTextExact": true,
+  "maxCaptionLines": 2,
+  "dialogueCount": 84,
+  "viewSegments": 40,
+  "sourceClips": 1,
+  "voiceClipOverlap": false,
+  "auditedFrameExtractionCount": 153,
+  "visualPreviewInspection": "See visual_audit_v8.md for inspected frames",
+  "listeningVerified": false,
+  "limitations": [
+    "Human continuous listening and real-time lip-sync review not performed."
+  ]
+}

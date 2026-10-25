@@ -26,11 +26,23 @@ while len(loop)<end-cut+sr*2:
  overlap=loop[-cross:]*np.linspace(1,0,cross)[:,None]+main[:cross]*np.linspace(0,1,cross)[:,None];loop=np.concatenate([loop[:-cross],overlap,main[cross:]])
 bgm[cut:end+sr*2]=fade(loop[:end-cut+sr*2],int(.6*sr),2*sr);del loop
 # Return to the quiet opening theme for the ending, never lift after dialogue.
-a=decode(D/'public/ending.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:m['codaStartFrame']*1600-end].copy();bgm[end:end+len(a)]+=fade(a,sr*2,sr*4)
-# Quiet unsettling coda, after the presenters finish.
+a=decode(D/'public/ending.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:(m['codaStartFrame']-18)*1600-end].copy();bgm[end:end+len(a)]+=fade(a,sr*2,sr*4)
+# Gradually lower the bed after Kitahara; withdraw music at the key inference.
+horror=m['cues']['horrorStart']*1600
+ramp=min(sr*5,end-horror)
+bgm[horror:horror+ramp]*=np.linspace(1,.55,ramp)[:,None]
+bgm[horror+ramp:end]*=.55
+quiet0=m['cues']['silenceStart']*1600;quiet1=m['cues']['silenceEnd']*1600
+ramp=sr//2
+bgm[quiet0-ramp:quiet0]*=np.linspace(1,0,ramp)[:,None]
+bgm[quiet0:quiet1]=0
+bgm[quiet1:quiet1+sr*2]*=np.linspace(0,1,sr*2)[:,None]
+# Coda: restrained original factory room tone, no musical sting or reused dialogue.
 coda=m['codaStartFrame']*1600
-bed=decode(D/'public/intro.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-coda].copy()
-bgm[coda:coda+len(bed)]+=fade(bed,sr,2*sr)
+seconds=np.arange(n-coda)/sr
+hum=.0014*np.sin(2*np.pi*60*seconds)+.0005*np.sin(2*np.pi*120*seconds)
+bed=np.stack([hum,hum],axis=1).astype(np.float32)
+bgm[coda:]+=fade(bed,sr,2*sr)
 for c in m['clips']:
  if c.get('muteSource'):continue
  start=c['startFrame']*1600;length=c['durationInFrames']*1600
@@ -41,5 +53,5 @@ voice+=bgm;del bgm
 peak=float(np.max(np.abs(voice)))
 if peak>.94:voice*=.94/peak
 save(D/'public/mixed.wav',voice)
-(P/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'durationSeconds':n/sr,'voiceLUFS':-18,'bgmLUFS':-35,'clipLUFS':-19,'premasterPeak':peak,'endingMusic':'TheFatRat - Unity / -38 LUFS','endingLift':False,'mainBgmStartFrame':m['mainStartFrame'],'mainFadeInFrames':18,'clips':m['clips']},ensure_ascii=False,indent=2))
+(P/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'durationSeconds':n/sr,'voiceLUFS':-18,'bgmLUFS':-35,'clipLUFS':-19,'premasterPeak':peak,'endingMusic':'TheFatRat - Unity / -38 LUFS','endingLift':False,'mainBgmStartFrame':m['mainStartFrame'],'mainFadeInFrames':18,'editorialCues':m['cues'],'codaSound':'original synthesized quiet factory hum, no dialogue','clips':m['clips']},ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

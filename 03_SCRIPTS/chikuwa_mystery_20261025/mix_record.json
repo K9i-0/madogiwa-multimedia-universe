@@ -1,14 +1,25 @@
 {
   "sampleRate": 48000,
-  "durationSeconds": 572.9666666666667,
+  "durationSeconds": 603.2333333333333,
   "voiceLUFS": -18,
   "bgmLUFS": -35,
   "clipLUFS": -19,
-  "premasterPeak": 0.8284571170806885,
+  "premasterPeak": 0.836674690246582,
   "endingMusic": "TheFatRat - Unity / -38 LUFS",
   "endingLift": false,
   "mainBgmStartFrame": 919,
   "mainFadeInFrames": 18,
+  "editorialCues": {
+    "chargeReveal": 9519,
+    "logicReveal": 13760,
+    "absenceReveal": 10466,
+    "horrorStart": 9711,
+    "silenceStart": 13626,
+    "silenceEnd": 13900,
+    "codaRecord": 17707,
+    "codaApproval": 17917
+  },
+  "codaSound": "original synthesized quiet factory hum, no dialogue",
   "clips": [
     {
       "src": "fishing_archive_v7.mp4",

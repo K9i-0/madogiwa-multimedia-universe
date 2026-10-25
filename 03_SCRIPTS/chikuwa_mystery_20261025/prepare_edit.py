@@ -35,8 +35,29 @@ for r in rows:
  if r.get('clipAfter'):
   c=dict(clipdefs[r['clipAfter']],id=r['clipAfter'],startFrame=cursor);clips.append(c);cursor+=c['durationInFrames']+15
 for i,v in enumerate(views):v['endFrame']=views[i+1]['startFrame'] if i+1<len(views) else cursor+90
-coda=cursor+60
-m=dict(codaStartFrame=coda,composition=dict(width=1280,height=720,fps=30,durationInFrames=coda+450),dialogue=rows,captions=caps,clips=clips,views=views,mainStartFrame=next(r['startFrame'] for r in rows if r['text'].startswith('めたんのミステリー研究所へ、ようこそ。'))-18,endingStartFrame=next(r['startFrame'] for r in rows if r['scene']=='ending'),voicevoxVersion='0.25.1')
+coda=cursor+66
+# Resolve reveals to actual VOICEVOX mora timing, not proportional text length.
+def spoken_cue(row,word):
+ q=json.loads((P/'audio_queries'/f"{row['id']}.json").read_text());t=q['prePhonemeLength']/q['speedScale'];joined='';starts=[]
+ for phrase in q['accent_phrases']:
+  for mora in phrase['moras']:
+   joined+=mora['text'];starts.extend([t]*len(mora['text']));t+=(mora.get('consonant_length') or 0)/q['speedScale']+mora['vowel_length']/q['speedScale']
+  pause=phrase.get('pause_mora')
+  if pause:t+=pause['vowel_length']/q['speedScale']
+ pos=joined.find(word)
+ assert pos>=0,(word,joined)
+ return row['startFrame']+round(starts[pos]*30)
+charge=next(r for r in rows if r['view']=='additional_charge' and r['who']=='metan')
+logic=next(r for r in rows if r['text'].startswith('毒ちくわを、一匹'))
+absence=next(r for r in rows if r['view']=='poison_absence')
+cues={'chargeReveal':spoken_cue(charge,'ワイセツ'),'logicReveal':spoken_cue(logic,'サイショカラ'),'absenceReveal':spoken_cue(absence,'イッサイ'),'horrorStart':next(r['startFrame'] for r in rows if r['view']=='handoff_market'),'silenceStart':logic['startFrame']-24,'silenceEnd':logic['startFrame']+logic['durationInFrames']+logic['pause'],'codaRecord':coda+210,'codaApproval':coda+420}
+# Keep the late charge out of the subtitle until it is spoken.
+caps=[c for c in caps if c['lineId']!=charge['id']]
+for a,b,text in [(charge['startFrame'],cues['chargeReveal'],'なお、霜重研究員は、\n不法侵入に加えて、'),(cues['chargeReveal'],charge['startFrame']+charge['durationInFrames'],'猥褻物陳列罪の容疑でも\n逮捕されているわ。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=charge['id']))
+caps=[c for c in caps if c['lineId']!=logic['id']]
+for a,b,text in [(logic['startFrame'],cues['logicReveal'],'毒ちくわを、一匹残らず\n取り除いているのではない。'),(cues['logicReveal'],logic['startFrame']+logic['durationInFrames'],'最初から、生きたちくわを一匹も\n使っていないのではないか。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=logic['id']))
+caps.sort(key=lambda c:c['startFrame'])
+m=dict(cues=cues,codaDurationFrames=600,codaStartFrame=coda,composition=dict(width=1280,height=720,fps=30,durationInFrames=coda+600),dialogue=rows,captions=caps,clips=clips,views=views,mainStartFrame=next(r['startFrame'] for r in rows if r['text'].startswith('めたんのミステリー研究所へ、ようこそ。'))-18,endingStartFrame=next(r['startFrame'] for r in rows if r['view']=='callback'),voicevoxVersion='0.25.1')
 (D/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2));print('DURATION',m['composition']['durationInFrames']/30,'views',len(views))
 # Exact dialogue-only subtitles, same integer frame timing as manifest.
 def tc(f):

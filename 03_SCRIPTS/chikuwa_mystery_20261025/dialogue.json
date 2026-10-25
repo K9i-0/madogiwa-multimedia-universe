@@ -133,7 +133,7 @@
     "scene": "experiment",
     "view": "nakaguchi",
     "who": "metan",
-    "text": "ところが広域未確認生物研究所の中口研究員は、市販のちくわに、生き物ではないものが混ざっていると主張しているわ。",
+    "text": "天然のちくわには、こうした生物としての特徴がある。では、店で買ったものにも、同じ特徴があるのか。そこを調べたのが、広域未確認生物研究所の中口研究員よ。",
     "pause": 9
   },
   {
@@ -205,19 +205,27 @@
     "scene": "experiment",
     "view": "network",
     "who": "metan",
-    "text": "ただ、再現できることと、実際に売られていることは別。市販品とのつながりを確かめる必要があるわ。",
+    "text": "ただ、再現できることと、実際に売られていることは別よ。",
     "pause": 9
   },
   {
     "id": "line-026",
     "scene": "history",
-    "view": "shimoju",
+    "view": "handoff_history",
     "who": "metan",
-    "text": "一方、狭間文明研究所の霜重研究員は、魚肉を竹に巻いて焼く方法が、古い文献に記されていることを確認したわ。",
-    "pause": 9
+    "text": "もし本当に流通しているなら、この製法は、いつ、誰が始めたのか。その記録を追ったのが、狭間文明研究所の霜重研究員よ。",
+    "pause": 18
   },
   {
     "id": "line-027",
+    "scene": "history",
+    "view": "shimoju",
+    "who": "metan",
+    "text": "研究員が見つけたのは、魚肉を竹に巻いて焼く方法が記された、古い文献だったわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-028",
     "scene": "history",
     "view": "shimoju",
     "who": "metan",
@@ -225,7 +233,7 @@
     "pause": 9
   },
   {
-    "id": "line-028",
+    "id": "line-029",
     "scene": "history",
     "view": "shimoju",
     "who": "zunda",
@@ -233,7 +241,7 @@
     "pause": 14
   },
   {
-    "id": "line-029",
+    "id": "line-030",
     "scene": "history",
     "view": "oldnetwork",
     "who": "metan",
@@ -241,7 +249,7 @@
     "pause": 9
   },
   {
-    "id": "line-030",
+    "id": "line-031",
     "scene": "history",
     "view": "oldnetwork",
     "who": "zunda",
@@ -249,15 +257,15 @@
     "pause": 14
   },
   {
-    "id": "line-031",
+    "id": "line-032",
     "scene": "infiltration",
     "view": "factory",
     "who": "metan",
-    "text": "人工ちくわの闇に迫るため、研究員は、日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
+    "text": "古い記録だけでは、今も作られている証拠にはならない。霜重研究員は、製造の現場を確かめようと、日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
     "pause": 9
   },
   {
-    "id": "line-032",
+    "id": "line-033",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -265,7 +273,7 @@
     "pause": 25
   },
   {
-    "id": "line-033",
+    "id": "line-034",
     "scene": "infiltration",
     "view": "arrest",
     "who": "zunda",
@@ -273,7 +281,7 @@
     "pause": 25
   },
   {
-    "id": "line-034",
+    "id": "line-035",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -281,7 +289,7 @@
     "pause": 25
   },
   {
-    "id": "line-035",
+    "id": "line-036",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "metan",
@@ -289,7 +297,7 @@
     "pause": 9
   },
   {
-    "id": "line-036",
+    "id": "line-037",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "zunda",
@@ -297,7 +305,7 @@
     "pause": 14
   },
   {
-    "id": "line-037",
+    "id": "line-038",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "metan",
@@ -305,7 +313,7 @@
     "pause": 9
   },
   {
-    "id": "line-038",
+    "id": "line-039",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "zunda",
@@ -313,7 +321,7 @@
     "pause": 14
   },
   {
-    "id": "line-039",
+    "id": "line-040",
     "scene": "infiltration",
     "view": "drink",
     "who": "metan",
@@ -321,7 +329,7 @@
     "pause": 9
   },
   {
-    "id": "line-040",
+    "id": "line-041",
     "scene": "infiltration",
     "view": "drink",
     "who": "metan",
@@ -329,7 +337,7 @@
     "pause": 9
   },
   {
-    "id": "line-041",
+    "id": "line-042",
     "scene": "infiltration",
     "view": "incident",
     "who": "metan",
@@ -337,7 +345,7 @@
     "pause": 9
   },
   {
-    "id": "line-042",
+    "id": "line-043",
     "scene": "infiltration",
     "view": "incident",
     "who": "zunda",
@@ -345,7 +353,7 @@
     "pause": 14
   },
   {
-    "id": "line-043",
+    "id": "line-044",
     "scene": "infiltration",
     "view": "police",
     "who": "metan",
@@ -353,7 +361,7 @@
     "pause": 9
   },
   {
-    "id": "line-044",
+    "id": "line-045",
     "scene": "infiltration",
     "view": "police",
     "who": "metan",
@@ -361,7 +369,7 @@
     "pause": 9
   },
   {
-    "id": "line-045",
+    "id": "line-046",
     "scene": "infiltration",
     "view": "police",
     "who": "zunda",
@@ -369,7 +377,7 @@
     "pause": 14
   },
   {
-    "id": "line-046",
+    "id": "line-047",
     "scene": "infiltration",
     "view": "report",
     "who": "metan",
@@ -377,7 +385,7 @@
     "pause": 9
   },
   {
-    "id": "line-047",
+    "id": "line-048",
     "scene": "infiltration",
     "view": "additional_charge",
     "who": "metan",
@@ -385,7 +393,7 @@
     "pause": 25
   },
   {
-    "id": "line-048",
+    "id": "line-049",
     "scene": "infiltration",
     "view": "additional_charge",
     "who": "zunda",
@@ -393,15 +401,23 @@
     "pause": 25
   },
   {
-    "id": "line-049",
+    "id": "line-050",
+    "scene": "supply",
+    "view": "handoff_market",
+    "who": "metan",
+    "text": "結局、製造現場は確認できなかった。でも、工場から出てくる製品なら、店で買って調べられる。研究チームは、そこへ調査を切り替えたの。",
+    "pause": 18
+  },
+  {
+    "id": "line-051",
     "scene": "supply",
     "view": "kitahara",
     "who": "metan",
-    "text": "一方、未知環境生理研究所の北原研究員は、店で売られるちくわに、あるものが欠けていることに注目したわ。",
+    "text": "担当したのは、未知環境生理研究所の北原研究員。市販品を調べた研究員は、そこに、あるものが一匹もいないことに気づいたわ。",
     "pause": 9
   },
   {
-    "id": "line-050",
+    "id": "line-052",
     "scene": "supply",
     "view": "poison_absence",
     "who": "metan",
@@ -409,7 +425,7 @@
     "pause": 9
   },
   {
-    "id": "line-051",
+    "id": "line-053",
     "scene": "supply",
     "view": "poison_absence",
     "who": "metan",
@@ -417,7 +433,7 @@
     "pause": 9
   },
   {
-    "id": "line-052",
+    "id": "line-054",
     "scene": "supply",
     "view": "poison_absence",
     "who": "zunda",
@@ -425,7 +441,7 @@
     "pause": 14
   },
   {
-    "id": "line-053",
+    "id": "line-055",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -433,7 +449,7 @@
     "pause": 9
   },
   {
-    "id": "line-054",
+    "id": "line-056",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -441,7 +457,7 @@
     "pause": 9
   },
   {
-    "id": "line-055",
+    "id": "line-057",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -449,7 +465,7 @@
     "pause": 9
   },
   {
-    "id": "line-056",
+    "id": "line-058",
     "scene": "supply",
     "view": "selection",
     "who": "zunda",
@@ -457,7 +473,7 @@
     "pause": 14
   },
   {
-    "id": "line-057",
+    "id": "line-059",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -465,7 +481,7 @@
     "pause": 9
   },
   {
-    "id": "line-058",
+    "id": "line-060",
     "scene": "supply",
     "view": "official",
     "who": "metan",
@@ -473,7 +489,7 @@
     "pause": 9
   },
   {
-    "id": "line-059",
+    "id": "line-061",
     "scene": "supply",
     "view": "official",
     "who": "zunda",
@@ -481,7 +497,7 @@
     "pause": 14
   },
   {
-    "id": "line-060",
+    "id": "line-062",
     "scene": "supply",
     "view": "secret",
     "who": "metan",
@@ -489,7 +505,7 @@
     "pause": 9
   },
   {
-    "id": "line-061",
+    "id": "line-063",
     "scene": "supply",
     "view": "secret",
     "who": "metan",
@@ -497,7 +513,7 @@
     "pause": 9
   },
   {
-    "id": "line-062",
+    "id": "line-064",
     "scene": "supply",
     "view": "growth",
     "who": "metan",
@@ -505,23 +521,23 @@
     "pause": 9
   },
   {
-    "id": "line-063",
+    "id": "line-065",
     "scene": "supply",
     "view": "growth",
     "who": "metan",
     "text": "ここで、中口研究員の再現実験とつながるの。魚肉から作るなら、季節を待つ必要も、有毒種を選り分ける必要もない。",
-    "pause": 9
+    "pause": 33
   },
   {
-    "id": "line-064",
+    "id": "line-066",
     "scene": "supply",
     "view": "poison_logic",
     "who": "metan",
     "text": "毒ちくわを、一匹残らず取り除いているのではない。最初から、生きたちくわを一匹も使っていないのではないか。",
-    "pause": 9
+    "pause": 36
   },
   {
-    "id": "line-065",
+    "id": "line-067",
     "scene": "supply",
     "view": "poison_logic",
     "who": "zunda",
@@ -529,7 +545,7 @@
     "pause": 14
   },
   {
-    "id": "line-066",
+    "id": "line-068",
     "scene": "supply",
     "view": "poison_logic",
     "who": "metan",
@@ -537,7 +553,7 @@
     "pause": 9
   },
   {
-    "id": "line-067",
+    "id": "line-069",
     "scene": "conspiracy2",
     "view": "substitution",
     "who": "metan",
@@ -545,7 +561,7 @@
     "pause": 9
   },
   {
-    "id": "line-068",
+    "id": "line-070",
     "scene": "conspiracy2",
     "view": "substitution",
     "who": "metan",
@@ -553,7 +569,7 @@
     "pause": 9
   },
   {
-    "id": "line-069",
+    "id": "line-071",
     "scene": "conspiracy2",
     "view": "substitution",
     "who": "zunda",
@@ -561,7 +577,7 @@
     "pause": 14
   },
   {
-    "id": "line-070",
+    "id": "line-072",
     "scene": "conspiracy2",
     "view": "leap",
     "who": "metan",
@@ -569,7 +585,7 @@
     "pause": 25
   },
   {
-    "id": "line-071",
+    "id": "line-073",
     "scene": "conspiracy2",
     "view": "leap",
     "who": "metan",
@@ -577,7 +593,7 @@
     "pause": 25
   },
   {
-    "id": "line-072",
+    "id": "line-074",
     "scene": "conspiracy2",
     "view": "leap",
     "who": "zunda",
@@ -585,7 +601,7 @@
     "pause": 25
   },
   {
-    "id": "line-073",
+    "id": "line-075",
     "scene": "conspiracy2",
     "view": "education",
     "who": "metan",
@@ -593,7 +609,7 @@
     "pause": 9
   },
   {
-    "id": "line-074",
+    "id": "line-076",
     "scene": "conspiracy2",
     "view": "education",
     "who": "metan",
@@ -601,7 +617,7 @@
     "pause": 9
   },
   {
-    "id": "line-075",
+    "id": "line-077",
     "scene": "conspiracy2",
     "view": "education",
     "who": "zunda",
@@ -609,7 +625,7 @@
     "pause": 14
   },
   {
-    "id": "line-076",
+    "id": "line-078",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
@@ -617,23 +633,23 @@
     "pause": 9
   },
   {
-    "id": "line-077",
+    "id": "line-079",
     "scene": "ending",
     "view": "findings",
     "who": "zunda",
-    "text": "それを確かめるのが先なのだ。僕は、本物を買っているつもりなのだから。",
-    "pause": 14
+    "text": "……昨日、食べたのだ。養殖だと書いてあったのだ。",
+    "pause": 32
   },
   {
-    "id": "line-078",
+    "id": "line-080",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
-    "text": "あなたが食べた一本は、海にも山にも、一度もいたことがないのかもしれない。",
+    "text": "その一本が、海にも山にも、一度もいたことがないのかもしれない。",
     "pause": 9
   },
   {
-    "id": "line-079",
+    "id": "line-081",
     "scene": "ending",
     "view": "callback",
     "who": "metan",
@@ -641,15 +657,15 @@
     "pause": 9
   },
   {
-    "id": "line-080",
+    "id": "line-082",
     "scene": "ending",
     "view": "callback",
     "who": "zunda",
     "text": "まず服を着てから告発するのだ。",
-    "pause": 14
+    "pause": 30
   },
   {
-    "id": "line-081",
+    "id": "line-083",
     "scene": "ending",
     "view": "endtitle",
     "who": "metan",

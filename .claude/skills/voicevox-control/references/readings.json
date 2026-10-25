@@ -71,6 +71,7 @@
     {"id": "tech.api-stability", "surface": "APIの安定性", "reading": "エーピーアイの、アンテイセイ", "scope": "tech", "source": "flutterkaigi-explainer", "note": "VOICEVOX 0.25.1/めたん2でAPIの安定性がヤステイセイと解析された。修正後のモーラ確認済み、主観試聴は未実施。"}
   ],
   "context_checks": [
+    {"id": "context.hato", "surface": "鳩", "readings": ["ハト：単独の鳥名", "バト：ドバトなど複合語"], "source": "chikuwa-mystery", "note": "v2で魚で鳩・鳩にはをバトと誤読。文脈限定でハトへ修正。複合語へ一律適用しない。"},
     {"id": "context.species-seed", "surface": "種", "readings": ["シュ：生物分類の種、別の種", "タネ：植物の種、話の種"], "source": "chikuwa-mystery", "note": "生物分類か種子かを確認。一律変換しない。"},
     {"id": "context.idaku-daku", "surface": "抱いた", "readings": ["イダイタ：疑問を抱いた", "ダイタ：子供を抱いた"], "source": "chikuwa-mystery", "note": "抽象的な感情と物理的に抱く動作を区別。"},
     {"id": "context.tomareru-yameru", "surface": "止まれる", "readings": ["トマレル：進行・行動を止められる"], "source": "chikuwa-mystery", "note": "VOICEVOX 0.25.1でヤマレルとなった例を確認。行の意味に応じて明示読み。"},

@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-P=Path(__file__).resolve().parent;rows=[];scene=view='';md=['# めたんのミステリー研究所 第2回：ちくわ人工物説','\n採用方針：観察・実験・文献調査は妥当。目的や背後関係の推論で陰謀論へ飛躍する。分類・生態・研究内容・T社は作品内の架空設定。\n']
+P=Path(__file__).resolve().parent;rows=[];scene=view='';md=['# めたんのミステリー研究所 第2回：ちくわ人工物説','\n採用方針v2：ずんだもんは「ちくわは生き物」という世界の常識を最後まで守る。めたんと研究員が、観察・実験から人工ちくわ流通説を唱え、さらに陰謀論へ飛躍する。分類・生態・研究内容・T社は作品内の架空設定。\n']
 for line in (P/'dialogue.txt').read_text().splitlines():
  if line.startswith('# '):
   scene,view=line[2:].split('|');md.append(f'\n## {scene} / {view}\n');continue

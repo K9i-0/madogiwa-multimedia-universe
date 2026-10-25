@@ -1,7 +1,7 @@
 {
   "engine": "VOICEVOX",
   "version": "0.25.1",
-  "count": 115,
+  "count": 117,
   "speed": {
     "metan": 1.13,
     "zunda": 1.15
@@ -13,5 +13,6 @@
     "mmu"
   ],
   "dictionary": "readings.json + shared voicevox-control dictionary",
-  "humanListening": false
+  "humanListening": false,
+  "v3NewSynthesisCount": 2
 }

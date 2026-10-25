@@ -42,11 +42,14 @@ if(view==='report')return <><div style={{width:660,padding:'30px 36px',borderTop
 if(view==='additional_charge')return <><H>現地調査報告 ／ 付記</H><div style={{fontSize:28,color:muted,marginBottom:24}}>逮捕容疑</div><div style={{fontSize:37,lineHeight:1.8,color:gold}}>不法侵入<br/>＋<br/>猥褻物陳列罪</div><Note>霜重研究員の訪問当日の記録</Note></>;
 if(view==='publicvideo')return <><H>T社の工場紹介映像を検証</H><div style={{position:'relative',width:760,height:370}}><Img src={staticFile('manufacturing_v2.png')} style={{width:'100%',height:'100%',objectFit:'contain'}}/><div style={{position:'absolute',right:15,top:15,padding:'7px 12px',background:'#0c1924dd',fontSize:18}}>林研究員の提示資料</div></div><Note>工場映像の内容を再現 ／ めたん：「隠していないと思わせるため」</Note></>;
 if(view==='hayashi')return <><Photo src="research_desk.png" h={325}/><div style={{fontSize:28,color:gold,marginTop:20}}>中央映像解析センター・林研究員</div><Note>「魚肉の投入から筒状の製品まで、連続した工程」</Note></>;
-if(view==='kitahara')return <Person name="北原" org="未知環境生理研究所" field="通年供給と養殖施設の調査"/>;
+if(view==='kitahara')return <Person name="北原" org="未知環境生理研究所" field="市販品から消えた毒ちくわの調査"/>;
 if(view==='seasons')return <><H>秋の味覚が、一年中並ぶ</H><Double a="forest.png" b="distribution_v2.png" at="野生個体：採集量に季節差" bt="売り場：通年、安定供給"/></>;
-if(view==='official')return <><H>政府・業界団体の公式説明</H><Quote text={'通年供給は、\n養殖技術の発展によるもの。'}/><Note>公表資料の説明 ／ 研究チームによる照合対象</Note></>;
+if(view==='official')return <><H>政府・企業の公式説明</H><Quote text={'食用種だけを育てる、\n閉鎖型の養殖。'}/><Note>「養殖技術の発展によって、安全な通年供給を実現」</Note></>;
+if(view==='poison_absence')return <><H>市販品には、毒ちくわが含まれない</H><Photo src="comparison.png" h={285}/><div style={{display:'flex',gap:70,marginTop:22,fontSize:27}}><span>野外：食用種と有毒種が混在</span><span style={{color:gold}}>市販：混入ゼロ</span></div><Note>外見では判別不可能 ／ 北原研究員が注目した矛盾</Note></>;
+if(view==='selection')return <><H>どうやって、全て選り分ける？</H><div style={{width:700,textAlign:'left'}}>{[['外見','判別できない'],['ビール臭','流通過程で失われる'],['成分分析','全個体の検査記録がない']].map(([a,b])=><div key={a} style={{display:'flex',padding:'26px 0',borderBottom:'1px solid #cfba8455',fontSize:28}}><span style={{width:180,color:gold}}>{a}</span><span>{b}</span></div>)}</div><Note>検査による判別は可能 ／ 全数検査の実施は確認できず</Note></>;
+if(view==='poison_logic')return <><H>毒を取り除いているのではなく――</H><Quote text={'最初から、生きたちくわを\n使っていない？'}/><Note>魚肉に似た組織 ＋ 継ぎ目 ＋ 再現できる工程</Note></>;
 if(view==='capacity')return <><H>公開情報と出荷量が合わない</H><Flow items={['確認できた飼育面積 × 成長期間','説明できる生産量には限界','公表出荷量との隔たり']}/><Note>非公開施設の有無は未確認 ／ 北原研究員の調査</Note></>;
-if(view==='secret')return <><H>生産技術に関する問い合わせ</H><div style={{width:680,textAlign:'left',borderTop:`1px solid ${gold}`,padding:24}}><div style={{fontSize:22,color:gold}}>企業からの回答</div><div style={{fontSize:31,margin:'16px 0 35px'}}>独自技術に関わるため、非公開。</div><div style={{fontSize:22,color:gold}}>政府側の回答</div><div style={{fontSize:28,marginTop:16}}>個別企業の技術については回答を控える。</div></div></>;
+if(view==='secret')return <><H>生産技術に関する問い合わせ</H><div style={{width:680,textAlign:'left',borderTop:`1px solid ${gold}`,padding:24}}><div style={{fontSize:22,color:gold}}>企業からの回答</div><div style={{fontSize:31,margin:'16px 0 35px'}}>独自技術に関わるため、非公開。</div><div style={{fontSize:22,color:gold}}>取材に提供された資料</div><div style={{fontSize:28,marginTop:16}}>養殖施設ではなく、工場の加工映像。</div></div></>;
 if(view==='balance')return <><H>「餌」と「原料」の境界</H><Svg height={280}><T x={140} y={100} size={34}>魚肉</T><T x={620} y={100} size={34}>ちくわ</T><Arrow x1={240} y1={90} x2={520} y2={90}/><T x={380} y={180} size={31} color={gold}>投入重量 ≒ 出荷重量？</T><T x={380} y={245} size={22}>呼吸・排泄・水分・集計期間の検討が必要</T></Svg><Note>重量比較だけでは、製造と養殖を断定できない</Note></>;
 if(view==='growth')return <><H>成長する時間は、どこへ消えた？</H><Photo src="manufacturing_v2.png" h={355}/><Note>公開された工程の再現 ／ 練る → 巻く → 加熱 → 出荷</Note></>;
 if(view==='substitution')return <><H>研究員の仮説：本物に紛れる模造品</H><Photo src="distribution_v2.png" h={355}/><Note>表示は「ちくわ」 ／ 消費者に区別は伝わらない</Note></>;
@@ -66,7 +69,7 @@ if(view==='claimsheet')return <><H>霜重研究員の追加見解</H><Quote text
 if(view==='emoto')return <><div style={{fontSize:20,letterSpacing:5,color:muted}}>未確認ニュースネット</div><Quote text="江本記者、本人に取材"/><Note>対象：ソバヤ ／ 質問：ちくわを製造したことは？</Note></>;
 if(view==='admission')return <><div style={{fontSize:20,letterSpacing:5,color:red}}>取材速報</div><Quote text={'ソバヤ\nちくわ製造を認める'} sub="本人への聞き取り"/></>;
 if(view==='workshop')return <><H>ソバヤの「製造経験」</H><Photo src="manufacturing_v2.png" h={360}/><Note>観光施設のちくわ手作り体験 ／ 証言内容の再現</Note></>;
-if(view==='escape')return <><H>それでも、野生のちくわは動く</H><Photo src="giant_still.jpg" h={375}/></>;
+if(view==='escape')return <><H>それでも、野生のちくわは動く</H><Photo src="chikuwa_archive_still_v7.jpg" h={375}/></>;
 if(view==='findings')return <><H>研究チームの主張</H><div style={{width:690,textAlign:'left'}}>{['魚のすり身で、ちくわの偽物を製造','本物に混ぜて、同じ食卓へ','消費者は、すり替えに気づいていない'].map((s,i)=><div key={s} style={{fontSize:27,padding:'25px 0',borderBottom:'1px solid #cfba8433'}}><span style={{color:gold,marginRight:16}}>0{i+1}</span>{s}</div>)}</div><Note>再現実験と工場映像を根拠に発表</Note></>;
 if(view==='noevidence')return <><H>闇の政府の関与を示す証拠</H><div style={{fontFamily:'Georgia',fontSize:150,color:gold,lineHeight:1.3}}>0</div><Note>一切、見つからず</Note></>;
 if(view==='conclusion')return <><div style={{fontSize:20,color:muted,letterSpacing:4}}>研究チームの最終結論</div><Quote text={'想定以上に徹底した\n情報統制が行われている。'}/></>;

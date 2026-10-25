@@ -1,22 +1,23 @@
 {
   "sampleRate": 48000,
-  "durationSeconds": 666.1,
+  "durationSeconds": 572.9666666666667,
   "voiceLUFS": -18,
   "bgmLUFS": -35,
   "clipLUFS": -19,
-  "premasterPeak": 0.8250130414962769,
+  "premasterPeak": 0.8284571170806885,
   "endingMusic": "TheFatRat - Unity / -38 LUFS",
   "endingLift": false,
   "mainBgmStartFrame": 919,
   "mainFadeInFrames": 18,
   "clips": [
     {
-      "src": "fishing_archive_v6.mp4",
+      "src": "fishing_archive_v7.mp4",
       "sourceStartFrame": 0,
-      "durationInFrames": 120,
+      "durationInFrames": 60,
+      "muteSource": true,
       "label": "研究所収集資料 ／ 天然ちくわの移動記録",
       "id": "escape",
-      "startFrame": 2730
+      "startFrame": 2575
     }
   ]
 }

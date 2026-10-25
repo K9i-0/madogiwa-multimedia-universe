@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,os,re,budoux
 P=Path(__file__).resolve().parent;D=P/'remotion';rows=json.loads((P/'voices.json').read_text());parser=budoux.load_default_japanese_parser()
-clipdefs={'escape':dict(src='fishing_archive_v6.mp4',sourceStartFrame=0,durationInFrames=120,label='研究所収集資料 ／ 天然ちくわの移動記録' ),'grill':dict(src='autumn.mp4',sourceStartFrame=204,durationInFrames=132,label='資料映像：秋のちくわ狩りが最盛期'),'expert':dict(src='autumn.mp4',sourceStartFrame=1017,durationInFrames=176,label='おかやまん准教授 ／ ちくわ生物学'),'theft':dict(src='autumn.mp4',sourceStartFrame=1424,durationInFrames=242,label='資料映像：秋のちくわ狩りが最盛期')}
+clipdefs={'escape':dict(src='fishing_archive_v7.mp4',sourceStartFrame=0,durationInFrames=60,muteSource=True,label='研究所収集資料 ／ 天然ちくわの移動記録' ),'grill':dict(src='autumn.mp4',sourceStartFrame=204,durationInFrames=132,label='資料映像：秋のちくわ狩りが最盛期'),'expert':dict(src='autumn.mp4',sourceStartFrame=1017,durationInFrames=176,label='おかやまん准教授 ／ ちくわ生物学'),'theft':dict(src='autumn.mp4',sourceStartFrame=1424,durationInFrames=242,label='資料映像：秋のちくわ狩りが最盛期')}
 def wrap(text,limit=30):
  parts=parser.parse(text); lines=[];line=''
  for part in parts:

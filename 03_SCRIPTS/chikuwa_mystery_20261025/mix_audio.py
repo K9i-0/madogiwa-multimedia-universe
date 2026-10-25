@@ -32,6 +32,7 @@ coda=m['codaStartFrame']*1600
 bed=decode(D/'public/intro.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-coda].copy()
 bgm[coda:coda+len(bed)]+=fade(bed,sr,2*sr)
 for c in m['clips']:
+ if c.get('muteSource'):continue
  start=c['startFrame']*1600;length=c['durationInFrames']*1600
  a=decode(D/'public'/c['src'],'loudnorm=I=-19:TP=-2:LRA=11',c['sourceStartFrame']/30,c['durationInFrames']/30)[:length]
  a=fade(a,240,480);voice[start:start+len(a)]+=a;bgm[start:start+length]*=.08

@@ -35,7 +35,7 @@ for r in rows:
  if r.get('clipAfter'):
   c=dict(clipdefs[r['clipAfter']],id=r['clipAfter'],startFrame=cursor);clips.append(c);cursor+=c['durationInFrames']+15
 for i,v in enumerate(views):v['endFrame']=views[i+1]['startFrame'] if i+1<len(views) else cursor+90
-m=dict(composition=dict(width=1280,height=720,fps=30,durationInFrames=cursor+90),dialogue=rows,captions=caps,clips=clips,views=views,mainStartFrame=next(r['startFrame'] for r in rows if r['scene']=='biology'),endingStartFrame=next(r['startFrame'] for r in rows if r['scene']=='ending'),voicevoxVersion='0.25.1')
+m=dict(composition=dict(width=1280,height=720,fps=30,durationInFrames=cursor+90),dialogue=rows,captions=caps,clips=clips,views=views,mainStartFrame=next(r['startFrame'] for r in rows if r['text'].startswith('めたんのミステリー研究所へ、ようこそ。'))-18,endingStartFrame=next(r['startFrame'] for r in rows if r['scene']=='ending'),voicevoxVersion='0.25.1')
 (D/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2));print('DURATION',m['composition']['durationInFrames']/30,'views',len(views))
 # Exact dialogue-only subtitles, same integer frame timing as manifest.
 def tc(f):

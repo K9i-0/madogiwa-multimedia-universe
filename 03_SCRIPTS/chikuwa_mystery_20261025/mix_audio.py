@@ -24,7 +24,7 @@ intro=decode(D/'public/intro.mp3','loudnorm=I=-35:TP=-3:LRA=11');bgm[:cut]=fade(
 main=decode(D/'public/main.mp3','loudnorm=I=-35:TP=-3:LRA=11');loop=main.copy();cross=sr
 while len(loop)<end-cut+sr*2:
  overlap=loop[-cross:]*np.linspace(1,0,cross)[:,None]+main[:cross]*np.linspace(0,1,cross)[:,None];loop=np.concatenate([loop[:-cross],overlap,main[cross:]])
-bgm[cut:end+sr*2]=fade(loop[:end-cut+sr*2],sr,2*sr);del loop
+bgm[cut:end+sr*2]=fade(loop[:end-cut+sr*2],int(.6*sr),2*sr);del loop
 # Return to the quiet opening theme for the ending, never lift after dialogue.
 a=decode(D/'public/ending.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-end].copy();bgm[end:end+len(a)]+=fade(a,sr*2,sr*4)
 for c in m['clips']:
@@ -36,5 +36,5 @@ voice+=bgm;del bgm
 peak=float(np.max(np.abs(voice)))
 if peak>.94:voice*=.94/peak
 save(D/'public/mixed.wav',voice)
-(P/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'durationSeconds':n/sr,'voiceLUFS':-18,'bgmLUFS':-35,'clipLUFS':-19,'premasterPeak':peak,'endingMusic':'TheFatRat - Unity / -38 LUFS','endingLift':False,'clips':m['clips']},ensure_ascii=False,indent=2))
+(P/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'durationSeconds':n/sr,'voiceLUFS':-18,'bgmLUFS':-35,'clipLUFS':-19,'premasterPeak':peak,'endingMusic':'TheFatRat - Unity / -38 LUFS','endingLift':False,'mainBgmStartFrame':m['mainStartFrame'],'mainFadeInFrames':18,'clips':m['clips']},ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

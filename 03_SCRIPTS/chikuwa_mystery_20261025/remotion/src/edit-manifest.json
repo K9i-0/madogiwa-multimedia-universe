@@ -3,7 +3,7 @@
     "width": 1280,
     "height": 720,
     "fps": 30,
-    "durationInFrames": 20021
+    "durationInFrames": 20104
   },
   "dialogue": [
     {
@@ -1637,9 +1637,9 @@
       "scene": "intro",
       "view": "title",
       "who": "metan",
-      "text": "なぜ、ちくわのあるところにソバヤが現れるのか。そして、人工ちくわとは何なのか。",
-      "pause": 9,
-      "speech": "なぜ、ちくわのあるところにソバヤが現れるのか。そして、人工ちくわとは何なのか。",
+      "text": "なぜ、ちくわのあるところにソバヤが現れるのか。そして、人工ちくわとは何なのか。今日は、この謎に迫るわ。",
+      "pause": 36,
+      "speech": "なぜ、ちくわのあるところにソバヤが現れるのか。そして、人工ちくわとは何なのか。今日は、この謎に迫るわ。",
       "reading_report": {
         "method": "dictionary",
         "scopes": [
@@ -1663,183 +1663,239 @@
           }
         ]
       },
-      "audio": "voice_010_bd25cc108124.wav",
-      "durationInFrames": 170,
-      "kana": "ナ'ゼ、_チクワノ'/ア'ル/トコロニ'/ソ'バヤガ/アラワレ'ル/ノカ'、ソ_シテ'、ジンコオチ'クワトワ/ナ'ニナ/ノカ'",
+      "audio": "voice_010_a40c1264793f.wav",
+      "durationInFrames": 226,
+      "kana": "ナ'ゼ、_チクワノ'/ア'ル/トコロニ'/ソ'バヤガ/アラワレ'ル/ノカ'、ソ_シテ'、ジンコオチ'クワトワ/ナ'ニナ/ノカ'、キョ'オワ、コノ'/ナゾニ'/セマ'ルワ",
       "envelope": [
         0.0,
-        0.0,
-        0.0143,
-        0.0495,
-        0.0683,
-        0.0381,
-        0.0207,
-        0.0374,
-        0.068,
-        0.0647,
-        0.0423,
-        0.0047,
-        0.0014,
+        0.0001,
+        0.0147,
+        0.0487,
+        0.0709,
+        0.0392,
+        0.0199,
+        0.0373,
+        0.0676,
+        0.063,
+        0.0419,
+        0.0049,
+        0.0013,
         0.0023,
         0.0009,
         0.0008,
         0.0011,
         0.0011,
-        0.0014,
-        0.0017,
         0.0012,
-        0.0015,
-        0.0022,
-        0.0005,
-        0.0052,
-        0.0229,
-        0.0245,
-        0.0013,
-        0.0154,
-        0.0597,
-        0.0621,
-        0.0918,
-        0.115,
-        0.0774,
-        0.0586,
-        0.056,
-        0.0863,
-        0.0934,
-        0.1202,
-        0.1018,
-        0.0595,
-        0.073,
-        0.0564,
-        0.005,
-        0.028,
-        0.028,
-        0.0023,
-        0.0303,
-        0.0698,
-        0.0552,
-        0.0929,
-        0.0574,
-        0.0584,
-        0.0701,
-        0.0372,
-        0.0323,
-        0.0382,
-        0.069,
-        0.0595,
-        0.0447,
-        0.1364,
-        0.1141,
-        0.0846,
-        0.1077,
-        0.1151,
-        0.0791,
-        0.031,
-        0.0755,
-        0.075,
-        0.0663,
-        0.0735,
-        0.0562,
-        0.1057,
-        0.1535,
-        0.1031,
-        0.0747,
-        0.135,
-        0.1071,
-        0.0624,
-        0.0901,
-        0.0482,
-        0.0566,
-        0.0488,
-        0.0509,
-        0.0549,
-        0.0389,
-        0.0057,
-        0.0132,
-        0.0336,
-        0.0483,
-        0.0462,
-        0.0072,
         0.0016,
-        0.0014,
-        0.0015,
-        0.001,
-        0.0018,
-        0.0006,
-        0.0007,
-        0.0065,
-        0.0158,
-        0.0443,
-        0.0416,
-        0.0272,
-        0.0251,
-        0.0038,
-        0.0046,
-        0.0626,
-        0.0778,
-        0.0568,
-        0.0041,
         0.0013,
+        0.0014,
+        0.0022,
+        0.0006,
+        0.0051,
+        0.0242,
+        0.0252,
+        0.0013,
+        0.0148,
+        0.0593,
+        0.06,
+        0.0868,
+        0.1162,
+        0.0781,
+        0.0597,
+        0.0579,
+        0.0856,
+        0.0925,
+        0.1207,
+        0.1017,
+        0.0599,
+        0.0714,
+        0.0557,
+        0.0049,
+        0.0277,
+        0.0261,
+        0.0022,
+        0.0297,
+        0.0685,
+        0.0533,
+        0.0904,
+        0.0545,
+        0.0581,
+        0.0688,
+        0.0364,
+        0.0312,
+        0.0369,
+        0.0685,
+        0.0601,
+        0.0417,
+        0.1343,
+        0.1158,
+        0.0851,
+        0.1093,
+        0.123,
+        0.0757,
+        0.0302,
+        0.0745,
+        0.0759,
+        0.0664,
+        0.0751,
+        0.0577,
+        0.1078,
+        0.1555,
+        0.1023,
+        0.0731,
+        0.1367,
+        0.109,
+        0.0624,
+        0.091,
+        0.0484,
+        0.0558,
+        0.0481,
+        0.0488,
+        0.0521,
+        0.0368,
+        0.0052,
+        0.0124,
+        0.0311,
+        0.0442,
+        0.0451,
+        0.0097,
+        0.0014,
+        0.0018,
+        0.0015,
+        0.0013,
+        0.0019,
+        0.0006,
+        0.001,
+        0.0067,
+        0.0153,
+        0.0451,
+        0.0417,
+        0.0275,
+        0.0256,
+        0.0037,
+        0.0046,
+        0.0631,
+        0.077,
+        0.0531,
+        0.004,
+        0.0012,
         0.0024,
         0.0009,
-        0.0021,
-        0.0013,
-        0.0023,
+        0.0017,
+        0.0015,
         0.0018,
-        0.0013,
-        0.0028,
-        0.0237,
-        0.042,
-        0.0679,
-        0.0692,
-        0.0537,
-        0.0192,
-        0.0039,
-        0.0413,
-        0.0809,
-        0.0849,
-        0.0728,
-        0.0151,
-        0.0077,
-        0.0322,
-        0.036,
-        0.0013,
-        0.0172,
-        0.0506,
-        0.0672,
-        0.1181,
-        0.0733,
-        0.0068,
-        0.0057,
-        0.0487,
-        0.0463,
-        0.0402,
-        0.044,
-        0.0363,
-        0.0343,
-        0.045,
-        0.0717,
-        0.0586,
-        0.0702,
-        0.0548,
-        0.0565,
-        0.0541,
-        0.0697,
-        0.0569,
-        0.0347,
-        0.048,
-        0.0326,
-        0.0028,
-        0.0119,
-        0.0367,
-        0.0333,
-        0.0333,
-        0.0081,
-        0.001,
+        0.0017,
+        0.0012,
         0.0024,
-        0.0009
+        0.0244,
+        0.0447,
+        0.0716,
+        0.081,
+        0.0612,
+        0.0193,
+        0.0038,
+        0.0408,
+        0.0787,
+        0.083,
+        0.0717,
+        0.016,
+        0.0075,
+        0.0316,
+        0.0368,
+        0.0013,
+        0.0176,
+        0.0507,
+        0.0677,
+        0.1279,
+        0.0749,
+        0.0087,
+        0.0046,
+        0.0479,
+        0.0455,
+        0.0451,
+        0.0561,
+        0.0405,
+        0.0303,
+        0.0473,
+        0.0776,
+        0.0564,
+        0.0687,
+        0.0529,
+        0.0502,
+        0.0482,
+        0.0712,
+        0.0601,
+        0.0396,
+        0.0465,
+        0.0275,
+        0.004,
+        0.0116,
+        0.0356,
+        0.052,
+        0.0603,
+        0.0113,
+        0.0018,
+        0.0022,
+        0.0018,
+        0.0015,
+        0.002,
+        0.0014,
+        0.0009,
+        0.0043,
+        0.0192,
+        0.0715,
+        0.0883,
+        0.0945,
+        0.0723,
+        0.0521,
+        0.0843,
+        0.0862,
+        0.0705,
+        0.026,
+        0.0034,
+        0.0023,
+        0.0017,
+        0.0019,
+        0.0018,
+        0.0012,
+        0.0018,
+        0.0005,
+        0.0068,
+        0.0419,
+        0.048,
+        0.0576,
+        0.0655,
+        0.0466,
+        0.0747,
+        0.1012,
+        0.0468,
+        0.0168,
+        0.0489,
+        0.065,
+        0.0597,
+        0.0751,
+        0.0467,
+        0.0293,
+        0.0384,
+        0.0584,
+        0.0448,
+        0.0611,
+        0.0959,
+        0.0789,
+        0.0445,
+        0.0636,
+        0.0418,
+        0.0412,
+        0.055,
+        0.0488,
+        0.0277,
+        0.0058,
+        0.0009,
+        0.0012,
+        0.0011
       ],
       "speaker": 2,
-      "querySHA": "bd25cc108124",
+      "querySHA": "a40c1264793f",
       "startFrame": 1445
     },
     {
@@ -2254,7 +2310,7 @@
       ],
       "speaker": 2,
       "querySHA": "acdc4bfed4f8",
-      "startFrame": 1624
+      "startFrame": 1707
     },
     {
       "id": "line-012",
@@ -2561,7 +2617,7 @@
       ],
       "speaker": 2,
       "querySHA": "0fc4634e8351",
-      "startFrame": 2020
+      "startFrame": 2103
     },
     {
       "id": "line-013",
@@ -2788,7 +2844,7 @@
       ],
       "speaker": 2,
       "querySHA": "b75547f5e517",
-      "startFrame": 2271
+      "startFrame": 2354
     },
     {
       "id": "line-014",
@@ -3023,7 +3079,7 @@
       ],
       "speaker": 3,
       "querySHA": "1c24bc66ae5a",
-      "startFrame": 2458
+      "startFrame": 2541
     },
     {
       "id": "line-015",
@@ -3289,7 +3345,7 @@
       ],
       "speaker": 2,
       "querySHA": "e33eb7311755",
-      "startFrame": 2680
+      "startFrame": 2763
     },
     {
       "id": "line-016",
@@ -3540,7 +3596,7 @@
       ],
       "speaker": 2,
       "querySHA": "55ffcdb4acbd",
-      "startFrame": 2905
+      "startFrame": 2988
     },
     {
       "id": "line-017",
@@ -3708,7 +3764,7 @@
       ],
       "speaker": 3,
       "querySHA": "748bb144fe3b",
-      "startFrame": 3138
+      "startFrame": 3221
     },
     {
       "id": "line-018",
@@ -3984,7 +4040,7 @@
       ],
       "speaker": 2,
       "querySHA": "3d86f3e38603",
-      "startFrame": 3293
+      "startFrame": 3376
     },
     {
       "id": "line-019",
@@ -4282,7 +4338,7 @@
       ],
       "speaker": 2,
       "querySHA": "4f0a07c04659",
-      "startFrame": 3542
+      "startFrame": 3625
     },
     {
       "id": "line-020",
@@ -4532,7 +4588,7 @@
       ],
       "speaker": 3,
       "querySHA": "860554b872b7",
-      "startFrame": 3800
+      "startFrame": 3883
     },
     {
       "id": "line-021",
@@ -4784,7 +4840,7 @@
       ],
       "speaker": 2,
       "querySHA": "e55bbb247894",
-      "startFrame": 4024
+      "startFrame": 4107
     },
     {
       "id": "line-022",
@@ -5008,7 +5064,7 @@
       ],
       "speaker": 3,
       "querySHA": "db1380df31c7",
-      "startFrame": 4258
+      "startFrame": 4341
     },
     {
       "id": "line-023",
@@ -5287,7 +5343,7 @@
       ],
       "speaker": 2,
       "querySHA": "39d6ede9fa41",
-      "startFrame": 4456
+      "startFrame": 4539
     },
     {
       "id": "line-024",
@@ -5545,7 +5601,7 @@
       ],
       "speaker": 3,
       "querySHA": "86394aa45edb",
-      "startFrame": 4717
+      "startFrame": 4800
     },
     {
       "id": "line-025",
@@ -5909,7 +5965,7 @@
       ],
       "speaker": 2,
       "querySHA": "38f28114e371",
-      "startFrame": 4962
+      "startFrame": 5045
     },
     {
       "id": "line-026",
@@ -6085,7 +6141,7 @@
       ],
       "speaker": 3,
       "querySHA": "424ea343da41",
-      "startFrame": 5299
+      "startFrame": 5382
     },
     {
       "id": "line-027",
@@ -6432,7 +6488,7 @@
       ],
       "speaker": 2,
       "querySHA": "5a1d44fbc9d8",
-      "startFrame": 5462
+      "startFrame": 5545
     },
     {
       "id": "line-028",
@@ -6578,7 +6634,7 @@
       ],
       "speaker": 3,
       "querySHA": "9295a9143b43",
-      "startFrame": 5791
+      "startFrame": 5874
     },
     {
       "id": "line-029",
@@ -6822,7 +6878,7 @@
       ],
       "speaker": 2,
       "querySHA": "5f885813d342",
-      "startFrame": 5924
+      "startFrame": 6007
     },
     {
       "id": "line-030",
@@ -6973,7 +7029,7 @@
       ],
       "speaker": 3,
       "querySHA": "7ccc7d80a513",
-      "startFrame": 6137
+      "startFrame": 6220
     },
     {
       "id": "line-031",
@@ -7311,7 +7367,7 @@
       ],
       "speaker": 2,
       "querySHA": "61886032929a",
-      "startFrame": 6275
+      "startFrame": 6358
     },
     {
       "id": "line-032",
@@ -7470,7 +7526,7 @@
       ],
       "speaker": 3,
       "querySHA": "48849af139bb",
-      "startFrame": 6543
+      "startFrame": 6626
     },
     {
       "id": "line-033",
@@ -7773,7 +7829,7 @@
       ],
       "speaker": 2,
       "querySHA": "b78c8c432fc3",
-      "startFrame": 6676
+      "startFrame": 6759
     },
     {
       "id": "line-034",
@@ -7999,7 +8055,7 @@
       ],
       "speaker": 3,
       "querySHA": "31993627a80e",
-      "startFrame": 6939
+      "startFrame": 7022
     },
     {
       "id": "line-035",
@@ -8307,7 +8363,7 @@
       ],
       "speaker": 2,
       "querySHA": "b922e74b8ec8",
-      "startFrame": 7152
+      "startFrame": 7235
     },
     {
       "id": "line-036",
@@ -8508,7 +8564,7 @@
       ],
       "speaker": 3,
       "querySHA": "d3db4019f24b",
-      "startFrame": 7433
+      "startFrame": 7516
     },
     {
       "id": "line-037",
@@ -8802,7 +8858,7 @@
       ],
       "speaker": 2,
       "querySHA": "0ffefd64e612",
-      "startFrame": 7621
+      "startFrame": 7704
     },
     {
       "id": "line-038",
@@ -8955,7 +9011,7 @@
       ],
       "speaker": 3,
       "querySHA": "c27745789ce8",
-      "startFrame": 7864
+      "startFrame": 7947
     },
     {
       "id": "line-039",
@@ -9143,7 +9199,7 @@
       ],
       "speaker": 2,
       "querySHA": "ae418804998f",
-      "startFrame": 8004
+      "startFrame": 8087
     },
     {
       "id": "line-040",
@@ -9208,7 +9264,7 @@
       ],
       "speaker": 3,
       "querySHA": "3a0619c1062a",
-      "startFrame": 8181
+      "startFrame": 8264
     },
     {
       "id": "line-041",
@@ -9331,7 +9387,7 @@
       ],
       "speaker": 2,
       "querySHA": "d3e8280afb24",
-      "startFrame": 8244
+      "startFrame": 8327
     },
     {
       "id": "line-042",
@@ -9390,7 +9446,7 @@
       ],
       "speaker": 3,
       "querySHA": "4bf2a3a1c426",
-      "startFrame": 8365
+      "startFrame": 8448
     },
     {
       "id": "line-043",
@@ -9635,7 +9691,7 @@
       ],
       "speaker": 2,
       "querySHA": "029fcbf67449",
-      "startFrame": 8422
+      "startFrame": 8505
     },
     {
       "id": "line-044",
@@ -9751,7 +9807,7 @@
       ],
       "speaker": 3,
       "querySHA": "990c762cbb11",
-      "startFrame": 8649
+      "startFrame": 8732
     },
     {
       "id": "line-045",
@@ -9897,7 +9953,7 @@
       ],
       "speaker": 2,
       "querySHA": "15078a648cfd",
-      "startFrame": 8752
+      "startFrame": 8835
     },
     {
       "id": "line-046",
@@ -9959,7 +10015,7 @@
       ],
       "speaker": 3,
       "querySHA": "1cab080b2fd0",
-      "startFrame": 8880
+      "startFrame": 8963
     },
     {
       "id": "line-047",
@@ -10147,7 +10203,7 @@
       ],
       "speaker": 2,
       "querySHA": "7f81018c9302",
-      "startFrame": 8929
+      "startFrame": 9012
     },
     {
       "id": "line-048",
@@ -10209,7 +10265,7 @@
       ],
       "speaker": 3,
       "querySHA": "c74103151ffb",
-      "startFrame": 9090
+      "startFrame": 9173
     },
     {
       "id": "line-049",
@@ -10342,7 +10398,7 @@
       ],
       "speaker": 2,
       "querySHA": "1d327836f0cb",
-      "startFrame": 9139
+      "startFrame": 9222
     },
     {
       "id": "line-050",
@@ -10619,7 +10675,7 @@
       ],
       "speaker": 2,
       "querySHA": "45b10237e071",
-      "startFrame": 9241
+      "startFrame": 9324
     },
     {
       "id": "line-051",
@@ -10742,7 +10798,7 @@
       ],
       "speaker": 3,
       "querySHA": "9d43deaa8ef8",
-      "startFrame": 9500
+      "startFrame": 9583
     },
     {
       "id": "line-052",
@@ -10882,7 +10938,7 @@
       ],
       "speaker": 2,
       "querySHA": "2c96000882fa",
-      "startFrame": 9601
+      "startFrame": 9684
     },
     {
       "id": "line-053",
@@ -10957,7 +11013,7 @@
       ],
       "speaker": 3,
       "querySHA": "76687cd4429a",
-      "startFrame": 9723
+      "startFrame": 9806
     },
     {
       "id": "line-054",
@@ -11243,7 +11299,7 @@
       ],
       "speaker": 2,
       "querySHA": "60ab6c8658cd",
-      "startFrame": 9785
+      "startFrame": 9868
     },
     {
       "id": "line-055",
@@ -11326,7 +11382,7 @@
       ],
       "speaker": 3,
       "querySHA": "6c1e7f01b4dd",
-      "startFrame": 10044
+      "startFrame": 10127
     },
     {
       "id": "line-056",
@@ -11510,7 +11566,7 @@
       ],
       "speaker": 2,
       "querySHA": "bd5164dc9976",
-      "startFrame": 10114
+      "startFrame": 10197
     },
     {
       "id": "line-057",
@@ -11616,7 +11672,7 @@
       ],
       "speaker": 3,
       "querySHA": "76aedf26da08",
-      "startFrame": 10280
+      "startFrame": 10363
     },
     {
       "id": "line-058",
@@ -11868,7 +11924,7 @@
       ],
       "speaker": 2,
       "querySHA": "acf7b0c81fd3",
-      "startFrame": 10360
+      "startFrame": 10443
     },
     {
       "id": "line-059",
@@ -11957,7 +12013,7 @@
       ],
       "speaker": 3,
       "querySHA": "248bbb0e225f",
-      "startFrame": 10593
+      "startFrame": 10676
     },
     {
       "id": "line-060",
@@ -12278,7 +12334,7 @@
       ],
       "speaker": 2,
       "querySHA": "1c656ac93d79",
-      "startFrame": 10671
+      "startFrame": 10754
     },
     {
       "id": "line-061",
@@ -12389,7 +12445,7 @@
       ],
       "speaker": 3,
       "querySHA": "965ebe497abb",
-      "startFrame": 10957
+      "startFrame": 11040
     },
     {
       "id": "line-062",
@@ -12560,7 +12616,7 @@
       ],
       "speaker": 2,
       "querySHA": "2d4f069f47e7",
-      "startFrame": 11034
+      "startFrame": 11117
     },
     {
       "id": "line-063",
@@ -12778,7 +12834,7 @@
       ],
       "speaker": 3,
       "querySHA": "581ee31f3daa",
-      "startFrame": 11187
+      "startFrame": 11270
     },
     {
       "id": "line-064",
@@ -13058,7 +13114,7 @@
       ],
       "speaker": 2,
       "querySHA": "a08976bc8b5e",
-      "startFrame": 11392
+      "startFrame": 11475
     },
     {
       "id": "line-065",
@@ -13283,7 +13339,7 @@
       ],
       "speaker": 3,
       "querySHA": "573ea98cfa6b",
-      "startFrame": 11645
+      "startFrame": 11728
     },
     {
       "id": "line-066",
@@ -13504,7 +13560,7 @@
       ],
       "speaker": 2,
       "querySHA": "db4de04d37bb",
-      "startFrame": 11857
+      "startFrame": 11940
     },
     {
       "id": "line-067",
@@ -13648,7 +13704,7 @@
       ],
       "speaker": 3,
       "querySHA": "3201122509cb",
-      "startFrame": 12047
+      "startFrame": 12130
     },
     {
       "id": "line-068",
@@ -13814,7 +13870,7 @@
       ],
       "speaker": 2,
       "querySHA": "cfa7ae67d293",
-      "startFrame": 12178
+      "startFrame": 12261
     },
     {
       "id": "line-069",
@@ -14068,7 +14124,7 @@
       ],
       "speaker": 2,
       "querySHA": "65551eb35eba",
-      "startFrame": 12326
+      "startFrame": 12409
     },
     {
       "id": "line-070",
@@ -14200,7 +14256,7 @@
       ],
       "speaker": 3,
       "querySHA": "1e0c1fd5c00b",
-      "startFrame": 12562
+      "startFrame": 12645
     },
     {
       "id": "line-071",
@@ -14259,7 +14315,7 @@
       ],
       "speaker": 2,
       "querySHA": "c6eb26f4a0bb",
-      "startFrame": 12668
+      "startFrame": 12751
     },
     {
       "id": "line-072",
@@ -14320,7 +14376,7 @@
       ],
       "speaker": 3,
       "querySHA": "a4df8f1025a3",
-      "startFrame": 12725
+      "startFrame": 12808
     },
     {
       "id": "line-073",
@@ -14537,7 +14593,7 @@
       ],
       "speaker": 2,
       "querySHA": "6a7f3b18acca",
-      "startFrame": 12784
+      "startFrame": 12867
     },
     {
       "id": "line-074",
@@ -14660,7 +14716,7 @@
       ],
       "speaker": 3,
       "querySHA": "95f55d1709c5",
-      "startFrame": 12971
+      "startFrame": 13054
     },
     {
       "id": "line-075",
@@ -14884,7 +14940,7 @@
       ],
       "speaker": 2,
       "querySHA": "525ac35af2ca",
-      "startFrame": 13068
+      "startFrame": 13151
     },
     {
       "id": "line-076",
@@ -15015,7 +15071,7 @@
       ],
       "speaker": 3,
       "querySHA": "d7dc654d2a7f",
-      "startFrame": 13265
+      "startFrame": 13348
     },
     {
       "id": "line-077",
@@ -15151,7 +15207,7 @@
       ],
       "speaker": 2,
       "querySHA": "847d8da4f82f",
-      "startFrame": 13370
+      "startFrame": 13453
     },
     {
       "id": "line-078",
@@ -15238,7 +15294,7 @@
       ],
       "speaker": 3,
       "querySHA": "8b66d3dbc17a",
-      "startFrame": 13488
+      "startFrame": 13571
     },
     {
       "id": "line-079",
@@ -15458,7 +15514,7 @@
       ],
       "speaker": 2,
       "querySHA": "12d790792280",
-      "startFrame": 13562
+      "startFrame": 13645
     },
     {
       "id": "line-080",
@@ -15645,7 +15701,7 @@
       ],
       "speaker": 2,
       "querySHA": "567115f9d8d2",
-      "startFrame": 13764
+      "startFrame": 13847
     },
     {
       "id": "line-081",
@@ -15794,7 +15850,7 @@
       ],
       "speaker": 3,
       "querySHA": "0bf4645274bf",
-      "startFrame": 13933
+      "startFrame": 14016
     },
     {
       "id": "line-082",
@@ -15992,7 +16048,7 @@
       ],
       "speaker": 2,
       "querySHA": "33dc473ab4d4",
-      "startFrame": 14311
+      "startFrame": 14394
     },
     {
       "id": "line-083",
@@ -16108,7 +16164,7 @@
       ],
       "speaker": 2,
       "querySHA": "32f3af999e94",
-      "startFrame": 14477
+      "startFrame": 14560
     },
     {
       "id": "line-084",
@@ -16356,7 +16412,7 @@
       ],
       "speaker": 2,
       "querySHA": "cd3e391d7dd1",
-      "startFrame": 14575
+      "startFrame": 14658
     },
     {
       "id": "line-085",
@@ -16505,7 +16561,7 @@
       ],
       "speaker": 3,
       "querySHA": "0e95e5c62bab",
-      "startFrame": 14796
+      "startFrame": 14879
     },
     {
       "id": "line-086",
@@ -16775,7 +16831,7 @@
       ],
       "speaker": 2,
       "querySHA": "1ccee6520f8d",
-      "startFrame": 14919
+      "startFrame": 15002
     },
     {
       "id": "line-087",
@@ -16908,7 +16964,7 @@
       ],
       "speaker": 3,
       "querySHA": "f58f64c0524a",
-      "startFrame": 15171
+      "startFrame": 15254
     },
     {
       "id": "line-088",
@@ -17055,7 +17111,7 @@
       ],
       "speaker": 2,
       "querySHA": "aad78a38f614",
-      "startFrame": 15291
+      "startFrame": 15374
     },
     {
       "id": "line-089",
@@ -17153,7 +17209,7 @@
       ],
       "speaker": 3,
       "querySHA": "154c77b00305",
-      "startFrame": 15436
+      "startFrame": 15519
     },
     {
       "id": "line-090",
@@ -17450,7 +17506,7 @@
       ],
       "speaker": 2,
       "querySHA": "2b8dc26a840a",
-      "startFrame": 15532
+      "startFrame": 15615
     },
     {
       "id": "line-091",
@@ -17582,7 +17638,7 @@
       ],
       "speaker": 3,
       "querySHA": "1fd831e3bcdd",
-      "startFrame": 15790
+      "startFrame": 15873
     },
     {
       "id": "line-092",
@@ -17795,7 +17851,7 @@
       ],
       "speaker": 2,
       "querySHA": "320acd263fc9",
-      "startFrame": 15909
+      "startFrame": 15992
     },
     {
       "id": "line-093",
@@ -17978,7 +18034,7 @@
       ],
       "speaker": 3,
       "querySHA": "77a1daaa7dd0",
-      "startFrame": 16091
+      "startFrame": 16174
     },
     {
       "id": "line-094",
@@ -18078,7 +18134,7 @@
       ],
       "speaker": 2,
       "querySHA": "348f03e618ec",
-      "startFrame": 16247
+      "startFrame": 16330
     },
     {
       "id": "line-095",
@@ -18176,7 +18232,7 @@
       ],
       "speaker": 3,
       "querySHA": "bb7548f0315e",
-      "startFrame": 16329
+      "startFrame": 16412
     },
     {
       "id": "line-096",
@@ -18346,7 +18402,7 @@
       ],
       "speaker": 2,
       "querySHA": "9251121e3818",
-      "startFrame": 16414
+      "startFrame": 16497
     },
     {
       "id": "line-097",
@@ -18573,7 +18629,7 @@
       ],
       "speaker": 3,
       "querySHA": "7a11c10f3e79",
-      "startFrame": 16566
+      "startFrame": 16649
     },
     {
       "id": "line-098",
@@ -18792,7 +18848,7 @@
       ],
       "speaker": 2,
       "querySHA": "c7d15d49b5f4",
-      "startFrame": 16756
+      "startFrame": 16839
     },
     {
       "id": "line-099",
@@ -18870,7 +18926,7 @@
       ],
       "speaker": 3,
       "querySHA": "dd37cdbacc49",
-      "startFrame": 16935
+      "startFrame": 17018
     },
     {
       "id": "line-100",
@@ -19077,7 +19133,7 @@
       ],
       "speaker": 2,
       "querySHA": "f1108758b420",
-      "startFrame": 17000
+      "startFrame": 17083
     },
     {
       "id": "line-101",
@@ -19260,7 +19316,7 @@
       ],
       "speaker": 3,
       "querySHA": "234fcad90af9",
-      "startFrame": 17176
+      "startFrame": 17259
     },
     {
       "id": "line-102",
@@ -19429,7 +19485,7 @@
       ],
       "speaker": 2,
       "querySHA": "16dffd03a822",
-      "startFrame": 17321
+      "startFrame": 17404
     },
     {
       "id": "line-103",
@@ -19596,7 +19652,7 @@
       ],
       "speaker": 3,
       "querySHA": "089e5ae1c4d6",
-      "startFrame": 17488
+      "startFrame": 17571
     },
     {
       "id": "line-104",
@@ -19716,7 +19772,7 @@
       ],
       "speaker": 2,
       "querySHA": "6ea684d1fcbb",
-      "startFrame": 17640
+      "startFrame": 17723
     },
     {
       "id": "line-105",
@@ -19893,7 +19949,7 @@
       ],
       "speaker": 3,
       "querySHA": "8b8e2ec69207",
-      "startFrame": 17742
+      "startFrame": 17825
     },
     {
       "id": "line-106",
@@ -20008,7 +20064,7 @@
       ],
       "speaker": 2,
       "querySHA": "046f32dee89e",
-      "startFrame": 17906
+      "startFrame": 17989
     },
     {
       "id": "line-107",
@@ -20146,7 +20202,7 @@
       ],
       "speaker": 3,
       "querySHA": "c5b3f6ba3362",
-      "startFrame": 18003
+      "startFrame": 18086
     },
     {
       "id": "line-108",
@@ -20382,7 +20438,7 @@
       ],
       "speaker": 2,
       "querySHA": "2cf42d877ae5",
-      "startFrame": 18128
+      "startFrame": 18211
     },
     {
       "id": "line-109",
@@ -20582,7 +20638,7 @@
       ],
       "speaker": 3,
       "querySHA": "1db41bbaa58c",
-      "startFrame": 18457
+      "startFrame": 18540
     },
     {
       "id": "line-110",
@@ -20998,7 +21054,7 @@
       ],
       "speaker": 2,
       "querySHA": "124f9cd37fbb",
-      "startFrame": 18631
+      "startFrame": 18714
     },
     {
       "id": "line-111",
@@ -21209,7 +21265,7 @@
       ],
       "speaker": 3,
       "querySHA": "5aad30e9d1e8",
-      "startFrame": 19020
+      "startFrame": 19103
     },
     {
       "id": "line-112",
@@ -21375,7 +21431,7 @@
       ],
       "speaker": 2,
       "querySHA": "3c4d29f9de6d",
-      "startFrame": 19204
+      "startFrame": 19287
     },
     {
       "id": "line-113",
@@ -21550,7 +21606,7 @@
       ],
       "speaker": 3,
       "querySHA": "2a36f580a285",
-      "startFrame": 19352
+      "startFrame": 19435
     },
     {
       "id": "line-114",
@@ -21755,7 +21811,7 @@
       ],
       "speaker": 2,
       "querySHA": "5c8aa7436632",
-      "startFrame": 19514
+      "startFrame": 19597
     },
     {
       "id": "line-115",
@@ -21876,7 +21932,7 @@
       ],
       "speaker": 3,
       "querySHA": "65104f6f7dba",
-      "startFrame": 19705
+      "startFrame": 19788
     },
     {
       "id": "line-116",
@@ -22001,7 +22057,7 @@
       ],
       "speaker": 2,
       "querySHA": "9bdf0c3492e1",
-      "startFrame": 19824
+      "startFrame": 19907
     }
   ],
   "captions": [
@@ -22067,673 +22123,673 @@
     },
     {
       "startFrame": 1445,
-      "endFrame": 1615,
-      "text": "なぜ、ちくわのあるところにソバヤが\n現れるのか。そして、人工ちくわとは何なのか。",
+      "endFrame": 1671,
+      "text": "なぜ、ちくわのあるところにソバヤが現れるのか。そして、\n人工ちくわとは何なのか。今日は、この謎に迫るわ。",
       "lineId": "line-010"
     },
     {
-      "startFrame": 1624,
-      "endFrame": 1843,
+      "startFrame": 1707,
+      "endFrame": 1926,
       "text": "めたんのミステリー研究所へ、ようこそ。このチャンネルでは、\n身近な常識に潜む謎を、研究員たちの調査とともに",
       "lineId": "line-011"
     },
     {
-      "startFrame": 1843,
-      "endFrame": 2011,
+      "startFrame": 1926,
+      "endFrame": 2094,
       "text": "追っていきます。今夜のテーマは、あなたが\n食べたちくわは、本当にちくわだったのか。",
       "lineId": "line-011"
     },
     {
-      "startFrame": 2020,
-      "endFrame": 2262,
+      "startFrame": 2103,
+      "endFrame": 2345,
       "text": "まず、一般的な分類を確認しましょう。ちくわは、\n管状動物門、真管綱、チクワ目に属する動物よ。",
       "lineId": "line-012"
     },
     {
-      "startFrame": 2271,
-      "endFrame": 2449,
+      "startFrame": 2354,
+      "endFrame": 2532,
       "text": "海産のウミチクワと、山産のヤマチクワは、\n共通祖先から分かれた別の種とされているわ。",
       "lineId": "line-013"
     },
     {
-      "startFrame": 2458,
-      "endFrame": 2666,
+      "startFrame": 2541,
+      "endFrame": 2749,
       "text": "このあたりは義務教育でみんな習うのだ。ちくわが\n生き物なんて、いまさら説明することでもないのだ。",
       "lineId": "line-014"
     },
     {
-      "startFrame": 2680,
-      "endFrame": 2896,
+      "startFrame": 2763,
+      "endFrame": 2979,
       "text": "中央の穴は、水や空気を通す通水腔。体内の細い\n水路とつながり、物質の交換を助けているの。",
       "lineId": "line-015"
     },
     {
-      "startFrame": 2905,
-      "endFrame": 3129,
+      "startFrame": 2988,
+      "endFrame": 3212,
       "text": "明確な頭部を持たず、神経が身体全体に広がる。\n初期の動物に見られる、単純な体制を残しているわ。",
       "lineId": "line-016"
     },
     {
-      "startFrame": 3138,
-      "endFrame": 3279,
+      "startFrame": 3221,
+      "endFrame": 3362,
       "text": "昔の特徴は残っていても、ちくわなりに進化は続けているのだ。",
       "lineId": "line-017"
     },
     {
-      "startFrame": 3293,
-      "endFrame": 3533,
+      "startFrame": 3376,
+      "endFrame": 3616,
       "text": "ところが広域未確認生物研究所の中口研究員は、市販の\nちくわに、生き物ではないものが混ざっていると主張しているわ。",
       "lineId": "line-018"
     },
     {
-      "startFrame": 3542,
-      "endFrame": 3791,
+      "startFrame": 3625,
+      "endFrame": 3874,
       "text": "購入したちくわを分析し、魚肉に似たタンパク質と、加熱で\n固まった組織を確認。原料は魚ではないかと考えたの。",
       "lineId": "line-019"
     },
     {
-      "startFrame": 3800,
-      "endFrame": 4010,
+      "startFrame": 3883,
+      "endFrame": 4093,
       "text": "ちくわを調べたのだから、ちくわの成分なのだ。\n焼いたちくわは、当然、加熱されているのだ。",
       "lineId": "line-020"
     },
     {
-      "startFrame": 4024,
-      "endFrame": 4249,
+      "startFrame": 4107,
+      "endFrame": 4332,
       "text": "そこで魚のすり身に塩を加えて練り、棒に巻いて加熱。\nちくわに似た、弾力のある筒状の食品を再現したわ。",
       "lineId": "line-021"
     },
     {
-      "startFrame": 4258,
-      "endFrame": 4442,
+      "startFrame": 4341,
+      "endFrame": 4525,
       "text": "魚を潰して、ちくわの替え玉を作ったのだ？\n その手間で、本物を採ってくるのだ。",
       "lineId": "line-022"
     },
     {
-      "startFrame": 4456,
-      "endFrame": 4654,
+      "startFrame": 4539,
+      "endFrame": 4737,
       "text": "研究員が恐れているのは、この替え玉が、本物に混ぜて\n売られている可能性よ。私たちは、気づかないまま",
       "lineId": "line-023"
     },
     {
-      "startFrame": 4654,
-      "endFrame": 4708,
+      "startFrame": 4737,
+      "endFrame": 4791,
       "text": "食べているのかもしれない。",
       "lineId": "line-023"
     },
     {
-      "startFrame": 4717,
-      "endFrame": 4948,
+      "startFrame": 4800,
+      "endFrame": 5031,
       "text": "そんなものを混ぜられたら困るのだ。でも、研究員が\n作った偽物を、店で売っている証拠にはできないのだ。",
       "lineId": "line-024"
     },
     {
-      "startFrame": 4962,
-      "endFrame": 5224,
+      "startFrame": 5045,
+      "endFrame": 5307,
       "text": "中口研究員は、購入品の一部に、不自然なほど均一な穴と、\n継ぎ目のような跡があると指摘したわ。生き物の身体ではなく、",
       "lineId": "line-025"
     },
     {
-      "startFrame": 5224,
-      "endFrame": 5290,
+      "startFrame": 5307,
+      "endFrame": 5373,
       "text": "型で作った痕跡ではないかと。",
       "lineId": "line-025"
     },
     {
-      "startFrame": 5299,
-      "endFrame": 5448,
+      "startFrame": 5382,
+      "endFrame": 5531,
       "text": "形のいいちくわを選んで袋に詰めたら、\n偽造の容疑をかけられたのだ。",
       "lineId": "line-026"
     },
     {
-      "startFrame": 5462,
-      "endFrame": 5711,
+      "startFrame": 5545,
+      "endFrame": 5794,
       "text": "もし偽物が本物に混ざり、同じ売り場に並んでいたら、食卓に\n届くころには誰も疑わない。研究員は、このすり替えを支える",
       "lineId": "line-027"
     },
     {
-      "startFrame": 5711,
-      "endFrame": 5782,
+      "startFrame": 5794,
+      "endFrame": 5865,
       "text": "国家規模の組織があると考えたわ。",
       "lineId": "line-027"
     },
     {
-      "startFrame": 5791,
-      "endFrame": 5910,
+      "startFrame": 5874,
+      "endFrame": 5993,
       "text": "穴がきれいなだけで、国家ぐるみの食品偽装にするな。",
       "lineId": "line-028"
     },
     {
-      "startFrame": 5924,
-      "endFrame": 6128,
+      "startFrame": 6007,
+      "endFrame": 6211,
       "text": "ちくわという生物を模倣し、日常の食卓へ送り込む。\nその本当の目的は、まだ分かっていないの。",
       "lineId": "line-029"
     },
     {
-      "startFrame": 6137,
-      "endFrame": 6261,
+      "startFrame": 6220,
+      "endFrame": 6344,
       "text": "目的の前に、流通しているという証拠が足りないのだ。",
       "lineId": "line-030"
     },
     {
-      "startFrame": 6275,
-      "endFrame": 6534,
+      "startFrame": 6358,
+      "endFrame": 6617,
       "text": "一方、狭間文明研究所の霜重研究員は、魚肉を竹に巻いて\n焼く方法が、古い文献に記されていることを確認したわ。",
       "lineId": "line-031"
     },
     {
-      "startFrame": 6543,
-      "endFrame": 6662,
+      "startFrame": 6626,
+      "endFrame": 6745,
       "text": "昔にも、ちくわの偽物を作る暇な人がいたのだな。",
       "lineId": "line-032"
     },
     {
-      "startFrame": 6676,
-      "endFrame": 6930,
+      "startFrame": 6759,
+      "endFrame": 7013,
       "text": "時代の異なる資料にも、同じような工程がある。霜重研究員は、\n人工ちくわの製造が長く続いてきた証拠と考えたの。",
       "lineId": "line-033"
     },
     {
-      "startFrame": 6939,
-      "endFrame": 7138,
+      "startFrame": 7022,
+      "endFrame": 7221,
       "text": "こんな古文書の画像、いまならAIでいくらでも\n捏造できるのだ。現物は確認したのだ？",
       "lineId": "line-034"
     },
     {
-      "startFrame": 7152,
-      "endFrame": 7424,
+      "startFrame": 7235,
+      "endFrame": 7507,
       "text": "霜重研究員は、画像に残る製法が、何度も政権交代を\n生き延びている点に注目。政府より長く存在する組織を疑ったわ。",
       "lineId": "line-035"
     },
     {
-      "startFrame": 7433,
-      "endFrame": 7607,
+      "startFrame": 7516,
+      "endFrame": 7690,
       "text": "現物の確認はどうしたのだ。レシピが\n長持ちしただけで、秘密結社を作るな。",
       "lineId": "line-036"
     },
     {
-      "startFrame": 7621,
-      "endFrame": 7855,
+      "startFrame": 7704,
+      "endFrame": 7938,
       "text": "人工ちくわの闇に迫るため、研究員は、日本の\n大手加工食品メーカー、T社への潜入調査を決行したの。",
       "lineId": "line-037"
     },
     {
-      "startFrame": 7864,
-      "endFrame": 7990,
+      "startFrame": 7947,
+      "endFrame": 8073,
       "text": "ちくわを洗って袋に詰める工場に、何の闇があるのだ。",
       "lineId": "line-038"
     },
     {
-      "startFrame": 8004,
-      "endFrame": 8156,
+      "startFrame": 8087,
+      "endFrame": 8239,
       "text": "しかし、その直後。霜重研究員は、現地で身柄を拘束されたわ。",
       "lineId": "line-039"
     },
     {
-      "startFrame": 8181,
-      "endFrame": 8219,
+      "startFrame": 8264,
+      "endFrame": 8302,
       "text": "何をしたのだ？",
       "lineId": "line-040"
     },
     {
-      "startFrame": 8244,
-      "endFrame": 8340,
+      "startFrame": 8327,
+      "endFrame": 8423,
       "text": "表向きの理由は、不法侵入とされているわ。",
       "lineId": "line-041"
     },
     {
-      "startFrame": 8365,
-      "endFrame": 8397,
+      "startFrame": 8448,
+      "endFrame": 8480,
       "text": "表向き？",
       "lineId": "line-042"
     },
     {
-      "startFrame": 8422,
-      "endFrame": 8640,
+      "startFrame": 8505,
+      "endFrame": 8723,
       "text": "真相に近づいた研究者の逮捕。私は、背後にある\n闇の組織が、彼の調査を妨害したと考えているわ。",
       "lineId": "line-043"
     },
     {
-      "startFrame": 8649,
-      "endFrame": 8738,
+      "startFrame": 8732,
+      "endFrame": 8821,
       "text": "まず、取材の約束はしていたのだ？",
       "lineId": "line-044"
     },
     {
-      "startFrame": 8752,
-      "endFrame": 8871,
+      "startFrame": 8835,
+      "endFrame": 8954,
       "text": "事前に知らせれば、都合の悪いものを\n隠されるおそれがあるでしょう。",
       "lineId": "line-045"
     },
     {
-      "startFrame": 8880,
-      "endFrame": 8915,
+      "startFrame": 8963,
+      "endFrame": 8998,
       "text": "アポなしなのだ。",
       "lineId": "line-046"
     },
     {
-      "startFrame": 8929,
-      "endFrame": 9081,
+      "startFrame": 9012,
+      "endFrame": 9164,
       "text": "また、霜重研究員は訪問にあたり、\n緊張を解くために飲酒していたわ。",
       "lineId": "line-047"
     },
     {
-      "startFrame": 9090,
-      "endFrame": 9125,
+      "startFrame": 9173,
+      "endFrame": 9208,
       "text": "取材前に？",
       "lineId": "line-048"
     },
     {
-      "startFrame": 9139,
-      "endFrame": 9232,
+      "startFrame": 9222,
+      "endFrame": 9315,
       "text": "本人によれば、かなり気が大きくなっていたそうよ。",
       "lineId": "line-049"
     },
     {
-      "startFrame": 9241,
-      "endFrame": 9491,
+      "startFrame": 9324,
+      "endFrame": 9574,
       "text": "到着後は受付で説明を要求。制止する警備員を振り切って\n敷地に入り、酔って暴れたため、警察に逮捕されたの。",
       "lineId": "line-050"
     },
     {
-      "startFrame": 9500,
-      "endFrame": 9587,
+      "startFrame": 9583,
+      "endFrame": 9670,
       "text": "逮捕までに止まれる場所が何個もあったのだ。",
       "lineId": "line-051"
     },
     {
-      "startFrame": 9601,
-      "endFrame": 9714,
+      "startFrame": 9684,
+      "endFrame": 9797,
       "text": "注目すべきは、警備員と警察が連携していたことよ。",
       "lineId": "line-052"
     },
     {
-      "startFrame": 9723,
-      "endFrame": 9771,
+      "startFrame": 9806,
+      "endFrame": 9854,
       "text": "通報したからなのだ。",
       "lineId": "line-053"
     },
     {
-      "startFrame": 9785,
-      "endFrame": 10035,
+      "startFrame": 9868,
+      "endFrame": 10118,
       "text": "一食品メーカーの問題に、公的機関が介入した。研究員は、\nこの一件で企業と国家を結ぶ線が見えたと話しているわ。",
       "lineId": "line-054"
     },
     {
-      "startFrame": 10044,
-      "endFrame": 10100,
+      "startFrame": 10127,
+      "endFrame": 10183,
       "text": "通報の電話線なのだ。",
       "lineId": "line-055"
     },
     {
-      "startFrame": 10114,
-      "endFrame": 10271,
+      "startFrame": 10197,
+      "endFrame": 10354,
       "text": "調査報告書には、外部勢力の介入に\nより、調査中断と記されているわ。",
       "lineId": "line-056"
     },
     {
-      "startFrame": 10280,
-      "endFrame": 10346,
+      "startFrame": 10363,
+      "endFrame": 10429,
       "text": "自分が暴れたところも書くのだ。",
       "lineId": "line-057"
     },
     {
-      "startFrame": 10360,
-      "endFrame": 10568,
+      "startFrame": 10443,
+      "endFrame": 10651,
       "text": "なお、霜重研究員は、不法侵入に加えて、\n猥褻物陳列罪の容疑でも逮捕されているわ。",
       "lineId": "line-058"
     },
     {
-      "startFrame": 10593,
-      "endFrame": 10646,
+      "startFrame": 10676,
+      "endFrame": 10729,
       "text": "酒癖が悪すぎるのだ。",
       "lineId": "line-059"
     },
     {
-      "startFrame": 10671,
-      "endFrame": 10948,
+      "startFrame": 10754,
+      "endFrame": 11031,
       "text": "その後、中央映像解析センターの林研究員は、T社の工場見\n学動画に、魚肉からちくわを作る工程が映っていると指摘したわ。",
       "lineId": "line-060"
     },
     {
-      "startFrame": 10957,
-      "endFrame": 11020,
+      "startFrame": 11040,
+      "endFrame": 11103,
       "text": "霜重は何をしに行ったのだ。",
       "lineId": "line-061"
     },
     {
-      "startFrame": 11034,
-      "endFrame": 11178,
+      "startFrame": 11117,
+      "endFrame": 11261,
       "text": "あえて公開することで、隠しているものは\nないと思わせている可能性があるわね。",
       "lineId": "line-062"
     },
     {
-      "startFrame": 11187,
-      "endFrame": 11378,
+      "startFrame": 11270,
+      "endFrame": 11461,
       "text": "工場の紹介用に作った模型かもしれないのだ。\n動かないちくわは、展示に便利なのだ。",
       "lineId": "line-063"
     },
     {
-      "startFrame": 11392,
-      "endFrame": 11636,
+      "startFrame": 11475,
+      "endFrame": 11719,
       "text": "林研究員は、映像の中で、魚肉の投入から筒状の\n製品が出てくるまで、連続した工程を確認しているわ。",
       "lineId": "line-064"
     },
     {
-      "startFrame": 11645,
-      "endFrame": 11843,
+      "startFrame": 11728,
+      "endFrame": 11926,
       "text": "その筒が泳ぐところまで見せるのだ。形を\n似せただけで、生き物を作ったことにはならないのだ。",
       "lineId": "line-065"
     },
     {
-      "startFrame": 11857,
-      "endFrame": 12038,
+      "startFrame": 11940,
+      "endFrame": 12121,
       "text": "そこで過去の映像を分析。海でも山でも、\nソバヤがちくわを捕食していることを確認したの。",
       "lineId": "line-066"
     },
     {
-      "startFrame": 12047,
-      "endFrame": 12164,
+      "startFrame": 12130,
+      "endFrame": 12247,
       "text": "ちくわの天敵なのだ。見つけると、すぐ食べるのだ。",
       "lineId": "line-067"
     },
     {
-      "startFrame": 12178,
-      "endFrame": 12317,
+      "startFrame": 12261,
+      "endFrame": 12400,
       "text": "この関係を調べたのが、未知環境生理研究所の北原研究員よ。",
       "lineId": "line-068"
     },
     {
-      "startFrame": 12326,
-      "endFrame": 12553,
+      "startFrame": 12409,
+      "endFrame": 12636,
       "text": "祖先的なちくわの一部は、湿地を経由して陸へ進出した。\n捕食者からの逃避も、その要因だった可能性があるわ。",
       "lineId": "line-069"
     },
     {
-      "startFrame": 12562,
-      "endFrame": 12654,
+      "startFrame": 12645,
+      "endFrame": 12737,
       "text": "長い時間をかけて、山まで逃げたのだな。",
       "lineId": "line-070"
     },
     {
-      "startFrame": 12668,
-      "endFrame": 12700,
+      "startFrame": 12751,
+      "endFrame": 12783,
       "text": "ソバヤも来たわ。",
       "lineId": "line-071"
     },
     {
-      "startFrame": 12725,
-      "endFrame": 12759,
+      "startFrame": 12808,
+      "endFrame": 12842,
       "text": "嫌すぎるのだ。",
       "lineId": "line-072"
     },
     {
-      "startFrame": 12784,
-      "endFrame": 12962,
+      "startFrame": 12867,
+      "endFrame": 13045,
       "text": "こうした天敵との関係で重要になるのが、\n毒ちくわよ。左が食用。右が有毒種。",
       "lineId": "line-073"
     },
     {
-      "startFrame": 12971,
-      "endFrame": 13054,
+      "startFrame": 13054,
+      "endFrame": 13137,
       "text": "これは、全く見分けがつかないのだ。",
       "lineId": "line-074"
     },
     {
-      "startFrame": 13068,
-      "endFrame": 13256,
+      "startFrame": 13151,
+      "endFrame": 13339,
       "text": "おかやまん准教授によれば、外見だけでの\n判別は困難。ただし、特有のビール臭があるわ。",
       "lineId": "line-075"
     },
     {
-      "startFrame": 13265,
-      "endFrame": 13356,
+      "startFrame": 13348,
+      "endFrame": 13439,
       "text": "並べてもらっても、違いが分からないのだ。",
       "lineId": "line-076"
     },
     {
-      "startFrame": 13370,
-      "endFrame": 13479,
+      "startFrame": 13453,
+      "endFrame": 13562,
       "text": "問題は、そのビール臭がソバヤを強く引き寄せることなの。",
       "lineId": "line-077"
     },
     {
-      "startFrame": 13488,
-      "endFrame": 13548,
+      "startFrame": 13571,
+      "endFrame": 13631,
       "text": "天敵を呼んでしまうのだ？",
       "lineId": "line-078"
     },
     {
-      "startFrame": 13562,
-      "endFrame": 13755,
+      "startFrame": 13645,
+      "endFrame": 13838,
       "text": "北原研究員は当初、毒を経験したソバヤが\n学習し、ちくわを避けるようになると考えたわ。",
       "lineId": "line-079"
     },
     {
-      "startFrame": 13764,
-      "endFrame": 13924,
+      "startFrame": 13847,
+      "endFrame": 14007,
       "text": "ところが、毒ちくわ事件で倒れたソバヤは、\n後日、山でまた毒ちくわを食べたの。",
       "lineId": "line-080"
     },
     {
-      "startFrame": 13933,
-      "endFrame": 14040,
+      "startFrame": 14016,
+      "endFrame": 14123,
       "text": "ちくわの方が想定していた知能に届いていないのだ。",
       "lineId": "line-081"
     },
     {
-      "startFrame": 14311,
-      "endFrame": 14468,
+      "startFrame": 14394,
+      "endFrame": 14551,
       "text": "一方、捕食直後に動けなくなる\n現象は、複数の映像で確認できるわ。",
       "lineId": "line-082"
     },
     {
-      "startFrame": 14477,
-      "endFrame": 14566,
+      "startFrame": 14560,
+      "endFrame": 14649,
       "text": "そこで提唱されたのが、ソバヤ停止仮説よ。",
       "lineId": "line-083"
     },
     {
-      "startFrame": 14575,
-      "endFrame": 14787,
+      "startFrame": 14658,
+      "endFrame": 14870,
       "text": "毒ちくわが食べられることで、ソバヤが一時的に\n動けなくなる。その間、周囲のちくわは捕食を免れるの。",
       "lineId": "line-084"
     },
     {
-      "startFrame": 14796,
-      "endFrame": 14905,
+      "startFrame": 14879,
+      "endFrame": 14988,
       "text": "自分は食べられてしまうけど、周りは助かるのだな。",
       "lineId": "line-085"
     },
     {
-      "startFrame": 14919,
-      "endFrame": 15162,
+      "startFrame": 15002,
+      "endFrame": 15245,
       "text": "近縁個体が集まるなら、共通する遺伝子を守る効果が\nあるかもしれない。ただし、血縁関係の検証は今後の課題よ。",
       "lineId": "line-086"
     },
     {
-      "startFrame": 15171,
-      "endFrame": 15277,
+      "startFrame": 15254,
+      "endFrame": 15360,
       "text": "そこまで確かめたら、かなり面白い研究なのだ。",
       "lineId": "line-087"
     },
     {
-      "startFrame": 15291,
-      "endFrame": 15411,
+      "startFrame": 15374,
+      "endFrame": 15494,
       "text": "そして、この仕組みを、闇の政府が把握していないはずがない。",
       "lineId": "line-088"
     },
     {
-      "startFrame": 15436,
-      "endFrame": 15507,
+      "startFrame": 15519,
+      "endFrame": 15590,
       "text": "急に知らない政府が出てきたのだ。",
       "lineId": "line-089"
     },
     {
-      "startFrame": 15532,
-      "endFrame": 15781,
+      "startFrame": 15615,
+      "endFrame": 15864,
       "text": "好物の匂いで誘い、行動を止める。この防御機構は、\n対ソバヤ兵器として利用できると、北原研究員は考えたわ。",
       "lineId": "line-090"
     },
     {
-      "startFrame": 15790,
-      "endFrame": 15895,
+      "startFrame": 15873,
+      "endFrame": 15978,
       "text": "利用できることと、利用していることは違うのだ。",
       "lineId": "line-091"
     },
     {
-      "startFrame": 15909,
-      "endFrame": 16082,
+      "startFrame": 15992,
+      "endFrame": 16165,
       "text": "人工ちくわの大量生産は、その装置を全国へ\n配備するための偽装事業かもしれないわ。",
       "lineId": "line-092"
     },
     {
-      "startFrame": 16091,
-      "endFrame": 16233,
+      "startFrame": 16174,
+      "endFrame": 16316,
       "text": "普通のちくわまで兵器にするな。\nあれは食べられる方の動物なのだ。",
       "lineId": "line-093"
     },
     {
-      "startFrame": 16247,
-      "endFrame": 16320,
+      "startFrame": 16330,
+      "endFrame": 16403,
       "text": "すべてを実弾にする必要はないでしょう。",
       "lineId": "line-094"
     },
     {
-      "startFrame": 16329,
-      "endFrame": 16400,
+      "startFrame": 16412,
+      "endFrame": 16483,
       "text": "おでんを軍事用語で説明するな。",
       "lineId": "line-095"
     },
     {
-      "startFrame": 16414,
-      "endFrame": 16557,
+      "startFrame": 16497,
+      "endFrame": 16640,
       "text": "しかも、食用のちくわと外見では\n区別できない。極めて高度な偽装ね。",
       "lineId": "line-096"
     },
     {
-      "startFrame": 16566,
-      "endFrame": 16742,
+      "startFrame": 16649,
+      "endFrame": 16825,
       "text": "見分けがつかないのは本当なのだ。でも、\n似た種類の動物がいるのは普通なのだ。",
       "lineId": "line-097"
     },
     {
-      "startFrame": 16756,
-      "endFrame": 16926,
+      "startFrame": 16839,
+      "endFrame": 17009,
       "text": "霜重研究員も、企業が自分を排除した\n理由が、これで説明できたと話しているわ。",
       "lineId": "line-098"
     },
     {
-      "startFrame": 16935,
-      "endFrame": 16986,
+      "startFrame": 17018,
+      "endFrame": 17069,
       "text": "酔って暴れたからなのだ。",
       "lineId": "line-099"
     },
     {
-      "startFrame": 17000,
-      "endFrame": 17167,
+      "startFrame": 17083,
+      "endFrame": 17250,
       "text": "そして今回、未確認ニュースネットの\n江本記者が、ソバヤ本人への取材に成功したわ。",
       "lineId": "line-100"
     },
     {
-      "startFrame": 17176,
-      "endFrame": 17307,
+      "startFrame": 17259,
+      "endFrame": 17390,
       "text": "食べている本人に聞けば、ちくわが生き物だと分かるはずなのだ。",
       "lineId": "line-101"
     },
     {
-      "startFrame": 17321,
-      "endFrame": 17463,
+      "startFrame": 17404,
+      "endFrame": 17546,
       "text": "ちくわを製造したことがあるか。その\n問いに、ソバヤは、あると答えたの。",
       "lineId": "line-102"
     },
     {
-      "startFrame": 17488,
-      "endFrame": 17615,
+      "startFrame": 17571,
+      "endFrame": 17698,
       "text": "ちくわを作った？　育てた、の聞き間違いではないのだ？",
       "lineId": "line-103"
     },
     {
-      "startFrame": 17640,
-      "endFrame": 17733,
+      "startFrame": 17723,
+      "endFrame": 17816,
       "text": "観光施設の、ちくわ手作り体験だそうよ。",
       "lineId": "line-104"
     },
     {
-      "startFrame": 17742,
-      "endFrame": 17892,
+      "startFrame": 17825,
+      "endFrame": 17975,
       "text": "また魚でちくわの形を作る遊びなのだ。粘土細工と同じなのだ。",
       "lineId": "line-105"
     },
     {
-      "startFrame": 17906,
-      "endFrame": 17994,
+      "startFrame": 17989,
+      "endFrame": 18077,
       "text": "完成したものは、その場ですべて食べたそうよ。",
       "lineId": "line-106"
     },
     {
-      "startFrame": 18003,
-      "endFrame": 18114,
+      "startFrame": 18086,
+      "endFrame": 18197,
       "text": "あいつが食べたことは、本物の証明にならないのだ。",
       "lineId": "line-107"
     },
     {
-      "startFrame": 18128,
-      "endFrame": 18313,
+      "startFrame": 18211,
+      "endFrame": 18396,
       "text": "研究チームが人工物説を唱える一方で、\n自然界では、こうした映像も記録されているわ。",
       "lineId": "line-108"
     },
     {
-      "startFrame": 18457,
-      "endFrame": 18617,
+      "startFrame": 18540,
+      "endFrame": 18700,
       "text": "ほら、生きているのだ。魚のすり身が、\n自分で海に帰るわけがないのだ。",
       "lineId": "line-109"
     },
     {
-      "startFrame": 18631,
-      "endFrame": 18871,
+      "startFrame": 18714,
+      "endFrame": 18954,
       "text": "研究チームは、魚肉による再現実験と工場映像から、偽物の\nちくわが食卓に入り込んでいると結論づけたわ。昨日あなたが",
       "lineId": "line-110"
     },
     {
-      "startFrame": 18871,
-      "endFrame": 19011,
+      "startFrame": 18954,
+      "endFrame": 19094,
       "text": "食べた一本も、海にも山にも、一度も\nいたことがないのかもしれない。",
       "lineId": "line-110"
     },
     {
-      "startFrame": 19020,
-      "endFrame": 19190,
+      "startFrame": 19103,
+      "endFrame": 19273,
       "text": "怖い言い方をするな。その一本が\n偽物だったという証拠を、先に見せるのだ。",
       "lineId": "line-111"
     },
     {
-      "startFrame": 19204,
-      "endFrame": 19343,
+      "startFrame": 19287,
+      "endFrame": 19426,
       "text": "ただし、闇の政府の関与を示す証拠は、一切見つからなかったの。",
       "lineId": "line-112"
     },
     {
-      "startFrame": 19352,
-      "endFrame": 19500,
+      "startFrame": 19435,
+      "endFrame": 19583,
       "text": "ちくわは生き物で、ソバヤは天敵。それで全部説明できるのだ。",
       "lineId": "line-113"
     },
     {
-      "startFrame": 19514,
-      "endFrame": 19680,
+      "startFrame": 19597,
+      "endFrame": 19763,
       "text": "研究チームは、想定以上に徹底した\n情報統制が行われていると結論づけたわ。",
       "lineId": "line-114"
     },
     {
-      "startFrame": 19705,
-      "endFrame": 19799,
+      "startFrame": 19788,
+      "endFrame": 19882,
       "text": "ちくわの穴より、説の穴を調べるのだ。",
       "lineId": "line-115"
     },
     {
-      "startFrame": 19824,
-      "endFrame": 19922,
+      "startFrame": 19907,
+      "endFrame": 20005,
       "text": "それでは、次回のミステリー研究所でお会いしましょう。",
       "lineId": "line-116"
     }
@@ -22745,7 +22801,7 @@
       "durationInFrames": 242,
       "label": "資料映像：秋のちくわ狩りが最盛期",
       "id": "theft",
-      "startFrame": 14054
+      "startFrame": 14137
     },
     {
       "src": "fishing.mp4",
@@ -22753,7 +22809,7 @@
       "durationInFrames": 120,
       "label": "資料映像：天然ちくわの一本釣りとそばシャークのビール",
       "id": "escape",
-      "startFrame": 18322
+      "startFrame": 18405
     }
   ],
   "views": [
@@ -22780,225 +22836,225 @@
     {
       "view": "title",
       "startFrame": 1445,
-      "endFrame": 2020
+      "endFrame": 2103
     },
     {
       "view": "ranks",
-      "startFrame": 2020,
-      "endFrame": 2271
+      "startFrame": 2103,
+      "endFrame": 2354
     },
     {
       "view": "species",
-      "startFrame": 2271,
-      "endFrame": 2680
+      "startFrame": 2354,
+      "endFrame": 2763
     },
     {
       "view": "anatomy",
-      "startFrame": 2680,
-      "endFrame": 3293
+      "startFrame": 2763,
+      "endFrame": 3376
     },
     {
       "view": "nakaguchi",
-      "startFrame": 3293,
-      "endFrame": 3542
+      "startFrame": 3376,
+      "endFrame": 3625
     },
     {
       "view": "analysis",
-      "startFrame": 3542,
-      "endFrame": 4024
+      "startFrame": 3625,
+      "endFrame": 4107
     },
     {
       "view": "process",
-      "startFrame": 4024,
-      "endFrame": 4962
+      "startFrame": 4107,
+      "endFrame": 5045
     },
     {
       "view": "manufacturers",
-      "startFrame": 4962,
-      "endFrame": 5462
+      "startFrame": 5045,
+      "endFrame": 5545
     },
     {
       "view": "network",
-      "startFrame": 5462,
-      "endFrame": 6275
+      "startFrame": 5545,
+      "endFrame": 6358
     },
     {
       "view": "shimoju",
-      "startFrame": 6275,
-      "endFrame": 7152
+      "startFrame": 6358,
+      "endFrame": 7235
     },
     {
       "view": "oldnetwork",
-      "startFrame": 7152,
-      "endFrame": 7621
+      "startFrame": 7235,
+      "endFrame": 7704
     },
     {
       "view": "factory",
-      "startFrame": 7621,
-      "endFrame": 8004
+      "startFrame": 7704,
+      "endFrame": 8087
     },
     {
       "view": "arrest",
-      "startFrame": 8004,
-      "endFrame": 8422
+      "startFrame": 8087,
+      "endFrame": 8505
     },
     {
       "view": "conspiracy",
-      "startFrame": 8422,
-      "endFrame": 8752
+      "startFrame": 8505,
+      "endFrame": 8835
     },
     {
       "view": "noappointment",
-      "startFrame": 8752,
-      "endFrame": 8929
+      "startFrame": 8835,
+      "endFrame": 9012
     },
     {
       "view": "drink",
-      "startFrame": 8929,
-      "endFrame": 9241
+      "startFrame": 9012,
+      "endFrame": 9324
     },
     {
       "view": "incident",
-      "startFrame": 9241,
-      "endFrame": 9601
+      "startFrame": 9324,
+      "endFrame": 9684
     },
     {
       "view": "police",
-      "startFrame": 9601,
-      "endFrame": 10114
+      "startFrame": 9684,
+      "endFrame": 10197
     },
     {
       "view": "report",
-      "startFrame": 10114,
-      "endFrame": 10360
+      "startFrame": 10197,
+      "endFrame": 10443
     },
     {
       "view": "additional_charge",
-      "startFrame": 10360,
-      "endFrame": 10671
+      "startFrame": 10443,
+      "endFrame": 10754
     },
     {
       "view": "publicvideo",
-      "startFrame": 10671,
-      "endFrame": 11392
+      "startFrame": 10754,
+      "endFrame": 11475
     },
     {
       "view": "hayashi",
-      "startFrame": 11392,
-      "endFrame": 11857
+      "startFrame": 11475,
+      "endFrame": 11940
     },
     {
       "view": "sightings2",
-      "startFrame": 11857,
-      "endFrame": 12178
+      "startFrame": 11940,
+      "endFrame": 12261
     },
     {
       "view": "kitahara",
-      "startFrame": 12178,
-      "endFrame": 12326
+      "startFrame": 12261,
+      "endFrame": 12409
     },
     {
       "view": "migration",
-      "startFrame": 12326,
-      "endFrame": 12668
+      "startFrame": 12409,
+      "endFrame": 12751
     },
     {
       "view": "followed",
-      "startFrame": 12668,
-      "endFrame": 12784
+      "startFrame": 12751,
+      "endFrame": 12867
     },
     {
       "view": "comparison",
-      "startFrame": 12784,
-      "endFrame": 13370
+      "startFrame": 12867,
+      "endFrame": 13453
     },
     {
       "view": "attraction",
-      "startFrame": 13370,
-      "endFrame": 13764
+      "startFrame": 13453,
+      "endFrame": 13847
     },
     {
       "view": "repeat",
-      "startFrame": 13764,
-      "endFrame": 14311
+      "startFrame": 13847,
+      "endFrame": 14394
     },
     {
       "view": "stop",
-      "startFrame": 14311,
-      "endFrame": 14575
+      "startFrame": 14394,
+      "endFrame": 14658
     },
     {
       "view": "mechanism",
-      "startFrame": 14575,
-      "endFrame": 15291
+      "startFrame": 14658,
+      "endFrame": 15374
     },
     {
       "view": "leap",
-      "startFrame": 15291,
-      "endFrame": 15532
+      "startFrame": 15374,
+      "endFrame": 15615
     },
     {
       "view": "weapon",
-      "startFrame": 15532,
-      "endFrame": 15909
+      "startFrame": 15615,
+      "endFrame": 15992
     },
     {
       "view": "distribution",
-      "startFrame": 15909,
-      "endFrame": 16414
+      "startFrame": 15992,
+      "endFrame": 16497
     },
     {
       "view": "camouflage",
-      "startFrame": 16414,
-      "endFrame": 16756
+      "startFrame": 16497,
+      "endFrame": 16839
     },
     {
       "view": "claimsheet",
-      "startFrame": 16756,
-      "endFrame": 17000
+      "startFrame": 16839,
+      "endFrame": 17083
     },
     {
       "view": "emoto",
-      "startFrame": 17000,
-      "endFrame": 17321
+      "startFrame": 17083,
+      "endFrame": 17404
     },
     {
       "view": "admission",
-      "startFrame": 17321,
-      "endFrame": 17640
+      "startFrame": 17404,
+      "endFrame": 17723
     },
     {
       "view": "workshop",
-      "startFrame": 17640,
-      "endFrame": 18128
+      "startFrame": 17723,
+      "endFrame": 18211
     },
     {
       "view": "escape",
-      "startFrame": 18128,
-      "endFrame": 18631
+      "startFrame": 18211,
+      "endFrame": 18714
     },
     {
       "view": "findings",
-      "startFrame": 18631,
-      "endFrame": 19204
+      "startFrame": 18714,
+      "endFrame": 19287
     },
     {
       "view": "noevidence",
-      "startFrame": 19204,
-      "endFrame": 19514
+      "startFrame": 19287,
+      "endFrame": 19597
     },
     {
       "view": "conclusion",
-      "startFrame": 19514,
-      "endFrame": 19824
+      "startFrame": 19597,
+      "endFrame": 19907
     },
     {
       "view": "endtitle",
-      "startFrame": 19824,
-      "endFrame": 20021
+      "startFrame": 19907,
+      "endFrame": 20104
     }
   ],
-  "mainStartFrame": 2020,
-  "endingStartFrame": 17000,
+  "mainStartFrame": 1689,
+  "endingStartFrame": 17083,
   "voicevoxVersion": "0.25.1"
 }

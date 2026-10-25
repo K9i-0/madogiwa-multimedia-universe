@@ -27,7 +27,7 @@ for i,r in enumerate(rows):
  key=hashlib.sha256(json.dumps({'query':q,'speaker':sp,'version':version},sort_keys=True).encode()).hexdigest()[:12];name=f"voice_{i:03}_{key}.wav";fp=P/name
  if not fp.exists():
   reusable=next(P.glob(f'voice_*_{key}.wav'),None)
-  if reusable:os.link(reusable,fp)
+  if reusable:fp=reusable;name=fp.name
   else:fp.write_bytes(request('synthesis',{'speaker':sp},q))
  with wave.open(str(fp)) as w:rate=w.getframerate();samples=np.frombuffer(w.readframes(w.getnframes()),dtype='<i2').astype(float)/32768
  frames=math.ceil(len(samples)/rate*30);envelope=[round(float(np.sqrt(np.mean(samples[int(j*rate/30):min(len(samples),int((j+1)*rate/30))]**2))),4) for j in range(frames)]

@@ -42,7 +42,16 @@ if(view==='report')return <><div style={{width:660,padding:'30px 36px',borderTop
 if(view==='additional_charge')return <><H>現地調査報告 ／ 付記</H><div style={{fontSize:28,color:muted,marginBottom:24}}>逮捕容疑</div><div style={{fontSize:37,lineHeight:1.8,color:gold}}>不法侵入<br/>＋<br/>猥褻物陳列罪</div><Note>霜重研究員の訪問当日の記録</Note></>;
 if(view==='publicvideo')return <><H>T社の工場紹介映像を検証</H><div style={{position:'relative',width:760,height:370}}><Img src={staticFile('manufacturing_v2.png')} style={{width:'100%',height:'100%',objectFit:'contain'}}/><div style={{position:'absolute',right:15,top:15,padding:'7px 12px',background:'#0c1924dd',fontSize:18}}>林研究員の提示資料</div></div><Note>工場映像の内容を再現 ／ めたん：「隠していないと思わせるため」</Note></>;
 if(view==='hayashi')return <><Photo src="research_desk.png" h={325}/><div style={{fontSize:28,color:gold,marginTop:20}}>中央映像解析センター・林研究員</div><Note>「魚肉の投入から筒状の製品まで、連続した工程」</Note></>;
-if(view==='kitahara')return <Person name="北原" org="未知環境生理研究所" field="ちくわとソバヤの捕食関係"/>;
+if(view==='kitahara')return <Person name="北原" org="未知環境生理研究所" field="通年供給と養殖施設の調査"/>;
+if(view==='seasons')return <><H>秋の味覚が、一年中並ぶ</H><Double a="forest.png" b="distribution_v2.png" at="野生個体：採集量に季節差" bt="売り場：通年、安定供給"/></>;
+if(view==='official')return <><H>政府・業界団体の公式説明</H><Quote text={'通年供給は、\n養殖技術の発展によるもの。'}/><Note>公表資料の説明 ／ 研究チームによる照合対象</Note></>;
+if(view==='capacity')return <><H>公開情報と出荷量が合わない</H><Flow items={['確認できた飼育面積 × 成長期間','説明できる生産量には限界','公表出荷量との隔たり']}/><Note>非公開施設の有無は未確認 ／ 北原研究員の調査</Note></>;
+if(view==='secret')return <><H>生産技術に関する問い合わせ</H><div style={{width:680,textAlign:'left',borderTop:`1px solid ${gold}`,padding:24}}><div style={{fontSize:22,color:gold}}>企業からの回答</div><div style={{fontSize:31,margin:'16px 0 35px'}}>独自技術に関わるため、非公開。</div><div style={{fontSize:22,color:gold}}>政府側の回答</div><div style={{fontSize:28,marginTop:16}}>個別企業の技術については回答を控える。</div></div></>;
+if(view==='balance')return <><H>「餌」と「原料」の境界</H><Svg height={280}><T x={140} y={100} size={34}>魚肉</T><T x={620} y={100} size={34}>ちくわ</T><Arrow x1={240} y1={90} x2={520} y2={90}/><T x={380} y={180} size={31} color={gold}>投入重量 ≒ 出荷重量？</T><T x={380} y={245} size={22}>呼吸・排泄・水分・集計期間の検討が必要</T></Svg><Note>重量比較だけでは、製造と養殖を断定できない</Note></>;
+if(view==='growth')return <><H>成長する時間は、どこへ消えた？</H><Photo src="manufacturing_v2.png" h={355}/><Note>公開された工程の再現 ／ 練る → 巻く → 加熱 → 出荷</Note></>;
+if(view==='substitution')return <><H>研究員の仮説：本物に紛れる模造品</H><Photo src="distribution_v2.png" h={355}/><Note>表示は「ちくわ」 ／ 消費者に区別は伝わらない</Note></>;
+if(view==='education')return <><H>「養殖」という説明が受け継がれる</H><Flow items={['学校：養殖技術の発展','売り場：養殖ちくわ','家庭：本物として食べる']}/><Note>めたん：「生き物という認識を、社会が保証する」</Note></>;
+if(view==='callback')return <><H>霜重研究員からの声明</H><Quote text={'隠された真実を、\nすべてさらけ出す。'}/><Note>狭間文明研究所</Note></>;
 if(view==='migration')return <><H>捕食者を避け、海から山へ？</H><Photo src="habitat_v2.png" h={355}/><div style={{display:'flex',width:740,justifyContent:'space-around',fontSize:24,marginTop:12,color:gold}}><span>浅海</span><span>湿地</span><span>森林</span></div><Note>世代を重ねた陸上適応 ／ 北原研究員の仮説</Note></>;
 if(view==='followed')return <><H>山にも、ソバヤ</H><Photo src="forest_sobaya.jpg" h={385}/></>;
 if(view==='comparison'||view==='camouflage')return <><H>{view==='comparison'?'外見だけでの判別は困難':'極めて高度な偽装？'}</H><Photo src="comparison.png" h={335}/><div style={{width:700,display:'flex',justifyContent:'space-around',fontSize:25,color:gold,marginTop:18}}><span>食用</span><span>有毒</span></div></>;
@@ -50,7 +59,7 @@ if(view==='attraction')return <><H>天敵を引き寄せる、ビール臭</H><d
 if(view==='repeat')return <><H>毒を経験しても、また食べる</H><Double a="poison_sobaya.jpg" b="forest_sobaya.jpg" at="毒ちくわ事件" bt="後日の山での採集"/><Note>学習による忌避は確認できず</Note></>;
 if(view==='stop')return <><div style={{fontSize:20,color:muted}}>未知環境生理研究所 ／ 仮説</div><Quote text="ソバヤ停止仮説"/><Note>捕食直後の行動停止に注目</Note></>;
 if(view==='mechanism')return <><H>捕食者の一時的な無力化</H><Flow items={['ビール臭で誘引 → 毒ちくわを捕食','ソバヤが、一時的に動けなくなる','周囲のちくわが捕食を免れる']}/><Note>血縁関係・適応上の利益は、今後の検証課題</Note></>;
-if(view==='leap')return <><div style={{fontSize:20,color:muted}}>研究チームの見解</div><Quote text={'闇の政府が\n把握していないはずがない。'}/></>;
+if(view==='leap')return <><H>同じ説明を繰り返す、政府と企業</H><Photo src="conspiracy_board_v2.png" h={350}/><Note>北原研究員：情報統制機構の存在を確信</Note></>;
 if(view==='weapon')return <><H>対ソバヤ兵器としての利用？</H><Svg><circle cx={380} cy={160} r={115} fill="none" stroke={red} strokeWidth={2}/><circle cx={380} cy={160} r={80} fill="none" stroke={red} strokeWidth={1}/><path d="M220 160H540M380 10V310" stroke={red} strokeWidth={2}/><image href={staticFile('sobaya.jpg')} x={323} y={70} width={114} height={180}/><T x={90} y={150} color={gold}>誘引</T><T x={660} y={150} color={gold}>行動停止</T><Arrow x1={145} y1={160} x2={245} y2={160}/><Arrow x1={515} y1={160} x2={610} y2={160}/></Svg></>;
 if(view==='distribution')return <><H>「食卓を通じた全国配備」説</H><Photo src="distribution_v2.png" h={365}/><Note>{said('すべてを実弾')?'北原研究員：「すべてを実弾にする必要はない」':'研究員の人工ちくわ流通説をイメージ化'}</Note></>;
 if(view==='claimsheet')return <><H>霜重研究員の追加見解</H><Quote text={'「排除された理由が、\nこれで説明できた」'} sub="T社訪問時の一件を受けて"/></>;

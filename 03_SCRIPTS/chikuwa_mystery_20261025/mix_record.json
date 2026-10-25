@@ -1,30 +1,22 @@
 {
   "sampleRate": 48000,
-  "durationSeconds": 670.1333333333333,
+  "durationSeconds": 666.1,
   "voiceLUFS": -18,
   "bgmLUFS": -35,
   "clipLUFS": -19,
-  "premasterPeak": 0.8363937139511108,
+  "premasterPeak": 0.8250130414962769,
   "endingMusic": "TheFatRat - Unity / -38 LUFS",
   "endingLift": false,
-  "mainBgmStartFrame": 1689,
+  "mainBgmStartFrame": 919,
   "mainFadeInFrames": 18,
   "clips": [
     {
-      "src": "autumn.mp4",
-      "sourceStartFrame": 1424,
-      "durationInFrames": 242,
-      "label": "資料映像：秋のちくわ狩りが最盛期",
-      "id": "theft",
-      "startFrame": 14137
-    },
-    {
-      "src": "fishing.mp4",
-      "sourceStartFrame": 780,
+      "src": "fishing_archive_v6.mp4",
+      "sourceStartFrame": 0,
       "durationInFrames": 120,
-      "label": "資料映像：天然ちくわの一本釣りとそばシャークのビール",
+      "label": "研究所収集資料 ／ 天然ちくわの移動記録",
       "id": "escape",
-      "startFrame": 18405
+      "startFrame": 2730
     }
   ]
 }

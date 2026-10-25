@@ -2,7 +2,7 @@ from pathlib import Path
 import os,json,sys,hashlib,wave,math,urllib.request,urllib.parse,numpy as np
 P=Path(__file__).resolve().parent; R=P.parents[1];sys.path.insert(0,str(R/'.claude/skills/voicevox-control/scripts'))
 from prepare_readings import load_dictionary,prepare_row
-terms={'猥褻物陳列罪':'ワイセツブツチンレツザイ','酒癖':'サケグセ','魚で鳩':'魚でハト','鳩には':'ハトには','別の種':'別のシュ','疑問を抱いた':'疑問をイダイタ','止まれる':'トマレル','その間、周囲':'そのアイダ、周囲','管状動物門':'カンジョードーブツモン','真管綱':'シンカンコー','チクワ目':'チクワモク','チクワ科':'チクワカ','通水腔':'ツースイコー','中口':'ナカグチ','霜重':'シモジュウ','狭間文明':'ハザマブンメー','T社':'ティーシャ','人工物説':'ジンコーブツセツ','魚肉':'ギョニク','対ソバヤ':'タイソバヤ','原料魚':'ゲンリョーギョ','再現性':'サイゲンセー','一食品':'イチショクヒン'}
+terms={'使う分':'ツカウブン','猥褻物陳列罪':'ワイセツブツチンレツザイ','酒癖':'サケグセ','魚で鳩':'魚でハト','鳩には':'ハトには','別の種':'別のシュ','疑問を抱いた':'疑問をイダイタ','止まれる':'トマレル','その間、周囲':'そのアイダ、周囲','管状動物門':'カンジョードーブツモン','真管綱':'シンカンコー','チクワ目':'チクワモク','チクワ科':'チクワカ','通水腔':'ツースイコー','中口':'ナカグチ','霜重':'シモジュウ','狭間文明':'ハザマブンメー','T社':'ティーシャ','人工物説':'ジンコーブツセツ','魚肉':'ギョニク','対ソバヤ':'タイソバヤ','原料魚':'ゲンリョーギョ','再現性':'サイゲンセー','一食品':'イチショクヒン'}
 local={'schema_version':1,'replacements':[{'id':'chikuwa.'+str(i),'surface':s,'reading':v,'source':'dialogue.json','note':'生物学用語・作品用語の読み'} for i,(s,v) in enumerate(terms.items())]}
 (P/'readings.json').write_text(json.dumps(local,ensure_ascii=False,indent=2));dictionary=load_dictionary(local_path=P/'readings.json')
 def request(route,params=None,body=None):

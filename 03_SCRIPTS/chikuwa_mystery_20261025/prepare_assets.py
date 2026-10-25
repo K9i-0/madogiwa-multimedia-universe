@@ -6,3 +6,8 @@ for name,src in json.loads((P/'assets.json').read_text()).items():
  if not dst.exists():os.link(R/src,dst)
 for name,src,t in [('harbor_still.jpg','harbor.mp4',7),('giant_still.jpg','fishing.mp4',17),('harbor_sobaya.jpg','harbor.mp4',12),('forest_sobaya.jpg','autumn.mp4',51),('poison_sobaya.jpg','poison.mp4',38)]:
  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(t),'-i',str(D/'public'/src),'-frames:v','1','-pix_fmt','yuvj420p',str(D/'public'/name)],check=True)
+
+# Intentionally degraded archive excerpt; preserve original source.
+archive=D/'public/fishing_archive_v6.mp4'
+if not archive.exists():
+ subprocess.run(['ffmpeg','-v','error','-y','-ss','26','-i',str(D/'public/fishing.mp4'),'-t','4','-vf','scale=320:180:flags=area,fps=15,eq=saturation=0.55:contrast=0.92,noise=alls=6:allf=t','-c:v','libx264','-crf','36','-preset','fast','-c:a','aac','-b:a','48k',str(archive)],check=True)

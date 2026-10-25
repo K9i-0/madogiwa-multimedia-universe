@@ -42,53 +42,13 @@
   {
     "id": "line-005",
     "scene": "intro",
-    "view": "sightings",
-    "who": "metan",
-    "text": "そして、この問題を調べる過程で、研究チームは奇妙な共通点に気づいたわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-006",
-    "scene": "intro",
-    "view": "sightings",
-    "who": "metan",
-    "text": "海での水揚げ。山での採集。そして、毒ちくわ事件。すべての現場に、同じ人物がいるの。",
-    "pause": 9
-  },
-  {
-    "id": "line-007",
-    "scene": "intro",
-    "view": "sightings",
-    "who": "zunda",
-    "text": "またこいつなのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-008",
-    "scene": "intro",
-    "view": "sobaya",
-    "who": "metan",
-    "text": "前回、企業に所属する社員であることが判明した、未確認生物ソバヤ。",
-    "pause": 9
-  },
-  {
-    "id": "line-009",
-    "scene": "intro",
-    "view": "sobaya",
-    "who": "zunda",
-    "text": "社員だと分かったなら、そろそろ未確認を外してやるのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-010",
-    "scene": "intro",
     "view": "title",
     "who": "metan",
-    "text": "なぜ、ちくわのあるところにソバヤが現れるのか。そして、人工ちくわとは何なのか。今日は、この謎に迫るわ。",
+    "text": "私たちが食べているのは、生き物なのか。それとも、作りものなのか。今日は、この謎に迫るわ。",
     "pause": 36
   },
   {
-    "id": "line-011",
+    "id": "line-006",
     "scene": "intro",
     "view": "title",
     "who": "metan",
@@ -96,7 +56,7 @@
     "pause": 9
   },
   {
-    "id": "line-012",
+    "id": "line-007",
     "scene": "biology",
     "view": "ranks",
     "who": "metan",
@@ -104,7 +64,7 @@
     "pause": 9
   },
   {
-    "id": "line-013",
+    "id": "line-008",
     "scene": "biology",
     "view": "species",
     "who": "metan",
@@ -112,7 +72,7 @@
     "pause": 9
   },
   {
-    "id": "line-014",
+    "id": "line-009",
     "scene": "biology",
     "view": "species",
     "who": "zunda",
@@ -120,7 +80,7 @@
     "pause": 14
   },
   {
-    "id": "line-015",
+    "id": "line-010",
     "scene": "biology",
     "view": "anatomy",
     "who": "metan",
@@ -128,7 +88,7 @@
     "pause": 9
   },
   {
-    "id": "line-016",
+    "id": "line-011",
     "scene": "biology",
     "view": "anatomy",
     "who": "metan",
@@ -136,7 +96,7 @@
     "pause": 9
   },
   {
-    "id": "line-017",
+    "id": "line-012",
     "scene": "biology",
     "view": "anatomy",
     "who": "zunda",
@@ -144,7 +104,56 @@
     "pause": 14
   },
   {
+    "id": "line-013",
+    "scene": "biology",
+    "view": "escape",
+    "who": "metan",
+    "text": "過去の記録映像でも、野生個体の移動が確認できるわ。",
+    "pause": 9,
+    "clipAfter": "escape"
+  },
+  {
+    "id": "line-014",
+    "scene": "biology",
+    "view": "escape",
+    "who": "zunda",
+    "text": "生き物なのは、見れば分かるのだ。",
+    "pause": 14
+  },
+  {
+    "id": "line-015",
+    "scene": "biology",
+    "view": "comparison",
+    "who": "metan",
+    "text": "こちらは食用種と有毒種。外見だけでの判別は困難とされているわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-016",
+    "scene": "biology",
+    "view": "comparison",
+    "who": "zunda",
+    "text": "全く見分けがつかないのだ。",
+    "pause": 14
+  },
+  {
+    "id": "line-017",
+    "scene": "biology",
+    "view": "attraction",
+    "who": "metan",
+    "text": "有毒種にはビール臭があり、代表的な天敵、ソバヤを引き寄せてしまうの。",
+    "pause": 9
+  },
+  {
     "id": "line-018",
+    "scene": "biology",
+    "view": "attraction",
+    "who": "zunda",
+    "text": "天敵の好物みたいな匂いを出すのは、損なのだ。",
+    "pause": 14
+  },
+  {
+    "id": "line-019",
     "scene": "experiment",
     "view": "nakaguchi",
     "who": "metan",
@@ -152,7 +161,7 @@
     "pause": 9
   },
   {
-    "id": "line-019",
+    "id": "line-020",
     "scene": "experiment",
     "view": "analysis",
     "who": "metan",
@@ -160,7 +169,7 @@
     "pause": 9
   },
   {
-    "id": "line-020",
+    "id": "line-021",
     "scene": "experiment",
     "view": "analysis",
     "who": "zunda",
@@ -168,7 +177,7 @@
     "pause": 14
   },
   {
-    "id": "line-021",
+    "id": "line-022",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -176,7 +185,7 @@
     "pause": 9
   },
   {
-    "id": "line-022",
+    "id": "line-023",
     "scene": "experiment",
     "view": "process",
     "who": "zunda",
@@ -184,7 +193,7 @@
     "pause": 14
   },
   {
-    "id": "line-023",
+    "id": "line-024",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -192,7 +201,7 @@
     "pause": 9
   },
   {
-    "id": "line-024",
+    "id": "line-025",
     "scene": "experiment",
     "view": "process",
     "who": "zunda",
@@ -200,7 +209,7 @@
     "pause": 14
   },
   {
-    "id": "line-025",
+    "id": "line-026",
     "scene": "experiment",
     "view": "manufacturers",
     "who": "metan",
@@ -208,7 +217,7 @@
     "pause": 9
   },
   {
-    "id": "line-026",
+    "id": "line-027",
     "scene": "experiment",
     "view": "manufacturers",
     "who": "zunda",
@@ -216,7 +225,7 @@
     "pause": 14
   },
   {
-    "id": "line-027",
+    "id": "line-028",
     "scene": "experiment",
     "view": "network",
     "who": "metan",
@@ -224,7 +233,7 @@
     "pause": 9
   },
   {
-    "id": "line-028",
+    "id": "line-029",
     "scene": "experiment",
     "view": "network",
     "who": "zunda",
@@ -232,7 +241,7 @@
     "pause": 14
   },
   {
-    "id": "line-029",
+    "id": "line-030",
     "scene": "experiment",
     "view": "network",
     "who": "metan",
@@ -240,7 +249,7 @@
     "pause": 9
   },
   {
-    "id": "line-030",
+    "id": "line-031",
     "scene": "experiment",
     "view": "network",
     "who": "zunda",
@@ -248,7 +257,7 @@
     "pause": 14
   },
   {
-    "id": "line-031",
+    "id": "line-032",
     "scene": "history",
     "view": "shimoju",
     "who": "metan",
@@ -256,7 +265,7 @@
     "pause": 9
   },
   {
-    "id": "line-032",
+    "id": "line-033",
     "scene": "history",
     "view": "shimoju",
     "who": "zunda",
@@ -264,7 +273,7 @@
     "pause": 14
   },
   {
-    "id": "line-033",
+    "id": "line-034",
     "scene": "history",
     "view": "shimoju",
     "who": "metan",
@@ -272,7 +281,7 @@
     "pause": 9
   },
   {
-    "id": "line-034",
+    "id": "line-035",
     "scene": "history",
     "view": "shimoju",
     "who": "zunda",
@@ -280,7 +289,7 @@
     "pause": 14
   },
   {
-    "id": "line-035",
+    "id": "line-036",
     "scene": "history",
     "view": "oldnetwork",
     "who": "metan",
@@ -288,7 +297,7 @@
     "pause": 9
   },
   {
-    "id": "line-036",
+    "id": "line-037",
     "scene": "history",
     "view": "oldnetwork",
     "who": "zunda",
@@ -296,7 +305,7 @@
     "pause": 14
   },
   {
-    "id": "line-037",
+    "id": "line-038",
     "scene": "infiltration",
     "view": "factory",
     "who": "metan",
@@ -304,7 +313,7 @@
     "pause": 9
   },
   {
-    "id": "line-038",
+    "id": "line-039",
     "scene": "infiltration",
     "view": "factory",
     "who": "zunda",
@@ -312,7 +321,7 @@
     "pause": 14
   },
   {
-    "id": "line-039",
+    "id": "line-040",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -320,7 +329,7 @@
     "pause": 25
   },
   {
-    "id": "line-040",
+    "id": "line-041",
     "scene": "infiltration",
     "view": "arrest",
     "who": "zunda",
@@ -328,7 +337,7 @@
     "pause": 25
   },
   {
-    "id": "line-041",
+    "id": "line-042",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -336,7 +345,7 @@
     "pause": 25
   },
   {
-    "id": "line-042",
+    "id": "line-043",
     "scene": "infiltration",
     "view": "arrest",
     "who": "zunda",
@@ -344,7 +353,7 @@
     "pause": 25
   },
   {
-    "id": "line-043",
+    "id": "line-044",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "metan",
@@ -352,7 +361,7 @@
     "pause": 9
   },
   {
-    "id": "line-044",
+    "id": "line-045",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "zunda",
@@ -360,7 +369,7 @@
     "pause": 14
   },
   {
-    "id": "line-045",
+    "id": "line-046",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "metan",
@@ -368,7 +377,7 @@
     "pause": 9
   },
   {
-    "id": "line-046",
+    "id": "line-047",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "zunda",
@@ -376,7 +385,7 @@
     "pause": 14
   },
   {
-    "id": "line-047",
+    "id": "line-048",
     "scene": "infiltration",
     "view": "drink",
     "who": "metan",
@@ -384,7 +393,7 @@
     "pause": 9
   },
   {
-    "id": "line-048",
+    "id": "line-049",
     "scene": "infiltration",
     "view": "drink",
     "who": "zunda",
@@ -392,7 +401,7 @@
     "pause": 14
   },
   {
-    "id": "line-049",
+    "id": "line-050",
     "scene": "infiltration",
     "view": "drink",
     "who": "metan",
@@ -400,7 +409,7 @@
     "pause": 9
   },
   {
-    "id": "line-050",
+    "id": "line-051",
     "scene": "infiltration",
     "view": "incident",
     "who": "metan",
@@ -408,7 +417,7 @@
     "pause": 9
   },
   {
-    "id": "line-051",
+    "id": "line-052",
     "scene": "infiltration",
     "view": "incident",
     "who": "zunda",
@@ -416,7 +425,7 @@
     "pause": 14
   },
   {
-    "id": "line-052",
+    "id": "line-053",
     "scene": "infiltration",
     "view": "police",
     "who": "metan",
@@ -424,7 +433,7 @@
     "pause": 9
   },
   {
-    "id": "line-053",
+    "id": "line-054",
     "scene": "infiltration",
     "view": "police",
     "who": "zunda",
@@ -432,7 +441,7 @@
     "pause": 14
   },
   {
-    "id": "line-054",
+    "id": "line-055",
     "scene": "infiltration",
     "view": "police",
     "who": "metan",
@@ -440,7 +449,7 @@
     "pause": 9
   },
   {
-    "id": "line-055",
+    "id": "line-056",
     "scene": "infiltration",
     "view": "police",
     "who": "zunda",
@@ -448,7 +457,7 @@
     "pause": 14
   },
   {
-    "id": "line-056",
+    "id": "line-057",
     "scene": "infiltration",
     "view": "report",
     "who": "metan",
@@ -456,7 +465,7 @@
     "pause": 9
   },
   {
-    "id": "line-057",
+    "id": "line-058",
     "scene": "infiltration",
     "view": "report",
     "who": "zunda",
@@ -464,7 +473,7 @@
     "pause": 14
   },
   {
-    "id": "line-058",
+    "id": "line-059",
     "scene": "infiltration",
     "view": "additional_charge",
     "who": "metan",
@@ -472,7 +481,7 @@
     "pause": 25
   },
   {
-    "id": "line-059",
+    "id": "line-060",
     "scene": "infiltration",
     "view": "additional_charge",
     "who": "zunda",
@@ -480,457 +489,415 @@
     "pause": 25
   },
   {
-    "id": "line-060",
-    "scene": "infiltration",
-    "view": "publicvideo",
-    "who": "metan",
-    "text": "その後、中央映像解析センターの林研究員は、T社の工場見学動画に、魚肉からちくわを作る工程が映っていると指摘したわ。",
-    "pause": 9
-  },
-  {
     "id": "line-061",
-    "scene": "infiltration",
-    "view": "publicvideo",
-    "who": "zunda",
-    "text": "霜重は何をしに行ったのだ。",
-    "pause": 14
+    "scene": "supply",
+    "view": "kitahara",
+    "who": "metan",
+    "text": "霜重研究員が身柄を拘束される一方、未知環境生理研究所の北原研究員は、別の疑問を追っていたわ。",
+    "pause": 9
   },
   {
     "id": "line-062",
-    "scene": "infiltration",
-    "view": "publicvideo",
-    "who": "metan",
-    "text": "あえて公開することで、隠しているものはないと思わせている可能性があるわね。",
-    "pause": 9
+    "scene": "supply",
+    "view": "kitahara",
+    "who": "zunda",
+    "text": "今度は、お酒を飲まずに調べてほしいのだ。",
+    "pause": 14
   },
   {
     "id": "line-063",
-    "scene": "infiltration",
-    "view": "publicvideo",
-    "who": "zunda",
-    "text": "工場の紹介用に作った模型かもしれないのだ。動かないちくわは、展示に便利なのだ。",
-    "pause": 14
+    "scene": "supply",
+    "view": "seasons",
+    "who": "metan",
+    "text": "山産のちくわは、本来、秋に採集量が増える生き物よ。ところが今は、一年中、同じ大きさのものが店に並んでいる。",
+    "pause": 9
   },
   {
     "id": "line-064",
-    "scene": "ecology",
-    "view": "hayashi",
-    "who": "metan",
-    "text": "林研究員は、映像の中で、魚肉の投入から筒状の製品が出てくるまで、連続した工程を確認しているわ。",
-    "pause": 9
+    "scene": "supply",
+    "view": "seasons",
+    "who": "zunda",
+    "text": "養殖技術が進歩したからなのだ。学校でも習ったのだ。",
+    "pause": 14
   },
   {
     "id": "line-065",
-    "scene": "ecology",
-    "view": "hayashi",
-    "who": "zunda",
-    "text": "その筒が泳ぐところまで見せるのだ。形を似せただけで、生き物を作ったことにはならないのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-066",
-    "scene": "ecology",
-    "view": "sightings2",
+    "scene": "supply",
+    "view": "official",
     "who": "metan",
-    "text": "そこで過去の映像を分析。海でも山でも、ソバヤがちくわを捕食していることを確認したの。",
+    "text": "政府と業界団体も、通年供給は養殖技術の発展によって実現したと説明しているわ。",
     "pause": 9
   },
   {
-    "id": "line-067",
-    "scene": "ecology",
-    "view": "sightings2",
+    "id": "line-066",
+    "scene": "supply",
+    "view": "official",
     "who": "zunda",
-    "text": "ちくわの天敵なのだ。見つけると、すぐ食べるのだ。",
+    "text": "なら、謎は解けたのだ。",
     "pause": 14
   },
   {
-    "id": "line-068",
-    "scene": "ecology",
-    "view": "kitahara",
+    "id": "line-067",
+    "scene": "supply",
+    "view": "official",
     "who": "metan",
-    "text": "この関係を調べたのが、未知環境生理研究所の北原研究員よ。",
+    "text": "北原研究員も、最初はそう考えたの。そこで、生産地と養殖施設の公開資料を照合したわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-068",
+    "scene": "supply",
+    "view": "capacity",
+    "who": "metan",
+    "text": "ところが、確認できた飼育面積と成長期間では、公表された出荷量を説明できなかった。",
     "pause": 9
   },
   {
     "id": "line-069",
-    "scene": "ecology",
-    "view": "migration",
-    "who": "metan",
-    "text": "祖先的なちくわの一部は、湿地を経由して陸へ進出した。捕食者からの逃避も、その要因だった可能性があるわ。",
-    "pause": 9
+    "scene": "supply",
+    "view": "capacity",
+    "who": "zunda",
+    "text": "公開されていない養殖場もあるのでは？",
+    "pause": 14
   },
   {
     "id": "line-070",
-    "scene": "ecology",
-    "view": "migration",
-    "who": "zunda",
-    "text": "長い時間をかけて、山まで逃げたのだな。",
-    "pause": 14
+    "scene": "supply",
+    "view": "capacity",
+    "who": "metan",
+    "text": "その可能性はあるわ。だから研究員は、企業へ施設の所在地と飼育方法を問い合わせたの。",
+    "pause": 9
   },
   {
     "id": "line-071",
-    "scene": "ecology",
-    "view": "followed",
-    "who": "metan",
-    "text": "ソバヤも来たわ。",
-    "pause": 25
+    "scene": "supply",
+    "view": "capacity",
+    "who": "zunda",
+    "text": "ちゃんと問い合わせたのだ。霜重より一段階進んでいるのだ。",
+    "pause": 14
   },
   {
     "id": "line-072",
-    "scene": "ecology",
-    "view": "followed",
-    "who": "zunda",
-    "text": "嫌すぎるのだ。",
-    "pause": 25
+    "scene": "supply",
+    "view": "secret",
+    "who": "metan",
+    "text": "回答は、独自の養殖技術に関わるため非公開。政府側も、個別企業の生産技術については回答を控えるとしたわ。",
+    "pause": 9
   },
   {
     "id": "line-073",
-    "scene": "poison",
-    "view": "comparison",
-    "who": "metan",
-    "text": "こうした天敵との関係で重要になるのが、毒ちくわよ。左が食用。右が有毒種。",
-    "pause": 9
+    "scene": "supply",
+    "view": "secret",
+    "who": "zunda",
+    "text": "企業秘密なら、全部は見せられないのだ。",
+    "pause": 14
   },
   {
     "id": "line-074",
-    "scene": "poison",
-    "view": "comparison",
-    "who": "zunda",
-    "text": "これは、全く見分けがつかないのだ。",
-    "pause": 14
+    "scene": "supply",
+    "view": "secret",
+    "who": "metan",
+    "text": "誰も施設を見せない。でも、誰もが養殖であることだけは保証している。",
+    "pause": 9
   },
   {
     "id": "line-075",
-    "scene": "poison",
-    "view": "comparison",
-    "who": "metan",
-    "text": "おかやまん准教授によれば、外見だけでの判別は困難。ただし、特有のビール臭があるわ。",
-    "pause": 9
+    "scene": "supply",
+    "view": "secret",
+    "who": "zunda",
+    "text": "見せないことだけで、存在しないとは言えないのだ。",
+    "pause": 14
   },
   {
     "id": "line-076",
-    "scene": "poison",
-    "view": "comparison",
-    "who": "zunda",
-    "text": "並べてもらっても、違いが分からないのだ。",
-    "pause": 14
+    "scene": "supply",
+    "view": "balance",
+    "who": "metan",
+    "text": "そこで北原研究員は、工場に入るものと、出てくるものに注目したわ。運び込まれるのは、大量の魚肉。",
+    "pause": 9
   },
   {
     "id": "line-077",
-    "scene": "poison",
-    "view": "attraction",
-    "who": "metan",
-    "text": "問題は、そのビール臭がソバヤを強く引き寄せることなの。",
-    "pause": 9
-  },
-  {
-    "id": "line-078",
-    "scene": "poison",
-    "view": "attraction",
+    "scene": "supply",
+    "view": "balance",
     "who": "zunda",
-    "text": "天敵を呼んでしまうのだ？",
+    "text": "ちくわの餌なのだ。",
     "pause": 14
   },
   {
-    "id": "line-079",
-    "scene": "poison",
-    "view": "attraction",
+    "id": "line-078",
+    "scene": "supply",
+    "view": "balance",
     "who": "metan",
-    "text": "北原研究員は当初、毒を経験したソバヤが学習し、ちくわを避けるようになると考えたわ。",
+    "text": "出荷されるちくわの量は、投入された魚肉の重量に極めて近かったの。",
     "pause": 9
   },
   {
+    "id": "line-079",
+    "scene": "supply",
+    "view": "balance",
+    "who": "zunda",
+    "text": "餌の無駄が少ないのだな。",
+    "pause": 14
+  },
+  {
     "id": "line-080",
-    "scene": "poison",
-    "view": "repeat",
+    "scene": "supply",
+    "view": "balance",
     "who": "metan",
-    "text": "ところが、毒ちくわ事件で倒れたソバヤは、後日、山でまた毒ちくわを食べたの。",
+    "text": "普通は、呼吸や運動に使う分、排泄する分がある。食べた餌が、そのまま身体になるわけではないでしょう。",
     "pause": 9
   },
   {
     "id": "line-081",
-    "scene": "poison",
-    "view": "repeat",
+    "scene": "supply",
+    "view": "balance",
     "who": "zunda",
-    "text": "ちくわの方が想定していた知能に届いていないのだ。",
-    "pause": 14,
-    "clipAfter": "theft"
+    "text": "水分の量とか、集計の期間も確認するのだ。",
+    "pause": 14
   },
   {
     "id": "line-082",
-    "scene": "poison",
-    "view": "stop",
+    "scene": "supply",
+    "view": "balance",
     "who": "metan",
-    "text": "一方、捕食直後に動けなくなる現象は、複数の映像で確認できるわ。",
+    "text": "ええ。この比較だけでは断定できない。ただ、餌と呼ばれたものが、原料だったと考えると、別の説明がつくわ。",
     "pause": 9
   },
   {
     "id": "line-083",
-    "scene": "poison",
-    "view": "stop",
+    "scene": "supply",
+    "view": "growth",
     "who": "metan",
-    "text": "そこで提唱されたのが、ソバヤ停止仮説よ。",
+    "text": "そして、公開された工場の紹介映像。魚肉を練り、棒に巻き、加熱した直後に、出荷できる大きさのちくわが現れる。",
     "pause": 9
   },
   {
     "id": "line-084",
-    "scene": "poison",
-    "view": "mechanism",
-    "who": "metan",
-    "text": "毒ちくわが食べられることで、ソバヤが一時的に動けなくなる。その間、周囲のちくわは捕食を免れるの。",
-    "pause": 9
+    "scene": "supply",
+    "view": "growth",
+    "who": "zunda",
+    "text": "養殖技術を分かりやすく説明するための模型かもしれないのだ。",
+    "pause": 14
   },
   {
     "id": "line-085",
-    "scene": "poison",
-    "view": "mechanism",
-    "who": "zunda",
-    "text": "自分は食べられてしまうけど、周りは助かるのだな。",
-    "pause": 14
-  },
-  {
-    "id": "line-086",
-    "scene": "poison",
-    "view": "mechanism",
+    "scene": "supply",
+    "view": "growth",
     "who": "metan",
-    "text": "近縁個体が集まるなら、共通する遺伝子を守る効果があるかもしれない。ただし、血縁関係の検証は今後の課題よ。",
+    "text": "産卵も、孵化も、成長を待つ時間も、そこには映っていない。",
     "pause": 9
   },
   {
-    "id": "line-087",
-    "scene": "poison",
-    "view": "mechanism",
+    "id": "line-086",
+    "scene": "supply",
+    "view": "growth",
     "who": "zunda",
-    "text": "そこまで確かめたら、かなり面白い研究なのだ。",
+    "text": "工場紹介で一生分を撮影する必要はないのだ。",
     "pause": 14
   },
   {
-    "id": "line-088",
-    "scene": "weapon",
-    "view": "leap",
+    "id": "line-087",
+    "scene": "supply",
+    "view": "growth",
     "who": "metan",
-    "text": "そして、この仕組みを、闇の政府が把握していないはずがない。",
-    "pause": 25
+    "text": "北原研究員は結論づけたわ。これは、異常に速い養殖ではない。生き物を育てていないのよ。",
+    "pause": 9
+  },
+  {
+    "id": "line-088",
+    "scene": "conspiracy2",
+    "view": "substitution",
+    "who": "metan",
+    "text": "魚肉で形を作り、天然物や養殖物に紛れ込ませる。そして、消費者には、ちくわとして渡す。",
+    "pause": 9
   },
   {
     "id": "line-089",
-    "scene": "weapon",
-    "view": "leap",
+    "scene": "conspiracy2",
+    "view": "substitution",
     "who": "zunda",
-    "text": "急に知らない政府が出てきたのだ。",
-    "pause": 25
+    "text": "それが本当なら、食品偽装なのだ。でも、まだ研究員の推測なのだ。",
+    "pause": 14
   },
   {
     "id": "line-090",
-    "scene": "weapon",
-    "view": "weapon",
+    "scene": "conspiracy2",
+    "view": "substitution",
     "who": "metan",
-    "text": "好物の匂いで誘い、行動を止める。この防御機構は、対ソバヤ兵器として利用できると、北原研究員は考えたわ。",
+    "text": "問題は、なぜ政府まで、養殖という説明を繰り返しているのか。",
     "pause": 9
   },
   {
     "id": "line-091",
-    "scene": "weapon",
-    "view": "weapon",
+    "scene": "conspiracy2",
+    "view": "substitution",
     "who": "zunda",
-    "text": "利用できることと、利用していることは違うのだ。",
+    "text": "企業から、そう報告されているのでは？",
     "pause": 14
   },
   {
     "id": "line-092",
-    "scene": "weapon",
-    "view": "distribution",
+    "scene": "conspiracy2",
+    "view": "leap",
     "who": "metan",
-    "text": "人工ちくわの大量生産は、その装置を全国へ配備するための偽装事業かもしれないわ。",
-    "pause": 9
+    "text": "政府も企業も、同じ説明。北原研究員は、背後にある情報統制機構の存在を確信したわ。",
+    "pause": 25
   },
   {
     "id": "line-093",
-    "scene": "weapon",
-    "view": "distribution",
+    "scene": "conspiracy2",
+    "view": "leap",
     "who": "zunda",
-    "text": "普通のちくわまで兵器にするな。あれは食べられる方の動物なのだ。",
-    "pause": 14
+    "text": "回答が似ているだけで、闇の政府を設立するな。",
+    "pause": 25
   },
   {
     "id": "line-094",
-    "scene": "weapon",
-    "view": "distribution",
+    "scene": "conspiracy2",
+    "view": "leap",
     "who": "metan",
-    "text": "すべてを実弾にする必要はないでしょう。",
-    "pause": 9
+    "text": "私は、もっと深刻だと思っているの。これは、私たちが何を生き物と認識するかを、管理する計画よ。",
+    "pause": 25
   },
   {
     "id": "line-095",
-    "scene": "weapon",
-    "view": "distribution",
+    "scene": "conspiracy2",
+    "view": "leap",
     "who": "zunda",
-    "text": "おでんを軍事用語で説明するな。",
-    "pause": 14
+    "text": "ちくわの仕入れから、人類の認識まで話を広げるな。",
+    "pause": 25
   },
   {
     "id": "line-096",
-    "scene": "weapon",
-    "view": "camouflage",
+    "scene": "conspiracy2",
+    "view": "education",
     "who": "metan",
-    "text": "しかも、食用のちくわと外見では区別できない。極めて高度な偽装ね。",
+    "text": "学校で、養殖技術の発展を習う。店では、養殖ちくわを買う。疑問を持たずに、次の世代へ同じ説明を伝える。",
     "pause": 9
   },
   {
     "id": "line-097",
-    "scene": "weapon",
-    "view": "camouflage",
+    "scene": "conspiracy2",
+    "view": "education",
     "who": "zunda",
-    "text": "見分けがつかないのは本当なのだ。でも、似た種類の動物がいるのは普通なのだ。",
+    "text": "普通の食育なのだ。",
     "pause": 14
   },
   {
     "id": "line-098",
-    "scene": "weapon",
-    "view": "claimsheet",
+    "scene": "conspiracy2",
+    "view": "education",
     "who": "metan",
-    "text": "霜重研究員も、企業が自分を排除した理由が、これで説明できたと話しているわ。",
+    "text": "その説明の中に、魚肉を棒に巻く工程は、一度も出てこない。",
     "pause": 9
   },
   {
     "id": "line-099",
-    "scene": "weapon",
-    "view": "claimsheet",
+    "scene": "conspiracy2",
+    "view": "education",
     "who": "zunda",
-    "text": "酔って暴れたからなのだ。",
+    "text": "生き物を育てる授業だからなのだ。",
     "pause": 14
   },
   {
     "id": "line-100",
-    "scene": "ending",
-    "view": "emoto",
+    "scene": "conspiracy2",
+    "view": "education",
     "who": "metan",
-    "text": "そして今回、未確認ニュースネットの江本記者が、ソバヤ本人への取材に成功したわ。",
+    "text": "この仕組みが完成すれば、ちくわ自身が一度も生きていなくても、社会の側が生き物として扱ってくれるのよ。",
     "pause": 9
   },
   {
     "id": "line-101",
-    "scene": "ending",
-    "view": "emoto",
+    "scene": "conspiracy2",
+    "view": "education",
     "who": "zunda",
-    "text": "食べている本人に聞けば、ちくわが生き物だと分かるはずなのだ。",
+    "text": "言い方だけは、ものすごく怖いのだ。",
     "pause": 14
   },
   {
     "id": "line-102",
-    "scene": "ending",
-    "view": "admission",
+    "scene": "conspiracy2",
+    "view": "network",
     "who": "metan",
-    "text": "ちくわを製造したことがあるか。その問いに、ソバヤは、あると答えたの。",
-    "pause": 25
+    "text": "研究員は、工場、物流、学校、そして家庭の食卓を、一枚の図にまとめたわ。",
+    "pause": 9
   },
   {
     "id": "line-103",
-    "scene": "ending",
-    "view": "admission",
+    "scene": "conspiracy2",
+    "view": "network",
     "who": "zunda",
-    "text": "ちくわを作った？　育てた、の聞き間違いではないのだ？",
-    "pause": 25
+    "text": "線を引けば、何でもつながるのだ。",
+    "pause": 14
   },
   {
     "id": "line-104",
-    "scene": "ending",
-    "view": "workshop",
+    "scene": "conspiracy2",
+    "view": "network",
     "who": "metan",
-    "text": "観光施設の、ちくわ手作り体験だそうよ。",
+    "text": "でも、中心に置いたはずの養殖場だけが、確認できない。",
     "pause": 9
   },
   {
     "id": "line-105",
-    "scene": "ending",
-    "view": "workshop",
+    "scene": "conspiracy2",
+    "view": "network",
     "who": "zunda",
-    "text": "また魚でちくわの形を作る遊びなのだ。粘土細工と同じなのだ。",
+    "text": "だから、まずは見学できる養殖場を探すのだ。世界の支配者を探す前に。",
     "pause": 14
   },
   {
     "id": "line-106",
     "scene": "ending",
-    "view": "workshop",
+    "view": "findings",
     "who": "metan",
-    "text": "完成したものは、その場ですべて食べたそうよ。",
+    "text": "魚肉から作られる、もう一つのちくわ。それが本物に混ざり、養殖技術の発展という説明で、食卓に届いている。研究チームは、そう結論づけたわ。",
     "pause": 9
   },
   {
     "id": "line-107",
     "scene": "ending",
-    "view": "workshop",
+    "view": "findings",
     "who": "zunda",
-    "text": "あいつが食べたことは、本物の証明にならないのだ。",
+    "text": "僕は、本物のちくわを買っているつもりなのだ。違うものなら、違うと書いてほしいのだ。",
     "pause": 14
   },
   {
     "id": "line-108",
     "scene": "ending",
-    "view": "escape",
+    "view": "findings",
     "who": "metan",
-    "text": "研究チームが人工物説を唱える一方で、自然界では、こうした映像も記録されているわ。",
-    "pause": 9,
-    "clipAfter": "escape"
+    "text": "昨日あなたが食べた一本も、海にも山にも、一度もいたことがないのかもしれない。",
+    "pause": 9
   },
   {
     "id": "line-109",
     "scene": "ending",
-    "view": "escape",
+    "view": "findings",
     "who": "zunda",
-    "text": "ほら、生きているのだ。魚のすり身が、自分で海に帰るわけがないのだ。",
+    "text": "不安にさせて終わるな。証拠をそろえて、ちゃんと告発するのだ。",
     "pause": 14
   },
   {
     "id": "line-110",
     "scene": "ending",
-    "view": "findings",
+    "view": "callback",
     "who": "metan",
-    "text": "研究チームは、魚肉による再現実験と工場映像から、偽物のちくわが食卓に入り込んでいると結論づけたわ。昨日あなたが食べた一本も、海にも山にも、一度もいたことがないのかもしれない。",
+    "text": "霜重研究員は、国民に隠された真実を、すべてさらけ出す覚悟だそうよ。",
     "pause": 9
   },
   {
     "id": "line-111",
     "scene": "ending",
-    "view": "findings",
+    "view": "callback",
     "who": "zunda",
-    "text": "怖い言い方をするな。その一本が偽物だったという証拠を、先に見せるのだ。",
+    "text": "まず服を着てから告発するのだ。",
     "pause": 14
   },
   {
     "id": "line-112",
-    "scene": "ending",
-    "view": "noevidence",
-    "who": "metan",
-    "text": "ただし、闇の政府の関与を示す証拠は、一切見つからなかったの。",
-    "pause": 9
-  },
-  {
-    "id": "line-113",
-    "scene": "ending",
-    "view": "noevidence",
-    "who": "zunda",
-    "text": "ちくわは生き物で、ソバヤは天敵。それで全部説明できるのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-114",
-    "scene": "ending",
-    "view": "conclusion",
-    "who": "metan",
-    "text": "研究チームは、想定以上に徹底した情報統制が行われていると結論づけたわ。",
-    "pause": 25
-  },
-  {
-    "id": "line-115",
-    "scene": "ending",
-    "view": "conclusion",
-    "who": "zunda",
-    "text": "ちくわの穴より、説の穴を調べるのだ。",
-    "pause": 25
-  },
-  {
-    "id": "line-116",
     "scene": "ending",
     "view": "endtitle",
     "who": "metan",

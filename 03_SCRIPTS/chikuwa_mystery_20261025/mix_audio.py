@@ -26,7 +26,11 @@ while len(loop)<end-cut+sr*2:
  overlap=loop[-cross:]*np.linspace(1,0,cross)[:,None]+main[:cross]*np.linspace(0,1,cross)[:,None];loop=np.concatenate([loop[:-cross],overlap,main[cross:]])
 bgm[cut:end+sr*2]=fade(loop[:end-cut+sr*2],int(.6*sr),2*sr);del loop
 # Return to the quiet opening theme for the ending, never lift after dialogue.
-a=decode(D/'public/ending.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-end].copy();bgm[end:end+len(a)]+=fade(a,sr*2,sr*4)
+a=decode(D/'public/ending.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:m['codaStartFrame']*1600-end].copy();bgm[end:end+len(a)]+=fade(a,sr*2,sr*4)
+# Quiet unsettling coda, after the presenters finish.
+coda=m['codaStartFrame']*1600
+bed=decode(D/'public/intro.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:n-coda].copy()
+bgm[coda:coda+len(bed)]+=fade(bed,sr,2*sr)
 for c in m['clips']:
  start=c['startFrame']*1600;length=c['durationInFrames']*1600
  a=decode(D/'public'/c['src'],'loudnorm=I=-19:TP=-2:LRA=11',c['sourceStartFrame']/30,c['durationInFrames']/30)[:length]

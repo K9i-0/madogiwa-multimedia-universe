@@ -579,18 +579,18 @@
     {
       "id": "050",
       "startFrame": 8402,
-      "durationInFrames": 292,
+      "durationInFrames": 293,
       "audioTrimStartSample": 588,
-      "audioTrimEndSample": 233728,
+      "audioTrimEndSample": 234887,
       "gapAfterFrames": 3,
       "pacingReason": "continuation",
       "cues": {
-        "Flutter Scene": 150
+        "Flutter Scene": 152
       }
     },
     {
       "id": "051",
-      "startFrame": 8697,
+      "startFrame": 8698,
       "durationInFrames": 342,
       "audioTrimStartSample": 1331,
       "audioTrimEndSample": 274688,
@@ -603,7 +603,7 @@
     },
     {
       "id": "052",
-      "startFrame": 9049,
+      "startFrame": 9050,
       "durationInFrames": 100,
       "audioTrimStartSample": 1198,
       "audioTrimEndSample": 80570,
@@ -615,7 +615,7 @@
     },
     {
       "id": "053",
-      "startFrame": 9155,
+      "startFrame": 9156,
       "durationInFrames": 230,
       "audioTrimStartSample": 1363,
       "audioTrimEndSample": 184576,
@@ -627,7 +627,7 @@
     },
     {
       "id": "054",
-      "startFrame": 9395,
+      "startFrame": 9396,
       "durationInFrames": 302,
       "audioTrimStartSample": 957,
       "audioTrimEndSample": 242176,
@@ -643,7 +643,7 @@
     },
     {
       "id": "055",
-      "startFrame": 9703,
+      "startFrame": 9704,
       "durationInFrames": 100,
       "audioTrimStartSample": 2051,
       "audioTrimEndSample": 81694,
@@ -655,7 +655,7 @@
     },
     {
       "id": "056",
-      "startFrame": 9809,
+      "startFrame": 9810,
       "durationInFrames": 182,
       "audioTrimStartSample": 606,
       "audioTrimEndSample": 146176,
@@ -667,7 +667,7 @@
     },
     {
       "id": "057",
-      "startFrame": 10001,
+      "startFrame": 10002,
       "durationInFrames": 300,
       "audioTrimStartSample": 780,
       "audioTrimEndSample": 240128,
@@ -680,7 +680,7 @@
     },
     {
       "id": "058",
-      "startFrame": 10311,
+      "startFrame": 10312,
       "durationInFrames": 145,
       "audioTrimStartSample": 1978,
       "audioTrimEndSample": 117335,
@@ -692,7 +692,7 @@
     },
     {
       "id": "059",
-      "startFrame": 10462,
+      "startFrame": 10463,
       "durationInFrames": 232,
       "audioTrimStartSample": 574,
       "audioTrimEndSample": 185600,
@@ -707,7 +707,7 @@
     },
     {
       "id": "060",
-      "startFrame": 10704,
+      "startFrame": 10705,
       "durationInFrames": 275,
       "audioTrimStartSample": 1377,
       "audioTrimEndSample": 220928,
@@ -717,7 +717,44 @@
     },
     {
       "id": "061",
-      "startFrame": 10989,
+      "startFrame": 10990,
+      "durationInFrames": 111,
+      "audioTrimStartSample": 1813,
+      "audioTrimEndSample": 90528,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "モデル": 8
+      }
+    },
+    {
+      "id": "062",
+      "startFrame": 11107,
+      "durationInFrames": 182,
+      "audioTrimStartSample": 1545,
+      "audioTrimEndSample": 146944,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "モデル": 57,
+        "アニメーション": 125
+      }
+    },
+    {
+      "id": "063",
+      "startFrame": 11299,
+      "durationInFrames": 264,
+      "audioTrimStartSample": 800,
+      "audioTrimEndSample": 211712,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "カメラ": 217
+      }
+    },
+    {
+      "id": "064",
+      "startFrame": 11573,
       "durationInFrames": 74,
       "audioTrimStartSample": 1802,
       "audioTrimEndSample": 60902,
@@ -726,8 +763,8 @@
       "cues": {}
     },
     {
-      "id": "062",
-      "startFrame": 11069,
+      "id": "065",
+      "startFrame": 11653,
       "durationInFrames": 138,
       "audioTrimStartSample": 863,
       "audioTrimEndSample": 111104,
@@ -738,8 +775,21 @@
       }
     },
     {
-      "id": "063",
-      "startFrame": 11217,
+      "id": "066",
+      "startFrame": 11801,
+      "durationInFrames": 212,
+      "audioTrimStartSample": 1329,
+      "audioTrimEndSample": 170240,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "モデル": 67,
+        "形": 133
+      }
+    },
+    {
+      "id": "067",
+      "startFrame": 12023,
       "durationInFrames": 87,
       "audioTrimStartSample": 1526,
       "audioTrimEndSample": 70384,
@@ -748,8 +798,8 @@
       "cues": {}
     },
     {
-      "id": "064",
-      "startFrame": 11310,
+      "id": "068",
+      "startFrame": 12116,
       "durationInFrames": 291,
       "audioTrimStartSample": 726,
       "audioTrimEndSample": 233472,
@@ -761,8 +811,8 @@
       }
     },
     {
-      "id": "065",
-      "startFrame": 11611,
+      "id": "069",
+      "startFrame": 12417,
       "durationInFrames": 201,
       "audioTrimStartSample": 2033,
       "audioTrimEndSample": 162721,
@@ -771,8 +821,8 @@
       "cues": {}
     },
     {
-      "id": "066",
-      "startFrame": 11818,
+      "id": "070",
+      "startFrame": 12624,
       "durationInFrames": 300,
       "audioTrimStartSample": 436,
       "audioTrimEndSample": 240128,
@@ -785,8 +835,8 @@
       }
     },
     {
-      "id": "067",
-      "startFrame": 12128,
+      "id": "071",
+      "startFrame": 12934,
       "durationInFrames": 257,
       "audioTrimStartSample": 1575,
       "audioTrimEndSample": 207104,
@@ -797,8 +847,8 @@
       }
     },
     {
-      "id": "068",
-      "startFrame": 12395,
+      "id": "072",
+      "startFrame": 13201,
       "durationInFrames": 92,
       "audioTrimStartSample": 1952,
       "audioTrimEndSample": 75450,
@@ -807,8 +857,8 @@
       "cues": {}
     },
     {
-      "id": "069",
-      "startFrame": 12493,
+      "id": "073",
+      "startFrame": 13299,
       "durationInFrames": 383,
       "audioTrimStartSample": 1519,
       "audioTrimEndSample": 307456,
@@ -821,8 +871,8 @@
       }
     },
     {
-      "id": "070",
-      "startFrame": 12886,
+      "id": "074",
+      "startFrame": 13692,
       "durationInFrames": 221,
       "audioTrimStartSample": 807,
       "audioTrimEndSample": 177152,
@@ -833,8 +883,8 @@
       }
     },
     {
-      "id": "071",
-      "startFrame": 13113,
+      "id": "075",
+      "startFrame": 13919,
       "durationInFrames": 147,
       "audioTrimStartSample": 1372,
       "audioTrimEndSample": 118959,
@@ -843,8 +893,8 @@
       "cues": {}
     },
     {
-      "id": "072",
-      "startFrame": 13266,
+      "id": "076",
+      "startFrame": 14072,
       "durationInFrames": 244,
       "audioTrimStartSample": 926,
       "audioTrimEndSample": 195328,
@@ -856,8 +906,8 @@
       }
     },
     {
-      "id": "073",
-      "startFrame": 13520,
+      "id": "077",
+      "startFrame": 14326,
       "durationInFrames": 296,
       "audioTrimStartSample": 778,
       "audioTrimEndSample": 237312,
@@ -869,8 +919,8 @@
       }
     },
     {
-      "id": "074",
-      "startFrame": 13826,
+      "id": "078",
+      "startFrame": 14632,
       "durationInFrames": 120,
       "audioTrimStartSample": 1430,
       "audioTrimEndSample": 96632,
@@ -879,8 +929,8 @@
       "cues": {}
     },
     {
-      "id": "075",
-      "startFrame": 13952,
+      "id": "079",
+      "startFrame": 14758,
       "durationInFrames": 229,
       "audioTrimStartSample": 1541,
       "audioTrimEndSample": 184064,
@@ -893,8 +943,8 @@
       }
     },
     {
-      "id": "076",
-      "startFrame": 14191,
+      "id": "080",
+      "startFrame": 14997,
       "durationInFrames": 123,
       "audioTrimStartSample": 1747,
       "audioTrimEndSample": 99451,
@@ -903,8 +953,8 @@
       "cues": {}
     },
     {
-      "id": "077",
-      "startFrame": 14320,
+      "id": "081",
+      "startFrame": 15126,
       "durationInFrames": 257,
       "audioTrimStartSample": 763,
       "audioTrimEndSample": 205824,
@@ -917,8 +967,8 @@
       }
     },
     {
-      "id": "078",
-      "startFrame": 14587,
+      "id": "082",
+      "startFrame": 15393,
       "durationInFrames": 205,
       "audioTrimStartSample": 817,
       "audioTrimEndSample": 164096,
@@ -932,8 +982,8 @@
       }
     },
     {
-      "id": "079",
-      "startFrame": 14802,
+      "id": "083",
+      "startFrame": 15608,
       "durationInFrames": 132,
       "audioTrimStartSample": 1805,
       "audioTrimEndSample": 106670,
@@ -944,8 +994,8 @@
       }
     },
     {
-      "id": "080",
-      "startFrame": 14940,
+      "id": "084",
+      "startFrame": 15746,
       "durationInFrames": 220,
       "audioTrimStartSample": 743,
       "audioTrimEndSample": 176640,
@@ -956,8 +1006,8 @@
       }
     },
     {
-      "id": "081",
-      "startFrame": 15170,
+      "id": "085",
+      "startFrame": 15976,
       "durationInFrames": 237,
       "audioTrimStartSample": 829,
       "audioTrimEndSample": 189696,
@@ -970,8 +1020,8 @@
       }
     },
     {
-      "id": "082",
-      "startFrame": 15413,
+      "id": "086",
+      "startFrame": 16219,
       "durationInFrames": 118,
       "audioTrimStartSample": 1291,
       "audioTrimEndSample": 95530,
@@ -980,8 +1030,8 @@
       "cues": {}
     },
     {
-      "id": "083",
-      "startFrame": 15537,
+      "id": "087",
+      "startFrame": 16343,
       "durationInFrames": 300,
       "audioTrimStartSample": 802,
       "audioTrimEndSample": 240128,
@@ -995,8 +1045,8 @@
       }
     },
     {
-      "id": "084",
-      "startFrame": 15853,
+      "id": "088",
+      "startFrame": 16659,
       "durationInFrames": 59,
       "audioTrimStartSample": 1488,
       "audioTrimEndSample": 48581,
@@ -1005,8 +1055,8 @@
       "cues": {}
     },
     {
-      "id": "085",
-      "startFrame": 15918,
+      "id": "089",
+      "startFrame": 16724,
       "durationInFrames": 250,
       "audioTrimStartSample": 1517,
       "audioTrimEndSample": 201472,
@@ -1019,8 +1069,8 @@
       }
     },
     {
-      "id": "086",
-      "startFrame": 16178,
+      "id": "090",
+      "startFrame": 16984,
       "durationInFrames": 70,
       "audioTrimStartSample": 837,
       "audioTrimEndSample": 56751,
@@ -1031,8 +1081,8 @@
       }
     },
     {
-      "id": "087",
-      "startFrame": 16254,
+      "id": "091",
+      "startFrame": 17060,
       "durationInFrames": 282,
       "audioTrimStartSample": 0,
       "audioTrimEndSample": 225280,
@@ -1045,8 +1095,8 @@
       }
     },
     {
-      "id": "088",
-      "startFrame": 16546,
+      "id": "092",
+      "startFrame": 17352,
       "durationInFrames": 299,
       "audioTrimStartSample": 683,
       "audioTrimEndSample": 239872,
@@ -1058,8 +1108,8 @@
       }
     },
     {
-      "id": "089",
-      "startFrame": 16851,
+      "id": "093",
+      "startFrame": 17657,
       "durationInFrames": 92,
       "audioTrimStartSample": 1372,
       "audioTrimEndSample": 74937,
@@ -1068,8 +1118,8 @@
       "cues": {}
     },
     {
-      "id": "090",
-      "startFrame": 16949,
+      "id": "094",
+      "startFrame": 17755,
       "durationInFrames": 380,
       "audioTrimStartSample": 725,
       "audioTrimEndSample": 304640,
@@ -1082,8 +1132,8 @@
       }
     },
     {
-      "id": "091",
-      "startFrame": 17332,
+      "id": "095",
+      "startFrame": 18138,
       "durationInFrames": 247,
       "audioTrimStartSample": 1087,
       "audioTrimEndSample": 197888,
@@ -1096,8 +1146,8 @@
       }
     },
     {
-      "id": "092",
-      "startFrame": 17589,
+      "id": "096",
+      "startFrame": 18395,
       "durationInFrames": 155,
       "audioTrimStartSample": 1063,
       "audioTrimEndSample": 124634,
@@ -1106,8 +1156,8 @@
       "cues": {}
     },
     {
-      "id": "093",
-      "startFrame": 17750,
+      "id": "097",
+      "startFrame": 18556,
       "durationInFrames": 237,
       "audioTrimStartSample": 851,
       "audioTrimEndSample": 189952,
@@ -1116,8 +1166,8 @@
       "cues": {}
     },
     {
-      "id": "094",
-      "startFrame": 17997,
+      "id": "098",
+      "startFrame": 18803,
       "durationInFrames": 92,
       "audioTrimStartSample": 1190,
       "audioTrimEndSample": 74214,
@@ -1128,8 +1178,8 @@
       }
     },
     {
-      "id": "095",
-      "startFrame": 18095,
+      "id": "099",
+      "startFrame": 18901,
       "durationInFrames": 131,
       "audioTrimStartSample": 805,
       "audioTrimEndSample": 104960,
@@ -1138,8 +1188,8 @@
       "cues": {}
     },
     {
-      "id": "096",
-      "startFrame": 18232,
+      "id": "100",
+      "startFrame": 19038,
       "durationInFrames": 85,
       "audioTrimStartSample": 972,
       "audioTrimEndSample": 68499,
@@ -1148,8 +1198,8 @@
       "cues": {}
     },
     {
-      "id": "097",
-      "startFrame": 18323,
+      "id": "101",
+      "startFrame": 19129,
       "durationInFrames": 236,
       "audioTrimStartSample": 793,
       "audioTrimEndSample": 189440,
@@ -1162,8 +1212,8 @@
       }
     },
     {
-      "id": "098",
-      "startFrame": 18569,
+      "id": "102",
+      "startFrame": 19375,
       "durationInFrames": 318,
       "audioTrimStartSample": 967,
       "audioTrimEndSample": 254925,
@@ -1176,8 +1226,8 @@
       }
     },
     {
-      "id": "099",
-      "startFrame": 18893,
+      "id": "103",
+      "startFrame": 19699,
       "durationInFrames": 112,
       "audioTrimStartSample": 1376,
       "audioTrimEndSample": 90564,
@@ -1186,8 +1236,8 @@
       "cues": {}
     },
     {
-      "id": "100",
-      "startFrame": 19011,
+      "id": "104",
+      "startFrame": 19817,
       "durationInFrames": 223,
       "audioTrimStartSample": 483,
       "audioTrimEndSample": 178176,
@@ -1200,8 +1250,8 @@
       }
     },
     {
-      "id": "101",
-      "startFrame": 19244,
+      "id": "105",
+      "startFrame": 20050,
       "durationInFrames": 348,
       "audioTrimStartSample": 598,
       "audioTrimEndSample": 278272,
@@ -1214,8 +1264,8 @@
       }
     },
     {
-      "id": "102",
-      "startFrame": 19608,
+      "id": "106",
+      "startFrame": 20414,
       "durationInFrames": 138,
       "audioTrimStartSample": 1632,
       "audioTrimEndSample": 111995,
@@ -1224,8 +1274,8 @@
       "cues": {}
     },
     {
-      "id": "103",
-      "startFrame": 19752,
+      "id": "107",
+      "startFrame": 20558,
       "durationInFrames": 188,
       "audioTrimStartSample": 884,
       "audioTrimEndSample": 150784,
@@ -1234,8 +1284,8 @@
       "cues": {}
     },
     {
-      "id": "104",
-      "startFrame": 19950,
+      "id": "108",
+      "startFrame": 20756,
       "durationInFrames": 101,
       "audioTrimStartSample": 1373,
       "audioTrimEndSample": 81529,
@@ -1244,8 +1294,8 @@
       "cues": {}
     },
     {
-      "id": "105",
-      "startFrame": 20057,
+      "id": "109",
+      "startFrame": 20863,
       "durationInFrames": 211,
       "audioTrimStartSample": 545,
       "audioTrimEndSample": 168960,
@@ -1254,8 +1304,8 @@
       "cues": {}
     },
     {
-      "id": "106",
-      "startFrame": 20278,
+      "id": "110",
+      "startFrame": 21084,
       "durationInFrames": 178,
       "audioTrimStartSample": 1191,
       "audioTrimEndSample": 142817,
@@ -1264,8 +1314,8 @@
       "cues": {}
     },
     {
-      "id": "107",
-      "startFrame": 20462,
+      "id": "111",
+      "startFrame": 21268,
       "durationInFrames": 303,
       "audioTrimStartSample": 749,
       "audioTrimEndSample": 242688,
@@ -1278,8 +1328,8 @@
       }
     },
     {
-      "id": "108",
-      "startFrame": 20775,
+      "id": "112",
+      "startFrame": 21581,
       "durationInFrames": 104,
       "audioTrimStartSample": 964,
       "audioTrimEndSample": 84075,
@@ -1288,8 +1338,8 @@
       "cues": {}
     },
     {
-      "id": "109",
-      "startFrame": 20885,
+      "id": "113",
+      "startFrame": 21691,
       "durationInFrames": 206,
       "audioTrimStartSample": 723,
       "audioTrimEndSample": 165273,
@@ -1300,8 +1350,8 @@
       }
     },
     {
-      "id": "110",
-      "startFrame": 21101,
+      "id": "114",
+      "startFrame": 21907,
       "durationInFrames": 96,
       "audioTrimStartSample": 1400,
       "audioTrimEndSample": 77764,
@@ -1310,8 +1360,8 @@
       "cues": {}
     },
     {
-      "id": "111",
-      "startFrame": 21203,
+      "id": "115",
+      "startFrame": 22009,
       "durationInFrames": 72,
       "audioTrimStartSample": 1313,
       "audioTrimEndSample": 58624,
@@ -1320,8 +1370,8 @@
       "cues": {}
     },
     {
-      "id": "112",
-      "startFrame": 21281,
+      "id": "116",
+      "startFrame": 22087,
       "durationInFrames": 58,
       "audioTrimStartSample": 1164,
       "audioTrimEndSample": 46817,

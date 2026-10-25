@@ -51,7 +51,7 @@ M|scene|Flutter Sceneを使うと、その上でモデルやカメラ、ライ�
 Z|stack|3Dの部分も、Flutter側から組み立てているのだな。
 M|stack|そういうこと。ネイティブでは、Flutter Sceneの下にFlutter GPU、その下にImpellerがある、という関係ね。
 Z|stable|試すには、Flutterの開発版が必要なのだ？
-M|stable|Stable版で使えるわ。このゲームはFlutter 3.47.2。Flutter Sceneの現在の案内では、3.47以降が対象よ。
+M|stable|Stable版で使えるわ。このゲームはFlutter 3.47.8。Flutter Sceneの現在の案内では、3.47以降が対象よ。
 M|stable|ただし、ネイティブではImpellerとFlutter GPUの有効化が必要よ。SDKがStable版でも、Flutter GPUのAPIの安定性まで保証されるわけではないの。
 # implementation
 Z|ui|じゃあ、いつものWidgetはどこにいるのだ？
@@ -64,8 +64,12 @@ M|game_odatetsu|それから今の標準操作は、画面で傾けた方向を�
 Z|model_flow|コードの話は分かったけど、この人たちの3Dモデルはどうしたのだ？
 M|model_flow|人物のような複雑なモデルは、Tripoで原型を作って、形を直したり、動かすための骨組みを整えたりしているわ。
 M|tripo|詳しい作り方は、以前の動画で紹介しているの。参照画像を用意するところから、Tripoで立体にして、修正して動かすところまで見られるわ。
+Z|gallery_model|このモデル、ゲーム中以外でもじっくり見られるのだ？
+M|gallery_model|タイトルのギャラリーから見られるわ。モデルを回したり拡大したり、歩くアニメーションを切り替えたりできるの。
+M|gallery_stage|街全体も見回せて、建物へ寄ったり、昼と夜を切り替えたりできるわ。ゲームに使っているステージを、別のカメラ操作で見せているのよ。
 Z|chikuwa|では、このちくわもTripoなのだ？
 M|chikuwa_code|ちくわはCodexに、Blenderの生成コードを書いてもらって作っているわ。
+M|chikuwa_variants|通常のちくわと毒ちくわは、同じモデルの材質を切り替えているの。形状を共有して、見た目を変えているわ。
 Z|chikuwa|ちくわには、ちくわの作り方があるのだ。
 M|model_compare|人物の顔や体形と、筒状の小道具では、作りやすい方法が違うの。シンプルな形は、コードで形や寸法を調整する方法も使えるわ。
 # ai

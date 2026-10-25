@@ -1,0 +1,224 @@
+{
+  "ready": true,
+  "screen": "playing",
+  "error": null,
+  "graphics": {
+    "shadows": true,
+    "reflections": true,
+    "surfaceDetail": true,
+    "bloom": true,
+    "fullResolution": false
+  },
+  "showFps": false,
+  "benchmark": {
+    "active": false,
+    "samples": 0,
+    "result": null
+  },
+  "sensor": false,
+  "demo": false,
+  "paused": false,
+  "lang": "ja",
+  "lastRecord": null,
+  "records": 0,
+  "balance": {
+    "roundSeconds": 20,
+    "spawnInterval": 1.03,
+    "fallSeconds": 3.1,
+    "moveSpeed": 2.6,
+    "acceleration": 12,
+    "badRatio": 0.25,
+    "beerPoints": 100,
+    "penalty": 200,
+    "comboBonus": 25,
+    "cameraStep": 30,
+    "cameraLimit": 60,
+    "facingMin": 0,
+    "facingMax": 180,
+    "zoomMin": 0.7,
+    "zoomMax": 5,
+    "tiltDegrees": 13.75
+  },
+  "seed": 1,
+  "selectedCharacter": "cto_odatetsu",
+  "timeOfDay": "day",
+  "roundCharacter": "cto_odatetsu",
+  "difficulty": "ノーマル",
+  "spawnInterval": 1.03,
+  "fallSeconds": 3.1,
+  "badRatio": 0.25,
+  "dropKinds": [
+    "chikuwa",
+    "toxicChikuwa"
+  ],
+  "baseMoveSpeed": 3.4,
+  "baseCatchRadius": 0.55,
+  "moveSpeed": 3.4,
+  "catchRadius": 0.55,
+  "vx": 0,
+  "dropCount": 16,
+  "practice": false,
+  "controlMode": "camera",
+  "phase": "playing",
+  "time": 3.983333333333324,
+  "x": 0,
+  "yaw": 0,
+  "score": 100,
+  "combo": 1,
+  "caught": 1,
+  "happoshu": 0,
+  "missed": 0,
+  "activeCans": [
+    {
+      "id": 1,
+      "kind": "chikuwa",
+      "facing": -0.9027467051647083,
+      "x": 2.7037912853428825,
+      "height": 1.4262933011752537,
+      "landing": 4.13
+    },
+    {
+      "id": 2,
+      "kind": "chikuwa",
+      "facing": 1.6399762604900257,
+      "x": -0.034134700790060535,
+      "height": 3.262001986215868,
+      "landing": 5.16
+    },
+    {
+      "id": 3,
+      "kind": "toxicChikuwa",
+      "facing": 2.800687925286403,
+      "x": 1.6502999077172018,
+      "height": 4.857655048057406,
+      "landing": 6.1899999999999995
+    }
+  ],
+  "events": [
+    {
+      "time": 3.1166666666666605,
+      "id": 0,
+      "kind": "chikuwa",
+      "score": 100,
+      "x": 0
+    }
+  ],
+  "renderer": {
+    "aa": "fxaa",
+    "scale": 0.5491990846681922,
+    "shadowCascades": 1,
+    "shadowDistance": 24,
+    "stageVisible": true,
+    "mountedRoots": 10
+  },
+  "displayedCharacter": "cto_odatetsu",
+  "motion": {
+    "transitionSeconds": null,
+    "motion": "Idle",
+    "phase": 0.5791865746003688,
+    "finished": false,
+    "paused": false,
+    "seconds": {
+      "Idle": 1.8147846648559476,
+      "Walk": 1.0812747403834027
+    },
+    "weights": {
+      "Idle": 0.9999999999999999,
+      "Walk": 1.312245091168321e-274
+    }
+  },
+  "facing": 4.7123880178755035,
+  "zoom": 1,
+  "zoomPivot": "character",
+  "vision": {
+    "visible": true,
+    "source": "characters/Okayaman.jpg"
+  },
+  "stage": {
+    "timeOfDay": "day",
+    "graphics": {
+      "shadows": true,
+      "reflections": true,
+      "surfaceDetail": true,
+      "bloom": true,
+      "fullResolution": false
+    },
+    "renderScale": 0.5491990846681922,
+    "reflectionMode": "static-city-ibl",
+    "stageNodes": [
+      "ad_accidenchua",
+      "ad_safety",
+      "ad_sponsors",
+      "ad_yumemin",
+      "akasaka",
+      "bengoshi",
+      "concrete",
+      "facade0",
+      "facade1",
+      "facade2",
+      "facade3",
+      "facade4",
+      "facade5",
+      "foliage",
+      "fudosan",
+      "glass",
+      "gold",
+      "izakaya",
+      "lamp",
+      "lawn",
+      "light",
+      "marking",
+      "metal",
+      "paving",
+      "roof",
+      "shika",
+      "skyline",
+      "soba",
+      "steel",
+      "street",
+      "tower",
+      "traffic_hwy_xneg",
+      "traffic_hwy_xpos",
+      "traffic_xneg",
+      "traffic_xpos",
+      "traffic_zneg",
+      "traffic_zpos",
+      "white",
+      "yellowline"
+    ],
+    "traffic": {
+      "traffic_hwy_xneg": [
+        -23.756338119506836,
+        0
+      ],
+      "traffic_hwy_xpos": [
+        16.736032485961914,
+        0
+      ],
+      "traffic_xneg": [
+        -18.388320922851562,
+        0
+      ],
+      "traffic_xpos": [
+        11.878169059753418,
+        0
+      ],
+      "traffic_zneg": [
+        0,
+        4.602787494659424
+      ],
+      "traffic_zpos": [
+        0,
+        -15.83755874633789
+      ]
+    }
+  },
+  "visibleDropModels": [
+    "chikuwa",
+    "chikuwa",
+    "toxicChikuwa"
+  ],
+  "type": "_extensionType",
+  "method": "ext.flutter.madogiwa.inspectCatch",
+  "status": "Success"
+}

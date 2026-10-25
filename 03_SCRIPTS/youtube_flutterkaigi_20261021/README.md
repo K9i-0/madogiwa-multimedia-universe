@@ -1,4 +1,4 @@
-# ゆめみ採用試験 技術解説 改訂v7
+# ゆめみ採用試験 技術解説 改訂v8
 
 ずんだもん＆四国めたん。参考は窓際族物語紹介v5。
 
@@ -94,3 +94,10 @@ v6のゲーム映像・選択画面・inspect画像・MCP操作実演はiPhone 1
 - UIのレイアウト、具体的な中央配置、GPUリソース、三角形の描画、Flutter Sceneとの関係を5種類の図で説明。
 - 変更していない発話音声とiPhone 18 Pro横向き映像は再利用。
 - 音声改稿時は `prepare_voice.py` → `prepare_edit_v5.py` → `render.py` の順で実行。
+
+## 改訂v8（2026-10-25）
+
+- 最新：`final_remotion_flutterkaigi_v8.mp4`、12分20.9秒、1280×720、30fps。
+- 公開ゲーム5a11e01をfetch後のorigin/mainと照合。全ゲーム映像をiPhone 18 Pro横向きで再収録。街のビル・看板、選択画面などを更新。
+- モデル説明の流れにギャラリー、ちくわ説明に同一形状・材質切替を追加。使用SDKを3.47.8へ更新。
+- v8素材化はprepare_media_v8.py。rawはremotion/out/*_v8_raw.mov。録画はsimctl、操作はDart VM Service拡張（MCPの版不一致の代替）。

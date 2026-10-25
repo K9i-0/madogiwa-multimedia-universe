@@ -1,3 +1,22 @@
+# 改訂v8 検証記録 — 2026-10-25
+
+- 最新ゲーム5a11e01とfetch後のorigin/mainの一致を確認。v7の6652753からの変更を台本・映像へ反映。
+- iPhone 18 Pro / iOS27.0 / 横画面で昼・夜・そば屋・おだてつ正面アップ・Widget実タップを再収録。ギャラリーのモデル・街を追加。タイトル・選択・検証画面も更新。
+- Dart MCPでdebug起動。MarionetteのMCP 0.6.0/binding 0.7.0の不一致は、同じDart VM Service拡張の直接呼出しで代替。ゲームの依存関係・ソースは変更していない。
+- seed1 → start → step6秒 / 入力0 → inspect：score100、x0、caught1、activeCans3。図と一致。
+- 117発話・187字幕ページ。既存112発話のWAVを再利用、変更・追加5発話。字幕原文・時間範囲・無音部分のみのトリム・非重複を確認。
+- 変更音声のVOICEVOXモーラとWhisper-small認識を確認。Flutter 3.47.8、ギャラリー、材質切替の内容を照合。主観的な通し試聴は未実施。
+- 出典：fact_check_v8.md。旧性能測定を新しい測定値として扱わない。
+
+- 追加画面とおだてつ正面アップを720p実フレームで確認。8採用クリップの先頭・中間・終端を確認し、結果ダイアログ・ホーム画面の混入なし。
+- `npm run typecheck`、`git diff --check`合格。証跡：`remotion/out/audit_v8/`、`out/clips_v8.jpg`、`out/timing_validation_v8.json`、`out/changed_audio_asr_v8.json`。
+
+- 完成：`final_remotion_flutterkaigi_v8.mp4`、740.866667秒（12分20.9秒）、58,497,019 bytes。H.264 1280×720 / 30fps / 22,226フレーム、AAC 48kHz stereo。
+- 終端まで全編デコード合格。563フレームを抽出し、全187字幕ページの中間フレームを10枚のコンタクトシートで目視確認。最新タイトル・正面アップ・ギャラリー・材質共有の図と字幕の対応を確認。
+- peak −1.7dBFS / mean −22.0dBFS。完成証跡：`remotion/out/final_audit_v8/`。YouTube投稿・Studio登録は未実施。
+
+---
+
 # 改訂v7 検証記録 — 2026-10-21
 
 - 人物紹介のタスク管理説明・ずんだもんの達人評を削除。Chief Ticket Officerの愛称と若手社員の説明は保持。登壇台詞をユーザー指定文言へ変更。

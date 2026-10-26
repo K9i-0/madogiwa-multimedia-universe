@@ -1,0 +1,25 @@
+2026-10-27 参考Shortsの開始時間・タイミングを採用
+
+ユーザー指定「開始時間とか丸パクリしたい」により、22秒開始・34秒尺から変更。
+参考：https://youtube.com/shorts/B1loqFJymmY
+GET TO GO / REVENGE ( Super Slowed ) -1HXSX,wnorg17
+実測720×1280、60fps、21.121秒。
+
+音源の一致：参考冒頭0〜8秒とアクション12〜19秒を元REVENGE WAVへ正規化相互相関で照合。
+両区間で参考0秒＝曲11.096秒。一致度0.981／0.993。22秒開始ではない。
+新案も曲11.096秒から開始。48kHzの532608サンプルを正本とし、音声開始を動画fpsへ丸めない。
+出力634f／30fps＝21.1333秒。参考との差12.3ms。末尾0.8秒の音量減衰。
+
+コピーしたタイミング
+1.000、1.8167、2.700、4.2333、7.150、12.4833、12.9333、14.9833秒の大きなカットを30fpsの最寄りフレームへ。
+参考12.8〜14.4秒を0.1秒間隔で確認し、一撃の12.9333秒をポッドの最初の衝撃へ対応。
+前半の小刻みな人物紹介→対峙を長めに保持→短いタメ→一撃→動作の余韻→締め、を移植。
+素材の登場人物・服装・演技・背景自体は窓際族の既存素材。以前指定された縦向け画角・左右比較英語UI・SOBAYA HAZARDタイトル・BGMのみを維持。
+参考動画の映像・透かし・登録促進字幕・骸骨スタンプ自体は納品映像に組み込んでいない。
+
+実装：prepare-hazard-reference.py、src/aura-hazard-reference.json／tsx、render-hazard-reference.mjs、audit-hazard-reference.py。
+remotion内で python3 prepare-hazard-reference.py、npm run typecheck、node render-hazard-reference.mjs、python3 audit-hazard-reference.py。
+前提素材は既存aura編集のpublic/aura、特にpre-impact.jpg。
+出力 final_remotion_sobaya_hazard_reference_9x16.mp4。
+参考動画・メタデータ・連続画像はremotion/out/reference内だけに保管しGit管理外。
+音源相互相関・カット検出・代表フレーム確認は実施。主観的通し試聴は未実施。

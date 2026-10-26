@@ -1,0 +1,72 @@
+{
+  "referenceTimingErrors": [
+    {
+      "referenceSeconds": 1,
+      "outputFrame": 30,
+      "errorMs": 0.0
+    },
+    {
+      "referenceSeconds": 1.816667,
+      "outputFrame": 55,
+      "errorMs": 16.666
+    },
+    {
+      "referenceSeconds": 2.7,
+      "outputFrame": 81,
+      "errorMs": 0.0
+    },
+    {
+      "referenceSeconds": 4.233333,
+      "outputFrame": 127,
+      "errorMs": 0.0
+    },
+    {
+      "referenceSeconds": 7.15,
+      "outputFrame": 215,
+      "errorMs": 16.667
+    },
+    {
+      "referenceSeconds": 12.483333,
+      "outputFrame": 374,
+      "errorMs": -16.666
+    },
+    {
+      "referenceSeconds": 12.933333,
+      "outputFrame": 388,
+      "errorMs": 0.0
+    },
+    {
+      "referenceSeconds": 14.983333,
+      "outputFrame": 449,
+      "errorMs": -16.666
+    }
+  ],
+  "musicStartSeconds": 11.096,
+  "referenceDurationSeconds": 21.121,
+  "noRepeatedPrimaryVideoRanges": true,
+  "output": "final_remotion_sobaya_hazard_reference_9x16.mp4",
+  "sha256": "6f7cd00837909829ab88ff6ccfd55edd70cfcb200a7e1ad349724a7d92ee18ae",
+  "durationSeconds": 21.133333333333333,
+  "frames": 634,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "fullDecode": "passed",
+  "typecheck": "passed",
+  "representativeFrameReview": true,
+  "subjectiveFullPlaybackAudition": false,
+  "audioPolicy": "Only specified REVENGE music; all source-video audio muted and not mapped",
+  "loudnessLUFS": -12.44,
+  "truePeakDbTP": -3.88,
+  "dialogueCaptions": false,
+  "texts": [
+    "SOBAYA HAZARD",
+    "BIO-SIGNATURE SCAN",
+    "YAMETARO",
+    "FUKUGYUN",
+    "ANOMALY DETECTED",
+    "RETRIEVAL AUTHORIZED"
+  ],
+  "decodedAudioStartSeconds": 11.096,
+  "decodedAudioCorrelation": 0.99959
+}

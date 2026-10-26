@@ -1,0 +1,595 @@
+{
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "durationInFrames": 3500,
+  "shots": [
+    {
+      "id": "ch01",
+      "start": 0,
+      "end": 362,
+      "video": "h3/ch01_480p.mp4",
+      "scene": "s01_opening",
+      "trimStart": 0
+    },
+    {
+      "id": "ch02",
+      "start": 362,
+      "end": 503,
+      "video": "h3/ch02_480p.mp4",
+      "scene": "s02_three",
+      "trimStart": 0
+    },
+    {
+      "id": "ch03",
+      "start": 503,
+      "end": 627,
+      "video": "h3/ch03_480p.mp4",
+      "scene": "s03_first",
+      "trimStart": 0
+    },
+    {
+      "id": "ch04",
+      "start": 627,
+      "end": 751,
+      "video": "h3/ch04_480p.mp4",
+      "scene": "s04_second",
+      "trimStart": 0
+    },
+    {
+      "id": "ch05",
+      "start": 751,
+      "end": 909,
+      "video": "h3/ch05_480p.mp4",
+      "scene": "s05_third",
+      "trimStart": 0
+    },
+    {
+      "id": "ch06",
+      "start": 909,
+      "end": 1220,
+      "video": "h3/ch06_480p.mp4",
+      "scene": "s06_trio",
+      "trimStart": 0
+    },
+    {
+      "id": "ch07",
+      "start": 1220,
+      "end": 1412,
+      "video": "h3/ch07_480p.mp4",
+      "scene": "s07_one",
+      "trimStart": 0
+    },
+    {
+      "id": "ch08",
+      "start": 1412,
+      "end": 1757,
+      "video": "h3/ch08_480p.mp4",
+      "scene": "s08_reveal",
+      "trimStart": 0
+    },
+    {
+      "id": "ch09",
+      "start": 1757,
+      "end": 1932,
+      "video": "h3/ch09_480p.mp4",
+      "scene": "s09_how",
+      "trimStart": 0
+    },
+    {
+      "id": "ch10",
+      "start": 1932,
+      "end": 2192,
+      "video": "h3/ch10_480p.mp4",
+      "scene": "s10_arms",
+      "trimStart": 0
+    },
+    {
+      "id": "ch11",
+      "start": 2192,
+      "end": 2316,
+      "video": "h3/ch11_480p.mp4",
+      "scene": "s11_sleeves",
+      "trimStart": 0
+    },
+    {
+      "id": "ch12",
+      "start": 2316,
+      "end": 2576,
+      "video": "h3/ch12_480p.mp4",
+      "scene": "s12_wear",
+      "trimStart": 0
+    },
+    {
+      "id": "ch13a",
+      "start": 2576,
+      "end": 2750,
+      "video": "h3/ch13_480p.mp4",
+      "scene": "s13_detail",
+      "trimStart": 0
+    },
+    {
+      "id": "ch13b",
+      "start": 2750,
+      "end": 2834,
+      "video": "h3/ch13_480p.mp4",
+      "scene": "s13_detail",
+      "trimStart": 210
+    },
+    {
+      "id": "ch14",
+      "start": 2834,
+      "end": 2924,
+      "video": "h3/ch14_480p.mp4",
+      "scene": "s13_detail",
+      "trimStart": 0
+    },
+    {
+      "id": "ch15",
+      "start": 2924,
+      "end": 3031,
+      "video": "h3/ch15_480p.mp4",
+      "scene": "s14_when",
+      "trimStart": 0
+    },
+    {
+      "id": "ch16",
+      "start": 3031,
+      "end": 3240,
+      "video": "h3/ch16_480p.mp4",
+      "scene": "s15_today",
+      "trimStart": 0
+    },
+    {
+      "id": "ch17",
+      "start": 3240,
+      "end": 3500,
+      "video": "h3/ch17_480p.mp4",
+      "scene": "s16_closing",
+      "trimStart": 0
+    }
+  ],
+  "lines": [
+    {
+      "id": "intro",
+      "speaker": "sobaya",
+      "text": "今日という日を、私はずっと待っていました。",
+      "start": 12,
+      "end": 89,
+      "audio": "line_intro_sobaya_large.wav",
+      "pauseFrames": 36,
+      "shot": "ch01",
+      "source_sha256": "1170a7b00be1660db505901f01f0130749cc6d51a1d0db7049a5c5b007b8ab49"
+    },
+    {
+      "id": "revolution",
+      "speaker": "sobaya",
+      "text": "時として、すべてを変えてしまう革命的な製品が現れます。",
+      "start": 125,
+      "end": 230,
+      "audio": "line_revolution_sobaya_large.wav",
+      "pauseFrames": 18,
+      "shot": "ch01",
+      "source_sha256": "60dccaf7c7752ef4dd1affb27a8da55dcdd1eacde91dcb07e28ff1e22733d5b4"
+    },
+    {
+      "id": "lucky",
+      "speaker": "sobaya",
+      "text": "そんな製品を、ひとつでも紹介できれば幸運です。",
+      "start": 248,
+      "end": 336,
+      "audio": "line_lucky_sobaya_large.wav",
+      "pauseFrames": 24,
+      "shot": "ch01",
+      "source_sha256": "7775f848a84888d0b2865769ce6986a96eb9b6d498acdd591122e8dcd5351174"
+    },
+    {
+      "id": "three",
+      "speaker": "sobaya",
+      "text": "今日、私たちは、3つ、紹介します。",
+      "start": 370,
+      "end": 438,
+      "audio": "line_three_sobaya_large.wav",
+      "pauseFrames": 65,
+      "shot": "ch02",
+      "source_sha256": "df9270453dc16e185680f0bace3c3469740589fb12a55882fc0be86f4ff2d43d"
+    },
+    {
+      "id": "first",
+      "speaker": "sobaya",
+      "text": "ひとつめ。窓際族。",
+      "start": 508,
+      "end": 565,
+      "audio": "line_first_sobaya_large.wav",
+      "pauseFrames": 62,
+      "shot": "ch03",
+      "source_sha256": "d6dd05cea1fb93a1448ad8dd294a441860c2cd26cc06ff12c235fbc50f5f7824"
+    },
+    {
+      "id": "second",
+      "speaker": "sobaya",
+      "text": "ふたつめ。T。",
+      "start": 639,
+      "end": 686,
+      "audio": "line_second_sobaya_large.wav",
+      "pauseFrames": 65,
+      "shot": "ch04",
+      "source_sha256": "50f67b3b573ffe0400da996e4a1b592e6b6ee8bd54dc4054107f15c15ee63409"
+    },
+    {
+      "id": "third",
+      "speaker": "sobaya",
+      "text": "そして、みっつめ。シャツ。",
+      "start": 763,
+      "end": 820,
+      "audio": "line_third_sobaya_large.wav",
+      "pauseFrames": 85,
+      "shot": "ch05",
+      "source_sha256": "7e11dec9507387e81093053812ec6df6a28ced84dc0b0e08b6693eab9b0a49bf"
+    },
+    {
+      "id": "repeat1",
+      "speaker": "sobaya",
+      "text": "窓際族。T。シャツ。",
+      "start": 919,
+      "end": 988,
+      "audio": "line_repeat1_sobaya_large.wav",
+      "pauseFrames": 22,
+      "shot": "ch06",
+      "source_sha256": "58a892ffdf4666d16f63ead2b1e68351f59a53946da41a7b6610cd5ff8d34a8d"
+    },
+    {
+      "id": "repeat2",
+      "speaker": "sobaya",
+      "text": "窓際族。T。シャツ。",
+      "start": 1010,
+      "end": 1078,
+      "audio": "line_repeat2_sobaya_large.wav",
+      "pauseFrames": 38,
+      "shot": "ch06",
+      "source_sha256": "4fbdd937ce2c44b3939bc16a47d3e50cf7d2037f3510d2deae694267046d9fdc"
+    },
+    {
+      "id": "understand",
+      "speaker": "sobaya",
+      "text": "もう、おわかりですね？",
+      "start": 1116,
+      "end": 1160,
+      "audio": "line_understand_sobaya_large.wav",
+      "pauseFrames": 60,
+      "shot": "ch06",
+      "source_sha256": "db5b906477da4e7f33133b92ba8f9b59160b924f25431ad89e0d5773f9c95c5b"
+    },
+    {
+      "id": "notthree",
+      "speaker": "sobaya",
+      "text": "これは、3つの別々の製品ではありません。",
+      "start": 1232,
+      "end": 1309,
+      "audio": "line_notthree_sobaya_large.wav",
+      "pauseFrames": 25,
+      "shot": "ch07",
+      "source_sha256": "3c3219a2877cbeb0e78823bbba8b51ba046dba5ca9a846c2c239e60999a1fd69"
+    },
+    {
+      "id": "one",
+      "speaker": "sobaya",
+      "text": "ひとつの製品です。",
+      "start": 1334,
+      "end": 1378,
+      "audio": "line_one_sobaya_large.wav",
+      "pauseFrames": 30,
+      "shot": "ch07",
+      "source_sha256": "36d498076b4e556584e92127ef80755686633358399b3f772b7f7b3dd72367c4"
+    },
+    {
+      "id": "reveal",
+      "speaker": "sobaya",
+      "text": "私たちは、これを、窓際族Tシャツと呼びます。",
+      "start": 1419,
+      "end": 1509,
+      "audio": "line_reveal_sobaya_large.wav",
+      "pauseFrames": 125,
+      "shot": "ch08",
+      "source_sha256": "a56eb890a3d2edbdd81d9449b1e6cb50ad09b2fbe1cf0c56e0f717b6407cd6a4"
+    },
+    {
+      "id": "reinvent",
+      "speaker": "sobaya",
+      "text": "今日、私たちはTシャツを再発明します。",
+      "start": 1634,
+      "end": 1722,
+      "audio": "line_reinvent_sobaya_large.wav",
+      "pauseFrames": 35,
+      "shot": "ch08",
+      "source_sha256": "e404b69e78a3f3e9593f1a879a0b33e9277f3a008f844531be99bb985bbf70ab"
+    },
+    {
+      "id": "how",
+      "speaker": "sobaya",
+      "text": "では、どうやって使うのか。",
+      "start": 1767,
+      "end": 1819,
+      "audio": "line_how_sobaya_large.wav",
+      "pauseFrames": 20,
+      "shot": "ch09",
+      "source_sha256": "fd247e9b37879d64bfd08d1b676750cb1c4f7e2cdfafb59316a539bf2bd8d614"
+    },
+    {
+      "id": "learn",
+      "speaker": "sobaya",
+      "text": "特別な操作を、覚える必要はありません。",
+      "start": 1839,
+      "end": 1912,
+      "audio": "line_learn_sobaya_large.wav",
+      "pauseFrames": 20,
+      "shot": "ch09",
+      "source_sha256": "e69036bf18e5affc7e5e05aecac085966408d8ce1482cc6b5baf288f56ba0acf"
+    },
+    {
+      "id": "born",
+      "speaker": "sobaya",
+      "text": "私たちは、生まれたときから持っているものを使います。",
+      "start": 1944,
+      "end": 2034,
+      "audio": "line_born_sobaya_large.wav",
+      "pauseFrames": 45,
+      "shot": "ch10",
+      "source_sha256": "3e43a19b96b511228730f6f93fe30a4fd1709ecca95bdeae9f8684162bf24824"
+    },
+    {
+      "id": "arms",
+      "speaker": "sobaya",
+      "text": "腕です。",
+      "start": 2079,
+      "end": 2109,
+      "audio": "line_arms_sobaya_large.wav",
+      "pauseFrames": 62,
+      "shot": "ch10",
+      "source_sha256": "9859a267b10e206e9d1ae615b85eef0fd0291bc518f9814b36d5c3c3388b540f"
+    },
+    {
+      "id": "right",
+      "speaker": "sobaya",
+      "text": "右腕を通す。",
+      "start": 2204,
+      "end": 2241,
+      "audio": "line_right_sobaya_large.wav",
+      "pauseFrames": 8,
+      "shot": "ch11",
+      "source_sha256": "bc9d5bdd98cd7796f03f586b06ce1303f1f8595b948713c8b90be44263970fd4"
+    },
+    {
+      "id": "left",
+      "speaker": "sobaya",
+      "text": "左腕を通す。",
+      "start": 2249,
+      "end": 2285,
+      "audio": "line_left_sobaya_large.wav",
+      "pauseFrames": 8,
+      "shot": "ch11",
+      "source_sha256": "2a88f11217259a7f00ecb65b62da677d871a3ee1ab2558c4f9d20ae584d50516"
+    },
+    {
+      "id": "head",
+      "speaker": "sobaya",
+      "text": "そして、頭を通す。",
+      "start": 2328,
+      "end": 2376,
+      "audio": "line_head_sobaya_large.wav",
+      "pauseFrames": 16,
+      "shot": "ch12",
+      "source_sha256": "dbca14ccdd3a04fec8004ae90dad5b37425e06ba17c90bb05b1965dc87aac08e"
+    },
+    {
+      "id": "wear",
+      "speaker": "sobaya",
+      "text": "着られました。",
+      "start": 2392,
+      "end": 2421,
+      "audio": "line_wear_sobaya_large.wav",
+      "pauseFrames": 65,
+      "shot": "ch12",
+      "source_sha256": "35b07040f2c5eca6fe7f97eb93d9e42ff8a544e92da84e72fb919e16810f57d8"
+    },
+    {
+      "id": "simple",
+      "speaker": "sobaya",
+      "text": "実にシンプルです。",
+      "start": 2486,
+      "end": 2539,
+      "audio": "line_simple_sobaya_large.wav",
+      "pauseFrames": 22,
+      "shot": "ch12",
+      "source_sha256": "978a10563773ee789dc165e1cc8eb68d88eb21d5a75c6300205b58bf41e93eb6"
+    },
+    {
+      "id": "detail",
+      "speaker": "sobaya",
+      "text": "見てください。このディテール。",
+      "start": 2578,
+      "end": 2638,
+      "audio": "line_detail_sobaya_large.wav",
+      "pauseFrames": 25,
+      "shot": "ch13",
+      "source_sha256": "c20f237aa7edc2c09922c281c6976be314b8e82ec57e15e5aa0afa42db884e64"
+    },
+    {
+      "id": "everyone",
+      "speaker": "sobaya",
+      "text": "窓際族が、全員ここにいる。",
+      "start": 2663,
+      "end": 2729,
+      "audio": "line_everyone_sobaya_large.wav",
+      "pauseFrames": 20,
+      "shot": "ch13",
+      "source_sha256": "75abf0d9c0dd16b421c464d3ef01c8aebeefad852d12bce4825112aed3831766"
+    },
+    {
+      "id": "nobody",
+      "speaker": "sobaya",
+      "text": "しかも、誰も働いていません。",
+      "start": 2749,
+      "end": 2808,
+      "audio": "line_nobody_sobaya_large.wav",
+      "pauseFrames": 26,
+      "shot": "ch13",
+      "source_sha256": "8c0bc061a7109f9f572555381c21a97cb77fc784e5ff2373bb6297b448438325"
+    },
+    {
+      "id": "perfect",
+      "speaker": "sobaya",
+      "text": "完璧です。",
+      "start": 2846,
+      "end": 2882,
+      "audio": "line_perfect_sobaya_large.wav",
+      "pauseFrames": 28,
+      "shot": "ch14",
+      "source_sha256": "ca23f745224108237ca84b86891f0ef1919cc0f647fdd1d68983564fc27ce078"
+    },
+    {
+      "id": "when",
+      "speaker": "sobaya",
+      "text": "さて。これが、いつ手に入るのか。",
+      "start": 2933,
+      "end": 3006,
+      "audio": "line_when_sobaya_large.wav",
+      "pauseFrames": 25,
+      "shot": "ch15",
+      "source_sha256": "118df85a2f921974a2c1d4325d5205ef7df0a8e3725b8097ae07a9f076e9c646"
+    },
+    {
+      "id": "today",
+      "speaker": "sobaya",
+      "text": "今日です。",
+      "start": 3043,
+      "end": 3073,
+      "audio": "line_today_sobaya_large.wav",
+      "pauseFrames": 65,
+      "shot": "ch16",
+      "source_sha256": "28b8853ca2c12daa01109a3205053fd48f9d7029f3b3a4b80dfa3d97a336b07d"
+    },
+    {
+      "id": "buy",
+      "speaker": "sobaya",
+      "text": "公式サイトから、購入できます。",
+      "start": 3138,
+      "end": 3196,
+      "audio": "line_buy_sobaya_large.wav",
+      "pauseFrames": 30,
+      "shot": "ch16",
+      "source_sha256": "ab9a59db483f310da1049509e2b782f272939d413c114c955f27242621a4efc0"
+    },
+    {
+      "id": "closing",
+      "speaker": "sobaya",
+      "text": "窓際族。T。シャツ。",
+      "start": 3245,
+      "end": 3314,
+      "audio": "line_closing_sobaya_large.wav",
+      "pauseFrames": 24,
+      "shot": "ch17",
+      "source_sha256": "58a892ffdf4666d16f63ead2b1e68351f59a53946da41a7b6610cd5ff8d34a8d"
+    },
+    {
+      "id": "all",
+      "speaker": "sobaya",
+      "text": "すべてが、この1枚に。",
+      "start": 3338,
+      "end": 3390,
+      "audio": "line_all_sobaya_large.wav",
+      "pauseFrames": 110,
+      "shot": "ch17",
+      "source_sha256": "1fe5d219c0c7633a8d44632e807853509b16ce112b53bbd66451bbd5f56c0a6c"
+    }
+  ],
+  "audio": "audio/master-h3.wav",
+  "audioPolicy": "Mute H3 audio; adopted Irodori original dialogue without speed change",
+  "screenPolicy": "H3 original screen retained; no replacement",
+  "soundEvents": [
+    {
+      "kind": "applause",
+      "start": 441,
+      "durationInFrames": 64,
+      "sourceOffsetSeconds": 9,
+      "gain": 0.8
+    },
+    {
+      "kind": "applause",
+      "start": 568,
+      "durationInFrames": 61,
+      "sourceOffsetSeconds": 12,
+      "gain": 0.8
+    },
+    {
+      "kind": "applause",
+      "start": 689,
+      "durationInFrames": 64,
+      "sourceOffsetSeconds": 15,
+      "gain": 0.8
+    },
+    {
+      "kind": "applause",
+      "start": 823,
+      "durationInFrames": 84,
+      "sourceOffsetSeconds": 18,
+      "gain": 1.2
+    },
+    {
+      "kind": "laughter",
+      "start": 1080,
+      "durationInFrames": 50,
+      "sourceOffsetSeconds": 0,
+      "gain": 1
+    },
+    {
+      "kind": "applause",
+      "start": 1163,
+      "durationInFrames": 59,
+      "sourceOffsetSeconds": 27,
+      "gain": 0.8
+    },
+    {
+      "kind": "applause",
+      "start": 1512,
+      "durationInFrames": 124,
+      "sourceOffsetSeconds": 36,
+      "gain": 1.2
+    },
+    {
+      "kind": "applause",
+      "start": 2112,
+      "durationInFrames": 61,
+      "sourceOffsetSeconds": 13,
+      "gain": 0.8
+    },
+    {
+      "kind": "applause",
+      "start": 2424,
+      "durationInFrames": 64,
+      "sourceOffsetSeconds": 25,
+      "gain": 0.8
+    },
+    {
+      "kind": "laughter",
+      "start": 2810,
+      "durationInFrames": 50,
+      "sourceOffsetSeconds": 0,
+      "gain": 1
+    },
+    {
+      "kind": "applause",
+      "start": 3076,
+      "durationInFrames": 64,
+      "sourceOffsetSeconds": 8,
+      "gain": 0.8
+    },
+    {
+      "kind": "applause",
+      "start": 3393,
+      "durationInFrames": 109,
+      "sourceOffsetSeconds": 17,
+      "gain": 0.8
+    }
+  ]
+}

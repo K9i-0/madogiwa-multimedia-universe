@@ -1,0 +1,25 @@
+{
+  "output": "03_SCRIPTS/75_madogiwa_tshirt_keynote/final_remotion_h3_irodori.mp4",
+  "sha256": "cf3045dd4537634365a0cb8eecb51e82499508d006af30cdda182446d0d3e13d",
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frames": 3500,
+  "seconds": 145.83333333333334,
+  "fullDecode": "passed",
+  "audioTracks": 1,
+  "audioSampleRate": "48000",
+  "pcmCorrelation": 0.9997550467093089,
+  "audioPeak": 0.8372588157653809,
+  "adoptedDialogueLines": 32,
+  "visualReview": "All 32 caption stills and source start/middle/end inspected; ch13 double-image interval removed",
+  "auditoryReview": "Not performed; original adopted Irodori WAVs reused, waveform and timing checks only",
+  "lipSync": "Rigid mask; fine gesture/speech synchronization not verified",
+  "colab": "stopped",
+  "remainingVisualLimitations": [
+    "ch08 includes a generated push-in to presenter instead of fixed wide shot",
+    "ch13 is cut between two static product-detail layouts; no screen replacement"
+  ],
+  "captionBoundaryReview": "128 output frames covering all 32 caption entries/exits inspected",
+  "audioEncoderDelayRepairSamples": 2048
+}

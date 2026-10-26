@@ -44,3 +44,23 @@ H3には「声質サンプル」ではなく、今回実際に話すWAVとして
 冒頭スライドは`Special Event`だけ。最初から「窓際族Tシャツ発表会」と表示した候補は不採用。3つの要素を個別に紹介し、`reveal`の「私たちは、これを、窓際族Tシャツと呼びます。」で初めて完成商品と商品名を提示。開幕から商品発表前のH3プロンプトでは実物商品資料の添付も外し、早出し禁止を明記する。
 
 一覧と台詞音声は`review.html`（`build_review.py`で再構築）。
+
+## H3生成と完成編集（2026-10-26）
+
+17ショットすべてA100で生成済み。生成＋セットアップ約71分、セットアップ自体173秒、消費7.88 CU。ダウンロードSHA-256一致後にColab停止済み。詳細`generation-result.json`。
+
+完成動画: エピソード直下 `final_remotion_h3_irodori.mp4`。1280×720、24fps、3500フレーム（145.833秒）。ch13の7.25〜8.75秒にある画面の二重化をカットし、その台詞後の間を36フレーム短縮。32セリフは全部残し、他のショットは全尺使用。スクリーンは生成映像のまま。ch08には人物へ大きく寄るカメラ移動があり、発表中の寄りとして採用。元480p素材を残し、Remotionで一度だけ完成サイズへ拡大する。
+
+音声はH3の生成トラックを完全ミュートし、採用済みIrodori Large32本を元の話速で再配置。元WAVのSHAを照合し、全セリフの欠落・重複・尺外を機械検査。元の拍手・笑い声素材を発表の間に使用し、発話時はダッキング。最後1秒をフェード。字幕は共有そば屋色で付与し、タイトルカード・クレジットカードは追加しない。
+
+再構築:
+1. `uv run --with numpy python 03_SCRIPTS/75_madogiwa_tshirt_keynote/h3_keynote/prepare_edit.py`
+2. `cd 03_SCRIPTS/75_madogiwa_tshirt_keynote/remotion`
+3. `npm run typecheck`
+4. `node render-h3.mjs stills`
+5. `node render-h3.mjs full`
+6. リポジトリ直下で `uv run --with numpy python 03_SCRIPTS/75_madogiwa_tshirt_keynote/h3_keynote/audit_edit.py`
+
+タイミング正本: `remotion/src/edit-manifest-h3.json`。元H3動画は`.local/h3-keynote-20261026/colab-job/results`に保持し、`public/h3`はハードリンク。生成映像・マスター・確認画像はGit管理しない。聴覚による通し試聴と手振りの厳密な発話同期の確認は未実施であり、波形検証をその代替合格とはしない。
+
+最終監査: 3500フレーム、1280×720、24fps、48kHz単一音声、終端までデコード成功。字幕32か所の出入り128画像を確認。Remotionの音声書き出しに2048サンプル（42.67ms）の遅延を検出したため、映像を再エンコードせず元PCMからAACをmux。最終音声とマスターのゼロ遅延波形相関0.999755。実際の聴取とは区別する。詳細`edit-result.json`。

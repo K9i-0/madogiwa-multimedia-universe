@@ -1,0 +1,106 @@
+{
+  "status": "complete",
+  "shots": [
+    {
+      "id": "ch01",
+      "seconds": 496.37429332733154
+    },
+    {
+      "id": "ch02",
+      "seconds": 135.51726078987122
+    },
+    {
+      "id": "ch03",
+      "seconds": 105.78058123588562
+    },
+    {
+      "id": "ch04",
+      "seconds": 105.4892110824585
+    },
+    {
+      "id": "ch05",
+      "seconds": 150.5235185623169
+    },
+    {
+      "id": "ch06",
+      "seconds": 390.98664140701294
+    },
+    {
+      "id": "ch07",
+      "seconds": 195.581524848938
+    },
+    {
+      "id": "ch08",
+      "seconds": 465.8932795524597
+    },
+    {
+      "id": "ch09",
+      "seconds": 180.95618510246277
+    },
+    {
+      "id": "ch10",
+      "seconds": 300.67720341682434
+    },
+    {
+      "id": "ch11",
+      "seconds": 120.52779626846313
+    },
+    {
+      "id": "ch12",
+      "seconds": 315.74712800979614
+    },
+    {
+      "id": "ch13",
+      "seconds": 376.00743770599365
+    },
+    {
+      "id": "ch14",
+      "seconds": 90.53856348991394
+    },
+    {
+      "id": "ch15",
+      "seconds": 105.48175048828125
+    },
+    {
+      "id": "ch16",
+      "seconds": 225.71155214309692
+    },
+    {
+      "id": "ch17",
+      "seconds": 300.77086567878723
+    }
+  ],
+  "output_sha256": {
+    "ch01_480p.mp4": "ec5d1c7a067c5404cecd5626fe1fa5297e172c5172acdc76da33e86a69763c67",
+    "ch02_480p.mp4": "dfae828c311ec577208e2cea53d067f120b1fcb1f2dde3252d2b4efabff23d2e",
+    "ch03_480p.mp4": "da7215811b0908dca1b3512cb83daae145c1780ef4ee60735a34925acb319298",
+    "ch04_480p.mp4": "66b34aee568ef45051d8e9109abb926757391e42e0a41edfe00801513e4d5b87",
+    "ch05_480p.mp4": "8bca1060b0e5384fd2d6364ea31540a586a2b2ba6dda5f9af10a4505c7d0f9f7",
+    "ch06_480p.mp4": "3080a74ae539f9ea3af2f3af77df44d3fb0bd1ae8b173135f2686c2d37553b9c",
+    "ch07_480p.mp4": "467ea88461d08256d62f300401349a9de290a54fd7f3e356e6ef52f5b5e3a7cb",
+    "ch08_480p.mp4": "a034ab7cb75338e0c158d1b392fa3fdeaa8279edbbb0f0c27ea71dbd86506a76",
+    "ch09_480p.mp4": "7255d07a9bf82ce0200554843bbd6673099fcdfd29e6ee96d5b07b8fa1d14554",
+    "ch10_480p.mp4": "20aa5415482537df674a712051ddf304a8a3f33c89d1daf78c9c9898d71b744d",
+    "ch11_480p.mp4": "2cccfa1fc3026c8aa4ae548f8006e8c066797fe316af65511e161e7e2054adf7",
+    "ch12_480p.mp4": "a953aa9e88b0d89b182100808d001ae8df761a16a877fce6c9d843171c03dbce",
+    "ch13_480p.mp4": "3e01d30ead0889fb274f63d2710fbe45b8126e53b4316c56538725cedabd1ce6",
+    "ch14_480p.mp4": "dfbc5859857644ebcc716c10746d3710c4bd55d352648d9b78ae8b34c25cc15f",
+    "ch15_480p.mp4": "3b9a1c91acd6eca1d7889788f01dfd399c168a0cef168b07fc6d4561325933af",
+    "ch16_480p.mp4": "3bff7f7e3093f2260a57baff58c4e3b1be644e6b2c022cb86d6df28c635ffb15",
+    "ch17_480p.mp4": "ff4f6eab9cc7de5abaacfd481671e2c0d29be7cb8817c70c353bab331a661fa9"
+  },
+  "elapsed_seconds": 4266.495077371597,
+  "setup_seconds": 173.04769587516785,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "resolution": [
+    864,
+    480
+  ],
+  "fps": 24,
+  "balance_before": 177.01,
+  "balance_after": 169.13,
+  "compute_units_consumed": 7.88,
+  "session_stopped": true,
+  "active_assignments_after": 0,
+  "local_results": ".local/h3-keynote-20261026/colab-job/results"
+}

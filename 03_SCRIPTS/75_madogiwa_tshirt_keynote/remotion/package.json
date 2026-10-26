@@ -23,7 +23,9 @@
     "studio": "remotion studio src/index.tsx",
     "stills": "node render.mjs stills",
     "preview": "node render.mjs preview",
-    "render": "node render.mjs full"
+    "render": "node render.mjs full",
+    "render:h3": "node render-h3.mjs full",
+    "stills:h3": "node render-h3.mjs stills"
   },
   "sideEffects": [
     "*.css"

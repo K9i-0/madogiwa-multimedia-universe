@@ -1,0 +1,177 @@
+{
+  "status": "research_only_not_approved_edit",
+  "date": "2026-10-26",
+  "outputProposal": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "compositionId": "CloneLabAuraShort",
+    "output": "final_remotion_aura_9x16.mp4"
+  },
+  "assets": [
+    {
+      "path": "03_SCRIPTS/80_sobaya_clone_lab/final_remotion_clone_lab_skin.mp4",
+      "sha256": "c7350e36441d832e00ec6c42bedfaf8f141b938ac03041a37e9dd65574c0a315",
+      "durationSeconds": 36.3,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "30/1",
+          "nb_frames": "1089"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "nb_frames": "1703",
+          "sample_rate": "48000"
+        }
+      ]
+    },
+    {
+      "path": "03_SCRIPTS/80_sobaya_clone_lab/final_remotion_shorts_usagi_hologram_9x16.mp4",
+      "sha256": "d66ef5fb25593f8f3837103efee666230530c406641ca1f9333f35fa1f5a62d7",
+      "durationSeconds": 36.3,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "r_frame_rate": "30/1",
+          "nb_frames": "1089"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "nb_frames": "1703",
+          "sample_rate": "48000"
+        }
+      ]
+    },
+    {
+      "path": "03_SCRIPTS/80_sobaya_clone_lab/remotion/out/shorts-hologram/mix.m4a",
+      "sha256": "ed90baff2ea38fc873ed196df0acfff771e4f58b65f64109d75c0c73cda0ba24",
+      "durationSeconds": 36.3,
+      "streams": [
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "nb_frames": "1703",
+          "sample_rate": "48000"
+        }
+      ]
+    }
+  ],
+  "music": {
+    "url": "https://www.youtube.com/watch?v=mbSp4gsKaU0",
+    "title": "REVENGE (Super Slowed)",
+    "artists": [
+      "1HXSX",
+      "wnorg17"
+    ],
+    "channel": "1HXSX",
+    "labelFromDescription": "Funk 108",
+    "durationSecondsFromYoutube": 122,
+    "metadataVerifiedBy": "YouTube oEmbed and ytInitialPlayerResponse",
+    "audioAuditioned": false,
+    "localAudio": null,
+    "bpm": null,
+    "dropFrame": null,
+    "beatFrames": [],
+    "usageTerms": "Description does not establish permission for embedded reuse; unverified"
+  },
+  "candidates": [
+    {
+      "id": "A",
+      "recommended": true,
+      "concept": "窓際力測定→支配者たこさん→クローン覚醒",
+      "targetSeconds": [
+        20,
+        25
+      ],
+      "sourceRangesFramesExclusive": [
+        [
+          348,
+          540
+        ],
+        [
+          540,
+          754
+        ],
+        [
+          754,
+          954
+        ]
+      ],
+      "endingLine": "指示どおり働くなんて、そば屋さんやない！",
+      "intent": "数値でフックを作り、命令から破壊への転換を音楽のドロップへ。最後は元のツッコミで締める。",
+      "note": "原区間は20.2秒。静止・速度変更・間の短縮は音源分析後に決定。"
+    },
+    {
+      "id": "B",
+      "recommended": false,
+      "concept": "そば屋クローンの威圧感に集中",
+      "targetSeconds": [
+        12,
+        16
+      ],
+      "sourceRangesFramesExclusive": [
+        [
+          180,
+          255
+        ],
+        [
+          638,
+          754
+        ],
+        [
+          754,
+          829
+        ]
+      ],
+      "endingLine": "傷つけずに回収したまえ（以後は映像とBGM）",
+      "intent": "福ギュンの驚き→命令→破壊。ビート同期の反復と静止で短いaura editにする。",
+      "note": "原区間は約8.87秒。目標尺は静止・スロー込みの提案。"
+    },
+    {
+      "id": "C",
+      "recommended": false,
+      "concept": "会話を残した短編リミックス",
+      "targetSeconds": [
+        30,
+        32
+      ],
+      "sourceRangesFramesExclusive": [
+        [
+          0,
+          954
+        ]
+      ],
+      "endingLine": "指示どおり働くなんて、そば屋さんやない！",
+      "intent": "話を追える構成を維持し、測定確定・ホログラム登場・破壊だけ音ハメ。",
+      "note": "原区間31.8秒。既存末尾タイトルは含めない。"
+    }
+  ],
+  "verification": {
+    "ffprobe": true,
+    "representativeFramesViewed": true,
+    "fullPlaybackAudition": false,
+    "musicBeatAnalysis": false,
+    "rendered": false,
+    "published": false
+  },
+  "existingQueue": {
+    "path": "03_SCRIPTS/shorts_queue_20261011/queue.json",
+    "order": 8,
+    "batch": 2,
+    "statusObserved": "ready",
+    "matchingUploadRecordFound": false,
+    "changed": false
+  }
+}

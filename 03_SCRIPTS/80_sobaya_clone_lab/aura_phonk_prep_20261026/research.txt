@@ -1,0 +1,55 @@
+窓際力研究所 — aura phonk編集の調査・準備（2026-10-26）
+
+今回は調査・準備まで。構成候補は未採用。完成レンダー・公開・既存キュー変更なし。
+
+素材
+横映像：final_remotion_clone_lab_skin.mp4（肌補正採用済み、本編先頭が通常映像）。
+既存SNS版は先頭1フレームがサムネイルなので編集の主入力にはしない。
+音声：既存ショート採用 final_remotion_shorts_usagi_hologram_9x16.mp4 の音声。
+同時間軸の remotion/out/shorts-hologram/mix.m4a も存在する。
+横映像は1920×1080、縦版720×1280、ともに1089f／30fps／36.3秒。
+生成原版の細部は480p由来。過度な寄りの画質を実機で確認する。
+代表カット一覧：../remotion/out/aura-prep/contact-sheet.jpg（3秒間隔、時刻は概略）。
+
+編集提案
+候補Aを推奨。窓際力5,082のフック→巨大なたこさん→命令→ガラス破壊→逃走とツッコミ。
+音楽が強く立ち上がる位置にガラス破壊を置く。曲の実測前なので位置は未確定。
+ホログラムは短い静止、緩い寄り、拍頭だけのズームと減衰する揺れ。
+低音の重さを出す暗めの青緑と、培養液の橙を活かす。
+RGBずらし・白フラッシュは衝撃の数フレームに限定する案。
+常時タイトル帯より映像を大きく使う構成を提案。縦クロップはカット別に決める。
+全景は施設と巨大ホログラム、測定画面は数値と両者を見せる。
+台詞中は等速、声を優先してBGM音量を下げる。無言の動作部分で速度を変える。
+既にSuper Slowedの曲なので、音楽をさらに遅くすることは前提にしない。
+元音声の警報・破砕音と新BGMが重なるため、ドロップ周辺の音量を試聴で調整する。
+
+既存実装を使う準備
+エピソードのremotion/に実装とnode_modulesあり。Remotion系は4.0.528固定。
+新しいプロジェクトや依存更新は不要。既存エントリを保ち、aura専用エントリとmanifestを追加する方針。
+映像・音声・字幕を同じソースフレーム対応で切り出し、編集後の整数フレームへ再配置。
+速度変更区間はsource/outputフレーム対応を明示する。ランダム揺れは固定seed。
+短い静止はFreeze、切り替えはSequence、通常動画は既存OffthreadVideoの利用を検討。
+BGM・採用台詞・効果音の音量包絡を分離する。
+入力はpublicへhardlink、候補レンダーはout、採用出力はエピソード直下。
+測定UIの焼き込み名札が「福ちゃん」のため、採用する区間はUIを再構築して「福ギュン」へ。
+過去の台本原文は変更しない。字幕色は共有member-colors.tsを使う。
+
+残る作業
+1. 候補A/B/Cをユーザーが選ぶ。範囲はprep.jsonに候補として保存。
+2. 指定音源の編集用ファイル確保、試聴、波形・拍頭・ドロップを実測。
+3. 使用範囲・beatFramesを確定し、Remotion試作。BPMやドロップ位置を推測で固定しない。
+4. 静止画で縦クロップ・顔・数値・字幕を確認し、通し再生で音ハメと台詞を確認。
+5. 720×1280／30fps、終端デコード、音声ピーク・同期を確認。
+
+楽曲情報
+REVENGE (Super Slowed) — 1HXSX, wnorg17。チャンネル1HXSX、説明欄Label: Funk 108。
+YouTube公開メタデータ上の尺122秒。音源を聴いた・解析したという記録ではない。
+説明欄に動画への音源焼き込み利用許諾は確認できなかった。投稿方法を決める段階で扱いを確認する。
+
+参照（2026-10-26）
+https://www.youtube.com/watch?v=mbSp4gsKaU0
+https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=mbSp4gsKaU0&format=json
+https://www.remotion.dev/docs/freeze
+https://www.remotion.dev/docs/audio/volume
+https://www.remotion.dev/docs/videos/video-manipulation
+ローカル：script.md、shorts_revision_usagi.md、shorts-manifest-hologram.json、remotion/src/shorts-hologram-audio.json。

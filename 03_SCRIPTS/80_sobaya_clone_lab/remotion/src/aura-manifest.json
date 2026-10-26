@@ -1,0 +1,115 @@
+{
+  "composition": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "durationInFrames": 681
+  },
+  "segments": [
+    {
+      "id": "scan",
+      "from": 0,
+      "duration": 192,
+      "sourceStart": 348,
+      "sourceEnd": 540,
+      "rate": 1
+    },
+    {
+      "id": "hologram",
+      "from": 192,
+      "duration": 214,
+      "sourceStart": 540,
+      "sourceEnd": 754,
+      "rate": 1
+    },
+    {
+      "id": "hold",
+      "from": 406,
+      "duration": 15,
+      "sourceFrame": 753
+    },
+    {
+      "id": "break",
+      "from": 421,
+      "duration": 105,
+      "sourceStart": 754,
+      "sourceEnd": 829,
+      "rate": 0.7142857142857143
+    },
+    {
+      "id": "escape",
+      "from": 526,
+      "duration": 125,
+      "sourceStart": 829,
+      "sourceEnd": 954,
+      "rate": 1
+    },
+    {
+      "id": "ending",
+      "from": 651,
+      "duration": 30,
+      "sourceFrame": 829
+    }
+  ],
+  "captions": [
+    {
+      "startFrame": 13,
+      "endFrame": 81,
+      "speaker": "たこさん",
+      "text": "窓際力、五千。"
+    },
+    {
+      "startFrame": 121,
+      "endFrame": 181,
+      "speaker": "たこさん",
+      "text": "そば屋の半分近いな。"
+    },
+    {
+      "startFrame": 200,
+      "endFrame": 287,
+      "speaker": "たこさん",
+      "text": "二人とも、実に興味深い"
+    },
+    {
+      "startFrame": 290,
+      "endFrame": 402,
+      "speaker": "たこさん",
+      "text": "そば屋くん。\n傷つけずに回収したまえ"
+    },
+    {
+      "startFrame": 526,
+      "endFrame": 637,
+      "speaker": "やめ太郎",
+      "text": "指示どおり働くなんて、\nそば屋さんやない！"
+    }
+  ],
+  "music": {
+    "url": "https://www.youtube.com/watch?v=mbSp4gsKaU0",
+    "title": "REVENGE (Super Slowed) — 1HXSX, wnorg17",
+    "startFrame": 28,
+    "impactOutputFrame": 457,
+    "analysis": "RMS rise / peak near source music 16.16s; music starts at 28/30s; main glass frame 780 at output457",
+    "beatFrames": [
+      457,
+      474,
+      488,
+      504,
+      519,
+      533,
+      548,
+      562,
+      577,
+      592,
+      606,
+      623,
+      634,
+      650,
+      667
+    ]
+  },
+  "audioSource": "final_remotion_shorts_usagi_hologram_9x16.mp4",
+  "outputs": [
+    "final_remotion_aura_original_audio_9x16.mp4",
+    "final_remotion_aura_bgm_only_9x16.mp4"
+  ]
+}

@@ -1,0 +1,29 @@
+2026-10-26 aura phonk 比較試作
+
+ユーザー指定：元動画音声あり／なしを両方制作。
+採用した試作構成：候補A、681f／22.7秒、720×1280、30fps。
+映像は完全共通。あり版は既存採用ショートの台詞・効果音にBGM、なし版はBGMのみ。
+映像正本：final_remotion_clone_lab_skin.mp4。
+音声正本：final_remotion_shorts_usagi_hologram_9x16.mp4（中国うさぎ＋ホログラム加工版）。
+BGM：REVENGE (Super Slowed) — 1HXSX, wnorg17
+https://www.youtube.com/watch?v=mbSp4gsKaU0
+
+構成・拍位置・字幕・出力名の正本：../remotion/src/aura-manifest.json。
+元348〜954fを中心に構成。406〜420fはホログラム静止、421〜525fは破壊を5/7倍速、最後30fはクローン静止。
+音源のRMSピーク約16.16秒をガラス破壊の出力457fへ合わせる。音源先頭は28f分カット。
+音源は既にSuper Slowed。BGMの追加速度変更なし。
+測定UIは縦向けに新規構成し、福ギュンへ名札更新。過去の台本・既存完成版は保持。
+
+再現手順（リポジトリルート）
+uvx yt-dlp --no-playlist -f bestaudio -o '03_SCRIPTS/80_sobaya_clone_lab/remotion/out/aura-prep/revenge.%(ext)s' 'https://www.youtube.com/watch?v=mbSp4gsKaU0'
+ffmpeg -i 03_SCRIPTS/80_sobaya_clone_lab/remotion/out/aura-prep/revenge.webm -ar 48000 -ac 2 03_SCRIPTS/80_sobaya_clone_lab/remotion/out/aura-prep/revenge.wav
+python3 03_SCRIPTS/80_sobaya_clone_lab/remotion/prepare-aura.py
+cd 03_SCRIPTS/80_sobaya_clone_lab/remotion
+npm run typecheck
+node render-aura.mjs
+../../../.local/Irodori-TTS/.venv/bin/python mix-aura.py
+
+音声あり：BGM gain 0.52、字幕発話区間付近は0.13へダッキング、元音声gain0.95。
+音声なし：BGM gain0.65、台詞・元効果音なし。字幕は比較用に両方へ共通表示。
+ピークリミッター0.84、末尾0.25秒フェード。AAC 192kbps。映像は同一H.264をコピーしてmux。
+取得した楽曲・動画・フレーム素材はGit管理外。元の公開・予約キューは変更しない。

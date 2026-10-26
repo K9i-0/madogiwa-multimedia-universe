@@ -24,6 +24,3 @@ def _t_defaults(allsp, out):
         elif isinstance(typ, str) and typ in ("INT", "FLOAT", "STRING", "BOOLEAN") and "default" in opts:
             out[name] = opts["default"]
     return out
-
-
-

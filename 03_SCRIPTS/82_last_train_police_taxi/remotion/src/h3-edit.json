@@ -4,7 +4,7 @@
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 635
+    "durationInFrames": 537
   },
   "shots": [
     {
@@ -39,7 +39,7 @@
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 170,
       "sourceEnd": 207,
-      "duration": 71,
+      "duration": 36,
       "from": 181
     },
     {
@@ -47,42 +47,42 @@
       "sourceStart": 207,
       "sourceEnd": 231,
       "duration": 29,
-      "from": 252
+      "from": 217
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 231,
       "sourceEnd": 281,
       "duration": 50,
-      "from": 281
+      "from": 246
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 281,
-      "sourceEnd": 362,
-      "duration": 87,
-      "from": 331
+      "sourceEnd": 305,
+      "duration": 24,
+      "from": 296
     },
     {
       "file": "h3/ch2_480p.mp4",
       "sourceStart": 0,
       "sourceEnd": 84,
       "duration": 82,
-      "from": 418
+      "from": 320
     },
     {
       "file": "h3/ch2_480p.mp4",
       "sourceStart": 84,
       "sourceEnd": 173,
       "duration": 82,
-      "from": 500
+      "from": 402
     },
     {
       "file": "h3/ch2_480p.mp4",
       "sourceStart": 308,
       "sourceEnd": 362,
       "duration": 53,
-      "from": 582
+      "from": 484
     }
   ],
   "dialogue": [
@@ -121,8 +121,8 @@
     {
       "id": "05",
       "file": "h3/line05_fukuchan.wav",
-      "duration": 69,
-      "volume": 0.5495408738576246,
+      "duration": 34,
+      "volume": 0.5956621435290105,
       "text": "あ、タクシー！",
       "from": 181
     },
@@ -132,15 +132,15 @@
       "duration": 27,
       "volume": 1.2445146117713852,
       "text": "止めます。",
-      "from": 252
+      "from": 217
     },
     {
       "id": "07",
       "file": "h3/line07_yametaro.wav",
-      "duration": 85,
-      "volume": 0.5821032177708715,
+      "duration": 22,
+      "volume": 0.457088189614875,
       "text": "止め方！",
-      "from": 331
+      "from": 296
     },
     {
       "id": "08",
@@ -148,7 +148,7 @@
       "duration": 79,
       "volume": 0.5754399373371568,
       "text": "赤坂までお願いします。",
-      "from": 418
+      "from": 320
     },
     {
       "id": "09",
@@ -156,7 +156,7 @@
       "duration": 79,
       "volume": 0.5821032177708715,
       "text": "あ、そこのコンビニ寄ってもらっていいですか？",
-      "from": 500
+      "from": 402
     },
     {
       "id": "10",
@@ -164,10 +164,16 @@
       "duration": 45,
       "volume": 0.6025595860743577,
       "text": "タクシーちゃうねん。",
-      "from": 584
+      "from": 486
     }
   ],
   "effects": [
+    {
+      "file": "h3/izakaya_ambience.wav",
+      "duration": 136,
+      "volume": 1.0,
+      "from": 0
+    },
     {
       "file": "h3/clink.wav",
       "duration": 31,
@@ -178,7 +184,7 @@
       "file": "h3/taxi_stop.wav",
       "duration": 50,
       "volume": 0.65,
-      "from": 281
+      "from": 246
     }
   ],
   "siren": {
@@ -198,6 +204,6 @@
       0.055,
       0
     ],
-    "from": 418
+    "from": 320
   }
 }

@@ -90,19 +90,21 @@
     "model": "Aratako/Irodori-TTS-v4-Large",
     "settings": {
       "text": "あ、タクシー！",
-      "caption": "車を見つけて嬉しそうに呼びかける。",
+      "caption": null,
       "ref_wav": "02_CHARACTERS/Fukuchan_voice.wav",
       "seed": 100,
       "trim_tail": false,
-      "cfg_scale_text": 3.0,
-      "duration_scale": 1.0
+      "cfg_scale_text": 5.0,
+      "duration_scale": 0.55
     },
     "ref_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
-    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line05_fukuchan.wav",
-    "raw_duration": 2.84,
-    "sha256": "8110710f86aeea8f4551b483841991ead2ee798fef882e4a3115d0881f377339",
-    "elapsed_seconds": 18.544771671295166,
-    "postprocess": "none"
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line05_fukuchan_fb1.wav",
+    "raw_duration": 2.32,
+    "sha256": "5fe9c18dffb207b45283dc446be1e5ea07a51cc9978849d95f666ad91caec03d",
+    "elapsed_seconds": 27.6298828125,
+    "postprocess": "trim",
+    "edit_filter": "atrim=end=1.4,afade=t=out:st=1.34:d=0.06",
+    "edit_reason": "User requested short あ、タクシー！; new local take, retain phrase and shorten sustained ending."
   },
   {
     "id": "06",
@@ -140,11 +142,13 @@
       "duration_scale": 1.0
     },
     "ref_sha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
-    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line07_yametaro.wav",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line07_yametaro_fb1.wav",
     "raw_duration": 3.52,
-    "sha256": "28774024fdb9eeabbf13bc09d585679dbc1fe1cd01564dad7c165fa49d2cacab",
+    "sha256": "d122cb931a524f16af2ad9fb0a9f5dcdffa253a4742bc202461b8bcc3c1f19c2",
     "elapsed_seconds": 21.18987202644348,
-    "postprocess": "none"
+    "postprocess": "trim",
+    "edit_filter": "atrim=end=0.9,afade=t=out:st=0.86:d=0.04",
+    "edit_reason": "User requested tail removal after unwanted speech at 14s; first 0.9s retains 止め方."
   },
   {
     "id": "08",

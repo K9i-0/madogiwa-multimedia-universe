@@ -61,3 +61,15 @@ colab_batch.pyは同じGPUで2本を順次実行し、ジョブID保存による
 - 再構築：ルートで `python3 03_SCRIPTS/82_last_train_police_taxi/remotion/scripts/h3_prepare_edit.py` → `h3_build_edit.py`（同ディレクトリ）→ remotion内で `npx remotion render src/index.ts H3LastTrainIrodori out/h3_irodori_v2.mp4 --codec=h264 --crf=18 --concurrency=2`。原本H3動画2本がローカルに必要。
 - 音声再生成が必要ならLarge環境のPythonで `remotion/scripts/h3_regenerate_adopted.py`。採用WAVを上書きせず.localへ出す。初回候補用の `h3_generate_dialogue.py` は履歴用。
 - 検証範囲はASR、映像サンプル、型チェック、全デコード、映像・音声トラックと音量。聴感・厳密な口同期の合格は自動検査から断定しない。許容された映像2点はそのまま。
+
+
+## FB1修正（2026-10-26）
+
+ユーザー視聴で、居酒屋の環境音不足、05の「タクシー」の異常な引き伸ばし、07「止め方！」後の音声崩れが判明。前回ASR一致は聴感の合格ではなかった。
+
+- 居酒屋の0〜136フレーム（5.667秒）に、会話のざわめき・食器音の環境録音を追加。高域を抑え、-31 LUFSで主台詞の後ろへ配置。出典はJoseph SARDIN / BigSoundBank「Restaurant」（CC0）、`remotion/h3-ambience-source.json`。これはフランスのレストラン録音を背景のガヤとして使用したもの。
+- 05「あ、タクシー！」：Irodori Large、正典参照、seed100、captionなし、CFG5、duration_scale0.55でローカル再生成。2.32秒の候補から発話を含む1.40秒を採用し、末尾60msフェードで伸びを削除。音高・話速は変更なし。
+- 07「止め方！」：ユーザーの後半カット指定に従い、既存採用音声の先頭0.90秒を保持。最後40msフェード。1.2秒以降を含む候補にはASRでも余計な語句が出たため除外。映像も対応区間の後半を切り、早送りにしない。
+- 完成版は同じ `../final_remotion_h3_irodori.mp4` を更新。1280×720、24fps、537フレーム、22.375秒。修正前は `remotion/out/h3_irodori_before_fb1.mp4` に保持。
+- 採用音声は `h3_line05_fukuchan_fb1.wav` / `h3_line07_yametaro_fb1.wav`、環境音は `h3_izakaya_ambience.wav`。設定・カット範囲は音声manifestと再生成スクリプトへ反映。追加有料生成なし。
+- 05/07の採用カットを再ASRし指定台詞を確認。型・タイムライン・全デコード・音量・映像サンプルを検証。聴感の合格はASRから断定しない。

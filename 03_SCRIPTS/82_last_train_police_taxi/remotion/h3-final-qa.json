@@ -1,17 +1,17 @@
 {
   "status": "completed_edit",
   "output": "final_remotion_h3_irodori.mp4",
-  "sha256": "e6e74110c02215c837de9532ae4f7d7b8155f6de49b3e47e713f3a7c0dfd66ee",
+  "sha256": "2131993b443776a3580fa195a88d4ab825f80c5c1e79b5709f22bdfd7eabc8aa",
   "width": 1280,
   "height": 720,
-  "frames": 635,
+  "frames": 537,
   "fps": "24/1",
-  "seconds": 26.458333333333332,
+  "seconds": 22.375,
   "audio_codec": "aac",
   "audio_sample_rate": "48000",
   "decode": "complete without errors",
   "typecheck": "passed",
-  "audio_peak_dbfs": -3.9,
+  "audio_peak_dbfs": -3.8,
   "audio_mean_dbfs": -23.5,
   "voice_review": "Per-line ASR screening; no claim of perceptual listening or phoneme-level lip sync approval",
   "asr": [
@@ -71,6 +71,12 @@
     "Sobaya reacts to the question addressed to the driver"
   ],
   "additional_paid_generation": false,
-  "visual_review": "1fps whole-timeline contact sheet reviewed; scene order and exterior punchline confirmed",
-  "timeline": "Continuous 635 frames; 10 dialogue slots fit; adopted WAV hashes match"
+  "visual_review": "Whole timeline sampled at 1fps; restaurant, station, taxi stop, cabin and exterior sequence confirmed",
+  "timeline": "Continuous 537 frames; all 10 dialogue slots fit",
+  "revision": "fb1",
+  "feedback_changes": [
+    "Restaurant ambience under frames 0-136",
+    "Line05 locally regenerated and trimmed to 1.4s",
+    "Line07 retained first .9s, unwanted tail and corresponding picture interval cut"
+  ]
 }

@@ -9,6 +9,7 @@ else:
  rows=json.loads((work/'generation.json').read_text());override=work/'revisions.json'
  if override.exists():
   replacements={r['id']:r for r in json.loads(override.read_text())};rows=[replacements.get(r['id'],r) for r in rows]
+shutil.copy2(ep/'h3_izakaya_ambience.wav',public/'izakaya_ambience.wav')
 assert len(rows)==10
 byid={};voice_manifest=[]
 for row in rows:
@@ -25,7 +26,7 @@ for idx,ch,start,end in specs:
  d=byid[idx];length=d['duration']+2
  shots.append(dict(file=f'h3/ch{ch}_480p.mp4',sourceStart=start,sourceEnd=end,from_=cursor,duration=length));dialogue.append(dict(d,from_=cursor));cursor+=length
 impact=cursor;shots.append(dict(file='h3/ch1_480p.mp4',sourceStart=231,sourceEnd=281,from_=cursor,duration=50));cursor+=50
-d=byid['07'];length=d['duration']+2;shots.append(dict(file='h3/ch1_480p.mp4',sourceStart=281,sourceEnd=362,from_=cursor,duration=length));dialogue.append(dict(d,from_=cursor));cursor+=length
+d=byid['07'];length=d['duration']+2;shots.append(dict(file='h3/ch1_480p.mp4',sourceStart=281,sourceEnd=min(362,281+length),from_=cursor,duration=length));dialogue.append(dict(d,from_=cursor));cursor+=length
 cabin=cursor
 for idx,start,end in [('08',0,84),('09',84,173)]:
  d=byid[idx];length=d['duration']+3
@@ -35,7 +36,7 @@ shots.append(dict(file='h3/ch2_480p.mp4',sourceStart=308,sourceEnd=362,from_=cur
 for group in [shots,dialogue]:
  for item in group:item['from']=item.pop('from_')
 toast=next(d for d in dialogue if d['id']=='03')['from']
-record=dict(composition=dict(id='H3LastTrainIrodori',width=1280,height=720,fps=24,durationInFrames=cursor),shots=shots,dialogue=dialogue,effects=[dict(file='h3/clink.wav',from_=toast+14,duration=31,volume=0.35),dict(file='h3/taxi_stop.wav',from_=impact,duration=50,volume=0.65)],siren=dict(from_=cabin,volumeFrames=[0,6,exterior-cabin,exterior-cabin+4,cursor-cabin-6,cursor-cabin],volumes=[0,0.04,0.04,0.055,0.055,0]))
+record=dict(composition=dict(id='H3LastTrainIrodori',width=1280,height=720,fps=24,durationInFrames=cursor),shots=shots,dialogue=dialogue,effects=[dict(file='h3/izakaya_ambience.wav',from_=0,duration=next(d for d in dialogue if d['id']=='04')['from'],volume=1.0),dict(file='h3/clink.wav',from_=toast+14,duration=31,volume=0.35),dict(file='h3/taxi_stop.wav',from_=impact,duration=50,volume=0.65)],siren=dict(from_=cabin,volumeFrames=[0,6,exterior-cabin,exterior-cabin+4,cursor-cabin-6,cursor-cabin],volumes=[0,0.04,0.04,0.055,0.055,0]))
 for e in record['effects']:e['from']=e.pop('from_')
 record['siren']['from']=record['siren'].pop('from_')
 (ep/'remotion/src/h3-edit.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')

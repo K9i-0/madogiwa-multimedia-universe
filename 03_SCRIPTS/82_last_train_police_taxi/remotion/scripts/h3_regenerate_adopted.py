@@ -14,5 +14,6 @@ for row in rows:
  raw=out/f"{row['id']}_raw.wav";final=out/Path(row['path']).name
  result=rt.synthesize(SamplingRequest(**opts),log_fn=print);save_wav(raw,result.audio,result.sample_rate)
  if row['postprocess']=='sobaya_monsterize':subprocess.run([str(root/'tools/sobaya_monsterize.sh'),str(raw),str(final)],check=True)
+ elif row['postprocess']=='trim':subprocess.run(['ffmpeg','-y','-v','error','-i',str(raw),'-af',row['edit_filter'],str(final)],check=True)
  else:final.write_bytes(raw.read_bytes())
  print(final,flush=True)

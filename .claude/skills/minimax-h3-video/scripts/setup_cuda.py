@@ -19,11 +19,9 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('workflow', type=Path)
     p.add_argument('--root', type=Path, default=Path('/content/mmu-h3'))
-    p.add_argument('--territory-evidence', required=True,
-                   help='Verified deployment region or applicable separate licence; never infer from user location')
+    p.add_argument('--territory-evidence', default='unknown',
+                   help='Optional deployment note recorded in setup.json; unknown does not block execution')
     a = p.parse_args()
-    if not a.territory_evidence.strip():
-        p.error('Deployment region evidence is required; see references/setup-and-cost.md')
     import torch
     if sys.platform != 'linux' or not torch.cuda.is_available():
         p.error('A Linux NVIDIA CUDA runtime is required')

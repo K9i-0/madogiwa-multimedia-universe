@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""At 23:00 JST, publish one audited queued Short only on a zero-post day.
+"""At 23:00 JST daily, publish one audited queued Short regardless of other posts.
 Default is read-only preview. --execute enables the user-authorized routine.
 Tokens/resumable URLs are never logged. Python 3.11+ standard library only.
 """
@@ -40,7 +40,7 @@ class YouTube:
   try:
    with urllib.request.urlopen(req,timeout=45) as response:return json.load(response)
   except urllib.error.HTTPError as e:raise RuntimeError(f'YouTube HTTP {e.code}; no upload attempted by this read') from None
-  except (urllib.error.URLError,TimeoutError):raise RuntimeError('YouTube connection failed; cannot assume zero posts') from None
+  except (urllib.error.URLError,TimeoutError):raise RuntimeError('YouTube connection failed; cannot verify duplicate uploads') from None
  def inventory(self):
   channels=self.get('channels',part='id,contentDetails',mine='true')['items']
   channel=next((x for x in channels if x['id']==self.channel),None)
@@ -182,8 +182,6 @@ def run(execute=False):
   # If response/record was lost but video appears, reconcile the same ID, never start another.
   matches=[v for v in videos if v['snippet']['title']==pending['title']]
   if matches:raise RuntimeError('Pending title already exists on channel without a local result record; review before resuming')
- if posts or scheduled:
-  return {'action':'skip_existing_post' if posts else 'skip_scheduled_post','date':today,'publicCount':len(posts),'scheduledCount':len(scheduled),'videos':[{'id':v['id'],'title':v['snippet']['title']} for v in posts+scheduled]}
  queues=load_queues(c);last_creator=last_published_creator(queues,videos)
  if pending:
   row=next((r for queue,rows in queues if queue==q for r in rows if r['slug']==pending['slug']),None)
@@ -194,13 +192,12 @@ def run(execute=False):
  if not row:return {'action':'queue_empty','date':today}
  checked=validate(row,q)
  if pending and any(pending[k]!=checked[k] for k in checked):raise RuntimeError('Pending upload inputs changed; do not resume automatically')
- result={'action':'would_publish','date':today,'title':read(q/row['metadata'])['snippet']['title'],'slug':row['slug'],'output':row['output'],'queue':str(q.relative_to(ROOT)),'creator':creator(row),'lastPublishedCreator':last_creator,'publicCount':0,'channelInventoryCount':len(videos)}
+ result={'action':'would_publish','date':today,'title':read(q/row['metadata'])['snippet']['title'],'slug':row['slug'],'output':row['output'],'queue':str(q.relative_to(ROOT)),'creator':creator(row),'lastPublishedCreator':last_creator,'publicCount':len(posts),'scheduledCount':len(scheduled),'channelInventoryCount':len(videos)}
  if not execute:return result
- # Recheck after local validation, immediately before issuing an upload.
+ # Recheck the time window and candidate duplication immediately before upload.
  now=dt.datetime.now(ZoneInfo(c['timezone']))
  if now.date().isoformat()!=today or not eligible_time(now,c):return {'action':'window_closed'}
  latest=api.inventory()
- if public_today(latest,now) or scheduled_today(latest,now):return {'action':'post_appeared_before_upload'}
  if any(v['snippet']['title']==result['title'] for v in latest):return {'action':'candidate_already_on_channel'}
  if validate(row,q)!=checked:raise RuntimeError('Inputs changed during validation')
  pending={**result,**checked,'phase':'uploading'};save(STATE/'pending.json',pending)

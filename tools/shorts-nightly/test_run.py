@@ -17,7 +17,7 @@ class NightlyTest(unittest.TestCase):
   now=dt.datetime(2026,10,15,23,tzinfo=JST)
   vs=[video('2026-10-14T14:59:59Z'),video('2026-10-14T15:00:00Z'),video('2026-10-15T14:00:00Z'),video('2026-10-14T16:00:00Z','private'),video('2026-10-14T16:00:00Z','unlisted')]
   self.assertEqual(m.public_today(vs,now),vs[1:3])
- def test_later_same_day_schedule_prevents_filler(self):
+ def test_later_same_day_schedule_is_counted_for_diagnostics(self):
   now=dt.datetime(2026,10,15,23,tzinfo=JST)
   v=video('2026-10-10T00:00:00Z','private',schedule='2026-10-15T14:30:00Z')
   self.assertEqual(m.scheduled_today([v],now),[v])
@@ -68,9 +68,47 @@ class NightlyTest(unittest.TestCase):
    state=Path(d);m.save(state/'days/2026-10-15.json',{'phase':'published'})
    with patch.object(m,'STATE',state),patch.object(m.dt,'datetime',FixedDateTime),patch.object(m,'YouTube') as api:
     self.assertEqual(m.run(True)['action'],'already_completed_today');api.assert_not_called()
- def test_api_failure_cannot_become_zero_posts(self):
+ def test_api_failure_blocks_unverified_upload(self):
   with patch.object(m,'YouTube',side_effect=RuntimeError('network unavailable')):
    with self.assertRaises(RuntimeError):m.run(False)
+
+class DailyPostingTest(unittest.TestCase):
+ def test_other_posts_and_schedules_do_not_block_but_duplicates_do(self):
+  class FixedDateTime(dt.datetime):
+   @classmethod
+   def now(cls,tz=None):return cls(2026,10,26,23,0,tzinfo=JST)
+  public=video('2026-10-26T12:00:00Z')
+  scheduled=video('2026-10-25T00:00:00Z','private',schedule='2026-10-26T14:30:00Z')
+  duplicate=video('2026-10-26T14:00:00Z',title='Queued Short')
+  cases=[('public',[public],[public],True),('scheduled',[scheduled],[scheduled],True),('late-public',[],[public],True),('late-scheduled',[],[scheduled],True),('late-duplicate',[],[duplicate],False)]
+  for name,initial,latest,should_upload in cases:
+   with self.subTest(name=name),tempfile.TemporaryDirectory() as d:
+    root=Path(d);q=root/'queue';state=root/'state';config=root/'config.json'
+    m.save(config,{'enabled':True,'timezone':'Asia/Tokyo','hour':23,'minute':0,'lastAttemptMinute':50,'channelId':'channel','queue':'queue'})
+    m.save(q/'queue.json',[{'order':1,'slug':'short','status':'ready','metadata':'meta.json','output':'short.mp4'}])
+    m.save(q/'meta.json',{'snippet':{'title':'Queued Short'}})
+    checked={'sha256':'hash','metadataSha256':'meta','manifestSha256':'manifest'}
+    def finish_upload(*args,**kwargs):
+     m.save(q/'youtube_uploads/short.json',{'sha256':'hash','video_id':'new-id','url':'https://youtu.be/new-id'})
+     return m.subprocess.CompletedProcess(args[0],0)
+    with patch.object(m,'ROOT',root),patch.object(m,'STATE',state),patch.object(m,'CONFIG',config),patch.object(m.dt,'datetime',FixedDateTime),patch.object(m,'YouTube') as api_factory,patch.object(m,'validate',return_value=checked),patch.object(m.subprocess,'run',side_effect=finish_upload) as upload:
+     api=api_factory.return_value
+     api.inventory.return_value=initial
+     preview=m.run(False)
+     self.assertEqual(preview['action'],'would_publish')
+     self.assertEqual(preview['publicCount'],len(m.public_today(initial,FixedDateTime.now())))
+     self.assertEqual(preview['scheduledCount'],len(m.scheduled_today(initial,FixedDateTime.now())))
+     upload.assert_not_called()
+     api.inventory.side_effect=[initial,latest]
+     api.video.return_value={'id':'new-id','snippet':{'publishedAt':'2026-10-26T14:00:00Z'},'status':{'privacyStatus':'public'},'processingDetails':{'processingStatus':'succeeded'}}
+     result=m.run(True)
+     if should_upload:
+      self.assertEqual(result['action'],'published');upload.assert_called_once()
+      self.assertTrue((state/'days/2026-10-26.json').exists())
+      self.assertEqual(m.run(True)['action'],'already_completed_today');upload.assert_called_once()
+     else:
+      self.assertEqual(result['action'],'candidate_already_on_channel');upload.assert_not_called()
+      self.assertFalse((state/'pending.json').exists())
 
 class AlternatingQueueTest(unittest.TestCase):
  def setUp(self):

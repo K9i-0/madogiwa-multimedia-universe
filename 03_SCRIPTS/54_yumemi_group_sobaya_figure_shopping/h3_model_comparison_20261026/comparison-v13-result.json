@@ -1,0 +1,318 @@
+{
+  "qualityReview": "User judges; no rerolls or quality selection",
+  "baselineReused": true,
+  "baseline": {
+    "status": "complete",
+    "started_unix": 1793003358.312202,
+    "stage": "generate_ch02",
+    "completed": [
+      {
+        "id": "ch01",
+        "seconds": 2568.3996872901917
+      },
+      {
+        "id": "ch02",
+        "seconds": 2732.642536878586
+      }
+    ],
+    "elapsed_seconds": 5498.40608549118,
+    "sha256": {
+      "ch01_768p.mp4": "f7d4667acb7b98bade1e9a98137087dfa076eb2f1e7780b2f1d5527b87a69daf",
+      "ch02_768p.mp4": "714667de980179267478c4128735cbeb3f393c17ba03d405d800a7aca5078123"
+    },
+    "setup": {
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "cuda": "13.0",
+      "torch": "2.11.0+cu130",
+      "comfy_revision": "fe298e4e20f1ff26d30e8639267bbd0b57811390",
+      "weights_revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "model_files": [
+        "vae/minimax_h3_video_vae_fp16.safetensors",
+        "vae/minimax_h3_audio_vae_fp32.safetensors",
+        "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+      ],
+      "territory_evidence": "unknown",
+      "setup_seconds": 166.2520136833191
+    },
+    "balanceBefore": 169.13,
+    "balanceAfter": 158.68,
+    "computeUnitsConsumed": 10.45,
+    "gpuStopped": true,
+    "activeAssignments": 0,
+    "usageRateAfter": 0
+  },
+  "newRun": {
+    "status": "complete",
+    "started_unix": 1793024361.1683755,
+    "completed": [
+      {
+        "model": "singularity_v2",
+        "chapter": "ch01",
+        "seconds": 2567.876535801,
+        "file": "singularity_v2_ch01.mp4"
+      },
+      {
+        "model": "singularity_v2",
+        "chapter": "ch02",
+        "seconds": 2732.291783853,
+        "file": "singularity_v2_ch02.mp4"
+      },
+      {
+        "model": "hybrid_b20",
+        "chapter": "ch01",
+        "seconds": 2612.814942722,
+        "file": "hybrid_b20_ch01.mp4"
+      },
+      {
+        "model": "hybrid_b20",
+        "chapter": "ch02",
+        "seconds": 2762.1254235559995,
+        "file": "hybrid_b20_ch02.mp4"
+      },
+      {
+        "model": "singularity_v13",
+        "chapter": "ch01",
+        "seconds": 2643.482053493,
+        "file": "singularity_v13_ch01.mp4"
+      },
+      {
+        "model": "singularity_v13",
+        "chapter": "ch02",
+        "seconds": 2807.3579516349996,
+        "file": "singularity_v13_ch02.mp4"
+      }
+    ],
+    "models": [
+      {
+        "id": "singularity_v13",
+        "repo": "WarmBloodAban/Minimax-h3_Singularity",
+        "revision": "1259cf16cd0b655ba691a32fb46a409142762972",
+        "filename": "Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors",
+        "sha256": "412a7b126595a958964193f3b42513d7cf2df4196ef04223a0f05e3622949cce",
+        "download_seconds": 147.244624933,
+        "hash_seconds": 59.24000630299997
+      }
+    ],
+    "stage": "generate_singularity_v13_ch02",
+    "setup_wall_seconds": 330.864064204,
+    "elapsed_seconds": 6010.450992107391,
+    "sha256": {
+      "singularity_v13_ch01.mp4": "b5e51ceb7e476b99d9dd4596a808fa1f389a18a1679f98ff5d6e002ec2ed4934",
+      "singularity_v13_ch02.mp4": "837f2d64c07d1f3c14c8ec7efb3ff892873227c632cf72608ff3b2b8b44d66d5"
+    },
+    "priorRun": {
+      "status": "complete",
+      "started_unix": 1793018191.6738315,
+      "completed": [
+        {
+          "model": "singularity_v2",
+          "chapter": "ch01",
+          "seconds": 2567.876535801,
+          "file": "singularity_v2_ch01.mp4"
+        },
+        {
+          "model": "singularity_v2",
+          "chapter": "ch02",
+          "seconds": 2732.291783853,
+          "file": "singularity_v2_ch02.mp4"
+        },
+        {
+          "model": "hybrid_b20",
+          "chapter": "ch01",
+          "seconds": 2612.814942722,
+          "file": "hybrid_b20_ch01.mp4"
+        },
+        {
+          "model": "hybrid_b20",
+          "chapter": "ch02",
+          "seconds": 2762.1254235559995,
+          "file": "hybrid_b20_ch02.mp4"
+        }
+      ],
+      "models": [
+        {
+          "id": "hybrid_b20",
+          "repo": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+          "revision": "a36feb17fbd1f20ff4bdd509ccd07e2b7b585a38",
+          "filename": "minimax_h3_hybrid_fl2va_ref2va_b20-49-int8.safetensors",
+          "sha256": "8320246da06e5aae94988dc1ab336b19ebf2491b4393a330fb33bafca39f9d9a",
+          "download_seconds": 154.11011407700005,
+          "hash_seconds": 59.52334026400001
+        }
+      ],
+      "stage": "generate_hybrid_b20_ch02",
+      "setup_wall_seconds": 387.0711428159999,
+      "elapsed_seconds": 5997.912670373917,
+      "sha256": {
+        "hybrid_b20_ch01.mp4": "b2dcb2927ad1c8bcbc6e8301d6886efe5d4745a92e6b12ec3ac4e9cb43a90001",
+        "hybrid_b20_ch02.mp4": "63649984498d68100a314bca3fec86b1019cd7f26e4a0fcb2132cc13852a0957"
+      },
+      "priorRun": {
+        "status": "failed",
+        "started_unix": 1793010130.232872,
+        "completed": [
+          {
+            "model": "singularity_v2",
+            "chapter": "ch01",
+            "seconds": 2567.876535801,
+            "file": "singularity_v2_ch01.mp4"
+          },
+          {
+            "model": "singularity_v2",
+            "chapter": "ch02",
+            "seconds": 2732.291783853,
+            "file": "singularity_v2_ch02.mp4"
+          }
+        ],
+        "models": [
+          {
+            "id": "singularity_v2",
+            "repo": "WarmBloodAban/Minimax-h3_Singularity",
+            "revision": "1259cf16cd0b655ba691a32fb46a409142762972",
+            "filename": "Minimax-h3_Singularity_ref2va_v2_pruned_int8.safetensors",
+            "sha256": "d7637c2c35cd30facd9e93778c491f6d82f91c4a441aecbdb4c384a62a5f3d9f",
+            "download_seconds": 67.31641041799998,
+            "hash_seconds": 59.17877095800009
+          }
+        ],
+        "stage": "download_hybrid_b20",
+        "setup_wall_seconds": 205.15515470000003,
+        "error": "RuntimeError('Task error: File reconstruction error: CAS Client Error: Request error: HTTP status client error (429 Too Many Requests), domain: https://us.gcp.cdn.hf.co/xorbs/default/a41df7ceb06d28f0e6af1d5e529fcc18de69d9b1dcde7cd164bad5f24f6e3fc4')",
+        "elapsed_seconds": 5706.991256713867,
+        "sha256": {
+          "singularity_v2_ch02.mp4": "8debd777a9a7f05246ef48492b69903d5f8ce947cd77401cac3fe916b5f134bb",
+          "singularity_v2_ch01.mp4": "4186d7b283680b3c6d7dea81f8215f05a21fd82815f73b907adf607238a03475"
+        }
+      }
+    }
+  },
+  "outputs": [
+    {
+      "file": "h3_compare_raw_pure.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_pure.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "h3_compare_raw_singularity_v2.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_singularity_v2.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "h3_compare_raw_hybrid_b20.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_hybrid_b20.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "h3_compare_raw_singularity_v13.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_singularity_v13.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    }
+  ],
+  "audioPolicy": "final_* uses identical adopted Irodori master; h3_compare_raw_* retains native generated audio; no captions, crops, speed changes, or AI enhancement",
+  "generationSeconds": {
+    "pure": {
+      "chapters": [
+        2568.3996872901917,
+        2732.642536878586
+      ],
+      "total": 5301.0422241687775,
+      "relativeToPure": 1.0
+    },
+    "singularity_v2": {
+      "chapters": [
+        2567.876535801,
+        2732.291783853
+      ],
+      "total": 5300.168319654,
+      "relativeToPure": 0.9998351447738346
+    },
+    "hybrid_b20": {
+      "chapters": [
+        2612.814942722,
+        2762.1254235559995
+      ],
+      "total": 5374.940366278,
+      "relativeToPure": 1.0139403043749213
+    },
+    "singularity_v13": {
+      "chapters": [
+        2643.482053493,
+        2807.3579516349996
+      ],
+      "total": 5450.840005128,
+      "relativeToPure": 1.0282581753973317
+    }
+  },
+  "partial": false,
+  "usageAfter": "Current balance: 125.71 compute units\nUsage rate: 0.00/hr\nActive assignments: 0\n",
+  "usageBefore": "Current balance: 136.73 compute units\nUsage rate: 0.00/hr\nActive assignments: 0\n"
+}

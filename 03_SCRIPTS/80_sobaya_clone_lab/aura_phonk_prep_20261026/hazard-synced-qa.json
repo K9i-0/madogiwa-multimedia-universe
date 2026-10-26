@@ -1,0 +1,100 @@
+{
+  "cutAlignment": [
+    {
+      "event": "pods",
+      "frame": 111,
+      "musicAttackSeconds": 25.685,
+      "errorMs": 15.0
+    },
+    {
+      "event": "witness",
+      "frame": 173,
+      "musicAttackSeconds": 27.755,
+      "errorMs": 11.67
+    },
+    {
+      "event": "corridor",
+      "frame": 270,
+      "musicAttackSeconds": 30.99,
+      "errorMs": 10.0
+    },
+    {
+      "event": "scanner",
+      "frame": 363,
+      "musicAttackSeconds": 34.085,
+      "errorMs": 15.0
+    },
+    {
+      "event": "hologram",
+      "frame": 476,
+      "musicAttackSeconds": 37.875,
+      "errorMs": -8.33
+    },
+    {
+      "event": "windup",
+      "frame": 697,
+      "musicAttackSeconds": 45.24,
+      "errorMs": -6.67
+    },
+    {
+      "event": "shatter",
+      "frame": 725,
+      "musicAttackSeconds": 46.16,
+      "errorMs": 6.67
+    },
+    {
+      "event": "emerge",
+      "frame": 783,
+      "musicAttackSeconds": 48.09,
+      "errorMs": 10.0
+    },
+    {
+      "event": "escape",
+      "frame": 830,
+      "musicAttackSeconds": 49.66,
+      "errorMs": 6.67
+    },
+    {
+      "event": "pursuit",
+      "frame": 900,
+      "musicAttackSeconds": 51.995,
+      "errorMs": 5.0
+    },
+    {
+      "event": "title",
+      "frame": 961,
+      "musicAttackSeconds": 54.02,
+      "errorMs": 13.33
+    }
+  ],
+  "musicRangeSeconds": [
+    22,
+    56
+  ],
+  "shatterSourceFrame": 762,
+  "shatterOutputFrame": 725,
+  "noRepeatedPrimaryVideoRanges": true,
+  "output": "final_remotion_sobaya_hazard_bgm22_synced_9x16.mp4",
+  "sha256": "280f9a1ed7f87a2cb4a0daa1b5f83eaa908ac1ebc423cb8062b56d7b79d549b3",
+  "durationSeconds": 34,
+  "frames": 1020,
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "fullDecode": "passed",
+  "typecheck": "passed",
+  "representativeFrameReview": true,
+  "subjectiveFullPlaybackAudition": false,
+  "audioPolicy": "Only specified REVENGE music; all source-video audio muted and not mapped",
+  "loudnessLUFS": -10.76,
+  "truePeakDbTP": -2.7,
+  "dialogueCaptions": false,
+  "texts": [
+    "SOBAYA HAZARD",
+    "BIO-SIGNATURE SCAN",
+    "YAMETARO",
+    "FUKUGYUN",
+    "ANOMALY DETECTED",
+    "RETRIEVAL AUTHORIZED"
+  ]
+}

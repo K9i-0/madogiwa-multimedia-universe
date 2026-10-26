@@ -1,0 +1,19 @@
+{
+  "decodedFinalAudioCheck": "passed",
+  "events": [
+    {
+      "event": "glass_first_impact",
+      "pictureFrame": 725,
+      "decodedAudioLowBandPeakSeconds": 24.16,
+      "errorMs": -6.667
+    },
+    {
+      "event": "title_entrance",
+      "pictureFrame": 961,
+      "decodedAudioLowBandPeakSeconds": 32.02,
+      "errorMs": -13.333
+    }
+  ],
+  "method": "180Hz low-pass; 5ms RMS; local peak within 45ms of scheduled event; max allowed difference one 30fps frame",
+  "subjectiveAudition": false
+}

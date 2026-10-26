@@ -1,0 +1,28 @@
+2026-10-27 BGM22秒開始・音ハメ完成編集
+
+34.0秒／1020f／720×1280／30fps。
+曲REVENGE (Super Slowed)の22.0〜56.0秒。前回の単純音声差し替えとは別出力。
+採用素材・左右配置英語UI・タイトルSOBAYA HAZARD・BGMのみ・会話字幕なしを維持。
+
+全カット切替を測定した低域アタックの最寄り整数フレームへ置き直す。
+最初のポッド視点→培養液→福ギュン→廊下→UI→ホログラム→手→破裂→飛び出し→逃走→追撃→タイトル。
+測定値確定：左391f、右409f。回収指示435f。音の強い位置に追従。
+全ズーム・揺れの発火位置も22秒を引いた新しいbeatFramesへ更新。
+
+破裂の監査：元素材752〜785fを連続画像で確認。762fで最初の手の衝撃が出る。
+出力725f（24.1667秒）に元素材762fを配置。曲46.16秒の低域アタックに対して+6.7ms。
+直前28fは754f静止を20f、続いて754〜761fを等速8f。単なる低fpsの長いスローを避け、短い溜めから打ち込む。
+後続762〜807fを58fへ、807〜829fを47fへ配置。同じ主映像区間の繰り返しなし。静止と残像は演出として明記。
+
+タイトル961f（32.0333秒）＝曲54.02秒の拍に対して+13.3ms。
+曲55.51秒の最後の強い拍はフェード開始33.4秒後に残り、音圧が下がる曲56秒で終了。
+末尾0.6秒だけ減衰。映像は最後12fで黒へ。最後の拍を跨いで突然切らない。
+
+実装：prepare-hazard-synced.py、src/aura-hazard-synced.json、src/aura-hazard-synced.tsx、render-hazard-synced.mjs、audit-hazard-synced.py。
+実行：remotion内で python3 prepare-hazard-synced.py、npm run typecheck、node render-hazard-synced.mjs、python3 audit-hazard-synced.py。
+音源解析：48kHz WAVをmono化し、3次Butterworth180Hzローパス、5ms RMS、peak prominence .045、最短間隔325ms。強い低域ピークを編集上の拍として採用。小節・和声の自動認定ではない。
+出力：final_remotion_sobaya_hazard_bgm22_synced_9x16.mp4。
+音量・デコード・映像寸法・主映像区間重複・カットと音の数値整合を検証。主観的な通し試聴は未実施。
+
+最終調整：破壊直前と破裂開始の横追従を0.46へ合わせ、仮面と手を画角内に残す。BGM gain0.48、limiter0.8。
+完成AACをデコードした低域RMSでも破裂とタイトルのピークを照合。verify-hazard-beats.pyを音声用venvで実行し、hazard-synced-audio-check.jsonへ記録する。

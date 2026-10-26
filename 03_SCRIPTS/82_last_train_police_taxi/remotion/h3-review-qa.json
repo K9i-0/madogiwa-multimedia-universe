@@ -20,7 +20,7 @@
     "Taxi approaches camera at stop",
     "Sobaya reacts to the question addressed to the driver"
   ],
-  "regeneration_request": "Pending user response; no additional voice generation executed",
+  "regeneration_request": "Resolved: user clarified approval rule covers chargeable generation only; local Irodori revisions authorized.",
   "asr_turbo": [
     {
       "id": "01",
@@ -74,5 +74,6 @@
     }
   ],
   "audio_peak_dbfs": -3.9,
-  "audio_mean_dbfs": -23.0
+  "audio_mean_dbfs": -23.0,
+  "superseded_by": "h3-final-qa.json"
 }

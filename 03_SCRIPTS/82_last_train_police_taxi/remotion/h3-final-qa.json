@@ -1,0 +1,76 @@
+{
+  "status": "completed_edit",
+  "output": "final_remotion_h3_irodori.mp4",
+  "sha256": "e6e74110c02215c837de9532ae4f7d7b8155f6de49b3e47e713f3a7c0dfd66ee",
+  "width": 1280,
+  "height": 720,
+  "frames": 635,
+  "fps": "24/1",
+  "seconds": 26.458333333333332,
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "decode": "complete without errors",
+  "typecheck": "passed",
+  "audio_peak_dbfs": -3.9,
+  "audio_mean_dbfs": -23.5,
+  "voice_review": "Per-line ASR screening; no claim of perceptual listening or phoneme-level lip sync approval",
+  "asr": [
+    {
+      "id": "01",
+      "expected": "そろそろ終電やで。",
+      "recognized": "そろそろ終電やで"
+    },
+    {
+      "id": "02",
+      "expected": "あと一杯だけ！",
+      "recognized": "あと一杯だけ"
+    },
+    {
+      "id": "03",
+      "expected": "かんぱーい！",
+      "recognized": "乾杯!"
+    },
+    {
+      "id": "04",
+      "expected": "せやから言うたやん。",
+      "recognized": "せやから言うたやん"
+    },
+    {
+      "id": "05",
+      "expected": "あ、タクシー！",
+      "recognized": "あ、タクシー"
+    },
+    {
+      "id": "06",
+      "expected": "止めます。",
+      "recognized": "止めます。"
+    },
+    {
+      "id": "07",
+      "expected": "止め方！",
+      "recognized": "止め方"
+    },
+    {
+      "id": "08",
+      "expected": "赤坂までお願いします。",
+      "recognized": "赤坂までお願いします"
+    },
+    {
+      "id": "09",
+      "expected": "あ、そこのコンビニ寄ってもらっていいですか？",
+      "recognized": "あ、そこのコンビニ寄ってもらっていいですか"
+    },
+    {
+      "id": "10",
+      "expected": "タクシーちゃうねん。",
+      "recognized": "タクシーちゃうねん"
+    }
+  ],
+  "user_accepted_visual_issues": [
+    "Taxi approaches camera at stop",
+    "Sobaya reacts to the question addressed to the driver"
+  ],
+  "additional_paid_generation": false,
+  "visual_review": "1fps whole-timeline contact sheet reviewed; scene order and exterior punchline confirmed",
+  "timeline": "Continuous 635 frames; 10 dialogue slots fit; adopted WAV hashes match"
+}

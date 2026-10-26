@@ -1,9 +1,14 @@
 from pathlib import Path
 import json,math,subprocess,re,shutil,hashlib
 root=Path.cwd();work=root/'.local/h3-episode82-edit';ep=root/'03_SCRIPTS/82_last_train_police_taxi';public=ep/'remotion/public/h3'
-rows=json.loads((work/'generation.json').read_text());override=work/'revisions.json'
-if override.exists():
- replacements={r['id']:r for r in json.loads(override.read_text())};rows=[replacements.get(r['id'],r) for r in rows]
+manifest=ep/'remotion/h3-voice-manifest.json'
+public.mkdir(parents=True,exist_ok=True);work.mkdir(parents=True,exist_ok=True)
+if manifest.exists():
+ rows=json.loads(manifest.read_text())
+else:
+ rows=json.loads((work/'generation.json').read_text());override=work/'revisions.json'
+ if override.exists():
+  replacements={r['id']:r for r in json.loads(override.read_text())};rows=[replacements.get(r['id'],r) for r in rows]
 assert len(rows)==10
 byid={};voice_manifest=[]
 for row in rows:
@@ -30,7 +35,7 @@ shots.append(dict(file='h3/ch2_480p.mp4',sourceStart=308,sourceEnd=362,from_=cur
 for group in [shots,dialogue]:
  for item in group:item['from']=item.pop('from_')
 toast=next(d for d in dialogue if d['id']=='03')['from']
-record=dict(composition=dict(id='H3LastTrainIrodori',width=1280,height=720,fps=24,durationInFrames=cursor),shots=shots,dialogue=dialogue,effects=[dict(file='h3/clink.wav',from_=toast+14,duration=31,volume=0.35),dict(file='h3/taxi_stop.wav',from_=impact,duration=50,volume=0.65)],siren=dict(from_=cabin,volumeFrames=[0,6,exterior-cabin,exterior-cabin+4,cursor-cabin-6,cursor-cabin],volumes=[0,0.12,0.12,0.18,0.18,0]))
+record=dict(composition=dict(id='H3LastTrainIrodori',width=1280,height=720,fps=24,durationInFrames=cursor),shots=shots,dialogue=dialogue,effects=[dict(file='h3/clink.wav',from_=toast+14,duration=31,volume=0.35),dict(file='h3/taxi_stop.wav',from_=impact,duration=50,volume=0.65)],siren=dict(from_=cabin,volumeFrames=[0,6,exterior-cabin,exterior-cabin+4,cursor-cabin-6,cursor-cabin],volumes=[0,0.04,0.04,0.055,0.055,0]))
 for e in record['effects']:e['from']=e.pop('from_')
 record['siren']['from']=record['siren'].pop('from_')
 (ep/'remotion/src/h3-edit.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')

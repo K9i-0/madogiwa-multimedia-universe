@@ -4,14 +4,14 @@
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 725
+    "durationInFrames": 635
   },
   "shots": [
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 0,
       "sourceEnd": 38,
-      "duration": 77,
+      "duration": 46,
       "from": 0
     },
     {
@@ -19,78 +19,78 @@
       "sourceStart": 38,
       "sourceEnd": 73,
       "duration": 42,
-      "from": 77
+      "from": 46
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 73,
       "sourceEnd": 133,
       "duration": 48,
-      "from": 119
+      "from": 88
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 133,
       "sourceEnd": 170,
-      "duration": 76,
-      "from": 167
+      "duration": 45,
+      "from": 136
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 170,
       "sourceEnd": 207,
       "duration": 71,
-      "from": 243
+      "from": 181
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 207,
       "sourceEnd": 231,
       "duration": 29,
-      "from": 314
+      "from": 252
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 231,
       "sourceEnd": 281,
       "duration": 50,
-      "from": 343
+      "from": 281
     },
     {
       "file": "h3/ch1_480p.mp4",
       "sourceStart": 281,
       "sourceEnd": 362,
       "duration": 87,
-      "from": 393
+      "from": 331
     },
     {
       "file": "h3/ch2_480p.mp4",
       "sourceStart": 0,
       "sourceEnd": 84,
       "duration": 82,
-      "from": 480
+      "from": 418
     },
     {
       "file": "h3/ch2_480p.mp4",
       "sourceStart": 84,
       "sourceEnd": 173,
-      "duration": 78,
-      "from": 562
+      "duration": 82,
+      "from": 500
     },
     {
       "file": "h3/ch2_480p.mp4",
       "sourceStart": 308,
       "sourceEnd": 362,
-      "duration": 85,
-      "from": 640
+      "duration": 53,
+      "from": 582
     }
   ],
   "dialogue": [
     {
       "id": "01",
       "file": "h3/line01_yametaro.wav",
-      "duration": 75,
-      "volume": 0.6025595860743577,
+      "duration": 44,
+      "volume": 0.588843655355589,
       "text": "そろそろ終電やで。",
       "from": 0
     },
@@ -100,7 +100,7 @@
       "duration": 40,
       "volume": 0.9772372209558108,
       "text": "あと一杯だけ！",
-      "from": 77
+      "from": 46
     },
     {
       "id": "03",
@@ -108,15 +108,15 @@
       "duration": 46,
       "volume": 0.5688529308438414,
       "text": "かんぱーい！",
-      "from": 119
+      "from": 88
     },
     {
       "id": "04",
       "file": "h3/line04_yametaro.wav",
-      "duration": 74,
-      "volume": 0.6309573444801932,
+      "duration": 43,
+      "volume": 0.6025595860743577,
       "text": "せやから言うたやん。",
-      "from": 167
+      "from": 136
     },
     {
       "id": "05",
@@ -124,7 +124,7 @@
       "duration": 69,
       "volume": 0.5495408738576246,
       "text": "あ、タクシー！",
-      "from": 243
+      "from": 181
     },
     {
       "id": "06",
@@ -132,7 +132,7 @@
       "duration": 27,
       "volume": 1.2445146117713852,
       "text": "止めます。",
-      "from": 314
+      "from": 252
     },
     {
       "id": "07",
@@ -140,7 +140,7 @@
       "duration": 85,
       "volume": 0.5821032177708715,
       "text": "止め方！",
-      "from": 393
+      "from": 331
     },
     {
       "id": "08",
@@ -148,23 +148,23 @@
       "duration": 79,
       "volume": 0.5754399373371568,
       "text": "赤坂までお願いします。",
-      "from": 480
+      "from": 418
     },
     {
       "id": "09",
       "file": "h3/line09_fukuchan.wav",
-      "duration": 75,
-      "volume": 0.5495408738576246,
+      "duration": 79,
+      "volume": 0.5821032177708715,
       "text": "あ、そこのコンビニ寄ってもらっていいですか？",
-      "from": 562
+      "from": 500
     },
     {
       "id": "10",
       "file": "h3/line10_yametaro.wav",
-      "duration": 77,
-      "volume": 0.6456542290346555,
+      "duration": 45,
+      "volume": 0.6025595860743577,
       "text": "タクシーちゃうねん。",
-      "from": 642
+      "from": 584
     }
   ],
   "effects": [
@@ -172,32 +172,32 @@
       "file": "h3/clink.wav",
       "duration": 31,
       "volume": 0.35,
-      "from": 133
+      "from": 102
     },
     {
       "file": "h3/taxi_stop.wav",
       "duration": 50,
       "volume": 0.65,
-      "from": 343
+      "from": 281
     }
   ],
   "siren": {
     "volumeFrames": [
       0,
       6,
-      160,
       164,
-      239,
-      245
+      168,
+      211,
+      217
     ],
     "volumes": [
       0,
-      0.12,
-      0.12,
-      0.18,
-      0.18,
+      0.04,
+      0.04,
+      0.055,
+      0.055,
       0
     ],
-    "from": 480
+    "from": 418
   }
 }

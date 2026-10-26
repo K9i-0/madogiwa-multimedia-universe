@@ -47,3 +47,17 @@ colab_batch.pyは同じGPUで2本を順次実行し、ジョブID保存による
 - 音声候補と詳細ログは `.local/h3-episode82-edit/`。候補WAVは採用前のためGit対象外。正典参照、生成コード、候補設定とハッシュ、編集タイムライン、QAは記録する。
 - 再現：リポジトリルートから既存Large環境のPythonで `remotion/scripts/h3_generate_dialogue.py`（既存候補があると再生成を拒否）。`h3_prepare_edit.py`→`h3_build_edit.py`。remotion内で `npx remotion render src/index.ts H3LastTrainIrodori out/h3_irodori_v1.mp4 --codec=h264 --crf=18 --concurrency=2`。
 - 音声認識と通し試聴・音素単位の口同期は別。現在はASR／映像確認／全デコード／尺・音声トラックを検査済み。
+
+
+## Irodori編集完成版（2026-10-26）
+
+追加生成の確認ルールは課金が発生する場合だけで、ローカルIrodoriは対象外というユーザーの明確化に従い、修正を継続。
+
+- 全10台詞を正典参照のIrodori音声へ差し替え。01/04/10はduration_scale 0.40で語尾・余計な発話を改善。09は読み入力を「よって」とし、seed42・CFG5・captionなしで修正。
+- 07「止め方！」は短縮候補2本で発話が崩れたため、不採用。ASRで台詞が確認できた初回音声を採用。音声の早送りや語尾切断はしない。
+- サイレンを車内0.04／車外0.055へ抑え、台詞の間と映像の速度を調整。余分な車内発話場面を削除、車外でオチ。
+- 完成出力 `../final_remotion_h3_irodori.mp4`、1280×720、24fps、635frames、約26.46秒。H3元映像は保持。追加API・Colab利用なし。
+- 採用10行WAVはエピソード直下の `h3_line*.wav`。再生成設定・参照と採用ハッシュは `remotion/h3-voice-manifest.json`。未採用候補は.localのみ。
+- 再構築：ルートで `python3 03_SCRIPTS/82_last_train_police_taxi/remotion/scripts/h3_prepare_edit.py` → `h3_build_edit.py`（同ディレクトリ）→ remotion内で `npx remotion render src/index.ts H3LastTrainIrodori out/h3_irodori_v2.mp4 --codec=h264 --crf=18 --concurrency=2`。原本H3動画2本がローカルに必要。
+- 音声再生成が必要ならLarge環境のPythonで `remotion/scripts/h3_regenerate_adopted.py`。採用WAVを上書きせず.localへ出す。初回候補用の `h3_generate_dialogue.py` は履歴用。
+- 検証範囲はASR、映像サンプル、型チェック、全デコード、映像・音声トラックと音量。聴感・厳密な口同期の合格は自動検査から断定しない。許容された映像2点はそのまま。

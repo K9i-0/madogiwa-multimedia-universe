@@ -1,0 +1,212 @@
+[
+  {
+    "id": "01",
+    "speaker": "yametaro",
+    "text": "そろそろ終電やで。",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "そろそろ終電やで。",
+      "caption": null,
+      "ref_wav": "02_CHARACTERS/Yametaro_voice.wav",
+      "seed": 7,
+      "trim_tail": false,
+      "cfg_scale_text": 5.0,
+      "duration_scale": 0.4
+    },
+    "ref_sha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line01_yametaro.wav",
+    "raw_duration": 1.8,
+    "sha256": "094cd0d0fbdeb9330bec5d19270592a23ec21a27f2161de16346601d18b95f3b",
+    "elapsed_seconds": 23.32675814628601,
+    "postprocess": "none"
+  },
+  {
+    "id": "02",
+    "speaker": "sobaya",
+    "text": "あと一杯だけ！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "あと一杯だけ！",
+      "caption": "明るく軽い調子で誘う。",
+      "ref_wav": "02_CHARACTERS/Sobaya_voice.wav",
+      "seed": 42,
+      "trim_tail": false,
+      "cfg_scale_text": 3.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line02_sobaya.wav",
+    "raw_duration": 1.64,
+    "sha256": "5a6e2cf97e9154c9fd1e6337232e0e1857bcea128312e71623fbf95c13e10cb4",
+    "elapsed_seconds": 13.663079977035522,
+    "postprocess": "sobaya_monsterize"
+  },
+  {
+    "id": "03",
+    "speaker": "fukuchan",
+    "text": "かんぱーい！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "かんぱーい！",
+      "caption": "楽しそうに乾杯する。",
+      "ref_wav": "02_CHARACTERS/Fukuchan_voice.wav",
+      "seed": 100,
+      "trim_tail": false,
+      "cfg_scale_text": 3.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line03_fukuchan.wav",
+    "raw_duration": 1.88,
+    "sha256": "c2e1c83e13b474b78abadc91ca2cbeaba4e89d73660cc06ee8b29d7f20d71580",
+    "elapsed_seconds": 13.615988969802856,
+    "postprocess": "none"
+  },
+  {
+    "id": "04",
+    "speaker": "yametaro",
+    "text": "せやから言うたやん。",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "せやから言うたやん。",
+      "caption": null,
+      "ref_wav": "02_CHARACTERS/Yametaro_voice.wav",
+      "seed": 7,
+      "trim_tail": false,
+      "cfg_scale_text": 5.0,
+      "duration_scale": 0.4
+    },
+    "ref_sha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line04_yametaro.wav",
+    "raw_duration": 1.76,
+    "sha256": "4e09aba0bdb19ebcaefe946153128f898ea3fceb9115fab69e96a1a5f20088a6",
+    "elapsed_seconds": 11.77024793624878,
+    "postprocess": "none"
+  },
+  {
+    "id": "05",
+    "speaker": "fukuchan",
+    "text": "あ、タクシー！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "あ、タクシー！",
+      "caption": "車を見つけて嬉しそうに呼びかける。",
+      "ref_wav": "02_CHARACTERS/Fukuchan_voice.wav",
+      "seed": 100,
+      "trim_tail": false,
+      "cfg_scale_text": 3.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line05_fukuchan.wav",
+    "raw_duration": 2.84,
+    "sha256": "8110710f86aeea8f4551b483841991ead2ee798fef882e4a3115d0881f377339",
+    "elapsed_seconds": 18.544771671295166,
+    "postprocess": "none"
+  },
+  {
+    "id": "06",
+    "speaker": "sobaya",
+    "text": "止めます。",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "止めます。",
+      "caption": "落ち着いてさらっと言う。",
+      "ref_wav": "02_CHARACTERS/Sobaya_voice.wav",
+      "seed": 42,
+      "trim_tail": false,
+      "cfg_scale_text": 3.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line06_sobaya.wav",
+    "raw_duration": 1.08,
+    "sha256": "776364a271c253cac3f6535f1196e7e4c53150e6abdadf2f9842a5105993ec42",
+    "elapsed_seconds": 12.10741114616394,
+    "postprocess": "sobaya_monsterize"
+  },
+  {
+    "id": "07",
+    "speaker": "yametaro",
+    "text": "止め方！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "止め方！",
+      "caption": "驚いて鋭くツッコむ。",
+      "ref_wav": "02_CHARACTERS/Yametaro_voice.wav",
+      "seed": 7,
+      "trim_tail": false,
+      "cfg_scale_text": 5.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line07_yametaro.wav",
+    "raw_duration": 3.52,
+    "sha256": "28774024fdb9eeabbf13bc09d585679dbc1fe1cd01564dad7c165fa49d2cacab",
+    "elapsed_seconds": 21.18987202644348,
+    "postprocess": "none"
+  },
+  {
+    "id": "08",
+    "speaker": "fukuchan",
+    "text": "赤坂までお願いします。",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "赤坂までお願いします。",
+      "caption": "相手へ明るく丁寧に頼む。",
+      "ref_wav": "02_CHARACTERS/Fukuchan_voice.wav",
+      "seed": 100,
+      "trim_tail": false,
+      "cfg_scale_text": 3.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line08_fukuchan.wav",
+    "raw_duration": 3.28,
+    "sha256": "324693f98a46cee930754db3e39265961c21b7f97a70ac90dc9347afce3a13c4",
+    "elapsed_seconds": 20.895143032073975,
+    "postprocess": "none"
+  },
+  {
+    "id": "09",
+    "speaker": "fukuchan",
+    "text": "あ、そこのコンビニ寄ってもらっていいですか？",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "あ、そこのコンビニ、よってもらっていいですか？",
+      "caption": null,
+      "ref_wav": "02_CHARACTERS/Fukuchan_voice.wav",
+      "seed": 42,
+      "trim_tail": false,
+      "cfg_scale_text": 5.0,
+      "duration_scale": 1.0
+    },
+    "ref_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line09_fukuchan.wav",
+    "raw_duration": 3.28,
+    "sha256": "ec9c29bbb09613e646a24e0e17a5416e6c031d471fa4599c10290bd86749181a",
+    "elapsed_seconds": 17.317177772521973,
+    "postprocess": "none"
+  },
+  {
+    "id": "10",
+    "speaker": "yametaro",
+    "text": "タクシーちゃうねん。",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "settings": {
+      "text": "タクシーちゃうねん。",
+      "caption": null,
+      "ref_wav": "02_CHARACTERS/Yametaro_voice.wav",
+      "seed": 7,
+      "trim_tail": false,
+      "cfg_scale_text": 5.0,
+      "duration_scale": 0.4
+    },
+    "ref_sha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+    "path": "03_SCRIPTS/82_last_train_police_taxi/h3_line10_yametaro.wav",
+    "raw_duration": 1.84,
+    "sha256": "232c4ca7c5ebfa2230de403901476279289ebfac33025e32da553491451d426d",
+    "elapsed_seconds": 12.166659832000732,
+    "postprocess": "none"
+  }
+]

@@ -34,6 +34,6 @@ for cat in ['既存ショート公開済み','元動画が縦型・公開済み'
   if cat=='元動画が縦型・公開済み':note=f'1080×1920・[公開動画](https://www.youtube.com/watch?v={r["youtube_id"]})'
   if cat=='今回対象外：101秒超' and not r['prompt_available']:note='プロンプトもなし'
   lines.append(f'| {site(r)} | {length(r["source_duration_seconds_youtube"])} | {prompt(r)} | {note} |')
-lines+=['','## 自動投稿の順番','','直近に公開した管理対象ショートの作者と逆の作者から選び、そば屋さん→K9iを交互に投稿する。現在の70本はそば屋さん31本・K9i39本で、交互に31周した後、残るK9i8本を続ける。各作者内では既存のリスト順を維持する。','','毎日23:00 JST、その日に公開済み動画も当日予約公開もなければ1本投稿する既存ルールを維持。編集完了・リスト追加と、YouTubeへの実際の公開は別の状態。今回の作業では即時投稿しない。','','詳細：[制作・検証記録](shorts_sobaya_20261016/README.md)、[投稿処理](../tools/shorts-nightly/README.md)。','']
+lines+=['','## 自動投稿の順番','','直近に公開した管理対象ショートの作者と逆の作者から選び、そば屋さん→K9iを交互に投稿する。現在の70本はそば屋さん31本・K9i39本で、交互に31周した後、残るK9i8本を続ける。各作者内では既存のリスト順を維持する。','','2026-10-26の変更後は、他の投稿・公開予約の有無にかかわらず毎日18:00 JSTに1本自動投稿する。編集完了・リスト追加と、YouTubeへの実際の公開は別の状態。今回の作業では即時投稿しない。','','詳細：[制作・検証記録](shorts_sobaya_20261016/README.md)、[投稿処理](../tools/shorts-nightly/README.md)。','']
 (R/'03_SCRIPTS/shorts_site_inventory_20261016.md').write_text('\n'.join(lines))
 print(dict(C))

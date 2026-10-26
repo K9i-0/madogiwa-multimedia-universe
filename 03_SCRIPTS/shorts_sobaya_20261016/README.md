@@ -58,6 +58,6 @@ python3 03_SCRIPTS/shorts_sobaya_20261016/integrate_queue.py --write
 python3 tools/shorts-nightly/run.py
 ```
 
-`queue.json`の`ready`は両監査を通過した完成物だけに付ける。既存の夜間投稿処理はこのqueueと従来queueを読み、K9iとそば屋さんを交互に選ぶ。各作者内の順番を維持し、片方がなくなれば残る作者を続ける。既存ルールの「23:00 JST、その日に公開投稿も当日予約もなければ1本」を維持する。
+`queue.json`の`ready`は両監査を通過した完成物だけに付ける。既存の自動投稿処理はこのqueueと従来queueを読み、K9iとそば屋さんを交互に選ぶ。各作者内の順番を維持し、片方がなくなれば残る作者を続ける。2026-10-26の変更後は、他の投稿・公開予約の有無にかかわらず、毎日18:00 JSTに1本自動投稿する。
 
 公式サイト全94作品の内訳は [ショート対応一覧](../shorts_site_inventory_20261016.md) を参照。

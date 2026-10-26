@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ch01",
+    "frames": 362,
+    "width": 1344,
+    "height": 768,
+    "seed": 54076801,
+    "images": [
+      "intro.png",
+      "figure.png",
+      "fukugyun.jpg",
+      "fukugyun_sheet.png",
+      "tokun.jpg",
+      "tokun_sheet.png"
+    ],
+    "audio": [
+      "line01_fukuchan.wav",
+      "line02_fukuchan.wav",
+      "line03_fukuchan.wav"
+    ],
+    "ref_image_size": "match"
+  },
+  {
+    "id": "ch02",
+    "frames": 362,
+    "width": 1344,
+    "height": 768,
+    "seed": 54076802,
+    "images": [
+      "comparison.png",
+      "intro.png",
+      "figure.png",
+      "fukugyun.jpg",
+      "fukugyun_sheet.png",
+      "tokun.jpg",
+      "tokun_sheet.png",
+      "sobaya.jpg",
+      "sobaya_sheet.png"
+    ],
+    "audio": [
+      "line04_fukuchan.wav",
+      "line05_fukuchan.wav",
+      "line06_sobaya_pad.wav"
+    ],
+    "ref_image_size": "match"
+  }
+]

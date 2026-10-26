@@ -1,0 +1,105 @@
+{
+  "composition": {
+    "id": "YumemiGroupH3",
+    "width": 1344,
+    "height": 768,
+    "fps": 24,
+    "durationInFrames": 720
+  },
+  "inputVideo": "h3/ch01_768p.mp4",
+  "inputVideoVolume": 0,
+  "replacementAudio": "shopping_irodori_instrumental_master_30s.wav",
+  "brand": {
+    "name": "ゆめみグループ",
+    "cornerLabel": "本日限り"
+  },
+  "product": {
+    "name": "等身大そば屋 プレミアムフィギュア",
+    "claims": [
+      "職人完全監修",
+      "驚異の本人再現率",
+      "超高品質FRP"
+    ],
+    "height": "身長180cm",
+    "weight": "重量100kg",
+    "regularPrice": "1,238,000円",
+    "todayPrice": "198,000円",
+    "stock": "残り2体！",
+    "matchRate": "本人一致率 99.9%",
+    "disclaimer": "※品質の感じ方には個人差があります",
+    "presidentTitle": "ゆめみグループ社長　とーくん"
+  },
+  "cues": {
+    "intro": {
+      "startFrame": 0,
+      "endFrame": 43
+    },
+    "features": {
+      "startFrame": 144,
+      "endFrame": 257
+    },
+    "president": {
+      "startFrame": 312,
+      "endFrame": 343
+    },
+    "priceReveal": {
+      "startFrame": 360,
+      "endFrame": 413
+    },
+    "comparison": {
+      "startFrame": 506,
+      "endFrame": 593
+    },
+    "disclaimer": {
+      "startFrame": 593,
+      "endFrame": 667
+    },
+    "punchline": {
+      "startFrame": 667,
+      "endFrame": 698
+    },
+    "final": {
+      "startFrame": 698,
+      "endFrame": 720
+    }
+  },
+  "captions": [
+    {
+      "startFrame": 43,
+      "endFrame": 144,
+      "speaker": "福ギュン",
+      "text": "本日ご紹介するのは、等身大そば屋フィギュア！"
+    },
+    {
+      "startFrame": 144,
+      "endFrame": 254,
+      "speaker": "福ギュン",
+      "text": "職人が細部まで仕上げた、驚きの再現度です！"
+    },
+    {
+      "startFrame": 257,
+      "endFrame": 343,
+      "speaker": "福ギュン",
+      "text": "とーくん社長、こちら、おいくらですか？"
+    },
+    {
+      "startFrame": 413,
+      "endFrame": 502,
+      "speaker": "福ギュン",
+      "text": "そして、ご本人にも来ていただきました！"
+    },
+    {
+      "startFrame": 506,
+      "endFrame": 593,
+      "speaker": "福ギュン",
+      "text": "うわ、どっちが本物かわからないぎゅん！",
+      "emphasis": "ぎゅん！"
+    },
+    {
+      "startFrame": 667,
+      "endFrame": 698,
+      "speaker": "そば屋",
+      "text": "わかるやろ。"
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import {Composition,registerRoot} from 'remotion';
 import {EditComposition} from './Composition';
 import raw from './shorts-clean-manifest.json';

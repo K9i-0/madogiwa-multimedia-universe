@@ -1,0 +1,257 @@
+{
+  "composition": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "durationInFrames": 1050
+  },
+  "segments": [
+    {
+      "id": "discovery",
+      "from": 0,
+      "duration": 120,
+      "sourceStart": 90,
+      "sourceEnd": 180,
+      "rate": 0.75,
+      "width": 1300,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "witness",
+      "from": 120,
+      "duration": 90,
+      "sourceStart": 180,
+      "sourceEnd": 255,
+      "rate": 0.8333333333333334,
+      "width": 1100,
+      "x0": 0.6,
+      "x1": 0.6
+    },
+    {
+      "id": "corridor",
+      "from": 210,
+      "duration": 60,
+      "sourceStart": 255,
+      "sourceEnd": 348,
+      "rate": 1.55,
+      "width": 1200,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "scan",
+      "from": 270,
+      "duration": 60,
+      "sourceStart": 348,
+      "sourceEnd": 540,
+      "rate": 3.2,
+      "width": 1000,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "reveal",
+      "from": 330,
+      "duration": 80,
+      "sourceStart": 540,
+      "sourceEnd": 620,
+      "rate": 1.0,
+      "width": 1600,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "command",
+      "from": 410,
+      "duration": 40,
+      "sourceStart": 680,
+      "sourceEnd": 740,
+      "rate": 1.5,
+      "width": 1050,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "hold",
+      "from": 450,
+      "duration": 15,
+      "sourceStart": 740,
+      "sourceEnd": 740,
+      "rate": 0.0,
+      "width": 1050,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "windup",
+      "from": 465,
+      "duration": 20,
+      "sourceStart": 754,
+      "sourceEnd": 780,
+      "rate": 1.3,
+      "width": 1700,
+      "x0": 0.5,
+      "x1": 0.4
+    },
+    {
+      "id": "shatter",
+      "from": 485,
+      "duration": 60,
+      "sourceStart": 780,
+      "sourceEnd": 806,
+      "rate": 0.43333333333333335,
+      "width": 1700,
+      "x0": 0.4,
+      "x1": 0.25
+    },
+    {
+      "id": "release",
+      "from": 545,
+      "duration": 45,
+      "sourceStart": 806,
+      "sourceEnd": 829,
+      "rate": 0.5111111111111111,
+      "width": 1500,
+      "x0": 0.3,
+      "x1": 0.4
+    },
+    {
+      "id": "chase",
+      "from": 590,
+      "duration": 165,
+      "sourceStart": 829,
+      "sourceEnd": 939,
+      "rate": 0.6666666666666666,
+      "width": 1050,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "shards",
+      "from": 755,
+      "duration": 45,
+      "sourceStart": 780,
+      "sourceEnd": 815,
+      "rate": 0.7777777777777778,
+      "width": 1700,
+      "x0": 0.4,
+      "x1": 0.25
+    },
+    {
+      "id": "army",
+      "from": 800,
+      "duration": 45,
+      "sourceStart": 815,
+      "sourceEnd": 845,
+      "rate": 0.6666666666666666,
+      "width": 1250,
+      "x0": 0.4,
+      "x1": 0.45
+    },
+    {
+      "id": "master",
+      "from": 845,
+      "duration": 45,
+      "sourceStart": 680,
+      "sourceEnd": 725,
+      "rate": 1.0,
+      "width": 1050,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "pursuit",
+      "from": 890,
+      "duration": 45,
+      "sourceStart": 870,
+      "sourceEnd": 915,
+      "rate": 1.0,
+      "width": 1100,
+      "x0": 0.5,
+      "x1": 0.5
+    },
+    {
+      "id": "lastimpact",
+      "from": 935,
+      "duration": 45,
+      "sourceStart": 780,
+      "sourceEnd": 810,
+      "rate": 0.6666666666666666,
+      "width": 1500,
+      "x0": 0.4,
+      "x1": 0.25
+    },
+    {
+      "id": "title",
+      "from": 980,
+      "duration": 70,
+      "sourceStart": 829,
+      "sourceEnd": 829,
+      "rate": 0.0,
+      "width": 1400,
+      "x0": 0.38,
+      "x1": 0.38
+    }
+  ],
+  "music": {
+    "file": "aura/revenge.wav",
+    "startFrame": 0,
+    "impactFrame": 485,
+    "beatFrames": [
+      485,
+      502,
+      516,
+      532,
+      547,
+      561,
+      576,
+      590,
+      605,
+      620,
+      634,
+      651,
+      662,
+      720,
+      748,
+      759,
+      770,
+      781,
+      792,
+      804,
+      815,
+      833,
+      847,
+      867,
+      889,
+      900,
+      917,
+      931,
+      945,
+      960,
+      971,
+      983,
+      993,
+      1005,
+      1016,
+      1029,
+      1041
+    ]
+  },
+  "captions": [],
+  "originalAudio": false,
+  "textCards": [
+    {
+      "from": 286,
+      "to": 330,
+      "text": "ANOMALY DETECTED"
+    },
+    {
+      "from": 986,
+      "to": 1047,
+      "text": "CLONE LAB"
+    }
+  ],
+  "output": "final_remotion_aura_cinematic_9x16.mp4",
+  "notes": "35 seconds; original dialogue and SFX muted; opening source 90; discovery to build-up to music impact16.16s; replay montage and title ending"
+}

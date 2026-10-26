@@ -1,0 +1,30 @@
+2026-10-26 映画予告編風 v2
+
+ユーザー指定：元のセリフなし、字幕最小限、英語可、ポッドを覗くやめ太郎から開始、派手なアニメーション、大作映画をショートにまとめた雰囲気。
+
+35秒／1050f／720×1280／30fps。元動画36.3秒、前回試作22.7秒。
+今回の正本：remotion/src/aura-cinematic.json、aura-cinematic.tsx。
+入力：肌補正採用横版、同動画由来のフレーム素材、REVENGE (Super Slowed) — 1HXSX, wnorg17。
+原動画の音声は完全に除外。指定BGMのみ、速度変更なし。
+会話字幕・話者名なし。測定数値5,082、英語ANOMALY DETECTED、最後のCLONE LAB。
+元の焼き込みUIは使わず、英語の短いスキャン画面に再構成。
+
+0〜4秒：ポッドから見たやめ太郎。ゆっくりした寄り。
+4〜9秒：福ギュンと背後のクローン、研究所の二人。
+9〜11秒：短いスキャン、異常検知。
+11〜15.5秒：巨大ホログラム→顔の寄り→短い静止。
+15.5〜16.17秒：ガラス越しの手を加速。
+16.17〜19.67秒：BGMの音圧上昇へ破砕を同期し、低速へ切替。揺れ、拡大、色ずれ残像、飛散図形、横方向の光。
+19.67〜25.17秒：逃走と追撃。拍頭でパンチズーム。
+25.17〜32.67秒：破砕・クローン・ホログラム・追撃を再編集したモンタージュ。短い横移動と光でカット転換。
+32.67〜35秒：クローン静止と立体的に入るCLONE LAB。最後は黒へ。
+
+再現：既存のprepare-aura.pyでpublic/aura素材を用意。prepare-cinematic.pyはリポジトリルートから実行。
+追加静止画：ffmpeg -ss 24.666667 -i public/aura/source.mp4 -frames:v 1 public/aura/command-hold.jpg
+remotionディレクトリで npm run typecheck、node render-cinematic.mjs --stills、node render-cinematic.mjs。
+音源はremotion/public/aura/revenge.wav。元音源はout/aura-prep/revenge.webm。
+render-cinematic.mjsは無音の映像をRemotionで生成し、BGMのみをffmpegでmuxする。
+出力：final_remotion_aura_cinematic_9x16.mp4。
+元の採用本編、前回2案、投稿キューは変更しない。
+
+確認：代表フレームを目視。音源ドロップ位置は波形由来。通し聴覚監査は未実施であり試聴済みとは扱わない。

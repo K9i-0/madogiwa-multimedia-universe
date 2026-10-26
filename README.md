@@ -38,6 +38,7 @@
 制作物ごとのワークフローはスキルに分離している。該当する作業ではスキルを呼び出して従うこと。実体は `.claude/skills/` にあり、Codex CLI向けに `.agents/skills/` からsymlinkで共有している。
 
 - **LINEスタンプ制作** (`line-stickers`): 第一弾の連続原画方式、透過処理、アニメーション、main/tab、申請用画像ZIPまでを制作・修正する。詳細: [.claude/skills/line-stickers/SKILL.md](.claude/skills/line-stickers/SKILL.md)
+- **MiniMax H3動画制作** (`minimax-h3-video`): 公開重みのCUDA/Colab環境構築、480p生成、費用計測、動作検証。Wanが標準、H3明示時に使用。詳細: [.claude/skills/minimax-h3-video/SKILL.md](.claude/skills/minimax-h3-video/SKILL.md)
 - **Wan動画制作** (`wan-video`): 台本・プロンプト・参照素材・生成・監査を管理する。詳細: [.claude/skills/wan-video/SKILL.md](.claude/skills/wan-video/SKILL.md)
 - **VOICEVOX音声制御** (`voicevox-control`): 音声生成、誤読修正、共有読み辞書、話者・速度・アクセントを管理する。解説・怪談等で共用する。詳細: [.claude/skills/voicevox-control/SKILL.md](.claude/skills/voicevox-control/SKILL.md)
 - **ボクセルモデル制作** (`build-voxel-character-from-image`): キャラクターの参照画像から、Blender／Three.jsで使えるリグ付きボクセルGLBを作成・修正する。成果物は `04_GAME_ASSETS/voxel/` に配置。詳細: [.claude/skills/build-voxel-character-from-image/SKILL.md](.claude/skills/build-voxel-character-from-image/SKILL.md)

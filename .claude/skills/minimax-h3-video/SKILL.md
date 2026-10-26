@@ -19,7 +19,14 @@ I2V/R2V、人物・声の再現性、音声内容の聴取監査は未検証。�
 - モデルは約54GB。Driveは入力・結果だけ。重みは実行ディスクに直接DLし、GCSや有料Driveキャッシュを勝手に追加しない。
 - Googleの公式Colab CLIも利用可能。利用するなら公式READMEと現在の認証手順を確認する。ブラウザCookie抽出・非公開APIによる認証の代用をしない。
 
-## 最初の動作検証
+## CLIでの実行（2026-10-26ユーザー希望の標準経路）
+
+ブラウザでのノートブック操作より[cli.md](references/cli.md)の公式Colab CLIを優先する。
+`colab_h3.py`で準備・実行・状態確認・回収・停止を行う。初回OAuth認証だけユーザー操作が必要。
+ComfyUI APIはGPU内の127.0.0.1で使い、公開トンネルは不要。
+同僚の`h3_run.py`はComfyUI API部分の参考になったが、同僚のColab運用自体はブラウザ前提。
+
+## ノートブックでの動作検証（代替経路）
 
 [assets/mmu_h3_smoke.ipynb](assets/mmu_h3_smoke.ipynb)をColabで開く。
 自己完結したノートブックで、DriveマウントやAPIキーは不要。

@@ -1,0 +1,13 @@
+2026-10-27 末尾ロゴを映像へ変更
+
+最後のSOBAYA HAZARDカード37f（約1.23秒）を削除。
+直前の追撃ショットを45f→82fへ延長。元の880〜954fを74/82倍速で一度だけ再生。
+同じシーンのリプレイや新たな静止画を加えず、最後まで映像を見せて暗転。
+総尺634f／30fps＝21.133秒、前半カット・ポッド破壊・UIのタイミングは維持。
+BGMは参考準拠版の採用AACをstream copyし、曲11.096秒開始・既存末尾フェードを完全保持。
+
+正本：src/aura-hazard-nologo.json、src/aura-hazard-nologo.tsx。
+再現：remotion内で npm run typecheck、node render-hazard-nologo.mjs、python3 audit-hazard-nologo.py。
+入力音声は../final_remotion_sobaya_hazard_reference_9x16.mp4。
+出力：final_remotion_sobaya_hazard_reference_nologo_9x16.mp4。
+前版は保持。投稿なし。

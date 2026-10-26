@@ -1,0 +1,32 @@
+2026-10-26 SOBAYA HAZARD / aura edit v3
+
+ユーザー修正：繰り返しを減らし未採用カットを利用、BGMに合う終端、ポッド破壊を見せ場、9:16を活用、タイトルSOBAYA HAZARD、元の左右配置の測定UIを英語で洗練。
+
+32.4秒／972f／720×1280／30fps。
+BGMはREVENGE (Super Slowed) — 1HXSX, wnorg17 の曲頭から。元動画の声・効果音なし。
+音楽の推奨終端は約32秒。波形の強い立ち上がり16.16秒でホログラム、24.01秒の強い拍でポッド破壊、31.5〜32秒の拍でタイトルを受け、32.4秒までにフェード。
+これは拍・音圧の観測に基づく編集案で、主観的通し試聴や和声解析済みという意味ではない。
+
+未使用素材
+- wan3_pov_replacement_seed26092680_480p.mp4 の0〜120f全尺。前作では採用本編の短縮POVを使用。今回は生成された元の4秒全体を使用し、ポッド越しの腕と距離感を残す。
+- final_remotion_clone_lab_skin.mp4 の0〜90fの培養液・ポッド導入。前作では不使用。
+- 廊下255〜348f、ホログラム540〜730f、直前730〜780fを連続構成へ戻す。
+- 後半モンタージュによる破壊・追撃の再提示は撤去。主映像のソースフレーム区間に重複なし。衝撃の色ずれ残像のみ同時合成として残す。
+
+画角
+POV、ポッド、人物、破壊、飛び出し、逃走は9:16全面へ。カットごとの被写体位置に合わせ水平位置を追従。
+巨大ホログラム全景は上下の高さを活用。ホログラム顔アップだけ、顔を切らない倍率に下げ、同フレームのぼかし背景で周囲を埋める。
+前回の共通レターボックスを撤去。横映像を全編同じ幅で配置しない。
+
+UI
+原版の左右比較を維持：左やめ太郎5,082 MW、右福ギュン213 MW。基準10 MW、原体10,247 MW。
+BIO-SIGNATURE SCAN／YAMETARO／FUKUGYUN。
+細い罫線、走査線、数値カウント、原体比のバー、異常検知→回収指示。
+新規表示へ旧名は使わない。会話字幕はなし。
+
+再現
+既存prepare-aura.pyで主動画・音楽・UIポートレートをpublic/auraへ準備。
+remotion内で python3 prepare-hazard.py、npm run typecheck、node render-hazard.mjs --stills、node render-hazard.mjs、python3 audit-hazard.py。
+入力BGM public/aura/revenge.wav。映像定義 src/aura-hazard.json、実装src/aura-hazard.tsx。
+出力 final_remotion_sobaya_hazard_aura_9x16.mp4。
+旧版・元本編・公開キューを保持。公開や予約はしない。

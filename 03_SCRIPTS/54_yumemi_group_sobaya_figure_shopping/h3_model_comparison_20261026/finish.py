@@ -8,6 +8,10 @@ variants={
  'pure': [ROOT/'.local/h3-shopping-768-20261026/job/results'/f'ch{i:02}_768p.mp4' for i in [1,2]],
  'singularity_v2': [results/f'singularity_v2_ch{i:02}.mp4' for i in [1,2]],
  'hybrid_b20': [results/f'hybrid_b20_ch{i:02}.mp4' for i in [1,2]]}
+partial='--partial' in sys.argv
+v13='--v13' in sys.argv
+if v13:variants['singularity_v13']=[results/f'singularity_v13_ch{i:02}.mp4' for i in [1,2]]
+if partial:variants={k:v for k,v in variants.items() if all(p.exists() for p in v)}
 def run(args):subprocess.run(args,check=True)
 reports=[]
 for name,clips in variants.items():
@@ -24,16 +28,21 @@ outputs=[EP/f'final_h3_compare_{x}.mp4' for x in variants]
 args=['ffmpeg','-v','error','-y']
 for f in outputs:args+=['-i',str(f)]
 font='/System/Library/Fonts/Helvetica.ttc'
-labels=['Pure Ref2VA','Singularity V2','Hybrid b20-49']
+label_map={'pure':'Pure Ref2VA','singularity_v2':'Singularity V2','hybrid_b20':'Hybrid b20-49','singularity_v13':'Singularity v1.3'}
+labels=[label_map[k] for k in variants]
 filters=[]
 for i,label in enumerate(labels):filters.append(f"[{i}:v]scale=672:384:flags=lanczos,pad=672:432:0:48:black,drawtext=fontfile='{font}':text='{label}':fontsize=26:fontcolor=white:x=(w-tw)/2:y=10[v{i}]")
-filters.append('[v0][v1][v2]hstack=inputs=3[v]')
-run(args+['-filter_complex',';'.join(filters),'-map','[v]','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','18','-c:a','copy','-t','30','-movflags','+faststart',str(EP/'final_h3_compare_side_by_side.mp4')])
+layout='xstack=inputs=4:layout=0_0|672_0|0_432|672_432' if v13 else f'hstack=inputs={len(variants)}'
+filters.append(''.join(f'[v{i}]' for i in range(len(variants)))+layout+'[v]')
+comparison_name='final_h3_compare_four_models.mp4' if v13 else ('final_h3_compare_pure_singularity.mp4' if partial else 'final_h3_compare_side_by_side.mp4')
+run(args+['-filter_complex',';'.join(filters),'-map','[v]','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','18','-c:a','copy','-t','30','-movflags','+faststart',str(EP/comparison_name)])
 remote=json.loads((results/'status.json').read_text());baseline=json.loads((EP/'h3_768p/generation-result.json').read_text())
 report={'qualityReview':'User judges; no rerolls or quality selection','baselineReused':True,'baseline':baseline,'newRun':remote,'outputs':reports,'audioPolicy':'final_* uses identical adopted Irodori master; h3_compare_raw_* retains native generated audio; no captions, crops, speed changes, or AI enhancement'}
 timings={'pure':[x['seconds'] for x in baseline['completed']]}
-for name in ['singularity_v2','hybrid_b20']:timings[name]=[x['seconds'] for x in remote['completed'] if x['model']==name]
+for name in variants:
+ if name!='pure':timings[name]=[x['seconds'] for x in remote['completed'] if x['model']==name]
 report['generationSeconds']={name:{'chapters':values,'total':sum(values),'relativeToPure':sum(values)/sum(timings['pure'])} for name,values in timings.items()}
-(P/'comparison-result.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-(P/'timings.csv').write_text('model,chapter_1_seconds,chapter_2_seconds,total_seconds,relative_to_pure\n'+''.join(f"{name},{values[0]:.2f},{values[1]:.2f},{sum(values):.2f},{sum(values)/sum(timings['pure']):.4f}\n" for name,values in timings.items()))
+report['partial']=partial
+(P/('comparison-v13-result.json' if v13 else ('comparison-partial-result.json' if partial else 'comparison-result.json'))).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+(P/('timings-v13.csv' if v13 else ('timings-partial.csv' if partial else 'timings.csv'))).write_text('model,chapter_1_seconds,chapter_2_seconds,total_seconds,relative_to_pure\n'+''.join(f"{name},{values[0]:.2f},{values[1]:.2f},{sum(values):.2f},{sum(values)/sum(timings['pure']):.4f}\n" for name,values in timings.items()))
 print('COMPARISON COMPLETE',flush=True)

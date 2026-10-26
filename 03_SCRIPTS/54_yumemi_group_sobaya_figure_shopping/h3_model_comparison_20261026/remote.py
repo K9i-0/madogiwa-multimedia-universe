@@ -13,6 +13,10 @@ import time
 import urllib.request
 import zipfile
 
+# Use serial HTTP download for recovery; avoid concurrent Xet chunk requests.
+os.environ['HF_HUB_DISABLE_XET']='1'
+os.environ['HF_HUB_DISABLE_IMPLICIT_TOKEN']='1'
+
 
 def main(root):
     root = Path(root); root.mkdir(parents=True, exist_ok=True)
@@ -62,7 +66,15 @@ def main(root):
         models=json.loads((root/'models.json').read_text())
         for spec in models:
             state['stage']='download_'+spec['id'];record();start=time.monotonic()
-            path=Path(hf_hub_download(spec['repo'],spec['filename'],revision=spec['revision'],local_dir=root/'ComfyUI/models/diffusion_models'))
+            for attempt in range(4):
+                try:
+                    path=Path(hf_hub_download(spec['repo'],spec['filename'],revision=spec['revision'],local_dir=root/'ComfyUI/models/diffusion_models',token=False))
+                    break
+                except Exception as exc:
+                    if attempt==3:raise
+                    pause=60*(2**attempt)
+                    state['download_retry']={'attempt':attempt+1,'wait_seconds':pause,'error':type(exc).__name__};record()
+                    time.sleep(pause)
             download_seconds=time.monotonic()-start;start=time.monotonic()
             with path.open('rb') as f: digest=hashlib.file_digest(f,'sha256').hexdigest()
             assert digest==spec['sha256'], 'Checkpoint hash mismatch'

@@ -39,3 +39,13 @@
 `prepare.py`は直前の入力ZIPを再利用して比較ジョブを作る。`remote.py`は固定revisionの重みを取得・SHA照合し、各モデルで同一workflowを実行する。`finish.py <results-dir>`は比較動画と計測JSONを作る。
 
 ローカル進行管理: `.local/h3-model-comparison-20261026/controller.py`。公式Colab CLI経由で実行し、10分おきの状態取得、回収・停止、比較動画作成まで自動で行う。品質は選別しない。セッション `mmu-h3-modelcompare-20261026`。
+
+## 追加検証と復旧（2026-10-26夜）
+
+Singularity V2は生成完了。生成合計5300.17秒（88分20秒）で純正とほぼ同じ。ユーザーは品質を不採用と判断した。部分結果は`comparison-partial-result.json`と`timings-partial.csv`。
+
+後続HybridのダウンロードがHF Xetの429で失敗したため、完了済みV2を回収してGPUを停止。Hybridだけ別セッションで再開した。HTTP取得へ切り替え、再試行を追加。復旧時のセットアップは不要な純正UNETダウンロードを省略しており、セットアップ時間は初回と直接比較しない。
+
+ユーザー指示によりSingularity v1.3 pruned INT8を追加。固定revision・SHA-256は`model-v13.json`。入力、解像度、ステップ、LoRAなしの条件は同じ。Hybridの生成・回収・停止・比較編集の完了後、ローカルの`.local/h3-singularity-v13-20261026/controller.py`が新規A100セッションで自動実行する。待機中はv1.3用GPUを確保しない。状態は10分ごとに取得し、生成結果の回収後にGPUを停止する。
+
+追加成果物は`final_h3_compare_singularity_v13.mp4`と`final_h3_compare_four_models.mp4`。4分割は左上純正、右上V2、左下Hybrid、右下v1.3。`finish.py <results-dir> --v13`で生成し、実測は`comparison-v13-result.json`・`timings-v13.csv`へ記録する。

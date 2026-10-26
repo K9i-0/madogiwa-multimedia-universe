@@ -1,0 +1,256 @@
+{
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 54076801
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 20,
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/shopping768_ch01",
+      "format": "auto",
+      "codec": "auto"
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "intro.png"
+    }
+  },
+  "201": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "figure.png"
+    }
+  },
+  "202": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "fukugyun.jpg"
+    }
+  },
+  "203": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "fukugyun_sheet.png"
+    }
+  },
+  "204": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "tokun.jpg"
+    }
+  },
+  "205": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "tokun_sheet.png"
+    }
+  },
+  "206": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "line01_fukuchan.wav"
+    }
+  },
+  "207": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "line02_fukuchan.wav"
+    }
+  },
+  "208": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "line03_fukuchan.wav"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "Photoreal Japanese television home-shopping parody. Modern high-definition camera, warm cream/gold/coral studio, natural proportions, sharp facial details. Images are references, never collages or labels in the output. Fukugyun is the exact real Japanese man in his reference photographs, black jacket, white graphic shirt, black trousers, white shoes. His skin quality and apparent age match the canonical close-ups: clean even cared-for complexion with subtle forehead/eye/smile wrinkles; do not add spots, freckles, rough pores, erase wrinkles, de-age or reshape face. Tokun is the exact real man from his photo, mint tropical shirt, straw hat, purple glasses, pink lei, dark trousers, ukulele. He is silent, mouth closed. The ONE product sculpture is an INERT rigid FRP object, not a person. Copy its crude round ball shoulders, thin legs, simple visible joints, low-poly hands, cheap painted mask, dark SHORTS, fake rigid beer mug and original low rectangular plinth exactly. Do NOT improve its anatomy or craftsmanship. It NEVER speaks, breathes, blinks, moves joints, or turns its head. Live actors and product are separate identities, never morph or exchange faces/clothes. No extra objects or duplicated people. No generated titles, prices, subtitles, logos, UI or background speech. All exact graphics added in editing. No music. Keep bottom 15 percent and top corners clear for graphics. Preserve faces throughout each camera move. Use the completed attached dialogue recordings as exact performances in the stated order, not merely voice style, no repetitions or added words. Stable human lip movements for Fukugyun, never animate the product mouth.\n\nReference order: Picture1 is stage blocking; Picture2 is exact inert sculpture; Pictures3/4 are Fukugyun face and clothes; Pictures5/6 are Tokun face and clothes. ONLY two live people Fukugyun and Tokun plus one sculpture; live Sobaya does not appear yet.\n0.0-1.8s: smooth short push toward the product, luxurious shopping introduction.\n1.8-5.96s: Fukugyun gestures proudly to sculpture and says <d>[Japanese] \u672c\u65e5\u3054\u7d39\u4ecb\u3059\u308b\u306e\u306f\u3001\u7b49\u8eab\u5927\u305d\u3070\u5c4b\u30d5\u30a3\u30ae\u30e5\u30a2\uff01</d> to <Audio 1>. Medium view with his mouth visible, correct face.\n6.0-10.4s: detailed closeups of the sculpture's obviously crude shoulders and hands, Fukugyun offscreen says <d>[Japanese] \u8077\u4eba\u304c\u7d30\u90e8\u307e\u3067\u4ed5\u4e0a\u3052\u305f\u3001\u9a5a\u304d\u306e\u518d\u73fe\u5ea6\u3067\u3059\uff01</d> to <Audio 2>. Keep original sculpture shape, do not beautify.\n10.7-14.22s: return to Fukugyun and Tokun, Fukugyun asks <d>[Japanese] \u3068\u30fc\u304f\u3093\u793e\u9577\u3001\u3053\u3061\u3089\u3001\u304a\u3044\u304f\u3089\u3067\u3059\u304b\uff1f</d> to <Audio 3>. Tokun does not speak.\n14.3-15.083s: Tokun solemnly nods and begins one ukulele strum near14.93s. No price text in video.",
+      "width": 1344,
+      "height": 768,
+      "length": 362,
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "200",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "201",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "202",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "203",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "204",
+        0
+      ],
+      "ref_images.ref_image_5": [
+        "205",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "206",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "207",
+        0
+      ],
+      "ref_audios.ref_audio_2": [
+        "208",
+        0
+      ]
+    }
+  }
+}

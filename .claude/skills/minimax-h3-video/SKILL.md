@@ -8,7 +8,8 @@ description: MiniMax H3の公開重みをCUDA/Colabで動かす動画制作・�
 Macで台本・入力を用意し、Linux NVIDIA CUDA環境でComfyUIのH3を実行する。
 同僚の `local-video` / `colab-video` を参考にした独立実装。参照コミットと契約条件は
 [setup-and-cost.md](references/setup-and-cost.md)を最初に読む。
-**GPUでの実生成・品質監査はまだ未完了。コードの静的検証とMP4生成成功を区別する。**
+**2026-10-26、Colab L4でT2Vの480p実生成・720p出力・動画構造と画の確認に成功。**
+I2V/R2V、人物・声の再現性、音声内容の聴取監査は未検証。実測は参照資料へ。
 
 ## 環境と契約
 

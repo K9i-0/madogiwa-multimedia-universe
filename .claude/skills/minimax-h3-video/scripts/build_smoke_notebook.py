@@ -13,7 +13,7 @@ def cell(kind, source):
 
 cell('markdown', '''# MMU MiniMax H3 — 480p smoke test
 
-同僚リポジトリのCUDA/Colab経路を参考に作成。**この環境で実生成未検証**。
+同僚リポジトリのCUDA/Colab経路を参考に作成。**2026-10-26にColab L4でT2V実生成・MP4回収を確認済み**。
 初回は架空人物・正典素材を使わない「窓辺のコーヒーの湯気」1カット。
 864×480 / 124 frames / 24fps / 約5.17秒 / seed 42 / base 20 steps。
 

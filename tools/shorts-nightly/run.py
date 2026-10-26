@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""At 23:00 JST daily, publish one audited queued Short regardless of other posts.
+"""At 18:00 JST daily, publish one audited queued Short regardless of other posts.
 Default is read-only preview. --execute enables the user-authorized routine.
 Tokens/resumable URLs are never logged. Python 3.11+ standard library only.
 """
@@ -118,6 +118,7 @@ def last_published_creator(queues,videos):
  for path in (STATE/'days').glob('*.json'):
   receipt=read(path)
   if receipt.get('phase')!='published':continue
+  # Legacy receipts without publishedAt were created under the old 23:00 schedule.
   stamp=receipt.get('publishedAt',receipt['date']+'T23:00:00+09:00')
   history.append((timestamp(stamp),creator(receipt)))
  return max(history,key=lambda item:item[0])[1] if history else None

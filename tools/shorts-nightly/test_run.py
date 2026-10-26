@@ -24,8 +24,8 @@ class NightlyTest(unittest.TestCase):
   v['status']['publishAt']='2026-10-15T15:00:00Z'
   self.assertEqual(m.scheduled_today([v],now),[])
  def test_wake_after_midnight_does_not_upload(self):
-  c={'hour':23,'minute':0,'lastAttemptMinute':50}
-  for hour,minute,expected in [(22,59,False),(23,0,True),(23,50,True),(23,51,False),(0,1,False)]:
+  c={'hour':18,'minute':0,'lastAttemptMinute':50}
+  for hour,minute,expected in [(17,59,False),(18,0,True),(18,50,True),(18,51,False),(23,0,False),(0,1,False)]:
    self.assertEqual(m.eligible_time(dt.datetime(2026,10,15,hour,minute,tzinfo=JST),c),expected)
  def test_selection_skips_published_record_and_remote_title(self):
   with tempfile.TemporaryDirectory() as d:
@@ -63,7 +63,7 @@ class NightlyTest(unittest.TestCase):
  def test_completed_day_never_uploads_again(self):
   class FixedDateTime(dt.datetime):
    @classmethod
-   def now(cls,tz=None):return cls(2026,10,15,23,20,tzinfo=JST)
+   def now(cls,tz=None):return cls(2026,10,15,18,20,tzinfo=JST)
   with tempfile.TemporaryDirectory() as d:
    state=Path(d);m.save(state/'days/2026-10-15.json',{'phase':'published'})
    with patch.object(m,'STATE',state),patch.object(m.dt,'datetime',FixedDateTime),patch.object(m,'YouTube') as api:
@@ -76,15 +76,15 @@ class DailyPostingTest(unittest.TestCase):
  def test_other_posts_and_schedules_do_not_block_but_duplicates_do(self):
   class FixedDateTime(dt.datetime):
    @classmethod
-   def now(cls,tz=None):return cls(2026,10,26,23,0,tzinfo=JST)
-  public=video('2026-10-26T12:00:00Z')
-  scheduled=video('2026-10-25T00:00:00Z','private',schedule='2026-10-26T14:30:00Z')
-  duplicate=video('2026-10-26T14:00:00Z',title='Queued Short')
+   def now(cls,tz=None):return cls(2026,10,26,18,0,tzinfo=JST)
+  public=video('2026-10-26T08:00:00Z')
+  scheduled=video('2026-10-25T00:00:00Z','private',schedule='2026-10-26T09:30:00Z')
+  duplicate=video('2026-10-26T09:00:00Z',title='Queued Short')
   cases=[('public',[public],[public],True),('scheduled',[scheduled],[scheduled],True),('late-public',[],[public],True),('late-scheduled',[],[scheduled],True),('late-duplicate',[],[duplicate],False)]
   for name,initial,latest,should_upload in cases:
    with self.subTest(name=name),tempfile.TemporaryDirectory() as d:
     root=Path(d);q=root/'queue';state=root/'state';config=root/'config.json'
-    m.save(config,{'enabled':True,'timezone':'Asia/Tokyo','hour':23,'minute':0,'lastAttemptMinute':50,'channelId':'channel','queue':'queue'})
+    m.save(config,{'enabled':True,'timezone':'Asia/Tokyo','hour':18,'minute':0,'lastAttemptMinute':50,'channelId':'channel','queue':'queue'})
     m.save(q/'queue.json',[{'order':1,'slug':'short','status':'ready','metadata':'meta.json','output':'short.mp4'}])
     m.save(q/'meta.json',{'snippet':{'title':'Queued Short'}})
     checked={'sha256':'hash','metadataSha256':'meta','manifestSha256':'manifest'}
@@ -100,7 +100,7 @@ class DailyPostingTest(unittest.TestCase):
      self.assertEqual(preview['scheduledCount'],len(m.scheduled_today(initial,FixedDateTime.now())))
      upload.assert_not_called()
      api.inventory.side_effect=[initial,latest]
-     api.video.return_value={'id':'new-id','snippet':{'publishedAt':'2026-10-26T14:00:00Z'},'status':{'privacyStatus':'public'},'processingDetails':{'processingStatus':'succeeded'}}
+     api.video.return_value={'id':'new-id','snippet':{'publishedAt':'2026-10-26T09:00:00Z'},'status':{'privacyStatus':'public'},'processingDetails':{'processingStatus':'succeeded'}}
      result=m.run(True)
      if should_upload:
       self.assertEqual(result['action'],'published');upload.assert_called_once()

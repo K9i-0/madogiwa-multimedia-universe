@@ -1,0 +1,203 @@
+{
+  "composition": {
+    "id": "H3LastTrainIrodori",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 725
+  },
+  "shots": [
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 0,
+      "sourceEnd": 38,
+      "duration": 77,
+      "from": 0
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 38,
+      "sourceEnd": 73,
+      "duration": 42,
+      "from": 77
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 73,
+      "sourceEnd": 133,
+      "duration": 48,
+      "from": 119
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 133,
+      "sourceEnd": 170,
+      "duration": 76,
+      "from": 167
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 170,
+      "sourceEnd": 207,
+      "duration": 71,
+      "from": 243
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 207,
+      "sourceEnd": 231,
+      "duration": 29,
+      "from": 314
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 231,
+      "sourceEnd": 281,
+      "duration": 50,
+      "from": 343
+    },
+    {
+      "file": "h3/ch1_480p.mp4",
+      "sourceStart": 281,
+      "sourceEnd": 362,
+      "duration": 87,
+      "from": 393
+    },
+    {
+      "file": "h3/ch2_480p.mp4",
+      "sourceStart": 0,
+      "sourceEnd": 84,
+      "duration": 82,
+      "from": 480
+    },
+    {
+      "file": "h3/ch2_480p.mp4",
+      "sourceStart": 84,
+      "sourceEnd": 173,
+      "duration": 78,
+      "from": 562
+    },
+    {
+      "file": "h3/ch2_480p.mp4",
+      "sourceStart": 308,
+      "sourceEnd": 362,
+      "duration": 85,
+      "from": 640
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "01",
+      "file": "h3/line01_yametaro.wav",
+      "duration": 75,
+      "volume": 0.6025595860743577,
+      "text": "そろそろ終電やで。",
+      "from": 0
+    },
+    {
+      "id": "02",
+      "file": "h3/line02_sobaya.wav",
+      "duration": 40,
+      "volume": 0.9772372209558108,
+      "text": "あと一杯だけ！",
+      "from": 77
+    },
+    {
+      "id": "03",
+      "file": "h3/line03_fukuchan.wav",
+      "duration": 46,
+      "volume": 0.5688529308438414,
+      "text": "かんぱーい！",
+      "from": 119
+    },
+    {
+      "id": "04",
+      "file": "h3/line04_yametaro.wav",
+      "duration": 74,
+      "volume": 0.6309573444801932,
+      "text": "せやから言うたやん。",
+      "from": 167
+    },
+    {
+      "id": "05",
+      "file": "h3/line05_fukuchan.wav",
+      "duration": 69,
+      "volume": 0.5495408738576246,
+      "text": "あ、タクシー！",
+      "from": 243
+    },
+    {
+      "id": "06",
+      "file": "h3/line06_sobaya.wav",
+      "duration": 27,
+      "volume": 1.2445146117713852,
+      "text": "止めます。",
+      "from": 314
+    },
+    {
+      "id": "07",
+      "file": "h3/line07_yametaro.wav",
+      "duration": 85,
+      "volume": 0.5821032177708715,
+      "text": "止め方！",
+      "from": 393
+    },
+    {
+      "id": "08",
+      "file": "h3/line08_fukuchan.wav",
+      "duration": 79,
+      "volume": 0.5754399373371568,
+      "text": "赤坂までお願いします。",
+      "from": 480
+    },
+    {
+      "id": "09",
+      "file": "h3/line09_fukuchan.wav",
+      "duration": 75,
+      "volume": 0.5495408738576246,
+      "text": "あ、そこのコンビニ寄ってもらっていいですか？",
+      "from": 562
+    },
+    {
+      "id": "10",
+      "file": "h3/line10_yametaro.wav",
+      "duration": 77,
+      "volume": 0.6456542290346555,
+      "text": "タクシーちゃうねん。",
+      "from": 642
+    }
+  ],
+  "effects": [
+    {
+      "file": "h3/clink.wav",
+      "duration": 31,
+      "volume": 0.35,
+      "from": 133
+    },
+    {
+      "file": "h3/taxi_stop.wav",
+      "duration": 50,
+      "volume": 0.65,
+      "from": 343
+    }
+  ],
+  "siren": {
+    "volumeFrames": [
+      0,
+      6,
+      160,
+      164,
+      239,
+      245
+    ],
+    "volumes": [
+      0,
+      0.12,
+      0.12,
+      0.18,
+      0.18,
+      0
+    ],
+    "from": 480
+  }
+}

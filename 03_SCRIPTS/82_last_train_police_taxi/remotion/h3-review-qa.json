@@ -1,0 +1,78 @@
+{
+  "status": "review_version",
+  "output": "h3_20261026/h3_irodori_review_v1.mp4",
+  "sha256": "35defc2c98ca2d99a98b72123863427150c6317ab019af742213ec0b9407c609",
+  "width": 1280,
+  "height": 720,
+  "frames": "725",
+  "fps": "24/1",
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "decode": "complete without errors",
+  "timeline": "continuous video, 10 dialogue slots, all ranges validated",
+  "visual_review": "1fps whole timeline, intended scene order and exterior punchline placement confirmed",
+  "voice_review": "ASR screening; not perceptual listening approval",
+  "remaining": [
+    "Yametaro lines 01/04/10 have problematic endings; line10 ASR detects extra speech after the punchline.",
+    "Line09 ASR reads よんで instead of よって; pronunciation revision requested."
+  ],
+  "user_accepted_visual_issues": [
+    "Taxi approaches camera at stop",
+    "Sobaya reacts to the question addressed to the driver"
+  ],
+  "regeneration_request": "Pending user response; no additional voice generation executed",
+  "asr_turbo": [
+    {
+      "id": "01",
+      "expected": "そろそろ終電やで。",
+      "recognized": "そろそろ終電やでへぇー"
+    },
+    {
+      "id": "02",
+      "expected": "あと一杯だけ！",
+      "recognized": "あと一杯だけ"
+    },
+    {
+      "id": "03",
+      "expected": "かんぱーい！",
+      "recognized": "乾杯!"
+    },
+    {
+      "id": "04",
+      "expected": "せやから言うたやん。",
+      "recognized": "せやから言うたん?"
+    },
+    {
+      "id": "05",
+      "expected": "あ、タクシー！",
+      "recognized": "あ、タクシー"
+    },
+    {
+      "id": "06",
+      "expected": "止めます。",
+      "recognized": "止めます。"
+    },
+    {
+      "id": "07",
+      "expected": "止め方！",
+      "recognized": "止め方"
+    },
+    {
+      "id": "08",
+      "expected": "赤坂までお願いします。",
+      "recognized": "赤坂までお願いします"
+    },
+    {
+      "id": "09",
+      "expected": "あ、そこのコンビニ寄ってもらっていいですか？",
+      "recognized": "あそこのコンビニに呼んでもらっていいですか"
+    },
+    {
+      "id": "10",
+      "expected": "タクシーちゃうねん。",
+      "recognized": "タクシーちゃうねん。えぇー、チェンちゃーい。"
+    }
+  ],
+  "audio_peak_dbfs": -3.9,
+  "audio_mean_dbfs": -23.0
+}

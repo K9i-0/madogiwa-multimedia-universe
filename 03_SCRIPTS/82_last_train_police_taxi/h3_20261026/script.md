@@ -33,3 +33,17 @@ colab_batch.pyは同じGPUで2本を順次実行し、ジョブID保存による
 
 ハッシュ・ジョブ情報・ASR・監査範囲の正本は `generation_record.json`。
 
+
+## Irodori全台詞差し替え・編集確認版
+
+ユーザーが全音声のIrodori化と完成編集を依頼。タクシーがカメラ方向へ突っ込む点、運転手への問いかけにそば屋が反応する点は今回は許容。映像の再生成は行わない。
+
+- postproduction=remotion、既存remotionプロジェクトへ `H3LastTrainIrodori` を追加。旧Wan編集compositionは保持。
+- 正典参照3本からIrodori v4 Largeで全10行を初回生成。やめ太郎通常短文はCFG5・duration0.70・captionなし・uncut。そば屋は正典monsterize。
+- H3会話音声を外し、Irodoriを等速配置。話す長さに合わせて映像の区間速度を調整。車内の余計な発話区間を削除し、オチを車外へ。
+- H3の発話のない乾杯／停止音と、既存Wan71由来の採用済みサイレンを配置。新規の効果音生成はなし。
+- 確認版 `h3_irodori_review_v1.mp4`、1280×720、24fps、725frames、約30.21秒。初回音声のため完成採用前。
+- やめ太郎の語尾の伸びとコンビニの「寄って」の読みについて、4行（01/04/09/10）の再生成をユーザーへ確認中。追加生成未実行。
+- 音声候補と詳細ログは `.local/h3-episode82-edit/`。候補WAVは採用前のためGit対象外。正典参照、生成コード、候補設定とハッシュ、編集タイムライン、QAは記録する。
+- 再現：リポジトリルートから既存Large環境のPythonで `remotion/scripts/h3_generate_dialogue.py`（既存候補があると再生成を拒否）。`h3_prepare_edit.py`→`h3_build_edit.py`。remotion内で `npx remotion render src/index.ts H3LastTrainIrodori out/h3_irodori_v1.mp4 --codec=h264 --crf=18 --concurrency=2`。
+- 音声認識と通し試聴・音素単位の口同期は別。現在はASR／映像確認／全デコード／尺・音声トラックを検査済み。

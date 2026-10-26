@@ -1,86 +1,123 @@
 [
   {
     "id": "ch01",
+    "scene": "s01_opening",
     "lines": [
       "intro",
-      "revolution"
+      "revolution",
+      "lucky"
     ],
     "audio": [
       "audio/line_intro_sobaya_large.wav",
-      "audio/line_revolution_sobaya_large.wav"
+      "audio/line_revolution_sobaya_large.wav",
+      "audio/line_lucky_sobaya_large.wav"
     ],
-    "frames": 243,
-    "seconds": 10.125,
+    "frames": 362,
+    "seconds": 15.083333333333334,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_wide.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s01_opening.png",
+    "screen": "Only the exact words Special Event in large white modern sans-serif on dark blue gradient. No product name, shirt, product photo or reveal clues.",
+    "action": "Presenter calmly addresses audience, both hands at waist, clicker.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch02",
+    "scene": "s02_three",
     "lines": [
-      "lucky",
       "three"
     ],
     "audio": [
-      "audio/line_lucky_sobaya_large.wav",
       "audio/line_three_sobaya_large.wav"
     ],
-    "frames": 260,
-    "seconds": 10.833333333333334,
+    "frames": 141,
+    "seconds": 5.875,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_medium.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s02_three.png",
+    "screen": "A huge white numeral 3 centered, no other text.",
+    "action": "Presenter raises three fingers with one gray hand.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch03",
+    "scene": "s03_first",
     "lines": [
-      "first",
-      "second"
+      "first"
     ],
     "audio": [
-      "audio/line_first_sobaya_large.wav",
-      "audio/line_second_sobaya_large_h3pad.wav"
+      "audio/line_first_sobaya_large.wav"
     ],
-    "frames": 243,
-    "seconds": 10.125,
+    "frames": 124,
+    "seconds": 5.166666666666667,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_medium.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s03_first.png",
+    "screen": "ONE large warm orange rounded-square icon containing the ensemble artwork from the product reference. Below icon exact white text 窓際族.",
+    "action": "Presenter on left gestures toward the icon without covering it.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch04",
+    "scene": "s04_second",
     "lines": [
-      "third",
-      "repeat1"
+      "second"
     ],
     "audio": [
-      "audio/line_third_sobaya_large.wav",
-      "audio/line_repeat1_sobaya_large.wav"
+      "audio/line_second_sobaya_large_h3pad.wav"
     ],
-    "frames": 243,
-    "seconds": 10.125,
+    "frames": 124,
+    "seconds": 5.166666666666667,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_wide.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s04_second.png",
+    "screen": "ONE large bright green rounded-square icon containing a bold white capital T. Below icon exact white text T.",
+    "action": "Presenter uses small open palm gesture toward screen.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch05",
+    "scene": "s05_third",
     "lines": [
+      "third"
+    ],
+    "audio": [
+      "audio/line_third_sobaya_large.wav"
+    ],
+    "frames": 158,
+    "seconds": 6.583333333333333,
+    "mode": "r2v",
+    "visual_reference": "scenes/s05_third.png",
+    "screen": "ONE large blue rounded-square icon containing a plain white short-sleeved shirt silhouette. Below icon exact white text シャツ.",
+    "action": "Presenter gestures toward the shirt icon.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
+  },
+  {
+    "id": "ch06",
+    "scene": "s06_trio",
+    "lines": [
+      "repeat1",
       "repeat2",
       "understand"
     ],
     "audio": [
+      "audio/line_repeat1_sobaya_large.wav",
       "audio/line_repeat2_sobaya_large.wav",
       "audio/line_understand_sobaya_large_h3pad.wav"
     ],
-    "frames": 209,
-    "seconds": 8.708333333333334,
+    "frames": 311,
+    "seconds": 12.958333333333334,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_medium.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s06_trio.png",
+    "screen": "Three equally sized glossy rounded-square icons in ONE horizontal row: orange ensemble illustration labeled 窓際族, green white capital T labeled T, blue plain white shirt silhouette labeled シャツ. All three remain fully visible.",
+    "action": "Presenter looks between audience and the three icons, restrained open hands.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
-    "id": "ch06",
+    "id": "ch07",
+    "scene": "s07_one",
     "lines": [
       "notthree",
       "one"
@@ -92,11 +129,15 @@
     "frames": 192,
     "seconds": 8.0,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_wide.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s07_one.png",
+    "screen": "A huge white numeral 1 centered, no other text.",
+    "action": "Presenter holds up one gray index finger, confident understated reveal.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
-    "id": "ch07",
+    "id": "ch08",
+    "scene": "s08_reveal",
     "lines": [
       "reveal",
       "reinvent"
@@ -108,11 +149,15 @@
     "frames": 345,
     "seconds": 14.375,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_product.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s08_reveal.png",
+    "screen": "Large printed white T-shirt product photograph on white background, exact black headline 窓際族Tシャツ above, as in Picture 1.",
+    "action": "Presenter empty hands gestures proudly toward projected product; no physical shirt held.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
-    "id": "ch08",
+    "id": "ch09",
+    "scene": "s09_how",
     "lines": [
       "how",
       "learn"
@@ -124,11 +169,15 @@
     "frames": 175,
     "seconds": 7.291666666666667,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_medium.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s09_how.png",
+    "screen": "Exact printed white T-shirt product photograph on white screen background with large black heading 使い方, matching Picture 1.",
+    "action": "Presenter conversational open palm, clicker in other hand.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
-    "id": "ch09",
+    "id": "ch10",
+    "scene": "s10_arms",
     "lines": [
       "born",
       "arms"
@@ -137,14 +186,18 @@
       "audio/line_born_sobaya_large.wav",
       "audio/line_arms_sobaya_large_h3pad.wav"
     ],
-    "frames": 226,
-    "seconds": 9.416666666666666,
+    "frames": 260,
+    "seconds": 10.833333333333334,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_medium.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s10_arms.png",
+    "screen": "A large simple neutral gray photograph-like pair of human forearms and hands, neatly isolated on dark background; exact headline 腕です。",
+    "action": "Presenter spreads his own neutral gray arms slightly, palms up.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
-    "id": "ch10",
+    "id": "ch11",
+    "scene": "s11_sleeves",
     "lines": [
       "right",
       "left"
@@ -153,78 +206,98 @@
       "audio/line_right_sobaya_large_h3pad.wav",
       "audio/line_left_sobaya_large_h3pad.wav"
     ],
-    "frames": 90,
-    "seconds": 3.75,
+    "frames": 124,
+    "seconds": 5.166666666666667,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_medium.png",
-    "status": "reference_preparation_only"
-  },
-  {
-    "id": "ch11",
-    "lines": [
-      "head",
-      "wear"
-    ],
-    "audio": [
-      "audio/line_head_sobaya_large_h3pad.wav",
-      "audio/line_wear_sobaya_large_h3pad.wav"
-    ],
-    "frames": 158,
-    "seconds": 6.583333333333333,
-    "mode": "r2v",
-    "visual_reference": "refs/keynote_product.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s11_sleeves.png",
+    "screen": "Two numbered static diagram panels: 1 a right arm inserted through a white T-shirt sleeve; 2 a left arm inserted through other sleeve. Clear schematic white shirt and gray arms. Exact headings 右腕 and 左腕. No animations, no arrows that cross panels.",
+    "action": "Presenter stays in black turtleneck, points to the on-screen instructions, not physically changing clothes.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch12",
+    "scene": "s12_wear",
     "lines": [
-      "simple",
-      "detail"
+      "head",
+      "wear",
+      "simple"
     ],
     "audio": [
-      "audio/line_simple_sobaya_large.wav",
-      "audio/line_detail_sobaya_large.wav"
+      "audio/line_head_sobaya_large_h3pad.wav",
+      "audio/line_wear_sobaya_large_h3pad.wav",
+      "audio/line_simple_sobaya_large.wav"
     ],
-    "frames": 175,
-    "seconds": 7.291666666666667,
+    "frames": 260,
+    "seconds": 10.833333333333334,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_product.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s12_wear.png",
+    "screen": "A STATIC photograph of Sobaya wearing the printed white T-shirt, and exact black headline 着られました。 on white background. This Sobaya is a frozen image ON THE SCREEN, not a second live person; never animate it.",
+    "action": "Presenter in black turtleneck and jeans presents the completed on-screen diagram, satisfied small open-hand gesture.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch13",
+    "scene": "s13_detail",
     "lines": [
+      "detail",
       "everyone",
       "nobody"
     ],
     "audio": [
+      "audio/line_detail_sobaya_large.wav",
       "audio/line_everyone_sobaya_large.wav",
       "audio/line_nobody_sobaya_large.wav"
     ],
-    "frames": 209,
-    "seconds": 8.708333333333334,
+    "frames": 294,
+    "seconds": 12.25,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_product.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s13_detail.png",
+    "screen": "A large crisp close-up of the EXACT ensemble T-shirt artwork in reference3 on a rectangular white cotton texture. Preserve its full cast and original lettering 窓際族. No added headline.",
+    "action": "Presenter smiles only through body language, mask stays rigid; gestures toward printed characters.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch14",
+    "scene": "s13_detail",
     "lines": [
-      "perfect",
-      "when"
+      "perfect"
     ],
     "audio": [
-      "audio/line_perfect_sobaya_large_h3pad.wav",
-      "audio/line_when_sobaya_large.wav"
+      "audio/line_perfect_sobaya_large_h3pad.wav"
     ],
-    "frames": 175,
-    "seconds": 7.291666666666667,
+    "frames": 90,
+    "seconds": 3.75,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_product.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s13_detail.png",
+    "screen": "A large crisp close-up of the EXACT ensemble T-shirt artwork in reference3 on a rectangular white cotton texture. Preserve its full cast and original lettering 窓際族. No added headline.",
+    "action": "Presenter smiles only through body language, mask stays rigid; gestures toward printed characters.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
     "id": "ch15",
+    "scene": "s14_when",
+    "lines": [
+      "when"
+    ],
+    "audio": [
+      "audio/line_when_sobaya_large.wav"
+    ],
+    "frames": 107,
+    "seconds": 4.458333333333333,
+    "mode": "r2v",
+    "visual_reference": "scenes/s14_when.png",
+    "screen": "A single large white question mark centered on dark gradient. No other text.",
+    "action": "Presenter pauses facing audience, clicker loosely at waist.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
+  },
+  {
+    "id": "ch16",
+    "scene": "s15_today",
     "lines": [
       "today",
       "buy"
@@ -233,14 +306,18 @@
       "audio/line_today_sobaya_large_h3pad.wav",
       "audio/line_buy_sobaya_large.wav"
     ],
-    "frames": 192,
-    "seconds": 8.0,
+    "frames": 209,
+    "seconds": 8.708333333333334,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_wide.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s15_today.png",
+    "screen": "White background, black headline 今日発売 and smaller line 公式サイトから購入できます, exact printed product T-shirt at right as in Picture 1.",
+    "action": "Presenter stands at left, open welcoming gesture toward audience.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   },
   {
-    "id": "ch16",
+    "id": "ch17",
+    "scene": "s16_closing",
     "lines": [
       "closing",
       "all"
@@ -252,7 +329,10 @@
     "frames": 260,
     "seconds": 10.833333333333334,
     "mode": "r2v",
-    "visual_reference": "refs/keynote_wide.png",
-    "status": "reference_preparation_only"
+    "visual_reference": "scenes/s16_closing.png",
+    "screen": "White background, exact black headline すべてが、この1枚に。 and printed white T-shirt photograph beneath as in Picture 1.",
+    "action": "Presenter stands left with arms relaxed and a small appreciative nod pose.",
+    "screen_render": "H3; static throughout shot",
+    "status": "prepared_not_generated"
   }
 ]

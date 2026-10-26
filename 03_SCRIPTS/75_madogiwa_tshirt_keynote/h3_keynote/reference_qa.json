@@ -1,0 +1,17 @@
+{
+  "scene_count": 16,
+  "shot_count": 17,
+  "dialogue_count": 32,
+  "all_assets_exist": true,
+  "all_inputs_within_h3_limits": true,
+  "visual_review": "All 16 generated scene images inspected inline for slide content, presenter and stage continuity; opening replaced following user feedback",
+  "screen_pipeline": "Imagegen static slides included in scene references -> H3; no Remotion screen replacement",
+  "opening": "Special Event only; product reveal starts s08",
+  "notes": [
+    "s09 uses product photo instead of silhouette; accepted and prompt aligned",
+    "s12 depicts a static photograph of masked Sobaya wearing product; H3 explicitly keeps projected person frozen",
+    "Some hand highlights remain warm; maintain neutral gray identity in H3",
+    "Product illustration small details are not pixel-identical; original product reference remains authority"
+  ],
+  "h3_generation_started": false
+}

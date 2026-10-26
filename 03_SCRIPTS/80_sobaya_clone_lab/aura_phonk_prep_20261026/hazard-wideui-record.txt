@@ -1,0 +1,10 @@
+SOBAYA HAZARD — landscape UI revision
+
+UI scene: frames 127–214, original 16:9 aspect ratio.
+Native UI canvas 1280x720, uniformly scaled to 720x405 and centered at y=437.5. Black above and below.
+Reflowed English interface into two landscape cards; portrait images use contain to retain complete source crops.
+All shot timing, scan timing, source ranges, impact effects, and ending remain identical to nologo version.
+21.133 seconds / 634 frames / 30 fps / 720x1280.
+Audio copied unchanged from adopted reference-timed version. No original dialogue; no ending logo.
+Render: node render-hazard-wideui.mjs
+Audit: python3 audit-hazard-wideui.py

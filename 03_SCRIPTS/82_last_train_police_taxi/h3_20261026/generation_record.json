@@ -1,0 +1,78 @@
+{
+  "status": "generated_initial_comparison",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "settings": {
+    "mode": "r2v",
+    "width": 864,
+    "height": 480,
+    "fps": 24,
+    "frames_per_clip": 362,
+    "steps": 20,
+    "seeds": [
+      820926,
+      820927
+    ]
+  },
+  "comfy_revision": "fe298e4e20f1ff26d30e8639267bbd0b57811390",
+  "weights_revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+  "setup_internal_seconds": 165.2161431312561,
+  "setup_to_server_ready_seconds": 196.23,
+  "generation_seconds": [
+    571.43,
+    571.18
+  ],
+  "remote_total_seconds": 1339.0219905376434,
+  "cu": {
+    "rate_per_hour": 6.77,
+    "before_allocation_display": 180.48,
+    "before_execution_display": 179.82,
+    "after_stop_display": 177.01,
+    "display_difference_including_idle": 3.47,
+    "estimated_remote_processing_only": 2.518,
+    "note": "Balance reporting may lag. Difference includes unnecessary idle time before execution and transfer/recovery."
+  },
+  "sessions_after_stop": 0,
+  "outputs": {
+    "generated/ch1_480p.mp4": "c88c34b75399c826688edf22052ff94a3ff309f09c73e5663a141b10529eebe1",
+    "generated/ch2_480p.mp4": "141fcbb3344ecfb85c95a63141d0ba4d9bd897f690d7580040f9583a0a2d33ef",
+    "h3_last_train_720p.mp4": "fa015597358f72b7da6274904f92d328b9202639483b1488a8aa6877a5e60647"
+  },
+  "final": {
+    "width": 1280,
+    "height": 720,
+    "frames": 724,
+    "fps": 24,
+    "duration_seconds": 30.166666666666668,
+    "resize": "single Lanczos scale with aspect-preserving padding",
+    "audio": "AAC 32kHz stereo"
+  },
+  "asr": {
+    "model": "openai/whisper-small",
+    "note": "Automated screening, not listening or voice quality approval.",
+    "segments": [
+      {
+        "chapter": 1,
+        "recognized": "そろそろ終電屋であと一杯だけ乾杯セアから言うたやあタクシー止めます止め方"
+      },
+      {
+        "chapter": 2,
+        "recognized": "赤坂までお願いしますあ、そこのコンビニ寄ってもらっていいですか?はい、いや、いや、継続、継続から寄って行ってタクシーちゃうね"
+      }
+    ]
+  },
+  "quality": {
+    "visual_review": "1 fps through each entire clip; all three characters and intended scene order visible. Exterior police ending present.",
+    "differences": [
+      "Taxi stop is bent-forward, not the requested upright stance; rear wheel lift not confirmed.",
+      "Sobaya shirt has point-like chest shading in izakaya; clean-shirt specification not fully satisfied.",
+      "ASR detects apparent extra dialogue in chapter 2 between request and punchline; requires listening."
+    ],
+    "not_verified": [
+      "Perceptual voice identity",
+      "Phoneme-level lip sync",
+      "Full audio listening"
+    ],
+    "regenerations": 0
+  },
+  "decode_check": "Full final video/audio decode completed without errors"
+}

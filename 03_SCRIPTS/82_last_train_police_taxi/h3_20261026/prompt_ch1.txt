@@ -1,0 +1,45 @@
+subject_definitions:
+<Picture 1> is Sobaya's canonical multi-view character sheet. Its front, side and face panels describe one character.
+<Picture 2> is Yametaro's canonical multi-view and mouth-articulation sheet, depicting one compact stylized character.
+<Picture 3> is Fukugyun's canonical multi-view and facial-expression sheet, depicting one real adult man.
+<Picture 4> is the three-view design sheet for one dark Japanese taxi.
+<Picture 5> is the three-view design sheet for one white-and-black Tokyo police sedan with a red roof beacon.
+<Picture 6> is the izakaya composition and drinks reference; character identity comes from Pictures 1-3.
+<Subject 1> is Sobaya in <Picture 1>: muscular gray body, rigid white mask with red markings, white T-shirt, dark jeans and white shoes. Keep the exact mask and body silhouette. The shirt has natural fabric folds over his muscles and a smooth chest surface, with no nipple bumps, outlines or point shadows. The mask stays rigid while he speaks.
+<Subject 2> is Yametaro in <Picture 2>, the compact stylized 3D man in a purple patterned shirt. Yametaro identity lock — <Picture 2> is the exact design authority, not loose inspiration. Preserve its head width-to-height ratio, hair silhouette and hairline, cheek and ear placement, short neck and compact body proportions in every frame. Keep the round black spectacle frames and the sheet's simple white lens/eye areas; do not invent visible pupils, irises, realistic eyeballs, eye sockets, eyelids or eyebrows. Keep the tiny black forehead mark separate from the low, subtle skin-colored nose; no black nose dot, outlined nostrils or projecting nose. Preserve the round cheeks and flat pink blush marks, smooth skin-colored chin, ears and nape, with no black contour bands or facial creases. Do not lengthen the forehead/head, inflate the hair, enlarge ears or add realistic lips. Animate the small inset mouth using the sheet's rest and A/I/U/E/O views as articulation guidance, with visible mouth interior when speaking; do not freeze the smile, protrude the lips or stretch the mouth into a new facial design. Emotion and cinematic lighting must not redesign the face. Wardrobe follows the scene instructions independently of identity. A previous generated take is not an identity reference.
+<Subject 3> is Fukugyun in <Picture 3>, the same real adult face, black hair, black jacket, white graphic T-shirt and SPONSOR lanyard. Fukugyun's skin quality and apparent age must match the close-up portraits in his canonical character sheet. Keep his well-cared-for, clean, even complexion and natural fine skin texture. Preserve the sheet's subtle forehead lines, eye-area wrinkles, smile lines and nasolabial folds, including their natural changes with expression. Do not add or exaggerate dark spots, freckles, blemishes, rough pores or mottled skin beyond the sheet. Do not erase all wrinkles, de-age him, reshape his face, or give him plastic, waxy or porcelain skin. Preserve the scene's lighting and natural facial shading without turning shadows into blemishes. If his name badge is visible, its current name is "福ギュン".
+<Subject 4> is the single taxi in <Picture 4>, a dark right-hand-drive Japanese sedan with a white taxi roof lamp and green license plates.
+<Subject 5> is the single police car in <Picture 5>, a right-hand-drive Japanese sedan, white and black paint, red-only beacon and "警視庁" markings.
+<Audio 1> is the voice-timbre reference for <Subject 1> (S2).
+<Audio 2> is the voice-timbre reference for <Subject 2> (S1).
+<Audio 3> is the voice-timbre reference for <Subject 3> (S3).
+
+summary:
+[reference generation + audio reference] A Japanese absurdist comedy about three friends who miss the last train. This first half shows a toast, the closed station, and Sobaya literally stopping a taxi with his hands. Preserve the characters and vehicle designs from the supplied pictures. Use the three audio clips only for voice identity, performing the new Japanese dialogue below.
+
+retention_analysis:
+<Subject 1>: fully_preserved - exact mask, gray body and identity, with scene-specific actions.
+<Subject 2>: fully_preserved - exact stylized head, glasses, white lenses, forehead mark, body and articulation design.
+<Subject 3>: fully_preserved - exact facial identity, skin quality and apparent age.
+<Subject 4>: fully_preserved - one taxi design.
+<Subject 5>: fully_preserved - one police-car design.
+<Picture 1>: partially_preserved - retain character design; discard sheet layout, labels and white studio background.
+<Picture 2>: partially_preserved - retain character design and mouth guides; discard sheet layout and labels.
+<Picture 3>: partially_preserved - retain face and clothing; discard sheet layout and old name text.
+<Picture 4>: partially_preserved - retain one vehicle's design; discard the three-view layout and studio setting.
+<Picture 5>: partially_preserved - retain one vehicle's design; discard the three-view layout and studio setting.
+<Picture 6>: partially_preserved - use warm izakaya lighting, table arrangement and the three different drinks; use Pictures 1-3 for identities.
+<Audio 1>: reference - Sobaya voice timbre only; do not repeat reference-clip words.
+<Audio 2>: reference - Yametaro voice timbre and Kansai delivery only; do not repeat reference-clip words.
+<Audio 3>: reference - Fukugyun voice timbre only; do not repeat reference-clip words.
+
+detailed_description:
+Cinematic Japanese comedy with realistic Tokyo locations and physical lighting. The three friends retain their different canonical visual styles in one scene: masked gray muscular Sobaya, stylized Yametaro, and live-action Fukugyun. Full-screen moving scenes, with clean image edges and dialogue carried only by the characters. Only the speaking character articulates; listeners react naturally. Finish every line before the next speaker begins.
+[Shot 1] A medium-wide view inside a warm izakaya, based on <Picture 6>. <Subject 1> sits left holding golden beer with foam, <Subject 2> sits center holding clear water, and <Subject 3> sits right holding dark green aojiru. All mugs are unlabelled. Matching background menu strips read "生ビール", "青汁", "チェイサーの水割り", and "ゆめみんの姿揚げ", the last with small "時価". The drinks and menus remain incidental background humor. <Subject 2> (S1), using <Audio 2>'s voice timbre, glances at the time and says naturally, <d>[Japanese] そろそろ終電やで.</d> <Subject 1> (S2), using <Audio 1>'s timbre, raises his beer and replies brightly, <d>[Japanese] あと一杯だけ!</d> <Subject 3> (S3), using <Audio 3>'s timbre, raises the green mug and says, <d>[Japanese] かんぱーい!</d> Their mugs clink once.
+[Shot 2] At 00:05.000, the camera cuts to a medium-wide view of the three friends outside the shuttered station at night, all empty-handed. <Subject 2> (S1) looks at the closed entrance and says wearily, <d>[Japanese] せやから言うたやん.</d> <Subject 3> (S3) spots an approaching car, points toward the street and says, <d>[Japanese] あ、タクシー!</d> <Subject 1> (S2) turns toward the road and calmly answers, <d>[Japanese] 止めます.</d>
+[Shot 3] At 00:09.000, the camera cuts to a continuous wide street-level side view containing the moving <Subject 4> taxi, the curb and all three friends. The taxi is already driving normally at around 40 km/h. <Subject 1> casually hops into its path and plants both feet. Both palms contact the front of the hood and abruptly stop the taxi. His gray body remains upright and steady; the hood visibly dents inward and the rear wheels briefly lift, then settle. Show the approach, palm contact and stop in the same unbroken composition, with a brief metallic crunch and tire squeal. The driver remains seated and uninjured. <Subject 2> (S1) throws up his hands and shouts, <d>[Japanese] 止め方!!</d> His forceful voice and posture carry the reaction, preserving the sheet's white lenses and head shape. Finish the shout with a brief stunned beat while Sobaya remains nonchalant.
+
+overall_soundscape:
+Soft izakaya room tone and a mug clink give way to quiet night-street ambience, moving taxi tires, a brief squeal and metal crunch. Keep the Japanese dialogue foregrounded and clearly separated.
+non_diegetic_music:
+N/A

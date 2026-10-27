@@ -95,3 +95,7 @@ Google公式Colab CLI: https://github.com/googlecolab/google-colab-cli
 - 実行ノートブックrevision `1dde5d29`、制作記録 `03_SCRIPTS/h3_smoke_20261026/script.md`。
 - Colabの出力iframeが一度ロード失敗。ページ再読み込みで復旧し、ファイル一覧のZIPを右クリック→ダウンロードで回収。再生成は不要だった。
 - I2V/R2V・8step LoRA・人物/声の同一性は今回未検証。
+
+## 2026-10-27追記
+
+上の未検証表記は初回T2V検証時点の履歴。R2Vの480p Turbo・768p Turbo・768p通常20stepはA100で実生成済みで、ユーザーが3構成を採用、既定は480p Turboへ変更した。現在の構成・条件・時間・CUは[profiles.md](profiles.md)を正本とする。

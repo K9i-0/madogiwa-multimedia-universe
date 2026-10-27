@@ -57,7 +57,7 @@ for name, source in TOOLS.items():
 prompt = "A locked-off cinematic close-up of one white ceramic coffee cup on a wooden desk beside a sunlit office window. A thin wisp of steam rises and curls gently throughout the shot. The cup and camera remain still. Warm natural daylight, realistic materials. No people, no writing, no logos. Soundscape: quiet room tone. Music: none. Speech: none."
 (ROOT / 'prompt.txt').write_text(prompt)
 subprocess.run([sys.executable, str(ROOT/'build_workflow.py'), '--mode', 't2v',
-    '--prompt-file', str(ROOT/'prompt.txt'), '--frames', '124', '--width', '864', '--height', '480',
+    '--prompt-file', str(ROOT/'prompt.txt'), '--frames', '124', '--profile', '768p-base', '--width', '864', '--height', '480',
     '--out', str(ROOT/'smoke.json')], check=True)
 ''')
 cell('code', '''#@title 4. Install and start ComfyUI (~54 GB download; consumes GPU runtime)

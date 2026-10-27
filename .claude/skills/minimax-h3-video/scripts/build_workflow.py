@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Adapted for MMU (2026-10-26): 480p defaults, T2V and turbo support, validation.
+"""Adapted for MMU (2026-10-26): three profiles, default 480p Turbo, validated R2V recipe.
 Reference: sobaya-0141/Seedance_Madogiwa at 1d62fc1042a7a797e9dbc0fe0dc277bb4ec54cf5.
 Build a MiniMax H3 API-format workflow JSON for one chapter.
 
@@ -36,9 +36,10 @@ def main() -> None:
     ap.add_argument("--out", required=True)
     ap.add_argument("--prompt-file", required=True)
     ap.add_argument("--frames", type=int, required=True)
-    ap.add_argument("--width", type=int, default=864)
-    ap.add_argument("--height", type=int, default=480)
-    ap.add_argument("--steps", type=int, default=20)
+    ap.add_argument("--profile", choices=["480p-turbo", "768p-turbo", "768p-base"], default="480p-turbo")
+    ap.add_argument("--width", type=int)
+    ap.add_argument("--height", type=int)
+    ap.add_argument("--steps", type=int)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--prefix", default="video/MiniMax_H3")
     ap.add_argument("--first")
@@ -51,14 +52,20 @@ def main() -> None:
     ap.add_argument("--encoder", default=ENCODER)
     ap.add_argument("--unet-i2v", default=UNET_I2V)
     ap.add_argument("--unet-r2v", default=UNET_R2V)
-    ap.add_argument("--turbo", action="store_true", help="I2V/T2V 8-step LoRA; R2V remains base 20 steps")
+    ap.add_argument("--turbo", action="store_true", help="Compatibility alias for Turbo; prefer --profile")
     a = ap.parse_args()
+    if a.turbo and a.profile == "768p-base":
+        ap.error("--turbo conflicts with --profile 768p-base")
+    a.turbo = a.profile.endswith("turbo")
+    a.width = a.width if a.width is not None else (864 if a.profile == "480p-turbo" else 1344)
+    a.height = a.height if a.height is not None else (480 if a.profile == "480p-turbo" else 768)
+    a.steps = a.steps if a.steps is not None else (8 if a.turbo else 20)
+    if a.turbo and a.steps != 8:
+        ap.error("Turbo v1.0 recipe requires 8 steps; use --profile 768p-base for custom base steps")
     if a.width < 32 or a.height < 32 or a.width % 32 or a.height % 32:
         ap.error("width/height must be positive multiples of 32")
     if not 5 <= a.frames <= 362 or a.steps < 1:
         ap.error("frames must be 5..362 and steps positive")
-    if a.turbo and a.mode == "r2v":
-        ap.error("R2V turbo is not validated in this workflow")
 
     if a.frames % 17 != 5:
         raise SystemExit(f"--frames {a.frames} is not on H3's 17k+5 grid (e.g. 90, 124, 294)")
@@ -104,9 +111,13 @@ def main() -> None:
     }
 
     if a.turbo:
+        unit = "ref2v" if a.mode == "r2v" else "fl2v"
+        g["149"] = {"class_type": "MiniMaxH3SigmaShift", "inputs": {
+            "model": ["127", 0], "shift_video": 12.0, "shift_audio": 3.0}}
         g["150"] = {"class_type": "LoraLoaderModelOnly", "inputs": {
-            "model": ["127", 0], "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors", "strength_model": 1.0}}
-        g["124"]["inputs"].update(model=["150", 0], steps=8)
+            "model": ["149", 0], "lora_name": f"minimax_h3_{unit}_turbo_8step_v1.0_768p_comfyui_bf16.safetensors", "strength_model": 1.0}}
+        g["123"]["inputs"]["sampler_name"] = "euler"
+        g["124"]["inputs"].update(model=["150", 0], scheduler="beta", steps=8)
         g["126"]["inputs"]["model"] = ["150", 0]
 
     cond: dict = {

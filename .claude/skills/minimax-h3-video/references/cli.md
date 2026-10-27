@@ -40,10 +40,10 @@ python3 .claude/skills/minimax-h3-video/scripts/colab_h3.py prepare \
   03_SCRIPTS/<run>/workflow.json --job 03_SCRIPTS/<run>/generated/h3-job
 
 python3 .claude/skills/minimax-h3-video/scripts/colab_h3.py run \
-  --job 03_SCRIPTS/<run>/generated/h3-job --session mmu-h3-unique-run --gpu L4
+  --job 03_SCRIPTS/<run>/generated/h3-job --session mmu-h3-unique-run --gpu A100
 ```
 
-実行内容: L4確保→入力ZIP転送→固定版ComfyUI/重みセットアップ→生成→720p化→ZIP回収→SHA256照合→GPU停止。
+実行内容: 指定GPU確保→入力ZIP転送→固定版ComfyUI/重みセットアップ→生成→720p化→ZIP回収→SHA256照合→GPU停止。
 `results/video_480p.mp4`、`results/video_720p.mp4`とJSON/ログが残る。
 ローカルの`job.json`はセッション名・状態・入力ハッシュを保持。認証トークンを含めない。
 CLIには実行タイムアウト10800秒を指定し、リモート側は10秒毎に進行中の表示を出す。
@@ -78,3 +78,7 @@ python3 .claude/skills/minimax-h3-video/scripts/run_workflow.py \
 
 MacからColabを使う場合は、上のCLIをプログラムから`subprocess`で呼び、job.json/resultsを読む。
 追加のWeb APIサーバーや常時公開エンドポイントは不要。
+
+## 2026-10-27採用profile
+
+新規H3は`build_workflow.py --profile 480p-turbo`（省略可）が既定。768p-turbo / 768p-baseも選択可能。実測と正確なレシピは[profiles.md](profiles.md)。480pでは従来のvideo_480p.mp4 / video_720p.mp4、768pではvideo_768p.mp4 / video_final.mp4を回収する。高解像度素材を720pへ自動縮小しない。

@@ -4,6 +4,7 @@ import fcntl
 import hashlib
 import json
 import os
+import shutil
 from pathlib import Path
 import subprocess
 import sys
@@ -54,17 +55,22 @@ def main(root):
                 pass
         if not ready:
             run([sys.executable, '-u', 'setup_cuda.py', 'workflow.json', '--root', str(root)], 'setup')
-        run([sys.executable, '-u', 'run_workflow.py', 'workflow.runtime.json', '--out', 'video_480p.mp4'], 'generate')
-        if not (root/'video_720p.mp4').exists():
-            graph = json.loads((root/'workflow.runtime.json').read_text())
-            dims = next(n['inputs'] for n in graph.values() if n['class_type'] in ('MiniMaxH3ImageToVideo','MiniMaxH3ReferenceToVideo'))
-            w,h = dims['width'],dims['height']
-            target = (1280,720) if w > h else (720,1280) if h > w else (720,720)
-            # For arbitrary ratios preserve composition; standard landscape/portrait uses padding.
-            run(['ffmpeg','-y','-i','video_480p.mp4','-vf',f'scale={target[0]}:{target[1]}:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad={target[0]}:{target[1]}:(ow-iw)/2:(oh-ih)/2,setsar=1','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-c:a','copy','video_720p.part.mp4'], 'export')
-            (root/'video_720p.part.mp4').replace(root/'video_720p.mp4')
+        graph = json.loads((root/'workflow.runtime.json').read_text())
+        dims = next(n['inputs'] for n in graph.values() if n['class_type'] in ('MiniMaxH3ImageToVideo','MiniMaxH3ReferenceToVideo'))
+        w,h = dims['width'],dims['height']
+        native = f'video_{min(w,h)}p.mp4'
+        final = 'video_720p.mp4' if min(w,h) < 720 else 'video_final.mp4'
+        run([sys.executable, '-u', 'run_workflow.py', 'workflow.runtime.json', '--out', native], 'generate')
+        if not (root/final).exists():
+            if min(w,h) >= 720:
+                shutil.copy2(root/native, root/final)
+            else:
+                target = (1280,720) if w > h else (720,1280) if h > w else (720,720)
+                run(['ffmpeg','-y','-i',native,'-vf',f'scale={target[0]}:{target[1]}:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad={target[0]}:{target[1]}:(ow-iw)/2:(oh-ih)/2,setsar=1','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-c:a','copy','video_export.part.mp4'], 'export')
+                (root/'video_export.part.mp4').replace(root/final)
+        state['outputs'] = {'native': native, 'final': final, 'generation_resolution': [w,h]}
         state.update(status='complete',elapsed_seconds=time.time()-state['started_unix'])
-        state['sha256']={n:hashlib.sha256((root/n).read_bytes()).hexdigest() for n in ('video_480p.mp4','video_720p.mp4')}
+        state['sha256']={n:hashlib.sha256((root/n).read_bytes()).hexdigest() for n in (native,final)}
     except BaseException as e:
         state.update(status='failed', error=str(e))
         raise

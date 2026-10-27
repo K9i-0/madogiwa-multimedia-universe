@@ -3,6 +3,8 @@
 Run on a dedicated Linux CUDA runtime, not on the author's Mac.
 """
 import argparse
+import hashlib
+import os
 import json
 from pathlib import Path
 import shutil
@@ -13,6 +15,14 @@ import urllib.request
 
 COMFY_REV = 'fe298e4e20f1ff26d30e8639267bbd0b57811390'
 HF_REV = 'e5eb578a89295337b8ff433a035929ce0279e0b6'
+TURBO_REV = '30f485ed874aa44c8183348ad361c5eabad318da'
+TURBO_HASHES = {
+    'minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors': '6a56f41ab4229c9dd845b9501bbd475ee57e112d846cf2e819d534a1ae928c5a',
+    'minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors': '08cfe946033af7d27719b964b6e0a0e50c32138daabbd6ce4137e23df6bf9980',
+}
+# Serial HTTP avoids the Xet 429 failures observed in comparison runs.
+os.environ.setdefault('HF_HUB_DISABLE_XET', '1')
+
 
 
 def main():
@@ -59,8 +69,18 @@ def main():
     from huggingface_hub import hf_hub_download
     for name in files:
         print('Downloading', name, flush=True)
-        hf_hub_download('Comfy-Org/MiniMax-H3', name, revision=HF_REV,
-                       local_dir=comfy / 'models')
+        if name.startswith('loras/'):
+            filename = name.split('/', 1)[1]
+            if filename not in TURBO_HASHES:
+                raise ValueError(f'Unpinned LoRA: {filename}')
+            downloaded = hf_hub_download('lightx2v/Minimax-h3-Turbo', filename,
+                revision=TURBO_REV, local_dir=comfy / 'models/loras')
+            with open(downloaded, 'rb') as f:
+                if hashlib.file_digest(f, 'sha256').hexdigest() != TURBO_HASHES[filename]:
+                    raise ValueError(f'LoRA hash mismatch: {filename}')
+        else:
+            hf_hub_download('Comfy-Org/MiniMax-H3', name, revision=HF_REV,
+                           local_dir=comfy / 'models')
     for n in graph.values():
         key = {'LoadImage': 'image', 'LoadAudio': 'audio'}.get(n['class_type'])
         if key:
@@ -70,6 +90,7 @@ def main():
             shutil.copy2(a.workflow.parent / name, comfy / 'input' / name)
     report = dict(gpu=torch.cuda.get_device_name(0), cuda=torch.version.cuda, torch=torch.__version__,
                   comfy_revision=actual, weights_revision=HF_REV, model_files=files,
+                  turbo_revision=TURBO_REV if any(f.startswith("loras/") for f in files) else None,
                   territory_evidence=a.territory_evidence, setup_seconds=time.time() - started)
     (a.root / 'setup.json').write_text(json.dumps(report, indent=2))
     log = a.root / 'comfy.log'

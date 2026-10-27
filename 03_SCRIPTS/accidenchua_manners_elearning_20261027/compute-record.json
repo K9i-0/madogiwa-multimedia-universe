@@ -1,0 +1,14 @@
+{
+  "provider": "Google Colab official CLI, OAuth2",
+  "gpu": "A100",
+  "workers": 1,
+  "sessions": ["mmu-manners-20261028-a", "mmu-manners-20261028-b"],
+  "generation_count": 7,
+  "adopted_scene_count": 5,
+  "balance_before_cu": 115.33,
+  "balance_after_cu": 111.72,
+  "observed_balance_delta_cu": 3.61,
+  "active_assignments_after": 0,
+  "usage_rate_after_cu_per_hour": 0,
+  "note": "Observed balance difference from Colab usage snapshots; no currency conversion or invoice estimate. Both sessions stopped after verified downloads."
+}

@@ -1,0 +1,878 @@
+{
+  "composition": {
+    "id": "AccidenchuaManners",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 5463
+  },
+  "title": "新入社員のための 窓際マナー研修",
+  "chapters": [
+    {
+      "id": "q1",
+      "number": 1,
+      "selection": "2b",
+      "title": "挨拶の基本",
+      "topic": "確認できる事実を伝える",
+      "cast": [
+        "fukuchan",
+        "sobaya"
+      ],
+      "scene": "昼の窓際オフィス。そば屋が未使用のノートPCを前に、ジョッキを持って座っている。福ギュンが明るく挨拶。そば屋は自分の机を見回し、何もしていないと答える。福ギュンの笑顔が止まる。",
+      "dialogue": [
+        {
+          "id": "q1_d1",
+          "speaker": "fukuchan",
+          "text": "そば屋さん、お疲れさまです！",
+          "reading": "そばやさん、おつかれさまです！"
+        },
+        {
+          "id": "q1_d2",
+          "speaker": "sobaya",
+          "text": "まだ、何もしてません。"
+        }
+      ],
+      "question": {
+        "id": "q1_question",
+        "speaker": "anchor",
+        "text": "第一問。この場で、もっとも適切な挨拶はどれでしょうか。"
+      },
+      "options": [
+        "お疲れさまです",
+        "本日もご在席ありがとうございます",
+        "お仕事は順調ですか"
+      ],
+      "answer": 1,
+      "explanation": {
+        "id": "q1_explain",
+        "speaker": "anchor",
+        "text": "勤務実態が確認できない場合は、確認できた事実を伝えましょう。『本日もご在席ありがとうございます』であれば、少なくとも席にはいますので、嘘にはなりません。",
+        "reading": "勤務実態が確認できない場合は、確認できた事実を伝えましょう。本日もございせきありがとうございます、であれば、少なくとも席にはいますので、うそにはなりません。"
+      },
+      "keypoints": [
+        "勤務実態は未確認",
+        "在席の事実だけを評価",
+        "少なくとも、嘘にはならない"
+      ],
+      "takeaway": "本日もご在席ありがとうございます",
+      "video": "h3/q1_480p_clean.mp4",
+      "videoReady": true,
+      "audioMode": "H3 generated audio",
+      "still": "stills/q1.png",
+      "stillReady": true
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "selection": "4b",
+      "title": "窓際での通行",
+      "topic": "先輩の関心を尊重する",
+      "cast": [
+        "sobaya",
+        "takosan"
+      ],
+      "scene": "そば屋が窓の外の建設クレーンを熱心に眺めている。たこさんが書類を持って窓との間を横切り、一瞬止まる。そば屋が左右に顔を動かして景色を見ようとし、たこさんは首をかしげる。",
+      "dialogue": [
+        {
+          "id": "q2_d1",
+          "speaker": "sobaya",
+          "text": "あ、見えない。今、工事の大事なところです。"
+        }
+      ],
+      "question": {
+        "id": "q2_question",
+        "speaker": "anchor",
+        "text": "第二問。窓際社員の前を通るとき、適切な対応はどれでしょうか。",
+        "reading": "第二問。まどぎわ社員の前を通るとき、適切な対応はどれでしょうか。"
+      },
+      "options": [
+        "視界を遮らず、少しかがんで通る",
+        "仕事の進捗を尋ねてから通る",
+        "一緒に仕事の未来を語る"
+      ],
+      "answer": 0,
+      "explanation": {
+        "id": "q2_explain",
+        "speaker": "anchor",
+        "text": "担当業務の進捗は把握していませんが、向かいのビルの工事には大変詳しくなっています。せっかく関心を持てるものが見つかりましたので、邪魔をしないようにしましょう。",
+        "reading": "担当業務のしんちょくは把握していませんが、向かいのビルの工事には大変詳しくなっています。せっかく関心を持てるものが見つかりましたので、邪魔をしないようにしましょう。"
+      },
+      "keypoints": [
+        "担当業務の進捗：未把握",
+        "向かいの工事：把握済み",
+        "せっかくの関心を守る"
+      ],
+      "takeaway": "通行するときは、視界への配慮を",
+      "video": "h3/q2_v2_480p.mp4",
+      "videoReady": true,
+      "audioMode": "canonical WAV replacement",
+      "still": "stills/q2.png",
+      "stillReady": true
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "selection": "6b",
+      "title": "予定表の読み方",
+      "topic": "空白の理由を考える",
+      "cast": [
+        "fukuchan",
+        "yametaro"
+      ],
+      "scene": "やめ太郎の机で、福ギュンが白い予定表を見て会議を提案。やめ太郎は慌てて両手を小さく振る。福ギュンは予定表とやめ太郎を交互に見る。画面内の予定表には読める文字を描かず、正確な空白カレンダーは設問画面に表示する。",
+      "dialogue": [
+        {
+          "id": "q3_d1",
+          "speaker": "fukuchan",
+          "text": "午後、予定がないですね。会議、入れますね。"
+        },
+        {
+          "id": "q3_d2",
+          "speaker": "yametaro",
+          "text": "なんで、そうなるんや。"
+        }
+      ],
+      "question": {
+        "id": "q3_question",
+        "speaker": "anchor",
+        "text": "第三問。予定表に空欄があったら、まず何をすべきでしょうか。"
+      },
+      "options": [
+        "すぐに会議招待を送る",
+        "暇かどうかを尋ねる",
+        "誰も頼まない理由を考える"
+      ],
+      "answer": 2,
+      "explanation": {
+        "id": "q3_explain",
+        "speaker": "anchor",
+        "text": "予定が空いているのは、皆さんの依頼を待っているからではありません。周囲が依頼を諦めた結果です。まずは、なぜ誰も頼んでいないのかを考えましょう。",
+        "reading": "予定があいているのは、みなさんの依頼を待っているからではありません。周囲が依頼をあきらめた結果です。まずは、なぜ誰も頼んでいないのかを考えましょう。"
+      },
+      "keypoints": [
+        "依頼待ちではない",
+        "周囲が諦めた結果",
+        "なぜ誰も頼まないのか"
+      ],
+      "takeaway": "空欄を埋める前に、その理由を考える",
+      "video": "h3/q3_v2_480p.mp4",
+      "videoReady": true,
+      "audioMode": "canonical WAV replacement",
+      "still": "stills/q3.png",
+      "stillReady": true
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "selection": "8a",
+      "title": "褒め方の配慮",
+      "topic": "答えに困る質問をしない",
+      "cast": [
+        "takosan",
+        "yametaro"
+      ],
+      "scene": "やめ太郎が書類をたこさんに渡し、少し得意げに胸を張る。たこさんが素直に褒めると、やめ太郎の姿勢がしぼみ、手でそっと制する。",
+      "dialogue": [
+        {
+          "id": "q4_d1",
+          "speaker": "takosan",
+          "text": "すごい。やれば、できるんですね。"
+        },
+        {
+          "id": "q4_d2",
+          "speaker": "yametaro",
+          "text": "そこには、触れんといて。"
+        }
+      ],
+      "question": {
+        "id": "q4_question",
+        "speaker": "anchor",
+        "text": "第四問。仕事ができた社員に、適切なひと言はどれでしょうか。"
+      },
+      "options": [
+        "やればできるんですね",
+        "では、毎回お願いします",
+        "ありがとうございます"
+      ],
+      "answer": 2,
+      "explanation": {
+        "id": "q4_explain",
+        "speaker": "anchor",
+        "text": "『やればできるんですね』という褒め方は控えましょう。『では、なぜ普段やらないのか』という話になってしまいます。ご本人が説明できないことを、聞き出してはいけません。",
+        "reading": "やればできるんですね、というほめかたは控えましょう。では、なぜ普段やらないのか、という話になってしまいます。ご本人が説明できないことを、聞き出してはいけません。"
+      },
+      "keypoints": [
+        "「やればできる」は控える",
+        "「なぜ普段やらない？」につながる",
+        "ご本人にも説明できない"
+      ],
+      "takeaway": "「ありがとうございます」で話を終える",
+      "video": "h3/q4_480p.mp4",
+      "videoReady": true,
+      "audioMode": "H3 generated audio",
+      "still": "stills/q4.png",
+      "stillReady": true
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "selection": "10a",
+      "title": "研修後の実践",
+      "topic": "何もしない時間を体験する",
+      "cast": [
+        "fukuchan",
+        "yametaro"
+      ],
+      "scene": "福ギュンが研修用PCを閉じ、元気に立ち上がる。隣のやめ太郎は窓へ椅子を向けたまま満足げに伸びをする。福ギュンが立ち止まり、やめ太郎を見つめる。",
+      "dialogue": [
+        {
+          "id": "q5_d1",
+          "speaker": "fukuchan",
+          "text": "研修も終わったし、仕事に戻ります！"
+        },
+        {
+          "id": "q5_d2",
+          "speaker": "yametaro",
+          "text": "今日も、あっという間やったな。"
+        }
+      ],
+      "question": {
+        "id": "q5_question",
+        "speaker": "anchor",
+        "text": "第五問。研修後、まず行うことはどれでしょうか。"
+      },
+      "options": [
+        "仕事の遅れを取り戻す",
+        "三十分間、何もしない",
+        "改善案を提案する"
+      ],
+      "answer": 1,
+      "explanation": {
+        "id": "q5_explain",
+        "speaker": "anchor",
+        "text": "これから30分間、何もせずにお過ごしください。長く感じても問題ありません。窓際族は、これを一日続けたあとに『今日もあっという間だった』と言います。",
+        "reading": "これからさんじゅっぷんかん、何もせずにお過ごしください。長く感じても問題ありません。まどぎわぞくは、これをいちにち続けたあとに、今日もあっという間だった、と言います。"
+      },
+      "keypoints": [
+        "実技：30分間、何もしない",
+        "長く感じても問題ありません",
+        "窓際族は、一日できます"
+      ],
+      "takeaway": "「今日もあっという間だった」",
+      "video": "h3/q5_480p.mp4",
+      "videoReady": true,
+      "audioMode": "H3 generated audio",
+      "still": "stills/q5.png",
+      "stillReady": true
+    }
+  ],
+  "segments": [
+    {
+      "id": "opening",
+      "type": "opening",
+      "start": 0,
+      "duration": 496
+    },
+    {
+      "id": "q1_title",
+      "type": "title",
+      "start": 496,
+      "duration": 48,
+      "chapter": 1
+    },
+    {
+      "id": "q1_clip",
+      "type": "clip",
+      "start": 544,
+      "duration": 311,
+      "chapter": 1
+    },
+    {
+      "id": "q1_question",
+      "type": "question",
+      "start": 855,
+      "duration": 216,
+      "chapter": 1
+    },
+    {
+      "id": "q1_answer",
+      "type": "answer",
+      "start": 1071,
+      "duration": 41,
+      "chapter": 1
+    },
+    {
+      "id": "q1_explain",
+      "type": "explain",
+      "start": 1112,
+      "duration": 344,
+      "chapter": 1
+    },
+    {
+      "id": "q2_title",
+      "type": "title",
+      "start": 1456,
+      "duration": 48,
+      "chapter": 2
+    },
+    {
+      "id": "q2_clip",
+      "type": "clip",
+      "start": 1504,
+      "duration": 264,
+      "chapter": 2
+    },
+    {
+      "id": "q2_question",
+      "type": "question",
+      "start": 1768,
+      "duration": 225,
+      "chapter": 2
+    },
+    {
+      "id": "q2_answer",
+      "type": "answer",
+      "start": 1993,
+      "duration": 41,
+      "chapter": 2
+    },
+    {
+      "id": "q2_explain",
+      "type": "explain",
+      "start": 2034,
+      "duration": 337,
+      "chapter": 2
+    },
+    {
+      "id": "q3_title",
+      "type": "title",
+      "start": 2371,
+      "duration": 48,
+      "chapter": 3
+    },
+    {
+      "id": "q3_clip",
+      "type": "clip",
+      "start": 2419,
+      "duration": 228,
+      "chapter": 3
+    },
+    {
+      "id": "q3_question",
+      "type": "question",
+      "start": 2647,
+      "duration": 216,
+      "chapter": 3
+    },
+    {
+      "id": "q3_answer",
+      "type": "answer",
+      "start": 2863,
+      "duration": 41,
+      "chapter": 3
+    },
+    {
+      "id": "q3_explain",
+      "type": "explain",
+      "start": 2904,
+      "duration": 335,
+      "chapter": 3
+    },
+    {
+      "id": "q4_title",
+      "type": "title",
+      "start": 3239,
+      "duration": 48,
+      "chapter": 4
+    },
+    {
+      "id": "q4_clip",
+      "type": "clip",
+      "start": 3287,
+      "duration": 311,
+      "chapter": 4
+    },
+    {
+      "id": "q4_question",
+      "type": "question",
+      "start": 3598,
+      "duration": 216,
+      "chapter": 4
+    },
+    {
+      "id": "q4_answer",
+      "type": "answer",
+      "start": 3814,
+      "duration": 41,
+      "chapter": 4
+    },
+    {
+      "id": "q4_explain",
+      "type": "explain",
+      "start": 3855,
+      "duration": 353,
+      "chapter": 4
+    },
+    {
+      "id": "q5_title",
+      "type": "title",
+      "start": 4208,
+      "duration": 48,
+      "chapter": 5
+    },
+    {
+      "id": "q5_clip",
+      "type": "clip",
+      "start": 4256,
+      "duration": 311,
+      "chapter": 5
+    },
+    {
+      "id": "q5_question",
+      "type": "question",
+      "start": 4567,
+      "duration": 216,
+      "chapter": 5
+    },
+    {
+      "id": "q5_answer",
+      "type": "answer",
+      "start": 4783,
+      "duration": 41,
+      "chapter": 5
+    },
+    {
+      "id": "q5_explain",
+      "type": "explain",
+      "start": 4824,
+      "duration": 347,
+      "chapter": 5
+    },
+    {
+      "id": "ending",
+      "type": "ending",
+      "start": 5171,
+      "duration": 292
+    }
+  ],
+  "captions": [
+    {
+      "start": 651,
+      "end": 724,
+      "text": "そば屋さん、お疲れさまです！",
+      "speaker": "fukuchan",
+      "source": "H3 ASR alignment plus energy bounds"
+    },
+    {
+      "start": 754,
+      "end": 799,
+      "text": "まだ、何もしてません。",
+      "speaker": "sobaya",
+      "source": "H3 ASR alignment plus energy bounds"
+    },
+    {
+      "start": 1124,
+      "end": 1226,
+      "text": "勤務実態が確認できない場合は、確認できた事実を伝えましょう。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 1249,
+      "end": 1414,
+      "text": "『本日もご在席ありがとうございます』であれば、\n少なくとも席にはいますので、嘘にはなりません。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 1600,
+      "end": 1690,
+      "text": "あ、見えない。今、工事の大事なところです。",
+      "speaker": "sobaya",
+      "source": "canonical WAV timing"
+    },
+    {
+      "start": 2046,
+      "end": 2192,
+      "text": "担当業務の進捗は把握していませんが、\n向かいのビルの工事には大変詳しくなっています。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 2216,
+      "end": 2329,
+      "text": "せっかく関心を持てるものが見つかりましたので、\n邪魔をしないようにしましょう。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 2431,
+      "end": 2519,
+      "text": "午後、予定がないですね。会議、入れますね。",
+      "speaker": "fukuchan",
+      "source": "canonical WAV timing"
+    },
+    {
+      "start": 2545,
+      "end": 2614,
+      "text": "なんで、そうなるんや。",
+      "speaker": "yametaro",
+      "source": "canonical WAV timing"
+    },
+    {
+      "start": 2916,
+      "end": 3013,
+      "text": "予定が空いているのは、\n皆さんの依頼を待っているからではありません。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 3013,
+      "end": 3087,
+      "text": "周囲が依頼を諦めた結果です。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 3087,
+      "end": 3196,
+      "text": "まずは、なぜ誰も頼んでいないのかを考えましょう。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 3289,
+      "end": 3368,
+      "text": "すごい。やれば、できるんですね。",
+      "speaker": "takosan",
+      "source": "H3 ASR alignment plus energy bounds"
+    },
+    {
+      "start": 3407,
+      "end": 3478,
+      "text": "そこには、触れんといて。",
+      "speaker": "yametaro",
+      "source": "H3 ASR alignment plus energy bounds"
+    },
+    {
+      "start": 3867,
+      "end": 3957,
+      "text": "『やればできるんですね』という褒め方は控えましょう。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 3957,
+      "end": 4054,
+      "text": "『では、なぜ普段やらないのか』という話になってしまいます。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 4054,
+      "end": 4167,
+      "text": "ご本人が説明できないことを、聞き出してはいけません。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 4256,
+      "end": 4340,
+      "text": "研修も終わったし、仕事に戻ります！",
+      "speaker": "fukuchan",
+      "source": "H3 ASR alignment plus energy bounds"
+    },
+    {
+      "start": 4384,
+      "end": 4454,
+      "text": "今日も、あっという間やったな。",
+      "speaker": "yametaro",
+      "source": "H3 ASR alignment plus energy bounds"
+    },
+    {
+      "start": 4836,
+      "end": 4922,
+      "text": "これから30分間、何もせずにお過ごしください。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 4922,
+      "end": 4978,
+      "text": "長く感じても問題ありません。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    },
+    {
+      "start": 4978,
+      "end": 5130,
+      "text": "窓際族は、これを一日続けたあとに\n『今日もあっという間だった』と言います。",
+      "speaker": "anchor",
+      "source": "canonical text; ASR segment alignment"
+    }
+  ],
+  "audioCues": [
+    {
+      "file": "op01_anchor.wav",
+      "start": 24,
+      "speaker": "anchor",
+      "id": "op01"
+    },
+    {
+      "file": "op02_anchor.wav",
+      "start": 184,
+      "speaker": "anchor",
+      "id": "op02"
+    },
+    {
+      "file": "op03_anchor.wav",
+      "start": 359,
+      "speaker": "anchor",
+      "id": "op03"
+    },
+    {
+      "file": "generated/retouched/q1_480p_clean.mp4",
+      "start": 544,
+      "speaker": "scene",
+      "id": "q1_scene"
+    },
+    {
+      "file": "q1_question_anchor.wav",
+      "start": 863,
+      "speaker": "anchor",
+      "id": "q1_question"
+    },
+    {
+      "file": "q1_explain_anchor.wav",
+      "start": 1124,
+      "speaker": "anchor",
+      "id": "q1_explain"
+    },
+    {
+      "file": "q2_d1_sobaya.wav",
+      "start": 1600,
+      "speaker": "sobaya",
+      "id": "q2_d1"
+    },
+    {
+      "file": "q2_question_anchor.wav",
+      "start": 1776,
+      "speaker": "anchor",
+      "id": "q2_question"
+    },
+    {
+      "file": "q2_explain_anchor.wav",
+      "start": 2046,
+      "speaker": "anchor",
+      "id": "q2_explain"
+    },
+    {
+      "file": "q3_d1_fukuchan.wav",
+      "start": 2431,
+      "speaker": "fukuchan",
+      "id": "q3_d1"
+    },
+    {
+      "file": "q3_d2_yametaro.wav",
+      "start": 2545,
+      "speaker": "yametaro",
+      "id": "q3_d2"
+    },
+    {
+      "file": "q3_question_anchor.wav",
+      "start": 2655,
+      "speaker": "anchor",
+      "id": "q3_question"
+    },
+    {
+      "file": "q3_explain_anchor.wav",
+      "start": 2916,
+      "speaker": "anchor",
+      "id": "q3_explain"
+    },
+    {
+      "file": "generated/h3-job/results/q4_480p.mp4",
+      "start": 3287,
+      "speaker": "scene",
+      "id": "q4_scene"
+    },
+    {
+      "file": "q4_question_anchor.wav",
+      "start": 3606,
+      "speaker": "anchor",
+      "id": "q4_question"
+    },
+    {
+      "file": "q4_explain_anchor.wav",
+      "start": 3867,
+      "speaker": "anchor",
+      "id": "q4_explain"
+    },
+    {
+      "file": "generated/h3-job/results/q5_480p.mp4",
+      "start": 4256,
+      "speaker": "scene",
+      "id": "q5_scene"
+    },
+    {
+      "file": "q5_question_anchor.wav",
+      "start": 4575,
+      "speaker": "anchor",
+      "id": "q5_question"
+    },
+    {
+      "file": "q5_explain_anchor.wav",
+      "start": 4836,
+      "speaker": "anchor",
+      "id": "q5_explain"
+    },
+    {
+      "file": "end01_anchor.wav",
+      "start": 5188,
+      "speaker": "anchor",
+      "id": "end01"
+    },
+    {
+      "file": "end02_anchor.wav",
+      "start": 5351,
+      "speaker": "anchor",
+      "id": "end02"
+    }
+  ],
+  "openingSplit": 184,
+  "endingThanksOffset": 180,
+  "pending": [],
+  "music": {
+    "source": "original procedural score in prepare_edit.py",
+    "seed": 20261027,
+    "bpm": 104
+  },
+  "voiceGain": {
+    "op01": {
+      "source_sha256": "200ea1cce00821de4392d39fdddb6bb49906de19e75cb0ab6d30e19f99775e59",
+      "input_i": -15.2,
+      "input_tp": -0.25,
+      "gain_db": -2.8000000000000007
+    },
+    "op02": {
+      "source_sha256": "f65618294b55ece674783c5048e36afa52cf33b80737e01bfa7193b833a212bd",
+      "input_i": -15.78,
+      "input_tp": -0.11,
+      "gain_db": -2.2200000000000006
+    },
+    "op03": {
+      "source_sha256": "98575c9a0a653ff171f82f3397b16c06ffcec0683658fef27444f3c060ae7de1",
+      "input_i": -15.54,
+      "input_tp": -0.83,
+      "gain_db": -2.460000000000001
+    },
+    "q1_scene": {
+      "source_sha256": "5ff14e5a6f58e495252a1585d6805e802db43004f0e879642b0496f147ff0140",
+      "input_i": -12.1,
+      "input_tp": -1.82,
+      "gain_db": -5.9
+    },
+    "q1_question": {
+      "source_sha256": "9e3b981161a49109234be7753e46eba892a29a37139f2a3db871b889c040ec2c",
+      "input_i": -15.31,
+      "input_tp": -0.01,
+      "gain_db": -2.6899999999999995
+    },
+    "q1_explain": {
+      "source_sha256": "d79c1ba51f32e13e235e7b0046ed4dde5aa2cf724415df4beef6a067c027d20f",
+      "input_i": -15.83,
+      "input_tp": 0.0,
+      "gain_db": -2.17
+    },
+    "q2_d1": {
+      "source_sha256": "2ff5745752324e07b67357da833dade2c74f20951df44beda494f23488da5819",
+      "input_i": -18.12,
+      "input_tp": -0.99,
+      "gain_db": -0.81
+    },
+    "q2_question": {
+      "source_sha256": "bc25a37178b7e9744487dbcdde4c6aab95c517aff459b42541af414b28a06158",
+      "input_i": -15.23,
+      "input_tp": -0.39,
+      "gain_db": -2.7699999999999996
+    },
+    "q2_explain": {
+      "source_sha256": "569b4d87488624c4e5a1851ea3871601df67a573437fbad50014b03ce4ebacb0",
+      "input_i": -15.44,
+      "input_tp": -0.02,
+      "gain_db": -2.5600000000000005
+    },
+    "q3_d1": {
+      "source_sha256": "e045d5ead98dd3f2a0d71992a7b30a1d2961870fc481ad5dfa543e21712a452f",
+      "input_i": -15.79,
+      "input_tp": -1.0,
+      "gain_db": -2.210000000000001
+    },
+    "q3_d2": {
+      "source_sha256": "f8e8331ee3ae1f1453c7595969d7d279f19c23ca5975a8ece79647716b1000a2",
+      "input_i": -15.69,
+      "input_tp": -2.99,
+      "gain_db": -2.3100000000000005
+    },
+    "q3_question": {
+      "source_sha256": "2cdadfaee8199ecbc86e00927542d1134b6d62ea820985220e02eee5408ce83f",
+      "input_i": -15.47,
+      "input_tp": 0.02,
+      "gain_db": -2.5299999999999994
+    },
+    "q3_explain": {
+      "source_sha256": "e5726d8c57909865c66810de0980740114b857480357745b8db52c0a7c8d8def",
+      "input_i": -15.25,
+      "input_tp": -0.19,
+      "gain_db": -2.75
+    },
+    "q4_scene": {
+      "source_sha256": "3e01559ad601ef4de66ad3b11bd4ae05fc1712319f11978ba5f05bc26a1b2bf2",
+      "input_i": -11.29,
+      "input_tp": 0.24,
+      "gain_db": -6.710000000000001
+    },
+    "q4_question": {
+      "source_sha256": "f9d79eb58ab9183bf6a417987b4ae75c3a2b34fb3835e6f3408478efb2c36857",
+      "input_i": -15.54,
+      "input_tp": -0.16,
+      "gain_db": -2.460000000000001
+    },
+    "q4_explain": {
+      "source_sha256": "54b9a8dd37f89bb51d74712ca30a306ab25f5677355fd59d14711af9d7be1101",
+      "input_i": -15.66,
+      "input_tp": 0.01,
+      "gain_db": -2.34
+    },
+    "q5_scene": {
+      "source_sha256": "497c27cacebd7865163051609e5fff7ea799ca1ba8e5a5352b9c88f022216b46",
+      "input_i": -11.57,
+      "input_tp": -0.37,
+      "gain_db": -6.43
+    },
+    "q5_question": {
+      "source_sha256": "8ac411751e2bf824376ec1d9d4863ef948fbea680444bd1bdee10df44f77b3d5",
+      "input_i": -15.48,
+      "input_tp": -0.76,
+      "gain_db": -2.5199999999999996
+    },
+    "q5_explain": {
+      "source_sha256": "f0dfd23d8c133097eb6aa780e8578ce63a1fb5e6222a6f7b796ed0e69d84659a",
+      "input_i": -15.54,
+      "input_tp": 0.0,
+      "gain_db": -2.460000000000001
+    },
+    "end01": {
+      "source_sha256": "f50df69c4bd637e14591837f901dfbca75e4166202182c669b9498b292da278a",
+      "input_i": -15.9,
+      "input_tp": -0.02,
+      "gain_db": -2.0999999999999996
+    },
+    "end02": {
+      "source_sha256": "f4f2324675f8fc1621b7925a64deb34a5500a7d9dbef9623277f764690e8b691",
+      "input_i": -15.08,
+      "input_tp": -0.05,
+      "gain_db": -2.92
+    }
+  }
+}

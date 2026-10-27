@@ -1,0 +1,10 @@
+{
+  "source": "generated/h3-job/results/q1_480p.mp4",
+  "output": "generated/retouched/q1_480p_clean.mp4",
+  "filters": "delogo=x=590:y=251:w=25:h=25,delogo=x=529:y=248:w=16:h=23",
+  "purpose": "Remove small nipple-like point shadows; preserve mask, face, chest shape, broad shading and cloth folds.",
+  "scale_change": false,
+  "audio": "stream copy",
+  "source_sha256": "d3abac9a892406c16dd49abe69f0b95883b52d3a495d6f5f36199e7ebfb4ba69",
+  "output_sha256": "5ff14e5a6f58e495252a1585d6805e802db43004f0e879642b0496f147ff0140"
+}

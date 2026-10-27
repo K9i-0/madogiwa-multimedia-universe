@@ -1,0 +1,157 @@
+{
+  "qualityReview": "User judges; no rerolls or quality selection",
+  "baselineReused": true,
+  "baseline": {
+    "status": "complete",
+    "started_unix": 1793003358.312202,
+    "stage": "generate_ch02",
+    "completed": [
+      {
+        "id": "ch01",
+        "seconds": 2568.3996872901917
+      },
+      {
+        "id": "ch02",
+        "seconds": 2732.642536878586
+      }
+    ],
+    "elapsed_seconds": 5498.40608549118,
+    "sha256": {
+      "ch01_768p.mp4": "f7d4667acb7b98bade1e9a98137087dfa076eb2f1e7780b2f1d5527b87a69daf",
+      "ch02_768p.mp4": "714667de980179267478c4128735cbeb3f393c17ba03d405d800a7aca5078123"
+    },
+    "setup": {
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "cuda": "13.0",
+      "torch": "2.11.0+cu130",
+      "comfy_revision": "fe298e4e20f1ff26d30e8639267bbd0b57811390",
+      "weights_revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "model_files": [
+        "vae/minimax_h3_video_vae_fp16.safetensors",
+        "vae/minimax_h3_audio_vae_fp32.safetensors",
+        "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+      ],
+      "territory_evidence": "unknown",
+      "setup_seconds": 166.2520136833191
+    },
+    "balanceBefore": 169.13,
+    "balanceAfter": 158.68,
+    "computeUnitsConsumed": 10.45,
+    "gpuStopped": true,
+    "activeAssignments": 0,
+    "usageRateAfter": 0
+  },
+  "newRun": {
+    "status": "complete",
+    "started_unix": 1793058582.019656,
+    "completed": [
+      {
+        "model": "turbo8",
+        "chapter": "ch01",
+        "seconds": 1097.814192865,
+        "file": "turbo8_ch01.mp4"
+      },
+      {
+        "model": "turbo8",
+        "chapter": "ch02",
+        "seconds": 1172.07275093,
+        "file": "turbo8_ch02.mp4"
+      }
+    ],
+    "models": [
+      {
+        "id": "turbo8",
+        "repo": "Comfy-Org/MiniMax-H3",
+        "revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+        "filename": "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "sha256": "9255f52b6677845ad238f20dfaafa94727053694127ab7f255c048f0f9365779",
+        "download_seconds": 95.448010554,
+        "hash_seconds": 59.397145873
+      }
+    ],
+    "stage": "generate_turbo8_ch02",
+    "setup_wall_seconds": 198.35959666899998,
+    "lora": {
+      "repo": "lightx2v/Minimax-h3-Turbo",
+      "revision": "30f485ed874aa44c8183348ad361c5eabad318da",
+      "filename": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "sha256": "6a56f41ab4229c9dd845b9501bbd475ee57e112d846cf2e819d534a1ae928c5a",
+      "download_and_hash_seconds": 16.27030245700007
+    },
+    "elapsed_seconds": 2662.0731451511383,
+    "sha256": {
+      "turbo8_ch01.mp4": "f4d43497896d09716cd1ef33c1880cf52311904b5e0a7cddc66b037821bde813",
+      "turbo8_ch02.mp4": "0aa5d698b494a1614988321ad596168d8aea41834cb3e9bbadd9e40a3df1238e"
+    }
+  },
+  "outputs": [
+    {
+      "file": "h3_compare_raw_pure.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_pure.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "h3_compare_raw_turbo8.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_turbo8.mp4",
+      "resolution": [
+        1344,
+        768
+      ],
+      "frames": 720,
+      "fps": 24,
+      "seconds": 30,
+      "decode": "passed"
+    }
+  ],
+  "audioPolicy": "final_* uses identical adopted Irodori master; h3_compare_raw_* retains native generated audio; no captions, crops, speed changes, or AI enhancement",
+  "generationSeconds": {
+    "pure": {
+      "chapters": [
+        2568.3996872901917,
+        2732.642536878586
+      ],
+      "total": 5301.0422241687775,
+      "relativeToPure": 1.0
+    },
+    "turbo8": {
+      "chapters": [
+        1097.814192865,
+        1172.07275093
+      ],
+      "total": 2269.8869437949998,
+      "relativeToPure": 0.4281963523033296
+    }
+  },
+  "partial": false,
+  "usageAfter": "Current balance: 120.70 compute units\nUsage rate: 0.00/hr\nActive assignments: 0\n",
+  "initialBalanceCU": 125.71,
+  "setupRecovery": "Initial setup session stopped for bundle entrypoint fix; next session CLI kernel connection failed before root creation. Started detached subprocess, no duplicate generation."
+}

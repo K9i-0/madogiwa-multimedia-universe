@@ -126,3 +126,20 @@ output/imagegen/sobaya_attendance_notice/*.png
 /03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_f_chat_v2.png
 /03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_f_quad_clean.png
 /03_SCRIPTS/youtube_ai_video_workflow_20261013/thumbnails/thumbnail_g_quad_showcase.png
+
+# Imported source clips at the repository root remain local.
+/*.[mM][pP]4
+/*.[mM][oO][vV]
+/*.[wW][eE][bB][mM]
+/*.[mM][kK][vV]
+/*.[aA][vV][iI]
+/*.[mM]4[vV]
+
+# H3/Wan runtime outputs: keep prompts, production inputs and summary records
+# outside generated/; do not commit downloaded jobs, logs or review intermediates.
+/03_SCRIPTS/**/generated/
+/03_SCRIPTS/**/remotion/public/h3/
+/03_SCRIPTS/**/remotion/*.log
+
+# Local generated article-header image; retain its generation prompt.
+/output/imagegen/mde-article-header/*.png

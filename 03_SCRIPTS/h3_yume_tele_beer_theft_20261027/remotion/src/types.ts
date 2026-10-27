@@ -43,6 +43,7 @@ export type EditManifest = {
     fps: number;
     durationInFrames: number;
   };
+  sourceRanges: FrameRange[];
   inputVideo: string;
   inputVideoVolume: number;
   replacementAudio: string | null;

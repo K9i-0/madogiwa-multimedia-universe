@@ -37,6 +37,37 @@
         "width": 1280,
         "height": 720,
         "r_frame_rate": "24/1",
+        "duration": "11.500000",
+        "nb_read_frames": "276"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "32000",
+        "r_frame_rate": "0/0",
+        "duration": "11.500000",
+        "nb_read_frames": "360"
+      }
+    ]
+  },
+  "asr": {
+    "model": "openai/whisper-small",
+    "recognized": "そば屋によるビールの逃難被害が相次いでいます。被害は食場の冷蔵庫に集中し、警察は冷えた缶を見せないよう呼びかけています。",
+    "note": "ASR screening only; not listening or lipsync verification."
+  },
+  "visual_audit": "Sampled frames: same anchor, outfit and studio retained; some small pose/framing drift. News text readable and face unobstructed. Not frame-perfect motion or lipsync approval.",
+  "listening_and_lipsync": "Not audited: no direct audio/video listening capability used. User review pending.",
+  "final_sha256": "75a0400e7550a4dacaca2690dff5428d244ffae01e57e166cfc8cf11d2cdaab7",
+  "previous_final_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
         "duration": "15.083333",
         "nb_read_frames": "362"
       },
@@ -50,12 +81,24 @@
       }
     ]
   },
-  "asr": {
-    "model": "openai/whisper-small",
-    "recognized": "そば屋によるビールの逃難被害が相次いでいます。被害は食場の冷蔵庫に集中し、警察は冷えた缶を見せないよう呼びかけています。",
-    "note": "ASR screening only; not listening or lipsync verification."
-  },
-  "visual_audit": "Sampled frames: same anchor, outfit and studio retained; some small pose/framing drift. News text readable and face unobstructed. Not frame-perfect motion or lipsync approval.",
-  "listening_and_lipsync": "Not audited: no direct audio/video listening capability used. User review pending.",
-  "final_sha256": "d7290eb9e4b49ae2ed3bcccd7bc22bd8d44f088ff563c1edc027613477a7a160"
+  "repeat_cut": {
+    "user_report": "被害は職場の冷蔵庫に集中し、が2回読まれている",
+    "removed_source_frames": [
+      180,
+      266
+    ],
+    "retained_source_frames": [
+      [
+        0,
+        180
+      ],
+      [
+        266,
+        362
+      ]
+    ],
+    "final_frames": 276,
+    "final_seconds": 11.5,
+    "note": "Full ASR omitted repetition; isolated ASR confirmed both occurrences. Original video retained."
+  }
 }

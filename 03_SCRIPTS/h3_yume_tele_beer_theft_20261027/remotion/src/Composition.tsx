@@ -344,13 +344,17 @@ export const EditComposition: React.FC<{manifest: EditManifest}> = ({manifest}) 
   );
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
-      <Video
-        src={staticFile(manifest.inputVideo)}
-        muted={replacementAudio !== null}
-        volume={replacementAudio === null ? manifest.inputVideoVolume : 0}
-        objectFit="cover"
-        style={{width: '100%', height: '100%'}}
-      />
+      {manifest.sourceRanges.map((range, index) => (
+        <Sequence key={range.startFrame}
+          from={manifest.sourceRanges.slice(0, index).reduce((n, r) => n + r.endFrame - r.startFrame, 0)}
+          durationInFrames={range.endFrame - range.startFrame}>
+          <Video src={staticFile(manifest.inputVideo)}
+            trimBefore={range.startFrame}
+            muted={replacementAudio !== null}
+            volume={replacementAudio === null ? manifest.inputVideoVolume : 0}
+            objectFit="cover" style={{width: '100%', height: '100%'}} />
+        </Sequence>
+      ))}
       {replacementAudio ? <Html5Audio src={staticFile(replacementAudio)} /> : null}
       {manifest.overlays.map((overlay, index) => {
         const hasTicker = manifest.overlays.some(

@@ -1,0 +1,83 @@
+{
+  "baselineReused": true,
+  "baselineSeconds": 2269.8869437949998,
+  "newRun": {
+    "status": "complete",
+    "started_unix": 1793064927.5503855,
+    "completed": [
+      {
+        "model": "turbo8_480p",
+        "chapter": "ch01",
+        "seconds": 256.7756599840004,
+        "file": "turbo8_480p_ch01.mp4"
+      },
+      {
+        "model": "turbo8_480p",
+        "chapter": "ch02",
+        "seconds": 256.1369308989997,
+        "file": "turbo8_480p_ch02.mp4"
+      }
+    ],
+    "models": [
+      {
+        "id": "turbo8_480p",
+        "repo": "Comfy-Org/MiniMax-H3",
+        "revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+        "filename": "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "sha256": "9255f52b6677845ad238f20dfaafa94727053694127ab7f255c048f0f9365779",
+        "download_seconds": 85.37619112599987,
+        "hash_seconds": 59.080021501000374
+      }
+    ],
+    "stage": "generate_turbo8_480p_ch02",
+    "setup_wall_seconds": 210.49078514399935,
+    "lora": {
+      "repo": "lightx2v/Minimax-h3-Turbo",
+      "revision": "30f485ed874aa44c8183348ad361c5eabad318da",
+      "filename": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "sha256": "6a56f41ab4229c9dd845b9501bbd475ee57e112d846cf2e819d534a1ae928c5a",
+      "download_and_hash_seconds": 17.820990424999763
+    },
+    "elapsed_seconds": 906.4065146446228,
+    "sha256": {
+      "turbo8_480p_ch01.mp4": "096c9b8de6b7cbd13c3b09d0f804eb8ec0da321ce9320aeaba67d244b865d3e9",
+      "turbo8_480p_ch02.mp4": "a0ac2acd35f320f721f4a6626c14872b6f9c50ce66a1a799cb5068d871cff999"
+    }
+  },
+  "generationSeconds": 512.9125908830001,
+  "speedup": 4.425484934747451,
+  "outputs": [
+    {
+      "file": "h3_compare_raw_turbo8_480p.mp4",
+      "width": 864,
+      "height": 480,
+      "frames": 720,
+      "decode": "passed"
+    },
+    {
+      "file": "h3_compare_turbo8_480p_native.mp4",
+      "width": 864,
+      "height": 480,
+      "frames": 720,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_turbo8_480p.mp4",
+      "width": 1280,
+      "height": 720,
+      "frames": 720,
+      "decode": "passed"
+    },
+    {
+      "file": "final_h3_compare_turbo8_768p_vs_480p.mp4",
+      "width": 1344,
+      "height": 432,
+      "frames": 720,
+      "decode": "passed"
+    }
+  ],
+  "qualityReview": "User judges; no quality rerolls",
+  "audioPolicy": "Same adopted Irodori master; raw retains generated audio",
+  "usageAfter": "Current balance: 119.22 compute units\nUsage rate: 0.00/hr\nActive assignments: 0\n",
+  "usageBefore": "Current balance: 120.70 compute units\nUsage rate: 0.00/hr\nActive assignments: 0\n"
+}

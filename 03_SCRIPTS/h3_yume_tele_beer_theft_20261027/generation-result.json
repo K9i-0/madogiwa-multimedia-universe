@@ -1,0 +1,61 @@
+{
+  "profile": "480p-turbo",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "setup": {
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "cuda": "13.0",
+    "torch": "2.11.0+cu130",
+    "comfy_revision": "fe298e4e20f1ff26d30e8639267bbd0b57811390",
+    "weights_revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+    "model_files": [
+      "vae/minimax_h3_video_vae_fp16.safetensors",
+      "vae/minimax_h3_audio_vae_fp32.safetensors",
+      "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "loras/minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors"
+    ],
+    "turbo_revision": "30f485ed874aa44c8183348ad361c5eabad318da",
+    "territory_evidence": "unknown",
+    "setup_seconds": 292.899614572525
+  },
+  "generation_job_seconds": 226.13,
+  "comfy_prompt_seconds": 210.11,
+  "remote_total_seconds": 553.7778069972992,
+  "cu_before": 119.22,
+  "cu_after": 118.21,
+  "observed_cu_difference": 1.01,
+  "cu_per_hour_displayed": 6.77,
+  "runtime_stopped": true,
+  "generation_status": "success",
+  "final_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "15.083333",
+        "nb_read_frames": "362"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "32000",
+        "r_frame_rate": "0/0",
+        "duration": "15.075000",
+        "nb_read_frames": "472"
+      }
+    ]
+  },
+  "asr": {
+    "model": "openai/whisper-small",
+    "recognized": "そば屋によるビールの逃難被害が相次いでいます。被害は食場の冷蔵庫に集中し、警察は冷えた缶を見せないよう呼びかけています。",
+    "note": "ASR screening only; not listening or lipsync verification."
+  },
+  "visual_audit": "Sampled frames: same anchor, outfit and studio retained; some small pose/framing drift. News text readable and face unobstructed. Not frame-perfect motion or lipsync approval.",
+  "listening_and_lipsync": "Not audited: no direct audio/video listening capability used. User review pending.",
+  "final_sha256": "d7290eb9e4b49ae2ed3bcccd7bc22bd8d44f088ff563c1edc027613477a7a160"
+}

@@ -1,0 +1,48 @@
+{
+  "composition": {
+    "id": "BeerTheftNews",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 362
+  },
+  "inputVideo": "input.mp4",
+  "inputVideoVolume": 1,
+  "replacementAudio": null,
+  "overlays": [
+    {
+      "type": "station-bug",
+      "startFrame": 0,
+      "endFrame": 362,
+      "text": "19:00",
+      "position": "top-left",
+      "variant": "clock"
+    },
+    {
+      "type": "station-bug",
+      "startFrame": 0,
+      "endFrame": 362,
+      "text": "ゆめテレ",
+      "position": "top-right",
+      "variant": "brand"
+    },
+    {
+      "type": "news-lower-third",
+      "startFrame": 0,
+      "endFrame": 362,
+      "kicker": "相次ぐ被害",
+      "headline": "そば屋によるビール盗難",
+      "subheadline": "被害は職場の冷蔵庫に集中",
+      "accentColor": "#c51b2f"
+    },
+    {
+      "type": "ticker",
+      "startFrame": 0,
+      "endFrame": 362,
+      "label": "NEWS",
+      "text": "警察「冷えた缶を見せないように」 注意呼びかけ",
+      "accentColor": "#183a62"
+    }
+  ],
+  "captions": []
+}

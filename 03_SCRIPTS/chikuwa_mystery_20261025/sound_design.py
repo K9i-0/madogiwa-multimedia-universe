@@ -33,4 +33,14 @@ def build_effects(manifest,sr,length):
     add('試薬滴下',test+2.4,.18,.012,'drop')
     for i in range(3):add('検査終了音 '+str(i+1),test+i*1.5,.14,.015,'beep')
     add('生産ライン・ローラーと駆動音',manifest['codaStartFrame']/30,manifest['codaDurationFrames']/30,.007,'conveyor')
+    # Low-level band-limited tape hiss with brief tracking crackle; no jump-scare gain.
+    start=round(manifest['codaStartFrame']/30*sr);size=length-start
+    hiss=rng.normal(0,1,size);hiss=np.convolve(hiss,np.ones(5)/5,mode='same')-np.convolve(hiss,np.ones(45)/45,mode='same')
+    env=np.minimum(1,np.arange(size)/(sr*.15))*np.minimum(1,(size-np.arange(size))/(sr*1.2))
+    hiss*=.0035*env
+    for frame in [3,208,417,537]:
+        at=round(frame/30*sr);n=min(round(.07*sr),size-at)
+        hiss[at:at+n]+=rng.normal(0,.006,n)*np.hanning(n)
+    out[start:,0]+=hiss;out[start:,1]+=hiss*.92
+    events.append(dict(name='VHS tape hiss and tracking crackle',startSeconds=manifest['codaStartFrame']/30,durationSeconds=size/sr,source='original seeded noise synthesis'))
     return out,events

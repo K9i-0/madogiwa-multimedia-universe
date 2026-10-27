@@ -1,9 +1,10 @@
 import React from 'react';
 import {AbsoluteFill,OffthreadVideo,Freeze,staticFile} from 'remotion';
+import {TapeWear,tapeSlip} from './TapeWear';
 const paper:React.CSSProperties={position:'absolute',left:155,right:155,top:88,bottom:88,padding:'38px 52px',background:'#d8d7cd',color:'#24292b',boxShadow:'0 0 90px #000',transform:'rotate(-.6deg)'};
 export const Coda:React.FC<{frame:number;duration:number}>=({frame:t,duration})=>{
  const stage=t<210?0:t<420?1:2;const local=t-[0,210,420][stage];
- return <AbsoluteFill style={{background:'#05080b',color:'#ddd',fontFamily:'"Hiragino Sans",sans-serif'}}><AbsoluteFill style={{opacity:Math.min(1,local/12,(duration-t)/36)}}>
+ return <AbsoluteFill style={{background:'#05080b',color:'#ddd',fontFamily:'"Hiragino Sans",sans-serif'}}><AbsoluteFill style={{opacity:Math.min(1,local/12,(duration-t)/36)*(tapeSlip(t)?.82:1),filter:'url(#tape-warp) saturate(.68) contrast(1.08)',transform:`translateX(${tapeSlip(t)?(t%2?7:-9):Math.sin(t*1.9)*.45}px)`}}>
  {stage===0?<AbsoluteFill><Freeze frame={t}><OffthreadVideo muted src={staticFile('h3_ch05_480p.mp4')} style={{width:'100%',height:'100%',objectFit:'contain'}}/></Freeze><div style={{position:'absolute',left:48,bottom:36,padding:'10px 18px',background:'#071016c9',fontSize:18,letterSpacing:2}}>T社 ／ 製造ライン C-041</div></AbsoluteFill>:stage===1?<div style={paper}><div style={{fontSize:18,borderBottom:'1px solid #555',paddingBottom:16}}>T社 生産管理部　／　当日製造記録</div><div style={{fontSize:34,margin:'24px 0'}}>製造ロット C-041</div>{[['投入原料','魚肉すり身'],['製造工程','成形 → 加熱 → 包装'],['出荷品名','養殖ちくわ']].map(([a,b],i)=><div key={a} style={{display:'flex',padding:'20px 0',borderBottom:'1px solid #7776',fontSize:29,opacity:i<2||local>60?1:0}}><span style={{width:220,color:'#555'}}>{a}</span><strong>{b}</strong></div>)}<div style={{fontSize:18,textAlign:'right',marginTop:24}}>照合済　／　通常出荷</div></div>:<div style={paper}><div style={{fontSize:18,borderBottom:'1px solid #555',paddingBottom:16}}>政府・食品供給連絡会議　／　関係事業者限り</div><div style={{fontSize:34,marginTop:36}}>広報対応の確認</div><div style={{fontSize:28,lineHeight:2,marginTop:34}}>対外説明は従来どおり。<br/><strong>「養殖技術の発展」で統一すること。</strong></div><div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:48}}><span style={{fontSize:18}}>取扱区分：部外秘</span><span style={{border:'2px solid #8b4b46',color:'#8b4b46',padding:'8px 22px',fontSize:25,transform:'rotate(-5deg)'}}>承認済</span></div></div>}
- </AbsoluteFill></AbsoluteFill>;
+ </AbsoluteFill><TapeWear frame={t} duration={duration}/></AbsoluteFill>;
 };

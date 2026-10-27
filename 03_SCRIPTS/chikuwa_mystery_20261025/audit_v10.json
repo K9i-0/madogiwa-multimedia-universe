@@ -1,0 +1,69 @@
+{
+  "h3Sources": [
+    {
+      "file": "h3_v9/results/ch01_480p.mp4",
+      "frames": "124",
+      "sha256": "a0b9a9d1d4b9bf4669609548e1581521bc5a24e0725b30f3a84882a6c0168dfe",
+      "mutedInEdit": true
+    },
+    {
+      "file": "h3_v9/results/ch02_480p.mp4",
+      "frames": "124",
+      "sha256": "236273fb5a7057fc1d9501a119edf13f7eb67ab53fca41a27e82162943f72546",
+      "mutedInEdit": true
+    },
+    {
+      "file": "h3_v9/results/ch03_480p.mp4",
+      "frames": "124",
+      "sha256": "0fcf8557f24c53ab5a145d6f2f998d709d74af2aa4c9a0fc55dd9a58e32bb816",
+      "mutedInEdit": true
+    },
+    {
+      "file": "h3_v9/results/ch04_480p.mp4",
+      "frames": "124",
+      "sha256": "233b2d7207e09af8a0d729c8da51070d96431047239a7ac2efae345c4ff2bcb4",
+      "mutedInEdit": true
+    },
+    {
+      "file": "h3_v9/results/ch05_480p.mp4",
+      "frames": "175",
+      "sha256": "fed81aec66d0d073445b81e38c892d3c27ecc668ce59ae5ced02cddc094caff7",
+      "mutedInEdit": true
+    }
+  ],
+  "file": "final_remotion_chikuwa_mystery_v10.mp4",
+  "sha256": "b99582d5386d2a4aa2f612cfb258a241dd97f1a240bbd0eccde98c2c864a2ad7",
+  "durationSeconds": 604.6,
+  "frames": "18138",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": "30/1",
+  "sampleRate": "48000",
+  "fullDecode": "passed",
+  "loudness": {
+    "input_i": "-18.02",
+    "input_tp": "-1.54",
+    "input_lra": "3.40",
+    "input_thresh": "-28.65",
+    "output_i": "-18.21",
+    "output_tp": "-1.78",
+    "output_lra": "3.20",
+    "output_thresh": "-28.83",
+    "normalization_type": "dynamic",
+    "target_offset": "0.21"
+  },
+  "captionTextExact": true,
+  "maxCaptionLines": 2,
+  "dialogueCount": 85,
+  "viewSegments": 40,
+  "sourceClips": 1,
+  "voiceClipOverlap": false,
+  "auditedFrameExtractionCount": 159,
+  "visualPreviewInspection": "See visual_audit_v10.md for inspected frames",
+  "listeningVerified": false,
+  "limitations": [
+    "Human continuous listening and real-time lip-sync review not performed."
+  ]
+}

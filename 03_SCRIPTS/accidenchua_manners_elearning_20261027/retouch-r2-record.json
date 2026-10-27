@@ -1,0 +1,42 @@
+[
+  {
+    "source": "generated/h3-r2/results/q2_r2_480p.mp4",
+    "output": "generated/retouched/q2_r2_480p_clean.mp4",
+    "filters": "delogo=x=274:y=362:w=64:h=53",
+    "purpose": "Remove generated nipple-like point shadow. Preserve face, mask, chest silhouette, broad shading and surrounding fabric folds.",
+    "scale_change": false,
+    "audio": "stream copy",
+    "source_sha256": "a0a3879d623b6d2533918d56d120bb9e7dfc1a1246c88e31b2a8c3ee8d2b28a2",
+    "output_sha256": "4f7e76263f8951ea8375ef4dbe355a4c47c82baeb339d05ba67a599c40bc4fb3"
+  },
+  {
+    "source": "generated/h3-r2/results/q3_r2_480p.mp4",
+    "output": "generated/retouched/q3_r2_480p_clean.mp4",
+    "filters": "delogo=x=518:y=277:w=23:h=32,delogo=x=638:y=273:w=42:h=36",
+    "purpose": "Remove generated nipple-like point shadow. Preserve face, mask, chest silhouette, broad shading and surrounding fabric folds.",
+    "scale_change": false,
+    "audio": "stream copy",
+    "source_sha256": "45ae796db25d194af704859ee77f51bf6f3833aece8120703cf6ed56af882a53",
+    "output_sha256": "258a8354dabc7ed4611f22769c762e85388a8e3a8321dc937c71a2306aa60f13"
+  },
+  {
+    "source": "generated/h3-r2/results/q4_r2_480p.mp4",
+    "output": "generated/retouched/q4_r2_480p_clean.mp4",
+    "filters": "delogo=x=549:y=292:w=29:h=37:enable='lt(t,4.95)+gte(t,5.125)',delogo=x=703:y=286:w=29:h=42",
+    "purpose": "Remove generated nipple-like point shadow. Preserve face, mask, chest silhouette, broad shading and surrounding fabric folds.",
+    "scale_change": false,
+    "audio": "stream copy",
+    "source_sha256": "5e1bddfac6519d2d41c1bf0200241d6bed435d353dfb904f8d3d1b9965b87a4a",
+    "output_sha256": "75dfd578b6356a9170a1ae1c2a1840454a22b40caa75fa5057839735ba11beca"
+  },
+  {
+    "source": "generated/h3-r2/results/q5_r2_480p.mp4",
+    "output": "generated/retouched/q5_r2_480p_clean.mp4",
+    "filters": "delogo=x=542:y=273:w=29:h=39,delogo=x=645:y=262:w=34:h=39",
+    "purpose": "Remove generated nipple-like point shadow. Preserve face, mask, chest silhouette, broad shading and surrounding fabric folds.",
+    "scale_change": false,
+    "audio": "stream copy",
+    "source_sha256": "9be47bec9283554f9eb0316442947fc2d3bdbac9bf9800daa1df91493eb85cd2",
+    "output_sha256": "9ceacd95556d1d4d217f591ddf3fa4648f9472f9dd583dd52fc3c9aa7c877553"
+  }
+]

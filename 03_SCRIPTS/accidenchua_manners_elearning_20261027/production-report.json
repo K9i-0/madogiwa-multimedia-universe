@@ -1,146 +1,68 @@
 {
-  "verified_at": "2026-10-28T00:53:42.052750+09:00",
-  "file": "final_remotion_elearning.mp4",
-  "sha256": "5b368b3445b74fe4166ca7991e065628256675df7b55050fb3c5b194b6983638",
-  "size_bytes": 19265223,
+  "recorded_at": "2026-10-28T06:13:16.444423+09:00",
+  "revision": 2,
+  "file": "final_remotion_elearning_v2.mp4",
+  "sha256": "6196f9fbabe1ebae6f8b48984e315792cead4c429328f28b9a89d627333aaebc",
+  "size_bytes": 21911938,
   "composition": {
     "id": "AccidenchuaManners",
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 5463
+    "durationInFrames": 8021
   },
-  "duration_seconds": 227.625,
-  "video_codec": "h264",
-  "audio_codec": "aac",
-  "audio_sample_rate": 48000,
-  "audio_channels": 2,
-  "audio_loudness_lufs": -16.21,
-  "audio_true_peak_dbtp": -1.51,
-  "audio_lra": 13.1,
-  "decode_to_end": "passed",
-  "timeline": "contiguous",
-  "caption_count": 22,
-  "caption_overlap": false,
-  "adopted_voice_files_verified": 24,
-  "h3_runs": [
-    {
-      "job": "h3-job",
-      "status": "complete",
-      "started_unix": 1793113526.958677,
-      "completed": [
-        "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
-      ],
-      "stage": "q5_generate",
-      "elapsed_seconds": 1327.4114067554474,
-      "sha256": {
-        "q1_480p.mp4": "d3abac9a892406c16dd49abe69f0b95883b52d3a495d6f5f36199e7ebfb4ba69",
-        "q2_480p.mp4": "65ac27d81622a9959a0167cd5c640ce3468b253299b23abb097591316e02176d",
-        "q3_480p.mp4": "3161274e0eba336dbaa8014994ab2584cf18ca4b63fd5733d7c2702253588754",
-        "q4_480p.mp4": "3e01559ad601ef4de66ad3b11bd4ae05fc1712319f11978ba5f05bc26a1b2bf2",
-        "q5_480p.mp4": "497c27cacebd7865163051609e5fff7ea799ca1ba8e5a5352b9c88f022216b46"
-      }
-    },
-    {
-      "job": "h3-retry",
-      "status": "complete",
-      "started_unix": 1793114893.1981912,
-      "completed": [
-        "q2_v2",
-        "q3_v2"
-      ],
-      "stage": "q3_v2_generate",
-      "elapsed_seconds": 796.3889591693878,
-      "sha256": {
-        "q2_v2_480p.mp4": "be9519549999254a2c34f70e36ecdd612d8a7939f0132f06a84740611616c957",
-        "q3_v2_480p.mp4": "edd3c4c4e9abb8979b54084d13ec706aa2e71ff2a25b5152fed93580e4cbb1ef"
-      }
-    }
+  "duration_seconds": 334.2083333333333,
+  "encoded_probe": {
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2,
+    "frames": 8021
+  },
+  "cast_in_all_scenes": [
+    "そば屋",
+    "福ギュン"
   ],
-  "adopted_clips": [
+  "feedback_narrations": 15,
+  "caption_count": 47,
+  "pre_render_checks": {
+    "typescript": "passed",
+    "timeline": "contiguous",
+    "caption_overlap": false,
+    "active_voice_files_verified": 34,
+    "h3_source_hashes": "matched",
+    "adopted_clip_visual_samples": "inspected",
+    "all_question_answer_feedback_layouts": "inspected",
+    "final_scene_mix_asr": "all five reviewed"
+  },
+  "final_review": {
+    "encoded_frame_capture_count": 64,
+    "encoded_visual_inspection": "skipped at user request",
+    "full_delivery_verifier_executed": false,
+    "auditory_listening": false,
+    "precise_lipsync_verified": false
+  },
+  "youtube_url": "https://www.youtube.com/watch?v=5XBCCTBE6GU",
+  "final_scene_asr": [
     {
       "chapter": "q1",
-      "video": "h3/q1_480p_clean.mp4",
-      "sha256": "5ff14e5a6f58e495252a1585d6805e802db43004f0e879642b0496f147ff0140",
-      "audio_mode": "H3 generated audio"
+      "text": "そば屋さんお疲れ様ですまだ何もしてません"
     },
     {
       "chapter": "q2",
-      "video": "h3/q2_v2_480p.mp4",
-      "sha256": "be9519549999254a2c34f70e36ecdd612d8a7939f0132f06a84740611616c957",
-      "audio_mode": "canonical WAV replacement"
+      "text": "あ、見えない今、工事の大事なところです"
     },
     {
       "chapter": "q3",
-      "video": "h3/q3_v2_480p.mp4",
-      "sha256": "edd3c4c4e9abb8979b54084d13ec706aa2e71ff2a25b5152fed93580e4cbb1ef",
-      "audio_mode": "canonical WAV replacement"
+      "text": "お忙しいところすみませーんこちらお願いできますか忙しくはないです"
     },
     {
       "chapter": "q4",
-      "video": "h3/q4_480p.mp4",
-      "sha256": "3e01559ad601ef4de66ad3b11bd4ae05fc1712319f11978ba5f05bc26a1b2bf2",
-      "audio_mode": "H3 generated audio"
+      "text": "すごいやればできるんですねそこは触れないでください"
     },
     {
       "chapter": "q5",
-      "video": "h3/q5_480p.mp4",
-      "sha256": "497c27cacebd7865163051609e5fff7ea799ca1ba8e5a5352b9c88f022216b46",
-      "audio_mode": "H3 generated audio"
+      "text": "研修も終わったし、仕事に戻ります。今日も、あっという間でした。"
     }
-  ],
-  "final_scene_asr": [
-    {
-      "source": "q1_480p",
-      "text": "そばやさーんお疲れ様でーすまだ何もしてません"
-    },
-    {
-      "source": "final_q2_clip_mix",
-      "text": "あ、見えない。今、工事の大事なところです。"
-    },
-    {
-      "source": "final_q3_clip_mix",
-      "text": "午後予定がないですね。会議入れますね。なんでそうなるんや?"
-    },
-    {
-      "source": "q4_480p",
-      "text": "すごい やればできるんですねそこには触れんといて"
-    },
-    {
-      "source": "q5_480p",
-      "text": "研修も終わったし仕事に戻ります今日もあっという間やったなぁ"
-    }
-  ],
-  "review_scope": {
-    "visual": "Chronological H3 samples, shirt repair samples, and every question, answer and explanation layout inspected.",
-    "audio": "ASR wording, waveform timing and technical loudness checks. Q2/Q3 final mixes re-transcribed after replacement.",
-    "auditory_listening": false,
-    "precise_lipsync_verified": false,
-    "encoded_delivery_frame_samples": 78,
-    "encoded_delivery_contact_sheets": 5,
-    "encoded_delivery_visual": "Inspected all five contact sheets covering opening, ending, chapter transitions, every answer and explanation, and all caption midpoint samples. No observed clipping or missing layout elements."
-  },
-  "status": "rendered and technically verified; auditory review not performed",
-  "compute": {
-    "provider": "Google Colab official CLI, OAuth2",
-    "gpu": "A100",
-    "workers": 1,
-    "sessions": [
-      "mmu-manners-20261028-a",
-      "mmu-manners-20261028-b"
-    ],
-    "generation_count": 7,
-    "adopted_scene_count": 5,
-    "balance_before_cu": 115.33,
-    "balance_after_cu": 111.72,
-    "observed_balance_delta_cu": 3.61,
-    "active_assignments_after": 0,
-    "usage_rate_after_cu_per_hour": 0,
-    "note": "Observed balance difference from Colab usage snapshots; no currency conversion or invoice estimate. Both sessions stopped after verified downloads."
-  },
-  "prompt_input_fidelity": "All seven prompt files checked against executed workflow strings. End-of-line spaces in four generated prompt paragraphs intentionally preserved."
+  ]
 }

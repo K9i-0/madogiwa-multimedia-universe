@@ -19,7 +19,7 @@ def main():
     dialogue=[line for ch in d['chapters'] for line in ch['dialogue']]
     # Generate Large first, then release it before the Small actor voices.
     dialogue.sort(key=lambda x: x['speaker']!='sobaya')
-    narration=d['opening']+[line for ch in d['chapters'] for line in [ch['question'],ch['explanation']]]+d['ending']
+    narration=d['opening']+[line for ch in d['chapters'] for line in [ch['question']]+([f['line'] for f in ch['feedback']] if 'feedback' in ch else [ch['explanation']])]+d['ending']
     lines=dialogue if a.group=='dialogue' else narration if a.group=='narration' else dialogue+narration
     tmp=EP/'generated'/'voices';tmp.mkdir(parents=True,exist_ok=True)
     records_path=EP/'voice-records.json'
@@ -28,6 +28,8 @@ def main():
         name,seed,caption=CAST[line['speaker']];ref=ROOT/'02_CHARACTERS'/name
         out=EP/(line['id']+'_'+line['speaker']+'.wav')
         if out.exists() and line['id'] in records:
+            if any(records[line['id']].get(k)!=line.get(k) for k in ('speaker','text','reading')):
+                raise ValueError('Existing take differs; use a new revision ID: '+line['id'])
             print('EXISTS',line['id'],flush=True);continue
         env=os.environ.copy();env['IRODORI_CFG_SCALE_TEXT']='5'
         if line['speaker']=='yametaro':env.update(IRODORI_UNCUT='1',IRODORI_DURATION_SCALE='0.70')
@@ -42,7 +44,8 @@ def main():
         else:out.write_bytes(candidate.read_bytes())
         duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',str(out)],text=True))
         records[line['id']]={**line,'file':out.name,'reference':str(ref.relative_to(ROOT)),'reference_sha256':hashlib.sha256(ref.read_bytes()).hexdigest(),'seed':seed,'caption':caption,'model':'Aratako/Irodori-TTS-v4-Large' if line['speaker']=='sobaya' else 'Aratako/Irodori-TTS-v4.1-Small','cfg_text':5,'duration_scale':0.70 if line['speaker']=='yametaro' else 1.0,'uncut':line['speaker']=='yametaro','duration':duration,'generation_seconds':time.time()-start,'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'status':'generated; audit pending'}
-        records_path.write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
+        temporary=records_path.with_suffix('.json.tmp')
+        temporary.write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n');temporary.replace(records_path)
         print('DONE',line['id'],duration,flush=True)
 
 if __name__=='__main__':main()

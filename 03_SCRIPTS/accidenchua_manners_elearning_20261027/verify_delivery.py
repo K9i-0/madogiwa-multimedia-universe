@@ -6,9 +6,17 @@ from datetime import datetime
 from pathlib import Path
 
 EP = Path(__file__).resolve().parent
-video = EP / 'final_remotion_elearning.mp4'
 manifest = json.loads((EP / 'remotion/src/edit-manifest.json').read_text())
+content = json.loads((EP / 'content.json').read_text())
+video = EP / manifest['outputFile']
 assert not manifest['pending'], manifest['pending']
+assert manifest['revision'] == content['revision'] == 2
+assert content['chapters'][2]['options'][content['chapters'][2]['answer']] == '窓際なのにすみません'
+for chapter in content['chapters']:
+    assert set(chapter['cast']) == {'sobaya', 'fukuchan'}
+    assert sorted(f['option'] for f in chapter['feedback']) == [0, 1, 2]
+    assert all(f['correct'] == (f['option'] == chapter['answer']) for f in chapter['feedback'])
+    assert len([s for s in manifest['segments'] if s['type'] == 'feedback' and s['chapter'] == chapter['number']]) == 3
 
 probe = json.loads(subprocess.check_output([
     'ffprobe', '-v', 'error', '-show_streams', '-show_format', '-of', 'json', str(video)
@@ -30,6 +38,7 @@ measurement = subprocess.run([
 ], capture_output=True, text=True, check=True)
 levels = json.JSONDecoder().raw_decode(measurement.stderr[measurement.stderr.rfind('{'):])[0]
 assert float(levels['input_tp']) <= 0, levels
+assert -17 <= float(levels['input_i']) <= -15, levels
 
 cursor = 0
 for segment in manifest['segments']:
@@ -45,8 +54,12 @@ for before, after in zip(captions, captions[1:]):
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
+frame_audit = json.loads((EP / 'generated/audit-r2/encoded/manifest.json').read_text())
+assert frame_audit['sha256'] == sha(video)
+assert len(frame_audit['frames']) >= len(captions)
+
 runs = []
-for name in ('h3-job', 'h3-retry'):
+for name in ('h3-job', 'h3-r2'):
     result = EP / 'generated' / name / 'results'
     status = json.loads((result / 'status.json').read_text())
     assert status['status'] == 'complete'
@@ -55,7 +68,13 @@ for name in ('h3-job', 'h3-retry'):
     runs.append({'job': name, **status})
 
 voices = json.loads((EP / 'voice-records.json').read_text())
-for record in voices.values():
+active_lines = list(content['opening']) + list(content['ending'])
+for chapter in content['chapters']:
+    active_lines += chapter['dialogue'] + [chapter['question']] + [f['line'] for f in chapter['feedback']]
+active_ids = {line['id'] for line in active_lines}
+for line in active_lines:
+    record = voices[line['id']]
+    assert record['text'] == line['text']
     assert sha(EP / record['file']) == record['sha256']
 adopted = []
 for chapter in manifest['chapters']:
@@ -63,9 +82,10 @@ for chapter in manifest['chapters']:
     adopted.append({'chapter': chapter['id'], 'video': chapter['video'],
                     'sha256': sha(path), 'audio_mode': chapter['audioMode']})
 asr = []
-for stem in ('q1_480p', 'final_q2_clip_mix', 'final_q3_clip_mix', 'q4_480p', 'q5_480p'):
+for stem in (f'final_q{n}_clip_mix' for n in range(1, 6)):
     evidence = json.loads((EP / 'generated/asr' / (stem + '.json')).read_text())
-    asr.append({'source': stem, 'text': evidence['text']})
+    assert evidence['source_sha256'] == sha(EP / 'generated' / (stem + '.wav'))
+    asr.append({'source': stem, 'text': evidence['text'], 'source_sha256': evidence['source_sha256']})
 
 report = {
     'verified_at': datetime.now().astimezone().isoformat(),
@@ -79,12 +99,18 @@ report = {
     'audio_lra': float(levels['input_lra']),
     'decode_to_end': 'passed', 'timeline': 'contiguous',
     'caption_count': len(captions), 'caption_overlap': False,
-    'adopted_voice_files_verified': len(voices),
+    'encoded_frame_audit': {'manifest': 'generated/audit-r2/encoded/manifest.json',
+                            'sample_count': len(frame_audit['frames']), 'contact_sheets': len(frame_audit['pages'])},
+    'revision': 2,
+    'cast_in_all_scenes': ['そば屋', '福ギュン'],
+    'feedback_narrations': 15,
+    'adopted_voice_files_verified': len(active_ids),
+    'active_voice_ids': sorted(active_ids),
     'h3_runs': runs, 'adopted_clips': adopted,
     'final_scene_asr': asr,
     'review_scope': {
-        'visual': 'Chronological H3 samples, shirt repair samples, and every question, answer and explanation layout inspected.',
-        'audio': 'ASR wording, waveform timing and technical loudness checks. Q2/Q3 final mixes re-transcribed after replacement.',
+        'visual': 'Chronological samples of all five adopted H3 clips, localized shirt repairs, all question/answer/feedback layouts and encoded caption frames inspected.',
+        'audio': 'Canonical narration and dialogue ASR wording reviewed; all five final scene mixes re-transcribed with source hashes. Waveform timing and encoded loudness checked.',
         'auditory_listening': False,
         'precise_lipsync_verified': False
     }

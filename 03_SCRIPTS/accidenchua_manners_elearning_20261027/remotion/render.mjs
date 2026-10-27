@@ -17,14 +17,13 @@ try{
   for(const s of shots){
    const chapter=m.chapters[(s.chapter||1)-1];
    if(s.type==='clip'&&!chapter.videoReady)continue;
-   if(s.type==='explain'&&!chapter.stillReady)continue;
-   const offset=s.type==='opening'?100:Math.min(s.duration-1,s.type==='explain'?Math.round(s.duration*.55):s.type==='ending'?s.duration-25:65);
+   const offset=s.type==='opening'?100:Math.min(s.duration-1,s.type==='feedback'?Math.round(s.duration*.55):s.type==='ending'?s.duration-25:65);
    await renderStill({serveUrl,composition,puppeteerInstance:browser,frame:s.start+offset,imageFormat:'png',output:`out/${s.id}.png`});
    console.log('STILL',s.id);
   }
  }else{
   let last=-1;
-  await renderMedia({serveUrl,composition,puppeteerInstance:browser,codec:'h264',crf:17,pixelFormat:'yuv420p',imageFormat:'jpeg',jpegQuality:96,concurrency:3,muted:true,outputLocation:'out/course-picture.mp4',onProgress:p=>{const pc=Math.floor(p.progress*100);if(pc!==last){last=pc;console.log('RENDER',pc+'%',p.renderedFrames);}}});
-  execFileSync('ffmpeg',['-y','-v','error','-i','out/course-picture.mp4','-i','public/audio/master.wav','-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-ar','48000','-t',String(m.composition.durationInFrames/24),'-movflags','+faststart','../final_remotion_elearning.mp4'],{stdio:'inherit'});
+  await renderMedia({serveUrl,composition,puppeteerInstance:browser,codec:'h264',crf:17,pixelFormat:'yuv420p',imageFormat:'jpeg',jpegQuality:96,concurrency:4,muted:true,outputLocation:'out/course-picture.mp4',onProgress:p=>{const pc=Math.floor(p.progress*100);if(pc!==last){last=pc;console.log('RENDER',pc+'%',p.renderedFrames);}}});
+  execFileSync('ffmpeg',['-y','-v','error','-i','out/course-picture.mp4','-i','public/audio/master.wav','-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-ar','48000','-t',String(m.composition.durationInFrames/24),'-movflags','+faststart','../'+(m.outputFile||'final_remotion_elearning.mp4')],{stdio:'inherit'});
  }
 }finally{await browser.close({silent:true});}

@@ -1,0 +1,42 @@
+{
+  "video_id": "5XBCCTBE6GU",
+  "file": "youtube_thumbnail_first_frame.jpg",
+  "sha256": "2ac774e933c90406abdea3a5b21e8203f1b80456039cdb984e2a85eb408426f6",
+  "source_video": "final_remotion_elearning_v2.mp4",
+  "source_video_sha256": "6196f9fbabe1ebae6f8b48984e315792cead4c429328f28b9a89d627333aaebc",
+  "source_frame": 0,
+  "set_at": "2026-10-28T06:12:23.068565+09:00",
+  "response": {
+    "kind": "youtube#thumbnailSetResponse",
+    "etag": "ubpzQGrs8L3hWzpaR1rl9a5CurI",
+    "items": [
+      {
+        "default": {
+          "url": "https://i.ytimg.com/vi/5XBCCTBE6GU/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/5XBCCTBE6GU/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/5XBCCTBE6GU/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/5XBCCTBE6GU/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/5XBCCTBE6GU/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      }
+    ]
+  }
+}

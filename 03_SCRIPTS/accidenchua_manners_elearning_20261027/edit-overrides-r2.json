@@ -1,0 +1,22 @@
+{
+  "q2": {
+    "dialogue_starts": {
+      "q2_d1": 60
+    },
+    "reason": "H3 adds a repeated opening interjection and delays the line until the crossing is over. Use the canonical Sobaya WAV at 2.5s while Fukugyun is blocking the view. Sobaya wears a rigid mask; precise lipsync remains unverified."
+  },
+  "q4": {
+    "dialogue_starts": {
+      "r2_q4_d1": 110,
+      "r2_q4_d2": 191
+    },
+    "reason": "Final-mix ASR ambiguously transcribes the particle in Sobaya’s line as を instead of は and adds an initial filler absent from the script. Use both canonical WAVs at the observed H3 speaking intervals to preserve exact wording. Auditory and precise lipsync review remain unverified."
+  },
+  "q1": {
+    "dialogue_starts": {
+      "q1_d1": 107,
+      "q1_d2": 210
+    },
+    "reason": "Native-video ASR matches the script, but final-mix ASR adds a repeated greeting during the silent opening. Use canonical WAVs at the observed speaking intervals for exact wording. This addresses transcription ambiguity; no claim of auditory verification."
+  }
+}

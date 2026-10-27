@@ -25,6 +25,7 @@ SCENES={
 
 def main():
  d=json.loads((EP/'content.json').read_text());voices=json.loads((EP/'voice-records.json').read_text())
+ if d.get('revision',1)>1:raise ValueError('Revision 2 uses build_h3_r2.py; retain the original executed prompts.')
  for key in NAMES:
   shutil.copy2(SHEETS/f'character_{key}_basic_sheet.png',EP/f'input_{key}.png')
  shutil.copy2(ROOT/'02_CHARACTERS/Fukuchan.jpg',EP/'input_fukuchan_photo.jpg')

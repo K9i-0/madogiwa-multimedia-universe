@@ -50,7 +50,7 @@ def spoken_cue(row,word):
 charge=next(r for r in rows if r['view']=='additional_charge' and r['who']=='metan')
 logic=next(r for r in rows if r['text'].startswith('毒ちくわを、一匹'))
 absence=next(r for r in rows if r['view']=='poison_absence')
-cues={'chargeReveal':spoken_cue(charge,'ワイセツ'),'logicReveal':spoken_cue(logic,'サイショカラ'),'absenceReveal':spoken_cue(absence,'イッサイ'),'horrorStart':next(r['startFrame'] for r in rows if r['view']=='handoff_market'),'silenceStart':logic['startFrame']-24,'silenceEnd':logic['startFrame']+logic['durationInFrames']+logic['pause'],'codaRecord':coda+210,'codaApproval':coda+420}
+cues={'chargeReveal':spoken_cue(charge,'ワイセツ'),'logicReveal':spoken_cue(logic,'サイショカラ'),'absenceReveal':spoken_cue(absence,'イッサイ'),'horrorStart':next(r['startFrame'] for r in rows if r['view']=='poison_absence'),'silenceStart':logic['startFrame']-24,'silenceEnd':logic['startFrame']+logic['durationInFrames']+logic['pause'],'codaRecord':coda+210,'codaApproval':coda+420}
 # Keep the late charge out of the subtitle until it is spoken.
 caps=[c for c in caps if c['lineId']!=charge['id']]
 for a,b,text in [(charge['startFrame'],cues['chargeReveal'],'なお、霜重研究員は、\n不法侵入に加えて、'),(cues['chargeReveal'],charge['startFrame']+charge['durationInFrames'],'猥褻物陳列罪の容疑でも\n逮捕されているわ。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=charge['id']))
@@ -58,10 +58,19 @@ caps=[c for c in caps if c['lineId']!=logic['id']]
 for a,b,text in [(logic['startFrame'],cues['logicReveal'],'毒ちくわを、一匹残らず\n取り除いているのではない。'),(cues['logicReveal'],logic['startFrame']+logic['durationInFrames'],'最初から、生きたちくわを一匹も\n使っていないのではないか。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=logic['id']))
 # Punchlines reveal with the spoken word, not the earlier caption page.
 for prefix,word,key,left,right in [
- ('味、弾力','セエメエ','lifeReveal','味、弾力、焼き色まで再現できたわ。\n残る相違点は、','生命活動だけだった。'),
- ('研究員は、教科書','ツギニ','teacherReveal','研究員は、教科書の養殖の章を、\n企業の宣伝資料として分類し直したわ。','次に調べるのは、給食のちくわと、\n社会科の先生の関係よ。')]:
+ ('味、弾力','セエメエ','lifeReveal','味、弾力、焼き色まで再現できたわ。\n残る相違点は、','生命活動だけだった。')]:
  row=next(r for r in rows if r['text'].startswith(prefix));cut=spoken_cue(row,word);cues[key]=cut
  caps=[c for c in caps if c['lineId']!=row['id']]
+ for a,b,text in [(row['startFrame'],cut,left),(cut,row['startFrame']+row['durationInFrames'],right)]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=row['id']))
+isobe=next(r for r in rows if r['view']=='isobe')
+cues['isobeReveal']=spoken_cue(isobe,'イソベアゲ')
+verdict=next(r for r in rows if r['text'].startswith('ただ、研究員は'))
+cues['verdictReveal']=spoken_cue(verdict,'アゲタテ')
+for row,key,left,right in [
+ (isobe,'isobeReveal','中口研究員、昨日それを','磯辺揚げにしていたのだ。'),
+ (verdict,'verdictReveal','ただ、研究員は最後まで比較を続けたそうよ。\n市販品も、天然物も、','揚げたてがおいしかったと。')]:
+ caps=[c for c in caps if c['lineId']!=row['id']]
+ cut=cues[key]
  for a,b,text in [(row['startFrame'],cut,left),(cut,row['startFrame']+row['durationInFrames'],right)]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=row['id']))
 caps.sort(key=lambda c:c['startFrame'])
 m=dict(cues=cues,codaDurationFrames=600,codaStartFrame=coda,composition=dict(width=1280,height=720,fps=30,durationInFrames=coda+600),dialogue=rows,captions=caps,clips=clips,views=views,mainStartFrame=next(r['startFrame'] for r in rows if r['text'].startswith('めたんのミステリー研究所へ、ようこそ。'))-18,endingStartFrame=next(r['startFrame'] for r in rows if r['view']=='callback'),voicevoxVersion='0.25.1')

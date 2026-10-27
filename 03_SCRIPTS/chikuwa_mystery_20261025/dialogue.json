@@ -52,27 +52,19 @@
     "scene": "intro",
     "view": "title",
     "who": "metan",
-    "text": "めたんのミステリー研究所へ、ようこそ。このチャンネルでは、身近な常識に潜む謎を、研究員たちの調査とともに追っていきます。今夜のテーマは、あなたが食べたちくわは、本当にちくわだったのか。",
+    "text": "めたんのミステリー研究所へ、ようこそ。このチャンネルでは、身近な常識に潜む謎を、研究員たちの調査とともに追っていきます。",
     "pause": 9
   },
   {
     "id": "line-007",
     "scene": "biology",
-    "view": "ranks",
+    "view": "species",
     "who": "metan",
-    "text": "まず、一般的な分類を確認しましょう。ちくわは、管状動物門、真管綱、チクワ目に属する動物よ。",
+    "text": "海産のウミチクワと、山産のヤマチクワは、共通祖先から分かれた別の種。管状動物門に属し、中央の穴で水や空気を通す動物よ。",
     "pause": 9
   },
   {
     "id": "line-008",
-    "scene": "biology",
-    "view": "species",
-    "who": "metan",
-    "text": "海産のウミチクワと、山産のヤマチクワは、共通祖先から分かれた別の種とされているわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-009",
     "scene": "biology",
     "view": "species",
     "who": "zunda",
@@ -80,23 +72,7 @@
     "pause": 14
   },
   {
-    "id": "line-010",
-    "scene": "biology",
-    "view": "anatomy",
-    "who": "metan",
-    "text": "中央の穴は、水や空気を通す通水腔。体内の細い水路とつながり、物質の交換を助けているの。",
-    "pause": 9
-  },
-  {
-    "id": "line-011",
-    "scene": "biology",
-    "view": "anatomy",
-    "who": "metan",
-    "text": "明確な頭部を持たず、神経が身体全体に広がる。初期の動物に見られる、単純な体制を残しているわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-012",
+    "id": "line-009",
     "scene": "biology",
     "view": "escape",
     "who": "metan",
@@ -105,7 +81,7 @@
     "clipAfter": "escape"
   },
   {
-    "id": "line-013",
+    "id": "line-010",
     "scene": "biology",
     "view": "comparison",
     "who": "metan",
@@ -113,7 +89,7 @@
     "pause": 9
   },
   {
-    "id": "line-014",
+    "id": "line-011",
     "scene": "biology",
     "view": "comparison",
     "who": "zunda",
@@ -121,7 +97,7 @@
     "pause": 14
   },
   {
-    "id": "line-015",
+    "id": "line-012",
     "scene": "biology",
     "view": "attraction",
     "who": "metan",
@@ -129,31 +105,31 @@
     "pause": 9
   },
   {
-    "id": "line-016",
+    "id": "line-013",
     "scene": "experiment",
     "view": "nakaguchi",
     "who": "metan",
-    "text": "天然のちくわには、こうした生物としての特徴がある。では、店で買ったものにも、同じ特徴があるのか。そこを調べたのが、広域未確認生物研究所の中口研究員よ。",
+    "text": "では、店で買ったちくわにも、生き物の特徴は残っているのか。調査したのが、広域未確認生物研究所の中口研究員よ。",
     "pause": 9
   },
   {
-    "id": "line-017",
+    "id": "line-014",
     "scene": "experiment",
     "view": "analysis",
     "who": "metan",
-    "text": "購入したちくわを分析し、魚肉に似たタンパク質と、加熱で固まった組織を確認。原料は魚ではないかと考えたの。",
+    "text": "購入品から、魚肉に似たタンパク質と、加熱で固まった組織を確認。均一な穴や、巻いたような継ぎ目も見つかったの。",
     "pause": 9
   },
   {
-    "id": "line-018",
+    "id": "line-015",
     "scene": "experiment",
     "view": "analysis",
     "who": "zunda",
-    "text": "ちくわを調べたのだから、ちくわの成分なのだ。焼いたちくわは、当然、加熱されているのだ。",
+    "text": "焼いたちくわを調べて、焼けていると言われても困るのだ。",
     "pause": 14
   },
   {
-    "id": "line-019",
+    "id": "line-016",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -161,7 +137,7 @@
     "pause": 9
   },
   {
-    "id": "line-020",
+    "id": "line-017",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -169,7 +145,7 @@
     "pause": 23
   },
   {
-    "id": "line-021",
+    "id": "line-018",
     "scene": "experiment",
     "view": "process",
     "who": "zunda",
@@ -177,95 +153,127 @@
     "pause": 14
   },
   {
-    "id": "line-022",
+    "id": "line-019",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
-    "text": "研究員が恐れているのは、この替え玉が、本物に混ぜて売られている可能性よ。私たちは、気づかないまま食べているのかもしれない。",
+    "text": "もちろん、焼いた天然物も動かない。だから、動かないというだけでは区別できないの。でも、魚から見分けにくいものを作れることは分かったわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-020",
+    "scene": "supply",
+    "view": "poison_absence",
+    "who": "metan",
+    "text": "中口研究員が次に注目したのは、毒ちくわ。野外では食用種に混じるのに、調べた市販品には、一切含まれていなかったの。",
+    "pause": 9
+  },
+  {
+    "id": "line-021",
+    "scene": "supply",
+    "view": "poison_absence",
+    "who": "zunda",
+    "text": "お店に出す前に、ちゃんと選別しているのでは？",
+    "pause": 14
+  },
+  {
+    "id": "line-022",
+    "scene": "supply",
+    "view": "selection",
+    "who": "metan",
+    "text": "外見では判別できず、ビール臭も洗浄や加熱で失われる。成分検査なら分かるけれど、一本ずつ組織を採って調べる必要があるわ。",
     "pause": 9
   },
   {
     "id": "line-023",
-    "scene": "experiment",
-    "view": "manufacturers",
+    "scene": "supply",
+    "view": "selection",
     "who": "metan",
-    "text": "中口研究員は、購入品の一部に、不自然なほど均一な穴と、継ぎ目のような跡があると指摘したわ。生き物の身体ではなく、型で作った痕跡ではないかと。",
+    "text": "ところが、市販品を全数検査しているという記録もない。どうやって、毒ちくわだけを取り除いているのか。",
     "pause": 9
   },
   {
     "id": "line-024",
-    "scene": "experiment",
-    "view": "network",
+    "scene": "supply",
+    "view": "selection",
     "who": "metan",
-    "text": "もし偽物が本物に混ざり、同じ売り場に並んでいたら、食卓に届くころには誰も疑わない。研究員は、このすり替えを支える国家規模の組織があると考えたわ。",
+    "text": "市販品から毒が検出されないたびに、中口研究員は疑いを深めていったわ。",
     "pause": 9
   },
   {
     "id": "line-025",
-    "scene": "experiment",
-    "view": "network",
+    "scene": "supply",
+    "view": "selection",
     "who": "zunda",
-    "text": "穴がきれいなだけで、国家ぐるみの食品偽装にするな。",
+    "text": "検査に合格して、容疑が深まったのだ。",
     "pause": 14
   },
   {
     "id": "line-026",
-    "scene": "history",
-    "view": "handoff_history",
+    "scene": "supply",
+    "view": "official",
     "who": "metan",
-    "text": "もし本当に流通しているなら、この製法は、いつ、誰が始めたのか。その記録を追ったのが、狭間文明研究所の霜重研究員よ。",
-    "pause": 18
-  },
-  {
-    "id": "line-027",
-    "scene": "history",
-    "view": "shimoju",
-    "who": "metan",
-    "text": "研究員が見つけたのは、魚肉を竹に巻いて焼く方法が記された、古い文献だったわ。",
+    "text": "企業の説明は、食用種だけを育てる閉鎖型の養殖。政府も、養殖技術の発展によって、季節を問わず安全に出荷できるとしているわ。",
     "pause": 9
   },
   {
+    "id": "line-027",
+    "scene": "supply",
+    "view": "official",
+    "who": "zunda",
+    "text": "そうなのだ。毒ちくわが入ってこない場所で育てればいいのだ。学校でも習ったのだ。",
+    "pause": 14
+  },
+  {
     "id": "line-028",
-    "scene": "history",
-    "view": "shimoju",
+    "scene": "supply",
+    "view": "secret",
     "who": "metan",
-    "text": "時代の異なる資料にも、同じような工程がある。霜重研究員は、人工ちくわの製造が長く続いてきた証拠と考えたの。",
+    "text": "中口研究員は、養殖施設と繁殖工程の資料を求めたの。回答は、独自技術のため非公開。代わりに提供されたのは、工場の加工映像だったわ。",
     "pause": 9
   },
   {
     "id": "line-029",
-    "scene": "history",
-    "view": "shimoju",
-    "who": "zunda",
-    "text": "こんな古文書の画像、いまならAIでいくらでも捏造できるのだ。現物は確認したのだ？",
-    "pause": 14
+    "scene": "supply",
+    "view": "growth",
+    "who": "metan",
+    "text": "魚肉を練り、棒に巻き、加熱する。卵も幼体も出てこない。これは、中口研究員が試した製法と同じなの。",
+    "pause": 9
   },
   {
     "id": "line-030",
-    "scene": "history",
-    "view": "oldnetwork",
+    "scene": "supply",
+    "view": "growth",
     "who": "metan",
-    "text": "霜重研究員は、画像に残る製法が、何度も政権交代を生き延びている点に注目。政府より長く存在する組織を疑ったわ。",
+    "text": "魚肉から作るなら、季節を待つ必要も、有毒種を選り分ける必要もない。",
     "pause": 9
   },
   {
     "id": "line-031",
-    "scene": "history",
-    "view": "oldnetwork",
-    "who": "zunda",
-    "text": "現物の確認はどうしたのだ。レシピが長持ちしただけで、秘密結社を作るな。",
-    "pause": 14
+    "scene": "supply",
+    "view": "poison_logic",
+    "who": "metan",
+    "text": "毒ちくわを、一匹残らず取り除いているのではない。最初から、生きたちくわを一匹も使っていないのではないか。",
+    "pause": 36
   },
   {
     "id": "line-032",
-    "scene": "infiltration",
-    "view": "factory",
-    "who": "metan",
-    "text": "古い記録だけでは、今も作られている証拠にはならない。霜重研究員は、製造の現場を確かめようと、日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
-    "pause": 9
+    "scene": "supply",
+    "view": "poison_logic",
+    "who": "zunda",
+    "text": "加工の前に、ちゃんと養殖しているのかもしれないのだ。そこを確かめるのだ。",
+    "pause": 14
   },
   {
     "id": "line-033",
+    "scene": "infiltration",
+    "view": "factory",
+    "who": "metan",
+    "text": "その生産現場を確かめるため、狭間文明研究所の霜重研究員が、日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
+    "pause": 9
+  },
+  {
+    "id": "line-034",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -273,7 +281,7 @@
     "pause": 25
   },
   {
-    "id": "line-034",
+    "id": "line-035",
     "scene": "infiltration",
     "view": "arrest",
     "who": "zunda",
@@ -281,7 +289,7 @@
     "pause": 25
   },
   {
-    "id": "line-035",
+    "id": "line-036",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -289,7 +297,7 @@
     "pause": 25
   },
   {
-    "id": "line-036",
+    "id": "line-037",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "metan",
@@ -297,7 +305,7 @@
     "pause": 9
   },
   {
-    "id": "line-037",
+    "id": "line-038",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "zunda",
@@ -305,7 +313,7 @@
     "pause": 14
   },
   {
-    "id": "line-038",
+    "id": "line-039",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "metan",
@@ -313,7 +321,7 @@
     "pause": 9
   },
   {
-    "id": "line-039",
+    "id": "line-040",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "zunda",
@@ -321,7 +329,7 @@
     "pause": 14
   },
   {
-    "id": "line-040",
+    "id": "line-041",
     "scene": "infiltration",
     "view": "drink",
     "who": "metan",
@@ -329,7 +337,7 @@
     "pause": 9
   },
   {
-    "id": "line-041",
+    "id": "line-042",
     "scene": "infiltration",
     "view": "incident",
     "who": "metan",
@@ -337,7 +345,7 @@
     "pause": 9
   },
   {
-    "id": "line-042",
+    "id": "line-043",
     "scene": "infiltration",
     "view": "incident",
     "who": "zunda",
@@ -345,19 +353,11 @@
     "pause": 20
   },
   {
-    "id": "line-043",
+    "id": "line-044",
     "scene": "infiltration",
     "view": "incident",
     "who": "metan",
     "text": "その圧力を突破して敷地に入り、酔って暴れたため、警察に逮捕されたわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-044",
-    "scene": "infiltration",
-    "view": "police",
-    "who": "metan",
-    "text": "注目すべきは、警備員と警察が連携していたことよ。",
     "pause": 9
   },
   {
@@ -402,262 +402,110 @@
   },
   {
     "id": "line-050",
-    "scene": "supply",
+    "scene": "evidence",
     "view": "handoff_market",
     "who": "metan",
-    "text": "結局、製造現場は確認できなかった。でも、工場から出てくる製品なら、店で買って調べられる。研究チームは、そこへ調査を切り替えたの。",
+    "text": "結局、工場の中は確認できなかった。そこで中口研究員は、別に取り分けて保管していた市販品と天然個体を、第三者機関で比較鑑定してもらうことにしたの。",
     "pause": 18
   },
   {
     "id": "line-051",
-    "scene": "supply",
-    "view": "kitahara",
+    "scene": "evidence",
+    "view": "missing",
     "who": "metan",
-    "text": "担当したのは、未知環境生理研究所の北原研究員。市販品を調べた研究員は、そこに、あるものが一匹もいないことに気づいたわ。",
+    "text": "ところが、発送の直前、証拠品がすべて消えていたの。市販品も、天然個体も。比較に必要なものだけが、きれいになくなっていたわ。",
     "pause": 9
   },
   {
     "id": "line-052",
-    "scene": "supply",
-    "view": "poison_absence",
+    "scene": "evidence",
+    "view": "missing",
     "who": "metan",
-    "text": "毒ちくわよ。野外では食用種に混じって見つかるのに、市販品には、一切含まれていない。",
-    "pause": 9
+    "text": "何者かによって、証拠品が盗まれた可能性が高い。人工ちくわの流通を知られたくない組織が、研究所にまで手を伸ばしたのよ。",
+    "pause": 20
   },
   {
     "id": "line-053",
-    "scene": "supply",
-    "view": "poison_absence",
-    "who": "metan",
-    "text": "海でも山でも、採集時の混入は避けられない。しかも、さっき見たとおり、外見で見分けるのは不可能なの。",
-    "pause": 9
-  },
-  {
-    "id": "line-054",
-    "scene": "supply",
-    "view": "poison_absence",
+    "scene": "evidence",
+    "view": "isobe",
     "who": "zunda",
-    "text": "お店に出す前に、ちゃんと選別しているのでは？",
+    "text": "中口研究員、昨日それを磯辺揚げにしていたのだ。",
     "pause": 14
   },
   {
-    "id": "line-055",
-    "scene": "supply",
-    "view": "selection",
+    "id": "line-054",
+    "scene": "evidence",
+    "view": "isobe",
     "who": "metan",
-    "text": "北原研究員も、まず選別方法を調べたわ。でも、食用種だけを外見で選び出す技術は、確認できなかった。",
+    "text": "……本人は、食感を比較するためだったと説明しているわ。",
     "pause": 9
   },
   {
+    "id": "line-055",
+    "scene": "evidence",
+    "view": "isobe",
+    "who": "zunda",
+    "text": "おかわりもしていたのだ。",
+    "pause": 42
+  },
+  {
     "id": "line-056",
-    "scene": "supply",
-    "view": "selection",
+    "scene": "evidence",
+    "view": "verdict",
     "who": "metan",
-    "text": "毒ちくわのビール臭も、流通品の鑑定には使えない。洗浄や加熱、保管で失われるからよ。",
+    "text": "鑑定用の現物を、全部食べてしまった。測定記録は残っているけれど、今回の試料を第三者に検証してもらうことはできなくなったわ。",
     "pause": 9
   },
   {
     "id": "line-057",
-    "scene": "supply",
-    "view": "selection",
+    "scene": "evidence",
+    "view": "verdict",
     "who": "metan",
-    "text": "毒の検査なら判別はできる。ただし、全ての個体を確実に調べるには、一本ずつ組織を採り、成分を分析しなければならない。",
+    "text": "ただ、研究員は最後まで比較を続けたそうよ。市販品も、天然物も、揚げたてがおいしかったと。",
     "pause": 9
   },
   {
     "id": "line-058",
-    "scene": "supply",
-    "view": "selection",
-    "who": "metan",
-    "text": "ところが、市販品を全数検査しているという記録もない。研究員が疑問を持ったのは、選び分けた痕跡がないのに、毒だけが完全に消えていることなの。",
-    "pause": 9
+    "scene": "evidence",
+    "view": "verdict",
+    "who": "zunda",
+    "text": "研究の成果が夕飯の感想なのだ。",
+    "pause": 14
   },
   {
     "id": "line-059",
-    "scene": "supply",
-    "view": "selection",
+    "scene": "ending",
+    "view": "findings",
     "who": "metan",
-    "text": "市販品から毒が検出されないたびに、北原研究員は疑いを深めていったわ。",
+    "text": "現地調査は逮捕で中断。比較鑑定は、証拠品がなくなって中止。今回の調査では、人工ちくわの流通を証明できなかったわ。",
     "pause": 9
   },
   {
     "id": "line-060",
-    "scene": "supply",
-    "view": "selection",
+    "scene": "ending",
+    "view": "findings",
     "who": "zunda",
-    "text": "検査に合格して、容疑が深まったのだ。",
+    "text": "次は、アポを取って、証拠を食べずに調べるのだ。",
     "pause": 14
   },
   {
     "id": "line-061",
-    "scene": "supply",
-    "view": "official",
+    "scene": "ending",
+    "view": "findings",
     "who": "metan",
-    "text": "企業の説明は、食用種だけを管理して育てる、閉鎖型の養殖よ。政府も、養殖技術の発展によって、安全な通年供給が実現したとしているわ。",
+    "text": "それでも、疑問は残っている。魚から再現できる形。毒のない市販品。そして、一度も確認できていない養殖の現場。",
     "pause": 9
   },
   {
     "id": "line-062",
-    "scene": "supply",
-    "view": "official",
-    "who": "zunda",
-    "text": "そうなのだ。毒ちくわが入ってこない場所で育てればいいのだ。学校でも習ったのだ。",
-    "pause": 14
+    "scene": "ending",
+    "view": "findings",
+    "who": "metan",
+    "text": "あなたが昨日食べた一本も、海にも山にも、一度もいたことがないのかもしれない。",
+    "pause": 9
   },
   {
     "id": "line-063",
-    "scene": "supply",
-    "view": "secret",
-    "who": "metan",
-    "text": "それなら、育っている現場を見ればいい。北原研究員は、その施設と、食用種だけを増やす繁殖工程の資料を求めたの。",
-    "pause": 9
-  },
-  {
-    "id": "line-064",
-    "scene": "supply",
-    "view": "secret",
-    "who": "metan",
-    "text": "回答は、独自技術のため非公開。施設の確認はできず、取材に提供されたのは、工場の加工映像だったわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-065",
-    "scene": "supply",
-    "view": "growth",
-    "who": "metan",
-    "text": "魚肉を練り、棒に巻き、加熱する。卵も、ちくわの幼体も、成長する過程も出てこない。でも、出荷できる形だけは完成する。",
-    "pause": 9
-  },
-  {
-    "id": "line-066",
-    "scene": "supply",
-    "view": "growth",
-    "who": "metan",
-    "text": "ここで、中口研究員の再現実験とつながるの。魚肉から作るなら、季節を待つ必要も、有毒種を選り分ける必要もない。",
-    "pause": 33
-  },
-  {
-    "id": "line-067",
-    "scene": "supply",
-    "view": "poison_logic",
-    "who": "metan",
-    "text": "毒ちくわを、一匹残らず取り除いているのではない。最初から、生きたちくわを一匹も使っていないのではないか。",
-    "pause": 36
-  },
-  {
-    "id": "line-068",
-    "scene": "supply",
-    "view": "poison_logic",
-    "who": "zunda",
-    "text": "養殖場を見せてもらえなかっただけで、偽物と決めるのは早いのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-069",
-    "scene": "supply",
-    "view": "poison_logic",
-    "who": "metan",
-    "text": "毒がないことだけが根拠ではないわ。魚肉に似た組織、巻いたような継ぎ目、再現できる製造工程。別々だった疑問が、同じ説明につながったわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-070",
-    "scene": "conspiracy2",
-    "view": "substitution",
-    "who": "metan",
-    "text": "天然のちくわは、本当に存在する。その名前で売られるものまで、全て生き物だったとは限らない。",
-    "pause": 9
-  },
-  {
-    "id": "line-071",
-    "scene": "conspiracy2",
-    "view": "substitution",
-    "who": "metan",
-    "text": "研究チームは、魚肉から作った人工ちくわが、養殖物として売られていると結論づけたの。",
-    "pause": 9
-  },
-  {
-    "id": "line-072",
-    "scene": "conspiracy2",
-    "view": "substitution",
-    "who": "zunda",
-    "text": "それが本当なら、養殖技術の話ではなく、食品偽装なのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-073",
-    "scene": "conspiracy2",
-    "view": "leap",
-    "who": "metan",
-    "text": "そして政府は、その養殖技術を保証している。北原研究員は、企業と国家が共有する、巨大な隠蔽計画だと主張したわ。",
-    "pause": 25
-  },
-  {
-    "id": "line-074",
-    "scene": "conspiracy2",
-    "view": "leap",
-    "who": "metan",
-    "text": "私は、食卓だけの問題ではないと思うの。教科書で養殖と教え、商品にも養殖と書く。疑問を持たない消費者を、子どもの頃から育てているのよ。",
-    "pause": 25
-  },
-  {
-    "id": "line-075",
-    "scene": "conspiracy2",
-    "view": "leap",
-    "who": "zunda",
-    "text": "ちくわを育てていないという話から、国民を育てている話になったのだ。",
-    "pause": 25
-  },
-  {
-    "id": "line-076",
-    "scene": "conspiracy2",
-    "view": "education",
-    "who": "metan",
-    "text": "研究員は、教科書の養殖の章を、企業の宣伝資料として分類し直したわ。次に調べるのは、給食のちくわと、社会科の先生の関係よ。",
-    "pause": 9
-  },
-  {
-    "id": "line-077",
-    "scene": "conspiracy2",
-    "view": "education",
-    "who": "metan",
-    "text": "本物がいるから、偽物も疑われない。安全だから、誰も中身を調べない。私たちは、安心と引き換えに、正体を知る機会を失っているの。",
-    "pause": 9
-  },
-  {
-    "id": "line-078",
-    "scene": "conspiracy2",
-    "view": "education",
-    "who": "zunda",
-    "text": "先生は教科書を読んだだけなのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-079",
-    "scene": "ending",
-    "view": "findings",
-    "who": "metan",
-    "text": "毒を選り分けたのか。そもそも、生き物を使っていないのか。研究チームは、養殖施設と製造工程の公開を求めているわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-080",
-    "scene": "ending",
-    "view": "findings",
-    "who": "zunda",
-    "text": "……昨日、食べたのだ。養殖だと書いてあったのだ。",
-    "pause": 32
-  },
-  {
-    "id": "line-081",
-    "scene": "ending",
-    "view": "findings",
-    "who": "metan",
-    "text": "その一本が、海にも山にも、一度もいたことがないのかもしれない。",
-    "pause": 9
-  },
-  {
-    "id": "line-082",
     "scene": "ending",
     "view": "callback",
     "who": "metan",
@@ -665,7 +513,7 @@
     "pause": 9
   },
   {
-    "id": "line-083",
+    "id": "line-064",
     "scene": "ending",
     "view": "callback",
     "who": "zunda",
@@ -673,7 +521,7 @@
     "pause": 30
   },
   {
-    "id": "line-084",
+    "id": "line-065",
     "scene": "ending",
     "view": "endtitle",
     "who": "metan",

@@ -28,7 +28,10 @@ for i,r in enumerate(rows):
  elif text.startswith('市販品から毒が'):performance={'speedScale':1.08,'intonationScale':1.12}
  elif r['view'] in ['leap','education'] and sp==2:performance={'speedScale':1.16,'intonationScale':1.18}
  elif text.startswith('……昨日'):performance={'speedScale':.94,'intonationScale':.72,'volumeScale':.86,'prePhonemeLength':.20}
- elif text.startswith('その一本が'):performance={'speedScale':1.04,'intonationScale':.83,'volumeScale':.92}
+ elif text.startswith(('その一本が','あなたが昨日')):performance={'speedScale':1.04,'intonationScale':.83,'volumeScale':.92}
+ if r['view']=='missing':performance={'speedScale':1.08,'intonationScale':1.05}
+ if r['view']=='isobe' and sp==3:performance={'speedScale':1.1,'intonationScale':.82}
+ if r['view']=='isobe' and sp==2:performance={'speedScale':1.04,'intonationScale':.78,'prePhonemeLength':.25}
  if performance:settings['performance']=performance
  cached=query_cache.get(json.dumps(settings,sort_keys=True))
  if cached is not None:q=cached

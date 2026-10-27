@@ -29,6 +29,7 @@ def build_effects(manifest,sr,length):
     add('試料トレー',at('味、弾力')+.15,.25,.023,'tray')
     add('受付呼び鈴',at('事前に知らせれば')-.42,.65,.018,'bell')
     add('調査報告書をめくる',at('なお、霜重')-.48,.40,.014,'paper')
+    add('空の皿と箸',manifest['cues']['isobeReveal']/30+.1,.20,.014,'tray')
     test=at('市販品から毒が')
     add('試薬滴下',test+2.4,.18,.012,'drop')
     for i in range(3):add('検査終了音 '+str(i+1),test+i*1.5,.14,.015,'beep')

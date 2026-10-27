@@ -2,88 +2,96 @@
   "soundEffects": [
     {
       "name": "試料トレー",
-      "startSeconds": 137.383,
+      "startSeconds": 107.117,
       "durationSeconds": 0.25,
       "peakGain": 0.023,
       "source": "original procedural synthesis"
     },
     {
       "name": "受付呼び鈴",
-      "startSeconds": 265.48,
+      "startSeconds": 254.113,
       "durationSeconds": 0.65,
       "peakGain": 0.018,
       "source": "original procedural synthesis"
     },
     {
       "name": "調査報告書をめくる",
-      "startSeconds": 311.72,
+      "startSeconds": 296.287,
       "durationSeconds": 0.4,
       "peakGain": 0.014,
       "source": "original procedural synthesis"
     },
     {
+      "name": "空の皿と箸",
+      "startSeconds": 341.1,
+      "durationSeconds": 0.2,
+      "peakGain": 0.014,
+      "source": "original procedural synthesis"
+    },
+    {
       "name": "試薬滴下",
-      "startSeconds": 397.933,
+      "startSeconds": 159.433,
       "durationSeconds": 0.18,
       "peakGain": 0.012,
       "source": "original procedural synthesis"
     },
     {
       "name": "検査終了音 1",
-      "startSeconds": 395.533,
+      "startSeconds": 157.033,
       "durationSeconds": 0.14,
       "peakGain": 0.015,
       "source": "original procedural synthesis"
     },
     {
       "name": "検査終了音 2",
-      "startSeconds": 397.033,
+      "startSeconds": 158.533,
       "durationSeconds": 0.14,
       "peakGain": 0.015,
       "source": "original procedural synthesis"
     },
     {
       "name": "検査終了音 3",
-      "startSeconds": 398.533,
+      "startSeconds": 160.033,
       "durationSeconds": 0.14,
       "peakGain": 0.015,
       "source": "original procedural synthesis"
     },
     {
       "name": "生産ライン・ローラーと駆動音",
-      "startSeconds": 584.6,
+      "startSeconds": 413.267,
       "durationSeconds": 20.0,
       "peakGain": 0.007,
       "source": "original procedural synthesis"
     },
     {
       "name": "VHS tape hiss and tracking crackle",
-      "startSeconds": 584.6,
+      "startSeconds": 413.26666666666665,
       "durationSeconds": 20.0,
       "source": "original seeded noise synthesis"
     }
   ],
   "sampleRate": 48000,
-  "durationSeconds": 604.6,
+  "durationSeconds": 433.26666666666665,
   "voiceLUFS": -18,
   "bgmLUFS": -35,
   "clipLUFS": -19,
-  "premasterPeak": 0.8398088812828064,
+  "premasterPeak": 0.8269205093383789,
   "endingMusic": "TheFatRat - Unity / -38 LUFS",
   "endingLift": false,
   "mainBgmStartFrame": 919,
   "mainFadeInFrames": 18,
   "editorialCues": {
-    "chargeReveal": 9491,
-    "logicReveal": 13868,
-    "absenceReveal": 10442,
-    "horrorStart": 9687,
-    "silenceStart": 13734,
-    "silenceEnd": 14008,
-    "codaRecord": 17748,
-    "codaApproval": 17958,
-    "lifeReveal": 4272,
-    "teacherReveal": 15983
+    "chargeReveal": 9028,
+    "logicReveal": 6328,
+    "absenceReveal": 4036,
+    "horrorStart": 3822,
+    "silenceStart": 6194,
+    "silenceEnd": 6468,
+    "codaRecord": 12608,
+    "codaApproval": 12818,
+    "lifeReveal": 3364,
+    "isobeReveal": 10230,
+    "verdictReveal": 10958
   },
   "codaSound": "original synthesized conveyor rollers and quiet factory hum; continues under documents, no dialogue",
   "clips": [
@@ -94,7 +102,7 @@
       "muteSource": true,
       "label": "研究所収集資料 ／ 天然ちくわの移動記録",
       "id": "escape",
-      "startFrame": 2575
+      "startFrame": 1855
     }
   ]
 }

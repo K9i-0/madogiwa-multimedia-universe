@@ -1,15 +1,17 @@
 # めたんのミステリー研究所 第2回：ちくわ人工物説
 
-## 現行採用：v11
+## 現行採用：v12
 
-`final_remotion_chikuwa_mystery_v11.mp4`
-66発話、7分13.267秒、1280×720、30fps。初版・v2・v3・v4のMP4は別名で保持。
+`final_remotion_chikuwa_mystery_v12.mp4`
+69発話、7分24.633秒、1280×720、30fps。初版・v2・v3・v4のMP4は別名で保持。
 
 逮捕報告の終盤で「猥褻物陳列罪」の容疑を追加開示し、ずんだもんが「酒癖が悪すぎるのだ」と突っ込む。
 
 v6では人工ちくわと政府・企業による隠蔽は実在する。ずんだもんは天然生物と養殖という常識を信じる。研究員の調査は真相に迫り、めたんは認識や教育の統制へ話を拡張する。v7では毒ちくわの市販品混入ゼロを軸に再構成し、ずんだもんの発話を半分以下に整理。v8は調査の橋渡し、話す時刻に合わせた情報開示、静けさを使う音声編集、3カットの真相提示へ改良。v9は研究員ごとの具体的なボケ、選択的な声の演技、オリジナル効果音、H3差し込み映像5本を追加。v10ではエンディング後にVHSの画面・音声ノイズを追加。詳細は `revision_v9.md` と `revision_v10.md`。
 
 v11では中口と霜重の二人に統合。中口が鑑定用の証拠品を磯辺揚げにして食べ、追検証が失敗する流れへ再構成。古文書・北原の独立パート・教育陰謀論を削除。整合性レビューは `revision_v11.md`。
+
+v12では中口パートを証拠消失と磯辺揚げの回収まで完結させ、その後に霜重パートを配置。食べた話をめたんが先に紹介し、ずんだもんがその説明を思い出して指摘する。出来たての磯辺揚げ写真に新規差し替え。詳細は `revision_v12.md`。
 
 ## 素材と再生成
 
@@ -29,7 +31,7 @@ python3 03_SCRIPTS/chikuwa_mystery_20261025/prepare_script.py
 .local/voicevox-explainer/venv/bin/python 03_SCRIPTS/chikuwa_mystery_20261025/prepare_voice.py
 npm ci --prefix 03_SCRIPTS/chikuwa_mystery_20261025/remotion
 .local/voicevox-explainer/venv/bin/python 03_SCRIPTS/chikuwa_mystery_20261025/remotion/render.py
-.local/voicevox-explainer/venv/bin/python 03_SCRIPTS/chikuwa_mystery_20261025/audit_output_v11.py
+.local/voicevox-explainer/venv/bin/python 03_SCRIPTS/chikuwa_mystery_20261025/audit_output_v12.py
 ```
 
 Remotion 4.0.538。基本はめたんnormal2 / speed1.13、ずんだもんnormal3 / speed1.15。v9の選択的な速度・抑揚・声量・間は `prepare_voice.py` と `voice_generation_record.json` に記録。共有辞書＋作品内文脈限定読み。24kHz音声を48kHzステレオでミックス。会話-18LUFS、BGM-35LUFS、Unity-38LUFS、資料クリップ-19LUFS。口パクは音声RMS、まばたきあり。
@@ -37,9 +39,9 @@ Remotion 4.0.538。基本はめたんnormal2 / speed1.13、ずんだもんnormal
 ## 検証
 
 `reading_audit_v2.json`：変更33発話の読み修正。
-`visual_audit_v11.md` / `audit_v11.json`：画像・字幕・フレーム数・全編デコード・音量確認。
-完成MP4の全編デコード成功、66発話の字幕完全一致、−17.97 LUFS／−1.59 dBTP。詳細は `audit_v11.json`。人による通し試聴は未実施。字幕は原文保持、最大2行で表示。
-末尾確認用：`remotion/out/ending_v11.mp4`（中口の証拠品消失から末尾まで）。
+`visual_audit_v12.md` / `audit_v12.json`：画像・字幕・フレーム数・全編デコード・音量確認。
+69発話の字幕完全一致、全編デコード成功、−17.96 LUFS／−1.59 dBTP。字幕は最大2行で表示。人による通し試聴は未実施。
+末尾確認用：`remotion/out/ending_v12.mp4`（総括から末尾まで）。
 
 公開・Studio登録は未依頼のため実施していない。誘導用Shortsは前回の任意質問が未回答のため候補のみ。
 前作の番組演出・研究員は `../youtube_sobaya_mystery_20261010/` v10を参照。旧生物解説版も保持。

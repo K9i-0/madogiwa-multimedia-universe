@@ -2,76 +2,76 @@
   "soundEffects": [
     {
       "name": "試料トレー",
-      "startSeconds": 107.117,
+      "startSeconds": 119.15,
       "durationSeconds": 0.25,
       "peakGain": 0.023,
       "source": "original procedural synthesis"
     },
     {
       "name": "受付呼び鈴",
-      "startSeconds": 254.113,
+      "startSeconds": 328.047,
       "durationSeconds": 0.65,
       "peakGain": 0.018,
       "source": "original procedural synthesis"
     },
     {
       "name": "調査報告書をめくる",
-      "startSeconds": 296.287,
+      "startSeconds": 370.22,
       "durationSeconds": 0.4,
       "peakGain": 0.014,
       "source": "original procedural synthesis"
     },
     {
-      "name": "空の皿と箸",
-      "startSeconds": 341.1,
+      "name": "食器と箸",
+      "startSeconds": 262.467,
       "durationSeconds": 0.2,
       "peakGain": 0.014,
       "source": "original procedural synthesis"
     },
     {
       "name": "試薬滴下",
-      "startSeconds": 159.433,
+      "startSeconds": 171.167,
       "durationSeconds": 0.18,
       "peakGain": 0.012,
       "source": "original procedural synthesis"
     },
     {
       "name": "検査終了音 1",
-      "startSeconds": 157.033,
+      "startSeconds": 168.767,
       "durationSeconds": 0.14,
       "peakGain": 0.015,
       "source": "original procedural synthesis"
     },
     {
       "name": "検査終了音 2",
-      "startSeconds": 158.533,
+      "startSeconds": 170.267,
       "durationSeconds": 0.14,
       "peakGain": 0.015,
       "source": "original procedural synthesis"
     },
     {
       "name": "検査終了音 3",
-      "startSeconds": 160.033,
+      "startSeconds": 171.767,
       "durationSeconds": 0.14,
       "peakGain": 0.015,
       "source": "original procedural synthesis"
     },
     {
       "name": "生産ライン・ローラーと駆動音",
-      "startSeconds": 413.267,
+      "startSeconds": 424.633,
       "durationSeconds": 20.0,
       "peakGain": 0.007,
       "source": "original procedural synthesis"
     },
     {
       "name": "VHS tape hiss and tracking crackle",
-      "startSeconds": 413.26666666666665,
+      "startSeconds": 424.6333333333333,
       "durationSeconds": 20.0,
       "source": "original seeded noise synthesis"
     }
   ],
   "sampleRate": 48000,
-  "durationSeconds": 433.26666666666665,
+  "durationSeconds": 444.6333333333333,
   "voiceLUFS": -18,
   "bgmLUFS": -35,
   "clipLUFS": -19,
@@ -81,17 +81,17 @@
   "mainBgmStartFrame": 919,
   "mainFadeInFrames": 18,
   "editorialCues": {
-    "chargeReveal": 9028,
-    "logicReveal": 6328,
-    "absenceReveal": 4036,
-    "horrorStart": 3822,
-    "silenceStart": 6194,
-    "silenceEnd": 6468,
-    "codaRecord": 12608,
-    "codaApproval": 12818,
-    "lifeReveal": 3364,
-    "isobeReveal": 10230,
-    "verdictReveal": 10958
+    "chargeReveal": 11246,
+    "logicReveal": 6680,
+    "absenceReveal": 4388,
+    "horrorStart": 4183,
+    "silenceStart": 6546,
+    "silenceEnd": 6820,
+    "codaRecord": 12949,
+    "codaApproval": 13159,
+    "lifeReveal": 3725,
+    "isobeReveal": 7871,
+    "verdictReveal": 8624
   },
   "codaSound": "original synthesized conveyor rollers and quiet factory hum; continues under documents, no dialogue",
   "clips": [

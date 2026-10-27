@@ -27,7 +27,7 @@ while len(loop)<end-cut+sr*2:
 bgm[cut:end+sr*2]=fade(loop[:end-cut+sr*2],int(.6*sr),2*sr);del loop
 # Return to the quiet opening theme for the ending, never lift after dialogue.
 a=decode(D/'public/ending.mp3','loudnorm=I=-38:TP=-3:LRA=11')[:(m['codaStartFrame']-18)*1600-end].copy();bgm[end:end+len(a)]+=fade(a,sr*2,sr*4)
-# Gradually lower the bed after Kitahara; withdraw music at the key inference.
+# Gradually lower the bed during Nakaguchi’s market analysis; withdraw music at the key inference.
 horror=m['cues']['horrorStart']*1600
 ramp=min(sr*5,end-horror)
 bgm[horror:horror+ramp]*=np.linspace(1,.55,ramp)[:,None]

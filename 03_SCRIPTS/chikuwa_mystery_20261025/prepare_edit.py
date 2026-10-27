@@ -67,7 +67,7 @@ cues['isobeReveal']=spoken_cue(isobe,'イソベアゲ')
 verdict=next(r for r in rows if r['text'].startswith('ただ、研究員は'))
 cues['verdictReveal']=spoken_cue(verdict,'アゲタテ')
 for row,key,left,right in [
- (isobe,'isobeReveal','中口研究員、昨日それを','磯辺揚げにしていたのだ。'),
+ (isobe,'isobeReveal','それ、さっき','磯辺揚げにして食べたって\n言ってたのだ。'),
  (verdict,'verdictReveal','ただ、研究員は最後まで比較を続けたそうよ。\n市販品も、天然物も、','揚げたてがおいしかったと。')]:
  caps=[c for c in caps if c['lineId']!=row['id']]
  cut=cues[key]

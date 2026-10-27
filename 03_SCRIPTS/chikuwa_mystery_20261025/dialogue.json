@@ -115,13 +115,29 @@
   {
     "id": "line-014",
     "scene": "experiment",
+    "view": "meal",
+    "who": "metan",
+    "text": "中口研究員は、食感の比較にも熱心でね。昨日は、調査に使った市販品と天然個体を、磯辺揚げにして食べたそうよ。",
+    "pause": 9
+  },
+  {
+    "id": "line-015",
+    "scene": "experiment",
+    "view": "meal",
+    "who": "metan",
+    "text": "では、彼が残した調査記録を見ていきましょう。",
+    "pause": 9
+  },
+  {
+    "id": "line-016",
+    "scene": "experiment",
     "view": "analysis",
     "who": "metan",
     "text": "購入品から、魚肉に似たタンパク質と、加熱で固まった組織を確認。均一な穴や、巻いたような継ぎ目も見つかったの。",
     "pause": 9
   },
   {
-    "id": "line-015",
+    "id": "line-017",
     "scene": "experiment",
     "view": "analysis",
     "who": "zunda",
@@ -129,7 +145,7 @@
     "pause": 14
   },
   {
-    "id": "line-016",
+    "id": "line-018",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -137,7 +153,7 @@
     "pause": 9
   },
   {
-    "id": "line-017",
+    "id": "line-019",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -145,7 +161,7 @@
     "pause": 23
   },
   {
-    "id": "line-018",
+    "id": "line-020",
     "scene": "experiment",
     "view": "process",
     "who": "zunda",
@@ -153,7 +169,7 @@
     "pause": 14
   },
   {
-    "id": "line-019",
+    "id": "line-021",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -161,15 +177,15 @@
     "pause": 9
   },
   {
-    "id": "line-020",
+    "id": "line-022",
     "scene": "supply",
     "view": "poison_absence",
     "who": "metan",
-    "text": "中口研究員が次に注目したのは、毒ちくわ。野外では食用種に混じるのに、調べた市販品には、一切含まれていなかったの。",
+    "text": "調査記録で、特に注目したいのは毒ちくわ。野外では食用種に混じるのに、調べた市販品には、一切含まれていなかったの。",
     "pause": 9
   },
   {
-    "id": "line-021",
+    "id": "line-023",
     "scene": "supply",
     "view": "poison_absence",
     "who": "zunda",
@@ -177,7 +193,7 @@
     "pause": 14
   },
   {
-    "id": "line-022",
+    "id": "line-024",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -185,7 +201,7 @@
     "pause": 9
   },
   {
-    "id": "line-023",
+    "id": "line-025",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -193,7 +209,7 @@
     "pause": 9
   },
   {
-    "id": "line-024",
+    "id": "line-026",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
@@ -201,7 +217,7 @@
     "pause": 9
   },
   {
-    "id": "line-025",
+    "id": "line-027",
     "scene": "supply",
     "view": "selection",
     "who": "zunda",
@@ -209,7 +225,7 @@
     "pause": 14
   },
   {
-    "id": "line-026",
+    "id": "line-028",
     "scene": "supply",
     "view": "official",
     "who": "metan",
@@ -217,7 +233,7 @@
     "pause": 9
   },
   {
-    "id": "line-027",
+    "id": "line-029",
     "scene": "supply",
     "view": "official",
     "who": "zunda",
@@ -225,7 +241,7 @@
     "pause": 14
   },
   {
-    "id": "line-028",
+    "id": "line-030",
     "scene": "supply",
     "view": "secret",
     "who": "metan",
@@ -233,7 +249,7 @@
     "pause": 9
   },
   {
-    "id": "line-029",
+    "id": "line-031",
     "scene": "supply",
     "view": "growth",
     "who": "metan",
@@ -241,7 +257,7 @@
     "pause": 9
   },
   {
-    "id": "line-030",
+    "id": "line-032",
     "scene": "supply",
     "view": "growth",
     "who": "metan",
@@ -249,7 +265,7 @@
     "pause": 9
   },
   {
-    "id": "line-031",
+    "id": "line-033",
     "scene": "supply",
     "view": "poison_logic",
     "who": "metan",
@@ -257,159 +273,23 @@
     "pause": 36
   },
   {
-    "id": "line-032",
+    "id": "line-034",
     "scene": "supply",
     "view": "poison_logic",
     "who": "zunda",
-    "text": "加工の前に、ちゃんと養殖しているのかもしれないのだ。そこを確かめるのだ。",
+    "text": "加工の前に、ちゃんと養殖しているのかもしれないのだ。まだ決めつけられないのだ。",
     "pause": 14
-  },
-  {
-    "id": "line-033",
-    "scene": "infiltration",
-    "view": "factory",
-    "who": "metan",
-    "text": "その生産現場を確かめるため、狭間文明研究所の霜重研究員が、日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
-    "pause": 9
-  },
-  {
-    "id": "line-034",
-    "scene": "infiltration",
-    "view": "arrest",
-    "who": "metan",
-    "text": "しかし、その直後。霜重研究員は、現地で身柄を拘束されたわ。",
-    "pause": 25
   },
   {
     "id": "line-035",
-    "scene": "infiltration",
-    "view": "arrest",
-    "who": "zunda",
-    "text": "何をしたのだ？",
-    "pause": 25
-  },
-  {
-    "id": "line-036",
-    "scene": "infiltration",
-    "view": "arrest",
-    "who": "metan",
-    "text": "表向きの理由は、不法侵入とされているわ。",
-    "pause": 25
-  },
-  {
-    "id": "line-037",
-    "scene": "infiltration",
-    "view": "conspiracy",
-    "who": "metan",
-    "text": "真相に近づいた研究者の逮捕。私は、背後にある闇の組織が、彼の調査を妨害したと考えているわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-038",
-    "scene": "infiltration",
-    "view": "conspiracy",
-    "who": "zunda",
-    "text": "まず、取材の約束はしていたのだ？",
-    "pause": 14
-  },
-  {
-    "id": "line-039",
-    "scene": "infiltration",
-    "view": "noappointment",
-    "who": "metan",
-    "text": "事前に知らせれば、都合の悪いものを隠されるおそれがあるでしょう。",
-    "pause": 9
-  },
-  {
-    "id": "line-040",
-    "scene": "infiltration",
-    "view": "noappointment",
-    "who": "zunda",
-    "text": "アポなしなのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-041",
-    "scene": "infiltration",
-    "view": "drink",
-    "who": "metan",
-    "text": "また、霜重研究員は訪問にあたり、緊張を解くために飲酒していたわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-042",
-    "scene": "infiltration",
-    "view": "incident",
-    "who": "metan",
-    "text": "霜重研究員は、警備員の制止を、研究への圧力と判断したの。",
-    "pause": 9
-  },
-  {
-    "id": "line-043",
-    "scene": "infiltration",
-    "view": "incident",
-    "who": "zunda",
-    "text": "お帰りください、なのだ。",
-    "pause": 20
-  },
-  {
-    "id": "line-044",
-    "scene": "infiltration",
-    "view": "incident",
-    "who": "metan",
-    "text": "その圧力を突破して敷地に入り、酔って暴れたため、警察に逮捕されたわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-045",
-    "scene": "infiltration",
-    "view": "police",
-    "who": "metan",
-    "text": "一食品メーカーの問題に、公的機関が介入した。研究員は、この一件で企業と国家を結ぶ線が見えたと話しているわ。",
-    "pause": 9
-  },
-  {
-    "id": "line-046",
-    "scene": "infiltration",
-    "view": "police",
-    "who": "zunda",
-    "text": "通報の電話線なのだ。",
-    "pause": 14
-  },
-  {
-    "id": "line-047",
-    "scene": "infiltration",
-    "view": "report",
-    "who": "metan",
-    "text": "調査報告書には、外部勢力の介入により、調査中断と記されているわ。",
-    "pause": 24
-  },
-  {
-    "id": "line-048",
-    "scene": "infiltration",
-    "view": "additional_charge",
-    "who": "metan",
-    "text": "なお、霜重研究員は、不法侵入に加えて、猥褻物陳列罪の容疑でも逮捕されているわ。",
-    "pause": 25
-  },
-  {
-    "id": "line-049",
-    "scene": "infiltration",
-    "view": "additional_charge",
-    "who": "zunda",
-    "text": "酒癖が悪すぎるのだ。",
-    "pause": 25
-  },
-  {
-    "id": "line-050",
     "scene": "evidence",
     "view": "handoff_market",
     "who": "metan",
-    "text": "結局、工場の中は確認できなかった。そこで中口研究員は、別に取り分けて保管していた市販品と天然個体を、第三者機関で比較鑑定してもらうことにしたの。",
+    "text": "中口研究員は、この疑いを確かめるため、市販品と天然個体を第三者機関の比較鑑定に出す予定だったの。",
     "pause": 18
   },
   {
-    "id": "line-051",
+    "id": "line-036",
     "scene": "evidence",
     "view": "missing",
     "who": "metan",
@@ -417,7 +297,7 @@
     "pause": 9
   },
   {
-    "id": "line-052",
+    "id": "line-037",
     "scene": "evidence",
     "view": "missing",
     "who": "metan",
@@ -425,15 +305,15 @@
     "pause": 20
   },
   {
-    "id": "line-053",
+    "id": "line-038",
     "scene": "evidence",
     "view": "isobe",
     "who": "zunda",
-    "text": "中口研究員、昨日それを磯辺揚げにしていたのだ。",
+    "text": "それ、さっき磯辺揚げにして食べたって言ってたのだ。",
     "pause": 14
   },
   {
-    "id": "line-054",
+    "id": "line-039",
     "scene": "evidence",
     "view": "isobe",
     "who": "metan",
@@ -441,23 +321,23 @@
     "pause": 9
   },
   {
-    "id": "line-055",
+    "id": "line-040",
     "scene": "evidence",
     "view": "isobe",
     "who": "zunda",
-    "text": "おかわりもしていたのだ。",
-    "pause": 42
+    "text": "送る分まで食べたのだ？",
+    "pause": 14
   },
   {
-    "id": "line-056",
+    "id": "line-041",
     "scene": "evidence",
     "view": "verdict",
     "who": "metan",
-    "text": "鑑定用の現物を、全部食べてしまった。測定記録は残っているけれど、今回の試料を第三者に検証してもらうことはできなくなったわ。",
+    "text": "ええ。鑑定用の現物は、一つも残っていなかった。測定記録はあるけれど、今回の試料を第三者に検証してもらうことはできなくなったわ。",
     "pause": 9
   },
   {
-    "id": "line-057",
+    "id": "line-042",
     "scene": "evidence",
     "view": "verdict",
     "who": "metan",
@@ -465,23 +345,167 @@
     "pause": 9
   },
   {
-    "id": "line-058",
+    "id": "line-043",
     "scene": "evidence",
     "view": "verdict",
     "who": "zunda",
     "text": "研究の成果が夕飯の感想なのだ。",
+    "pause": 45
+  },
+  {
+    "id": "line-044",
+    "scene": "infiltration",
+    "view": "shimoju",
+    "who": "metan",
+    "text": "続いては、生産現場の調査。担当したのは、狭間文明研究所の霜重研究員よ。",
+    "pause": 18
+  },
+  {
+    "id": "line-045",
+    "scene": "infiltration",
+    "view": "factory",
+    "who": "metan",
+    "text": "日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
+    "pause": 9
+  },
+  {
+    "id": "line-046",
+    "scene": "infiltration",
+    "view": "arrest",
+    "who": "metan",
+    "text": "しかし、その直後。霜重研究員は、現地で身柄を拘束されたわ。",
+    "pause": 25
+  },
+  {
+    "id": "line-047",
+    "scene": "infiltration",
+    "view": "arrest",
+    "who": "zunda",
+    "text": "何をしたのだ？",
+    "pause": 25
+  },
+  {
+    "id": "line-048",
+    "scene": "infiltration",
+    "view": "arrest",
+    "who": "metan",
+    "text": "表向きの理由は、不法侵入とされているわ。",
+    "pause": 25
+  },
+  {
+    "id": "line-049",
+    "scene": "infiltration",
+    "view": "conspiracy",
+    "who": "metan",
+    "text": "真相に近づいた研究者の逮捕。私は、背後にある闇の組織が、彼の調査を妨害したと考えているわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-050",
+    "scene": "infiltration",
+    "view": "conspiracy",
+    "who": "zunda",
+    "text": "まず、取材の約束はしていたのだ？",
+    "pause": 14
+  },
+  {
+    "id": "line-051",
+    "scene": "infiltration",
+    "view": "noappointment",
+    "who": "metan",
+    "text": "事前に知らせれば、都合の悪いものを隠されるおそれがあるでしょう。",
+    "pause": 9
+  },
+  {
+    "id": "line-052",
+    "scene": "infiltration",
+    "view": "noappointment",
+    "who": "zunda",
+    "text": "アポなしなのだ。",
+    "pause": 14
+  },
+  {
+    "id": "line-053",
+    "scene": "infiltration",
+    "view": "drink",
+    "who": "metan",
+    "text": "また、霜重研究員は訪問にあたり、緊張を解くために飲酒していたわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-054",
+    "scene": "infiltration",
+    "view": "incident",
+    "who": "metan",
+    "text": "霜重研究員は、警備員の制止を、研究への圧力と判断したの。",
+    "pause": 9
+  },
+  {
+    "id": "line-055",
+    "scene": "infiltration",
+    "view": "incident",
+    "who": "zunda",
+    "text": "お帰りください、なのだ。",
+    "pause": 20
+  },
+  {
+    "id": "line-056",
+    "scene": "infiltration",
+    "view": "incident",
+    "who": "metan",
+    "text": "その圧力を突破して敷地に入り、酔って暴れたため、警察に逮捕されたわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-057",
+    "scene": "infiltration",
+    "view": "police",
+    "who": "metan",
+    "text": "一食品メーカーの問題に、公的機関が介入した。研究員は、この一件で企業と国家を結ぶ線が見えたと話しているわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-058",
+    "scene": "infiltration",
+    "view": "police",
+    "who": "zunda",
+    "text": "通報の電話線なのだ。",
     "pause": 14
   },
   {
     "id": "line-059",
-    "scene": "ending",
-    "view": "findings",
+    "scene": "infiltration",
+    "view": "report",
     "who": "metan",
-    "text": "現地調査は逮捕で中断。比較鑑定は、証拠品がなくなって中止。今回の調査では、人工ちくわの流通を証明できなかったわ。",
-    "pause": 9
+    "text": "調査報告書には、外部勢力の介入により、調査中断と記されているわ。",
+    "pause": 24
   },
   {
     "id": "line-060",
+    "scene": "infiltration",
+    "view": "additional_charge",
+    "who": "metan",
+    "text": "なお、霜重研究員は、不法侵入に加えて、猥褻物陳列罪の容疑でも逮捕されているわ。",
+    "pause": 25
+  },
+  {
+    "id": "line-061",
+    "scene": "infiltration",
+    "view": "additional_charge",
+    "who": "zunda",
+    "text": "酒癖が悪すぎるのだ。",
+    "pause": 25
+  },
+  {
+    "id": "line-062",
+    "scene": "ending",
+    "view": "findings",
+    "who": "metan",
+    "text": "比較鑑定は、証拠品を食べてしまって中止。現地調査は逮捕で中断。今回の調査では、人工ちくわの流通を証明できなかったわ。",
+    "pause": 9
+  },
+  {
+    "id": "line-063",
     "scene": "ending",
     "view": "findings",
     "who": "zunda",
@@ -489,7 +513,7 @@
     "pause": 14
   },
   {
-    "id": "line-061",
+    "id": "line-064",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
@@ -497,7 +521,7 @@
     "pause": 9
   },
   {
-    "id": "line-062",
+    "id": "line-065",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
@@ -505,7 +529,7 @@
     "pause": 9
   },
   {
-    "id": "line-063",
+    "id": "line-066",
     "scene": "ending",
     "view": "callback",
     "who": "metan",
@@ -513,7 +537,7 @@
     "pause": 9
   },
   {
-    "id": "line-064",
+    "id": "line-067",
     "scene": "ending",
     "view": "callback",
     "who": "zunda",
@@ -521,7 +545,7 @@
     "pause": 30
   },
   {
-    "id": "line-065",
+    "id": "line-068",
     "scene": "ending",
     "view": "endtitle",
     "who": "metan",

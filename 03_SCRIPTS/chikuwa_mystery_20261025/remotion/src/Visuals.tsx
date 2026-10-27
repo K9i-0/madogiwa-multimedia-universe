@@ -17,7 +17,7 @@ export const Visual:React.FC<{view:string;local:number}>=({view,local})=>{
 const f=useCurrentFrame();
 const base=timeline.views.find(v=>v.view===view)?.startFrame??0;
 const globalFrame=base+local;
-const said=(part:string)=>local>=((timeline.dialogue.find(d=>d.view===view&&d.text.includes(part))?.startFrame??base)-base);
+const said=(part:string)=>{const row=timeline.dialogue.find(d=>d.view===view&&d.text.includes(part));return !!row&&globalFrame>=row.startFrame;};
 if(view==='opening')return <><H>海と山に暮らす、身近な生き物</H><Double a="harbor_still.jpg" b="forest.png" at="海産のちくわ" bt="山産のちくわ"/></>;
 if(view==='claim')return <><div style={{fontSize:19,letterSpacing:5,color:muted}}>研究員たちが唱える珍説</div><Quote text="あなたが食べたちくわは、
 本当にちくわだったのか？"/><Photo src="specimen.png" h={240}/></>;
@@ -25,10 +25,12 @@ if(view==='title'||view==='endtitle')return <><div style={{fontSize:17,letterSpa
 if(view==='species'&&local<155)return <><H>ヤマチクワ：林床での収縮運動</H><Broll src="h3_ch01_480p.mp4" frame={local}/><Note><i>Daichikuwa humicola</i> ／ 生態再現映像</Note></>;
 if(view==='species')return <><H>共通祖先から分かれた、異なる種</H><Double a="specimen.png" b="forest.png" at={'ウミチクワ\nChikuwa marina'} bt={'ヤマチクワ\nDaichikuwa humicola'}/></>;
 if(view==='nakaguchi')return <Person name="中口" org="広域未確認生物研究所" field="形態比較 ／ 市販ちくわの人工物説"/>;
+if(view==='meal')return <><H>中口研究員の食感比較</H><Photo src="isobe_fresh_v12.png" h={365}/><Note>本人の報告：調査に使った市販品と天然個体を、磯辺揚げに。</Note></>;
 if(view==='analysis')return <><H>中口研究員：魚肉との類似を指摘</H><Photo src="lab_analysis_v2.png" h={370}/><Note>研究員の実験資料を再現 ／ 成分・加熱組織の比較</Note></>;
 if(view==='process'&&said('味、弾力')){const at=timeline.dialogue.find(d=>d.text.startsWith('味、弾力'))!.startFrame;return <><H>残る相違点</H><Broll src="h3_ch02_480p.mp4" frame={globalFrame-at}/><div style={{display:'flex',width:740,justifyContent:'space-around',fontSize:23,color:gold,marginTop:12}}><span>天然個体（加熱前）</span><span>再現品 ／ 反応なし</span></div><Note>中口研究員の比較実験を再現</Note></>};
 if(view==='process')return <><H>研究員が行った「ちくわの再現実験」</H><Photo src="manufacturing_v2.png" h={350}/><div style={{display:'flex',width:740,justifyContent:'space-around',fontSize:22,color:gold,marginTop:12}}><span>すり身と塩</span><span>棒に巻く</span><span>加熱</span></div><Note>実験工程の再現画像</Note></>;
-if(view==='handoff_market')return <><div style={{fontSize:20,color:muted,letterSpacing:3}}>現地調査は中断</div><Quote text={'保管していた現物を、\n第三者機関の鑑定へ。'}/><Note>中口研究員 ／ 市販品と天然個体の比較</Note></>;
+if(view==='handoff_market')return <><div style={{fontSize:20,color:muted,letterSpacing:3}}>現物で確かめる</div><Quote text={'調査に使った現物を、\n第三者機関の鑑定へ。'}/><Note>中口研究員 ／ 市販品と天然個体の比較</Note></>;
+if(view==='shimoju')return <Person name="霜重" org="狭間文明研究所" field="生産現場への潜入調査"/>;
 if(view==='factory')return <><H>霜重研究員、T社へ</H><Broll src="h3_ch03_480p.mp4" frame={local} h={390}/><Note>国内大手加工食品メーカー（架空）／ 現地の再現映像</Note></>;
 if(view==='arrest')return <><div style={{fontSize:20,color:muted,letterSpacing:4}}>調査の行方</div><Quote text={'霜重研究員\n逮捕'} color={red}/><Note>現地で身柄を拘束</Note></>;
 if(view==='conspiracy')return <><H>研究を妨害する、見えない組織</H><Photo src="conspiracy_board_v2.png" h={375}/><Note>「真相に近づいたため、排除された」――めたんの解釈</Note></>;
@@ -48,9 +50,9 @@ if(view==='callback')return <><H>霜重研究員からの声明</H><Quote text={
 if(view==='comparison'||view==='camouflage')return <><H>{view==='comparison'?'外見だけでの判別は困難':'極めて高度な偽装？'}</H><Photo src="comparison.png" h={335}/><div style={{width:700,display:'flex',justifyContent:'space-around',fontSize:25,color:gold,marginTop:18}}><span>食用</span><span>有毒</span></div></>;
 if(view==='attraction')return <><H>天敵を引き寄せる、ビール臭</H><div style={{display:'flex',alignItems:'center',gap:25}}><div><Img src={staticFile('comparison.png')} style={{width:300,height:255,objectFit:'cover',objectPosition:'90%'}}/><div style={{fontSize:23,color:gold,marginTop:18}}>毒ちくわのビール臭</div></div><div style={{fontSize:43,color:gold}}>→</div><div><Img src={staticFile('sobaya.jpg')} style={{width:300,height:255,objectFit:'contain'}}/><div style={{fontSize:23,marginTop:18}}>天敵ソバヤを誘引</div></div></div></>;
 if(view==='escape')return <><H>記録映像：野生ちくわの移動</H><Photo src="chikuwa_archive_still_v7.jpg" h={375}/></>;
-if(view==='findings')return <><H>{said('あなたが昨日')?'昨日、食べた一本。':'今回の調査結果'}</H>{said('あなたが昨日')?<Photo src="specimen.png" h={355}/>:<><Flow items={['現地調査：逮捕で中断','第三者鑑定：現物を失い中止','人工物の流通は、証明に至らず']}/><Note>観察記録は残る ／ 現物による追検証はできず</Note></>}</>;
+if(view==='findings')return <><H>{said('あなたが昨日')?'昨日、食べた一本。':'今回の調査結果'}</H>{said('あなたが昨日')?<Photo src="specimen.png" h={355}/>:<><Flow items={['第三者鑑定：試料を食べて中止','現地調査：逮捕で中断','人工物の流通は、証明に至らず']}/><Note>観察記録は残る ／ 現物による追検証はできず</Note></>}</>;
 if(view==='missing')return <><H>鑑定用試料の保管記録</H><div style={{width:650,textAlign:'left',borderTop:`1px solid ${gold}`,borderBottom:`1px solid ${gold}`,padding:'28px 24px'}}>{['市販品','天然個体'].map(v=><div key={v} style={{display:'flex',justifyContent:'space-between',fontSize:32,padding:'20px 0'}}><span>{v}</span><span style={{color:red}}>所在不明</span></div>)}</div><Note>{said('何者かによって')?'めたんの見解：第三者による持ち去り':'発送前の確認で判明 ／ 中口研究員の保管試料'}</Note></>;
-if(view==='isobe')return globalFrame<timeline.cues.isobeReveal?<><H>消えた証拠品の行方</H><Quote text="市販品も、天然個体も。"/></>:<><H>前日の比較実験</H><Photo src="isobe_evidence_v11.png" h={350}/><Note>{said('おかわりも')?'ずんだもんの目撃談：おかわりあり':'中口研究員の説明：「食感を比較していた」'}</Note></>;
-if(view==='verdict')return <><H>中口研究員の最終報告</H>{globalFrame>=timeline.cues.verdictReveal?<Quote text={'市販品も、天然物も、\n揚げたてがおいしい。'} sub="鑑定用の現物は残らず"/>:<><Photo src="isobe_evidence_v11.png" h={350}/><Note>測定記録は残る ／ 現物は第三者鑑定へ提出できず</Note></>}</>;
+if(view==='isobe')return globalFrame<timeline.cues.isobeReveal?<><H>消えた証拠品の行方</H><Quote text="市販品も、天然個体も。"/></>:<><H>めたんが紹介した「食感比較」</H><Photo src="isobe_fresh_v12.png" h={350}/><Note>中口研究員の報告：調査試料を磯辺揚げにして食べた</Note></>;
+if(view==='verdict')return <><H>中口研究員の最終報告</H>{globalFrame>=timeline.cues.verdictReveal?<Quote text={'市販品も、天然物も、\n揚げたてがおいしい。'} sub="鑑定用の現物は残らず"/>:<><Photo src="isobe_fresh_v12.png" h={350}/><Note>測定記録は残る ／ 現物は第三者鑑定へ提出できず</Note></>}</>;
 throw new Error('Unknown view '+view);
 };

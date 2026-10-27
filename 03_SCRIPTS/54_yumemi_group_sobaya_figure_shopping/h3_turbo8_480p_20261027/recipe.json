@@ -1,0 +1,30 @@
+{
+  "model": {
+    "id": "turbo8_480p",
+    "repo": "Comfy-Org/MiniMax-H3",
+    "revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+    "filename": "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "sha256": "9255f52b6677845ad238f20dfaafa94727053694127ab7f255c048f0f9365779"
+  },
+  "lora": {
+    "repo": "lightx2v/Minimax-h3-Turbo",
+    "revision": "30f485ed874aa44c8183348ad361c5eabad318da",
+    "filename": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+    "sha256": "6a56f41ab4229c9dd845b9501bbd475ee57e112d846cf2e819d534a1ae928c5a"
+  },
+  "steps": 8,
+  "sampler": "euler",
+  "scheduler": "beta",
+  "shift_video": 12,
+  "shift_audio": 3,
+  "strength": 1,
+  "sage": false,
+  "workers": 1,
+  "width": 864,
+  "height": 480,
+  "referenceImageSize": "match",
+  "baselineResolution": [
+    1344,
+    768
+  ]
+}

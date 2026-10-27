@@ -1,0 +1,286 @@
+{
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 54076802
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 20,
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/shopping768_ch02",
+      "format": "auto",
+      "codec": "auto"
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "comparison.png"
+    }
+  },
+  "201": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "intro.png"
+    }
+  },
+  "202": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "figure.png"
+    }
+  },
+  "203": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "fukugyun.jpg"
+    }
+  },
+  "204": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "fukugyun_sheet.png"
+    }
+  },
+  "205": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "tokun.jpg"
+    }
+  },
+  "206": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "tokun_sheet.png"
+    }
+  },
+  "207": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "sobaya.jpg"
+    }
+  },
+  "208": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "sobaya_sheet.png"
+    }
+  },
+  "209": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "line04_fukuchan.wav"
+    }
+  },
+  "210": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "line05_fukuchan.wav"
+    }
+  },
+  "211": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "line06_sobaya_pad.wav"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "Photoreal Japanese television home-shopping parody. Modern high-definition camera, warm cream/gold/coral studio, natural proportions, sharp facial details. Images are references, never collages or labels in the output. Fukugyun is the exact real Japanese man in his reference photographs, black jacket, white graphic shirt, black trousers, white shoes. His skin quality and apparent age match the canonical close-ups: clean even cared-for complexion with subtle forehead/eye/smile wrinkles; do not add spots, freckles, rough pores, erase wrinkles, de-age or reshape face. Tokun is the exact real man from his photo, mint tropical shirt, straw hat, purple glasses, pink lei, dark trousers, ukulele. He is silent, mouth closed. The ONE product sculpture is an INERT rigid FRP object, not a person. Copy its crude round ball shoulders, thin legs, simple visible joints, low-poly hands, cheap painted mask, dark SHORTS, fake rigid beer mug and original low rectangular plinth exactly. Do NOT improve its anatomy or craftsmanship. It NEVER speaks, breathes, blinks, moves joints, or turns its head. Live actors and product are separate identities, never morph or exchange faces/clothes. No extra objects or duplicated people. No generated titles, prices, subtitles, logos, UI or background speech. All exact graphics added in editing. No music. Keep bottom 15 percent and top corners clear for graphics. Preserve faces throughout each camera move. Use the completed attached dialogue recordings as exact performances in the stated order, not merely voice style, no repetitions or added words. Stable human lip movements for Fukugyun, never animate the product mouth.\n\nReference order: Picture1 is final comparison layout; Picture2 is earlier studio with Tokun; Picture3 is the INERT sculpture; Pictures4/5 are Fukugyun; Pictures6/7 are Tokun; Pictures8/9 are LIVE Sobaya. Keep exact faces from original photos, not reinterpretations. LIVE Sobaya's rigid white mask from Picture8 is mandatory throughout; gray exposed skin including hands; huge muscular body, fitted white short-sleeve T-shirt, black LONG trousers, white sneakers, realistic beer mug. Preserve chest muscles and natural cloth folds but no nipple tips/outlines/spot shadows. His mask stays rigid; do not remove or deform it. Sculpture has SHORTS and skinny legs, not live Sobaya's anatomy.\n0.0-1.8s: close shot of Tokun finishing his single ukulele gesture and solemn nod, mouth closed. Price will be overlaid by editor.\n2.2-5.76s: Fukugyun says <d>[Japanese] \u305d\u3057\u3066\u3001\u3054\u672c\u4eba\u306b\u3082\u6765\u3066\u3044\u305f\u3060\u304d\u307e\u3057\u305f\uff01</d> to <Audio 1>, live Sobaya steps into the comparison position beside the completely motionless sculpture. Show Fukugyun speaking with correct face.\n6.1-9.54s: camera cuts to the clear full-body side-by-side composition of Picture1, Fukugyun offscreen enthusiastically says <d>[Japanese] \u3046\u308f\u3001\u3069\u3063\u3061\u304c\u672c\u7269\u304b\u308f\u304b\u3089\u306a\u3044\u304e\u3085\u3093\uff01</d> to <Audio 2>.\n9.7-12.8s: awkward silence, hold the unmistakable contrast. The product is absolutely motionless. Only live Sobaya breathes, his mask remains rigid.\n12.8-14.041s: LIVE Sobaya says <d>[Japanese] \u308f\u304b\u308b\u3084\u308d\u3002</d> to <Audio 3>, subtly tilting his head. The sculpture does not react or speak. End with both full bodies and their feet visible.",
+      "width": 864,
+      "height": 480,
+      "length": 362,
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "200",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "201",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "202",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "203",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "204",
+        0
+      ],
+      "ref_images.ref_image_5": [
+        "205",
+        0
+      ],
+      "ref_images.ref_image_6": [
+        "206",
+        0
+      ],
+      "ref_images.ref_image_7": [
+        "207",
+        0
+      ],
+      "ref_images.ref_image_8": [
+        "208",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "209",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "210",
+        0
+      ],
+      "ref_audios.ref_audio_2": [
+        "211",
+        0
+      ]
+    }
+  }
+}

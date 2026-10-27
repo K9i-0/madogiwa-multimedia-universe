@@ -1,0 +1,26 @@
+{
+  "model": "Aratako/Irodori-TTS-v4.1-Small",
+  "reference": "02_CHARACTERS/YumeTeleAnchor_voice.wav",
+  "referenceSha256": "e3cd210adad43fb3338684555e7e066f83cfad2400265c8a73fa55b9f96b753f",
+  "seed": 2026,
+  "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+  "text": "おおぎりから、芸能事務所へ。そして、エーアイドラマにグッズ展開。進化を続ける、ゆめみ。目指すは、テック業界のよしもとこうぎょう。",
+  "cfgText": 5,
+  "durationScale": 1,
+  "uncut": false,
+  "audioSha256": "79045e0f7243d718d4851cecde66cc266bfc0818904824793deaf184ee15d593",
+  "sourceVideo": "b00add6f490fbcdb0005bb2f101e92f4.MP4",
+  "sourceVideoSha256": "8de2bd04113e94ce3623e4ab435a66390e4ca730bf1e8c35a395e5fcdb113b82",
+  "closingRepair": {
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "text": "目指すは、テック業界のヨシモト興業。",
+    "reference": "02_CHARACTERS/YumeTeleAnchor_voice.wav",
+    "seed": 2026,
+    "caption": "落ち着いた地方局ニュース読み。標準語で、明瞭かつ均一な速度、抑制された抑揚で真面目に話す。",
+    "cfgText": 3,
+    "durationScale": 1,
+    "uncut": false,
+    "durationSeconds": 3.560042,
+    "sha256": "4c41e59837dc6e1f99a55059e3646f2bb7fa98b0dc33c6995cefa9b32a21ba52"
+  }
+}

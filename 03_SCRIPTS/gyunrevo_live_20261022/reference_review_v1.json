@@ -1,0 +1,24 @@
+{
+  "status": "approved_by_user",
+  "tool": "built-in image_gen",
+  "character_sheet": "character_fukuchan_gyunrevo_sheet_v1.png",
+  "venue_sheet": "venue_gyunrevo_dome_sheet_v1.png",
+  "character_references": [
+    "local/source_face_19.png",
+    "local/source_contact.jpg",
+    "../../02_CHARACTERS/Fukuchan.jpg"
+  ],
+  "venue_reference": "local/venue_last.png",
+  "prompts": [
+    "prompt_image_character_v1.txt",
+    "prompt_image_venue_v1.txt"
+  ],
+  "notes": [
+    "User requests historical video appearance, with canonical photo supporting identity.",
+    "Black shoes reconstructed because selected source frames do not show feet.",
+    "Venue extends prior generated dome: single round satellite stage, straight runway, main stage with central and two side screens.",
+    "Generated multi-angle scene geometry is approximate; use upper overview as stage-layout authority.",
+    "No new video API tasks submitted. Await explicit user review before 15s movement and 15s chorus tests."
+  ],
+  "approval": "これで生成し、最終的に繋げた動画のパスを教えて"
+}

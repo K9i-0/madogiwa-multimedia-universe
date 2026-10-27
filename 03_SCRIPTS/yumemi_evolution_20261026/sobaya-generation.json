@@ -1,0 +1,62 @@
+[
+  {
+    "id": "s1",
+    "text": "公式が何してんねん！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "referenceSha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "seed": 42,
+    "caption": "食い気味に、勢いよくツッコむ。",
+    "cfgText": 3,
+    "durationScale": 1,
+    "uncut": false,
+    "postprocess": "tools/sobaya_monsterize.sh",
+    "durationSeconds": 1.7887916666666666,
+    "sha256": "fedc20179ee31e06ea6c5ae9ec11110fcd34f4d75d4c240dcbce40d0e91f2214"
+  },
+  {
+    "id": "s2",
+    "text": "本業どこ行ったんや！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "referenceSha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "seed": 42,
+    "caption": "食い気味に、勢いよくツッコむ。",
+    "cfgText": 3,
+    "durationScale": 1,
+    "uncut": false,
+    "postprocess": "tools/sobaya_monsterize.sh",
+    "durationSeconds": 1.8915208333333333,
+    "sha256": "4e74c034e62d1ef9cb6b59e7375cee68e83ee17f159cc2cf558e2853146bea1a"
+  },
+  {
+    "id": "s3",
+    "text": "しかも売れとるんかい！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "referenceSha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "seed": 42,
+    "caption": "食い気味に、勢いよくツッコむ。",
+    "cfgText": 3,
+    "durationScale": 1,
+    "uncut": false,
+    "postprocess": "tools/sobaya_monsterize.sh",
+    "durationSeconds": 1.7066458333333334,
+    "sha256": "1dd3baa6ea13713da0d03f32e85c730d1ae0d4a47e399be46f960f85eb78088f"
+  },
+  {
+    "id": "s4",
+    "text": "そっちに進化すな！",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "referenceSha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "seed": 42,
+    "caption": "食い気味に、勢いよくツッコむ。",
+    "cfgText": 3,
+    "durationScale": 1,
+    "uncut": false,
+    "postprocess": "tools/sobaya_monsterize.sh",
+    "durationSeconds": 1.73325,
+    "sha256": "f288601ec3ed58a27a16de5884c5ad86ca7b7c23c564047eb3ac38c0359cb065"
+  }
+]

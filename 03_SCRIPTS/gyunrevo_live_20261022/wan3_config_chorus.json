@@ -1,0 +1,51 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "wan_generated_lip_sync",
+  "project_duration": 45,
+  "generation_mode": "segmented_over_30",
+  "prompt_file": "prompt_wan3_chorus.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_fukuchan_gyunrevo_sheet_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "venue_gyunrevo_dome_sheet_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "local/movement_last.png"
+    },
+    {
+      "type": "reference_video",
+      "path": "local/chorus_ref_077_082.mp4"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "4:3",
+    "duration": 15,
+    "audio": true,
+    "seed": 20261024,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "local/wan3_chorus_480p.mp4",
+  "postproduction_audio": {
+    "strategy": "restore_original_source_song_plus_wan_crowd",
+    "source_start": 72,
+    "duration": 15,
+    "visible_sync_reference_source_interval": [
+      77,
+      82
+    ],
+    "visible_sync_output_interval": [
+      5,
+      10
+    ],
+    "note": "User explicitly chooses original song; generation metadata describes visual lip movement reference, not an adopted newly generated singer voice."
+  },
+  "estimated_usd": 0.7
+}

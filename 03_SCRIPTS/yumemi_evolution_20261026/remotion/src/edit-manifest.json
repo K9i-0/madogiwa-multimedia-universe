@@ -1,0 +1,52 @@
+{
+  "composition": {
+    "id": "MadogiwaEdit",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationInFrames": 465
+  },
+  "inputVideo": "input.mp4",
+  "inputVideoVolume": 0,
+  "replacementAudio": null,
+  "overlays": [],
+  "captions": [],
+  "narration": "narration.wav",
+  "audioClips": [
+    {
+      "startFrame": 3,
+      "sourceStartFrame": 171,
+      "durationInFrames": 48,
+      "text": "進化を続ける、ゆめみ。",
+      "file": "narration.wav"
+    },
+    {
+      "startFrame": 66,
+      "sourceStartFrame": 0,
+      "durationInFrames": 30,
+      "text": "大喜利から、",
+      "file": "narration.wav"
+    },
+    {
+      "startFrame": 165,
+      "sourceStartFrame": 33,
+      "durationInFrames": 39,
+      "text": "芸能事務所へ。",
+      "file": "narration.wav"
+    },
+    {
+      "startFrame": 249,
+      "sourceStartFrame": 76,
+      "durationInFrames": 84,
+      "text": "そして、AIドラマにグッズ展開。",
+      "file": "narration.wav"
+    },
+    {
+      "startFrame": 354,
+      "sourceStartFrame": 0,
+      "durationInFrames": 107,
+      "text": "目指すは、テック業界の吉本興業。",
+      "file": "closing.wav"
+    }
+  ]
+}

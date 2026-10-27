@@ -1,0 +1,180 @@
+{
+  "variants": [
+    {
+      "name": "keynote",
+      "cues": 15,
+      "effectGain": 1.0,
+      "peakDbfs": -6.394949436187744,
+      "output": "final_remotion_yumemin_keynote.mp4"
+    },
+    {
+      "name": "comedy",
+      "cues": 17,
+      "effectGain": 1.0,
+      "peakDbfs": -5.0426177978515625,
+      "output": "final_remotion_yumemin_comedy.mp4"
+    },
+    {
+      "name": "intense",
+      "cues": 21,
+      "effectGain": 1.0,
+      "peakDbfs": -3.913919448852539,
+      "output": "final_remotion_yumemin_intense.mp4"
+    }
+  ],
+  "sources": {
+    "jingles_STEEL00": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Steel jingles/jingles_STEEL00.ogg",
+      "sha256": "a6abeb4c41302911f7ee030390aa94bf4c51afc9e079bca8c42749b7cf236f38"
+    },
+    "maximize_007": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/maximize_007.ogg",
+      "sha256": "a1b310e251606b20f15b210681ef1ddfc5cbbb09771a07e5e25fd49e9a718352"
+    },
+    "glass_001": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/glass_001.ogg",
+      "sha256": "0db3f69b7397e6c6e02314784f95eafa7ebd7abe29e1f76be16dd7d9c845ff3a"
+    },
+    "confirmation_002": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/confirmation_002.ogg",
+      "sha256": "00742add69a5e119d7c87b7423b765f1570a041191748c7deb703a878c5ac135"
+    },
+    "applause": {
+      "sourceFile": "03_SCRIPTS/75_madogiwa_tshirt_keynote/audio_sources/applause_cc0.ogg",
+      "sha256": "3a83cbaa6b6b49729363f34cb231c5a7432561e5dafe21be4a13df21759a3290"
+    },
+    "glass_002": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/glass_002.ogg",
+      "sha256": "319eee5c2cfe19af62a263bf636c62733090e5c7211ac452e5622ca8f25e9766"
+    },
+    "glass_003": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/glass_003.ogg",
+      "sha256": "6ca4ada779a5f532c90ada303bfbf6ac468aa71f3467c33c8369dddf339f54e8"
+    },
+    "glass_004": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/glass_004.ogg",
+      "sha256": "50794638cbec412f24e45681db437559e58cad753ef6d447bedbf30eb3ac9991"
+    },
+    "jingles_STEEL02": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Steel jingles/jingles_STEEL02.ogg",
+      "sha256": "9442e844ddb3dce81a95cba04f16454159a36ab69f586c8d5ca74f9247d74264"
+    },
+    "confirmation_001": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/confirmation_001.ogg",
+      "sha256": "9a70f3a16e835c9daec9bba6a2f11ae00fe30497276657343fd2ba7b9ce67516"
+    },
+    "maximize_009": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/maximize_009.ogg",
+      "sha256": "caa3e683356fa73e3e4a99f1fd95d7de30c9740144b31f41eedf7091bcc99ce9"
+    },
+    "jingles_PIZZI00": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Pizzicato jingles/jingles_PIZZI00.ogg",
+      "sha256": "5695253d83ad20efe08d5623f73d7de0c57d17919ed8318aaf9284718cf60c3f"
+    },
+    "bong_001": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/bong_001.ogg",
+      "sha256": "6e17e7eb89370c89c9835da7b9bc34bfadcccc8326a52f1697aee40631441b02"
+    },
+    "scratch_001": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/scratch_001.ogg",
+      "sha256": "dc8425c63de65a02cb7ae20f004cc58774401d73e3616971d3252e25e21cd238"
+    },
+    "jingles_SAX00": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Sax jingles/jingles_SAX00.ogg",
+      "sha256": "92ab9dd8748a6323d2005cc34f498ede93242f881524dbebf2049329e440659b"
+    },
+    "laughter": {
+      "sourceFile": "03_SCRIPTS/75_madogiwa_tshirt_keynote/audio_sources/laughter_ccby4.mp3",
+      "sha256": "8defd29a6197f2aac02ba67c50ed1931b2731901a128339c69053f86eac7ec38"
+    },
+    "drop_004": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/drop_004.ogg",
+      "sha256": "0015e6bbbbc9d6db5f24c938f00e799d572b7a6b3c26a580bb13d95e2c4294c8"
+    },
+    "pluck_001": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/pluck_001.ogg",
+      "sha256": "b655133a56cb80ed34d07b10b180f6a598260d074598d906c298d01d24295f53"
+    },
+    "pluck_002": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/pluck_002.ogg",
+      "sha256": "c569712731c66854d528fd6cc8fbe0a1574f0cd679c0bc996316e09f59922229"
+    },
+    "jingles_PIZZI02": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Pizzicato jingles/jingles_PIZZI02.ogg",
+      "sha256": "10c8631333d27cf4bced69d609cf41f02d4d2fe033e02a81b55f53645c207b36"
+    },
+    "drop_002": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/drop_002.ogg",
+      "sha256": "e7df5110cbddadb8c638e3bc921887caa9de298e1e747041550d6e991a3e6997"
+    },
+    "drop_003": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/drop_003.ogg",
+      "sha256": "654a626525588439a267df8c8fb58adedf5b1dd1cd1a0e11d56d1c27757c4a68"
+    },
+    "jingles_SAX03": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Sax jingles/jingles_SAX03.ogg",
+      "sha256": "5dd23eedc4e95775cbea291df882d7fd0358e551b1b3a2119bf73e3217fa7937"
+    },
+    "scratch_003": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/interface/Audio/scratch_003.ogg",
+      "sha256": "45784ea62d348346459ec773c615cb7bc50bc15f753dc5a4fa5caae725b2ba7c"
+    },
+    "jingles_HIT00": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Hit jingles/jingles_HIT00.ogg",
+      "sha256": "d2ada1607b9ce9fc5e18690689fe0d87c1a8328f68618e5bfca845ee4233b986"
+    },
+    "phaserUp1": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/phaserUp1.ogg",
+      "sha256": "62fc999ceb762d9a2d7b8d404dc1bb9f30e01148c03688705019a85f2eb261df"
+    },
+    "jingles_HIT02": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Hit jingles/jingles_HIT02.ogg",
+      "sha256": "c6e0223126ac60b6c0ecc8eccfbde13c796c31c0c647623960146400e3192ee4"
+    },
+    "laser1": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/laser1.ogg",
+      "sha256": "e01bc8b5c7390ae44c0187984732cc0a68569054aa9cac74aecc9faf722a6262"
+    },
+    "powerUp1": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/powerUp1.ogg",
+      "sha256": "08949e623e9f9b55c7e49a740fe9352ae3247d6ce4f641c47519aaa9c694df15"
+    },
+    "jingles_HIT03": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/music-jingles/Audio/Hit jingles/jingles_HIT03.ogg",
+      "sha256": "0e59d7d18f38c9e83aa325495d0e5961aafebc3dbe0bf123847f3034e18dfc88"
+    },
+    "phaserUp3": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/phaserUp3.ogg",
+      "sha256": "72f7bf65601d6d686323400e1615024084a8ac12bf82ffaf815e7dacccb86b11"
+    },
+    "laser2": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/laser2.ogg",
+      "sha256": "fb3966f0f15a2759fa46ae6e9f1f874375350bdb23569f009ea68d3de51c98aa"
+    },
+    "laser3": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/laser3.ogg",
+      "sha256": "11f5a09014ce816b6ea9bf28329535bd4d5661a00afc4f65dd839c26e5e24686"
+    },
+    "powerUp3": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/powerUp3.ogg",
+      "sha256": "07410f7e34da7016401eab761f409a51f97fcc529a1370cc163131a40c90c99e"
+    },
+    "phaseJump1": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/phaseJump1.ogg",
+      "sha256": "5c52947b331bf2c61101a004ef4ed40842f504afcd7b6305ea567fbca383ecba"
+    },
+    "laser4": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/laser4.ogg",
+      "sha256": "006e338377257ec6bbe40786bbb81785e8130ba70d08ae1711d93b95669e4278"
+    },
+    "laser6": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/laser6.ogg",
+      "sha256": "76951864f322185e9b3b769ce00b5d3da1d0b1d6a04dfda5e00005398956bb7b"
+    },
+    "powerUp7": {
+      "sourceFile": ".local/yumemi_evolution_20261026/sfx/digital-audio/Audio/powerUp7.ogg",
+      "sha256": "f836430802bafc2603a212fcdaa0cdc6b696b1817ab50b0ae6ee35addfa99d94"
+    }
+  },
+  "listenStatus": "not_auditioned"
+}

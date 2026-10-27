@@ -1,0 +1,30 @@
+{
+  "task_id": "b2fe874d-114b-4329-9222-2c44e4101a6f",
+  "status": "SUCCEEDED",
+  "model": "wan3.0-video",
+  "seed": 20261025,
+  "generation_resolution": "480P",
+  "raw_resolution": [
+    854,
+    480
+  ],
+  "raw_duration": 25.030998,
+  "final": "final_gyunrevo_saturn_live_25s_720p.mp4",
+  "final_resolution": [
+    1280,
+    720
+  ],
+  "final_duration": 25,
+  "fps": 30,
+  "decode": "passed full final decode",
+  "estimated_usd": 1.05,
+  "invoice_verified": false,
+  "visual_review": {
+    "overview": "1 fps through full 25 seconds: singing / three audience characters / Saturn ring-wide reveal present.",
+    "microphone": "0.25-second sampling across first 8 seconds: microphone remains visibly in contact with hand(s), no detached hovering mic observed at reviewed frames. Contrary to fixed-left-hand request, grip starts in right hand then transfers through a two-hand grip to left around 2s; no all-frame guarantee.",
+    "audience": "Yumemin retains round blue/white floating body, no arms or legs visible in sampled overview. Takosan retains hood/white face/dot eyes/lower tentacles; six-limb exact count not independently certified every frame. Sobaya retains white mask and gray exposed skin. Somersault action repeats across camera change rather than exactly once.",
+    "ending": "Full Saturn with concert structures distributed around rings and cyan/magenta light wave visible.",
+    "lip_sync": "Source performance timing not frame-exact; generated mouth motion is not certified phoneme-perfect to original song.",
+    "audio": "Original source 77-102s unchanged speed, gain0.82; prior image-reference-generated crowd gain0.18 crossfaded/reused. Saturn generated audio discarded to avoid duplicated vocals. Listening not certified."
+  }
+}

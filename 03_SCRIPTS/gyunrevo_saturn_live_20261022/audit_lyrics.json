@@ -1,0 +1,28 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "30/1",
+      "nb_read_frames": "750"
+    },
+    {
+      "codec_name": "aac",
+      "r_frame_rate": "0/0",
+      "nb_read_frames": "1172"
+    }
+  ],
+  "format": {
+    "duration": "25.000000"
+  },
+  "audio_bitstream_unchanged": true,
+  "full_decode_passed": true,
+  "visual_review": "contact sheet: readable, no face overlap, no overflow",
+  "timing": "Whisper word timestamps with supplied lyrics spelling; listening not verified",
+  "source_lyrics_url": "https://note.com/gyungyun/n/ne6cc4a98494b",
+  "user_authorization": "User states commissioned by the song performer",
+  "style": "white with cyan glow, lower center, dark gradient, 4-frame fades"
+}

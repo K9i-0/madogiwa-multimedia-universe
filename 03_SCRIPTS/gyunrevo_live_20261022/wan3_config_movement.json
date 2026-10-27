@@ -1,0 +1,34 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 45,
+  "generation_mode": "segmented_over_30",
+  "prompt_file": "prompt_wan3_movement.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_fukuchan_gyunrevo_sheet_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "venue_gyunrevo_dome_sheet_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "local/venue_last.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "4:3",
+    "duration": 15,
+    "audio": true,
+    "seed": 20261023,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "local/wan3_movement_480p.mp4",
+  "segment": "movement; new 15 seconds appended to existing 15-second opener, followed by 15-second chorus",
+  "estimated_usd": 0.525
+}

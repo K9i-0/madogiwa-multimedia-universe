@@ -1,0 +1,32 @@
+{
+  "status": "rendered_validation_cut",
+  "final": "final_gyunrevo_live_test_45s_720p.mp4",
+  "duration": 45,
+  "resolution": [
+    960,
+    720
+  ],
+  "fps": 30,
+  "frames": 1350,
+  "tasks": {
+    "movement": "a12e4c83-8387-40b1-a06a-b9bed3a5ca62",
+    "chorus": "a0d08a28-c2a8-447f-8267-e4785c695397"
+  },
+  "new_generated_seconds": 30,
+  "new_reference_video_seconds": 5,
+  "estimated_additional_usd": 1.225,
+  "actual_invoice_checked": false,
+  "checks": {
+    "full_decode": "passed",
+    "movement": "Sampled every 2 seconds: satellite platform, walking on runway, arrival at main stage visible. Venue and costume broadly retained.",
+    "chorus": "Sampled every second: arena wide 0-5s, singing close-up 5-10s, rear main-stage wide 10-15s. No karaoke room or sheet labels visible.",
+    "lip_sync": "Reference/source compared at one-second intervals. Gesture trajectory differs: source raises arm then lowers across face, generated starts with arm across face then raises/lowers. Not frame-exact performance replication; complete phoneme sync is NOT certified.",
+    "audio": "Original source song 7-37s then 72-87s, speed unchanged. Image-reference movement crowd is crossfaded into a continuous bed; all video-reference generated audio discarded. Listening not verified.",
+    "asr": "Local Whisper-small used for rough screening. Source recognition has severe hallucination/repetition and nonmonotonic timestamps; not used as exact lyric/timing authority. Crowd ASR likewise repeats tokens and cannot certify absence of speech."
+  },
+  "limitations": [
+    "Generated close-up is a reconstruction, not pixel-preserved source.",
+    "Lip-sync fidelity remains a test result rather than a confirmed match."
+  ],
+  "render_script": "finish_compilation.py"
+}

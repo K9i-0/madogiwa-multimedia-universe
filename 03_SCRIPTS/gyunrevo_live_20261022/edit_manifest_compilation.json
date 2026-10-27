@@ -1,0 +1,45 @@
+{
+  "width": 960,
+  "height": 720,
+  "fps": 30,
+  "frames": 1350,
+  "segments": [
+    {
+      "start_frame": 0,
+      "duration_frames": 450,
+      "video": "local/wan3_part01_480p.mp4",
+      "source_audio_start": 7
+    },
+    {
+      "start_frame": 450,
+      "duration_frames": 450,
+      "video": "local/wan3_movement_480p.mp4",
+      "source_audio_start": 22
+    },
+    {
+      "start_frame": 900,
+      "duration_frames": 450,
+      "video": "local/wan3_chorus_480p.mp4",
+      "source_audio_start": 72,
+      "lip_reference_source": [
+        77,
+        82
+      ],
+      "lip_reference_final_frames": [
+        1050,
+        1200
+      ]
+    }
+  ],
+  "audio": {
+    "original_gain": 0.8,
+    "crowd_gain": 0.2,
+    "song_join_fade_seconds": 0.03,
+    "end_fade_seconds": 0.4,
+    "time_stretch": false,
+    "crowd_source": "local/wan3_movement_480p.mp4",
+    "crowd_loop_crossfade_seconds": 0.7,
+    "crowd_rationale": "Use only the image-reference generation crowd bed; discard audio from video-reference tasks to avoid any regenerated song overlapping original."
+  },
+  "output": "final_gyunrevo_live_test_45s_720p.mp4"
+}

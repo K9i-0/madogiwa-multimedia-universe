@@ -1,0 +1,63 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "wan_generated_lip_sync",
+  "project_duration": 25,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_fukuchan_gyunrevo_sheet_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_yumemin_toy_diorama_3d_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_takosan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "venue_saturn_ring_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "audience_saturn_trio.png"
+    },
+    {
+      "type": "reference_video",
+      "path": "local/chorus_ref_077_082.mp4"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 25,
+    "audio": true,
+    "seed": 20261025,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "local/wan3_saturn_480p.mp4",
+  "postproduction_audio": {
+    "strategy": "original_song_plus_crowd",
+    "source_start": 77,
+    "source_end": 102,
+    "visible_reference_source": [
+      77,
+      82
+    ],
+    "visible_output_interval": [
+      0,
+      5
+    ],
+    "note": "Explicit user preference overrides newly generated singing; preserve original song."
+  },
+  "estimated_usd": 1.05
+}

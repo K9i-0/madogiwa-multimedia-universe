@@ -1,0 +1,30 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "wan_generated_lip_sync",
+  "project_duration": 15,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3.txt",
+  "media": [
+    {
+      "type": "reference_video",
+      "path": "local/source_007_022.mp4"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "4:3",
+    "duration": 15,
+    "audio": true,
+    "seed": 20261022,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "local/wan3_part01_480p.mp4",
+  "postproduction_audio": {
+    "strategy": "restore_original_source_audio_and_mix_generated_crowd",
+    "source_start": 7,
+    "duration": 15,
+    "note": "User explicitly prioritizes original singer and original song. Source video controls visible singing; Wan generates crowd bed only. No newly synthesized singer voice."
+  }
+}

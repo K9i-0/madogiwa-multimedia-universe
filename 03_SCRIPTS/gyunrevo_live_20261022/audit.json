@@ -1,0 +1,25 @@
+{
+  "task_id": "6c7745e7-2e57-4145-aafc-f47774e81935",
+  "status": "SUCCEEDED",
+  "source_interval_seconds": [
+    7,
+    22
+  ],
+  "generated": {
+    "width": 740,
+    "height": 554,
+    "fps": 30,
+    "container_duration": 15.022993
+  },
+  "final": {
+    "path": "final_gyunrevo_part01_720p.mp4",
+    "width": 960,
+    "height": 720,
+    "fps": 30,
+    "duration": 15
+  },
+  "visual_review": "Compared frames at approximately 0,3,6,9,12 seconds: white shiny suit, hair, initial back-facing pose, overhead clapping, turn and microphone singing sequence closely follow source. Small generative appearance differences remain possible; not pixel-identical foreground preservation. Background replaced by huge full dome.",
+  "audio_review": "Original PCM extracted directly from source 7-22s, timing and speed unchanged; gain 0.8, Wan track gain 0.22, limiter ceiling 0.97. Generated track prompted as crowd-only. Listening and absence of leaked generated song have NOT been verified; full lip-sync not certified.",
+  "decode": "Entire final decoded without errors",
+  "postproduction": "FFmpeg via finish.py; no text or layout overlays"
+}

@@ -1,0 +1,21 @@
+{
+  "composition": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 750
+  },
+  "video": "local/wan3_saturn_480p.mp4",
+  "original_song": "local/song_077_102.wav",
+  "original_song_source_seconds": [
+    77,
+    102
+  ],
+  "song_gain": 0.82,
+  "crowd_source": "../gyunrevo_live_20261022/local/wan3_movement_480p.mp4",
+  "crowd_gain": 0.18,
+  "crowd_crossfade_seconds": 0.7,
+  "end_fade_frames": 12,
+  "output": "final_gyunrevo_saturn_live_25s_720p.mp4",
+  "time_stretch": false
+}

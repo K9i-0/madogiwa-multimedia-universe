@@ -1,7 +1,7 @@
 {
   "engine": "VOICEVOX",
   "version": "0.25.1",
-  "count": 84,
+  "count": 85,
   "speed": {
     "metan": 1.13,
     "zunda": 1.15
@@ -19,5 +19,111 @@
   "v5NewSynthesisCount": 1,
   "v6NewOrChangedUtterances": 58,
   "v7NewOrChangedUtterances": 31,
-  "v8NewOrChangedUtterances": 9
+  "v8NewOrChangedUtterances": 9,
+  "v9NewOrChangedUtterances": 19,
+  "v9PerformanceSource": "prepare_voice.py; audio_queries/*_source.json",
+  "v9Performance": [
+    {
+      "id": "line-020",
+      "text": "味、弾力、焼き色まで再現できたわ。残る相違点は、生命活動だけだった。",
+      "settings": {
+        "speedScale": 1.08,
+        "intonationScale": 1.12
+      }
+    },
+    {
+      "id": "line-021",
+      "text": "一番大事なところが残っているのだ。",
+      "settings": {
+        "speedScale": 1.1,
+        "intonationScale": 0.78,
+        "postPhonemeLength": 0.18
+      }
+    },
+    {
+      "id": "line-042",
+      "text": "お帰りください、なのだ。",
+      "settings": {
+        "speedScale": 1.1,
+        "intonationScale": 0.78,
+        "postPhonemeLength": 0.18
+      }
+    },
+    {
+      "id": "line-046",
+      "text": "通報の電話線なのだ。",
+      "settings": {
+        "speedScale": 1.1,
+        "intonationScale": 0.78,
+        "postPhonemeLength": 0.18
+      }
+    },
+    {
+      "id": "line-048",
+      "text": "なお、霜重研究員は、不法侵入に加えて、猥褻物陳列罪の容疑でも逮捕されているわ。",
+      "settings": {
+        "speedScale": 1.08,
+        "intonationScale": 0.82
+      }
+    },
+    {
+      "id": "line-059",
+      "text": "市販品から毒が検出されないたびに、北原研究員は疑いを深めていったわ。",
+      "settings": {
+        "speedScale": 1.08,
+        "intonationScale": 1.12
+      }
+    },
+    {
+      "id": "line-073",
+      "text": "そして政府は、その養殖技術を保証している。北原研究員は、企業と国家が共有する、巨大な隠蔽計画だと主張したわ。",
+      "settings": {
+        "speedScale": 1.16,
+        "intonationScale": 1.18
+      }
+    },
+    {
+      "id": "line-074",
+      "text": "私は、食卓だけの問題ではないと思うの。教科書で養殖と教え、商品にも養殖と書く。疑問を持たない消費者を、子どもの頃から育てているのよ。",
+      "settings": {
+        "speedScale": 1.16,
+        "intonationScale": 1.18
+      }
+    },
+    {
+      "id": "line-076",
+      "text": "研究員は、教科書の養殖の章を、企業の宣伝資料として分類し直したわ。次に調べるのは、給食のちくわと、社会科の先生の関係よ。",
+      "settings": {
+        "speedScale": 1.16,
+        "intonationScale": 1.18
+      }
+    },
+    {
+      "id": "line-077",
+      "text": "本物がいるから、偽物も疑われない。安全だから、誰も中身を調べない。私たちは、安心と引き換えに、正体を知る機会を失っているの。",
+      "settings": {
+        "speedScale": 1.16,
+        "intonationScale": 1.18
+      }
+    },
+    {
+      "id": "line-080",
+      "text": "……昨日、食べたのだ。養殖だと書いてあったのだ。",
+      "settings": {
+        "speedScale": 0.94,
+        "intonationScale": 0.72,
+        "volumeScale": 0.86,
+        "prePhonemeLength": 0.2
+      }
+    },
+    {
+      "id": "line-081",
+      "text": "その一本が、海にも山にも、一度もいたことがないのかもしれない。",
+      "settings": {
+        "speedScale": 1.04,
+        "intonationScale": 0.83,
+        "volumeScale": 0.92
+      }
+    }
+  ]
 }

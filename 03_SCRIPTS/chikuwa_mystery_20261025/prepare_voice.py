@@ -19,10 +19,28 @@ for i,r in enumerate(rows):
  d=prepare_row(r,dictionary,scopes=['mmu']);sp=2 if r['who']=='metan' else 3
  qp=P/'audio_queries'/f"{r['id']}.json"; cache=P/'audio_queries'/f"{r['id']}_source.json"
  settings={'speech':d['speech'],'speaker':sp,'version':version,'speed':1.13 if sp==2 else 1.15}
+ # Selected performances; unmodified lines retain the existing voice cache.
+ performance={}
+ text=r['text']
+ if text.startswith('味、弾力'):performance={'speedScale':1.08,'intonationScale':1.12}
+ elif text in ['一番大事なところが残っているのだ。','通報の電話線なのだ。','お帰りください、なのだ。']:performance={'speedScale':1.10,'intonationScale':.78,'postPhonemeLength':.18}
+ elif r['view']=='additional_charge' and sp==2:performance={'speedScale':1.08,'intonationScale':.82}
+ elif text.startswith('市販品から毒が'):performance={'speedScale':1.08,'intonationScale':1.12}
+ elif r['view'] in ['leap','education'] and sp==2:performance={'speedScale':1.16,'intonationScale':1.18}
+ elif text.startswith('……昨日'):performance={'speedScale':.94,'intonationScale':.72,'volumeScale':.86,'prePhonemeLength':.20}
+ elif text.startswith('その一本が'):performance={'speedScale':1.04,'intonationScale':.83,'volumeScale':.92}
+ if performance:settings['performance']=performance
  cached=query_cache.get(json.dumps(settings,sort_keys=True))
  if cached is not None:q=cached
  else:
   q=json.loads(request('audio_query',{'speaker':sp,'text':d['speech']}));q.update(speedScale=settings['speed'],prePhonemeLength=.09,postPhonemeLength=.12,outputSamplingRate=24000)
+ if performance:q.update(performance)
+ if text.startswith('味、弾力'):
+  for phrase in q['accent_phrases']:
+   if ''.join(m['text'] for m in phrase['moras'])=='ソオイテンワ' and phrase.get('pause_mora'):phrase['pause_mora']['vowel_length']=.58
+ if text.startswith('……昨日'):
+  for phrase in q['accent_phrases']:
+   if ''.join(m['text'] for m in phrase['moras'])=='ノダ' and phrase.get('pause_mora'):phrase['pause_mora']['vowel_length']=.58
  qp.write_text(json.dumps(q,ensure_ascii=False,indent=2));cache.write_text(json.dumps(settings,ensure_ascii=False))
  key=hashlib.sha256(json.dumps({'query':q,'speaker':sp,'version':version},sort_keys=True).encode()).hexdigest()[:12];name=f"voice_{i:03}_{key}.wav";fp=P/name
  if not fp.exists():

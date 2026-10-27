@@ -56,6 +56,13 @@ caps=[c for c in caps if c['lineId']!=charge['id']]
 for a,b,text in [(charge['startFrame'],cues['chargeReveal'],'なお、霜重研究員は、\n不法侵入に加えて、'),(cues['chargeReveal'],charge['startFrame']+charge['durationInFrames'],'猥褻物陳列罪の容疑でも\n逮捕されているわ。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=charge['id']))
 caps=[c for c in caps if c['lineId']!=logic['id']]
 for a,b,text in [(logic['startFrame'],cues['logicReveal'],'毒ちくわを、一匹残らず\n取り除いているのではない。'),(cues['logicReveal'],logic['startFrame']+logic['durationInFrames'],'最初から、生きたちくわを一匹も\n使っていないのではないか。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=logic['id']))
+# Punchlines reveal with the spoken word, not the earlier caption page.
+for prefix,word,key,left,right in [
+ ('味、弾力','セエメエ','lifeReveal','味、弾力、焼き色まで再現できたわ。\n残る相違点は、','生命活動だけだった。'),
+ ('研究員は、教科書','ツギニ','teacherReveal','研究員は、教科書の養殖の章を、\n企業の宣伝資料として分類し直したわ。','次に調べるのは、給食のちくわと、\n社会科の先生の関係よ。')]:
+ row=next(r for r in rows if r['text'].startswith(prefix));cut=spoken_cue(row,word);cues[key]=cut
+ caps=[c for c in caps if c['lineId']!=row['id']]
+ for a,b,text in [(row['startFrame'],cut,left),(cut,row['startFrame']+row['durationInFrames'],right)]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=row['id']))
 caps.sort(key=lambda c:c['startFrame'])
 m=dict(cues=cues,codaDurationFrames=600,codaStartFrame=coda,composition=dict(width=1280,height=720,fps=30,durationInFrames=coda+600),dialogue=rows,captions=caps,clips=clips,views=views,mainStartFrame=next(r['startFrame'] for r in rows if r['text'].startswith('めたんのミステリー研究所へ、ようこそ。'))-18,endingStartFrame=next(r['startFrame'] for r in rows if r['view']=='callback'),voicevoxVersion='0.25.1')
 (D/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2));print('DURATION',m['composition']['durationInFrames']/30,'views',len(views))

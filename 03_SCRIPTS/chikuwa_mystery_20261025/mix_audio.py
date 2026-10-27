@@ -49,9 +49,12 @@ for c in m['clips']:
  a=decode(D/'public'/c['src'],'loudnorm=I=-19:TP=-2:LRA=11',c['sourceStartFrame']/30,c['durationInFrames']/30)[:length]
  a=fade(a,240,480);voice[start:start+len(a)]+=a;bgm[start:start+length]*=.08
  fadeN=sr//5;bgm[start-fadeN:start]*=np.linspace(1,.08,fadeN)[:,None];bgm[start+length:start+length+fadeN]*=np.linspace(.08,1,fadeN)[:,None]
+from sound_design import build_effects
+effects,effect_events=build_effects(m,sr,n)
+voice+=effects;del effects
 voice+=bgm;del bgm
 peak=float(np.max(np.abs(voice)))
 if peak>.94:voice*=.94/peak
 save(D/'public/mixed.wav',voice)
-(P/'mix_record.json').write_text(json.dumps({'sampleRate':sr,'durationSeconds':n/sr,'voiceLUFS':-18,'bgmLUFS':-35,'clipLUFS':-19,'premasterPeak':peak,'endingMusic':'TheFatRat - Unity / -38 LUFS','endingLift':False,'mainBgmStartFrame':m['mainStartFrame'],'mainFadeInFrames':18,'editorialCues':m['cues'],'codaSound':'original synthesized quiet factory hum, no dialogue','clips':m['clips']},ensure_ascii=False,indent=2))
+(P/'mix_record.json').write_text(json.dumps({'soundEffects':effect_events,'sampleRate':sr,'durationSeconds':n/sr,'voiceLUFS':-18,'bgmLUFS':-35,'clipLUFS':-19,'premasterPeak':peak,'endingMusic':'TheFatRat - Unity / -38 LUFS','endingLift':False,'mainBgmStartFrame':m['mainStartFrame'],'mainFadeInFrames':18,'editorialCues':m['cues'],'codaSound':'original synthesized conveyor rollers and quiet factory hum; continues under documents, no dialogue','clips':m['clips']},ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

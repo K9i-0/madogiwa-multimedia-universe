@@ -1,25 +1,85 @@
 {
+  "soundEffects": [
+    {
+      "name": "試料トレー",
+      "startSeconds": 137.383,
+      "durationSeconds": 0.25,
+      "peakGain": 0.023,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "受付呼び鈴",
+      "startSeconds": 265.48,
+      "durationSeconds": 0.65,
+      "peakGain": 0.018,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "調査報告書をめくる",
+      "startSeconds": 311.72,
+      "durationSeconds": 0.4,
+      "peakGain": 0.014,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "試薬滴下",
+      "startSeconds": 397.933,
+      "durationSeconds": 0.18,
+      "peakGain": 0.012,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "検査終了音 1",
+      "startSeconds": 395.533,
+      "durationSeconds": 0.14,
+      "peakGain": 0.015,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "検査終了音 2",
+      "startSeconds": 397.033,
+      "durationSeconds": 0.14,
+      "peakGain": 0.015,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "検査終了音 3",
+      "startSeconds": 398.533,
+      "durationSeconds": 0.14,
+      "peakGain": 0.015,
+      "source": "original procedural synthesis"
+    },
+    {
+      "name": "生産ライン・ローラーと駆動音",
+      "startSeconds": 584.6,
+      "durationSeconds": 20.0,
+      "peakGain": 0.007,
+      "source": "original procedural synthesis"
+    }
+  ],
   "sampleRate": 48000,
-  "durationSeconds": 603.2333333333333,
+  "durationSeconds": 604.6,
   "voiceLUFS": -18,
   "bgmLUFS": -35,
   "clipLUFS": -19,
-  "premasterPeak": 0.836674690246582,
+  "premasterPeak": 0.8398088812828064,
   "endingMusic": "TheFatRat - Unity / -38 LUFS",
   "endingLift": false,
   "mainBgmStartFrame": 919,
   "mainFadeInFrames": 18,
   "editorialCues": {
-    "chargeReveal": 9519,
-    "logicReveal": 13760,
-    "absenceReveal": 10466,
-    "horrorStart": 9711,
-    "silenceStart": 13626,
-    "silenceEnd": 13900,
-    "codaRecord": 17707,
-    "codaApproval": 17917
+    "chargeReveal": 9491,
+    "logicReveal": 13868,
+    "absenceReveal": 10442,
+    "horrorStart": 9687,
+    "silenceStart": 13734,
+    "silenceEnd": 14008,
+    "codaRecord": 17748,
+    "codaApproval": 17958,
+    "lifeReveal": 4272,
+    "teacherReveal": 15983
   },
-  "codaSound": "original synthesized quiet factory hum, no dialogue",
+  "codaSound": "original synthesized conveyor rollers and quiet factory hum; continues under documents, no dialogue",
   "clips": [
     {
       "src": "fishing_archive_v7.mp4",

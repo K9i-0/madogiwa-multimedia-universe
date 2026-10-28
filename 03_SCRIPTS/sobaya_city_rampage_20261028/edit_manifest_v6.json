@@ -1,0 +1,21 @@
+{
+  "base": "v5",
+  "fps": 30,
+  "total_frames": 900,
+  "generated_audio_muted_frames": [
+    0,
+    234
+  ],
+  "generated_audio_fade_in_frames": 2,
+  "music_source_in": 26,
+  "music_source_out": 56,
+  "sfx_gain_db": -8.82,
+  "bgm_gain_db": -10.89,
+  "video": "stream copy, no re-encoding",
+  "outputs": [
+    "final_sobaya_brewery_bgm_v6_720p.mp4",
+    "final_sobaya_brewery_bgm_v6_480p.mp4"
+  ],
+  "filter_complex": "[0:a]aresample=48000,volume=-8.820000dB,afade=t=in:st=7.8:d=0.06666666666666667[sfx];[1:a]aresample=48000,volume=-10.890000dB[bgm];[sfx][bgm]amix=inputs=2:duration=longest:normalize=0,atrim=duration=30,afade=t=in:d=0.015,afade=t=out:st=29.92:d=0.08,alimiter=limit=0.891251:level=0:latency=1[mix]",
+  "tradeoff": "Opening generated ambience/effects also removed; no source separation or additional generation."
+}

@@ -1,0 +1,69 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "title": "工場デザイン",
+      "path": "reference_brewery_v1.png",
+      "width": 1672,
+      "height": 941,
+      "note": "工場・タンクの外観正本候補。4基、銀地に標準缶意匠。"
+    },
+    {
+      "title": "01 ビル街で立ち上がる",
+      "path": "frame_01_city_rise_v1.png",
+      "width": 1672,
+      "height": 941,
+      "note": "人物・構図候補。ビルへの映り込みは反射として扱う。"
+    },
+    {
+      "title": "02 超望遠の主観",
+      "path": "frame_02_distant_brewery_v2_pov.png",
+      "width": 1672,
+      "height": 941,
+      "note": "現行。そば屋を映さず、遠方の街と工場を超望遠で見る。"
+    },
+    {
+      "title": "03 大ジャンプの溜め",
+      "path": "frame_03_jump_crouch_v1.png",
+      "width": 1672,
+      "height": 941,
+      "note": "動作前の姿勢参照。"
+    },
+    {
+      "title": "04 雲を割る跳躍",
+      "path": "frame_04_jump_clouds_v1.png",
+      "width": 1672,
+      "height": 941,
+      "note": "雲・質感の候補。ポーズは飛行に見えるため動作参照には使わない。工場の位置・無地のタンクはコピーしない。"
+    },
+    {
+      "title": "05 山で急制動",
+      "path": "frame_05_mountain_braking_v1.png",
+      "width": 1672,
+      "height": 941,
+      "note": "工場を残し、山を崩して止まる構図候補。"
+    },
+    {
+      "title": "06 タンクで飲む",
+      "path": "frame_06_tank_drinking_v2.png",
+      "width": 1672,
+      "height": 941,
+      "note": "両手保持の演技候補。追加文字・上端の見切れ・工場左右配置は正本にしない。ラベルは標準缶と工場を優先。"
+    },
+    {
+      "title": "ラベル単体",
+      "path": "label_super_try_flat_v1.png",
+      "width": 1024,
+      "height": 1536,
+      "note": "内蔵Imagegenによる平面再制作。正確な元意匠は標準缶を優先。"
+    }
+  ],
+  "status": "visual reference candidates; no paid video generation submitted",
+  "video_input_order": [
+    "character_sobaya_basic_sheet.png",
+    "reference_brewery_v1.png",
+    "label_super_try_flat_v1.png",
+    "frame_02_distant_brewery_v2_pov.png",
+    "product_super_try.png"
+  ]
+}

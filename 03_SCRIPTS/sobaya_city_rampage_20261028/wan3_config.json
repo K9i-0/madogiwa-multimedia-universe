@@ -1,0 +1,40 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 30,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3_v5_cinematic_refs.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "reference_brewery_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "label_super_try_flat_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_02_distant_brewery_v2_pov.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "product_super_try.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 281030,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_sobaya_brewery_v1_480p.mp4"
+}

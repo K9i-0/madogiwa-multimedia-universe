@@ -1,0 +1,49 @@
+{
+  "task_id": "6ec487c1-eb27-4150-8eec-abceb547c017",
+  "recorded_at": "2026-10-28T17:38:47.015784+09:00",
+  "status": "SUCCEEDED",
+  "model": "wan3.0-video",
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 281030,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "prompt_file": "prompt_wan3_v5_cinematic_refs.txt",
+  "prompt_sha256": "1b9cef2f57059719eb4985e8890babef723a91b1f0221a6f68488a1bc117bf0d",
+  "media": [
+    {
+      "path": "character_sobaya_basic_sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+    },
+    {
+      "path": "reference_brewery_v1.png",
+      "sha256": "b8909656601240600c3353c22ecea87bfbdebaa778795b1c4769930a3a3962a9"
+    },
+    {
+      "path": "label_super_try_flat_v1.png",
+      "sha256": "23258c68b1bda69d0f227c7f430b9c961749d1047be1ed87ecd4b97f2ac0b1a3"
+    },
+    {
+      "path": "frame_02_distant_brewery_v2_pov.png",
+      "sha256": "cf9c408c784e6a9ddefaf85c573cd54eb71a6e4b6af70fc1533568a7582c0fb8"
+    },
+    {
+      "path": "product_super_try.png",
+      "sha256": "2d671176dc991ceb02ffc6e64b5102740c503903cf76951adfe4e8a46dc7c6fb"
+    }
+  ],
+  "estimated_cost_usd": 1.05,
+  "pricing_url": "https://www.qwencloud.com/models/wan3.0-video",
+  "approved_runs": 1,
+  "completed_recorded_at": "2026-10-28T17:53:47.472326+09:00",
+  "source_output": "wan3_sobaya_brewery_v1_480p.mp4",
+  "source_width": 854,
+  "source_height": 480,
+  "source_fps": 30,
+  "source_duration": 30,
+  "actual_billed_cost": "not queried"
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Revenge (Super Slowed 8D)",
+  "artists": [
+    "1HXSX",
+    "wnorg17"
+  ],
+  "source_url": "https://www.youtube.com/watch?v=ULJCoFzT4bI",
+  "source_in_seconds": 26,
+  "source_out_seconds": 56,
+  "duration_seconds": 30,
+  "analysis_method": "24 kHz mono analytical copy; 2048-sample STFT, 240-sample hop; 35–160 Hz energy, onset strength and 1-second RMS. Waveform-derived cue proposals, not a verified beat grid or frame-accurate generated synchronization. Original stereo retained for edit.",
+  "cues": [
+    {
+      "output_seconds": 0.95,
+      "source_seconds": 26.95,
+      "action": "立ち上がる際の踏み込み"
+    },
+    {
+      "output_seconds": 4.87,
+      "source_seconds": 30.87,
+      "action": "遠いビール工場を目視"
+    },
+    {
+      "output_seconds": 7.8,
+      "source_seconds": 33.8,
+      "action": "ジャンプの踏ん張り開始"
+    },
+    {
+      "output_seconds": 9.51,
+      "source_seconds": 35.51,
+      "action": "沈み込みで路面が割れる"
+    },
+    {
+      "output_seconds": 11.71,
+      "source_seconds": 37.71,
+      "action": "大ジャンプの離陸、その余波で雲が割れる"
+    },
+    {
+      "output_seconds": 17.95,
+      "source_seconds": 43.95,
+      "action": "工場近くの山へ着地（構成上の時刻。拍頭確定ではない）"
+    },
+    {
+      "output_seconds": 21.87,
+      "source_seconds": 47.87,
+      "action": "山を削るブレーキを終え工場直前で停止"
+    },
+    {
+      "output_seconds": 25.79,
+      "source_seconds": 51.79,
+      "action": "貯蔵タンクの固定部・配管を引きちぎる"
+    },
+    {
+      "output_seconds": 29.34,
+      "source_seconds": 55.34,
+      "action": "飲み続けながら最後の大きなビールの流れ"
+    }
+  ],
+  "audio_sha256": "5b7e23ac2abf0f2304bce1468f5cf5620b29b1e0c932b71fa217e7cf38c4c66f",
+  "story_revision": "v3_brewery"
+}

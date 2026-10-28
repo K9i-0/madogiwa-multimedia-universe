@@ -80,9 +80,14 @@ def pending_queue(pending,c):
 
 def eligible_candidates(queues,videos):
  titles={v['snippet']['title'].strip() for v in videos}
+ live_ids={v['id'] for v in videos}
  posted_slugs=set();posted_originals=set()
  for q,rows in queues:
   for row in rows:
+   # Keep the original upload record; only an explicit, verified deletion retires it.
+   if row['status']=='deleted_for_repost' and row.get('deletionReceipt'):
+    receipt=read(ROOT/row['deletionReceipt'])
+    if receipt.get('videoId')==row.get('youtubeId') and receipt.get('httpStatus')==204 and receipt.get('verifiedAbsent') and row['youtubeId'] not in live_ids:continue
    if row.get('youtubeId') or row['status']=='published' or (q/'youtube_uploads'/f"{row['slug']}.json").exists():
     posted_slugs.add(row['slug'])
     if row.get('originalYoutubeId'):posted_originals.add(row['originalYoutubeId'])

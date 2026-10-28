@@ -45,3 +45,7 @@
 - 名探偵ヨータン 残されたちくわの謎: https://www.youtube.com/shorts/samXFzzJ4hQ
 
 `youtube_uploads/` に各動画のIDと完成MP4のSHA256、`youtube_verification.json` に公開・処理状況を保存。
+
+## 2026-10-28の再投稿処理
+
+上記の初回投稿記録は履歴として保持。「出社インポッシブル篇」「タコゲーム」「名探偵ヨータン」の旧IDはユーザー指定で削除し、[再投稿列](../shorts_repost_20261028/README.md)へ追加済み。過去のdelivery/upload記録は変更せず、新IDは再投稿列へ記録する。

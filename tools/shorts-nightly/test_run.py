@@ -43,6 +43,25 @@ class NightlyTest(unittest.TestCase):
    with patch.object(m,'ROOT',root):
     m.validate(row,q);p.write_bytes(b'changed')
     with self.assertRaises(RuntimeError):m.validate(row,q)
+ def test_repost_requires_verified_deletion_and_absent_remote_id(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);old=root/'old';new=root/'new'
+   previous=dict(order=1,slug='short',originalYoutubeId='master',status='deleted_for_repost',youtubeId='deleted',deletionReceipt='deletion.json')
+   repost=dict(order=1,slug='short',originalYoutubeId='master',status='ready',metadata='meta.json')
+   m.save(old/'youtube_uploads/short.json',{'video_id':'deleted'})
+   m.save(new/'meta.json',{'snippet':{'title':'Short'}})
+   queues=[(old,[previous]),(new,[repost])]
+   with patch.object(m,'ROOT',root):
+    m.save(root/'deletion.json',dict(videoId='deleted',httpStatus=204,verifiedAbsent=False))
+    self.assertEqual(m.eligible_candidates(queues,[]),[])
+    m.save(root/'deletion.json',dict(videoId='different',httpStatus=204,verifiedAbsent=True))
+    self.assertEqual(m.eligible_candidates(queues,[]),[])
+    m.save(root/'deletion.json',dict(videoId='deleted',httpStatus=204,verifiedAbsent=True))
+    self.assertEqual(m.eligible_candidates(queues,[]),[(new,repost)])
+    remote=video('2026-10-01T00:00:00Z',title='Renamed old Short');remote['id']='deleted'
+    self.assertEqual(m.eligible_candidates(queues,[remote]),[])
+    m.save(new/'youtube_uploads/short.json',{'video_id':'replacement'})
+    self.assertEqual(m.eligible_candidates(queues,[]),[])
  def test_processing_does_not_mark_published(self):
   with tempfile.TemporaryDirectory() as d:
    q=Path(d)/'q';state=Path(d)/'state';m.save(q/'youtube_uploads/x.json',{'sha256':'s','video_id':'id','url':'https://youtu.be/id'})

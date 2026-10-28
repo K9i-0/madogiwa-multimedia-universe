@@ -1,0 +1,93 @@
+{
+  "videos": [
+    {
+      "slug": "madogiwa-super-try-commute",
+      "passed": true,
+      "sha256": "323a26d876f808b9c2177814e7c79e781a8196e430225d8c47d935d5bbaab2c9",
+      "manifestSha256": "5f9e7239948db0ac5ca759a27f18c1209806d054d901a9b7dcd1412bfd57330a",
+      "duration": 30.058667,
+      "width": 720,
+      "height": 1280,
+      "priorAudit": "03_SCRIPTS/shorts_pilot_20261011/delivery.json",
+      "checks": {
+        "unchangedPublishedBytes": true,
+        "priorFullDecodePassed": true
+      }
+    },
+    {
+      "slug": "tako-game-dormitory",
+      "passed": true,
+      "sha256": "cc7d32bb17c23e8e5ab9e46838b21660e556a5a8f72fb6f62fcda923ef0cdf3b",
+      "manifestSha256": "bd6835d8c3b4d298bf4fadcd0fce73dad0c366717947d109d3586881034ad2e4",
+      "duration": 30.058667,
+      "width": 720,
+      "height": 1280,
+      "priorAudit": "03_SCRIPTS/shorts_pilot_20261011/delivery.json",
+      "checks": {
+        "unchangedPublishedBytes": true,
+        "priorFullDecodePassed": true
+      }
+    },
+    {
+      "slug": "detective-yotan-chikuwa-mystery",
+      "passed": true,
+      "sha256": "3d4d8354165b17ad662d3ff60346968757944f6e3e5814da1c39ec7fa71cff6c",
+      "manifestSha256": "67768560d785a97aac8f5524af895fbe7ed9bd8be3e27901d8cc0b74a3bd200d",
+      "duration": 51.883,
+      "width": 720,
+      "height": 1280,
+      "priorAudit": "03_SCRIPTS/shorts_pilot_20261011/delivery.json",
+      "checks": {
+        "unchangedPublishedBytes": true,
+        "priorFullDecodePassed": true
+      }
+    },
+    {
+      "slug": "hero-party-return-arrest",
+      "passed": true,
+      "checks": {
+        "resolution": true,
+        "sourceAtMost101": true,
+        "outputAtMost101": true,
+        "fps": true,
+        "frames": true,
+        "audio": true,
+        "decode": true,
+        "captions": true
+      },
+      "sha256": "c29d0baa1c5a3a2c7401c19fafe3095637d0834fc7159f1a0760a1cfa7f4328a",
+      "sourceSha256": "ac20355fb617789e6160518df1b56f8c6cad894e85b225a985ba787fd057f7b4",
+      "manifestSha256": "f9d61da468e653c77bf1fe058602822708bd9c2e364931ec42859c945c2d6196",
+      "duration": 77.845333,
+      "sourceDuration": 77.845333,
+      "width": 720,
+      "height": 1280,
+      "fps": "24/1",
+      "frames": 1867,
+      "audioCodec": "aac",
+      "audioStreamSha256": "019f68f10714561bd17bad9023572c96f0e49191379b21e2feab97f3a596840d",
+      "adoptedAudioStreamSha256": "019f68f10714561bd17bad9023572c96f0e49191379b21e2feab97f3a596840d",
+      "audioUnchanged": true,
+      "bytes": 18295781,
+      "decodeErrors": "",
+      "captionCount": 10
+    },
+    {
+      "slug": "fukugyun-manner-beer-quiz",
+      "passed": true,
+      "sha256": "ee4bf00792a6b792001cf3ff64fa9fa714483b6c1e236663a6eeb1927b6de8c8",
+      "manifestSha256": "9aec540ce7030799d44922be76760f847ef08e99aedfc6d0a9943ce64ecf5def",
+      "duration": 51.617959,
+      "width": 720,
+      "height": 1280,
+      "fps": "24/1",
+      "frames": 1237,
+      "checks": {
+        "fullDecode": true,
+        "videoAndAudioPresent": true,
+        "unchangedDownloadedStreams": true
+      },
+      "originalUploadBytesIdentical": false
+    }
+  ]
+}

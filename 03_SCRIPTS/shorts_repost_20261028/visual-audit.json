@@ -1,0 +1,71 @@
+{
+  "videos": [
+    {
+      "slug": "madogiwa-super-try-commute",
+      "passed": true,
+      "sha256": "323a26d876f808b9c2177814e7c79e781a8196e430225d8c47d935d5bbaab2c9",
+      "method": "Reuse previous adopted visual review; identical SHA256 to published pilot and delivery record.",
+      "priorReview": "03_SCRIPTS/shorts_pilot_20261011/README.md",
+      "fullPlaybackListening": false
+    },
+    {
+      "slug": "tako-game-dormitory",
+      "passed": true,
+      "sha256": "cc7d32bb17c23e8e5ab9e46838b21660e556a5a8f72fb6f62fcda923ef0cdf3b",
+      "method": "Reuse previous adopted visual review; identical SHA256 to published pilot and delivery record.",
+      "priorReview": "03_SCRIPTS/shorts_pilot_20261011/README.md",
+      "fullPlaybackListening": false
+    },
+    {
+      "slug": "detective-yotan-chikuwa-mystery",
+      "passed": true,
+      "sha256": "3d4d8354165b17ad662d3ff60346968757944f6e3e5814da1c39ec7fa71cff6c",
+      "method": "Reuse previous adopted visual review; identical SHA256 to published pilot and delivery record.",
+      "priorReview": "03_SCRIPTS/shorts_pilot_20261011/README.md",
+      "fullPlaybackListening": false
+    },
+    {
+      "slug": "hero-party-return-arrest",
+      "passed": true,
+      "sha256": "c29d0baa1c5a3a2c7401c19fafe3095637d0834fc7159f1a0760a1cfa7f4328a",
+      "manifestSha256": "f9d61da468e653c77bf1fe058602822708bd9c2e364931ec42859c945c2d6196",
+      "checkedFrames": [
+        0,
+        72,
+        193,
+        341,
+        466,
+        493,
+        581,
+        682,
+        765,
+        864,
+        933,
+        979,
+        1096,
+        1219,
+        1331,
+        1400,
+        1866
+      ],
+      "captionCardsReviewed": 10,
+      "checks": {
+        "noTitleClipping": true,
+        "noCaptionClipping": true,
+        "originalFramingPreserved": true,
+        "noDuplicateDialogueCaptions": true,
+        "speakerNamesAndMemberColors": true,
+        "endingPreserved": true
+      },
+      "notes": "Viewed all generated caption midpoint frames and first/last/representative cuts. Prompt/reference-audio alignment evidence is recorded separately; no full human listening certification. Original narrator caption and Takosan caption separately inspected at frames72 and864; retained once in source image."
+    },
+    {
+      "slug": "fukugyun-manner-beer-quiz",
+      "passed": true,
+      "sha256": "ee4bf00792a6b792001cf3ff64fa9fa714483b6c1e236663a6eeb1927b6de8c8",
+      "method": "Sampled frames of recovered published rendition at 6-second intervals; no cropping or new edits",
+      "fullPlaybackListening": false
+    }
+  ],
+  "fullPlaybackListening": false
+}

@@ -1,0 +1,77 @@
+{
+  "task_id": "6085c30c-74d4-4ed8-adf2-fb76ba827c2c",
+  "recorded_at": "2026-10-29T07:25:36.393781+09:00",
+  "status": "SUCCEEDED",
+  "estimated_usd": 1.05,
+  "price_source": "https://www.qwencloud.com/models/wan3.0-video",
+  "actual_billed_amount": null,
+  "inputs": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_yametaro_basic_sheet.png",
+      "sha256": "1e98502e8051bbacf482f273e551a7dd8b8fb79e2c153865d9e48df690eb91e6"
+    },
+    {
+      "type": "reference_image",
+      "path": "product_super_try.png",
+      "sha256": "2d671176dc991ceb02ffc6e64b5102740c503903cf76951adfe4e8a46dc7c6fb"
+    },
+    {
+      "type": "reference_image",
+      "path": "ref_01_hover.png",
+      "sha256": "5a0be922729c564cd150cc70782cfc29dd4f53bdbfa733d47cf28f446ecbf93a"
+    },
+    {
+      "type": "reference_image",
+      "path": "ref_02_yametaro_walk.png",
+      "sha256": "032dc21ea907a0d5b279b22b72ab28bba5ebe0b42583c8d37f364952963d588d"
+    },
+    {
+      "type": "reference_image",
+      "path": "ref_03_snatch_contact.png",
+      "sha256": "60065a4cf94e47c2830c4d2ca9349c9d80dacd0c33cf5bbb06b924e768271f99"
+    },
+    {
+      "type": "reference_image",
+      "path": "ref_04_tower_drink.png",
+      "sha256": "24f825be1d83896b52d49759910e64a4ce6ac7edb3fe65540a299318350ffd8f"
+    },
+    {
+      "type": "reference_audio",
+      "path": "yametaro_voice_timbre.wav",
+      "sha256": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b"
+    }
+  ],
+  "prompt_sha256": "cdad51fde7a3afe8b88fd3343dc977447cf7c7decce02d860e51830205abd930",
+  "output": "wan3_beer_snatch_v1_480p.mp4",
+  "spec": {
+    "width": 854,
+    "height": 480,
+    "fps": 30,
+    "duration": 30
+  },
+  "asr_screening": {
+    "model": "openai/whisper-small",
+    "source_seconds": [
+      3,
+      10
+    ],
+    "transcript": "よし、ごごからも頑張るやで!",
+    "note": "Automatic screening, not proof of natural voice or full lip sync."
+  },
+  "edit": {
+    "output": "final_remotion_retimed_v1_720p.mp4",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 807,
+    "duration": 26.9,
+    "decode_to_end": "passed",
+    "visual_action_sample": "reviewed; source pose/POV limitations retained"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "outputs": [
+    {
+      "source": "final_remotion_no_bgm_16x9.mp4",
+      "output": "preview_generated_audio_16x9.mp4"
+    },
+    {
+      "source": "final_remotion_no_bgm_9x16.mp4",
+      "output": "preview_generated_audio_9x16.mp4"
+    }
+  ],
+  "audio_source": "generated/assembled_v8b_lossless.mkv",
+  "audio_filter": "aresample=48000,atrim=end_sample=1353600,asetpts=PTS-STARTPTS,volume=-8.13dB,afade=t=out:st=27.9:d=0.3:curve=hsin,alimiter=limit=0.891251:level=0:latency=1",
+  "frames": 846,
+  "fps": 30,
+  "duration": 28.2,
+  "purpose": "Comparison only; opening generated audio restored, including generated music. No added BGM. No publication changes."
+}

@@ -68,6 +68,8 @@ python3 tools/shorts-nightly/install.py --remove
 
 一時停止は `config.json` の `enabled` をfalseへ変更。再開はtrue。
 
+特定の日だけ休止する場合は `skipDates` にJSTの日付を指定する（例：`["2026-10-28"]`）。その日は再試行も含めAPI呼び出し・投稿を行わず、翌日から通常の予定へ戻る。queueと作者の順番は消費しない。
+
 ## 確認・記録
 
 ```sh

@@ -68,8 +68,23 @@ class NightlyTest(unittest.TestCase):
    state=Path(d);m.save(state/'days/2026-10-15.json',{'phase':'published'})
    with patch.object(m,'STATE',state),patch.object(m.dt,'datetime',FixedDateTime),patch.object(m,'YouTube') as api:
     self.assertEqual(m.run(True)['action'],'already_completed_today');api.assert_not_called()
+ def test_skipped_date_blocks_upload_and_next_day_resumes(self):
+  class FixedDateTime(dt.datetime):
+   day=28
+   @classmethod
+   def now(cls,tz=None):return cls(2026,10,cls.day,18,20,tzinfo=JST)
+  with tempfile.TemporaryDirectory() as d:
+   config=Path(d)/'config.json'
+   m.save(config,{'enabled':True,'timezone':'Asia/Tokyo','hour':18,'minute':0,'lastAttemptMinute':50,'channelId':'channel','skipDates':['2026-10-28']})
+   with patch.object(m,'CONFIG',config),patch.object(m,'STATE',Path(d)),patch.object(m.dt,'datetime',FixedDateTime),patch.object(m,'YouTube',side_effect=RuntimeError('API reached')) as api:
+    for execute in (False,True):
+     self.assertEqual(m.run(execute),{'action':'skipped_date','date':'2026-10-28'})
+    api.assert_not_called()
+    FixedDateTime.day=29
+    with self.assertRaisesRegex(RuntimeError,'API reached'):m.run(True)
+    api.assert_called_once()
  def test_api_failure_blocks_unverified_upload(self):
-  with patch.object(m,'YouTube',side_effect=RuntimeError('network unavailable')):
+  with patch.object(m,'read',return_value={'enabled':True,'timezone':'Asia/Tokyo','channelId':'channel'}),patch.object(m,'YouTube',side_effect=RuntimeError('network unavailable')):
    with self.assertRaises(RuntimeError):m.run(False)
 
 class DailyPostingTest(unittest.TestCase):

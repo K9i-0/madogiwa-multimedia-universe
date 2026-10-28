@@ -171,6 +171,7 @@ def confirm(api,pending,q):
 def run(execute=False):
  c=read(CONFIG);now=dt.datetime.now(ZoneInfo(c['timezone']));today=now.date().isoformat()
  if not c['enabled']:return {'action':'disabled'}
+ if today in c.get('skipDates',[]):return {'action':'skipped_date','date':today}
  if execute and not eligible_time(now,c):return {'action':'outside_window','time':now.isoformat()}
  if execute and (STATE/'days'/f'{today}.json').exists():return {'action':'already_completed_today','date':today}
  api=YouTube(c['channelId']);videos=api.inventory();posts=public_today(videos,now);scheduled=scheduled_today(videos,now)

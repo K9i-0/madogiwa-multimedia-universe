@@ -1,0 +1,79 @@
+{
+  "method": "new generation with built-in image_gen; no prior scene used as edit target",
+  "input_order": [
+    "character_sobaya_basic_sheet.png",
+    "reference_brewery_v3.png",
+    "label_super_try_flat_v1.png",
+    "frame_02_distant_brewery_v3.png",
+    "frame_03_sprint_v3.png",
+    "frame_04_side_pass_v3.png",
+    "frame_05a_low_landing_v3.png",
+    "frame_06_drink_scaled_v3b.png"
+  ],
+  "assets": [
+    {
+      "title": "工場：小型工業タンク",
+      "path": "reference_brewery_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "工場外観の参照。設定上は15mタンク4基、そば屋100m。",
+      "api_input": true
+    },
+    {
+      "title": "遠方目視",
+      "path": "frame_02_distant_brewery_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "新工場へ更新。そば屋なし主観。",
+      "api_input": true
+    },
+    {
+      "title": "全速力の助走",
+      "path": "frame_03_sprint_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "発見から戻ると既に加速済み。",
+      "api_input": true
+    },
+    {
+      "title": "横方向の高速通過",
+      "path": "frame_04_side_pass_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "遠方の通過と奥から手前への衝撃波。時間順は動画プロンプトで指定。",
+      "api_input": true
+    },
+    {
+      "title": "足元からの着地",
+      "path": "frame_05a_low_landing_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "足元から見上げる怪獣映画型。",
+      "api_input": true
+    },
+    {
+      "title": "停止と長い爪痕",
+      "path": "frame_05b_stop_scale_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "停止位置のレビュー候補。タンク比率はまだ大きめのためAPI入力には含めない。",
+      "api_input": false
+    },
+    {
+      "title": "小型タンクで飲酒",
+      "path": "frame_06_drink_scaled_v3b.png",
+      "width": 1672,
+      "height": 941,
+      "note": "持ち方と相対サイズのみ採用。背景工場はImage2を優先。",
+      "api_input": true
+    },
+    {
+      "title": "飲酒・旧候補",
+      "path": "frame_06_drink_scaled_v3.png",
+      "width": 1672,
+      "height": 941,
+      "note": "タンクが大きいため不採用。比較用に保持。",
+      "api_input": false
+    }
+  ]
+}

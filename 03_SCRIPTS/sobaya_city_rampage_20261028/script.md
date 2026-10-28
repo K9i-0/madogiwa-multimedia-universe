@@ -1,3 +1,5 @@
+次回準備：4点のFBを反映したv3参照とプロンプト。[参照一覧](reference_gallery_v3.html)・[方針](revision_v3_plan.md)。v3動画生成は未実行。
+
 最新：v2の追加生成とBGM付き720p/480p完成。[v2結果](completion_v2.md)。v1も保持。
 
 現状：初回480p生成・BGM付き720p/480p書き出し完了。[結果と既知の制約](completion_v1.md)。以下の未実行表記は準備時点の記録。

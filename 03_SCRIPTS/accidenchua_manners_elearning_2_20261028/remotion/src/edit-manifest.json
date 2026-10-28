@@ -1,0 +1,112 @@
+{
+  "composition": {
+    "id": "MegaMugDVD",
+    "width": 960,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 1273
+  },
+  "segments": [
+    {
+      "id": "opening",
+      "type": "opening",
+      "start": 0,
+      "duration": 140
+    },
+    {
+      "id": "scene",
+      "type": "scene",
+      "start": 140,
+      "duration": 311
+    },
+    {
+      "id": "chapter",
+      "type": "chapter",
+      "start": 451,
+      "duration": 36
+    },
+    {
+      "id": "explain01",
+      "type": "explanation",
+      "start": 487,
+      "duration": 135
+    },
+    {
+      "id": "explain02",
+      "type": "explanation",
+      "start": 622,
+      "duration": 128
+    },
+    {
+      "id": "explain03",
+      "type": "explanation",
+      "start": 750,
+      "duration": 166
+    },
+    {
+      "id": "explain04",
+      "type": "explanation",
+      "start": 916,
+      "duration": 261
+    },
+    {
+      "id": "ending",
+      "type": "ending",
+      "start": 1177,
+      "duration": 96
+    }
+  ],
+  "captions": [
+    {
+      "start": 497,
+      "end": 598,
+      "text": "窓際社員には、メガジョッキでビールを提供しましょう。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 632,
+      "end": 726,
+      "text": "通常のジョッキでは、すぐに飲み干されてしまいます。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 760,
+      "end": 892,
+      "text": "職場に続いて酒席でも干すのは、重ねて失礼に当たります。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 926,
+      "end": 1004,
+      "text": "一般社員には通常のジョッキ。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 1004,
+      "end": 1076,
+      "text": "窓際社員には、メガジョッキ。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 1076,
+      "end": 1154,
+      "text": "この違いが、大人の気配りです。",
+      "source": "canonical script, ASR-assisted timing"
+    }
+  ],
+  "pending": [],
+  "audio": {
+    "master": "master.wav",
+    "scene": "H3 embedded audio",
+    "narrator": "original Irodori voice design",
+    "music": "original deterministic synthesis, score in prepare_edit.py"
+  },
+  "style": {
+    "reference": "https://www.youtube.com/watch?v=-ZwHP9T_wCc",
+    "aspect": "4:3",
+    "softness_px": 0.45,
+    "contrast": 0.94,
+    "saturation": 0.8,
+    "master_size": "960x720"
+  }
+}

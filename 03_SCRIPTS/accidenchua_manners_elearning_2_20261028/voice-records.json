@@ -1,0 +1,130 @@
+{
+  "scene02_sobaya": {
+    "id": "scene02_sobaya",
+    "speaker": "sobaya",
+    "text": "なんで、僕だけこんなに大きいんですか。",
+    "file": "scene02_sobaya.wav",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "seed": 42,
+    "caption": "落ち着いた会話調。大きさに少し戸惑いながら、淡々と尋ねる。",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": "02_CHARACTERS/Sobaya_voice.wav",
+    "reference_sha256": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58",
+    "duration": 2.830917,
+    "sha256": "50b4a39f32e48088cefad6da376bb2845b87b1419174e7a8fedc74461d109792",
+    "generation_seconds": 77.72615885734558,
+    "audit": {
+      "status": "ASR text checked in adopted source and mixed master",
+      "subjective_listening": "not performed",
+      "evidence": "production-report.json"
+    }
+  },
+  "scene01_fukuchan": {
+    "id": "scene01_fukuchan",
+    "speaker": "fukuchan",
+    "text": "そば屋さんには、こちらをご用意しました。",
+    "reading": "そばやさんには、こちらをご用意しました。",
+    "file": "scene01_fukuchan.wav",
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "seed": 100,
+    "caption": "丁寧な会話調で、自然にはっきり話す。",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": "02_CHARACTERS/Fukuchan_voice.wav",
+    "reference_sha256": "3b597fdb0c6c7e103a1998345f56565652b86b6344127b3d5d52e0a1fd5b9f35",
+    "duration": 3.320042,
+    "sha256": "feddce45905b59f399f6c05b5603e07afa1d4b3143071164e0b49be0b1982f43",
+    "generation_seconds": 19.63605523109436,
+    "audit": {
+      "status": "ASR text checked in adopted source and mixed master",
+      "subjective_listening": "not performed",
+      "evidence": "production-report.json"
+    }
+  },
+  "explain01": {
+    "id": "explain01",
+    "speaker": "narrator",
+    "text": "窓際社員には、メガジョッキでビールを提供しましょう。",
+    "file": "explain01.wav",
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "seed": 2801,
+    "caption": "昔の企業研修ビデオの男性ナレーター。中低音の落ち着いた声。標準語の明瞭な発音で、一文ずつ丁寧に、ややゆっくり、淡々と説明する。冗談を言う調子にはしない。",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": null,
+    "reference_sha256": null,
+    "duration": 4.36,
+    "sha256": "68ab72699c055ec14b53e5da5d06cca1d126fc0ed273dab5dbc59e14e924369f",
+    "generation_seconds": 14.343385219573975,
+    "audit": {
+      "status": "ASR text checked in adopted source and mixed master",
+      "subjective_listening": "not performed",
+      "evidence": "production-report.json"
+    }
+  },
+  "explain02": {
+    "id": "explain02",
+    "speaker": "narrator",
+    "text": "通常のジョッキでは、すぐに飲み干されてしまいます。",
+    "file": "explain02.wav",
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "seed": 2801,
+    "caption": "昔の企業研修ビデオの男性ナレーター。中低音の落ち着いた声。標準語の明瞭な発音で、一文ずつ丁寧に、ややゆっくり、淡々と説明する。冗談を言う調子にはしない。",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": "03_SCRIPTS/accidenchua_manners_elearning_2_20261028/narrator_reference.wav",
+    "reference_sha256": "68ab72699c055ec14b53e5da5d06cca1d126fc0ed273dab5dbc59e14e924369f",
+    "duration": 4.080042,
+    "sha256": "65685da94937177a231f19030a3dbbe64c6838dde182281ff067c2be8c935310",
+    "generation_seconds": 15.751980066299438,
+    "audit": {
+      "status": "ASR text checked in adopted source and mixed master",
+      "subjective_listening": "not performed",
+      "evidence": "production-report.json"
+    }
+  },
+  "explain03": {
+    "id": "explain03",
+    "speaker": "narrator",
+    "text": "職場に続いて酒席でも干すのは、重ねて失礼に当たります。",
+    "reading": "職場に続いて、しゅせきでも干すのは、重ねて失礼に当たります。",
+    "file": "explain03.wav",
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "seed": 2801,
+    "caption": "昔の企業研修ビデオの男性ナレーター。中低音の落ち着いた声。標準語の明瞭な発音で、一文ずつ丁寧に、ややゆっくり、淡々と説明する。冗談を言う調子にはしない。",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": "03_SCRIPTS/accidenchua_manners_elearning_2_20261028/narrator_reference.wav",
+    "reference_sha256": "68ab72699c055ec14b53e5da5d06cca1d126fc0ed273dab5dbc59e14e924369f",
+    "duration": 5.640042,
+    "sha256": "0c302b3a7f57b567dcbed0418b99db292b6a391513d784ac3b3103871677b068",
+    "generation_seconds": 17.933000802993774,
+    "audit": {
+      "status": "ASR text checked in adopted source and mixed master",
+      "subjective_listening": "not performed",
+      "evidence": "production-report.json"
+    }
+  },
+  "explain04": {
+    "id": "explain04",
+    "speaker": "narrator",
+    "text": "一般社員には通常のジョッキ。窓際社員には、メガジョッキ。この違いが、大人の気配りです。",
+    "file": "explain04.wav",
+    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "seed": 2801,
+    "caption": "昔の企業研修ビデオの男性ナレーター。中低音の落ち着いた声。標準語の明瞭な発音で、一文ずつ丁寧に、ややゆっくり、淡々と説明する。冗談を言う調子にはしない。",
+    "cfg_text": 5,
+    "duration_scale": 1,
+    "reference": "03_SCRIPTS/accidenchua_manners_elearning_2_20261028/narrator_reference.wav",
+    "reference_sha256": "68ab72699c055ec14b53e5da5d06cca1d126fc0ed273dab5dbc59e14e924369f",
+    "duration": 9.600042,
+    "sha256": "095e78546440bc63967de42a5f95a14ca6cbde2aa700ed267dec111d38e6d807",
+    "generation_seconds": 25.602128982543945,
+    "audit": {
+      "status": "ASR text checked in adopted source and mixed master",
+      "subjective_listening": "not performed",
+      "evidence": "production-report.json"
+    }
+  }
+}

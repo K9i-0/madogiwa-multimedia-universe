@@ -1,0 +1,32 @@
+"""Use the approved-layout scene reference to prevent extra mugs and shirt dots."""
+import json, subprocess, sys
+from pathlib import Path
+EP=Path(__file__).resolve().parent;ROOT=EP.parents[1]
+SKILL=ROOT/'.claude/skills/minimax-h3-video/scripts'
+
+def main():
+    job=EP/'generated/h3-mega-v2'
+    if job.exists():raise FileExistsError('Resume the existing job; never resend it.')
+    data=json.loads((EP/'content.json').read_text());voices=json.loads((EP/'voice-records.json').read_text())
+    prompt='''A 12.958-second continuous live-action Japanese employee-training comedy. Use <Picture 1> as the EXACT composition, scene, character identity, costume and prop reference. Recreate this frame from the start, then animate only the subtle natural acting described below. Keep the 4:3 camera completely fixed. Do not introduce any new objects or people.
+
+Exactly TWO adult characters, Fukuchan on the LEFT and Sobaya on the RIGHT. Fukuchan is the SAME photographed real adult Japanese man, the exact facial features, black hair, slim build, black blazer and white shirt from the reference. His clean well-cared-for skin and natural smile lines remain the same; no new blemishes, freckles, spots, de-aging or facial reshaping. Sobaya is the same full-sized broad muscular gray-skinned masked performer. White rigid opaque mask with black round eye holes, red markings, black forehead dot, and short black hair. ALL his exposed skin is uniformly gray. His mask stays fully fitted and rigid throughout, never opening, moving, slipping or becoming a human face. His white T-shirt preserves EXACTLY the reference's continuous smooth matte cloth, broad muscle shape and natural wrinkles: NO nipple bumps, NO nipple outlines, NO paired nipple dots or dark spots. The huge mug and his forearms obscure most of the chest as in the reference. Both heads and the full mugs remain within the frame. Both characters remain seated throughout.
+
+Exactly TWO mugs, already resting on the table from the first frame until the end. ONE ordinary small glass beer mug in front of Fukuchan at far left. ONE extremely huge tall glass beer mug in front of Sobaya at right, more than twice the small mug's height, reaching Sobaya's chest. Keep the enormous size difference, foam, handles, placement, edamame plate, table, clothes, faces and background IDENTICAL to Picture 1. NO additional mug, NO moving or lifting either mug, NO pouring, NO drinking, NO size changes, NO object appearing or disappearing. Fukuchan presents the giant mug with his empty open palm; he never holds a mug. Sobaya keeps his right hand gently touching the large handle without moving the mug.
+
+Low-budget early-2000s Japanese corporate-training DVD: plain izakaya beige wall and wood trim, flat warm overhead practical lighting, subdued realistic acting. No cinematic lighting, no camera movement, no zoom, no cuts. No background music, no narrator, no other voices, no on-screen words, no subtitles, no titles, no UI.
+
+At about 0.7 seconds, Fukuchan turns slightly toward Sobaya, makes one small open-palm presenting gesture toward the enormous mug, and says exactly once: <d>[Japanese] そば屋さんには、こちらをご用意しました。</d> Use <Audio 1> only for Fukuchan, preserving its exact words and voice. He then closes his mouth and smiles politely.
+
+At about 5.0 seconds, Sobaya glances down at the giant mug, then back toward Fukuchan and asks exactly once: <d>[Japanese] なんで、僕だけこんなに大きいんですか。</d> Use <Audio 2> only for Sobaya, preserving its exact words and voice. His mask is perfectly rigid, unmoving and opaque even when speaking; Fukuchan does not mouth this line. Sobaya's puzzled reaction is a subtle head tilt, not large body motion.
+
+After 8.5 seconds, no more speech. Fukuchan makes one small courteous nod as if the giant mug is normal and appropriate. Sobaya looks between Fukuchan and the mug, holding the quiet puzzled pose. All props remain exactly where they were. End on the two characters and the two correctly sized mugs. Only the two specified dialogue lines and faint quiet restaurant room tone, no extra words or fillers.
+'''
+    p=EP/'prompt_mega_v2.txt';p.write_text(prompt)
+    wf=EP/'mega_v2_workflow.json'
+    cmd=[sys.executable,str(SKILL/'build_workflow.py'),'--mode','r2v','--profile','480p-turbo','--width','640','--height','480','--frames','311','--seed','2026102806','--prefix','video/mmu_mega_dvd_v2','--prompt-file',str(p),'--image','input_mega_scene_v2.png','--out',str(wf)]
+    for line in data['dialogue']:cmd+=['--audio',voices[line['id']]['file']]
+    subprocess.run(cmd,check=True)
+    subprocess.run([sys.executable,str(SKILL/'colab_h3.py'),'prepare',str(wf),'--job',str(job)],check=True)
+
+if __name__=='__main__':main()

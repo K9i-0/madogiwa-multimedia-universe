@@ -1,0 +1,218 @@
+{
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 2026102806
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "scheduler": "beta",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/mmu_mega_dvd_v2",
+      "format": "auto",
+      "codec": "auto"
+    }
+  },
+  "149": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "150": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "149",
+        0
+      ],
+      "lora_name": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "input_mega_scene_v2.png"
+    }
+  },
+  "201": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "scene01_fukuchan.wav"
+    }
+  },
+  "202": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "scene02_sobaya.wav"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "A 12.958-second continuous live-action Japanese employee-training comedy. Use <Picture 1> as the EXACT composition, scene, character identity, costume and prop reference. Recreate this frame from the start, then animate only the subtle natural acting described below. Keep the 4:3 camera completely fixed. Do not introduce any new objects or people.\n\nExactly TWO adult characters, Fukuchan on the LEFT and Sobaya on the RIGHT. Fukuchan is the SAME photographed real adult Japanese man, the exact facial features, black hair, slim build, black blazer and white shirt from the reference. His clean well-cared-for skin and natural smile lines remain the same; no new blemishes, freckles, spots, de-aging or facial reshaping. Sobaya is the same full-sized broad muscular gray-skinned masked performer. White rigid opaque mask with black round eye holes, red markings, black forehead dot, and short black hair. ALL his exposed skin is uniformly gray. His mask stays fully fitted and rigid throughout, never opening, moving, slipping or becoming a human face. His white T-shirt preserves EXACTLY the reference's continuous smooth matte cloth, broad muscle shape and natural wrinkles: NO nipple bumps, NO nipple outlines, NO paired nipple dots or dark spots. The huge mug and his forearms obscure most of the chest as in the reference. Both heads and the full mugs remain within the frame. Both characters remain seated throughout.\n\nExactly TWO mugs, already resting on the table from the first frame until the end. ONE ordinary small glass beer mug in front of Fukuchan at far left. ONE extremely huge tall glass beer mug in front of Sobaya at right, more than twice the small mug's height, reaching Sobaya's chest. Keep the enormous size difference, foam, handles, placement, edamame plate, table, clothes, faces and background IDENTICAL to Picture 1. NO additional mug, NO moving or lifting either mug, NO pouring, NO drinking, NO size changes, NO object appearing or disappearing. Fukuchan presents the giant mug with his empty open palm; he never holds a mug. Sobaya keeps his right hand gently touching the large handle without moving the mug.\n\nLow-budget early-2000s Japanese corporate-training DVD: plain izakaya beige wall and wood trim, flat warm overhead practical lighting, subdued realistic acting. No cinematic lighting, no camera movement, no zoom, no cuts. No background music, no narrator, no other voices, no on-screen words, no subtitles, no titles, no UI.\n\nAt about 0.7 seconds, Fukuchan turns slightly toward Sobaya, makes one small open-palm presenting gesture toward the enormous mug, and says exactly once: <d>[Japanese] そば屋さんには、こちらをご用意しました。</d> Use <Audio 1> only for Fukuchan, preserving its exact words and voice. He then closes his mouth and smiles politely.\n\nAt about 5.0 seconds, Sobaya glances down at the giant mug, then back toward Fukuchan and asks exactly once: <d>[Japanese] なんで、僕だけこんなに大きいんですか。</d> Use <Audio 2> only for Sobaya, preserving its exact words and voice. His mask is perfectly rigid, unmoving and opaque even when speaking; Fukuchan does not mouth this line. Sobaya's puzzled reaction is a subtle head tilt, not large body motion.\n\nAfter 8.5 seconds, no more speech. Fukuchan makes one small courteous nod as if the giant mug is normal and appropriate. Sobaya looks between Fukuchan and the mug, holding the quiet puzzled pose. All props remain exactly where they were. End on the two characters and the two correctly sized mugs. Only the two specified dialogue lines and faint quiet restaurant room tone, no extra words or fillers.",
+      "width": 640,
+      "height": 480,
+      "length": 311,
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "200",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "201",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "202",
+        0
+      ]
+    }
+  }
+}

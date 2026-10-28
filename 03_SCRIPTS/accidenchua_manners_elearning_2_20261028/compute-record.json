@@ -1,0 +1,43 @@
+{
+  "initial_balance_cu": 110.21,
+  "balance_after_v1_cu": 109.46,
+  "balance_display_is_delayed": true,
+  "runs": [
+    {
+      "revision": "v1",
+      "status": "generated and recovered; visually rejected",
+      "setup_and_generation_seconds": 448.0389721393585,
+      "gpu": "A100",
+      "profile": "480p-turbo",
+      "dimensions": [
+        640,
+        480
+      ],
+      "frames": 311,
+      "fps": 24,
+      "result_sha256": "2cc7b77159cc94c443f564e763d09e215b9971b601f699c6943f8421fd6ff5c3",
+      "reason": "extra third mug and nipple-like dots on shirt",
+      "session_stopped": true
+    },
+    {
+      "revision": "v2",
+      "status": "generated and recovered; adopted with local shirt repair",
+      "setup_and_generation_seconds": 609.3407347202301,
+      "gpu": "A100",
+      "profile": "480p-turbo",
+      "dimensions": [
+        640,
+        480
+      ],
+      "frames": 311,
+      "fps": 24,
+      "result_sha256": "8bc1d418aefb0b949ce12e89c43891b8c577e427aec6e5ae8d495d6669b7b42d",
+      "session_stopped": true
+    }
+  ],
+  "additional_purchase": false,
+  "final_observed_balance_cu": 108.45,
+  "observed_cu_difference": 1.76,
+  "active_assignments_after_completion": 0,
+  "usage_rate_after_completion": 0
+}

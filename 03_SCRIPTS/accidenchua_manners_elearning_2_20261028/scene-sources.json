@@ -1,0 +1,11 @@
+{
+  "adopted": "v2",
+  "workflow": "mega_v2_workflow.json",
+  "video": "generated/retouched/mega_v2_480p_clean.mp4",
+  "original_video": "generated/h3-mega-v2/results/video_480p.mp4",
+  "retouch": "retouch-record.json",
+  "image_reference": "input_mega_scene_v2.png",
+  "still_seconds": 8.3,
+  "previous": [{"revision":"v1","video":"generated/h3-mega-v1/results/video_480p.mp4","status":"rejected: third mug and nipple-like dots on white T-shirt"}],
+  "image_generation": {"tool":"built-in imagegen","source":"/Users/kotahayashi/.codex/generated_images/01a1805c-a5d0-7383-bca6-93e0270b5c35/exec-d10b836d-991d-4d63-acad-072194edf01b.png","identity_inputs":["03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png","03_SCRIPTS/00_TEMPLATES/characters/character_fukuchan_basic_sheet.png","02_CHARACTERS/Fukuchan.jpg"],"layout":"exactly two seated adults and exactly two mugs; one ordinary left, one oversized right; no nipple-like marks on Sobaya's shirt"}
+}

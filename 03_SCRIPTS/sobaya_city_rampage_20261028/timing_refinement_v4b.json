@@ -1,0 +1,38 @@
+{
+  "fps": 30,
+  "plans": [
+    [
+      "opening",
+      [
+        [
+          30,
+          150,
+          146
+        ]
+      ]
+    ],
+    [
+      "flyby",
+      [
+        [
+          0,
+          18,
+          18
+        ],
+        [
+          18,
+          57,
+          11
+        ],
+        [
+          57,
+          210,
+          159
+        ]
+      ]
+    ]
+  ],
+  "scope": "only newly generated scenes",
+  "flyby_transit_frames": 11,
+  "additional_paid_generation": false
+}

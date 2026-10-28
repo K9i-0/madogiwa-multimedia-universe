@@ -1,0 +1,43 @@
+{
+  "source": "assembled_v4_lossless.mkv",
+  "music": "local_audio/bgm_26_56_stereo.wav",
+  "music_source_in": 26,
+  "music_source_out": 56,
+  "duration": 30.0,
+  "fps": "30/1",
+  "video_retiming": false,
+  "source_loudness": {
+    "input_i": "-13.00",
+    "input_tp": "-0.79",
+    "input_lra": "14.90",
+    "input_thresh": "-24.21",
+    "output_i": "-17.09",
+    "output_tp": "-5.30",
+    "output_lra": "6.40",
+    "output_thresh": "-28.07",
+    "normalization_type": "dynamic",
+    "target_offset": "1.09"
+  },
+  "music_loudness": {
+    "input_i": "-5.11",
+    "input_tp": "0.84",
+    "input_lra": "1.50",
+    "input_thresh": "-15.11",
+    "output_i": "-15.69",
+    "output_tp": "-9.56",
+    "output_lra": "1.20",
+    "output_thresh": "-25.69",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.31"
+  },
+  "sfx_gain_db": -9.0,
+  "bgm_gain_db": -10.89,
+  "mix_limiter_peak": -1,
+  "mix_master": "generated/mix_master_v4.wav",
+  "resize": "source directly to 1280x720, Lanczos",
+  "outputs": [
+    "final_sobaya_brewery_bgm_v4_720p.mp4",
+    "final_sobaya_brewery_bgm_v4_480p.mp4"
+  ],
+  "filter_complex": "[0:a]aresample=48000,volume=-9.000000dB[sfx];[1:a]aresample=48000,volume=-10.890000dB[bgm];[sfx][bgm]amix=inputs=2:duration=longest:normalize=0,atrim=duration=30.0,afade=t=in:d=0.015,afade=t=out:st=29.92:d=0.08,alimiter=limit=0.891251:level=0:latency=1[mix]"
+}

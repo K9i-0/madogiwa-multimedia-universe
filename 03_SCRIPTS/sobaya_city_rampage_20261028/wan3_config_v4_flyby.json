@@ -1,0 +1,30 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 7,
+  "generation_mode": "single",
+  "parent_project_duration": 30,
+  "generation_purpose": "User explicitly requested only faulty scene regeneration; overrides default full-film generation.",
+  "prompt_file": "prompt_wan3_v8_patch_flyby.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_04_side_pass_v3.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 7,
+    "audio": true,
+    "seed": 281032,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_v4_flyby_480p.mp4"
+}

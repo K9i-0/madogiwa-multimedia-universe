@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-10-28T19:29:52.323445+09:00",
+  "approved_additional_runs": 2,
+  "estimated_cost_usd": 0.42,
+  "actual_billed_cost": "not queried",
+  "pricing_url": "https://www.qwencloud.com/models/wan3.0-video",
+  "tasks": [
+    {
+      "scene": "opening",
+      "task_id": "f3c44615-cb1f-4ce0-be66-f50c51ec9642",
+      "status": "SUCCEEDED",
+      "config": "wan3_config_v4_opening.json",
+      "prompt_sha256": "97c5f50ec6e5aa175d5e6b1f653d973250561b0738d4888f66a0590d4f9f83df",
+      "parameters": {
+        "resolution": "480P",
+        "ratio": "16:9",
+        "duration": 5,
+        "audio": true,
+        "seed": 281031,
+        "watermark": false,
+        "prompt_extend": false
+      },
+      "source_output": "wan3_v4_opening_480p.mp4",
+      "media": [
+        {
+          "path": "character_sobaya_basic_sheet.png",
+          "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+        },
+        {
+          "path": "frame_03_sprint_v3.png",
+          "sha256": "17c12aa71cd0ddc79b0f4fdeda5e8203a0673c7a6cd54f499eff04f27012336c"
+        }
+      ]
+    },
+    {
+      "scene": "flyby",
+      "task_id": "156fbffb-20d4-4bf1-b294-1611e13b6fe1",
+      "status": "SUCCEEDED",
+      "config": "wan3_config_v4_flyby.json",
+      "prompt_sha256": "c7a13aec5f925297ecc425d5d967ba034cd1962deb8526898acc4a6413a33017",
+      "parameters": {
+        "resolution": "480P",
+        "ratio": "16:9",
+        "duration": 7,
+        "audio": true,
+        "seed": 281032,
+        "watermark": false,
+        "prompt_extend": false
+      },
+      "source_output": "wan3_v4_flyby_480p.mp4",
+      "media": [
+        {
+          "path": "character_sobaya_basic_sheet.png",
+          "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+        },
+        {
+          "path": "frame_04_side_pass_v3.png",
+          "sha256": "db8e79479d01f7e357eaca23cfe0e08a4f01d40d4c61b5869221fc9be2fa84e2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 6,
+  "generation_mode": "single",
+  "parent_project_duration": 30,
+  "generation_purpose": "User explicitly requested only faulty scene regeneration; overrides default full-film generation.",
+  "prompt_file": "prompt_wan3_v9_patch_landing.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "reference_brewery_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_05a_low_landing_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "label_super_try_flat_v1.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 6,
+    "audio": true,
+    "seed": 281033,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_v5_landing_480p.mp4"
+}

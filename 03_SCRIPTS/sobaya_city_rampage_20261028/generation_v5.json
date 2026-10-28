@@ -1,0 +1,45 @@
+{
+  "task_id": "f82cb8ac-3d86-4ca7-b1aa-917700cb7e2f",
+  "recorded_at": "2026-10-28T19:46:31.083729+09:00",
+  "status": "SUCCEEDED",
+  "approved_additional_runs": 1,
+  "estimated_cost_usd": 0.21,
+  "actual_billed_cost": "not queried",
+  "pricing_url": "https://www.qwencloud.com/models/wan3.0-video",
+  "config": "wan3_config_v5_landing.json",
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 6,
+    "audio": true,
+    "seed": 281033,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "prompt_file": "prompt_wan3_v9_patch_landing.txt",
+  "prompt_sha256": "0fc19fa7c707a1f09e6746df0600a5740d17facc7e14216abad28e6203a62d31",
+  "media": [
+    {
+      "path": "character_sobaya_basic_sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+    },
+    {
+      "path": "reference_brewery_v3.png",
+      "sha256": "c4691d2a55b96c698d0c3a6948fd0d771ff766cb2854f6501f4f2dc0a2e0cccd"
+    },
+    {
+      "path": "frame_05a_low_landing_v3.png",
+      "sha256": "43a1327fde39a4da02fb5b14477676c4795300e1c2ff7ff93774a6b07d645206"
+    },
+    {
+      "path": "label_super_try_flat_v1.png",
+      "sha256": "23258c68b1bda69d0f227c7f430b9c961749d1047be1ed87ecd4b97f2ac0b1a3"
+    }
+  ],
+  "source_output": "wan3_v5_landing_480p.mp4",
+  "replacement_frames": [
+    538,
+    691
+  ],
+  "completed_recorded_at": "2026-10-28T19:51:01.352937+09:00"
+}

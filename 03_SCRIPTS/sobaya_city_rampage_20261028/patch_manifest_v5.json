@@ -1,0 +1,26 @@
+{
+  "fps": 30,
+  "total_frames": 900,
+  "base": "generated/assembled_v4b_lossless.mkv",
+  "segments": [
+    {
+      "source": "generated/assembled_v4b_lossless.mkv",
+      "start_frame": 0,
+      "end_frame_exclusive": 538
+    },
+    {
+      "source": "wan3_v5_landing_480p.mp4",
+      "start_frame": 0,
+      "end_frame_exclusive": 153
+    },
+    {
+      "source": "generated/assembled_v4b_lossless.mkv",
+      "start_frame": 691,
+      "end_frame_exclusive": 900
+    }
+  ],
+  "output": "generated/assembled_v5_lossless.mkv",
+  "retiming": false,
+  "music_source_in": 26,
+  "music_source_out": 56
+}

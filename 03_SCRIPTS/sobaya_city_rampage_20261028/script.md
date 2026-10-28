@@ -1,3 +1,5 @@
+> 正式タイトル: **SOBAYA: LAST CALL**（ユーザー決定）。採用横版は `final_sobaya_brewery_28p2_music_finish_720p.mp4`。Shortsは同じ28.2秒・音声を使った `final_remotion_shorts_9x16.mp4`。
+
 > 最新比較候補v8b: 空中移動と最後3秒のみ720P再生成。空中通過は生成確認後に11フレームへ短縮。飲酒の大量のこぼれは未解決、完全合格ではない。旧v7保持。詳細 `completion_v8.md`。
 
 > 現行完成版v7: ユーザー指定で全30秒を720P一発生成。確定プロンプトv9・参照8枚を維持。指定BGM追加、序盤7.8秒の生成音除去。完成は `final_sobaya_brewery_bgm_v7_720p.mp4`、記録は `completion_v7.md`。

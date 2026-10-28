@@ -81,7 +81,7 @@
     {"id": "context.empty-sky", "surface": "空", "readings": ["カラ：空の缶、空になった容器", "ソラ：空の色", "アキ：空き缶", "クウ：空席、空気"], "source": "horror", "note": "空の／空になをまとめてカラにしない"},
     {"id": "context.cup", "surface": "杯", "readings": ["サカズキ：儀式で使う杯", "ハイ／パイ／バイ：一杯、三杯、乾杯"], "source": "horror-v6", "note": "器か助数詞か熟語かを確認"},
     {"id": "context.bun-fun", "surface": "分", "readings": ["ブン：今年の分、その分", "フン／プン：時間の単位", "ワ：分ける"], "source": "horror", "note": "取り分・時間・動詞を区別する"},
-    {"id": "context.row-go", "surface": "行", "readings": ["ギョウ：表の行、行を消す", "イ／オコナ：行く、行う"], "source": "horror", "note": "日の行などの短い断片を登録すると日の行いを壊す"},
+    {"id": "context.row-go", "surface": "行", "readings": ["ギョウ：表の行、行を消す", "イ／オコナ：行く、行う"], "source": "horror", "note": "日の行などの短い断片を登録すると日の行いを壊す。2026-10-28 chikuwa_mystery v13：工場の規模で行って＝おこなって。移動の行ってとは区別し、その発話だけspeech_overrideで指定"},
     {"id": "context.interval", "surface": "間", "readings": ["アイダ：その間ずっと", "マ：間を置く", "カン：時間"], "source": "kikou5", "note": "その間の採用例を間全般へ広げない"},
     {"id": "context.string", "surface": "弦", "readings": ["ゲン：ギターの弦", "ツル：弓の弦"], "source": "horror", "note": "楽器と弓で区別する"},
     {"id": "context.tootte-kayotte", "surface": "通って", "readings": ["トオッテ：道を通って帰る", "カヨッテ：学校に通っている"], "source": "mystery", "note": "過去作のトオッテ固定はその文脈だけ。一般化しない"}

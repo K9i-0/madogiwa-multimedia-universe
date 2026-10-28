@@ -58,17 +58,17 @@ caps=[c for c in caps if c['lineId']!=logic['id']]
 for a,b,text in [(logic['startFrame'],cues['logicReveal'],'毒ちくわを、一匹残らず\n取り除いているのではない。'),(cues['logicReveal'],logic['startFrame']+logic['durationInFrames'],'最初から、生きたちくわを一匹も\n使っていないのではないか。')]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=logic['id']))
 # Punchlines reveal with the spoken word, not the earlier caption page.
 for prefix,word,key,left,right in [
- ('味、弾力','セエメエ','lifeReveal','味、弾力、焼き色まで再現できたわ。\n残る相違点は、','生命活動だけだった。')]:
+ ('研究員の報告では、味','セエメエ','lifeReveal','研究員の報告では、味、弾力、焼き色まで再現。\n残る相違点は、','生命活動だけだった。')]:
  row=next(r for r in rows if r['text'].startswith(prefix));cut=spoken_cue(row,word);cues[key]=cut
  caps=[c for c in caps if c['lineId']!=row['id']]
  for a,b,text in [(row['startFrame'],cut,left),(cut,row['startFrame']+row['durationInFrames'],right)]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=row['id']))
 isobe=next(r for r in rows if r['view']=='isobe')
 cues['isobeReveal']=spoken_cue(isobe,'イソベアゲ')
-verdict=next(r for r in rows if r['text'].startswith('ただ、研究員は'))
-cues['verdictReveal']=spoken_cue(verdict,'アゲタテ')
+verdict=next(r for r in rows if r['text'].startswith('ええ。比較が不公平'))
+cues['verdictReveal']=spoken_cue(verdict,'ゼンブ')
 for row,key,left,right in [
  (isobe,'isobeReveal','それ、さっき','磯辺揚げにして食べたって\n言ってたのだ。'),
- (verdict,'verdictReveal','ただ、研究員は最後まで比較を続けたそうよ。\n市販品も、天然物も、','揚げたてがおいしかったと。')]:
+ (verdict,'verdictReveal','ええ。比較が不公平にならないよう、\n市販品も天然物も、','全部食べたそうよ。')]:
  caps=[c for c in caps if c['lineId']!=row['id']]
  cut=cues[key]
  for a,b,text in [(row['startFrame'],cut,left),(cut,row['startFrame']+row['durationInFrames'],right)]:caps.append(dict(startFrame=a,endFrame=b,text=text,lineId=row['id']))

@@ -6,13 +6,13 @@ const fs=require('fs'),path=require('path');
  const serveUrl=await bundle({entryPoint:path.resolve('src/index.ts')});
  const browser=await openBrowser('chrome');
  const composition=await selectComposition({serveUrl,id:'Explainer',puppeteerInstance:browser});
- fs.mkdirSync('out/previews_v12',{recursive:true});
+ fs.mkdirSync('out/previews_v13',{recursive:true});
  const points=m.views.map((v,i)=>({frame:Math.min(v.startFrame+45,v.endFrame-1),view:v.view,index:i}));
  points.push({frame:m.codaStartFrame+90,view:'truth_factory',index:90},{frame:m.codaStartFrame+330,view:'production_record',index:91},{frame:m.codaStartFrame+510,view:'approval',index:92});
  for(const [key,index] of [['chargeReveal',93],['logicReveal',95],['absenceReveal',97],['lifeReveal',102],['isobeReveal',104],['verdictReveal',106]]){points.push({frame:m.cues[key]-1,view:key+'_before',index},{frame:m.cues[key]+15,view:key+'_after',index:index+1});}
- for(const [prefix,view,index] of [['味、弾力','experiment_motion',100],['市販品から毒が','normal_tests',101]]){const row=m.dialogue.find(d=>d.text.startsWith(prefix));points.push({frame:row.startFrame+100,view,index});}
+ for(const [prefix,view,index] of [['研究員の報告では、味','experiment_motion',100],['市販品から毒が','normal_tests',101]]){const row=m.dialogue.find(d=>d.text.startsWith(prefix));points.push({frame:row.startFrame+100,view,index});}
  const selected=process.env.VIEWS?points.filter(p=>process.env.VIEWS.split(',').includes(p.view)):points;
- for(const p of selected){await renderStill({serveUrl,composition,puppeteerInstance:browser,frame:p.frame,output:`out/previews_v12/${String(p.index).padStart(2,'0')}_${p.view}.png`,logLevel:'error'});console.log(p.index,p.view);}
- fs.writeFileSync('out/previews_v12/points.json',JSON.stringify(points,null,2));
+ for(const p of selected){await renderStill({serveUrl,composition,puppeteerInstance:browser,frame:p.frame,output:`out/previews_v13/${String(p.index).padStart(2,'0')}_${p.view}.png`,logLevel:'error'});console.log(p.index,p.view);}
+ fs.writeFileSync('out/previews_v13/points.json',JSON.stringify(points,null,2));
  await browser.close({silent:true});
 })();

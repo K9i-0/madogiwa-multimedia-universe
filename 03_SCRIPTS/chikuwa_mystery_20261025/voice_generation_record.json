@@ -1,7 +1,7 @@
 {
   "engine": "VOICEVOX",
   "version": "0.25.1",
-  "count": 69,
+  "count": 65,
   "speed": {
     "metan": 1.13,
     "zunda": 1.15
@@ -129,5 +129,7 @@
   "v11NewOrChangedUtterances": 29,
   "v11PerformanceSource": "prepare_voice.py and audio_queries/*_source.json",
   "v12NewOrChangedUtterances": 11,
-  "v12PerformanceSource": "prepare_voice.py and audio_queries/*_source.json"
+  "v12PerformanceSource": "prepare_voice.py and audio_queries/*_source.json",
+  "v13NewOrChangedUtterances": 15,
+  "v13PerformanceSource": "prepare_voice.py and audio_queries/*_source.json"
 }

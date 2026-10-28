@@ -141,11 +141,19 @@
     "scene": "experiment",
     "view": "analysis",
     "who": "zunda",
-    "text": "焼いたちくわを調べて、焼けていると言われても困るのだ。",
+    "text": "穴の中も調べたのだ？",
     "pause": 14
   },
   {
     "id": "line-018",
+    "scene": "experiment",
+    "view": "analysis",
+    "who": "metan",
+    "text": "ええ。何も入っていなかったわ。",
+    "pause": 20
+  },
+  {
+    "id": "line-019",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
@@ -153,15 +161,15 @@
     "pause": 9
   },
   {
-    "id": "line-019",
+    "id": "line-020",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
-    "text": "味、弾力、焼き色まで再現できたわ。残る相違点は、生命活動だけだった。",
+    "text": "研究員の報告では、味、弾力、焼き色まで再現。残る相違点は、生命活動だけだった。",
     "pause": 23
   },
   {
-    "id": "line-020",
+    "id": "line-021",
     "scene": "experiment",
     "view": "process",
     "who": "zunda",
@@ -169,15 +177,15 @@
     "pause": 14
   },
   {
-    "id": "line-021",
+    "id": "line-022",
     "scene": "experiment",
     "view": "process",
     "who": "metan",
-    "text": "もちろん、焼いた天然物も動かない。だから、動かないというだけでは区別できないの。でも、魚から見分けにくいものを作れることは分かったわ。",
+    "text": "ただ、焼けば天然物も動かない。食卓に並ぶ姿では、見分けがつかなかったそうよ。",
     "pause": 9
   },
   {
-    "id": "line-022",
+    "id": "line-023",
     "scene": "supply",
     "view": "poison_absence",
     "who": "metan",
@@ -185,7 +193,7 @@
     "pause": 9
   },
   {
-    "id": "line-023",
+    "id": "line-024",
     "scene": "supply",
     "view": "poison_absence",
     "who": "zunda",
@@ -193,19 +201,11 @@
     "pause": 14
   },
   {
-    "id": "line-024",
-    "scene": "supply",
-    "view": "selection",
-    "who": "metan",
-    "text": "外見では判別できず、ビール臭も洗浄や加熱で失われる。成分検査なら分かるけれど、一本ずつ組織を採って調べる必要があるわ。",
-    "pause": 9
-  },
-  {
     "id": "line-025",
     "scene": "supply",
     "view": "selection",
     "who": "metan",
-    "text": "ところが、市販品を全数検査しているという記録もない。どうやって、毒ちくわだけを取り除いているのか。",
+    "text": "外見では判別できず、ビール臭も洗浄や加熱で失われる。成分検査なら分かるけれど、全ての個体を検査しているかは確認できなかったわ。",
     "pause": 9
   },
   {
@@ -245,7 +245,7 @@
     "scene": "supply",
     "view": "secret",
     "who": "metan",
-    "text": "中口研究員は、養殖施設と繁殖工程の資料を求めたの。回答は、独自技術のため非公開。代わりに提供されたのは、工場の加工映像だったわ。",
+    "text": "中口研究員は、購入品の製造元に、養殖施設の見学を申し込んだの。回答は、独自技術のため非公開。施設や繁殖工程の資料も、提供されなかったわ。",
     "pause": 9
   },
   {
@@ -253,19 +253,11 @@
     "scene": "supply",
     "view": "growth",
     "who": "metan",
-    "text": "魚肉を練り、棒に巻き、加熱する。卵も幼体も出てこない。これは、中口研究員が試した製法と同じなの。",
+    "text": "そこで研究員は、自分の再現実験に立ち返ったの。魚肉から作るなら、季節を待つ必要も、有毒種を選り分ける必要もない。",
     "pause": 9
   },
   {
     "id": "line-032",
-    "scene": "supply",
-    "view": "growth",
-    "who": "metan",
-    "text": "魚肉から作るなら、季節を待つ必要も、有毒種を選り分ける必要もない。",
-    "pause": 9
-  },
-  {
-    "id": "line-033",
     "scene": "supply",
     "view": "poison_logic",
     "who": "metan",
@@ -273,15 +265,15 @@
     "pause": 36
   },
   {
-    "id": "line-034",
+    "id": "line-033",
     "scene": "supply",
     "view": "poison_logic",
     "who": "zunda",
-    "text": "加工の前に、ちゃんと養殖しているのかもしれないのだ。まだ決めつけられないのだ。",
+    "text": "それは研究員が作ったものの話なのだ。お店のちくわまで、同じ作り方とは限らないのだ。",
     "pause": 14
   },
   {
-    "id": "line-035",
+    "id": "line-034",
     "scene": "evidence",
     "view": "handoff_market",
     "who": "metan",
@@ -289,7 +281,7 @@
     "pause": 18
   },
   {
-    "id": "line-036",
+    "id": "line-035",
     "scene": "evidence",
     "view": "missing",
     "who": "metan",
@@ -297,7 +289,7 @@
     "pause": 9
   },
   {
-    "id": "line-037",
+    "id": "line-036",
     "scene": "evidence",
     "view": "missing",
     "who": "metan",
@@ -305,7 +297,7 @@
     "pause": 20
   },
   {
-    "id": "line-038",
+    "id": "line-037",
     "scene": "evidence",
     "view": "isobe",
     "who": "zunda",
@@ -313,7 +305,7 @@
     "pause": 14
   },
   {
-    "id": "line-039",
+    "id": "line-038",
     "scene": "evidence",
     "view": "isobe",
     "who": "metan",
@@ -321,63 +313,47 @@
     "pause": 9
   },
   {
-    "id": "line-040",
+    "id": "line-039",
     "scene": "evidence",
-    "view": "isobe",
+    "view": "verdict",
     "who": "zunda",
     "text": "送る分まで食べたのだ？",
     "pause": 14
   },
   {
-    "id": "line-041",
+    "id": "line-040",
     "scene": "evidence",
     "view": "verdict",
     "who": "metan",
-    "text": "ええ。鑑定用の現物は、一つも残っていなかった。測定記録はあるけれど、今回の試料を第三者に検証してもらうことはできなくなったわ。",
-    "pause": 9
+    "text": "ええ。比較が不公平にならないよう、市販品も天然物も、全部食べたそうよ。",
+    "pause": 36
+  },
+  {
+    "id": "line-041",
+    "scene": "infiltration",
+    "view": "shimoju",
+    "who": "metan",
+    "text": "現物の鑑定は、ここで中断。続いて生産現場を調べたのが、狭間文明研究所の霜重研究員よ。",
+    "pause": 18
   },
   {
     "id": "line-042",
-    "scene": "evidence",
-    "view": "verdict",
+    "scene": "infiltration",
+    "view": "factory",
     "who": "metan",
-    "text": "ただ、研究員は最後まで比較を続けたそうよ。市販品も、天然物も、揚げたてがおいしかったと。",
+    "text": "向かった先は、中口研究員が調べた商品の製造元。日本の大手加工食品メーカー、T社よ。",
     "pause": 9
   },
   {
     "id": "line-043",
-    "scene": "evidence",
-    "view": "verdict",
-    "who": "zunda",
-    "text": "研究の成果が夕飯の感想なのだ。",
-    "pause": 45
-  },
-  {
-    "id": "line-044",
-    "scene": "infiltration",
-    "view": "shimoju",
-    "who": "metan",
-    "text": "続いては、生産現場の調査。担当したのは、狭間文明研究所の霜重研究員よ。",
-    "pause": 18
-  },
-  {
-    "id": "line-045",
-    "scene": "infiltration",
-    "view": "factory",
-    "who": "metan",
-    "text": "日本の大手加工食品メーカー、T社への潜入調査を決行したの。",
-    "pause": 9
-  },
-  {
-    "id": "line-046",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
-    "text": "しかし、その直後。霜重研究員は、現地で身柄を拘束されたわ。",
+    "text": "しかし、工場に到着して間もなく、霜重研究員は身柄を拘束されたわ。",
     "pause": 25
   },
   {
-    "id": "line-047",
+    "id": "line-044",
     "scene": "infiltration",
     "view": "arrest",
     "who": "zunda",
@@ -385,7 +361,7 @@
     "pause": 25
   },
   {
-    "id": "line-048",
+    "id": "line-045",
     "scene": "infiltration",
     "view": "arrest",
     "who": "metan",
@@ -393,7 +369,7 @@
     "pause": 25
   },
   {
-    "id": "line-049",
+    "id": "line-046",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "metan",
@@ -401,7 +377,7 @@
     "pause": 9
   },
   {
-    "id": "line-050",
+    "id": "line-047",
     "scene": "infiltration",
     "view": "conspiracy",
     "who": "zunda",
@@ -409,7 +385,7 @@
     "pause": 14
   },
   {
-    "id": "line-051",
+    "id": "line-048",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "metan",
@@ -417,7 +393,7 @@
     "pause": 9
   },
   {
-    "id": "line-052",
+    "id": "line-049",
     "scene": "infiltration",
     "view": "noappointment",
     "who": "zunda",
@@ -425,7 +401,7 @@
     "pause": 14
   },
   {
-    "id": "line-053",
+    "id": "line-050",
     "scene": "infiltration",
     "view": "drink",
     "who": "metan",
@@ -433,7 +409,7 @@
     "pause": 9
   },
   {
-    "id": "line-054",
+    "id": "line-051",
     "scene": "infiltration",
     "view": "incident",
     "who": "metan",
@@ -441,23 +417,15 @@
     "pause": 9
   },
   {
-    "id": "line-055",
-    "scene": "infiltration",
-    "view": "incident",
-    "who": "zunda",
-    "text": "お帰りください、なのだ。",
-    "pause": 20
-  },
-  {
-    "id": "line-056",
+    "id": "line-052",
     "scene": "infiltration",
     "view": "incident",
     "who": "metan",
-    "text": "その圧力を突破して敷地に入り、酔って暴れたため、警察に逮捕されたわ。",
+    "text": "制止を振り切って敷地に入り、酔って暴れたため、警察に逮捕されたわ。",
     "pause": 9
   },
   {
-    "id": "line-057",
+    "id": "line-053",
     "scene": "infiltration",
     "view": "police",
     "who": "metan",
@@ -465,7 +433,7 @@
     "pause": 9
   },
   {
-    "id": "line-058",
+    "id": "line-054",
     "scene": "infiltration",
     "view": "police",
     "who": "zunda",
@@ -473,7 +441,7 @@
     "pause": 14
   },
   {
-    "id": "line-059",
+    "id": "line-055",
     "scene": "infiltration",
     "view": "report",
     "who": "metan",
@@ -481,7 +449,7 @@
     "pause": 24
   },
   {
-    "id": "line-060",
+    "id": "line-056",
     "scene": "infiltration",
     "view": "additional_charge",
     "who": "metan",
@@ -489,7 +457,7 @@
     "pause": 25
   },
   {
-    "id": "line-061",
+    "id": "line-057",
     "scene": "infiltration",
     "view": "additional_charge",
     "who": "zunda",
@@ -497,15 +465,15 @@
     "pause": 25
   },
   {
-    "id": "line-062",
+    "id": "line-058",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
-    "text": "比較鑑定は、証拠品を食べてしまって中止。現地調査は逮捕で中断。今回の調査では、人工ちくわの流通を証明できなかったわ。",
+    "text": "二人の調査を経ても、市販のちくわが魚肉から作られたものだという証明には、至らなかったわ。",
     "pause": 9
   },
   {
-    "id": "line-063",
+    "id": "line-059",
     "scene": "ending",
     "view": "findings",
     "who": "zunda",
@@ -513,15 +481,15 @@
     "pause": 14
   },
   {
-    "id": "line-064",
+    "id": "line-060",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
-    "text": "それでも、疑問は残っている。魚から再現できる形。毒のない市販品。そして、一度も確認できていない養殖の現場。",
+    "text": "それでも、魚からよく似たものを作れることは分かった。もし、同じことを工場の規模で行っていたら。",
     "pause": 9
   },
   {
-    "id": "line-065",
+    "id": "line-061",
     "scene": "ending",
     "view": "findings",
     "who": "metan",
@@ -529,7 +497,7 @@
     "pause": 9
   },
   {
-    "id": "line-066",
+    "id": "line-062",
     "scene": "ending",
     "view": "callback",
     "who": "metan",
@@ -537,7 +505,7 @@
     "pause": 9
   },
   {
-    "id": "line-067",
+    "id": "line-063",
     "scene": "ending",
     "view": "callback",
     "who": "zunda",
@@ -545,7 +513,7 @@
     "pause": 30
   },
   {
-    "id": "line-068",
+    "id": "line-064",
     "scene": "ending",
     "view": "endtitle",
     "who": "metan",

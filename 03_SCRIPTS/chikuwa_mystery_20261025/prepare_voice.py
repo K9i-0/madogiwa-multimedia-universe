@@ -16,19 +16,23 @@ for source in (P/'audio_queries').glob('*_source.json'):
  query=source.with_name(source.name.replace('_source.json','.json'))
  if query.exists():query_cache[json.dumps(json.loads(source.read_text()),sort_keys=True)]=json.loads(query.read_text())
 for i,r in enumerate(rows):
- d=prepare_row(r,dictionary,scopes=['mmu']);sp=2 if r['who']=='metan' else 3
+ reading_row=dict(r)
+ if '工場の規模で行って' in r['text']:reading_row['speech_override']=r['text'].replace('工場の規模で行って','工場の規模でおこなって')
+ d=prepare_row(reading_row,dictionary,scopes=['mmu']);sp=2 if r['who']=='metan' else 3
  qp=P/'audio_queries'/f"{r['id']}.json"; cache=P/'audio_queries'/f"{r['id']}_source.json"
  settings={'speech':d['speech'],'speaker':sp,'version':version,'speed':1.13 if sp==2 else 1.15}
  # Selected performances; unmodified lines retain the existing voice cache.
  performance={}
  text=r['text']
- if text.startswith('味、弾力'):performance={'speedScale':1.08,'intonationScale':1.12}
+ if text.startswith('研究員の報告では、味'):performance={'speedScale':1.08,'intonationScale':1.12}
  elif text in ['一番大事なところが残っているのだ。','通報の電話線なのだ。','お帰りください、なのだ。']:performance={'speedScale':1.10,'intonationScale':.78,'postPhonemeLength':.18}
  elif r['view']=='additional_charge' and sp==2:performance={'speedScale':1.08,'intonationScale':.82}
  elif text.startswith('市販品から毒が'):performance={'speedScale':1.08,'intonationScale':1.12}
  elif r['view'] in ['leap','education'] and sp==2:performance={'speedScale':1.16,'intonationScale':1.18}
  elif text.startswith('……昨日'):performance={'speedScale':.94,'intonationScale':.72,'volumeScale':.86,'prePhonemeLength':.20}
  elif text.startswith(('その一本が','あなたが昨日')):performance={'speedScale':1.04,'intonationScale':.83,'volumeScale':.92}
+ if text=='ええ。何も入っていなかったわ。':performance={'speedScale':1.08,'intonationScale':.82}
+ if text.startswith('ええ。比較が不公平'):performance={'speedScale':1.08,'intonationScale':.9}
  if r['view']=='missing':performance={'speedScale':1.08,'intonationScale':1.05}
  if r['view']=='isobe' and sp==3:performance={'speedScale':1.1,'intonationScale':.82}
  if r['view']=='isobe' and sp==2:performance={'speedScale':1.04,'intonationScale':.78,'prePhonemeLength':.25}
@@ -38,7 +42,7 @@ for i,r in enumerate(rows):
  else:
   q=json.loads(request('audio_query',{'speaker':sp,'text':d['speech']}));q.update(speedScale=settings['speed'],prePhonemeLength=.09,postPhonemeLength=.12,outputSamplingRate=24000)
  if performance:q.update(performance)
- if text.startswith('味、弾力'):
+ if text.startswith('研究員の報告では、味'):
   for phrase in q['accent_phrases']:
    if ''.join(m['text'] for m in phrase['moras'])=='ソオイテンワ' and phrase.get('pause_mora'):phrase['pause_mora']['vowel_length']=.58
  if text.startswith('……昨日'):

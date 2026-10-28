@@ -26,7 +26,7 @@ def build_effects(manifest,sr,length):
         x*=gain/max(1,float(np.max(np.abs(x))));i=round(start*sr);end=min(length,i+len(x))
         out[i:end,0]+=x[:end-i];out[i:end,1]+=x[:end-i]*.94
         events.append(dict(name=name,startSeconds=round(start,3),durationSeconds=duration,peakGain=gain,source='original procedural synthesis'))
-    add('試料トレー',at('味、弾力')+.15,.25,.023,'tray')
+    add('試料トレー',at('研究員の報告では、味')+.15,.25,.023,'tray')
     add('受付呼び鈴',at('事前に知らせれば')-.42,.65,.018,'bell')
     add('調査報告書をめくる',at('なお、霜重')-.48,.40,.014,'paper')
     add('食器と箸',manifest['cues']['isobeReveal']/30+.1,.20,.014,'tray')

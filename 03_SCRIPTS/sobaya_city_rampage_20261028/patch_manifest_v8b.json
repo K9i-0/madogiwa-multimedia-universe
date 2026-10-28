@@ -1,0 +1,31 @@
+{
+  "fps": 30,
+  "total_frames": 900,
+  "base": "wan3_sobaya_brewery_v7_native720p.mp4",
+  "segments": [
+    {
+      "source": "wan3_sobaya_brewery_v7_native720p.mp4",
+      "start_frame": 0,
+      "end_frame_exclusive": 350
+    },
+    {
+      "source": "generated/refined_v8b_flyby.mkv",
+      "start_frame": 0,
+      "end_frame_exclusive": 189
+    },
+    {
+      "source": "wan3_sobaya_brewery_v7_native720p.mp4",
+      "start_frame": 539,
+      "end_frame_exclusive": 810
+    },
+    {
+      "source": "wan3_v8_drink_native720p.mp4",
+      "start_frame": 0,
+      "end_frame_exclusive": 90
+    }
+  ],
+  "output": "generated/assembled_v8b_lossless.mkv",
+  "retiming": "flyby only; see timing_refinement_v8b.json",
+  "music_source_in": 26,
+  "music_source_out": 56
+}

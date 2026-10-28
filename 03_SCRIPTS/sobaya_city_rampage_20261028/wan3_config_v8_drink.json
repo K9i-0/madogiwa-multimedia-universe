@@ -1,0 +1,27 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 3,
+  "generation_mode": "single",
+  "parent_project_duration": 30,
+  "generation_purpose": "User requested only last 3 seconds with fixed starting frame, plus separate flyby replacement.",
+  "prompt_file": "prompt_wan3_v10_patch_drink.txt",
+  "media": [
+    {
+      "type": "first_frame",
+      "path": "first_frame_drink_v8_27s.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "720P",
+    "ratio": "16:9",
+    "duration": 3,
+    "audio": true,
+    "seed": 281035,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_v8_drink_native720p.mp4",
+  "resolution_authorization": "Continuation of user-requested native 720p final and approved 720p partial replacements."
+}

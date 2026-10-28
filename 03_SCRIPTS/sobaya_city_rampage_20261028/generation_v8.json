@@ -1,0 +1,62 @@
+{
+  "recorded_at": "2026-10-28T20:31:43.612962+09:00",
+  "approved_additional_runs": 2,
+  "estimated_video_cost_usd": 0.7,
+  "actual_billed_cost": "not queried",
+  "pricing_url": "https://www.qwencloud.com/models/wan3.0-video",
+  "tasks": [
+    {
+      "scene": "drink",
+      "task_id": "77d2f533-90cb-45c2-98f2-5df8cf7c7376",
+      "status": "SUCCEEDED",
+      "config": "wan3_config_v8_drink.json",
+      "parameters": {
+        "resolution": "720P",
+        "ratio": "16:9",
+        "duration": 3,
+        "audio": true,
+        "seed": 281035,
+        "watermark": false,
+        "prompt_extend": false
+      },
+      "prompt_file": "prompt_wan3_v10_patch_drink.txt",
+      "prompt_sha256": "b1ad16c4ab70fde769f451dc281a45c13a807ea28bbeac248448459e6fad1b19",
+      "media": [
+        {
+          "path": "first_frame_drink_v8_27s.png",
+          "sha256": "b5054d9e04ad30cbf2d5e130fcfa8334c995896f064a43bb5a63e6a6d0321d44"
+        }
+      ],
+      "output": "wan3_v8_drink_native720p.mp4"
+    },
+    {
+      "scene": "flyby",
+      "task_id": "b0398842-f51d-429d-b581-a1efefc7573b",
+      "status": "SUCCEEDED",
+      "config": "wan3_config_v8_flyby.json",
+      "parameters": {
+        "resolution": "720P",
+        "ratio": "16:9",
+        "duration": 7,
+        "audio": true,
+        "seed": 281036,
+        "watermark": false,
+        "prompt_extend": false
+      },
+      "prompt_file": "prompt_wan3_v10_patch_flyby.txt",
+      "prompt_sha256": "a7ae1a4b3b236a11aa0daf129eff3260aff0ed947162f1eb4c7fc9a1aa24a908",
+      "media": [
+        {
+          "path": "character_sobaya_basic_sheet.png",
+          "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+        },
+        {
+          "path": "reference_forest_v8.png",
+          "sha256": "8ed0c6aec5af43a11b0351dd1488a489baaf1ab4ea4a335ed2366ca2184746e2"
+        }
+      ],
+      "output": "wan3_v8_flyby_native720p.mp4"
+    }
+  ],
+  "completed_recorded_at": "2026-10-28T20:36:30.938819+09:00"
+}

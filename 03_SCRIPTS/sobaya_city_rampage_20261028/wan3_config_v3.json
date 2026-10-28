@@ -1,0 +1,52 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 30,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3_v7_sprint_sidepass_lowlanding.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "reference_brewery_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "label_super_try_flat_v1.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_02_distant_brewery_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_03_sprint_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_04_side_pass_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_05a_low_landing_v3.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "frame_06_drink_scaled_v3b.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 281030,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_sobaya_brewery_v3_480p.mp4"
+}

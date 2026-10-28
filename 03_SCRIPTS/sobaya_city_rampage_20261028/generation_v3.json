@@ -1,0 +1,57 @@
+{
+  "task_id": "94190b7d-e896-4198-83c7-bae3fdfd25d7",
+  "recorded_at": "2026-10-28T18:49:17.434926+09:00",
+  "status": "SUCCEEDED",
+  "model": "wan3.0-video",
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 281030,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "prompt_file": "prompt_wan3_v7_sprint_sidepass_lowlanding.txt",
+  "prompt_sha256": "f973bdadeaaebc97d5487dcfd684c61fa64c584a0baee93c4e94a7ec18ed4b07",
+  "media": [
+    {
+      "path": "character_sobaya_basic_sheet.png",
+      "sha256": "9c44e1486fd9fbb9f3a793b4f56979eef7701ead4a75ec79952d81a2e4f0a058"
+    },
+    {
+      "path": "reference_brewery_v3.png",
+      "sha256": "c4691d2a55b96c698d0c3a6948fd0d771ff766cb2854f6501f4f2dc0a2e0cccd"
+    },
+    {
+      "path": "label_super_try_flat_v1.png",
+      "sha256": "23258c68b1bda69d0f227c7f430b9c961749d1047be1ed87ecd4b97f2ac0b1a3"
+    },
+    {
+      "path": "frame_02_distant_brewery_v3.png",
+      "sha256": "4a9cee40f5b3ad75490b88a804e1bc860d9175eccf7626b5ed81a53ddb326c71"
+    },
+    {
+      "path": "frame_03_sprint_v3.png",
+      "sha256": "17c12aa71cd0ddc79b0f4fdeda5e8203a0673c7a6cd54f499eff04f27012336c"
+    },
+    {
+      "path": "frame_04_side_pass_v3.png",
+      "sha256": "db8e79479d01f7e357eaca23cfe0e08a4f01d40d4c61b5869221fc9be2fa84e2"
+    },
+    {
+      "path": "frame_05a_low_landing_v3.png",
+      "sha256": "43a1327fde39a4da02fb5b14477676c4795300e1c2ff7ff93774a6b07d645206"
+    },
+    {
+      "path": "frame_06_drink_scaled_v3b.png",
+      "sha256": "4747265f0d911244885c2e8bee2ad857fae2cbe2d3fd22d415a5d94a6db30fcb"
+    }
+  ],
+  "approved_additional_runs": 1,
+  "estimated_cost_usd": 1.05,
+  "pricing_url": "https://www.qwencloud.com/models/wan3.0-video",
+  "completed_recorded_at": "2026-10-28T19:03:30.585950+09:00",
+  "source_output": "wan3_sobaya_brewery_v3_480p.mp4",
+  "actual_billed_cost": "not queried"
+}

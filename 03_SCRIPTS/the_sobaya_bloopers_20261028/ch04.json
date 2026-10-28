@@ -1,0 +1,208 @@
+{
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 45
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "scheduler": "beta",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/MiniMax_H3",
+      "format": "auto",
+      "codec": "auto"
+    }
+  },
+  "149": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "150": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "149",
+        0
+      ],
+      "lora_name": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "scene_ending.png"
+    }
+  },
+  "201": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "ch04_fuku.wav"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "Use <Picture 1> as the complete scene reference for character identities, physical proportions, framing, costumes and the ordinary indoor soundstage around miniature scenery. A photorealistic behind-the-scenes Japanese tokusatsu comedy. The two performers have ordinary adult proportions: Fukugyun (170cm) and Sobaya (180cm); they tower over miniature buildings and trees, not over the studio equipment. One continuous medium-wide two-shot, locked camera.\nFukugyun is the real-faced Japanese director on the left: preserve his exact facial structure and hair, clean natural skin, natural expression lines and apparent age. Sobaya on the right has huge muscles, neutral gray exposed skin, short black spiky hair, and the opaque rigid white mask with black oval eyes, black forehead dot and red markings. His mask remains fitted and rigid, including its black painted mouth; his voice comes from behind it and his reactions are head and body gestures. His white T-shirt has broad muscle shading and natural fabric folds with a continuous cloth surface, no nipple-like bumps or localized dots. Preserve both identities throughout.\n\nBoth are seated on ordinary director chairs during a break, miniature brewery behind them, studio lamps and walls visible. Fukugyun holds an open script in his lap. Sobaya holds one ordinary glass beer mug by its handle in his right hand at chest height; his left hand rests on his thigh. The mug contains amber beer and foam.\nFukugyun looks at him and says once with weary resignation: <d>[Japanese] もういい。普通に飲んで。</d> <Audio 1> is Fukugyun's voice and this spoken line. Sobaya stays silent throughout.\nAfter the line, Sobaya nods, lifts the mug to the lower portion of his rigid mask and attempts a normal sip. The rim contacts the solid mask, the mask stays attached and unchanged. As he tilts the mug slightly, a small visible stream of beer runs down the outside of the mask onto his shirt instead of entering his mouth. The mug remains in his right hand. Fukugyun watches silently, slowly closes his script in his lap, and stares ahead in defeat. Hold the final awkward beat. Quiet room tone, small glass tap, splash and paper closing; no further dialogue, laughter, music, captions or credits.",
+      "width": 864,
+      "height": 480,
+      "length": 226,
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "200",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "201",
+        0
+      ]
+    }
+  }
+}

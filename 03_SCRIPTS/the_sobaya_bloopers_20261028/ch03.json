@@ -1,0 +1,218 @@
+{
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 44
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "scheduler": "beta",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/MiniMax_H3",
+      "format": "auto",
+      "codec": "auto"
+    }
+  },
+  "149": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "150": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "149",
+        0
+      ],
+      "lora_name": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "scene_spill_v2.png"
+    }
+  },
+  "201": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "ch03_fuku.wav"
+    }
+  },
+  "202": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "ch03_soba.wav"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "Use <Picture 1> as the complete scene reference for character identities, physical proportions, framing, costumes and the ordinary indoor soundstage around miniature scenery. A photorealistic behind-the-scenes Japanese tokusatsu comedy. The two performers have ordinary adult proportions: Fukugyun (170cm) and Sobaya (180cm); they tower over miniature buildings and trees, not over the studio equipment. One continuous medium-wide two-shot, locked camera.\nFukugyun is the real-faced Japanese director on the left: preserve his exact facial structure and hair, clean natural skin, natural expression lines and apparent age. Sobaya on the right has huge muscles, neutral gray exposed skin, short black spiky hair, and the opaque rigid white mask with black oval eyes, black forehead dot and red markings. His mask remains fitted and rigid, including its black painted mouth; his voice comes from behind it and his reactions are head and body gestures. His white T-shirt has broad muscle shading and natural fabric folds with a continuous cloth surface, no nipple-like bumps or localized dots. Preserve both identities throughout.\n\nBoth industrial silver beer tanks carry the same Madogiwa Super Tsurai label as the image: black 労働, red スーパー and large red hiragana つらい, black brush script Madogiwa and black 生 on silver. The industrial lids, ladders and legs remain attached; label and size remain stable. The beer spill has already happened. Sobaya stands drenched in beer foam holding ONE forearm-sized industrial tank upright in both hands at waist height. Fukugyun's black jacket is splashed; he holds a wet open script in both hands. A foamy puddle surrounds their feet on the studio floor. The tank is no longer pouring; droplets fall from clothes. The director looks from the puddle to Sobaya.\nFukugyun says once, in an incredulous comic outburst: <d>[Japanese] カット、カット！ 一滴も飲めてないじゃん！</d> <Audio 1> is Fukugyun's voice and this spoken line. Sobaya listens silently, shoulders hunched.\nWhen Fukugyun finishes, he closes his mouth and listens. Sobaya dips his head in apology without dropping or changing the tank and says once behind his rigid mask: <d>[Japanese] すみません。前が見えなくて。</d> <Audio 2> is Sobaya's voice and this spoken line. End with Fukugyun looking at his soaked script, speechless. Natural dripping, room tone and two lines only. No music, extra speech, captions or costume change.",
+      "width": 864,
+      "height": 480,
+      "length": 209,
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "200",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "201",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "202",
+        0
+      ]
+    }
+  }
+}

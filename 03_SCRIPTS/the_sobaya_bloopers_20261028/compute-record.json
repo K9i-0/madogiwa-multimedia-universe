@@ -1,0 +1,56 @@
+{
+  "status": "complete",
+  "session": "mmu-sobaya-ng-20261028",
+  "initial_cu": 108.45,
+  "observed_cu_per_hour": 6.77,
+  "gpu": "A100",
+  "profile": "480p-turbo",
+  "frames": [
+    209,
+    192,
+    209,
+    226
+  ],
+  "fps": 24,
+  "resolution": [
+    864,
+    480
+  ],
+  "territory": "unknown",
+  "bundle_sha256": "69bc10606aa5ce7d2724e076d97eb4c35f1f0f1a0de15fbae26b093a58a39b92",
+  "reference_label": "../sobaya_city_rampage_20261028/label_super_try_flat_v1.png",
+  "final_cu": 107.14,
+  "observed_cu_delta": 1.31,
+  "active_assignments_after": 0,
+  "usage_rate_after": 0,
+  "remote_report": {
+    "status": "complete",
+    "started_unix": 1793194435.2267234,
+    "stage": "generate_ch04",
+    "completed": [
+      {
+        "id": "ch01",
+        "seconds": 106.28335952758789
+      },
+      {
+        "id": "ch02",
+        "seconds": 90.74342942237854
+      },
+      {
+        "id": "ch03",
+        "seconds": 91.30622339248657
+      },
+      {
+        "id": "ch04",
+        "seconds": 105.7060763835907
+      }
+    ],
+    "elapsed_seconds": 759.4520523548126,
+    "sha256": {
+      "ch01_480p.mp4": "74712f2dfd22f1487bbd8668ea679cb8455f16cde249c9c673fcb6ed43921d49",
+      "ch02_480p.mp4": "e5c806b13b926a0d46806b1ca5821eb63117a3c0a944e008c305b981d74a7518",
+      "ch03_480p.mp4": "567d327a57cab41497e535f612ffc76e77e508f9c7966c7aa95e2a446a0ee9b7",
+      "ch04_480p.mp4": "548e8e9207eef18069bf250205f8529cd0370659c4da2159009a1bf3791cb583"
+    }
+  }
+}

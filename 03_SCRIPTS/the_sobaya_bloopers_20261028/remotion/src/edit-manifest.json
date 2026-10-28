@@ -1,0 +1,128 @@
+{
+  "composition": {
+    "id": "SobayaBloopers",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "durationInFrames": 1356
+  },
+  "inputVideo": "master.mp4",
+  "segments": [
+    {
+      "id": "ng01",
+      "source": "../sobaya_city_rampage_20261028/wan3_sobaya_brewery_v3_480p.mp4",
+      "sourceStart": 351,
+      "duration": 87,
+      "label": "NG 01",
+      "heading": "飛行速度",
+      "volume": 0.3,
+      "start": 0
+    },
+    {
+      "id": "ch01",
+      "source": "generated/h3-job/results/ch01_480p.mp4",
+      "sourceStart": 0,
+      "duration": 261,
+      "label": "TAKE 01",
+      "heading": "ワイヤーアクション",
+      "volume": 1,
+      "start": 87
+    },
+    {
+      "id": "ng02",
+      "source": "../sobaya_city_rampage_20261028/wan3_sobaya_brewery_v1_480p.mp4",
+      "sourceStart": 669,
+      "duration": 135,
+      "label": "NG 02",
+      "heading": "小道具のサイズ",
+      "volume": 0.3,
+      "start": 348
+    },
+    {
+      "id": "ch02",
+      "source": "generated/h3-job/results/ch02_480p.mp4",
+      "sourceStart": 0,
+      "duration": 240,
+      "label": "TAKE 02",
+      "heading": "サイズ違い",
+      "volume": 1,
+      "start": 483
+    },
+    {
+      "id": "ng03",
+      "source": "../sobaya_city_rampage_20261028/wan3_v8_drink_native720p.mp4",
+      "sourceStart": 0,
+      "duration": 90,
+      "label": "NG 03",
+      "heading": "豪快すぎる一杯",
+      "volume": 0.45,
+      "start": 723
+    },
+    {
+      "id": "ch03",
+      "source": "generated/h3-job/results/ch03_480p.mp4",
+      "sourceStart": 0,
+      "duration": 261,
+      "label": "TAKE 03",
+      "heading": "飲めていない",
+      "volume": 1,
+      "start": 813
+    },
+    {
+      "id": "ch04",
+      "source": "generated/h3-job/results/ch04_480p.mp4",
+      "sourceStart": 0,
+      "duration": 282,
+      "label": "BREAK TIME",
+      "heading": "普通に飲むだけ",
+      "volume": 1,
+      "start": 1074
+    }
+  ],
+  "captions": [
+    {
+      "startFrame": 87,
+      "endFrame": 207,
+      "speaker": "福ギュン",
+      "text": "はい、カット！\n戦闘機くらいの速さって言ったよね？"
+    },
+    {
+      "startFrame": 294,
+      "endFrame": 348,
+      "speaker": "そば屋",
+      "text": "すみません、怖くて。"
+    },
+    {
+      "startFrame": 483,
+      "endFrame": 603,
+      "speaker": "福ギュン",
+      "text": "はい、カット！\nタンクの大きさ、変わってるよ。"
+    },
+    {
+      "startFrame": 663,
+      "endFrame": 723,
+      "speaker": "そば屋",
+      "text": "飲みやすい方にしました。"
+    },
+    {
+      "startFrame": 813,
+      "endFrame": 933,
+      "speaker": "福ギュン",
+      "text": "カット、カット！\n一滴も飲めてないじゃん！"
+    },
+    {
+      "startFrame": 993,
+      "endFrame": 1074,
+      "speaker": "そば屋",
+      "text": "すみません。前が見えなくて。"
+    },
+    {
+      "startFrame": 1074,
+      "endFrame": 1131,
+      "speaker": "福ギュン",
+      "text": "もういい。普通に飲んで。"
+    }
+  ],
+  "overlays": [],
+  "pending": []
+}

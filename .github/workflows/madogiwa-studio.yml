@@ -94,8 +94,9 @@ jobs:
 
       - name: Verify production
         working-directory: .
-        run: >-
-          curl --fail --silent --show-error
-          --retry 5 --retry-delay 5 --retry-all-errors
-          https://madogiwa-studio.madogiwa-studio.workers.dev/api/episodes
-          > /dev/null
+        run: |
+          for path in / /characters/sobaya /api/episodes; do
+            curl --fail --silent --show-error \
+              --retry 5 --retry-delay 5 --retry-all-errors \
+              "https://madogiwa.work${path}" > /dev/null
+          done

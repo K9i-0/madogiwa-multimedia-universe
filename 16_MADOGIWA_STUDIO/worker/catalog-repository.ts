@@ -33,8 +33,10 @@ export async function queryCatalog(db: D1Database, options: CatalogOptions = {},
   if (options.backwards) selected.reverse();
   const episodes: PublicCard[] = selected.map(row => ({ ...row, members: [] }));
   if (episodes.length) {
+    // Home/character pages load the full catalog. One JSON binding keeps the
+    // member lookup below D1's 100-parameter limit as the catalog grows.
     const members = await db.prepare(`SELECT em.episode_id, m.* FROM episode_members em JOIN members m ON m.id = em.member_id
-      WHERE em.episode_id IN (${episodes.map(() => '?').join(',')}) ORDER BY m.sort_order, m.name`).bind(...episodes.map(e => e.id)).all<MemberRow & { episode_id: string }>();
+      WHERE em.episode_id IN (SELECT value FROM json_each(?)) ORDER BY m.sort_order, m.name`).bind(JSON.stringify(episodes.map(e => e.id))).all<MemberRow & { episode_id: string }>();
     const byId = new Map(episodes.map(e => [e.id, e]));
     for (const { episode_id, ...member } of members.results) byId.get(episode_id)?.members.push(member);
   }

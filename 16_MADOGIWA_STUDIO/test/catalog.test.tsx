@@ -22,6 +22,26 @@ async function seed(count: number) {
 }
 
 describe('bounded public catalog', () => {
+  it('loads the home and character catalogs with more than 100 published episodes', async () => {
+    await env.DB.prepare("UPDATE episodes SET status = 'archived'").run();
+    const ids = await seed(102);
+    await env.DB.prepare("UPDATE episodes SET status = 'archived' WHERE id = ?").bind(ids[101]).run();
+
+    const catalog = await queryCatalog(env.DB, { all: true }, false);
+    expect(catalog.episodes.map(episode => episode.id)).toEqual(ids.slice(0, 101));
+    expect(catalog.episodes.every(episode => episode.members.length === 1 && episode.members[0].slug === 'sobaya')).toBe(true);
+    expect(catalog.previous).toBeUndefined();
+    expect(catalog.next).toBeUndefined();
+
+    for (const path of ['/', '/characters/sobaya']) {
+      const response = await SELF.fetch(`http://localhost${path}`);
+      const html = await response.text();
+      expect(response.status).toBe(200);
+      expect(html).not.toContain('Something went wrong!');
+      expect(html).toContain('窓際族物語');
+    }
+  }, 30_000);
+
   it('paginates stable ordering in both directions, filters before limiting, and invalidates cached results', async () => {
     // Isolate this catalog from migration seed content.
     await env.DB.prepare("UPDATE episodes SET status = 'archived'").run();

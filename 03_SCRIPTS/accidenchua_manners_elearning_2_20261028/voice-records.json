@@ -87,44 +87,44 @@
   "explain03": {
     "id": "explain03",
     "speaker": "narrator",
-    "text": "職場に続いて酒席でも干すのは、重ねて失礼に当たります。",
-    "reading": "職場に続いて、しゅせきでも干すのは、重ねて失礼に当たります。",
-    "file": "explain03.wav",
-    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "text": "ビールを飲み干すという行為は、職場で人を干す行為を連想させてしまいますね。職場に続いて酒席でも干すのは、重ねて失礼に当たります。相手のお立場に配慮し、メガジョッキをご用意しましょう。",
+    "reading": "ビールを飲み干すという行為は、職場で人を干す行為を連想させてしまいますね。職場に続いて、しゅせきでも干すのは、重ねて失礼に当たります。相手のお立場に配慮し、メガジョッキをご用意しましょう。",
+    "file": "explain03_fb1.wav",
+    "model": "Aratako/Irodori-TTS-v4-Large",
     "seed": 2801,
     "caption": "昔の企業研修ビデオの男性ナレーター。中低音の落ち着いた声。標準語の明瞭な発音で、一文ずつ丁寧に、ややゆっくり、淡々と説明する。冗談を言う調子にはしない。",
     "cfg_text": 5,
     "duration_scale": 1,
     "reference": "03_SCRIPTS/accidenchua_manners_elearning_2_20261028/narrator_reference.wav",
     "reference_sha256": "68ab72699c055ec14b53e5da5d06cca1d126fc0ed273dab5dbc59e14e924369f",
-    "duration": 5.640042,
-    "sha256": "0c302b3a7f57b567dcbed0418b99db292b6a391513d784ac3b3103871677b068",
-    "generation_seconds": 17.933000802993774,
+    "duration": 17.040042,
+    "sha256": "f72d324d5483ff3bc3c5f318cebd04e86d4d517f005b3cefa5bdb08bb0f5df5a",
+    "generation_seconds": 166.81630110740662,
     "audit": {
-      "status": "ASR text checked in adopted source and mixed master",
-      "subjective_listening": "not performed",
-      "evidence": "production-report.json"
+      "status": "adopted for FB1",
+      "asr": "Initial source transcriptions retained in generated/asr; further automatic recognition stopped at user request. No new mixed-master ASR.",
+      "subjective_listening": "not performed"
     }
   },
   "explain04": {
     "id": "explain04",
     "speaker": "narrator",
-    "text": "一般社員には通常のジョッキ。窓際社員には、メガジョッキ。この違いが、大人の気配りです。",
-    "file": "explain04.wav",
-    "model": "Aratako/Irodori-TTS-v4.1-Small",
+    "text": "一般社員には通常のジョッキ。窓際社員には、メガジョッキ。この違いが、できる社会人の気配りです。",
+    "file": "explain04_fb1.wav",
+    "model": "Aratako/Irodori-TTS-v4-Large",
     "seed": 2801,
     "caption": "昔の企業研修ビデオの男性ナレーター。中低音の落ち着いた声。標準語の明瞭な発音で、一文ずつ丁寧に、ややゆっくり、淡々と説明する。冗談を言う調子にはしない。",
     "cfg_text": 5,
     "duration_scale": 1,
     "reference": "03_SCRIPTS/accidenchua_manners_elearning_2_20261028/narrator_reference.wav",
     "reference_sha256": "68ab72699c055ec14b53e5da5d06cca1d126fc0ed273dab5dbc59e14e924369f",
-    "duration": 9.600042,
-    "sha256": "095e78546440bc63967de42a5f95a14ca6cbde2aa700ed267dec111d38e6d807",
-    "generation_seconds": 25.602128982543945,
+    "duration": 10.000042,
+    "sha256": "577373b567832e1419ca7c719e6ceb061a25421e8e21cd247744d25efb97521d",
+    "generation_seconds": 109.9802508354187,
     "audit": {
-      "status": "ASR text checked in adopted source and mixed master",
-      "subjective_listening": "not performed",
-      "evidence": "production-report.json"
+      "status": "adopted for FB1",
+      "asr": "Initial source transcriptions retained in generated/asr; further automatic recognition stopped at user request. No new mixed-master ASR.",
+      "subjective_listening": "not performed"
     }
   }
 }

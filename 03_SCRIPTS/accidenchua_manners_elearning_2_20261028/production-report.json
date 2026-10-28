@@ -1,8 +1,8 @@
 {
   "output": "final_remotion_mega_dvd.mp4",
-  "sha256": "619f72816234717f7c77bef6ac0666f815612c88cd60f1aca2438e764c0a01fd",
-  "duration_seconds": 53.041666666666664,
-  "frames": 1273,
+  "sha256": "d383387b6c0310515b16e25d825d9419051964d18297d1cadc50fabbe2ca8c96",
+  "duration_seconds": 64.83333333333333,
+  "frames": 1556,
   "width": 960,
   "height": 720,
   "fps": 24,
@@ -12,16 +12,16 @@
   "full_decode": "passed",
   "timeline": "passed",
   "loudness": {
-    "input_i": "-19.04",
-    "input_tp": "-4.65",
-    "input_lra": "10.60",
-    "input_thresh": "-30.61",
-    "output_i": "-17.57",
-    "output_tp": "-3.57",
-    "output_lra": "9.60",
-    "output_thresh": "-28.85",
+    "input_i": "-18.94",
+    "input_tp": "-4.30",
+    "input_lra": "7.00",
+    "input_thresh": "-30.25",
+    "output_i": "-17.58",
+    "output_tp": "-3.40",
+    "output_lra": "6.50",
+    "output_thresh": "-28.69",
     "normalization_type": "dynamic",
-    "target_offset": "-0.43"
+    "target_offset": "-0.42"
   },
   "boundary_frames": [
     0,
@@ -59,196 +59,57 @@
     759,
     760,
     761,
-    833,
-    891,
-    892,
-    915,
-    916,
-    917,
-    925,
-    926,
-    927,
-    1003,
-    1004,
-    1005,
-    1046,
-    1075,
-    1076,
-    1077,
-    1153,
-    1154,
-    1176,
-    1177,
-    1178,
-    1225,
-    1272
+    910,
+    911,
+    931,
+    932,
+    933,
+    969,
+    1054,
+    1055,
+    1068,
+    1069,
+    1070,
+    1165,
+    1166,
+    1188,
+    1189,
+    1190,
+    1198,
+    1199,
+    1200,
+    1272,
+    1273,
+    1274,
+    1324,
+    1339,
+    1340,
+    1341,
+    1436,
+    1437,
+    1459,
+    1460,
+    1461,
+    1508,
+    1555
   ],
   "visual_audit": {
-    "status": "reviewed sampled encoded frames",
+    "status": "revised explanation and closing caption reviewed in encoded output",
     "frames_reviewed": [
-      0,
-      1,
-      70,
-      139,
-      140,
-      141,
-      295,
-      450,
-      451,
-      452,
-      469,
-      486,
-      487,
-      488,
-      496,
-      497,
-      498,
-      554,
-      597,
-      598,
-      621,
-      622,
-      623,
-      631,
-      632,
-      633,
-      686,
-      725,
-      726,
-      749,
-      750,
-      751,
-      759,
-      760,
       761,
-      833,
-      891,
-      892,
-      915,
-      916,
-      917,
-      925,
-      926,
-      927,
-      1003,
-      1004,
-      1005,
-      1046,
-      1075,
-      1076,
-      1077,
-      1153,
-      1154,
-      1176,
-      1177,
-      1178,
-      1225,
-      1272
+      933,
+      1070,
+      1341
     ],
     "checks": [
-      "Opening, live-action scene, chapter, four explanations, ending and subtitle boundaries viewed in three contact sheets",
-      "No observed text clipping or caption overlap",
-      "Two mugs maintained, shirt spot repair and recognizable cast checked in scene samples"
-    ],
-    "limits": "Still-frame review; not continuous playback or precise lip-sync assessment"
+      "Training explanation diagram progression",
+      "Revised text and caption fit",
+      "Closing wording: できる社会人の気配り"
+    ]
   },
   "listening_and_precise_lipsync": "not performed; ASR and still-frame inspection are separate checks",
-  "asr_mixed_master": [
-    {
-      "source": "generated/mix-audit/mix_explain01.wav",
-      "source_sha256": "5b8aaff6a72f380f7cce4375419cd03028af1cd164acd8c1df101afae4d41a35",
-      "duration": 5.625,
-      "model": "openai/whisper-large-v3-turbo",
-      "text": "窓際社員にはメガジョッキでビールを提供しましょう",
-      "offsets": [
-        {
-          "text": "窓際社員にはメガジョッキでビールを提供しましょう",
-          "timestamp": [
-            0.0,
-            4.64
-          ]
-        }
-      ]
-    },
-    {
-      "source": "generated/mix-audit/mix_explain02.wav",
-      "source_sha256": "b0f67cc77e388326a8147bbcbcb426ac73a17c393155ca2ece79aeca10840477",
-      "duration": 5.3333125,
-      "model": "openai/whisper-large-v3-turbo",
-      "text": "通常のジョッキでは、すぐに飲み干されてしまいます。",
-      "offsets": [
-        {
-          "text": "通常のジョッキでは、すぐに飲み干されてしまいます。",
-          "timestamp": [
-            0.0,
-            5.34
-          ]
-        }
-      ]
-    },
-    {
-      "source": "generated/mix-audit/mix_explain03.wav",
-      "source_sha256": "393d5f03241c04a231f8b0088cff64f6c3846be38952ccf8d83b2ed87c19ba36",
-      "duration": 6.9166875,
-      "model": "openai/whisper-large-v3-turbo",
-      "text": "職場に続いて主席でも干すのは重ねて失礼にあたります",
-      "offsets": [
-        {
-          "text": "職場に続いて主席でも干すのは重ねて失礼にあたります",
-          "timestamp": [
-            0.0,
-            5.9
-          ]
-        }
-      ]
-    },
-    {
-      "source": "generated/mix-audit/mix_explain04.wav",
-      "source_sha256": "b44b181d2e7213d09ae25311acea05bba6bb2c9b1ee85262a8a56907ca336339",
-      "duration": 10.875,
-      "model": "openai/whisper-large-v3-turbo",
-      "text": "一般社員には通常のジョッキ、窓際社員にはメガジョッキ。この違いが大人の気配りです。",
-      "offsets": [
-        {
-          "text": "一般社員には通常のジョッキ、窓際社員にはメガジョッキ。",
-          "timestamp": [
-            0.0,
-            6.26
-          ]
-        },
-        {
-          "text": "この違いが大人の気配りです。",
-          "timestamp": [
-            7.2,
-            9.9
-          ]
-        }
-      ]
-    },
-    {
-      "source": "generated/mix-audit/mix_scene.wav",
-      "source_sha256": "9b4ef6968f0b25d8e73cf44a82029654487b2f398b122070aa06b971d81d2283",
-      "duration": 12.9583125,
-      "model": "openai/whisper-large-v3-turbo",
-      "text": "蕎麦屋さんにはこちらをご用意しました。なんで僕だけこんなに大きいんですか?",
-      "offsets": [
-        {
-          "text": "蕎麦屋さんにはこちらをご用意しました。",
-          "timestamp": [
-            0.0,
-            3.6
-          ]
-        },
-        {
-          "text": "なんで僕だけこんなに大きいんですか?",
-          "timestamp": [
-            4.88,
-            7.6000000000000005
-          ]
-        }
-      ]
-    }
-  ],
-  "asr_assessment": "All intended lines detected. 酒席 transcribed as homophone 主席; source reading is しゅせき. No subjective listening assessment.",
-  "output_bytes": 5852758
+  "revision": "FB1",
+  "automatic_recognition": "Further recognition stopped at user request; no FB1 mixed-master ASR.",
+  "unchanged_audio_prefix_frames": 750,
+  "previous_version": "generated/revisions/before-fb1/final_remotion_mega_dvd.mp4"
 }

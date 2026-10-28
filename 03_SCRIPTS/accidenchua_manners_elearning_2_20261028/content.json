@@ -3,13 +3,43 @@
   "topic": "飲み会での気配り",
   "reference": "https://www.youtube.com/watch?v=-ZwHP9T_wCc",
   "dialogue": [
-    {"id":"scene01_fukuchan","speaker":"fukuchan","text":"そば屋さんには、こちらをご用意しました。","reading":"そばやさんには、こちらをご用意しました。"},
-    {"id":"scene02_sobaya","speaker":"sobaya","text":"なんで、僕だけこんなに大きいんですか。"}
+    {
+      "id": "scene01_fukuchan",
+      "speaker": "fukuchan",
+      "text": "そば屋さんには、こちらをご用意しました。",
+      "reading": "そばやさんには、こちらをご用意しました。"
+    },
+    {
+      "id": "scene02_sobaya",
+      "speaker": "sobaya",
+      "text": "なんで、僕だけこんなに大きいんですか。"
+    }
   ],
   "narration": [
-    {"id":"explain01","speaker":"narrator","text":"窓際社員には、メガジョッキでビールを提供しましょう。"},
-    {"id":"explain02","speaker":"narrator","text":"通常のジョッキでは、すぐに飲み干されてしまいます。"},
-    {"id":"explain03","speaker":"narrator","text":"職場に続いて酒席でも干すのは、重ねて失礼に当たります。","reading":"職場に続いて、しゅせきでも干すのは、重ねて失礼に当たります。"},
-    {"id":"explain04","speaker":"narrator","text":"一般社員には通常のジョッキ。窓際社員には、メガジョッキ。この違いが、大人の気配りです。"}
+    {
+      "id": "explain01",
+      "speaker": "narrator",
+      "text": "窓際社員には、メガジョッキでビールを提供しましょう。"
+    },
+    {
+      "id": "explain02",
+      "speaker": "narrator",
+      "text": "通常のジョッキでは、すぐに飲み干されてしまいます。"
+    },
+    {
+      "id": "explain03",
+      "speaker": "narrator",
+      "text": "ビールを飲み干すという行為は、職場で人を干す行為を連想させてしまいますね。職場に続いて酒席でも干すのは、重ねて失礼に当たります。相手のお立場に配慮し、メガジョッキをご用意しましょう。",
+      "reading": "ビールを飲み干すという行為は、職場で人を干す行為を連想させてしまいますね。職場に続いて、しゅせきでも干すのは、重ねて失礼に当たります。相手のお立場に配慮し、メガジョッキをご用意しましょう。",
+      "file": "explain03_fb1.wav",
+      "model": "Aratako/Irodori-TTS-v4-Large"
+    },
+    {
+      "id": "explain04",
+      "speaker": "narrator",
+      "text": "一般社員には通常のジョッキ。窓際社員には、メガジョッキ。この違いが、できる社会人の気配りです。",
+      "file": "explain04_fb1.wav",
+      "model": "Aratako/Irodori-TTS-v4-Large"
+    }
   ]
 }

@@ -20,24 +20,24 @@ def wrap(s,width=27):
     cut=min(options,key=lambda i:abs(i-len(s)/2)) if options else len(s)//2
     return s[:cut]+'\n'+s[cut:]
 def add_captions(line,start):
-    r=voices[line['id']];path=EP/'generated/asr'/(line['id']+'.json')
+    r=voices[line['id']];path=EP/'generated/asr'/(Path(r['file']).stem+'.json')
     spans=json.loads(path.read_text()).get('offsets',[]) if path.exists() else []
     if not spans:pending.append('ASR '+line['id'])
     source=norm(line['text']);target=norm(''.join(x['text'] for x in spans))
     matcher=difflib.SequenceMatcher(None,source,target,autojunk=False)
-    def stamp(n):
+    def stamp(n,ending=False):
         targetn=len(target)
         for _,a,b,c,d in matcher.get_opcodes():
             if a<=n<=b:targetn=c+(n-a)*(d-c)/max(1,b-a);break
         pos=0
         for span in spans:
             size=len(norm(span['text']));lo,hi=span['timestamp'];hi=min(hi,r['duration'])
-            if pos<=targetn<=pos+size:return lo+(hi-lo)*(targetn-pos)/max(1,size)
+            if pos<=targetn<pos+size or (ending and targetn==pos+size):return lo+(hi-lo)*(targetn-pos)/max(1,size)
             pos+=size
         return r['duration']*n/max(1,len(source))
     pos=0
     for sentence in re.findall(r'.+?[。！？]|.+$',line['text']):
-        lo=stamp(pos);pos+=len(norm(sentence));hi=stamp(pos)
+        lo=stamp(pos);pos+=len(norm(sentence));hi=stamp(pos,ending=True)
         captions.append({'start':start+round(lo*FPS),'end':start+max(round(lo*FPS)+1,round(hi*FPS)),'text':wrap(sentence),'source':'canonical script, ASR-assisted timing'})
 
 segment('opening','opening',140)

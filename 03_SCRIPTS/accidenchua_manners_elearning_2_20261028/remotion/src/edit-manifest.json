@@ -4,7 +4,7 @@
     "width": 960,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 1273
+    "durationInFrames": 1556
   },
   "segments": [
     {
@@ -41,18 +41,18 @@
       "id": "explain03",
       "type": "explanation",
       "start": 750,
-      "duration": 166
+      "duration": 439
     },
     {
       "id": "explain04",
       "type": "explanation",
-      "start": 916,
-      "duration": 261
+      "start": 1189,
+      "duration": 271
     },
     {
       "id": "ending",
       "type": "ending",
-      "start": 1177,
+      "start": 1460,
       "duration": 96
     }
   ],
@@ -71,26 +71,38 @@
     },
     {
       "start": 760,
-      "end": 892,
+      "end": 911,
+      "text": "ビールを飲み干すという行為は、\n職場で人を干す行為を連想させてしまいますね。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 932,
+      "end": 1055,
       "text": "職場に続いて酒席でも干すのは、重ねて失礼に当たります。",
       "source": "canonical script, ASR-assisted timing"
     },
     {
-      "start": 926,
-      "end": 1004,
+      "start": 1069,
+      "end": 1166,
+      "text": "相手のお立場に配慮し、メガジョッキをご用意しましょう。",
+      "source": "canonical script, ASR-assisted timing"
+    },
+    {
+      "start": 1199,
+      "end": 1273,
       "text": "一般社員には通常のジョッキ。",
       "source": "canonical script, ASR-assisted timing"
     },
     {
-      "start": 1004,
-      "end": 1076,
+      "start": 1273,
+      "end": 1340,
       "text": "窓際社員には、メガジョッキ。",
       "source": "canonical script, ASR-assisted timing"
     },
     {
-      "start": 1076,
-      "end": 1154,
-      "text": "この違いが、大人の気配りです。",
+      "start": 1340,
+      "end": 1437,
+      "text": "この違いが、できる社会人の気配りです。",
       "source": "canonical script, ASR-assisted timing"
     }
   ],

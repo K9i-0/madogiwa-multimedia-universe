@@ -38,6 +38,12 @@ const Header=()=> <div style={{position:'absolute',left:32,top:26,right:32,heigh
 </div>;
 
 const Explanation=({kind,local}:{kind:string;local:number})=>{
+ const segmentStart=m.segments.find(s=>s.id===kind)!.start;
+ const currentFrame=segmentStart+local;
+ const consequence=m.captions.find(c=>c.text.replace(/\n/g,'').startsWith('職場に続いて酒席でも干す'));
+ const consideration=m.captions.find(c=>c.text.replace(/\n/g,'').startsWith('相手のお立場に配慮'));
+ const showConsequence=!!consequence&&currentFrame>=consequence.start;
+ const showConsideration=!!consideration&&currentFrame>=consideration.start;
  let panel:React.ReactNode;
  if(kind==='explain01')panel=<>
    <div style={{position:'absolute',left:40,top:139,width:552,height:414,border:'3px solid #fff',boxShadow:bevel,overflow:'hidden'}}><Img src={staticFile('still.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/></div>
@@ -56,13 +62,13 @@ const Explanation=({kind,local}:{kind:string;local:number})=>{
  </>;
  else if(kind==='explain03')panel=<>
    <div style={{position:'absolute',top:145,left:65,width:350,height:237,background:'#f1f3ef',boxShadow:bevel,textAlign:'center',paddingTop:28}}>
-    <FitText style={{fontSize:27,color:'#3b4d5b'}}>職場</FitText><FitText style={{fontSize:44,marginTop:44,color:'#393939'}}>干される</FitText>
+    <FitText style={{fontSize:27,color:'#3b4d5b'}}>{showConsequence?'職場':'酒席'}</FitText><FitText style={{fontSize:44,marginTop:44,color:'#393939'}}>{showConsequence?'干す':'飲み干す'}</FitText>
    </div>
-   <div style={{position:'absolute',top:247,left:452,fontSize:49,color:'#1d3c5c'}}>＋</div>
+   <div style={{position:'absolute',top:247,left:452,fontSize:49,color:'#1d3c5c'}}>{showConsequence?'＋':'→'}</div>
    <div style={{position:'absolute',top:145,left:546,width:350,height:237,background:'#f1f3ef',boxShadow:bevel,textAlign:'center',paddingTop:28}}>
-    <FitText style={{fontSize:27,color:'#3b4d5b'}}>酒席</FitText><FitText style={{fontSize:44,marginTop:44,color:'#393939'}}>飲み干される</FitText>
+    <FitText style={{fontSize:27,color:'#3b4d5b'}}>{showConsequence?'酒席':'職場'}</FitText><FitText style={{fontSize:44,marginTop:44,color:'#393939'}}>{showConsequence?'飲み干す':'干す'}</FitText>
    </div>
-   <FitText style={{position:'absolute',top:445,left:60,right:60,textAlign:'center',fontSize:51,fontWeight:700,color:'#ae161c',textShadow:'2px 2px #fff'}}>重ねて失礼に当たります</FitText>
+   <FitText style={{position:'absolute',top:445,left:60,right:60,textAlign:'center',fontSize:43,fontWeight:700,color:'#ae161c',textShadow:'2px 2px #fff'}}>{showConsideration?'相手のお立場に配慮しましょう':showConsequence?'重ねて失礼に当たります':'「干す」を連想させてしまいます'}</FitText>
  </>;
  else panel=<>
    <div style={{position:'absolute',left:48,top:128,width:414,height:430,background:'#eff0e6',boxShadow:bevel,textAlign:'center'}}>

@@ -14,16 +14,16 @@ def main():
     generated=EP/'generated/voices';generated.mkdir(parents=True,exist_ok=True)
     rec=EP/'voice-records.json';records=json.loads(rec.read_text()) if rec.exists() else {}
     for line in lines:
-        out=EP/(line['id']+'.wav');who=line['speaker']
+        out=EP/line.get('file',line['id']+'.wav');who=line['speaker']
         if line['id'] in records and out.exists():
             assert records[line['id']]['text']==line['text'];print('EXISTS',out.name,flush=True);continue
         seed={'sobaya':42,'fukuchan':100,'narrator':2801}[who]
-        model='Aratako/Irodori-TTS-v4-Large' if who=='sobaya' else 'Aratako/Irodori-TTS-v4.1-Small'
+        model=line.get('model','Aratako/Irodori-TTS-v4-Large' if who=='sobaya' else 'Aratako/Irodori-TTS-v4.1-Small')
         caption=CAPTION if who=='narrator' else '丁寧な会話調で、自然にはっきり話す。' if who=='fukuchan' else '落ち着いた会話調。大きさに少し戸惑いながら、淡々と尋ねる。'
         ref=ROOT/'02_CHARACTERS'/('Sobaya_voice.wav' if who=='sobaya' else 'Fukuchan_voice.wav')
         if who=='narrator':ref=EP/'narrator_reference.wav'
         candidate=generated/out.name
-        env=os.environ.copy();env['IRODORI_CFG_SCALE_TEXT']='5'
+        env=os.environ.copy();env['IRODORI_CFG_SCALE_TEXT']='5';env['IRODORI_TTS_CHECKPOINT']=model
         if who=='narrator' and not ref.exists():
             cmd=[str(ROOT/'.local/Irodori-TTS/.venv/bin/python'),'infer.py','--hf-checkpoint',model,'--no-ref','--text',line.get('reading',line['text']),'--caption',caption,'--seed',str(seed),'--cfg-scale-text','5','--output-wav',str(candidate)]
             cwd=ROOT/'.local/Irodori-TTS';ref_used=None

@@ -1,7 +1,7 @@
 {
   "sample_rate": 48000,
-  "frames": 1273,
-  "duration": 53.041666666666664,
+  "frames": 1556,
+  "duration": 64.83333333333333,
   "levels": {
     "scene": {
       "input_lufs": -11.17,
@@ -22,20 +22,20 @@
       "source_sha256": "65685da94937177a231f19030a3dbbe64c6838dde182281ff067c2be8c935310"
     },
     "explain03": {
-      "input_lufs": -17.07,
-      "input_peak": -0.23,
-      "gain_db": -1.77,
-      "source_sha256": "0c302b3a7f57b567dcbed0418b99db292b6a391513d784ac3b3103871677b068"
+      "input_lufs": -16.86,
+      "input_peak": -0.13,
+      "gain_db": -1.87,
+      "source_sha256": "f72d324d5483ff3bc3c5f318cebd04e86d4d517f005b3cefa5bdb08bb0f5df5a"
     },
     "explain04": {
-      "input_lufs": -16.37,
-      "input_peak": -1.3,
-      "gain_db": -1.629999999999999,
-      "source_sha256": "095e78546440bc63967de42a5f95a14ca6cbde2aa700ed267dec111d38e6d807"
+      "input_lufs": -16.61,
+      "input_peak": -1.45,
+      "gain_db": -1.3900000000000006,
+      "source_sha256": "577373b567832e1419ca7c719e6ceb061a25421e8e21cd247744d25efb97521d"
     }
   },
   "original_music": "prepare_edit.py deterministic synthesized score",
   "reference_audio_used": false,
-  "master_sha256": "fba8257cc996d49d641516e1dc7f49e6858eeef7b6fe15a32167be358c224ece",
+  "master_sha256": "b852e0329bf8a32b6f09120a0d414bfc26d7f6487c91d2a2a09c1a9c845f60d4",
   "listening_audit": "not performed"
 }

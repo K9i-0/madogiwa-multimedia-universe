@@ -1,0 +1,15 @@
+{
+  "source": "generated/assembled_v8b_lossless.mkv",
+  "output": "final_sobaya_full_ending_30s_16x9.mp4",
+  "frames": 900,
+  "fps": 30,
+  "duration": 30,
+  "audio_filter": "aresample=48000,atrim=end_sample=1440000,asetpts=PTS-STARTPTS,volume=-8.13dB,alimiter=limit=0.891251:level=0:latency=1",
+  "added_bgm": false,
+  "restored_frames": [
+    846,
+    900
+  ],
+  "ending": "Full generated drinking shot retained, no end fade or time adjustment. Existing flyby edit retained.",
+  "publication": "Files only; user will publish tomorrow."
+}

@@ -1,0 +1,19 @@
+{
+  "output": "final_sobaya_brewery_28p2_music_finish_720p.mp4",
+  "duration": 28.2,
+  "fps": 30,
+  "frames": 846,
+  "music_source_in": 27.8,
+  "music_source_out": 56,
+  "music_shift_seconds": 1.8,
+  "last_accent_proposal": 27.54,
+  "music_fade_out_start_frame": 828,
+  "music_fade_out_frames": 18,
+  "sfx_fade_out_start_frame": 837,
+  "sfx_fade_out_frames": 9,
+  "fade_curve": "hsin",
+  "sfx_timing": "unchanged",
+  "video": "stream copy of approved 28.2s preview",
+  "note": "Music shifted globally; previous music/action alignments change by 1.8 seconds. Last accent is waveform-derived cue, not a verified beat-grid marker.",
+  "filter_complex": "[0:a]aresample=48000,atrim=end_sample=1353600,asetpts=PTS-STARTPTS,volume=-8.13dB,afade=t=in:st=7.8:d=0.06666666666666667,afade=t=out:st=27.9:d=0.3:curve=hsin[sfx];[1:a]atrim=start_sample=86400:end_sample=1440000,asetpts=PTS-STARTPTS,volume=-10.89dB,afade=t=in:d=0.015,afade=t=out:st=27.6:d=0.6:curve=hsin[bgm];[sfx][bgm]amix=inputs=2:duration=longest:normalize=0,atrim=duration=28.2,alimiter=limit=0.891251:level=0:latency=1[mix]"
+}

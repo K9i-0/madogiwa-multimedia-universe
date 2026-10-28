@@ -67,4 +67,4 @@ FB1では解説の理由を丁寧な語りかけへ広げ、締めを「でき�
 - ショート版：https://www.youtube.com/shorts/elro68hH6ag
 - 投稿先：窓際族物語【AI制作】（`UCyQtPu94OaiGxFdd2A6bXdw`）。
 - 各版の `youtube*_metadata.json` / `youtube*_description.txt` が投稿内容、`youtube*_upload.json` が動画ID・送信ファイルhash、`youtube_publication_check.json` が公開・処理状況の確認記録。ショート版概要欄に横版リンクを記載。
-- 今回の依頼はYouTubeへの2本の投稿。Studioのエピソード登録や公式サイト掲載は行っていない。
+- YouTube投稿時点ではStudio未登録。2026-10-28の追加依頼で本編横版を[公式サイト](https://madogiwa.work/episodes/madogiwa-manners-drinking-party)へ掲載した。Studio IDは `MS-TTNDLFH2`。登録・掲載確認は `studio_registration.json`。種類は物語、制作ノートは非公開。Shorts版は別投稿のまま維持。

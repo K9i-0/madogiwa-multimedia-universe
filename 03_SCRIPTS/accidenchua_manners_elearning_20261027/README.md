@@ -70,6 +70,8 @@ ASRの文言・時刻、画像による人物・字幕、波形とラウドネ�
 
 https://www.youtube.com/watch?v=5XBCCTBE6GU
 
+2026-10-28、[公式サイト](https://madogiwa.work/episodes/madogiwa-manners-elearning)へ掲載。Studio IDは `MS-P9RDHJBB`。登録・掲載確認は `studio_registration.json`。種類は物語、制作ノートは非公開。
+
 サムネイルは完成動画の第0フレームを抽出した `youtube_thumbnail_first_frame.jpg`。
 登録結果は `youtube_upload.json`、サムネイル設定は `youtube_thumbnail.json`、公開状態は `youtube_status.json`。
 完成ファイルの最終画面レビューは、ユーザーの指示により省略。既に実施した素材・字幕・音声・仕様確認とは分けて `production-report.json` に記録している。

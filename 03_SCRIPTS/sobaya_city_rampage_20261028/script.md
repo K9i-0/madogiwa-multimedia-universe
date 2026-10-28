@@ -1,3 +1,5 @@
+> 正式タイトルを **THE SOBAYA** に変更。Shortsも新タイトルへ再編集。旧タイトル版は別ファイルとして保持。
+
 > 正式タイトル: **SOBAYA: LAST CALL**（ユーザー決定）。採用横版は `final_sobaya_brewery_28p2_music_finish_720p.mp4`。Shortsは同じ28.2秒・音声を使った `final_remotion_shorts_9x16.mp4`。
 
 > 最新比較候補v8b: 空中移動と最後3秒のみ720P再生成。空中通過は生成確認後に11フレームへ短縮。飲酒の大量のこぼれは未解決、完全合格ではない。旧v7保持。詳細 `completion_v8.md`。

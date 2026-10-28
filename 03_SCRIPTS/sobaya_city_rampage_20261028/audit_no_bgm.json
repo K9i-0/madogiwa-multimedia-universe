@@ -1,0 +1,49 @@
+{
+  "outputs": [
+    {
+      "file": "final_remotion_no_bgm_16x9.mp4",
+      "video_stream_identical": true,
+      "full_decode": "passed",
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "duration": "28.200000",
+          "nb_frames": "846"
+        },
+        {
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "duration": "28.200000",
+          "nb_frames": "1323"
+        }
+      ]
+    },
+    {
+      "file": "final_remotion_no_bgm_9x16.mp4",
+      "video_stream_identical": true,
+      "full_decode": "passed",
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 720,
+          "height": 1280,
+          "duration": "28.200000",
+          "nb_frames": "846",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "duration": "28.200000",
+          "nb_frames": "1323"
+        }
+      ]
+    }
+  ],
+  "listening": "not performed",
+  "audio": "Effects source before BGM mix; same gain and fades as approved final."
+}

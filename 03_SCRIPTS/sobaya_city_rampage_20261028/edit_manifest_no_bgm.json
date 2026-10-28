@@ -1,0 +1,20 @@
+{
+  "title": "THE SOBAYA",
+  "fps": 30,
+  "frames": 846,
+  "duration": 28.2,
+  "outputs": [
+    {
+      "source": "final_sobaya_brewery_28p2_music_finish_720p.mp4",
+      "output": "final_remotion_no_bgm_16x9.mp4"
+    },
+    {
+      "source": "final_remotion_shorts_9x16.mp4",
+      "output": "final_remotion_no_bgm_9x16.mp4"
+    }
+  ],
+  "audio_source": "generated/assembled_v8b_lossless.mkv",
+  "audio_filter": "aresample=48000,atrim=end_sample=1353600,asetpts=PTS-STARTPTS,volume=-8.13dB,afade=t=in:st=7.8:d=0.06666666666666667,afade=t=out:st=27.9:d=0.3:curve=hsin,alimiter=limit=0.891251:level=0:latency=1",
+  "bgm": null,
+  "note": "Effects-only branch of approved mix; first 234 frames muted to suppress generated music. Video streams copied without re-encoding. No publication changes."
+}

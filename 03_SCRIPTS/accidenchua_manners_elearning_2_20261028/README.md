@@ -59,4 +59,12 @@ FB1では解説の理由を丁寧な語りかけへ広げ、締めを「でき�
 - ユーザー指定に従いDVD内の文字・字幕を保持し、下の余白へ独立字幕を追加。上部の装飾・タイトルは追加しない。会話字幕は共通のメンバー色、ナレーションは白。
 - 採用済み横版からAACを無変換コピー。音声ストリームhash一致、フレーム数、全編デコードと字幕カードの文字収まりを確認。新たな音声生成・自動認識なし。
 - 実装は `render_shorts.py`（FFmpegの等比縮小・pad・ASS合成）。データは `shorts-manifest.json`、`shorts-captions.ass`、監査は `shorts-audit.json`。実行：`python3 03_SCRIPTS/accidenchua_manners_elearning_2_20261028/render_shorts.py`。既存出力がある場合は停止するので、改善版はスクリプトの出力名とversionを更新して別名で保存する。
-- 投稿・公開は行っていない。
+- 2026-10-28のユーザー依頼で、横版とショート版をYouTubeへ公開。タイトルは共通で「窓際マナー研修 — 飲み会編」。
+
+## YouTube公開
+
+- 横版：https://www.youtube.com/watch?v=keLSYe7vwfw
+- ショート版：https://www.youtube.com/shorts/elro68hH6ag
+- 投稿先：窓際族物語【AI制作】（`UCyQtPu94OaiGxFdd2A6bXdw`）。
+- 各版の `youtube*_metadata.json` / `youtube*_description.txt` が投稿内容、`youtube*_upload.json` が動画ID・送信ファイルhash、`youtube_publication_check.json` が公開・処理状況の確認記録。ショート版概要欄に横版リンクを記載。
+- 今回の依頼はYouTubeへの2本の投稿。Studioのエピソード登録や公式サイト掲載は行っていない。

@@ -1,0 +1,29 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Fukugyun,Hiragino Sans,38,&H00FFFFFF,&H00FFFFFF,&H0068A536,&H00000000,0,0,0,0,100,100,0,0,1,3,0,8,40,40,0,1
+Style: Sobaya,Hiragino Sans,38,&H00FFFFFF,&H00FFFFFF,&H004636D9,&H00000000,0,0,0,0,100,100,0,0,1,3,0,8,40,40,0,1
+Style: Narrator,Hiragino Sans,38,&H00FFFFFF,&H00FFFFFF,&H00202020,&H00000000,0,0,0,0,100,100,0,0,1,3,0,8,40,40,0,1
+Style: Name,Hiragino Sans,28,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,8,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.54,0:00:10.58,Fukugyun,,0,0,0,,{\an8\pos(350,1000)}そば屋さんには、\Nこちらをご用意しました。
+Dialogue: 0,0:00:06.54,0:00:10.58,Name,,0,0,0,,{\an8\pos(350,953)}福ギュン
+Dialogue: 0,0:00:10.58,0:00:13.46,Sobaya,,0,0,0,,{\an8\pos(350,1000)}なんで、僕だけ\Nこんなに大きいんですか。
+Dialogue: 0,0:00:10.58,0:00:13.46,Name,,0,0,0,,{\an8\pos(350,953)}そば屋
+Dialogue: 0,0:00:20.71,0:00:24.92,Narrator,,0,0,0,,{\an8\pos(350,1000)}窓際社員には、\Nメガジョッキで\Nビールを提供しましょう。
+Dialogue: 0,0:00:26.33,0:00:30.25,Narrator,,0,0,0,,{\an8\pos(350,1000)}通常のジョッキでは、\Nすぐに飲み干されて\Nしまいます。
+Dialogue: 0,0:00:31.67,0:00:34.17,Narrator,,0,0,0,,{\an8\pos(350,1000)}ビールを飲み干す\Nという行為は、
+Dialogue: 0,0:00:34.17,0:00:37.96,Narrator,,0,0,0,,{\an8\pos(350,1000)}職場で人を干す行為を\N連想させてしまいますね。
+Dialogue: 0,0:00:38.83,0:00:43.96,Narrator,,0,0,0,,{\an8\pos(350,1000)}職場に続いて\N酒席でも干すのは、\N重ねて失礼に当たります。
+Dialogue: 0,0:00:44.54,0:00:48.58,Narrator,,0,0,0,,{\an8\pos(350,1000)}相手のお立場に配慮し、\Nメガジョッキを\Nご用意しましょう。
+Dialogue: 0,0:00:49.96,0:00:53.04,Narrator,,0,0,0,,{\an8\pos(350,1000)}一般社員には\N通常のジョッキ。
+Dialogue: 0,0:00:53.04,0:00:55.83,Narrator,,0,0,0,,{\an8\pos(350,1000)}窓際社員には、\Nメガジョッキ。
+Dialogue: 0,0:00:55.83,0:00:59.88,Narrator,,0,0,0,,{\an8\pos(350,1000)}この違いが、\Nできる社会人の気配りです。

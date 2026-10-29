@@ -1,0 +1,41 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "wan_generated_lip_sync",
+  "reference_audio_usage": "voice_timbre_only",
+  "project_duration": 18,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_yotan_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_yametaro_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "character_chikuwa_dog_reference_v1.png"
+    },
+    {
+      "type": "reference_audio",
+      "path": "voice_ref_yametaro.wav"
+    },
+    {
+      "type": "reference_audio",
+      "path": "voice_ref_yotan.wav"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 18,
+    "audio": true,
+    "seed": 2026102907,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "yotan_chikuwa_walk_v1_480p.mp4"
+}

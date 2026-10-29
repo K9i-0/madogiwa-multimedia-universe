@@ -1,0 +1,24 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 5,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3_launch_patch.txt",
+  "media": [
+    {
+      "type": "first_frame",
+      "path": "launch_first_frame.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 5,
+    "audio": true,
+    "seed": 291031,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_launch_patch_v1_480p.mp4"
+}

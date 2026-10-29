@@ -4,9 +4,37 @@
   "segments": [
     {
       "sourceStart": 0,
+      "sourceEnd": 294,
+      "outputFrames": 294,
+      "reason": "opening and complete dialogue"
+    },
+    {
+      "source": "wan3_launch_patch_v1_480p.mp4",
+      "sourceStart": 0,
+      "sourceEnd": 24,
+      "outputFrames": 5,
+      "reason": "return to opening shot last pose"
+    },
+    {
+      "source": "wan3_launch_patch_v1_480p.mp4",
+      "sourceStart": 24,
+      "sourceEnd": 63,
+      "outputFrames": 20,
+      "reason": "readable arms-forward flying pose"
+    },
+    {
+      "source": "wan3_launch_patch_v1_480p.mp4",
+      "sourceStart": 63,
+      "sourceEnd": 125,
+      "outputFrames": 7,
+      "audioStart": 90,
+      "reason": "accelerate out of frame; original speed whoosh"
+    },
+    {
+      "sourceStart": 294,
       "sourceEnd": 390,
-      "outputFrames": 390,
-      "reason": "opening, complete dialogue and POV"
+      "outputFrames": 96,
+      "reason": "existing POV immediately after exit"
     },
     {
       "sourceStart": 390,
@@ -44,5 +72,6 @@
       "outputFrames": 384,
       "reason": "normal-speed wind reaction and full drink"
     }
-  ]
+  ],
+  "output": "final_remotion_retimed_v2_launch_720p.mp4"
 }

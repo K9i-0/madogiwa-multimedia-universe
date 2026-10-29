@@ -3,8 +3,9 @@ from pathlib import Path
 import json,subprocess
 root=Path(__file__).resolve().parent
 m=json.loads((root/'src/edit-manifest.json').read_text())
-fps=m['fps']; source=root.parent/m['source']
+fps=m['fps']
 for i,s in enumerate(m['segments']):
+    source=root.parent/s.get('source',m['source'])
     start,end=s['sourceStart'],s['sourceEnd']; count=s['outputFrames']; duration=count/fps
     speed=(end-start)/count
     audio_start=s.get('audioStart',start)/fps

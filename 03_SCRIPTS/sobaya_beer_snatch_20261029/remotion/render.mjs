@@ -1,10 +1,12 @@
 import path from 'node:path';
+import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {bundle} from '@remotion/bundler';
 import {selectComposition,renderMedia} from '@remotion/renderer';
 const dir=path.dirname(fileURLToPath(import.meta.url));
 const serveUrl=await bundle({entryPoint:path.join(dir,'src/index.tsx'),publicDir:path.join(dir,'public')});
 const composition=await selectComposition({serveUrl,id:'BeerSnatch'});
-const outputLocation=path.resolve(dir,'../final_remotion_retimed_v1_720p.mp4');
+const manifest=JSON.parse(fs.readFileSync(path.join(dir,'src/edit-manifest.json'),'utf8'));
+const outputLocation=path.resolve(dir,'..',manifest.output || 'final_remotion_retimed_v1_720p.mp4');
 await renderMedia({serveUrl,composition,outputLocation,codec:'h264',crf:17,concurrency:2});
 console.log('READY: '+outputLocation);

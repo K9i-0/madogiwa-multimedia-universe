@@ -28,3 +28,13 @@
 - ffmpeg全編デコードでエラーなし。1秒間隔の18フレームを目視し、散歩、首輪とリード、よーたんの可視発話、ちくわ犬、やめ太郎の反応と逃走を確認。代表フレームでよーたんとやめ太郎を識別可能。全フレームの造形一致・音素同期を合格としたものではない。
 - ローカルWhisper-small:「おーちくわ!やめたろうがいるぞ!ひぃ、なんやこいつー!」。指定内容に概ね対応。表記差は自動認識結果であり、誤発話と断定しない。吠え声の犬らしさや声質・発音・口パクの厳密な通し試聴評価は未実施。
 - 公式表示単価による初回概算$0.63。請求額は未取得。追加課金生成なし。
+
+## Shorts・YouTube登録（2026-10-29）
+
+公開タイトル: 愛犬の散歩をするよーたん。
+ショートは共有Remotion実装 `03_SCRIPTS/shorts_queue_20261011/remotion/src/index.tsx`、composition Shorts、shorts-manifest.jsonを使用。18秒540フレーム・720×1280、全編保持。上タイトル・中央全幅contain・同期ぼかし背景・下部メンバー色字幕。元音声をstream copyし圧縮音声hash一致、全編デコード成功。先頭・両字幕・末尾を目視確認。
+
+横版: https://www.youtube.com/watch?v=kQlNsTdT1Qo
+Shorts: https://www.youtube.com/shorts/fJS7om_aIQw
+
+ユーザーのYouTube登録依頼により公式チャンネルへ2本ともpublicで登録。Shorts概要欄に横版リンクあり。Studioへの新規掲載は今回の依頼対象外。公開状態・処理結果はyoutube_verification.json。

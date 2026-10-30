@@ -24,13 +24,17 @@ def loop_to(a,length,cross=0):
  return loop[:length]
 cut=m['mainStartFrame']*1600;ending=m['endingStartFrame']*1600;cross=2*sr
 bgm=np.zeros((n,2),np.float32)
-intro=decode(P/'public/intro.mp3','loudnorm=I=-34:TP=-3:LRA=11')
-bgm[:cut+cross]=loop_to(intro,cut+cross,sr);bgm[cut:cut+cross]*=np.linspace(1,0,cross)[:,None]
-main=loop_to(decode(P/'public/main.wav','loudnorm=I=-34:TP=-3:LRA=11'),ending+cross-cut,sr)
-main[:cross]*=np.linspace(0,1,cross)[:,None];main[-cross:]*=np.linspace(1,0,cross)[:,None]
-bgm[cut:ending+cross]+=main
-ending_music=loop_to(decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11'),n-ending,sr)
-ending_music[:cross]*=np.linspace(0,1,cross)[:,None];ending_music[-4*sr:]*=np.linspace(1,0,4*sr)[:,None];bgm[ending:]+=ending_music
+# BGM stays local (prepare_assets.py). Without it, mix voice only and keep mix_record.json as the adopted record.
+missing=[f for f in ['intro.mp3','main.wav','unity.mp3'] if not (P/'public'/f).exists()]
+if missing:print('BGM missing, voice-only draft:',', '.join(missing))
+if not missing:
+ intro=decode(P/'public/intro.mp3','loudnorm=I=-34:TP=-3:LRA=11')
+ bgm[:cut+cross]=loop_to(intro,cut+cross,sr);bgm[cut:cut+cross]*=np.linspace(1,0,cross)[:,None]
+ main=loop_to(decode(P/'public/main.wav','loudnorm=I=-34:TP=-3:LRA=11'),ending+cross-cut,sr)
+ main[:cross]*=np.linspace(0,1,cross)[:,None];main[-cross:]*=np.linspace(1,0,cross)[:,None]
+ bgm[cut:ending+cross]+=main
+ ending_music=loop_to(decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11'),n-ending,sr)
+ ending_music[:cross]*=np.linspace(0,1,cross)[:,None];ending_music[-4*sr:]*=np.linspace(1,0,4*sr)[:,None];bgm[ending:]+=ending_music
 for c in m['clips']:
  if not c.get('audible'):continue
  start=c['startFrame']*1600;length=c['durationInFrames']*1600;source=c['sourceStartFrame']*1600
@@ -41,5 +45,5 @@ for c in m['clips']:
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
+if not missing:(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

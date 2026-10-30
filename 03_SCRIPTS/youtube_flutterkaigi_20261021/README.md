@@ -1,3 +1,23 @@
+## 最新：v12（2026-10-30）
+
+`final_remotion_flutterkaigi_v12_nobgm.mp4`（BGMなし・Tripo抜粋は静止画の暫定版。引き継ぎ手順はv11の項）。v11へ、Widget・Element・RenderObjectの3つのツリーの短い説明と、レイアウトの制約／サイズの受け渡しを追加。技術画面の右下に公式ドキュメント・パッケージの参考を小さく表示（`Explainer.tsx`の`refs`）。照合結果は`fact_check_v11.md`のv12追記。
+
+## 最新：v11（2026-10-30）
+
+`final_remotion_flutterkaigi_v11_nobgm.mp4` — 21分22.8秒、1280×720、30fps。**BGMなし・Tripo抜粋は静止画の暫定版**。
+pubspec.yamlの直接依存（flutter_scene・hooks・madogiwa_engine・sensors_plus・marionette_flutter・ブース部品）を起点に再構成。MarionetteはprofileでもVM Service経由で使えることを反映し、MCPの図からmobile MCPを除外。Pixel 7aの60fpsは固定性能モード、メモリは上流同期直後の強制終了を含めて説明。Flutter Sceneの図を実ゲーム画面の注釈と層の図へ作り直し、おだてつの元画像と3Dモデルを並べた。
+新しい図は`remotion/src/VisualsV11.tsx`、根拠は`fact_check_v11.md`、レビューは`review_v10.md`。
+
+### 別環境への引き継ぎ（v11完成版）
+
+このMac（2026-10-30）にはBGMと過去動画が無いため、次をそろえて`npm run render`を実行すると`final_remotion_flutterkaigi_v11.mp4`になる（`mix_audio.py`はBGMがそろうと従来どおりミックスし`mix_record.json`を更新）。
+
+1. `prepare_assets.py`の入力：`youtube_project_intro_20261019/remotion/public/{intro.mp3,main.wav,unity.mp3}`、`youtube_3d_character_workflow_20261014/final_remotion_tripo_workflow_v6.mp4`。実行後に`prepare_media_v5.py`の該当行で`tripo_detail_v5.mp4`を作る（`VisualsV11`は存在すれば動画、無ければ`tripo.jpg`）。
+2. ゲーム映像：`remotion/out/*_v11_raw.mov`（Git管理外）を移すか、下記で再収録して`prepare_media_v11.py`。
+3. VOICEVOX 0.25.1（`~/Applications/voicevox_engine/macos-arm64/run`）、`.local/voicevox-explainer/venv`（`remotion/requirements.txt`）。音声は追跡済みWAVを再利用し、`prepare_voice.py`→`prepare_edit_v5.py`→`write_docs_v11.py`の順。
+
+ゲーム映像はflutterkaigi2026/appを`flutter run -d <iPhone 17 Pro simulator> --dart-define=CAPTURE=true`（結果ダイアログを出さない撮影用設定）で起動し、`xcrun simctl io <UDID> recordVideo --codec=h264 --mask=ignored`で収録。各収録前に`madogiwa.inspectCatch`の`resultOpen=false`と選択キャラ・時間帯を確認し、`catchAction action=demo`で入力。ギャラリーは`galleryAction`、昼夜は画面の「夜」をMarionetteでタップ。
+
 ## 最新：v10（2026-10-30）
 
 `final_remotion_flutterkaigi_v10.mp4` — 18分04.9秒、1280×720、30fps。

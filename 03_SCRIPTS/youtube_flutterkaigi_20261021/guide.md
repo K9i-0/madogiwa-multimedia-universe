@@ -1,23 +1,23 @@
 # FlutterとAIで3Dゲームを作る：ゆめみ採用試験
 
-- 対象版：改訂v10（2026-10-30）
+- 対象版：改訂v11（2026-10-30）
 - 動画・制作ページ：未公開。採用・公開時にURLを追記。
 
 ## 制作の流れ
 
 1. 対象版の要件を満たすStable版Flutterを用意する。このゲームは3.47.8、Flutter Sceneはforkの固定commit。
-2. ネイティブのFlutter GPUを有効化し、Flutter Sceneでモデル・カメラ・ライトを組み立てる。
+2. ネイティブではImpellerが標準。Flutter GPUだけをInfo.plist／AndroidManifestで有効化し、Flutter Sceneでモデル・カメラ・ライトを組み立てる。GLBはhooks（`hook/build.dart`）でビルド時に変換する。
 3. 選択・得点・設定のUIはWidget、ゲームの入力・更新・判定はDartで実装する。
 4. 人物モデルはTripo等で原型を作り、形状・リグ・動作を確認。シンプルな小道具はBlenderの生成コードも使う。
 5. Dart MCPを設定し、起動・hot reload・Widget調査・実行時エラー確認をAIから行えるようにする。
-6. debug時にMarionetteBindingを初期化し、VM Service URIへ接続。通常UIの操作とゲーム専用拡張を使い分ける。
-7. mobile MCPで端末の画面と操作を確認し、性能測定は別に行う。
+6. release以外でMarionetteBindingを初期化し、VM Service URIへ接続。通常UIの操作とゲーム専用拡張を使い分ける。debugでもprofileでも使える（profileはhot reloadなし）。
+7. 実機のprofileビルドでもMarionetteで同じ場面を再現し、性能はフレームの記録と3Dの描き直し回数で測る。
 8. 実端末のprofileビルドで描画時間とメモリを調べる。未変更データの転送や過大なテクスチャも確認する。
 
 ## 記録の読み方
 
 - Claude共同著者表記があるコミットを根拠にしている。表記なし＝Codexという断定はしない。
-- Pixel 7a約30→60fps、iPhone 14約1.9→0.74GB RSSはコミット4f3ffbaの実機profile記録。全端末の保証値ではない。
+- Pixel 7a約30→60fpsは固定性能モードの値（通常モードはHUD約46〜50fps、3Dの更新は毎秒約20回）。iPhone 14約1.9→0.74GB RSSはコミット4f3ffbaの実機profile記録。全端末の保証値ではない。
 - ゲームの収録映像はiOSシミュレーターの撮影用自動入力。実機の傾き操作や測定映像ではない。
 - Stable版Flutterで利用可能であることと、APIの安定性保証は区別する。
 
@@ -43,16 +43,15 @@ WidgetのUIとDartのゲームロジックを分け、実機profileで描画時�
 | ツール | 接続先・仕組み | 今回の用途 |
 | --- | --- | --- |
 | Dart MCP | Dart/Flutter公式開発ツール。実行時機能はDTD等の開発用接続を利用 | 起動、hot reload、Widget調査、実行時エラー取得 |
-| Marionette MCP | debugアプリのMarionetteBindingが登録する拡張へDart VM Service経由で接続 | Widgetのタップ・入力、画面・ログ確認、ゲーム独自の状態取得と操作 |
-| mobile MCP | OS側の操作基盤。AndroidはADB、iPhoneはWebDriverAgent等 | 実機の表示と操作確認。Flutterアプリ内部のBindingは不要 |
+| Marionette MCP | アプリのMarionetteBindingが登録する拡張へDart VM Service経由で接続（debug・profile。releaseは不可） | Widgetのタップ・入力、画面・ログ確認、ゲーム独自の状態取得と操作。実機のprofile計測時の場面再現 |
 
 MCPは外部ツール呼び出しの共通接続方式。役割は排他的ではなく、上表は今回の使い分け。
-Marionetteはdebug専用というこのアプリの設定に従い、profile実機計測とは分ける。
-mobile MCPは性能プロファイラーではなく、実機にもシミュレーターにも使える端末操作ツール。
+Marionetteはprofileでも使える。profileではhot reloadとFlutterのウィジェットインスペクタが使えない。Marionetteは場面を動かす道具で、性能はフレームの記録・タイムラインで測る。
+開発中はMarionetteをprofileでは使えないと思い込み、実機ではmobile MCPを併用していた（v11で訂正）。
 
 ### ゲーム専用の拡張
 
-`app/lib/main.dart`で`kDebugMode`のときだけ登録。
+`app/lib/main.dart`で登録。v11時点の作業ツリーでは`!kReleaseMode`（debug・profile）に変更し、2026-10-30にmacOSのprofileで動作を確認（ゲームリポジトリには未コミット）。
 
 - `madogiwa.inspectCatch`: 得点、座標、落下物、キャッチ履歴、カメラなどを構造化データで取得。
 - `madogiwa.catchAction`: `configure`で設定・seed、`start`で停止状態から開始、`step`で入力と秒数を指定。
@@ -67,14 +66,13 @@ Dart MCPでdebugアプリを起動し、VM Service URIへMarionetteを接続し�
 選択画面のWidget操作を確認し、madogiwa.catchActionでseedと入力を固定してゲームを進め、
 madogiwa.inspectCatchの得点・座標・落下物の状態と画面を照合してください。
 Dartコードの修正後はhot reloadして結果を確認してください。
-実機ではmobile MCPで操作と表示を確かめ、性能はprofileビルドの計測ログで比較してください。
+実機ではprofileビルドで起動し、Marionetteで同じ場面を再現しながら、フレームの記録と3Dの描き直し回数で比較してください。
 ```
 
 ### 追加の一次資料
 
 - [Dart/Flutter公式AIツール](https://docs.flutter.dev/ai/tools)
 - [Marionette公式リポジトリ](https://github.com/leancodepl/marionette_mcp)
-- [mobile MCP公式リポジトリ](https://github.com/mobile-next/mobile-mcp)
 - [実プロジェクトの接続設定](https://github.com/K9i-0/flutterkaigi2026/blob/main/.mcp.json)
 - [実ゲームの拡張実装](https://github.com/K9i-0/flutterkaigi2026/blob/main/app/lib/main.dart)
 

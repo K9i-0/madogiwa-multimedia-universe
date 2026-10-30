@@ -183,6 +183,7 @@
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
+        "角度": 72,
         "カメラ": 23,
         "スワイプ": 0,
         "ピンチ操作": 120
@@ -309,6 +310,7 @@
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {
+        "窓際族": 50,
         "福ギュン": 169,
         "そば屋": 185
       }
@@ -350,28 +352,101 @@
     {
       "id": "032",
       "startFrame": 4666,
-      "durationInFrames": 111,
-      "audioTrimStartSample": 1765,
-      "audioTrimEndSample": 90112,
+      "durationInFrames": 255,
+      "audioTrimStartSample": 1072,
+      "audioTrimEndSample": 205056,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
-      "cues": {
-        "Flutter Scene": 34
-      }
+      "cues": {}
     },
     {
       "id": "033",
-      "startFrame": 4783,
-      "durationInFrames": 48,
-      "audioTrimStartSample": 1158,
-      "audioTrimEndSample": 38864,
+      "startFrame": 4927,
+      "durationInFrames": 104,
+      "audioTrimStartSample": 824,
+      "audioTrimEndSample": 83609,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {}
     },
     {
       "id": "034",
-      "startFrame": 4837,
+      "startFrame": 5037,
+      "durationInFrames": 327,
+      "audioTrimStartSample": 967,
+      "audioTrimEndSample": 262400,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "flutter_scene": 33,
+        "hooks": 61,
+        "madogiwa_engine": 109,
+        "sensors_plus": 139,
+        "marionette_flutter": 213,
+        "ブース展示": 277
+      }
+    },
+    {
+      "id": "035",
+      "startFrame": 5370,
+      "durationInFrames": 67,
+      "audioTrimStartSample": 1740,
+      "audioTrimEndSample": 54649,
+      "gapAfterFrames": 20,
+      "pacingReason": "chapter_breath",
+      "cues": {}
+    },
+    {
+      "id": "036",
+      "startFrame": 5457,
+      "durationInFrames": 255,
+      "audioTrimStartSample": 771,
+      "audioTrimEndSample": 204288,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "flutter_scene": 12,
+        "フォーク": 171
+      }
+    },
+    {
+      "id": "037",
+      "startFrame": 5718,
+      "durationInFrames": 41,
+      "audioTrimStartSample": 1185,
+      "audioTrimEndSample": 33888,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "フォーク": 0
+      }
+    },
+    {
+      "id": "038",
+      "startFrame": 5765,
+      "durationInFrames": 170,
+      "audioTrimStartSample": 844,
+      "audioTrimEndSample": 136192,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "3つ": 137,
+        "アニメーション": 60
+      }
+    },
+    {
+      "id": "039",
+      "startFrame": 5941,
+      "durationInFrames": 126,
+      "audioTrimStartSample": 1631,
+      "audioTrimEndSample": 101807,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "040",
+      "startFrame": 6073,
       "durationInFrames": 168,
       "audioTrimStartSample": 952,
       "audioTrimEndSample": 135168,
@@ -380,8 +455,8 @@
       "cues": {}
     },
     {
-      "id": "035",
-      "startFrame": 5008,
+      "id": "041",
+      "startFrame": 6244,
       "durationInFrames": 239,
       "audioTrimStartSample": 1587,
       "audioTrimEndSample": 192768,
@@ -393,8 +468,8 @@
       }
     },
     {
-      "id": "036",
-      "startFrame": 5253,
+      "id": "042",
+      "startFrame": 6489,
       "durationInFrames": 148,
       "audioTrimStartSample": 1484,
       "audioTrimEndSample": 119672,
@@ -405,36 +480,68 @@
       }
     },
     {
-      "id": "037",
-      "startFrame": 5407,
-      "durationInFrames": 278,
-      "audioTrimStartSample": 748,
-      "audioTrimEndSample": 222464,
+      "id": "043",
+      "startFrame": 6643,
+      "durationInFrames": 337,
+      "audioTrimStartSample": 725,
+      "audioTrimEndSample": 270165,
       "gapAfterFrames": 3,
       "pacingReason": "continuation",
       "cues": {
-        "構成": 29,
-        "大きさ": 96,
-        "位置": 112
+        "Widget": 53
       }
     },
     {
-      "id": "038",
-      "startFrame": 5688,
-      "durationInFrames": 332,
-      "audioTrimStartSample": 1479,
-      "audioTrimEndSample": 267008,
+      "id": "044",
+      "startFrame": 6983,
+      "durationInFrames": 190,
+      "audioTrimStartSample": 828,
+      "audioTrimEndSample": 152064,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "045",
+      "startFrame": 7179,
+      "durationInFrames": 238,
+      "audioTrimStartSample": 1229,
+      "audioTrimEndSample": 191206,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "Widget": 24
+      }
+    },
+    {
+      "id": "046",
+      "startFrame": 7423,
+      "durationInFrames": 176,
+      "audioTrimStartSample": 3329,
+      "audioTrimEndSample": 143872,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "大きさ": 134,
+        "位置": 151
+      }
+    },
+    {
+      "id": "047",
+      "startFrame": 7602,
+      "durationInFrames": 263,
+      "audioTrimStartSample": 634,
+      "audioTrimEndSample": 210688,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
-        "構成": 176,
-        "描画命令": 45,
-        "Widget": 146
+        "大きさ": 19,
+        "制約": 34
       }
     },
     {
-      "id": "039",
-      "startFrame": 6030,
+      "id": "048",
+      "startFrame": 7875,
       "durationInFrames": 95,
       "audioTrimStartSample": 1001,
       "audioTrimEndSample": 76770,
@@ -443,8 +550,8 @@
       "cues": {}
     },
     {
-      "id": "040",
-      "startFrame": 6131,
+      "id": "049",
+      "startFrame": 7976,
       "durationInFrames": 310,
       "audioTrimStartSample": 871,
       "audioTrimEndSample": 248832,
@@ -462,8 +569,8 @@
       }
     },
     {
-      "id": "041",
-      "startFrame": 6451,
+      "id": "050",
+      "startFrame": 8296,
       "durationInFrames": 282,
       "audioTrimStartSample": 923,
       "audioTrimEndSample": 225792,
@@ -476,8 +583,8 @@
       }
     },
     {
-      "id": "042",
-      "startFrame": 6739,
+      "id": "051",
+      "startFrame": 8584,
       "durationInFrames": 191,
       "audioTrimStartSample": 1071,
       "audioTrimEndSample": 153645,
@@ -488,8 +595,8 @@
       }
     },
     {
-      "id": "043",
-      "startFrame": 6936,
+      "id": "052",
+      "startFrame": 8781,
       "durationInFrames": 410,
       "audioTrimStartSample": 810,
       "audioTrimEndSample": 328192,
@@ -506,8 +613,8 @@
       }
     },
     {
-      "id": "044",
-      "startFrame": 7352,
+      "id": "053",
+      "startFrame": 9197,
       "durationInFrames": 197,
       "audioTrimStartSample": 1044,
       "audioTrimEndSample": 158126,
@@ -519,8 +626,8 @@
       }
     },
     {
-      "id": "045",
-      "startFrame": 7555,
+      "id": "054",
+      "startFrame": 9400,
       "durationInFrames": 351,
       "audioTrimStartSample": 894,
       "audioTrimEndSample": 281344,
@@ -532,8 +639,8 @@
       }
     },
     {
-      "id": "046",
-      "startFrame": 7916,
+      "id": "055",
+      "startFrame": 9761,
       "durationInFrames": 117,
       "audioTrimStartSample": 881,
       "audioTrimEndSample": 94382,
@@ -544,8 +651,8 @@
       }
     },
     {
-      "id": "047",
-      "startFrame": 8039,
+      "id": "056",
+      "startFrame": 9884,
       "durationInFrames": 265,
       "audioTrimStartSample": 962,
       "audioTrimEndSample": 212224,
@@ -559,8 +666,8 @@
       }
     },
     {
-      "id": "048",
-      "startFrame": 8307,
+      "id": "057",
+      "startFrame": 10152,
       "durationInFrames": 296,
       "audioTrimStartSample": 1000,
       "audioTrimEndSample": 237312,
@@ -576,8 +683,8 @@
       }
     },
     {
-      "id": "049",
-      "startFrame": 8613,
+      "id": "058",
+      "startFrame": 10458,
       "durationInFrames": 216,
       "audioTrimStartSample": 965,
       "audioTrimEndSample": 173487,
@@ -589,8 +696,8 @@
       }
     },
     {
-      "id": "050",
-      "startFrame": 8835,
+      "id": "059",
+      "startFrame": 10680,
       "durationInFrames": 287,
       "audioTrimStartSample": 1339,
       "audioTrimEndSample": 230912,
@@ -602,8 +709,8 @@
       }
     },
     {
-      "id": "051",
-      "startFrame": 9132,
+      "id": "060",
+      "startFrame": 10977,
       "durationInFrames": 148,
       "audioTrimStartSample": 1251,
       "audioTrimEndSample": 119162,
@@ -612,8 +719,8 @@
       "cues": {}
     },
     {
-      "id": "052",
-      "startFrame": 9286,
+      "id": "061",
+      "startFrame": 11131,
       "durationInFrames": 262,
       "audioTrimStartSample": 651,
       "audioTrimEndSample": 209920,
@@ -630,8 +737,8 @@
       }
     },
     {
-      "id": "053",
-      "startFrame": 9551,
+      "id": "062",
+      "startFrame": 11396,
       "durationInFrames": 249,
       "audioTrimStartSample": 1303,
       "audioTrimEndSample": 200448,
@@ -645,8 +752,8 @@
       }
     },
     {
-      "id": "054",
-      "startFrame": 9806,
+      "id": "063",
+      "startFrame": 11651,
       "durationInFrames": 182,
       "audioTrimStartSample": 1372,
       "audioTrimEndSample": 146401,
@@ -657,8 +764,8 @@
       }
     },
     {
-      "id": "055",
-      "startFrame": 9994,
+      "id": "064",
+      "startFrame": 11839,
       "durationInFrames": 351,
       "audioTrimStartSample": 1854,
       "audioTrimEndSample": 281856,
@@ -671,8 +778,8 @@
       }
     },
     {
-      "id": "056",
-      "startFrame": 10355,
+      "id": "065",
+      "startFrame": 12200,
       "durationInFrames": 111,
       "audioTrimStartSample": 1847,
       "audioTrimEndSample": 90030,
@@ -681,8 +788,8 @@
       "cues": {}
     },
     {
-      "id": "057",
-      "startFrame": 10472,
+      "id": "066",
+      "startFrame": 12317,
       "durationInFrames": 293,
       "audioTrimStartSample": 588,
       "audioTrimEndSample": 234887,
@@ -693,274 +800,100 @@
       }
     },
     {
-      "id": "058",
-      "startFrame": 10768,
-      "durationInFrames": 342,
-      "audioTrimStartSample": 1331,
-      "audioTrimEndSample": 274688,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "Flutter GPU": 59,
-        "Impeller": 43
-      }
-    },
-    {
-      "id": "059",
-      "startFrame": 11120,
-      "durationInFrames": 100,
-      "audioTrimStartSample": 1198,
-      "audioTrimEndSample": 80570,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "Widget": 46
-      }
-    },
-    {
-      "id": "060",
-      "startFrame": 11226,
-      "durationInFrames": 230,
-      "audioTrimStartSample": 1363,
-      "audioTrimEndSample": 184576,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "得点": 42
-      }
-    },
-    {
-      "id": "061",
-      "startFrame": 11466,
-      "durationInFrames": 302,
-      "audioTrimStartSample": 957,
-      "audioTrimEndSample": 242176,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "位置": 204,
-        "端末の傾き": 65,
-        "落下物": 181,
-        "キャッチ": 242,
-        "得点": 261
-      }
-    },
-    {
-      "id": "062",
-      "startFrame": 11774,
-      "durationInFrames": 100,
-      "audioTrimStartSample": 2051,
-      "audioTrimEndSample": 81694,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "エンジン": 68
-      }
-    },
-    {
-      "id": "063",
-      "startFrame": 11880,
-      "durationInFrames": 182,
-      "audioTrimStartSample": 606,
-      "audioTrimEndSample": 146176,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "キャッチ": 53
-      }
-    },
-    {
-      "id": "064",
-      "startFrame": 12072,
-      "durationInFrames": 300,
-      "audioTrimStartSample": 780,
-      "audioTrimEndSample": 240128,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "斜め": 185,
-        "画面で傾けた": 58
-      }
-    },
-    {
-      "id": "065",
-      "startFrame": 12382,
-      "durationInFrames": 176,
-      "audioTrimStartSample": 1309,
-      "audioTrimEndSample": 141408,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {}
-    },
-    {
-      "id": "066",
-      "startFrame": 12564,
-      "durationInFrames": 326,
-      "audioTrimStartSample": 873,
-      "audioTrimEndSample": 261632,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "人が": 276
-      }
-    },
-    {
       "id": "067",
-      "startFrame": 12896,
-      "durationInFrames": 144,
-      "audioTrimStartSample": 920,
-      "audioTrimEndSample": 115880,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {}
+      "startFrame": 12613,
+      "durationInFrames": 348,
+      "audioTrimStartSample": 987,
+      "audioTrimEndSample": 278784,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "Info.plist": 179,
+        "AndroidManifest": 220,
+        "エンジン": 70,
+        "Flutter GPU": 268,
+        "Impeller": 0,
+        "Android": 220
+      }
     },
     {
       "id": "068",
-      "startFrame": 13046,
-      "durationInFrames": 313,
-      "audioTrimStartSample": 962,
-      "audioTrimEndSample": 250624,
+      "startFrame": 12964,
+      "durationInFrames": 222,
+      "audioTrimStartSample": 1329,
+      "audioTrimEndSample": 178688,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
-        "傾けて動く": 107,
-        "当たりを集める": 139,
-        "はずれを避ける": 174,
-        "形": 286
+        "Flutter GPU": 82
       }
     },
     {
       "id": "069",
-      "startFrame": 13369,
-      "durationInFrames": 293,
-      "audioTrimStartSample": 974,
-      "audioTrimEndSample": 235264,
+      "startFrame": 13196,
+      "durationInFrames": 109,
+      "audioTrimStartSample": 0,
+      "audioTrimEndSample": 87017,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {
-        "カメラ": 29,
-        "落下物": 106
+        "モデル": 28
       }
     },
     {
       "id": "070",
-      "startFrame": 13668,
-      "durationInFrames": 110,
-      "audioTrimStartSample": 962,
-      "audioTrimEndSample": 88538,
+      "startFrame": 13311,
+      "durationInFrames": 321,
+      "audioTrimStartSample": 933,
+      "audioTrimEndSample": 257280,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "hooks": 28,
+        "ビルドフック": 68,
+        "10個": 173,
+        "Flutter Scene": 240,
+        "形": 273
+      }
+    },
+    {
+      "id": "071",
+      "startFrame": 13638,
+      "durationInFrames": 82,
+      "audioTrimStartSample": 1515,
+      "audioTrimEndSample": 66747,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {}
     },
     {
-      "id": "071",
-      "startFrame": 13784,
-      "durationInFrames": 278,
-      "audioTrimStartSample": 428,
-      "audioTrimEndSample": 222720,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "落下物": 122
-      }
-    },
-    {
       "id": "072",
-      "startFrame": 14068,
-      "durationInFrames": 137,
-      "audioTrimStartSample": 1280,
-      "audioTrimEndSample": 110666,
-      "gapAfterFrames": 20,
-      "pacingReason": "chapter_breath",
+      "startFrame": 13726,
+      "durationInFrames": 140,
+      "audioTrimStartSample": 614,
+      "audioTrimEndSample": 112251,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
       "cues": {
-        "人が": 26
+        "実行中": 66
       }
     },
     {
       "id": "073",
-      "startFrame": 14225,
-      "durationInFrames": 82,
-      "audioTrimStartSample": 1804,
-      "audioTrimEndSample": 67246,
+      "startFrame": 13876,
+      "durationInFrames": 95,
+      "audioTrimStartSample": 1054,
+      "audioTrimEndSample": 76462,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
-      "cues": {}
+      "cues": {
+        "10個": 10,
+        "モデル": 23
+      }
     },
     {
       "id": "074",
-      "startFrame": 14313,
-      "durationInFrames": 309,
-      "audioTrimStartSample": 1429,
-      "audioTrimEndSample": 248576,
-      "gapAfterFrames": 3,
-      "pacingReason": "continuation",
-      "cues": {
-        "10月2日": 70,
-        "10月20日": 242,
-        "27日": 270
-      }
-    },
-    {
-      "id": "075",
-      "startFrame": 14625,
-      "durationInFrames": 320,
-      "audioTrimStartSample": 799,
-      "audioTrimEndSample": 256256,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "1〜2週間": 75
-      }
-    },
-    {
-      "id": "076",
-      "startFrame": 14955,
-      "durationInFrames": 149,
-      "audioTrimStartSample": 1054,
-      "audioTrimEndSample": 119503,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {}
-    },
-    {
-      "id": "077",
-      "startFrame": 15110,
-      "durationInFrames": 390,
-      "audioTrimStartSample": 961,
-      "audioTrimEndSample": 312576,
-      "gapAfterFrames": 3,
-      "pacingReason": "continuation",
-      "cues": {
-        "モデル": 119
-      }
-    },
-    {
-      "id": "078",
-      "startFrame": 15503,
-      "durationInFrames": 271,
-      "audioTrimStartSample": 1559,
-      "audioTrimEndSample": 217600,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "1〜2週間": 18
-      }
-    },
-    {
-      "id": "079",
-      "startFrame": 15784,
-      "durationInFrames": 145,
-      "audioTrimStartSample": 1978,
-      "audioTrimEndSample": 117335,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "モデル": 101
-      }
-    },
-    {
-      "id": "080",
-      "startFrame": 15935,
+      "startFrame": 13977,
       "durationInFrames": 232,
       "audioTrimStartSample": 574,
       "audioTrimEndSample": 185600,
@@ -974,8 +907,8 @@
       }
     },
     {
-      "id": "081",
-      "startFrame": 16177,
+      "id": "075",
+      "startFrame": 14219,
       "durationInFrames": 275,
       "audioTrimStartSample": 1377,
       "audioTrimEndSample": 220928,
@@ -984,8 +917,8 @@
       "cues": {}
     },
     {
-      "id": "082",
-      "startFrame": 16462,
+      "id": "076",
+      "startFrame": 14504,
       "durationInFrames": 111,
       "audioTrimStartSample": 1813,
       "audioTrimEndSample": 90528,
@@ -996,8 +929,8 @@
       }
     },
     {
-      "id": "083",
-      "startFrame": 16579,
+      "id": "077",
+      "startFrame": 14621,
       "durationInFrames": 182,
       "audioTrimStartSample": 1545,
       "audioTrimEndSample": 146944,
@@ -1009,8 +942,8 @@
       }
     },
     {
-      "id": "084",
-      "startFrame": 16771,
+      "id": "078",
+      "startFrame": 14813,
       "durationInFrames": 264,
       "audioTrimStartSample": 800,
       "audioTrimEndSample": 211712,
@@ -1021,8 +954,8 @@
       }
     },
     {
-      "id": "085",
-      "startFrame": 17045,
+      "id": "079",
+      "startFrame": 15087,
       "durationInFrames": 74,
       "audioTrimStartSample": 1802,
       "audioTrimEndSample": 60902,
@@ -1031,8 +964,8 @@
       "cues": {}
     },
     {
-      "id": "086",
-      "startFrame": 17125,
+      "id": "080",
+      "startFrame": 15167,
       "durationInFrames": 138,
       "audioTrimStartSample": 863,
       "audioTrimEndSample": 111104,
@@ -1043,8 +976,8 @@
       }
     },
     {
-      "id": "087",
-      "startFrame": 17273,
+      "id": "081",
+      "startFrame": 15315,
       "durationInFrames": 212,
       "audioTrimStartSample": 1329,
       "audioTrimEndSample": 170240,
@@ -1057,8 +990,8 @@
       }
     },
     {
-      "id": "088",
-      "startFrame": 17495,
+      "id": "082",
+      "startFrame": 15537,
       "durationInFrames": 87,
       "audioTrimStartSample": 1526,
       "audioTrimEndSample": 70384,
@@ -1067,8 +1000,8 @@
       "cues": {}
     },
     {
-      "id": "089",
-      "startFrame": 17588,
+      "id": "083",
+      "startFrame": 15630,
       "durationInFrames": 291,
       "audioTrimStartSample": 726,
       "audioTrimEndSample": 233472,
@@ -1080,8 +1013,367 @@
       }
     },
     {
+      "id": "084",
+      "startFrame": 15931,
+      "durationInFrames": 119,
+      "audioTrimStartSample": 1579,
+      "audioTrimEndSample": 96122,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "madogiwa_engine": 13
+      }
+    },
+    {
+      "id": "085",
+      "startFrame": 16056,
+      "durationInFrames": 265,
+      "audioTrimStartSample": 1526,
+      "audioTrimEndSample": 212736,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "衝突判定": 166
+      }
+    },
+    {
+      "id": "086",
+      "startFrame": 16324,
+      "durationInFrames": 274,
+      "audioTrimStartSample": 1494,
+      "audioTrimEndSample": 220416,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "待機と歩行": 136,
+        "重み": 204,
+        "アニメーション": 53
+      }
+    },
+    {
+      "id": "087",
+      "startFrame": 16604,
+      "durationInFrames": 128,
+      "audioTrimStartSample": 1488,
+      "audioTrimEndSample": 103567,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "おだてつ": 25
+      }
+    },
+    {
+      "id": "088",
+      "startFrame": 16735,
+      "durationInFrames": 116,
+      "audioTrimStartSample": 1054,
+      "audioTrimEndSample": 93613,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "089",
+      "startFrame": 16857,
+      "durationInFrames": 309,
+      "audioTrimStartSample": 1429,
+      "audioTrimEndSample": 248576,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "10月2日": 70,
+        "10月20日": 242,
+        "27日": 270
+      }
+    },
+    {
       "id": "090",
-      "startFrame": 17889,
+      "startFrame": 17169,
+      "durationInFrames": 320,
+      "audioTrimStartSample": 799,
+      "audioTrimEndSample": 256256,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "1〜2週間": 75
+      }
+    },
+    {
+      "id": "091",
+      "startFrame": 17499,
+      "durationInFrames": 149,
+      "audioTrimStartSample": 1054,
+      "audioTrimEndSample": 119503,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "092",
+      "startFrame": 17654,
+      "durationInFrames": 375,
+      "audioTrimStartSample": 961,
+      "audioTrimEndSample": 300288,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "madogiwa_engine": 323,
+        "モデル": 119
+      }
+    },
+    {
+      "id": "093",
+      "startFrame": 18032,
+      "durationInFrames": 271,
+      "audioTrimStartSample": 1559,
+      "audioTrimEndSample": 217600,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "1〜2週間": 18
+      }
+    },
+    {
+      "id": "094",
+      "startFrame": 18313,
+      "durationInFrames": 100,
+      "audioTrimStartSample": 1198,
+      "audioTrimEndSample": 80570,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "Widget": 46
+      }
+    },
+    {
+      "id": "095",
+      "startFrame": 18419,
+      "durationInFrames": 230,
+      "audioTrimStartSample": 1363,
+      "audioTrimEndSample": 184576,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "得点": 42
+      }
+    },
+    {
+      "id": "096",
+      "startFrame": 18659,
+      "durationInFrames": 302,
+      "audioTrimStartSample": 957,
+      "audioTrimEndSample": 242176,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "位置": 204,
+        "端末の傾き": 65,
+        "落下物": 181,
+        "キャッチ": 242,
+        "得点": 261
+      }
+    },
+    {
+      "id": "097",
+      "startFrame": 18971,
+      "durationInFrames": 105,
+      "audioTrimStartSample": 1220,
+      "audioTrimEndSample": 84655,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "端末の傾き": 10
+      }
+    },
+    {
+      "id": "098",
+      "startFrame": 19082,
+      "durationInFrames": 298,
+      "audioTrimStartSample": 962,
+      "audioTrimEndSample": 239104,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "sensors_plus": 0,
+        "16ミリ秒": 83,
+        "なめらかに": 212,
+        "角度": 270
+      }
+    },
+    {
+      "id": "099",
+      "startFrame": 19383,
+      "durationInFrames": 266,
+      "audioTrimStartSample": 1333,
+      "audioTrimEndSample": 214016,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "14度": 69,
+        "斜め": 210
+      }
+    },
+    {
+      "id": "100",
+      "startFrame": 19655,
+      "durationInFrames": 99,
+      "audioTrimStartSample": 1001,
+      "audioTrimEndSample": 79903,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "101",
+      "startFrame": 19760,
+      "durationInFrames": 271,
+      "audioTrimStartSample": 663,
+      "audioTrimEndSample": 216743,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "矢印キー": 28,
+        "専用の拡張": 173,
+        "キー": 41
+      }
+    },
+    {
+      "id": "102",
+      "startFrame": 20041,
+      "durationInFrames": 100,
+      "audioTrimStartSample": 2051,
+      "audioTrimEndSample": 81694,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "エンジン": 68
+      }
+    },
+    {
+      "id": "103",
+      "startFrame": 20147,
+      "durationInFrames": 301,
+      "audioTrimStartSample": 802,
+      "audioTrimEndSample": 241101,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "エンジン": 172,
+        "Flutter Scene": 130,
+        "キャッチ": 53
+      }
+    },
+    {
+      "id": "104",
+      "startFrame": 20458,
+      "durationInFrames": 300,
+      "audioTrimStartSample": 780,
+      "audioTrimEndSample": 240128,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "斜め": 185,
+        "画面で傾けた": 58
+      }
+    },
+    {
+      "id": "105",
+      "startFrame": 20768,
+      "durationInFrames": 162,
+      "audioTrimStartSample": 1054,
+      "audioTrimEndSample": 130000,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "106",
+      "startFrame": 20936,
+      "durationInFrames": 326,
+      "audioTrimStartSample": 873,
+      "audioTrimEndSample": 261632,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "人が": 276
+      }
+    },
+    {
+      "id": "107",
+      "startFrame": 21268,
+      "durationInFrames": 144,
+      "audioTrimStartSample": 920,
+      "audioTrimEndSample": 115880,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "108",
+      "startFrame": 21418,
+      "durationInFrames": 313,
+      "audioTrimStartSample": 962,
+      "audioTrimEndSample": 250624,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "傾けて動く": 107,
+        "当たりを集める": 139,
+        "はずれを避ける": 174,
+        "形": 286
+      }
+    },
+    {
+      "id": "109",
+      "startFrame": 21741,
+      "durationInFrames": 293,
+      "audioTrimStartSample": 974,
+      "audioTrimEndSample": 235264,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "角度": 66,
+        "カメラ": 29,
+        "落下物": 106
+      }
+    },
+    {
+      "id": "110",
+      "startFrame": 22040,
+      "durationInFrames": 110,
+      "audioTrimStartSample": 962,
+      "audioTrimEndSample": 88538,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "111",
+      "startFrame": 22156,
+      "durationInFrames": 278,
+      "audioTrimStartSample": 428,
+      "audioTrimEndSample": 222720,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "落下物": 122
+      }
+    },
+    {
+      "id": "112",
+      "startFrame": 22440,
+      "durationInFrames": 137,
+      "audioTrimStartSample": 1280,
+      "audioTrimEndSample": 110666,
+      "gapAfterFrames": 20,
+      "pacingReason": "chapter_breath",
+      "cues": {
+        "人が": 26
+      }
+    },
+    {
+      "id": "113",
+      "startFrame": 22597,
       "durationInFrames": 201,
       "audioTrimStartSample": 2033,
       "audioTrimEndSample": 162721,
@@ -1090,22 +1382,23 @@
       "cues": {}
     },
     {
-      "id": "091",
-      "startFrame": 18096,
+      "id": "114",
+      "startFrame": 22804,
       "durationInFrames": 300,
       "audioTrimStartSample": 436,
       "audioTrimEndSample": 240128,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
+        "実行中": 223,
         "Codex": 21,
         "Claude Code": 103,
         "性能": 129
       }
     },
     {
-      "id": "092",
-      "startFrame": 18406,
+      "id": "115",
+      "startFrame": 23114,
       "durationInFrames": 257,
       "audioTrimStartSample": 1575,
       "audioTrimEndSample": 207104,
@@ -1116,8 +1409,8 @@
       }
     },
     {
-      "id": "093",
-      "startFrame": 18673,
+      "id": "116",
+      "startFrame": 23381,
       "durationInFrames": 92,
       "audioTrimStartSample": 1952,
       "audioTrimEndSample": 75450,
@@ -1126,130 +1419,21 @@
       "cues": {}
     },
     {
-      "id": "094",
-      "startFrame": 18771,
-      "durationInFrames": 383,
-      "audioTrimStartSample": 1519,
-      "audioTrimEndSample": 307456,
+      "id": "117",
+      "startFrame": 23479,
+      "durationInFrames": 318,
+      "audioTrimStartSample": 1528,
+      "audioTrimEndSample": 255232,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
         "Dart MCP": 36,
-        "Marionette MCP": 91,
-        "mobile MCP": 153
+        "Marionette MCP": 80
       }
     },
     {
-      "id": "095",
-      "startFrame": 19164,
-      "durationInFrames": 320,
-      "audioTrimStartSample": 705,
-      "audioTrimEndSample": 256512,
-      "gapAfterFrames": 3,
-      "pacingReason": "continuation",
-      "cues": {
-        "デバッグビルド": 125
-      }
-    },
-    {
-      "id": "096",
-      "startFrame": 19487,
-      "durationInFrames": 289,
-      "audioTrimStartSample": 754,
-      "audioTrimEndSample": 231424,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "計測ログ": 245,
-        "mobile MCP": 73,
-        "実機": 0,
-        "profile": 219,
-        "性能": 166
-      }
-    },
-    {
-      "id": "097",
-      "startFrame": 19786,
-      "durationInFrames": 105,
-      "audioTrimStartSample": 1755,
-      "audioTrimEndSample": 85435,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {}
-    },
-    {
-      "id": "098",
-      "startFrame": 19897,
-      "durationInFrames": 351,
-      "audioTrimStartSample": 746,
-      "audioTrimEndSample": 281344,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "Widgetの文字": 87,
-        "Widget": 87,
-        "文字": 103,
-        "キー": 114
-      }
-    },
-    {
-      "id": "099",
-      "startFrame": 20258,
-      "durationInFrames": 277,
-      "audioTrimStartSample": 877,
-      "audioTrimEndSample": 222208,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "端末側": 58,
-        "mobile MCP": 0,
-        "タップ": 224
-      }
-    },
-    {
-      "id": "100",
-      "startFrame": 20545,
-      "durationInFrames": 97,
-      "audioTrimStartSample": 1780,
-      "audioTrimEndSample": 78766,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
-      "cues": {
-        "実機": 45
-      }
-    },
-    {
-      "id": "101",
-      "startFrame": 20648,
-      "durationInFrames": 343,
-      "audioTrimStartSample": 751,
-      "audioTrimEndSample": 274688,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "debug": 101,
-        "release": 251,
-        "制約": 312,
-        "実機": 0
-      }
-    },
-    {
-      "id": "102",
-      "startFrame": 21001,
-      "durationInFrames": 313,
-      "audioTrimStartSample": 564,
-      "audioTrimEndSample": 250880,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
-      "cues": {
-        "mobile MCP": 159,
-        "実機": 115,
-        "性能": 128
-      }
-    },
-    {
-      "id": "103",
-      "startFrame": 21324,
+      "id": "118",
+      "startFrame": 23807,
       "durationInFrames": 221,
       "audioTrimStartSample": 807,
       "audioTrimEndSample": 177152,
@@ -1260,8 +1444,8 @@
       }
     },
     {
-      "id": "104",
-      "startFrame": 21551,
+      "id": "119",
+      "startFrame": 24034,
       "durationInFrames": 147,
       "audioTrimStartSample": 1372,
       "audioTrimEndSample": 118959,
@@ -1270,34 +1454,35 @@
       "cues": {}
     },
     {
-      "id": "105",
-      "startFrame": 21704,
+      "id": "120",
+      "startFrame": 24187,
       "durationInFrames": 244,
       "audioTrimStartSample": 926,
       "audioTrimEndSample": 195328,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
-        "Widget": 124,
-        "hot reload": 92
+        "hot reload": 92,
+        "Widget": 124
       }
     },
     {
-      "id": "106",
-      "startFrame": 21958,
+      "id": "121",
+      "startFrame": 24441,
       "durationInFrames": 296,
       "audioTrimStartSample": 778,
       "audioTrimEndSample": 237312,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
+        "実行中": 0,
         "Dart Tooling Daemon": 48,
         "次の修正": 247
       }
     },
     {
-      "id": "107",
-      "startFrame": 22264,
+      "id": "122",
+      "startFrame": 24747,
       "durationInFrames": 120,
       "audioTrimStartSample": 1430,
       "audioTrimEndSample": 96632,
@@ -1306,61 +1491,100 @@
       "cues": {}
     },
     {
-      "id": "108",
-      "startFrame": 22390,
+      "id": "123",
+      "startFrame": 24873,
       "durationInFrames": 229,
       "audioTrimStartSample": 1541,
       "audioTrimEndSample": 184064,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
-        "コードを直して": 0,
         "hot reload": 33,
+        "コードを直して": 0,
         "結果を確かめる": 68
       }
     },
     {
-      "id": "109",
-      "startFrame": 22629,
-      "durationInFrames": 107,
-      "audioTrimStartSample": 1890,
-      "audioTrimEndSample": 87009,
+      "id": "124",
+      "startFrame": 25112,
+      "durationInFrames": 109,
+      "audioTrimStartSample": 1831,
+      "audioTrimEndSample": 88494,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {}
     },
     {
-      "id": "110",
-      "startFrame": 22742,
-      "durationInFrames": 368,
-      "audioTrimStartSample": 975,
-      "audioTrimEndSample": 294656,
-      "gapAfterFrames": 10,
-      "pacingReason": "visual_change",
+      "id": "125",
+      "startFrame": 25227,
+      "durationInFrames": 270,
+      "audioTrimStartSample": 966,
+      "audioTrimEndSample": 216952,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
       "cues": {
-        "MarionetteBinding": 55,
-        "Dart VM Service": 228,
-        "Binding": 73
+        "marionette_flutter": 54,
+        "dev_dependencies": 165,
+        "普通の依存": 221
       }
     },
     {
-      "id": "111",
-      "startFrame": 23120,
-      "durationInFrames": 205,
-      "audioTrimStartSample": 817,
-      "audioTrimEndSample": 164096,
+      "id": "126",
+      "startFrame": 25503,
+      "durationInFrames": 104,
+      "audioTrimStartSample": 2033,
+      "audioTrimEndSample": 85099,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "127",
+      "startFrame": 25613,
+      "durationInFrames": 246,
+      "audioTrimStartSample": 806,
+      "audioTrimEndSample": 197227,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
+        "コンパイル時": 136,
+        "releaseビルド": 99,
+        "release": 99,
+        "Binding": 41
+      }
+    },
+    {
+      "id": "128",
+      "startFrame": 25869,
+      "durationInFrames": 342,
+      "audioTrimStartSample": 1497,
+      "audioTrimEndSample": 274688,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "MarionetteBinding": 7,
+        "Dart VM Service": 202,
+        "Binding": 25
+      }
+    },
+    {
+      "id": "129",
+      "startFrame": 26221,
+      "durationInFrames": 248,
+      "audioTrimStartSample": 813,
+      "audioTrimEndSample": 199168,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "Widgetの文字": 0,
         "Widget": 0,
-        "文字": 51,
-        "キー": 62,
-        "タップ": 87
+        "文字": 18,
+        "キー": 29
       }
     },
     {
-      "id": "112",
-      "startFrame": 23335,
+      "id": "130",
+      "startFrame": 26479,
       "durationInFrames": 132,
       "audioTrimStartSample": 1805,
       "audioTrimEndSample": 106670,
@@ -1371,8 +1595,8 @@
       }
     },
     {
-      "id": "113",
-      "startFrame": 23473,
+      "id": "131",
+      "startFrame": 26617,
       "durationInFrames": 220,
       "audioTrimStartSample": 743,
       "audioTrimEndSample": 176640,
@@ -1383,22 +1607,23 @@
       }
     },
     {
-      "id": "114",
-      "startFrame": 23703,
+      "id": "132",
+      "startFrame": 26847,
       "durationInFrames": 237,
       "audioTrimStartSample": 829,
       "audioTrimEndSample": 189696,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {
+        "専用の拡張": 35,
         "落下物": 132,
         "得点": 94,
         "構造化": 174
       }
     },
     {
-      "id": "115",
-      "startFrame": 23946,
+      "id": "133",
+      "startFrame": 27090,
       "durationInFrames": 118,
       "audioTrimStartSample": 1291,
       "audioTrimEndSample": 95530,
@@ -1407,33 +1632,104 @@
       "cues": {}
     },
     {
-      "id": "116",
-      "startFrame": 24070,
-      "durationInFrames": 300,
-      "audioTrimStartSample": 802,
-      "audioTrimEndSample": 240128,
+      "id": "134",
+      "startFrame": 27214,
+      "durationInFrames": 314,
+      "audioTrimStartSample": 804,
+      "audioTrimEndSample": 251392,
       "gapAfterFrames": 16,
       "pacingReason": "read_diagram",
       "cues": {
-        "カメラ": 251,
-        "キャッチ": 225,
+        "カメラ": 267,
+        "キャッチ": 241,
         "乱数": 49,
-        "一定時間": 129
+        "一定時間": 145
       }
     },
     {
-      "id": "117",
-      "startFrame": 24386,
+      "id": "135",
+      "startFrame": 27544,
       "durationInFrames": 59,
       "audioTrimStartSample": 1488,
       "audioTrimEndSample": 48581,
-      "gapAfterFrames": 20,
-      "pacingReason": "chapter_breath",
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
       "cues": {}
     },
     {
-      "id": "118",
-      "startFrame": 24465,
+      "id": "136",
+      "startFrame": 27606,
+      "durationInFrames": 219,
+      "audioTrimStartSample": 1559,
+      "audioTrimEndSample": 176559,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "デバッグビルド": 169,
+        "Dart VM Service": 20
+      }
+    },
+    {
+      "id": "137",
+      "startFrame": 27831,
+      "durationInFrames": 372,
+      "audioTrimStartSample": 1579,
+      "audioTrimEndSample": 299008,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "profileビルド": 0,
+        "releaseビルド": 138,
+        "hot reload": 199,
+        "release": 138,
+        "profile": 0,
+        "性能": 335
+      }
+    },
+    {
+      "id": "138",
+      "startFrame": 28206,
+      "durationInFrames": 256,
+      "audioTrimStartSample": 1061,
+      "audioTrimEndSample": 205824,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "profileビルド": 66,
+        "mobile MCP": 177,
+        "実機": 146,
+        "profile": 66
+      }
+    },
+    {
+      "id": "139",
+      "startFrame": 28468,
+      "durationInFrames": 55,
+      "audioTrimStartSample": 1223,
+      "audioTrimEndSample": 44473,
+      "gapAfterFrames": 17,
+      "pacingReason": "joke_hold",
+      "cues": {
+        "窓際族": 14
+      }
+    },
+    {
+      "id": "140",
+      "startFrame": 28540,
+      "durationInFrames": 169,
+      "audioTrimStartSample": 1459,
+      "audioTrimEndSample": 136571,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "profileビルド": 71,
+        "裏取り": 33,
+        "profile": 71
+      }
+    },
+    {
+      "id": "141",
+      "startFrame": 28719,
       "durationInFrames": 183,
       "audioTrimStartSample": 894,
       "audioTrimEndSample": 147053,
@@ -1442,8 +1738,8 @@
       "cues": {}
     },
     {
-      "id": "119",
-      "startFrame": 24654,
+      "id": "142",
+      "startFrame": 28908,
       "durationInFrames": 377,
       "audioTrimStartSample": 1002,
       "audioTrimEndSample": 302080,
@@ -1459,8 +1755,8 @@
       }
     },
     {
-      "id": "120",
-      "startFrame": 25041,
+      "id": "143",
+      "startFrame": 29295,
       "durationInFrames": 199,
       "audioTrimStartSample": 1000,
       "audioTrimEndSample": 160108,
@@ -1472,8 +1768,8 @@
       }
     },
     {
-      "id": "121",
-      "startFrame": 25246,
+      "id": "144",
+      "startFrame": 29500,
       "durationInFrames": 289,
       "audioTrimStartSample": 1526,
       "audioTrimEndSample": 232704,
@@ -1487,8 +1783,8 @@
       }
     },
     {
-      "id": "122",
-      "startFrame": 25538,
+      "id": "145",
+      "startFrame": 29792,
       "durationInFrames": 306,
       "audioTrimStartSample": 680,
       "audioTrimEndSample": 245248,
@@ -1501,8 +1797,8 @@
       }
     },
     {
-      "id": "123",
-      "startFrame": 25854,
+      "id": "146",
+      "startFrame": 30108,
       "durationInFrames": 170,
       "audioTrimStartSample": 1167,
       "audioTrimEndSample": 137055,
@@ -1511,8 +1807,8 @@
       "cues": {}
     },
     {
-      "id": "124",
-      "startFrame": 26030,
+      "id": "147",
+      "startFrame": 30284,
       "durationInFrames": 251,
       "audioTrimStartSample": 961,
       "audioTrimEndSample": 201472,
@@ -1526,8 +1822,8 @@
       }
     },
     {
-      "id": "125",
-      "startFrame": 26284,
+      "id": "148",
+      "startFrame": 30538,
       "durationInFrames": 243,
       "audioTrimStartSample": 866,
       "audioTrimEndSample": 195224,
@@ -1536,8 +1832,8 @@
       "cues": {}
     },
     {
-      "id": "126",
-      "startFrame": 26537,
+      "id": "149",
+      "startFrame": 30791,
       "durationInFrames": 85,
       "audioTrimStartSample": 965,
       "audioTrimEndSample": 68690,
@@ -1546,8 +1842,8 @@
       "cues": {}
     },
     {
-      "id": "127",
-      "startFrame": 26628,
+      "id": "150",
+      "startFrame": 30882,
       "durationInFrames": 303,
       "audioTrimStartSample": 709,
       "audioTrimEndSample": 242432,
@@ -1561,8 +1857,8 @@
       }
     },
     {
-      "id": "128",
-      "startFrame": 26934,
+      "id": "151",
+      "startFrame": 31188,
       "durationInFrames": 334,
       "audioTrimStartSample": 771,
       "audioTrimEndSample": 267264,
@@ -1576,8 +1872,8 @@
       }
     },
     {
-      "id": "129",
-      "startFrame": 27278,
+      "id": "152",
+      "startFrame": 31532,
       "durationInFrames": 148,
       "audioTrimStartSample": 1505,
       "audioTrimEndSample": 119777,
@@ -1586,8 +1882,8 @@
       "cues": {}
     },
     {
-      "id": "130",
-      "startFrame": 27432,
+      "id": "153",
+      "startFrame": 31686,
       "durationInFrames": 294,
       "audioTrimStartSample": 855,
       "audioTrimEndSample": 235264,
@@ -1596,8 +1892,8 @@
       "cues": {}
     },
     {
-      "id": "131",
-      "startFrame": 27729,
+      "id": "154",
+      "startFrame": 31983,
       "durationInFrames": 247,
       "audioTrimStartSample": 749,
       "audioTrimEndSample": 197632,
@@ -1608,8 +1904,8 @@
       }
     },
     {
-      "id": "132",
-      "startFrame": 27986,
+      "id": "155",
+      "startFrame": 32240,
       "durationInFrames": 134,
       "audioTrimStartSample": 917,
       "audioTrimEndSample": 107961,
@@ -1621,59 +1917,55 @@
       }
     },
     {
-      "id": "133",
-      "startFrame": 28126,
-      "durationInFrames": 335,
+      "id": "156",
+      "startFrame": 32380,
+      "durationInFrames": 309,
       "audioTrimStartSample": 885,
-      "audioTrimEndSample": 268288,
+      "audioTrimEndSample": 247416,
       "gapAfterFrames": 3,
       "pacingReason": "continuation",
       "cues": {
-        "mobile MCP": 69,
-        "iPhone": 234
+        "profileビルド": 133,
+        "debug": 199,
+        "iPhone": 76,
+        "profile": 133
       }
     },
     {
-      "id": "134",
-      "startFrame": 28464,
-      "durationInFrames": 303,
-      "audioTrimStartSample": 886,
-      "audioTrimEndSample": 242688,
+      "id": "157",
+      "startFrame": 32692,
+      "durationInFrames": 234,
+      "audioTrimStartSample": 983,
+      "audioTrimEndSample": 187581,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
-      "cues": {
-        "計測ログ": 76,
-        "mobile MCP": 119,
-        "profile": 49
-      }
+      "cues": {}
     },
     {
-      "id": "135",
-      "startFrame": 28773,
-      "durationInFrames": 127,
-      "audioTrimStartSample": 889,
-      "audioTrimEndSample": 102106,
+      "id": "158",
+      "startFrame": 32932,
+      "durationInFrames": 107,
+      "audioTrimStartSample": 2138,
+      "audioTrimEndSample": 87192,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
-      "cues": {
-        "性能": 47
-      }
+      "cues": {}
     },
     {
-      "id": "136",
-      "startFrame": 28906,
-      "durationInFrames": 208,
-      "audioTrimStartSample": 961,
-      "audioTrimEndSample": 167168,
+      "id": "159",
+      "startFrame": 33045,
+      "durationInFrames": 151,
+      "audioTrimStartSample": 955,
+      "audioTrimEndSample": 121344,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
-        "人が": 89
+        "人が": 13
       }
     },
     {
-      "id": "137",
-      "startFrame": 29124,
+      "id": "160",
+      "startFrame": 33206,
       "durationInFrames": 92,
       "audioTrimStartSample": 1190,
       "audioTrimEndSample": 74214,
@@ -1684,8 +1976,8 @@
       }
     },
     {
-      "id": "138",
-      "startFrame": 29222,
+      "id": "161",
+      "startFrame": 33304,
       "durationInFrames": 131,
       "audioTrimStartSample": 805,
       "audioTrimEndSample": 104960,
@@ -1694,8 +1986,8 @@
       "cues": {}
     },
     {
-      "id": "139",
-      "startFrame": 29359,
+      "id": "162",
+      "startFrame": 33441,
       "durationInFrames": 85,
       "audioTrimStartSample": 972,
       "audioTrimEndSample": 68499,
@@ -1704,8 +1996,8 @@
       "cues": {}
     },
     {
-      "id": "140",
-      "startFrame": 29450,
+      "id": "163",
+      "startFrame": 33532,
       "durationInFrames": 236,
       "audioTrimStartSample": 793,
       "audioTrimEndSample": 189440,
@@ -1718,60 +2010,163 @@
       }
     },
     {
-      "id": "141",
-      "startFrame": 29696,
-      "durationInFrames": 318,
-      "audioTrimStartSample": 967,
-      "audioTrimEndSample": 254925,
-      "gapAfterFrames": 6,
-      "pacingReason": "question_answer",
+      "id": "164",
+      "startFrame": 33778,
+      "durationInFrames": 398,
+      "audioTrimStartSample": 1078,
+      "audioTrimEndSample": 318720,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
       "cues": {
-        "30fps": 167,
-        "60fps": 235,
-        "上流": 29
+        "固定するモード": 348,
+        "30fps": 153,
+        "60fps": 221,
+        "上流": 29,
+        "性能": 333
       }
     },
     {
-      "id": "142",
-      "startFrame": 30020,
-      "durationInFrames": 112,
-      "audioTrimStartSample": 1376,
-      "audioTrimEndSample": 90564,
+      "id": "165",
+      "startFrame": 34186,
+      "durationInFrames": 70,
+      "audioTrimStartSample": 1372,
+      "audioTrimEndSample": 56952,
       "gapAfterFrames": 6,
       "pacingReason": "question_answer",
       "cues": {}
     },
     {
-      "id": "143",
-      "startFrame": 30138,
-      "durationInFrames": 223,
-      "audioTrimStartSample": 483,
-      "audioTrimEndSample": 178176,
+      "id": "166",
+      "startFrame": 34262,
+      "durationInFrames": 281,
+      "audioTrimStartSample": 768,
+      "audioTrimEndSample": 225280,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "46": 97,
+        "20回": 250,
+        "50": 120
+      }
+    },
+    {
+      "id": "167",
+      "startFrame": 34549,
+      "durationInFrames": 126,
+      "audioTrimStartSample": 1258,
+      "audioTrimEndSample": 101806,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "描き直しの回数": 58
+      }
+    },
+    {
+      "id": "168",
+      "startFrame": 34681,
+      "durationInFrames": 318,
+      "audioTrimStartSample": 590,
+      "audioTrimEndSample": 254976,
+      "gapAfterFrames": 3,
+      "pacingReason": "continuation",
+      "cues": {
+        "UIスレッド": 84,
+        "前の画像": 269,
+        "描画命令": 59,
+        "Flutter Scene": 0
+      }
+    },
+    {
+      "id": "169",
+      "startFrame": 35002,
+      "durationInFrames": 383,
+      "audioTrimStartSample": 1509,
+      "audioTrimEndSample": 307276,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "3フレームに1回": 155,
+        "描き直しの回数": 322
+      }
+    },
+    {
+      "id": "170",
+      "startFrame": 35391,
+      "durationInFrames": 112,
+      "audioTrimStartSample": 1374,
+      "audioTrimEndSample": 90849,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "60fps": 0
+      }
+    },
+    {
+      "id": "171",
+      "startFrame": 35509,
+      "durationInFrames": 219,
+      "audioTrimStartSample": 454,
+      "audioTrimEndSample": 175360,
       "gapAfterFrames": 10,
       "pacingReason": "visual_change",
       "cues": {
-        "iPhone": 0,
-        "4096": 53,
-        "2048": 162
+        "ライト": 154
       }
     },
     {
-      "id": "144",
-      "startFrame": 30371,
-      "durationInFrames": 348,
-      "audioTrimStartSample": 598,
-      "audioTrimEndSample": 278272,
+      "id": "172",
+      "startFrame": 35738,
+      "durationInFrames": 214,
+      "audioTrimStartSample": 452,
+      "audioTrimEndSample": 171637,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "強制終了": 174,
+        "iPhone": 0,
+        "上流": 32
+      }
+    },
+    {
+      "id": "173",
+      "startFrame": 35958,
+      "durationInFrames": 83,
+      "audioTrimStartSample": 1073,
+      "audioTrimEndSample": 66704,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "174",
+      "startFrame": 36047,
+      "durationInFrames": 269,
+      "audioTrimStartSample": 1336,
+      "audioTrimEndSample": 216320,
+      "gapAfterFrames": 10,
+      "pacingReason": "visual_change",
+      "cues": {
+        "4096": 59,
+        "2048": 181
+      }
+    },
+    {
+      "id": "175",
+      "startFrame": 36326,
+      "durationInFrames": 302,
+      "audioTrimStartSample": 773,
+      "audioTrimEndSample": 241676,
       "gapAfterFrames": 16,
       "pacingReason": "read_diagram",
       "cues": {
-        "iPhone": 101,
-        "1.9": 194,
-        "0.74": 250
+        "iPhone": 30,
+        "1.9": 154,
+        "0.74": 221
       }
     },
     {
-      "id": "145",
-      "startFrame": 30735,
+      "id": "176",
+      "startFrame": 36644,
       "durationInFrames": 138,
       "audioTrimStartSample": 1632,
       "audioTrimEndSample": 111995,
@@ -1780,8 +2175,8 @@
       "cues": {}
     },
     {
-      "id": "146",
-      "startFrame": 30879,
+      "id": "177",
+      "startFrame": 36788,
       "durationInFrames": 188,
       "audioTrimStartSample": 884,
       "audioTrimEndSample": 150784,
@@ -1790,8 +2185,8 @@
       "cues": {}
     },
     {
-      "id": "147",
-      "startFrame": 31077,
+      "id": "178",
+      "startFrame": 36986,
       "durationInFrames": 101,
       "audioTrimStartSample": 1373,
       "audioTrimEndSample": 81529,
@@ -1800,8 +2195,8 @@
       "cues": {}
     },
     {
-      "id": "148",
-      "startFrame": 31184,
+      "id": "179",
+      "startFrame": 37093,
       "durationInFrames": 211,
       "audioTrimStartSample": 545,
       "audioTrimEndSample": 168960,
@@ -1810,8 +2205,44 @@
       "cues": {}
     },
     {
-      "id": "149",
-      "startFrame": 31405,
+      "id": "180",
+      "startFrame": 37314,
+      "durationInFrames": 141,
+      "audioTrimStartSample": 1114,
+      "audioTrimEndSample": 113570,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {}
+    },
+    {
+      "id": "181",
+      "startFrame": 37461,
+      "durationInFrames": 368,
+      "audioTrimStartSample": 965,
+      "audioTrimEndSample": 295168,
+      "gapAfterFrames": 6,
+      "pacingReason": "question_answer",
+      "cues": {
+        "shared_preferences": 0,
+        "audioplayers": 101,
+        "qr_flutter": 176
+      }
+    },
+    {
+      "id": "182",
+      "startFrame": 37835,
+      "durationInFrames": 95,
+      "audioTrimStartSample": 1187,
+      "audioTrimEndSample": 76587,
+      "gapAfterFrames": 20,
+      "pacingReason": "chapter_breath",
+      "cues": {
+        "ブース展示": 43
+      }
+    },
+    {
+      "id": "183",
+      "startFrame": 37950,
       "durationInFrames": 178,
       "audioTrimStartSample": 1191,
       "audioTrimEndSample": 142817,
@@ -1820,8 +2251,8 @@
       "cues": {}
     },
     {
-      "id": "150",
-      "startFrame": 31589,
+      "id": "184",
+      "startFrame": 38134,
       "durationInFrames": 303,
       "audioTrimStartSample": 749,
       "audioTrimEndSample": 242688,
@@ -1834,8 +2265,8 @@
       }
     },
     {
-      "id": "151",
-      "startFrame": 31902,
+      "id": "185",
+      "startFrame": 38447,
       "durationInFrames": 104,
       "audioTrimStartSample": 964,
       "audioTrimEndSample": 84075,
@@ -1844,8 +2275,8 @@
       "cues": {}
     },
     {
-      "id": "152",
-      "startFrame": 32012,
+      "id": "186",
+      "startFrame": 38557,
       "durationInFrames": 206,
       "audioTrimStartSample": 723,
       "audioTrimEndSample": 165273,
@@ -1856,8 +2287,8 @@
       }
     },
     {
-      "id": "153",
-      "startFrame": 32228,
+      "id": "187",
+      "startFrame": 38773,
       "durationInFrames": 96,
       "audioTrimStartSample": 1400,
       "audioTrimEndSample": 77764,
@@ -1866,8 +2297,8 @@
       "cues": {}
     },
     {
-      "id": "154",
-      "startFrame": 32330,
+      "id": "188",
+      "startFrame": 38875,
       "durationInFrames": 72,
       "audioTrimStartSample": 1313,
       "audioTrimEndSample": 58624,
@@ -1876,8 +2307,8 @@
       "cues": {}
     },
     {
-      "id": "155",
-      "startFrame": 32408,
+      "id": "189",
+      "startFrame": 38953,
       "durationInFrames": 58,
       "audioTrimStartSample": 1164,
       "audioTrimEndSample": 46817,

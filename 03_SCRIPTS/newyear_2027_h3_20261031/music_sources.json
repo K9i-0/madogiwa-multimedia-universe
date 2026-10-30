@@ -1,0 +1,16 @@
+{
+  "title": "春の海（琴・尺八）",
+  "composer": "宮城道雄",
+  "recording_artist": "MMT38",
+  "source_page": "https://mmt38.info/download/春の海フル/",
+  "terms": "https://mmt38.info/kiyaku/",
+  "checked_date": "2026-10-31",
+  "permission_summary": "Free commercial/noncommercial content use; optional credit; no redistribution as music material, no Content ID registration. Source audio kept locally under ignored generated/music/.",
+  "source_sha256": "74ccc7a8fca0d1979c40c31ddc417fb2289a439bc10d2c515dc1ed641fe04665",
+  "source_start_seconds": 0,
+  "used_seconds": 21.208333333333332,
+  "filter_complex": "[0:a]volume=-1.5dB[d];[1:a]atrim=duration=21.208333333333332,asetpts=PTS-STARTPTS,aresample=48000,volume='if(lt(t,13.5),1.19,if(lt(t,14.5),1.19+(t-13.5)*0.59,1.78))':eval=frame,afade=t=in:d=0.08,afade=t=out:st=20.508333333333333:d=0.7[b];[d][b]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89:level=false:latency=true[out]",
+  "output": "final_remotion_newyear_v3_harunoumi.mp4",
+  "video": "stream copy of v2; unchanged visual frames",
+  "credit": "BGM：春の海（作曲：宮城道雄）／音源：MMT38 https://mmt38.info/"
+}

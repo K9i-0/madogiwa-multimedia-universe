@@ -24,3 +24,6 @@
 - 再現：assemble_v1.py / remotion/src/edit-manifest.json / prompt_ch01〜03_v1.txt。
 
 - v1提示後、終端の挨拶がそば屋の顔へ重なるためv2で下へ移動。映像・音声は同一、v1保持。
+
+## v3 お正月BGM追加
+ユーザー指定でMMT38音源「春の海（琴・尺八）」の冒頭を追加。台詞中は控えめ、回想へ入る13.5〜14.5秒で約3.5dB上げ、末尾0.7秒フェード。元の台詞・効果音は1.5dB下げてミックス。v2と映像ストリームSHA256一致、全編デコード正常。素材音源は再配布せずgenerated/music/へローカル保存。出典・規約・クレジットはmusic_sources.jsonとmusic-credit.txt。再現はadd_newyear_bgm.py。

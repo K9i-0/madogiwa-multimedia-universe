@@ -1,0 +1,20 @@
+{
+  "engine": "VOICEVOX",
+  "version": "0.25.1",
+  "speakers": [
+    {
+      "name": "ずんだもん",
+      "styleId": 3,
+      "speedScale": 1.15
+    },
+    {
+      "name": "四国めたん",
+      "styleId": 2,
+      "speedScale": 1.13
+    }
+  ],
+  "prePhonemeLength": 0.09,
+  "postPhonemeLength": 0.12,
+  "outputSamplingRate": 24000,
+  "referenceAudio": null
+}

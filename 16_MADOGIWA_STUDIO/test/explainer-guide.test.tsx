@@ -82,3 +82,13 @@ it.each([
   expect((await SELF.fetch(url)).status).toBe(404);
   expect((await SELF.fetch("http://localhost/episodes/missing/workflow.md")).status).toBe(404);
 });
+
+it("attaches Flutter final guide only to the adopted public video", () => {
+  expect(getExplainerGuide("flutter-scene-3d-game", [])).toBeUndefined();
+  expect(getExplainerGuide("flutter-scene-3d-game", ["previous-version"])).toBeUndefined();
+  const guide = getExplainerGuide("flutter-scene-3d-game", ["81XlfHfG8N4"])!;
+  expect(guide.markdown).toContain("最終版 v16");
+  expect(guide.markdown).toContain("/flutter-scene-3d-game/workflow.md");
+  expect(guide.workflow).toContain("/flutter-scene-3d-game/guide.md");
+  expect(guide.workflow).toContain("実機性能の検証をシミュレーターで代替できません");
+});

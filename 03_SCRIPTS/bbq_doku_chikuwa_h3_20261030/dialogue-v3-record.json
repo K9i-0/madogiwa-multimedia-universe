@@ -1,0 +1,86 @@
+{
+  "source_master": "final_remotion_bbq_v2.mp4",
+  "output": "final_remotion_bbq_v3.mp4",
+  "removed_v2_frames": [
+    [
+      200,
+      224
+    ],
+    [
+      542,
+      588
+    ]
+  ],
+  "new_line": {
+    "text": "なんか臭い変じゃない？",
+    "generation_text": "なんか、におい変じゃない？",
+    "file": "ch3_yotan_smell_v3.wav",
+    "model": "Aratako/Irodori-TTS-v4-Large",
+    "seed": 100,
+    "caption": "",
+    "cfg_text": 5,
+    "uncut": true,
+    "duration_scale": 1,
+    "duration_seconds": 2.56,
+    "reference": "voice_ref_yotan_h3_v3.wav",
+    "reference_source": "generated/h3-shirt-prompt-test-v1/results/ch01_480p.mp4",
+    "reference_interval_seconds": [
+      0,
+      3.2
+    ],
+    "reference_sha256": "8281fbbd25facfc092b6202b22171320245e994fc29d7dd87d878023115cbe21",
+    "sha256": "b976dddf66fb300058ff76ed170031970026447d6063faf9e273b5c44f7a491f",
+    "patch_source_frames": [
+      72,
+      144
+    ],
+    "speed_change": false,
+    "gain_db": 0
+  },
+  "pcm_patch": {
+    "original": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/bbq_doku_chikuwa_h3_20261030/generated/dialogue-v3/original.wav",
+    "replacement": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/bbq_doku_chikuwa_h3_20261030/generated/dialogue-v3/replacement.wav",
+    "output": "/Users/kotahayashi/Workspace/Seedance_Madogiwa-voxel-game/03_SCRIPTS/bbq_doku_chikuwa_h3_20261030/generated/dialogue-v3/patched.wav",
+    "sample_rate": 48000,
+    "channels": 2,
+    "frames": 588288,
+    "target_start_frame": 144000,
+    "source_start_frame": 0,
+    "frame_count": 144000,
+    "gain_db": 0,
+    "time_stretch": false,
+    "crossfade": false,
+    "outside_patch_pcm_identical": true,
+    "insert_pcm_sha256": "a4f045dd684f39c8d992b17530a0c8bd06dfa6eb94f21bc6c13ded03519636a4",
+    "original_file_sha256": "207481e6f8c3ae9f8854eac700cc784273ccde610b1ffef6842380e9eb5f2e96",
+    "replacement_file_sha256": "751934ed0c5991da181733cbe65d29e12a04015a9c80877efc50a88ddd8a7fcd",
+    "output_file_sha256": "64d5e6b1d42fe681220815ad0e3a4c4875339fd7bbe50099a130dd0409ef3164",
+    "review": "Timing/PCM checks only; boundaries, voice, ambience and lip sync need review"
+  },
+  "composition": {
+    "id": "BBQ",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 884
+  },
+  "validation": {
+    "video_stream_identical": true,
+    "video_stream_hash": "SHA256=4e1eef6d9b7d5e59fd301e62309e082230e173ebda654dc4896e00d6455026c4",
+    "pcm_outside_patch_identical": true,
+    "typecheck": "passed",
+    "manifest": "884 contiguous frames, captions within bounds",
+    "asr": "New line recognized; retained toast once and discovery line once in first 29.5s mixed master. Not a listening certification.",
+    "audio_rms_dbfs": {
+      "old": -15.2,
+      "new": -15.87
+    },
+    "lip_sync": "Original video unchanged; no phoneme alignment guaranteed.",
+    "final_decode": "passed",
+    "final_video": "H264 1280x720 24fps 884frames",
+    "final_audio": "AAC 48000Hz stereo",
+    "final_duration": 36.833333,
+    "changed_shot_stills": "reviewed",
+    "final_sha256": "86fa2f9ef004c8f6cc0f93e71da50a27c487da3f24cf9ef33d920c8b3eaef672"
+  }
+}

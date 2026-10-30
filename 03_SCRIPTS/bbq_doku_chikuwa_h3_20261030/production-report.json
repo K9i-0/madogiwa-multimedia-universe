@@ -85,5 +85,17 @@
       "typescript": "passed",
       "visual": "whole-cut 2fps contact sheets and selected native frames; final contact sheet reviewed"
     }
+  },
+  "dialogue_edit_v3": {
+    "output": "final_remotion_bbq_v3.mp4",
+    "record": "dialogue-v3-record.json",
+    "duration": 36.833333,
+    "frames": 884,
+    "changes": [
+      "Retain second toast only",
+      "Yotan reply changed to なんか臭い変じゃない？ using Irodori Large",
+      "Remove first discovery closeup and duplicate speech"
+    ],
+    "validation": "Full decode, video format, caption stills, original patched video stream hash and PCM outside patch passed; ASR confirms new text and removed repeats. No phoneme-sync claim."
   }
 }

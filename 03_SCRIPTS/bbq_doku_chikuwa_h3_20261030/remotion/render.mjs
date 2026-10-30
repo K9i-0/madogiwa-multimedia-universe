@@ -5,7 +5,7 @@ import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 const m=JSON.parse(fs.readFileSync('src/edit-manifest.json','utf8'));
 const mode=process.argv[2]||'video';
-const output=process.argv[3]||'../final_remotion_bbq_v2.mp4';
+const output=process.argv[3]||'../final_remotion_bbq_v3.mp4';
 fs.mkdirSync('out',{recursive:true});
 const serveUrl=await bundle({entryPoint:path.resolve('src/index.ts')});
 const browser=await openBrowser('chrome',{browserExecutable:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});

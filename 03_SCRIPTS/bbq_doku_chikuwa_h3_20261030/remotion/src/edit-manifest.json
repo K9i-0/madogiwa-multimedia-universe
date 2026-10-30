@@ -4,7 +4,7 @@
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 954
+    "durationInFrames": 884
   },
   "segments": [
     {
@@ -28,36 +28,22 @@
       "file": "h3/prod02_cloth_v2.mp4",
       "source": "generated/h3-cloth-production-v2/results/prod02_480p.mp4",
       "startFrame": 200,
-      "durationInFrames": 48,
-      "trimStartFrame": 0
+      "durationInFrames": 24,
+      "trimStartFrame": 24
     },
     {
       "id": "eat",
-      "file": "h3/ch03_480p.mp4",
-      "source": "generated/partials/ch03_480p.mp4",
-      "startFrame": 248,
+      "file": "h3/ch03_dialogue_v3.mp4",
+      "source": "generated/dialogue-v3/ch03_dialogue_v3.mp4",
+      "startFrame": 224,
       "durationInFrames": 294,
       "trimStartFrame": 0
-    },
-    {
-      "id": "discovery_a",
-      "file": "h3/prod04_cloth_v2.mp4",
-      "source": "generated/h3-cloth-production-v2/results/prod04_480p.mp4",
-      "startFrame": 542,
-      "durationInFrames": 46,
-      "trimStartFrame": 0,
-      "crop": {
-        "x": 490,
-        "y": 180,
-        "width": 374,
-        "height": 210
-      }
     },
     {
       "id": "discovery_b",
       "file": "h3/prod04_cloth_v2.mp4",
       "source": "generated/h3-cloth-production-v2/results/prod04_480p.mp4",
-      "startFrame": 588,
+      "startFrame": 518,
       "durationInFrames": 164,
       "trimStartFrame": 96
     },
@@ -65,7 +51,7 @@
       "id": "diagnosis_reaction",
       "file": "h3/prod05_cloth_v2.mp4",
       "source": "generated/h3-cloth-production-v2/results/prod05_480p.mp4",
-      "startFrame": 752,
+      "startFrame": 682,
       "durationInFrames": 26,
       "trimStartFrame": 28,
       "crop": {
@@ -79,7 +65,7 @@
       "id": "diagnosis",
       "file": "h3/prod05_cloth_v2.mp4",
       "source": "generated/h3-cloth-production-v2/results/prod05_480p.mp4",
-      "startFrame": 778,
+      "startFrame": 708,
       "durationInFrames": 73,
       "trimStartFrame": 54
     },
@@ -87,7 +73,7 @@
       "id": "collapse",
       "file": "h3/prod05_cloth_v2.mp4",
       "source": "generated/h3-cloth-production-v2/results/prod05_480p.mp4",
-      "startFrame": 851,
+      "startFrame": 781,
       "durationInFrames": 103,
       "trimStartFrame": 137
     }
@@ -95,7 +81,7 @@
   "music": {
     "file": "bgm.mp3",
     "gainDb": -22,
-    "stopFrame": 863
+    "stopFrame": 793
   },
   "captions": [
     {
@@ -118,40 +104,40 @@
     },
     {
       "startFrame": 200,
-      "endFrame": 248,
+      "endFrame": 224,
       "speaker": "全員",
       "text": "乾杯！"
     },
     {
-      "startFrame": 248,
-      "endFrame": 320,
+      "startFrame": 224,
+      "endFrame": 296,
       "speaker": "そば屋",
       "text": "これ、いい感じに焼けました"
     },
     {
-      "startFrame": 320,
-      "endFrame": 368,
+      "startFrame": 296,
+      "endFrame": 358,
       "speaker": "よーたん",
-      "text": "お、うまそう"
+      "text": "なんか臭い変じゃない？"
     },
     {
-      "startFrame": 552,
-      "endFrame": 690,
+      "startFrame": 518,
+      "endFrame": 620,
       "speaker": "やめ太郎",
       "text": "あ、これワイが買った毒ちくわや！"
     },
     {
-      "startFrame": 690,
-      "endFrame": 746,
+      "startFrame": 620,
+      "endFrame": 676,
       "speaker": "よーたん",
       "text": "なんで買ってるんだよ"
     },
     {
-      "startFrame": 755,
-      "endFrame": 844,
+      "startFrame": 685,
+      "endFrame": 774,
       "speaker": "そば屋",
       "text": "これ、毒ちくわです"
     }
   ],
-  "audit": "v2: plain opaque white cotton prompt used for opening, toast, discovery, collapse; no shirt retouching in any v2 video segment. Original clean eating shot retained. Extra utterances and repeated eating removed with cuts/reaction crops. Generated mask-mouth motion remains. ASR assists timing, not listening certification."
+  "audit": "v3 user edits: remove first toast (24 frames), replace Yotan reply with Irodori Large natural 2.56s line inside original 3..6s window, remove entire first discovery closeup (46 frames). All retained video frames and playback speeds unchanged from v2. New line is dubbed; phoneme-level lip synchronization not certified."
 }

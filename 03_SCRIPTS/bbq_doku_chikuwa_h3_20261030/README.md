@@ -12,7 +12,7 @@
 5. `remotion/src/edit-manifest.json` に実生成の字幕タイミング・BGM停止フレームを記録。
 6. `python3 finish_edit.py`、`cd remotion && npm ci && npm run typecheck && npm run render`。
 
-480p原本は `generated/h3-bbq-v1/results/`。完成720pの最新版はエピソード直下の `final_remotion_bbq_v2.mp4`（39.75秒）。v1も保持。
+480p原本は `generated/h3-bbq-v1/results/`。完成720pの最新版はエピソード直下の `final_remotion_bbq_v3.mp4`（36.833秒）。v1/v2も保持。
 動画、途中画像、モデル、未採用素材、音声ミックス、BGM本体はGit除外。BGMは `music-credit.txt` の公式配布元から `remotion/public/bgm.mp3` へ取得する。
 
 
@@ -26,3 +26,6 @@ v2は胸元の画像修整なし。4カットを案①で再生成し、食事�
 比較GPUセッションは停止済み。比較3案＋追加3カットを1台のA100で実行。停止後残高100.69 CU、使用率0.00 CU/h、active assignments 0。比較前104.19 CUとの差3.50 CUは残高反映遅延を含みうる観測値で、厳密な請求額ではない。
 
 v1の編集情報は `remotion/src/edit-manifest-v1.json` に保存し、現在の `edit-manifest.json` はv2。v1再現時はmanifestを切り替え、出力名を別途指定する。
+
+
+v3はユーザー指定の乾杯・発覚の重複カットと、よーたんの「なんか臭い変じゃない？」へのIrodori差し替え。`prepare_dialogue_v3.py`でv2 manifestから再現し、`finish_edit.py`とRemotionで出力する。v2 manifestは`remotion/src/edit-manifest-v2.json`に保存。

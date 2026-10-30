@@ -1,3 +1,10 @@
+## 最終版（v16・2026-10-31）
+
+完成出力：`final_remotion_flutterkaigi_final.mp4`。採用済みv15の内容・25分05.6秒の尺・字幕・音声を維持した図版修正版。
+共通カード内の縦装飾線を撤去し、文字の中央配置と余白を調整。Column図の中央ガイドは文字領域を避け、描画構成図の文字と矢印はカード中央へ整列し、短い矢印を枠間に収めた。
+書き出し：`cd remotion && python3 render.py`。承認済みv15のAAC音声を再圧縮せずコピーするため、同動画をローカルに保持する。
+監査：`remotion/audit_layout_v16.cjs`、`remotion/audit_output.py`。詳細は`qa_final_v16.md`。
+
 ## v15（2026-10-31）
 
 `final_remotion_flutterkaigi_v15.mp4` — 25分05.6秒、1280×720、30fps。

@@ -1,6 +1,8 @@
 from pathlib import Path
-import subprocess,sys
+import subprocess
 P=Path(__file__).resolve().parent
-if '--no-mix' not in sys.argv:subprocess.run([sys.executable,str(P/'mix_audio.py')],check=True)
-subprocess.run(['npx','remotion','render','src/index.ts','FlutterKaigi','out/visuals_v15.mp4','--muted','--concurrency=8','--crf=18','--log=info'],cwd=P,check=True)
-subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/visuals_v15.mp4'),'-i',str(P/'public/mixed.wav'),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',str(P.parent/('final_remotion_flutterkaigi_v15.mp4' if all((P/'public'/f).exists() for f in ['intro.mp3','main.wav','unity.mp3']) else 'final_remotion_flutterkaigi_v15_nobgm.mp4'))],check=True)
+# Final visual polish: copy the approved v15 audio without re-encoding.
+audio=P.parent/'final_remotion_flutterkaigi_v15.mp4'
+assert audio.exists(), 'Approved v15 audio source is required'
+subprocess.run(['npx','remotion','render','src/index.ts','FlutterKaigi','out/visuals_v16.mp4','--muted','--concurrency=8','--crf=18','--log=info'],cwd=P,check=True)
+subprocess.run(['ffmpeg','-v','error','-y','-i',str(P/'out/visuals_v16.mp4'),'-i',str(audio),'-map','0:v:0','-map','1:a:0','-c','copy','-movflags','+faststart',str(P.parent/'final_remotion_flutterkaigi_final.mp4')],check=True)

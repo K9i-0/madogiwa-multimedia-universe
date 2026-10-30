@@ -1,3 +1,4 @@
+import {VisualsV9,v9Views} from './VisualsV9';
 import {GpuViews, gpuViews} from './GpuViews';
 import React from 'react';
 import {AbsoluteFill,Img,OffthreadVideo,Sequence,Loop,staticFile,useCurrentFrame,interpolate} from 'remotion';
@@ -55,7 +56,7 @@ export const Explainer:React.FC=()=>{
  const caption=active?.captions.find(c=>f-active.startFrame>=c.fromFrame&&f-active.startFrame<c.toFrame)?.text??(f>=previous.startFrame+previous.durationInFrames&&f<previous.startFrame+previous.durationInFrames+8?previous.captions[previous.captions.length-1]?.text:undefined);
  return <AbsoluteFill style={{background:'#f4f2eb',fontFamily:'"Hiragino Sans", "Noto Sans JP", sans-serif',color:ink}}><AbsoluteFill style={{opacity:fade}}>
  <div data-center style={{position:'absolute',left:120,top:20,width:1040,height:540,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center'}}>
- {gpuViews.includes(previous.view)?<GpuViews view={previous.view} d={previous} frame={f}/>:v6Views.includes(previous.view)?<Sequence from={start} layout="none"><VisualsV6 view={previous.view} frame={f} d={previous} groupStart={start}/></Sequence>:<Sequence from={start} layout="none"><Center view={previous.view}/></Sequence>}
+ {v9Views.includes(previous.view)?<VisualsV9 view={previous.view} d={previous} frame={f}/>:gpuViews.includes(previous.view)?<GpuViews view={previous.view} d={previous} frame={f}/>:v6Views.includes(previous.view)?<Sequence from={start} layout="none"><VisualsV6 view={previous.view} frame={f} d={previous} groupStart={start}/></Sequence>:<Sequence from={start} layout="none"><Center view={previous.view}/></Sequence>}
  </div>
  {(['zunda','metan'] as const).map((who,i)=>{const speaking=active?.who===who;const j=active?f-active.startFrame:0;const open=speaking&&(active?.envelope[j]??0)>.023;const blink=(f+(i?61:0))%151<4;const surprise=speaking&&/何なの|採用試験？|興味ねー|そっちは|適性|そんなもの|そうよね/.test(active?.text??'');const mood=blink?'blink':surprise?'surprise':'normal';const width=joke?205:165;return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?1280-width:0,bottom:0,width,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;})}
  {caption&&<div style={{position:'absolute',left:195,right:195,bottom:23,height:112,display:'flex',alignItems:'center',justifyContent:'center'}}><div data-caption style={{fontSize:31,fontWeight:700,lineHeight:1.55,textAlign:'center',whiteSpace:'pre-line',color:previous.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'4px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0001'}}>{caption}</div></div>}

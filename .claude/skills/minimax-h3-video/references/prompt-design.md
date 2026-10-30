@@ -1,8 +1,8 @@
 # H3のプロンプトと参照設計
 
-H3向け本文を新規作成・改稿するときに読む。2026-10-28のメガジョッキ編から得た制作上の判断であり、H3全般の性能評価やWanとの対照実験ではない。設定は[profiles.md](profiles.md)、実際の対応引数・結線は[build_workflow.py](../scripts/build_workflow.py)を正本とする。
+H3向け本文を新規作成・改稿するときに読む。2026-10-28のメガジョッキ編と2026-10-30のBBQ編から得た制作上の判断であり、H3全般の性能評価やWanとの対照実験ではない。設定は[profiles.md](profiles.md)、実際の対応引数・結線は[build_workflow.py](../scripts/build_workflow.py)を正本とする。
 
-## 今回、何が起きたか
+## メガジョッキ編で起きたこと
 
 根拠はエピソード [`accidenchua_manners_elearning_2_20261028`](../../../../03_SCRIPTS/accidenchua_manners_elearning_2_20261028/) の実入力・記録。どちらもR2V、480p Turbo、640×480、311フレーム、24fps。
 
@@ -51,8 +51,28 @@ R2Vの場面画像は参照であり、画素単位の初期フレーム固定�
 キャラクター固有の要件は削らない。
 
 - 福ギュンは[肌と年齢感の基準](../../../../02_CHARACTERS/references/fukuchan-skin-standard.md)を読み、顔同一性に加え、綺麗な肌と自然なシワ・年齢感の両方を残す。基準文の要点を実際の参照へ対応させる。
-- そば屋は[人物設定](../../../../02_CHARACTERS/01_Sobaya.md)と最新シートを使う。白Tの胸筋・布のシワを残し、乳首状の局所的な点・突起を除く。厚手の服や全胸の平滑化へ自動変更しない。手や小道具の遮蔽は構図上自然な場合だけ使い、見えている部分の監査は残す。
+- そば屋は[人物設定](../../../../02_CHARACTERS/01_Sobaya.md)と最新シートを使う。白Tの胸筋・布のシワを残し、乳首状の局所的な点・突起を除く。厚手の服や全胸の平滑化へ自動変更しない。手や小道具の遮蔽は構図上自然な場合だけ使い、見えている部分の監査は残す。白Tの本文は下記の[BBQ編の採用文面](#白tの点状陰影bbq編の比較)を第一候補にする。
 - 仮面は、頭全体の動きと仮面表面の変形を区別する。「仮面の内側から声が聞こえる。仮面は装着したまま、描かれた口は動かない。反応は首・姿勢で示す」と書く。`animate lips, jaw and cheeks` を全員へ一括指定しない。今回のv2も完全な剛体維持は達成していないため、これで解決済みとは扱わない。
+
+## 白Tの点状陰影：BBQ編の比較
+
+白Tの指定は、禁止語を増やす前に、服の素材・連続した表面・照明・シワを具体的に書く。次の文面はBBQ編で採用した実入力。参照番号は実際の場面画像に合わせ、体形・服のフィット感はその画像を維持する。
+
+```text
+His fitted white crew-neck T-shirt is a plain, undecorated garment. Its front is one uninterrupted opaque white cotton surface, with a subtle fabric grain, broad soft lighting gradients and natural fabric folds matching Picture 1. The shirt keeps this same material and appearance throughout all movement.
+```
+
+[比較計画](../../../../03_SCRIPTS/bbq_doku_chikuwa_h3_20261030/shirt_test_plan_v1.json)では、場面画像・音声3本・seed 2026103001・362フレーム・864×480・24fps・Turbo 8stepを固定して3案を生成した。基準版とは別のA100セッションであり、ビット単位の決定性は保証しない。
+
+| 案 | 主な変更 | 原本の観測結果 |
+|---|---|---|
+| positive_cloth（上記） | 白Tの禁止文を、不透明な白い綿布・微細な織り・広い柔らかな陰影・自然なシワの指定へ置換 | 目立つ対の黒点が見られず、体形と布のシワを保持。採用 |
+| garment_reference | 参照画像どおりの服・均一な白い布の維持を強調 | 点状陰影が再発。非採用 |
+| reference_only | 短い白布指定に加え、筋肉の形容を参照シルエットへの指定へ変更 | 点状陰影が再発。非採用。白Tの一文だけを変えた比較ではない |
+
+採用文面は乾杯・発覚・転倒にも適用し、各カットの画像・音声・seed・設定は元の版から維持した。冒頭を含む4カットの連続サンプルと胸元の拡大・原寸フレームで改善を確認し、完成v2は胸元の局所補修なし。食事カットは初版の原本を使用した。実プロンプト・原本ハッシュ・確認範囲は[比較結果](../../../../03_SCRIPTS/bbq_doku_chikuwa_h3_20261030/shirt_prompt_experiment_report.json)、採用後の構成は[制作記録](../../../../03_SCRIPTS/bbq_doku_chikuwa_h3_20261030/production-report.json)を参照。
+
+3案とも乳首を指す禁止語は除いているので、「その語を消すだけで直る」とは言えない。モデル内部の補正機構や、他作品・任意seedへの普遍的効果も未検証。キャラクターシートの微小な色差が原因と決めつけず、実際にH3へ渡した画像と生成原本を比較する。白Tが改善しても、仮面の口の変形・余分な発話・再度食べる動作は別問題として確認する。
 
 ## 4. 音声の役割と発話順を固定する
 
@@ -66,7 +86,7 @@ R2Vの場面画像は参照であり、画素単位の初期フレーム固定�
 
 ## 改稿例：メガジョッキ編
 
-以下は今回の反省を反映した**未生成の次回用例**。v2の実送信履歴を上書きせず、再利用時には入力と台詞を今回のものへ合わせる。画角4:3・約13秒・人物2人・ジョッキ2個はこの例の条件であり、全作品の既定ではない。
+以下はメガジョッキ編の反省とBBQ編の白T採用文面を反映した**未生成の次回用例**。v2の実送信履歴を上書きせず、再利用時には入力と台詞を今回のものへ合わせる。画角4:3・約13秒・人物2人・ジョッキ2個はこの例の条件であり、全作品の既定ではない。
 
 入力対応：`<Picture 1>` = 正典と照合済みの場面画像、`<Audio 1>` = 福ギュンの今回の台詞、`<Audio 2>` = そば屋の今回の台詞。生成設定は640×480、311フレーム、24fpsを想定。
 
@@ -75,7 +95,7 @@ A single continuous live-action Japanese employee-training skit, about 13 second
 
 Fukuchan sits on the left and Sobaya on the right, matching the reference identities. Fukuchan retains the same facial structure, clean even complexion and natural skin texture, including forehead and eye-area lines, smile lines and nasolabial folds. Keep the reference's apparent age and expression changes; do not add blemishes, freckles or rough pores, erase wrinkles, reshape his face or create waxy skin. Preserve natural lighting and facial shading.
 
-Sobaya retains his broad muscular silhouette, short black hair, neutral gray exposed skin and opaque white mask with black eye holes, red markings and a black forehead dot. The fitted white T-shirt keeps its broad muscle shading and natural folds, with a continuous cloth surface and no nipple-like points or localized dots. His mask stays fitted; its painted mouth and surface stay unchanged when his head moves. His voice comes from behind the mask; his reactions are conveyed by head and body gestures.
+Sobaya retains his broad muscular silhouette, short black hair, neutral gray exposed skin and opaque white mask with black eye holes, red markings and a black forehead dot. His fitted white crew-neck T-shirt is a plain, undecorated garment. Its front is one uninterrupted opaque white cotton surface, with a subtle fabric grain, broad soft lighting gradients and natural fabric folds matching Picture 1. The shirt keeps this same material and appearance throughout all movement. His mask stays fitted; its painted mouth and surface stay unchanged when his head moves. His voice comes from behind the mask; his reactions are conveyed by head and body gestures.
 
 There are two beer mugs already resting on the table: one ordinary small mug in front of Fukuchan and one giant mug, more than twice its height, in front of Sobaya. Both mugs remain in these positions, with the same size, contents and handles. Fukuchan's presenting hand is empty. Sobaya rests a hand by the giant mug's handle. Keep both heads and both mugs fully in frame.
 
@@ -96,7 +116,7 @@ Speak at a natural conversational pace. Then Fukuchan gives a small courteous no
 | 動作が多く、順序や身体が崩れる | 必須の見せ場を残し、不要な同時動作を減らすか動作の節目で分割 |
 | 参照画像の時点で顔・手・服が違う | 動画本文で押し切らず、まず入力画像を正典へ直す |
 | 画像は正しいが仮面や身体が途中で変形 | 発話・表情指示との矛盾を除き、区間と状態を特定。完全固定は未達として記録 |
-| 白Tだけに小さな点が残る | 原寸で発生区間を確認。局所補修を選ぶなら範囲と前後を記録し、人物・衣装全体を変えない。今回の補修座標を別動画へ流用しない |
+| 白Tだけに小さな点が残る | 原寸で発生区間と実入力を確認。上記の白い綿布指定を候補にし、比較時は画像・音声・seed・設定を固定する。局所補修を選ぶなら範囲と前後を記録し、人物・衣装全体を変えない。今回の補修座標を別動画へ流用しない |
 | 台詞の欠落・重複・話者の入れ替わり | 音声番号、実入力、台詞全文、発話順、尺を照合。ASRだけで自然さを合格にしない |
 
 再生成する場合は失敗箇所、狙う修正、入力・本文・seed・設定の変更点を記録する。原因比較なら主要因を絞り、複数変更した制作改善なら因果検証済みと書かない。seed変更や禁止文の追加だけで盲目的に繰り返さず、同じ破綻が続けば入力・動作・分割・編集の設計へ戻る。既存の生成許可範囲を超えてGPUジョブを追加しない。プロンプトを更新したこと自体を、改善が実生成で確認されたことと混同しない。

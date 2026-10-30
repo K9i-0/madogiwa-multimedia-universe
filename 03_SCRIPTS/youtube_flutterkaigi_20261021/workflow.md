@@ -35,3 +35,6 @@
 ## v10補足：操作経路と測定経路
 
 Marionetteの一般的なdebug/profile対応と、プロジェクトが実際に初期化する条件を別々に確認する。このゲームはkDebugModeで初期化している。実機でも接続条件を満たせばMarionetteを利用できるため、実機であることだけをmobile MCPへ替える理由にしない。mobile MCPによるタップ・画面取得と、profile/計測ログによる性能測定を組み合わせる。
+
+## v14の再生成・比較図
+prepare_voice.py → prepare_edit_v5.py → write_docs_v11.py → render.py。採用版はVisualsV14.tsx。コードサンプルはSDK APIと採用flutter_sceneの版に照合し、初期化省略を明示する。GitHubの貢献は提案者、PR作成者、実装コミット作者を区別し、capture_github_v14.cjsで実ページから画面を取得する。ボットの合格率と来場者の目標を同じ母集団として比較しない。

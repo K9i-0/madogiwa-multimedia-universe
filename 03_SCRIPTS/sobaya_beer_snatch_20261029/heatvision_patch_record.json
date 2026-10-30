@@ -1,0 +1,25 @@
+{
+  "task_id": "db70343e-488a-45e2-b309-2aac79c53baf",
+  "status": "SUCCEEDED",
+  "recorded_at": "2026-10-30T09:22:30.586187+09:00",
+  "duration": 8,
+  "resolution": "480P",
+  "seed": 301030,
+  "estimated_usd": 0.28,
+  "actual_billed_amount": null,
+  "output": "wan3_heatvision_patch_v1_480p.mp4",
+  "source_spec": {
+    "width": 854,
+    "height": 480,
+    "fps": 30,
+    "duration": 8
+  },
+  "visual_review": {
+    "eye_to_lid_beams": "visible",
+    "drink_and_lower_can": "present",
+    "limitation": "Drinking opening appears visible before heat vision; not confirmed as newly burned hole."
+  },
+  "edit_output": "final_remotion_v3_heatvision_720p.mp4",
+  "final_frames": 804,
+  "final_fps": 30
+}

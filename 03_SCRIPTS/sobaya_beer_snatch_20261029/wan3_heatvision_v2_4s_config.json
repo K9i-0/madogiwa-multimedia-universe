@@ -1,0 +1,28 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 4,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3_heatvision_v2_4s.txt",
+  "media": [
+    {
+      "type": "reference_image",
+      "path": "character_sobaya_basic_sheet.png"
+    },
+    {
+      "type": "reference_image",
+      "path": "product_super_try.png"
+    }
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 4,
+    "audio": true,
+    "seed": 301031,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_heatvision_v2_4s_480p.mp4"
+}

@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "started_unix": 1793395032.1629152,
+  "stage": "generate_ch03",
+  "completed": [
+    {
+      "id": "ch01",
+      "seconds": 152.21041321754456
+    },
+    {
+      "id": "ch02",
+      "seconds": 211.2838740348816
+    },
+    {
+      "id": "ch03",
+      "seconds": 75.88048195838928
+    }
+  ],
+  "elapsed_seconds": 871.394139289856,
+  "sha256": {
+    "ch01_480p.mp4": "638f03f607e198b038043c51f1c3dd197ce0973a01a3b63c11e44485e95ff8e7",
+    "ch02_480p.mp4": "037f7a1fde5e6944cc6c095cc6852bf5c3423c4ca5e033f398c06ff3e06d2d05",
+    "ch03_480p.mp4": "36078339b7892b9338eba4d00f4444c08fb333937a44a70253aff75387b88180"
+  },
+  "profile": "480p-turbo",
+  "gpu": "A100",
+  "workers": 1,
+  "initial_cu": 98.94,
+  "final_cu": 96.81,
+  "observed_cu_delta": 2.13,
+  "usage_rate_after_stop": 0,
+  "active_assignments_after_stop": 0,
+  "final_frames": 509,
+  "fps": 24,
+  "final_resolution": [
+    1280,
+    720
+  ],
+  "qa": {
+    "structure": "Three original MP4 streams verified by run_workflow; downloaded SHA256 matched.",
+    "visual": "Reviewed sampled contacts of all 3 shots. Sheep costumes, hakama photographer, Baphomet silhouette, centaur and horse-neck-on-human-legs present. ch02 mask mouth deforms and Yametaro facial details drift (eyebrows/forehead mark). ch03 right-hand creature partly visible at start; gradual reveal not fully achieved.",
+    "audio": "ASR only for ch01/ch02. Intended lines recognized, with ishou interpreted as isou; not proof of pronunciation error. Unscripted speech-like output recognized after ch01 5.2s and ch02 8.7s. Provisional edit trims at frames125 and209; full originals retained. Voice identity, sheep-like yume bleat, horse whinny and precise lip sync not listening-approved.",
+    "regenerations": 0,
+    "final_decode": "v1 H264 1280x720, 24fps, AAC 48kHz, 21.208333s; entire file decoded without errors."
+  },
+  "final_file": "final_remotion_newyear_v2.mp4",
+  "v2_change": "Move closing greeting to bottom to avoid face overlap; same H3 video/audio, no new GPU generation."
+}

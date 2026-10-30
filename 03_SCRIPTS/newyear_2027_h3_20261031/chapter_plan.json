@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ch01",
+    "frames": 260,
+    "image": "input_greeting_v1.png",
+    "audio": [
+      "Yametaro_voice.wav",
+      "Fukuchan_voice.wav"
+    ],
+    "prompt": "prompt_ch01_v1.txt",
+    "seed": 2026103101
+  },
+  {
+    "id": "ch02",
+    "frames": 362,
+    "image": "input_baphomet_v1.png",
+    "audio": [
+      "Sobaya_voice.wav",
+      "Yametaro_voice.wav"
+    ],
+    "prompt": "prompt_ch02_v1.txt",
+    "seed": 2026103102
+  },
+  {
+    "id": "ch03",
+    "frames": 175,
+    "image": "input_flashback_v1.png",
+    "audio": [],
+    "prompt": "prompt_ch03_v1.txt",
+    "seed": 2026103103
+  }
+]

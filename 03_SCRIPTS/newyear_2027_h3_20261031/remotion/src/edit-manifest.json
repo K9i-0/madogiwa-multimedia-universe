@@ -1,0 +1,38 @@
+{
+  "composition": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 509
+  },
+  "segments": [
+    {
+      "id": "ch01",
+      "startFrame": 0,
+      "durationInFrames": 125
+    },
+    {
+      "id": "ch02",
+      "startFrame": 125,
+      "durationInFrames": 209
+    },
+    {
+      "id": "ch03",
+      "startFrame": 334,
+      "durationInFrames": 175
+    }
+  ],
+  "overlays": [
+    {
+      "startFrame": 334,
+      "endFrame": 406,
+      "text": "去年のお正月"
+    },
+    {
+      "startFrame": 449,
+      "endFrame": 509,
+      "text": "今年もよろしくお願いします"
+    }
+  ],
+  "editNote": "Trim ch01 at frame125 and ch02 at frame209 after intended lines, using ASR timing as provisional guide. Full 480p originals retained. Not a listening-based voice approval."
+}

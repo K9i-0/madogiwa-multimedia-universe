@@ -1,0 +1,39 @@
+{
+  "engine": "built-in imagegen",
+  "date": "2026-10-31",
+  "assets": [
+    {
+      "file": "input_greeting_v1.png",
+      "sha256": "8fd0bfc1c74bab88925042eb84e6f4bf2455035aad1b908586413b55afd5b4b1",
+      "references": [
+        "character_yumemin_basic_sheet.png",
+        "character_takosan_basic_sheet.png",
+        "character_yametaro_basic_sheet.png",
+        "Fukuchan.jpg",
+        "character_fukuchan_basic_sheet.png"
+      ],
+      "prompt_summary": "Sunny snowy Japanese New Year garden. Sheep-costumed Yumemin, Takosan, Yametaro; photo-identical Fukuchan in hakama holds horizontal smartphone filming trio.",
+      "full_request_location": "Conversation image_gen tool call"
+    },
+    {
+      "file": "input_baphomet_v1.png",
+      "sha256": "b7e4541e820fd00f3e38b1ee676952c6a553d062a5b615cd67d847f7b39b31b4",
+      "references": [
+        "input_greeting_v1.png",
+        "character_sobaya_basic_sheet.png",
+        "character_yametaro_basic_sheet.png"
+      ],
+      "prompt_summary": "Same garden. Sheep Yametaro left, Baphomet Sobaya right. White rigid mask, white T-shirt, gray skin, horns wings goat legs and hooves, beer mug and magic circle.",
+      "full_request_location": "Conversation image_gen tool call"
+    },
+    {
+      "file": "input_flashback_v1.png",
+      "sha256": "14e4acc085e55911acaf36e09f6078ca5deec097325cc02c72e478faf6c585d8",
+      "references": [
+        "character_sobaya_basic_sheet.png"
+      ],
+      "prompt_summary": "Cheerful sunny garden flashback. Centaur Sobaya holding beer, and separate complementary horse head/neck connected directly to human pelvis, black jeans and two human legs in white sneakers.",
+      "full_request_location": "Conversation image_gen tool call"
+    }
+  ]
+}

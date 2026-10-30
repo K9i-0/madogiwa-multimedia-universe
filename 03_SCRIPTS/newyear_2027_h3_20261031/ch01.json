@@ -1,0 +1,218 @@
+{
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 2026103101
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "scheduler": "beta",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "150",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/newyear_ch01",
+      "format": "auto",
+      "codec": "auto"
+    }
+  },
+  "149": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "150": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "149",
+        0
+      ],
+      "lora_name": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "200": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "input_greeting_v1.png"
+    }
+  },
+  "201": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "Yametaro_voice.wav"
+    }
+  },
+  "202": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "Fukuchan_voice.wav"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "prompt": "A cozy Japanese New Year greeting comedy, 16:9. <Picture 1> is the exact scene, identities, costumes and layout. One live-action man Fukuchan (福ギュン) in hakama films three tangible toy-diorama sheep-costumed characters: left blue floating tapir Yumemin, middle white-faced Takosan with six lower tentacles and two rounded white hands, right little bespectacled Yametaro. Start framed on the three cute sheep characters, then gently widen to reveal the smiling photographer at right as he speaks. They remain in this garden in these costumes throughout.\nYametaro waves once and says warmly <d>[Japanese] あけましておめでとうございまーす！</d> <Audio 1> is his voice timbre reference only; speak this new line, not the reference recording's words. The others listen. Then Yumemin bobs gently and bleats <d>[Japanese] ゆめぇ〜〜</d> in a cute sheep-like bleat, with the prolonged mee sound wavering like a lamb, not ordinary spoken speech. Yumemin keeps blue round body, short tapir nose, black dot eyes and no arms or legs. Then Fukuchan smiles at his phone and says <d>[Japanese] みんな可愛いギュン！</d> using <Audio 2> as his voice timbre reference only. All others silent during his line. Keep phone held horizontally in both his hands pointing at the trio. Takosan quietly waves one hand, lower tentacles gently wiggle, preserving radial layout and two separate arms.\nFukuchan keeps reference facial structure, clean even complexion and natural fine texture, forehead and eye-area wrinkles, smile lines and nasolabial folds; no added spots freckles blemishes rough pores, no erasing wrinkles, deaging, reshaping face or waxy skin. Soft outdoor ambience, no background music, no captions or extra dialogue. End on the happy group and photographer.\nYametaro identity lock — the Yametaro design in <Picture 1> is the exact design authority, not loose inspiration. Preserve its head width-to-height ratio, hair silhouette and hairline, cheek and ear placement, short neck and compact body proportions in every frame. Keep the round black spectacle frames and the sheet's simple white lens/eye areas; do not invent visible pupils, irises, realistic eyeballs, eye sockets, eyelids or eyebrows. Keep the tiny black forehead mark separate from the low, subtle skin-colored nose; no black nose dot, outlined nostrils or projecting nose. Preserve the round cheeks and flat pink blush marks, smooth skin-colored chin, ears and nape, with no black contour bands or facial creases. Do not lengthen the forehead/head, inflate the hair, enlarge ears or add realistic lips. Animate the small inset mouth using the sheet's rest and A/I/U/E/O views as articulation guidance, with visible mouth interior when speaking; do not freeze the smile, protrude the lips or stretch the mouth into a new facial design. Emotion and cinematic lighting must not redesign the face. Wardrobe follows the scene instructions independently of identity. A previous generated take is not an identity reference.",
+      "width": 864,
+      "height": 480,
+      "length": 260,
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "200",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "201",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "202",
+        0
+      ]
+    }
+  }
+}

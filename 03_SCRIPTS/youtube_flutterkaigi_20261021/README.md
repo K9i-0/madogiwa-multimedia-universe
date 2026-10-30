@@ -1,3 +1,9 @@
+## 最新：v10（2026-10-30）
+
+`final_remotion_flutterkaigi_v10.mp4` — 18分04.9秒、1280×720、30fps。
+MCP紹介直後に用途を比較し、Marionetteはアプリ内部、mobile MCPは端末側という違いを図示。Marionetteの一般的な対応範囲とこのゲームのdebug限定設定、操作と性能測定を区別。Columnの音声はカラムへ修正。
+新しい図は`remotion/src/ToolViewsV10.tsx`。根拠は`fact_check_v10.md`。
+
 ## 最新：v9（2026-10-30）
 
 `final_remotion_flutterkaigi_v9.mp4` — 17分21秒、1280×720、30fps。

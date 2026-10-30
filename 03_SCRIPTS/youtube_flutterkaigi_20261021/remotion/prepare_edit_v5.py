@@ -9,7 +9,7 @@ from subtitle_layout import captions
 D=load_dictionary(local_path=P/'readings.json')
 # The v4 snapshot is derived from the adopted voice record, not a generated audio dependency.
 rows=json.loads((P.parent/'voice_generation_record.json').read_text())
-cue_words=['形を描く','文字を描く','レイヤー','傾けて動く','当たりを集める','はずれを避ける','反応時間','狙い','200体','判定の幅','0.15秒','配置の候補','77パーセント','構成','大きさ','位置','ペイント','エンジン','ピクセル','低いレベル','頂点シェーダー','ラスタライズ','フラグメントシェーダー','深度テスト','90','50','5パーセント','200','0.2','0.5','0.15','77','10月2日','10月20日','27日','1〜2週間','モデルの読み込み','カメラ','材質','ライト','アニメーション','制約','サイズ','位置','ペイント','エンジン','頂点','バッファ','シェーダー','描画命令','ラスタライズ','フラグメント','Flutter Scene','Flutter GPU','Impeller','モデル','カメラ','ライト','アニメーション','端末の傾き','落下物','キャッチ','得点','スワイプ','ピンチ操作','斜め','Codex','Claude Code','Dart MCP','Marionette MCP','mobile MCP','Dart Tooling Daemon','Dart VM Service','Binding','Widget','文字','キー','タップ','構造化','乱数','一定時間','Android','iPhone','実機','profile','人が','30fps','60fps','4096','2048','1.9','0.74','福ギュン','そば屋','おだてつ','形','寸法','コードを直して','hot reload','結果を確かめる','次の修正','毎フレーム','上流','性能','画面で傾けた','原型','骨組み']
+cue_words=['MarionetteBinding','debug','release','デバッグビルド','計測ログ','Widgetの文字','端末側','形を描く','文字を描く','レイヤー','傾けて動く','当たりを集める','はずれを避ける','反応時間','狙い','200体','判定の幅','0.15秒','配置の候補','77パーセント','構成','大きさ','位置','ペイント','エンジン','ピクセル','低いレベル','頂点シェーダー','ラスタライズ','フラグメントシェーダー','深度テスト','90','50','5パーセント','200','0.2','0.5','0.15','77','10月2日','10月20日','27日','1〜2週間','モデルの読み込み','カメラ','材質','ライト','アニメーション','制約','サイズ','位置','ペイント','エンジン','頂点','バッファ','シェーダー','描画命令','ラスタライズ','フラグメント','Flutter Scene','Flutter GPU','Impeller','モデル','カメラ','ライト','アニメーション','端末の傾き','落下物','キャッチ','得点','スワイプ','ピンチ操作','斜め','Codex','Claude Code','Dart MCP','Marionette MCP','mobile MCP','Dart Tooling Daemon','Dart VM Service','Binding','Widget','文字','キー','タップ','構造化','乱数','一定時間','Android','iPhone','実機','profile','人が','30fps','60fps','4096','2048','1.9','0.74','福ギュン','そば屋','おだてつ','形','寸法','コードを直して','hot reload','結果を確かめる','次の修正','毎フレーム','上流','性能','画面で傾けた','原型','骨組み']
 cache=P/'out/alignment_queries';cache.mkdir(exist_ok=True)
 def prefix_moras(text,speaker):
  if not text:return []
@@ -67,7 +67,7 @@ for i,d in enumerate(rows):
  cursor+=duration+pad
  print(d['id'],round(cursor/30,1),flush=True)
 comp={'width':1280,'height':720,'fps':30,'durationInFrames':cursor+75}
-m={'composition':comp,'mainStartFrame':chapter[1]['startFrame'],'endingStartFrame':chapter[-1]['startFrame'],'voicevoxVersion':'0.25.1','chapters':chapter,'dialogue':rows,'clips':[],'editVersion':9}
+m={'composition':comp,'mainStartFrame':chapter[1]['startFrame'],'endingStartFrame':chapter[-1]['startFrame'],'voicevoxVersion':'0.25.1','chapters':chapter,'dialogue':rows,'clips':[],'editVersion':10}
 (P/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
 (P/'edit_timing_v5.json').write_text(json.dumps({'method':'Original VOICEVOX moras; prefix readings identify caption/cue boundaries. Silence-only source trims. No speech time stretch.','decisions':decisions,'lines':[{k:d[k] for k in ['id','startFrame','durationInFrames','audioTrimStartSample','audioTrimEndSample','gapAfterFrames','pacingReason','cues']} for d in rows]},ensure_ascii=False,indent=2))
 print('DURATION',cursor/30+2.5)

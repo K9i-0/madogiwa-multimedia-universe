@@ -21,6 +21,7 @@
     "tech-video": "03_SCRIPTS/youtube_3d_character_workflow_20261014/remotion/prepare_voice_v6.py：技術語の採用読み"
   },
   "replacements": [
+    {"id": "tech.flutter-column", "surface": "Column", "reading": "カラム", "scope": "tech", "match": "ascii_token", "source": "flutterkaigi-explainer", "note": "v10ユーザー指定：FlutterのColumnをカラムと読む。字幕・コード表記は維持。ColumnWidth等は対象外。"},
     {"id": "tech.flutter-icon", "surface": "Icon", "reading": "アイコン", "scope": "tech", "match": "ascii_token", "source": "flutterkaigi-explainer", "note": "v9: VOICEVOX 0.25.1がIconをアイシーオンと解析。Flutter Widget名。Icons/IconButton等には適用しない。音素とASRを確認、主観試聴未実施。"},
     {"id": "tech.tas", "surface": "TAS", "reading": "タス", "scope": "tech", "match": "ascii_token", "source": "flutterkaigi-explainer", "note": "v9: Tool-Assisted Speedrunの略称。採用音声の音素とASR確認。ASCIIトークン境界で限定。"},
     {"id": "common.kaikoubu", "surface": "開口部", "reading": "カイコウブ", "source": "chikuwa-biology", "note": "VOICEVOX 0.25.1でひらきこうぶと解析。開口部の複合語だけ補正。"},

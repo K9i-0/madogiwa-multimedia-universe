@@ -1,3 +1,10 @@
+## v12 音声・BGM付き完成版（2026-10-30）
+
+`final_remotion_flutterkaigi_v12.mp4` — 21分43.1秒、1280×720、30fps。
+別環境のv12台本・190発話・編集タイムラインを維持して書き出し。採用BGM3曲とTripo抜粋動画を復元。
+別環境のv11録画は未転送のため、ゲーム08b2161をiPhone 18 Pro / iOS 27.0の横画面で再収録。ゲームソースは変更せず、Dart MCPでdebug起動しMarionetteで操作。実機性能の測定値とは別。
+再生成：`prepare_assets.py`、`prepare_media_v12.py`、`mix_audio.py`、`render.py --no-mix`。録画原本は`remotion/out/*_v12_raw.mov`。互換性のため採用クリップ名は`*_v11.mp4`を維持する。
+
 ## 最新：v12（2026-10-30）
 
 `final_remotion_flutterkaigi_v12_nobgm.mp4`（BGMなし・Tripo抜粋は静止画の暫定版。引き継ぎ手順はv11の項）。v11へ、Widget・Element・RenderObjectの3つのツリーの短い説明と、レイアウトの制約／サイズの受け渡しを追加。技術画面の右下に公式ドキュメント・パッケージの参考を小さく表示（`Explainer.tsx`の`refs`）。照合結果は`fact_check_v11.md`のv12追記。

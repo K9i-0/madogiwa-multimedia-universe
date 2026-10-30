@@ -1,0 +1,69 @@
+{
+  "composition": {
+    "id": "BBQ",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 817
+  },
+  "segments": [
+    {
+      "id": "ch01",
+      "file": "h3/ch01_480p.mp4",
+      "source": "generated/h3-horror-v1/results/ch01_480p.mp4",
+      "startFrame": 0,
+      "durationInFrames": 260,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "ch02",
+      "file": "h3/ch02_480p.mp4",
+      "source": "generated/h3-horror-v1/results/ch02_480p.mp4",
+      "startFrame": 260,
+      "durationInFrames": 158,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "ch03",
+      "file": "h3/ch03_480p.mp4",
+      "source": "generated/h3-horror-v1/results/ch03_480p.mp4",
+      "startFrame": 418,
+      "durationInFrames": 156,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "ch04",
+      "file": "h3/ch04_480p.mp4",
+      "source": "generated/h3-horror-v1/results/ch04_480p.mp4",
+      "startFrame": 574,
+      "durationInFrames": 243,
+      "trimStartFrame": 0
+    }
+  ],
+  "music": {
+    "file": "bgm.mp3",
+    "gainDb": -22,
+    "stopFrame": 260
+  },
+  "captions": [
+    {
+      "startFrame": 0,
+      "endFrame": 52,
+      "speaker": "よーたん",
+      "text": "あれ、肉足りなくない？"
+    },
+    {
+      "startFrame": 65,
+      "endFrame": 97,
+      "speaker": "そば屋",
+      "text": "ちょっと待っててください"
+    },
+    {
+      "startFrame": 726,
+      "endFrame": 780,
+      "speaker": "やめ太郎",
+      "text": "そば屋さんが肉みつけたって！"
+    }
+  ],
+  "audit": "Visual contact sheets reviewed. ch03 cut at 6.5s immediately after secure capture. ch04 generated close-up ending retained. ASR confirms intended dialogue; no subjective audio listening claim."
+}

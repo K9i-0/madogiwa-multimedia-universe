@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ch01",
+    "frames": 260,
+    "image": "input_bbq_meat_v1.png",
+    "audio": [
+      "ch1_yotan.wav",
+      "ch1_sobaya.wav"
+    ],
+    "prompt": "Same evening backyard as Picture 1: Yotan seated left, same real Japanese face with blonde hair, tinted glasses, black leather jacket; Sobaya standing center; short stylized Yametaro right. Four ordinary beef pieces remain on charcoal grill, empty serving tray on table. At first the atmosphere is a casual home BBQ. Yotan looks at sparse meat then up at Sobaya and says once <d>[Japanese] あれ、肉足りなくない？</d>. Audio 1 is Yotan's exact line and voice. Sobaya answers calmly once from behind his rigid mask <d>[Japanese] ちょっと待っててください</d>. Audio 2 is Sobaya's exact line and voice. After finishing the sentence, Sobaya rests the tongs on the grill edge, then turns and walks away through the open backyard gate toward the dark wooded path. Follow him with a subtle camera pan as he recedes, keeping the others in foreground; finish with Sobaya passing into the dark path and disappearing beyond gate. Yotan and Yametaro stay at BBQ, silently watching. No other dialogue, no returning. Natural grill sizzle and footsteps.",
+    "identities": "sob+yame",
+    "seed": 2026103101,
+    "prompt_file": "prompt_ch01_v1.txt"
+  },
+  {
+    "id": "ch02",
+    "frames": 158,
+    "image": "input_forest_alone_v1.png",
+    "audio": [],
+    "prompt": "A quiet suspense shot of the moonlit forest in Picture 1. ONLY Yumemin is present. It floats peacefully, gently bobbing a few centimeters, tiny nose movement, moving leaves and drifting mist. Camera slowly creeps toward the cute round mascot. Hold the stillness; no capture yet and no person enters this shot. The dark forest remains realistic, cute character design unchanged. Natural soft insects, leaves and faint distant footsteps near the end. Absolutely no human speech, words, cries or music.",
+    "identities": "yume",
+    "seed": 2026103102,
+    "prompt_file": "prompt_ch02_v1.txt"
+  },
+  {
+    "id": "ch03",
+    "frames": 192,
+    "image": "input_forest_capture_v1.png",
+    "audio": [],
+    "prompt": "Begin at the exact wide composition in Picture 1: Sobaya at left beside tree, Yumemin hovering center-right two meters away. One continuous shot. Sobaya silently steps out from behind the tree and approaches to arm's reach. For a short beat he calmly looks at the floating mascot. Then he suddenly reaches out with both EMPTY bare gray hands and catches the round blue creature firmly around its sides. The hands make clear physical contact and stop its floating movement; hold it intact securely at chest height, preserving its spherical body and tiny nose. End immediately on this unmistakable capture pose with mascot still intact and visible. No running away, wrestling, escape, squeezing damage, biting, eating, tools, bag, weapons or cooking. No morphing or duplicate mascot. His white mask stays fitted, no dialogue or growls. Only footfalls on leaves and cloth rustle; forest insects briefly go quiet at capture. No impact violence or screams. Keep all body parts and the mascot within frame.",
+    "identities": "sob+yume",
+    "seed": 2026103103,
+    "prompt_file": "prompt_ch03_v1.txt"
+  },
+  {
+    "id": "ch04",
+    "frames": 243,
+    "image": "input_bbq_notification_v1.png",
+    "audio": [
+      "ch4_yametaro.wav"
+    ],
+    "prompt": "Return to the exact backyard of Picture 1. Exactly TWO people: Yotan seated left, same real Japanese face blonde hair tinted glasses leather jacket; Yametaro short stylized purple-shirted character right holding one smartphone. Center position empty, dark gate/path visible behind. Sobaya remains absent for the entire shot, Yumemin is not here. After a brief quiet wait, a single clear smartphone notification CHIME sounds. Yametaro then looks down at the phone display facing himself (only back of phone faces camera), reads silently for a beat, and turns slightly toward Yotan. He announces cheerfully once <d>[Japanese] そば屋さんが肉みつけたって！</d>. Audio 1 is Yametaro's exact line and voice reference, natural Kansai-colored conversational delivery. Finish the full line and close mouth. Yotan says nothing; his smile fades subtly and he turns his head to look toward the dark empty gate. Camera holds the two people and ominously empty center, slowly drifting toward the gate for the last quiet beat. The four ordinary beef pieces already on grill keep sizzling. No arrival, no added meat, no mascot, no message text overlays, no reply or extra words. Notification then dialogue then only sizzle, no music.",
+    "identities": "yame",
+    "seed": 2026103104,
+    "prompt_file": "prompt_ch04_v1.txt"
+  }
+]

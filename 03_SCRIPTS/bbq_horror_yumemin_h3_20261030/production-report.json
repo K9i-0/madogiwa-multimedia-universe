@@ -1,0 +1,33 @@
+{
+  "model": "MiniMax H3 Turbo",
+  "session": "mmu-bbq-horror-20261030-v1",
+  "gpu": "A100",
+  "generation": "864x480 24fps 8steps",
+  "final": "1280x720 24fps 817frames",
+  "balance_before": 100.69,
+  "balance_after": 98.94,
+  "compute_units_used": 1.75,
+  "active_sessions_after": 0,
+  "review": {
+    "visual": "4 contact sheets; ch01 native shirt frame; barehand capture, intact Yumemin, no cooking/eating/remains",
+    "dialogue": "Whisper turbo recognizes all three intended lines; ch04 speech in latter half. First half non-speech ASR hallucination not used as a reason to regenerate. No subjective audio listening claimed.",
+    "limitations": [
+      "Sobaya mask remains worn but its mouth marking animates slightly.",
+      "Generated ending uses Yametaro close-up, instead of proposed Yotan gate reaction."
+    ]
+  },
+  "sha256": {
+    "ch03_480p.mp4": "cc6282dbd250af93a1f9ad7df48e07044abb5e3c26032ebc6f59354ce0d68bef",
+    "ch02_480p.mp4": "d9ec548d93b6a48c3e4bc66ecc03ca9c7256a6a5b05c028bd407a1bf2bbcdf1f",
+    "ch04_480p.mp4": "3295070ec578bc98a401df8aad7d742e59b20e5f88d7eb6c2f9db20ad90f5873",
+    "ch01_480p.mp4": "917f1b5c8cdd1ac21da475ac9d74d4b8418ff7938718158e7864c22a94a94117"
+  },
+  "final_validation": {
+    "decode": "ffmpeg full decode successful",
+    "video": "H264 1280x720 24fps",
+    "audio": "AAC stereo",
+    "duration_seconds": 34.041667,
+    "caption": "31s frame inspected, correct Japanese and member color",
+    "sha256": "c1fad2a852529e39374acb3b713469ae3dfb90963a0d2c83ea6a25451a71c3ce"
+  }
+}

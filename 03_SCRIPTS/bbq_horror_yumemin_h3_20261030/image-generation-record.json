@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "inputs": {
+    "opening": "previous BBQ scene, changed all chikuwa to ordinary beef, dusk, gate",
+    "capture": "canonical Sobaya and Yumemin basic sheets",
+    "alone": "capture scene, remove Sobaya only",
+    "notification": "opening scene, remove Sobaya and give Yametaro phone"
+  },
+  "outputs": [
+    "input_bbq_meat_v1.png",
+    "input_forest_capture_v1.png",
+    "input_forest_alone_v1.png",
+    "input_bbq_notification_v1.png"
+  ],
+  "source_directory": "/Users/kotahayashi/.codex/generated_images/01a18a21-d547-77d2-8eb0-9ad8fcb255fd",
+  "output_sha256": {
+    "input_bbq_meat_v1.png": "64c93f8f54683f9d617ce01d795eac14e7ad56d0b1fd1c93fccbaf343a9f2cca",
+    "input_forest_capture_v1.png": "019ffc81a69e64ad14f857d1d86bd721adf9e8130086c29f6552c2fb3ecd76f3",
+    "input_forest_alone_v1.png": "5d4957564236dc4763e323221557bf032ae0790934c1c6e76d1627b5316d2dea",
+    "input_bbq_notification_v1.png": "a7561bd6049b2a88c878561a95878a129e7880af6e11138f1c02a610a9ef35ff"
+  },
+  "generated_files": {
+    "input_bbq_meat_v1.png": "exec-3373af71-8185-4d09-8d1c-d9da903c29bb.png",
+    "input_forest_capture_v1.png": "exec-8082db2c-6e11-4ca8-96a1-5d30819ed124.png",
+    "input_bbq_notification_v1.png": "exec-866b8fde-e571-42b8-b005-80596c42f790.png",
+    "input_forest_alone_v1.png": "exec-17f604e4-042f-4eb6-927a-e2ad1d30a7bf.png"
+  }
+}

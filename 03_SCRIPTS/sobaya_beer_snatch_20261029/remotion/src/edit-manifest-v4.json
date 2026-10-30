@@ -1,0 +1,84 @@
+{
+  "fps": 30,
+  "source": "wan3_beer_snatch_v1_480p.mp4",
+  "segments": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 294,
+      "outputFrames": 294,
+      "reason": "opening and complete dialogue"
+    },
+    {
+      "source": "wan3_launch_patch_v1_480p.mp4",
+      "sourceStart": 0,
+      "sourceEnd": 24,
+      "outputFrames": 5,
+      "reason": "return to opening shot last pose"
+    },
+    {
+      "source": "wan3_launch_patch_v1_480p.mp4",
+      "sourceStart": 24,
+      "sourceEnd": 63,
+      "outputFrames": 20,
+      "reason": "readable arms-forward flying pose"
+    },
+    {
+      "source": "wan3_launch_patch_v1_480p.mp4",
+      "sourceStart": 63,
+      "sourceEnd": 125,
+      "outputFrames": 7,
+      "audioStart": 90,
+      "reason": "accelerate out of frame; original speed whoosh"
+    },
+    {
+      "sourceStart": 294,
+      "sourceEnd": 390,
+      "outputFrames": 96,
+      "reason": "existing POV immediately after exit"
+    },
+    {
+      "sourceStart": 390,
+      "sourceEnd": 449,
+      "outputFrames": 5,
+      "reason": "arrival snap"
+    },
+    {
+      "sourceStart": 449,
+      "sourceEnd": 456,
+      "outputFrames": 7,
+      "reason": "arrival endpoint"
+    },
+    {
+      "sourceStart": 456,
+      "sourceEnd": 475,
+      "outputFrames": 5,
+      "reason": "hand snatch"
+    },
+    {
+      "sourceStart": 475,
+      "sourceEnd": 486,
+      "outputFrames": 11,
+      "reason": "can possession readable"
+    },
+    {
+      "sourceStart": 486,
+      "sourceEnd": 516,
+      "outputFrames": 5,
+      "reason": "departure snap"
+    },
+    {
+      "sourceStart": 516,
+      "sourceEnd": 625,
+      "outputFrames": 109,
+      "reason": "normal-speed wind reaction before replacement ending"
+    },
+    {
+      "source": "wan3_heatvision_patch_v1_480p.mp4",
+      "sourceStart": 60,
+      "sourceEnd": 240,
+      "outputFrames": 180,
+      "reason": "remove manual tab opening; begin with left hand away, retain heat vision and full drink"
+    }
+  ],
+  "output": "final_remotion_v4_heatvision_cut_720p.mp4"
+}

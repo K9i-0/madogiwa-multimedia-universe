@@ -1,0 +1,53 @@
+{
+  "baseline": "generated/h3-bbq-v1/results/ch01_480p.mp4",
+  "fixed": [
+    "scene image",
+    "three audio references",
+    "seed2026103001",
+    "362frames",
+    "480p Turbo settings"
+  ],
+  "variants": [
+    {
+      "id": "ch01",
+      "variant": "positive_cloth",
+      "prompt": "prompt_test_shirt_positive_cloth.txt",
+      "frames": 362,
+      "seed": 2026103001,
+      "image": "input_bbq_scene_v2_purple.png",
+      "audio": [
+        "ch1_yotan.wav",
+        "ch1_sobaya.wav",
+        "ch1_yametaro.wav"
+      ]
+    },
+    {
+      "id": "ch02",
+      "variant": "garment_reference",
+      "prompt": "prompt_test_shirt_garment_reference.txt",
+      "frames": 362,
+      "seed": 2026103001,
+      "image": "input_bbq_scene_v2_purple.png",
+      "audio": [
+        "ch1_yotan.wav",
+        "ch1_sobaya.wav",
+        "ch1_yametaro.wav"
+      ]
+    },
+    {
+      "id": "ch03",
+      "variant": "reference_only",
+      "prompt": "prompt_test_shirt_reference_only.txt",
+      "frames": 362,
+      "seed": 2026103001,
+      "image": "input_bbq_scene_v2_purple.png",
+      "audio": [
+        "ch1_yotan.wav",
+        "ch1_sobaya.wav",
+        "ch1_yametaro.wav"
+      ]
+    }
+  ],
+  "criterion": "Inspect whole video for zero nipple-like dots or protrusions while retaining reference body, fitted white shirt, natural folds, face and mask. ASR is secondary in this garment experiment.",
+  "authorization": "2026-10-30 user explicitly authorized continued Colab iterations until satisfactory."
+}

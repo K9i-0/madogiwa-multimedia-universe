@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-30",
+  "baseline": "generated/h3-bbq-v1/results/ch01_480p.mp4",
+  "fixed": [
+    "scene image",
+    "audio inputs",
+    "seed 2026103001",
+    "480p Turbo 8step",
+    "362frames"
+  ],
+  "tests": [
+    {
+      "variant": "positive_cloth",
+      "result": "No distinct paired dots seen in 2fps whole-clip contact sheet and enlarged torso samples; natural cloth shading retained. Candidate selected. Mask mouth still articulates.",
+      "source": "generated/h3-shirt-prompt-test-v1/results/ch01_480p.mp4",
+      "sha256": "91f63ecb568ace7b30588841618e0829b4cc9e023c645f13c0ff2ac1fb6cc196"
+    },
+    {
+      "variant": "garment_reference",
+      "result": "Paired localized dots recur, plus unrequested eating. Reject.",
+      "source": "generated/h3-shirt-prompt-test-v1/results/ch02_480p.mp4",
+      "sha256": "3b86c786fba01ac09365fd0afc64d0f3f6ded12e749c60ee9b637db8094d4439"
+    },
+    {
+      "variant": "reference_only",
+      "result": "Paired localized dots recur, plus unrequested eating. Reject.",
+      "source": "generated/h3-shirt-prompt-test-v1/results/ch03_480p.mp4",
+      "sha256": "36ab30f481ad71dffbf55f9536f1020389930440cafa3619072d7053d538ee15"
+    }
+  ],
+  "interpretation": "Prompt wording can reduce artifact for these shots. Does not establish model internal cause or universal reliability. Negative anatomical wording removed in all variants, so removal alone does not explain successful variant. Same GPU type but different session from baseline; no bitwise determinism claim.",
+  "postprocessing": "Test clips have only standard 720p resize/pad; no shirt inpainting.",
+  "followup": {
+    "prompt": "positive_cloth",
+    "shots": [
+      "prod02",
+      "prod04",
+      "prod05"
+    ],
+    "result": "No distinct paired dark dots in 2fps full-clip samples and native-size selected frames. Torso volume and cloth folds retained. No inpainting.",
+    "original_eating_shot": "Retained original ch03 with no repair.",
+    "mask_limitation": "Painted mask mouth still moves.",
+    "session": "mmu-bbq-shirt-test-20261030-v1",
+    "session_terminated": true,
+    "remaining_cu": 100.69,
+    "usage_rate": 0,
+    "active_assignments": 0,
+    "hashes": {
+      "prod02": "a6820a5c40ef91b52820d173e7859a688a1df9b5890be0c3ac8431ac345a352b",
+      "prod04": "fdc981609098b9c0ad2fd7bcd410f2410cf22468fd8d6019f42d7ba851ab53de",
+      "prod05": "ca894c08e4609c0871a1795a3f0cca9037bea3faa24992fa75c25e6eaaae1bfe"
+    }
+  }
+}

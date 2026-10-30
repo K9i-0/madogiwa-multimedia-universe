@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ch01",
+    "frames": 362,
+    "image": "input_bbq_scene_v2_purple.png",
+    "audio": [
+      "ch1_yotan.wav",
+      "ch1_sobaya.wav",
+      "ch1_yametaro.wav"
+    ],
+    "action": "Locked medium-wide shot as reference: Yotan seated left, Sobaya standing center using tongs in right hand and holding one can in left, Yametaro standing right holding his own can. All remain at these positions. Sobaya gently turns one ordinary cream/brown chikuwa once on grill. Exactly one PURPLE poison chikuwa is already among normal chikuwa, beside tongs, remaining purple throughout. Food is being grilled, not eaten. Yotan looks toward grill and says <d>[Japanese] やっぱバーベキューと言ったら、ちくわだよなー</d>. Audio 1 is Yotan's voice and this exact line. Sobaya responds once behind his unchanged mask <d>[Japanese] この焼き目がいいんですよ！</d>. Audio 2 is Sobaya's voice and exact line. After he finishes Yametaro says with relaxed Kansai intonation <d>[Japanese] 端っこのカリカリがうまいねんな</d>. Audio 3 is Yametaro's voice and exact line. Then relaxed smiles and a small nod. Allow natural conversational pauses, no stretched syllables. No sudden zoom or cuts.",
+    "seed": 2026103001
+  },
+  {
+    "id": "ch02",
+    "frames": 192,
+    "image": "input_bbq_scene_v2_purple.png",
+    "audio": [
+      "ch2_sobaya.wav",
+      "voice_ref_yotan.wav",
+      "voice_ref_yametaro.wav"
+    ],
+    "action": "Same medium-wide initial positions, all three already hold one can each as image. Sobaya rests his right-hand tongs safely on the grill edge, keeps his left-hand silver can. All three raise their existing cans toward the center in a casual toast without exchanging props. Sobaya calls <d>[Japanese] 乾杯！</d> using Audio 1 as exact line and voice reference. Yotan and Yametaro cheer <d>[Japanese] 乾杯！</d> together in response. Audio 2 is ONLY Yotan's voice-timbre reference, Audio 3 ONLY Yametaro's voice-timbre reference, their source words must NOT be spoken; the only word each says is 乾杯. Cans lightly clink, everyone lowers them, relaxed shared smiles. Sobaya does not drink through his mask. No eating or discovery of poison yet. Keep the purple chikuwa purple and normal ones cream/brown. A large beer mug remains on the table, do not create more mugs.",
+    "seed": 2026103002
+  },
+  {
+    "id": "ch03",
+    "frames": 294,
+    "image": "input_bbq_lawn_v2_purple.png",
+    "audio": [
+      "ch3_sobaya.wav",
+      "ch3_yotan.wav"
+    ],
+    "action": "Start with the lawn full-body composition of Picture 1: Yotan now standing left, Sobaya center holding exactly ONE purple cooked chikuwa in right-hand chopsticks and an EMPTY paper plate in left hand, Yametaro right holding his bag. Grill safely at far left. Sobaya proudly looks at his purple chikuwa and says <d>[Japanese] これ、いい感じに焼けました</d>. Audio 1 is his exact line and voice. Afterward Yotan replies <d>[Japanese] お、うまそう</d>. Audio 2 is his exact line and voice. Sobaya then eats the purple chikuwa: cut to a tight rear shoulder angle that occludes the lower face and hand-to-mouth contact behind his near shoulder. Raise the same chopsticks with the same purple chikuwa toward the covered mouth position, brief natural eating sounds, never show an unmasked face or a moving mask. This is deliberate camera occlusion, not mask removal. End by returning to original lawn shot: Sobaya upright, EMPTY chopsticks lowered and EMPTY paper plate, the one purple chikuwa has been eaten and does not reappear. Other two listen, still unaware. Yametaro's bag retains its purple packaged chikuwa. Nobody falls yet. No new words.",
+    "seed": 2026103003
+  },
+  {
+    "id": "ch04",
+    "frames": 260,
+    "image": "input_bbq_after_eating_v1.png",
+    "audio": [
+      "ch4_yametaro.wav",
+      "ch4_yotan.wav"
+    ],
+    "action": "Locked lawn full-body three-shot. The purple chikuwa has ALREADY been eaten before this clip: Sobaya has empty chopsticks and an empty paper plate, remains standing silently throughout. Yametaro looks down at the clear food bag already in his hands, then raises the SAME bag slightly to show its 毒ちくわ label and purple contents. He casually recognizes his own purchase and says <d>[Japanese] あ、これワイが買った毒ちくわや！</d>. Audio 1 is his exact line and voice. After he finishes, Yotan turns toward Yametaro, incredulous, and replies <d>[Japanese] なんで買ってるんだよ</d>. Audio 2 is his exact line and voice. Yotan then turns his gaze toward Sobaya. Pause on Sobaya still upright, rigid white mask unchanged. No eating, falling, new food, extra dialogue or screaming. Purple food stays inside the bag, no purple food in Sobaya's hands.",
+    "seed": 2026103004
+  },
+  {
+    "id": "ch05",
+    "frames": 294,
+    "image": "input_bbq_after_eating_v1.png",
+    "audio": [
+      "ch5_sobaya.wav"
+    ],
+    "action": "Final continuous locked WIDE full-body lawn shot, camera far enough to show Sobaya landing on lawn. Initial pose exactly Picture 1, Sobaya stands upright center with EMPTY chopsticks and EMPTY paper plate after eating the purple chikuwa. Yotan stands left and Yametaro right, quiet. Sobaya gives a small authoritative nod and says in his calm matter-of-fact voice exactly once <d>[Japanese] これ、毒ちくわです</d>. Audio 1 is his exact line and voice reference. IMPORTANT temporal order: finish the entire sentence while still upright, hold ONE silent comic beat, THEN his knees suddenly buckle and his upper body tips forward-right and collapses onto the OPEN FOREGROUND LAWN, not into grill or other people. His lightweight paper plate and chopsticks fall harmlessly to the grass. Show his entire body reaching ground in a single fall; finish lying still on his side with white mask still properly fitted and visible. No standing up, second fall, body duplication, disappearing, transformation, wound or blood. Yotan and Yametaro stay standing and silently look down at Sobaya, astonished but same faces. Yametaro keeps opaque white spectacle lenses, no invented eyes. A single dull body thud, then only grill sizzle and a brief silent reaction hold. NO music, screams, groans, extra punchline, dialogue or fade within generated clip; final fade added in edit.",
+    "seed": 2026103005
+  }
+]

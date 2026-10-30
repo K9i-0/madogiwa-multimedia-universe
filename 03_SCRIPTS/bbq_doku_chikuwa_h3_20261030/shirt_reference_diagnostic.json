@@ -1,0 +1,110 @@
+{
+  "current_size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "image_metadata_keys": [],
+  "outside_edit_masks_identical": true,
+  "regions": [
+    {
+      "center": [
+        130,
+        321
+      ],
+      "mean_rgb_change": [
+        0.32,
+        0.61,
+        0.97
+      ],
+      "boundary_neighbor_mean_abs_rgb": 3.54,
+      "nearby_untouched_neighbor_mean_abs_rgb": 3.89,
+      "boundary_p95": 6.42
+    },
+    {
+      "center": [
+        271,
+        327
+      ],
+      "mean_rgb_change": [
+        1.78,
+        2.24,
+        2.0
+      ],
+      "boundary_neighbor_mean_abs_rgb": 1.85,
+      "nearby_untouched_neighbor_mean_abs_rgb": 2.24,
+      "boundary_p95": 5.0
+    },
+    {
+      "center": [
+        498,
+        213
+      ],
+      "mean_rgb_change": [
+        2.58,
+        1.87,
+        2.24
+      ],
+      "boundary_neighbor_mean_abs_rgb": 2.66,
+      "nearby_untouched_neighbor_mean_abs_rgb": 3.27,
+      "boundary_p95": 5.33
+    },
+    {
+      "center": [
+        591,
+        214
+      ],
+      "mean_rgb_change": [
+        2.59,
+        2.81,
+        2.81
+      ],
+      "boundary_neighbor_mean_abs_rgb": 2.55,
+      "nearby_untouched_neighbor_mean_abs_rgb": 2.74,
+      "boundary_p95": 6.22
+    },
+    {
+      "center": [
+        752,
+        209
+      ],
+      "mean_rgb_change": [
+        -0.6,
+        -0.74,
+        -0.65
+      ],
+      "boundary_neighbor_mean_abs_rgb": 2.38,
+      "nearby_untouched_neighbor_mean_abs_rgb": 3.2,
+      "boundary_p95": 5.5
+    },
+    {
+      "center": [
+        1277,
+        492
+      ],
+      "mean_rgb_change": [
+        2.92,
+        2.72,
+        2.91
+      ],
+      "boundary_neighbor_mean_abs_rgb": 3.4,
+      "nearby_untouched_neighbor_mean_abs_rgb": 4.32,
+      "boundary_p95": 8.3
+    },
+    {
+      "center": [
+        1620,
+        498
+      ],
+      "mean_rgb_change": [
+        1.88,
+        1.94,
+        1.68
+      ],
+      "boundary_neighbor_mean_abs_rgb": 2.4,
+      "nearby_untouched_neighbor_mean_abs_rgb": 2.72,
+      "boundary_p95": 6.3
+    }
+  ],
+  "interpretation_limit": "Pixel continuity statistics do not establish model causation. H3 received generated scene only, not sheet."
+}

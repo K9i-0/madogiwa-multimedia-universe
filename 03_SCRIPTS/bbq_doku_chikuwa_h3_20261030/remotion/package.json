@@ -1,0 +1,25 @@
+{
+  "name": "madogiwa-bbq-h3",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@remotion/bundler": "4.0.539",
+    "remotion": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "stills": "node render.mjs stills",
+    "render": "node render.mjs video",
+    "studio": "remotion studio src/index.ts"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-30",
+  "canonical_references": [
+    "03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+    "02_CHARACTERS/Yotan.jpg",
+    "03_SCRIPTS/00_TEMPLATES/characters/character_yametaro_basic_sheet.png",
+    "03_SCRIPTS/00_TEMPLATES/props/product_super_try.png"
+  ],
+  "poison_reference": "03_SCRIPTS/88_doku_chikuwa/oden_toxic_c_reference.png",
+  "outputs": {
+    "input_bbq_scene_v2_purple.png": "exec-e3ed736a-e398-4f04-9600-f94bd9934849.png",
+    "input_bbq_lawn_v2_purple.png": "exec-f1edb781-2068-4050-b295-a76aac986762.png",
+    "input_bbq_after_eating_v1.png": "exec-d1d77929-a1c7-4c6c-9d10-b6477c10a3d5.png"
+  },
+  "source_directory": "/Users/kotahayashi/.codex/generated_images/01a18a21-d547-77d2-8eb0-9ad8fcb255fd",
+  "user_correction": "毒ちくわは普通色ではなく紫。第88話の採用C案を確認して修正。",
+  "first_drafts": "input_bbq_scene_v1.png and input_bbq_lawn_v1.png are unadopted and local-only",
+  "image_audit": "canonical identities recognizable, purple food and empty after-eating hands visually checked; not a video quality certification"
+}

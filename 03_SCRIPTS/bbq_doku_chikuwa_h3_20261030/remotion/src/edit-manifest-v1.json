@@ -1,0 +1,157 @@
+{
+  "composition": {
+    "id": "BBQ",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 934
+  },
+  "segments": [
+    {
+      "id": "opening_a",
+      "file": "h3/ch01_clean_480p.mp4",
+      "source": "generated/retouched/ch01_clean_480p.mp4",
+      "startFrame": 0,
+      "durationInFrames": 140,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "opening_b",
+      "file": "h3/ch01_clean_480p.mp4",
+      "source": "generated/retouched/ch01_clean_480p.mp4",
+      "startFrame": 140,
+      "durationInFrames": 66,
+      "trimStartFrame": 213
+    },
+    {
+      "id": "toast",
+      "file": "h3/ch02_clean_480p.mp4",
+      "source": "generated/retouched/ch02_clean_480p.mp4",
+      "startFrame": 206,
+      "durationInFrames": 48,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "eat",
+      "file": "h3/ch03_480p.mp4",
+      "source": "generated/partials/ch03_480p.mp4",
+      "startFrame": 254,
+      "durationInFrames": 294,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "discovery_a",
+      "file": "h3/ch04_clean_480p.mp4",
+      "source": "generated/retouched/ch04_clean_480p.mp4",
+      "startFrame": 548,
+      "durationInFrames": 46,
+      "trimStartFrame": 0,
+      "crop": {
+        "x": 490,
+        "y": 180,
+        "width": 374,
+        "height": 210
+      }
+    },
+    {
+      "id": "discovery_b",
+      "file": "h3/ch04_clean_480p.mp4",
+      "source": "generated/retouched/ch04_clean_480p.mp4",
+      "startFrame": 594,
+      "durationInFrames": 164,
+      "trimStartFrame": 96
+    },
+    {
+      "id": "diagnosis_reaction",
+      "file": "h3/ch05_clean_480p.mp4",
+      "source": "generated/retouched/ch05_clean_480p.mp4",
+      "startFrame": 758,
+      "durationInFrames": 26,
+      "trimStartFrame": 28,
+      "crop": {
+        "x": 64,
+        "y": 6,
+        "width": 352,
+        "height": 198
+      }
+    },
+    {
+      "id": "diagnosis",
+      "file": "h3/ch05_clean_480p.mp4",
+      "source": "generated/retouched/ch05_clean_480p.mp4",
+      "startFrame": 784,
+      "durationInFrames": 47,
+      "trimStartFrame": 54
+    },
+    {
+      "id": "collapse",
+      "file": "h3/ch05_clean_480p.mp4",
+      "source": "generated/retouched/ch05_clean_480p.mp4",
+      "startFrame": 831,
+      "durationInFrames": 103,
+      "trimStartFrame": 137
+    }
+  ],
+  "music": {
+    "file": "bgm.mp3",
+    "gainDb": -22,
+    "stopFrame": 843
+  },
+  "captions": [
+    {
+      "startFrame": 0,
+      "endFrame": 78,
+      "speaker": "よーたん",
+      "text": "やっぱBBQと言ったら、ちくわだよなー"
+    },
+    {
+      "startFrame": 78,
+      "endFrame": 140,
+      "speaker": "そば屋",
+      "text": "この焼き目がいいんですよ！"
+    },
+    {
+      "startFrame": 140,
+      "endFrame": 202,
+      "speaker": "やめ太郎",
+      "text": "端っこのカリカリがうまいねんな"
+    },
+    {
+      "startFrame": 206,
+      "endFrame": 254,
+      "speaker": "全員",
+      "text": "乾杯！"
+    },
+    {
+      "startFrame": 254,
+      "endFrame": 326,
+      "speaker": "そば屋",
+      "text": "これ、いい感じに焼けました"
+    },
+    {
+      "startFrame": 326,
+      "endFrame": 374,
+      "speaker": "よーたん",
+      "text": "お、うまそう"
+    },
+    {
+      "startFrame": 558,
+      "endFrame": 686,
+      "speaker": "やめ太郎",
+      "text": "あ、これワイが買った毒ちくわや！"
+    },
+    {
+      "startFrame": 696,
+      "endFrame": 748,
+      "speaker": "よーたん",
+      "text": "なんで買ってるんだよ"
+    },
+    {
+      "startFrame": 761,
+      "endFrame": 816,
+      "speaker": "そば屋",
+      "text": "これ、毒ちくわです"
+    }
+  ],
+  "audit": "H3 dialogue retained; extra speech and repeated eating concealed by cuts/reaction closeups, local shirt-only dot repair. No whole-voice replacement. Masks remain worn; generated mask-mouth motion is still a limitation."
+}

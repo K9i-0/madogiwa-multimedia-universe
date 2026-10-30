@@ -1,0 +1,89 @@
+{
+  "h3_first_batch": {
+    "status": "complete",
+    "started_unix": 1793319836.2374904,
+    "stage": "generate_ch05",
+    "completed": [
+      {
+        "id": "ch01",
+        "seconds": 226.58686304092407
+      },
+      {
+        "id": "ch02",
+        "seconds": 90.80820918083191
+      },
+      {
+        "id": "ch03",
+        "seconds": 151.00465559959412
+      },
+      {
+        "id": "ch04",
+        "seconds": 135.97607326507568
+      },
+      {
+        "id": "ch05",
+        "seconds": 151.0272560119629
+      }
+    ],
+    "elapsed_seconds": 1233.8991227149963,
+    "sha256": {
+      "ch01_480p.mp4": "f9485b6dadcd63b58aa4a147e1ce96804fee8ac24e73c88a975887890bc2aa49",
+      "ch02_480p.mp4": "d94c8a048f00f8ddcf8d0b12d444dfc9479a08ac9a9c4ef5f84fb1db345b8806",
+      "ch03_480p.mp4": "f40fd5b48e24e317f9a331951c0c53a52ce2cb2a584b482f63ad06078aeef83f",
+      "ch04_480p.mp4": "a77818e2919acafd05fe3aadb67827a936062c3663fb0f455d26b62fd2c37a29",
+      "ch05_480p.mp4": "23f2a0d13c475bd13b4e54f2ef934b580d7e6405a8f304ccf74127b20ca10f20"
+    }
+  },
+  "observed_start_cu": 107.14,
+  "observed_end_cu": 104.19,
+  "observed_difference_cu": 2.95,
+  "cu_caveat": "Balance refresh is delayed; not a precise billed measurement.",
+  "first_session_stopped": true,
+  "generation": "480p Turbo, 864x480,24fps,8step,A100",
+  "first_edited_output": "final_remotion_bbq_v1.mp4",
+  "final_frames": 934,
+  "final_fps": 24,
+  "final_resolution": [
+    1280,
+    720
+  ],
+  "edits": [
+    "trim unwanted generated speech",
+    "crop reaction shots to conceal repeated eating",
+    "local shirt-dot repair",
+    "speaker-colored captions",
+    "Corncob BGM; stop at collapse",
+    "12-frame ending fade"
+  ],
+  "known_limits": [
+    "H3 mask mouth changes shape in speaking frames; mask remains worn",
+    "ASR assistance is not a human listening or voice-identity certification",
+    "Prompt-only shirt improvement experiment is in progress, distinct from local retouch"
+  ],
+  "image_source_purple": "88_doku_chikuwa/oden_toxic_c_reference.png",
+  "prompt_improvement_v2": {
+    "output": "final_remotion_bbq_v2.mp4",
+    "frames": 954,
+    "duration": 39.75,
+    "shirt_repair": false,
+    "experiment_report": "shirt_prompt_experiment_report.json",
+    "model": "H3 480p Turbo",
+    "export": "1280x720 24fps",
+    "gpu_session_terminated": true,
+    "remaining_limitations": [
+      "Mask mouth articulates despite rigid mask instructions",
+      "Reaction crops and cuts conceal repeated eating in generation",
+      "ASR assists timing, not listening or voice identity certification"
+    ],
+    "validation": {
+      "full_decode": "passed",
+      "video": "h264 1280x720 24fps 954frames",
+      "audio": "AAC 48000Hz",
+      "duration": 39.75,
+      "sha256": "90085e01ac0cae7ed533e59f264c72889421365c47504d36306f18c9363f8df1",
+      "manifest": "contiguous, source paths present, no retouched source",
+      "typescript": "passed",
+      "visual": "whole-cut 2fps contact sheets and selected native frames; final contact sheet reviewed"
+    }
+  }
+}

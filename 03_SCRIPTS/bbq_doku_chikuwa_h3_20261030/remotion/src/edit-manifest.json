@@ -1,0 +1,157 @@
+{
+  "composition": {
+    "id": "BBQ",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 954
+  },
+  "segments": [
+    {
+      "id": "opening_a",
+      "file": "h3/opening_cloth_v2.mp4",
+      "source": "generated/h3-shirt-prompt-test-v1/results/ch01_480p.mp4",
+      "startFrame": 0,
+      "durationInFrames": 141,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "opening_b",
+      "file": "h3/opening_cloth_v2.mp4",
+      "source": "generated/h3-shirt-prompt-test-v1/results/ch01_480p.mp4",
+      "startFrame": 141,
+      "durationInFrames": 59,
+      "trimStartFrame": 216
+    },
+    {
+      "id": "toast",
+      "file": "h3/prod02_cloth_v2.mp4",
+      "source": "generated/h3-cloth-production-v2/results/prod02_480p.mp4",
+      "startFrame": 200,
+      "durationInFrames": 48,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "eat",
+      "file": "h3/ch03_480p.mp4",
+      "source": "generated/partials/ch03_480p.mp4",
+      "startFrame": 248,
+      "durationInFrames": 294,
+      "trimStartFrame": 0
+    },
+    {
+      "id": "discovery_a",
+      "file": "h3/prod04_cloth_v2.mp4",
+      "source": "generated/h3-cloth-production-v2/results/prod04_480p.mp4",
+      "startFrame": 542,
+      "durationInFrames": 46,
+      "trimStartFrame": 0,
+      "crop": {
+        "x": 490,
+        "y": 180,
+        "width": 374,
+        "height": 210
+      }
+    },
+    {
+      "id": "discovery_b",
+      "file": "h3/prod04_cloth_v2.mp4",
+      "source": "generated/h3-cloth-production-v2/results/prod04_480p.mp4",
+      "startFrame": 588,
+      "durationInFrames": 164,
+      "trimStartFrame": 96
+    },
+    {
+      "id": "diagnosis_reaction",
+      "file": "h3/prod05_cloth_v2.mp4",
+      "source": "generated/h3-cloth-production-v2/results/prod05_480p.mp4",
+      "startFrame": 752,
+      "durationInFrames": 26,
+      "trimStartFrame": 28,
+      "crop": {
+        "x": 64,
+        "y": 6,
+        "width": 352,
+        "height": 198
+      }
+    },
+    {
+      "id": "diagnosis",
+      "file": "h3/prod05_cloth_v2.mp4",
+      "source": "generated/h3-cloth-production-v2/results/prod05_480p.mp4",
+      "startFrame": 778,
+      "durationInFrames": 73,
+      "trimStartFrame": 54
+    },
+    {
+      "id": "collapse",
+      "file": "h3/prod05_cloth_v2.mp4",
+      "source": "generated/h3-cloth-production-v2/results/prod05_480p.mp4",
+      "startFrame": 851,
+      "durationInFrames": 103,
+      "trimStartFrame": 137
+    }
+  ],
+  "music": {
+    "file": "bgm.mp3",
+    "gainDb": -22,
+    "stopFrame": 863
+  },
+  "captions": [
+    {
+      "startFrame": 0,
+      "endFrame": 78,
+      "speaker": "よーたん",
+      "text": "やっぱBBQと言ったら、ちくわだよなー"
+    },
+    {
+      "startFrame": 78,
+      "endFrame": 141,
+      "speaker": "そば屋",
+      "text": "この焼き目がいいんですよ！"
+    },
+    {
+      "startFrame": 141,
+      "endFrame": 200,
+      "speaker": "やめ太郎",
+      "text": "端っこのカリカリがうまいねんな"
+    },
+    {
+      "startFrame": 200,
+      "endFrame": 248,
+      "speaker": "全員",
+      "text": "乾杯！"
+    },
+    {
+      "startFrame": 248,
+      "endFrame": 320,
+      "speaker": "そば屋",
+      "text": "これ、いい感じに焼けました"
+    },
+    {
+      "startFrame": 320,
+      "endFrame": 368,
+      "speaker": "よーたん",
+      "text": "お、うまそう"
+    },
+    {
+      "startFrame": 552,
+      "endFrame": 690,
+      "speaker": "やめ太郎",
+      "text": "あ、これワイが買った毒ちくわや！"
+    },
+    {
+      "startFrame": 690,
+      "endFrame": 746,
+      "speaker": "よーたん",
+      "text": "なんで買ってるんだよ"
+    },
+    {
+      "startFrame": 755,
+      "endFrame": 844,
+      "speaker": "そば屋",
+      "text": "これ、毒ちくわです"
+    }
+  ],
+  "audit": "v2: plain opaque white cotton prompt used for opening, toast, discovery, collapse; no shirt retouching in any v2 video segment. Original clean eating shot retained. Extra utterances and repeated eating removed with cuts/reaction crops. Generated mask-mouth motion remains. ASR assists timing, not listening certification."
+}

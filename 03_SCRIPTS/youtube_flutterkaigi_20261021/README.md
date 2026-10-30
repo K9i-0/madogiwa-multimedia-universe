@@ -1,3 +1,9 @@
+## 最新：v13（2026-10-31）
+
+`final_remotion_flutterkaigi_v13.mp4` — 23分08.8秒、1280×720、30fps。
+本編の挨拶とテーマ紹介を00:54へ独立し、導入BGMを1秒でフェードアウト、180msの間を挟んで挨拶から本編BGMを立ち上げる。FragmentShaderとFlutter GPUの制御範囲を比較する掛け合い・図を追加。「ネイティブ」はiOS/AndroidとFlutterエンジンの描画基盤へ具体化。技術解説は02:45からで、概要欄にチャプターを追加。
+音声は変更行のみ生成し、映像素材はv12を継承。新しい資料画面は`VisualsV13.tsx`、根拠は`fact_check_v13.md`。
+
 ## v12 音声・BGM付き完成版（2026-10-30）
 
 `final_remotion_flutterkaigi_v12.mp4` — 21分43.1秒、1280×720、30fps。

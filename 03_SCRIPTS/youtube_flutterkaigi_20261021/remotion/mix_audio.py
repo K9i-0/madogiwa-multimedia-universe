@@ -29,9 +29,10 @@ missing=[f for f in ['intro.mp3','main.wav','unity.mp3'] if not (P/'public'/f).e
 if missing:print('BGM missing, voice-only draft:',', '.join(missing))
 if not missing:
  intro=decode(P/'public/intro.mp3','loudnorm=I=-34:TP=-3:LRA=11')
- bgm[:cut+cross]=loop_to(intro,cut+cross,sr);bgm[cut:cut+cross]*=np.linspace(1,0,cross)[:,None]
+ intro_end=cut-int(.18*sr)
+ bgm[:intro_end]=loop_to(intro,intro_end,sr);bgm[intro_end-sr:intro_end]*=np.linspace(1,0,sr)[:,None]
  main=loop_to(decode(P/'public/main.wav','loudnorm=I=-34:TP=-3:LRA=11'),ending+cross-cut,sr)
- main[:cross]*=np.linspace(0,1,cross)[:,None];main[-cross:]*=np.linspace(1,0,cross)[:,None]
+ main[:int(.35*sr)]*=np.linspace(0,1,int(.35*sr))[:,None];main[-cross:]*=np.linspace(1,0,cross)[:,None]
  bgm[cut:ending+cross]+=main
  ending_music=loop_to(decode(P/'public/unity.mp3','loudnorm=I=-38:TP=-3:LRA=11'),n-ending,sr)
  ending_music[:cross]*=np.linspace(0,1,cross)[:,None];ending_music[-4*sr:]*=np.linspace(1,0,4*sr)[:,None];bgm[ending:]+=ending_music
@@ -45,5 +46,5 @@ for c in m['clips']:
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-if not missing:(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
+if not missing:(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,mainTransition="intro fade out 1s, gap 180ms, main fade in 350ms at greeting",music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

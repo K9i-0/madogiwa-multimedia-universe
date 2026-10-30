@@ -64,11 +64,12 @@ for i,d in enumerate(rows):
  if d['text']=='そうよね！':gap=.68;reason='joke_to_topic'
  if d['text']=='さすが窓際族なのだ。':gap=.7;reason='joke_hold'
  if d['view'] in ['stack','deterministic','memory'] and d['who']=='metan':gap=.65;reason='read_diagram'
+ if nxt and nxt['scene']=='main' and d['scene']!='main':gap=1.1;reason='main_program_reset'
  pad=max(0,round((gap-.13)*30));d['gapAfterFrames']=pad;d['pacingReason']=reason
  cursor+=duration+pad
  print(d['id'],round(cursor/30,1),flush=True)
 comp={'width':1280,'height':720,'fps':30,'durationInFrames':cursor+75}
-m={'composition':comp,'mainStartFrame':chapter[1]['startFrame'],'endingStartFrame':chapter[-1]['startFrame'],'voicevoxVersion':'0.25.1','chapters':chapter,'dialogue':rows,'clips':[],'editVersion':12}
+m={'composition':comp,'mainStartFrame':chapter[1]['startFrame'],'endingStartFrame':chapter[-1]['startFrame'],'voicevoxVersion':'0.25.1','chapters':chapter,'dialogue':rows,'clips':[],'editVersion':13}
 (P/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
 (P/'edit_timing_v5.json').write_text(json.dumps({'method':'Original VOICEVOX moras; prefix readings identify caption/cue boundaries. Silence-only source trims. No speech time stretch.','decisions':decisions,'lines':[{k:d[k] for k in ['id','startFrame','durationInFrames','audioTrimStartSample','audioTrimEndSample','gapAfterFrames','pacingReason','cues']} for d in rows]},ensure_ascii=False,indent=2))
 print('DURATION',cursor/30+2.5)

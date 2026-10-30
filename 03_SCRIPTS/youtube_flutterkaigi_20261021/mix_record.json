@@ -1,17 +1,18 @@
 {
   "sampleRate": 48000,
-  "frames": 39092,
+  "frames": 41664,
   "voiceTargetLUFS": -18,
   "bgmTargetLUFS": -34,
   "clipTargetLUFS": -19,
-  "premasterPeak": 0.8329835534095764,
+  "premasterPeak": 0.8420328497886658,
   "introOriginalAudio": false,
   "introBgm": true,
   "introMusic": "昼下がり気分／KK",
   "endingMusic": "TheFatRat - Unity",
   "endingTargetLUFS": -38,
-  "endingStartFrame": 37950,
+  "endingStartFrame": 40522,
   "crossfadeSeconds": 2,
+  "mainTransition": "intro fade out 1s, gap 180ms, main fade in 350ms at greeting",
   "music": "ほのぼのワルツ【リコーダー】／エクシエ",
   "endingLiftAfterDialogue": false
 }

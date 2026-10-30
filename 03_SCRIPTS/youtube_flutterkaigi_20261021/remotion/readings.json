@@ -483,6 +483,31 @@
       "reading": "エスディーケー",
       "source": "dialogue.txt v11",
       "note": "v11で追加した技術語の読み"
+    },
+    {
+      "id": "v13.fragment-shader",
+      "surface": "FragmentShader",
+      "reading": "フラグメントシェーダー",
+      "scope": "tech",
+      "match": "ascii_token",
+      "source": "v13 shader comparison",
+      "note": "技術比較の読み"
+    },
+    {
+      "id": "v13.dart-ui",
+      "surface": "dart:ui",
+      "reading": "ダートユーアイ",
+      "scope": "tech",
+      "source": "v13 shader comparison",
+      "note": "技術比較の読み"
+    },
+    {
+      "id": "tech.quadrilateral",
+      "surface": "四角形",
+      "reading": "シカッケイ",
+      "scope": "tech",
+      "source": "FlutterKaigi v13 AudioQuery review",
+      "note": "図形の名称。シカクガタという誤読を補正。"
     }
   ]
 }

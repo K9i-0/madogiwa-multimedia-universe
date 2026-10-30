@@ -6,12 +6,17 @@ M|game_odatetsu|FlutterKaigi 2026のゆめみブースで展示した、Flutter�
 Z|game_odatetsu|Flutterでこれを作ったのだ？
 M|game_odatetsu|ええ。3Dを描くだけでなく、Flutterの開発ツールをAIにつないで、アプリを動かしながら作っているの。
 Z|game_odatetsu|どうやって作ったのか、ちょっと気になるのだ。
-M|title|なら今日は、『ゆめみ採用試験』を題材に、Flutterで3Dゲームを作る仕組みと、AIがアプリを動かして検証する開発方法を解説するわ。
+M|title|FlutterのいつものUIと、3Dの描画。それをAIで動かしながら作る方法まで、順番に見ていきましょう。
 Z|title|そういえば、会社紹介とかしないのだ？
 M|title|そんなものはないわ。
 M|title|もしかして、ずんだもん、会社紹介に興味があるの？
 Z|title|いや、興味ねーのだ。
 M|title|そうよね！
+# main
+M|v13_open|こんにちは、四国めたんよ。
+Z|v13_open|ずんだもんなのだ。
+M|v13_open|今日は、Flutter製ゲーム『ゆめみ採用試験』を題材に、3Dを描く仕組みと、AIで開発・検証する方法を解説するわ。
+Z|v13_open|まずはどんなゲームなのか、そのあとで技術の中身を見ていくのだ。
 M|repo_intro|ゲームのコードはGitHubで公開しているわ。概要欄から見られるので、参考にしてみてね。
 M|selection|それじゃあ、まずは遊び方から。
 # game
@@ -60,13 +65,20 @@ M|v9_gpu_door|そうではないわ。Impellerには、低レベルの描画基�
 Z|v9_triangle|低いレベルで組み立てるって、実際には何をするのだ？
 M|v9_triangle|三角形を一枚描く例なら、まず三つの頂点のデータを用意する。頂点シェーダーで座標を変換して、画面のどこに見えるかを決めるわ。
 M|v9_triangle|続いて、ラスタライズで三角形が画面のどこを覆うかを求め、フラグメントシェーダーで色などを計算するの。これが、頂点から画面の絵を作る基本の流れね。
-Z|v9_depth|3Dモデルは、その三角形がたくさん集まったものなのだな。でも、手前と奥はどうするのだ？
+Z|v13_shader|そういえば、Flutter GPUより前にも、シェーダーのファイルを読み込むFragmentShaderがあったのだ。今のフラグメントシェーダーとは、何が違うのだ？
+M|v13_shader|色を計算する処理という点は同じ。でも、dart:uiのFragmentShaderとFlutter GPUでは、アプリから指定できる範囲が違うの。
+M|v13_shader|FragmentShaderは、例えばCanvasで描く四角形の塗り方を、自分のシェーダーに変える仕組みよ。波模様や、画像をゆがめる表現などに使えるわ。
+Z|v13_shader|いつもの描画に、色の計算を差し込む感じなのだな。
+M|v13_shader|そう。そのAPIからは、自分の頂点シェーダーや深度テストを指定できない。一方、Flutter GPUでは、頂点データから、頂点とフラグメントの両方のシェーダー、深度の設定まで組み立てられるの。
+Z|v13_shader|FragmentShaderは、もう古いから置き換える、という話ではないのだ？
+M|v13_shader|ええ。塗り方や画像の効果を変えたいならFragmentShader。今回のように、モデルの頂点や奥行きを扱う描画を組み立てたいならFlutter GPU。目的で使い分けるのよ。
+Z|v9_depth|頂点の話につながったのだ。3Dモデルは、その三角形がたくさん集まったものなのだな。でも、手前と奥はどうするのだ？
 M|v9_depth|カメラから見た座標への変換と、奥行きを比べる深度テストを使うわ。手前の面が奥の面を隠す、といった処理も、描画の設定として扱えるの。
 Z|v9_scene_layer|ちくわを一本表示するために、毎回そこまで書くのは大変そうなのだ。
 M|v9_scene_layer|そこでFlutter Sceneよ。モデルの読み込み、カメラ、材質、ライト、アニメーションといった、3Dで使う仕組みをまとめているわ。
 M|v9_scene_layer|ゲーム側はモデルをどこに置くか、カメラをどこへ向けるかを指定する。Flutter Sceneが、それをFlutter GPUの描画処理へつなぐの。
 Z|v9_scene_layer|普段はWidgetに画面づくりを任せるように、3Dの描画はSceneに任せられるのだな。
-M|v9_scene_layer|ええ。ネイティブではFlutter Scene、Flutter GPU、Impellerの描画基盤という関係。Flutter GPUそのものが、ゲームのルールや操作まで作ってくれるわけではないわ。
+M|v9_scene_layer|ええ。このゲームをiOSやAndroidのアプリとして動かす場合は、Flutter Scene、Flutter GPU、Impellerの描画基盤という関係よ。Flutter GPUそのものが、ゲームのルールや操作まで作ってくれるわけではないわ。
 Z|stable|試すには、Flutterの開発版が必要なのだ？
 M|stable|Stable版で使えるわ。このゲームはFlutter 3.47.8。Flutter Sceneの現在の案内では、3.47以降が対象よ。
 M|stable|ImpellerはStable版の標準の描画エンジンだから、そのままでいい。追加で必要なのは、Info.plistやAndroidManifestで、Flutter GPUを有効にする設定よ。

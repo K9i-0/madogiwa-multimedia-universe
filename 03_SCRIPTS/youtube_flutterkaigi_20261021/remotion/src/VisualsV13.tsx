@@ -1,0 +1,16 @@
+import React from 'react';
+import {interpolate} from 'remotion';
+import manifest from './edit-manifest.json';
+const ink='#183b48',blue='#2888c4',green='#198b78',muted='#637782';
+export const v13Views=['v13_open','v13_shader'];
+export const VisualsV13=({view,d,frame}:any)=>{
+ const idx=manifest.dialogue.findIndex(r=>r.id===d.id);let first=idx;while(first>0&&manifest.dialogue[first-1].view===view)first--;
+ const local=frame-manifest.dialogue[first].startFrame,line=idx-first;
+ const enter=interpolate(local,[0,20],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+ if(view==='v13_open')return <div style={{width:1000,opacity:enter,transform:`translateY(${(1-enter)*14}px)`}}><div style={{color:green,fontSize:25,marginBottom:24}}>ゆめみ採用試験 技術解説</div><div style={{fontSize:57,fontWeight:750,lineHeight:1.35}}>Flutterで3Dゲームを作る</div><div style={{marginTop:38,display:'flex',justifyContent:'center',gap:35}}>{['3Dを描く仕組み','AIによる開発・検証'].map(t=><div key={t} style={{background:'#fff',borderBottom:`4px solid ${green}`,borderRadius:14,padding:'24px 32px',fontSize:30,color:ink}}>{t}</div>)}</div></div>;
+ const Box=({x,y,title,color=blue}:any)=><g><rect x={x} y={y+4} width={390} height={70} rx={14} fill="#193f4610"/><rect x={x} y={y} width={390} height={70} rx={14} fill="url(#v13paper)" stroke={color} strokeWidth={2}/><text x={x+195} y={y+44} fill={color} fontSize={25} fontWeight={700} textAnchor="middle">{title}</text></g>;
+ const arrow=(x:number,y:number)=><path d={`M${x} ${y} v24 m-6 -6 l6 6 6 -6`} stroke={muted} strokeWidth={2} fill="none"/>;
+ return <><div style={{fontSize:36,fontWeight:750,marginBottom:18,color:ink}}>違いは、指定できる範囲</div><svg width={1000} height={430} viewBox="0 0 1000 430"><defs><linearGradient id="v13paper" x2="0" y2="1"><stop stopColor="white"/><stop offset="1" stopColor="#f3f9fa"/></linearGradient><linearGradient id="v13effect"><stop stopColor="#62d4bd"/><stop offset="1" stopColor="#2888c4"/></linearGradient></defs><line x1={500} y1={15} x2={500} y2={405} stroke="#d5e0df"/>
+ <g opacity={enter}><text x={245} y={32} textAnchor="middle" fill={blue} fontSize={30} fontWeight={750}>FragmentShader</text><text x={245} y={62} textAnchor="middle" fill={muted} fontSize={21}>dart:ui</text><Box x={50} y={84} title="Canvasで描く範囲"/>{arrow(245,157)}<Box x={50} y={186} title="色の計算を差し替える"/>{arrow(245,259)}<rect x={150} y={294} width={190} height={60} rx={9} fill="url(#v13effect)"/>{[0,1,2,3].map(i=><path key={i} d={`M155 ${305+i*12} Q200 ${285+i*12+Math.sin(local/20)*8} 245 ${305+i*12} T335 ${305+i*12}`} stroke="#e4fff8" strokeWidth={2} fill="none" opacity={.75}/>)}<text x={245} y={394} textAnchor="middle" fill={ink} fontSize={24}>塗り方・画像の効果</text></g>
+ <g opacity={line>=4?1:.3}><text x={755} y={32} textAnchor="middle" fill={green} fontSize={30} fontWeight={750}>Flutter GPU</text><text x={755} y={62} textAnchor="middle" fill={muted} fontSize={21}>flutter_gpu</text><Box x={560} y={84} title="頂点データ ＋ 頂点シェーダー" color={green}/>{arrow(755,157)}<Box x={560} y={186} title="フラグメントシェーダー" color={green}/>{arrow(755,259)}<Box x={560} y={288} title="深度テスト・描画先の設定" color={green}/><text x={755} y={394} textAnchor="middle" fill={ink} fontSize={24}>描画処理を組み立てる</text></g></svg></>;
+};

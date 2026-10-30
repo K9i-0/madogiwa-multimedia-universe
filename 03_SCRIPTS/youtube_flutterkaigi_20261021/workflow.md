@@ -38,3 +38,6 @@ Marionetteの一般的なdebug/profile対応と、プロジェクトが実際に
 
 ## v14の再生成・比較図
 prepare_voice.py → prepare_edit_v5.py → write_docs_v11.py → render.py。採用版はVisualsV14.tsx。コードサンプルはSDK APIと採用flutter_sceneの版に照合し、初期化省略を明示する。GitHubの貢献は提案者、PR作成者、実装コミット作者を区別し、capture_github_v14.cjsで実ページから画面を取得する。ボットの合格率と来場者の目標を同じ母集団として比較しない。
+
+## v15補足
+開発期間は業務の合間の経過期間、実働人日とは分ける。Marionette貢献の由来はZenn記事とPRの時系列で照合。記事はVisualsV14.tsxのv15_articleで書誌カード表示し、公開日・著者・タイトルを原文へ照合する。

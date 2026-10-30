@@ -1,0 +1,59 @@
+[
+  {
+    "candidate": "a",
+    "overlaySource": "overlay_a.png",
+    "gameSource": "../game_capture.png",
+    "gamePosition": [
+      -90,
+      -150
+    ],
+    "gameResized": [
+      1460,
+      671
+    ],
+    "output": [
+      1280,
+      720
+    ],
+    "imagegen": "entire foreground: hosts, typography, ornaments",
+    "background": "original gameplay pixels; navy backing below frame"
+  },
+  {
+    "candidate": "b",
+    "overlaySource": "overlay_b.png",
+    "gameSource": "../game_capture.png",
+    "gamePosition": [
+      -90,
+      -150
+    ],
+    "gameResized": [
+      1460,
+      671
+    ],
+    "output": [
+      1280,
+      720
+    ],
+    "imagegen": "entire foreground: hosts, typography, ornaments",
+    "background": "original gameplay pixels; navy backing below frame"
+  },
+  {
+    "candidate": "c",
+    "overlaySource": "overlay_c.png",
+    "gameSource": "../game_capture.png",
+    "gamePosition": [
+      -90,
+      -150
+    ],
+    "gameResized": [
+      1460,
+      671
+    ],
+    "output": [
+      1280,
+      720
+    ],
+    "imagegen": "entire foreground: hosts, typography, ornaments",
+    "background": "original gameplay pixels; navy backing below frame"
+  }
+]

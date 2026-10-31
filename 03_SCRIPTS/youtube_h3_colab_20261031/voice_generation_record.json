@@ -1,0 +1,4610 @@
+[
+  {
+    "type": "dialogue",
+    "id": "000",
+    "who": "zunda",
+    "view": "bbq",
+    "text": "また、そば屋がビールを飲んでいるのだ。",
+    "scene": "intro",
+    "speech": "また、ソバヤがビールを飲んでいるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 81,
+    "audio": "voice_097e3b10d048609f.wav",
+    "speaker": 3,
+    "kana": "マタ'、ソ'バヤガ/ビ'イルオ/ノ'ンデ/イル'/ノダ'",
+    "queryFile": "voice_queries/query_097e3b10d048609f.json",
+    "audioSha256": "42ec97499c7aa2586393fadaee014f73b42c2642ccdfd6706baab61031076fa2",
+    "startFrame": 45
+  },
+  {
+    "type": "dialogue",
+    "id": "001",
+    "who": "metan",
+    "view": "bbq",
+    "text": "今回はバーベキューよ。こういう窓際族の動画を、最近はMiniMax H3でも作っているの。",
+    "scene": "intro",
+    "speech": "今回はバーベキューよ。こういう窓際族の動画を、最近はミニマックス エイチスリーでも作っているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.0",
+          "surface": "MiniMax H3",
+          "reading": "ミニマックス エイチスリー",
+          "scope": "common",
+          "start": 26,
+          "end": 36
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 200,
+    "audio": "voice_fcaa64b08550b247.wav",
+    "speaker": 2,
+    "kana": "コ'ンカイワ/バアベ'キュウヨ、コオユウ'/マドギワ'ゾクノ/ドオガオ'、サイキンワ'/ミニマ'ッ_クス、エイチスリ'イデモ/_ツク'ッテ/イル'ノ",
+    "queryFile": "voice_queries/query_fcaa64b08550b247.json",
+    "audioSha256": "f18fadc88ce156a1e30a7031e5b0e352364355aa016193c9991713a255ab14de",
+    "startFrame": 144
+  },
+  {
+    "type": "dialogue",
+    "id": "002",
+    "who": "zunda",
+    "view": "bbq",
+    "text": "AI動画って、試しているうちにお金が減っていくのだ。財布が先に窓際なのだ。",
+    "scene": "intro",
+    "speech": "エーアイ動画って、試しているうちにお金が減っていくのだ。財布が先に窓際なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 184,
+    "audio": "voice_6e2910f920ac4a6f.wav",
+    "speaker": 3,
+    "kana": "エエアイド'オガッテ、タメシ'テ/イル'/ウチニ'/オカネガ'/ヘッテ'/イク'/ノダ'、サイフガ'/サキニ'/マドギワナ'/ノダ'",
+    "queryFile": "voice_queries/query_6e2910f920ac4a6f.json",
+    "audioSha256": "087ce02078f4743a2c439614c9c65ae5a5807b05769f66ce22e391aee1c9cd5d",
+    "startFrame": 356
+  },
+  {
+    "type": "dialogue",
+    "id": "003",
+    "who": "metan",
+    "view": "hook_cost",
+    "text": "そこで今回は、Google ColabとH3を組み合わせる方法。私たちの測定では、30秒の生成に使った計算資源が、買い足し価格に換算して約17円だったわ。",
+    "scene": "intro",
+    "speech": "そこで今回は、グーグル コラボとエイチスリーを組み合わせる方法。私たちの測定では、サンジュウビョウの生成に使った計算資源が、買い足し価格に換算して約17円だったわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.7",
+          "surface": "Google Colab",
+          "reading": "グーグル コラボ",
+          "scope": "common",
+          "start": 7,
+          "end": 19
+        },
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 41,
+          "end": 44
+        }
+      ],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 29,
+          "end": 30,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "durationInFrames": 355,
+    "audio": "voice_01822203de874257.wav",
+    "speaker": 2,
+    "kana": "ソコデ'/コ'ンカイワ、グウグル'、コ'ラボト/エイチスリ'イオ/クミアワセ'ル/ホオホオ'、ワタシ'タチノ/ソ_クテエデワ'、サンジュウビョウノ'/セエセエニ'/_ツカッタ'/ケエサンシ'ゲンガ、カイタ'_シ/カカクニ'/カンサン'/_シテ'/ヤ'クジュウ/ナナ'エンダッタワ",
+    "queryFile": "voice_queries/query_01822203de874257.json",
+    "audioSha256": "c9379f0422baa0536e4a0d6c87c1061aa7e12c2bcfb677c696c23110ed55164c",
+    "startFrame": 558
+  },
+  {
+    "type": "dialogue",
+    "id": "004",
+    "who": "zunda",
+    "view": "hook_cost",
+    "text": "17円！？ ちょっと失敗しても、もう一回やれそうなのだ。",
+    "scene": "intro",
+    "speech": "17円！？ ちょっと失敗しても、もう一回やれそうなのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 136,
+    "audio": "voice_a807881a99b54636.wav",
+    "speaker": 3,
+    "kana": "ジュウ'/ナナ'エン？、チョ'ット/シッパイ'/_シテモ'、モ'オ/イッ'カイ/ヤレ'ソオナ/ノダ'",
+    "queryFile": "voice_queries/query_a807881a99b54636.json",
+    "audioSha256": "b1b80cc6637b3e04af292b8d6b7ee41659cc82c33fcd1ccfc2320c2bb0f6ddd6",
+    "startFrame": 925
+  },
+  {
+    "type": "dialogue",
+    "id": "005",
+    "who": "metan",
+    "view": "title",
+    "text": "ただし、いつでも誰でも17円とは限らないわ。どう安くするのか、どんな動画が得意か、注意点まで紹介するわね。",
+    "scene": "intro",
+    "speech": "ただし、いつでも誰でも17円とは限らないわ。どう安くするのか、どんな動画が得意か、注意点まで紹介するわね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 240,
+    "audio": "voice_b3e79f83c6975e8a.wav",
+    "speaker": 2,
+    "kana": "タ'ダシ、イ'ツデモ/ダ'レデモ/ジュウ'/ナナ'エントワ/カギラ'ナイワ、ド'オ/ヤス'_クスル/ノカ'、ド'ンナ/ドオガガ'/トク'イカ、チュウイ'テンマデ/ショオカイ'/スル'ワネ",
+    "queryFile": "voice_queries/query_b3e79f83c6975e8a.json",
+    "audioSha256": "a437721156b3267eabbf6f8874528f3937c1fc2d8bcae2312f2ea044e962f157",
+    "startFrame": 1079
+  },
+  {
+    "type": "dialogue",
+    "id": "006",
+    "who": "zunda",
+    "view": "title",
+    "text": "前回のWan 3.0解説に続く、動画生成の第二弾なのだ！",
+    "scene": "intro",
+    "speech": "前回のワン サンテンゼロ解説に続く、動画生成の第二弾なのだ！",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.5",
+          "surface": "Wan 3.0",
+          "reading": "ワン サンテンゼロ",
+          "scope": "common",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 166,
+    "audio": "voice_81d4bfbadadc1cce.wav",
+    "speaker": 3,
+    "kana": "ゼ'ンカイノ/ワ'ン、サンテンゼロカ'イセツニ/ツズク'、ドオガセ'エセエノ/ダ'イ/ニ'ダンナ/ノダ'",
+    "queryFile": "voice_queries/query_81d4bfbadadc1cce.json",
+    "audioSha256": "531737d2156d5534fef23d477311a9b8b7c2d2f6501fa0dd52bbdee13b560c61",
+    "startFrame": 1331
+  },
+  {
+    "type": "dialogue",
+    "id": "007",
+    "who": "metan",
+    "view": "h3",
+    "text": "H3は、MiniMaxの動画生成モデルよ。文章や画像、参照音声などから、音のある動画を作れるの。",
+    "scene": "local",
+    "speech": "エイチスリーは、MiniMaxの動画生成モデルよ。文章や画像、参照音声などから、音のある動画を作れるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 233,
+    "audio": "voice_2a8e4cb124b14fcf.wav",
+    "speaker": 2,
+    "kana": "エイチスリ'イワ、ミ'ニマックスノ/ドオガセエセエモ'デルヨ、ブ'ンショオヤ/ガゾオ'、サンショオオ'ンセエナドカラ、オト'ノ/ア'ル/ドオガオ'/_ツクレ'ルノ",
+    "queryFile": "voice_queries/query_2a8e4cb124b14fcf.json",
+    "audioSha256": "6d2d61a9005ead3f18abdd6510cd5db9f54cec42219b647c9478c057f5fc6d59",
+    "startFrame": 1515
+  },
+  {
+    "type": "dialogue",
+    "id": "008",
+    "who": "zunda",
+    "view": "h3",
+    "text": "サイトに文章を入れて、作ってもらうやつなのだ？",
+    "scene": "local",
+    "speech": "サイトに文章を入れて、作ってもらうやつなのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 109,
+    "audio": "voice_25d2222d5ba3db3e.wav",
+    "speaker": 3,
+    "kana": "サイトニ'/ブ'ンショオオ/イレテ'、_ツク'ッテ/モラウ'/ヤ'ツナ/ノダ'？",
+    "queryFile": "voice_queries/query_25d2222d5ba3db3e.json",
+    "audioSha256": "3286acaa5784c4a87dae938025953e9fcd399af49f7813689c6a678e21b927ae",
+    "startFrame": 1760
+  },
+  {
+    "type": "dialogue",
+    "id": "009",
+    "who": "metan",
+    "view": "local",
+    "text": "そういうサービスもあるけれど、H3には公開されているモデルの重みがあるわ。必要なファイルと実行環境を用意すれば、自分のPCでも動かせるの。",
+    "scene": "local",
+    "speech": "そういうサービスもあるけれど、エイチスリーには公開されているモデルの重みがあるわ。必要なファイルと実行環境を用意すれば、自分のPCでも動かせるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "review": [
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 46,
+          "end": 47,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す。2026-10-28 chikuwa_mystery v13：工場の規模で行って＝おこなって。移動の行ってとは区別し、その発話だけspeech_overrideで指定"
+        },
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 57,
+          "end": 58,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 295,
+    "audio": "voice_932d1ed9412d6f04.wav",
+    "speaker": 2,
+    "kana": "ソオユウ'/サ'アビスモ/ア'ルケレド、エイチスリ'イニワ/コオカイ'/サレテ'/イル'/モ'デルノ/オモミガ'/ア'ルワ、_ヒツヨオナ'/ファ'イルト/ジッコオカ'ンキョオオ/ヨ'オイ/スレ'バ、ジブンノ'/ピイシ'イデモ/ウゴカセ'ルノ",
+    "queryFile": "voice_queries/query_932d1ed9412d6f04.json",
+    "audioSha256": "c9cad4345195e289ff8ff68203a0d9a769aa58fd339841682990ba42df721568",
+    "startFrame": 1887
+  },
+  {
+    "type": "dialogue",
+    "id": "010",
+    "who": "zunda",
+    "view": "local",
+    "text": "重みって、重たいファイルなのだ？",
+    "scene": "local",
+    "speech": "重みって、重たいファイルなのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 76,
+    "audio": "voice_ef6fca2d9d4c56e4.wav",
+    "speaker": 3,
+    "kana": "オモミッテ'、オモタイ'/ファ'イルナ/ノダ'？",
+    "queryFile": "voice_queries/query_ef6fca2d9d4c56e4.json",
+    "audioSha256": "d288b23de010fe51d8dc5ca6166f707da74fed64330c28935d8c3d2150bfb4a1",
+    "startFrame": 2194
+  },
+  {
+    "type": "dialogue",
+    "id": "011",
+    "who": "metan",
+    "view": "weights",
+    "text": "学習した結果が入ったデータのことよ。そして、ファイルの容量も結構大きいわ。",
+    "scene": "local",
+    "speech": "学習した結果が入ったデータのことよ。そして、ファイルの容量も結構大きいわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 156,
+    "audio": "voice_78491d4935d2d19e.wav",
+    "speaker": 2,
+    "kana": "ガ_クシュウ'/_シタ'/ケッカガ'/ハ'イッタ/デ'エタノ/コト'ヨ、ソ_シテ'、ファ'イルノ/ヨオリョ'オモ/ケ'ッコオ/オオキ'イワ",
+    "queryFile": "voice_queries/query_78491d4935d2d19e.json",
+    "audioSha256": "56f87e2d10786a86b1483d67f05485b79e9d21c3b995ac4182ec43d02c4263d8",
+    "startFrame": 2288
+  },
+  {
+    "type": "dialogue",
+    "id": "012",
+    "who": "zunda",
+    "view": "weights",
+    "text": "両方の意味で重かったのだ。",
+    "scene": "local",
+    "speech": "両方の意味で重かったのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 1,
+          "end": 2,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "durationInFrames": 61,
+    "audio": "voice_57dd260b000a7ce5.wav",
+    "speaker": 3,
+    "kana": "リョオホ'オノ/イ'ミデ/オモ'カッタ/ノダ'",
+    "queryFile": "voice_queries/query_57dd260b000a7ce5.json",
+    "audioSha256": "849ba28d057f2d4485ad5b465deb57603f40414a631b26a84bfeff9ea7b8d3d1",
+    "startFrame": 2456
+  },
+  {
+    "type": "dialogue",
+    "id": "013",
+    "who": "metan",
+    "view": "huggingface",
+    "text": "そのモデルを探したり、ダウンロードしたりする場所が、Hugging Face。AIモデルやデータセット、デモなどが集まるプラットフォームよ。",
+    "scene": "local",
+    "speech": "そのモデルを探したり、ダウンロードしたりする場所が、ハギングフェイス。エーアイモデルやデータセット、デモなどが集まるプラットフォームよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.12",
+          "surface": "Hugging Face",
+          "reading": "ハギングフェイス",
+          "scope": "common",
+          "start": 26,
+          "end": 38
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 39,
+          "end": 41
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 253,
+    "audio": "voice_fb8d6e412945b7a7.wav",
+    "speaker": 2,
+    "kana": "ソノ'/モ'デルオ/サガ_シタ'リ、ダウンロ'オド/_シタ'リ/スル'/バショガ'、ハギングフェ'イス、エエアイモ'デルヤ/デエタセッ'ト、デ'モナドガ/アツマ'ル/プラットフォ'オムヨ",
+    "queryFile": "voice_queries/query_fb8d6e412945b7a7.json",
+    "audioSha256": "3f5f3202d0872ad54f5dade58419a570f8f8a543604db087207053fa38e53365",
+    "startFrame": 2535
+  },
+  {
+    "type": "dialogue",
+    "id": "014",
+    "who": "zunda",
+    "view": "huggingface",
+    "text": "AIの道具を探す場所なのだ。",
+    "scene": "local",
+    "speech": "エーアイの道具を探す場所なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 71,
+    "audio": "voice_cb970fa18059522f.wav",
+    "speaker": 3,
+    "kana": "エエア'イノ/ドオグ'オ/サガス'/バショナ'/ノダ'",
+    "queryFile": "voice_queries/query_cb970fa18059522f.json",
+    "audioSha256": "da6c3845f98375743f7c19b9b2b0fff3ce0167358a0d789f314d11c97c426493",
+    "startFrame": 2800
+  },
+  {
+    "type": "dialogue",
+    "id": "015",
+    "who": "metan",
+    "view": "local_limit",
+    "text": "ただし、ダウンロードできることと、自分のPCで快適に動くことは別。GPUの対応やメモリ、待ち時間も関係するわ。",
+    "scene": "local",
+    "speech": "ただし、ダウンロードできることと、自分のPCで快適に動くことは別。ジーピーユーの対応やメモリ、待ち時間も関係するわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 33,
+          "end": 36
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 18,
+          "end": 19,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        },
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 47,
+          "end": 48,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 254,
+    "audio": "voice_d426d98f844fec5b.wav",
+    "speaker": 2,
+    "kana": "タ'ダシ、ダウンロ'オド/デキ'ル/コト'ト、ジブンノ'/ピイシ'イデ/カイテキニ'/ウゴ'_ク/コト'ワ/ベツ'、ジイ'/ピ'イ/ユ'ウノ/タイオオヤ'/メモリ'、マチジ'カンモ/カンケエ'/スル'ワ",
+    "queryFile": "voice_queries/query_d426d98f844fec5b.json",
+    "audioSha256": "8a4babd27c1e371e8f631b2355ca9e06427610d4870959607a834ee28710e626",
+    "startFrame": 2889
+  },
+  {
+    "type": "dialogue",
+    "id": "016",
+    "who": "zunda",
+    "view": "no_pc",
+    "text": "でもH3を満足に動かせるPCなんて持ってないのだ〜。",
+    "scene": "local",
+    "speech": "でもエイチスリーを満足に動かせるPCなんて持ってないのだ〜。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 124,
+    "audio": "voice_fa28453e78702892.wav",
+    "speaker": 3,
+    "kana": "デ'モ/エイチスリ'イオ/マ'ンゾクニ/ウゴカセ'ル/ピイシ'イナンテ/モッテ'ナイ/ノダ'",
+    "queryFile": "voice_queries/query_fa28453e78702892.json",
+    "audioSha256": "08e612c012d40d7628e5f19669c6cf20b518481ca72eb7f0c75521eb50e75cd1",
+    "startFrame": 3155
+  },
+  {
+    "type": "dialogue",
+    "id": "017",
+    "who": "metan",
+    "view": "colab_bridge",
+    "text": "そこで、Google Colabの出番よ。",
+    "scene": "local",
+    "speech": "そこで、グーグル コラボの出番よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.7",
+          "surface": "Google Colab",
+          "reading": "グーグル コラボ",
+          "scope": "common",
+          "start": 4,
+          "end": 16
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 77,
+    "audio": "voice_abb5e7ec97511975.wav",
+    "speaker": 2,
+    "kana": "ソコデ'、グウグル'、コ'ラボノ/デバ'ンヨ",
+    "queryFile": "voice_queries/query_abb5e7ec97511975.json",
+    "audioSha256": "b409ad20227110b933848dc209752bf7e131b5782dea0177ba19d27271a17e0f",
+    "startFrame": 3297
+  },
+  {
+    "type": "dialogue",
+    "id": "018",
+    "who": "metan",
+    "view": "colab",
+    "text": "Colabは、ブラウザからPythonのプログラムを実行できるサービス。計算するコンピューターは、Google側にあるの。",
+    "scene": "colab",
+    "speech": "コラボは、ブラウザからパイソンのプログラムを実行できるサービス。計算するコンピューターは、Google側にあるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "id": "h3.19",
+          "surface": "Python",
+          "reading": "パイソン",
+          "scope": "common",
+          "start": 13,
+          "end": 19
+        }
+      ],
+      "review": [
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 27,
+          "end": 28,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す。2026-10-28 chikuwa_mystery v13：工場の規模で行って＝おこなって。移動の行ってとは区別し、その発話だけspeech_overrideで指定"
+        }
+      ]
+    },
+    "durationInFrames": 211,
+    "audio": "voice_99f3bd28fc4f3910.wav",
+    "speaker": 2,
+    "kana": "コ'ラボワ、ブラウザカラ'/パ'イソンノ/プログ'ラムオ/ジッコオ'/デキ'ル/サ'アビス、ケエサン'/スル'/コンピュ'ウタアワ、グウグルガワニ'/ア'ルノ",
+    "queryFile": "voice_queries/query_99f3bd28fc4f3910.json",
+    "audioSha256": "b7f20b1e057bf90873e7168a8da928d2c13aee8ec33ae232808dd31346036964",
+    "startFrame": 3386
+  },
+  {
+    "type": "dialogue",
+    "id": "019",
+    "who": "zunda",
+    "view": "colab",
+    "text": "ぼくのPCは、命令を送る係なのだ？",
+    "scene": "colab",
+    "speech": "ぼくのPCは、命令を送る係なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 104,
+    "audio": "voice_4f51202c8b8c253b.wav",
+    "speaker": 3,
+    "kana": "ボ'クノ/ピイシ'イワ、メエレエオ'/オクル'/カ'カリナ/ノダ'？",
+    "queryFile": "voice_queries/query_4f51202c8b8c253b.json",
+    "audioSha256": "9b7386f019fc7d9aa77bfb723c2f7b9c1a32073d9c9e61991497a18d53609c48",
+    "startFrame": 3609
+  },
+  {
+    "type": "dialogue",
+    "id": "020",
+    "who": "metan",
+    "view": "colab_flow",
+    "text": "そうね。手元でプロンプトや参照素材を用意して、ColabのGPUでH3を動かし、完成した動画を持ち帰るイメージよ。",
+    "scene": "colab",
+    "speech": "そうね。手元でプロンプトや参照素材を用意して、コラボのジーピーユーでエイチスリーを動かし、完成した動画を持ち帰るイメージよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 23,
+          "end": 28
+        },
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 29,
+          "end": 32
+        },
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 33,
+          "end": 35
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 253,
+    "audio": "voice_5b0d429173d2a95c.wav",
+    "speaker": 2,
+    "kana": "ソオネ'、テモト'デ/プロ'ン_プトヤ/サンショオソ'ザイオ/ヨ'オイ/_シテ'、コ'ラボノ/ジ'イピイユウデ/エイチスリ'イオ/ウゴカ'シ、カンセエ'/_シタ'/ドオガオ'/モ_チカ'エル/イメ'エジヨ",
+    "queryFile": "voice_queries/query_5b0d429173d2a95c.json",
+    "audioSha256": "966b48207d7348ff54896a23d4db508cf99224a8bda5c9a384636cb13be3d32c",
+    "startFrame": 3731
+  },
+  {
+    "type": "dialogue",
+    "id": "021",
+    "who": "zunda",
+    "view": "colab_flow",
+    "text": "高いPCを買う代わりに、使うときだけ計算してもらうのだ。",
+    "scene": "colab",
+    "speech": "高いPCを買う代わりに、使うときだけ計算してもらうのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 134,
+    "audio": "voice_f62aad1f878e94ff.wav",
+    "speaker": 3,
+    "kana": "タカ'イ/ピイシ'イオ/カウ'/カワリニ'、_ツカウ'/トキダケ'/ケエサン'/_シテ'/モラウ'/ノダ'",
+    "queryFile": "voice_queries/query_f62aad1f878e94ff.json",
+    "audioSha256": "7200238d46866945879da94adc24ee885c4935a7c3b9db54d23fcd0bb2af19a0",
+    "startFrame": 3996
+  },
+  {
+    "type": "dialogue",
+    "id": "022",
+    "who": "metan",
+    "view": "cu",
+    "text": "利用量は、コンピューティングユニット、略してCUで管理されるわ。GPUの種類などによって、同じ時間でも消費量が変わるの。",
+    "scene": "colab",
+    "speech": "利用量は、コンピューティングユニット、略してシーユーで管理されるわ。ジーピーユーの種類などによって、同じ時間でも消費量が変わるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.17",
+          "surface": "CU",
+          "reading": "シーユー",
+          "scope": "common",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 32,
+          "end": 35
+        }
+      ],
+      "review": [
+        {
+          "id": "context.species-seed",
+          "surface": "種",
+          "start": 36,
+          "end": 37,
+          "readings": [
+            "シュ：生物分類の種、別の種",
+            "タネ：植物の種、話の種"
+          ],
+          "note": "生物分類か種子かを確認。一律変換しない。"
+        },
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 48,
+          "end": 49,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 262,
+    "audio": "voice_efc2963e99b52ded.wav",
+    "speaker": 2,
+    "kana": "リヨオ'リョウワ、コンピュウティングユ'ニット、リャク'_シテ/シ'イユウデ/カ'ンリ/サレル'ワ、ジイ'/ピ'イ/ユ'ウノ/シュ'ルイナドニヨッテ、オナジ'/ジカンデ'モ/ショオヒ'リョウガ/カワル'ノ",
+    "queryFile": "voice_queries/query_efc2963e99b52ded.json",
+    "audioSha256": "4ea0c66b054ed65aa0f5d9a265492f3a88e0535bf844c73fb8fcb1ec4ee6052f",
+    "startFrame": 4148
+  },
+  {
+    "type": "dialogue",
+    "id": "023",
+    "who": "zunda",
+    "view": "cu",
+    "text": "50CUなら50時間、というわけではないのだ。",
+    "scene": "colab",
+    "speech": "ゴジュウ シーユーなら50時間、というわけではないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.37",
+          "surface": "50CU",
+          "reading": "ゴジュウ シーユー",
+          "scope": "common",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 9,
+          "end": 10,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 125,
+    "audio": "voice_f02d8dd672853fdf.wav",
+    "speaker": 3,
+    "kana": "ゴジュ'ウ、シ'イユウナラ/ゴジュウジ'カン、ト'/イウ'/ワ'ケデワ/ナ'イ/ノダ'",
+    "queryFile": "voice_queries/query_f02d8dd672853fdf.json",
+    "audioSha256": "ba408c0d5f1020d495fa4c54d8885ad1e2d4da6fbe990f52d75fe8abc040bdc2",
+    "startFrame": 4422
+  },
+  {
+    "type": "dialogue",
+    "id": "024",
+    "who": "metan",
+    "view": "ai_plans",
+    "text": "そして、対象のGoogle AIプランを契約していると、Colabの利用枠も付くわ。現在はPlusが月50、Proが200CU。",
+    "scene": "colab",
+    "speech": "そして、対象のグーグル エーアイプランを契約していると、コラボの利用枠も付くわ。現在はプラスが月50、プロが200シーユー。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.15",
+          "surface": "Google AI",
+          "reading": "グーグル エーアイ",
+          "scope": "common",
+          "start": 7,
+          "end": 16
+        },
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 28,
+          "end": 33
+        },
+        {
+          "id": "h3.23",
+          "surface": "Plus",
+          "reading": "プラス",
+          "scope": "common",
+          "start": 45,
+          "end": 49
+        },
+        {
+          "id": "h3.24",
+          "surface": "Pro",
+          "reading": "プロ",
+          "scope": "common",
+          "start": 54,
+          "end": 57
+        },
+        {
+          "id": "h3.17",
+          "surface": "CU",
+          "reading": "シーユー",
+          "scope": "common",
+          "start": 61,
+          "end": 63
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 276,
+    "audio": "voice_9a8dca53959e06b4.wav",
+    "speaker": 2,
+    "kana": "ソ_シテ'、タイショオノ'/グウグル'、エエアイプ'ランオ/ケエヤク'/_シテ'/イルト'、コ'ラボノ/リヨオ'ワクモ/ツ'クワ、ゲ'ンザイワ/プラスガ'/_ツキ'/ゴ'ジュウ、プ'ロガ/ニヒャク'シイユウ",
+    "queryFile": "voice_queries/query_9a8dca53959e06b4.json",
+    "audioSha256": "a789ae7418c7535cc082878929a8492d637102cc02e5a52c06237bf49616fc45",
+    "startFrame": 4565
+  },
+  {
+    "type": "dialogue",
+    "id": "025",
+    "who": "metan",
+    "view": "ai_plans",
+    "text": "Ultraは5倍プランが月1000、20倍プランが2000CU。自分の契約で何が使えるか、確認してみてね。",
+    "scene": "colab",
+    "speech": "ウルトラは5倍プランが月1000、20倍プランが2000シーユー。自分の契約で何が使えるか、確認してみてね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.25",
+          "surface": "Ultra",
+          "reading": "ウルトラ",
+          "scope": "common",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "id": "h3.17",
+          "surface": "CU",
+          "reading": "シーユー",
+          "scope": "common",
+          "start": 29,
+          "end": 31
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 33,
+          "end": 34,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 224,
+    "audio": "voice_2f7c9087ecf36242.wav",
+    "speaker": 2,
+    "kana": "ウルトラワ'/ゴ'バイ/プ'ランガ/_ツキ'セン、ニジュウ'バイ/プ'ランガ/ニセン'シイユウ、ジブンノ'/ケエヤクデ'/ナ'ニガ/_ツカエ'ルカ、カクニン'/_シテ'/ミ'テネ",
+    "queryFile": "voice_queries/query_2f7c9087ecf36242.json",
+    "audioSha256": "73c6e3491d91e021fbbc59e49d4735fb7fe6edbfcf51bb2ee96544027be3d099",
+    "startFrame": 4853
+  },
+  {
+    "type": "dialogue",
+    "id": "026",
+    "who": "zunda",
+    "view": "ai_plans",
+    "text": "Geminiのために入っていた人も、動画生成に使えるかもしれないのだ！",
+    "scene": "colab",
+    "speech": "ジェミニのために入っていた人も、動画生成に使えるかもしれないのだ！",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.28",
+          "surface": "Gemini",
+          "reading": "ジェミニ",
+          "scope": "common",
+          "start": 0,
+          "end": 6
+        }
+      ],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 15,
+          "end": 16,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "durationInFrames": 144,
+    "audio": "voice_53bb06c9dcc46135.wav",
+    "speaker": 3,
+    "kana": "ジェ'ミニノ/タメ'ニ/ハ'イッテ/イタ'/_ヒトモ'、ドオガセ'エセエニ/_ツカエ'ルカモ/シレナイ'/ノダ'",
+    "queryFile": "voice_queries/query_53bb06c9dcc46135.json",
+    "audioSha256": "fcd93c3d5be267da4a9cb2f8e75acfbffe6283f364148fb12b31574799768ded",
+    "startFrame": 5089
+  },
+  {
+    "type": "dialogue",
+    "id": "027",
+    "who": "metan",
+    "view": "quota_notes",
+    "text": "そうね。ただし、ストレージだけのGoogle Oneや、無料体験まで同じ条件ではないわ。FlowなどのAIクレジットとも、別の枠よ。",
+    "scene": "colab",
+    "speech": "そうね。ただし、ストレージだけのグーグル ワンや、無料体験まで同じ条件ではないわ。フローなどのエーアイクレジットとも、別の枠よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.16",
+          "surface": "Google One",
+          "reading": "グーグル ワン",
+          "scope": "common",
+          "start": 16,
+          "end": 26
+        },
+        {
+          "id": "h3.29",
+          "surface": "Flow",
+          "reading": "フロー",
+          "scope": "common",
+          "start": 44,
+          "end": 48
+        },
+        {
+          "id": "tech.ai",
+          "surface": "AI",
+          "reading": "エーアイ",
+          "scope": "tech",
+          "start": 51,
+          "end": 53
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 283,
+    "audio": "voice_0f97fafbc05d9909.wav",
+    "speaker": 2,
+    "kana": "ソオネ'、タ'ダシ、_ストレエジダケノ'/グウグル'、ワ'ンヤ、ムリョオタ'イケンマデ/オナジ'/ジョオケ'ンデワ/ナ'イワ、フロ'オナドノ/エエアイクレ'ジットトモ、ベツノ'/ワク'ヨ",
+    "queryFile": "voice_queries/query_0f97fafbc05d9909.json",
+    "audioSha256": "3fce14faa6c92cac8eeadef90229a84897eb07bc666265fdb14234b9059894a8",
+    "startFrame": 5251
+  },
+  {
+    "type": "dialogue",
+    "id": "028",
+    "who": "metan",
+    "view": "quota_notes",
+    "text": "すでに契約していて、残ったCUに収まれば、追加購入なしで試せる。でも、サブスクそのものが無料という意味ではないわ。",
+    "scene": "colab",
+    "speech": "すでに契約していて、残ったシーユーに収まれば、追加購入なしで試せる。でも、サブスクそのものが無料という意味ではないわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.17",
+          "surface": "CU",
+          "reading": "シーユー",
+          "scope": "common",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 250,
+    "audio": "voice_8edc12ba8d6a3ca0.wav",
+    "speaker": 2,
+    "kana": "ス'デニ/ケエヤク'/_シテ'/イテ'、ノコ'ッタ/シ'イユウニ/オサマ'レバ、ツイカコ'オニュウ/ナ'シデ/タメセ'ル、デ'モ、サブ_スクソ'ノモノガ/ムリョオト'/イウ'/イ'ミデワ/ナ'イワ",
+    "queryFile": "voice_queries/query_8edc12ba8d6a3ca0.json",
+    "audioSha256": "43a659b4b37bbbe7611c2a9801c2931ec4226c289918f0e71229d499ba7d1696",
+    "startFrame": 5546
+  },
+  {
+    "type": "dialogue",
+    "id": "029",
+    "who": "zunda",
+    "view": "sobaya",
+    "text": "この方法を見つけたのは、誰なのだ？",
+    "scene": "workflow",
+    "speech": "この方法を見つけたのは、誰なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 2,
+          "end": 3,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "durationInFrames": 86,
+    "audio": "voice_20830d3dfcb638fc.wav",
+    "speaker": 3,
+    "kana": "コノ'/ホオホオオ'/ミ_ツケタ'/ノワ'、ダ'レナ/ノダ'？",
+    "queryFile": "voice_queries/query_20830d3dfcb638fc.json",
+    "audioSha256": "de3a1e5651458dcf2ff35c5845b40135c825d3ebd3aea21b5e12feb1b2007259",
+    "startFrame": 5808
+  },
+  {
+    "type": "dialogue",
+    "id": "030",
+    "who": "metan",
+    "view": "sobaya",
+    "text": "窓際族でこのやり方を開拓したのは、そば屋よ。ローカルやColabでH3を動かす方法を整えてくれたの。",
+    "scene": "workflow",
+    "speech": "窓際族でこのやり方を開拓したのは、ソバヤよ。ローカルやコラボでエイチスリーを動かす方法を整えてくれたの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 17,
+          "end": 20
+        },
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 27,
+          "end": 32
+        },
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 33,
+          "end": 35
+        }
+      ],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 8,
+          "end": 9,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        },
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 39,
+          "end": 40,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "durationInFrames": 213,
+    "audio": "voice_0c780bfc07873f6e.wav",
+    "speaker": 2,
+    "kana": "マドギワ'ゾクデ/コノ'/ヤリカタオ'/カイタク'/_シタ'/ノワ'、ソ'バ/ヤ'ヨ、ロ'オカルヤ/コ'ラボデ/エイチスリ'イオ/ウゴカ'_ス/ホオホオオ'/トトノエ'テ/クレタ'ノ",
+    "queryFile": "voice_queries/query_0c780bfc07873f6e.json",
+    "audioSha256": "0f4aeadc2856049b2002617ade2dd0c624d45885d0f2816057c07e551c6f5f7b",
+    "startFrame": 5912
+  },
+  {
+    "type": "dialogue",
+    "id": "031",
+    "who": "zunda",
+    "view": "sobaya",
+    "text": "ビールを飲む動画を増やすための努力が、すごいのだ。",
+    "scene": "workflow",
+    "speech": "ビールを飲む動画を増やすための努力が、すごいのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 108,
+    "audio": "voice_421693315358e979.wav",
+    "speaker": 3,
+    "kana": "ビ'イルオ/ノ'ム/ドオガオ'/フヤ'_ス/タメ'ノ/ド'リョクガ、スゴ'イ/ノダ'",
+    "queryFile": "voice_queries/query_421693315358e979.json",
+    "audioSha256": "f1b9a2286bdf4c94a350c75e78321ce5daf16580770a4ebe989bbf24d6db51e5",
+    "startFrame": 6137
+  },
+  {
+    "type": "dialogue",
+    "id": "032",
+    "who": "metan",
+    "view": "workflow",
+    "text": "そば屋の方法を参考に、こちらではColabの公式CLIから実行しているわ。CLIは、コマンドで操作するための道具ね。",
+    "scene": "workflow",
+    "speech": "ソバヤの方法を参考に、こちらではコラボの公式シーエルアイから実行しているわ。シーエルアイは、コマンドで操作するための道具ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 16,
+          "end": 21
+        },
+        {
+          "id": "h3.18",
+          "surface": "CLI",
+          "reading": "シーエルアイ",
+          "scope": "common",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "id": "h3.18",
+          "surface": "CLI",
+          "reading": "シーエルアイ",
+          "scope": "common",
+          "start": 37,
+          "end": 40
+        }
+      ],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 4,
+          "end": 5,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        },
+        {
+          "id": "context.row-go",
+          "surface": "行",
+          "start": 30,
+          "end": 31,
+          "readings": [
+            "ギョウ：表の行、行を消す",
+            "イ／オコナ：行く、行う"
+          ],
+          "note": "日の行などの短い断片を登録すると日の行いを壊す。2026-10-28 chikuwa_mystery v13：工場の規模で行って＝おこなって。移動の行ってとは区別し、その発話だけspeech_overrideで指定"
+        }
+      ]
+    },
+    "durationInFrames": 248,
+    "audio": "voice_35c4629a1fd66664.wav",
+    "speaker": 2,
+    "kana": "ソ'バヤノ/ホオホオオ'/サンコオニ'、コチラデワ'/コ'ラボノ/コオ_シキ'/シ'イエルアイカラ/ジッコオ'/_シテ'/イル'ワ、シ'イエルアイワ、コマンドデ'/ソ'オサ/スル'/タメ'ノ/ドオグ'ネ",
+    "queryFile": "voice_queries/query_35c4629a1fd66664.json",
+    "audioSha256": "d45cf04767217fd290412b5fba5db55365019be65c777fcb4671bd1e6bec1761",
+    "startFrame": 6263
+  },
+  {
+    "type": "dialogue",
+    "id": "033",
+    "who": "metan",
+    "view": "workflow",
+    "text": "流れは、参照画像と音声、プロンプトを用意。GPUを確保してモデルを読み込み、生成。結果を回収したら、GPUを停止する。",
+    "scene": "workflow",
+    "speech": "流れは、参照画像と音声、プロンプトを用意。ジーピーユーを確保してモデルを読み込み、生成。結果を回収したら、ジーピーユーを停止する。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 21,
+          "end": 24
+        },
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 50,
+          "end": 53
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 305,
+    "audio": "voice_6f3f0f53fbf2704f.wav",
+    "speaker": 2,
+    "kana": "ナガレ'ワ、サンショオガ'ゾオト/オ'ンセエ、プロ'ン_プトオ/ヨ'オイ、ジイ'/ピ'イ/ユ'ウオ/カ'_クホ/_シテ'/モ'デルオ/ヨミコ'ミ、セエセエ'、ケッカオ'/カイシュウ'/_シタ'ラ、ジイ'/ピ'イ/ユ'ウオ/テエ_シ'/スル'",
+    "queryFile": "voice_queries/query_6f3f0f53fbf2704f.json",
+    "audioSha256": "78b4d4b6dcf739d1d8076c81da91247dc597c6d3f7696e6f1c93a6ab3fe795fb",
+    "startFrame": 6523
+  },
+  {
+    "type": "dialogue",
+    "id": "034",
+    "who": "zunda",
+    "view": "stop_gpu",
+    "text": "作り終わったのに、借りっぱなしにはしないのだ。",
+    "scene": "workflow",
+    "speech": "作り終わったのに、借りっぱなしにはしないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 101,
+    "audio": "voice_f0f4adee33f9c79a.wav",
+    "speaker": 3,
+    "kana": "_ツクリ'オワッタノニ、カリッパ'ナシニワ/シナイ'/ノダ'",
+    "queryFile": "voice_queries/query_f0f4adee33f9c79a.json",
+    "audioSha256": "0f80aeb80980efd3ff7f0b2cbe9a43e3022c7d3193ceaeb035fb851c84fdc4da",
+    "startFrame": 6840
+  },
+  {
+    "type": "dialogue",
+    "id": "035",
+    "who": "metan",
+    "view": "stop_gpu",
+    "text": "そう。準備や待機にも計算資源を使うから、動画を作っている時間だけで費用を考えないことが大事よ。",
+    "scene": "workflow",
+    "speech": "そう。準備や待機にも計算資源を使うから、動画を作っている時間だけで費用を考えないことが大事よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 29,
+          "end": 30,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 208,
+    "audio": "voice_cccd0732d08ac765.wav",
+    "speaker": 2,
+    "kana": "ソオ'、ジュ'ンビヤ/タ'イキニモ/ケエサンシ'ゲンオ/_ツカウ'カラ、ドオガオ'/_ツク'ッテ/イル'/ジカンダケデ'/ヒ'ヨオオ/カンガエ'ナイ/コト'ガ/ダイジヨ'",
+    "queryFile": "voice_queries/query_cccd0732d08ac765.json",
+    "audioSha256": "cf4b1de23fa2b27846afeb6f2aef8b573bdc939f0b4ac3d6dabafee86a4706bc",
+    "startFrame": 6959
+  },
+  {
+    "type": "dialogue",
+    "id": "036",
+    "who": "metan",
+    "view": "settings",
+    "text": "窓際族でよく使うのは、480pとTurbo LoRAの組み合わせ。参照画像や音声を使う設定で、8ステップにしているわ。",
+    "scene": "workflow",
+    "speech": "窓際族でよく使うのは、ヨンヒャクハチジュッピーとターボ ローラの組み合わせ。参照画像や音声を使う設定で、8ステップにしているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.31",
+          "surface": "480p",
+          "reading": "ヨンヒャクハチジュッピー",
+          "scope": "common",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "id": "h3.9",
+          "surface": "Turbo LoRA",
+          "reading": "ターボ ローラ",
+          "scope": "common",
+          "start": 16,
+          "end": 26
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 269,
+    "audio": "voice_2a1abd09c7d61579.wav",
+    "speaker": 2,
+    "kana": "マドギワ'ゾクデ/ヨ'_ク/ツカウ'/ノワ'、ヨンヒャ_クハチジュッ'ピイト/タ'アボ、ロ'オラノ/クミアワセ'、サンショオガ'ゾオヤ/オ'ンセエオ/_ツカウ'/セッテエデ'、ハ_チステ'ップニ/_シテ'/イル'ワ",
+    "queryFile": "voice_queries/query_2a1abd09c7d61579.json",
+    "audioSha256": "7a6c2753d67ff61ab507e22e63c867359efb52d3c37c626508b02422a4b3bca6",
+    "startFrame": 7179
+  },
+  {
+    "type": "dialogue",
+    "id": "037",
+    "who": "zunda",
+    "view": "turbo",
+    "text": "ターボって、速くなるのだ？",
+    "scene": "workflow",
+    "speech": "ターボって、速くなるのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 67,
+    "audio": "voice_b3b62d640f5dc7c7.wav",
+    "speaker": 3,
+    "kana": "タ'アボッテ、ハヤ'クナル/ノダ'？",
+    "queryFile": "voice_queries/query_b3b62d640f5dc7c7.json",
+    "audioSha256": "d049cf47d3f13ff79f108d99a168f66d1e605d0e4b3aca70e3d9373a4d8aef77",
+    "startFrame": 7460
+  },
+  {
+    "type": "dialogue",
+    "id": "038",
+    "who": "metan",
+    "view": "turbo",
+    "text": "少ない計算ステップで生成できるようにする追加データよ。ただ数字を減らすのではなく、対応するLoRAや設定をまとめて使うの。",
+    "scene": "workflow",
+    "speech": "少ない計算ステップで生成できるようにする追加データよ。ただ数字を減らすのではなく、対応するローラや設定をまとめて使うの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.11",
+          "surface": "LoRA",
+          "reading": "ローラ",
+          "scope": "common",
+          "start": 45,
+          "end": 49
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 241,
+    "audio": "voice_90e7f55da66fa3cc.wav",
+    "speaker": 2,
+    "kana": "_スクナ'イ/ケエサン_ステ'ップデ/セエセエ'/デキ'ル/ヨ'オニ/スル'/ツイカデ'エタヨ、タ'ダ/スウジオ'/ヘラス'/ノデ'ワナク、タイオオ'/スル'/ロ'オラヤ/セッテエオ'/マトメテ'/_ツカウ'ノ",
+    "queryFile": "voice_queries/query_90e7f55da66fa3cc.json",
+    "audioSha256": "9eeeab1dc150dcf0e304436ae37454a1ce57c55d40f67bf541c4c21933100b6f",
+    "startFrame": 7545
+  },
+  {
+    "type": "dialogue",
+    "id": "039",
+    "who": "metan",
+    "view": "settings",
+    "text": "私たちの480p設定は、横864、縦480ピクセル。完成動画は720pに編集して、字幕もその解像度で入れているわ。",
+    "scene": "workflow",
+    "speech": "私たちのヨンヒャクハチジュッピー設定は、横864、縦480ピクセル。完成動画はナナヒャクニジュッピーに編集して、字幕もその解像度で入れているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.31",
+          "surface": "480p",
+          "reading": "ヨンヒャクハチジュッピー",
+          "scope": "common",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "id": "h3.32",
+          "surface": "720p",
+          "reading": "ナナヒャクニジュッピー",
+          "scope": "common",
+          "start": 31,
+          "end": 35
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 331,
+    "audio": "voice_d7e29236a5f9ac1f.wav",
+    "speaker": 2,
+    "kana": "ワタシ'タチノ/ヨンヒャク'ハチ/ジュ'ッ/ピ'イ/セッテエワ'、ヨコ'/ハッピャク'/ロクジュウ'/ヨ'ン、タ'テ/ヨ'ンヒャ_ク/ハチジュウピ'_クセル、カンセエド'オガワ/ナナヒャクニジュッ'ピイニ/ヘンシュウ'/_シテ'、ジマクモ'/ソノ'/カイゾ'オドデ/イレテ'/イル'ワ",
+    "queryFile": "voice_queries/query_d7e29236a5f9ac1f.json",
+    "audioSha256": "f59d6edf8fc77d49f7bd4bb19df8fb2303c69b64c2a944151023fab9942b2733",
+    "startFrame": 7798
+  },
+  {
+    "type": "dialogue",
+    "id": "040",
+    "who": "zunda",
+    "view": "export",
+    "text": "720pで書き出したからといって、最初から720pで生成したことにはならないのだ。",
+    "scene": "workflow",
+    "speech": "ナナヒャクニジュッピーで書き出したからといって、最初からナナヒャクニジュッピーで生成したことにはならないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.32",
+          "surface": "720p",
+          "reading": "ナナヒャクニジュッピー",
+          "scope": "common",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "id": "h3.32",
+          "surface": "720p",
+          "reading": "ナナヒャクニジュッピー",
+          "scope": "common",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 202,
+    "audio": "voice_c528f1700b650410.wav",
+    "speaker": 3,
+    "kana": "ナナヒャクニジュッ'ピイデ/カキダ_シタ'カラト/イッテ'、サイショカラ'/ナナヒャクニジュッ'ピイデ/セエセエ'/_シタ'/コト'ニワ/ナラ'ナイ/ノダ'",
+    "queryFile": "voice_queries/query_c528f1700b650410.json",
+    "audioSha256": "0f8df36491ad5b9f68c202c7f4c0bb8d02253995d4832fe9ec6f1b9899da688a",
+    "startFrame": 8141
+  },
+  {
+    "type": "dialogue",
+    "id": "041",
+    "who": "metan",
+    "view": "bbq",
+    "text": "そうね。では、実際に作ったコントを少し見てみましょう。",
+    "scene": "workflow",
+    "speech": "そうね。では、実際に作ったコントを少し見てみましょう。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 117,
+    "audio": "voice_cfd79885a3a88d31.wav",
+    "speaker": 2,
+    "kana": "ソオネ'、デ'ワ、ジッサイニ'/_ツク'ッタ/コ'ントオ/_スコ'シ/ミ'テ/ミマショ'オ",
+    "queryFile": "voice_queries/query_cfd79885a3a88d31.json",
+    "audioSha256": "36688ce857b642a983193d62ef23bb15d0385ed3e8cd93afd4f2a327948fd7ae",
+    "startFrame": 8361
+  },
+  {
+    "type": "dialogue",
+    "id": "042",
+    "who": "zunda",
+    "view": "bbq",
+    "text": "肉より、ちくわへのこだわりが強いのだ。",
+    "scene": "workflow",
+    "speech": "肉より、ちくわへのこだわりが強いのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 91,
+    "audio": "voice_00a9d0e382a552ae.wav",
+    "speaker": 3,
+    "kana": "ニク'ヨリ、_チクワエノ'/コダワリガ'/ツヨ'イ/ノダ'",
+    "queryFile": "voice_queries/query_00a9d0e382a552ae.json",
+    "audioSha256": "eede2d2e80a8827c73699d192b7e49f93de7f2fbd0fc2573a0650d8ad813a979",
+    "startFrame": 8791
+  },
+  {
+    "type": "dialogue",
+    "id": "043",
+    "who": "metan",
+    "view": "bbq",
+    "text": "こうした会話や小さな動きのある場面で、実用的に使っているわ。",
+    "scene": "workflow",
+    "speech": "こうした会話や小さな動きのある場面で、実用的に使っているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 134,
+    "audio": "voice_61111d00a26eb770.wav",
+    "speaker": 2,
+    "kana": "コオ_シタ'/カイワヤ'/チ'イサナ/ウゴキ'ノ/ア'ル/バ'メンデ、ジツヨオ'テキニ/_ツカッテ'/イル'ワ",
+    "queryFile": "voice_queries/query_61111d00a26eb770.json",
+    "audioSha256": "e4ab3de5c2c36120a2956b4c20a5be5dd746fb606ca3cd5d4942cd6517dc12cb",
+    "startFrame": 8900
+  },
+  {
+    "type": "dialogue",
+    "id": "044",
+    "who": "metan",
+    "view": "cost_conditions",
+    "text": "ここから費用を比べるわね。基準は、生成する動画30秒分。料金は2026年10月31日の調査で、ドルは1ドル160円に固定して換算したわ。",
+    "scene": "costs",
+    "speech": "ここから費用を比べるわね。基準は、生成する動画サンジュウビョウ分。料金は2026年10月31日の調査で、ドルは1ドル160円に固定して換算したわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 23,
+          "end": 26
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 26,
+          "end": 27,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 354,
+    "audio": "voice_0640808d17d3e705.wav",
+    "speaker": 2,
+    "kana": "ココカラ'/ヒ'ヨオオ/クラベル'ワネ、キジュンワ'、セエセエ'/スル'/ドオガサンジュウビョウ'ブン、リョ'オキンワ/ニセ'ン/ニ'ジュウ/ロク'ネン/ジュウガツ'/サ'ンジュウ/イチ'ニチノ/チョ'オサデ、ド'ルワ/イチ'ドル/ヒャク'/ロクジュウ'エンニ/コテエ'/_シテ'/カンサン'/_シタ'ワ",
+    "queryFile": "voice_queries/query_0640808d17d3e705.json",
+    "audioSha256": "661bf2fb54f46c36bb5a8f7a4d182540f8d347548491b4bd57c607069bd31ffd",
+    "startFrame": 9046
+  },
+  {
+    "type": "dialogue",
+    "id": "045",
+    "who": "zunda",
+    "view": "cost_conditions",
+    "text": "同じ動画が、同じ条件でできるという比較ではないのだ？",
+    "scene": "costs",
+    "speech": "同じ動画が、同じ条件でできるという比較ではないのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 127,
+    "audio": "voice_185d7c9ec7168fbe.wav",
+    "speaker": 3,
+    "kana": "オナジ'/ドオガガ'、オナジ'/ジョオケ'ンデ/デキ'ルト/イウ'/_ヒカクデワ'/ナ'イ/ノダ'？",
+    "queryFile": "voice_queries/query_185d7c9ec7168fbe.json",
+    "audioSha256": "ae214133c337285887326dda751c19bca17652f7fb92c6206672f874b49ecc66",
+    "startFrame": 9412
+  },
+  {
+    "type": "dialogue",
+    "id": "046",
+    "who": "metan",
+    "view": "cost_conditions",
+    "text": "その通り。解像度もサービスも違うし、やり直しや、参照動画などの追加課金は別よ。まずは生成費用の目安として見てね。",
+    "scene": "costs",
+    "speech": "その通り。解像度もサービスも違うし、やり直しや、参照動画などの追加課金は別よ。まずは生成費用の目安として見てね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 272,
+    "audio": "voice_b54f4f9f392cc96c.wav",
+    "speaker": 2,
+    "kana": "ソノ'/トオリ'、カイゾ'オドモ/サ'アビスモ/チガウシ'、ヤリナオシヤ'、サンショオド'オガナドノ/ツイカカ'キンワ/ベツヨ'、マ'ズワ/セエセエヒ'ヨオノ/メヤ_スト'/_シテ'/ミ'テネ",
+    "queryFile": "voice_queries/query_b54f4f9f392cc96c.json",
+    "audioSha256": "697af32217f4aa1625dd5d3cde0a0a278bff9e461293900f4bc1adf9b27bdb9f",
+    "startFrame": 9557
+  },
+  {
+    "type": "dialogue",
+    "id": "047",
+    "who": "metan",
+    "view": "h3_measure",
+    "text": "H3は、A100というGPUで、15秒を2本。生成そのものは約8分33秒、準備などを含むリモート処理全体は約15分6秒だったわ。",
+    "scene": "costs",
+    "speech": "エイチスリーは、エーヒャクというジーピーユーで、ジュウゴビョウを2本。生成そのものは約8分33秒、準備などを含むリモート処理全体は約15分6秒だったわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "id": "h3.21",
+          "surface": "A100",
+          "reading": "エーヒャク",
+          "scope": "common",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "id": "h3.36",
+          "surface": "15秒",
+          "reading": "ジュウゴビョウ",
+          "scope": "common",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 32,
+          "end": 33,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        },
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 56,
+          "end": 57,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 335,
+    "audio": "voice_ed4176d2ef29ba68.wav",
+    "speaker": 2,
+    "kana": "エイチスリ'イワ、エエ'ヒャ_クト/イウ'/ジ'イピイユウデ、ジュウゴビョウオ'/ニ'ホン、セエセエソ'ノモノワ/ヤ'_ク/ハッ'プン/サ'ンジュウ/サン'ビョオ、ジュ'ンビナドオ/_フク'ム/リモオト'ショリ/ゼンタイワ'/ヤ'クジュウ/ゴ'フン/ロク'ビョオダッタワ",
+    "queryFile": "voice_queries/query_ed4176d2ef29ba68.json",
+    "audioSha256": "58a967a4cefcf3c671a022c1845ab64832bde0872cf2e0dc3b874cb4db41af9b",
+    "startFrame": 9841
+  },
+  {
+    "type": "dialogue",
+    "id": "048",
+    "who": "metan",
+    "view": "h3_measure",
+    "text": "そのときの残高の減少は1.48CU。Colabの買い足し価格、100CUで1179円を使うと、約17円相当になるの。",
+    "scene": "costs",
+    "speech": "そのときの残高の減少は1.48シーユー。コラボの買い足し価格、100シーユーで1179円を使うと、約17円相当になるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.17",
+          "surface": "CU",
+          "reading": "シーユー",
+          "scope": "common",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 18,
+          "end": 23
+        },
+        {
+          "id": "h3.17",
+          "surface": "CU",
+          "reading": "シーユー",
+          "scope": "common",
+          "start": 34,
+          "end": 36
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 288,
+    "audio": "voice_98a2f163ce3f419c.wav",
+    "speaker": 2,
+    "kana": "ソノ'/ト'キノ/ザ'ンダカノ/ゲンショオワ'/イ'ッテン/ヨンハチ'シイユウ、コ'ラボノ/カイタ'_シ/カカク'、ヒャク'シイユウデ/センヒャク'/ナ'ナジュウ/キュウ'エンオ/_ツカウト'、ヤ'クジュウ/ナナ'エン/ソオトオニ'/ナ'ルノ",
+    "queryFile": "voice_queries/query_98a2f163ce3f419c.json",
+    "audioSha256": "74e573367480142716754eb1a6309bb28116a1a5869247f6fb1e12827b0972bd",
+    "startFrame": 10188
+  },
+  {
+    "type": "dialogue",
+    "id": "049",
+    "who": "zunda",
+    "view": "h3_cost",
+    "text": "30秒の動画が30秒でできるわけではないけれど、費用はかなり抑えられるのだ。",
+    "scene": "costs",
+    "speech": "サンジュウビョウの動画がサンジュウビョウでできるわけではないけれど、費用はかなり抑えられるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 178,
+    "audio": "voice_311ca5df5d4c9237.wav",
+    "speaker": 3,
+    "kana": "サンジュウビョウノ'/ドオガガ'/サンジュウビョウデ'/デキ'ル/ワ'ケデワナイケレド、ヒ'ヨオワ/カ'ナリ/オサエラレ'ル/ノダ'",
+    "queryFile": "voice_queries/query_311ca5df5d4c9237.json",
+    "audioSha256": "7865c89edb7173e30896ca9e0b49235a3d8144c191adcd1fe1047049645744d8",
+    "startFrame": 10488
+  },
+  {
+    "type": "dialogue",
+    "id": "050",
+    "who": "metan",
+    "view": "h3_cost",
+    "text": "これは一回の測定例よ。GPUや題材、準備、残高表示の遅れで変動するから、固定の料金表ではないわ。",
+    "scene": "costs",
+    "speech": "これは一回の測定例よ。ジーピーユーや題材、準備、残高表示の遅れで変動するから、固定の料金表ではないわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 254,
+    "audio": "voice_940ba5f48b749748.wav",
+    "speaker": 2,
+    "kana": "コレワ'/イッ'カイノ/ソ_クテエ'レエヨ、ジイ'/ピ'イ/ユ'ウヤ/ダイザイ'、ジュ'ンビ、ザンダカヒョ'オジノ/オクレデ'/ヘンドオ'/スル'カラ、コテエノ'/リョオキンヒョオデワ'/ナ'イワ",
+    "queryFile": "voice_queries/query_940ba5f48b749748.json",
+    "audioSha256": "8cea216fb096a0b1108d0fa78548ec53b609bbbd4144c429202cf78d1f467dba",
+    "startFrame": 10684
+  },
+  {
+    "type": "dialogue",
+    "id": "051",
+    "who": "metan",
+    "view": "wan_cost",
+    "text": "Wan 3.0はQwen Cloudで計算。480pなら30秒が通常240円、調査時の割引で168円。720pなら通常480円、割引で336円よ。",
+    "scene": "costs",
+    "speech": "ワン サンテンゼロはクウェン クラウドで計算。ヨンヒャクハチジュッピーならサンジュウビョウが通常240円、調査時の割引で168円。ナナヒャクニジュッピーなら通常480円、割引で336円よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.5",
+          "surface": "Wan 3.0",
+          "reading": "ワン サンテンゼロ",
+          "scope": "common",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "id": "h3.14",
+          "surface": "Qwen Cloud",
+          "reading": "クウェン クラウド",
+          "scope": "common",
+          "start": 8,
+          "end": 18
+        },
+        {
+          "id": "h3.31",
+          "surface": "480p",
+          "reading": "ヨンヒャクハチジュッピー",
+          "scope": "common",
+          "start": 22,
+          "end": 26
+        },
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 28,
+          "end": 31
+        },
+        {
+          "id": "h3.32",
+          "surface": "720p",
+          "reading": "ナナヒャクニジュッピー",
+          "scope": "common",
+          "start": 51,
+          "end": 55
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 468,
+    "audio": "voice_a0b6fbb06049f53c.wav",
+    "speaker": 2,
+    "kana": "ワ'ン、サンテン'ゼロワ/クウェン'、クラウドデ'/ケエサン'、ヨンヒャ_クハチジュッ'ピイナラ/サンジュウビョウガ'/ツウジョオ'/ニヒャク'/ヨンジュウ'エン、チョオサ'ジノ/ワリビキデ'/ヒャク'/ロクジュウ'/ハチ'エン、ナナヒャクニジュッ'ピイナラ/ツウジョオ'/ヨ'ンヒャ_ク/ハチジュウ'エン、ワリビキデ'/サ'ンビャ_ク/サ'ンジュウ/ロク'エンヨ",
+    "queryFile": "voice_queries/query_a0b6fbb06049f53c.json",
+    "audioSha256": "1ef4f8facfeb0637d310c73cf48e079ab4e8271b25a050b123118657c47cfa89",
+    "startFrame": 10950
+  },
+  {
+    "type": "dialogue",
+    "id": "052",
+    "who": "zunda",
+    "view": "wan_cost",
+    "text": "前回のWanも安いけれど、今回のH3はさらに小さく試せるのだ。",
+    "scene": "costs",
+    "speech": "前回のWanも安いけれど、今回のエイチスリーはさらに小さく試せるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 160,
+    "audio": "voice_2b6095dbe47da218.wav",
+    "speaker": 3,
+    "kana": "ゼ'ンカイノ/ワ'ンモ/ヤス'イケレド、コ'ンカイノ/エイチスリ'イワ/サ'ラニ/チイサ'_クタメセル/ノダ'",
+    "queryFile": "voice_queries/query_2b6095dbe47da218.json",
+    "audioSha256": "0e38fd492c95b512cffefcb42bfb51133ff6dae96b55544c5575a2404737d1d3",
+    "startFrame": 11430
+  },
+  {
+    "type": "dialogue",
+    "id": "053",
+    "who": "metan",
+    "view": "seedance_cost",
+    "text": "Seedanceは2.5で比較するわ。Dreaminaの720p、30秒は、通常消費で1440クレジット。Basic月契約の更新料金で割ると、約1360円相当ね。",
+    "scene": "costs",
+    "speech": "Seedanceは2.5で比較するわ。ドリーミナのナナヒャクニジュッピー、サンジュウビョウは、通常消費で1440クレジット。ベーシック月契約の更新料金で割ると、約1360円相当ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.13",
+          "surface": "Dreamina",
+          "reading": "ドリーミナ",
+          "scope": "common",
+          "start": 19,
+          "end": 27
+        },
+        {
+          "id": "h3.32",
+          "surface": "720p",
+          "reading": "ナナヒャクニジュッピー",
+          "scope": "common",
+          "start": 28,
+          "end": 32
+        },
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 33,
+          "end": 36
+        },
+        {
+          "id": "h3.26",
+          "surface": "Basic",
+          "reading": "ベーシック",
+          "scope": "common",
+          "start": 53,
+          "end": 58
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 404,
+    "audio": "voice_a697a59861f246b8.wav",
+    "speaker": 2,
+    "kana": "シ'イダンスワ/ニ'イテン/ゴ'デ/_ヒカ_ク'/スル'ワ、ド'リイ/ミ'ナノ/ナナヒャクニ'ジュッ/ピ'イ、サンジュウビョウワ'、ツウジョオショ'オヒデ/セ'ン/ヨ'ンヒャク/ヨンジュウクレ'ジット、ベ'エシッ_ク/ツ_キケ'エヤクノ/コオシンリョ'オキンデ/ワルト'、ヤ'_クセン/サ'ンビャク/ロクジュウ'エン/ソオトオネ'",
+    "queryFile": "voice_queries/query_a697a59861f246b8.json",
+    "audioSha256": "3d1295ecd359bf3c5d78b53f2c395e36fbc8580e413d3536243778152b03da22",
+    "startFrame": 11608
+  },
+  {
+    "type": "dialogue",
+    "id": "054",
+    "who": "zunda",
+    "view": "seedance_cost",
+    "text": "でも、年契約だともっと安かった気がするのだ。",
+    "scene": "costs",
+    "speech": "でも、ネンケイヤクだともっと安かった気がするのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "common.nenkeiyaku",
+          "surface": "年契約",
+          "reading": "ネンケイヤク",
+          "scope": "common",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 108,
+    "audio": "voice_d043bcbcdf878954.wav",
+    "speaker": 3,
+    "kana": "デ'モ、ネ'ン/ケイ'ヤクダト/モ'ット/ヤス'カッタ/キガ'/スル'/ノダ'",
+    "queryFile": "voice_queries/query_d043bcbcdf878954.json",
+    "audioSha256": "49cf5932843918a76ddb57fbd933df8235d92ee3bd8f8cd966bdcf490b08477d",
+    "startFrame": 12024
+  },
+  {
+    "type": "dialogue",
+    "id": "055",
+    "who": "metan",
+    "view": "annual",
+    "text": "そこは大事ね。例えばAdvancedの、毎月28137クレジットが付く年契約。表示されている初年度料金は、約14万5000円よ。",
+    "scene": "costs",
+    "speech": "そこは大事ね。例えばアドバンストの、毎月28137クレジットが付くネンケイヤク。表示されている初年度料金は、約14万5000円よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.27",
+          "surface": "Advanced",
+          "reading": "アドバンスト",
+          "scope": "common",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "id": "common.nenkeiyaku",
+          "surface": "年契約",
+          "reading": "ネンケイヤク",
+          "scope": "common",
+          "start": 35,
+          "end": 38
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 309,
+    "audio": "voice_45cd786470476486.wav",
+    "speaker": 2,
+    "kana": "ソコワ'/ダイジネ'、タト'エバ/アドバ'ン_ストノ、マイ_ツキ'/ニマ'ン/ハッセ'ンヒャ_ク/サ'ンジュウ/ナナクレ'ジットガ/_ツク'ネン/ケイ'ヤク、ヒョオジ'/サレテ'/イル'/ショネンドリョ'オキンワ、ヤ'クジュウ/ヨンマ'ン/ゴセン'エンヨ",
+    "queryFile": "voice_queries/query_45cd786470476486.json",
+    "audioSha256": "572cff8cc402ebecd2d8fead072c241c791b81d9c1c547eead239f768715b44d",
+    "startFrame": 12150
+  },
+  {
+    "type": "dialogue",
+    "id": "056",
+    "who": "metan",
+    "view": "annual",
+    "text": "毎月のクレジットを全部使う前提なら、通常消費でも30秒あたり約620円。月の枠は、30秒動画19本分くらいになるわ。",
+    "scene": "costs",
+    "speech": "毎月のクレジットを全部使う前提なら、通常消費でもサンジュウビョウあたり約620円。月の枠は、サンジュウビョウ動画19本分くらいになるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 24,
+          "end": 27
+        },
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 41,
+          "end": 44
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 49,
+          "end": 50,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 298,
+    "audio": "voice_9cb7e54cd84226fe.wav",
+    "speaker": 2,
+    "kana": "マイ_ツキノ'/クレ'ジットオ/ゼ'ンブ/_ツカウ'/ゼンテエナラ'、ツウジョオショ'オヒデモ/サンジュウビョウア'タリ/ヤ'ク/ロッピャク'/ニジュウ'エン、_ツキ'ノ/ワク'ワ、サンジュウビョウド'オガジュウ/キュウホンブンク'ライニ/ナ'ルワ",
+    "queryFile": "voice_queries/query_9cb7e54cd84226fe.json",
+    "audioSha256": "d9b76fe052f629fddc86e4d578f4d684ebb621455cd182a5d50beef0abd6cd4d",
+    "startFrame": 12471
+  },
+  {
+    "type": "dialogue",
+    "id": "057",
+    "who": "zunda",
+    "view": "annual",
+    "text": "月契約の一例だけで比べると、だいぶ印象が変わるのだ。",
+    "scene": "costs",
+    "speech": "月契約の一例だけで比べると、だいぶ印象が変わるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 135,
+    "audio": "voice_08e3a359d70aac9e.wav",
+    "speaker": 3,
+    "kana": "_ツキケ'エヤクノ/イチレエダケデ'/クラベルト'、ダイブ'/インショオガ'/カワル'/ノダ'",
+    "queryFile": "voice_queries/query_08e3a359d70aac9e.json",
+    "audioSha256": "36885fe3ac51d104f0747118ca23c2a87f941141c8dc9e41eecf2bcd429ddbdf",
+    "startFrame": 12781
+  },
+  {
+    "type": "dialogue",
+    "id": "058",
+    "who": "metan",
+    "view": "annual_event",
+    "text": "さらに調査時は、Seedance 2.5の消費クレジットを約4割減らす特典があって、30秒で約370円相当。さっきの1360円の、3分の1以下まで下がる例もあるわ。",
+    "scene": "costs",
+    "speech": "さらに調査時は、シーダンス ニーテンゴの消費クレジットを約4割減らす特典があって、サンジュウビョウで約370円相当。さっきの1360円の、サンブンノイチ以下まで下がる例もあるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.4",
+          "surface": "Seedance 2.5",
+          "reading": "シーダンス ニーテンゴ",
+          "scope": "common",
+          "start": 8,
+          "end": 20
+        },
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 42,
+          "end": 45
+        },
+        {
+          "id": "common.sanbunnnoichi",
+          "surface": "3分の1",
+          "reading": "サンブンノイチ",
+          "scope": "common",
+          "start": 65,
+          "end": 69
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 390,
+    "audio": "voice_8e6fb2476081e52c.wav",
+    "speaker": 2,
+    "kana": "サ'ラニ/チョオサ'ジワ、シ'イダンス、ニ'イテンゴノ/ショオ_ヒクレ'ジットオ/ヤ'ク/ヨン'ワリ/ヘラ_ス'/ト_クテンガ'/ア'ッテ、サンジュウビョウデ'/ヤ'_ク/サ'ンビャク/ナナジュウ'エン/ソオトオ'、サ'ッキノ/セ'ン/サ'ンビャク/ロクジュウ'エンノ、サ'ンブンノ/イチイ'カマデ/サガ'ル/レ'エモ/ア'ルワ",
+    "queryFile": "voice_queries/query_8e6fb2476081e52c.json",
+    "audioSha256": "26ecfc04b0b79cf95efb273aa9fef769731787c48fe0f83247cbf74bc35440ef",
+    "startFrame": 12934
+  },
+  {
+    "type": "dialogue",
+    "id": "059",
+    "who": "zunda",
+    "view": "annual_event",
+    "text": "それなら、かなり手が届きやすくなるのだ。",
+    "scene": "costs",
+    "speech": "それなら、かなり手が届きやすくなるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 88,
+    "audio": "voice_e1ef65dfdbe8193e.wav",
+    "speaker": 3,
+    "kana": "ソレナ'ラ、カ'ナリ/テ'ガ/トド'キヤ_スクナル/ノダ'",
+    "queryFile": "voice_queries/query_e1ef65dfdbe8193e.json",
+    "audioSha256": "c5b31943da219affe16743324a93f516e8557fa84f558456de41a84cd31a6572",
+    "startFrame": 13336
+  },
+  {
+    "type": "dialogue",
+    "id": "060",
+    "who": "metan",
+    "view": "annual_limits",
+    "text": "ただし、この例は初年度の年契約料金と、期間限定の消費割引を組み合わせたもの。消費割引の案内は、10月27日から11月6日までよ。",
+    "scene": "costs",
+    "speech": "ただし、この例は初年度のネンケイヤク料金と、期間限定の消費割引を組み合わせたもの。消費割引の案内は、10月27日から11月6日までよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "common.nenkeiyaku",
+          "surface": "年契約",
+          "reading": "ネンケイヤク",
+          "scope": "common",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 20,
+          "end": 21,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 322,
+    "audio": "voice_c06964bcd5747258.wav",
+    "speaker": 2,
+    "kana": "タ'ダシ、コノ'/レ'エワ/ショネンドノ'ネン/ケイヤクリョ'オキント、_キカンゲ'ンテエノ/ショオヒワ'リビキオ/クミアワセタ'/モノ'、ショオヒワ'リビキノ/アンナ'イワ、ジュウガツ'/ニ'ジュウ/_シチ'ニ_チカラ/ジュウイチガツ'/ムイカマ'デヨ",
+    "queryFile": "voice_queries/query_c06964bcd5747258.json",
+    "audioSha256": "ab59c0c435d8d3dddc16e1a2143fd60a61caa750c544ce7c5decd08719c7e2ab",
+    "startFrame": 13442
+  },
+  {
+    "type": "dialogue",
+    "id": "061",
+    "who": "metan",
+    "view": "annual_limits",
+    "text": "その消費レートが適用されるなら、月の付与枠は30秒動画約32本分。別の画像生成や、動画のやり直しにも同じクレジットを使えば、本数は減るわ。",
+    "scene": "costs",
+    "speech": "その消費レートが適用されるなら、月の付与枠はサンジュウビョウ動画約32本分。別の画像生成や、動画のやり直しにも同じクレジットを使えば、本数は減るわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.35",
+          "surface": "30秒",
+          "reading": "サンジュウビョウ",
+          "scope": "common",
+          "start": 22,
+          "end": 25
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 31,
+          "end": 32,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 334,
+    "audio": "voice_3c1f36e2df192961.wav",
+    "speaker": 2,
+    "kana": "ソノ'/ショオヒレ'エトガ/テキヨオ'/サレルナラ'、_ツキ'ノ/フヨ'ワクワ/サンジュウビョウド'オガ/ヤ'_ク/サ'ンジュウ/ニホン'ブン、ベツノ'/ガゾオセ'エセエヤ、ドオガノ'/ヤリナオシニモ'/オナジ'/クレ'ジットオ/_ツカエ'バ、ホンス'ウワ/ヘル'ワ",
+    "queryFile": "voice_queries/query_3c1f36e2df192961.json",
+    "audioSha256": "abdb5bc29636796e39a00ca28a14c9e9a6a8a9d03a40747fe2a92030de0beccb",
+    "startFrame": 13776
+  },
+  {
+    "type": "dialogue",
+    "id": "062",
+    "who": "zunda",
+    "view": "annual_limits",
+    "text": "毎月32本、完成作品が必ず手に入るわけではないのだ。",
+    "scene": "costs",
+    "speech": "毎月32本、完成作品が必ず手に入るわけではないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 153,
+    "audio": "voice_e1ec796cffc39a98.wav",
+    "speaker": 3,
+    "kana": "マイ_ツキ'/サ'ンジュウ/ニ'ホン、カンセエサ'_クヒンガ/カナラズ'/テ'ニ/ハ'イル/ワ'ケデワ/ナ'イ/ノダ'",
+    "queryFile": "voice_queries/query_e1ec796cffc39a98.json",
+    "audioSha256": "388aa0b39ae7a041f99c99d8dc3dfd2e43c55b5286106005de0d99286b45bf1a",
+    "startFrame": 14122
+  },
+  {
+    "type": "dialogue",
+    "id": "063",
+    "who": "metan",
+    "view": "annual_expiry",
+    "text": "そう。年契約をしても、期間限定の消費割引が一年間続くわけではないの。特典が終われば通常の消費量に戻るし、この年契約の翌年更新は約29万円よ。",
+    "scene": "costs",
+    "speech": "そう。ネンケイヤクをしても、期間限定の消費割引が一年間続くわけではないの。特典が終われば通常の消費量に戻るし、このネンケイヤクの翌年更新は約29万円よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "common.nenkeiyaku",
+          "surface": "年契約",
+          "reading": "ネンケイヤク",
+          "scope": "common",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "id": "common.nenkeiyaku",
+          "surface": "年契約",
+          "reading": "ネンケイヤク",
+          "scope": "common",
+          "start": 54,
+          "end": 57
+        }
+      ],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 12,
+          "end": 13,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        },
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 23,
+          "end": 24,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 360,
+    "audio": "voice_29f16a9cc0cdb4e1.wav",
+    "speaker": 2,
+    "kana": "ソオ'、ネン'/ケイ'ヤクオ/_シテモ'、_キカンゲ'ンテエノ/ショオヒワ'リビキガ/イチネ'ンカン/ツズク'/ワ'ケデワナイノ、ト_クテンガ'/オワレ'バ/ツウジョオノ'/ショオヒ'リョウニ/モド'ルシ、コノ'ネン/ケイ'ヤクノ/ヨクネン'/コオシンワ'/ヤ'ク/ニ'ジュウ/キュウマン'エンヨ",
+    "queryFile": "voice_queries/query_29f16a9cc0cdb4e1.json",
+    "audioSha256": "d458702eb53e684522e10b81208fad9e2fc97d332257a7ac1cd5bab2247020d0",
+    "startFrame": 14293
+  },
+  {
+    "type": "dialogue",
+    "id": "064",
+    "who": "metan",
+    "view": "annual_expiry",
+    "text": "月の枠を使い切った後の追加クレジットは、購入時の別料金。この安い単価で、何本でも作れるわけではないわ。",
+    "scene": "costs",
+    "speech": "月の枠を使い切った後の追加クレジットは、購入時の別料金。この安い単価で、何本でも作れるわけではないわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 230,
+    "audio": "voice_7e97bb357424b9a6.wav",
+    "speaker": 2,
+    "kana": "_ツキ'ノ/ワク'オ/_ツカイキ'ッタ/ア'トノ/ツイカクレ'ジットワ、コオニュウ'ジノ/ベツリョ'オキン、コノ'/ヤス'イ/タ'ンカデ、ナン'ボンデモ/_ツクレ'ル/ワ'ケデワ/ナ'イワ",
+    "queryFile": "voice_queries/query_7e97bb357424b9a6.json",
+    "audioSha256": "cbc282b25a4205eaebb660129dd1e881a63470df270f49b3bd9e92cba3dd042c",
+    "startFrame": 14665
+  },
+  {
+    "type": "dialogue",
+    "id": "065",
+    "who": "zunda",
+    "view": "annual_expiry",
+    "text": "年額、毎月の枠、特典の期間。三つを分けて見るのだ。",
+    "scene": "costs",
+    "speech": "年額、毎月の枠、特典の期間。三つを分けて見るのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 12,
+          "end": 13,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        },
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 17,
+          "end": 18,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 150,
+    "audio": "voice_67a83cacafd434a4.wav",
+    "speaker": 3,
+    "kana": "ネンガク'、マイ_ツキノ'/ワク'、ト_クテンノ'/キ'カン、ミッツ'オ/ワケ'テ/ミ'ル/ノダ'",
+    "queryFile": "voice_queries/query_67a83cacafd434a4.json",
+    "audioSha256": "de540657b692b4731ad42de37002f4eafe4e523271f988c5b21717bd3b54ed09",
+    "startFrame": 14907
+  },
+  {
+    "type": "dialogue",
+    "id": "066",
+    "who": "metan",
+    "view": "fair_cost",
+    "text": "だから、Dreaminaは高い、で片付けるのも違うの。年契約や特典を使って、毎月たくさん作る人には、実質単価が下がる選択肢があるわ。",
+    "scene": "costs",
+    "speech": "だから、ドリーミナは高い、で片付けるのも違うの。ネンケイヤクや特典を使って、毎月たくさん作る人には、実質単価が下がる選択肢があるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.13",
+          "surface": "Dreamina",
+          "reading": "ドリーミナ",
+          "scope": "common",
+          "start": 4,
+          "end": 12
+        },
+        {
+          "id": "common.nenkeiyaku",
+          "surface": "年契約",
+          "reading": "ネンケイヤク",
+          "scope": "common",
+          "start": 27,
+          "end": 30
+        }
+      ],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 46,
+          "end": 47,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "durationInFrames": 292,
+    "audio": "voice_2df24897c4efd1b7.wav",
+    "speaker": 2,
+    "kana": "ダ'カラ、ド'リイ/ミ'ナワ/タカ'イ、デ'/カタズケ'ル/ノモ'/チガウ'ノ、ネン'/ケイ'ヤクヤ/ト_クテンオ'/_ツカッテ'、マイ_ツキ'/タ_クサン'/_ツク'ル/_ヒトニワ'、ジッ_シツタ'ンカガ/サガ'ル/センタク'シガ/ア'ルワ",
+    "queryFile": "voice_queries/query_2df24897c4efd1b7.json",
+    "audioSha256": "7e15a6e228d104179a091e01768c89bc8823e93118fa97398bd10c007eae3035",
+    "startFrame": 15075
+  },
+  {
+    "type": "dialogue",
+    "id": "067",
+    "who": "metan",
+    "view": "fair_cost",
+    "text": "一方で、使わなかったクレジットまで動画の本数に数えた単価は、自分の実際の負担とは違う。契約する前に、使う量と今の条件を確認してね。",
+    "scene": "costs",
+    "speech": "一方で、使わなかったクレジットまで動画の本数に数えた単価は、自分の実際の負担とは違う。契約する前に、使う量と今の条件を確認してね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 1,
+          "end": 2,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        },
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 31,
+          "end": 32,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 312,
+    "audio": "voice_c1c3a47e234226f4.wav",
+    "speaker": 2,
+    "kana": "イッポ'オデ、_ツカワナカッタ'/クレ'ジットマデ/ドオガノ'/ホンス'ウニ/カゾエ'タ/タ'ンカワ、ジブンノ'/ジッサイノ'/_フタントワ'/チガウ'、ケエヤ_ク'/スル'/マ'エニ、_ツカウ'/リョ'オト/イ'マノ/ジョオケ'ンオ/カクニン'/_シテネ'",
+    "queryFile": "voice_queries/query_c1c3a47e234226f4.json",
+    "audioSha256": "bd538d2660cc4ba0429bf7be81653b7be19561e94fb1de83935639c8502cb3f5",
+    "startFrame": 15379
+  },
+  {
+    "type": "dialogue",
+    "id": "068",
+    "who": "metan",
+    "view": "models",
+    "text": "今人気なのは、Seedance 2.5、MiniMax H3、Wan 3.0ね。",
+    "scene": "quality",
+    "speech": "今人気なのは、シーダンス ニーテンゴ、ミニマックス エイチスリー、ワン サンテンゼロね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.4",
+          "surface": "Seedance 2.5",
+          "reading": "シーダンス ニーテンゴ",
+          "scope": "common",
+          "start": 7,
+          "end": 19
+        },
+        {
+          "id": "h3.0",
+          "surface": "MiniMax H3",
+          "reading": "ミニマックス エイチスリー",
+          "scope": "common",
+          "start": 20,
+          "end": 30
+        },
+        {
+          "id": "h3.5",
+          "surface": "Wan 3.0",
+          "reading": "ワン サンテンゼロ",
+          "scope": "common",
+          "start": 31,
+          "end": 38
+        }
+      ],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 1,
+          "end": 2,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "durationInFrames": 210,
+    "audio": "voice_d7215fe960ecb4dc.wav",
+    "speaker": 2,
+    "kana": "コンニ'ンキナ/ノワ'、シ'イダンス、ニ'イテンゴ、ミニマ'ッ_クス、エイチスリ'イ、ワ'ン、サンテン'ゼロネ",
+    "queryFile": "voice_queries/query_d7215fe960ecb4dc.json",
+    "audioSha256": "0fbb82ba24f85b408a8420eb0306c9ad6e1f12ff66f2b52d5467fa437ec1dfd9",
+    "startFrame": 15703
+  },
+  {
+    "type": "dialogue",
+    "id": "069",
+    "who": "metan",
+    "view": "kling",
+    "text": "Kling 4.0なんかも最近話題のようだけど、窓際族は使ったことないから比較には含めてないわ。",
+    "scene": "quality",
+    "speech": "クリング ヨンテンゼロなんかも最近話題のようだけど、窓際族は使ったことないから比較には含めてないわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.6",
+          "surface": "Kling 4.0",
+          "reading": "クリング ヨンテンゼロ",
+          "scope": "common",
+          "start": 0,
+          "end": 9
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 205,
+    "audio": "voice_276be5a7a4d30eec.wav",
+    "speaker": 2,
+    "kana": "クリ'ング、ヨンテン'ゼロナンカモ/サイキン'/ワダイノ'/ヨ'オダケド、マドギワ'ゾクワ/_ツカッタ'/コト'/ナ'イカラ/_ヒカクニワ'/_フクメテ'ナイワ",
+    "queryFile": "voice_queries/query_276be5a7a4d30eec.json",
+    "audioSha256": "bb96268b3edfb0d165af52cece11f34e6a654614b6383d86fa5a872603aad167",
+    "startFrame": 15925
+  },
+  {
+    "type": "dialogue",
+    "id": "070",
+    "who": "zunda",
+    "view": "kling",
+    "text": "それも知りたかったのだ。使えねーやつらなのだ。",
+    "scene": "quality",
+    "speech": "それも知りたかったのだ。使えねーやつらなのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 98,
+    "audio": "voice_d7b9e0daba3da435.wav",
+    "speaker": 3,
+    "kana": "ソレモ'/シリタ'カッタ/ノダ'、_ツカエ'ネエ/ヤツ'ラナ/ノダ'",
+    "queryFile": "voice_queries/query_d7b9e0daba3da435.json",
+    "audioSha256": "6d1387f6ad7f7eb1c29c51bd6dc229ac6d3ec92594d8e19024a12563567bf384",
+    "startFrame": 16142
+  },
+  {
+    "type": "dialogue",
+    "id": "071",
+    "who": "metan",
+    "view": "kling",
+    "text": "そうね！",
+    "scene": "quality",
+    "speech": "そうね！",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 19,
+    "audio": "voice_f584d4c84c300bce.wav",
+    "speaker": 2,
+    "kana": "ソオネ'",
+    "queryFile": "voice_queries/query_f584d4c84c300bce.json",
+    "audioSha256": "0fc00af4552aa78450796741653b169048e29793082e555871ad52d65f3ff9e0",
+    "startFrame": 16258
+  },
+  {
+    "type": "dialogue",
+    "id": "072",
+    "who": "metan",
+    "view": "quality_note",
+    "text": "ここからは、窓際族で使った感想よ。同じ条件で順位を決めたベンチマークではないわ。",
+    "scene": "quality",
+    "speech": "ここからは、窓際族で使った感想よ。同じ条件で順位を決めたベンチマークではないわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 175,
+    "audio": "voice_b57e4e973eedcc88.wav",
+    "speaker": 2,
+    "kana": "ココカラワ'、マドギワ'ゾクデ/_ツカッタ'/カンソオヨ'、オナジ'/ジョオケ'ンデ/ジュ'ンイオ/キメタ'/ベンチマ'アクデワ/ナ'イワ",
+    "queryFile": "voice_queries/query_b57e4e973eedcc88.json",
+    "audioSha256": "fcc1e68c83322c8d2393721f7e2b54953463ca441309359927207e91270784cc",
+    "startFrame": 16307
+  },
+  {
+    "type": "dialogue",
+    "id": "073",
+    "who": "zunda",
+    "view": "seedance_quality",
+    "text": "お金の話を抜きにすると、どれが一番すごいのだ？",
+    "scene": "quality",
+    "speech": "お金の話を抜きにすると、どれが一番すごいのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 117,
+    "audio": "voice_b30a4090ec9141f1.wav",
+    "speaker": 3,
+    "kana": "オカネノ'/ハナシ'オ/ヌ'キニ/スルト'、ド'レガ/イチ'バン/スゴ'イ/ノダ'？",
+    "queryFile": "voice_queries/query_b30a4090ec9141f1.json",
+    "audioSha256": "cd3a7e9f7f61325572f00aa6a4d1e8d3a478cad64f7b2032e2dc13303f2c267d",
+    "startFrame": 16494
+  },
+  {
+    "type": "dialogue",
+    "id": "074",
+    "who": "metan",
+    "view": "seedance_quality",
+    "text": "私たちの感覚では、最高の仕上がりを狙うならSeedance 2.5。動きや表現の幅は、とても強いわ。",
+    "scene": "quality",
+    "speech": "私たちの感覚では、最高の仕上がりを狙うならシーダンス ニーテンゴ。動きや表現の幅は、とても強いわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.4",
+          "surface": "Seedance 2.5",
+          "reading": "シーダンス ニーテンゴ",
+          "scope": "common",
+          "start": 21,
+          "end": 33
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 221,
+    "audio": "voice_199fb5523c7b29c2.wav",
+    "speaker": 2,
+    "kana": "ワタシ'タチノ/カンカクデワ'、サイコオノ'/シアガリオ'/ネラウナラ'/シ'イダンス、ニ'イテンゴ、ウゴキ'ヤ/ヒョオゲ'ンノ/ハバワ'、トテモ'/ツヨ'イワ",
+    "queryFile": "voice_queries/query_199fb5523c7b29c2.json",
+    "audioSha256": "07050bdabd67119f7396dd70e13d8d46b398d651c3c32e3b04e732afdfda0291",
+    "startFrame": 16629
+  },
+  {
+    "type": "dialogue",
+    "id": "075",
+    "who": "metan",
+    "view": "seedance_quality",
+    "text": "ただし、費用は高めで、その性能を引き出すのも難しいの。良いプロンプトや素材を用意して、狙い通りにするには工夫が必要ね。",
+    "scene": "quality",
+    "speech": "ただし、費用は高めで、その性能を引き出すのも難しいの。良いプロンプトや素材を用意して、狙い通りにするには工夫が必要ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 260,
+    "audio": "voice_764200108a0a0152.wav",
+    "speaker": 2,
+    "kana": "タ'ダシ、ヒ'ヨオワ/タカメ'デ、ソノ'/セエノオオ'/_ヒキダ'ス/ノモ'/ムズカシ'イノ、ヨ'イ/プロ'ン_プトヤ/ソザイオ'/ヨ'オイ/_シテ'、ネライド'オリニ/スルニワ'/_クフウガ'/_ヒツヨオネ'",
+    "queryFile": "voice_queries/query_764200108a0a0152.json",
+    "audioSha256": "4be550bec097ff904858d3d567bc3c43d8689357d55df5b6231404e658da1f7d",
+    "startFrame": 16862
+  },
+  {
+    "type": "dialogue",
+    "id": "076",
+    "who": "zunda",
+    "view": "seedance_quality",
+    "text": "高級な道具を買ったら、自動で傑作になるわけではないのだ。",
+    "scene": "quality",
+    "speech": "高級な道具を買ったら、自動で傑作になるわけではないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 130,
+    "audio": "voice_5bc500acb535dac4.wav",
+    "speaker": 3,
+    "kana": "コオキュウナ'/ドオグ'オ/カッタ'ラ、ジドオデ'/ケッサクニ'/ナ'ル/ワ'ケデワ/ナ'イ/ノダ'",
+    "queryFile": "voice_queries/query_5bc500acb535dac4.json",
+    "audioSha256": "ab93979acd0d9ea6749d761daf07698fc689381bc999098cda963c2150039584",
+    "startFrame": 17134
+  },
+  {
+    "type": "dialogue",
+    "id": "077",
+    "who": "metan",
+    "view": "wan_quality",
+    "text": "Wan 3.0も、かなりハイレベルよ。最高のプロンプトが与えられたSeedanceには及ばないと感じるけれど、費用とのバランスが良いわ。",
+    "scene": "quality",
+    "speech": "ワン サンテンゼロも、かなりハイレベルよ。最高のプロンプトが与えられたSeedanceには及ばないと感じるけれど、費用とのバランスが良いわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.5",
+          "surface": "Wan 3.0",
+          "reading": "ワン サンテンゼロ",
+          "scope": "common",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 272,
+    "audio": "voice_c93f5928f47942b5.wav",
+    "speaker": 2,
+    "kana": "ワ'ン、サンテン'ゼロモ、カ'ナリ/ハイレ'ベルヨ、サイコオノ'/プロ'ン_プトガ/アタエラレタ'/シ'イダンスニワ/オヨバナイト'/カンジル'ケレド、ヒ'ヨオトノ/バランスガ'/ヨ'イワ",
+    "queryFile": "voice_queries/query_c93f5928f47942b5.json",
+    "audioSha256": "d5e55eb150cac3da49e48497267ea65877006956efa7bb0ef637ac03c91fbe0a",
+    "startFrame": 17282
+  },
+  {
+    "type": "dialogue",
+    "id": "078",
+    "who": "metan",
+    "view": "takosan",
+    "text": "Seedanceよりだいぶ安く試せるし、たこさんのお気に入りでもあるの。",
+    "scene": "quality",
+    "speech": "Seedanceよりだいぶ安く試せるし、たこさんのお気に入りでもあるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 122,
+    "audio": "voice_ce3624fa8782b674.wav",
+    "speaker": 2,
+    "kana": "シ'イダンスヨリ/ダイブ'/ヤス'_クタメセルシ、タ'コサンノ/オキニイリデモ'/ア'ルノ",
+    "queryFile": "voice_queries/query_ce3624fa8782b674.json",
+    "audioSha256": "4dd1ecd233e5f51dcb84ef9ddd2bc50808bed554bf52fe6d8a141511ff627706",
+    "startFrame": 17566
+  },
+  {
+    "type": "dialogue",
+    "id": "079",
+    "who": "zunda",
+    "view": "takosan",
+    "text": "何回も作って調整したい人には、そこも大事なのだ。",
+    "scene": "quality",
+    "speech": "何回も作って調整したい人には、そこも大事なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 11,
+          "end": 12,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "durationInFrames": 121,
+    "audio": "voice_5edbafb4b137b782.wav",
+    "speaker": 3,
+    "kana": "ナン'カイモ/_ツク'ッテ/チョオセエ'/_シタ'イ/_ヒトニワ'、ソコモ'/ダイジナ'/ノダ'",
+    "queryFile": "voice_queries/query_5edbafb4b137b782.json",
+    "audioSha256": "3eb9d50c7c2f98c8a44c9843024044dd8613755c65593e2d2bb65713848e452e",
+    "startFrame": 17700
+  },
+  {
+    "type": "dialogue",
+    "id": "080",
+    "who": "metan",
+    "view": "h3_quality",
+    "text": "H3は、二つと比べると表現力が低いと感じる場面はあるわ。それでも、窓際族の制作では十分に実用レベルよ。",
+    "scene": "quality",
+    "speech": "エイチスリーは、二つと比べると表現力が低いと感じる場面はあるわ。それでも、窓際族の制作では十分に実用レベルよ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 42,
+          "end": 43,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 250,
+    "audio": "voice_ea7159027086ee50.wav",
+    "speaker": 2,
+    "kana": "エイチスリ'イワ、_フタツ'ト/クラベルト'/ヒョオゲンリョ'クガ/_ヒク'イト/カンジル'/バ'メンワ/ア'ルワ、ソレデ'モ、マドギワ'ゾクノ/セエサクデワ'/ジュウブ'ンニ/ジツヨオレ'ベルヨ",
+    "queryFile": "voice_queries/query_ea7159027086ee50.json",
+    "audioSha256": "cb759703c7a0d40640ad396e91423b6968a3513c6329639fba0b34540bec7cc0",
+    "startFrame": 17839
+  },
+  {
+    "type": "dialogue",
+    "id": "081",
+    "who": "metan",
+    "view": "h3_quality",
+    "text": "激しいアクションや映画的な演出を押し出すより、会話とリアクションで見せるコントのほうが、使いやすい感覚ね。",
+    "scene": "quality",
+    "speech": "激しいアクションや映画的な演出を押し出すより、会話とリアクションで見せるコントのほうが、使いやすい感覚ね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 207,
+    "audio": "voice_3a09325d522618ce.wav",
+    "speaker": 2,
+    "kana": "ハゲシ'イ/ア'_クションヤ/エエガ'テキナ/エン_シュツオ'/オシダ'スヨリ、カイワト'/リア'_クションデ/ミセ'ル/コ'ントノ/ホ'オガ、_ツカイヤス'イ/カンカクネ'",
+    "queryFile": "voice_queries/query_3a09325d522618ce.json",
+    "audioSha256": "c60bca0d9eea6ad14c35b3715b41ed49af5eba094fc7f6d8b2091229879b3b52",
+    "startFrame": 18101
+  },
+  {
+    "type": "dialogue",
+    "id": "082",
+    "who": "zunda",
+    "view": "h3_quality",
+    "text": "そば屋が変なことをして、誰かが突っ込む。いつもの動画なのだ。",
+    "scene": "quality",
+    "speech": "ソバヤが変なことをして、誰かが突っ込む。いつもの動画なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 138,
+    "audio": "voice_8958c80030f9267d.wav",
+    "speaker": 3,
+    "kana": "ソ'バヤガ/ヘ'ンナ/コト'オ/_シテ'、ダ'レカガ/ツッコ'ム、イ'ツモノ/ドオガナ'/ノダ'",
+    "queryFile": "voice_queries/query_8958c80030f9267d.json",
+    "audioSha256": "4c002a8b042d2d2a5f6a250ee5c4837fafdc853c3e44591cdfa03a3453a95ec9",
+    "startFrame": 18320
+  },
+  {
+    "type": "dialogue",
+    "id": "083",
+    "who": "metan",
+    "view": "news",
+    "text": "ニュース番組風の映像も作っているわ。こちらは、生成後に重複した読みを編集でカットした例よ。",
+    "scene": "quality",
+    "speech": "ニュース番組風の映像も作っているわ。こちらは、生成後に重複した読みを編集でカットした例よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 199,
+    "audio": "voice_c4b0eca8017e0872.wav",
+    "speaker": 2,
+    "kana": "ニュウスバングミ'フウノ/エエゾオモ'/_ツク'ッテ/イル'ワ、コチラワ'、セエセエ'ゴニ/ジュウ_フク'/_シタ'/ヨミ'オ/ヘンシュウデ'/カ'ット/_シタ'/レ'エヨ",
+    "queryFile": "voice_queries/query_c4b0eca8017e0872.json",
+    "audioSha256": "cb4d1f608fcc268e87c194b4fa798c03552958f3449b77b4e45814de1411c6de",
+    "startFrame": 18476
+  },
+  {
+    "type": "dialogue",
+    "id": "084",
+    "who": "zunda",
+    "view": "news",
+    "text": "冷えた缶を隠すだけで対策できるのだ。",
+    "scene": "quality",
+    "speech": "冷えた缶を隠すだけで対策できるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 83,
+    "audio": "voice_c7b1c0ff3901e9df.wav",
+    "speaker": 3,
+    "kana": "ヒエ'タ/カ'ンオ/カク'スダケデ/タイサク'/デキ'ル/ノダ'",
+    "queryFile": "voice_queries/query_c7b1c0ff3901e9df.json",
+    "audioSha256": "6fe3cb5f13c48e4af3bb9ed448c8b44b2d02b36d009a306b9f28442506059904",
+    "startFrame": 19053
+  },
+  {
+    "type": "dialogue",
+    "id": "085",
+    "who": "metan",
+    "view": "wipe",
+    "text": "テレビ番組のワイプの中で反応している映像にも、合いそうね。これは今後試してみたい使い方よ。",
+    "scene": "quality",
+    "speech": "テレビ番組のワイプの中で反応している映像にも、合いそうね。これは今後試してみたい使い方よ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 42,
+          "end": 43,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "durationInFrames": 190,
+    "audio": "voice_57de863fae2fa1cb.wav",
+    "speaker": 2,
+    "kana": "テレビバ'ングミノ/ワ'イプノ/ナ'カデ/ハンノオ'/_シテ'/イル'/エエゾオニモ'、アイ'ソオネ、コレワ'/コンゴ'/タメシ'テ/ミタ'イ/_ツカイカタヨ'",
+    "queryFile": "voice_queries/query_57de863fae2fa1cb.json",
+    "audioSha256": "ee96c4308b8ccfb583338e35212809c1f4a9fe4eca24abbce776c7131248b914",
+    "startFrame": 19154
+  },
+  {
+    "type": "dialogue",
+    "id": "086",
+    "who": "metan",
+    "view": "quality_summary",
+    "text": "最高の表現を狙うSeedance、品質と費用のバランスでWan、小さく試してコントに使うH3。私たちは、そんな感覚で使い分けているわ。",
+    "scene": "quality",
+    "speech": "最高の表現を狙うSeedance、品質と費用のバランスでWan、小さく試してコントに使うエイチスリー。私たちは、そんな感覚で使い分けているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 44,
+          "end": 46
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 60,
+          "end": 61,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 295,
+    "audio": "voice_7fc8f9b4ce9d8144.wav",
+    "speaker": 2,
+    "kana": "サイコオノ'/ヒョオゲ'ンオ/ネラウ'/シ'イダンス、ヒン_シツト'/ヒ'ヨオノ/バランスデ'/ワ'ン、チイサ'_クタメ_シテ/コ'ントニ/_ツカウエイチスリ'イ、ワタシ'タチワ、ソンナ'/カンカクデ'/_ツカイワケテ'/イル'ワ",
+    "queryFile": "voice_queries/query_7fc8f9b4ce9d8144.json",
+    "audioSha256": "6d293ea1108d6502ff1921472ffd0d6200f37357b402581ed04bde5528183f80",
+    "startFrame": 19356
+  },
+  {
+    "type": "dialogue",
+    "id": "087",
+    "who": "zunda",
+    "view": "availability",
+    "text": "それなら、H3をColabで動かし続ければいいのだ！",
+    "scene": "limits",
+    "speech": "それなら、エイチスリーをコラボで動かし続ければいいのだ！",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 8,
+          "end": 13
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 119,
+    "audio": "voice_880c7f67f8b357e9.wav",
+    "speaker": 3,
+    "kana": "ソレナ'ラ、エイチスリ'イオ/コ'ラボデ/ウゴカ'_シツズケレバ/イ'イ/ノダ'",
+    "queryFile": "voice_queries/query_880c7f67f8b357e9.json",
+    "audioSha256": "ee19cc9b5ef3fcc14805df28b4f6ba9c0e68f04bd7d1c4cadc9e8ae5c1009cd2",
+    "startFrame": 19663
+  },
+  {
+    "type": "dialogue",
+    "id": "088",
+    "who": "metan",
+    "view": "availability",
+    "text": "そこには弱点があるの。Colabは、欲しいGPUをいつでも確保できるとは限らないわ。有料でも、資源の利用状況によって変わるの。",
+    "scene": "limits",
+    "speech": "そこには弱点があるの。コラボは、欲しいジーピーユーをいつでも確保できるとは限らないわ。有料でも、資源の利用状況によって変わるの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 11,
+          "end": 16
+        },
+        {
+          "id": "h3.20",
+          "surface": "GPU",
+          "reading": "ジーピーユー",
+          "scope": "common",
+          "start": 21,
+          "end": 24
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 263,
+    "audio": "voice_edac7b5b848bc724.wav",
+    "speaker": 2,
+    "kana": "ソコニワ'/ジャ_クテ'ンガ/ア'ルノ、コ'ラボワ、ホシ'イ/ジイ'/ピ'イ/ユ'ウオ/イ'ツデモ/カ'_クホ/デキ'ルトワ/カギラ'ナイワ、ユウリョオデモ'、シ'ゲンノ/リヨオジョ'オキョオニ/ヨッテ'/カワル'ノ",
+    "queryFile": "voice_queries/query_edac7b5b848bc724.json",
+    "audioSha256": "25431806d39ea2b5cf0c95b3077098af78c53fdde83fdbb7eaae20a4d79f4aff",
+    "startFrame": 19800
+  },
+  {
+    "type": "dialogue",
+    "id": "089",
+    "who": "metan",
+    "view": "availability",
+    "text": "利用時間の上限や切断もあるから、締め切り直前に必ず動く前提にはしないほうがいいわね。",
+    "scene": "limits",
+    "speech": "利用時間の上限や切断もあるから、締め切り直前に必ず動く前提にはしないほうがいいわね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 3,
+          "end": 4,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 184,
+    "audio": "voice_f8cdbc119a641ce7.wav",
+    "speaker": 2,
+    "kana": "リヨオ'/ジカンノ'/ジョオゲンヤ'/セツダンモ'/ア'ルカラ、シメキリチョ'クゼンニ/カナラズ'/ウゴ'ク/ゼンテエニワ'/シナイ'/ホ'オガ/イ'イワネ",
+    "queryFile": "voice_queries/query_f8cdbc119a641ce7.json",
+    "audioSha256": "757b53b2ba2f1fb2c3fe3bddb724912b03faced48439a93eead795f9b54e402b",
+    "startFrame": 20075
+  },
+  {
+    "type": "dialogue",
+    "id": "090",
+    "who": "zunda",
+    "view": "availability",
+    "text": "安い代わりに、席が空いていないこともあるのだ。",
+    "scene": "limits",
+    "speech": "安い代わりに、席が空いていないこともあるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.empty-sky",
+          "surface": "空",
+          "start": 9,
+          "end": 10,
+          "readings": [
+            "カラ：空の缶、空になった容器",
+            "ソラ：空の色",
+            "アキ：空き缶",
+            "クウ：空席、空気"
+          ],
+          "note": "空の／空になをまとめてカラにしない"
+        }
+      ]
+    },
+    "durationInFrames": 104,
+    "audio": "voice_a5394efba2a5c1a5.wav",
+    "speaker": 3,
+    "kana": "ヤス'イ/カワリニ'、セ'キガ/アイテ'/イナイ'/コト'モ/ア'ル/ノダ'",
+    "queryFile": "voice_queries/query_a5394efba2a5c1a5.json",
+    "audioSha256": "4626299735152752a7f12427d2a4bf79c03e29fa80b2b3fa6f2f33ec0af43bbb",
+    "startFrame": 20271
+  },
+  {
+    "type": "dialogue",
+    "id": "091",
+    "who": "metan",
+    "view": "availability",
+    "text": "結果をこまめに回収して、再開できるように入力と設定を残す。私たちも、そうしているわ。",
+    "scene": "limits",
+    "speech": "結果をこまめに回収して、再開できるように入力と設定を残す。私たちも、そうしているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 196,
+    "audio": "voice_196c6b432093aa73.wav",
+    "speaker": 2,
+    "kana": "ケッカオ'/コ'マメニ/カイシュウ'/_シテ'、サイカイ'/デキ'ル/ヨ'オニ/ニュウリョ_クト'/セッテエオ'/ノコ'ス、ワタシ'タチモ、ソオ'/_シテ'/イル'ワ",
+    "queryFile": "voice_queries/query_196c6b432093aa73.json",
+    "audioSha256": "190615192b464bba97bd2187f7cdb6e4a9660a9f8c6cc767c8896a6e1db85f88",
+    "startFrame": 20393
+  },
+  {
+    "type": "dialogue",
+    "id": "092",
+    "who": "metan",
+    "view": "resolution",
+    "text": "解像度にも違いがあるわ。今回使っている公開重みのH3-Baseは、768pが基準。窓際族では、費用と時間を抑えるため480pを使っているの。",
+    "scene": "limits",
+    "speech": "解像度にも違いがあるわ。今回使っている公開重みのエイチスリー ベースは、ナナヒャクロクジュウハチピーが基準。窓際族では、費用と時間を抑えるためヨンヒャクハチジュッピーを使っているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.1",
+          "surface": "H3-Base",
+          "reading": "エイチスリー ベース",
+          "scope": "common",
+          "start": 24,
+          "end": 31
+        },
+        {
+          "id": "h3.33",
+          "surface": "768p",
+          "reading": "ナナヒャクロクジュウハチピー",
+          "scope": "common",
+          "start": 33,
+          "end": 37
+        },
+        {
+          "id": "h3.31",
+          "surface": "480p",
+          "reading": "ヨンヒャクハチジュッピー",
+          "scope": "common",
+          "start": 58,
+          "end": 62
+        }
+      ],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 51,
+          "end": 52,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 375,
+    "audio": "voice_941e5fcbab028c6e.wav",
+    "speaker": 2,
+    "kana": "カイゾ'オドニモ/チガイガ'/ア'ルワ、コ'ンカイ/_ツカッテ'/イル'/コオカイオ'モミノ/エイチスリ'イ、ベ'エスワ、ナナヒャクロクジュウハチ'ピイガ/キジュン'、マドギワ'ゾクデワ、ヒ'ヨオト/ジカンオ'/オサエ'ル/タメヨンヒャ_クハチジュッ'ピイオ/_ツカッテ'/イル'ノ",
+    "queryFile": "voice_queries/query_941e5fcbab028c6e.json",
+    "audioSha256": "d2e770cfde6ac6a3c458e9561963159335fe5226e96e1b73dc1fe78e6ee76985",
+    "startFrame": 20601
+  },
+  {
+    "type": "dialogue",
+    "id": "093",
+    "who": "zunda",
+    "view": "resolution",
+    "text": "有料サービスで見る2Kとは、別なのだ？",
+    "scene": "limits",
+    "speech": "有料サービスで見るニケーとは、別なのだ？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.34",
+          "surface": "2K",
+          "reading": "ニケー",
+          "scope": "common",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 99,
+    "audio": "voice_d2a59aa16580403d.wav",
+    "speaker": 3,
+    "kana": "ユウリョオサ'アビスデ/ミ'ル/ニ'ケエトワ、ベツナ'/ノダ'？",
+    "queryFile": "voice_queries/query_d2a59aa16580403d.json",
+    "audioSha256": "1d6af4a8e1e471dd928792e42a512f483d0b88c20e1636a9668e817743d8d3c9",
+    "startFrame": 20988
+  },
+  {
+    "type": "dialogue",
+    "id": "094",
+    "who": "metan",
+    "view": "resolution",
+    "text": "そう。MiniMaxの有料APIには2Kもあるけれど、公開されている基本モデルだけで、その仕組みまで全部使えるわけではないの。",
+    "scene": "limits",
+    "speech": "そう。MiniMaxの有料エーピーアイにはニケーもあるけれど、公開されている基本モデルだけで、その仕組みまで全部使えるわけではないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "tech.api",
+          "surface": "API",
+          "reading": "エーピーアイ",
+          "scope": "tech",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "id": "h3.34",
+          "surface": "2K",
+          "reading": "ニケー",
+          "scope": "common",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 256,
+    "audio": "voice_2d8695c7bc76af29.wav",
+    "speaker": 2,
+    "kana": "ソオ'、ミ'ニマックスノ/ユウリョオエエピイ'アイニワ/ニ'ケエモ/ア'ルケレド、コオカイ'/サレテ'/イル'/_キホンモデルダケデ'、ソノ'/_シクミマ'デ/ゼ'ンブ/_ツカエ'ル/ワ'ケデワナイノ",
+    "queryFile": "voice_queries/query_2d8695c7bc76af29.json",
+    "audioSha256": "a63cf5b1a0e031199694578ab2976e4e468ace42335629004a943f06bdc5f1b8",
+    "startFrame": 21105
+  },
+  {
+    "type": "dialogue",
+    "id": "095",
+    "who": "metan",
+    "view": "resolution_time",
+    "text": "今回の同じ題材では、480p Turboの生成が約8分半、768p Turboは約38分。解像度を上げると、待ち時間も大きく変わったわ。",
+    "scene": "limits",
+    "speech": "今回の同じ題材では、ヨンヒャクハチジュッピー ターボの生成が約8分半、ナナヒャクロクジュウハチピー ターボは約38分。解像度を上げると、待ち時間も大きく変わったわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.31",
+          "surface": "480p",
+          "reading": "ヨンヒャクハチジュッピー",
+          "scope": "common",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "id": "h3.10",
+          "surface": "Turbo",
+          "reading": "ターボ",
+          "scope": "common",
+          "start": 15,
+          "end": 20
+        },
+        {
+          "id": "h3.33",
+          "surface": "768p",
+          "reading": "ナナヒャクロクジュウハチピー",
+          "scope": "common",
+          "start": 29,
+          "end": 33
+        },
+        {
+          "id": "h3.10",
+          "surface": "Turbo",
+          "reading": "ターボ",
+          "scope": "common",
+          "start": 34,
+          "end": 39
+        }
+      ],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 26,
+          "end": 27,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        },
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 43,
+          "end": 44,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        },
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 57,
+          "end": 58,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 368,
+    "audio": "voice_6af1cd0925a84d8d.wav",
+    "speaker": 2,
+    "kana": "コ'ンカイノ/オナジ'/ダイザイデワ'、ヨンヒャク'ハチ/ジュ'ッ/ピ'イ、タ'アボノ/セエセエガ'/ヤ'_ク/ハッ'プン/ハ'ン、ナナヒャクロクジュウ'ハ_チ/ピ'イ、タ'アボワ/ヤ'_ク/サ'ンジュウ/ハッ'プン、カイゾ'オドオ/アゲルト'、マチジ'カンモ/オ'オ_キクカワッタワ",
+    "queryFile": "voice_queries/query_6af1cd0925a84d8d.json",
+    "audioSha256": "f9a5ea79b3dc33abadb6c0c26b3f88433ab2ae7f59f2636f9dfd02ab25d11192",
+    "startFrame": 21373
+  },
+  {
+    "type": "dialogue",
+    "id": "096",
+    "who": "zunda",
+    "view": "resolution_time",
+    "text": "小さなワイプのために、毎回大きく作る必要はなさそうなのだ。",
+    "scene": "limits",
+    "speech": "小さなワイプのために、毎回大きく作る必要はなさそうなのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 141,
+    "audio": "voice_8c7e12689d55000e.wav",
+    "speaker": 3,
+    "kana": "チ'イサナ/ワ'イプノ/タメ'ニ、マイカイ'/オ'オ_キク_ツクル/_ヒツヨオワ'/ナサ'ソオナ/ノダ'",
+    "queryFile": "voice_queries/query_8c7e12689d55000e.json",
+    "audioSha256": "990fbd15d629b94eacc2e180327237abee76ef46826085569bbc7b215fd2ef8a",
+    "startFrame": 21753
+  },
+  {
+    "type": "dialogue",
+    "id": "097",
+    "who": "metan",
+    "view": "license",
+    "text": "それと、利用地域の条件も確認してね。公開重みのライセンスには、アメリカ、EU、イギリス、韓国などを対象外とする条項があるわ。",
+    "scene": "limits",
+    "speech": "それと、利用地域の条件も確認してね。公開重みのライセンスには、アメリカ、イーユー、イギリス、韓国などを対象外とする条項があるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.30",
+          "surface": "EU",
+          "reading": "イーユー",
+          "scope": "common",
+          "start": 36,
+          "end": 38
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 302,
+    "audio": "voice_7c15fa0b06ef45b8.wav",
+    "speaker": 2,
+    "kana": "ソレト'、リヨオチ'イキノ/ジョオケ'ンモ/カクニン'/_シテネ'、コオカイオ'モミノ/ラ'イセンスニワ、アメリカ'、イ'イユウ、イギリス'、カ'ンコクナドオ/タイショオ'ガイト/スル'/ジョオコオガ'/ア'ルワ",
+    "queryFile": "voice_queries/query_7c15fa0b06ef45b8.json",
+    "audioSha256": "64c01975c4f25f31278f29b686675fb195bb9d8862f31220ab8024accf97a0ec",
+    "startFrame": 21912
+  },
+  {
+    "type": "dialogue",
+    "id": "098",
+    "who": "metan",
+    "view": "license",
+    "text": "単に無料版の機能が少ないという話ではなく、使う地域や利用・公開の条件の話よ。サービス版も含めて、自分が使う経路の最新条件を確認してね。",
+    "scene": "limits",
+    "speech": "単に無料版の機能が少ないという話ではなく、使う地域や利用・公開の条件の話よ。サービス版も含めて、自分が使う経路の最新条件を確認してね。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.bun-fun",
+          "surface": "分",
+          "start": 49,
+          "end": 50,
+          "readings": [
+            "ブン：今年の分、その分",
+            "フン／プン：時間の単位",
+            "ワ：分ける"
+          ],
+          "note": "取り分・時間・動詞を区別する"
+        }
+      ]
+    },
+    "durationInFrames": 328,
+    "audio": "voice_29b4b46de7d4e7a1.wav",
+    "speaker": 2,
+    "kana": "タ'ンニ/ムリョオ'バンノ/キ'ノオガ/_スクナ'イト/イウ'/ハナシ'デワナク、_ツカウ'/チ'イキヤ/リヨオ'、コオカイノ'/ジョオケ'ンノ/ハナシ'ヨ、サアビス'バンモ/_フクメ'テ、ジブンガ'/_ツカウ'/ケ'エロノ/サイシンジョオケ'ンオ/カクニン'/_シテネ'",
+    "queryFile": "voice_queries/query_29b4b46de7d4e7a1.json",
+    "audioSha256": "816ae525a3005a87aef4f5ff70b5e60bf8ec2d3acfa6bfc0f5bb20f4533f89ff",
+    "startFrame": 22226
+  },
+  {
+    "type": "dialogue",
+    "id": "099",
+    "who": "zunda",
+    "view": "license",
+    "text": "ダウンロードできたから、どこでも同じ条件とは限らないのだ。",
+    "scene": "limits",
+    "speech": "ダウンロードできたから、どこでも同じ条件とは限らないのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 125,
+    "audio": "voice_191149542805735e.wav",
+    "speaker": 3,
+    "kana": "ダウンロ'オド/デキ'タカラ、ド'コデモ/オナジ'/ジョオケ'ントワ/カギラ'ナイ/ノダ'",
+    "queryFile": "voice_queries/query_191149542805735e.json",
+    "audioSha256": "3a7933ada4d10ee5ad2a23baa4b61a88203a8035b734197e0a7ad0fd4223c7dc",
+    "startFrame": 22566
+  },
+  {
+    "type": "dialogue",
+    "id": "100",
+    "who": "metan",
+    "view": "fal",
+    "text": "最後に、余談も少し。fal.aiでは、H3を高速化したモデルも提供されているわ。",
+    "scene": "fal",
+    "speech": "最後に、余談も少し。ファル エーアイでは、エイチスリーを高速化したモデルも提供されているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.22",
+          "surface": "fal.ai",
+          "reading": "ファル エーアイ",
+          "scope": "common",
+          "start": 10,
+          "end": 16
+        },
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 19,
+          "end": 21
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 206,
+    "audio": "voice_d3d611d64429fe94.wav",
+    "speaker": 2,
+    "kana": "サ'イゴニ、ヨダンモ'/_スコ'シ、ファ'ル、エエア'イデワ、エイチスリ'イオ/コオソ_クカ'/_シタ'/モ'デルモ/テエキョオ'/サレテ'/イル'ワ",
+    "queryFile": "voice_queries/query_d3d611d64429fe94.json",
+    "audioSha256": "a28ee730abbca9b0f5aa628fce9774bba9889b7cf7892f80e3274900a18cfb3c",
+    "startFrame": 22709
+  },
+  {
+    "type": "dialogue",
+    "id": "101",
+    "who": "metan",
+    "view": "fal_speed",
+    "text": "例えばH3 Maxは、5秒の動画を約2.8秒で生成したという公式の紹介があるの。文章や画像から動画を作る用途には、とても速い選択肢も出てきているわ。",
+    "scene": "fal",
+    "speech": "例えばエイチスリー マックスは、5秒の動画を約2.8秒で生成したという公式の紹介があるの。文章や画像から動画を作る用途には、とても速い選択肢も出てきているわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.2",
+          "surface": "H3 Max",
+          "reading": "エイチスリー マックス",
+          "scope": "common",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 354,
+    "audio": "voice_e0945cc8339e5ea7.wav",
+    "speaker": 2,
+    "kana": "タト'エバ/エイチスリ'イ、マ'ッ_クスワ、ゴ'ビョオノ/ドオガオ'/ヤ'ク/ニ'イテン/ハチ'ビョオデ/セエセエ'/_シタ'ト/イウ'/コオ_シキノ'/ショオカイガ'/ア'ルノ、ブ'ンショオヤ/ガゾオカラ'/ドオガオ'/_ツク'ル/ヨ'オトニワ、トテモ'/ハヤ'イ/センタク'シモ/デテ'/キ'テ/イル'ワ",
+    "queryFile": "voice_queries/query_e0945cc8339e5ea7.json",
+    "audioSha256": "347f11c670ba0c9fd4581da3f3cd1f5499bd76524cd3436a8816634da768ce32",
+    "startFrame": 22927
+  },
+  {
+    "type": "dialogue",
+    "id": "102",
+    "who": "zunda",
+    "view": "fal_speed",
+    "text": "動画の長さより、作る時間のほうが短いのだ！？",
+    "scene": "fal",
+    "speech": "動画の長さより、作る時間のほうが短いのだ！？",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 11,
+          "end": 12,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 114,
+    "audio": "voice_2d10f77cd45f1598.wav",
+    "speaker": 3,
+    "kana": "ドオガノ'/ナガ'サヨリ、_ツク'ル/ジカンノ'/ホ'オガ/ミジカ'イ/ノダ'？",
+    "queryFile": "voice_queries/query_2d10f77cd45f1598.json",
+    "audioSha256": "a999afacd7a5ae2ee890264c1aee49337361f8f7d8fba028c3b63a92a7d5aefc",
+    "startFrame": 23293
+  },
+  {
+    "type": "dialogue",
+    "id": "103",
+    "who": "metan",
+    "view": "fal",
+    "text": "ただし、窓際族ではまだ使っていないわ。これは提供元の例で、今回のColabで同じ速度が出るという話ではないの。",
+    "scene": "fal",
+    "speech": "ただし、窓際族ではまだ使っていないわ。これは提供元の例で、今回のコラボで同じ速度が出るという話ではないの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 32,
+          "end": 37
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 234,
+    "audio": "voice_307841dc04a4d63d.wav",
+    "speaker": 2,
+    "kana": "タ'ダシ、マドギワ'ゾクデワ/マ'ダ/_ツカッテ'/イナイ'ワ、コレワ'/テエキョオモトノ'/レ'エデ、コ'ンカイノ/コ'ラボデ/オナジ'/ソ'クドガ/デ'ルト/イウ'/ハナシ'デワナイノ",
+    "queryFile": "voice_queries/query_307841dc04a4d63d.json",
+    "audioSha256": "490b23bc740a53d9249a9fa487d7a4c18a4a805ae04bc00ee4c9830c4705606f",
+    "startFrame": 23425
+  },
+  {
+    "type": "dialogue",
+    "id": "104",
+    "who": "zunda",
+    "view": "fal",
+    "text": "速さを重視するなら、そういうサービスも候補なのだ。",
+    "scene": "fal",
+    "speech": "速さを重視するなら、そういうサービスも候補なのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 111,
+    "audio": "voice_824c30b9f6367ac5.wav",
+    "speaker": 3,
+    "kana": "ハヤ'サオ/ジュ'ウ_シ/スルナラ'、ソオユウ'/サ'アビスモ/コ'オホナ/ノダ'",
+    "queryFile": "voice_queries/query_824c30b9f6367ac5.json",
+    "audioSha256": "733f1958dcee354aee9ded3fe55ea9f598b659ad368dc3ebf03ac2f0f0635b29",
+    "startFrame": 23671
+  },
+  {
+    "type": "dialogue",
+    "id": "105",
+    "who": "metan",
+    "view": "ending",
+    "text": "今回は、高いPCを買わずに、ColabでH3を使う方法を紹介したわ。窓際族では、480pとTurbo LoRAで、コントなどの制作に使っているの。",
+    "scene": "ending",
+    "speech": "今回は、高いPCを買わずに、コラボでエイチスリーを使う方法を紹介したわ。窓際族では、ヨンヒャクハチジュッピーとターボ ローラで、コントなどの制作に使っているの。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "id": "h3.3",
+          "surface": "H3",
+          "reading": "エイチスリー",
+          "scope": "common",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "id": "h3.31",
+          "surface": "480p",
+          "reading": "ヨンヒャクハチジュッピー",
+          "scope": "common",
+          "start": 40,
+          "end": 44
+        },
+        {
+          "id": "h3.9",
+          "surface": "Turbo LoRA",
+          "reading": "ターボ ローラ",
+          "scope": "common",
+          "start": 45,
+          "end": 55
+        }
+      ],
+      "review": [
+        {
+          "id": "context.kata-hou",
+          "surface": "方",
+          "start": 25,
+          "end": 26,
+          "readings": [
+            "カタ：相談に来る方（人物）",
+            "ホウ：明日来る方がいい（比較）",
+            "ガタ：あなた方",
+            "ホウ／ガタ：方法、夕方"
+          ],
+          "note": "来る方だけでは人物か比較か確定しない。行全体から判断"
+        }
+      ]
+    },
+    "durationInFrames": 339,
+    "audio": "voice_a9cbf367cd64f5ca.wav",
+    "speaker": 2,
+    "kana": "コ'ンカイワ、タカ'イ/ピイシ'イオ/カワズニ'、コ'ラボデ/エイチスリ'イオ/_ツカウ'/ホオホオオ'/ショオカイ'/_シタ'ワ、マドギワ'ゾクデワ、ヨンヒャ_クハチジュッ'ピイト/タ'アボ、ロ'オラデ、コ'ントナドノ/セエサクニ'/_ツカッテ'/イル'ノ",
+    "queryFile": "voice_queries/query_a9cbf367cd64f5ca.json",
+    "audioSha256": "e471ddeb942a2ad43ac19931c9325a2e1892ed16ef49b7ce796d6e6d607f20c6",
+    "startFrame": 23800
+  },
+  {
+    "type": "dialogue",
+    "id": "106",
+    "who": "zunda",
+    "view": "ending",
+    "text": "最強のモデルを一つ決めるというより、作りたい動画と、財布と、待てる時間で選ぶのだ。",
+    "scene": "ending",
+    "speech": "最強のモデルを一つ決めるというより、作りたい動画と、財布と、待てる時間で選ぶのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": [
+        {
+          "id": "context.interval",
+          "surface": "間",
+          "start": 34,
+          "end": 35,
+          "readings": [
+            "アイダ：その間ずっと",
+            "マ：間を置く",
+            "カン：時間"
+          ],
+          "note": "その間の採用例を間全般へ広げない"
+        }
+      ]
+    },
+    "durationInFrames": 202,
+    "audio": "voice_87a8d313c63ed510.wav",
+    "speaker": 3,
+    "kana": "サイキョオノ'/モ'デルオ/_ヒト'_ツ/キメルト'/イウヨリ'、_ツクリタ'イ/ドオガト'、サイ_フト'、マテ'ル/ジカンデ'/エラ'ブ/ノダ'",
+    "queryFile": "voice_queries/query_87a8d313c63ed510.json",
+    "audioSha256": "8817c27e370ce05fffbc25d181bb6ea6cd294a5789d21a377dddcb55b1f279bf",
+    "startFrame": 24151
+  },
+  {
+    "type": "dialogue",
+    "id": "107",
+    "who": "metan",
+    "view": "ending",
+    "text": "Google AIを契約している人は、まずColabの利用枠を確認してみてね。使った設定と料金の条件は、動画の資料にもまとめておくわ。",
+    "scene": "ending",
+    "speech": "グーグル エーアイを契約している人は、まずコラボの利用枠を確認してみてね。使った設定と料金の条件は、動画の資料にもまとめておくわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "h3.15",
+          "surface": "Google AI",
+          "reading": "グーグル エーアイ",
+          "scope": "common",
+          "start": 0,
+          "end": 9
+        },
+        {
+          "id": "h3.8",
+          "surface": "Colab",
+          "reading": "コラボ",
+          "scope": "common",
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "review": [
+        {
+          "id": "context.person",
+          "surface": "人",
+          "start": 16,
+          "end": 17,
+          "readings": [
+            "ヒト：あの人、人を紹介する",
+            "ニン：三人、管理人",
+            "ジン：日本人"
+          ],
+          "note": "熟語・人数・単独の人を分ける。人を紹介の断片も外国人を紹介に誤適用し得る"
+        }
+      ]
+    },
+    "durationInFrames": 286,
+    "audio": "voice_4872f68ed388ac07.wav",
+    "speaker": 2,
+    "kana": "グウグル'、エエア'イオ/ケエヤク'/_シテ'/イル'/_ヒトワ'、マ'ズ/コ'ラボノ/リヨオ'ワクオ/カクニン'/_シテ'/ミ'テネ、_ツカッタ'/セッテエト'/リョ'オキンノ/ジョオケ'ンワ、ドオガノ'/シ'リョオニモ/マトメテ'/オク'ワ",
+    "queryFile": "voice_queries/query_4872f68ed388ac07.json",
+    "audioSha256": "5b01e0997ec14d4218dad71963cb184714e62ecf4e94945dc82be07509523046",
+    "startFrame": 24371
+  },
+  {
+    "type": "dialogue",
+    "id": "108",
+    "who": "zunda",
+    "view": "bbq_end",
+    "text": "これで、そば屋がビールを飲む動画を増やせるのだ。",
+    "scene": "ending",
+    "speech": "これで、ソバヤがビールを飲む動画を増やせるのだ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [
+        {
+          "id": "mmu.sobaya",
+          "surface": "そば屋",
+          "reading": "ソバヤ",
+          "scope": "mmu",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "review": []
+    },
+    "durationInFrames": 103,
+    "audio": "voice_7703e48dbad3c7b6.wav",
+    "speaker": 3,
+    "kana": "コレデ'、ソ'バヤガ/ビ'イルオ/ノ'ム/ドオガオ'/フヤセ'ル/ノダ'",
+    "queryFile": "voice_queries/query_7703e48dbad3c7b6.json",
+    "audioSha256": "c9d50d9ad606d7b8617d21a56e5d8bcf1eb800ac42bc4b7358e09e1340d23956",
+    "startFrame": 24669
+  },
+  {
+    "type": "dialogue",
+    "id": "109",
+    "who": "metan",
+    "view": "bbq_end",
+    "text": "もう、かなりあるわ。",
+    "scene": "ending",
+    "speech": "もう、かなりあるわ。",
+    "reading_report": {
+      "method": "dictionary",
+      "scopes": [
+        "common",
+        "mmu",
+        "tech"
+      ],
+      "dictionary_sha256": "fbc4f45081cf34131e595beecb6cd49be29140fb4582041bd0af23dd6a83320a",
+      "applied": [],
+      "review": []
+    },
+    "durationInFrames": 47,
+    "audio": "voice_b43c1325a21edb8e.wav",
+    "speaker": 2,
+    "kana": "モ'オ、カ'ナリ/ア'ルワ",
+    "queryFile": "voice_queries/query_b43c1325a21edb8e.json",
+    "audioSha256": "ec916233e128b2b4a5ab39c209fb04eced63a94a68fc9da1b0ee674e24c63b51",
+    "startFrame": 24790
+  }
+]

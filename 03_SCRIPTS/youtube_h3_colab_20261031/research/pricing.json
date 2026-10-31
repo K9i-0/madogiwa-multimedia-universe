@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-10-31 Asia/Tokyo",
+  "currency_assumption_usd_jpy": 160,
+  "comparison": "30 seconds of generated footage; different resolutions and payment methods; retries and additional reference-video charges excluded",
+  "colab": {
+    "source": "https://colab.research.google.com/signup",
+    "observation": "Signed-in Japanese purchase screen, read-only; no purchase",
+    "payg_100_cu_jpy": 1179,
+    "measured_cu": 1.48,
+    "allocated_cost_jpy": 17.4492,
+    "measurement": "03_SCRIPTS/54_yumemi_group_sobaya_figure_shopping/h3_turbo8_480p_20261027/comparison-result.json",
+    "profile": "A100, R2V, 480p Turbo 8 steps, two 15-second segments",
+    "generation_seconds": 512.912590883,
+    "remote_total_seconds": 906.406514645,
+    "caveat": "Single observation, CU balance reporting can lag; not a guaranteed per-video charge. Existing subscription quota can avoid an additional purchase."
+  },
+  "wan": {
+    "source": "https://www.qwencloud.com/models/wan3.0-video",
+    "billing_notes": "https://docs.qwencloud.com/developer-guides/getting-started/model-prices",
+    "480p_usd_per_second_list": 0.05,
+    "480p_usd_per_second_discount": 0.035,
+    "720p_usd_per_second_list": 0.10,
+    "720p_usd_per_second_discount": 0.07,
+    "jpy_30s_480p_list_discount": [240,168],
+    "jpy_30s_720p_list_discount": [480,336]
+  },
+  "dreamina": {
+    "source": "https://dreamina.capcut.com/pricing/dreamina-price",
+    "observation": "Live Chrome UI, Japanese JPY region; billing tabs switched without purchase. Standard Seedance 2.5, not 2.5 Draft or Seedance 2.0.",
+    "generation_ui_720p_30s_regular_credits": 1440,
+    "basic_monthly_renewal_jpy": 2380,
+    "basic_monthly_credits": 2514,
+    "basic_allocated_30s_jpy": 1363.2458233890215,
+    "annual_advanced_example": {
+      "tier_selected": "28.1K, actual monthly credits 28137",
+      "first_year_jpy": 145043,
+      "renewal_year_jpy": 290086,
+      "monthly_credits": 28137,
+      "regular_30s_allocated_jpy": 618.5862032199594,
+      "regular_full_30s_generations_in_monthly_quota": 19,
+      "event_displayed_jpy_per_second": 12.46,
+      "event_30s_allocated_jpy_from_rounded_display": 373.8,
+      "event_quota_equivalent_30s_generations_approx": 32,
+      "event_displayed_credit_saving_percent": 40,
+      "event_terms": "October 27 to November 6; lower credit usage applies only during event",
+      "event_terms_source": "https://dreamina.capcut.com/pricing/dreamina-price?store_region=us",
+      "event_terms_note": "Public official page contains the campaign dates; web fetch region varies. All JPY prices, credits and discount percentage above come from the Japanese live UI, not converted US values.",
+      "free_5s_bonus_videos": 60,
+      "bonus_treatment": "Excluded from 30-second quota calculation; do not assume 5-second free vouchers can be pooled into 30-second clips.",
+      "quota_method": "Standard: floor(28137/1440). Event: approximate 145043/12/(12.46*30), using rounded official per-second price. This is monthly quota capacity at the event rate, not a promise that the short event lasts for a full month.",
+      "warnings": [
+        "Annual payment, not pay-per-generation billing.",
+        "Allocated cost assumes the monthly quota is used fully; unused credits increase the effective cost of actual output.",
+        "First-year plan discount and short credit-usage promotion have different expiry dates.",
+        "An annual subscription does not lock the event consumption rate for the year.",
+        "Retries and image generation consume the same quota.",
+        "Extra credits are separately priced; no verified top-up unit price is claimed.",
+        "Advertising '803 videos/month' uses Seedance 2.0 Mini 5-second assumptions and is not used for the 2.5 30-second comparison."
+      ]
+    }
+  }
+}

@@ -19,7 +19,8 @@
     "members": "03_SCRIPTS/youtube_members_explainer_20261013/remotion/prepare_voice.py：人物名、役職、窓際力の採用読み",
     "chair": "03_SCRIPTS/youtube_aeron_chua_explainer_20261008/remotion/prepare_voice.py：AERON CHUAの採用読み",
     "tech-video": "03_SCRIPTS/youtube_3d_character_workflow_20261014/remotion/prepare_voice_v6.py：技術語の採用読み",
-    "flutterkaigi-v13": "03_SCRIPTS/youtube_flutterkaigi_20261021/remotion/dialogue.txt：FragmentShader比較の四角形の読み"
+    "flutterkaigi-v13": "03_SCRIPTS/youtube_flutterkaigi_20261021/remotion/dialogue.txt：FragmentShader比較の四角形の読み",
+    "h3-colab-v1": "03_SCRIPTS/youtube_h3_colab_20261031/reading_audit.json：年契約・3分の1の音素誤読を補正（VOICEVOX 0.25.1、主観試聴未実施）"
   },
   "replacements": [
     {
@@ -445,6 +446,20 @@
       "scope": "tech",
       "source": "flutterkaigi-v13",
       "note": "図形の名称。シカクガタという誤読を補正。"
+    },
+    {
+      "id": "common.nenkeiyaku",
+      "surface": "年契約",
+      "reading": "ネンケイヤク",
+      "source": "h3-colab-v1",
+      "note": "料金の契約期間。としけいやくと解析されたため複合語だけ補正。年単独は置換しない。"
+    },
+    {
+      "id": "common.sanbunnnoichi",
+      "surface": "3分の1",
+      "reading": "サンブンノイチ",
+      "source": "h3-colab-v1",
+      "note": "分数。3分（時間）は置換しない。3分の1以下の音素がサンプンノイチだったため補正。"
     }
   ],
   "context_checks": [

@@ -1,0 +1,83 @@
+import React from 'react';
+import {AbsoluteFill,Img,OffthreadVideo,Sequence,Loop,staticFile,useCurrentFrame,interpolate} from 'remotion';
+import manifest from './edit-manifest.json';
+
+const ink='#253b3a',green='#236d59',muted='#60736d',pink='#a54585',line='#cfd9d2';
+const Title:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:33,fontWeight:700,lineHeight:1.45,marginBottom:24}}>{children}</div>;
+const Note:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:22,color:muted,lineHeight:1.65,marginTop:20}}>{children}</div>;
+const Source:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:16,color:muted,marginTop:18,lineHeight:1.5}}>{children}</div>;
+const Tag:React.FC<{children:React.ReactNode}>=({children})=><div style={{color:green,fontSize:21,letterSpacing:1,marginBottom:14,fontWeight:650}}>{children}</div>;
+const Big:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:68,fontWeight:700,color:green,lineHeight:1.3}}>{children}</div>;
+const Rows:React.FC<{rows:string[][],active?:number}>=({rows,active=-1})=><div style={{width:'100%'}}>{rows.map((r,i)=><div key={i} style={{display:'flex',gap:12,alignItems:'center',padding:'15px 16px',borderBottom:`1px solid ${line}`,background:i===active?'#e2efe5':undefined}}><div style={{textAlign:'left',flex:1,fontSize:25,fontWeight:i===active?700:500}}>{r[0]}</div><div style={{textAlign:'right',fontSize:26,fontWeight:700,color:i===active?green:ink,whiteSpace:'pre-line'}}>{r[1]}</div></div>)}</div>;
+const Steps:React.FC<{items:string[]}>=({items})=><div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:14,width:'100%'}}>{items.map((s,i)=><React.Fragment key={i}>{i>0&&<span style={{fontSize:32,color:green}}>→</span>}<div style={{borderTop:`3px solid ${green}`,padding:'18px 8px',fontSize:27,lineHeight:1.8,whiteSpace:'pre-line',flex:1}}>{s}</div></React.Fragment>)}</div>;
+const Body:React.FC<{children:React.ReactNode}>=({children})=><div style={{fontSize:29,lineHeight:1.85}}>{children}</div>;
+const Video:React.FC<{src:string,seconds:number,label:string}>=({src,seconds,label})=><><Loop durationInFrames={Math.floor(seconds*30)} layout="none"><OffthreadVideo muted src={staticFile(src)} style={{width:756,height:425,objectFit:'contain'}}/></Loop><Source>{label}</Source></>;
+const Computer:React.FC<{cloud?:boolean}>=({cloud=false})=><svg width="205" height="150" viewBox="0 0 205 150" fill="none" aria-label={cloud?'クラウドGPU':'手元のPC'}>{cloud?<><path d="M45 119C7 117 8 62 43 55C44 5 120 0 137 44C176 27 212 83 180 111C169 122 147 121 127 121H45Z" fill="#e2efe5" stroke={green} strokeWidth="4"/><rect x="75" y="58" width="63" height="43" rx="5" fill="#fffdf7" stroke={green} strokeWidth="3"/><text x="106" y="87" textAnchor="middle" fontSize="21" fill={green}>GPU</text></>:<><rect x="17" y="15" width="171" height="107" rx="7" fill="#fffdf7" stroke={green} strokeWidth="4"/><path d="M0 135H205L188 146H17L0 135Z" fill={green}/><rect x="30" y="29" width="146" height="80" fill="#e2efe5"/><text x="103" y="78" textAnchor="middle" fontSize="23" fill={green}>Browser</text></>}</svg>;
+
+export const Center:React.FC<{view:string}>=({view})=>{
+ if(view==='bbq'||view==='bbq_end')return <Video src="bbq.mp4" seconds={36.83} label="窓際BBQ 〜いつものちくわ〜／H3 480p Turbo・編集済み"/>;
+ if(view==='news')return <Video src="news.mp4" seconds={11.5} label="ゆめテレニュース／H3 480p Turbo・重複読みを編集"/>;
+ if(view==='hook_cost')return <><Tag>窓際族での実測例</Tag><Title>AI動画30秒の計算資源</Title><Big>約17円相当</Big><Note>A100・480p Turbo／1.48 CU<br/>Colab 100 CU＝1,179円で換算</Note><Source>2026-10-27測定／買い足し価格は2026-10-31確認</Source></>;
+ if(view==='title')return <><Tag>動画生成の第二弾</Tag><div style={{fontSize:43,fontWeight:700,lineHeight:1.6}}>高いPCがなくても<br/>AI動画は作れる！</div><div style={{fontSize:43,color:green,marginTop:27,fontWeight:700}}>Colab × MiniMax H3</div><Note>作り方・費用・品質・気をつけること</Note></>;
+ if(view==='h3')return <><Title>MiniMax H3</Title><Steps items={['文章\n画像・参照音声','H3','音のある\n動画']}/><Note>窓際族では、画像・音声を参照するR2Vで制作</Note><Source>出典：MiniMaxAI/MiniMax-H3（Hugging Face）</Source></>;
+ if(view==='local')return <><Title>自分のPCでも動かせる</Title><div style={{display:'flex',alignItems:'center',gap:28}}><div style={{fontSize:31,lineHeight:1.8,color:green}}>公開された重み<br/>＋ 実行環境</div><div style={{fontSize:38}}>→</div><Computer/></div><Note>対応GPU・メモリ・設定を用意する</Note></>;
+ if(view==='weights')return <><Tag>モデルの「重み」</Tag><Big>学習した結果のデータ</Big><Note>今回の環境で必要なモデル一式は約54GB<br/>ダウンロードや読み込みにも時間がかかる</Note></>;
+ if(view==='huggingface')return <><div style={{fontSize:58,color:green,fontWeight:700,marginBottom:25}}>Hugging Face</div><Steps items={['モデル','データセット','デモ']}/><Note>AIのモデルや資料を共有するプラットフォーム<br/>H3の公開重み・モデルカード・利用条件を確認</Note><Source>huggingface.co/MiniMaxAI/MiniMax-H3</Source></>;
+ if(view==='local_limit')return <><Title>ダウンロードできても…</Title><Rows rows={[["対応するGPU","実行できるか"],["GPUメモリ・RAM","読み込めるか"],["生成時間","待てるか"]]}/><Note>ローカルPCの要件は、構成や設定によって変わる</Note></>;
+ if(view==='no_pc')return <><Computer/><div style={{fontSize:39,lineHeight:1.5,fontWeight:700,marginTop:28}}>そんなPC、<br/>持ってないのだ〜</div></>;
+ if(view==='colab_bridge'||view==='colab')return <><Title>Google Colab</Title><div style={{display:'flex',alignItems:'center',gap:36}}><Computer/><div style={{fontSize:38,color:green}}>↔</div><Computer cloud/></div><Note>ブラウザからPythonを実行<br/>計算するコンピューターはGoogle側</Note><Source>出典：Google Colab FAQ</Source></>;
+ if(view==='colab_flow')return <><Title>手元のPCから、GPUを使う</Title><Steps items={['入力を用意\n手元のPC','H3を実行\nColabのGPU','動画を回収\n手元で編集']}/><Note>プロンプト・参照画像・音声を渡す</Note></>;
+ if(view==='cu')return <><Tag>Computing Units</Tag><Big>CU ＝ 計算資源の利用量</Big><div style={{fontSize:35,marginTop:35}}>50 CU ≠ 50時間</div><Note>GPUの種類などで、時間あたりの消費量が変わる</Note></>;
+ if(view==='ai_plans')return <><Title>Google AIプランのColab枠</Title><Rows rows={[["Plus","50 CU / 月"],["Pro","200 CU / 月"],["Ultra 5x","1,000 CU / 月"],["Ultra 20x","2,000 CU / 月"]]}/><Source>2026-10-31確認／Google AIプラン比較・Colab FAQ</Source></>;
+ if(view==='quota_notes')return <><Title>契約済みなら、枠を確認</Title><Rows rows={[["残っているColab CUを使用","追加購入なし"],["サブスクの契約料","別に必要"],["Flow等のAIクレジット","Colab CUとは別"]]}/><Note>ストレージのみのプラン・無料体験は同条件ではない</Note></>;
+ if(view==='sobaya')return <><Title>この方法を開拓したのは、そば屋</Title><div style={{display:'flex',gap:32,alignItems:'center'}}><Img src={staticFile('sobaya.jpg')} style={{width:270,height:330,objectFit:'contain'}}/><div style={{fontSize:28,lineHeight:1.9,textAlign:'left'}}>local-video<br/>colab-video<br/><span style={{color:green}}>実行方法を整備</span></div></div><Source>参考：github.com/sobaya-0141/Seedance_Madogiwa</Source></>;
+ if(view==='workflow')return <><Title>窓際族での実行の流れ</Title><Rows rows={[["1　素材とプロンプトを用意","手元"],["2　GPU確保・モデル読込","Colab"],["3　H3で生成・結果を回収","公式CLI"],["4　GPU停止・字幕と編集","手元"]]}/></>;
+ if(view==='stop_gpu')return <><Title>生成が終わったら、回収して停止</Title><Steps items={['生成','回収','GPU停止']}/><Note>準備・読み込み・待機も含めて利用量を記録<br/>修正を考えている間の借りっぱなしに注意</Note></>;
+ if(view==='settings')return <><Title>窓際族で使っている設定</Title><Rows rows={[["参照画像・音声","R2V"],["生成サイズ","864 × 480"],["Turbo LoRA","8ステップ"],["今回の測定GPU","A100・1台"]]} active={2}/><Source>固定済みLightX2V Ref2V Turbo v1.0（768p表記のLoRAを使用）</Source></>;
+ if(view==='turbo')return <><Title>Turbo LoRA</Title><Steps items={['H3のモデル','高速化用の\n追加データ','少ない\nステップで生成']}/><Note>対応LoRA・サンプラー・シフト設定をまとめて適用<br/>「ステップを減らすだけ」とは異なる</Note><Source>出典：lightx2v/Minimax-h3-Turbo／窓際族の固定プロファイル</Source></>;
+ if(view==='export')return <><Title>生成解像度と、完成解像度</Title><Steps items={['480p生成','通常の拡大\n＋字幕・編集','720p完成']}/><Note>書き出し720pでも、生成料金は480pの条件<br/>細部が新たに生成されるわけではない</Note></>;
+ if(view==='cost_conditions')return <><Title>費用比較の前提</Title><Rows rows={[["比較する長さ","生成30秒分"],["料金の調査日","2026-10-31"],["ドル換算","1 USD ＝ 160円"]]}/><Note>解像度・方式は異なる／やり直し・追加課金は別</Note></>;
+ if(view==='h3_measure')return <><Title>H3 480p Turboの実測</Title><Rows rows={[["生成だけ","8分33秒"],["準備等を含むリモート全体","15分6秒"],["観測した残高の減少","1.48 CU"]]}/><Note>A100／15秒×2本／同じ通販の題材</Note><Source>2026-10-27 窓際族の比較記録（残高表示には遅れあり）</Source></>;
+ if(view==='h3_cost')return <><Tag>Colab買い足し価格で換算</Tag><Big>1.48 CU ≒ 17円</Big><Note>100 CU ＝ 1,179円<br/>使った資源の換算額。固定の生成料金ではない。</Note><Source>Colab購入画面（日本）2026-10-31／実測は480p Turbo</Source></>;
+ if(view==='wan_cost')return <><Title>Wan 3.0／Qwen Cloud</Title><Rows rows={[["30秒・480p","168円（通常240円）"],["30秒・720p","336円（通常480円）"]]} active={0}/><Note>調査時30%割引／参照動画・再試行は別<br/>1ドル160円で換算</Note><Source>出典：qwencloud.com/models/wan3.0-video／2026-10-31</Source></>;
+ if(view==='seedance_cost')return <><Title>Seedance 2.5／Dreamina</Title><Tag>Basic月契約の例／720p・30秒・1,440クレジット</Tag><Big>約1,360円</Big><Note>Basic更新料金：2,380円 / 月<br/>月2,514クレジットを使い切る前提</Note><Source>日本の料金・生成画面／2026-10-31　年契約の例は次へ</Source></>;
+ if(view==='annual')return <><Title>Dreamina：年契約も比較</Title><Tag>Advanced・月28,137クレジットの例</Tag><Rows rows={[["初年度の年額支払い","145,043円"],["通常消費で30秒換算","約620円"],["月の付与枠で作れる量","30秒 × 約19本"]]} active={1}/><Source>720p／毎月の枠を全量使う前提／別の生成に使えば減る</Source></>;
+ if(view==='annual_event')return <><Tag>年契約の初年度料金 ＋ 期間限定特典</Tag><Title>消費クレジットも約40%減る期間なら</Title><Big>30秒：約370円相当</Big><Note>Basic月契約の約1,360円と比べ、3分の1以下<br/>同じ契約・同じ期間の価格ではありません</Note><Source>公式表示12.46円/秒 × 30／720p／日本・2026-10-31</Source></>;
+ if(view==='annual_limits')return <><Title>安い単価には、条件がある</Title><Rows rows={[["消費割引の案内期間","10/27〜11/6"],["割引レートでの月枠換算","30秒 × 約32本"],["画像生成・やり直しにも使用","作れる本数は減る"]]}/><Note>無料5秒動画の特典は、この本数計算に含めない</Note></>;
+ if(view==='annual_expiry')return <><Title>「年契約」と「消費割引」は別</Title><Rows rows={[["期間限定の消費割引が終了","通常消費へ"],["この年契約の翌年更新","290,086円 / 年"],["月枠を使い切った後","追加購入は別料金"]]}/><Note>約370円で一年中・無制限に作れるわけではない</Note></>;
+ if(view==='fair_cost')return <><Title>30秒分の生成費用：条件とセットで</Title><Rows rows={[["H3 480p Turbo・Colab実測","約17円相当"],["Wan 3.0 480p・割引","168円"],["Seedance 2.5 720p・契約例","約620〜1,360円"],["同・年契約＋期間限定特典","約370円"]]}/><Source>解像度・支払方式が異なる／各契約枠を使い切る前提</Source></>;
+ if(view==='models')return <><Title>今回比べる3モデル</Title><Rows rows={[["Seedance","2.5"],["MiniMax","H3"],["Wan","3.0"]]}/><Note>窓際族で使ったモデルを比較</Note></>;
+ if(view==='kling')return <><Title>Kling 4.0も話題に</Title><div style={{fontSize:52,fontWeight:700,color:muted,margin:'24px 0'}}>窓際族：未使用</div><Note>今回の使用感の比較には含めません</Note><Source>Kuaishou公式発表：2026-10-15にKling 4.0を公開</Source></>;
+ if(view==='quality_note')return <><Tag>ここからは、制作で使った感想</Tag><Title>モデルの得意と、使いやすさ</Title><Body>同条件の性能測定ではなく<br/>窓際族の題材・素材・設定での印象</Body><Note>プロンプトや参照素材で、仕上がりは変わる</Note></>;
+ if(view==='seedance_quality')return <><Tag>窓際族の使用感</Tag><Title>Seedance 2.5</Title><Big>最高の表現を狙いたい</Big><Rows rows={[["動き・表現の幅","とても強い"],["費用・使いこなし","工夫が必要"]]}/><Note>良い入力とプロンプトで、性能を引き出す</Note></>;
+ if(view==='wan_quality')return <><Tag>窓際族の使用感</Tag><Title>Wan 3.0</Title><Big>品質と費用のバランス</Big><Note>最高条件のSeedanceには及ばないと感じるが<br/>かなりハイレベルで、試行もしやすい</Note></>;
+ if(view==='takosan')return <><Title>Wanは、たこさんのお気に入り</Title><Img src={staticFile('takosan.png')} style={{width:400,height:350,objectFit:'contain'}}/><Note>品質を見ながら、何回も調整したい</Note></>;
+ if(view==='h3_quality')return <><Tag>窓際族の使用感</Tag><Title>MiniMax H3</Title><Big>会話・リアクション・コント</Big><Note>表現力に差を感じる場面はあるが、実用レベル<br/>激しいアクションより、小さな芝居で使いやすい</Note></>;
+ if(view==='wipe')return <><Title>テレビ番組のワイプにも？</Title><div style={{width:660,height:320,position:'relative',background:'#e5e9e0',display:'flex',alignItems:'center',justifyContent:'center',border:`1px solid ${line}`}}><div style={{fontSize:38,color:muted}}>番組のメイン映像</div><div style={{position:'absolute',right:18,top:18,width:170,height:100,background:'#fffdf7',border:`3px solid ${green}`,display:'flex',alignItems:'center',justifyContent:'center',fontSize:22,color:green}}>反応する映像</div></div><Note>今後試してみたい用途／まだ実例ではありません</Note></>;
+ if(view==='quality_summary')return <><Title>作りたい動画から、選ぶ</Title><Rows rows={[["Seedance 2.5","最高の表現を狙う"],["Wan 3.0","品質と費用のバランス"],["H3 ＋ Colab","小さく試してコントに"]]}/><Source>窓際族での使用感／モデル全般の順位を保証するものではない</Source></>;
+ if(view==='availability')return <><Title>ColabのGPUは、いつでもあるとは限らない</Title><Computer cloud/><Rows rows={[["希望GPUの空き","変動する"],["利用上限・切断","有料でもあり得る"]]}/><Note>結果を回収し、入力と設定を残して再開に備える</Note></>;
+ if(view==='resolution')return <><Title>公開重みと、有料APIの違い</Title><Rows rows={[["H3-Baseの基準","768p"],["窓際族での普段の生成","480p Turbo"],["MiniMax有料APIの選択肢","2Kもある"]]}/><Note>公開重みだけで、サービスの全機能が揃うわけではない</Note><Source>MiniMax公式モデルカード／Video Generation API</Source></>;
+ if(view==='resolution_time')return <><Title>解像度で、待ち時間も変わる</Title><Rows rows={[["480p Turbo・30秒生成","約8分半"],["768p Turbo・30秒生成","約38分"]]}/><Note>同じ通販題材・A100での測定例<br/>生成のみの時間／毎回この時間ではない</Note></>;
+ if(view==='license')return <><Title>利用地域・公開条件も確認</Title><div style={{fontSize:34,color:green,margin:'12px 0 24px'}}>米国 ／ EU ／ 英国 ／ 韓国</div><Body>公開重みのライセンスに<br/>対象外地域の条項あり</Body><Note>「無料版の機能制限」だけの話ではない<br/>利用する経路の最新条件を確認</Note><Source>MiniMax-H3 Community License／Hugging Face</Source></>;
+ if(view==='fal')return <><Title>余談：fal.aiの高速化モデル</Title><Big>H3 Max / Turbo</Big><Note>文章から動画（T2V）・画像から動画（I2V）<br/>用途を絞った高速な選択肢も</Note><Source>窓際族では未使用／Colabでの測定とは別</Source></>;
+ if(view==='fal_speed')return <><Tag>fal.aiの公式紹介例</Tag><Title>5秒の動画を</Title><Big>約2.8秒で生成</Big><Note>H3 Max・768pの紹介値<br/>今回のColab環境での速度ではありません</Note><Source>出典：fal.ai「Introducing H3 Max by fal」</Source></>;
+ if(view==='ending')return <><Title>Colab × MiniMax H3</Title><Rows rows={[["まずは利用枠を確認","Google AI / Colab"],["窓際族の設定","480p ＋ Turbo LoRA"],["選ぶ基準","作りたい動画・費用・時間"]]}/><Note>設定と料金の条件は、動画資料へ</Note></>;
+ throw new Error('Unknown view '+view);
+};
+
+export const Explainer:React.FC=()=>{
+ const f=useCurrentFrame();
+ const active=manifest.dialogue.find(d=>f>=d.startFrame&&f<d.startFrame+d.durationInFrames);
+ const previous=[...manifest.dialogue].reverse().find(d=>f>=d.startFrame);
+ const clip=manifest.clips.find(c=>f>=c.startFrame&&f<c.startFrame+c.durationInFrames);
+ const fade=interpolate(f,[manifest.composition.durationInFrames-30,manifest.composition.durationInFrames-1],[1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+ let start=0;
+ if(previous){const i=manifest.dialogue.indexOf(previous);for(let j=i;j>=0;j--){if(manifest.dialogue[j].view!==previous.view)break;start=manifest.dialogue[j].startFrame;}}
+ return <AbsoluteFill style={{background:'#f4f2eb',fontFamily:'"Hiragino Sans", "Noto Sans JP", sans-serif',color:ink}}><AbsoluteFill style={{opacity:fade}}>
+ {clip?<><Sequence from={clip.startFrame} durationInFrames={clip.durationInFrames}><OffthreadVideo muted src={staticFile(clip.src)} startFrom={clip.sourceStartFrame} style={{position:'absolute',left:64,top:24,width:1152,height:648,objectFit:'contain'}}/></Sequence><div style={{position:'absolute',bottom:12,left:64,fontSize:17,color:muted}}>資料映像：{clip.label}</div></>:<>
+ <Sequence from={start}><div style={{position:'absolute',left:262,top:24,width:756,height:528,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',textAlign:'center'}}><Center view={previous?.view??'bbq'}/></div></Sequence>
+ {(['zunda','metan'] as const).map((who,i)=>{const speaking=active?.who===who;const j=active?f-active.startFrame:0;const open=speaking&&(active?.envelope[j]??0)>.023;const blink=(f+(i?61:0))%151<4;const surprise=speaking&&/17円！？|そんなPC|持ってない|使えねー|短いのだ！？|そうね！/.test(active?.text??'');const mood=blink?'blink':surprise?'surprise':'normal';return <Img key={who} src={staticFile(`${who}_${mood}_${Number(open)}.png`)} style={{position:'absolute',left:i?1030:0,bottom:0,width:250,transform:who==='zunda'?'scaleX(-1)':undefined}}/>;})}
+ {active&&<div style={{position:'absolute',left:64,right:64,bottom:30,height:112,display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{fontSize:31,fontWeight:700,lineHeight:1.6,textAlign:'center',whiteSpace:'pre-line',color:active.who==='zunda'?'#347526':'#8d397c',WebkitTextStroke:'4px #fff',paintOrder:'stroke fill',textShadow:'0 2px 3px #0002'}}>{active.captions.find(c=>f-active.startFrame>=c.fromFrame&&f-active.startFrame<c.toFrame)?.text}</div></div>}
+ </>}
+ </AbsoluteFill></AbsoluteFill>;
+};

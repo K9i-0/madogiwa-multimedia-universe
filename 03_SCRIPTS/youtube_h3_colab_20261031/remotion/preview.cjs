@@ -7,7 +7,7 @@ const {renderStill,selectComposition,openBrowser}=require('@remotion/renderer');
  const browser=await openBrowser('chrome');
  const composition=await selectComposition({serveUrl,id:'H3Colab',puppeteerInstance:browser});
  const output=`out/preview-${m.revision}`;fs.mkdirSync(output,{recursive:true});
- const frames=Object.fromEntries([...new Set(m.dialogue.map(x=>x.view))].map(view=>{const d=m.dialogue.find(x=>x.view===view);return [view,d.startFrame+25]}));
+ const frames=Object.fromEntries([...new Set(m.dialogue.map(x=>x.view))].map(view=>{const d=m.dialogue.find(x=>x.view===view);return [view,d.startFrame+Math.min(70,d.durationInFrames-2)]}));
  for(const c of m.chapters.filter(x=>x.cardFrames>0))frames[`chapter-${c.number}`]=c.startFrame+30;
  for(const [view,frame] of Object.entries(frames)){await renderStill({serveUrl,composition,frame,output:`${output}/${view}.png`,imageFormat:'png',puppeteerInstance:browser});console.log(view);}
  await browser.close({silent:true});

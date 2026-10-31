@@ -1,8 +1,8 @@
-# Colab × MiniMax H3 解説 v3
+# Colab × MiniMax H3 解説 v4
 
 ユーザー確認用。制作のみで、公開・アップロード・追加GPU利用・購入は実施しない。
 
-- 完成動画：`final_remotion_h3_colab_v3.mp4`（1280×720 / 30fps）。v1・v2 MP4も保持。
+- 完成動画：`final_remotion_h3_colab_v4.mp4`（1280×720 / 30fps、13分15.97秒）。v1〜v3 MP4も保持。
 - 台本：`script.md`。編集入力の正本：`remotion/dialogue.txt`
 - 整数フレームのタイムライン：`remotion/src/edit-manifest.json`
 - 料金調査：`research/pricing.json`、動画資料：`guide.md`、実行指示書：`workflow.md`
@@ -43,3 +43,5 @@ npm run typecheck
 - `render.py`はmanifestのrevisionを出力名に使い、既存の完成MP4がある場合は停止する。提示済み版を上書きしない。
 - v2の再現ソースはGit `15158637`。
 - v3：話の整理と資料画面の全面刷新。冒頭でH3＋Colab約17円とSeedance月契約約1,360円を並べて掴む。第2章に料理のたとえ（H3＝料理人、Hugging Face＝紹介所、Colab＝借りるキッチン、GPU＝コンロ）。第4章に30秒費用の横棒グラフを追加し、Dreaminaの条件説明を統合。繰り返しの注意書きを画面の常設タグへ移した。資料画面は章ごとの色付きカード、モデル・サービスのロゴ、フロー図・棒グラフ・入場アニメーションに変更。章扉と章表示（進行ドット付き）を刷新。記録：`voice_generation_record_v3.json`、`delivery_v3.json`、`qa_final_v3.json`。
+- v3の再現ソースはGit `10851d66`。
+- v4：第4章のDreamina年契約（5画面・9発話）を「年契約の棒グラフ＋条件」の2画面・5発話へ圧縮し、費用章を「利用枠→30秒の費用比較」の2ステップに整理。fal.aiの余談を第5章まとめの前へ移動。資料画面を枠なしにして中央いっぱい（約1.12倍）へ拡大、見出しに章色の下線、表の行を白パネル化。Wan 3.0のマークをAlibaba Cloudへ統一し、対象者画面にOpenAIのマークを追加。「使用感」タグをモデル名と重ならない位置へ。ワイプ画面をニュース映像＋BBQワイプに変更。字幕を立ち絵の間（1行24字幅・30px）へ収め、「！？」が分割される不具合を修正。13分15.97秒・110発話。記録：`voice_generation_record_v4.json`、`mix_record_v4.json`、`qa_final_v4.json`。

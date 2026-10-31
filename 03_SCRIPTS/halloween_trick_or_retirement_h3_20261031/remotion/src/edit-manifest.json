@@ -3,7 +3,8 @@
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 816
+    "durationInFrames": 803,
+    "id": "Halloween"
   },
   "segments": [
     {
@@ -13,52 +14,148 @@
       "durationInFrames": 192,
       "startFrame": 0,
       "audioFile": "ch01_480p.mp4",
-      "audioTrimStartFrame": 0
+      "audioTrimStartFrame": 0,
+      "crop": [
+        0,
+        0,
+        864,
+        480
+      ]
     },
     {
-      "id": "threat",
+      "id": "chant",
       "file": "ch02_480p.mp4",
       "trimStartFrame": 0,
-      "durationInFrames": 120,
+      "durationInFrames": 48,
       "startFrame": 192,
       "audioFile": "ch02_480p.mp4",
-      "audioTrimStartFrame": 0
+      "audioTrimStartFrame": 0,
+      "crop": [
+        0,
+        0,
+        864,
+        480
+      ]
+    },
+    {
+      "id": "sobaya_threat",
+      "file": "ch02_480p.mp4",
+      "trimStartFrame": 48,
+      "durationInFrames": 70,
+      "startFrame": 240,
+      "audioFile": "../v2_sobaya_threat.wav",
+      "audioTrimStartFrame": 0,
+      "crop": [
+        290,
+        0,
+        340,
+        191.25
+      ]
     },
     {
       "id": "fired_reaction",
       "file": "ch02_480p.mp4",
-      "trimStartFrame": 194,
-      "durationInFrames": 66,
-      "startFrame": 312,
+      "trimStartFrame": 192,
+      "durationInFrames": 64,
+      "startFrame": 310,
       "audioFile": "ch03_480p.mp4",
-      "audioTrimStartFrame": 0
+      "audioTrimStartFrame": 0,
+      "crop": [
+        50,
+        125,
+        350,
+        196.875
+      ]
     },
     {
-      "id": "fired_reply",
+      "id": "yametaro_reply",
       "file": "ch03_480p.mp4",
       "trimStartFrame": 66,
-      "durationInFrames": 222,
-      "startFrame": 378,
+      "durationInFrames": 128,
+      "startFrame": 374,
       "audioFile": "ch03_480p.mp4",
-      "audioTrimStartFrame": 66
+      "audioTrimStartFrame": 64,
+      "crop": [
+        472,
+        120,
+        392,
+        220.5
+      ]
     },
     {
-      "id": "outside",
+      "id": "tokun_door",
+      "file": "ch03_480p.mp4",
+      "trimStartFrame": 192,
+      "durationInFrames": 96,
+      "startFrame": 502,
+      "audioFile": "ch03_480p.mp4",
+      "audioTrimStartFrame": 192,
+      "crop": [
+        0,
+        0,
+        548,
+        308.25
+      ]
+    },
+    {
+      "id": "outside_establish",
       "file": "ch04_480p.mp4",
       "trimStartFrame": 0,
-      "durationInFrames": 168,
-      "startFrame": 600,
+      "durationInFrames": 18,
+      "startFrame": 598,
       "audioFile": "ch04_480p.mp4",
-      "audioTrimStartFrame": 0
+      "audioTrimStartFrame": 0,
+      "crop": [
+        0,
+        0,
+        864,
+        480
+      ]
     },
     {
-      "id": "outside_reaction",
+      "id": "yametaro_outside",
+      "file": "ch04_480p.mp4",
+      "trimStartFrame": 18,
+      "durationInFrames": 70,
+      "startFrame": 616,
+      "audioFile": "ch04_480p.mp4",
+      "audioTrimStartFrame": 18,
+      "crop": [
+        550,
+        190,
+        314,
+        176.625
+      ]
+    },
+    {
+      "id": "sobaya_final",
+      "file": "ch04_480p.mp4",
+      "trimStartFrame": 168,
+      "durationInFrames": 69,
+      "startFrame": 686,
+      "audioFile": "../v2_sobaya_final.wav",
+      "audioTrimStartFrame": 0,
+      "crop": [
+        0,
+        0,
+        350,
+        196.875
+      ]
+    },
+    {
+      "id": "takosan_silence",
       "file": "ch04_480p.mp4",
       "trimStartFrame": 264,
       "durationInFrames": 48,
-      "startFrame": 768,
-      "audioFile": "ch04_480p.mp4",
-      "audioTrimStartFrame": 264
+      "startFrame": 755,
+      "audioFile": "SILENCE",
+      "audioTrimStartFrame": 0,
+      "crop": [
+        282,
+        198,
+        320,
+        180
+      ]
     }
   ],
   "captions": [
@@ -70,39 +167,45 @@
     },
     {
       "startFrame": 240,
-      "endFrame": 312,
+      "endFrame": 310,
       "speaker": "そば屋",
       "text": "お菓子をくれなきゃ、退職しちゃうぞ！"
     },
     {
-      "startFrame": 312,
-      "endFrame": 376,
-      "speaker": "とーくん",
+      "startFrame": 310,
+      "endFrame": 374,
+      "speaker": "とーくん（声）",
       "text": "うん。三人ともクビです。"
     },
     {
-      "startFrame": 376,
-      "endFrame": 504,
+      "startFrame": 374,
+      "endFrame": 502,
       "speaker": "やめ太郎",
       "text": "いや、そこはお菓子くれる流れやん。"
     },
     {
-      "startFrame": 504,
-      "endFrame": 581,
+      "startFrame": 502,
+      "endFrame": 598,
       "speaker": "とーくん",
       "text": "会社のドア壊したよね？"
     },
     {
-      "startFrame": 600,
-      "endFrame": 683,
+      "startFrame": 598,
+      "endFrame": 616,
       "speaker": "やめ太郎",
       "text": "お菓子もろてへんのに、\nイタズラされたんワイらやん。"
     },
     {
-      "startFrame": 694,
-      "endFrame": 766,
+      "startFrame": 616,
+      "endFrame": 686,
+      "speaker": "やめ太郎",
+      "text": "お菓子もろてへんのに、\nイタズラされたんワイらやん。"
+    },
+    {
+      "startFrame": 686,
+      "endFrame": 755,
       "speaker": "そば屋",
-      "text": "明日から……明日から毎日ハロウィンできますね！"
+      "text": "明日から毎日ハロウィンできますね！"
     }
   ]
 }

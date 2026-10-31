@@ -1,0 +1,56 @@
+{
+  "version": "v2",
+  "source": "H3 v1 480p",
+  "final": "final_remotion_halloween_v2.mp4",
+  "voice_model": "Aratako/Irodori-TTS-v4-Large",
+  "reference": "02_CHARACTERS/Sobaya_voice.wav",
+  "seed": 42,
+  "text_cfg": 5,
+  "duration_scale": 1,
+  "uncut": true,
+  "postprocess": "tools/sobaya_monsterize.sh",
+  "speech_replacements": [
+    {
+      "file": "v2_sobaya_threat.wav",
+      "sha256": "a37c4e2c55fd7e0b475679afac7feda91fa376c213edfbc1e82ddaeee46fcefa",
+      "duration": 2.89,
+      "asr": "お菓子をくれなきゃ退職しちゃうぞ"
+    },
+    {
+      "file": "v2_sobaya_final.wav",
+      "sha256": "f5b72e51a719bbb643f63c24e5fe809f5686335802f4725f9aa98ec7c760d8ae",
+      "duration": 2.838875,
+      "asr": "明日から毎日ハロウィンできますね"
+    }
+  ],
+  "checks": {
+    "typescript": "pass",
+    "source_and_crop_bounds": "pass",
+    "caption_ranges": "pass",
+    "full_listening": "not performed",
+    "strict_lip_sync": "not verified; speaker isolation edits only",
+    "full_decode": "pass",
+    "rendered_speaker_shots_and_captions": "pass: all shot midpoints reviewed",
+    "generic_manifest_validator": "not applicable: validator expects one inputVideo, this edit uses segments; sequence bounds validated separately"
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1"
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "33.458333"
+    }
+  }
+}

@@ -8,9 +8,9 @@ const Halloween:React.FC=()=>{
  const fade=interpolate(f,[m.composition.durationInFrames-12,m.composition.durationInFrames-1],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
  return <AbsoluteFill style={{backgroundColor:'#000'}}>
  {m.segments.map(s=><Sequence key={s.id} from={s.startFrame} durationInFrames={s.durationInFrames}>
- <OffthreadVideo muted src={staticFile(s.file)} startFrom={s.trimStartFrame} style={{width:'100%',height:'100%',objectFit:'contain'}}/>
+ <AbsoluteFill style={{overflow:'hidden'}}><OffthreadVideo muted src={staticFile(s.file)} startFrom={s.trimStartFrame} style={{position:'absolute',width:864*1280/s.crop[2],height:480*720/s.crop[3],left:-s.crop[0]*1280/s.crop[2],top:-s.crop[1]*720/s.crop[3],maxWidth:'none'}}/></AbsoluteFill>
  </Sequence>)}
- {(m.captions as Caption[]).filter(c=>f>=c.startFrame&&f<c.endFrame).map(c=><div key={c.startFrame} style={{position:'absolute',bottom:42,left:55,right:55,textAlign:'center',fontFamily:'Hiragino Kaku Gothic ProN, sans-serif',fontSize:38,fontWeight:700,lineHeight:1.4,whiteSpace:'pre-line',...memberCaptionStyle(c.speaker)}}>{c.text}</div>)}
+ {(m.captions as Caption[]).filter(c=>f>=c.startFrame&&f<c.endFrame).map(c=><div key={c.startFrame} style={{position:'absolute',bottom:30,left:55,right:55,textAlign:'center',fontFamily:'Hiragino Kaku Gothic ProN, sans-serif',fontSize:36,fontWeight:700,lineHeight:1.4,whiteSpace:'pre-line',...memberCaptionStyle(c.speaker)}}><span style={{display:'block',fontSize:23,marginBottom:6}}>{c.speaker}</span>{c.text}</div>)}
  <AbsoluteFill style={{backgroundColor:'#000',opacity:fade}}/>
  </AbsoluteFill>;
 };

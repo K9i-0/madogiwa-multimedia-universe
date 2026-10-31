@@ -1,6 +1,6 @@
 # Colab × MiniMax H3：動画資料 v2
 
-制作日・調査日：2026-10-31。ユーザー確認用v2。公開・YouTube登録は未実施。
+制作日・調査日：2026-10-31。ユーザー確認用v3。公開・YouTube登録は未実施。
 実行指示書：[workflow.md](workflow.md)。発話正本：[remotion/dialogue.txt](remotion/dialogue.txt)。
 公開後に制作ページ・YouTube・実行指示書の絶対URLへ更新する。
 
@@ -67,6 +67,7 @@ Seedance 2.5の最高の表現力、Wan 3.0の品質・費用のバランス、H
 ## 音声・音楽クレジット
 
 VOICEVOX:ずんだもん／VOICEVOX:四国めたん。立ち絵：坂本アヒル。
+ロゴ表示：LobeHub Icons（@lobehub/icons-static-svg、MIT）。各ロゴは各社の商標で、紹介・識別目的で表示。WanはAlibabaのモデル、料金はQwen Cloud、SeedanceはByteDance、DreaminaはCapCutの表示。
 昼下がり気分／KK：https://opentracks.com/bgm/detail/4695
 ほのぼのワルツ【リコーダー】／エクシエ：https://commons.nicovideo.jp/works/nc116360
 Music: TheFatRat - Unity

@@ -1,8 +1,8 @@
-# Colab × MiniMax H3 解説 v2
+# Colab × MiniMax H3 解説 v3
 
 ユーザー確認用。制作のみで、公開・アップロード・追加GPU利用・購入は実施しない。
 
-- 完成動画：`final_remotion_h3_colab_v2.mp4`（14分00.43秒、1280×720 / 30fps）。v1 MP4も保持。
+- 完成動画：`final_remotion_h3_colab_v3.mp4`（1280×720 / 30fps）。v1・v2 MP4も保持。
 - 台本：`script.md`。編集入力の正本：`remotion/dialogue.txt`
 - 整数フレームのタイムライン：`remotion/src/edit-manifest.json`
 - 料金調査：`research/pricing.json`、動画資料：`guide.md`、実行指示書：`workflow.md`
@@ -25,7 +25,7 @@ npm run typecheck
 
 表示原文と読みを分離し、共有辞書と作品辞書を適用。最終クエリ・話者・エンジンのhashで音声を識別する。BGMのみの修正ならmix_audio.pyを実行し、映像はstream copyして別版へ保存する。
 
-`public/`の第三者立ち絵・音楽、生成動画、プレビューはGit管理外。採用した各セリフWAV、音声クエリ、字幕、編集コード、軽量記録を保持する。
+ロゴは`logos/`（@lobehub/icons-static-svg 1.101.0、MIT。各マークは権利者の商標）を正本とし、`prepare_assets.py`が`public/logos/`へ配置する。`public/`の第三者立ち絵・音楽、生成動画、プレビューはGit管理外。採用した各セリフWAV、音声クエリ、字幕、編集コード、軽量記録を保持する。
 
 ## 使用素材
 
@@ -41,3 +41,5 @@ npm run typecheck
 - v2：14分00.43秒。対象を「AIツールは使うが動画モデルの自力実行は初めての人」と明示。5章のタイトル・問い・現在の章表示を追加。品質と作例を冒頭へ移し、役割・作り方・料金・注意点の順へ整理。
 - v2の音声記録：`voice_generation_record_v2.json`、`mix_record_v2.json`。価格の調査日と生成実測はv1と同一。
 - `render.py`はmanifestのrevisionを出力名に使い、既存の完成MP4がある場合は停止する。提示済み版を上書きしない。
+- v2の再現ソースはGit `15158637`。
+- v3：話の整理と資料画面の全面刷新。冒頭でH3＋Colab約17円とSeedance月契約約1,360円を並べて掴む。第2章に料理のたとえ（H3＝料理人、Hugging Face＝紹介所、Colab＝借りるキッチン、GPU＝コンロ）。第4章に30秒費用の横棒グラフを追加し、Dreaminaの条件説明を統合。繰り返しの注意書きを画面の常設タグへ移した。資料画面は章ごとの色付きカード、モデル・サービスのロゴ、フロー図・棒グラフ・入場アニメーションに変更。章扉と章表示（進行ドット付き）を刷新。記録：`voice_generation_record_v3.json`、`delivery_v3.json`、`qa_final_v3.json`。

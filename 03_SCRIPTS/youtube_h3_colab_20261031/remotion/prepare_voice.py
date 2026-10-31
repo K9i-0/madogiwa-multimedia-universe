@@ -1,4 +1,4 @@
-"""Build v2 from dialogue.txt with five chapter cards and cached AudioQueries."""
+"""Build v3 from dialogue.txt with five chapter cards and cached AudioQueries."""
 from pathlib import Path
 import requests,json,wave,math,numpy as np,hashlib,sys,concurrent.futures
 P=Path(__file__).resolve().parent; R=P.parents[2]
@@ -57,7 +57,7 @@ for event in events:
   gap=18 if row['who']=='zunda' else 12
   if row['text']=='そうね！':gap=30
   cursor+=row['durationInFrames']+gap
-m=dict(revision='v2',audience='AIツールは使うが、動画モデルの自力実行・Colab・Hugging Face・GPU運用は未経験の人',composition=dict(width=1280,height=720,fps=30,durationInFrames=cursor+120),mainStartFrame=chapters[1]['startFrame'],endingStartFrame=chapters[-1]['startFrame'],voicevoxVersion=version,chapters=chapters,dialogue=rows,clips=clips)
+m=dict(revision='v3',audience='AIツールは使うが、動画モデルの自力実行・Colab・Hugging Face・GPU運用は未経験の人',composition=dict(width=1280,height=720,fps=30,durationInFrames=cursor+120),mainStartFrame=chapters[1]['startFrame'],endingStartFrame=chapters[-1]['startFrame'],voicevoxVersion=version,chapters=chapters,dialogue=rows,clips=clips)
 (P/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
-(P.parent/'voice_generation_record_v2.json').write_text(json.dumps([{k:v for k,v in row.items() if k not in ['envelope','captions']} for row in rows],ensure_ascii=False,indent=2))
+(P.parent/'voice_generation_record_v3.json').write_text(json.dumps([{k:v for k,v in row.items() if k not in ['envelope','captions']} for row in rows],ensure_ascii=False,indent=2))
 print('DURATION',m['composition']['durationInFrames']/30,flush=True)

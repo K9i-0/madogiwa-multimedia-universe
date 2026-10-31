@@ -1,9 +1,9 @@
 [
-  {"id":"intro","number":0,"shortTitle":"今回の話","titleLines":["Colab × MiniMax H3"],"subtitle":"AI動画を作ってみたい、料金を抑えたい人へ","cardFrames":0},
-  {"id":"quality","number":1,"shortTitle":"作れる動画","titleLines":["H3で、どんな動画が","作れる？"],"subtitle":"3モデルの特徴と、窓際族の作例","cardFrames":60},
-  {"id":"local","number":2,"shortTitle":"動かす場所","titleLines":["高いPCがなくても","動かせる？"],"subtitle":"ローカル実行から、Google Colabへ","cardFrames":60},
-  {"id":"workflow","number":3,"shortTitle":"窓際族の作り方","titleLines":["窓際族は、","どう作っている？"],"subtitle":"作る流れと、480p・Turbo LoRA","cardFrames":60},
-  {"id":"costs","number":4,"shortTitle":"生成にかかる費用","titleLines":["結局、","いくらかかる？"],"subtitle":"利用枠・30秒の費用・年契約の条件","cardFrames":60},
-  {"id":"limits","number":5,"shortTitle":"使う前の注意点","titleLines":["使う前に","知っておきたいこと"],"subtitle":"GPUの空き・解像度・利用条件","cardFrames":60},
-  {"id":"ending","number":0,"shortTitle":"まとめ","titleLines":["自分に合う方法で、まず一本"],"subtitle":"作りたい動画・費用・待てる時間で選ぶ","cardFrames":0}
+  {"id": "intro", "number": 0, "shortTitle": "今回の話", "titleLines": ["Colab × MiniMax H3"], "subtitle": "AI動画を作ってみたい、料金を抑えたい人へ", "cardFrames": 0, "accent": "#236d59", "logos": ["colab-color", "minimax-color"]},
+  {"id": "quality", "number": 1, "shortTitle": "作れる動画", "titleLines": ["H3で、どんな動画が", "作れる？"], "subtitle": "3モデルの特徴と、窓際族の作例", "cardFrames": 60, "accent": "#d6336c", "logos": ["bytedance-color", "minimax-color", "alibabacloud-color"]},
+  {"id": "local", "number": 2, "shortTitle": "動かす場所", "titleLines": ["高いPCがなくても", "動かせる？"], "subtitle": "ローカル実行から、Google Colabへ", "cardFrames": 60, "accent": "#d9480f", "logos": ["huggingface-color", "colab-color", "nvidia-color"]},
+  {"id": "workflow", "number": 3, "shortTitle": "窓際族の作り方", "titleLines": ["窓際族は、", "どう作っている？"], "subtitle": "作る流れと、480p・Turbo LoRA", "cardFrames": 60, "accent": "#2b8a3e", "logos": ["minimax-color", "colab-color"]},
+  {"id": "costs", "number": 4, "shortTitle": "生成にかかる費用", "titleLines": ["結局、", "いくらかかる？"], "subtitle": "利用枠・30秒の費用・年契約の条件", "cardFrames": 60, "accent": "#1971c2", "logos": ["colab-color", "qwen-color", "capcut"]},
+  {"id": "limits", "number": 5, "shortTitle": "使う前の注意点", "titleLines": ["使う前に", "知っておきたいこと"], "subtitle": "GPUの空き・解像度・利用条件", "cardFrames": 60, "accent": "#5f3dc4", "logos": ["colab-color", "minimax-color", "fal-color"]},
+  {"id": "ending", "number": 0, "shortTitle": "まとめ", "titleLines": ["自分に合う方法で、まず一本"], "subtitle": "作りたい動画・費用・待てる時間で選ぶ", "cardFrames": 0, "accent": "#236d59", "logos": ["colab-color", "minimax-color"]}
 ]

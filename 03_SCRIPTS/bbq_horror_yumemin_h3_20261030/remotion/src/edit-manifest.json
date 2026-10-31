@@ -4,7 +4,7 @@
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "durationInFrames": 817
+    "durationInFrames": 659
   },
   "segments": [
     {
@@ -16,18 +16,10 @@
       "trimStartFrame": 0
     },
     {
-      "id": "ch02",
-      "file": "h3/ch02_480p.mp4",
-      "source": "generated/h3-horror-v1/results/ch02_480p.mp4",
-      "startFrame": 260,
-      "durationInFrames": 158,
-      "trimStartFrame": 0
-    },
-    {
       "id": "ch03",
       "file": "h3/ch03_480p.mp4",
       "source": "generated/h3-horror-v1/results/ch03_480p.mp4",
-      "startFrame": 418,
+      "startFrame": 260,
       "durationInFrames": 156,
       "trimStartFrame": 0
     },
@@ -35,7 +27,7 @@
       "id": "ch04",
       "file": "h3/ch04_480p.mp4",
       "source": "generated/h3-horror-v1/results/ch04_480p.mp4",
-      "startFrame": 574,
+      "startFrame": 416,
       "durationInFrames": 243,
       "trimStartFrame": 0
     }
@@ -59,11 +51,11 @@
       "text": "ちょっと待っててください"
     },
     {
-      "startFrame": 726,
-      "endFrame": 780,
+      "startFrame": 568,
+      "endFrame": 622,
       "speaker": "やめ太郎",
       "text": "そば屋さんが肉みつけたって！"
     }
   ],
-  "audit": "Visual contact sheets reviewed. ch03 cut at 6.5s immediately after secure capture. ch04 generated close-up ending retained. ASR confirms intended dialogue; no subjective audio listening claim."
+  "audit": "Visual contact sheets reviewed. ch03 cut at 6.5s immediately after secure capture. ch04 generated close-up ending retained. ASR confirms intended dialogue; no subjective audio listening claim. v2: remove ch02 (original frames 260–417, 10.833–17.417s); shift downstream audio, footage and captions by 158 frames."
 }

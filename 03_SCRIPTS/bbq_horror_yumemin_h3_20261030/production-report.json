@@ -29,5 +29,22 @@
     "duration_seconds": 34.041667,
     "caption": "31s frame inspected, correct Japanese and member color",
     "sha256": "c1fad2a852529e39374acb3b713469ae3dfb90963a0d2c83ea6a25451a71c3ce"
+  },
+  "v2_edit": {
+    "removed_original_frames": [
+      260,
+      418
+    ],
+    "duration_frames": 659,
+    "duration_seconds": 27.458333,
+    "file": "final_remotion_bbq_horror_v2.mp4",
+    "sha256": "9a49107b78fd7592e07c0d8c4acf3a327e223b4b62f7099c6856952953b77ed6",
+    "checks": [
+      "TypeScript passed",
+      "full ffmpeg decode passed",
+      "1280x720 24fps AAC",
+      "boundary contact sheet confirms departure directly to Sobaya and Yumemin in forest"
+    ],
+    "additional_generation": false
   }
 }

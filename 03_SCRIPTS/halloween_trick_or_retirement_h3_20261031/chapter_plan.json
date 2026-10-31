@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ch01",
+    "frames": 192,
+    "image": "input_entrance.png",
+    "audio": [],
+    "action": "Eight-second horror-comedy entrance. Picture 1 shows the END STATE after destruction, NOT the beginning. Start inside the office aimed at the same doorway with an INTACT CLOSED light wood door, all three characters initially hidden behind it. Loud gasoline chainsaw revving from behind the door. Metal saw blade punches through the wood at waist height, moves down through wood throwing sawdust, then door breaks and falls inward onto the floor with a loud crash. Reveal EXACTLY Sobaya in center gripping orange chainsaw with both hands, Takosan left with scythe and Yametaro right with candy bag, matching Picture 1. Trio take a small step into doorway and stop in proud Halloween pose. End with fallen door on floor and all three clearly visible. Do not start with already broken door. Physical cutting, splinters and actual door collapse are the essential action. No speech, no screams, no injury or blood. Chainsaw engine sound and wooden crash, then engine idles.",
+    "seed": 2026103101
+  },
+  {
+    "id": "ch02",
+    "frames": 260,
+    "image": "input_entrance.png",
+    "audio": [
+      "voice_sobaya.wav",
+      "voice_takosan.wav",
+      "voice_yametaro.wav"
+    ],
+    "action": "Start AFTER the door has broken, as Picture 1; door remains fallen. Same three characters only, medium-wide locked shot. Sobaya holds chainsaw in both hands at waist pointed away from friends; Takosan holds scythe upright; Yametaro holds orange EMPTY candy bag. Audio 1 Sobaya, Audio 2 Takosan, Audio 3 Yametaro are canonical voice timbres. All THREE shout cheerfully together exactly once <d>[Japanese] トリック・オア・退職！</d>. Sobaya then alone says from behind unchanged mask <d>[Japanese] お菓子をくれなきゃ、退職しちゃうぞ！</d>. Other two remain silent, Yametaro extends the same candy bag eagerly. Sobaya switches chainsaw engine off; abrupt engine sputter to silence. Hold eager expectant poses for a beat. No further destruction, no prop swapping, no extra dialogue.",
+    "seed": 2026103102
+  },
+  {
+    "id": "ch03",
+    "frames": 362,
+    "image": "input_fired.png",
+    "audio": [
+      "voice_yametaro.wav"
+    ],
+    "action": "15-second locked medium two-shot, Tokun left at desk and Yametaro right, only two characters. Tokun is exact same real Japanese man, same blue-tinted glasses, navy suit, white shirt, tie, employee badge, natural face and build. The door in background is visibly destroyed and remains so. His speaking voice is natural adult Japanese man, low-mid pitch, calm dry matter-of-fact CEO, not a voice from Audio 1. Audio 1 belongs ONLY to Yametaro, soft Kansai male voice.\nTokun first glances toward broken door then looks at Yametaro and says evenly <d>[Japanese] うん。三人ともクビです。</d>. ONE FULL SECOND awkward silence. Yametaro lowers the orange candy bag a little and protests <d>[Japanese] いや、そこはお菓子くれる流れやん。</d>. Tokun waits until the protest is finished, gestures toward broken door, replies <d>[Japanese] 会社のドア壊したよね？</d>. Yametaro freezes with same white spectacle lenses and deflated posture. End on awkward silence, both mouths closed. No extra words, no offscreen replies, no upbeat laughter. Quiet office room tone.",
+    "seed": 2026103103
+  },
+  {
+    "id": "ch04",
+    "frames": 362,
+    "image": "input_outside.png",
+    "audio": [
+      "voice_yametaro.wav",
+      "voice_sobaya.wav"
+    ],
+    "action": "15-second final continuous medium-wide shot outside office building at dusk. Same THREE friends in Halloween costumes, now fired, cardboard personal-belonging boxes already present. Positions and props exactly Picture 1. Sobaya left holds box; chainsaw engine OFF and resting on ground. Takosan center holds small box, scythe leaning against wall. Yametaro right holds orange bag with WHITE DISMISSAL DOCUMENTS and no candy, his small box at feet. No walking or transfers.\nYametaro looks into his bag, raises face and complains in Audio 1 canonical Kansai voice <d>[Japanese] お菓子もろてへんのに、イタズラされたんワイらやん。</d>. Sobaya listens silently behind unchanged mask, then straightens optimistically and replies in Audio 2 canonical deep voice <d>[Japanese] 明日から毎日ハロウィンできますね！</d>. His mask does not articulate. Takosan silently slowly turns white face toward Sobaya and holds deadpan stare. Yametaro lowers shoulders. End on 2 seconds silent comic tableau. Only distant city ambience and rustle of paper. No extra words or music, no captions. All boxes, tools and documents retain count and position.",
+    "seed": 2026103104
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "model": "MiniMax-H3",
+  "profile": "480p-turbo",
+  "generated_resolution": [
+    864,
+    480
+  ],
+  "output_resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "steps": 8,
+  "gpu": "A100",
+  "workers": 1,
+  "initial_cu_balance": 96.81,
+  "region": "unknown",
+  "voice_method": "H3 native audio; canonical timbre references; no new TTS",
+  "asr_is_not_listening_audit": true,
+  "sources": {
+    "input_fired.png": "45adb076cc78904cd7cd24124974ca580d4ecee487c3ed2d065d648663ae3f7e",
+    "identity_yametaro.png": "1e98502e8051bbacf482f273e551a7dd8b8fb79e2c153865d9e48df690eb91e6",
+    "input_entrance.png": "38a0a9518b8f74d88cfe1d92bf5728a643ed9ca98864a4f6a42377daa95eb97f",
+    "input_outside.png": "9f2745cf8b608a60e8b34951275e243eae50ba946e011c59b6b1bf7d9b9bf91c",
+    "voice_yametaro.wav": "ede825a58cf1920f1bdfb353eea17d0feb24f20592d7f36d7c5c22c5ab60530b",
+    "voice_takosan.wav": "f0663c8e8cebb5c0b700b8399d2ce22c744ca8b8d68ab3b7e0b5ee016c30741c",
+    "voice_sobaya.wav": "976916e670fea5fcf0f741d45e150eaf055c3b0e11d240e3be656dd724166b58"
+  },
+  "cli_documentation": "https://github.com/googlecolab/google-colab-cli",
+  "service_terms_reviewed": "https://research.google.com/colaboratory/faq.html",
+  "creative_context": "User-directed fictional MMU Halloween comedy; no claim of real events",
+  "status": "complete_first_version",
+  "visual_audit": {
+    "ch01": {
+      "sample_seconds": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "observed": "Door cutting/breaking then three-character reveal is visible. Sobaya retains mask; Takosan scythe and Yametaro bug costume remain identifiable. First sampled frame already has a narrow slit; not a pristine closed door.",
+      "limitations": "Sparse samples are not full motion/lip-sync or audio listening audit."
+    },
+    "ch02": {
+      "observed": "Three characters and props recognizable at 2-second samples; ASR detected unrequested tail after 5 sec, omitted from edit."
+    },
+    "ch03": {
+      "observed": "Unwanted masks at start; original first 2.75 sec replaced by silent ch02 reaction footage while preserving Tokun audio. Later face visible and recognizable.",
+      "asr": "All 3 planned lines detected."
+    },
+    "ch04": {
+      "observed": "Three characters and boxes retained, tools resting, deadpan turn present at sampled frames.",
+      "asr": "Final line restarts 明日から; retained. Unrequested speech detected after 7.22 sec, removed by ending dialogue at 7 sec and using silent final reaction."
+    }
+  },
+  "final_duration_seconds": 34,
+  "final_frames": 816,
+  "final_cu_balance": 94.58,
+  "observed_cu_difference": 2.23,
+  "active_assignments_after": 0,
+  "remote_elapsed_seconds": 1142.59,
+  "generation_seconds": 679.13,
+  "audio_listening_audit": "not performed; ASR is only text/timing assistance",
+  "lip_sync_audit": "not certified",
+  "editing": {
+    "engine": "Remotion 4.0.539",
+    "resize": "Single scaling of original 480p video into 1280x720 composition; contain aspect ratio",
+    "captions": "Canonical script with explicit repeated 明日から; timing based on full-clip ASR offsets",
+    "audio": "Native H3; no replacement TTS; only cut and short boundary fades, last 2 sec silent reaction"
+  },
+  "final_file": "final_remotion_halloween_v1.mp4",
+  "final_sha256": "8dcbd68ae2ac5338128c070528e5cfd30cbe020d8a9263c065609bee85305d79",
+  "verification": {
+    "typescript": "passed",
+    "python_compile": "passed",
+    "representative_subtitle_frames": "reviewed; readable and no face obstruction",
+    "ffprobe": "1280x720, 24fps, 816 frames, 34s, AAC 48kHz",
+    "full_decode": "passed",
+    "listening": "not performed",
+    "lip_sync": "not certified"
+  },
+  "remaining_limitations": [
+    "Sobaya mask mouth visibly deforms during speech although mask stays worn.",
+    "Sobaya final line repeats 明日から; retained and reflected in subtitle.",
+    "ASR transcript and sampled frames do not certify voice quality or lip synchronization."
+  ],
+  "scene_image_inputs": [
+    "input_costume_ensemble.png",
+    "../../03_SCRIPTS/00_TEMPLATES/characters/character_sobaya_basic_sheet.png",
+    "../../03_SCRIPTS/00_TEMPLATES/characters/character_takosan_basic_sheet.png",
+    "identity_yametaro.png",
+    "../../02_CHARACTERS/Tokun.jpg"
+  ]
+}

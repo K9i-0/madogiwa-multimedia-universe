@@ -1,0 +1,108 @@
+{
+  "composition": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "durationInFrames": 816
+  },
+  "segments": [
+    {
+      "id": "entrance",
+      "file": "ch01_480p.mp4",
+      "trimStartFrame": 0,
+      "durationInFrames": 192,
+      "startFrame": 0,
+      "audioFile": "ch01_480p.mp4",
+      "audioTrimStartFrame": 0
+    },
+    {
+      "id": "threat",
+      "file": "ch02_480p.mp4",
+      "trimStartFrame": 0,
+      "durationInFrames": 120,
+      "startFrame": 192,
+      "audioFile": "ch02_480p.mp4",
+      "audioTrimStartFrame": 0
+    },
+    {
+      "id": "fired_reaction",
+      "file": "ch02_480p.mp4",
+      "trimStartFrame": 194,
+      "durationInFrames": 66,
+      "startFrame": 312,
+      "audioFile": "ch03_480p.mp4",
+      "audioTrimStartFrame": 0
+    },
+    {
+      "id": "fired_reply",
+      "file": "ch03_480p.mp4",
+      "trimStartFrame": 66,
+      "durationInFrames": 222,
+      "startFrame": 378,
+      "audioFile": "ch03_480p.mp4",
+      "audioTrimStartFrame": 66
+    },
+    {
+      "id": "outside",
+      "file": "ch04_480p.mp4",
+      "trimStartFrame": 0,
+      "durationInFrames": 168,
+      "startFrame": 600,
+      "audioFile": "ch04_480p.mp4",
+      "audioTrimStartFrame": 0
+    },
+    {
+      "id": "outside_reaction",
+      "file": "ch04_480p.mp4",
+      "trimStartFrame": 264,
+      "durationInFrames": 48,
+      "startFrame": 768,
+      "audioFile": "ch04_480p.mp4",
+      "audioTrimStartFrame": 264
+    }
+  ],
+  "captions": [
+    {
+      "startFrame": 192,
+      "endFrame": 240,
+      "speaker": "全員",
+      "text": "トリック・オア・退職！"
+    },
+    {
+      "startFrame": 240,
+      "endFrame": 312,
+      "speaker": "そば屋",
+      "text": "お菓子をくれなきゃ、退職しちゃうぞ！"
+    },
+    {
+      "startFrame": 312,
+      "endFrame": 376,
+      "speaker": "とーくん",
+      "text": "うん。三人ともクビです。"
+    },
+    {
+      "startFrame": 376,
+      "endFrame": 504,
+      "speaker": "やめ太郎",
+      "text": "いや、そこはお菓子くれる流れやん。"
+    },
+    {
+      "startFrame": 504,
+      "endFrame": 581,
+      "speaker": "とーくん",
+      "text": "会社のドア壊したよね？"
+    },
+    {
+      "startFrame": 600,
+      "endFrame": 683,
+      "speaker": "やめ太郎",
+      "text": "お菓子もろてへんのに、\nイタズラされたんワイらやん。"
+    },
+    {
+      "startFrame": 694,
+      "endFrame": 766,
+      "speaker": "そば屋",
+      "text": "明日から……明日から毎日ハロウィンできますね！"
+    }
+  ]
+}

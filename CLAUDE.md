@@ -66,7 +66,7 @@ Gitでは、Seedanceの再生成と同じ声の継続利用に必要な最小限
 - **Codex画像生成（Claude等から）** (`codex-imagegen`): Claude Code等のCodex以外のハーネスで、他スキルの`imagegen`指示を実行する。ログイン済みCodex CLIの内蔵image_gen（ChatGPTサブスク枠、APIキー不要）を`codex exec`経由で呼び、参照画像付き生成・編集の結果を指定パスへ保存する。API経路へは明示指示なしに切り替えない。詳細: `.claude/skills/codex-imagegen/SKILL.md`
 - **Antigravity画像生成** (`antigravity-imagegen`): Antigravity専用。Geminiネイティブの`generate_image`を使い、窓際族物語のキャラクター同一性を厳密に維持したシーン・背景・参照画像を生成する。CodexやClaude Codeなど他ハーネスでは対象外。詳細: `.claude/skills/antigravity-imagegen/SKILL.md`
 
-スキルの実体は`.claude/skills/`に置き、Codex CLI向けには`.agents/skills/`からsymlinkで同じスキルを参照させている（Claude Code・Codexの両方が同一のSKILL.mdを読む）。スキルを追加したら`.agents/skills/`にもsymlinkを張ること。
+スキルの実体は`.claude/skills/`に置き、Codex CLI向けには`.agents/skills/`からsymlinkで同じスキルを参照させている（Claude Code・Codexの両方が同一のSKILL.mdを読む）。スキルを追加したら`.agents/skills/`にもsymlinkを張ること。ただし`codex-imagegen`はCodex以外のハーネス専用（Codexは標準の`imagegen`スキルを使う）なので、`.agents/skills/`へは張らない。
 
 ## 制作物は早く作り、できた版をすぐ見せる
 

@@ -75,7 +75,7 @@ ComfyUI APIはGPU内の127.0.0.1で使い、公開トンネルは不要。
 
 正典キャラクターの人物同一性、実写の顔、`VOICE_CAST.md`の声を維持する。
 音声が必要なら既存採用WAVを優先し、新規VOICEVOXは`voicevox-control`、Irodoriは`tools/IRODORI_TTS.md`に従う。
-画像生成には`imagegen`を使い、同僚側のDraw Things依存を持ち込まない。
+画像生成には`imagegen`を使い（Claude Code等のCodex以外では`codex-imagegen`スキル経由で実行する）、同僚側のDraw Things依存を持ち込まない。
 
 - `t2v`: 画像なし。環境検証向け。人物同一性の検証には使わない。
 - `i2v`: 始点・終点画像。`fl2va`モデル。両端が正しくても途中の人物崩れを確認する。

@@ -15,7 +15,7 @@
 
 ## ImageGenへの渡し方
 
-- 登場する本人の正典写真を毎回の生成・再生成へ直接添付する。
+- 登場する本人の正典写真を毎回の生成・再生成へ直接添付する。Claude Code等では`codex-imagegen`の`--ref`で渡す。
 - プロンプトで `same real person as [人物名] canonical photo; preserve exact facial identity` と明示する。
 - 複数人では参照順と人物名を明記し、各写真が誰の顔かを一対一で固定する。
 - 顔の一致を、衣装、背景、派手なVFXより高い優先順位にする。

@@ -17,6 +17,8 @@ Preserve identity through silhouette, a few block attachments, and replaceable f
    not clearly show front, both sides, and back, use the installed `imagegen` skill to create a
    consistent voxel turnaround with front, left profile, back, and right profile views. Generate a
    rear-head close-up too when hair, a hood, mask straps, or headwear is identity-critical.
+   Outside Codex (e.g. Claude Code), run every `imagegen` step in this skill through the
+   `codex-imagegen` skill.
 3. Present the generated reference pack and the inferred side/back decisions to the user. **Stop and
    wait for explicit approval or feedback. Do not generate final albedos, construct the model, or
    export a GLB before approval.** Regenerate affected views after feedback while preserving

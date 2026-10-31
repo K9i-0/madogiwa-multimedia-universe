@@ -15,7 +15,8 @@ back is not enough; the user must see and approve the inference before it become
 
 1. Inspect the original at full resolution and read the character's design locks.
 2. List details visible in the source separately from details that require inference.
-3. Read and follow the installed `imagegen` skill.
+3. Read and follow the installed `imagegen` skill (outside Codex, e.g. Claude Code, use the
+   `codex-imagegen` skill to run it).
 4. Provide the original reference and any previously approved voxel concept to imagegen.
 5. Generate one orthographic turnaround sheet containing four separate full-body views in this
    order: front, left profile, back, right profile.

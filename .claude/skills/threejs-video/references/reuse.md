@@ -20,6 +20,7 @@ assets.jsonはsource（repo root相対）とtarget（public相対）の一覧。
 
 ## Imagegen背景壁
 
+- 生成は`imagegen`で行う。Claude Code等のCodex以外では`codex-imagegen`スキル経由で実行する。
 - 背景は人物・文字なし。舞台のカメラ高さ、消失点、照明方向を画像生成指示へ含める。床は別の真上視点テクスチャにする。画像と実プロンプトを作品内へ保存。
 - 背景画像をMeshBasicMaterialの壁へ貼る。床はMeshStandardMaterialで人物の影を受ける。sRGB、繰り返しと粗さを設定。背景に描かれた地面を縦壁として露出させない。
 - 舞台の原点・単位はメートル。壁の大きさ・位置・画像の地平線、床のrepeatは作品ごとに調整。草、家具などで接続部を隠せるが、見えない箇所へ過剰な作り込みをしない。

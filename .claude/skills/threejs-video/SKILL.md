@@ -15,7 +15,7 @@ Three.jsで人物・舞台・カメラを作り、Remotionで音声・テロッ�
 - 福ギュンの肌を表現・調整する場合は[肌と年齢感の共通基準](../../../02_CHARACTERS/references/fukuchan-skin-standard.md)を確認する。シートの綺麗さと自然なシワを維持し、材質・照明・テクスチャで斑点を強調したり、平滑化で若返らせたりしない。正典モデルの顔形状は変更しない。
 - 面談・会議・研修・通販・クイズなど、同じセットで関係や情報が変わる内容が得意。長尺は前振り・反復・反応・回収のために使い、無言で尺を埋めない。UIにも証拠の開示、発言との矛盾、得点変化などの役割を持たせる。
 - 新規プロジェクト、背景・動作の流用は [再利用キット](references/reuse.md)。音声とタイムラインは [音声・演出・検証](references/production.md)。
-- 背景の新規生成にはimagegen、リグ変更・新モーションにはhumanoid-motion、字幕・整音・レンダリングの詳細にはremotion-videoを併用する。
+- 背景の新規生成にはimagegen（Claude Code等のCodex以外では`codex-imagegen`スキル経由で実行する）、リグ変更・新モーションにはhumanoid-motion、字幕・整音・レンダリングの詳細にはremotion-videoを併用する。
 
 ## 制作の流れ
 

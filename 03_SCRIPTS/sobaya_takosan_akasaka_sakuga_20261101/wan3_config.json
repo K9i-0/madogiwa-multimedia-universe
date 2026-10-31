@@ -1,0 +1,22 @@
+{
+  "model": "wan3.0-video",
+  "audio_source": "wan3",
+  "audio_sync_strategy": "no_visible_speech",
+  "project_duration": 30,
+  "generation_mode": "single",
+  "prompt_file": "prompt_wan3.txt",
+  "media": [
+    {"type": "reference_image", "path": "character_sobaya_basic_sheet.png"},
+    {"type": "reference_image", "path": "character_takosan_basic_sheet.png"}
+  ],
+  "parameters": {
+    "resolution": "480P",
+    "ratio": "16:9",
+    "duration": 30,
+    "audio": true,
+    "seed": 110101,
+    "watermark": false,
+    "prompt_extend": false
+  },
+  "output": "wan3_sakuga_v1_seed110101_480p.mp4"
+}

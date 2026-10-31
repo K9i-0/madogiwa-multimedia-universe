@@ -16,6 +16,14 @@
 - ゲーム用アセット（ボクセル）: `04_GAME_ASSETS/voxel/`（全キャラのリグ付きボクセルモデル`.glb`は`04_GAME_ASSETS/voxel/models/`が正典。`tools/build_*_voxel_model.py`から生成するため手作業で編集しない。新規ゲームはモデルをコピーせず、`public/models/`等からここへの相対symlinkで参照する。リグ仕様は`04_GAME_ASSETS/voxel/VOXEL_CHARACTER_KIT.md`を参照）
 - ゲーム用アセット（完成動画）: `04_GAME_ASSETS/videos/`（Seedance/CapCutで制作したゲーム組み込み用の完成動画が正典。ゲームからはコピーせず`public/videos/`からの相対symlinkで参照する）
 
+## 動画の登録・公開（2026-10-31ユーザー指定）
+
+- YouTube登録と公式サイト登録はセット。どちらかへの登録依頼で、追加説明・確認なしに両方を完了する。
+- 約1分30秒までの短編は全編のShortsも作成し、本編と基本同時投稿する。予約投稿・Shortsのみ等は追加の明示指示がある場合に適用する。制作のみの依頼では公開しない。
+- 概要欄は短いあらすじ、実使用のVOICEVOX・フリー音源等の必要クレジット、公式サイトの制作ページリンク、関連タグへ絞る。Shortsには本編リンクも載せる。
+- Wan・MiniMax H3・Seedance等の動画生成AI作品は制作ページを必ず作り、モデル・本番プロンプト・採用入力を登録する。
+- 実施順序・重複防止・公開確認は `.claude/skills/madogiwa-studio/references/publication-workflow.md` を正本とする。
+
 ## Git管理方針
 
 Gitでは、Seedanceの再生成と同じ声の継続利用に必要な最小限の入力資産を管理する。

@@ -1,11 +1,15 @@
 ---
 name: madogiwa-studio
-description: Madogiwa StudioのRemote Web MCPを使い、窓際族物語のギャラリー、記事、エピソード、生成バージョン、使用モデル、登場メンバー、Seedanceプロンプト、入力画像・参照音声・資料、YouTube動画IDと公開状態を登録・確認する。ユーザーがMadogiwa Studioへの登録、公式サイトコンテンツ編集、動画アップロード、プロンプト同期、入力素材管理、Studio ID確認、MCP接続や同僚環境への導入を頼んだときに使用する。
+description: Madogiwa StudioのRemote Web MCPを使い、窓際族物語のギャラリー、記事、エピソード、生成バージョン、使用モデル、登場メンバー、Seedanceプロンプト、入力画像・参照音声・資料、YouTube動画IDと公開状態を登録・確認する。ユーザーがYouTube投稿・登録、公式サイトへの動画登録、Madogiwa Studioへの登録、公式サイトコンテンツ編集、動画アップロード、プロンプト同期、入力素材管理、Studio ID確認、MCP接続や同僚環境への導入を頼んだときに使用する。
 ---
 
 # Madogiwa Studio
 
 Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作記録とYouTube動画IDを管理する。動画本体は公式YouTubeへ直接アップロードし、Cloudflareには新規登録しない。画像・参照音声・資料はこれまで通り一回限りURLへPUTする。
+
+## 動画登録の標準（2026-10-31）
+
+YouTubeまたは公式サイトへの動画登録依頼では、必ず[登録・公開の共通手順](references/publication-workflow.md)を読む。両方の登録をセットにし、約90秒までの本編はShortsも作成して基本同時投稿する。動画生成AI作品の制作ページと、両概要欄へのリンクまで追加確認なしで完了する。予約・Shortsのみ等は明示指示がある場合に適用する。
 
 ## URLの使い分け
 
@@ -22,9 +26,9 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作�
 
 ## 登録依頼の承認範囲
 
-**Studioへの動画登録依頼は、対象の採用動画を公式YouTubeで公開し、公式サイト掲載まで進める依頼として扱う。** 追加の公開確認は不要。ユーザーが非公開・限定公開・予約公開・制作記録のみ等を指定した場合は、その指定を優先する。
+**YouTube・公式サイト・Studioのいずれかへの動画登録依頼は、対象の採用動画を公式YouTubeで公開し、公式サイト掲載と必要なShorts投稿まで進める依頼として扱う。** 追加の公開確認は不要。ユーザーが非公開・限定公開・予約公開・制作記録のみ等を指定した場合は、その指定を優先する。
 
-ユーザーの「Studioへ登録して」「Madogiwa Studioへアップロードして」「プロンプトと素材を同期して」という依頼は、登録完了に必要な採用済みファイルを設定済みのMadogiwa Studioへ外部送信することまで含む明示承認として扱う。この依頼を受けた後は、動画や素材ごとに追加確認を求めず、同じ作業内で次を送信する。
+ユーザーの「YouTubeへ登録して」「公式サイトに登録して」「Studioへ登録して」「Madogiwa Studioへアップロードして」「プロンプトと素材を同期して」という依頼は、登録完了に必要な採用済みファイルを設定済みのMadogiwa Studioへ外部送信することまで含む明示承認として扱う。この依頼を受けた後は、動画や素材ごとに追加確認を求めず、同じ作業内で次を送信する。
 
 - 採用済みの最新完成動画（公式YouTubeへ直接送信。既存IDがあれば再投稿しない）
 - 現行の生成プロンプト
@@ -66,11 +70,11 @@ Madogiwa Studioを制作物の共有台帳として扱い、Remote MCPで制作�
 4. 最新の完成動画をYouTubeへ直接アップロードする。標準720pの完成原本を使い、Studio向けの再圧縮MP4やCloudflare動画サムネイルを新規作成しない。公式チャンネルは `UCyQtPu94OaiGxFdd2A6bXdw`。
 5. アップロードがIDを返したら、YouTubeの処理完了を待たず `register_youtube_video` を呼ぶ。`episodeId`, `youtubeId`, 任意の `generationId`, `featured`, `contentKind`, `productionNotes` を渡す。
    - 種類は視聴者向けに `story`（物語）、`explainer`（解説）、`music`（音楽）、`other`（その他）。生成技術で分類しない。
-   - 制作ノートは任意。公開する場合 `productionNotes:true` と対象 `generationId` が必要。プロンプト・モデル・入力素材は存在するセクションだけ表示。ノートなしの動画は `productionNotes:false`。
+   - Wan・MiniMax H3・Seedance等の動画生成AI作品は制作ノートを必ず公開し、`productionNotes:true` と対象 `generationId` を指定する。その他は実際の制作資料とユーザー指定に応じる。プロンプト・モデル・入力素材は存在するセクションだけ表示。ノートなしの動画は `productionNotes:false`。
    - 再登録時も種類・ノート・イチオシを明示して、意図せず既存設定を既定値へ戻さない。
 6. Studio登録ではYouTubeを `public` にする。新規アップロードのmetadataへ `status.privacyStatus: "public"` を明示する。既存IDが非公開なら、その動画を公開へ更新し、再アップロードしない。`register_youtube_video` 自体には公開機能がないため、ID登録だけで止めない。非公開等の明示指定がある場合だけ、その指定を維持する。
 7. `sync_youtube_videos` を一度実行し、`list_youtube_videos` で状態確認。処理中ならその状態とIDを報告する。`waiting_public` で非公開等の指定がない場合は、YouTubeの公開設定を修正してから同期する。Cloudflare Cronは約5分ごとに状態を確認するが、非公開動画を公開へ変更する機能はない。
-8. `ready` かつ `is_active:1` なら公開ページを確認する。差し替えは新IDを同作品に登録し、条件成立まで旧版を維持。チャンネルにある未登録動画は勝手に掲載されない。旧YouTube動画は自動削除しない。
+8. `ready` かつ `is_active:1` なら公開ページを確認し、本編・Shorts両方の概要欄へ制作ページURLを反映してAPI再取得で確認する。必要なShorts投稿まで共通手順を完了する。差し替えは新IDを同作品に登録し、条件成立まで旧版を維持。チャンネルにある未登録動画は勝手に掲載されない。旧YouTube動画は自動削除しない。
 
 ## 技術解説のAI向け資料
 

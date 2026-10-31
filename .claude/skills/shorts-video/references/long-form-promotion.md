@@ -33,7 +33,7 @@ Remotion等で元のレイヤーがある場合、横完成動画全体を小さ
 
 ## 予約公開・予約済み版の差し替え
 
-投稿指示があるときに [madogiwa-studio](../../madogiwa-studio/SKILL.md) のYouTube直接アップロード手順を使う。誘導用ショートはYouTubeのみとし、Studioや週次キューへ自動登録しない。既存の投稿記録とhashで重複を確認する。
+投稿指示があるときに [madogiwa-studio](../../madogiwa-studio/SKILL.md) のYouTube直接アップロード手順を使う。[共通手順](../../madogiwa-studio/references/publication-workflow.md)に従い、本編のYouTube・公式サイト掲載をセットで確認する。誘導用Shortsの別エピソードは作らず、共通の制作ページを概要欄に載せる。予約は明示依頼があるときだけ行う。既存の投稿記録とhashで重複を確認する。
 
 - 日時・タイムゾーンを確定し、現在より未来であることを確認する。未指定の時刻を推測して投稿しない。本編と同時刻の指定は引き継ぐ。
 - `status.privacyStatus: private` と `status.publishAt` を設定する。予約まで完全非公開にする場合、限定公開やプレミア公開で代用しない。

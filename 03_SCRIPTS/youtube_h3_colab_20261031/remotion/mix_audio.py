@@ -41,5 +41,5 @@ for c in m['clips']:
 a=voice+bgm;peak=float(np.max(np.abs(a)))
 if peak>.95:a*=.95/peak
 save(P/'public/mixed.wav',a)
-(P.parent/'mix_record.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
+(P.parent/f'mix_record_{m["revision"]}.json').write_text(json.dumps(dict(sampleRate=sr,frames=m['composition']['durationInFrames'],voiceTargetLUFS=-18,bgmTargetLUFS=-34,clipTargetLUFS=-19,premasterPeak=peak,introOriginalAudio=False,introBgm=True,introMusic='昼下がり気分／KK',endingMusic='TheFatRat - Unity',endingTargetLUFS=-38,endingStartFrame=m['endingStartFrame'],crossfadeSeconds=2,music='ほのぼのワルツ【リコーダー】／エクシエ',endingLiftAfterDialogue=False),ensure_ascii=False,indent=2))
 print('Mixed',n/sr,'seconds; peak',peak)

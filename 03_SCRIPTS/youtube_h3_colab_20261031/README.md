@@ -1,8 +1,8 @@
-# Colab × MiniMax H3 解説 v1
+# Colab × MiniMax H3 解説 v2
 
 ユーザー確認用。制作のみで、公開・アップロード・追加GPU利用・購入は実施しない。
 
-- 完成動画：`final_remotion_h3_colab_v1.mp4`（ローカル、1280×720 / 30fps）
+- 完成動画：`final_remotion_h3_colab_v2.mp4`（14分00.43秒、1280×720 / 30fps）。v1 MP4も保持。
 - 台本：`script.md`。編集入力の正本：`remotion/dialogue.txt`
 - 整数フレームのタイムライン：`remotion/src/edit-manifest.json`
 - 料金調査：`research/pricing.json`、動画資料：`guide.md`、実行指示書：`workflow.md`
@@ -33,4 +33,11 @@ npm run typecheck
 
 ## 検証範囲
 
-読みのモーラ確認、字幕の文字・2行上限、TypeScript、価格計算、代表レイアウト、MP4の形式と全編デコードを確認する。主観的な通し試聴と連続再生による目視の合格を機械検査で代替しない。詳細は`qa_final.json`。
+読みのモーラ確認、字幕の文字・2行上限、TypeScript、価格計算、代表レイアウト、MP4の形式と全編デコードを確認する。主観的な通し試聴と連続再生による目視の合格を機械検査で代替しない。詳細は`qa_final_v2.json`と`reading_audit_v2.json`。
+
+## 版の記録
+
+- v1：13分52.3秒。9つの内部区分、画面の章案内なし。Git `b50277f2` が再現ソース。`delivery_v1.json`・`voice_generation_record.json`・`qa_final.json`は保持。
+- v2：14分00.43秒。対象を「AIツールは使うが動画モデルの自力実行は初めての人」と明示。5章のタイトル・問い・現在の章表示を追加。品質と作例を冒頭へ移し、役割・作り方・料金・注意点の順へ整理。
+- v2の音声記録：`voice_generation_record_v2.json`、`mix_record_v2.json`。価格の調査日と生成実測はv1と同一。
+- `render.py`はmanifestのrevisionを出力名に使い、既存の完成MP4がある場合は停止する。提示済み版を上書きしない。

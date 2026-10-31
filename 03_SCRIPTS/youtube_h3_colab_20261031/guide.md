@@ -1,12 +1,20 @@
-# Colab × MiniMax H3：動画資料 v1
+# Colab × MiniMax H3：動画資料 v2
 
-制作日・調査日：2026-10-31。ユーザー確認用v1。公開・YouTube登録は未実施。
+制作日・調査日：2026-10-31。ユーザー確認用v2。公開・YouTube登録は未実施。
 実行指示書：[workflow.md](workflow.md)。発話正本：[remotion/dialogue.txt](remotion/dialogue.txt)。
 公開後に制作ページ・YouTube・実行指示書の絶対URLへ更新する。
 
 ## 今回の内容
 
-H3の公開重みとHugging Face → 高性能PCがない → Google Colab → Google AIのCU特典 → そば屋が開拓した実行方法 → 480p Turboの実例 → 費用 → Seedance 2.5 / Wan 3.0 / H3の使用感 → GPU可用性・解像度・地域条件 → fal.aiの余談。
+対象は、AIツールを使ったことはあるが、動画モデルの自力実行・Colab・Hugging Face・GPUは初めての人。前回のWan解説を見ていなくてもよい。
+
+1. H3で、どんな動画が作れる？ — 作例、Seedance 2.5・Wan 3.0・H3の使用感、Klingの未使用注記。
+2. 高いPCがなくても動かせる？ — 公開重み、Hugging Face、GPU、Colabの役割。
+3. 窓際族は、どう作っている？ — そば屋が開拓した方法、実行の流れ、480pとTurbo LoRA。
+4. 結局、いくらかかる？ — Google AIのCU枠、30秒の費用、Dreamina年契約の条件。
+5. 使う前に知っておきたいこと — GPU可用性、解像度、地域条件。fal.aiは未使用の余談。
+
+各章に2秒のタイトルと問い・導入を付ける。詳細なCLI・生成パラメーターは下の設定と実行指示書に記載。
 
 配役と見た目はユーザー指定のFlutter解説・プロジェクト紹介を参照。ずんだもんが左、めたんが右。単純な背景、中央の図表・資料映像、下部字幕。旧Wan解説のExcel外枠は適用しない。
 

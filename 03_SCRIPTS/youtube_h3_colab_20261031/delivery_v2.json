@@ -1,0 +1,111 @@
+{
+  "version": "v2",
+  "title": "高いPCがなくてもAI動画は作れる！Colab×MiniMax H3で格安動画生成【ずんだもん解説】",
+  "date": "2026-10-31",
+  "durationSeconds": 840.4333333333333,
+  "frames": 25213,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "output": "final_remotion_h3_colab_v2.mp4",
+  "status": "v2_ready_for_review",
+  "publication": "not_requested",
+  "newH3Generation": false,
+  "additionalPurchases": false,
+  "dialogueRows": 114,
+  "newOrChangedDialogueRows": 46,
+  "reusedDialogueRows": 68,
+  "views": 56,
+  "chapterCards": 5,
+  "audience": "AIツールは使うが、動画モデルの自力実行・Colab・Hugging Face・GPU運用は未経験の人",
+  "changes": [
+    "想定視聴者と前提知識を冒頭で明示",
+    "5章のタイトル画面と各章の問い・導入",
+    "現在の章を左上に表示",
+    "作例とモデル比較を第1章へ移動",
+    "H3・Hugging Face・Colabの役割を整理",
+    "料金章を利用枠・30秒の比較・年契約条件の順に整理"
+  ],
+  "chapters": [
+    {
+      "id": "intro",
+      "number": 0,
+      "shortTitle": "今回の話",
+      "startFrame": 0,
+      "cardFrames": 0
+    },
+    {
+      "id": "quality",
+      "number": 1,
+      "shortTitle": "作れる動画",
+      "startFrame": 2201,
+      "cardFrames": 60
+    },
+    {
+      "id": "local",
+      "number": 2,
+      "shortTitle": "動かす場所",
+      "startFrame": 7338,
+      "cardFrames": 60
+    },
+    {
+      "id": "workflow",
+      "number": 3,
+      "shortTitle": "窓際族の作り方",
+      "startFrame": 10154,
+      "cardFrames": 60
+    },
+    {
+      "id": "costs",
+      "number": 4,
+      "shortTitle": "生成にかかる費用",
+      "startFrame": 13280,
+      "cardFrames": 60
+    },
+    {
+      "id": "limits",
+      "number": 5,
+      "shortTitle": "使う前の注意点",
+      "startFrame": 19674,
+      "cardFrames": 60
+    },
+    {
+      "id": "ending",
+      "number": 0,
+      "shortTitle": "まとめ",
+      "startFrame": 24150,
+      "cardFrames": 0
+    }
+  ],
+  "requirements": [
+    "H3 local and Hugging Face before Colab",
+    "Google AI monthly CU benefits",
+    "480p Turbo LoRA settings",
+    "Sobaya credit",
+    "Seedance 2.5 comparisons",
+    "Dreamina annual first-year and renewal, monthly quota, short event and top-ups",
+    "Kling 4.0 joke verbatim",
+    "GPU availability and resolution and territory conditions",
+    "fal.ai unused aside"
+  ],
+  "sourceVideoExamples": [
+    "bbq_doku_chikuwa_h3_20261030 v3",
+    "h3_yume_tele_beer_theft_20261027 edited 11.5s"
+  ],
+  "fileSizeBytes": 42363902,
+  "sha256": "693e2d03a97ca186db2555e53aab0bd912481125e131bea1ed02c7814d3f50b8",
+  "v1PreservedWithSameHash": true,
+  "validation": {
+    "typecheck": "passed",
+    "fullDecode": "passed",
+    "frameCount": 25213,
+    "narrationRowsChecked": 114,
+    "centralLayoutsReviewed": 56,
+    "chapterCardsReviewed": 5,
+    "subtitleOriginalTextPreserved": true,
+    "subtitleMaxLines": 2,
+    "noDialogueClipCardOverlap": true,
+    "subjectiveListening": "not_performed",
+    "continuousVisualPlayback": "not_performed"
+  }
+}

@@ -1,4 +1,4 @@
-"""Build v1 from dialogue.txt, preserving original text and final AudioQueries."""
+"""Build v2 from dialogue.txt with five chapter cards and cached AudioQueries."""
 from pathlib import Path
 import requests,json,wave,math,numpy as np,hashlib,sys,concurrent.futures
 P=Path(__file__).resolve().parent; R=P.parents[2]
@@ -7,6 +7,7 @@ from prepare_readings import load_dictionary,prepare_row
 from subtitle_layout import captions
 for folder in ['out','voice_queries','public','src']:(P/folder).mkdir(exist_ok=True)
 D=load_dictionary(local_path=P/'readings.json')
+chapter_specs={c['id']:c for c in json.loads((P/'chapters.json').read_text())}
 version=requests.get('http://127.0.0.1:50021/version',timeout=10).json()
 events=[];scene='intro';index=0
 for line in (P/'dialogue.txt').read_text().splitlines():
@@ -45,7 +46,10 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
  generated={r['id']:r for r in pool.map(generate,[r for r in events if r['type']=='dialogue'])}
 cursor=45;rows=[];chapters=[];clips=[]
 for event in events:
- if event['type']=='chapter':chapters.append(dict(id=event['id'],startFrame=0 if event['id']=='intro' else cursor))
+ if event['type']=='chapter':
+  spec=chapter_specs[event['id']]
+  chapters.append(dict(**spec,startFrame=0 if event['id']=='intro' else cursor))
+  cursor+=spec['cardFrames']
  elif event['type']=='clip':
   clips.append(dict(**event,id=f'clip-{len(clips)}',startFrame=cursor));cursor+=event['durationInFrames']+21
  else:
@@ -53,7 +57,7 @@ for event in events:
   gap=18 if row['who']=='zunda' else 12
   if row['text']=='そうね！':gap=30
   cursor+=row['durationInFrames']+gap
-m=dict(composition=dict(width=1280,height=720,fps=30,durationInFrames=cursor+120),mainStartFrame=chapters[1]['startFrame'],endingStartFrame=chapters[-1]['startFrame'],voicevoxVersion=version,chapters=chapters,dialogue=rows,clips=clips)
+m=dict(revision='v2',audience='AIツールは使うが、動画モデルの自力実行・Colab・Hugging Face・GPU運用は未経験の人',composition=dict(width=1280,height=720,fps=30,durationInFrames=cursor+120),mainStartFrame=chapters[1]['startFrame'],endingStartFrame=chapters[-1]['startFrame'],voicevoxVersion=version,chapters=chapters,dialogue=rows,clips=clips)
 (P/'src/edit-manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
-(P.parent/'voice_generation_record.json').write_text(json.dumps([{k:v for k,v in row.items() if k not in ['envelope','captions']} for row in rows],ensure_ascii=False,indent=2))
+(P.parent/'voice_generation_record_v2.json').write_text(json.dumps([{k:v for k,v in row.items() if k not in ['envelope','captions']} for row in rows],ensure_ascii=False,indent=2))
 print('DURATION',m['composition']['durationInFrames']/30,flush=True)
